@@ -1,0 +1,12 @@
+{
+  // Cloudflare Pages project for the Dohhh PWA. There is no Worker and no
+  // Function here - Pages is being used as a plain static host that happens to
+  // come with a real certificate, which the P2P layer requires (see the README
+  // section "Getting it onto your friends' phones").
+  //
+  // Deploy with ../../scripts/deploy-pages.sh, which pulls the token from sops
+  // the same way cloudflare/records.yaml does.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dohhh",
+  "pages_build_output_dir": "dist"
+}

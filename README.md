@@ -66,22 +66,49 @@ in secure contexts only, so over plain `http://192.168.x.x` or a `file://` URL
 peers never discover each other at all and the game looks broken rather than
 merely camera-less.
 
-Three routes that satisfy that, cheapest first:
+### Cloudflare Pages
 
-- **Any static HTTPS host** - Cloudflare Pages, Netlify, GitHub Pages. Upload
-  `dist/`, send the URL. Nothing to configure, because there is nothing to
-  configure: no accounts, no database, no environment variables.
+```bash
+scripts/deploy-pages.sh          # verify, build, publish to dohhh.pages.dev
+```
+
+The script pulls the API token and account id out of `secrets/common.yaml` with
+sops, the same way `cloudflare/records.yaml` documents, then builds and
+publishes. It needs a token with **Account / Cloudflare Pages / Edit** - the
+existing homelab token was minted for DNS edits and may not carry that scope, so
+if the deploy 403s, either widen it or `export CLOUDFLARE_API_TOKEN` with a new
+one first.
+
+That yields `https://dohhh.pages.dev` with a real certificate and nothing to
+configure, because there is nothing to configure: no accounts, no database, no
+environment variables. Send the URL. `dohhh.sevenwoods.nl` could CNAME to the
+project later, but that buys nothing for a first test.
+
+The deployed origin then propagates by itself: the QR ticket encodes
+`location.origin + location.pathname`, so a scan lands on the same build the host
+is running.
+
+### Why not a self-signed certificate
+
+Because nothing can accept it on the players' behalf. There is no browser API for
+trusting a certificate from inside the page - that is the one thing the trust
+store exists to prevent - so "have the app auto-OK it" is not a thing that can be
+written. Every friend would have to click through an interstitial by hand, and
+Chrome refuses to register a service worker on an origin with certificate errors
+at all, so the install and offline paths die even after they do. A local CA via
+`mkcert` does work, but only once each device installs and trusts the root - on
+iOS that is a configuration profile plus a toggle buried in Settings, which is
+more work than the one command above.
+
+### Other routes
+
 - **This homelab** - a Deployment serving `dist/` behind an Ingress on
   `*.sevenwoods.nl`, which already terminates TLS through Traefik. Fits the
   repo's conventions; more moving parts than the test needs.
 - **`tailscale serve`** - private, but every friend has to install Tailscale and
   be added to the tailnet, which is a lot to ask of a games night.
 
-Whichever you pick, the deployed origin propagates by itself: the QR ticket
-encodes `location.origin + location.pathname`, so a scan lands on the same build
-the host is running.
-
-Two things to know before the first session:
+### Two things to know before the first session
 
 - **Deploy before, not during.** The service worker is `autoUpdate`, so a
   redeploy mid-game leaves devices on different question packs, and the protocol
