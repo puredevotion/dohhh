@@ -4,9 +4,11 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  // Relative base so the built app runs from any static host or subpath -
-  // including a phone opening a file off a laptop on the same network, which is
-  // exactly the situation this game is for.
+  // Relative base so the built app runs from any static host or subpath, which
+  // keeps deployment to a plain `cp -r dist/`. Note that the host still has to
+  // be a secure context: Trystero hashes the room topic through crypto.subtle,
+  // so over plain http:// (or file://) peers never even find each other. See
+  // "Getting it onto your friends' phones" in the README.
   base: './',
   plugins: [
     react(),

@@ -56,6 +56,39 @@ cannot work.
 `pnpm install` (no filter) additionally installs the Expo app; `pnpm --filter
 @dohhh/native start` runs it.
 
+## Getting it onto your friends' phones
+
+`pnpm build` writes a static `apps/pwa/dist/` with no backend of any kind, so
+"deploying" is copying a directory. The one hard constraint is that it must be
+served over **HTTPS** (or `localhost`). That is not only the camera rule above:
+Trystero derives its relay topic through `crypto.subtle`, which browsers expose
+in secure contexts only, so over plain `http://192.168.x.x` or a `file://` URL
+peers never discover each other at all and the game looks broken rather than
+merely camera-less.
+
+Three routes that satisfy that, cheapest first:
+
+- **Any static HTTPS host** - Cloudflare Pages, Netlify, GitHub Pages. Upload
+  `dist/`, send the URL. Nothing to configure, because there is nothing to
+  configure: no accounts, no database, no environment variables.
+- **This homelab** - a Deployment serving `dist/` behind an Ingress on
+  `*.sevenwoods.nl`, which already terminates TLS through Traefik. Fits the
+  repo's conventions; more moving parts than the test needs.
+- **`tailscale serve`** - private, but every friend has to install Tailscale and
+  be added to the tailnet, which is a lot to ask of a games night.
+
+Whichever you pick, the deployed origin propagates by itself: the QR ticket
+encodes `location.origin + location.pathname`, so a scan lands on the same build
+the host is running.
+
+Two things to know before the first session:
+
+- **Deploy before, not during.** The service worker is `autoUpdate`, so a
+  redeploy mid-game leaves devices on different question packs, and the protocol
+  refuses mismatched packs at the door by design.
+- **One Wi-Fi is much more reliable.** There is no TURN server, so anything
+  behind carrier NAT may never connect; the lobby says so after fifteen seconds.
+
 ## How a game works
 
 - **The tiers.** Named after who should get them right, and authored to it:
