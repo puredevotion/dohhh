@@ -1,0 +1,681 @@
+import type { CategoryContent } from '../row.js';
+
+/** Finance and Economics, second chunk. Correct option first; rotated at build. */
+
+export const MORE_FINANCE: CategoryContent = {
+  graduate: [
+    [
+      'What does a bond\'s convexity measure?',
+      [
+        'The curvature of the price-yield relationship',
+        'The sensitivity of price to a one-basis-point yield change',
+        'The dispersion of cash flows around the duration point',
+        'The change in yield for a given change in credit spread',
+      ],
+      0,
+      'Positive convexity means duration overstates losses when yields rise and understates gains when they fall - which is why it is worth paying for.',
+    ],
+    [
+      'In a securitisation, what does a "waterfall" specify?',
+      [
+        'The order in which collateral cash flows are applied to fees, interest and principal by seniority',
+        'The schedule on which the collateral pool amortises, scheduled and unscheduled principal taken together',
+        'The sequence in which defaulted loans are foreclosed',
+        'The order in which rating agencies must be notified of losses',
+      ],
+      0,
+      'Everything about a structured note is in the waterfall: two deals with identical collateral can behave completely differently.',
+    ],
+    [
+      'What is a repo, economically?',
+      [
+        'A collateralised loan structured as a sale and agreed repurchase',
+        'An outright sale of a security with an option to buy it back',
+        'A swap of one security for another of equivalent credit quality',
+        'A short-term unsecured interbank deposit',
+      ],
+      0,
+      'The legal form as a sale is what gives the lender its bankruptcy protection, and the haircut is the credit protection.',
+    ],
+    [
+      'What does put-call parity relate?',
+      [
+        'European call and put prices at the same strike and expiry',
+        'American call and put prices to their early-exercise premia',
+        'Implied volatilities of calls and puts at the same delta',
+        'Forward and futures prices under deterministic rates',
+      ],
+      0,
+      'It is model-free, which is why a violation is an arbitrage rather than an argument about the model.',
+    ],
+    [
+      'What is the difference between a forward and a futures contract?',
+      [
+        'Futures are exchange-traded, margined and marked daily; forwards are bilateral and settled at maturity',
+        'Forwards are cash-settled and futures are physically delivered',
+        'Futures have no counterparty risk and forwards have no market risk',
+        'Forwards may be netted and futures may not, so exposure accumulates gross on an exchange but nets bilaterally',
+      ],
+      0,
+      'Daily margining is what makes their prices differ from forwards when rates are stochastic - the convexity adjustment.',
+    ],
+    [
+      'What does a credit default swap buyer purchase?',
+      [
+        'Protection against a defined credit event on a reference entity, in exchange for a periodic premium',
+        'An option to buy the reference entity\'s bonds at par',
+        'A guarantee of the reference bond\'s market value, payable by the protection seller on demand at any time',
+        'A total return exposure to the reference entity\'s debt',
+      ],
+      0,
+      'Total return exposure to the debt is a total return swap instead. Whether a given restructuring is a credit event is settled by a determinations committee, not by first principles.',
+    ],
+    [
+      'What is the CAPM\'s central prediction?',
+      [
+        'Expected excess return is proportional to beta with the market',
+        'Expected return rises with total return volatility',
+        'All investors hold the same portfolio of risky assets in the same proportions',
+        'The market portfolio is mean-variance efficient by construction',
+      ],
+      0,
+      'That every investor holds the market portfolio is an implication of the model, not the testable prediction - which is Roll\'s critique in miniature.',
+    ],
+    [
+      'What does "duration matching" achieve for a pension liability?',
+      [
+        'First-order immunisation against a parallel shift in the yield curve',
+        'Complete elimination of interest-rate risk',
+        'Protection against inflation as well as nominal rates',
+        'Protection against non-parallel shifts in the curve',
+      ],
+      0,
+      'Parallel shifts only, and to first order. Key-rate durations exist because the curve does not oblige by moving in parallel.',
+    ],
+    [
+      'What is a "haircut" in secured funding?',
+      [
+        'The excess of collateral value over the loan amount, protecting the lender against price moves',
+        'The fee charged by the lender for arranging the facility',
+        'The discount at which distressed collateral is liquidated',
+        'The write-down applied to a defaulted loan\'s book value, once recovery expectations have been revised',
+      ],
+      0,
+      'Procyclical haircuts are one of the standard mechanisms by which a funding market amplifies a price decline.',
+    ],
+    [
+      'What does an interest rate cap pay?',
+      [
+        'The excess of a reference rate over a strike, on each reset',
+        'A fixed amount if the reference rate exceeds the strike at maturity',
+        'The difference between fixed and floating legs of a swap',
+        'A rebate of interest paid above the strike over the life of a loan',
+      ],
+      0,
+      'It is a strip of caplets, which is why it is priced as a portfolio of options rather than as a single one.',
+    ],
+  ],
+  phd: [
+    [
+      'What does the Heath-Jarrow-Morton framework model directly?',
+      [
+        'The evolution of the whole forward rate curve',
+        'The short rate as a mean-reverting diffusion',
+        'Bond prices as functions of a small number of latent factors',
+        'The joint distribution of swap rates across maturities',
+      ],
+      0,
+      'The drift condition is the content: once you choose the volatility structure, no-arbitrage fixes the rest.',
+    ],
+    [
+      'What is the "volatility smile" in equity index options usually attributed to?',
+      [
+        'Fat tails and a negative return-volatility correlation, priced as demand for downside protection',
+        'Transaction costs increasing with moneyness, since deep out-of-the-money contracts trade far less frequently',
+        'Model risk premia charged uniformly across strikes',
+        'Dividend uncertainty for long-dated contracts',
+      ],
+      0,
+      'The skew steepened permanently after 1987, which is a striking case of a market re-pricing a tail it had previously ignored.',
+    ],
+    [
+      'What does the Fundamental Theorem of Asset Pricing state?',
+      [
+        'Absence of arbitrage is equivalent to the existence of an equivalent martingale measure',
+        'Every derivative can be replicated by a self-financing strategy',
+        'Market completeness implies a unique equilibrium price for any claim',
+        'All investors agree on prices when preferences are homothetic',
+      ],
+      0,
+      'Uniqueness of the measure is the second theorem and corresponds to completeness - conflating the two is the standard error.',
+    ],
+    [
+      'What is the practical difficulty with delta hedging in the presence of gamma?',
+      [
+        'Discrete rehedging leaves a residual whose expected cost scales with gamma and realised variance',
+        'Delta cannot be computed when volatility is stochastic',
+        'Gamma changes sign at the money, making the hedge unstable',
+        'Transaction costs are unrelated to hedge frequency, so rehedging can be made arbitrarily fine at no cost',
+      ],
+      0,
+      'It is why an options book\'s profit is essentially a bet on realised versus implied variance, whatever the trader thinks they are doing.',
+    ],
+    [
+      'What does the Merton structural model treat equity as?',
+      [
+        'A call option on the firm\'s assets struck at the face value of its debt',
+        'A perpetual claim on residual cash flows after debt service',
+        'A put option written to the firm\'s creditors',
+        'A convertible claim whose value depends on asset volatility only',
+      ],
+      0,
+      'It gives an economically interpretable default probability, and it systematically underpredicts short-horizon spreads - the credit spread puzzle.',
+    ],
+    [
+      'What is "basis risk" in a hedging programme?',
+      [
+        'Residual exposure because the hedge instrument and the exposure are imperfectly correlated',
+        'The risk that the hedge counterparty defaults',
+        'The risk that margin calls exceed available liquidity',
+        'The risk of a change in the relationship between spot and futures at expiry only',
+      ],
+      0,
+      'The metals and energy hedging literature is full of it: hedging jet fuel with crude works right up until the crack spread moves.',
+    ],
+    [
+      'What did the 2008 experience reveal about the "originate to distribute" model?',
+      [
+        'Weakened incentives for screening when the originator retains no exposure to loan performance',
+        'That securitisation cannot diversify idiosyncratic credit risk',
+        'That rating agencies had no access to loan-level data, so their models were fitted to pool averages',
+        'That mortgage default is uncorrelated with house prices',
+      ],
+      0,
+      'Keys et al. found the discontinuity at securitisation thresholds. Skin-in-the-game retention rules are the direct regulatory response.',
+    ],
+    [
+      'What does a "collateral transformation" trade do?',
+      [
+        'Exchanges lower-quality assets for eligible collateral, transferring liquidity risk rather than removing it',
+        'Converts collateral into cash without a repurchase obligation, so the exposure leaves the balance sheet entirely',
+        'Substitutes cash margin for securities margin at a clearing house',
+        'Reduces the total collateral required by netting across counterparties',
+      ],
+      0,
+      'Central clearing mandates raised demand for eligible collateral, and this is one of the ways that demand got met without creating any.',
+    ],
+    [
+      'What is the "limits to arbitrage" argument?',
+      [
+        'Arbitrageurs face capital constraints and horizon risk',
+        'Arbitrage is impossible in the presence of transaction costs',
+        'Mispricings persist because investors are uniformly irrational',
+        'Arbitrage requires perfect information about fundamental value',
+      ],
+      0,
+      'Shleifer and Vishny. Noise trader risk means being right eventually is not enough if the fund is redeemed first.',
+    ],
+    [
+      'What does the term "wrong-way risk" describe in counterparty exposure?',
+      [
+        'Exposure rising precisely as the counterparty\'s credit quality deteriorates',
+        'Exposure to a counterparty in a currency other than the trade currency',
+        'Netting agreements that fail to hold in the counterparty\'s jurisdiction',
+        'Collateral whose value falls when markets are stressed',
+      ],
+      0,
+      'A sovereign CDS bought from a bank in the same country is the textbook case, and it is why CVA models need correlated simulation.',
+    ],
+  ],
+  professor: [
+    [
+      'What does the Heston model add over Black-Scholes, and what does it cost?',
+      [
+        'Stochastic variance with a semi-analytic price',
+        'Jumps in the underlying, at the cost of losing closed-form solutions',
+        'A local volatility surface fitted exactly, at the cost of unstable forward smiles',
+        'Stochastic interest rates, at the cost of requiring numerical integration',
+      ],
+      0,
+      'Incompleteness is the conceptual cost: volatility risk is not hedgeable with the underlying alone, so a market price of volatility risk enters.',
+    ],
+    [
+      'What is the significance of the Dupire local volatility formula?',
+      [
+        'It recovers a unique local volatility surface from a continuum of option prices, fitting the smile exactly',
+        'It proves that stochastic volatility models cannot fit observed prices at any maturity or strike whatsoever',
+        'It gives the implied volatility as a function of moneyness in closed form',
+        'It establishes that local and stochastic volatility give identical forward smiles',
+      ],
+      0,
+      'The forward smile dynamics it implies are known to be wrong, which is why practitioners run local-stochastic hybrids rather than either alone.',
+    ],
+    [
+      'What does the Gatheral SVI parameterisation solve in practice?',
+      [
+        'A parsimonious, arbitrage-free-checkable fit to the implied variance smile across strikes',
+        'The joint calibration of volatility and interest-rate models',
+        'The pricing of American options under stochastic volatility, in closed form and without simulation',
+        'The interpolation of the discount curve between liquid tenors',
+      ],
+      0,
+      'The static arbitrage conditions on its parameters are the reason it displaced ad hoc spline fits on trading desks.',
+    ],
+    [
+      'What does the "roughness" literature on volatility claim?',
+      [
+        'Realised volatility has a Hurst exponent well below one half',
+        'Volatility is a pure jump process with no diffusive component',
+        'Volatility is long-memory with a Hurst exponent above one half',
+        'Volatility is deterministic conditional on the option surface',
+      ],
+      0,
+      'Gatheral, Jaisson and Rosenbaum. Whether the estimate is contaminated by microstructure noise is precisely the live objection.',
+    ],
+    [
+      'What is the practical significance of "multi-curve" discounting after 2008?',
+      [
+        'Discounting moved to collateral-rate curves while forecasting stays on tenor-specific curves, breaking the single-curve identity',
+        'Discount curves are now constructed from government bonds rather than swaps',
+        'Forward rates are no longer implied from spot rates at all, and must instead be quoted directly for each tenor by the interdealer market',
+        'A single OIS curve is used for both discounting and forecasting',
+      ],
+      0,
+      'Basis spreads between tenors became too large to ignore, which turned a textbook identity into an inconsistency requiring separate curves.',
+    ],
+    [
+      'What does the Amihud-Mendelson and subsequent liquidity literature establish about expected returns?',
+      [
+        'Illiquidity is priced, both as a level characteristic and as exposure to systematic liquidity risk',
+        'Liquidity affects trading costs but not equilibrium expected returns',
+        'Only idiosyncratic liquidity matters, and it is diversifiable, so no premium survives in a large portfolio',
+        'Liquidity premia disappear once size and value are controlled',
+      ],
+      0,
+      'Pastor-Stambaugh and Acharya-Pedersen separated the characteristic from the risk exposure, and both survive as priced.',
+    ],
+    [
+      'What is the central identification problem in estimating the effect of quantitative easing on yields?',
+      [
+        'Announcements are anticipated and correlated with the conditions prompting them, so event windows and counterfactuals are contested',
+        'Yields are unobservable at the relevant maturities',
+        'Central bank purchases are not publicly disclosed at the security level, so the size and timing of the intervention cannot be reconstructed',
+        'The effect is theoretically zero under complete markets',
+      ],
+      0,
+      'Portfolio-balance and signalling channels are hard to separate, which is why estimates of the same programme differ by an order of magnitude.',
+    ],
+    [
+      'What does the literature on "flash crashes" and market microstructure identify as the key fragility?',
+      [
+        'Liquidity provision is voluntary and withdraws under stress',
+        'High-frequency traders systematically front-run institutional order flow',
+        'Exchange matching engines cannot handle peak message rates',
+        'Circuit breakers are the direct cause of the price gaps they follow',
+      ],
+      0,
+      'No obligation to quote is the structural point. The 2010 and 2015 episodes differ in mechanism and share that feature.',
+    ],
+    [
+      'What is the "convenience yield" of Treasury securities argued to imply?',
+      [
+        'A price premium for safety and liquidity that shows up as a violation of covered interest parity and as negative swap spreads',
+        'That Treasuries are mispriced relative to corporate bonds of equivalent maturity',
+        'That the term premium is negative at all maturities, so long bonds are systematically expensive relative to rolling short positions',
+        'That the risk-free rate is unobservable in principle',
+      ],
+      0,
+      'Krishnamurthy and Vissing-Jorgensen. Once safe assets earn a non-pecuniary return, several apparent arbitrages stop being arbitrages.',
+    ],
+    [
+      'What does the post-2008 evidence say about the value of ratings in structured finance?',
+      [
+        'Ratings were systematically over-optimistic for structured products',
+        'Ratings for structured products performed comparably to corporate ratings',
+        'The failure was confined to a small number of manipulated deals',
+        'Ratings were accurate but users misinterpreted the scale',
+      ],
+      0,
+      'Correlation assumptions in the copula models are the technical failure; the incentive structure is why nobody inside the process fixed them.',
+    ],
+  ],
+};
+
+export const MORE_ECONOMICS: CategoryContent = {
+  graduate: [
+    [
+      'What does the Coase theorem assert, and under what conditions?',
+      [
+        'Efficient allocation is reached regardless of initial rights',
+        'Externalities are always best corrected by taxation',
+        'Firms exist because market transactions are always cheaper than internal ones',
+        'Efficient outcomes require an equal initial distribution of rights',
+      ],
+      0,
+      'The conditions never hold, which is the point: Coase was arguing that transaction costs are where the action is.',
+    ],
+    [
+      'What is the difference between Marshallian and Hicksian demand?',
+      [
+        'Marshallian holds income constant; Hicksian holds utility constant and so isolates the substitution effect',
+        'Marshallian applies to normal goods and Hicksian to inferior goods',
+        'Marshallian is derived from revealed preference and Hicksian from cardinal utility',
+        'Marshallian is short-run and Hicksian long-run',
+      ],
+      0,
+      'The Slutsky decomposition is exactly the difference between them, and Shephard\'s lemma is how you move between the two problems.',
+    ],
+    [
+      'What does the Ramsey rule prescribe for optimal commodity taxation?',
+      [
+        'Tax goods in inverse proportion to their elasticity, to minimise deadweight loss for given revenue',
+        'Tax all goods at a uniform rate to avoid distorting relative prices',
+        'Tax only final consumption and never intermediate goods, so no cascading of tax through the chain occurs',
+        'Tax income rather than commodities wherever administratively feasible',
+      ],
+      0,
+      'It is efficient and regressive, which is the tension every real tax system negotiates.',
+    ],
+    [
+      'What is the "natural rate of unemployment" in the Friedman-Phelps sense?',
+      [
+        'The rate consistent with stable inflation once expectations have adjusted',
+        'The rate at which vacancies exactly equal unemployed workers',
+        'The minimum rate achievable without capital deepening',
+        'The rate corresponding to zero involuntary unemployment',
+      ],
+      0,
+      'The expectations-augmented Phillips curve is what makes the long-run trade-off vanish, and NAIRU is the same idea under a different name.',
+    ],
+    [
+      'What does the Modigliani-Miller theorem state in its first proposition?',
+      [
+        'In frictionless markets, firm value is independent of capital structure',
+        'Dividend policy determines firm value under certainty',
+        'Leverage lowers the weighted average cost of capital monotonically',
+        'Equity and debt holders require the same return in equilibrium',
+      ],
+      0,
+      'Its value is as an accounting identity for what must matter: taxes, bankruptcy costs, agency and information, since structure itself does not.',
+    ],
+    [
+      'What is a Nash equilibrium?',
+      [
+        'A strategy profile in which no player can gain by unilaterally deviating',
+        'An outcome that maximises the sum of players\' payoffs',
+        'A strategy profile that is optimal against every possible opponent strategy',
+        'An outcome from which no coalition can profitably deviate',
+      ],
+      0,
+      'The last is the core, from cooperative game theory, and dominant strategies are the stronger condition in the third.',
+    ],
+    [
+      'What does the Balassa-Samuelson effect predict?',
+      [
+        'Countries with faster tradable-sector productivity growth experience real exchange rate appreciation',
+        'Purchasing power parity holds exactly in the long run, so real exchange rates revert to a constant level',
+        'Nominal exchange rates converge to interest-rate differentials',
+        'Price levels are equal across countries at market exchange rates',
+      ],
+      0,
+      'Non-tradable prices rise with wages set in the tradable sector, which is why rich countries look expensive at market rates.',
+    ],
+    [
+      'What is the "Lucas paradox"?',
+      [
+        'Capital does not flow from rich to poor countries at anything like the rate returns to capital would predict',
+        'Consumption is smoother than income across business cycles',
+        'Money is neutral in the long run but not the short run',
+        'Anticipated policy has no effect on real output, so only the unanticipated component of a policy change matters',
+      ],
+      0,
+      'Institutional quality and human capital are the standard explanations, and it remains a puzzle at the margin.',
+    ],
+    [
+      'What does an instrumental variable need to satisfy?',
+      [
+        'Relevance to the endogenous regressor and exclusion from the outcome equation except through it',
+        'Strong correlation with the outcome variable, so that the first stage explains most of its variance',
+        'Independence from all other regressors in the model',
+        'Normality of its distribution in the population',
+      ],
+      0,
+      'The exclusion restriction is untestable and is where nearly every argument about an IV paper actually happens.',
+    ],
+    [
+      'What is the difference between GDP and GNI?',
+      [
+        'GDP measures output produced within a territory; GNI measures income accruing to its residents',
+        'GDP includes government spending and GNI does not',
+        'GDP is measured at market prices and GNI at factor cost',
+        'GDP is nominal and GNI is always real, so the two cannot be compared without a deflator series',
+      ],
+      0,
+      'The gap matters enormously for economies with large foreign-owned capital stocks or large remittance flows - Ireland being the standard illustration.',
+    ],
+  ],
+  phd: [
+    [
+      'What does the Arrow impossibility theorem establish?',
+      [
+        'No rank-order voting rule satisfies unrestricted domain, Pareto, non-dictatorship and independence of irrelevant alternatives together',
+        'No voting rule can be strategy-proof for more than two alternatives',
+        'Majority rule cycles whenever preferences are single-peaked',
+        'Social welfare cannot be compared across individuals, so any aggregation of ordinal preferences into a collective ranking is meaningless',
+      ],
+      0,
+      'The strategy-proofness result is Gibbard-Satterthwaite, and single-peakedness is precisely the domain restriction that escapes Arrow.',
+    ],
+    [
+      'What does the revenue equivalence theorem state?',
+      [
+        'Standard auctions with symmetric, independent private values yield the same expected revenue',
+        'All auction formats are efficient under private values',
+        'Sealed-bid and open auctions produce identical bids',
+        'Reserve prices do not affect expected revenue, so setting one is never worth the risk of no sale',
+      ],
+      0,
+      'Every assumption in it is what auction design fights over: affiliation, asymmetry and risk aversion each break it in a different direction.',
+    ],
+    [
+      'What is the "Diamond paradox" in search theory?',
+      [
+        'With any positive search cost and homogeneous sellers, the unique equilibrium price is the monopoly price',
+        'Search frictions always lower prices relative to Walrasian equilibrium',
+        'Consumers search indefinitely when prices are dispersed, so no equilibrium with positive search cost exists',
+        'Price dispersion cannot exist in equilibrium with identical goods',
+      ],
+      0,
+      'It is why the literature had to introduce heterogeneity or noise to get the price dispersion that is actually observed.',
+    ],
+    [
+      'What does the Mortensen-Pissarides matching function do analytically?',
+      [
+        'Maps unemployment and vacancies to hires',
+        'Determines the wage as a function of productivity alone',
+        'Specifies the flow of workers between sectors',
+        'Derives the Beveridge curve from optimising behaviour',
+      ],
+      0,
+      'It is a black box by design, and the Beveridge curve is its empirical trace - the criticism being that it hides the mechanism it stands in for.',
+    ],
+    [
+      'What does "Ricardian equivalence" require to hold?',
+      [
+        'Infinite horizons or perfect intergenerational altruism, lump-sum taxes and no liquidity constraints',
+        'Balanced budgets in every period, so that no intertemporal shifting of the tax burden is possible at all',
+        'Perfect foresight about future government spending only',
+        'Constant marginal tax rates over time',
+      ],
+      0,
+      'Barro, 1974. Every failure of the conditions is a channel through which deficits matter, which is what the empirical literature chases.',
+    ],
+    [
+      'What does the "Kaldor facts" set of regularities describe?',
+      [
+        'Broadly stable capital-output ratio, capital share and real interest rate alongside steady growth in output per worker',
+        'The tendency of manufacturing employment to fall with income',
+        'Convergence of income levels across open economies, conditional on savings rates and human capital accumulation rates',
+        'The relation between inequality and growth over the development path',
+      ],
+      0,
+      'They are what the balanced-growth path in the standard model was built to reproduce - and the recent factor-share literature is the argument about whether they still hold.',
+    ],
+    [
+      'What is the difference between the intensive and extensive margin of labour supply?',
+      [
+        'Hours worked by participants, against the decision to participate at all',
+        'Full-time against part-time employment',
+        'Wage-earning against self-employed work',
+        'Short-run against long-run elasticity, measured over a year and over a working lifetime',
+      ],
+      0,
+      'The extensive margin carries most of the aggregate elasticity, which is why models calibrated to micro intensive-margin estimates get labour dynamics wrong.',
+    ],
+    [
+      'What does "Baumol\'s cost disease" explain?',
+      [
+        'Relative price increases in sectors with slow productivity growth, since wages track the economy-wide average',
+        'The tendency of public sector costs to rise faster than the private sector by political mechanism',
+        'The inflationary consequence of monopoly pricing in services',
+        'The decline in manufacturing employment share with income',
+      ],
+      0,
+      'It is why health, education and live performance get relatively more expensive without anyone becoming less efficient at them.',
+    ],
+    [
+      'What does the "regression discontinuity" design exploit?',
+      [
+        'Quasi-random assignment near a threshold in an assignment variable',
+        'Random variation in an instrument that shifts treatment probability',
+        'Repeated observation of the same units before and after treatment',
+        'Matching treated and control units on observed covariates',
+      ],
+      0,
+      'The identification is local to the cutoff, which is its strength and the limit on what it can tell you about anyone else.',
+    ],
+    [
+      'What does the Kiyotaki-Moore model add to macro-financial analysis?',
+      [
+        'Collateral constraints tied to asset prices',
+        'A banking sector with maturity mismatch and run dynamics',
+        'Sticky prices in a monopolistically competitive goods sector',
+        'Heterogeneous households facing uninsurable income risk',
+      ],
+      0,
+      'Credit cycles, 1997. It is the collateral-based sibling of the net-worth-based financial accelerator.',
+    ],
+  ],
+  professor: [
+    [
+      'What does the Diamond-Mirrlees production efficiency theorem imply for tax design?',
+      [
+        'Intermediate goods should not be taxed if the government can tax final consumption, even in a second-best world',
+        'All commodities should be taxed at a uniform rate',
+        'Production efficiency requires zero taxation of capital income',
+        'Optimal taxes are always proportional to income, so a flat rate dominates any nonlinear schedule on efficiency grounds',
+      ],
+      0,
+      'It is the theoretical case against turnover taxes and for VAT-style systems with full input credits.',
+    ],
+    [
+      'What is the Atkinson-Stiglitz theorem\'s conclusion, and its critical assumption?',
+      [
+        'With separable preferences and optimal nonlinear income taxation, differential commodity taxes add nothing - separability being the assumption',
+        'Capital income should never be taxed under any preferences, since the intertemporal distortion always dominates whatever distributional gain the tax achieves',
+        'Uniform commodity taxation is optimal regardless of preferences',
+        'Income taxation dominates consumption taxation in all cases',
+      ],
+      0,
+      'Relaxing separability - as when leisure complements particular goods - is what brings differential taxes and capital taxation back.',
+    ],
+    [
+      'What does the "new trade theory" of Krugman add to comparative advantage?',
+      [
+        'Increasing returns and love of variety generate intra-industry trade between similar countries',
+        'Factor endowments determine trade patterns more strongly than technology',
+        'Trade always raises real wages for all factors',
+        'Transport costs eliminate gains from trade for differentiated goods',
+      ],
+      0,
+      'It explains what Heckscher-Ohlin cannot: most trade happening between similar rich countries in similar goods.',
+    ],
+    [
+      'What does the "sufficient statistic" approach in public economics do?',
+      [
+        'Derives welfare conclusions from estimable elasticities',
+        'Reduces a structural model to its reduced form for prediction',
+        'Estimates all structural parameters from a single moment condition',
+        'Substitutes a summary index for a full welfare function',
+      ],
+      0,
+      'Chetty\'s formulation. It buys robustness with respect to unmodelled details, at the cost of being silent about counterfactuals far from the data.',
+    ],
+    [
+      'What is the "Mian-Sufi" account of the Great Recession?',
+      [
+        'Household leverage and its geographic distribution drove the depth and persistence of the demand contraction',
+        'Bank capital shortfalls were the binding constraint on recovery',
+        'Monetary policy was insufficiently expansionary at the zero bound',
+        'Trade collapse propagated the shock internationally, making the downturn synchronised across otherwise unconnected economies',
+      ],
+      0,
+      'Their county-level variation is what made the household-balance-sheet channel identifiable rather than merely plausible.',
+    ],
+    [
+      'What does the "capital in the twenty-first century" r > g claim actually require?',
+      [
+        'A return to capital persistently above growth',
+        'That the capital share is fixed by technology',
+        'That capital income is untaxed in perpetuity',
+        'That inheritance is the only source of wealth accumulation',
+      ],
+      0,
+      'Whether the aggregate elasticity of substitution exceeds one is where the technical argument concentrated, and the wealth data itself was separately contested.',
+    ],
+    [
+      'What does the "credibility revolution" critique of structural macro amount to?',
+      [
+        'Identification should come from transparent, defensible variation rather than from imposed model restrictions',
+        'Structural models cannot be estimated with available data',
+        'Only randomised experiments provide valid causal evidence',
+        'Macro aggregates are too noisy for any causal inference, so only microeconometric evidence can support a policy claim',
+      ],
+      0,
+      'The counter-argument is that policy counterfactuals need structure, which is why the field converged on using credible micro estimates to discipline structural models.',
+    ],
+    [
+      'What is the "safe asset shortage" hypothesis?',
+      [
+        'Demand for safe stores of value exceeds supply, depressing risk-free rates and pushing risk-taking elsewhere',
+        'Sovereign debt supply is constrained by fiscal rules in all major economies',
+        'Banks hold insufficient capital against safe assets under Basel III',
+        'Safe assets are mispriced because of index-tracking demand, which mechanically bids up the most widely held issues',
+      ],
+      0,
+      'Caballero, Farhi and Gourinchas. It links the global saving glut, low rates and financial-sector risk transformation into one story.',
+    ],
+    [
+      'What does research on firm-level "superstar effects" argue about factor shares?',
+      [
+        'Reallocation toward high-markup, low-labour-share firms accounts for much of the aggregate labour share decline',
+        'The decline is entirely explained by capital-biased technical change within firms',
+        'Measured declines are an artefact of intangible capital mismeasurement alone',
+        'Labour shares have not declined once housing is excluded, so the whole literature rests on imputed housing rents',
+      ],
+      0,
+      'Autor et al. and De Loecker et al. Mismeasurement of intangibles is a real and separate objection that has not settled the question.',
+    ],
+    [
+      'What is the current state of the minimum-wage employment literature?',
+      [
+        'Moderate increases show small employment effects in most credible designs',
+        'The competitive prediction of substantial job losses is uniformly confirmed',
+        'All studies now find employment gains from minimum-wage increases',
+        'The literature has been abandoned as unidentifiable',
+      ],
+      0,
+      'Card-Krueger through Cengiz et al. against Neumark and Wascher. Monopsony is the theoretical framework that makes a small effect unsurprising.',
+    ],
+  ],
+};

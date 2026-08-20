@@ -1,0 +1,28 @@
+{
+  "name": "dohhh",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Serverless peer-to-peer trivia \u2014 every app is a node",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "install:web": "pnpm install --filter @dohhh/pwa... --filter @dohhh/engine... --filter @dohhh/net...",
+    "typecheck": "pnpm -r --filter @dohhh/engine --filter @dohhh/net --filter @dohhh/pwa --filter @dohhh/native typecheck",
+    "test": "pnpm --filter @dohhh/engine --filter @dohhh/net test",
+    "build": "pnpm --filter @dohhh/pwa build",
+    "dev": "pnpm --filter @dohhh/pwa dev",
+    "verify": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

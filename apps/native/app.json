@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Dohhh",
+    "slug": "dohhh",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#18182b",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.dohhh",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Scanning a host's QR code is how you join a game."
+      }
+    },
+    "android": {
+      "package": "com.example.dohhh",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": ["expo-camera"]
+  }
+}

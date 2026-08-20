@@ -1,0 +1,681 @@
+import type { CategoryContent } from '../row.js';
+
+/** Semiconductors and Software Engineering, second chunk. Correct option first; rotated at build. */
+
+export const MORE_SILICON: CategoryContent = {
+  graduate: [
+    [
+      'What does a photoresist\'s "tone" refer to?',
+      [
+        'Whether exposed regions are removed on development (positive) or retained (negative)',
+        'Whether the resist responds to ultraviolet or electron-beam exposure',
+        'Whether the resist is spin-coated or vapour-deposited',
+        'Whether the resist requires a post-exposure bake',
+      ],
+      0,
+      'Positive tone dominates because it generally gives better resolution for isolated features; negative tone survives in specific dense-line cases.',
+    ],
+    [
+      'What is chemical-mechanical planarisation for?',
+      [
+        'Returning the wafer to a flat surface between layers so lithography stays in focus',
+        'Removing native oxide before gate deposition',
+        'Thinning the wafer prior to packaging, so that stacked die assemblies stay within height budget',
+        'Cleaning particulate contamination after etch',
+      ],
+      0,
+      'Depth of focus at modern numerical apertures is a few tens of nanometres, so topography from a previous layer is fatal without it.',
+    ],
+    [
+      'What does "yield" mean as a semiconductor economic quantity?',
+      [
+        'The fraction of die on a wafer that meet specification and can be sold',
+        'The number of wafers a fab can process per week',
+        'The proportion of a wafer\'s area occupied by usable die',
+        'The ratio of functional transistors to total transistors on a die',
+      ],
+      0,
+      'Because it falls with die area, yield is why large designs get disaggregated and why binning exists as a business practice.',
+    ],
+    [
+      'What is a threshold voltage?',
+      [
+        'The gate voltage at which a MOSFET channel begins to conduct appreciably',
+        'The drain voltage at which the transistor enters saturation',
+        'The gate voltage at which the oxide breaks down',
+        'The minimum supply voltage at which a logic gate switches correctly',
+      ],
+      0,
+      'Its variability between nominally identical devices is one of the central problems of scaled manufacturing.',
+    ],
+    [
+      'What does DRAM require that SRAM does not?',
+      [
+        'Periodic refresh, because charge leaks from the storage capacitor',
+        'A separate supply voltage for the sense amplifiers',
+        'Error-correcting codes to function at all',
+        'A dedicated clock domain independent of the processor',
+      ],
+      0,
+      'One transistor and one capacitor per cell against six transistors: density in exchange for refresh power and latency.',
+    ],
+    [
+      'What is "multi-patterning" used for?',
+      [
+        'Printing features finer than a single exposure can resolve',
+        'Exposing multiple wafers simultaneously to increase throughput',
+        'Printing the same pattern at several depths within a stacked device',
+        'Combining optical and electron-beam lithography on one layer',
+      ],
+      0,
+      'LELE and SADP were the response to 193 nm running out of resolution, and every extra exposure costs cycle time, overlay budget and money.',
+    ],
+    [
+      'What does the term "epitaxy" mean?',
+      [
+        'Growth of a crystalline layer whose lattice registers with the substrate beneath it',
+        'Deposition of an amorphous film later crystallised by annealing',
+        'Implantation of dopant ions followed by lattice repair',
+        'Selective removal of material along crystal planes',
+      ],
+      0,
+      'Strained silicon works precisely by deliberate lattice mismatch, which raises carrier mobility without changing the material.',
+    ],
+    [
+      'What is the purpose of a guard ring in an integrated circuit layout?',
+      [
+        'Collecting stray carriers to suppress latch-up and substrate coupling',
+        'Providing electrostatic discharge protection at the pads',
+        'Setting a reference potential for analogue comparators',
+        'Marking the scribe line for wafer dicing',
+      ],
+      0,
+      'It is one of the standard structural defences against a CMOS failure mode that is otherwise catastrophic and self-sustaining.',
+    ],
+    [
+      'What does "roofline analysis" of an accelerator kernel establish?',
+      [
+        'Whether performance is limited by arithmetic throughput or by memory bandwidth, from arithmetic intensity',
+        'The theoretical peak FLOPS of the device, from clock rate and the number of fused multiply-add units available',
+        'The optimal thread block size for a given kernel',
+        'The energy consumed per floating-point operation',
+      ],
+      0,
+      'Williams, Waterman and Patterson. It tells you which optimisation is worth doing, which is more useful than knowing the peak.',
+    ],
+    [
+      'What distinguishes a systolic array from a general-purpose SIMD unit?',
+      [
+        'Data flows rhythmically between fixed processing elements',
+        'It executes a single instruction across many independent lanes',
+        'It supports out-of-order issue within each processing element',
+        'It requires no clock, operating asynchronously',
+      ],
+      0,
+      'Kung and Leiserson\'s idea from 1978. Operand reuse in the array is exactly what makes matrix-multiply accelerators energy-efficient.',
+    ],
+  ],
+  phd: [
+    [
+      'What does the term "overlay budget" quantify?',
+      [
+        'Permissible misregistration between successive patterned layers, in nanometres',
+        'The total exposure dose available across a wafer',
+        'The tolerance on critical dimension within a single layer',
+        'The allowable wafer warp during processing',
+      ],
+      0,
+      'Multi-patterning consumes it quickly, since each extra exposure adds its own error to the stack-up.',
+    ],
+    [
+      'Why does EUV require a pellicle, and why is it hard?',
+      [
+        'To keep particles off the mask',
+        'To protect the resist from oxidation during exposure',
+        'To filter out-of-band radiation from the plasma source',
+        'To flatten the mask against its electrostatic chuck',
+      ],
+      0,
+      'Transmission and mechanical survival pull in opposite directions, which is why pellicle-free operation was tolerated for as long as it was.',
+    ],
+    [
+      'What is "negative capacitance" in transistor research aiming at?',
+      [
+        'Breaking the 60 mV per decade subthreshold slope limit using a ferroelectric gate stack',
+        'Reducing gate leakage below the direct-tunnelling limit',
+        'Eliminating the need for a gate dielectric of any kind, and with it the leakage current it causes',
+        'Providing internal voltage amplification for analogue circuits',
+      ],
+      0,
+      'The Boltzmann limit sets the floor on supply voltage. Whether stabilised negative capacitance is real or a measurement artefact has been argued at length.',
+    ],
+    [
+      'What does the "memory wall" refer to?',
+      [
+        'The widening gap between processor throughput and memory bandwidth-latency, making data movement dominate cost',
+        'The physical limit on DRAM cell scaling below 10 nm',
+        'The address-space limit imposed by 32-bit pointers, which capped addressable memory long before capacity became cheap',
+        'The maximum number of memory channels a package can support',
+      ],
+      0,
+      'Wulf and McKee, 1995. Every cache hierarchy, prefetcher and near-memory proposal since is a response to it.',
+    ],
+    [
+      'What is the purpose of a redistribution layer in advanced packaging?',
+      [
+        'Re-routing die-level pad positions to the pitch and location the package requires',
+        'Providing additional metal layers for on-die signal routing',
+        'Distributing heat from hotspots across the package lid',
+        'Isolating analogue and digital supply domains',
+      ],
+      0,
+      'It is what makes fan-out wafer-level packaging and 2.5D interposer assemblies possible without changing the die.',
+    ],
+    [
+      'What does "process-voltage-temperature" corner analysis establish?',
+      [
+        'That a design meets timing and power across the joint extremes of manufacturing and operating variation',
+        'The optimal supply voltage for a given clock frequency',
+        'The failure rate of a device under accelerated ageing, extrapolated to the intended service lifetime of the part',
+        'The maximum junction temperature the package can sustain',
+      ],
+      0,
+      'Corner counts explode combinatorially at advanced nodes, which is why statistical timing analysis exists at all.',
+    ],
+    [
+      'What limits the practical benefit of increasing GPU cache size for large-model inference?',
+      [
+        'Working sets are far larger than any plausible cache',
+        'Cache coherence overhead grows faster than hit rate',
+        'Larger caches necessarily increase clock period',
+        'Compilers cannot exploit caches larger than a fixed size',
+      ],
+      0,
+      'Which is why the engineering effort goes into HBM bandwidth, quantisation and operator fusion rather than into cache capacity.',
+    ],
+    [
+      'What is the difference between wafer-level and panel-level packaging?',
+      [
+        'Panel-level processes larger rectangular substrates, improving area utilisation at the cost of tighter warpage control',
+        'Panel-level applies only to memory devices, since logic dies cannot tolerate the thermal budget of the panel moulding step',
+        'Wafer-level requires through-silicon vias and panel-level does not',
+        'Panel-level cannot support fan-out interconnect',
+      ],
+      0,
+      'Round wafers waste edge area on rectangular die; panels waste less and are harder to keep flat, which is the whole trade.',
+    ],
+    [
+      'What does "design technology co-optimisation" mean in practice?',
+      [
+        'Iterating process rules and design rules together',
+        'Optimising a design after the process is fully characterised',
+        'Selecting a foundry process by benchmarking a reference design',
+        'Co-designing the package and the board simultaneously',
+      ],
+      0,
+      'Standard cell height in track counts is the canonical shared variable: a decision that is simultaneously a process and a design constraint.',
+    ],
+    [
+      'Why is CFET (complementary FET) considered the successor to nanosheet?',
+      [
+        'Stacking n and p devices vertically halves the cell footprint without further lateral scaling',
+        'It eliminates the need for a gate dielectric, since the channel is gated electrostatically from a distance',
+        'It allows the channel to be made from a two-dimensional material',
+        'It removes the requirement for EUV lithography',
+      ],
+      0,
+      'It buys area from the third dimension once lateral scaling is exhausted; the difficulty is building the second device on top without damaging the first.',
+    ],
+  ],
+  professor: [
+    [
+      'What does the end of Dennard scaling actually mean?',
+      [
+        'Supply voltage stopped falling with feature size',
+        'Transistor density stopped increasing with each node',
+        'Clock frequency reached a hard physical limit',
+        'Lithography could no longer resolve smaller features',
+      ],
+      0,
+      'It is a voltage story, not a density story: threshold voltage could not scale without leakage exploding, which is why frequency stalled and cores multiplied.',
+    ],
+    [
+      'What is the fundamental obstacle to using two-dimensional semiconductors in logic?',
+      [
+        'Forming low-resistance contacts to an atomically thin channel, alongside wafer-scale uniformity',
+        'The absence of any bandgap in all such materials',
+        'Incompatibility with any known gate dielectric, since no oxide grows natively on the channel material',
+        'Carrier mobility that is intrinsically lower than silicon',
+      ],
+      0,
+      'Contact resistance is the long-standing wall. Mobility can be competitive and the gap is fine in the transition-metal dichalcogenides.',
+    ],
+    [
+      'What does the "dark silicon" projection imply for architecture?',
+      [
+        'Specialisation - many accelerators, few active at once',
+        'Core counts must be capped at a fixed number per die',
+        'Clock frequencies must fall proportionally with each node',
+        'Memory must be integrated on-die to reduce power',
+      ],
+      0,
+      'It is the structural argument for heterogeneous SoCs: if you cannot power everything, make each part very good at one thing.',
+    ],
+    [
+      'What is the state of the argument on in-memory or near-memory computing?',
+      [
+        'Analogue crossbar approaches offer large efficiency gains but face precision, drift and programming-cost limits',
+        'They have been shown to outperform digital accelerators across all workloads',
+        'They are limited by lithography rather than by device physics',
+        'They cannot implement matrix multiplication in principle, since a crossbar computes only elementwise products',
+      ],
+      0,
+      'Device non-idealities are the recurring wall: the efficiency case is strong on paper and the write endurance and variability keep eating it.',
+    ],
+    [
+      'What does the UCIe standard attempt to establish?',
+      [
+        'An open die-to-die interconnect specification so chiplets from different vendors can be composed',
+        'A common thermal interface standard for multi-die packages',
+        'A shared test protocol for known-good-die screening, so that assembled packages need no further test',
+        'A uniform process-node naming convention across foundries',
+      ],
+      0,
+      'The technical part is the easier part: an open chiplet market also needs test, liability and business models that do not exist yet.',
+    ],
+    [
+      'What is the physical origin of the resist stochastic limit in EUV?',
+      [
+        'Poisson statistics of absorbed photons combined with the discrete chemistry of acid generation and quenching',
+        'Thermal diffusion of the photoacid during post-exposure bake alone',
+        'Non-uniform illumination across the exposure slit, which leaves a systematic dose gradient along the scan direction',
+        'Mask roughness transferred directly into the resist image',
+      ],
+      0,
+      'Shot noise sets a floor: at a given dose, feature edges have a distribution rather than a position, and defect rates are the tail of that distribution.',
+    ],
+    [
+      'What is the significance of backside power delivery for design methodology?',
+      [
+        'It decouples power and signal routing, changing floorplanning and requiring new EDA support for two-sided nets',
+        'It removes the need for on-chip decoupling capacitance',
+        'It allows supply voltage to be raised without reliability penalty',
+        'It eliminates electromigration concerns entirely, since the power rails no longer share metal layers with signals',
+      ],
+      0,
+      'The tooling lag is the real cost: a process capability nobody can design for is not a capability yet.',
+    ],
+    [
+      'What does the "more than Moore" framing propose?',
+      [
+        'Value comes increasingly from heterogeneous integration and function diversification rather than from geometric scaling',
+        'Scaling continues but with new materials rather than new lithography',
+        'Quantum computing supersedes classical scaling entirely, so continued investment in silicon process nodes is misdirected effort',
+        'Software optimisation replaces hardware advance as the source of performance',
+      ],
+      0,
+      'Sensors, RF and packaging as first-class contributors. It is a statement about where value moves once one exponential slows.',
+    ],
+    [
+      'Why is thermal management the binding constraint for 3D-stacked logic?',
+      [
+        'Power density multiplies while the heat-removal path lengthens through intervening dies',
+        'Through-silicon vias cannot carry sufficient current',
+        'Bonding processes cannot survive operating temperatures',
+        'Stacked dies cannot be tested after assembly, so a single bad layer condemns the whole stack',
+      ],
+      0,
+      'It is why memory-on-logic stacking arrived first: DRAM has far lower power density than logic, so the same geometry is much less punishing.',
+    ],
+    [
+      'What does the economics of a leading-edge fab imply for the industry structure?',
+      [
+        'Capital intensity and yield learning curves push toward very few leading-edge manufacturers',
+        'Costs favour many small specialised fabs over few large ones',
+        'Equipment costs have fallen enough to lower entry barriers',
+        'Fab economics are dominated by labour rather than capital, which is why cost follows local wage levels',
+      ],
+      0,
+      'Tens of billions per fab against a learning curve that rewards volume: the concentration is a consequence of the cost structure, not a policy choice.',
+    ],
+  ],
+};
+
+export const MORE_SOFTWARE: CategoryContent = {
+  graduate: [
+    [
+      'What does structural sharing enable in a persistent data structure?',
+      [
+        'New versions reuse unchanged subtrees',
+        'Concurrent readers avoid locks by copying the whole structure',
+        'Old versions are garbage collected automatically on update',
+        'Updates are applied lazily and batched until read',
+      ],
+      0,
+      'It is what makes immutable maps and vectors practical rather than merely principled.',
+    ],
+    [
+      'What is the difference between an interface and an abstract class, in languages with both?',
+      [
+        'An interface specifies a contract without state; an abstract class may carry state and implementation',
+        'An interface can be instantiated and an abstract class cannot, which is the reverse of the usual restriction',
+        'An interface supports single inheritance and an abstract class multiple',
+        'An interface is checked at run time and an abstract class at compile time',
+      ],
+      0,
+      'Default methods on interfaces blurred this considerably, which is why the diamond problem came back with them.',
+    ],
+    [
+      'What does "tail call optimisation" require of a call?',
+      [
+        'That the call is the last action of the function, so its frame can replace rather than extend the caller\'s',
+        'That the function is not recursive, since a recursive call must always leave a frame behind for its return value',
+        'That all arguments are passed by value',
+        'That the return type is known statically',
+      ],
+      0,
+      'Without it, recursion in a functional style exhausts the stack, which is why some languages guarantee it and others cannot.',
+    ],
+    [
+      'What is a race condition, precisely?',
+      [
+        'Program behaviour depending on the unsynchronised relative timing of concurrent operations',
+        'Two threads competing for the same lock, so one of them must wait until the other releases it',
+        'A deadlock arising from lock acquisition in different orders',
+        'A performance degradation caused by cache line contention',
+      ],
+      0,
+      'Lock contention and false sharing are performance problems; a race is a correctness one, and the distinction gets lost constantly.',
+    ],
+    [
+      'What does dependency injection actually achieve?',
+      [
+        'Dependencies are supplied from outside rather than constructed internally, so they can be substituted',
+        'Circular dependencies between modules are resolved automatically',
+        'Object lifetimes are managed by a container rather than by the program',
+        'Interfaces are generated automatically from concrete classes, so no abstraction has to be written by hand',
+      ],
+      0,
+      'Container-managed lifetimes are a common accompaniment, not the point - the point is testability and substitution.',
+    ],
+    [
+      'What does a "pure function" guarantee?',
+      [
+        'Its result depends only on its arguments, and it produces no observable side effects',
+        'It never throws an exception',
+        'It always terminates, so it can safely be evaluated eagerly without any risk of divergence',
+        'It can be evaluated in constant time',
+      ],
+      0,
+      'Termination is a separate property - totality - and a pure function can loop forever quite legitimately.',
+    ],
+    [
+      'What is the purpose of a bloom filter in a storage engine?',
+      [
+        'Avoiding disk reads for keys that are definitely absent from a file',
+        'Compressing the key index to fit in memory exactly',
+        'Ordering keys for efficient range scans',
+        'Detecting corruption in stored blocks',
+      ],
+      0,
+      'A false positive costs one unnecessary read; a false negative would be a correctness bug, which is why the asymmetry matters.',
+    ],
+    [
+      'What does semantic versioning\'s major version increment signal?',
+      [
+        'A backwards-incompatible change to the public API',
+        'A substantial addition of new functionality',
+        'A change in the internal implementation with no API effect',
+        'A change requiring recompilation but not source modification',
+      ],
+      0,
+      'It is a social contract rather than an enforced property, which is why tooling that checks it mechanically is so valuable.',
+    ],
+    [
+      'What is the difference between concurrency and parallelism?',
+      [
+        'Concurrency is about structuring independent tasks; parallelism is about executing them simultaneously',
+        'Concurrency requires multiple cores and parallelism does not',
+        'Concurrency applies to I/O and parallelism to computation, so the two never appear in the same program',
+        'They are the same property described at different abstraction levels',
+      ],
+      0,
+      'Pike\'s formulation. A single-core machine can be concurrent, and a data-parallel loop need not be concurrent in any interesting sense.',
+    ],
+    [
+      'What does a type system\'s "soundness" mean?',
+      [
+        'Well-typed programs cannot exhibit the class of errors the type system is designed to exclude',
+        'Every program that runs correctly can be typed, so the checker never rejects a working program',
+        'Type inference always terminates with a principal type',
+        'Types are erased at run time without changing semantics',
+      ],
+      0,
+      'The converse - every correct program is typeable - is completeness, and no useful type system has both.',
+    ],
+  ],
+  phd: [
+    [
+      'What does Hindley-Milner type inference give up to remain decidable?',
+      [
+        'Higher-rank polymorphism - quantifiers may only appear at the outermost level',
+        'Parametric polymorphism entirely',
+        'Type classes and any form of overloading',
+        'Recursive types of any kind, which must instead be introduced by explicit fixed-point operators',
+      ],
+      0,
+      'Let-polymorphism at the top level is what stays decidable; rank-2 inference is decidable but impractical, and rank-N is not.',
+    ],
+    [
+      'What is the significance of "linear types"?',
+      [
+        'A value must be used exactly once',
+        'Types are ordered so subtyping forms a linear chain',
+        'Type checking runs in time linear in program size',
+        'Values may be used at most once, so leaks are prevented',
+      ],
+      0,
+      'Exactly-once versus at-most-once is the distinction between linear and affine, and Rust\'s ownership is closest to the affine reading.',
+    ],
+    [
+      'What does "separation logic" add to Hoare logic?',
+      [
+        'A separating conjunction letting assertions describe disjoint heap regions, so local reasoning composes',
+        'A treatment of concurrency through interleaving semantics',
+        'A weakest-precondition calculus for imperative programs, replacing the forward reasoning of the original rules',
+        'A method for proving termination of recursive procedures',
+      ],
+      0,
+      'Reynolds and O\'Hearn. The frame rule is the payoff: you can verify a function without mentioning the rest of the heap.',
+    ],
+    [
+      'What is the "expression problem" solution offered by object algebras?',
+      [
+        'Encoding cases as interface methods',
+        'Using pattern matching on sealed types with exhaustiveness checking',
+        'Reflecting over the type hierarchy at run time',
+        'Generating boilerplate visitor code from a schema',
+      ],
+      0,
+      'Oliveira and Cook. Final tagless encodings are the closely related functional formulation of the same trick.',
+    ],
+    [
+      'What does the ABA problem in lock-free programming describe?',
+      [
+        'A compare-and-swap succeeding because a value returned to its original after intermediate changes',
+        'Two threads swapping values concurrently and corrupting both, because neither swap is atomic on its own',
+        'A retry loop that never makes progress under contention',
+        'An access that violates the memory model\'s ordering rules',
+      ],
+      0,
+      'Version-tagged pointers and hazard pointers are the standard defences, and it is why naive lock-free stacks are subtly wrong.',
+    ],
+    [
+      'What is the essential difficulty in verifying weak memory concurrency?',
+      [
+        'Hardware and language models permit reorderings',
+        'Concurrent programs have too many interleavings to enumerate',
+        'Memory models are unspecified for all real hardware',
+        'Compilers reorder only in the presence of undefined behaviour',
+      ],
+      0,
+      'C11 and the promising-semantics line of work exist because sequential consistency is not what the machine gives you.',
+    ],
+    [
+      'What does "property-based testing" contribute over example-based testing?',
+      [
+        'Invariants checked against generated inputs',
+        'Exhaustive verification for all inputs within a bounded domain',
+        'Formal proof of the properties asserted',
+        'Coverage-guided exploration of program paths',
+      ],
+      0,
+      'QuickCheck. Shrinking is the underrated part: a random failure is nearly useless and a minimal one is a bug report.',
+    ],
+    [
+      'What is the difference between a monad transformer stack and a free monad interpretation?',
+      [
+        'A transformer stack fixes the effect interpretation in the types; a free monad defers it to an interpreter',
+        'Free monads cannot express state at all, since their interpreters are necessarily pure and stateless by construction',
+        'Transformer stacks require higher-kinded types and free monads do not',
+        'Free monads are strictly more performant',
+      ],
+      0,
+      'Deferring interpretation is what makes free-monad programs testable by swapping interpreters; the cost is usually performance.',
+    ],
+    [
+      'What does the Byzantine generals result establish for practical systems?',
+      [
+        'Agreement requires more than two-thirds correct participants when faults may be arbitrary',
+        'Agreement is impossible with any faulty participant',
+        'Agreement requires synchronous message delivery, with a known bound on both transmission and processing time',
+        'Agreement requires digital signatures in all cases',
+      ],
+      0,
+      'The three-f-plus-one bound. Signatures change the bound in the authenticated setting, which is exactly why the unauthenticated result is stated separately.',
+    ],
+    [
+      'What is "region-based memory management"?',
+      [
+        'Allocating objects into regions deallocated wholesale',
+        'Reference counting applied per allocation arena',
+        'Generational garbage collection with per-generation heaps',
+        'Manual allocation with compiler-checked free calls',
+      ],
+      0,
+      'Tofte and Talpin. It is the intellectual ancestor of arena allocation and, further downstream, of lifetime analysis in ownership systems.',
+    ],
+  ],
+  professor: [
+    [
+      'What does the "propositions as types" correspondence break down over for classical logic?',
+      [
+        'Excluded middle has no direct computational content, requiring continuations or control operators to interpret',
+        'Implication cannot be modelled as a function type once negation is admitted into the propositional fragment at all',
+        'Conjunction and disjunction are not dual in type theory',
+        'Quantifiers cannot be represented without dependent types',
+      ],
+      0,
+      'Griffin\'s observation connects classical reasoning to call/cc, which turned a philosophical mismatch into a programming construct.',
+    ],
+    [
+      'What is the significance of "cubical type theory"?',
+      [
+        'It gives computational content to univalence',
+        'It eliminates the need for dependent types',
+        'It provides a decidable equality for all inductive types',
+        'It replaces intensional with extensional equality throughout',
+      ],
+      0,
+      'Univalence as an axiom breaks canonicity; the cubical models restore computation, which is what makes it more than a foundational curiosity.',
+    ],
+    [
+      'What does the CAP-adjacent "CALM" theorem establish?',
+      [
+        'A distributed program can be coordination-free exactly when it is monotone',
+        'Consistency and availability can both be achieved under partition for monotone programs',
+        'Any eventually consistent program can be made linearisable',
+        'Coordination is required for all programs with more than one writer',
+      ],
+      0,
+      'Hellerstein and Alvaro. It converts "do I need coordination?" from folklore into a checkable property of the logic.',
+    ],
+    [
+      'What does "gradual typing" have to solve to be sound?',
+      [
+        'Boundaries between typed and untyped code need run-time checks, and blame assignment when they fail',
+        'Type inference must succeed on the untyped portion',
+        'Dynamic types must be erased before execution, so no run-time representation of them survives into the compiled program',
+        'The untyped fragment must be restricted to a decidable subset',
+      ],
+      0,
+      'Takikawa et al. showed the performance cost can be catastrophic, which is why several systems chose unsound erasure instead.',
+    ],
+    [
+      'What does the "concurrent revisions" or "mergeable replicated data types" line of work add over CRDTs?',
+      [
+        'Merge functions derived from type structure and a common ancestor, giving three-way rather than two-way merge semantics',
+        'Strong consistency without coordination, achieved by making every operation commute regardless of the order it arrives in',
+        'Automatic conflict resolution requiring no application semantics',
+        'Elimination of the need for causal delivery',
+      ],
+      0,
+      'Using the ancestor state is what lets a merge distinguish "changed" from "was always this", which is exactly what a join-semilattice cannot see.',
+    ],
+    [
+      'What is the fundamental limit of gradual verification approaches like refinement types?',
+      [
+        'Discharging obligations relies on decidable theories',
+        'Refinement types cannot express arithmetic properties',
+        'They cannot be combined with polymorphism',
+        'They require whole-program analysis in all cases',
+      ],
+      0,
+      'SMT solvers are what make Liquid Haskell and F-star practical, and the boundary of the supported theories is the boundary of the automation.',
+    ],
+    [
+      'What does research on "algebraic effects" identify as the hard semantic problem?',
+      [
+        'Interaction between handlers',
+        'Effects cannot be typed without dependent types',
+        'Handlers cannot be compiled without continuations',
+        'Effect polymorphism is undecidable',
+      ],
+      0,
+      'The same difficulty monad transformers make explicit as stacking order; algebraic effects hide the ordering rather than removing the question.',
+    ],
+    [
+      'What does "deterministic parallelism" as in Concurrent Revisions or LVars guarantee?',
+      [
+        'The same result regardless of scheduling, achieved by restricting to monotone reads and lattice-valued state',
+        'That parallel execution is always faster than sequential',
+        'That no two threads ever access the same location',
+        'That deadlock is impossible by construction, since no thread ever waits on a resource held by any other thread at all',
+      ],
+      0,
+      'Threshold reads are the trick: you may only observe that a value has passed some point in the lattice, never its current partial state.',
+    ],
+    [
+      'What is the significance of "Reflections on Trusting Trust" for verified toolchains?',
+      [
+        'A compromised compiler can reproduce its own backdoor invisibly',
+        'Compilers cannot be formally verified in principle',
+        'Bootstrapping a compiler requires an existing binary of the same compiler',
+        'Optimising compilers necessarily introduce security vulnerabilities',
+      ],
+      0,
+      'Thompson, 1984. Diverse double-compiling is the practical response, and reproducible builds are the industrialised version of it.',
+    ],
+    [
+      'What does CompCert demonstrate, and what does it not?',
+      [
+        'A machine-checked semantics-preserving compiler is achievable',
+        'That all compilers can be verified with modest effort',
+        'That optimisation and verification are mutually exclusive',
+        'That verified compilers require an interpreted intermediate language',
+      ],
+      0,
+      'Yang et al.\'s fuzzing found bugs in every mainstream compiler and essentially none in CompCert\'s verified passes - the residual risk moved rather than vanished.',
+    ],
+  ],
+};
