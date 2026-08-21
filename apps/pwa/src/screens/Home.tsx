@@ -9,10 +9,14 @@ import { Screen } from '../ui/atoms.jsx';
 export function Home(): ReactNode {
   const identity = useApp((s) => s.identity);
   const rename = useApp((s) => s.rename);
+  const deviceLabel = useApp((s) => s.deviceLabel);
+  const renameDevice = useApp((s) => s.renameDevice);
   const resume = useApp((s) => s.resume);
   const [resumable, setResumable] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [draftName, setDraftName] = useState('');
+  const [editingDevice, setEditingDevice] = useState(false);
+  const [draftDevice, setDraftDevice] = useState('');
 
   useEffect(() => {
     // Probe once, without joining: a stale "continue" button that does nothing
@@ -74,9 +78,43 @@ export function Home(): ReactNode {
               <span className="text-xs text-muted underline">edit</span>
             </button>
           )}
-          <p className="mt-1 font-mono text-xs text-muted">
-            device {shortenId(identity.id, 8)}
-          </p>
+          {editingDevice ? (
+            <div className="mt-1 flex items-center gap-2">
+              <Input
+                value={draftDevice}
+                onChange={(event) => setDraftDevice(event.target.value)}
+                placeholder="e.g. My phone"
+                aria-label="Device label"
+                maxLength={24}
+                autoFocus
+                fullWidth
+              />
+              <Button
+                variant="primary"
+                size="sm"
+                onPress={() => {
+                  renameDevice(draftDevice);
+                  setEditingDevice(false);
+                }}
+              >
+                Save
+              </Button>
+            </div>
+          ) : (
+            <button
+              type="button"
+              className="mt-1 flex items-center gap-2 text-left"
+              onClick={() => {
+                setDraftDevice(deviceLabel ?? '');
+                setEditingDevice(true);
+              }}
+            >
+              <p className="font-mono text-xs text-muted">
+                device {deviceLabel ?? shortenId(identity.id, 8)}
+              </p>
+              <span className="text-xs text-muted underline">rename</span>
+            </button>
+          )}
         </div>
 
         <div className="flex flex-col gap-3">

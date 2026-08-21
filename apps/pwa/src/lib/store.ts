@@ -44,6 +44,15 @@ import { navigate } from './router.js';
 
 const store = webStore(globalThis.localStorage ?? { getItem: () => null, setItem: () => undefined, removeItem: () => undefined });
 const LAST_GAME_KEY = 'dohhh.lastGame.v1';
+/**
+ * Purely local, purely cosmetic: a label for *this device*, distinct from
+ * the player's username. The hash (identity.id) is what every signature and
+ * team membership actually resolves to and never changes - this just gives
+ * a human something friendlier to look at than a hash when they own more
+ * than one device. Never touches the engine, never leaves this device,
+ * never rides in an event.
+ */
+const DEVICE_LABEL_KEY = 'dohhh.deviceLabel.v1';
 
 interface LastGame {
   readonly gameId: GameId;
@@ -57,9 +66,12 @@ export interface AppState {
   /** Non-null while a network operation is in flight, with a message to show. */
   readonly busy: string | null;
   readonly error: string | null;
+  /** A friendly stand-in for the device hash, set locally, shown nowhere else. */
+  readonly deviceLabel: string | null;
 
   signUp: (username: string) => void;
   rename: (username: string) => void;
+  renameDevice: (label: string) => void;
   host: (name: string, rules: Partial<RulesConfig>) => void;
   joinByCode: (code: string) => Promise<void>;
   joinByTicket: (ticket: JoinTicket) => Promise<void>;
@@ -154,6 +166,7 @@ export const useApp = create<AppState>((set, get) => {
     snapshot: null,
     busy: null,
     error: null,
+    deviceLabel: store.get(DEVICE_LABEL_KEY),
 
     signUp: (username) => {
       const identity = createIdentity(username);
@@ -168,6 +181,17 @@ export const useApp = create<AppState>((set, get) => {
       const identity = withUsername(current, username);
       saveIdentity(store, identity);
       set({ identity });
+    },
+
+    renameDevice: (label) => {
+      const trimmed = label.trim().slice(0, 24);
+      if (trimmed.length === 0) {
+        store.remove(DEVICE_LABEL_KEY);
+        set({ deviceLabel: null });
+        return;
+      }
+      store.set(DEVICE_LABEL_KEY, trimmed);
+      set({ deviceLabel: trimmed });
     },
 
     host: (name, rules) => {
