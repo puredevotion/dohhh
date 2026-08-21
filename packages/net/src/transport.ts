@@ -25,32 +25,26 @@ export const APP_ID = 'dohhh-mesh-v1';
  * most cellular carriers, or players split across different networks
  * entirely (one on Wi-Fi, one on 5G). WebRTC only uses this path when direct
  * and STUN-assisted connection attempts fail, so it costs nothing on a
- * shared network. Two independent free-tier providers, listed together so a
- * browser tries both rather than depending on either one's uptime alone -
- * neither pair is a secret, since a browser-only app has nowhere to keep one
- * and this ships in the client bundle either way.
+ * shared network. Two independent free-tier providers, so a browser tries
+ * both rather than depending on either one's uptime alone - neither pair is
+ * a secret, since a browser-only app has nowhere to keep one and this ships
+ * in the client bundle either way.
+ *
+ * Firefox warns - and measurably slows ICE gathering - once a config holds
+ * five or more urls in total. Trystero's own peer.mjs unconditionally
+ * prepends four default public STUN servers to whatever `turnConfig` holds
+ * (`defaultIceServers.concat(turnConfig ?? [])`), so passing TURN servers via
+ * `turnConfig` guarantees crossing that threshold the moment there's even one
+ * TURN url - reducing this list's own url count never touched the real
+ * cause. Passing a complete `iceServers` list via `rtcConfig` instead avoids
+ * that merge entirely (object spread means `rtcConfig` wins), trading the
+ * four defaults for one STUN entry plus one url per TURN provider - a UDP
+ * primary from one, a TCP/TLS fallback from the other, so restrictive
+ * networks that block one transport still have a path through the other.
  */
-const TURN_SERVERS = [
-  {
-    urls: 'turn:free.expressturn.com:3478',
-    username: '000000002102686914',
-    credential: '3IKoQJiNR4nqwoGkzwjscX68lC4=',
-  },
-  {
-    urls: 'turn:free.expressturn.com:3478?transport=tcp',
-    username: '000000002102686914',
-    credential: '3IKoQJiNR4nqwoGkzwjscX68lC4=',
-  },
-  {
-    urls: 'turn:global.relay.metered.ca:80',
-    username: '5c0e0a6595f967157b857768',
-    credential: 'ssGPvnFuhAjmbsED',
-  },
-  {
-    urls: 'turn:global.relay.metered.ca:443',
-    username: '5c0e0a6595f967157b857768',
-    credential: 'ssGPvnFuhAjmbsED',
-  },
+const ICE_SERVERS: { urls: string; username?: string; credential?: string }[] = [
+  { urls: 'stun:stun.cloudflare.com:3478' },
+  { urls: 'turn:free.expressturn.com:3478', username: '000000002102686914', credential: '3IKoQJiNR4nqwoGkzwjscX68lC4=' },
   {
     urls: 'turns:global.relay.metered.ca:443?transport=tcp',
     username: '5c0e0a6595f967157b857768',
@@ -113,7 +107,7 @@ export function createTransport(options: TransportOptions): Transport {
       {
         appId: APP_ID,
         relayConfig: { urls: RELAY_URLS },
-        turnConfig: TURN_SERVERS,
+        rtcConfig: { iceServers: ICE_SERVERS },
         ...(options.password === undefined ? {} : { password: options.password }),
       },
       options.roomId,
