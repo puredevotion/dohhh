@@ -8,6 +8,7 @@ import {
   drawTurn,
   EventLog,
   joinTeam as joinTeamEvent,
+  leaveTeam as leaveTeamEvent,
   newTeamId,
   openTeam,
   SEED_PACK,
@@ -66,6 +67,7 @@ export interface AppState {
 
   addTeam: (name: string) => void;
   sitWith: (teamId: TeamId) => void;
+  leaveCurrentTeam: (teamId: TeamId) => void;
   begin: () => void;
   deal: () => void;
   bet: (difficulty: Difficulty) => void;
@@ -290,6 +292,12 @@ export const useApp = create<AppState>((set, get) => {
       const { session, identity } = get();
       if (session === null || identity === null) return;
       session.commit(joinTeamEvent(session.log, identity, teamId));
+    },
+
+    leaveCurrentTeam: (teamId) => {
+      const { session, identity } = get();
+      if (session === null || identity === null) return;
+      session.commit(leaveTeamEvent(session.log, identity, teamId));
     },
 
     begin: () => commit((session, identity) => startGame(session.log, identity)),

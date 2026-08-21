@@ -22,6 +22,7 @@ export function Lobby(): ReactNode {
   const identity = useApp((s) => s.identity);
   const addTeam = useApp((s) => s.addTeam);
   const sitWith = useApp((s) => s.sitWith);
+  const leaveCurrentTeam = useApp((s) => s.leaveCurrentTeam);
   const begin = useApp((s) => s.begin);
   const leave = useApp((s) => s.leave);
   const [teamName, setTeamName] = useState('');
@@ -100,7 +101,7 @@ export function Lobby(): ReactNode {
         <Card.Header>
           <Card.Title>Teams</Card.Title>
           <Card.Description>
-            Any number per team. Tap a team to sit with them.
+            Any number per team. Join one, or switch - joining another moves you off the last one.
           </Card.Description>
         </Card.Header>
         <Card.Content className="flex flex-col gap-3">
@@ -110,23 +111,28 @@ export function Lobby(): ReactNode {
           {state.teams.map((team) => {
             const mine = team.id === myTeam?.id;
             return (
-              <button
+              <div
                 key={team.id}
-                type="button"
-                onClick={() => sitWith(team.id)}
-                className={`rounded-xl border px-4 py-3 text-left transition ${
-                  mine
-                    ? 'border-primary/70 bg-primary/10'
-                    : 'border-default-200/40 hover:border-default-300/60'
+                className={`rounded-xl border px-4 py-3 ${
+                  mine ? 'border-primary/70 bg-primary/10' : 'border-default-200/40'
                 }`}
               >
                 <div className="flex items-center justify-between gap-3">
                   <span className="font-medium">{team.name}</span>
-                  {mine && (
-                    <Chip color="success" variant="soft" size="sm">
-                      You
-                    </Chip>
-                  )}
+                  <div className="flex items-center gap-2">
+                    {mine && (
+                      <Chip color="success" variant="soft" size="sm">
+                        You
+                      </Chip>
+                    )}
+                    <Button
+                      variant={mine ? 'ghost' : 'secondary'}
+                      size="sm"
+                      onPress={() => (mine ? leaveCurrentTeam(team.id) : sitWith(team.id))}
+                    >
+                      {mine ? 'Leave' : 'Join'}
+                    </Button>
+                  </div>
                 </div>
                 <div className="mt-1.5 flex flex-col gap-0.5 text-sm text-muted">
                   {team.memberIds.length === 0 ? (
@@ -141,7 +147,7 @@ export function Lobby(): ReactNode {
                     ))
                   )}
                 </div>
-              </button>
+              </div>
             );
           })}
 
