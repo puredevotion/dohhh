@@ -167,7 +167,7 @@ function Row({
   tierInfo,
 }: {
   tier: 'graduate' | 'phd' | 'professor';
-  tierInfo: { label: string; blurb: string; award: number; penalty: number };
+  tierInfo: { label: string; award: number; penalty: number };
 }): ReactNode {
   const colour = {
     graduate: 'text-tier-graduate',
@@ -175,16 +175,13 @@ function Row({
     professor: 'text-tier-professor',
   }[tier];
   return (
-    <div className="flex flex-col">
-      <div className="flex items-baseline justify-between gap-3">
-        <span className={colour}>{tierInfo.label}</span>
-        <span className="font-mono text-sm tabular-nums">
-          <span className="text-success">+{tierInfo.award}</span>
-          <span className="text-muted"> / </span>
-          <span className="text-danger-text">{tierInfo.penalty}</span>
-        </span>
-      </div>
-      <span className="text-xs text-muted">{tierInfo.blurb}</span>
+    <div className="flex items-baseline justify-between gap-3">
+      <span className={colour}>{tierInfo.label}</span>
+      <span className="font-mono text-sm tabular-nums">
+        <span className="text-success">+{tierInfo.award}</span>
+        <span className="text-muted"> / </span>
+        <span className="text-danger-text">{tierInfo.penalty}</span>
+      </span>
     </div>
   );
 }

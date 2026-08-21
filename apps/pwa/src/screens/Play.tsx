@@ -346,8 +346,7 @@ function ChooseTier({
                     <span className="text-danger-text">{tier.penalty}</span>
                   </span>
                 </div>
-                <p className="mt-1 text-xs text-muted">{tier.blurb}</p>
-                <p className="mt-0.5 text-xs text-muted">
+                <p className="mt-1 text-xs text-muted">
                   {tier.timeoutMs / 1000} seconds to answer
                 </p>
               </button>
