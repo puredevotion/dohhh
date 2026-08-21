@@ -11,12 +11,52 @@ import type { Room } from 'trystero/nostr';
  * byte of game traffic is a direct peer connection.
  *
  * The limits of that, stated rather than buried (R-15, R-19):
- *  - STUN-only means symmetric NAT and some carrier networks will fail. The
- *    in-the-room, shared-Wi-Fi case is the target and works.
+ *  - STUN-only would leave symmetric NAT and most carrier networks unable to
+ *    connect at all, so a TURN relay is configured below as a fallback path
+ *    for exactly that case - the in-the-room, shared-Wi-Fi case still
+ *    connects directly and never touches it.
  *  - The mesh is O(n^2). Tested to 8 devices. Above ~10 the lobby warns.
  */
 
 export const APP_ID = 'dohhh-mesh-v1';
+
+/**
+ * Fallback relay for when direct P2P can't be established - symmetric NAT,
+ * most cellular carriers, or players split across different networks
+ * entirely (one on Wi-Fi, one on 5G). WebRTC only uses this path when direct
+ * and STUN-assisted connection attempts fail, so it costs nothing on a
+ * shared network. Two independent free-tier providers, listed together so a
+ * browser tries both rather than depending on either one's uptime alone -
+ * neither pair is a secret, since a browser-only app has nowhere to keep one
+ * and this ships in the client bundle either way.
+ */
+const TURN_SERVERS = [
+  {
+    urls: 'turn:free.expressturn.com:3478',
+    username: '000000002102686914',
+    credential: '3IKoQJiNR4nqwoGkzwjscX68lC4=',
+  },
+  {
+    urls: 'turn:free.expressturn.com:3478?transport=tcp',
+    username: '000000002102686914',
+    credential: '3IKoQJiNR4nqwoGkzwjscX68lC4=',
+  },
+  {
+    urls: 'turn:global.relay.metered.ca:80',
+    username: '5c0e0a6595f967157b857768',
+    credential: 'ssGPvnFuhAjmbsED',
+  },
+  {
+    urls: 'turn:global.relay.metered.ca:443',
+    username: '5c0e0a6595f967157b857768',
+    credential: 'ssGPvnFuhAjmbsED',
+  },
+  {
+    urls: 'turns:global.relay.metered.ca:443?transport=tcp',
+    username: '5c0e0a6595f967157b857768',
+    credential: 'ssGPvnFuhAjmbsED',
+  },
+];
 
 /**
  * Trystero derives a "random" 5-relay subset from APP_ID, but that derivation
@@ -73,6 +113,7 @@ export function createTransport(options: TransportOptions): Transport {
       {
         appId: APP_ID,
         relayConfig: { urls: RELAY_URLS },
+        turnConfig: TURN_SERVERS,
         ...(options.password === undefined ? {} : { password: options.password }),
       },
       options.roomId,

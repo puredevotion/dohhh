@@ -121,8 +121,12 @@ hand over a directory:
 - **Deploy before, not during.** The service worker is `autoUpdate`, so a
   redeploy mid-game leaves devices on different question packs, and the protocol
   refuses mismatched packs at the door by design.
-- **One Wi-Fi is much more reliable.** There is no TURN server, so anything
-  behind carrier NAT may never connect; the lobby says so after fifteen seconds.
+- **Same Wi-Fi is still preferred, but mixed networks now work.** A free-tier
+  TURN relay is configured as a fallback for symmetric NAT, carrier networks,
+  and players split across different networks (one on Wi-Fi, one on 5G); it's
+  only used when a direct connection fails, so same-Wi-Fi games never touch
+  it. If the lobby stalls for two minutes with nobody arriving, check the code
+  and the TURN relay's own uptime before assuming the network is the problem.
 
 ## How a game works
 
@@ -159,13 +163,19 @@ reasoning for each is in the review.
 ## What "no central server" means here
 
 No server we run, no accounts, no matchmaking, no telemetry, and no copy of a
-game anywhere but on the players' devices. All game traffic is direct WebRTC.
+game anywhere but on the players' devices. All game traffic is direct WebRTC
+whenever a direct path exists.
 
 WebRTC still cannot introduce two devices unaided, so peer discovery rides public
 Nostr relays carrying ICE candidates only, on a topic that is a hash of the join
-code rather than the code itself. Without TURN, some networks - carrier NAT
-especially - will not connect at all; the app says so after fifteen seconds
-instead of spinning. Details and the rest of the trade in
+code rather than the code itself. A free-tier TURN relay is configured as a
+fallback for the cases direct connection can't reach - symmetric NAT, carrier
+networks, players split across different networks entirely - used only when
+STUN-assisted direct connection fails; it is the one exception to "nothing but
+the players' devices carries game traffic," and it carries only opaque, already
+end-to-end-encrypted WebRTC packets, never plaintext game state. If nobody
+still arrives after two minutes, the app says so instead of spinning. Details
+and the rest of the trade in
 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 ## Tests
