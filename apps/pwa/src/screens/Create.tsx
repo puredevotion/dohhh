@@ -69,7 +69,7 @@ export function Create(): ReactNode {
             fullWidth
           />
           {!targetOk && (
-            <p className="mt-2 text-xs text-danger-600">Pick a number between 5 and 1000.</p>
+            <p className="mt-2 text-xs text-danger-text">Pick a number between 5 and 1000.</p>
           )}
         </Card.Content>
       </Card>
@@ -83,7 +83,7 @@ export function Create(): ReactNode {
           <Switch isSelected={capStreak} onChange={setCapStreak}>
             <div className="flex flex-col">
               <span className="text-sm font-medium">Pass the turn after 3 in a row</span>
-              <span className="text-xs text-default-600">
+              <span className="text-xs text-muted">
                 Without this, a team that keeps answering correctly keeps the turn forever - which
                 can mean one team plays the whole game while everyone watches.
               </span>
@@ -92,7 +92,7 @@ export function Create(): ReactNode {
           <Switch isSelected={floorScore} onChange={setFloorScore}>
             <div className="flex flex-col">
               <span className="text-sm font-medium">Never go below zero</span>
-              <span className="text-xs text-default-600">
+              <span className="text-xs text-muted">
                 Kinder, but it makes the professor-level question a free bet, which is the whole
                 tension gone.
               </span>

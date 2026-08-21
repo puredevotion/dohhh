@@ -28,7 +28,7 @@ export function UpdatePrompt(): ReactNode {
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 flex items-center justify-between gap-3 border-t border-default-200/40 bg-default-100 px-4 py-3 text-sm shadow-lg">
-      <span className="text-default-700">
+      <span className="text-default-foreground">
         A newer version is ready. Everyone should update before you start.
       </span>
       <button

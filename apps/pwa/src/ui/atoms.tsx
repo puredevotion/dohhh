@@ -26,7 +26,7 @@ export function Screen({
               </Typography.Heading>
             )}
             {subtitle !== undefined && (
-              <Typography.Paragraph className="mt-1 text-sm text-default-600">
+              <Typography.Paragraph className="mt-1 text-sm text-muted">
                 {subtitle}
               </Typography.Paragraph>
             )}
@@ -109,7 +109,7 @@ export function PlayerTag({ id, username }: { id: string; username: string }): R
   return (
     <span className="inline-flex items-baseline gap-1.5">
       <span className="truncate font-medium">{username}</span>
-      <span className="font-mono text-[0.65rem] text-default-500">{shortenId(id)}</span>
+      <span className="font-mono text-[0.65rem] text-muted">{shortenId(id)}</span>
     </span>
   );
 }
@@ -122,11 +122,23 @@ export function Notice({
   children: ReactNode;
 }): ReactNode {
   const classes = {
-    info: 'border-default-300/50 bg-default-100/50 text-default-700',
-    warn: 'border-warning/40 bg-warning/10 text-warning-700',
-    danger: 'border-danger/40 bg-danger/10 text-danger-700',
+    info: 'border-default-300/50 bg-default-100/50 text-default-foreground',
+    warn: 'border-warning/40 bg-warning/10 text-warning',
+    danger: 'border-danger/40 bg-danger/10 text-danger-text',
   }[tone];
-  return <div className={`rounded-xl border px-4 py-3 text-sm ${classes}`}>{children}</div>;
+  // A notice that appears after the fact (a refused join, a stalled lobby)
+  // is silent to a screen reader unless something marks it as a status
+  // message (WCAG 4.1.3) - danger is assertive because it interrupts what
+  // the player was doing, the rest can wait for a pause in speech.
+  return (
+    <div
+      role={tone === 'danger' ? 'alert' : 'status'}
+      aria-live={tone === 'danger' ? 'assertive' : 'polite'}
+      className={`rounded-xl border px-4 py-3 text-sm ${classes}`}
+    >
+      {children}
+    </div>
+  );
 }
 
 /**

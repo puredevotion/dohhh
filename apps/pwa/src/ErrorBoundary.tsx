@@ -21,7 +21,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode }, { error: E
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-4 p-6 text-center">
         <h1 className="text-lg font-semibold">Something went wrong</h1>
-        <p className="max-w-sm text-sm text-default-600">
+        <p className="max-w-sm text-sm text-muted">
           {this.state.error.message || 'The game hit an error it could not recover from.'}
         </p>
         <button

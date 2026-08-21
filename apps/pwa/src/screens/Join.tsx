@@ -67,7 +67,7 @@ export function Join(): ReactNode {
       {busy !== null && (
         <div className="flex items-center gap-3 rounded-xl border border-default-200/40 px-4 py-3">
           <Spinner size="sm" />
-          <span className="text-sm text-default-700">{busy}</span>
+          <span className="text-sm text-default-foreground">{busy}</span>
         </div>
       )}
 
@@ -141,7 +141,7 @@ function WordField({
   return (
     <div className="flex flex-col gap-1.5">
       <div className="flex items-center gap-2">
-        <span className="w-4 shrink-0 text-center font-mono text-xs text-default-500">
+        <span className="w-4 shrink-0 text-center font-mono text-xs text-muted">
           {position}
         </span>
         <Input

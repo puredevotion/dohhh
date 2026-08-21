@@ -30,7 +30,7 @@ export function Onboarding(): ReactNode {
           <Typography.Heading level={1} className="text-3xl font-semibold tracking-tight">
             Dohhh
           </Typography.Heading>
-          <Typography.Paragraph className="mx-auto mt-3 max-w-xs text-sm text-default-600">
+          <Typography.Paragraph className="mx-auto mt-3 max-w-xs text-sm text-muted">
             Eighteen categories. Three levels of nerve. Fifteen points if you are right about the
             hard one, ten off if you are not - and you choose the level before you see the
             question.
@@ -66,7 +66,7 @@ export function Onboarding(): ReactNode {
           </Card.Content>
         </Card>
 
-        <p className="text-center text-xs text-default-500">
+        <p className="text-center text-xs text-muted">
           Nothing is sent to a server. Your key stays on this device.
         </p>
       </div>

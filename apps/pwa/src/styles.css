@@ -17,6 +17,14 @@
   --color-tier-graduate: oklch(0.72 0.14 250);
   --color-tier-phd: oklch(0.68 0.19 296);
   --color-tier-professor: oklch(0.79 0.16 78);
+
+  /*
+   * HeroUI's bare --danger measures 4.14:1 against this app's background -
+   * under the 4.5:1 WCAG AA floor for normal text. Borders and the 10%-alpha
+   * background wash aren't text, so they keep the original hue; this is only
+   * for actual danger-colored copy (wrong-answer deltas, validation errors).
+   */
+  --color-danger-text: color-mix(in oklab, var(--danger) 78%, white 22%);
 }
 
 :root {

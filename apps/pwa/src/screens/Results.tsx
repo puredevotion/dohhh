@@ -34,7 +34,7 @@ export function Results(): ReactNode {
             }`}
           >
             <span className="flex min-w-0 items-baseline gap-2">
-              <span className="font-mono text-xs text-default-500">{row.rank}</span>
+              <span className="font-mono text-xs text-muted">{row.rank}</span>
               <span className="truncate font-medium">{row.team.name}</span>
               {row.team.id === state.winnerTeamId && (
                 <Chip color="success" variant="soft" size="sm">
@@ -56,13 +56,13 @@ export function Results(): ReactNode {
         <Card.Content className="flex max-h-72 flex-col gap-1.5 overflow-y-auto text-sm">
           {state.history.map((record) => (
             <div key={record.turnIndex} className="flex items-baseline justify-between gap-3">
-              <span className="min-w-0 truncate text-default-600">
+              <span className="min-w-0 truncate text-muted">
                 {state.teams.find((t) => t.id === record.teamId)?.name ?? 'team'} - {record.categoryId}{' '}
-                <span className="text-default-500">({record.difficulty})</span>
+                <span className="text-muted">({record.difficulty})</span>
               </span>
               <span
                 className={`font-mono tabular-nums ${
-                  record.delta > 0 ? 'text-success-600' : 'text-danger-600'
+                  record.delta > 0 ? 'text-success' : 'text-danger-text'
                 }`}
               >
                 {record.delta > 0 ? `+${record.delta}` : record.delta}
@@ -115,7 +115,7 @@ function StreakReport({ state }: { state: GameState }): ReactNode {
             the game watching.
           </Notice>
         ) : (
-          <p className="text-sm text-default-600">
+          <p className="text-sm text-muted">
             The turn moved around, which is what you want.
           </p>
         )}

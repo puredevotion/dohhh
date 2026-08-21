@@ -138,12 +138,21 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
   return (
     <div className="flex flex-col gap-3">
       <div className="relative overflow-hidden rounded-2xl border border-default-200/40 bg-black/60 aspect-square">
-        <video ref={videoRef} className="h-full w-full object-cover" muted playsInline />
+        {/* A live camera feed has nothing for a screen reader to say; the
+            surrounding copy and the "Turn on the camera" button already
+            explain what this is and offer the typed-code alternative. */}
+        <video
+          ref={videoRef}
+          className="h-full w-full object-cover"
+          muted
+          playsInline
+          aria-hidden="true"
+        />
         {state !== 'scanning' && (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center">
             {state === 'idle' && (
               <>
-                <p className="text-sm text-default-600">
+                <p className="text-sm text-muted">
                   Point your camera at the other phone&apos;s code.
                 </p>
                 <Button
@@ -157,9 +166,9 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
                 </Button>
               </>
             )}
-            {state === 'starting' && <p className="text-sm text-default-600">Starting camera...</p>}
+            {state === 'starting' && <p className="text-sm text-muted">Starting camera...</p>}
             {(state === 'denied' || state === 'unsupported') && (
-              <p className="text-sm text-danger-600">
+              <p className="text-sm text-danger-text">
                 {state === 'denied'
                   ? 'Camera permission was refused.'
                   : 'Camera unavailable.'}{' '}

@@ -138,7 +138,7 @@ function Scores({ state, me }: { state: GameState; me: string }): ReactNode {
         </div>
       ))}
       {state.streak > 1 && (
-        <p className="text-center text-xs text-default-600">
+        <p className="text-center text-xs text-muted">
           {state.streak} correct in a row - the turn has not moved.
         </p>
       )}
@@ -191,7 +191,7 @@ function BetweenTurns({
       </Card>
 
       {!canDealNow && isActingPlayer(state, me) && (
-        <p className="text-center text-sm text-default-600">Waiting for your opponents to deal.</p>
+        <p className="text-center text-sm text-muted">Waiting for your opponents to deal.</p>
       )}
     </div>
   );
@@ -212,7 +212,7 @@ function Outcome({ record, state }: { record: TurnRecord; state: GameState }): R
             {record.timedOut ? 'ran out of time' : record.correct ? 'were right' : 'were wrong'}
           </span>
           <span
-            className={`font-mono tabular-nums ${record.delta > 0 ? 'text-success-600' : 'text-danger-600'}`}
+            className={`font-mono tabular-nums ${record.delta > 0 ? 'text-success' : 'text-danger-text'}`}
           >
             {record.delta > 0 ? `+${record.delta}` : record.delta}
           </span>
@@ -220,14 +220,14 @@ function Outcome({ record, state }: { record: TurnRecord; state: GameState }): R
       </Card.Header>
       {question !== undefined && (
         <Card.Content className="flex flex-col gap-2 text-sm">
-          <p className="text-default-700">{question.prompt}</p>
+          <p className="text-default-foreground">{question.prompt}</p>
           {!record.correct && correctText !== undefined && (
             <p>
-              <span className="text-default-600">Answer: </span>
-              <span className="font-medium text-success-700">{correctText}</span>
+              <span className="text-muted">Answer: </span>
+              <span className="font-medium text-success">{correctText}</span>
             </p>
           )}
-          <p className="text-default-600">{question.explanation}</p>
+          <p className="text-muted">{question.explanation}</p>
         </Card.Content>
       )}
     </Card>
@@ -253,7 +253,7 @@ function ChooseTier({
           <Card.Title className="text-2xl">{categoryName}</Card.Title>
         </Card.Header>
         <Card.Content>
-          <p className="text-sm text-default-600">
+          <p className="text-sm text-muted">
             {canChoose
               ? 'How hard do you want it? You are betting before you see the question.'
               : `Waiting for ${
@@ -283,13 +283,13 @@ function ChooseTier({
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="font-medium">{tier.label}</span>
                   <span className="font-mono text-sm tabular-nums">
-                    <span className="text-success-600">+{tier.award}</span>
-                    <span className="text-default-500"> / </span>
-                    <span className="text-danger-600">{tier.penalty}</span>
+                    <span className="text-success">+{tier.award}</span>
+                    <span className="text-muted"> / </span>
+                    <span className="text-danger-text">{tier.penalty}</span>
                   </span>
                 </div>
-                <p className="mt-1 text-xs text-default-600">{tier.blurb}</p>
-                <p className="mt-0.5 text-xs text-default-500">
+                <p className="mt-1 text-xs text-muted">{tier.blurb}</p>
+                <p className="mt-0.5 text-xs text-muted">
                   {tier.timeoutMs / 1000} seconds to answer
                 </p>
               </button>
@@ -341,7 +341,7 @@ function LiveQuestion({
       <div className="flex items-center justify-between gap-3">
         <TierBadge difficulty={difficulty} />
         <span
-          className={`font-mono text-sm tabular-nums ${remaining <= 10_000 ? 'text-danger-600' : 'text-default-600'}`}
+          className={`font-mono text-sm tabular-nums ${remaining <= 10_000 ? 'text-danger-text' : 'text-muted'}`}
         >
           {Math.max(0, Math.ceil(remaining / 1000))}s
         </span>
@@ -365,10 +365,10 @@ function LiveQuestion({
               className={`rounded-xl border px-4 py-3 text-left text-sm transition ${
                 canAnswerNow
                   ? 'border-default-200/50 hover:border-primary/70 hover:bg-primary/10'
-                  : 'cursor-default border-default-200/20 text-default-600'
+                  : 'cursor-default border-default-200/20 text-muted'
               }`}
             >
-              <span className="mr-2 font-mono text-xs text-default-500">
+              <span className="mr-2 font-mono text-xs text-muted">
                 {String.fromCharCode(65 + index)}
               </span>
               {option}
@@ -378,12 +378,12 @@ function LiveQuestion({
       </Card>
 
       {iAmActing && nominatedName !== null && (
-        <p className="text-center text-xs text-default-600">
+        <p className="text-center text-xs text-muted">
           {nominatedName}&apos;s turn to answer for the team - though anyone on it can tap.
         </p>
       )}
       {!iAmActing && (
-        <p className="text-center text-sm text-default-600">
+        <p className="text-center text-sm text-muted">
           Their question. You can see it, so no helping.
         </p>
       )}

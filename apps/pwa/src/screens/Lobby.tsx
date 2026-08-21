@@ -105,7 +105,7 @@ export function Lobby(): ReactNode {
         </Card.Header>
         <Card.Content className="flex flex-col gap-3">
           {state.teams.length === 0 && (
-            <p className="text-sm text-default-600">No teams yet. Make the first one.</p>
+            <p className="text-sm text-muted">No teams yet. Make the first one.</p>
           )}
           {state.teams.map((team) => {
             const mine = team.id === myTeam?.id;
@@ -128,7 +128,7 @@ export function Lobby(): ReactNode {
                     </Chip>
                   )}
                 </div>
-                <div className="mt-1.5 flex flex-col gap-0.5 text-sm text-default-600">
+                <div className="mt-1.5 flex flex-col gap-0.5 text-sm text-muted">
                   {team.memberIds.length === 0 ? (
                     <span className="text-xs italic">empty</span>
                   ) : (
@@ -173,7 +173,7 @@ export function Lobby(): ReactNode {
           <Card.Header>
             <Card.Title className="text-base">Not on a team yet</Card.Title>
           </Card.Header>
-          <Card.Content className="flex flex-col gap-1 text-sm text-default-600">
+          <Card.Content className="flex flex-col gap-1 text-sm text-muted">
             {state.spectatorIds.map((id) => (
               <PlayerTag key={id} id={id} username={state.players[id]?.username ?? 'someone'} />
             ))}
@@ -185,7 +185,7 @@ export function Lobby(): ReactNode {
         <Card.Header>
           <Card.Title className="text-base">This game</Card.Title>
         </Card.Header>
-        <Card.Content className="flex flex-col gap-1 text-sm text-default-600">
+        <Card.Content className="flex flex-col gap-1 text-sm text-muted">
           <Line label="First to" value={`${state.rules.targetScore} points`} />
           <Line
             label="Correct answer"
@@ -206,14 +206,14 @@ export function Lobby(): ReactNode {
         {isHost ? (
           <>
             {!gate.ready && gate.reason !== null && (
-              <p className="text-center text-xs text-default-600">{gate.reason}</p>
+              <p className="text-center text-xs text-muted">{gate.reason}</p>
             )}
             <Button variant="primary" size="lg" fullWidth isDisabled={!gate.ready} onPress={begin}>
               Start the game
             </Button>
           </>
         ) : (
-          <div className="rounded-xl border border-default-200/40 px-4 py-3 text-center text-sm text-default-600">
+          <div className="rounded-xl border border-default-200/40 px-4 py-3 text-center text-sm text-muted">
             {myTeam === undefined
               ? 'Pick a team, then wait for the host.'
               : 'Ready. Waiting for the host to start.'}
@@ -231,7 +231,7 @@ function Line({ label, value }: { label: string; value: string }): ReactNode {
   return (
     <div className="flex items-baseline justify-between gap-3">
       <span>{label}</span>
-      <span className="text-default-800">{value}</span>
+      <span className="text-default-foreground">{value}</span>
     </div>
   );
 }

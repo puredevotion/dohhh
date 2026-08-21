@@ -30,13 +30,13 @@ export function Home(): ReactNode {
     <Screen>
       <div className="flex flex-1 flex-col justify-center gap-6 py-8">
         <div>
-          <Typography.Paragraph className="text-sm text-default-600">
+          <Typography.Paragraph className="text-sm text-muted">
             Signed in as
           </Typography.Paragraph>
           <Typography.Heading level={1} className="text-3xl font-semibold tracking-tight">
             {identity.username}
           </Typography.Heading>
-          <p className="mt-1 font-mono text-xs text-default-500">
+          <p className="mt-1 font-mono text-xs text-muted">
             device {shortenId(identity.id, 8)}
           </p>
         </div>
@@ -71,11 +71,11 @@ export function Home(): ReactNode {
               that. None of them is general knowledge.
             </Card.Description>
           </Card.Header>
-          <Card.Content className="flex flex-col gap-3 text-sm text-default-700">
+          <Card.Content className="flex flex-col gap-3 text-sm text-default-foreground">
             {DIFFICULTY_ORDER.map((difficulty) => (
               <Row key={difficulty} tier={difficulty} tierInfo={DIFFICULTY_TIERS[difficulty]} />
             ))}
-            <p className="mt-1 text-xs text-default-600">
+            <p className="mt-1 text-xs text-muted">
               A category is dealt to you at random; you choose how hard a question to take on it.
               Right, and you keep the turn. Wrong, and it costs you and moves on. First to 150.
             </p>
@@ -103,12 +103,12 @@ function Row({
       <div className="flex items-baseline justify-between gap-3">
         <span className={colour}>{tierInfo.label}</span>
         <span className="font-mono text-sm tabular-nums">
-          <span className="text-success-600">+{tierInfo.award}</span>
-          <span className="text-default-500"> / </span>
-          <span className="text-danger-600">{tierInfo.penalty}</span>
+          <span className="text-success">+{tierInfo.award}</span>
+          <span className="text-muted"> / </span>
+          <span className="text-danger-text">{tierInfo.penalty}</span>
         </span>
       </div>
-      <span className="text-xs text-default-600">{tierInfo.blurb}</span>
+      <span className="text-xs text-muted">{tierInfo.blurb}</span>
     </div>
   );
 }
