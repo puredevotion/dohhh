@@ -1,5 +1,5 @@
 import { DIFFICULTY_ORDER, DIFFICULTY_TIERS, shortenId } from '@dohhh/engine';
-import { Button, Card, Typography } from '@heroui/react';
+import { Button, Card, Input, Typography } from '@heroui/react';
 import { useEffect, useState, type ReactNode } from 'react';
 
 import { navigate } from '../lib/router.js';
@@ -8,8 +8,11 @@ import { Screen } from '../ui/atoms.jsx';
 
 export function Home(): ReactNode {
   const identity = useApp((s) => s.identity);
+  const rename = useApp((s) => s.rename);
   const resume = useApp((s) => s.resume);
   const [resumable, setResumable] = useState(false);
+  const [editingName, setEditingName] = useState(false);
+  const [draftName, setDraftName] = useState('');
 
   useEffect(() => {
     // Probe once, without joining: a stale "continue" button that does nothing
@@ -33,9 +36,44 @@ export function Home(): ReactNode {
           <Typography.Paragraph className="text-sm text-muted">
             Signed in as
           </Typography.Paragraph>
-          <Typography.Heading level={1} className="text-3xl font-semibold tracking-tight">
-            {identity.username}
-          </Typography.Heading>
+          {editingName ? (
+            <div className="flex items-center gap-2">
+              <Input
+                value={draftName}
+                onChange={(event) => setDraftName(event.target.value)}
+                aria-label="Your name"
+                autoComplete="nickname"
+                maxLength={24}
+                autoFocus
+                fullWidth
+              />
+              <Button
+                variant="primary"
+                size="sm"
+                isDisabled={draftName.trim().length === 0}
+                onPress={() => {
+                  rename(draftName);
+                  setEditingName(false);
+                }}
+              >
+                Save
+              </Button>
+            </div>
+          ) : (
+            <button
+              type="button"
+              className="flex items-center gap-2 text-left"
+              onClick={() => {
+                setDraftName(identity.username);
+                setEditingName(true);
+              }}
+            >
+              <Typography.Heading level={1} className="text-3xl font-semibold tracking-tight">
+                {identity.username}
+              </Typography.Heading>
+              <span className="text-xs text-muted underline">edit</span>
+            </button>
+          )}
           <p className="mt-1 font-mono text-xs text-muted">
             device {shortenId(identity.id, 8)}
           </p>
