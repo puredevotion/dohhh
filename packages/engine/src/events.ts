@@ -2,13 +2,13 @@ import { canonicalJson, sha256Hex } from './canonical.js';
 import type { Identity } from './identity.js';
 import { playerIdFromPublicKey, sign, verify } from './identity.js';
 import type { RulesConfig } from './rules.js';
-import type { Difficulty, GameId, PlayerId, TeamId } from './types.js';
+import type { CategoryId, Difficulty, GameId, PlayerId, TeamId } from './types.js';
 
 /**
  * Wire format version. Peers refuse to play across a mismatch rather than
  * discovering the incompatibility on turn nine (R-11).
  */
-export const PROTOCOL_VERSION = 1;
+export const PROTOCOL_VERSION = 2;
 
 export type GameEventBody =
   | {
@@ -26,6 +26,16 @@ export type GameEventBody =
   | { readonly type: 'game/started' }
   /** Published by the drawer, never by the answering team. See R-10. */
   | { readonly type: 'turn/drawn'; readonly turnIndex: number; readonly nonce: string }
+  /**
+   * The dealing side's pick among the categoryOptions turn/drawn offered.
+   * Same "not the acting team" restriction as turn/drawn - it is still the
+   * opposing side revealing the category, just from a choice of three now.
+   */
+  | {
+      readonly type: 'turn/category';
+      readonly turnIndex: number;
+      readonly categoryId: CategoryId;
+    }
   | {
       readonly type: 'turn/difficulty';
       readonly turnIndex: number;

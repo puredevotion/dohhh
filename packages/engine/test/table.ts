@@ -2,6 +2,7 @@ import {
   activeQuestion,
   answerTurn,
   callTimeout,
+  chooseCategory,
   chooseDifficulty,
   createGame,
   createIdentity,
@@ -15,6 +16,7 @@ import {
   SEED_PACK,
   SEED_PACK_HASH,
   startGame,
+  type CategoryId,
   type Difficulty,
   type GameState,
   type Identity,
@@ -130,6 +132,16 @@ export class Table {
     this.push(drawTurn(this.log, this.player(this.drawerIndex()), this.state().turnIndex));
   }
 
+  /** Pick the first of the three offered categories, by whoever may deal. */
+  pickCategory(): CategoryId {
+    const state = this.state();
+    const options = state.active?.categoryOptions ?? [];
+    const categoryId = options[0];
+    if (categoryId === undefined) throw new Error('no category options to pick from');
+    this.push(chooseCategory(this.log, this.player(this.drawerIndex()), state.turnIndex, categoryId));
+    return categoryId;
+  }
+
   choose(difficulty: Difficulty): void {
     this.push(
       chooseDifficulty(this.log, this.player(this.actorIndex()), this.state().turnIndex, difficulty),
@@ -149,9 +161,10 @@ export class Table {
     this.push(callTimeout(this.log, this.player(byIndex), this.state().turnIndex));
   }
 
-  /** One complete turn: deal, bet, answer. */
+  /** One complete turn: deal, pick a category, bet, answer. */
   playTurn(difficulty: Difficulty, correct: boolean): void {
     this.draw();
+    this.pickCategory();
     this.choose(difficulty);
     this.answer(correct);
   }

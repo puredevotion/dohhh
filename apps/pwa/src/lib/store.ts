@@ -2,6 +2,7 @@ import {
   announce,
   answerTurn,
   callTimeout,
+  chooseCategory,
   chooseDifficulty,
   createGame,
   createIdentity,
@@ -15,6 +16,7 @@ import {
   SEED_PACK_HASH,
   startGame,
   withUsername,
+  type CategoryId,
   type Difficulty,
   type GameId,
   type Identity,
@@ -70,6 +72,7 @@ export interface AppState {
   leaveCurrentTeam: (teamId: TeamId) => void;
   begin: () => void;
   deal: () => void;
+  pickCategory: (categoryId: CategoryId) => void;
   bet: (difficulty: Difficulty) => void;
   answer: (chosenIndex: number) => void;
   callTime: () => void;
@@ -304,6 +307,10 @@ export const useApp = create<AppState>((set, get) => {
     deal: () =>
       commit((session, identity) =>
         drawTurn(session.log, identity, session.state?.turnIndex ?? 0),
+      ),
+    pickCategory: (categoryId) =>
+      commit((session, identity) =>
+        chooseCategory(session.log, identity, session.state?.active?.turnIndex ?? 0, categoryId),
       ),
     bet: (difficulty) =>
       commit((session, identity) =>

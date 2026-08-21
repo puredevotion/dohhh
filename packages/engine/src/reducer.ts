@@ -70,6 +70,9 @@ export interface ReduceOptions {
   readonly pack: ContentPack;
 }
 
+/** How many categories the dealing side gets to choose among. */
+export const CATEGORY_OPTIONS_COUNT = 3;
+
 /**
  * Fold a log into state. Pure, total, and safe against hostile input: an event
  * that breaks a rule is recorded in `rejected` and ignored, never applied and
@@ -225,7 +228,7 @@ function apply(state: GameState, event: SignedEvent, pack: ContentPack): GameSta
       if (memberOf(state, teamId, author)) return 'the acting team cannot draw its own question';
       if (typeof body.nonce !== 'string' || body.nonce.length < 8) return 'nonce too short';
 
-      const { categoryId, bag, bagCycle } = drawCategory(state);
+      const { categoryIds, bag, bagCycle } = peekCategoryOptions(state, CATEGORY_OPTIONS_COUNT);
       const team = teamById(state, teamId);
       const turns = state.teamTurns[teamId] ?? 0;
       const nominatedId =
@@ -238,7 +241,8 @@ function apply(state: GameState, event: SignedEvent, pack: ContentPack): GameSta
         roundIndex: state.roundIndex,
         teamId,
         nominatedId,
-        categoryId,
+        categoryId: null,
+        categoryOptions: categoryIds,
         nonce: body.nonce,
         difficulty: null,
         questionId: null,
@@ -254,10 +258,31 @@ function apply(state: GameState, event: SignedEvent, pack: ContentPack): GameSta
       };
     }
 
+    case 'turn/category': {
+      const active = state.active;
+      if (state.phase !== 'playing' || active === null) return 'no active turn';
+      if (body.turnIndex !== active.turnIndex) return 'stale turn index';
+      if (active.categoryId !== null) return 'category already chosen';
+      // Same restriction as turn/drawn (R-10): the side answering the question
+      // does not get to pick which one it is.
+      if (memberOf(state, active.teamId, author)) return 'the acting team cannot choose its own category';
+      if (!active.categoryOptions.includes(body.categoryId)) return 'not one of the offered categories';
+
+      // Only the chosen category leaves the bag - the two offers nobody
+      // picked are still owed a turn (R-6), so they stay in place rather
+      // than being spent just for having been shown.
+      return {
+        ...state,
+        bag: removeFirst(state.bag, body.categoryId),
+        active: { ...active, categoryId: body.categoryId },
+      };
+    }
+
     case 'turn/difficulty': {
       const active = state.active;
       if (state.phase !== 'playing' || active === null) return 'no active turn';
       if (body.turnIndex !== active.turnIndex) return 'stale turn index';
+      if (active.categoryId === null) return 'no category chosen yet';
       if (active.difficulty !== null) return 'difficulty already chosen';
       if (!memberOf(state, active.teamId, author)) return 'not on the acting team';
       if (DIFFICULTY_TIERS[body.difficulty] === undefined) return 'unknown difficulty';
@@ -344,7 +369,9 @@ function resolve(state: GameState, active: ActiveTurn, res: Resolution): GameSta
     roundIndex: active.roundIndex,
     teamId: active.teamId,
     answererId: res.answererId,
-    categoryId: active.categoryId,
+    // A timeout can land before the dealer ever picked a category (R-3: any
+    // peer may call time rather than let a stalled turn wait forever).
+    categoryId: active.categoryId ?? '',
     difficulty: res.difficulty,
     questionId: active.questionId ?? '',
     chosenIndex: res.chosenIndex,
@@ -421,16 +448,37 @@ function leadingTeams(state: GameState): TeamId[] {
 /**
  * Shuffled bag rather than independent draws, so the same category cannot come
  * up four turns running and read as a broken generator (R-6).
+ *
+ * Offering three options is a *peek*, not a draw: nothing leaves the bag here.
+ * A category that gets shown but not picked still owes the deck a turn, so it
+ * stays exactly where it was - only turn/category (the actual pick) removes
+ * anything. This function only ever appends a fresh shuffle when the lookahead
+ * runs short, never replaces what's already queued, so an in-progress cycle
+ * is never cut short by a peek.
  */
-function drawCategory(state: GameState): { categoryId: CategoryId; bag: CategoryId[]; bagCycle: number } {
+function peekCategoryOptions(
+  state: GameState,
+  count: number,
+): { categoryIds: CategoryId[]; bag: CategoryId[]; bagCycle: number } {
   let bag = state.bag.slice();
   let bagCycle = state.bagCycle;
-  if (bag.length === 0) {
-    bag = createRng(state.gameId, 'bag', bagCycle).shuffle(CATEGORY_IDS);
+  while (bag.length < count) {
+    bag = [...bag, ...createRng(state.gameId, 'bag', bagCycle).shuffle(CATEGORY_IDS)];
     bagCycle += 1;
   }
-  const categoryId = bag[0] as CategoryId;
-  return { categoryId, bag: bag.slice(1), bagCycle };
+  const categoryIds: CategoryId[] = [];
+  for (const id of bag) {
+    if (categoryIds.length >= count) break;
+    if (!categoryIds.includes(id)) categoryIds.push(id);
+  }
+  return { categoryIds, bag, bagCycle };
+}
+
+/** Drop the first occurrence of `id`, leaving everything else in place. */
+function removeFirst(bag: readonly CategoryId[], id: CategoryId): CategoryId[] {
+  const index = bag.indexOf(id);
+  if (index === -1) return bag.slice();
+  return [...bag.slice(0, index), ...bag.slice(index + 1)];
 }
 
 /**

@@ -119,7 +119,7 @@ describe('drawing a question', () => {
     // follows CATEGORIES, so adding one must not break the fairness property.
     for (let i = 0; i < CATEGORY_IDS.length; i += 1) {
       table.draw();
-      seen.push(table.state().active?.categoryId ?? '');
+      seen.push(table.pickCategory());
       table.choose('graduate');
       table.answer(false);
     }
@@ -198,6 +198,7 @@ describe('scoring', () => {
     const asked = new Set<string>();
     for (let i = 0; i < 24; i += 1) {
       table.draw();
+      table.pickCategory();
       table.choose('phd');
       const id = table.state().active?.questionId ?? '';
       expect(asked.has(id)).toBe(false);
@@ -213,6 +214,7 @@ describe('timeouts (R-3)', () => {
     const table = twoTeams();
     const teamId = table.state().turnOrder[0] as string;
     table.draw();
+    table.pickCategory();
     table.choose('professor');
     table.timeout(2);
     const state = table.state();
@@ -234,6 +236,7 @@ describe('timeouts (R-3)', () => {
   it('may be called by anyone, including the stalling team itself', () => {
     const table = twoTeams();
     table.draw();
+    table.pickCategory();
     table.choose('phd');
     table.push(callTimeout(table.log, table.player(0), table.state().turnIndex));
     expect(table.state().cursor).toBe(1);
@@ -244,6 +247,7 @@ describe('authority', () => {
   it('refuses an answer from someone not on the acting team', () => {
     const table = twoTeams();
     table.draw();
+    table.pickCategory();
     table.choose('phd');
     const state = table.state();
     const presented = activeQuestion(state, SEED_PACK);
@@ -258,6 +262,7 @@ describe('authority', () => {
   it('refuses an answer stamped with a stale turn index', () => {
     const table = twoTeams();
     table.draw();
+    table.pickCategory();
     table.choose('phd');
     table.push(answerTurn(table.log, table.player(0), 99, 0));
     expect(table.state().active).not.toBeNull();
@@ -267,6 +272,7 @@ describe('authority', () => {
   it('refuses an out-of-range option', () => {
     const table = twoTeams();
     table.draw();
+    table.pickCategory();
     table.choose('phd');
     table.push(answerTurn(table.log, table.player(0), table.state().turnIndex, 7));
     expect(table.state().rejected.some((r) => r.reason === 'option out of range')).toBe(true);
@@ -275,6 +281,7 @@ describe('authority', () => {
   it('ignores a second difficulty choice for the same turn', () => {
     const table = twoTeams();
     table.draw();
+    table.pickCategory();
     table.choose('graduate');
     table.choose('professor');
     expect(table.state().active?.difficulty).toBe('graduate');

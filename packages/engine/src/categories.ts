@@ -28,6 +28,11 @@ export const CATEGORIES: readonly Category[] = [
   { id: 'finance', name: 'Finance & Structured Products', glyph: 'FI' },
   { id: 'economics', name: 'Economics & Financial History', glyph: 'EC' },
   { id: 'sport', name: 'Sport & Games', glyph: 'SP' },
+  { id: 'autoimmune', name: 'Autoimmune Diseases', glyph: 'AI' },
+  { id: 'obgyn', name: 'Obstetrics & Gynaecology', glyph: 'OB' },
+  { id: 'dutch', name: 'Dutch History & Politics, 1400-1900', glyph: 'NL' },
+  { id: 'maker', name: '3D Printing & Lasers', glyph: '3D' },
+  { id: 'lawip', name: 'Dutch & International IP Law', glyph: 'IP' },
 ];
 
 export const CATEGORY_IDS: readonly CategoryId[] = CATEGORIES.map((c) => c.id);

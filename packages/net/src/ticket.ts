@@ -52,8 +52,12 @@ export function encodeTicket(ticket: JoinTicket): string {
     ticket.gameId,
     ticket.joinCode,
     ticket.packHash,
-    // The protocol version is only appended when it is not 1, so today's
-    // tickets stay as short as possible and tomorrow's still parse.
+    // The protocol version is only appended when it is not 1 - a fixed
+    // historical anchor, not "today's default": decodeTicket below reads a
+    // missing suffix as literally 1, so this comparison has to stay pinned
+    // to 1 forever regardless of where PROTOCOL_VERSION moves, or an old
+    // ticket with no suffix (from back when 1 really was current) would
+    // silently decode as whatever the new default is instead.
     ...(ticket.protocol === 1 ? [] : [`p${ticket.protocol}`]),
   ].join(SEPARATOR);
 }

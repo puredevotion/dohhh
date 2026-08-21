@@ -2,6 +2,7 @@ import {
   activeQuestion,
   activeTimeoutMs,
   canAnswer,
+  canChooseCategory,
   canChooseDifficulty,
   canDraw,
   categoryById,
@@ -12,6 +13,7 @@ import {
   SEED_PACK,
   scoreboard,
   teamOf,
+  type CategoryId,
   type Difficulty,
   type GameState,
   type TurnRecord,
@@ -26,6 +28,7 @@ export function Play(): ReactNode {
   const snapshot = useApp((s) => s.snapshot);
   const identity = useApp((s) => s.identity);
   const deal = useApp((s) => s.deal);
+  const pickCategory = useApp((s) => s.pickCategory);
   const bet = useApp((s) => s.bet);
   const answer = useApp((s) => s.answer);
   const callTime = useApp((s) => s.callTime);
@@ -39,7 +42,8 @@ export function Play(): ReactNode {
   const myTeam = teamOf(state, me);
   const iAmActing = isActingPlayer(state, me);
   const question = activeQuestion(state, SEED_PACK);
-  const category = state.active === null ? undefined : categoryById(state.active.categoryId);
+  const active = state.active;
+  const category = active?.categoryId == null ? undefined : categoryById(active.categoryId);
   const lastTurn = state.history.at(-1) ?? null;
 
   return (
@@ -56,7 +60,7 @@ export function Play(): ReactNode {
     >
       <Scores state={state} me={me} />
 
-      {state.active === null ? (
+      {active === null ? (
         <BetweenTurns
           state={state}
           me={me}
@@ -64,11 +68,17 @@ export function Play(): ReactNode {
           onDeal={deal}
           canDealNow={canDraw(state, me)}
         />
+      ) : active.categoryId === null ? (
+        <ChooseCategory
+          options={active.categoryOptions}
+          canChoose={canChooseCategory(state, me)}
+          onPick={pickCategory}
+        />
       ) : question === null ? (
         <ChooseTier
           state={state}
           canChoose={canChooseDifficulty(state, me)}
-          categoryName={category?.name ?? state.active.categoryId}
+          categoryName={category?.name ?? active.categoryId}
           onPick={bet}
         />
       ) : (
@@ -78,9 +88,9 @@ export function Play(): ReactNode {
           iAmActing={iAmActing}
           prompt={question.question.prompt}
           options={question.options}
-          repeat={state.active.repeat}
-          categoryName={category?.name ?? state.active.categoryId}
-          difficulty={state.active.difficulty ?? 'graduate'}
+          repeat={active.repeat}
+          categoryName={category?.name ?? active.categoryId}
+          difficulty={active.difficulty ?? 'graduate'}
           onAnswer={answer}
           onTimeout={callTime}
           amOpponent={!iAmActing}
@@ -177,14 +187,14 @@ function BetweenTurns({
           <Card.Title>{actingTeam?.name ?? 'Next team'} are up</Card.Title>
           <Card.Description>
             {canDealNow
-              ? 'You deal their category. They cannot deal their own - that is what stops them knowing the question in advance.'
-              : 'An opposing team deals the category.'}
+              ? "You'll get three categories to choose from for their question. They cannot deal their own - that is what stops them knowing the question in advance."
+              : 'An opposing team is dealing three categories to choose from.'}
           </Card.Description>
         </Card.Header>
         {canDealNow && (
           <Card.Footer>
             <Button variant="primary" size="lg" fullWidth onPress={onDeal}>
-              Deal a category
+              Deal three categories
             </Button>
           </Card.Footer>
         )}
@@ -231,6 +241,54 @@ function Outcome({ record, state }: { record: TurnRecord; state: GameState }): R
         </Card.Content>
       )}
     </Card>
+  );
+}
+
+/**
+ * Three categories, picked from the bag, offered to whoever is dealing.
+ * Nothing here is a bet - the acting team learns which one only once someone
+ * off their own team commits to it (R-10).
+ */
+function ChooseCategory({
+  options,
+  canChoose,
+  onPick,
+}: {
+  options: readonly CategoryId[];
+  canChoose: boolean;
+  onPick: (categoryId: CategoryId) => void;
+}): ReactNode {
+  return (
+    <div className="flex flex-col gap-4">
+      <Card>
+        <Card.Header>
+          <Card.Title>Choose a category</Card.Title>
+          <Card.Description>
+            {canChoose
+              ? 'Pick one of the three - they will not know which until you do.'
+              : 'An opposing player is choosing which of three categories to deal.'}
+          </Card.Description>
+        </Card.Header>
+      </Card>
+
+      {canChoose && (
+        <div className="flex flex-col gap-3">
+          {options.map((categoryId) => {
+            const category = categoryById(categoryId);
+            return (
+              <button
+                key={categoryId}
+                type="button"
+                onClick={() => onPick(categoryId)}
+                className="rounded-2xl border border-default-200/40 px-4 py-4 text-left transition hover:border-primary/60 hover:bg-primary/5"
+              >
+                <span className="font-medium">{category?.name ?? categoryId}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }
 

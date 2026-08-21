@@ -6,7 +6,7 @@ import type { EventLog } from './log.js';
 import { randomJoinCode } from './joincode.js';
 import type { RulesConfig } from './rules.js';
 import { normalizeRules } from './rules.js';
-import type { Difficulty, GameId, TeamId } from './types.js';
+import type { CategoryId, Difficulty, GameId, TeamId } from './types.js';
 
 /**
  * Thin constructors for the events a UI needs to emit.
@@ -93,6 +93,14 @@ export const startGame = (log: EventLog, identity: Identity): SignedEvent =>
 /** Deal the next question. Only a peer off the acting team may do this (R-10). */
 export const drawTurn = (log: EventLog, identity: Identity, turnIndex: number): SignedEvent =>
   makeEvent(log, identity, { type: 'turn/drawn', turnIndex, nonce: newTurnNonce() });
+
+/** Pick one of the three categories turn/drawn offered. */
+export const chooseCategory = (
+  log: EventLog,
+  identity: Identity,
+  turnIndex: number,
+  categoryId: CategoryId,
+): SignedEvent => makeEvent(log, identity, { type: 'turn/category', turnIndex, categoryId });
 
 export const chooseDifficulty = (
   log: EventLog,

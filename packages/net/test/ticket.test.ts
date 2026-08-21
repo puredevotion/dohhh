@@ -54,8 +54,14 @@ describe('join tickets', () => {
     expect(parseScanned('https://example.com/nothing-here')).toBeNull();
   });
 
-  it('carries the protocol version only when it is not the default', () => {
-    expect(encodeTicket(ticketFor())).not.toContain('.p');
+  it('carries the protocol version only when it is not 1, the fixed no-suffix anchor', () => {
+    // 1 is not "today's default" - it is the value decodeTicket assumes for
+    // any ticket with no suffix, forever, regardless of where
+    // PROTOCOL_VERSION moves. A same-version ticket today still gets an
+    // explicit suffix once the real default has moved past 1.
+    const legacy = { ...ticketFor(), protocol: 1 };
+    expect(encodeTicket(legacy)).not.toContain('.p');
+    expect(encodeTicket(ticketFor())).toContain(`.p${PROTOCOL_VERSION}`);
     const future = { ...ticketFor(), protocol: 7 };
     expect(encodeTicket(future)).toContain('.p7');
     expect(decodeTicket(encodeTicket(future))?.protocol).toBe(7);

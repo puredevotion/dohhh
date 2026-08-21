@@ -1,7 +1,9 @@
 import {
   answerTurn,
   activeQuestion,
+  chooseCategory,
   chooseDifficulty,
+  PROTOCOL_VERSION,
   createGame,
   createIdentity,
   drawTurn,
@@ -200,7 +202,14 @@ describe('playing across two devices', () => {
     const turnIndex = f.guestSession.state?.turnIndex ?? 0;
     f.guestSession.commit(drawTurn(f.guestSession.log, f.guest, turnIndex));
     f.mesh.settle();
-    expect(f.hostSession.state?.active?.categoryId).toBeDefined();
+    const categoryId = f.hostSession.state?.active?.categoryOptions[0];
+    expect(categoryId).toBeDefined();
+
+    // The guest, still not on the acting team, picks one of the offered
+    // categories before the host can be asked to bet.
+    f.guestSession.commit(chooseCategory(f.guestSession.log, f.guest, turnIndex, categoryId ?? ''));
+    f.mesh.settle();
+    expect(f.hostSession.state?.active?.categoryId).toBe(categoryId);
 
     // The host, who is on the acting team, bets and answers.
     f.hostSession.commit(chooseDifficulty(f.hostSession.log, f.host, turnIndex, 'professor'));
@@ -255,7 +264,7 @@ describe('discovery by join code', () => {
     });
     f.mesh.settle();
     await expect(pending).resolves.toEqual(
-      expect.objectContaining({ gameId: f.gameId, protocol: 1 }),
+      expect.objectContaining({ gameId: f.gameId, protocol: PROTOCOL_VERSION }),
     );
   });
 

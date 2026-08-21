@@ -18,13 +18,16 @@ import { MORE_HISTORY } from './more/history.js';
 import { MORE_LITERATURE } from './more/literature.js';
 import { MORE_ECONOMICS, MORE_FINANCE } from './more/markets.js';
 import { MORE_BIOLOGY, MORE_CHEMISTRY, MORE_PHYSICS } from './more/sciences.js';
+import { LAWIP } from './lawcat.js';
+import { AUTOIMMUNE, DUTCH, MAKER, OBGYN } from './newcats.js';
 import { expand } from './row.js';
 import { BIOLOGY, CHEMISTRY, PHYSICS } from './sciences.js';
 
 /**
- * The bundled bank: eighteen categories, three tiers, fifteen questions each.
+ * The bundled bank: twenty-three categories, three tiers, fifteen questions
+ * each.
  *
- * 810 questions. Each category's content lives in a base chunk and a `more/`
+ * 1035 questions. Each category's content lives in a base chunk and a `more/`
  * chunk, concatenated by `expand`, which is why adding to a category never
  * renumbers what is already there. The review is blunt about this being the long pole (R-12), and the pack
  * format exists so growing it never touches the engine.
@@ -34,7 +37,7 @@ import { BIOLOGY, CHEMISTRY, PHYSICS } from './sciences.js';
  */
 export const SEED_PACK: ContentPack = {
   id: 'dohhh.seed',
-  version: '0.3.0',
+  version: '0.4.0',
   name: 'Dohhh Seed Bank',
   categories: CATEGORIES,
   questions: [
@@ -56,6 +59,11 @@ export const SEED_PACK: ContentPack = {
     ...expand('finance', FINANCE, MORE_FINANCE),
     ...expand('economics', ECONOMICS, MORE_ECONOMICS),
     ...expand('sport', SPORT, MORE_SPORT),
+    ...expand('autoimmune', AUTOIMMUNE),
+    ...expand('obgyn', OBGYN),
+    ...expand('dutch', DUTCH),
+    ...expand('maker', MAKER),
+    ...expand('lawip', LAWIP),
   ],
 };
 

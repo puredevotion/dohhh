@@ -112,7 +112,8 @@ function Game({
   session: GameSession | null;
 }): React.ReactElement {
   const question = activeQuestion(state, PACK);
-  const category = state.active === null ? undefined : categoryById(state.active.categoryId);
+  const category =
+    state.active?.categoryId == null ? undefined : categoryById(state.active.categoryId);
 
   return (
     <View style={styles.stack}>

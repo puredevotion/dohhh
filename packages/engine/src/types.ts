@@ -92,7 +92,10 @@ export interface ActiveTurn {
    * enforcing it would let one locked phone stall the game.
    */
   readonly nominatedId: PlayerId | null;
-  readonly categoryId: CategoryId;
+  /** Null until the dealing side picks one of {@link categoryOptions}. */
+  readonly categoryId: CategoryId | null;
+  /** The choices offered to the dealing side, drawn from the bag at deal time. */
+  readonly categoryOptions: readonly CategoryId[];
   /** Hex nonce published by the drawer; the question is a function of it. */
   readonly nonce: string;
   readonly difficulty: Difficulty | null;

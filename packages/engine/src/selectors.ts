@@ -41,10 +41,23 @@ export function canDraw(state: GameState, playerId: PlayerId): boolean {
   return !isActingPlayer(state, playerId);
 }
 
+/**
+ * True when this device may pick one of the dealt category options: the
+ * category is undrawn and the player is not on the acting team, mirroring
+ * canDraw (R-10) - the side answering never picks its own category.
+ */
+export function canChooseCategory(state: GameState, playerId: PlayerId): boolean {
+  const active = state.active;
+  if (state.phase !== 'playing' || active === null) return false;
+  if (active.categoryId !== null) return false;
+  if (state.players[playerId] === undefined) return false;
+  return !isActingPlayer(state, playerId);
+}
+
 export function canChooseDifficulty(state: GameState, playerId: PlayerId): boolean {
   const active = state.active;
   if (state.phase !== 'playing' || active === null) return false;
-  if (active.difficulty !== null) return false;
+  if (active.categoryId === null || active.difficulty !== null) return false;
   return isActingPlayer(state, playerId);
 }
 
@@ -56,7 +69,8 @@ export function canAnswer(state: GameState, playerId: PlayerId): boolean {
 }
 
 export function activeCategory(state: GameState): Category | undefined {
-  return state.active === null ? undefined : categoryById(state.active.categoryId);
+  const categoryId = state.active?.categoryId;
+  return categoryId === null || categoryId === undefined ? undefined : categoryById(categoryId);
 }
 
 export function activeQuestion(state: GameState, pack: ContentPack): PresentedQuestion | null {
