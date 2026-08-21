@@ -20,7 +20,7 @@ import { Button, Card, Chip, ProgressBar } from '@heroui/react';
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 
 import { useApp } from '../lib/store.js';
-import { ActionBar, ConnectionPill, Notice, Screen, TierBadge } from '../ui/atoms.jsx';
+import { ConnectionPill, Notice, Screen, TierBadge } from '../ui/atoms.jsx';
 
 export function Play(): ReactNode {
   const snapshot = useApp((s) => s.snapshot);
