@@ -72,16 +72,21 @@ merely camera-less.
 scripts/deploy-pages.sh          # verify, build, publish to dohhh.pages.dev
 ```
 
-The script pulls the API token and account id out of `secrets/common.yaml` with
-sops, the same way `cloudflare/records.yaml` documents, then builds and
-publishes. It needs a token with **Account / Cloudflare Pages / Edit** - the
-existing homelab token was minted for DNS edits and may not carry that scope, so
-if the deploy 403s, either widen it or `export CLOUDFLARE_API_TOKEN` with a new
-one first.
+The script reads two variables from the environment and refuses to start
+without them:
+
+```bash
+export CLOUDFLARE_API_TOKEN=...   # scoped to Account / Cloudflare Pages / Edit
+export CLOUDFLARE_ACCOUNT_ID=...
+```
+
+The scope matters. A token minted for DNS edits will not deploy Pages, and it
+fails with a bare 403 rather than saying so. If you keep these in a secret
+store, decrypt into the environment rather than teaching the script your store.
 
 That yields `https://dohhh.pages.dev` with a real certificate and nothing to
 configure, because there is nothing to configure: no accounts, no database, no
-environment variables. Send the URL. `dohhh.sevenwoods.nl` could CNAME to the
+runtime environment variables. Send the URL. A custom domain can CNAME to the
 project later, but that buys nothing for a first test.
 
 The deployed origin then propagates by itself: the QR ticket encodes
@@ -102,11 +107,14 @@ more work than the one command above.
 
 ### Other routes
 
-- **This homelab** - a Deployment serving `dist/` behind an Ingress on
-  `*.sevenwoods.nl`, which already terminates TLS through Traefik. Fits the
-  repo's conventions; more moving parts than the test needs.
-- **`tailscale serve`** - private, but every friend has to install Tailscale and
-  be added to the tailnet, which is a lot to ask of a games night.
+Any host that gives you a trusted certificate works, since all it has to do is
+hand over a directory:
+
+- **Your own ingress** - a container serving `dist/` behind whatever already
+  terminates TLS for you. More moving parts than a first test needs, but it
+  keeps the bundle on your own infrastructure.
+- **`tailscale serve`** - private, but every player has to install Tailscale and
+  join the tailnet, which is a lot to ask of a games night.
 
 ### Two things to know before the first session
 
@@ -164,7 +172,13 @@ instead of spinning. Details and the rest of the trade in
 
 ```bash
 pnpm test    # 105 tests: engine rules and net sync
+pnpm verify  # typecheck + tests + production build
 ```
+
+CI runs the same gate on every push and pull request
+([`.github/workflows/verify.yml`](.github/workflows/verify.yml)), minus the
+`apps/native` typecheck - that would pull the whole Expo tree into every run to
+gate a scaffold that takes no actions yet.
 
 Worth knowing what they cover, because the interesting ones are not unit tests:
 
@@ -180,14 +194,6 @@ Worth knowing what they cover, because the interesting ones are not unit tests:
   could profit and the betting mechanic would be pointless. Measured, gated, and
   the gate only ratchets down. It has now caught the same authoring habit twice.
 
-## Taking this out of the monorepo
-
-It lives under `experiments/` and depends on nothing outside its own directory,
-so it splits cleanly:
-
-```bash
-git subtree split -P experiments/dohhh -b dohhh
-```
 
 ## Licence
 
