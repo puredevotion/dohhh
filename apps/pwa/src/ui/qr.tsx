@@ -73,6 +73,13 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
   const [state, setState] = useState<ScanState>('idle');
   const [detail, setDetail] = useState<string | null>(null);
 
+  // Callers pass a fresh closure every render. Reading through a ref keeps
+  // the effect below from seeing that as a dependency change and restarting
+  // the camera - a restart mid-scan races getUserMedia against its own
+  // teardown and can leave the video element on a black frame.
+  const onScanRef = useRef(onScan);
+  onScanRef.current = onScan;
+
   useEffect(() => {
     if (state !== 'starting') return;
     const video = videoRef.current;
@@ -91,7 +98,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
         scanner = new QrScanner(
           video,
           (result) => {
-            if (!stopped) onScan(result.data);
+            if (!stopped) onScanRef.current(result.data);
           },
           {
             preferredCamera: 'environment',
@@ -118,7 +125,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
       scanner?.stop();
       scanner?.destroy();
     };
-  }, [state, onScan]);
+  }, [state]);
 
   return (
     <div className="flex flex-col gap-3">

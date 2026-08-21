@@ -150,6 +150,10 @@ export const useApp = create<AppState>((set, get) => {
       if (identity === null) return;
       set({ busy: 'Looking for that game...', error: null });
       const found = await discoverGame({ joinCode: code });
+      // discoverGame just left the room it was probing; rejoining immediately
+      // races that teardown on some relays and the real connection never
+      // completes its handshake. A short settle window avoids it.
+      await new Promise((resolve) => setTimeout(resolve, 500));
       if (found === null) {
         set({
           busy: null,

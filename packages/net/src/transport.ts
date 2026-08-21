@@ -18,6 +18,21 @@ import type { Room } from 'trystero/nostr';
 
 export const APP_ID = 'dohhh-mesh-v1';
 
+/**
+ * Trystero derives a "random" 5-relay subset from APP_ID, but that derivation
+ * is deterministic - every game this app ever hosts gets the exact same five
+ * relays. One of the ones it picked, relay.angor.io, serves a broken
+ * self-signed certificate (verified independently of this app), so it's
+ * permanently dead weight in that subset. Pin a known-good set explicitly
+ * rather than gambling on whatever the hash lands on.
+ */
+const RELAY_URLS = [
+  'wss://relay.damus.io',
+  'wss://nos.lol',
+  'wss://purplerelay.com',
+  'wss://relay02.lnfi.network',
+];
+
 export type ConnectionStatus = 'connecting' | 'connected' | 'alone' | 'failed';
 
 export interface TransportEvents {
@@ -57,6 +72,7 @@ export function createTransport(options: TransportOptions): Transport {
     room = joinRoom(
       {
         appId: APP_ID,
+        relayConfig: { urls: RELAY_URLS },
         ...(options.password === undefined ? {} : { password: options.password }),
       },
       options.roomId,

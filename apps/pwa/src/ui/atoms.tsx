@@ -138,7 +138,7 @@ export function Notice({
 export function StalledWarning({
   status,
   peerCount,
-  afterMs = 15_000,
+  afterMs = 120_000,
 }: {
   status: ConnectionStatus;
   peerCount: number;

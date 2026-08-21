@@ -25,7 +25,7 @@ export interface DiscoverOptions {
 }
 
 export function discoverGame(options: DiscoverOptions): Promise<Discovery | null> {
-  const timeoutMs = options.timeoutMs ?? 8_000;
+  const timeoutMs = options.timeoutMs ?? 300_000;
   const make = options.makeTransport ?? createTransport;
 
   return new Promise<Discovery | null>((resolve) => {
