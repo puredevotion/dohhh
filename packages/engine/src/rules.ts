@@ -31,7 +31,7 @@ export interface DifficultyTier {
 export const DIFFICULTY_TIERS: Readonly<Record<Difficulty, DifficultyTier>> = {
   graduate: {
     id: 'graduate',
-    label: 'University graduate',
+    label: 'Easy Peasy',
     audience:
       'Someone with a master\'s degree in this field - MSc or MA level. Not general knowledge, and not something an educated non-specialist should reliably get.',
     blurb: 'MSc or MA in the field',
@@ -41,7 +41,7 @@ export const DIFFICULTY_TIERS: Readonly<Record<Difficulty, DifficultyTier>> = {
   },
   phd: {
     id: 'phd',
-    label: 'PhD',
+    label: 'Common Knowledge',
     audience:
       'A specialist: someone doing a PhD in this area, or with ten years or more working in it.',
     blurb: 'PhD, or 10+ years in the field',
@@ -51,7 +51,7 @@ export const DIFFICULTY_TIERS: Readonly<Record<Difficulty, DifficultyTier>> = {
   },
   professor: {
     id: 'professor',
-    label: 'Post-doc / professor',
+    label: 'Dohhh',
     audience:
       'Twenty years or more in the field, an outright expert who follows current developments - the person for whom reading the literature is a morning habit.',
     blurb: '20+ years, and follows the literature',
