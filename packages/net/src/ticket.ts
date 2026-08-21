@@ -108,7 +108,7 @@ export type TicketRefusal = 'protocol-mismatch' | 'pack-mismatch';
  * message at the door rather than a desync on turn nine (R-11).
  */
 export function checkTicket(
-  ticket: JoinTicket,
+  ticket: { readonly protocol: number; readonly packHash: string },
   local: { readonly packHash: string; readonly protocol?: number },
 ): TicketRefusal | null {
   if (ticket.protocol !== (local.protocol ?? PROTOCOL_VERSION)) return 'protocol-mismatch';

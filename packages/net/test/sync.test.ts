@@ -254,7 +254,9 @@ describe('discovery by join code', () => {
       makeTransport: f.mesh.transportFactory,
     });
     f.mesh.settle();
-    await expect(pending).resolves.toEqual({ gameId: f.gameId });
+    await expect(pending).resolves.toEqual(
+      expect.objectContaining({ gameId: f.gameId, protocol: 1 }),
+    );
   });
 
   it('gives up rather than spinning when nobody answers', async () => {

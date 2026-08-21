@@ -20,9 +20,9 @@ describe('wordlist', () => {
     expect(CODE_BITS).toBe(40);
   });
 
-  it('contains only lowercase letters, 3 to 9 characters', () => {
+  it('contains only lowercase letters, 3 to 4 characters', () => {
     for (const word of WORDLIST) {
-      expect(word).toMatch(/^[a-z]{3,9}$/);
+      expect(word).toMatch(/^[a-z]{3,4}$/);
     }
   });
 
@@ -78,7 +78,7 @@ describe('join codes', () => {
     expect(normalizeJoinCode('otter-badger-falcon')).toBeNull();
     expect(normalizeJoinCode('otter-badger-falcon-zzzzz')).toBeNull();
     expect(normalizeJoinCode('')).toBeNull();
-    expect(isValidJoinCode('otter otter otter otter')).toBe(true);
+    expect(isValidJoinCode('frog frog frog frog')).toBe(true);
   });
 
   it('derives a room id that hides the code', () => {

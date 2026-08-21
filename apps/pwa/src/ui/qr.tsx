@@ -72,6 +72,14 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [state, setState] = useState<ScanState>('idle');
   const [detail, setDetail] = useState<string | null>(null);
+  // The button press that starts the camera, kept separate from `state`.
+  // `state` gets written to *inside* the effect below (starting -> scanning),
+  // so if the effect depended on `state` itself, that write would be a
+  // dependency change: React tears the scanner down and re-runs the effect,
+  // which immediately no-ops (state is no longer 'starting') - the camera
+  // starts and is destroyed a moment later, seen as a flicker to a black
+  // frame. `armed` only ever flips false -> true, so it can't self-retrigger.
+  const [armed, setArmed] = useState(false);
 
   // Callers pass a fresh closure every render. Reading through a ref keeps
   // the effect below from seeing that as a dependency change and restarting
@@ -81,7 +89,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
   onScanRef.current = onScan;
 
   useEffect(() => {
-    if (state !== 'starting') return;
+    if (!armed) return;
     const video = videoRef.current;
     if (video === null) return;
 
@@ -125,7 +133,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
       scanner?.stop();
       scanner?.destroy();
     };
-  }, [state]);
+  }, [armed]);
 
   return (
     <div className="flex flex-col gap-3">
@@ -138,7 +146,13 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
                 <p className="text-sm text-default-600">
                   Point your camera at the other phone&apos;s code.
                 </p>
-                <Button variant="primary" onPress={() => setState('starting')}>
+                <Button
+                  variant="primary"
+                  onPress={() => {
+                    setState('starting');
+                    setArmed(true);
+                  }}
+                >
                   Turn on the camera
                 </Button>
               </>

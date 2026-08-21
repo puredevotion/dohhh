@@ -16,6 +16,8 @@ import { createTransport } from './transport.js';
  */
 export interface Discovery {
   readonly gameId: GameId;
+  readonly protocol: number;
+  readonly packHash: string;
 }
 
 export interface DiscoverOptions {
@@ -45,8 +47,8 @@ export function discoverGame(options: DiscoverOptions): Promise<Discovery | null
       password: options.joinCode,
       handlers: {
         onMessage: (payload) => {
-          const gameId = gameIdFrom(payload);
-          if (gameId !== null) finish({ gameId });
+          const discovery = discoveryFrom(payload);
+          if (discovery !== null) finish(discovery);
         },
         onPeerJoin: () => undefined,
         onPeerLeave: () => undefined,
@@ -62,12 +64,20 @@ export function discoverGame(options: DiscoverOptions): Promise<Discovery | null
   });
 }
 
-function gameIdFrom(payload: string): GameId | null {
+function discoveryFrom(payload: string): Discovery | null {
   try {
-    const parsed = JSON.parse(payload) as { gameId?: unknown };
-    return typeof parsed?.gameId === 'string' && parsed.gameId.startsWith('game_')
-      ? parsed.gameId
-      : null;
+    const parsed = JSON.parse(payload) as {
+      gameId?: unknown;
+      protocol?: unknown;
+      packHash?: unknown;
+    };
+    if (typeof parsed?.gameId !== 'string' || !parsed.gameId.startsWith('game_')) return null;
+    // Older builds never sent these fields; treat that as "unknown version"
+    // rather than crashing the discovery so the caller can still surface a
+    // readable refusal.
+    const protocol = typeof parsed.protocol === 'number' ? parsed.protocol : 0;
+    const packHash = typeof parsed.packHash === 'string' ? parsed.packHash : '';
+    return { gameId: parsed.gameId, protocol, packHash };
   } catch {
     return null;
   }

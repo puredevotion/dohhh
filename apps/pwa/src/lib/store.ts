@@ -162,6 +162,11 @@ export const useApp = create<AppState>((set, get) => {
         });
         return;
       }
+      const refusal = checkTicket(found, { packHash: SEED_PACK_HASH });
+      if (refusal !== null) {
+        set({ busy: null, error: explainRefusal(refusal) });
+        return;
+      }
       teardown();
       const session = new GameSession({
         identity,

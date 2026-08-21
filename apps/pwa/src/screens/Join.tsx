@@ -149,6 +149,7 @@ function WordField({
           onChange={(event) => onChange(event.target.value)}
           placeholder="word"
           aria-label={`Word ${position} of the join code`}
+          autoComplete="off"
           autoCapitalize="none"
           autoCorrect="off"
           spellCheck={false}

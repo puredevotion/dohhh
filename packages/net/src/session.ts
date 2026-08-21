@@ -1,5 +1,7 @@
 import {
   EventLog,
+  packHash,
+  PROTOCOL_VERSION,
   reduce,
   roomIdFromJoinCode,
   type ContentPack,
@@ -22,8 +24,20 @@ import { createTransport } from './transport.js';
  * costs nothing, because the log sorts and the reducer is pure.
  */
 export type SyncMessage =
-  /** "Here is everything I have." Sent on join and on a timer. */
-  | { readonly t: 'have'; readonly gameId: GameId; readonly vector: VersionVector; readonly digest: string }
+  /**
+   * "Here is everything I have." Sent on join and on a timer. Also doubles as
+   * the version handshake: protocol and packHash ride along so a stale peer
+   * is a readable refusal at the door (R-11) rather than a desync mid-game -
+   * this is the only message a newcomer sees before deciding whether to stay.
+   */
+  | {
+      readonly t: 'have';
+      readonly gameId: GameId;
+      readonly vector: VersionVector;
+      readonly digest: string;
+      readonly protocol: number;
+      readonly packHash: string;
+    }
   /** "Send me what I am missing." */
   | { readonly t: 'want'; readonly gameId: GameId; readonly vector: VersionVector }
   /** New or backfilled events. */
@@ -74,6 +88,7 @@ export class GameSession {
   private transport: Transport | null = null;
   private readonly listeners = new Set<SessionListener>();
   private readonly pack: ContentPack;
+  private readonly packHash: string;
   private readonly identity: Identity;
   private status: ConnectionStatus = 'connecting';
   private diverged = false;
@@ -84,6 +99,7 @@ export class GameSession {
   constructor(options: SessionOptions) {
     this.identity = options.identity;
     this.pack = options.pack;
+    this.packHash = packHash(options.pack);
     this.log = new EventLog(options.gameId, options.seed ?? []);
 
     const make = options.makeTransport ?? createTransport;
@@ -152,7 +168,14 @@ export class GameSession {
 
   /** Everything this peer holds, for anti-entropy. */
   private have(): SyncMessage {
-    return { t: 'have', gameId: this.log.gameId, vector: this.log.vector, digest: this.log.digest() };
+    return {
+      t: 'have',
+      gameId: this.log.gameId,
+      vector: this.log.vector,
+      digest: this.log.digest(),
+      protocol: PROTOCOL_VERSION,
+      packHash: this.packHash,
+    };
   }
 
   private post(message: SyncMessage, target?: string): void {
