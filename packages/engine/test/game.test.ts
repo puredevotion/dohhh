@@ -5,6 +5,8 @@ import {
   answerTurn,
   callTimeout,
   CATEGORY_IDS,
+  createEvent,
+  createIdentity,
   createRng,
   drawTurn,
   EventLog,
@@ -385,5 +387,50 @@ describe('convergence', () => {
 
   it('returns null until a game/created is present', () => {
     expect(reduce([], { pack: SEED_PACK })).toBeNull();
+  });
+
+  /**
+   * The reducer folds the log once, top to bottom, and never revisits a
+   * rejected event once game/created lands further down - by design (R-11:
+   * one pass, no retries). That means a peer who stamps its own event from a
+   * Lamport clock that has not yet caught up to the host's history (e.g. a
+   * fresh EventLog, before any backfill has arrived) can produce an event
+   * that sorts *before* game/created forever, once merged - no amount of
+   * further backfill fixes it, because the event's lamport is fixed at
+   * signing time. This is why the app must wait for its own `state !== null`
+   * before committing anything, rather than announcing itself the instant a
+   * session is constructed.
+   */
+  it('permanently drops an event stamped before its author had backfilled game/created', () => {
+    const table = new Table(['Host']);
+    const latecomer = createIdentity('Latecomer');
+
+    // What store.ts used to do: stamp an announcement from a brand new,
+    // empty local log (lamport 0) before any backfill had landed.
+    const staleAnnounce = createEvent({
+      identity: latecomer,
+      gameId: table.log.gameId,
+      seq: 1,
+      lamport: 0,
+      body: { type: 'player/joined', username: latecomer.username },
+    });
+
+    // reduce() trusts its input is already in total order - normally that
+    // order comes from EventLog.events (sorted on insert), never from a bare
+    // array concatenation - so route the merge through a real log, exactly
+    // as a receiving peer would.
+    const replica = new EventLog(table.log.gameId);
+    replica.insertMany([...table.log.events, staleAnnounce]);
+    const state = reduce(replica.events, { pack: SEED_PACK });
+
+    expect(state).not.toBeNull();
+    expect(state?.players[latecomer.id]).toBeUndefined();
+    expect(state?.rejected.some((r) => r.id === staleAnnounce.id)).toBe(true);
+
+    // Backfilling everything else in the world does not resurrect it: the
+    // event's own lamport stamp is what put it before game/created, and that
+    // never changes.
+    const laterState = reduce(replica.events, { pack: SEED_PACK });
+    expect(laterState?.players[latecomer.id]).toBeUndefined();
   });
 });

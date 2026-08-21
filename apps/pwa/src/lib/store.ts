@@ -81,9 +81,55 @@ export interface AppState {
  * disagreeing.
  */
 export const useApp = create<AppState>((set, get) => {
+  /**
+   * Announcing yourself the instant a session is constructed stamps that
+   * event with a Lamport clock starting at 0 - lower than everything the
+   * host has already committed, since backfill hasn't landed yet. Once
+   * merged, that early stamp can sort the announcement (and anything
+   * committed right after it, like sitting on a team) before `game/created`
+   * itself, and the reducer rejects any event that arrives before creation
+   * permanently: it folds the log once, top to bottom, and never revisits a
+   * rejected event once the game/created lands further down. Waiting for the
+   * first real state (i.e. game/created has actually been backfilled and
+   * folded) means our own next Lamport stamp is guaranteed to be higher than
+   * the host's history, so our own events sort after it. A timeout still
+   * commits so a genuinely offline test isn't stuck forever.
+   */
+  const announceWhenReady = (session: GameSession, identity: Identity): void => {
+    if (session.state !== null) {
+      session.commit(announce(session.log, identity));
+      return;
+    }
+    let settled = false;
+    const timer = setTimeout(() => {
+      if (settled) return;
+      settled = true;
+      unsubscribe();
+      session.commit(announce(session.log, identity));
+    }, 8_000);
+    const unsubscribe = session.subscribe((snapshot) => {
+      if (settled || snapshot.state === null) return;
+      settled = true;
+      clearTimeout(timer);
+      unsubscribe();
+      session.commit(announce(session.log, identity));
+    });
+  };
+
   const attach = (session: GameSession, last: LastGame): void => {
+    // The reducer already records *why* it dropped an event (`state.rejected`)
+    // - nothing ever read it, which is exactly how a silently-dropped
+    // team/created event went unnoticed until someone hit it live. Logging
+    // each newly-seen rejection is cheap and turns "the team never showed up"
+    // into a console line naming the event and the reason.
+    const loggedRejections = new Set<string>();
     session.subscribe((snapshot) => {
       set({ snapshot });
+      for (const { id, reason } of snapshot.state?.rejected ?? []) {
+        if (loggedRejections.has(id)) continue;
+        loggedRejections.add(id);
+        console.warn(`[dohhh] event ${id} rejected: ${reason}`);
+      }
       // A game is its log, so persisting the log is persisting the game:
       // reloading the tab mid-round rejoins and the peers backfill the rest.
       if (snapshot.state !== null) saveEvents(store, last.gameId, session.log.events);
@@ -176,7 +222,7 @@ export const useApp = create<AppState>((set, get) => {
         seed: loadEvents(store, found.gameId),
       });
       attach(session, { gameId: found.gameId, joinCode: code });
-      session.commit(announce(session.log, identity));
+      announceWhenReady(session, identity);
       navigate('/lobby');
     },
 
@@ -199,7 +245,7 @@ export const useApp = create<AppState>((set, get) => {
         seed: loadEvents(store, ticket.gameId),
       });
       attach(session, { gameId: ticket.gameId, joinCode: ticket.joinCode });
-      session.commit(announce(session.log, identity));
+      announceWhenReady(session, identity);
       navigate('/lobby');
     },
 
