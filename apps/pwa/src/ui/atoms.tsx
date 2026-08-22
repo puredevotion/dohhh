@@ -42,7 +42,7 @@ export function Screen({
 /** Sticky bottom bar, because the primary action must be reachable by a thumb. */
 export function ActionBar({ children }: { children: ReactNode }): ReactNode {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-10 border-t border-default-200/40 bg-default-50/80 px-5 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur">
+    <div className="fixed inset-x-0 bottom-0 z-10 border-t border-border/40 bg-background/80 px-5 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur">
       <div className="mx-auto flex w-full max-w-md flex-col gap-2">{children}</div>
     </div>
   );
@@ -130,7 +130,7 @@ export function Notice({
   children: ReactNode;
 }): ReactNode {
   const classes = {
-    info: 'border-default-300/50 bg-default-100/50 text-default-foreground',
+    info: 'border-default/40 bg-default/10 text-default-foreground',
     warn: 'border-warning/40 bg-warning/10 text-warning',
     danger: 'border-danger/40 bg-danger/10 text-danger-text',
   }[tone];

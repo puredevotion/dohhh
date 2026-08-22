@@ -9,6 +9,7 @@ import { Lobby } from './screens/Lobby.jsx';
 import { Onboarding } from './screens/Onboarding.jsx';
 import { Play } from './screens/Play.jsx';
 import { Results } from './screens/Results.jsx';
+import { Solo } from './screens/Solo.jsx';
 import { Notice } from './ui/atoms.jsx';
 
 const IN_GAME_PATHS = new Set(['/lobby', '/play', '/results']);
@@ -118,6 +119,8 @@ export function App(): ReactNode {
         return <Create />;
       case '/join':
         return <Join />;
+      case '/solo':
+        return <Solo />;
       case '/lobby':
       case '/play':
       case '/results':

@@ -181,3 +181,21 @@ function offlineTransport(handlers: TransportEvents): Transport {
     leave: () => Promise.resolve(),
   };
 }
+
+/**
+ * No network at all, by design rather than by failure - for a solo game,
+ * where the only "peer" is a local, unteamed auto-dealer sharing this same
+ * device and log. Reports 'connected' immediately and stays there: unlike
+ * {@link offlineTransport} (a relay that couldn't be reached), there is
+ * nothing wrong here to recover from, so nothing about status or send
+ * should ever look like an error.
+ */
+export function createLocalTransport(options: TransportOptions): Transport {
+  options.handlers.onStatus('connected');
+  return {
+    selfPeerId: selfId,
+    peerIds: () => [],
+    send: () => undefined,
+    leave: () => Promise.resolve(),
+  };
+}

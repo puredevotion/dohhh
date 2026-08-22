@@ -30,7 +30,7 @@ export function Results(): ReactNode {
             className={`flex items-baseline justify-between gap-3 rounded-xl border px-4 py-3 ${
               row.team.id === state.winnerTeamId
                 ? 'border-success/60 bg-success/10'
-                : 'border-default-200/30'
+                : 'border-border/30'
             }`}
           >
             <span className="flex min-w-0 items-baseline gap-2">

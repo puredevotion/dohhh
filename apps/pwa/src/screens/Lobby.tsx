@@ -170,7 +170,7 @@ export function Lobby(): ReactNode {
               <div
                 key={team.id}
                 className={`rounded-xl border px-4 py-3 ${
-                  mine ? 'border-primary/70 bg-primary/10' : 'border-default-200/40'
+                  mine ? 'border-accent/70 bg-accent/10' : 'border-border/40'
                 }`}
               >
                 <div className="flex items-center justify-between gap-3">
@@ -307,7 +307,7 @@ export function Lobby(): ReactNode {
             </Button>
           </>
         ) : (
-          <div className="rounded-xl border border-default-200/40 px-4 py-3 text-center text-sm text-muted">
+          <div className="rounded-xl border border-border/40 px-4 py-3 text-center text-sm text-muted">
             {myTeam === undefined
               ? 'Pick a team, then wait for the host.'
               : 'Ready. Waiting for the host to start.'}

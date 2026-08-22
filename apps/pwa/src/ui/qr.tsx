@@ -137,7 +137,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="relative overflow-hidden rounded-2xl border border-default-200/40 bg-black/60 aspect-square">
+      <div className="relative overflow-hidden rounded-2xl border border-border/40 bg-black/60 aspect-square">
         {/* A live camera feed has nothing for a screen reader to say; the
             surrounding copy and the "Turn on the camera" button already
             explain what this is and offer the typed-code alternative. */}

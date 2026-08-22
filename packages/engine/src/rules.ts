@@ -81,7 +81,14 @@ export interface RulesConfig {
   readonly finishTheRound: boolean;
   /** Arrivals after `game/started` spectate rather than mutate turn order (R-9). */
   readonly allowLateJoin: boolean;
-  /** Minimum teams, not players — two players on one team is not a game (R-4). */
+  /**
+   * Minimum teams, not players — two players on one team is not a game
+   * (R-4). Floored at 1, not 2: the one legitimate reason to go below 2 is
+   * solo mode, where the "opponent" is a local, unteamed auto-dealer that
+   * deals and reveals categories but never joins a team or answers. The
+   * PWA is the only caller that ever passes 1 - every host-facing form asks
+   * for real teams, so the floor being 1 rather than 2 costs nothing there.
+   */
   readonly minTeams: number;
 }
 
@@ -123,7 +130,7 @@ export function normalizeRules(input: Partial<RulesConfig> | undefined): RulesCo
         : Math.max(1, Math.floor(Number(r.maxCorrectStreakPerTurn))),
     finishTheRound: r.finishTheRound ?? DEFAULT_RULES.finishTheRound,
     allowLateJoin: r.allowLateJoin ?? DEFAULT_RULES.allowLateJoin,
-    minTeams: Math.max(2, numberOr(r.minTeams, DEFAULT_RULES.minTeams)),
+    minTeams: Math.max(1, numberOr(r.minTeams, DEFAULT_RULES.minTeams)),
   };
 }
 

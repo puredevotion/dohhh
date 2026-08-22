@@ -62,6 +62,10 @@ export function Play(): ReactNode {
   const active = state.active;
   const category = active?.categoryId == null ? undefined : categoryById(active.categoryId);
   const lastTurn = state.history.at(-1) ?? null;
+  // minTeams: 1 is only ever set by hostSolo - see rules.ts. A solo game has
+  // no network at all (createLocalTransport), so a connection pill or a
+  // "nobody's here" warning would just be misleading chrome, not signal.
+  const solo = state.rules.minTeams === 1;
 
   return (
     <Screen
@@ -74,11 +78,13 @@ export function Play(): ReactNode {
             : `Round ${state.roundIndex + 1}, first to ${state.rules.targetScore}`
       }
       aside={
-        <ConnectionPill
-          status={snapshot.status}
-          peerCount={snapshot.peerCount}
-          everConnected={snapshot.everConnected}
-        />
+        solo ? undefined : (
+          <ConnectionPill
+            status={snapshot.status}
+            peerCount={snapshot.peerCount}
+            everConnected={snapshot.everConnected}
+          />
+        )
       }
     >
       {error !== null && (
@@ -92,16 +98,18 @@ export function Play(): ReactNode {
         </Notice>
       )}
 
-      <StalledWarning
-        status={snapshot.status}
-        peerCount={snapshot.peerCount}
-        everConnected={snapshot.everConnected}
-        // Mid-game, a drop is urgent - no reason to wait out the same 2
-        // minutes a pre-game "nobody's here yet" lobby gets.
-        afterMs={15_000}
-      />
+      {!solo && (
+        <StalledWarning
+          status={snapshot.status}
+          peerCount={snapshot.peerCount}
+          everConnected={snapshot.everConnected}
+          // Mid-game, a drop is urgent - no reason to wait out the same 2
+          // minutes a pre-game "nobody's here yet" lobby gets.
+          afterMs={15_000}
+        />
+      )}
 
-      <UnexpectedPeerWarning state={state} peerCount={snapshot.peerCount} />
+      {!solo && <UnexpectedPeerWarning state={state} peerCount={snapshot.peerCount} />}
 
       <TurnAnnouncer state={state} lastTurn={lastTurn} actingTeamName={acting?.team.name ?? null} />
 
@@ -247,7 +255,7 @@ function Scores({ state, me }: { state: GameState; me: string }): ReactNode {
         <div
           key={row.team.id}
           className={`rounded-xl border px-3 py-2 ${
-            row.isActing ? 'border-primary/60 bg-primary/5' : 'border-default-200/30'
+            row.isActing ? 'border-accent/60 bg-accent/5' : 'border-border/30'
           }`}
         >
           <div className="flex items-baseline justify-between gap-3">
@@ -320,7 +328,9 @@ function BetweenTurns({
           <Card.Description>
             {canDealNow
               ? "You'll get three categories to choose from for their question. They cannot deal their own - that is what stops them knowing the question in advance."
-              : 'An opposing team is dealing three categories to choose from.'}
+              : state.rules.minTeams === 1
+                ? 'The dealer is drawing three categories to choose from.'
+                : 'An opposing team is dealing three categories to choose from.'}
           </Card.Description>
         </Card.Header>
         {canDealNow && (
@@ -333,7 +343,9 @@ function BetweenTurns({
       </Card>
 
       {!canDealNow && isActingPlayer(state, me) && (
-        <p className="text-center text-sm text-muted">Waiting for your opponents to deal.</p>
+        <p className="text-center text-sm text-muted">
+          {state.rules.minTeams === 1 ? 'Dealing...' : 'Waiting for your opponents to deal.'}
+        </p>
       )}
     </div>
   );
@@ -419,7 +431,9 @@ function ChooseCategory({
           <Card.Description>
             {canChoose
               ? 'Pick one of the three - they will not know which until you do.'
-              : 'An opposing player is choosing which of three categories to deal.'}
+              : state.rules.minTeams === 1
+                ? 'The dealer is revealing which one you get.'
+                : 'An opposing player is choosing which of three categories to deal.'}
           </Card.Description>
         </Card.Header>
       </Card>
@@ -446,7 +460,7 @@ function ChooseCategory({
                   setPending(true);
                   onPick(categoryId);
                 }}
-                className="rounded-2xl border border-default-200/40 px-4 py-4 text-left transition hover:border-primary/60 hover:bg-primary/5 disabled:cursor-default disabled:opacity-60"
+                className="no-select rounded-2xl border border-border/40 px-4 py-4 text-left transition hover:border-accent/60 hover:bg-accent/5 disabled:cursor-default disabled:opacity-60"
               >
                 <span className="font-medium">{category?.name ?? categoryId}</span>
               </button>
@@ -519,7 +533,7 @@ function ChooseTier({
                   setPending(true);
                   onPick(difficulty);
                 }}
-                className={`rounded-2xl border px-4 py-4 text-left transition hover:brightness-110 disabled:cursor-default disabled:opacity-60 ${
+                className={`no-select rounded-2xl border px-4 py-4 text-left transition hover:brightness-110 disabled:cursor-default disabled:opacity-60 ${
                   {
                     graduate: 'border-tier-graduate/50 bg-tier-graduate/10',
                     phd: 'border-tier-phd/50 bg-tier-phd/10',
@@ -635,10 +649,10 @@ function LiveQuestion({
                 setPending(true);
                 onAnswer(index);
               }}
-              className={`rounded-xl border px-4 py-3 text-left text-sm transition ${
+              className={`no-select rounded-xl border px-4 py-3 text-left text-sm transition ${
                 !locked
-                  ? 'border-default-200/50 hover:border-primary/70 hover:bg-primary/10'
-                  : 'cursor-default border-default-200/20 text-muted'
+                  ? 'border-border/50 hover:border-accent/70 hover:bg-accent/10'
+                  : 'cursor-default border-border/20 text-muted'
               }`}
             >
               <span className="mr-2 font-mono text-xs text-muted">

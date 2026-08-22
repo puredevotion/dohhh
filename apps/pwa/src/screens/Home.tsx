@@ -124,6 +124,9 @@ export function Home(): ReactNode {
           <Button variant="secondary" size="lg" fullWidth onPress={() => navigate('/join')}>
             Join a game
           </Button>
+          <Button variant="ghost" size="lg" fullWidth onPress={() => navigate('/solo')}>
+            Play solo
+          </Button>
           {resumable && (
             <Button
               variant="ghost"

@@ -55,6 +55,9 @@ Camera access needs HTTPS or `localhost` - a browser rule, not ours. The
 four-word code works everywhere and is the fallback the UI offers when scanning
 cannot work.
 
+One phone, no lobby: **Play solo** from the home screen skips straight to a
+game against a local auto-dealer - no second device, no network at all.
+
 `pnpm install` (no filter) additionally installs the Expo app; `pnpm --filter
 @dohhh/native start` runs it.
 

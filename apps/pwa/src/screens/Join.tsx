@@ -65,7 +65,7 @@ export function Join(): ReactNode {
       )}
 
       {busy !== null && (
-        <div className="flex items-center gap-3 rounded-xl border border-default-200/40 px-4 py-3">
+        <div className="flex items-center gap-3 rounded-xl border border-border/40 px-4 py-3">
           <Spinner size="sm" />
           <span className="text-sm text-default-foreground">{busy}</span>
         </div>

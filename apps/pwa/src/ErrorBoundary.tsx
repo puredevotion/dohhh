@@ -26,7 +26,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode }, { error: E
         </p>
         <button
           type="button"
-          className="rounded-xl bg-primary px-4 py-2 text-sm font-medium text-white"
+          className="rounded-xl bg-accent px-4 py-2 text-sm font-medium text-white"
           onClick={() => globalThis.location.reload()}
         >
           Reload

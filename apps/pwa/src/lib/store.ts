@@ -31,6 +31,7 @@ import {
 import {
   buildTicket,
   checkTicket,
+  createLocalTransport,
   discoverGame,
   explainRefusal,
   GameSession,
@@ -60,6 +61,8 @@ const DEVICE_LABEL_KEY = 'dohhh.deviceLabel.v1';
 interface LastGame {
   readonly gameId: GameId;
   readonly joinCode: string;
+  /** True for a solo game, so a resume knows to skip the network entirely. */
+  readonly solo?: boolean;
 }
 
 export interface AppState {
@@ -78,6 +81,13 @@ export interface AppState {
   rename: (username: string) => void;
   renameDevice: (label: string) => void;
   host: (name: string, rules: Partial<RulesConfig>) => void;
+  /**
+   * A solo game against a local auto-dealer: no network, no lobby, no
+   * second human. The "opponent" is an unteamed, ephemeral identity that
+   * deals and reveals categories the instant it's asked to - it never joins
+   * a team and never answers, so the human always bets and answers alone.
+   */
+  hostSolo: (rules: Partial<RulesConfig>) => void;
   joinByCode: (code: string) => Promise<void>;
   joinByTicket: (ticket: JoinTicket) => Promise<void>;
   resume: () => Promise<boolean>;
@@ -171,6 +181,40 @@ export const useApp = create<AppState>((set, get) => {
     set({ session, snapshot: session.snapshot(), busy: null, error: null });
   };
 
+  /**
+   * The solo "opponent": an unteamed identity that deals the moment dealing
+   * is possible and reveals a category the moment one's on offer, so a solo
+   * player is never left waiting on a peer who doesn't exist. It never
+   * joins a team and never answers - the reducer's existing "the acting
+   * team cannot draw or choose its own question" check (R-10) already
+   * keeps it that way; nothing here has to re-implement that rule, only
+   * decide when to act.
+   *
+   * Committing inside this subscriber is deliberately recursive: `commit`
+   * calls `session.emit()`, which calls every subscriber again synchronously
+   * - including this one - so dealing then immediately triggers this same
+   * callback to reveal a category, all within one synchronous call stack.
+   * By the time whatever committed the event that started the chain
+   * returns, the bot has already finished its side of the turn.
+   */
+  const attachSoloBot = (session: GameSession, bot: Identity): void => {
+    session.subscribe((snapshot) => {
+      const s = snapshot.state;
+      if (s === null || s.phase !== 'playing') return;
+      if (s.active === null) {
+        session.commit(drawTurn(session.log, bot, s.turnIndex));
+        return;
+      }
+      if (s.active.categoryId === null) {
+        const options = s.active.categoryOptions;
+        const pick = options[Math.floor(Math.random() * options.length)];
+        if (pick !== undefined) {
+          session.commit(chooseCategory(session.log, bot, s.active.turnIndex, pick));
+        }
+      }
+    });
+  };
+
   const teardown = (): void => {
     get().session?.leave();
     set({ session: null, snapshot: null });
@@ -235,6 +279,50 @@ export const useApp = create<AppState>((set, get) => {
       });
       attach(session, { gameId: game.gameId, joinCode: game.joinCode });
       navigate('/lobby');
+    },
+
+    hostSolo: (rules) => {
+      const identity = get().identity;
+      if (identity === null) return;
+      teardown();
+      const bot = createIdentity('The House');
+      let log: EventLog | undefined;
+      const game = createGame({
+        identity,
+        name: `${identity.username}'s solo game`,
+        // minTeams: 1 is the one thing that makes this a solo game to the
+        // engine - everything else about the rules is whatever the player
+        // picked, same as a hosted one.
+        rules: { ...rules, minTeams: 1 },
+        packHash: SEED_PACK_HASH,
+        makeLog: (gameId) => {
+          log = new EventLog(gameId);
+          return log;
+        },
+      });
+      const session = new GameSession({
+        identity,
+        pack: SEED_PACK,
+        gameId: game.gameId,
+        joinCode: game.joinCode,
+        seed: log?.events ?? [],
+        makeTransport: createLocalTransport,
+      });
+      attach(session, { gameId: game.gameId, joinCode: game.joinCode, solo: true });
+      attachSoloBot(session, bot);
+
+      // There is nobody to wait for, so there is no lobby: create a team,
+      // join it, announce the bot, start - all local and synchronous, and
+      // by the time this returns the first category is already dealt (see
+      // attachSoloBot's cascade through the same synchronous commit chain).
+      const teamEvent = openTeam(session.log, identity, identity.username);
+      session.commit(teamEvent);
+      if (teamEvent.body.type === 'team/created') {
+        session.commit(joinTeamEvent(session.log, identity, teamEvent.body.teamId));
+      }
+      session.commit(announce(session.log, bot));
+      session.commit(startGame(session.log, identity));
+      navigate('/play');
     },
 
     joinByCode: async (code) => {
@@ -316,8 +404,14 @@ export const useApp = create<AppState>((set, get) => {
           gameId: last.gameId,
           joinCode: last.joinCode,
           seed: events,
+          ...(last.solo === true ? { makeTransport: createLocalTransport } : {}),
         });
         attach(session, last);
+        // The bot's identity is never persisted - nothing needs it to be
+        // the *same* keypair turn to turn, only to be someone other than
+        // the human's team, so a reload just mints a fresh one and carries
+        // on exactly where the log left off.
+        if (last.solo === true) attachSoloBot(session, createIdentity('The House'));
         return true;
       } catch {
         return false;
