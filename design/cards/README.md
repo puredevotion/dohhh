@@ -65,11 +65,41 @@ Four beats, in order:
    arithmetic.
 3. **The same move again.** Swap the head: 猪肉 pork, 羊肉 lamb, 鸡肉 chicken,
    鸭肉 duck. One character learned, four dishes readable.
-4. **The unlock.** Squeezed to the left of another character, 肉 flattens into 月 —
+4. **Can you see the animal?** Three of the protein characters are real
+   pictographs — 牛 is an ox head seen head-on, 羊 the same head with the horns
+   curving down, 鱼 a head-body-tail fish. The rest are not, and the panel says so:
+   鸭 is 甲 (borrowed for its sound) plus 鸟 (bird), and 猪 contains no pig at all —
+   犭 is merely "four-legged animal" — though the traditional 豬 keeps one in 豕.
+5. **The unlock.** Squeezed to the left of another character, 肉 flattens into 月 —
    and the organ section of a menu stops being a lottery: 肝 liver, 肠 intestine,
    肚 tripe, 腰 kidney, 脑 brain.
 
-That fourth beat is the argument for the whole screen. It is not a fact about one
+### Where this screen is most tempted to lie
+
+Beat 4 exists because the pictographic story is irresistible and only sometimes
+true. Chineasy's documented failure in the academic literature is presenting
+invented pictographic etymologies as real: it delights, and it teaches confident
+misreading. So the panel draws the line explicitly — squint at 牛 and you are
+seeing what the scribe saw; squint at 鸭 and you are inventing something.
+
+The truthful account is also the more useful one. 鸟 means *bird* wherever it
+appears, so it opens 鸡 chicken, 鸭 duck, 鹅 goose and 鸽 pigeon in one move. A
+made-up duck opens exactly one character.
+
+The menu domain has three radical unlocks, not one:
+
+| Radical | Tells you | Opens |
+| --- | --- | --- |
+| 月 (from 肉) | flesh, organ | 肝 肠 肚 腰 脑 |
+| 鸟 | bird | 鸡 鸭 鹅 鸽 |
+| 鱼 | fish, seafood | 鱿 鳗 鲈 鳕 |
+
+**One per reveal, never several.** The `Breakdown` artboard stacks two so both can
+be judged, and says so on the artboard itself. Piling extra interesting material
+onto a screen is what the coherence principle warns against, and this is already
+the longest screen in the game.
+
+That unlock beat is the argument for the whole screen. It is not a fact about one
 word, it is a key that opens a section of every menu in the country, and there is no
 way to hand it over except by taking a word apart in front of someone.
 

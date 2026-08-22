@@ -1,13 +1,47 @@
 {
   "pages": [
-    { "id": "page-1", "name": "Turn loop" },
-    { "id": "page-2", "name": "Breakdown" },
-    { "id": "page-3", "name": "Sign types" }
+    {
+      "id": "page-1",
+      "name": "Turn loop"
+    },
+    {
+      "id": "page-2",
+      "name": "Breakdown"
+    },
+    {
+      "id": "page-3",
+      "name": "Sign types"
+    }
   ],
   "artboards": [
-    { "file": "Main.dc.html",      "page": "page-1", "title": "Turn loop", "x": 0, "y": 0, "w": 390, "h": 844 },
-    { "file": "Breakdown.dc.html", "page": "page-2", "title": "The breakdown, full height", "x": 0, "y": 0, "w": 390, "h": 1180 },
-    { "file": "Signs.dc.html",     "page": "page-3", "title": "Five signs, five objects", "x": 0, "y": 0, "w": 900, "h": 1320, "expand": "fit" }
+    {
+      "file": "Main.dc.html",
+      "page": "page-1",
+      "title": "Turn loop",
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Breakdown.dc.html",
+      "page": "page-2",
+      "title": "The breakdown, full height",
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 1700
+    },
+    {
+      "file": "Signs.dc.html",
+      "page": "page-3",
+      "title": "Five signs, five objects",
+      "x": 0,
+      "y": 0,
+      "w": 900,
+      "h": 1320,
+      "expand": "fit"
+    }
   ],
   "annotations": [
     {
@@ -24,7 +58,7 @@
       "x": 470,
       "y": 0,
       "w": 430,
-      "text": "The promoted surface at full height, so you can read it without scrolling a phone frame.\n\nFOUR BEATS:\n\n1. The word, on the same light ground the sign used — so the thing you just read is the thing you now study.\n\n2. IT COMES APART. 牛 ox + 肉 meat. Chinese has no separate word for beef; it names the animal and the substance and lets you do the arithmetic.\n\n3. THE SAME MOVE AGAIN. Swap the head: 猪肉 pork, 羊肉 lamb, 鸡肉 chicken, 鸭肉 duck. One character learned, four dishes readable.\n\n4. THE UNLOCK. Squeezed to the left of another character, 肉 flattens into 月 — and the organ section stops being a lottery: 肝 liver, 肠 intestine, 肚 tripe, 腰 kidney, 脑 brain.\n\nThat fourth beat is the whole argument for this screen. It is not a fact about one word; it is a key that opens a section of every menu in the country, and there is no way to hand it over except by taking a word apart in front of someone.\n\nStated as a hint, not a rule — 月 is also the moon (月票 monthly pass) — because overclaiming a pattern is how you teach someone to misread confidently."
+      "text": "The promoted surface at full height.\n\nFIVE BEATS:\n\n1. The word, on the same light ground the sign used — what you just read is what you now study.\n\n2. IT COMES APART. 牛 ox + 肉 meat. Chinese has no separate word for beef; it names the animal and the substance and lets you do the arithmetic.\n\n3. THE SAME MOVE AGAIN. Swap the head: 猪肉 pork, 羊肉 lamb, 鸡肉 chicken, 鸭肉 duck.\n\n4. CAN YOU SEE THE ANIMAL? Three of them are real pictographs — 牛 is an ox head seen head-on, 羊 the same head with the horns curving down, 鱼 a head-body-tail fish. The rest are not, and the panel says so: 鸭 is 甲 (sound only) + 鸟 (bird), and 猪 has no pig in it at all — 犭 is just \"four-legged animal\" — though the traditional 豬 keeps one in 豕.\n\n   This beat is where the product is most tempted to lie. Chineasy's documented failure is presenting invented pictographic stories as etymology; it delights, and it teaches confident misreading. The truthful account is also the more useful one — 鸟 means bird wherever it appears, so it opens 鸡 鸭 鹅 鸽 at once, while a made-up duck opens one character.\n\n5. THE UNLOCK. 肉 flattens into 月 on the left, and the organ section stops being a lottery: 肝 liver, 肠 intestine, 肚 tripe, 腰 kidney, 脑 brain.\n\nNOT SHIPPED AS SHOWN: this artboard stacks two unlocks so both can be judged. The app shows one per reveal — the coherence principle warns against piling on extra interesting material, and this is already the longest screen in the game."
     },
     {
       "id": "signs-note",
@@ -35,5 +69,8 @@
       "text": "The five treatments side by side.\n\nEach caption says what the object is and what makes it hard — the shopfront is deliberately the least legible, the price label deliberately buries the character under the price, because those are the real reading conditions.\n\nWhat this costs: five sign templates instead of one, and every new category needs a treatment designed for it rather than a colour picked for it.\n\nStill open, pending the research: whether tone colour survives the evidence, and whether the gloss should be Dutch or English (both shown for now)."
     }
   ],
-  "launch": { "view": "canvas", "page": "page-2" }
+  "launch": {
+    "view": "canvas",
+    "page": "page-2"
+  }
 }
