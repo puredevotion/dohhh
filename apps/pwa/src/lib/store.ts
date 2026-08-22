@@ -182,27 +182,52 @@ export const useApp = create<AppState>((set, get) => {
   };
 
   /**
-   * The solo "opponent": an unteamed identity that deals the moment dealing
-   * is possible and reveals a category the moment one's on offer, so a solo
-   * player is never left waiting on a peer who doesn't exist. It never
-   * joins a team and never answers - the reducer's existing "the acting
-   * team cannot draw or choose its own question" check (R-10) already
-   * keeps it that way; nothing here has to re-implement that rule, only
-   * decide when to act.
+   * The solo "opponent": an unteamed identity that deals and reveals a
+   * category, so a solo player is never left waiting on a peer who doesn't
+   * exist. It never joins a team and never answers - the reducer's existing
+   * "the acting team cannot draw or choose its own question" check (R-10)
+   * already keeps it that way; nothing here has to re-implement that rule,
+   * only decide when to act.
    *
-   * Committing inside this subscriber is deliberately recursive: `commit`
-   * calls `session.emit()`, which calls every subscriber again synchronously
-   * - including this one - so dealing then immediately triggers this same
-   * callback to reveal a category, all within one synchronous call stack.
-   * By the time whatever committed the event that started the chain
-   * returns, the bot has already finished its side of the turn.
+   * Dealing the *next* question is deliberately delayed a beat rather than
+   * committed the instant it's possible. Without the delay, the very first
+   * version of this dealt immediately: a commit's `session.emit()` calls
+   * every subscriber again synchronously, including this one, so resolving
+   * a turn and dealing the next one both happened inside one synchronous
+   * call stack - React never got a render in between, so the "you were
+   * right/wrong" outcome card (only shown while `active === null`, between
+   * turns) was skipped entirely. The score still updated, which is the only
+   * thing that was visibly different, and looked exactly like a mystery
+   * with no feedback. Revealing a category, by contrast, stays instant:
+   * there's no card to skip past on that step, only a fast "which of
+   * three" moment that dwelling on adds nothing to.
    */
   const attachSoloBot = (session: GameSession, bot: Identity): void => {
+    const DEAL_DELAY_MS = 2_600;
+    let dealTimer: ReturnType<typeof setTimeout> | null = null;
+    let scheduledForTurn: number | null = null;
     session.subscribe((snapshot) => {
       const s = snapshot.state;
-      if (s === null || s.phase !== 'playing') return;
+      if (s === null || s.phase !== 'playing') {
+        if (dealTimer !== null) clearTimeout(dealTimer);
+        dealTimer = null;
+        return;
+      }
       if (s.active === null) {
-        session.commit(drawTurn(session.log, bot, s.turnIndex));
+        if (scheduledForTurn === s.turnIndex) return;
+        scheduledForTurn = s.turnIndex;
+        // Nothing to catch up on before the very first question - that
+        // delay exists purely to let a *resolved* turn's outcome be seen.
+        if (s.history.length === 0) {
+          session.commit(drawTurn(session.log, bot, s.turnIndex));
+          return;
+        }
+        dealTimer = setTimeout(() => {
+          dealTimer = null;
+          if (session.state?.phase === 'playing' && session.state.active === null) {
+            session.commit(drawTurn(session.log, bot, s.turnIndex));
+          }
+        }, DEAL_DELAY_MS);
         return;
       }
       if (s.active.categoryId === null) {
