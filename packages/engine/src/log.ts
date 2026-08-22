@@ -16,8 +16,28 @@ export type VersionVector = Readonly<Record<PlayerId, number>>;
 export interface InsertResult {
   readonly accepted: boolean;
   /** Why it was refused; `duplicate` is the common, boring case. */
-  readonly reason?: 'duplicate' | 'malformed' | 'wrong-protocol' | 'wrong-game' | 'bad-id' | 'impersonation' | 'bad-signature';
+  readonly reason?:
+    | 'duplicate'
+    | 'malformed'
+    | 'wrong-protocol'
+    | 'wrong-game'
+    | 'bad-id'
+    | 'impersonation'
+    | 'bad-signature'
+    | 'log-full';
 }
+
+/**
+ * Far above anything a real game produces (a few hundred turns is a long
+ * session; each turn is at most a handful of events), and there is no
+ * server to rate-limit a hostile peer flooding the room with crypto-valid
+ * garbage - every accepted event is permanent, gossiped to every peer, and
+ * re-folded on every read. This ceiling is the one piece of client-side
+ * self-defense available in a design with no central authority: past it, a
+ * flood costs the flooder nothing further to send, but stops costing every
+ * other device anything further to store or process.
+ */
+export const MAX_LOG_EVENTS = 20_000;
 
 /**
  * An append-only, totally-ordered, self-verifying event log.
@@ -40,6 +60,7 @@ export class EventLog {
   /** Verifies, de-duplicates and inserts in order. Never throws on bad input. */
   insert(event: SignedEvent): InsertResult {
     if (this.byId.has(event.id)) return { accepted: false, reason: 'duplicate' };
+    if (this.ordered.length >= MAX_LOG_EVENTS) return { accepted: false, reason: 'log-full' };
     const rejection = checkEvent(event, this.gameId);
     if (rejection !== null) return { accepted: false, reason: rejection };
 

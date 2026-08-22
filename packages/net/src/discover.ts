@@ -27,6 +27,13 @@ export interface DiscoverOptions {
 }
 
 export function discoverGame(options: DiscoverOptions): Promise<Discovery | null> {
+  // 5 minutes: generous on purpose. A wrong code fails fast via the 'failed'
+  // status below (an unreachable relay), so this ceiling only matters for a
+  // *correct* code where the host device just hasn't opened the game yet -
+  // someone still setting up, or fetching their phone from another room. The
+  // UI's own "still nobody here" messaging (StalledWarning) kicks in well
+  // before this at 2 minutes; this is the hard stop behind it, not the thing
+  // a player is expected to wait out.
   const timeoutMs = options.timeoutMs ?? 300_000;
   const make = options.makeTransport ?? createTransport;
 
@@ -67,11 +74,24 @@ export function discoverGame(options: DiscoverOptions): Promise<Discovery | null
 function discoveryFrom(payload: string): Discovery | null {
   try {
     const parsed = JSON.parse(payload) as {
+      t?: unknown;
       gameId?: unknown;
       protocol?: unknown;
       packHash?: unknown;
+      vector?: unknown;
+      digest?: unknown;
     };
-    if (typeof parsed?.gameId !== 'string' || !parsed.gameId.startsWith('game_')) return null;
+    // `want`/`events` gossip also carries a bare `gameId` (session.ts's
+    // SyncMessage union), and a live game gossips constantly compared to how
+    // rarely it broadcasts `have` - without this, a joiner's probe could
+    // catch one of those first, default protocol/packHash to "unknown", and
+    // reject a perfectly compatible game as a version mismatch. Requiring
+    // the shape only `have` actually has (a vector and a digest) rules that
+    // out structurally rather than relying on timing luck.
+    if (parsed?.t !== 'have') return null;
+    if (typeof parsed.gameId !== 'string' || !parsed.gameId.startsWith('game_')) return null;
+    if (typeof parsed.vector !== 'object' || parsed.vector === null) return null;
+    if (typeof parsed.digest !== 'string') return null;
     // Older builds never sent these fields; treat that as "unknown version"
     // rather than crashing the discovery so the caller can still surface a
     // readable refusal.

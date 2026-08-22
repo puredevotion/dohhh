@@ -1,4 +1,4 @@
-import { DIFFICULTY_ORDER, DIFFICULTY_TIERS, shortenId } from '@dohhh/engine';
+import { DEFAULT_RULES, DIFFICULTY_ORDER, DIFFICULTY_TIERS, shortenId } from '@dohhh/engine';
 import { Button, Card, Input, Typography } from '@heroui/react';
 import { useEffect, useState, type ReactNode } from 'react';
 
@@ -152,8 +152,9 @@ export function Home(): ReactNode {
               <Row key={difficulty} tier={difficulty} tierInfo={DIFFICULTY_TIERS[difficulty]} />
             ))}
             <p className="mt-1 text-xs text-muted">
-              A category is dealt to you at random; you choose how hard a question to take on it.
-              Right, and you keep the turn. Wrong, and it costs you and moves on. First to 150.
+              An opposing team deals you a choice of three categories; you choose how hard a question
+              to take on it. Right, and you keep the turn. Wrong, and it costs you and moves on. First
+              to {DEFAULT_RULES.targetScore} wins outright.
             </p>
           </Card.Content>
         </Card>
@@ -190,15 +191,20 @@ function Row({
  * Reads the saved-game marker without connecting. `resume()` itself joins a
  * mesh, which is not something a screen should do just to decide whether to
  * render a button.
+ *
+ * Deliberately does not also require a cached per-game event log: that cache
+ * only gets written once a connection has actually backfilled real state,
+ * which a joiner (unlike a host, whose own log is populated locally from the
+ * moment they create the game) may never have reached if the connection
+ * dropped early. `resume()` reconnects over the mesh regardless, so the
+ * marker alone is enough to justify offering the button.
  */
 async function resumeProbe(): Promise<boolean> {
   try {
     const raw = globalThis.localStorage?.getItem('dohhh.lastGame.v1');
-    if (raw === null || raw === undefined) return false;
+    if (raw == null) return false;
     const parsed = JSON.parse(raw) as { gameId?: string };
-    if (typeof parsed.gameId !== 'string') return false;
-    const events = globalThis.localStorage?.getItem(`dohhh.game.${parsed.gameId}.v1`);
-    return typeof events === 'string' && events.length > 2;
+    return typeof parsed.gameId === 'string';
   } catch {
     return false;
   }

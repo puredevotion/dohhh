@@ -17,6 +17,15 @@ export interface KeyValueStore {
 const IDENTITY_KEY = 'dohhh.identity.v1';
 const gameKey = (gameId: GameId): string => `dohhh.game.${gameId}.v1`;
 
+// Ed25519 keys are 32 raw bytes, hex-encoded; the player id is `dh_` plus 12
+// lowercase base32 characters (see identity.ts). Checking `typeof === 'string'`
+// alone lets a truncated or corrupted secretKey through the one boundary
+// meant to catch it - it would then reach signing code deep in the engine,
+// where the failure is a confusing crash instead of a clean "reset your
+// identity."
+const HEX_64 = /^[0-9a-f]{64}$/;
+const PLAYER_ID = /^dh_[a-z2-7]{12}$/;
+
 export function loadIdentity(store: KeyValueStore): Identity | null {
   const raw = store.get(IDENTITY_KEY);
   if (raw === null) return null;
@@ -26,7 +35,10 @@ export function loadIdentity(store: KeyValueStore): Identity | null {
       typeof parsed.id !== 'string' ||
       typeof parsed.username !== 'string' ||
       typeof parsed.publicKey !== 'string' ||
-      typeof parsed.secretKey !== 'string'
+      typeof parsed.secretKey !== 'string' ||
+      !PLAYER_ID.test(parsed.id) ||
+      !HEX_64.test(parsed.publicKey) ||
+      !HEX_64.test(parsed.secretKey)
     ) {
       return null;
     }
@@ -80,18 +92,35 @@ export function memoryStore(): KeyValueStore {
 /**
  * Wraps a Storage-like object so a browser in private mode - where every write
  * throws - degrades to memory instead of crashing on startup.
+ *
+ * `onDegraded` fires the first time any operation actually falls back to the
+ * in-memory store. Without it, this degradation is a one-way trapdoor no
+ * caller can observe: nothing you do survives a reload from that point on,
+ * and nothing ever told the player that. It fires once per store instance
+ * rather than on every single fallback - a UI banner that re-renders on
+ * every keystroke because a warning keeps re-firing is its own bug.
  */
-export function webStore(storage: {
-  getItem(k: string): string | null;
-  setItem(k: string, v: string): void;
-  removeItem(k: string): void;
-}): KeyValueStore {
+export function webStore(
+  storage: {
+    getItem(k: string): string | null;
+    setItem(k: string, v: string): void;
+    removeItem(k: string): void;
+  },
+  onDegraded?: () => void,
+): KeyValueStore {
   const fallback = memoryStore();
+  let warned = false;
+  const degrade = (): void => {
+    if (warned) return;
+    warned = true;
+    onDegraded?.();
+  };
   return {
     get: (key) => {
       try {
         return storage.getItem(key);
       } catch {
+        degrade();
         return fallback.get(key);
       }
     },
@@ -99,6 +128,7 @@ export function webStore(storage: {
       try {
         storage.setItem(key, value);
       } catch {
+        degrade();
         fallback.set(key, value);
       }
     },
@@ -106,6 +136,7 @@ export function webStore(storage: {
       try {
         storage.removeItem(key);
       } catch {
+        degrade();
         fallback.remove(key);
       }
     },

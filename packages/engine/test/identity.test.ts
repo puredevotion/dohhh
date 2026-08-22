@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   checkEvent,
+  confusableSkeleton,
   createEvent,
   createIdentity,
   EventLog,
@@ -10,6 +11,7 @@ import {
   normalizeUsername,
   sign,
   signingPayload,
+  usernamesConfusable,
   verify,
 } from '../src/index.js';
 
@@ -52,6 +54,33 @@ describe('identity', () => {
     expect(normalizeUsername('  Ada   Lovelace ')).toBe('Ada Lovelace');
     expect(normalizeUsername('')).toBe('Anonymous');
     expect(normalizeUsername('x'.repeat(80))).toHaveLength(24);
+  });
+
+  it('strips zero-width and bidi-control characters from a username', () => {
+    // U+200B zero-width space, U+200E LTR mark, U+202E RTL override.
+    expect(normalizeUsername('Ada​Lovelace')).toBe('AdaLovelace');
+    expect(normalizeUsername('‮Ada‬')).toBe('Ada');
+    expect(normalizeUsername('A‎d‏a')).toBe('Ada');
+  });
+
+  it('collapses compatibility forms via NFKC', () => {
+    // U+FF21... fullwidth Latin "Ada" - visually distinct, semantically the
+    // same letters, and NFKC is exactly the normalization that says so.
+    expect(normalizeUsername('Ａｄａ')).toBe('Ada');
+  });
+
+  it('flags Cyrillic/Greek lookalikes as confusable with their Latin twins', () => {
+    // Cyrillic "Аdа" (А and а are Cyrillic, look identical to Latin A/a).
+    expect(usernamesConfusable('Ada', 'Аdа')).toBe(true);
+    expect(usernamesConfusable('Alex', 'Al ex')).toBe(true);
+    expect(usernamesConfusable('Ada', 'Ada')).toBe(false); // identical, not a spoof
+    expect(usernamesConfusable('Ada', 'Grace')).toBe(false);
+  });
+
+  it('is only a curated subset, not the full Unicode confusables table - by design', () => {
+    // Documented scope limit, not a bug: a character outside the curated
+    // table just passes through unchanged rather than being flagged.
+    expect(confusableSkeleton('Ada')).toBe('ada');
   });
 });
 

@@ -1,6 +1,6 @@
 import { CATEGORY_IDS } from './categories.js';
 import type { GameEventBody, SignedEvent } from './events.js';
-import { presentQuestion, questionById, selectQuestion } from './pack.js';
+import { pickFromPool, presentQuestion, questionById, selectQuestion } from './pack.js';
 import { createRng } from './rng.js';
 import type { RulesConfig } from './rules.js';
 import { DIFFICULTY_TIERS, normalizeRules } from './rules.js';
@@ -56,12 +56,19 @@ export interface GameState {
   readonly active: ActiveTurn | null;
   readonly history: readonly TurnRecord[];
   /**
-   * Round in which someone first crossed the target. The game ends when a
-   * later round completes, so every team gets the same number of turns (R-5).
+   * Round in which someone first crossed the target. What happens next
+   * depends on `rules.finishTheRound`: when true (R-5), the game ends once a
+   * *later* round completes, so every team gets the same number of turns;
+   * when false (the default), the game ends the instant this round's already
+   * in-flight turn resolves - see {@link armEndgameIfCrossed}.
    */
   readonly endgameArmedRound: number | null;
   readonly suddenDeath: boolean;
   readonly winnerTeamId: TeamId | null;
+  /** Host-only door lock: blocks brand-new `player/joined`, never an already-known player. */
+  readonly locked: boolean;
+  /** Players the host has kicked. Every future event from one of these ids is refused. */
+  readonly bannedIds: readonly PlayerId[];
   /** Events the reducer refused, with a reason. Surfaced for debugging, not play. */
   readonly rejected: readonly { readonly id: string; readonly reason: string }[];
 }
@@ -83,18 +90,26 @@ export const CATEGORY_OPTIONS_COUNT = 3;
 export function reduce(events: readonly SignedEvent[], options: ReduceOptions): GameState | null {
   let state: GameState | null = null;
   const rejected: { id: string; reason: string }[] = [];
+  // There is no rate limit on how many bad events a hostile peer can send
+  // (see MAX_LOG_EVENTS in log.ts for the log-size half of this), and this
+  // array gets rebuilt from scratch on every single fold - without a cap, a
+  // flood's cost to every other device grows without bound on every render,
+  // not just once. Diagnostics only need the recent tail; a client debugging
+  // "why didn't my team show up" cares about the last few rejections, not a
+  // complete history of a flood.
+  const REJECTED_LIMIT = 200;
 
   for (const event of events) {
     if (state === null) {
       if (event.body.type !== 'game/created') {
-        rejected.push({ id: event.id, reason: `${event.body.type} before game/created` });
+        pushRejection(rejected, event.id, `${event.body.type} before game/created`, REJECTED_LIMIT);
         continue;
       }
       state = createState(event, event.body);
       continue;
     }
     const result = apply(state, event, options.pack);
-    if (typeof result === 'string') rejected.push({ id: event.id, reason: result });
+    if (typeof result === 'string') pushRejection(rejected, event.id, result, REJECTED_LIMIT);
     else state = result;
   }
 
@@ -129,6 +144,8 @@ function createState(event: SignedEvent, body: Extract<GameEventBody, { type: 'g
     endgameArmedRound: null,
     suddenDeath: false,
     winnerTeamId: null,
+    locked: false,
+    bannedIds: [],
     rejected: [],
   };
 }
@@ -138,14 +155,25 @@ function apply(state: GameState, event: SignedEvent, pack: ContentPack): GameSta
   const body = event.body;
   const author = event.author;
 
+  // Checked before any event-specific rule, and for every event type
+  // without exception: a kick is supposed to be final. Letting a banned
+  // player's own re-announcement (or anything else they sign) back in
+  // through a case-by-case check would make "kicked" mean "kicked until
+  // your next player/joined," which is not a ban.
+  if (state.bannedIds.includes(author)) return 'you have been removed from this game by the host';
+
   switch (body.type) {
     case 'game/created':
       return 'duplicate game/created';
 
     case 'player/joined': {
+      const known = state.players[author] !== undefined;
+      // The lock only ever stops a *stranger* nobody has seen yet - an
+      // already-known player re-announcing (a reconnect, most commonly)
+      // is never what "close the door" was meant to block.
+      if (state.locked && !known) return 'this room is locked';
       const player: Player = { id: author, username: body.username, publicKey: event.pub };
       const players = { ...state.players, [author]: player };
-      const known = state.players[author] !== undefined;
       const onTeam = state.teams.some((t) => t.memberIds.includes(author));
       const spectatorIds =
         known || onTeam || state.spectatorIds.includes(author)
@@ -313,9 +341,12 @@ function apply(state: GameState, event: SignedEvent, pack: ContentPack): GameSta
       if (!Number.isInteger(body.chosenIndex) || body.chosenIndex < 0 || body.chosenIndex > 3) {
         return 'option out of range';
       }
+      // Just validated as an integer 0-3 above.
+      const chosenIndex = body.chosenIndex as 0 | 1 | 2 | 3;
       return resolve(state, active, {
         answererId: author,
-        chosenIndex: body.chosenIndex,
+        chosenIndex,
+        chosenText: presented.options[chosenIndex] ?? null,
         correct: body.chosenIndex === presented.correctIndex,
         difficulty: active.difficulty,
         timedOut: false,
@@ -335,22 +366,56 @@ function apply(state: GameState, event: SignedEvent, pack: ContentPack): GameSta
       return resolve(state, active, {
         answererId: null,
         chosenIndex: -1,
+        chosenText: null,
         correct: false,
         difficulty,
         timedOut: true,
       });
     }
 
+    case 'room/locked': {
+      if (author !== state.hostId) return 'only the host may lock the room';
+      if (state.locked === body.locked) return state; // idempotent, nothing to fold
+      return { ...state, locked: body.locked };
+    }
+
+    case 'player/kicked': {
+      if (author !== state.hostId) return 'only the host may kick a player';
+      if (body.targetId === state.hostId) return 'the host cannot kick themselves';
+      if (state.bannedIds.includes(body.targetId)) return state; // already banned
+      // Deliberately not handled: kicking the last member of a team
+      // mid-game leaves that team in `turnOrder` with nobody able to act on
+      // its turn. Same shape of problem as everyone on a team going
+      // permanently offline - not new, and not solved here; a real fix
+      // would be a team-elimination mechanic, which is a separate feature.
+      const teams = state.teams.map((team) => ({
+        ...team,
+        memberIds: team.memberIds.filter((id) => id !== body.targetId),
+      }));
+      return {
+        ...state,
+        teams,
+        spectatorIds: state.spectatorIds.filter((id) => id !== body.targetId),
+        bannedIds: [...state.bannedIds, body.targetId],
+      };
+    }
+
     default: {
+      // Deliberately reports only the type, not the full body: every field in
+      // today's event union is public game data, but a rejection reason ends
+      // up in console.warn (see store.ts), and there is no reason to make a
+      // future event type's contents a de facto logging channel by habit.
       const exhaustive: never = body;
-      return `unknown event ${JSON.stringify(exhaustive)}`;
+      const unknownType = (exhaustive as { type?: unknown })?.type;
+      return `unknown event type ${typeof unknownType === 'string' ? unknownType : '(unreadable)'}`;
     }
   }
 }
 
 interface Resolution {
   readonly answererId: PlayerId | null;
-  readonly chosenIndex: number;
+  readonly chosenIndex: 0 | 1 | 2 | 3 | -1;
+  readonly chosenText: string | null;
   readonly correct: boolean;
   readonly difficulty: Difficulty;
   readonly timedOut: boolean;
@@ -375,6 +440,7 @@ function resolve(state: GameState, active: ActiveTurn, res: Resolution): GameSta
     difficulty: res.difficulty,
     questionId: active.questionId ?? '',
     chosenIndex: res.chosenIndex,
+    chosenText: res.chosenText,
     correct: res.correct,
     delta,
     timedOut: res.timedOut,
@@ -496,12 +562,11 @@ function pickQuestion(
   const exact = selectQuestion({ pack, category, difficulty, nonce, exclude: asked });
   if (exact.question !== null) return exact;
 
-  const used = new Set(asked);
+  // The exact (category, tier) cell is empty - widen to the same tier across
+  // every category rather than stalling. pickFromPool still prefers a fresh
+  // question and only repeats one if that pool is exhausted too.
   const sameTier = pack.questions.filter((q) => q.difficulty === difficulty);
-  const fresh = sameTier.filter((q) => !used.has(q.id));
-  const pool = fresh.length > 0 ? fresh : sameTier;
-  if (pool.length === 0) return { question: null, repeat: false };
-  return { question: createRng(nonce, 'fallback', difficulty).pick(pool), repeat: fresh.length === 0 };
+  return pickFromPool(sameTier, asked, createRng(nonce, 'fallback', difficulty));
 }
 
 export function currentTeamId(state: GameState): TeamId | null {
@@ -518,4 +583,15 @@ function memberOf(state: GameState, teamId: TeamId, playerId: PlayerId): boolean
 
 function dedupe<T>(items: readonly T[]): T[] {
   return [...new Set(items)];
+}
+
+/** Keeps only the most recent `limit` rejections - see `reduce`'s REJECTED_LIMIT. */
+function pushRejection(
+  rejected: { id: string; reason: string }[],
+  id: string,
+  reason: string,
+  limit: number,
+): void {
+  rejected.push({ id, reason });
+  if (rejected.length > limit) rejected.splice(0, rejected.length - limit);
 }

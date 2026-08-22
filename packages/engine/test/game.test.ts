@@ -10,9 +10,12 @@ import {
   createRng,
   drawTurn,
   EventLog,
+  kickPlayer,
+  makeEvent,
   reduce,
   scoreboard,
   SEED_PACK,
+  setRoomLocked,
   startCheck,
   startGame,
   type GameState,
@@ -289,9 +292,78 @@ describe('authority', () => {
   });
 });
 
+describe('moderation (kick and lock)', () => {
+  it('refuses a lock from anyone but the host', () => {
+    const table = twoTeams();
+    table.push(setRoomLocked(table.log, table.player(1), true));
+    expect(table.state().locked).toBe(false);
+    expect(table.state().rejected.some((r) => r.reason.includes('only the host'))).toBe(true);
+  });
+
+  it('locks and unlocks for the host', () => {
+    const table = twoTeams();
+    table.push(setRoomLocked(table.log, table.player(0), true));
+    expect(table.state().locked).toBe(true);
+    table.push(setRoomLocked(table.log, table.player(0), false));
+    expect(table.state().locked).toBe(false);
+  });
+
+  it('blocks a brand-new player from joining while locked, but not an already-known one re-announcing', () => {
+    const table = twoTeams();
+    table.push(setRoomLocked(table.log, table.player(0), true));
+
+    const stranger = createIdentity('Stranger');
+    table.push(makeEvent(table.log, stranger, { type: 'player/joined', username: stranger.username }));
+    expect(table.state().players[stranger.id]).toBeUndefined();
+    expect(table.state().rejected.some((r) => r.reason === 'this room is locked')).toBe(true);
+
+    // player(1) is already known (announced in the Table constructor) - a
+    // reconnect's re-announcement must go through rather than being treated
+    // as a new stranger. Checked by effect (the new username actually
+    // landed), not by absence-of-rejection: the stranger's own rejection
+    // above stays in `rejected`'s history regardless.
+    table.push(
+      makeEvent(table.log, table.player(1), { type: 'player/joined', username: 'Grace Renamed' }),
+    );
+    expect(table.state().players[table.player(1).id]?.username).toBe('Grace Renamed');
+  });
+
+  it('refuses a kick from anyone but the host', () => {
+    const table = twoTeams();
+    const target = table.player(2).id;
+    table.push(kickPlayer(table.log, table.player(1), target));
+    expect(table.state().bannedIds).not.toContain(target);
+    expect(table.state().rejected.some((r) => r.reason.includes('only the host'))).toBe(true);
+  });
+
+  it('refuses the host kicking themselves', () => {
+    const table = twoTeams();
+    table.push(kickPlayer(table.log, table.player(0), table.player(0).id));
+    expect(table.state().bannedIds).toHaveLength(0);
+    expect(table.state().rejected.some((r) => r.reason.includes('cannot kick themselves'))).toBe(true);
+  });
+
+  it('removes a kicked player from their team and refuses everything they sign afterward', () => {
+    const table = twoTeams();
+    const target = table.player(2);
+    const targetsTeam = table.state().teams.find((t) => t.memberIds.includes(target.id));
+    expect(targetsTeam).not.toBeUndefined();
+
+    table.push(kickPlayer(table.log, table.player(0), target.id));
+    const after = table.state();
+    expect(after.bannedIds).toContain(target.id);
+    expect(after.teams.find((t) => t.id === targetsTeam?.id)?.memberIds).not.toContain(target.id);
+
+    // Everything they sign from here on is refused, including a
+    // re-announcement - a kick is not "kicked until your next join."
+    table.push(makeEvent(table.log, target, { type: 'player/joined', username: target.username }));
+    expect(table.state().rejected.some((r) => r.reason.includes('removed from this game'))).toBe(true);
+  });
+});
+
 describe('the finish line', () => {
   it('completes the round after someone crosses the target (R-5)', () => {
-    const table = twoTeams();
+    const table = twoTeams({ targetScore: 150, finishTheRound: true });
     const [teamA, teamB] = table.state().turnOrder;
 
     // Ten straight professor answers: 150 exactly, and the turn never left.
@@ -326,7 +398,7 @@ describe('the finish line', () => {
   });
 
   it('goes to sudden death on a dead heat, and resolves it', () => {
-    const table = twoTeams({ targetScore: 5 });
+    const table = twoTeams({ targetScore: 5, finishTheRound: true });
     const [teamA, teamB] = table.state().turnOrder;
 
     table.playTurn('phd', true); // A: 5, target crossed, endgame armed

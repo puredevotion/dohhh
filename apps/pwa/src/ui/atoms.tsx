@@ -51,11 +51,14 @@ export function ActionBar({ children }: { children: ReactNode }): ReactNode {
 export function ConnectionPill({
   status,
   peerCount,
+  everConnected = false,
 }: {
   status: ConnectionStatus;
   peerCount: number;
+  /** Distinguishes "still waiting for the first peer" from "someone just dropped." */
+  everConnected?: boolean;
 }): ReactNode {
-  const { colour, label } = describe(status, peerCount);
+  const { colour, label } = describe(status, peerCount, everConnected);
   return (
     <Chip color={colour} variant="soft" size="sm" className="shrink-0">
       {label}
@@ -66,14 +69,19 @@ export function ConnectionPill({
 function describe(
   status: ConnectionStatus,
   peerCount: number,
+  everConnected: boolean,
 ): { colour: 'success' | 'warning' | 'danger' | 'default'; label: string } {
   switch (status) {
     case 'connected':
       return { colour: 'success', label: `${peerCount} device${peerCount === 1 ? '' : 's'}` };
     case 'connecting':
-      return { colour: 'warning', label: 'Connecting' };
+      return { colour: 'warning', label: everConnected ? 'Reconnecting' : 'Connecting' };
     case 'alone':
-      return { colour: 'warning', label: 'Waiting for others' };
+      // Same underlying status either way, but a very different thing to
+      // tell a player: a host who has never had a joiner is just waiting;
+      // someone who *had* a peer and lost them needs to know that dropped,
+      // not that nobody ever showed up.
+      return { colour: 'warning', label: everConnected ? 'Reconnecting' : 'Waiting for others' };
     case 'failed':
       // Said plainly rather than spun forever: with no server there is no relay
       // of last resort, and some networks simply will not carry this (R-15).
@@ -150,10 +158,12 @@ export function Notice({
 export function StalledWarning({
   status,
   peerCount,
+  everConnected = false,
   afterMs = 120_000,
 }: {
   status: ConnectionStatus;
   peerCount: number;
+  everConnected?: boolean;
   afterMs?: number;
 }): ReactNode {
   const stalled = useElapsed(afterMs) && peerCount === 0 && status !== 'failed';
@@ -167,6 +177,14 @@ export function StalledWarning({
     );
   }
   if (!stalled) return null;
+  if (everConnected) {
+    return (
+      <Notice tone="warn">
+        Lost the connection to the other device. Still trying to reconnect automatically - if this
+        does not clear up, check you are both still online and on the same network.
+      </Notice>
+    );
+  }
   return (
     <Notice tone="warn">
       Still nobody else here. The usual causes: the others have not opened the game yet, they typed a
@@ -176,7 +194,8 @@ export function StalledWarning({
   );
 }
 
-function useElapsed(ms: number): boolean {
+/** True once `ms` has passed since this hook first mounted with this duration. */
+export function useElapsed(ms: number): boolean {
   const [passed, setPassed] = useState(false);
   useEffect(() => {
     const id = setTimeout(() => setPassed(true), ms);

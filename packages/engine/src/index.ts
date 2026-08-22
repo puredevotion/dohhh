@@ -22,5 +22,4 @@ export * from './reducer.js';
 export * from './selectors.js';
 export * from './commands.js';
 export { SEED_PACK, SEED_PACK_HASH } from './content/index.js';
-export { expand } from './content/row.js';
-export type { CategoryContent, Row } from './content/row.js';
+export * from './content/row.js';

@@ -69,6 +69,9 @@ const RELAY_URLS = [
 
 export type ConnectionStatus = 'connecting' | 'connected' | 'alone' | 'failed';
 
+/** Prefix on a 'failed' status detail meaning "config-level, never worth retrying." */
+export const CONFIG_ERROR_PREFIX = 'config-error: ';
+
 export interface TransportEvents {
   readonly onMessage: (payload: string, fromPeerId: string) => void;
   readonly onPeerJoin: (peerId: string) => void;
@@ -81,7 +84,16 @@ export interface Transport {
   peerIds(): string[];
   /** Broadcast, or send to one peer when `target` is given. */
   send(payload: string, target?: string): void;
-  leave(): void;
+  /**
+   * Resolves once trystero has actually torn the room down (it sends a
+   * leave message and waits ~100ms before evicting its own room-id cache
+   * entry). A caller that wants to immediately rejoin the same roomId - as
+   * the reconnect logic in GameSession does - must await this first: firing
+   * `joinRoom` again before this resolves hands back the exact same cached
+   * Room object instead of a fresh one, silently turning "reconnect" into a
+   * no-op.
+   */
+  leave(): Promise<void>;
 }
 
 export interface TransportOptions {
@@ -116,7 +128,13 @@ export function createTransport(options: TransportOptions): Transport {
       },
     );
   } catch (error) {
-    handlers.onStatus('failed', error instanceof Error ? error.message : String(error));
+    // Unlike onJoinError below (a relay/handshake-level failure, plausibly
+    // transient), joinRoom throwing synchronously means the config itself is
+    // bad - the same input fails every time. The CONFIG_ERROR_PREFIX marker
+    // lets a caller (GameSession's reconnect logic) recognize this and stop
+    // retrying instead of hammering a call that can never succeed.
+    const message = error instanceof Error ? error.message : String(error);
+    handlers.onStatus('failed', `${CONFIG_ERROR_PREFIX}${message}`);
     return offlineTransport(handlers);
   }
 
@@ -148,9 +166,7 @@ export function createTransport(options: TransportOptions): Transport {
         /* the sync loop retries */
       });
     },
-    leave: () => {
-      void room.leave();
-    },
+    leave: () => room.leave(),
   };
 }
 
@@ -162,6 +178,6 @@ function offlineTransport(handlers: TransportEvents): Transport {
     send: () => {
       handlers.onStatus('failed', 'not connected');
     },
-    leave: () => undefined,
+    leave: () => Promise.resolve(),
   };
 }

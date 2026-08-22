@@ -6,7 +6,20 @@ import type { EventLog } from './log.js';
 import { randomJoinCode } from './joincode.js';
 import type { RulesConfig } from './rules.js';
 import { normalizeRules } from './rules.js';
-import type { CategoryId, Difficulty, GameId, TeamId } from './types.js';
+import type { CategoryId, Difficulty, GameId, PlayerId, TeamId } from './types.js';
+
+/**
+ * These names ride in a wire event, so a UI's `maxLength` on an `<input>` is
+ * not a real bound - a hand-crafted event, or a client that skips the form
+ * entirely, bypasses it. Clamping here is the actual boundary; the UI limit
+ * is just the same number applied early for a better typing experience.
+ */
+const MAX_NAME_LENGTH = 40;
+
+function clampName(raw: string, fallback: string): string {
+  const trimmed = raw.replace(/\s+/g, ' ').trim().slice(0, MAX_NAME_LENGTH);
+  return trimmed.length === 0 ? fallback : trimmed;
+}
 
 /**
  * Thin constructors for the events a UI needs to emit.
@@ -33,12 +46,20 @@ export function makeEvent(
 export interface NewGame {
   readonly gameId: GameId;
   readonly joinCode: string;
-  readonly events: readonly SignedEvent[];
+  /** Always exactly [game/created, player/joined], in that order. */
+  readonly events: readonly [created: SignedEvent, joined: SignedEvent];
 }
 
 /**
  * Open a game. Produces the two events every game starts with: the creation
  * record and the host's own join, so the host is never a player-less host.
+ *
+ * Unlike every other command below, this one inserts directly into the log
+ * (via `makeLog`) rather than returning unsent events for the caller to
+ * commit - `game/created` has to exist in the log before `nextLamport`/
+ * `nextSeq` can be computed for the `player/joined` that follows it in the
+ * same call, so there is no meaningful "unsent" state to hand back partway
+ * through opening a game.
  */
 export function createGame(options: {
   readonly identity: Identity;
@@ -57,7 +78,7 @@ export function createGame(options: {
     options.identity,
     {
       type: 'game/created',
-      name: options.name,
+      name: clampName(options.name, 'Dohhh game'),
       joinCode,
       rules: normalizeRules(options.rules),
       packHash: options.packHash,
@@ -79,7 +100,11 @@ export const announce = (log: EventLog, identity: Identity): SignedEvent =>
   makeEvent(log, identity, { type: 'player/joined', username: identity.username });
 
 export const openTeam = (log: EventLog, identity: Identity, name: string): SignedEvent =>
-  makeEvent(log, identity, { type: 'team/created', teamId: newTeamId(log.gameId, name), name });
+  makeEvent(log, identity, {
+    type: 'team/created',
+    teamId: newTeamId(log.gameId, name),
+    name: clampName(name, 'Team'),
+  });
 
 export const joinTeam = (log: EventLog, identity: Identity, teamId: TeamId): SignedEvent =>
   makeEvent(log, identity, { type: 'team/joined', teamId });
@@ -118,3 +143,11 @@ export const answerTurn = (
 
 export const callTimeout = (log: EventLog, identity: Identity, turnIndex: number): SignedEvent =>
   makeEvent(log, identity, { type: 'turn/timeout', turnIndex });
+
+/** Host-only; the reducer refuses this from anyone else. */
+export const setRoomLocked = (log: EventLog, identity: Identity, locked: boolean): SignedEvent =>
+  makeEvent(log, identity, { type: 'room/locked', locked });
+
+/** Host-only; the reducer refuses this from anyone else, and refuses the host kicking themselves. */
+export const kickPlayer = (log: EventLog, identity: Identity, targetId: PlayerId): SignedEvent =>
+  makeEvent(log, identity, { type: 'player/kicked', targetId });

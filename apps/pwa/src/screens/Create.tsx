@@ -56,8 +56,8 @@ export function Create(): ReactNode {
         <Card.Header>
           <Card.Title>Target score</Card.Title>
           <Card.Description>
-            150 is the standard. A round finishes even after someone crosses it, so every team gets
-            the same number of turns.
+            46 is the standard. Whoever crosses it first wins outright - no waiting for the round to
+            finish, no equal-turns fairness rule.
           </Card.Description>
         </Card.Header>
         <Card.Content>

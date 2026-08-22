@@ -105,11 +105,27 @@ export function parseScanned(input: string): JoinTicket | null {
   return null;
 }
 
+/**
+ * The refusal-at-the-door vocabulary: a closed set of reasons a *join
+ * attempt itself* never gets to happen, paired with {@link explainRefusal}
+ * to turn a code into a sentence. This is the sibling of `explainRejection`
+ * (packages/engine/src/events.ts) for the other half of the codebase's
+ * error surface - that one explains why an *already-connected* peer's
+ * event got refused; this one explains why a peer never got in at all.
+ * Two shapes, not one, because they answer different questions - see the
+ * comment above `explainRejection` for why forcing them into a single
+ * shape would cost more than it buys.
+ */
 export type TicketRefusal = 'protocol-mismatch' | 'pack-mismatch';
 
 /**
  * Check a scanned ticket before joining, so an incompatibility is a readable
  * message at the door rather than a desync on turn nine (R-11).
+ *
+ * `local.protocol` defaults to this build's real `PROTOCOL_VERSION` - every
+ * production call site relies on that default. It stays overridable so a
+ * test can simulate "our own build is running a different protocol version"
+ * without needing two actual builds to do it.
  */
 export function checkTicket(
   ticket: { readonly protocol: number; readonly packHash: string },

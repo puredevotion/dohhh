@@ -1,10 +1,11 @@
 import { categoryById } from './categories.js';
+import { usernamesConfusable } from './identity.js';
 import type { PresentedQuestion } from './pack.js';
 import { presentQuestion, questionById } from './pack.js';
 import type { GameState } from './reducer.js';
 import { currentTeamId } from './reducer.js';
 import { DIFFICULTY_TIERS } from './rules.js';
-import type { Category, ContentPack, Difficulty, PlayerId, Team, TeamId } from './types.js';
+import type { Category, ContentPack, PlayerId, Team, TeamId, TurnRecord } from './types.js';
 
 /**
  * Read-only views over {@link GameState}. Kept here rather than in a component
@@ -28,6 +29,43 @@ export function actingTeam(state: GameState): Team | undefined {
 export function isActingPlayer(state: GameState, playerId: PlayerId): boolean {
   const id = currentTeamId(state);
   return id !== null && (teamById(state, id)?.memberIds.includes(playerId) ?? false);
+}
+
+/** True once the host has kicked this player - every future event from them is refused. */
+export function isBanned(state: GameState, playerId: PlayerId): boolean {
+  return state.bannedIds.includes(playerId);
+}
+
+/** Host-only: whether this device may lock the room or kick another player. */
+export function canModerate(state: GameState, playerId: PlayerId): boolean {
+  return playerId === state.hostId;
+}
+
+export interface ConfusablePair {
+  readonly a: PlayerId;
+  readonly b: PlayerId;
+}
+
+/**
+ * Every pair of currently-known players whose names would look the same at
+ * a glance ("who actually said that" - see {@link usernamesConfusable}).
+ * Usernames are decoration, not identity (R-17), so this is advisory only:
+ * nothing here blocks anything, it just gives a host something to react to
+ * that a byte-for-byte string comparison would silently miss.
+ */
+export function confusablePlayerPairs(state: GameState): ConfusablePair[] {
+  const ids = Object.keys(state.players);
+  const pairs: ConfusablePair[] = [];
+  for (let i = 0; i < ids.length; i += 1) {
+    for (let j = i + 1; j < ids.length; j += 1) {
+      const a = ids[i] as PlayerId;
+      const b = ids[j] as PlayerId;
+      if (usernamesConfusable(state.players[a]?.username ?? '', state.players[b]?.username ?? '')) {
+        pairs.push({ a, b });
+      }
+    }
+  }
+  return pairs;
 }
 
 /**
@@ -70,7 +108,7 @@ export function canAnswer(state: GameState, playerId: PlayerId): boolean {
 
 export function activeCategory(state: GameState): Category | undefined {
   const categoryId = state.active?.categoryId;
-  return categoryId === null || categoryId === undefined ? undefined : categoryById(categoryId);
+  return categoryId == null ? undefined : categoryById(categoryId);
 }
 
 export function activeQuestion(state: GameState, pack: ContentPack): PresentedQuestion | null {
@@ -81,10 +119,16 @@ export function activeQuestion(state: GameState, pack: ContentPack): PresentedQu
   return presentQuestion(question, active.nonce);
 }
 
-/** Milliseconds allowed for the current step, from the tier table. */
-export function activeTimeoutMs(state: GameState): number {
-  const difficulty: Difficulty = state.active?.difficulty ?? 'graduate';
-  return DIFFICULTY_TIERS[difficulty].timeoutMs;
+/**
+ * Milliseconds allowed for the current step, from the tier table. `null`
+ * before a difficulty is chosen - there is no tier to time yet, and
+ * defaulting to one tier's duration would hand a caller a number that looks
+ * meaningful but isn't (a countdown UI built against it would show a real
+ * but wrong number rather than "not timed yet").
+ */
+export function activeTimeoutMs(state: GameState): number | null {
+  const difficulty = state.active?.difficulty;
+  return difficulty == null ? null : DIFFICULTY_TIERS[difficulty].timeoutMs;
 }
 
 export interface ScoreRow {
@@ -139,12 +183,19 @@ export function startCheck(state: GameState, playerId: PlayerId): StartCheck {
   return { ready: true, reason: null };
 }
 
-/** The teams a player could still be beaten by, phrased for the results screen. */
+/**
+ * The results-screen standings. Currently identical to {@link scoreboard} -
+ * kept as its own named export because "final standings" and "live
+ * scoreboard" are a different question to a caller even when today's answer
+ * happens to be the same rows, and a results screen wanting to diverge later
+ * (e.g. sorting ties differently once the game is over) has somewhere to do
+ * it without touching the live-game selector.
+ */
 export function finalStandings(state: GameState): ScoreRow[] {
   return scoreboard(state);
 }
 
-export function historyForTeam(state: GameState, teamId: TeamId) {
+export function historyForTeam(state: GameState, teamId: TeamId): TurnRecord[] {
   return state.history.filter((record) => record.teamId === teamId);
 }
 

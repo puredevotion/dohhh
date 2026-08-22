@@ -8,18 +8,22 @@ import {
   createIdentity,
   drawTurn,
   EventLog,
+  explainRejection,
   joinTeam as joinTeamEvent,
+  kickPlayer as kickPlayerEvent,
   leaveTeam as leaveTeamEvent,
   newTeamId,
   openTeam,
   SEED_PACK,
   SEED_PACK_HASH,
+  setRoomLocked as setRoomLockedEvent,
   startGame,
   withUsername,
   type CategoryId,
   type Difficulty,
   type GameId,
   type Identity,
+  type PlayerId,
   type RulesConfig,
   type SignedEvent,
   type TeamId,
@@ -42,7 +46,6 @@ import { create } from 'zustand';
 
 import { navigate } from './router.js';
 
-const store = webStore(globalThis.localStorage ?? { getItem: () => null, setItem: () => undefined, removeItem: () => undefined });
 const LAST_GAME_KEY = 'dohhh.lastGame.v1';
 /**
  * Purely local, purely cosmetic: a label for *this device*, distinct from
@@ -68,6 +71,8 @@ export interface AppState {
   readonly error: string | null;
   /** A friendly stand-in for the device hash, set locally, shown nowhere else. */
   readonly deviceLabel: string | null;
+  /** True once persistent storage has failed and silently degraded to memory-only. */
+  readonly storageDegraded: boolean;
 
   signUp: (username: string) => void;
   rename: (username: string) => void;
@@ -82,6 +87,8 @@ export interface AppState {
   addTeam: (name: string) => void;
   sitWith: (teamId: TeamId) => void;
   leaveCurrentTeam: (teamId: TeamId) => void;
+  setRoomLocked: (locked: boolean) => void;
+  kickPlayer: (targetId: PlayerId) => void;
   begin: () => void;
   deal: () => void;
   pickCategory: (categoryId: CategoryId) => void;
@@ -98,6 +105,15 @@ export interface AppState {
  * disagreeing.
  */
 export const useApp = create<AppState>((set, get) => {
+  const store = webStore(
+    globalThis.localStorage ?? {
+      getItem: () => null,
+      setItem: () => undefined,
+      removeItem: () => undefined,
+    },
+    () => set({ storageDegraded: true }),
+  );
+
   /**
    * Announcing yourself the instant a session is constructed stamps that
    * event with a Lamport clock starting at 0 - lower than everything the
@@ -167,6 +183,7 @@ export const useApp = create<AppState>((set, get) => {
     busy: null,
     error: null,
     deviceLabel: store.get(DEVICE_LABEL_KEY),
+    storageDegraded: false,
 
     signUp: (username) => {
       const identity = createIdentity(username);
@@ -284,8 +301,14 @@ export const useApp = create<AppState>((set, get) => {
       if (identity === null || raw === null) return false;
       try {
         const last = JSON.parse(raw) as LastGame;
+        // No local cache yet is fine - a joiner whose connection dropped
+        // before backfill landed has nothing saved locally, but the session
+        // reconnects over the mesh and backfills fresh, same as a first-time
+        // join. Bailing out here only because the cache is empty is exactly
+        // the bug: it left joiners with no way back in after any hiccup,
+        // while hosts (whose own log is populated locally from creation,
+        // network or not) never hit it.
         const events = loadEvents(store, last.gameId);
-        if (events.length === 0) return false;
         teardown();
         const session = new GameSession({
           identity,
@@ -309,51 +332,86 @@ export const useApp = create<AppState>((set, get) => {
 
     dismissError: () => set({ error: null }),
 
-    addTeam: (name) => {
-      const { session, identity } = get();
-      if (session === null || identity === null) return;
-      session.commit(openTeam(session.log, identity, name));
-    },
-
-    sitWith: (teamId) => {
-      const { session, identity } = get();
-      if (session === null || identity === null) return;
-      session.commit(joinTeamEvent(session.log, identity, teamId));
-    },
-
-    leaveCurrentTeam: (teamId) => {
-      const { session, identity } = get();
-      if (session === null || identity === null) return;
-      session.commit(leaveTeamEvent(session.log, identity, teamId));
-    },
+    addTeam: (name) => commit((session, identity) => openTeam(session.log, identity, name)),
+    sitWith: (teamId) => commit((session, identity) => joinTeamEvent(session.log, identity, teamId)),
+    leaveCurrentTeam: (teamId) =>
+      commit((session, identity) => leaveTeamEvent(session.log, identity, teamId)),
+    setRoomLocked: (locked) =>
+      commit((session, identity) => setRoomLockedEvent(session.log, identity, locked)),
+    kickPlayer: (targetId) =>
+      commit((session, identity) => kickPlayerEvent(session.log, identity, targetId)),
 
     begin: () => commit((session, identity) => startGame(session.log, identity)),
+    // Dealing is the one turn-scoped action that happens *between* turns -
+    // there is no active turn yet, so it reads the game-level counter
+    // instead of an active turn's.
     deal: () =>
-      commit((session, identity) =>
-        drawTurn(session.log, identity, session.state?.turnIndex ?? 0),
+      commitTurnIndex(
+        (session) => session.state?.turnIndex,
+        (session, identity, turnIndex) => drawTurn(session.log, identity, turnIndex),
       ),
     pickCategory: (categoryId) =>
-      commit((session, identity) =>
-        chooseCategory(session.log, identity, session.state?.active?.turnIndex ?? 0, categoryId),
+      commitActiveTurn((session, identity, turnIndex) =>
+        chooseCategory(session.log, identity, turnIndex, categoryId),
       ),
     bet: (difficulty) =>
-      commit((session, identity) =>
-        chooseDifficulty(session.log, identity, session.state?.active?.turnIndex ?? 0, difficulty),
+      commitActiveTurn((session, identity, turnIndex) =>
+        chooseDifficulty(session.log, identity, turnIndex, difficulty),
       ),
     answer: (chosenIndex) =>
-      commit((session, identity) =>
-        answerTurn(session.log, identity, session.state?.active?.turnIndex ?? 0, chosenIndex),
+      commitActiveTurn((session, identity, turnIndex) =>
+        answerTurn(session.log, identity, turnIndex, chosenIndex),
       ),
     callTime: () =>
-      commit((session, identity) =>
-        callTimeout(session.log, identity, session.state?.active?.turnIndex ?? 0),
-      ),
+      commitActiveTurn((session, identity, turnIndex) => callTimeout(session.log, identity, turnIndex)),
   };
 
+  /**
+   * Every write goes through here: builds the event, commits it, and turns a
+   * rejection into something the player actually sees instead of a tap that
+   * silently did nothing. `session.commit` rejecting a *locally built* event
+   * means a bug on this device (a stale turnIndex, a duplicate), not a
+   * hostile peer - worth surfacing, not worth pretending didn't happen.
+   */
   function commit(build: (session: GameSession, identity: Identity) => SignedEvent): void {
     const { session, identity } = get();
     if (session === null || identity === null) return;
-    session.commit(build(session, identity));
+    const result = session.commit(build(session, identity));
+    if (!result.accepted) {
+      set({ error: explainRejection(result.reason ?? 'unknown') });
+    }
+  }
+
+  /**
+   * Every turn-scoped action needs "the turn this action is about," read
+   * from whichever field is actually valid for that phase - `pick` names
+   * which one. If it comes back undefined (state hasn't arrived yet, or
+   * there's no active turn when one is required), refuse outright rather
+   * than falling back to `turnIndex: 0` and shipping a signed event that
+   * either mutates the wrong turn or gets silently rejected downstream.
+   */
+  function commitTurnIndex(
+    pick: (session: GameSession) => number | undefined,
+    build: (session: GameSession, identity: Identity, turnIndex: number) => SignedEvent,
+  ): void {
+    const { session, identity } = get();
+    if (session === null || identity === null) return;
+    const turnIndex = pick(session);
+    if (turnIndex === undefined) {
+      set({ error: "That didn't go through - the game hasn't caught up yet." });
+      return;
+    }
+    const result = session.commit(build(session, identity, turnIndex));
+    if (!result.accepted) {
+      set({ error: explainRejection(result.reason ?? 'unknown') });
+    }
+  }
+
+  /** The turn-scoped actions that require an already-active turn (everything past dealing). */
+  function commitActiveTurn(
+    build: (session: GameSession, identity: Identity, turnIndex: number) => SignedEvent,
+  ): void {
+    commitTurnIndex((session) => session.state?.active?.turnIndex, build);
   }
 });
 

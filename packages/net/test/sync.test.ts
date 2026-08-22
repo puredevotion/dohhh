@@ -144,10 +144,10 @@ describe('anti-entropy', () => {
     f.mesh.settle();
 
     const teamA = f.hostSession.commit(openTeamOf(f.hostSession, f.host, 'Analytical'));
-    expect(teamA).toBe(true);
+    expect(teamA.accepted).toBe(true);
     f.mesh.settle();
     const teamB = f.guestSession.commit(openTeamOf(f.guestSession, f.guest, 'Recursive'));
-    expect(teamB).toBe(true);
+    expect(teamB.accepted).toBe(true);
     f.mesh.settle();
 
     const teams = f.hostSession.state?.teams ?? [];

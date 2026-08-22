@@ -1,4 +1,4 @@
-import { SEED_PACK_HASH, startCheck, teamOf } from '@dohhh/engine';
+import { confusablePlayerPairs, isBanned, SEED_PACK_HASH, startCheck, teamOf } from '@dohhh/engine';
 import { ticketUrl } from '@dohhh/net';
 import { Button, Card, Chip, Input } from '@heroui/react';
 import { useState, type ReactNode } from 'react';
@@ -23,8 +23,12 @@ export function Lobby(): ReactNode {
   const addTeam = useApp((s) => s.addTeam);
   const sitWith = useApp((s) => s.sitWith);
   const leaveCurrentTeam = useApp((s) => s.leaveCurrentTeam);
+  const setRoomLocked = useApp((s) => s.setRoomLocked);
+  const kickPlayer = useApp((s) => s.kickPlayer);
   const begin = useApp((s) => s.begin);
   const leave = useApp((s) => s.leave);
+  const error = useApp((s) => s.error);
+  const dismissError = useApp((s) => s.dismissError);
   const [teamName, setTeamName] = useState('');
 
   const state = snapshot?.state ?? null;
@@ -34,6 +38,21 @@ export function Lobby(): ReactNode {
         <Notice>
           Waiting for the game to arrive from the other devices. If nothing happens, the code may be
           wrong or you may be on a different network.
+        </Notice>
+        <ActionBar>
+          <Button variant="ghost" fullWidth onPress={leave}>
+            Leave
+          </Button>
+        </ActionBar>
+      </Screen>
+    );
+  }
+
+  if (isBanned(state, identity.id)) {
+    return (
+      <Screen title={state.name}>
+        <Notice tone="danger">
+          The host removed you from this game. You can still start or join a different one.
         </Notice>
         <ActionBar>
           <Button variant="ghost" fullWidth onPress={leave}>
@@ -55,7 +74,13 @@ export function Lobby(): ReactNode {
     <Screen
       title={state.name}
       subtitle={isHost ? 'You are hosting' : `Hosted by ${state.players[state.hostId]?.username ?? 'someone'}`}
-      aside={<ConnectionPill status={snapshot.status} peerCount={snapshot.peerCount} />}
+      aside={
+        <ConnectionPill
+          status={snapshot.status}
+          peerCount={snapshot.peerCount}
+          everConnected={snapshot.everConnected}
+        />
+      }
     >
       {!packMatches && (
         <Notice tone="danger">
@@ -64,7 +89,22 @@ export function Lobby(): ReactNode {
         </Notice>
       )}
 
-      <StalledWarning status={snapshot.status} peerCount={snapshot.peerCount} />
+      <StalledWarning
+        status={snapshot.status}
+        peerCount={snapshot.peerCount}
+        everConnected={snapshot.everConnected}
+      />
+
+      {error !== null && (
+        <Notice tone="danger">
+          <div className="flex items-center justify-between gap-3">
+            <span>{error}</span>
+            <Button variant="ghost" size="sm" onPress={dismissError}>
+              Dismiss
+            </Button>
+          </div>
+        </Notice>
+      )}
 
       {snapshot.diverged && (
         <Notice tone="warn">
@@ -72,6 +112,22 @@ export function Lobby(): ReactNode {
           be possible; restart the game rather than playing on.
         </Notice>
       )}
+
+      {snapshot.peerVersionMismatch && (
+        <Notice tone="warn">
+          Another device in this room is running a different version of Dohhh or a different
+          question pack. It has been ignored rather than risking a mismatched game - update every
+          device to the same version.
+        </Notice>
+      )}
+
+      {confusablePlayerPairs(state).map(({ a, b }) => (
+        <Notice key={`${a}-${b}`} tone="warn">
+          {state.players[a]?.username ?? 'Someone'} and {state.players[b]?.username ?? 'someone'} have
+          names that look identical at a glance - worth checking who's actually who before the game
+          gets going.
+        </Notice>
+      ))}
 
       {deviceCount > MESH_COMFORT_LIMIT && (
         <Notice tone="warn">
@@ -134,16 +190,17 @@ export function Lobby(): ReactNode {
                     </Button>
                   </div>
                 </div>
-                <div className="mt-1.5 flex flex-col gap-0.5 text-sm text-muted">
+                <div className="mt-1.5 flex flex-col gap-1 text-sm text-muted">
                   {team.memberIds.length === 0 ? (
                     <span className="text-xs italic">empty</span>
                   ) : (
                     team.memberIds.map((id) => (
-                      <PlayerTag
-                        key={id}
-                        id={id}
-                        username={state.players[id]?.username ?? 'someone'}
-                      />
+                      <div key={id} className="flex items-center justify-between gap-2">
+                        <PlayerTag id={id} username={state.players[id]?.username ?? 'someone'} />
+                        {isHost && id !== identity.id && (
+                          <KickButton onPress={() => kickPlayer(id)} />
+                        )}
+                      </div>
                     ))
                   )}
                 </div>
@@ -181,7 +238,10 @@ export function Lobby(): ReactNode {
           </Card.Header>
           <Card.Content className="flex flex-col gap-1 text-sm text-muted">
             {state.spectatorIds.map((id) => (
-              <PlayerTag key={id} id={id} username={state.players[id]?.username ?? 'someone'} />
+              <div key={id} className="flex items-center justify-between gap-2">
+                <PlayerTag id={id} username={state.players[id]?.username ?? 'someone'} />
+                {isHost && id !== identity.id && <KickButton onPress={() => kickPlayer(id)} />}
+              </div>
             ))}
           </Card.Content>
         </Card>
@@ -208,6 +268,34 @@ export function Lobby(): ReactNode {
         </Card.Content>
       </Card>
 
+      <Card variant="secondary">
+        <Card.Header>
+          <Card.Title className="text-base">Room</Card.Title>
+          <Card.Description>
+            The join code is the only lock this game has otherwise - closing the door stops anyone
+            new from joining, whether or not they have it. Players already here are unaffected.
+          </Card.Description>
+        </Card.Header>
+        <Card.Content className="flex items-center justify-between gap-3">
+          <span className="text-sm text-default-foreground">
+            {state.locked ? 'Locked - nobody new can join' : 'Open - anyone with the code can join'}
+          </span>
+          {isHost ? (
+            <Button
+              variant={state.locked ? 'secondary' : 'ghost'}
+              size="sm"
+              onPress={() => setRoomLocked(!state.locked)}
+            >
+              {state.locked ? 'Unlock' : 'Lock'}
+            </Button>
+          ) : (
+            <Chip color={state.locked ? 'warning' : 'default'} variant="soft" size="sm">
+              {state.locked ? 'Locked' : 'Open'}
+            </Chip>
+          )}
+        </Card.Content>
+      </Card>
+
       <ActionBar>
         {isHost ? (
           <>
@@ -230,6 +318,30 @@ export function Lobby(): ReactNode {
         </Button>
       </ActionBar>
     </Screen>
+  );
+}
+
+/** Host-only, confirm-on-second-press rather than a modal - a kick is rare enough not to need one. */
+function KickButton({ onPress }: { onPress: () => void }): ReactNode {
+  const [confirming, setConfirming] = useState(false);
+  if (!confirming) {
+    return (
+      <Button variant="ghost" size="sm" onPress={() => setConfirming(true)}>
+        Kick
+      </Button>
+    );
+  }
+  return (
+    <Button
+      variant="secondary"
+      size="sm"
+      onPress={() => {
+        setConfirming(false);
+        onPress();
+      }}
+    >
+      Confirm kick?
+    </Button>
   );
 }
 

@@ -10,15 +10,17 @@ offer `ô` without a fight, and an accented character in a domain, a package nam
 or an app-store search field costs more than it conveys. If a circumflex is
 wanted later it is a display-string change in one constant per surface.
 
-You are not asked "do you know this". You are dealt a random category and asked
-**how much you think you know it**: a university-graduate question is worth 1 and
-costs 1, a PhD one is worth 5 and costs 3, and a post-doc one is worth 15 and
-costs 10. You bet before you see the question. Get it right and you keep the
-turn; get it wrong and it costs you and moves on. First to 150.
+You are not asked "do you know this". An opposing team deals you a choice of
+three categories, and you bet **how much you think you know the one you pick**
+before you see the question: Easy Peasy is worth 1 and costs 1, Common
+Knowledge is worth 5 and costs 3, and Dohhh is worth 15 and costs 10 - the
+names are ironic on purpose, none of the three is actually easy. Get it right
+and you keep the turn; get it wrong and it costs you and moves on. First to 46
+wins outright, no waiting for the round to finish.
 
 > **Status: working prototype.** The rules engine, the sync protocol and the web
-> app are built, tested and verified end to end. The bundled bank is 810
-> questions across 18 categories. The
+> app are built, tested and verified end to end. The bundled bank is 1035
+> questions across 23 categories. The
 > React Native shell is a scaffold. Read
 > [`docs/ADVERSARIAL-REVIEW.md`](docs/ADVERSARIAL-REVIEW.md) before forming an
 > opinion about any of it; the known weaknesses are written down there, including
@@ -130,16 +132,19 @@ hand over a directory:
 
 ## How a game works
 
-- **The tiers.** Named after who should get them right, and authored to it:
-  `graduate` is a master's degree in the field, `phd` is a specialist or ten
-  years in it, `professor` is twenty years and following the literature. None of
-  the three is general knowledge - the brief asked for hard, very hard and
-  incredibly hard, and the first pass at the bank drifted well below that.
-- **Categories.** Eighteen: history, Central Asian history, East Asian
+- **The tiers.** Named ironically - "Easy Peasy", "Common Knowledge" and "Dohhh"
+  - but authored dead straight: Easy Peasy is a master's degree in the field,
+  Common Knowledge is a specialist or ten years in it, Dohhh is twenty years and
+  following the literature. None of the three is general knowledge - the brief
+  asked for hard, very hard and incredibly hard, and the first pass at the bank
+  drifted well below that.
+- **Categories.** Twenty-three: history, Central Asian history, East Asian
   development, geography, literature, art and architecture, music, film and
   television, physics, chemistry, biology, mathematics, general computing,
   semiconductors and lithography, software engineering and algorithms, finance
-  and structured products, economics and financial history, and sport.
+  and structured products, economics and financial history, sport, autoimmune
+  disease, obstetrics and gynaecology, Dutch history and culture, the maker/DIY
+  trades, and law.
 - **Identity.** Pick a name at first launch. The device generates an Ed25519
   keypair locally; the public key hashes to a permanent player id
   (`tp_` + 12 chars). Names need not be unique - the id is the identity, and it
@@ -148,13 +153,13 @@ hand over a directory:
   - 40 bits of entropy, speakable across a table.
 - **Teams.** Any number of players per team, any number of teams. A game needs
   **two teams with a player each**: two people on one team is not a game.
-- **A turn.** An *opposing* peer deals the category and publishes a random nonce;
-  the acting team picks a tier; the question is derived from the nonce, so the
-  answering device cannot precompute it. Right, and the same team goes again.
-  Wrong or out of time, and the turn passes.
-- **Winning.** Crossing 150 arms the endgame; the round then completes so every
-  team has had the same number of turns. Highest score wins; a dead heat goes to
-  sudden death.
+- **A turn.** An *opposing* team deals a choice of three categories and publishes
+  a random nonce; the acting team picks one of the three, then a tier; the
+  question is derived from the nonce, so the answering device cannot precompute
+  it. Right, and the same team goes again. Wrong or out of time, and the turn
+  passes.
+- **Winning.** Crossing 46 wins outright, immediately - no waiting for the round
+  to finish, no equal-turns fairness rule.
 
 Scores can go negative, and a correct answer returns the turn with no limit -
 both spec-faithful, both dangerous, both switchable in the host's lobby. The
@@ -192,9 +197,9 @@ gate a scaffold that takes no actions yet.
 
 Worth knowing what they cover, because the interesting ones are not unit tests:
 
-- A full game is played out in-process, including the 10-professor-answer run to
-  150, the endgame completing its round, and a dead heat resolving in sudden
-  death.
+- A full game is played out in-process: crossing the target score ends it
+  immediately by default, and the round-completing/sudden-death path (for
+  hosts who turn `finishTheRound` back on) is covered too.
 - A real log is shuffled twenty times and re-reduced; the state must be identical
   every time. This is the property the whole no-server design rests on.
 - Two sessions sync over an in-process mesh with deliberately dropped messages,

@@ -7,8 +7,15 @@ import type { CategoryId, Difficulty, GameId, PlayerId, TeamId } from './types.j
 /**
  * Wire format version. Peers refuse to play across a mismatch rather than
  * discovering the incompatibility on turn nine (R-11).
+ *
+ * Bumped to 3 for `room/locked` and `player/kicked`: genuinely new,
+ * wire-visible event variants (unlike `TurnRecord.chosenText`, which is
+ * purely locally reducer-derived and never needed a bump) - an older peer's
+ * `apply()` would hit its exhaustiveness `default` case and silently treat
+ * either as an unknown-event rejection rather than actually moderating the
+ * room, so the mismatch has to be refused at the door instead.
  */
-export const PROTOCOL_VERSION = 2;
+export const PROTOCOL_VERSION = 3;
 
 export type GameEventBody =
   | {
@@ -48,7 +55,27 @@ export type GameEventBody =
       readonly chosenIndex: number;
     }
   /** Proposable by any peer, so one locked phone cannot stall the game (R-3). */
-  | { readonly type: 'turn/timeout'; readonly turnIndex: number };
+  | { readonly type: 'turn/timeout'; readonly turnIndex: number }
+  /**
+   * Host-only. Blocks brand-new `player/joined` announcements while set -
+   * an already-known player (one already in `state.players`, e.g.
+   * reconnecting) is never blocked by this, only a stranger nobody has
+   * seen yet. The join code alone is otherwise the only access control
+   * this game has (see the join-code-is-a-shared-secret design in the
+   * README) - this is the host's way to close the door once everyone
+   * expected has arrived.
+   */
+  | { readonly type: 'room/locked'; readonly locked: boolean }
+  /**
+   * Host-only. Bans `targetId`: every future event that player ever
+   * authors (including a re-announcement) is refused from here on (see the
+   * banned check at the top of `apply()` in reducer.ts), and they're
+   * removed from any team and the spectator list immediately. Their past
+   * history (turns already resolved, scores already applied) is not
+   * undone - this stops future participation, it does not retroactively
+   * erase what already happened, which every peer's log already agrees on.
+   */
+  | { readonly type: 'player/kicked'; readonly targetId: PlayerId };
 
 export type GameEventType = GameEventBody['type'];
 
@@ -132,6 +159,45 @@ export type EventRejection =
   | 'bad-signature';
 
 /**
+ * The vocabulary for "why did this get refused" across the engine, in one
+ * place rather than scattered per-caller, because it grew inconsistently
+ * before this: {@link checkEvent}/{@link EventLog.insert} settled on a
+ * closed set of short machine-readable codes (this type), while the
+ * reducer's own rule checks (`apply()` in reducer.ts) return free-form
+ * English sentences instead ('the acting team cannot draw its own
+ * question'). Both are legitimate - the reducer's rules are numerous,
+ * business-specific, and already human-readable by design; the log/event
+ * layer's are few, structural, and better as stable codes a caller could
+ * branch on. Rather than force one shape onto both (which would either
+ * strip the reducer's readability or multiply the log layer's codes for no
+ * reason), {@link explainRejection} is the single seam that turns *either*
+ * kind into one consistent, presentable sentence - callers displaying a
+ * rejection to a person go through here instead of hand-writing per-reason
+ * copy at each call site.
+ */
+export function explainRejection(reason: string): string {
+  const known: Readonly<Record<EventRejection | 'duplicate' | 'log-full', string>> = {
+    malformed: 'That message was not a valid event.',
+    'wrong-protocol': 'That device is running a different version of Dohhh.',
+    'wrong-game': 'That event belongs to a different game.',
+    'bad-id': 'That event was corrupted in transit.',
+    impersonation: 'That event was signed by a different key than it claims to be from.',
+    'bad-signature': 'That event failed its signature check.',
+    duplicate: 'Already have that one.',
+    'log-full': 'This game has grown too large to accept anything else.',
+  };
+  const explained = known[reason as keyof typeof known];
+  if (explained !== undefined) return explained;
+  // Anything else is one of the reducer's own rule-rejection strings, which
+  // are already written as a sentence fragment for a human (see apply() in
+  // reducer.ts) - just finish the sentence.
+  const trimmed = reason.trim();
+  if (trimmed.length === 0) return 'That did not go through.';
+  const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+  return /[.!?]$/.test(capitalized) ? capitalized : `${capitalized}.`;
+}
+
+/**
  * Full cryptographic check of an event received from the network. Returns the
  * reason for refusal, or `null` when the event is sound.
  *
@@ -161,7 +227,15 @@ export function checkEvent(event: SignedEvent, expectedGameId?: GameId): EventRe
   if (event.v !== PROTOCOL_VERSION) return 'wrong-protocol';
   if (expectedGameId !== undefined && event.gameId !== expectedGameId) return 'wrong-game';
 
-  const payload = signingPayload(event);
+  let payload: string;
+  try {
+    payload = signingPayload(event);
+  } catch {
+    // canonicalJson refuses to recurse past a sane depth (a guard against a
+    // future event type nesting attacker-influenced JSON) - that is a
+    // reason to reject the event, not a reason for the fold to crash.
+    return 'malformed';
+  }
   if (sha256Hex(payload) !== event.id) return 'bad-id';
   if (playerIdFromPublicKey(event.pub) !== event.author) return 'impersonation';
   if (!verify(event.sig, payload, event.pub)) return 'bad-signature';

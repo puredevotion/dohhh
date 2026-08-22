@@ -75,7 +75,15 @@ export interface TurnRecord {
   readonly difficulty: Difficulty;
   readonly questionId: QuestionId;
   /** Index into the *presented* option order; -1 for a timeout. */
-  readonly chosenIndex: number;
+  readonly chosenIndex: 0 | 1 | 2 | 3 | -1;
+  /**
+   * The actual text of the chosen option, captured at resolution time. Null
+   * for a timeout (nothing was chosen). Recomputing this later from
+   * chosenIndex alone would need the per-turn nonce that seeded the
+   * presented shuffle order, which nothing else keeps around once the turn
+   * is history - storing the text directly avoids that dependency entirely.
+   */
+  readonly chosenText: string | null;
   readonly correct: boolean;
   readonly delta: number;
   readonly timedOut: boolean;

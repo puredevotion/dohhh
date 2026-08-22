@@ -86,20 +86,37 @@ export interface RulesConfig {
 }
 
 export const DEFAULT_RULES: RulesConfig = {
-  targetScore: 150,
+  targetScore: 46,
   scoreFloor: null,
   maxCorrectStreakPerTurn: null,
-  finishTheRound: true,
+  finishTheRound: false,
   allowLateJoin: false,
   minTeams: 2,
 };
+
+/**
+ * Sane bounds on a host-authored target score. This is a wire-boundary value
+ * (it rides in `game/created`), not just a UI form field, so a hand-crafted
+ * event with `targetScore: 0` or a negative number must not be able to arm
+ * the endgame on turn one, and `targetScore: Infinity` must not be able to
+ * produce a divide-by-zero in the progress bar.
+ */
+const MIN_TARGET_SCORE = 1;
+const MAX_TARGET_SCORE = 100_000;
 
 /** Peers must agree on rules exactly, so unknown keys are dropped, not merged. */
 export function normalizeRules(input: Partial<RulesConfig> | undefined): RulesConfig {
   const r = input ?? {};
   return {
-    targetScore: numberOr(r.targetScore, DEFAULT_RULES.targetScore),
-    scoreFloor: r.scoreFloor === null || r.scoreFloor === undefined ? DEFAULT_RULES.scoreFloor : Number(r.scoreFloor),
+    targetScore: clamp(
+      numberOr(r.targetScore, DEFAULT_RULES.targetScore),
+      MIN_TARGET_SCORE,
+      MAX_TARGET_SCORE,
+    ),
+    scoreFloor:
+      r.scoreFloor === null || r.scoreFloor === undefined
+        ? DEFAULT_RULES.scoreFloor
+        : clamp(numberOr(r.scoreFloor, 0), -MAX_TARGET_SCORE, MAX_TARGET_SCORE),
     maxCorrectStreakPerTurn:
       r.maxCorrectStreakPerTurn === null || r.maxCorrectStreakPerTurn === undefined
         ? DEFAULT_RULES.maxCorrectStreakPerTurn
@@ -113,4 +130,8 @@ export function normalizeRules(input: Partial<RulesConfig> | undefined): RulesCo
 function numberOr(value: unknown, fallback: number): number {
   const n = Number(value);
   return Number.isFinite(n) ? n : fallback;
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
 }

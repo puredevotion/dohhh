@@ -87,6 +87,25 @@ export interface SelectQuestionResult {
 }
 
 /**
+ * Prefer a question not yet asked; fall back to repeating one from the same
+ * candidate pool rather than returning nothing. Shared by both fallback
+ * tiers in the question-selection chain (exact cell, then same-tier-any-
+ * category) so there is exactly one place that implements "prefer fresh,
+ * repeat rather than stall."
+ */
+export function pickFromPool(
+  candidates: readonly Question[],
+  exclude: readonly QuestionId[],
+  rng: { pick: <T>(items: readonly T[]) => T },
+): SelectQuestionResult {
+  if (candidates.length === 0) return { question: null, repeat: false };
+  const used = new Set(exclude);
+  const fresh = candidates.filter((q) => !used.has(q.id));
+  const pool = fresh.length > 0 ? fresh : candidates;
+  return { question: rng.pick(pool), repeat: fresh.length === 0 };
+}
+
+/**
  * Deterministic, unpredictable-to-the-answerer question choice.
  *
  * Deterministic because every peer must resolve the same event to the same
@@ -95,16 +114,8 @@ export interface SelectQuestionResult {
  */
 export function selectQuestion(input: SelectQuestionInput): SelectQuestionResult {
   const candidates = questionsFor(input.pack, input.category, input.difficulty);
-  if (candidates.length === 0) return { question: null, repeat: false };
-
-  const used = new Set(input.exclude);
-  const fresh = candidates.filter((q) => !used.has(q.id));
   const rng = createRng(input.nonce, input.category, input.difficulty);
-
-  // A long game can drain one (category, tier) pool. Repeating beats stalling,
-  // and the UI says so rather than pretending.
-  const pool = fresh.length > 0 ? fresh : candidates;
-  return { question: rng.pick(pool), repeat: fresh.length === 0 };
+  return pickFromPool(candidates, input.exclude, rng);
 }
 
 export interface PresentedQuestion {

@@ -23,12 +23,24 @@ export class FakeMesh {
     this.rooms.set(roomId, room);
 
     // Tell the newcomer about everyone, and everyone about the newcomer, the
-    // same way a relay would.
-    for (const existing of room) {
+    // same way a relay would - and mirror transport.ts's real
+    // onPeerJoin/onPeerLeave handlers by re-deriving 'connected'/'alone'
+    // from room size on every change, not just once at creation. Without
+    // this, a session's `status` here would never reflect peers arriving
+    // or leaving after its own construction, which is not how the real
+    // transport behaves.
+    // The newcomer joins the room *before* anyone is notified, so that a
+    // handler calling back into `peerIds()` from inside `onPeerJoin` (as
+    // GameSession's reconnect logic does) sees the newcomer already
+    // counted - matching real WebRTC peer bookkeeping, where a connection
+    // is established before the join callback fires, not after.
+    const existingPeers = [...room];
+    room.add(peerId);
+    for (const existing of existingPeers) {
       this.nodes.get(existing)?.onPeerJoin(peerId);
+      this.nodes.get(existing)?.onStatus('connected');
       options.handlers.onPeerJoin(existing);
     }
-    room.add(peerId);
     options.handlers.onStatus(room.size > 1 ? 'connected' : 'alone');
 
     return {
@@ -38,10 +50,13 @@ export class FakeMesh {
         const targets = target === undefined ? [...room].filter((id) => id !== peerId) : [target];
         for (const to of targets) this.queue.push({ to, from: peerId, payload });
       },
-      leave: () => {
+      leave: async () => {
         room.delete(peerId);
         this.nodes.delete(peerId);
-        for (const other of room) this.nodes.get(other)?.onPeerLeave(peerId);
+        for (const other of room) {
+          this.nodes.get(other)?.onPeerLeave(peerId);
+          this.nodes.get(other)?.onStatus(room.size > 0 ? 'connected' : 'alone');
+        }
       },
     };
   };
