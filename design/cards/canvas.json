@@ -1,0 +1,55 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "Directions" },
+    { "id": "page-2", "name": "Prototype" }
+  ],
+  "artboards": [
+    { "file": "Continuity.dc.html", "page": "page-1", "title": "A · Continuity",  "x": 0,    "y": 0, "w": 390, "h": 844 },
+    { "file": "Signage.dc.html",    "page": "page-1", "title": "B · Signage-led", "x": 470,  "y": 0, "w": 390, "h": 844 },
+    { "file": "Editorial.dc.html",  "page": "page-1", "title": "C · Editorial",   "x": 940,  "y": 0, "w": 390, "h": 844 },
+    { "file": "Main.dc.html",       "page": "page-2", "title": "Turn loop · B",   "x": 0,    "y": 0, "w": 390, "h": 844 }
+  ],
+  "annotations": [
+    {
+      "id": "how-to-read",
+      "page": "page-1",
+      "x": 0,
+      "y": -190,
+      "w": 860,
+      "text": "Same turn, same sign, three visual languages — so this is a like-for-like comparison rather than a rigged one.\n\nThe item is 出口 (chūkǒu, \"way out\"). Middle bet shown in all three: +5 / −3."
+    },
+    {
+      "id": "dir-a",
+      "page": "page-1",
+      "x": 0,
+      "y": 904,
+      "w": 390,
+      "text": "A · CONTINUITY\n\nToday's dohhh skin, new anatomy. Character at display size inside the existing HeroUI card.\n\nFor: ships fastest, one visual system to maintain, a dohhh player is instantly at home.\n\nAgainst: the character is rendered as app chrome — white-on-violet, rounded, glowing. Nothing in China looks like this, so recognition may not transfer to a station wall."
+    },
+    {
+      "id": "dir-b",
+      "page": "page-1",
+      "x": 470,
+      "y": 904,
+      "w": 390,
+      "text": "B · SIGNAGE-LED  ← my recommendation\n\nThe card is a sign plate: light field, black hanzi, a domain colour bar. The dark app chrome frames it rather than restyling it.\n\nFor: the visual language does pedagogical work. You practise on something that looks like the thing. The domain bar (metro blue / menu red / market yellow / street green) teaches category at a glance.\n\nAgainst: a light plate in a dark app is a harder composition to keep elegant across every card type, and photo-based sign cards will fight it."
+    },
+    {
+      "id": "dir-c",
+      "page": "page-1",
+      "x": 940,
+      "y": 904,
+      "w": 390,
+      "text": "C · EDITORIAL\n\nNear-black, serif, one hairline rule, 132px character and a great deal of air.\n\nFor: the most beautiful of the three, and the best for a long solo session — nothing competes with the glyph.\n\nAgainst: it reads as a study tool, not a game. Weakest at the thing dohhh is actually for — five people round a table with the turn moving fast."
+    },
+    {
+      "id": "proto-note",
+      "page": "page-2",
+      "x": 470,
+      "y": 0,
+      "w": 420,
+      "text": "CLICKABLE — tap through the whole turn.\n\nBet → sign → answer → reveal. \"Restart\" resets it.\n\nThe idea worth arguing about: the bet is how much SCAFFOLDING you give up, not an abstract difficulty label.\n\n  +1 / −1   pinyin shown, answers in English\n  +5 / −3   no pinyin\n  +15 / −10  no pinyin, and the four answers are signs too\n\nThat maps dohhh's existing pre-commitment bet onto something pedagogically real (desirable difficulty + self-calibration) instead of onto \"how obscure is this trivia\".\n\nPick \"Cold read\" to see the four-hanzi variant — it is a different game.\n\nTwo tweak chips above the frame: the domain plate colour, and whether tone colour appears at all. Tone colour sits on the PINYIN, never on the character — a learner who recognises a coloured glyph has not learned to read a sign.\n\nStill open, pending the research: whether to gloss in Dutch or English (shown here as both), and whether tone colour helps or becomes a crutch."
+    }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}

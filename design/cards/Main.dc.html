@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 50% -10%, oklch(0.28 0.06 285) 0%, transparent 60%),
+        oklch(0.19 0.02 285);
+      color: oklch(0.9911 0 0);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: oklch(0.6204 0.195 253.83); }
+    a:hover { color: oklch(0.72 0.195 253.83); }
+    .han { font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .tap { cursor: pointer; border: 0; width: 100%; text-align: left; font: inherit; color: inherit; background: transparent; padding: 0; }
+    .row { transition: border-color 120ms ease, background-color 120ms ease; }
+    .row:hover { border-color: color-mix(in oklab, oklch(0.6204 0.195 253.83) 70%, transparent) !important; background: color-mix(in oklab, oklch(0.6204 0.195 253.83) 10%, transparent) !important; }
+  </style>
+</helmet>
+
+<div style="display: flex; flex-direction: column; gap: 18px; padding: 20px 20px 28px; min-height: 788px; box-sizing: border-box">
+
+  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+    <div style="min-width: 0">
+      <div style="font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.025em">Kantine to play</div>
+      <div style="margin-top: 4px; font-size: 14px; line-height: 20px; color: oklch(70.5% 0.015 286.067)">{{subtitle}}</div>
+    </div>
+    <button class="tap" style="flex-shrink: 0; width: auto; display: inline-flex; align-items: center; border-radius: 9999px; border: 1px solid oklch(28% 0.006 286.033); padding: 3px 11px; font-size: 12px; line-height: 16px; font-weight: 500; color: oklch(70.5% 0.015 286.067)" onClick="{{restart}}">Restart</button>
+  </div>
+
+  <!-- PHASE 1: the bet. What you wager is how much scaffolding you give up. -->
+  <sc-if value="{{isBet}}" hint-placeholder-val="{{ true }}">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <div style="border-radius: 16px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 18px 20px">
+        <div style="font-size: 14px; line-height: 20px; color: oklch(70.5% 0.015 286.067)">Your category is</div>
+        <div style="margin-top: 4px; display: flex; align-items: baseline; gap: 10px">
+          <span class="han" style="font-size: 26px; line-height: 34px; font-weight: 500">地铁</span>
+          <span style="font-size: 22px; line-height: 30px; font-weight: 600; letter-spacing: -0.02em">Getting around</span>
+        </div>
+        <div style="margin-top: 12px; font-size: 14px; line-height: 20px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">You are betting before you see the sign. The higher the bet, the less help you get with it.</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <sc-for list="{{tiers}}" as="tier" hint-placeholder-count="3">
+          <button class="tap row" style="border-radius: 16px; border: 1px solid {{tier.border}}; background: {{tier.wash}}; padding: 16px 18px" onClick="{{tier.pick}}">
+            <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+              <span style="font-size: 16px; line-height: 22px; font-weight: 600">{{tier.label}}</span>
+              <span class="mono" style="font-size: 14px; font-variant-numeric: tabular-nums"><span style="color: oklch(0.7329 0.1935 150.81)">+{{tier.award}}</span><span style="color: oklch(70.5% 0.015 286.067)"> / </span><span style="color: color-mix(in oklab, oklch(0.594 0.1967 24.63) 78%, white 22%)">{{tier.penalty}}</span></span>
+            </div>
+            <div style="margin-top: 6px; font-size: 13px; line-height: 19px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">{{tier.blurb}}</div>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- PHASE 2: the sign itself, shown the way a station shows it. -->
+  <sc-if value="{{isAsk}}" hint-placeholder-val="{{ true }}">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+        <span style="display: inline-flex; align-items: center; gap: 6px; border-radius: 9999px; border: 1px solid {{tierNow.border}}; padding: 2px 10px; font-size: 12px; line-height: 16px; font-weight: 500; color: {{tierNow.ink}}">
+          {{tierNow.label}}
+          <span class="mono" style="opacity: 0.8; font-variant-numeric: tabular-nums">+{{tierNow.award}} / {{tierNow.penalty}}</span>
+        </span>
+        <span class="mono" style="font-size: 14px; font-variant-numeric: tabular-nums; color: oklch(70.5% 0.015 286.067)">41s</span>
+      </div>
+
+      <div style="border-radius: 4px; overflow: hidden; box-shadow: 0 12px 28px -8px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06)">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: {{plate.bar}}; padding: 8px 14px">
+          <span class="han" style="font-size: 15px; line-height: 20px; font-weight: 500; color: #fff; letter-spacing: 0.08em">{{plate.zh}}</span>
+          <span style="font-size: 11px; line-height: 16px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.82)">{{plate.en}}</span>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; background: {{plate.field}}; padding: 34px 20px">
+          <span class="han" style="font-size: 84px; line-height: 1; font-weight: 500; color: {{plate.ink}}; letter-spacing: 0.04em">出口</span>
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="{{plate.ink}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 12h15"></path>
+            <path d="M13 6l6 6-6 6"></path>
+          </svg>
+        </div>
+        <sc-if value="{{showPinyin}}" hint-placeholder-val="{{ true }}">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 14px; background: {{plate.field}}; border-top: 1px dashed rgba(0,0,0,0.18); padding: 10px 20px">
+            <span style="font-size: 17px; line-height: 24px; font-weight: 500; color: {{plate.ink}}; opacity: 0.72">ch&#363;k&#466;u</span>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="font-size: 20px; line-height: 28px; font-weight: 500; letter-spacing: -0.01em; text-wrap: pretty">{{promptText}}</div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <sc-for list="{{options}}" as="opt" hint-placeholder-count="4">
+          <button class="tap row" style="display: flex; align-items: baseline; gap: 10px; border-radius: 12px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 13px 16px" onClick="{{opt.pick}}">
+            <span class="mono" style="font-size: 12px; color: oklch(70.5% 0.015 286.067)">{{opt.letter}}</span>
+            <span class="{{opt.face}}" style="font-size: {{opt.size}}; line-height: 1.45">{{opt.text}}</span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- PHASE 3: the reveal. This is the part that actually teaches. -->
+  <sc-if value="{{isDone}}" hint-placeholder-val="{{ true }}">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+
+      <div style="border-radius: 16px; border: 1px solid {{verdict.border}}; background: {{verdict.wash}}; overflow: hidden">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px 12px">
+          <span style="font-size: 16px; line-height: 22px; font-weight: 600">{{verdict.headline}}</span>
+          <span class="mono" style="font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; color: {{verdict.ink}}">{{verdict.delta}}</span>
+        </div>
+
+        <div style="background: #f4f4f2; padding: 22px 20px 18px; text-align: center">
+          <div class="han" style="display: flex; align-items: flex-start; justify-content: center; gap: 26px">
+            <sc-for list="{{glyphs}}" as="g" hint-placeholder-count="2">
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+                <span style="font-size: 62px; line-height: 1; font-weight: 500; color: #14140f">{{g.char}}</span>
+                <span style="font-size: 15px; line-height: 20px; font-weight: 600; color: {{g.toneColor}}">{{g.pinyin}}</span>
+                <span style="font-size: 12px; line-height: 16px; color: #5a5a52; max-width: 92px; text-wrap: pretty">{{g.gloss}}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.10); font-size: 15px; line-height: 21px; color: #14140f">
+            <strong style="font-weight: 600">Way out</strong><span style="color: #5a5a52"> &middot; uitgang</span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 16px 18px 18px; font-size: 14px; line-height: 21px">
+          <p style="margin: 0; color: oklch(0.9911 0 0); text-wrap: pretty">Literally <em>out-opening</em>. Every station exit, every car park, every motorway slip road.</p>
+
+          <div style="display: flex; gap: 12px; align-items: flex-start; border-radius: 12px; border: 1px solid color-mix(in oklab, oklch(0.8203 0.1388 76.34) 40%, transparent); background: color-mix(in oklab, oklch(0.8203 0.1388 76.34) 10%, transparent); padding: 12px 14px">
+            <span class="han" style="font-size: 30px; line-height: 1; font-weight: 500; flex-shrink: 0; color: oklch(0.8203 0.1388 76.34)">&#20837;&#21475;</span>
+            <span style="color: oklch(0.9911 0 0); text-wrap: pretty"><strong style="font-weight: 600">Do not confuse.</strong> <span class="han">&#20837;&#21475;</span> r&#249;k&#466;u is the <em>entrance</em> &mdash; one character different, opposite meaning. <span class="han">&#20837;</span> leans in, <span class="han">&#20986;</span> steps out.</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="tap row" style="border-radius: 12px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 13px 16px; text-align: center; font-size: 14px; font-weight: 500" onClick="{{restart}}">Next turn</button>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+
+<script data-dc-script data-props='{"domain":{"editor":"enum","default":"transit","options":["transit","menu","market","street"],"section":"Content"},"toneColour":{"editor":"boolean","default":true,"section":"Pedagogy"}}'>
+const PLATES = {
+  transit: { zh: '地铁', en: 'Metro',       bar: 'oklch(0.42 0.13 250)', field: '#f4f4f2', ink: '#14140f' },
+  menu:    { zh: '菜单', en: 'Menu',        bar: 'oklch(0.45 0.16 28)',  field: '#f6f1e7', ink: '#1a1410' },
+  market:  { zh: '超市', en: 'Supermarket', bar: 'oklch(0.55 0.14 92)',  field: '#f7f5ee', ink: '#14140f' },
+  street:  { zh: '街道', en: 'Street',      bar: 'oklch(0.44 0.11 155)', field: '#f2f4f1', ink: '#14140f' },
+};
+
+// One hue per tone, matched in lightness and chroma so no tone shouts louder
+// than another. Tone lives on the pinyin, never on the character: a learner
+// who only recognises a coloured glyph has not learned to read a sign.
+const TONE = ['oklch(0.72 0.16 25)', 'oklch(0.72 0.16 70)', 'oklch(0.72 0.16 150)', 'oklch(0.72 0.16 260)', 'oklch(0.72 0.02 285)'];
+
+// The bet is how much scaffolding you give up, which is what makes it a
+// learning mechanic rather than a gambling one.
+const TIERS = [
+  { id: 'scaffold',  label: 'With pinyin',    award: 1,  penalty: -1,  blurb: 'Pinyin under the sign, answers in English.', ink: 'oklch(0.72 0.14 250)' },
+  { id: 'character', label: 'Character only', award: 5,  penalty: -3,  blurb: 'No pinyin. Answers still in English.',       ink: 'oklch(0.68 0.19 296)' },
+  { id: 'cold',      label: 'Cold read',      award: 15, penalty: -10, blurb: 'No pinyin, and the four answers are signs too.', ink: 'oklch(0.79 0.16 78)' },
+];
+
+const EN_OPTIONS = ['Ticket office', 'Way out', 'Emergency stairs', 'Platform entrance'];
+const EN_CORRECT = 1;
+const ZH_OPTIONS = ['入口', '换乘', '出口', '洗手间'];
+const ZH_CORRECT = 2;
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { phase: 'bet', tier: 'character', picked: null };
+  }
+
+  renderVals() {
+    const domain = this.props.domain ?? 'transit';
+    const plate = PLATES[domain] ?? PLATES.transit;
+    const toneColour = this.props.toneColour ?? true;
+    const tierNow = TIERS.find((t) => t.id === this.state.tier) ?? TIERS[1];
+    const cold = this.state.tier === 'cold';
+
+    const optionTexts = cold ? ZH_OPTIONS : EN_OPTIONS;
+    const correct = cold ? ZH_CORRECT : EN_CORRECT;
+    const right = this.state.picked === correct;
+
+    return {
+      subtitle:
+        this.state.phase === 'bet' ? 'Round 3, first to 46'
+        : this.state.phase === 'ask' ? 'Reading for the table'
+        : right ? 'Kantine keep the turn' : 'Turn passes',
+
+      isBet: this.state.phase === 'bet',
+      isAsk: this.state.phase === 'ask',
+      isDone: this.state.phase === 'done',
+
+      plate,
+      showPinyin: this.state.tier === 'scaffold',
+      promptText: cold
+        ? 'Which of these means the way out?'
+        : 'Above a doorway in a subway station. What is it?',
+
+      tiers: TIERS.map((t) => ({
+        ...t,
+        border: 'color-mix(in oklab, ' + t.ink + ' 50%, transparent)',
+        wash: 'color-mix(in oklab, ' + t.ink + ' 10%, transparent)',
+        pick: () => this.setState({ phase: 'ask', tier: t.id, picked: null }),
+      })),
+      tierNow: { ...tierNow, border: 'color-mix(in oklab, ' + tierNow.ink + ' 60%, transparent)' },
+
+      options: optionTexts.map((text, i) => ({
+        text,
+        letter: String.fromCharCode(65 + i),
+        face: cold ? 'han' : '',
+        size: cold ? '26px' : '14px',
+        pick: () => this.setState({ phase: 'done', picked: i }),
+      })),
+
+      verdict: right
+        ? {
+            headline: 'Right — and the turn stays with you',
+            delta: '+' + tierNow.award,
+            ink: 'oklch(0.7329 0.1935 150.81)',
+            border: 'color-mix(in oklab, oklch(0.7329 0.1935 150.81) 45%, transparent)',
+            wash: 'color-mix(in oklab, oklch(0.7329 0.1935 150.81) 8%, transparent)',
+          }
+        : {
+            headline: 'Wrong — the turn moves on',
+            delta: String(tierNow.penalty),
+            ink: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 78%, white 22%)',
+            border: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 45%, transparent)',
+            wash: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 8%, transparent)',
+          },
+
+      glyphs: [
+        { char: '出', pinyin: 'chū', gloss: 'to go out', toneColor: toneColour ? TONE[0] : '#5a5a52' },
+        { char: '口', pinyin: 'kǒu', gloss: 'mouth, opening', toneColor: toneColour ? TONE[2] : '#5a5a52' },
+      ],
+
+      restart: () => this.setState({ phase: 'bet', picked: null }),
+    };
+  }
+}
+</script>
+</body>
+</html>

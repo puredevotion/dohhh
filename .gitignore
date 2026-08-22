@@ -10,3 +10,6 @@ coverage/
 .env.local
 .env.deploy-secrets
 dev-dist/
+
+# Seeded design-canvas output. Regenerated from design/cards/*.dc.html.
+mandarin-reading-cards.html

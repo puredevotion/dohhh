@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+      background: oklch(0.145 0.004 285);
+      color: oklch(0.96 0.002 285);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: oklch(0.78 0.09 78); }
+    a:hover { color: oklch(0.86 0.09 78); }
+    .han { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .rule { height: 1px; background: oklch(0.30 0.004 285); }
+  </style>
+</helmet>
+
+<div style="display: flex; flex-direction: column; gap: 0; padding: 28px 28px 32px; min-height: 784px; box-sizing: border-box">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+    <span style="font-size: 11px; line-height: 16px; letter-spacing: 0.18em; text-transform: uppercase; color: oklch(0.62 0.004 285)">Getting around</span>
+    <span class="mono" style="font-size: 12px; font-variant-numeric: tabular-nums; color: oklch(0.62 0.004 285)">41s &middot; +5/&minus;3</span>
+  </div>
+
+  <div class="rule" style="margin-top: 14px"></div>
+
+  <div class="han" style="padding: 92px 0 88px; text-align: center; font-size: 132px; line-height: 1; font-weight: 300; letter-spacing: 0.05em; color: oklch(0.97 0.002 285)">出口</div>
+
+  <div class="rule"></div>
+
+  <div style="padding-top: 26px; font-size: 21px; line-height: 30px; font-weight: 400; font-style: italic; color: oklch(0.88 0.003 285); text-wrap: pretty">Above a doorway in a subway station. What is it?</div>
+
+  <div style="display: flex; flex-direction: column; gap: 0; padding-top: 26px">
+    <div style="display: flex; align-items: baseline; gap: 14px; padding: 15px 2px; border-top: 1px solid oklch(0.26 0.004 285); font-size: 17px; line-height: 24px">
+      <span class="mono" style="font-size: 11px; color: oklch(0.55 0.004 285)">01</span><span>Ticket office</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding: 15px 2px; border-top: 1px solid oklch(0.26 0.004 285); font-size: 17px; line-height: 24px">
+      <span class="mono" style="font-size: 11px; color: oklch(0.55 0.004 285)">02</span><span>Way out</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding: 15px 2px; border-top: 1px solid oklch(0.26 0.004 285); font-size: 17px; line-height: 24px">
+      <span class="mono" style="font-size: 11px; color: oklch(0.55 0.004 285)">03</span><span>Emergency stairs</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 14px; padding: 15px 2px; border-top: 1px solid oklch(0.26 0.004 285); border-bottom: 1px solid oklch(0.26 0.004 285); font-size: 17px; line-height: 24px">
+      <span class="mono" style="font-size: 11px; color: oklch(0.55 0.004 285)">04</span><span>Platform entrance</span>
+    </div>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <div style="text-align: center; font-size: 13px; line-height: 20px; font-style: italic; color: oklch(0.55 0.004 285)">Kantine&rsquo;s question &middot; round 3</div>
+
+</div>
+</x-dc>
+</body>
+</html>
