@@ -9,7 +9,7 @@
 <helmet>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@500;700&display=swap">
   <style>
     body {
       margin: 0;
@@ -23,10 +23,12 @@
     a { color: oklch(0.6204 0.195 253.83); }
     a:hover { color: oklch(0.72 0.195 253.83); }
     .han { font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif; }
+    .han-serif { font-family: "Noto Serif SC", "Songti SC", serif; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
     .tap { cursor: pointer; border: 0; width: 100%; text-align: left; font: inherit; color: inherit; background: transparent; padding: 0; }
     .row { transition: border-color 120ms ease, background-color 120ms ease; }
     .row:hover { border-color: color-mix(in oklab, oklch(0.6204 0.195 253.83) 70%, transparent) !important; background: color-mix(in oklab, oklch(0.6204 0.195 253.83) 10%, transparent) !important; }
+    .sign { box-shadow: 0 14px 30px -10px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06); }
   </style>
 </helmet>
 
@@ -40,18 +42,17 @@
     <button class="tap" style="flex-shrink: 0; width: auto; display: inline-flex; align-items: center; border-radius: 9999px; border: 1px solid oklch(28% 0.006 286.033); padding: 3px 11px; font-size: 12px; line-height: 16px; font-weight: 500; color: oklch(70.5% 0.015 286.067)" onClick="{{restart}}">Restart</button>
   </div>
 
-  <!-- PHASE 1: the bet. What you wager is how much scaffolding you give up. -->
+  <!-- BET — what you wager is how much scaffolding you give up. -->
   <sc-if value="{{isBet}}" hint-placeholder-val="{{ true }}">
     <div style="display: flex; flex-direction: column; gap: 16px">
       <div style="border-radius: 16px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 18px 20px">
         <div style="font-size: 14px; line-height: 20px; color: oklch(70.5% 0.015 286.067)">Your category is</div>
         <div style="margin-top: 4px; display: flex; align-items: baseline; gap: 10px">
-          <span class="han" style="font-size: 26px; line-height: 34px; font-weight: 500">地铁</span>
-          <span style="font-size: 22px; line-height: 30px; font-weight: 600; letter-spacing: -0.02em">Getting around</span>
+          <span class="han" style="font-size: 26px; line-height: 34px; font-weight: 500">{{item.catZh}}</span>
+          <span style="font-size: 22px; line-height: 30px; font-weight: 600; letter-spacing: -0.02em">{{item.catEn}}</span>
         </div>
         <div style="margin-top: 12px; font-size: 14px; line-height: 20px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">You are betting before you see the sign. The higher the bet, the less help you get with it.</div>
       </div>
-
       <div style="display: flex; flex-direction: column; gap: 12px">
         <sc-for list="{{tiers}}" as="tier" hint-placeholder-count="3">
           <button class="tap row" style="border-radius: 16px; border: 1px solid {{tier.border}}; background: {{tier.wash}}; padding: 16px 18px" onClick="{{tier.pick}}">
@@ -66,7 +67,7 @@
     </div>
   </sc-if>
 
-  <!-- PHASE 2: the sign itself, shown the way a station shows it. -->
+  <!-- ASK — the sign, rendered as the kind of object it actually is. -->
   <sc-if value="{{isAsk}}" hint-placeholder-val="{{ true }}">
     <div style="display: flex; flex-direction: column; gap: 18px">
 
@@ -78,24 +79,102 @@
         <span class="mono" style="font-size: 14px; font-variant-numeric: tabular-nums; color: oklch(70.5% 0.015 286.067)">41s</span>
       </div>
 
-      <div style="border-radius: 4px; overflow: hidden; box-shadow: 0 12px 28px -8px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06)">
-        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: {{plate.bar}}; padding: 8px 14px">
-          <span class="han" style="font-size: 15px; line-height: 20px; font-weight: 500; color: #fff; letter-spacing: 0.08em">{{plate.zh}}</span>
-          <span style="font-size: 11px; line-height: 16px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.82)">{{plate.en}}</span>
+      <!-- TRANSIT · a station wayfinding plate -->
+      <sc-if value="{{is.transit}}" hint-placeholder-val="{{ true }}">
+        <div class="sign" style="border-radius: 4px; overflow: hidden">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: oklch(0.42 0.13 250); padding: 8px 14px">
+            <span class="han" style="font-size: 15px; line-height: 20px; font-weight: 500; color: #fff; letter-spacing: 0.08em">地铁</span>
+            <span style="font-size: 11px; line-height: 16px; font-weight: 600; letter-spacing: 0.14em; color: rgba(255,255,255,0.82)">METRO</span>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: center; gap: 18px; background: #f4f4f2; padding: 32px 18px">
+            <span style="display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; background: #14140f; color: #f4f4f2; font-size: 24px; font-weight: 700">B</span>
+            <span class="han" style="font-size: 78px; line-height: 1; font-weight: 500; color: #14140f; letter-spacing: 0.04em">出口</span>
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#14140f" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"></path><path d="M13 6l6 6-6 6"></path></svg>
+          </div>
         </div>
-        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; background: {{plate.field}}; padding: 34px 20px">
-          <span class="han" style="font-size: 84px; line-height: 1; font-weight: 500; color: {{plate.ink}}; letter-spacing: 0.04em">出口</span>
-          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="{{plate.ink}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 12h15"></path>
-            <path d="M13 6l6 6-6 6"></path>
+      </sc-if>
+
+      <!-- MENU · a printed section with prices, because that is how you meet it -->
+      <sc-if value="{{is.menu}}" hint-placeholder-val="{{ true }}">
+        <div class="sign" style="border-radius: 3px; overflow: hidden; background: #f6f1e7">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: oklch(0.42 0.16 28); padding: 8px 16px">
+            <span class="han-serif" style="font-size: 17px; line-height: 22px; font-weight: 700; color: #fff; letter-spacing: 0.1em">热菜</span>
+            <span style="font-size: 10px; line-height: 16px; font-weight: 600; letter-spacing: 0.16em; color: rgba(255,255,255,0.8)">HOT DISHES</span>
+          </div>
+          <div style="padding: 6px 0 10px">
+            <div style="display: flex; align-items: baseline; gap: 10px; padding: 11px 16px; opacity: 0.45">
+              <span class="han-serif" style="font-size: 21px; color: #1a1410">宫保鸡丁</span>
+              <span style="flex-grow: 1; border-bottom: 1px dotted rgba(0,0,0,0.3); transform: translateY(-4px)"></span>
+              <span class="mono" style="font-size: 16px; color: #1a1410">42</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 10px; padding: 13px 16px; background: rgba(180,40,30,0.09); border-left: 3px solid oklch(0.52 0.19 28)">
+              <span class="han-serif" style="font-size: 25px; font-weight: 700; color: #1a1410">水煮牛肉</span>
+              <span class="han" style="font-size: 19px; font-weight: 700; color: oklch(0.52 0.19 28)">辣辣</span>
+              <span style="flex-grow: 1; border-bottom: 1px dotted rgba(0,0,0,0.3); transform: translateY(-5px)"></span>
+              <span class="mono" style="font-size: 18px; font-weight: 600; color: #1a1410">68</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 10px; padding: 11px 16px; opacity: 0.45">
+              <span class="han-serif" style="font-size: 21px; color: #1a1410">清蒸鱼</span>
+              <span style="flex-grow: 1; border-bottom: 1px dotted rgba(0,0,0,0.3); transform: translateY(-4px)"></span>
+              <span class="mono" style="font-size: 16px; color: #1a1410">88</span>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- SHOPFRONT · a fascia board, gold on red -->
+      <sc-if value="{{is.street}}" hint-placeholder-val="{{ true }}">
+        <div class="sign" style="border-radius: 3px; overflow: hidden; background: oklch(0.40 0.15 28); padding: 7px">
+          <div style="border: 2px solid oklch(0.78 0.13 85); padding: 26px 18px; text-align: center">
+            <div class="han" style="font-size: 66px; line-height: 1; font-weight: 900; color: oklch(0.84 0.14 88); letter-spacing: 0.12em; text-shadow: 0 2px 0 rgba(0,0,0,0.25)">药店</div>
+            <div style="margin-top: 12px; font-size: 11px; letter-spacing: 0.28em; color: oklch(0.80 0.10 88); opacity: 0.85">24 &#23567;&#26102; &middot; TEL 8815 6620</div>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- SUPERMARKET · a shelf-edge price label -->
+      <sc-if value="{{is.market}}" hint-placeholder-val="{{ true }}">
+        <div class="sign" style="border-radius: 3px; overflow: hidden; background: #fdf7dd">
+          <div style="display: flex; align-items: center; justify-content: space-between; background: oklch(0.52 0.20 28); padding: 5px 14px">
+            <span class="han" style="font-size: 17px; font-weight: 700; color: #fff; letter-spacing: 0.14em">特价</span>
+            <span class="mono" style="font-size: 11px; color: rgba(255,255,255,0.85)">2026-08-22 &rarr; 08-29</span>
+          </div>
+          <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 14px; padding: 16px 16px 10px">
+            <div>
+              <div class="han" style="font-size: 27px; line-height: 1.2; font-weight: 500; color: #14140f">红富士苹果</div>
+              <div class="mono" style="margin-top: 6px; font-size: 13px; color: #6b6b5e">&#21407;&#20215; <span style="text-decoration: line-through">12.80</span></div>
+            </div>
+            <div style="text-align: right; white-space: nowrap">
+              <span class="mono" style="font-size: 20px; font-weight: 700; color: oklch(0.50 0.20 28)">&yen;</span><span class="mono" style="font-size: 46px; font-weight: 700; line-height: 1; color: oklch(0.50 0.20 28)">9.90</span><span class="han" style="font-size: 22px; font-weight: 700; color: oklch(0.50 0.20 28)">/斤</span>
+            </div>
+          </div>
+          <svg width="100%" height="26" viewBox="0 0 300 26" preserveAspectRatio="none" style="display: block; padding: 0 16px 12px; box-sizing: border-box" aria-hidden="true">
+            <g fill="#14140f">
+              <rect x="0" y="0" width="2" height="26"></rect><rect x="5" y="0" width="1" height="26"></rect><rect x="9" y="0" width="3" height="26"></rect><rect x="16" y="0" width="1" height="26"></rect><rect x="20" y="0" width="2" height="26"></rect><rect x="26" y="0" width="1" height="26"></rect><rect x="31" y="0" width="3" height="26"></rect><rect x="38" y="0" width="2" height="26"></rect><rect x="44" y="0" width="1" height="26"></rect><rect x="48" y="0" width="3" height="26"></rect><rect x="55" y="0" width="1" height="26"></rect><rect x="60" y="0" width="2" height="26"></rect><rect x="66" y="0" width="3" height="26"></rect><rect x="73" y="0" width="1" height="26"></rect><rect x="78" y="0" width="2" height="26"></rect><rect x="84" y="0" width="1" height="26"></rect><rect x="89" y="0" width="3" height="26"></rect><rect x="96" y="0" width="2" height="26"></rect>
+            </g>
           </svg>
         </div>
-        <sc-if value="{{showPinyin}}" hint-placeholder-val="{{ true }}">
-          <div style="display: flex; align-items: center; justify-content: center; gap: 14px; background: {{plate.field}}; border-top: 1px dashed rgba(0,0,0,0.18); padding: 10px 20px">
-            <span style="font-size: 17px; line-height: 24px; font-weight: 500; color: {{plate.ink}}; opacity: 0.72">ch&#363;k&#466;u</span>
+      </sc-if>
+
+      <!-- SAFETY · a yellow floor warning -->
+      <sc-if value="{{is.safety}}" hint-placeholder-val="{{ true }}">
+        <div class="sign" style="border-radius: 3px; overflow: hidden; background: oklch(0.86 0.17 96); border: 5px solid #14140f">
+          <div style="display: flex; align-items: center; gap: 18px; padding: 26px 20px">
+            <svg width="62" height="62" viewBox="0 0 24 24" fill="none" stroke="#14140f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0" aria-hidden="true">
+              <path d="M10.3 3.2 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.2a2 2 0 0 0-3.4 0z"></path>
+              <path d="M12 9v4"></path><path d="M12 17h.01"></path>
+            </svg>
+            <div>
+              <div class="han" style="font-size: 44px; line-height: 1.1; font-weight: 700; color: #14140f; letter-spacing: 0.04em">小心地滑</div>
+              <div style="margin-top: 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #14140f; opacity: 0.7">CAUTION &middot; SLIPPERY</div>
+            </div>
           </div>
-        </sc-if>
-      </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{showPinyin}}" hint-placeholder-val="{{ true }}">
+        <div style="text-align: center; margin-top: -6px; font-size: 17px; line-height: 24px; font-weight: 500; color: oklch(70.5% 0.015 286.067)">{{item.pinyin}}</div>
+      </sc-if>
 
       <div style="font-size: 20px; line-height: 28px; font-weight: 500; letter-spacing: -0.01em; text-wrap: pretty">{{promptText}}</div>
 
@@ -110,10 +189,9 @@
     </div>
   </sc-if>
 
-  <!-- PHASE 3: the reveal. This is the part that actually teaches. -->
+  <!-- REVEAL — the part that actually teaches. -->
   <sc-if value="{{isDone}}" hint-placeholder-val="{{ true }}">
     <div style="display: flex; flex-direction: column; gap: 16px">
-
       <div style="border-radius: 16px; border: 1px solid {{verdict.border}}; background: {{verdict.wash}}; overflow: hidden">
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px 12px">
           <span style="font-size: 16px; line-height: 22px; font-weight: 600">{{verdict.headline}}</span>
@@ -121,30 +199,28 @@
         </div>
 
         <div style="background: #f4f4f2; padding: 22px 20px 18px; text-align: center">
-          <div class="han" style="display: flex; align-items: flex-start; justify-content: center; gap: 26px">
+          <div class="han" style="display: flex; align-items: flex-start; justify-content: center; gap: 22px; flex-wrap: wrap">
             <sc-for list="{{glyphs}}" as="g" hint-placeholder-count="2">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
-                <span style="font-size: 62px; line-height: 1; font-weight: 500; color: #14140f">{{g.char}}</span>
+                <span style="font-size: 58px; line-height: 1; font-weight: 500; color: #14140f">{{g.char}}</span>
                 <span style="font-size: 15px; line-height: 20px; font-weight: 600; color: {{g.toneColor}}">{{g.pinyin}}</span>
-                <span style="font-size: 12px; line-height: 16px; color: #5a5a52; max-width: 92px; text-wrap: pretty">{{g.gloss}}</span>
+                <span style="font-size: 12px; line-height: 16px; color: #5a5a52; max-width: 88px; text-wrap: pretty">{{g.gloss}}</span>
               </div>
             </sc-for>
           </div>
           <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.10); font-size: 15px; line-height: 21px; color: #14140f">
-            <strong style="font-weight: 600">Way out</strong><span style="color: #5a5a52"> &middot; uitgang</span>
+            <strong style="font-weight: 600">{{item.en}}</strong><span style="color: #5a5a52"> &middot; {{item.nl}}</span>
           </div>
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 12px; padding: 16px 18px 18px; font-size: 14px; line-height: 21px">
-          <p style="margin: 0; color: oklch(0.9911 0 0); text-wrap: pretty">Literally <em>out-opening</em>. Every station exit, every car park, every motorway slip road.</p>
-
+          <p style="margin: 0; text-wrap: pretty">{{item.note}}</p>
           <div style="display: flex; gap: 12px; align-items: flex-start; border-radius: 12px; border: 1px solid color-mix(in oklab, oklch(0.8203 0.1388 76.34) 40%, transparent); background: color-mix(in oklab, oklch(0.8203 0.1388 76.34) 10%, transparent); padding: 12px 14px">
-            <span class="han" style="font-size: 30px; line-height: 1; font-weight: 500; flex-shrink: 0; color: oklch(0.8203 0.1388 76.34)">&#20837;&#21475;</span>
-            <span style="color: oklch(0.9911 0 0); text-wrap: pretty"><strong style="font-weight: 600">Do not confuse.</strong> <span class="han">&#20837;&#21475;</span> r&#249;k&#466;u is the <em>entrance</em> &mdash; one character different, opposite meaning. <span class="han">&#20837;</span> leans in, <span class="han">&#20986;</span> steps out.</span>
+            <span class="han" style="font-size: 30px; line-height: 1; font-weight: 500; flex-shrink: 0; color: oklch(0.8203 0.1388 76.34)">{{item.nearChar}}</span>
+            <span style="text-wrap: pretty"><strong style="font-weight: 600">Do not confuse.</strong> {{item.near}}</span>
           </div>
         </div>
       </div>
-
       <button class="tap row" style="border-radius: 12px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 13px 16px; text-align: center; font-size: 14px; font-weight: 500" onClick="{{restart}}">Next turn</button>
     </div>
   </sc-if>
@@ -152,31 +228,69 @@
 </div>
 </x-dc>
 
-<script data-dc-script data-props='{"domain":{"editor":"enum","default":"transit","options":["transit","menu","market","street"],"section":"Content"},"toneColour":{"editor":"boolean","default":true,"section":"Pedagogy"}}'>
-const PLATES = {
-  transit: { zh: '地铁', en: 'Metro',       bar: 'oklch(0.42 0.13 250)', field: '#f4f4f2', ink: '#14140f' },
-  menu:    { zh: '菜单', en: 'Menu',        bar: 'oklch(0.45 0.16 28)',  field: '#f6f1e7', ink: '#1a1410' },
-  market:  { zh: '超市', en: 'Supermarket', bar: 'oklch(0.55 0.14 92)',  field: '#f7f5ee', ink: '#14140f' },
-  street:  { zh: '街道', en: 'Street',      bar: 'oklch(0.44 0.11 155)', field: '#f2f4f1', ink: '#14140f' },
-};
-
+<script data-dc-script data-props='{"domain":{"editor":"enum","default":"transit","options":["transit","menu","street","market","safety"],"section":"Content"},"toneColour":{"editor":"boolean","default":true,"section":"Pedagogy"}}'>
 // One hue per tone, matched in lightness and chroma so no tone shouts louder
 // than another. Tone lives on the pinyin, never on the character: a learner
 // who only recognises a coloured glyph has not learned to read a sign.
 const TONE = ['oklch(0.72 0.16 25)', 'oklch(0.72 0.16 70)', 'oklch(0.72 0.16 150)', 'oklch(0.72 0.16 260)', 'oklch(0.72 0.02 285)'];
+const t = (n) => (on) => (on ? TONE[n - 1] : '#5a5a52');
 
 // The bet is how much scaffolding you give up, which is what makes it a
 // learning mechanic rather than a gambling one.
 const TIERS = [
-  { id: 'scaffold',  label: 'With pinyin',    award: 1,  penalty: -1,  blurb: 'Pinyin under the sign, answers in English.', ink: 'oklch(0.72 0.14 250)' },
-  { id: 'character', label: 'Character only', award: 5,  penalty: -3,  blurb: 'No pinyin. Answers still in English.',       ink: 'oklch(0.68 0.19 296)' },
-  { id: 'cold',      label: 'Cold read',      award: 15, penalty: -10, blurb: 'No pinyin, and the four answers are signs too.', ink: 'oklch(0.79 0.16 78)' },
+  { id: 'scaffold',  label: 'With pinyin',    award: 1,  penalty: -1,  blurb: 'Pinyin under the sign, answers in English.',      ink: 'oklch(0.72 0.14 250)' },
+  { id: 'character', label: 'Character only', award: 5,  penalty: -3,  blurb: 'No pinyin. Answers still in English.',            ink: 'oklch(0.68 0.19 296)' },
+  { id: 'cold',      label: 'Cold read',      award: 15, penalty: -10, blurb: 'No pinyin, and the four answers are signs too.',  ink: 'oklch(0.79 0.16 78)' },
 ];
 
-const EN_OPTIONS = ['Ticket office', 'Way out', 'Emergency stairs', 'Platform entrance'];
-const EN_CORRECT = 1;
-const ZH_OPTIONS = ['入口', '换乘', '出口', '洗手间'];
-const ZH_CORRECT = 2;
+// Each domain is a different physical object, not a recoloured plate.
+const ITEMS = {
+  transit: {
+    catZh: '地铁', catEn: 'Getting around', pinyin: 'chūkǒu', en: 'Way out', nl: 'uitgang',
+    prompt: 'Above a doorway in a subway station. What is it?',
+    en_opts: ['Ticket office', 'Way out', 'Emergency stairs', 'Platform entrance'], en_correct: 1,
+    zh_opts: ['入口', '换乘', '出口', '洗手间'], zh_correct: 2,
+    glyphs: [{ char: '出', pinyin: 'chū', gloss: 'to go out', tone: 1 }, { char: '口', pinyin: 'kǒu', gloss: 'mouth, opening', tone: 3 }],
+    note: 'Literally out-opening. Every station exit, every car park, every motorway slip road. The letter beside it (B here) tells you which street you surface on — check it before you commit, the exits can be hundreds of metres apart.',
+    nearChar: '入口', near: '入口 rùkǒu is the entrance — one character different, opposite meaning. 入 leans in, 出 steps out.',
+  },
+  menu: {
+    catZh: '菜单', catEn: 'Reading a menu', pinyin: 'là', en: 'Spicy', nl: 'pittig',
+    prompt: 'This mark sits beside a dish on the menu. What is it warning you about?',
+    en_opts: ['Spicy', 'House special', 'Sold out', 'Served cold'], en_correct: 0,
+    zh_opts: ['甜', '辣', '咸', '酸'], zh_correct: 1,
+    glyphs: [{ char: '辣', pinyin: 'là', gloss: 'chilli hot', tone: 4 }],
+    note: 'Repeated for intensity: 辣 is hot, 辣辣 hotter. It is a semantic-phonetic compound — 辛 on the left carries the meaning (pungent), 剌 on the right the sound.',
+    nearChar: '麻', near: '麻 má is the numbing tingle of Sichuan pepper, not chilli heat. 麻辣 málà is both at once, and is not the same warning as 辣 alone.',
+  },
+  street: {
+    catZh: '店铺', catEn: 'What shop is this', pinyin: 'yàodiàn', en: 'Pharmacy', nl: 'apotheek',
+    prompt: 'The board above a shop on the street. What does it sell?',
+    en_opts: ['Medicine', 'Stationery', 'Bread', 'Hardware'], en_correct: 0,
+    zh_opts: ['书店', '药店', '饭店', '酒店'], zh_correct: 1,
+    glyphs: [{ char: '药', pinyin: 'yào', gloss: 'medicine', tone: 4 }, { char: '店', pinyin: 'diàn', gloss: 'shop', tone: 4 }],
+    note: '店 diàn is the character to learn first: it marks a shop, and it is the second half of dozens of them. Read the first character and you know what kind — 书店 books, 花店 flowers, 网店 online.',
+    nearChar: '酒店', near: '酒店 jiǔdiàn is a hotel, not a pub, despite 酒 meaning alcohol. 饭店 fàndiàn can be either a restaurant or a hotel depending on the city — context decides.',
+  },
+  market: {
+    catZh: '超市', catEn: 'In the supermarket', pinyin: 'jīn', en: 'Half a kilo', nl: 'pond (500 g)',
+    prompt: 'The price is ¥9.90 per 斤. Per what, exactly?',
+    en_opts: ['500 grams', 'One kilogram', 'One piece', 'One pound (454 g)'], en_correct: 0,
+    zh_opts: ['个', '斤', '公斤', '克'], zh_correct: 1,
+    glyphs: [{ char: '斤', pinyin: 'jīn', gloss: '500 g', tone: 1 }],
+    note: 'The most expensive misreading in this whole category. Loose produce is almost always priced per 斤, so the shelf price is roughly half what you would pay per kilo — and double what you assumed if you read it as one.',
+    nearChar: '公斤', near: '公斤 gōngjīn is the actual kilogram. If a label says 公斤 the price is per 1000 g; if it says 斤 it is per 500 g.',
+  },
+  safety: {
+    catZh: '注意', catEn: 'Signs that warn you', pinyin: 'xiǎoxīn dì huá', en: 'Caution, slippery floor', nl: 'pas op, gladde vloer',
+    prompt: 'A yellow board standing on the floor of a shopping centre.',
+    en_opts: ['Caution, slippery floor', 'Cleaning in progress', 'No entry', 'Wet paint'], en_correct: 0,
+    zh_opts: ['请勿吸烟', '小心地滑', '禁止入内', '正在维修'], zh_correct: 1,
+    glyphs: [{ char: '小心', pinyin: 'xiǎoxīn', gloss: 'be careful', tone: 3 }, { char: '滑', pinyin: 'huá', gloss: 'slippery', tone: 2 }],
+    note: '小心 xiǎoxīn — literally small-heart — opens most warning signs in China. Learn it once and the rest of the sign is just the hazard: 小心台阶 mind the step, 小心碰头 mind your head.',
+    nearChar: '禁止', near: '禁止 jìnzhǐ means forbidden, not careful. 小心 asks you to take care; 禁止 tells you not to. Yellow warns, red forbids.',
+  },
+};
 
 class Component extends DCLogic {
   constructor(props) {
@@ -186,13 +300,13 @@ class Component extends DCLogic {
 
   renderVals() {
     const domain = this.props.domain ?? 'transit';
-    const plate = PLATES[domain] ?? PLATES.transit;
+    const item = ITEMS[domain] ?? ITEMS.transit;
     const toneColour = this.props.toneColour ?? true;
-    const tierNow = TIERS.find((t) => t.id === this.state.tier) ?? TIERS[1];
+    const tierNow = TIERS.find((x) => x.id === this.state.tier) ?? TIERS[1];
     const cold = this.state.tier === 'cold';
 
-    const optionTexts = cold ? ZH_OPTIONS : EN_OPTIONS;
-    const correct = cold ? ZH_CORRECT : EN_CORRECT;
+    const optionTexts = cold ? item.zh_opts : item.en_opts;
+    const correct = cold ? item.zh_correct : item.en_correct;
     const right = this.state.picked === correct;
 
     return {
@@ -205,48 +319,39 @@ class Component extends DCLogic {
       isAsk: this.state.phase === 'ask',
       isDone: this.state.phase === 'done',
 
-      plate,
+      item,
+      is: {
+        transit: domain === 'transit', menu: domain === 'menu', street: domain === 'street',
+        market: domain === 'market', safety: domain === 'safety',
+      },
       showPinyin: this.state.tier === 'scaffold',
-      promptText: cold
-        ? 'Which of these means the way out?'
-        : 'Above a doorway in a subway station. What is it?',
+      promptText: cold ? 'Which of these signs is the one described?' : item.prompt,
 
-      tiers: TIERS.map((t) => ({
-        ...t,
-        border: 'color-mix(in oklab, ' + t.ink + ' 50%, transparent)',
-        wash: 'color-mix(in oklab, ' + t.ink + ' 10%, transparent)',
-        pick: () => this.setState({ phase: 'ask', tier: t.id, picked: null }),
+      tiers: TIERS.map((x) => ({
+        ...x,
+        border: 'color-mix(in oklab, ' + x.ink + ' 50%, transparent)',
+        wash: 'color-mix(in oklab, ' + x.ink + ' 10%, transparent)',
+        pick: () => this.setState({ phase: 'ask', tier: x.id, picked: null }),
       })),
       tierNow: { ...tierNow, border: 'color-mix(in oklab, ' + tierNow.ink + ' 60%, transparent)' },
 
       options: optionTexts.map((text, i) => ({
-        text,
-        letter: String.fromCharCode(65 + i),
-        face: cold ? 'han' : '',
-        size: cold ? '26px' : '14px',
+        text, letter: String.fromCharCode(65 + i),
+        face: cold ? 'han' : '', size: cold ? '26px' : '14px',
         pick: () => this.setState({ phase: 'done', picked: i }),
       })),
 
       verdict: right
-        ? {
-            headline: 'Right — and the turn stays with you',
-            delta: '+' + tierNow.award,
+        ? { headline: 'Right — and the turn stays with you', delta: '+' + tierNow.award,
             ink: 'oklch(0.7329 0.1935 150.81)',
             border: 'color-mix(in oklab, oklch(0.7329 0.1935 150.81) 45%, transparent)',
-            wash: 'color-mix(in oklab, oklch(0.7329 0.1935 150.81) 8%, transparent)',
-          }
-        : {
-            headline: 'Wrong — the turn moves on',
-            delta: String(tierNow.penalty),
+            wash: 'color-mix(in oklab, oklch(0.7329 0.1935 150.81) 8%, transparent)' }
+        : { headline: 'Wrong — the turn moves on', delta: String(tierNow.penalty),
             ink: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 78%, white 22%)',
             border: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 45%, transparent)',
-            wash: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 8%, transparent)',
-          },
+            wash: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 8%, transparent)' },
 
-      glyphs: [
-        { char: '出', pinyin: 'chū', gloss: 'to go out', toneColor: toneColour ? TONE[0] : '#5a5a52' },
-        { char: '口', pinyin: 'kǒu', gloss: 'mouth, opening', toneColor: toneColour ? TONE[2] : '#5a5a52' },
-      ],
+      glyphs: item.glyphs.map((g) => ({ ...g, toneColor: t(g.tone)(toneColour) })),
 
       restart: () => this.setState({ phase: 'bet', picked: null }),
     };
