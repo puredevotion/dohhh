@@ -5,9 +5,10 @@ canvas.
 
 | File | What it is |
 | --- | --- |
-| `Main.dc.html` | The turn loop, clickable: bet, sign, answer, reveal. Switches between all five sign types. |
+| `Main.dc.html` | The turn loop, clickable: bet, sign, answer, breakdown. Switches between all five sign types. |
+| `Breakdown.dc.html` | The component-breakdown surface at full height, using 牛肉. |
 | `Signs.dc.html` | The five sign treatments side by side, with what makes each one hard. |
-| `canvas.json` | Layout: page 1 the turn loop, page 2 the sign sheet. |
+| `canvas.json` | Layout: turn loop, breakdown, sign sheet. |
 
 Direction settled: **signage-led**. Two earlier alternatives (a continuity
 direction that kept dohhh's card skin, and an editorial/flashcard-quiet one) were
@@ -42,6 +43,44 @@ the real object sets them — never white-on-violet, never glowing, never rounde
 to match the app. The dark chrome is a frame around the sign, not a skin applied
 to it. A learner who can only recognise 出口 in the app's house style has learned
 the app, not the language.
+
+## The breakdown is the screen that teaches
+
+It is not a footnote on the outcome card. It is the body of the reveal, and nothing
+advances it but a tap — no timer, no auto-dismiss.
+
+The evidence forced this. A path analysis of 252 international students learning
+Chinese found **morphological awareness** — knowing that words come apart into
+meaning-bearing pieces — is the largest single contributor to L2 Chinese reading,
+ahead of vocabulary size and well ahead of working-memory capacity, which
+contributes only indirectly. The breakdown is the only place in the product where
+that gets built, so it gets the room.
+
+Four beats, in order:
+
+1. **The word**, on the same light ground the sign used, so the thing you just read
+   is the thing you now study.
+2. **It comes apart.** 牛 ox + 肉 meat. Chinese has no separate word for beef the
+   way English does — it names the animal and the substance and lets you do the
+   arithmetic.
+3. **The same move again.** Swap the head: 猪肉 pork, 羊肉 lamb, 鸡肉 chicken,
+   鸭肉 duck. One character learned, four dishes readable.
+4. **The unlock.** Squeezed to the left of another character, 肉 flattens into 月 —
+   and the organ section of a menu stops being a lottery: 肝 liver, 肠 intestine,
+   肚 tripe, 腰 kidney, 脑 brain.
+
+That fourth beat is the argument for the whole screen. It is not a fact about one
+word, it is a key that opens a section of every menu in the country, and there is no
+way to hand it over except by taking a word apart in front of someone.
+
+It is stated as a hint, not a rule — the same 月 is also the moon, as in 月票
+monthly pass — because overclaiming a pattern is how you teach someone to misread
+confidently.
+
+Every item carries its own pattern; only some carry an unlock. 出口 opens onto 口 as
+*opening* (入口, 门口, 路口, 售票口); 药店 onto 店 as *shop* (书店, 花店, 网店);
+斤 onto the weight ladder (克, 两, 斤, 公斤); 小心地滑 onto 小心 as the head of
+every warning sign (小心台阶, 小心碰头, 小心车辆).
 
 ## The bet is scaffolding, not difficulty
 

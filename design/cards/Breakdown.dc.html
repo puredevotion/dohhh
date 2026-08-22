@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 50% -10%, oklch(0.28 0.06 285) 0%, transparent 60%),
+        oklch(0.19 0.02 285);
+      color: oklch(0.9911 0 0);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: oklch(0.6204 0.195 253.83); }
+    a:hover { color: oklch(0.72 0.195 253.83); }
+    .han { font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .sec { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: oklch(0.62 0.015 286); }
+  </style>
+</helmet>
+
+<div style="display: flex; flex-direction: column; gap: 20px; padding: 20px 20px 28px">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+    <span style="font-size: 15px; font-weight: 600">What you just read</span>
+    <span class="mono" style="font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; color: oklch(0.7329 0.1935 150.81)">+5</span>
+  </div>
+
+  <!-- THE WORD, on the light ground the sign itself uses -->
+  <div style="border-radius: 4px; overflow: hidden; background: #f4f4f2; box-shadow: 0 14px 30px -10px rgba(0,0,0,0.6)">
+    <div style="padding: 24px 20px 20px; text-align: center">
+      <div class="han" style="font-size: 76px; line-height: 1; font-weight: 500; color: #14140f; letter-spacing: 0.06em">牛肉</div>
+      <div style="margin-top: 12px; font-size: 18px; font-weight: 500; color: #5a5a52">ni&uacute;r&ograve;u</div>
+      <div style="margin-top: 10px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.10); font-size: 16px; color: #14140f">
+        <strong style="font-weight: 600">Beef</strong><span style="color: #5a5a52"> &middot; rundvlees</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE SPLIT -->
+  <div>
+    <span class="sec">IT COMES APART</span>
+    <div style="margin-top: 10px; display: flex; align-items: stretch; gap: 10px">
+      <div style="flex-grow: 1; border-radius: 14px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 16px 12px; text-align: center">
+        <div class="han" style="font-size: 52px; line-height: 1; font-weight: 500">牛</div>
+        <div style="margin-top: 8px; font-size: 15px; font-weight: 600; color: oklch(0.72 0.16 70)">ni&uacute;</div>
+        <div style="margin-top: 4px; font-size: 13px; color: oklch(70.5% 0.015 286.067)">ox, cow</div>
+      </div>
+      <div style="display: flex; align-items: center; font-size: 24px; color: oklch(0.55 0.015 286)">+</div>
+      <div style="flex-grow: 1; border-radius: 14px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 16px 12px; text-align: center">
+        <div class="han" style="font-size: 52px; line-height: 1; font-weight: 500">肉</div>
+        <div style="margin-top: 8px; font-size: 15px; font-weight: 600; color: oklch(0.72 0.16 260)">r&ograve;u</div>
+        <div style="margin-top: 4px; font-size: 13px; color: oklch(70.5% 0.015 286.067)">meat, flesh</div>
+      </div>
+    </div>
+    <p style="margin: 12px 0 0; font-size: 14px; line-height: 21px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">
+      Cow-meat. Chinese does not have a separate word for beef the way English does &mdash; it names
+      the animal and the substance, and lets you do the arithmetic.
+    </p>
+  </div>
+
+  <!-- THE PATTERN -->
+  <div>
+    <span class="sec">SO THE WHOLE SHELF OPENS</span>
+    <div style="margin-top: 10px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+      <div style="display: flex; align-items: baseline; gap: 9px; border-radius: 11px; border: 1px solid oklch(28% 0.006 286.033); padding: 10px 13px">
+        <span class="han" style="font-size: 22px; font-weight: 500"><span style="color: oklch(0.79 0.16 78)">猪</span>肉</span>
+        <span style="font-size: 13px; color: oklch(70.5% 0.015 286.067)">pork</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 9px; border-radius: 11px; border: 1px solid oklch(28% 0.006 286.033); padding: 10px 13px">
+        <span class="han" style="font-size: 22px; font-weight: 500"><span style="color: oklch(0.79 0.16 78)">羊</span>肉</span>
+        <span style="font-size: 13px; color: oklch(70.5% 0.015 286.067)">lamb</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 9px; border-radius: 11px; border: 1px solid oklch(28% 0.006 286.033); padding: 10px 13px">
+        <span class="han" style="font-size: 22px; font-weight: 500"><span style="color: oklch(0.79 0.16 78)">鸡</span>肉</span>
+        <span style="font-size: 13px; color: oklch(70.5% 0.015 286.067)">chicken</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 9px; border-radius: 11px; border: 1px solid oklch(28% 0.006 286.033); padding: 10px 13px">
+        <span class="han" style="font-size: 22px; font-weight: 500"><span style="color: oklch(0.79 0.16 78)">鸭</span>肉</span>
+        <span style="font-size: 13px; color: oklch(70.5% 0.015 286.067)">duck</span>
+      </div>
+    </div>
+    <p style="margin: 12px 0 0; font-size: 14px; line-height: 21px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">
+      One character learned, four dishes readable. 牛 turns up again in 牛奶 milk and 牛排 steak.
+    </p>
+  </div>
+
+  <!-- THE UNLOCK -->
+  <div style="border-radius: 16px; border: 1px solid color-mix(in oklab, oklch(0.8203 0.1388 76.34) 42%, transparent); background: color-mix(in oklab, oklch(0.8203 0.1388 76.34) 9%, transparent); padding: 18px 18px 16px">
+    <span class="sec" style="color: oklch(0.8203 0.1388 76.34)">肉 TRAVELS IN DISGUISE</span>
+    <p style="margin: 10px 0 0; font-size: 14px; line-height: 21px; text-wrap: pretty">
+      Squeezed into the left of another character, 肉 flattens into <span class="han" style="font-weight: 600">月</span>.
+      Once you see it, the organ section of a menu stops being a lottery:
+    </p>
+    <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 7px">
+      <span style="display: inline-flex; align-items: baseline; gap: 7px; border-radius: 10px; background: rgba(0,0,0,0.22); padding: 8px 11px"><span class="han" style="font-size: 22px; font-weight: 500">肝</span><span style="font-size: 12.5px; color: oklch(70.5% 0.015 286.067)">liver</span></span>
+      <span style="display: inline-flex; align-items: baseline; gap: 7px; border-radius: 10px; background: rgba(0,0,0,0.22); padding: 8px 11px"><span class="han" style="font-size: 22px; font-weight: 500">肠</span><span style="font-size: 12.5px; color: oklch(70.5% 0.015 286.067)">intestine</span></span>
+      <span style="display: inline-flex; align-items: baseline; gap: 7px; border-radius: 10px; background: rgba(0,0,0,0.22); padding: 8px 11px"><span class="han" style="font-size: 22px; font-weight: 500">肚</span><span style="font-size: 12.5px; color: oklch(70.5% 0.015 286.067)">tripe</span></span>
+      <span style="display: inline-flex; align-items: baseline; gap: 7px; border-radius: 10px; background: rgba(0,0,0,0.22); padding: 8px 11px"><span class="han" style="font-size: 22px; font-weight: 500">腰</span><span style="font-size: 12.5px; color: oklch(70.5% 0.015 286.067)">kidney</span></span>
+      <span style="display: inline-flex; align-items: baseline; gap: 7px; border-radius: 10px; background: rgba(0,0,0,0.22); padding: 8px 11px"><span class="han" style="font-size: 22px; font-weight: 500">脑</span><span style="font-size: 12.5px; color: oklch(70.5% 0.015 286.067)">brain</span></span>
+    </div>
+    <p style="margin: 13px 0 0; font-size: 13px; line-height: 20px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">
+      A hint, not a rule &mdash; the same 月 is also the moon, as in 月票 monthly pass. But on a menu it
+      is nearly always flesh, and that is the one place you need it.
+    </p>
+  </div>
+
+  <button style="cursor: pointer; width: 100%; border-radius: 12px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 14px 16px; text-align: center; font: inherit; font-size: 14px; font-weight: 500; color: inherit">
+    Got it &mdash; next turn
+  </button>
+
+</div>
+</x-dc>
+</body>
+</html>

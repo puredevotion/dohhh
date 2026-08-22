@@ -1,11 +1,13 @@
 {
   "pages": [
     { "id": "page-1", "name": "Turn loop" },
-    { "id": "page-2", "name": "Sign types" }
+    { "id": "page-2", "name": "Breakdown" },
+    { "id": "page-3", "name": "Sign types" }
   ],
   "artboards": [
-    { "file": "Main.dc.html",  "page": "page-1", "title": "Turn loop", "x": 0, "y": 0, "w": 390, "h": 844 },
-    { "file": "Signs.dc.html", "page": "page-2", "title": "Five signs, five objects", "x": 0, "y": 0, "w": 900, "h": 1320, "expand": "fit" }
+    { "file": "Main.dc.html",      "page": "page-1", "title": "Turn loop", "x": 0, "y": 0, "w": 390, "h": 844 },
+    { "file": "Breakdown.dc.html", "page": "page-2", "title": "The breakdown, full height", "x": 0, "y": 0, "w": 390, "h": 1180 },
+    { "file": "Signs.dc.html",     "page": "page-3", "title": "Five signs, five objects", "x": 0, "y": 0, "w": 900, "h": 1320, "expand": "fit" }
   ],
   "annotations": [
     {
@@ -14,16 +16,24 @@
       "x": 470,
       "y": 0,
       "w": 430,
-      "text": "CLICKABLE — tap through the whole turn: bet → sign → answer → reveal. \"Restart\" resets it.\n\nUse the DOMAIN chip above the frame to switch between the five sign types. Each one is a different physical object with its own item, its own question, its own component breakdown and its own confusable — not the same card recoloured.\n\n  transit   出口   the exit plate\n  menu      辣     the spicy marker in a menu section\n  street    药店   a shopfront fascia\n  market    斤     the 500g trap on a price label\n  safety    小心地滑  a hazard board\n\nThe TONE COLOUR chip turns tone colouring on and off. It sits on the pinyin, never on the character.\n\nThe bet is how much scaffolding you give up:\n  +1 / −1    pinyin shown, answers in English\n  +5 / −3    no pinyin\n  +15 / −10  no pinyin, and the four answers are signs too\n\nPick \"Cold read\" on any domain to see the four-hanzi variant — the distractors are real signs you would plausibly confuse it with, which is where most of the teaching happens."
+      "text": "CLICKABLE — bet → sign → answer → breakdown. \"Next turn\" resets it.\n\nUse the DOMAIN chip above the frame to switch between the five sign types. Each is a different physical object with its own item, question, breakdown and confusable:\n\n  transit   出口       station exit plate\n  menu      牛肉       inside 水煮牛肉 on a menu\n  street    药店       shopfront fascia\n  market    斤         the 500g trap on a price label\n  safety    小心地滑   hazard board\n\nWHAT CHANGED: the breakdown is no longer a footnote on the outcome card. It is now the body of the reveal, and nothing advances it but a tap.\n\nThe evidence forced this. A path analysis of 252 international students learning Chinese found morphological awareness — knowing that words come apart into meaning-bearing pieces — is the largest single contributor to L2 Chinese reading, ahead of vocabulary size and well ahead of working memory. That makes this screen the one that actually teaches, so it gets the room."
+    },
+    {
+      "id": "breakdown-note",
+      "page": "page-2",
+      "x": 470,
+      "y": 0,
+      "w": 430,
+      "text": "The promoted surface at full height, so you can read it without scrolling a phone frame.\n\nFOUR BEATS:\n\n1. The word, on the same light ground the sign used — so the thing you just read is the thing you now study.\n\n2. IT COMES APART. 牛 ox + 肉 meat. Chinese has no separate word for beef; it names the animal and the substance and lets you do the arithmetic.\n\n3. THE SAME MOVE AGAIN. Swap the head: 猪肉 pork, 羊肉 lamb, 鸡肉 chicken, 鸭肉 duck. One character learned, four dishes readable.\n\n4. THE UNLOCK. Squeezed to the left of another character, 肉 flattens into 月 — and the organ section stops being a lottery: 肝 liver, 肠 intestine, 肚 tripe, 腰 kidney, 脑 brain.\n\nThat fourth beat is the whole argument for this screen. It is not a fact about one word; it is a key that opens a section of every menu in the country, and there is no way to hand it over except by taking a word apart in front of someone.\n\nStated as a hint, not a rule — 月 is also the moon (月票 monthly pass) — because overclaiming a pattern is how you teach someone to misread confidently."
     },
     {
       "id": "signs-note",
-      "page": "page-2",
+      "page": "page-3",
       "x": 960,
       "y": 0,
       "w": 400,
-      "text": "The five treatments side by side.\n\nEach caption says what the object is and what makes it hard — the shopfront is deliberately the least legible, the price label deliberately buries the character under the price, because those are the real reading conditions.\n\nWhat this costs: five sign templates to build and maintain instead of one, and every new category needs a treatment designed for it rather than a colour picked for it. That is the trade. I think it is worth it — the object is a retrieval cue, and learning 斤 on a price label is closer to the real task than learning it on a neutral card.\n\nStill open, pending the research sweep: whether tone colour survives the evidence, and whether the gloss should be Dutch or English (both are shown for now)."
+      "text": "The five treatments side by side.\n\nEach caption says what the object is and what makes it hard — the shopfront is deliberately the least legible, the price label deliberately buries the character under the price, because those are the real reading conditions.\n\nWhat this costs: five sign templates instead of one, and every new category needs a treatment designed for it rather than a colour picked for it.\n\nStill open, pending the research: whether tone colour survives the evidence, and whether the gloss should be Dutch or English (both shown for now)."
     }
   ],
-  "launch": { "view": "canvas", "page": "page-1" }
+  "launch": { "view": "canvas", "page": "page-2" }
 }

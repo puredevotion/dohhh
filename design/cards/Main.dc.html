@@ -28,6 +28,7 @@
     .tap { cursor: pointer; border: 0; width: 100%; text-align: left; font: inherit; color: inherit; background: transparent; padding: 0; }
     .row { transition: border-color 120ms ease, background-color 120ms ease; }
     .row:hover { border-color: color-mix(in oklab, oklch(0.6204 0.195 253.83) 70%, transparent) !important; background: color-mix(in oklab, oklch(0.6204 0.195 253.83) 10%, transparent) !important; }
+    .sec { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: oklch(0.62 0.015 286); }
     .sign { box-shadow: 0 14px 30px -10px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06); }
   </style>
 </helmet>
@@ -189,39 +190,79 @@
     </div>
   </sc-if>
 
-  <!-- REVEAL — the part that actually teaches. -->
+  <!-- REVEAL — promoted. Morphological awareness is the largest single contributor
+       to L2 Chinese reading (path analysis, N=252), which makes this the highest-leverage
+       screen in the product. It never auto-advances; the table dismisses it. -->
   <sc-if value="{{isDone}}" hint-placeholder-val="{{ true }}">
-    <div style="display: flex; flex-direction: column; gap: 16px">
-      <div style="border-radius: 16px; border: 1px solid {{verdict.border}}; background: {{verdict.wash}}; overflow: hidden">
-        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px 12px">
-          <span style="font-size: 16px; line-height: 22px; font-weight: 600">{{verdict.headline}}</span>
-          <span class="mono" style="font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; color: {{verdict.ink}}">{{verdict.delta}}</span>
-        </div>
+    <div style="display: flex; flex-direction: column; gap: 20px">
 
-        <div style="background: #f4f4f2; padding: 22px 20px 18px; text-align: center">
-          <div class="han" style="display: flex; align-items: flex-start; justify-content: center; gap: 22px; flex-wrap: wrap">
-            <sc-for list="{{glyphs}}" as="g" hint-placeholder-count="2">
-              <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
-                <span style="font-size: 58px; line-height: 1; font-weight: 500; color: #14140f">{{g.char}}</span>
-                <span style="font-size: 15px; line-height: 20px; font-weight: 600; color: {{g.toneColor}}">{{g.pinyin}}</span>
-                <span style="font-size: 12px; line-height: 16px; color: #5a5a52; max-width: 88px; text-wrap: pretty">{{g.gloss}}</span>
-              </div>
-            </sc-for>
-          </div>
-          <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.10); font-size: 15px; line-height: 21px; color: #14140f">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; border-radius: 12px; border: 1px solid {{verdict.border}}; background: {{verdict.wash}}; padding: 12px 16px">
+        <span style="font-size: 15px; font-weight: 600">{{verdict.headline}}</span>
+        <span class="mono" style="font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; color: {{verdict.ink}}">{{verdict.delta}}</span>
+      </div>
+
+      <div style="border-radius: 4px; overflow: hidden; background: #f4f4f2; box-shadow: 0 14px 30px -10px rgba(0,0,0,0.6)">
+        <div style="padding: 24px 20px 20px; text-align: center">
+          <div class="han" style="font-size: 68px; line-height: 1.08; font-weight: 500; color: #14140f; letter-spacing: 0.06em">{{item.word}}</div>
+          <div style="margin-top: 12px; font-size: 18px; font-weight: 500; color: #5a5a52">{{item.pinyin}}</div>
+          <div style="margin-top: 10px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.10); font-size: 16px; color: #14140f">
             <strong style="font-weight: 600">{{item.en}}</strong><span style="color: #5a5a52"> &middot; {{item.nl}}</span>
           </div>
         </div>
-
-        <div style="display: flex; flex-direction: column; gap: 12px; padding: 16px 18px 18px; font-size: 14px; line-height: 21px">
-          <p style="margin: 0; text-wrap: pretty">{{item.note}}</p>
-          <div style="display: flex; gap: 12px; align-items: flex-start; border-radius: 12px; border: 1px solid color-mix(in oklab, oklch(0.8203 0.1388 76.34) 40%, transparent); background: color-mix(in oklab, oklch(0.8203 0.1388 76.34) 10%, transparent); padding: 12px 14px">
-            <span class="han" style="font-size: 30px; line-height: 1; font-weight: 500; flex-shrink: 0; color: oklch(0.8203 0.1388 76.34)">{{item.nearChar}}</span>
-            <span style="text-wrap: pretty"><strong style="font-weight: 600">Do not confuse.</strong> {{item.near}}</span>
-          </div>
-        </div>
       </div>
-      <button class="tap row" style="border-radius: 12px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 13px 16px; text-align: center; font-size: 14px; font-weight: 500" onClick="{{restart}}">Next turn</button>
+
+      <div>
+        <span class="sec">IT COMES APART</span>
+        <div style="margin-top: 10px; display: flex; align-items: stretch; gap: 10px">
+          <sc-for list="{{glyphs}}" as="g" hint-placeholder-count="2">
+            <div style="flex-grow: 1; border-radius: 14px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 16px 10px; text-align: center">
+              <div class="han" style="font-size: 46px; line-height: 1.1; font-weight: 500">{{g.char}}</div>
+              <div style="margin-top: 8px; font-size: 15px; font-weight: 600; color: {{g.toneColor}}">{{g.pinyin}}</div>
+              <div style="margin-top: 4px; font-size: 12.5px; line-height: 17px; color: oklch(70.5% 0.015 286.067)">{{g.gloss}}</div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin: 12px 0 0; font-size: 14px; line-height: 21px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">{{item.note}}</p>
+      </div>
+
+      <sc-if value="{{hasPattern}}" hint-placeholder-val="{{ true }}">
+        <div>
+          <span class="sec">THE SAME MOVE AGAIN</span>
+          <p style="margin: 9px 0 0; font-size: 14px; line-height: 21px; text-wrap: pretty">{{pattern.lead}}</p>
+          <div style="margin-top: 10px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+            <sc-for list="{{pattern.items}}" as="row" hint-placeholder-count="4">
+              <div style="display: flex; align-items: baseline; gap: 9px; border-radius: 11px; border: 1px solid oklch(28% 0.006 286.033); padding: 10px 12px">
+                <span class="han" style="font-size: 21px; font-weight: 500"><span style="color: oklch(0.79 0.16 78)">{{row.swap}}</span>{{row.rest}}</span>
+                <span style="font-size: 12.5px; line-height: 17px; color: oklch(70.5% 0.015 286.067)">{{row.gloss}}</span>
+              </div>
+            </sc-for>
+          </div>
+          <p style="margin: 12px 0 0; font-size: 14px; line-height: 21px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">{{pattern.tail}}</p>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{hasUnlock}}" hint-placeholder-val="{{ true }}">
+        <div style="border-radius: 16px; border: 1px solid color-mix(in oklab, oklch(0.8203 0.1388 76.34) 42%, transparent); background: color-mix(in oklab, oklch(0.8203 0.1388 76.34) 9%, transparent); padding: 18px 18px 16px">
+          <span class="sec" style="color: oklch(0.8203 0.1388 76.34)">{{unlock.title}}</span>
+          <p style="margin: 10px 0 0; font-size: 14px; line-height: 21px; text-wrap: pretty">{{unlock.lead}}</p>
+          <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 7px">
+            <sc-for list="{{unlock.chips}}" as="c" hint-placeholder-count="5">
+              <span style="display: inline-flex; align-items: baseline; gap: 7px; border-radius: 10px; background: rgba(0,0,0,0.22); padding: 8px 11px">
+                <span class="han" style="font-size: 21px; font-weight: 500">{{c.char}}</span>
+                <span style="font-size: 12.5px; color: oklch(70.5% 0.015 286.067)">{{c.gloss}}</span>
+              </span>
+            </sc-for>
+          </div>
+          <p style="margin: 13px 0 0; font-size: 13px; line-height: 20px; color: oklch(70.5% 0.015 286.067); text-wrap: pretty">{{unlock.caveat}}</p>
+        </div>
+      </sc-if>
+
+      <div style="display: flex; gap: 12px; align-items: flex-start; border-radius: 12px; border: 1px solid color-mix(in oklab, oklch(0.594 0.1967 24.63) 40%, transparent); background: color-mix(in oklab, oklch(0.594 0.1967 24.63) 8%, transparent); padding: 12px 14px; font-size: 14px; line-height: 21px">
+        <span class="han" style="font-size: 28px; line-height: 1.1; font-weight: 500; flex-shrink: 0; color: color-mix(in oklab, oklch(0.594 0.1967 24.63) 78%, white 22%)">{{item.nearChar}}</span>
+        <span style="text-wrap: pretty"><strong style="font-weight: 600">Do not confuse.</strong> {{item.near}}</span>
+      </div>
+
+      <button class="tap row" style="border-radius: 12px; border: 1px solid oklch(28% 0.006 286.033); background: oklch(0.2103 0.0059 285.89); padding: 14px 16px; text-align: center; font-size: 14px; font-weight: 500" onClick="{{restart}}">Got it &mdash; next turn</button>
     </div>
   </sc-if>
 
@@ -251,17 +292,44 @@ const ITEMS = {
     en_opts: ['Ticket office', 'Way out', 'Emergency stairs', 'Platform entrance'], en_correct: 1,
     zh_opts: ['入口', '换乘', '出口', '洗手间'], zh_correct: 2,
     glyphs: [{ char: '出', pinyin: 'chū', gloss: 'to go out', tone: 1 }, { char: '口', pinyin: 'kǒu', gloss: 'mouth, opening', tone: 3 }],
+    word: '出口',
     note: 'Literally out-opening. Every station exit, every car park, every motorway slip road. The letter beside it (B here) tells you which street you surface on — check it before you commit, the exits can be hundreds of metres apart.',
+    pattern: {
+      lead: '口 is the workhorse. It means an opening, and it ends half the words you need underground:',
+      items: [
+        { swap: '入', rest: '口', gloss: 'entrance' }, { swap: '门', rest: '口', gloss: 'doorway' },
+        { swap: '路', rest: '口', gloss: 'junction' }, { swap: '售票', rest: '口', gloss: 'ticket window' },
+      ],
+      tail: 'Read the first character and the second one tells you it is a way through.',
+    },
     nearChar: '入口', near: '入口 rùkǒu is the entrance — one character different, opposite meaning. 入 leans in, 出 steps out.',
   },
   menu: {
-    catZh: '菜单', catEn: 'Reading a menu', pinyin: 'là', en: 'Spicy', nl: 'pittig',
-    prompt: 'This mark sits beside a dish on the menu. What is it warning you about?',
-    en_opts: ['Spicy', 'House special', 'Sold out', 'Served cold'], en_correct: 0,
-    zh_opts: ['甜', '辣', '咸', '酸'], zh_correct: 1,
-    glyphs: [{ char: '辣', pinyin: 'là', gloss: 'chilli hot', tone: 4 }],
-    note: 'Repeated for intensity: 辣 is hot, 辣辣 hotter. It is a semantic-phonetic compound — 辛 on the left carries the meaning (pungent), 剌 on the right the sound.',
-    nearChar: '麻', near: '麻 má is the numbing tingle of Sichuan pepper, not chilli heat. 麻辣 málà is both at once, and is not the same warning as 辣 alone.',
+    catZh: '菜单', catEn: 'Reading a menu', pinyin: 'niúròu', en: 'Beef', nl: 'rundvlees',
+    word: '牛肉',
+    prompt: 'The highlighted dish. What animal are you about to eat?',
+    en_opts: ['Beef', 'Pork', 'Fish', 'Tofu'], en_correct: 0,
+    zh_opts: ['猪肉', '牛肉', '羊肉', '鸡肉'], zh_correct: 1,
+    glyphs: [{ char: '牛', pinyin: 'niú', gloss: 'ox, cow', tone: 2 }, { char: '肉', pinyin: 'ròu', gloss: 'meat, flesh', tone: 4 }],
+    note: 'Cow-meat. Chinese has no separate word for beef the way English does — it names the animal and the substance and lets you do the arithmetic. 水煮 in front means water-boiled, which in Sichuan means anything but bland.',
+    pattern: {
+      lead: 'So the whole shelf opens at once:',
+      items: [
+        { swap: '猪', rest: '肉', gloss: 'pork' }, { swap: '羊', rest: '肉', gloss: 'lamb' },
+        { swap: '鸡', rest: '肉', gloss: 'chicken' }, { swap: '鸭', rest: '肉', gloss: 'duck' },
+      ],
+      tail: 'One character learned, four dishes readable. 牛 turns up again in 牛奶 milk and 牛排 steak.',
+    },
+    unlock: {
+      title: '肉 TRAVELS IN DISGUISE',
+      lead: 'Squeezed into the left of another character, 肉 flattens into 月. Once you see it, the organ section of a menu stops being a lottery:',
+      chips: [
+        { char: '肝', gloss: 'liver' }, { char: '肠', gloss: 'intestine' }, { char: '肚', gloss: 'tripe' },
+        { char: '腰', gloss: 'kidney' }, { char: '脑', gloss: 'brain' },
+      ],
+      caveat: 'A hint, not a rule — the same 月 is also the moon, as in 月票 monthly pass. But on a menu it is nearly always flesh, and that is the one place you need it.',
+    },
+    nearChar: '麻', near: '麻 má is the numbing tingle of Sichuan pepper, not chilli heat. The 辣 marks beside this dish warn about chilli; 麻辣 málà means both at once.',
   },
   street: {
     catZh: '店铺', catEn: 'What shop is this', pinyin: 'yàodiàn', en: 'Pharmacy', nl: 'apotheek',
@@ -269,7 +337,16 @@ const ITEMS = {
     en_opts: ['Medicine', 'Stationery', 'Bread', 'Hardware'], en_correct: 0,
     zh_opts: ['书店', '药店', '饭店', '酒店'], zh_correct: 1,
     glyphs: [{ char: '药', pinyin: 'yào', gloss: 'medicine', tone: 4 }, { char: '店', pinyin: 'diàn', gloss: 'shop', tone: 4 }],
-    note: '店 diàn is the character to learn first: it marks a shop, and it is the second half of dozens of them. Read the first character and you know what kind — 书店 books, 花店 flowers, 网店 online.',
+    word: '药店',
+    note: '店 diàn is the character to learn first: it marks a shop, and it is the second half of dozens of them.',
+    pattern: {
+      lead: 'Same trick as 口 — the tail tells you the kind of thing, the head tells you which:',
+      items: [
+        { swap: '书', rest: '店', gloss: 'bookshop' }, { swap: '花', rest: '店', gloss: 'florist' },
+        { swap: '网', rest: '店', gloss: 'online shop' }, { swap: '便利', rest: '店', gloss: 'convenience' },
+      ],
+      tail: 'A shopfront you cannot fully read is still half-read if you catch the last character.',
+    },
     nearChar: '酒店', near: '酒店 jiǔdiàn is a hotel, not a pub, despite 酒 meaning alcohol. 饭店 fàndiàn can be either a restaurant or a hotel depending on the city — context decides.',
   },
   market: {
@@ -278,7 +355,16 @@ const ITEMS = {
     en_opts: ['500 grams', 'One kilogram', 'One piece', 'One pound (454 g)'], en_correct: 0,
     zh_opts: ['个', '斤', '公斤', '克'], zh_correct: 1,
     glyphs: [{ char: '斤', pinyin: 'jīn', gloss: '500 g', tone: 1 }],
+    word: '斤',
     note: 'The most expensive misreading in this whole category. Loose produce is almost always priced per 斤, so the shelf price is roughly half what you would pay per kilo — and double what you assumed if you read it as one.',
+    pattern: {
+      lead: 'The four weights you will meet on a label, smallest first:',
+      items: [
+        { swap: '', rest: '克', gloss: '1 g' }, { swap: '', rest: '两', gloss: '50 g' },
+        { swap: '', rest: '斤', gloss: '500 g' }, { swap: '公', rest: '斤', gloss: '1000 g' },
+      ],
+      tail: '两 catches people out too — it is a tenth of a 斤, and it is how dumplings and tea are sold.',
+    },
     nearChar: '公斤', near: '公斤 gōngjīn is the actual kilogram. If a label says 公斤 the price is per 1000 g; if it says 斤 it is per 500 g.',
   },
   safety: {
@@ -287,7 +373,16 @@ const ITEMS = {
     en_opts: ['Caution, slippery floor', 'Cleaning in progress', 'No entry', 'Wet paint'], en_correct: 0,
     zh_opts: ['请勿吸烟', '小心地滑', '禁止入内', '正在维修'], zh_correct: 1,
     glyphs: [{ char: '小心', pinyin: 'xiǎoxīn', gloss: 'be careful', tone: 3 }, { char: '滑', pinyin: 'huá', gloss: 'slippery', tone: 2 }],
-    note: '小心 xiǎoxīn — literally small-heart — opens most warning signs in China. Learn it once and the rest of the sign is just the hazard: 小心台阶 mind the step, 小心碰头 mind your head.',
+    word: '小心地滑',
+    note: '小心 xiǎoxīn — literally small-heart — opens most warning signs in China. Learn it once and the rest of the sign is just the hazard.',
+    pattern: {
+      lead: 'The head is always 小心. Only the tail changes, and the tail is the danger:',
+      items: [
+        { swap: '小心', rest: '台阶', gloss: 'mind the step' }, { swap: '小心', rest: '碰头', gloss: 'mind your head' },
+        { swap: '小心', rest: '车辆', gloss: 'mind vehicles' }, { swap: '小心', rest: '夹手', gloss: 'mind your hand' },
+      ],
+      tail: 'You do not need to read the whole sign to know it is a warning. That is the point of learning the head.',
+    },
     nearChar: '禁止', near: '禁止 jìnzhǐ means forbidden, not careful. 小心 asks you to take care; 禁止 tells you not to. Yellow warns, red forbids.',
   },
 };
@@ -352,6 +447,10 @@ class Component extends DCLogic {
             wash: 'color-mix(in oklab, oklch(0.594 0.1967 24.63) 8%, transparent)' },
 
       glyphs: item.glyphs.map((g) => ({ ...g, toneColor: t(g.tone)(toneColour) })),
+      hasPattern: item.pattern !== undefined,
+      pattern: item.pattern ?? { lead: '', items: [], tail: '' },
+      hasUnlock: item.unlock !== undefined,
+      unlock: item.unlock ?? { title: '', lead: '', chips: [], caveat: '' },
 
       restart: () => this.setState({ phase: 'bet', picked: null }),
     };
