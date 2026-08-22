@@ -56,61 +56,40 @@ ahead of vocabulary size and well ahead of working-memory capacity, which
 contributes only indirectly. The breakdown is the only place in the product where
 that gets built, so it gets the room.
 
-Four beats, in order:
+**The rule it obeys: expand the item by exactly one level, then stop.**
 
 1. **The word**, on the same light ground the sign used, so the thing you just read
    is the thing you now study.
 2. **It comes apart.** 牛 ox + 肉 meat. Chinese has no separate word for beef the
    way English does — it names the animal and the substance and lets you do the
-   arithmetic.
+   arithmetic. 牛 also happens to be a real picture, an ox head seen head-on, so
+   that earns one line.
 3. **The same move again.** Swap the head: 猪肉 pork, 羊肉 lamb, 鸡肉 chicken,
-   鸭肉 duck. One character learned, four dishes readable.
-4. **Can you see the animal?** Three of the protein characters are real
-   pictographs — 牛 is an ox head seen head-on, 羊 the same head with the horns
-   curving down, 鱼 a head-body-tail fish. The rest are not, and the panel says so:
-   鸭 is 甲 (borrowed for its sound) plus 鸟 (bird), and 猪 contains no pig at all —
-   犭 is merely "four-legged animal" — though the traditional 豬 keeps one in 豕.
-5. **The unlock.** Squeezed to the left of another character, 肉 flattens into 月 —
-   and the organ section of a menu stops being a lottery: 肝 liver, 肠 intestine,
-   肚 tripe, 腰 kidney, 脑 brain.
+   鸭肉 duck. The same construction, four instances, almost no new load.
+4. **The confusable.**
 
-### Where this screen is most tempted to lie
+### What was cut, and why
 
-Beat 4 exists because the pictographic story is irresistible and only sometimes
-true. Chineasy's documented failure in the academic literature is presenting
-invented pictographic etymologies as real: it delights, and it teaches confident
-misreading. So the panel draws the line explicitly — squint at 牛 and you are
-seeing what the scribe saw; squint at 鸭 and you are inventing something.
+An earlier version added a panel on whether you can see the animal in 牛 羊 鱼 鸭 猪,
+and a second on 肉 hiding inside 肝 肠 肚 腰 脑 as 月. Both were true, both were
+interesting, and together they turned the breakdown of one word into a lecture on
+the category — the internal structure of five characters on a card whose item was
+a single word. That is the coherence principle being violated by exactly the
+material most tempting to add.
 
-The truthful account is also the more useful one. 鸟 means *bird* wherever it
-appears, so it opens 鸡 chicken, 鸭 duck, 鹅 goose and 鸽 pigeon in one move. A
-made-up duck opens exactly one character.
+The honesty those panels carried is kept, compressed into one line: *some
+characters are pictures and most are not, and when you cannot see it, it is not
+there.* That line is what stops a learner inventing etymology. The tour was not
+doing that work.
 
-The menu domain has three radical unlocks, not one:
+Nothing is lost, only relocated. Each radical gets taught on a card where it is
+the operative component rather than a bolt-on:
 
-| Radical | Tells you | Opens |
+| Radical | Taught on an item whose answer is | Then opens |
 | --- | --- | --- |
-| 月 (from 肉) | flesh, organ | 肝 肠 肚 腰 脑 |
-| 鸟 | bird | 鸡 鸭 鹅 鸽 |
-| 鱼 | fish, seafood | 鱿 鳗 鲈 鳕 |
-
-**One per reveal, never several.** The `Breakdown` artboard stacks two so both can
-be judged, and says so on the artboard itself. Piling extra interesting material
-onto a screen is what the coherence principle warns against, and this is already
-the longest screen in the game.
-
-That unlock beat is the argument for the whole screen. It is not a fact about one
-word, it is a key that opens a section of every menu in the country, and there is no
-way to hand it over except by taking a word apart in front of someone.
-
-It is stated as a hint, not a rule — the same 月 is also the moon, as in 月票
-monthly pass — because overclaiming a pattern is how you teach someone to misread
-confidently.
-
-Every item carries its own pattern; only some carry an unlock. 出口 opens onto 口 as
-*opening* (入口, 门口, 路口, 售票口); 药店 onto 店 as *shop* (书店, 花店, 网店);
-斤 onto the weight ladder (克, 两, 斤, 公斤); 小心地滑 onto 小心 as the head of
-every warning sign (小心台阶, 小心碰头, 小心车辆).
+| 月 (from 肉) | an organ dish | 肝 肠 肚 腰 脑 |
+| 鸟 | poultry | 鸡 鸭 鹅 鸽 |
+| 鱼 | seafood | 鱿 鳗 鲈 鳕 |
 
 ## The bet is scaffolding, not difficulty
 
