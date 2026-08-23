@@ -17,7 +17,7 @@ export function Join(): ReactNode {
   const dismissError = useApp((s) => s.dismissError);
   const identity = useApp((s) => s.identity);
 
-  const [words, setWords] = useState<string[]>(() => new Array(WORDS_PER_CODE).fill(''));
+  const [words, setWords] = useState<string[]>(() => Array.from({ length: WORDS_PER_CODE }, () => ''));
   const [mode, setMode] = useState<'scan' | 'type'>('scan');
 
   // A scanned QR code opens the app straight at this route with the ticket in

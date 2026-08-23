@@ -50,7 +50,7 @@ describe('seed pack', () => {
   it('spreads the presented answer position evenly across the pack', () => {
     // Authored position is irrelevant - presentQuestion always shuffles - so
     // what has to be uniform is where the answer actually lands on screen.
-    const counts = new Array<number>(4).fill(0);
+    const counts = Array.from<number>({ length: 4 }).fill(0);
     for (const question of SEED_PACK.questions) {
       const index = presentQuestion(question, 'fixed-nonce-for-audit').correctIndex;
       counts[index] = (counts[index] ?? 0) + 1;
@@ -67,7 +67,7 @@ describe('seed pack', () => {
     // almost entirely index 0. `expand` rotates it out. Without that, anything
     // reading the pack directly - a custom client, an inspection, an export -
     // sees a bank that looks rigged even though play is unaffected.
-    const counts = new Array<number>(4).fill(0);
+    const counts = Array.from<number>({ length: 4 }).fill(0);
     for (const question of SEED_PACK.questions) {
       counts[question.answer] = (counts[question.answer] ?? 0) + 1;
     }

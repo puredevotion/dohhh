@@ -38,7 +38,7 @@ describe('seeded rng', () => {
 
   it('spreads int() roughly evenly across buckets', () => {
     const rng = createRng('buckets');
-    const counts = new Array<number>(10).fill(0);
+    const counts = Array.from<number>({ length: 10 }).fill(0);
     const draws = 100_000;
     for (let i = 0; i < draws; i += 1) {
       const bucket = rng.int(10);
