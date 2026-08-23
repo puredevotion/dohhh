@@ -56,7 +56,7 @@ export const MORE_LITERATURE: CategoryContent = {
         'Yoshida Kenko, author of Essays in Idleness',
       ],
       0,
-      'Early eleventh century, and often called the first psychological novel. All four wrote in the same courtly tradition, which is the point of the distractors.',
+      'Murasaki Shikibu wrote it in the early eleventh century; it is often called the first psychological novel. Sei Shonagon, Ki no Tsurayuki and Yoshida Kenko all belong to the same Heian and early-medieval Japanese courtly literary tradition, which is why the names are easy to mix up without knowing the specific work each is known for.',
     ],
     [
       'What is prosopopoeia?',

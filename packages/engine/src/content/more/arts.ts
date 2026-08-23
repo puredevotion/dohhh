@@ -79,7 +79,7 @@ export const MORE_ART: CategoryContent = {
         'The state\'s refusal to fund public commissions for living artists',
       ],
       0,
-      '1897, Klimt among the founders. It predates the Bauhaus by two decades, which is one of the distractor\'s jobs.',
+      'Founded in 1897 with Klimt among its members, the Secession predates the Bauhaus by two decades, so the two movements never actually overlapped despite both being frequently cited as landmarks of the same broader turn against academic art.',
     ],
     [
       'What is a "cartoon" in the context of fresco or tapestry production?',

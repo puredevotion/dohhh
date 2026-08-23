@@ -763,7 +763,7 @@ export const MORE_SPORT: CategoryContent = {
         'Ten points with a margin of at least two',
       ],
       0,
-      'The ten-point version is the match tiebreak used in place of a final set in some formats, which is why the distractor is plausible.',
+      'A standard tiebreak needs seven points with a margin of two. The ten-point version is a separate rule, the match tiebreak, used in place of a full final set in some formats such as doubles.',
     ],
     [
       'What is the "Bosman ruling" significant for?',

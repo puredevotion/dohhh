@@ -341,7 +341,7 @@ export const SCREEN: CategoryContent = {
         'Federico Fellini, then working as a screenwriter within the movement',
       ],
       0,
-      'De Sica, 1948, cast largely with non-professionals - Fellini did in fact work on the script, which is why the wrong answers here are close.',
+      'De Sica directed Bicycle Thieves in 1948, casting it largely with non-professionals in the neorealist manner. Fellini did in fact co-write the script, and Rossellini and Visconti were both active in the same movement in the same years, which is why the movement can seem like one collective project rather than the work of distinct directorial voices.',
     ],
     [
       'What does diegetic sound mean?',
