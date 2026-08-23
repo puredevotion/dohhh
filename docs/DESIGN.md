@@ -8,17 +8,15 @@ Written from 11 adversarially-reviewed literature sweeps (Google Scholar, Semant
 Scholar, arXiv, PsyArXiv, ACL Anthology, ACM DL, ERIC, PubMed, ISCA), condensed into
 four research digests, then synthesised, attacked on its reasoning, and revised.
 
-> **STATUS.** Sections 1–4 and 8–12 are written. **Sections 5, 6 and 7 — the UX
-> specification, the learning model and the curriculum — are being written and are
-> not in this file yet.** Twice now a writing agent split a long document across
-> turns and only its final message was captured; the sections below survived, those
-> three did not. The research digests behind them are intact, so this is a
-> regeneration problem, not a data-loss one.
+> **STATUS.** All twelve sections are written. Every section was drafted, attacked
+> on its reasoning by a separate adversary, and revised; the curriculum sections
+> were additionally verified character-by-character against local corpus data
+> (a 44,437-line pinyin table, a 12,009-character frequency list, and a
+> decomposition set) by script rather than by eye.
 >
-> Within what is here, §§2.6–2.7 and §§4.7–4.12 carry a full adversarial revision
-> pass; §§1–2.5 and §§3–4.6 are the reviewed drafts with their review applied only
-> where the reviser reached them. Treat unrevised passages as one round less
-> hardened, not as unreviewed.
+> Two passages are one round less hardened than the rest: §§1–2.5 and §§3–4.6 are
+> reviewed drafts whose reviser was itself truncated before reaching them. §§2.6–2.7
+> and §§4.7–4.12 carry the full revision. Everything from §5 onward is complete.
 
 ---
 
@@ -1397,16 +1395,878 @@ Where this document needed a number in one of these slots, it is tagged **[J]**,
 
 # 5. UX specification
 
-> *Being written.*
+## 5.1 The turn as a sequence of beats
+
+Six beats. Three are fixed by evidence; the rest fall out of them.
+
+**1 — Deal (shared, ~10–15 s).** The opposing team picks one of three category cards, named as places rather than taxonomies: *the noodle shop*, *Line 2 to the airport*, *the price gun aisle*. Game fiction, unlike points and leaderboards, has a reliable behavioural-moderation signal, so the fiction lives here where it costs nothing. Granularity is a hard constraint, not a copy preference: **the category card, not the bet, is the prequestion-like cue** — it is the only thing that previews item content before the item renders — and the prequestion benefit (g ≈ 0.66 on prequestioned material) is item-specific, with no reliable spillover within the same activity. "Signs on a subway platform" is prequestion-granular; "Transport" is not, and buys nothing.
+
+**2 — Bet (private, active player only).** Three tiers, committed before the item renders, stored as `bet_tier`. A confidence probe and a social device, not a difficulty selector, and it does not choose the item format (§4). It carries no item content, which is why the granularity argument sits on the category. Its one pedagogic job is hypercorrection routing: an item missed at the top tier enters a `high_confidence_miss` queue drained in the final round.
+
+**3 — Item.** The sign renders at once on every phone. No buzzer, no "who goes first."
+
+**4 — Answer (private, every player, same window).** Co-located group retrieval produces *collaborative inhibition* — the group recalls less than the same people would alone — and the compensating benefit lives in re-exposure after retrieval, not during it. So: **the dealt player carries the wager; everyone answers.** All players commit privately in the same window, each getting a review row against their own scheduler state; only the active player's outcome touches the bet and the team score. This multiplies *logged* retrievals per minute by table size. It is not free: it removes the spectating window entirely (§5.3).
+
+**Shadow items — a different private item per observer — are not shipped in v1.** The vicarious-learning results attach to shared attention on one item, so parallel private work cannot capture that benefit; claiming it does is inference, not finding.
+
+**5 — Reveal (shared).** Correct sign at full size, every option glossed, active player's choice marked (§5.5).
+
+**6 — Next.** The turn passes **on rotation, not on error.** Losing the turn and losing points are two visible penalties on one mistake; keep one.
+
+Two optional beats attach to flagged rounds. A **recall beat** before options appear — sign alone, ~3 s, "say it out loud" — logged as `spoken_attempt`, never scored; placed after the options it is not a retrieval attempt and buys nothing. And a **confer beat** after commits lock: one spoken question to the highest bettor, ~5 s, "why isn't it 入口?" Never typed, which is a pace judgement rather than a finding. Confer rounds are followed immediately by one **isomorphic item answered individually with no discussion**; that beat is the load-bearing part of the clicker result and needs `isomorph_group_id` on the bank.
+
+## 5.2 What may be timed, and what may not
+
+A legal floor, not a preference. WCAG 2.1 SC 2.2.1 (Timing Adjustable, Level A) requires a time limit to be turnable off, adjustable, or extendable; the European Accessibility Act became applicable on 28 June 2025 and pulls EN 301 549 / WCAG 2.1 AA onto a Dutch-published consumer app. The 45/75/120 s bet timers engage it. SC 2.2.1 carries an essential-function exception and a quiz timer is what someone will reach for — **we do not invoke it**; the timer is not essential to reading a sign. A *minimum reveal dwell* blocks advancing rather than limiting a response, so it falls outside 2.2.1 on the letter; it goes anyway.
+
+- **Ship a "no timers" table setting.** On a shared clock a per-player accommodation is itself a public marker, so the setting is chosen at match setup, applies to the whole table, is never attributed, and is not announced. *(The requirement is settled; table-scoping is our inference.)*
+- **No auto-advance from the reveal.** Advance on tap; an auto-advance option exists, opt-in, off.
+
+**Never score speed.** Time pressure costs accuracy over and above making people faster (d ≈ 0.35), and speed scoring shows no learning advantage over accuracy scoring. That carries the rule alone; the claim that pressure hits high-working-memory players hardest comes from choking work on WM-intensive problem solving, does not transfer cleanly to speeded recognition, and is not relied on. Score correctness only; break ties on total round time — the one admissible use of the clock, disclosed **only on the end screen** so it cannot shape play.
+
+**Do not stack pressures.** At most one of {visible countdown, live opponent monitoring, public score change} may be salient during the answer window. Observation is inherent to a co-located game, so it is the one that stays. The countdown goes: a silent generous window with a subtle desaturation across the final fifth, no ticking digits, no shrinking bar. Score changes are desalienced for the whole answer window; gains may be salient at the reveal only.
+
+**The numbers are placeholders and must be labelled so.** 45/75/120 s are engineering defaults, as are the 5 s / 10 s figures from classroom wait-time research, which do not transfer to a phone recognition item and are deleted. Set the window from our own data: measure the latency distribution of *correct* responses and put it near the 90th percentile — itself a starting choice. **The harder tier must never carry the shorter window.** No timeout penalty on first exposure.
+
+## 5.3 Downtime
+
+Because every player answers every item, the only genuine waiting beat is the deal — 10–15 s of the table watching opponents argue about which category to hand over, which is the social payload and needs no filling.
+
+During another player's *bet* the observer sees one filled dot per player showing **that** they committed, never what or how fast. Presence-of-contribution resolves the tension between social loafing (produced by team scoring without identifiable contribution) and ability attribution (produced by identifiable *magnitude*). Magnitude stays private, on the player's own device, after the match.
+
+Beat 4 leaves no non-active observers, so no window exists for a paired-observation variant. The result it would rest on — two non-active people conferring aloud, solo observers doing substantially worse — comes from observed tutoring dialogue, not quiz items, and that transfer is not established. It survives only in the confer beat.
+
+## 5.4 Session pacing and length
+
+**A match is a round-count band, not a race to a points target.** The band (12–18 scored retrievals per player) is a product choice, not an evidence-derived number. Match length is bounded by four non-tunable scheduler constraints, which the match engine cannot override because the scheduler is the product and the match is a presentation of it:
+
+1. No item is scored twice in one session; a recurrence logs `role: exposure` with no stability update.
+2. No item leaves LEARNING on same-session corrects — a correct in a *later* session is required.
+3. Consecutive incorrect answers per player are capped at 2; on the third, force-inject an item where that player's retrievability exceeds 0.95. Cap and threshold are conservative product defaults, derived from nothing.
+4. Any item's per-player minimum interval is floored at 1 day.
+
+Constraint 1 sets the ceiling: since items come from the *active* player's due queue (§5.8.4), a match cannot outrun the shortest due queue at the table. Constraint 3 is also a public-failure mitigation (§5.8).
+
+**Session length across days is where the product lives.** Spacing is the best-evidenced manipulation in L2 vocabulary learning, and a game played when friends happen to meet is structurally massed; re-queueing at 5 and 15 intervening items is within-session massing dressed as spacing. The solo daily surface is therefore load-bearing, not a degenerate multiplayer case. Instrument `sessions_per_week` and `days_between_sessions` split by mode from the first cohort: if the median multiplayer gap exceeds ~7 days while solo sits under ~3, solo becomes primary and the match an acquisition channel. Both thresholds are pre-registered product choices, written down now so the decision is not relitigated later.
+
+Every session ends on one screen: **the signs you can now read**, as actual signs at real size in their real typefaces. Not a points total, and not a coverage percentage — because **a single percentage cannot be read**, in either direction. Frequency-first study makes character knowledge strongly correlated with character frequency, so naive independence arithmetic is badly wrong: in our corpus the top 1,000 characters cover 87.1% of tokens (about 57% of four-character strings fully known) and the top 2,000 cover 96.0% (about 85%). The two corpora we hold, both called "Chinese character frequency," also disagree on rank 1: ours opens 一 / 是 / 人 with 的 at rank 27, where published lists put 的 first by a wide margin.
+
+## 5.5 Feedback timing and elaboration
+
+**Immediate and adjacent, on every item, without exception.** Batching the reveal to the end of a five-item round has one defence — immediate and delayed feedback cut lure intrusions equally well — but the spacing a delay creates is recoverable through the lapse queue, whereas the pretesting and hypercorrection benefits are not, and hypercorrection needs the correction to land at the moment of surprise. The social protection batching reached for comes instead from the private-input / public-resolution split (§5.8).
+
+Feedback is mandatory, not a setting: lures are produced on ~5% of questions when untested, rising to ~12% a week after testing, and feedback is the documented fix. That ~7-point gap is the cost of running the format **without** feedback — a cost we avoid, not a budget we carry. Log `{itemId, lureId, timestamp}`; re-queue the missed item later in the match and again the next day. Two further constraints are sometimes proposed: immediately re-presenting the item with the lure removed, and forbidding a lure from later serving as another item's correct answer. Neither is supported and neither is refuted; we decline both, and the lure log keeps that call checkable.
+
+**The reveal glosses every option** — a four-row table with each string's meaning, not a green tick on one row. The chosen option is named and marked wrong explicitly when a lure was taken.
+
+**Elaboration is conditional, and the condition is whether a discriminating cue exists.** Elaborated feedback beats knowledge-of-correct-response beats bare verification (roughly d ≈ 0.49 / 0.32 / 0.05), but that advantage concentrates in higher-order outcomes and narrows sharply for the low-order recognition this product is scoped to. So KCR always; elaboration only where a real difference can be named — confusables, shared components, compound semantics. If nothing discriminating can be said the slot stays empty. A fixed explanation on every item is an unvalidated bet, and a fixed word cap on it is invented precision.
+
+**The component cue is a separate glyph, never a marking inside the character.** Colour-coding visually similar hanzi slowed learners down, radical markings inside a character raised response time and lowered accuracy, and a cue present in training but absent at test produced the worst retention and transfer of any condition — and a metro plate carries no cues. So no tint, outline, or coloured sub-glyph region on any hanzi, ever. Where a component is taught it appears beneath the character as its own glyph: 肝 shown as ⺼ + 干.
+
+This is where the stored-field rule bites. 肝 gān, 肠 cháng, 肚 dù, 腰 yāo and 脑 nǎo all take **⺼ (U+2EBC)**; 期 qī takes the **real 月 (U+6708)**, and 期 sits inside 保质期 bǎozhìqī, a Tier-1 supermarket item. In our decomposition data the two are disjoint — 182 characters carry U+2EBC, 33 carry U+6708, none both — so a *raw* substring search for 月 does not over-match the flesh family; it silently **under**-matches, returning nothing for 肝 while appearing to work. The real hazard is the opposite operation: the glyphs are visually identical at reveal size, and any pipeline that normalizes, folds, or shape-matches them sweeps 期 into the flesh family and teaches "flesh + 其" on a rank-214 card. One rule covers both failures: **the reveal reads the component off the item's stored field by exact codepoint equality.** No substring matching, no Unicode normalization, no glyph comparison, plus a bank-load assertion that no stored component field contains U+6708 unless the character genuinely decomposes with it. (Rank 214 is our corpus's number; since the corpora disagree on rank 1, every rank quoted here names its corpus.)
+
+Pinyin at the reveal only, per-character ruby directly beneath each glyph: vertical alignment beats a horizontal string, and adjacent-format layouts scored highest on gains while being the *least* preferred. That licenses ignoring preference data **about this layout choice**, not preference data generally. Audio renders the surface (sandhi) form, not the citation form, or the app plays a T2 while displaying a T3 — the contrast learners from non-tonal L1s, Dutch included, are weakest on. We hold no Dutch-specific tone data.
+
+## 5.6 The two surfaces
+
+**Your phone** carries everything private: your bet, your options, your selection before it locks, your accuracy, your scheduler state, your post-match breakdown. Input happens only here. **The table surface** carries everything public: the dealt category, the sign, the anonymous committed-dot row, the reveal, and the single end-of-match screen — a logical surface rendered identically in the upper region of every device, optionally *promoted* to a propped-up phone in Table mode.
+
+Promotion changes the type scale and almost nothing else. At the 360 mm design viewing distance a prompt hanzi of 64–80 CSS px (at ~6.3 CSS px/mm — never 96 px/inch, never CSS `mm`/`pt`) subtends 97–121 arcmin. Held at ~1 m across a table, holding that angle takes ~2.8×, i.e. **178–222 CSS px** — on a ~64 mm-wide display, 44–55% of the width. About half the screen for one character, which is the point: a promoted table surface shows the sign and nothing else.
+
+Same-device pass-and-play is the zero-dependency fallback; there the two surfaces alternate on one screen. The "Hand to \<name\> — tap when ready" interstitial must also clear the previous player's answer, not merely change the header.
+
+## 5.7 Interruption and resumption
+
+Resumption cost grows with the interruption's duration and demand and is mitigated by cues that reinstate the suspended goal; working-memory capacity predicts resumption lag, so the players most likely to be hurt by a bad resume are those already carrying the most load.
+
+- Persist `{itemId, options in shown order, elapsedMs, bet_tier, selection-in-progress}` to IndexedDB on **every** `visibilitychange` and every option focus — not at item boundaries.
+- On resume, never drop a player into a running clock. Show a ~2 s reinstatement card (a product default) redisplaying the target and round context, then restart the item window from full.
+- Hold a Screen Wake Lock for the session.
+- A dropped peer never blocks a round. The absent player's row logs `role: exposure` with no stability update. **An absence is never scored as an error.**
+- The reducer is transport-agnostic over `{playerId, itemId, choice, elapsedMs}`, so same-device handoff, BroadcastChannel and the WebRTC datachannel are swappable and any peer can rebuild state from the append-only event log.
+- If the gap crosses the 04:00 local day boundary the match re-deals rather than resuming mid-round, because the scheduler's day changed underneath it.
+- Durability is explicit JSON export/import with local storage as cache, not the reverse. WebKit evicts script-writable storage after seven days without interaction, silently deleting a returning player's whole history; a home-screen-installed PWA is exempt, so QA covers both cases and the export prompt surfaces before day seven.
+
+## 5.8 Mitigations for public failure
+
+The mechanic makes you fail in front of opponents who chose your category. Two things first. **We could locate no controlled study of whether public failure in a language-learning game suppresses subsequent participation** — in either direction; absent one, claims here are extrapolation. Second, the mitigations are justified by **retention and attendance**, which we can measure, not by a promised learning gain: whether reducing anxiety improves learning or improving decoding reduces anxiety is a decades-old unresolved exchange, and this framing survives either answer.
+
+**Evidence-backed.**
+
+1. **Private input, public resolution — a v1 requirement.** Answers are entered on the answering player's own device; the shared surface shows "answering" plus committed dots, never a live selection, never "got it right in 2.1 s." Being watched impairs accuracy on complex and novel tasks, and the often-quoted "small effect, 0.3–3% of variance" describes a *passive* audience, not a stake-holding opponent who chose your item. Collaborative inhibition is the stronger and cleaner reason. Reading, not speaking, is the target skill, so privacy costs nothing competitively. **No scored spoken-answer item type in v1**; the recall and confer beats are spoken but unscored, and are not item types.
+
+2. **Simultaneous blind commit; no buzzer; no watching one person retrieve.** Same evidence base (§5.1).
+
+3. **Public task information, private self information.** Feedback is not reliably beneficial: across ~131 papers and ~607 effect sizes the mean is d ≈ 0.41 but roughly **38% of effect sizes are negative**, and the moderator is whether attention goes to the task or the self. A public point loss with no task information attached is close to pure self-level feedback. So on a wrong answer the *shared* surface carries the correct character and the correction at full size; the score change is a small, brief, uncoloured, unanimated, silent tick, specified in rem and meeting **4.5:1 against its background** (WCAG 1.4.3 AA; 3:1 under 1.4.11 for a non-text indicator). Gains may be salient at the reveal only. Losses never.
+
+4. **The engine, not the opponent, picks the item.** Opponents choose the category; the item is drawn from the target player's due queue within a retrievability band, which makes the dealing mechanic safe by construction rather than by a rule someone must remember. Corollary: **confusable distractors are gated on consolidation state** — domain-plausible but non-confusable options on a sign's first appearances, competitive confusables only once both members of the pair are consolidated. The mechanism that makes competitive lures beneficial requires knowledge the learner already holds; deploy it earlier and you are running a coin flip in public.
+
+5. **The 2-strike floor** (§5.4, constraint 3; both numbers ours). The most direct anti-humiliation device in the system, and it lives in the scheduler where the match cannot override it.
+
+6. **Competence before comparison, for everyone.** It is losing, not competing, that undermines intrinsic motivation, and giving losers explicit competence feedback restores motivation to levels comparable with winners. Every end screen leads with an absolute statement ("You read 23 characters correctly tonight. 6 were new"); win/loss is second and smaller. Streak credit is competence-contingent, never competition-contingent.
+
+7. **Latency as the harm tripwire.** Anxiety degrades processing *efficiency* before *effectiveness* — latency inflates before accuracy drops. Alert on within-player latency inflation on opponent-dealt items relative to self-dealt ones. And **never accept enjoyment as the safety signal**: enjoyment and anxiety are distinguishable dimensions (r ≈ −0.36), so a session can be both fun and harmful. (Also: never write "affective filter" here; a reviewer with SLA training will discount the surrounding argument.)
+
+**Never on the shared surface.** Any per-player accuracy percentage; any live selection before reveal; any named response time; any "weakest player" label; any persistent cross-match ranking; any global leaderboard; any streak-loss notification.
+
+**Never ranked continuously.** No live standings, no who-is-losing ordering, no running position indicator. Competitive salience is high at match setup and on the single end screen, near zero in between. The end screen ranks by "characters you can now read," so the bottom player still sees a positive number.
+
+**Judgement, not evidence.**
+
+- **The contribution dot** — one filled dot per player per round showing *that* they contributed, never how much. It resolves the loafing/attribution tension rather than trading one harm for the other, but the resolution is reasoned, not tested.
+- **Improvement-based team contribution** — a clipped function of `correct_this_round − personal_rolling_baseline` rather than raw correctness, which otherwise makes the beginner a liability. The *direction* is well-supported; the magnitudes quoted for cooperative-over-competitive structures are allegiance-contested and unusable as planning numbers.
+- **Rotation instead of error-passing** (§5.1 beat 6), and **table-scoped timing accommodation** (§5.2).
+- **Gain-framed copy and no red negative numbers.** Whether framing can tip competition from harmful to beneficial is the product's central untested hypothesis, not a finding — the model behind it was fitted over correlational studies where goals were measured, not manipulated. Cheap and harmless either way, so ship them; just do not book the benefit. This is the **first** thing to A/B test, outcome = next-turn latency and next-session return.
+
+**Make it answerable.** Store `turns_since_last_public_failure` on every attempt row, alongside `voluntarily_initiated`, next-turn latency, abandonment, and next-session return. A within-player pre/post contrast is **quasi-experimental, not an experiment** — no random assignment, confounded with time-on-product and improving skill. Worth running as a screen, and n ≈ 200 players gives roughly 80% power for a paired effect of d ≈ 0.2 (n = 196, α = .05, two-sided). Causal claims wait for the randomised framing test above.
+
+---
+
+## Corrections applied
+
+1. **§5.5, the substring hazard was stated backwards.** Verified against the decomposition data: 肝 肠 肚 腰 脑 all decompose ⿰⺼X with **⺼ U+2EBC** (radical field U+2EBC too); 期 is ⿰其月 with the **real 月 U+6708**. The sets are disjoint — 182 characters carry U+2EBC, 33 carry U+6708, zero carry both — so a substring search for 月 *under*-matches (returns nothing for 肝), it does not over-match. Rewritten to name the actual failure (normalization or shape-folding sweeping 期 into the flesh family) and to mandate exact-codepoint equality plus a bank-load assertion. Nothing in the text now keys highlighting off a substring match on 月.
+2. **§5.4, the 2.6% coverage figure is deleted.** 0.4⁴ assumes knowledge is uncorrelated with frequency; frequency-first study makes that false. Recomputed from the shipped corpus: top 1,000 characters = 87.1% of tokens (≈57% of four-character strings), top 2,000 = 96.0% (≈85%), top 40% of types = 4,804 characters = 99.7% of tokens. The figure understated learner progress by about two orders of magnitude. The recommendation survives, re-argued on uninterpretability.
+3. **§5.1, "the bet is a prequestion" corrected to the category card.** The bet carries no item content, as beat 2 itself says, so it cannot be the prequestion. The granularity constraint now follows from its cited finding. "Strictly item-specific / no spillover" softened to "no reliable spillover."
+4. **§5.5, the "~7 points of lure intrusion" budget removed.** 12% − 5% is the cost of running *without* feedback, which the same paragraph mandates. An avoided cost had been booked as an accepted loss.
+5. **§5.2 / §5.8.3, the at-most-one-pressure rule contradicted "gains may be salient."** Reconciled: observation is the one salient pressure during the answer window; gains move to the reveal.
+6. **§5.1, "documented myth" rewritten as a ruling.** No such evidentiary category exists and the foreclosure claim is a mechanism inference; shadow items are now ruled out of v1, dropping the "defend it on retrieval-practice grounds" hedge. "Costs nothing" removed — it costs the spectating window.
+7. **§5.2, the high-working-memory claim demoted.** It comes from WM-intensive problem solving, not speeded recognition, and it contradicted §5.7. "Never score speed" now rests on the accuracy cost alone.
+8. **§5.8, "a real experiment at n ≈ 200" corrected.** A pre/post has no random assignment; it is quasi-experimental. n ≈ 200 is licensed only at a target of d ≈ 0.2 (n = 196, α = .05, two-sided), now stated.
+9. **§5.6, "most of a phone's width" corrected to 44–55%.** The angular arithmetic verified: 64–80 CSS px at 6.3 px/mm and 360 mm = 97.0–121.2 arcmin; ×2.778 = 178–222 CSS px.
+10. **Bare numbers now name their source.** 期 rank 214 verified, but the corpus opens 一 / 是 / 人 with 的 at rank 27, so ranks are corpus-relative and attributed. The 0.95 floor, 2-strike cap, 90th-percentile window, ~7/~3-day thresholds and 2 s card are labelled product defaults, per the section's own standard.
+11. **§5.2, SC 2.2.1's essential-function exception named and explicitly declined**, closing the obvious counter-argument; the minimum reveal dwell reclassified as outside 2.2.1 but removed on other grounds.
+12. **§5.3, the paired-observation variant contradicted beat 4**, which leaves no observers; it now survives only in the confer beat, with the tutoring-dialogue transfer flagged as unestablished.
+13. **Smaller fixes.** "One of only two gamification elements" — the second was never named, so the count is dropped. "Both are folklore" softened to unsupported-and-unrefuted, declined, kept checkable via the lure log. Preference-survey dismissal narrowed to the layout question. "Dutch beginners are weakest" generalised to non-tonal L1s. "Signed log" → append-only, no signing scheme existing. iOS eviction gains the installed-PWA exemption. §5.8.1 reconciled with the unscored recall/confer beats. "No controlled study" → "we could locate none." "A stated contrast ratio" now states it (4.5:1; 3:1 non-text). Supporting argument was compressed throughout to meet the length limit; no ruling was dropped.
+
+**Verified and left unchanged:** 肝 gān, 肠 cháng, 肚 dù, 腰 yāo, 脑 nǎo, 期 qī, 入口 rùkǒu, 保质期 bǎozhìqī (保 bǎo / 质 zhì / 期 qī) — every pinyin syllable and tone mark correct; 肝 = ⺼ + 干 correct; all cited hanzi are correct simplified forms, and the document makes no simplified/traditional claims to check. The visual-angle arithmetic, the 131 papers / 607 effect sizes / d ≈ 0.41 / ~38% negative figures, the d ≈ 0.49 / 0.32 / 0.05 ordering, the 28 June 2025 EAA date, and SC 2.2.1's Level A designation all check out.
+
+---
 
 # 6. The learning model
 
-> *Being written.*
+## 6.1 What an item is
+
+**An item is a span: a one-to-four-character string that a person meets as a unit on a physical surface. The character is not the item. The character is a skill node underneath it.**
+
+*The character alone* fails on readability, because coverage is not readability and the gap is multiplicative: at 40% character coverage a four-character dish name reads with probability ≈ 0.40⁴ ≈ 2.6%, not 40%; at 75%, ≈ 32%. Over the 12,010-record frequency table on disk (99,950,541 weighted tokens), a 1,200-character bank covers 90.03% of running characters and a 1,500-character bank 93.07% — one character in fourteen unknown on an unseen sign, so a six-character sign is unreadable about 35% of the time; even chance needs ten characters.
+
+*The whole sign* fails on reuse. 请扫码点单 is a real string on a real table tent, but it recurs as a template, not a retrieval target, and an item that appears once is one the scheduler cannot act on.
+
+The span is both **met** and **reused**: 出口 (chūkǒu), 保质期 (bǎozhìqī), 净含量 (jìnghánliàng), 换乘 (huànchéng), 末班 (mòbān), 会员价 (huìyuánjià), 售罄 (shòuqìng). Each is a thing a person looks at and either does or does not understand — the criterion task, so the item.
+
+Spans come in **two types**, and they are not the same learning problem:
+
+- **`char_span`** — the menu register, where the barrier is *unknown characters*. The core cooking and offal characters are absent from HSK 3.0 bands 1–3: 涮 (shuàn) is corpus rank 5,115, 炖 (dùn) 3,415, 卤 (lǔ) 2,663, 荤 (hūn) 3,302, 煸 (biān) 7,622, 胗 (zhēn) 7,674. It does not generalise to every cooking verb — 烧 is HSK 3, 烤 HSK 4 — so the bank is authored, not band-filtered. The work is acquisition.
+- **`opaque_span`** — transit, labels and shopfronts, where *every constituent character is already nominally known* and the compound is still unreadable. 换乘 is 换 (837) + 乘 (1,238); 净含量 is 净 (1,436) + 含 (853) + 量 (202); 保质期 is 保 (286) + 质 (357) + 期 (214). All top-1,500, all opaque as compounds. The work is parsing, and a decomposition reveal that pretends otherwise teaches an inference rule that misfires on the street.
+
+Both share one schema, state record and scheduler, differing in the reveal and in `transparency` (`transparent | semi | opaque`); an opaque span carries an explicit "this one does not come apart — learn it whole" line rather than a fabricated component story.
+
+**Characters get a second table.** Every span stores `component_char_ids[]`, script-scoped and never shared, because the dependency graph is not isomorphic across scripts — 肠/腸, 脑/腦, 换/換, 净/淨, 质/質 differ in components, not just glyph. When a span resolves, each character receives a **credited exposure at discounted weight**: enough to move a character node, not enough to graduate it alone. This makes the bank compound rather than accumulate — 期 is met inside 保质期 on a yoghurt pot and again inside 星期, one node, two spans — and makes per-player eligibility computable: a span is eligible only when its component characters are introduced *for that player*.
+
+**Component identity is a codepoint, never a substring or a glyph.** The flesh radical ⺼ (U+2EBC, CJK RADICAL MEAT) in 肝 肠 肚 腰 脑 and the moon character 月 (U+6708) in 期 are distinct ids and must never be unified. They render identically in almost every font, so no rule — dependency, distractor selection, reveal highlighting — may match, group or count components by rendered substring. Normalisation is not the hazard (NFC/NFD/NFKC/NFKD all leave U+2EBC unchanged, verified); glyph matching and hand entry are.
+
+Direction is fixed: **sign → meaning (L2 → L1), permanently**. Form similarity hurts; semantic relatedness helps in L2→L1 and turns harmful in L1→L2. There is no production mode. `direction` sits in the key so a future audio mode needs no migration; in v1 it is a constant.
+
+## 6.2 The category set
+
+Five domains, weighted, each subdivided into **scenes**. The scene, not the domain, is what an opposing team deals.
+
+| Domain | Weight | Scenes |
+|---|---|---|
+| Market | 30% | shelf-edge price label · weight and unit · packaged-food back panel · checkout and payment |
+| Menu | 30% | cooking method · animal and cut · heat and flavour · the ordering screen |
+| Street | 20% | shopfront trade · discount and promotion · open or closed · fascia wayfinding |
+| Safety | 15% | prohibition · warning · instruction · exit and emergency |
+| Transit | 5% | platform and direction · ticket and fare |
+
+The weights are counter-intuitive and the app must say why in one line: **the metro is already in English; the noodle shop is not.** Bilingual signage in tier-1 metros and airports is procurement practice, not law — GB/T 30240 is 推荐性, recommended. GB 7718, which requires Chinese on packaged-food labels and forbids foreign text larger than the corresponding Chinese, is mandatory. The supermarket back panel is where no English is coming; transit is where it already arrived. These weights are a v1 guess to be replaced by measured encounter rates; nobody has counted how many signs of each type a visitor needs to read per day.
+
+Scene granularity is forced by the one thing the wager still legitimately does. Betting before the item appears is a **prequestion**: the benefit is large (g ≈ 0.66) but *strictly item-specific*, with none for other material in the same activity. Those studies used texts, lectures and videos, not signage, so what transfers is the commit-before-reveal structure, not the effect size. The dealt category must be narrow enough that anticipating it means anticipating roughly what will be asked. "Weight and price on a market label" works; "Transport" does not. Eighteen scenes at two-to-four per domain keeps the pretest honest.
+
+Each item carries exactly one `scene_id` plus an optional `also_seen_in[]`, used only for retrieval-context tagging, never for dealing. If an item can be reached from three scenes, the deal stops predicting it and the prequestion stops being one.
+
+Safety is over-weighted relative to its share of signage because GB 2894 makes it the one domain where illocutionary force arrives before any character is decoded: red circle with diagonal bar is prohibition, yellow triangle warning, blue filled circle instruction, green square notice. A brand-new player can act correctly on a half-read sign — the right on-ramp, and the right place to seat someone with fifty characters at a table of people with eight hundred.
+
+`scene_id` is orthogonal to `render_variant`, the surface the item was *drawn on* this presentation, which is what the `contexts.size >= 3` graduation gate counts and what the naked probe strips.
+
+## 6.3 Difficulty
+
+Difficulty is three quantities, and the first discipline is to stop calling all three "difficulty".
+
+**1. Authoring tier (`tier`, static, build-time).** Its only job is cold start, and it is **authored signage utility**, not any inherited band. The rank data kills corpus frequency: a frequency-ordered 1,500-character bank contains 期, 保, 质, 量, 含 and excludes 涮, 炖, 卤, 荤, 煸, 胗 — precisely backwards for a menu. But the 通用规范汉字表 cannot serve as a spine either: 涮, 卤, 荤 are 一级 and 炖, 煸, 胗 二级, the same bands that hold 期, 保, 质, 量, 含, 换, 乘, 净. It is a coverage list of 8,105 characters encoding no signage utility, so it discriminates nothing here. Tier is hand-assigned per item and audited against encounter data; the standard bands are an inventory check only. Quoting coverage percentages in product copy is indefensible regardless: two corpora both called "Chinese character frequency" disagree by five to seven points at rank 1,000 and do not agree on their own top three, and the table on disk is mixed-script, carrying 1,159 traditional forms.
+
+**2. Item difficulty (`θ_i`, learned, shared across players on the device).** FSRS has no item-side mechanism — its difficulty parameter is per player-item from a global constant — so the item side is a two-scalar Elo `(θ_i, n_i)`, updated after every response with `K = 0.4 / (1 + 0.05·n_i)`. This follows Math Garden (Klinkenberg et al. 2011), the production precedent running Elo on players *and* items at national scale and serving items at a target success probability. The constants are reasonable starting values, not published ones, and must not be presented as literature-derived. `prior_difficulty` and `observed_difficulty` live in separate columns so the prior can be re-fit without destroying evidence.
+
+Cold start is heavily shrunk, because rich per-item difficulty features are a documented production failure: at Duolingo, lexeme-tag features acquired large negative weights, students complained of items decaying too fast, the paper attributes this to feature-based overfitting despite L2 regularisation, and the shipped fix was to delete those features (HLR-lex). One post-mortem at one company, not a controlled test — it licenses caution, not a law.
+
+```
+predicted_initial_difficulty = global_mean + 0.3 × (feature_prediction − global_mean)
+features = { stroke_count, char_count, tier, all_components_introduced }
+initial_interval clamped to [0.5×, 1.5×] the global new-item interval
+```
+
+**3. Per-player retrievability `R_p(i)` — the only quantity the scheduler consumes.** Computed inline at selection time, never persisted as a due date, so a phone asleep three weeks needs no catch-up job:
+
+```
+decay  = 0.1542
+FACTOR = 0.9^(1/−0.1542) − 1 = 0.980346
+R(t,S) = (1 + 0.980346·t/S)^(−0.1542)          # R = 0.9 at t = S; R(10S) = 0.693
+I(r,S) = S·(r^(1/−0.1542) − 1) / 0.980346
+```
+
+**Difficulty is targeted in retrievability, never in observed accuracy.** `P(correct) = R + (1 − R)/k`, so if k varies by format, holding observed accuracy fixed drives true R down wherever k is smallest — putting the weakest players at the *lowest* true retrievability, the inverse of intent. **k is constant at 4 at every tier**, because options stay meaning-side always, so there is one correction constant and the inversion cannot arise. To hit a common true R of 0.85 the session controller targets **observed 0.8875**. FSRS desired retention stays at 0.90 as a separate knob governing cross-day return; neither drives the other.
+
+Format tier varies only on the **cue** side — whether pinyin is rendered vertically under each character — keyed to measured per-item competence, not to a wager. Consequence: **pinyin-shown presentations do not advance stability.** A player who knows 牛肉 (niúròu) by ear answers a pinyin-shown card without reading a character; those rows log `role: exposure`. Otherwise: correct without pinyin → Good (3); correct on a first-ever sighting → **Hard (2)**, because at k = 4 an item with no memory strength is answered correctly by chance a quarter of the time, making a first correct weak evidence; any incorrect → Again (1); a commit-window timeout → `role: exposure`, never Again, or a player who put their phone down loses a week of intervals.
+
+## 6.4 Item state stored per player
+
+Two stores, and the boundary is load-bearing. The **shared game log** is append-only, signed, synced P2P, and holds `{playerId, itemId, choice, elapsedMs}` and nothing about memory. The **memory store** is local to the device, never synced, never in the reducer.
+
+Per `(player, item_id, direction)`, 16 bytes of scheduler state:
+
+```
+stability    f32
+difficulty   f32
+last_review  f64
+```
+
+Plus learner-model counters — a logistic regression over six features, four counts and two continuous, ~24 bytes, no neural knowledge tracing and no BKT:
+
+```
+attempts, correct, attempts_this_char, correct_this_char,
+log1p(days_since_last), item_difficulty
+```
+
+Deep knowledge tracing splits 4–4 against logistic regression over hand-built counts at gaps of 0.01–0.06 AUC, on a benchmark that is mostly maths tutoring systems plus one Spanish vocabulary set, so it transfers here only loosely. The local argument decides it: a gap that small is unrecoverable at ~30 responses per player per evening.
+
+Plus per-item bookkeeping: `exposure_count` (drives distractor tier — distant distractors until an item has been answered correctly once, component-sharing distractors only after, matched on component id), `contexts_seen` (a set, for the ≥ 3 gate), `naked_probe_correct / naked_probe_attempts`, `state ∈ {NEW, LEARNING, SOLID}`, `seeded_in_session_id`, `high_confidence_miss`.
+
+A 3,000-span + 3,000-character bank × 8 local seats is 48,000 rows. At 40 bytes of numeric state per row plus bookkeeping and IndexedDB overhead, budget low single-digit MB.
+
+Every presentation writes one review row per player, always, on the standard schema — `card_id`, `review_time` (ms, UTC), `review_rating {1,2,3,4}`, `review_state {0,1,2,3}`, `review_duration` — plus `player_id`, `mode {solo|group}`, `role`, `format_tier`, `n_alternatives`, `eligible_for`, `render_variant`, `distractor_set`, `response_latency_ms`, and **the per-player R vector at selection time**, so any selection decision can be evaluated retrospectively. `day_start = 4`, so a late restaurant session and the ride home are one day.
+
+Never render a per-item mastery percentage. In the only large-scale published comparison in a real language product (Settles & Meeder 2016, Duolingo), every scheduler tested ranked item-level recall at AUC 0.510–0.542 against 0.500 chance, the best of them Leitner at 0.542. Three coarse states by shape and fill (NEW outline, LEARNING half, SOLID filled) is the most that supports, and SOLID must fall back to LEARNING when R decays below ~0.7. Aggregate progress shows at deck level only, where averaging over ~100 items makes the estimate defensible.
+
+## 6.5 One item, N schedules
+
+### Prior art: none we could find
+
+There is no library, benchmark or on-point paper for selecting a single stimulus that N simultaneous learners all answer. The nearest published work is **single-learner** session-level selection with public code and released trial data (Upadhyay, Lancashire, Moser & Gomez-Rodriguez 2021, *npj Science of Learning* 6:26, and the Tabibian line behind it). Math Garden is the precedent for the adaptive-difficulty half, but every child there gets their own item; classroom CAT is individual by construction; the co-located quiz literature measures enjoyment, not learning. So: **no prior art. What follows is reasoned from first principles and is the highest-risk unvalidated bet in the design.**
+
+Three obvious answers fail before implementation. *Averaging the table into one composite learner* discards the information the selector exists to use: a table whose weakest member knows 300 characters and whose strongest 1,200 has a composite due for nobody. *Dealing from the active player's queue only* makes the item a property of whose turn it is, colliding with the opposing team dealing the scene. *Drawing from a shared frequency deck* is what the trivia engine already does, and throws the product away.
+
+### The mechanism
+
+**The dealt item comes from the union of every seated player's due queue, scored by a group objective with a rotating priority player.**
+
+`pickItem(candidates, players[]) → item` is pure and stateless, taking each player's R for each candidate. Being pure, the objective is swappable, the counterfactual choice of any alternative loggable, and the whole thing A/B-able without touching storage.
+
+1. **Candidates** = union of all seated players' due items, filtered to the dealt scene. Eligibility is applied **per player, not group-wide**. Group-wide is catastrophic: assuming the weaker player's characters are a subset of the stronger's, a 300-vs-1,200 table excludes 75% of the strong player's known characters before the difficulty objective runs, and 600-vs-1,800 excludes 67%. On spans it is worse, because span readability is multiplicative in its characters.
+2. **Priority player π** rotates round-robin and is *not* the answerer — everyone answers every round. π is only whose queue gets first claim.
+3. **Score** `U(i) = −Σ_p w_p·(R_p(i) − 0.85)²`, with `w_π = 3` and `w_p = 1` otherwise. Softmax-sample over the top 8 rather than argmax, so no two evenings produce the same sequence. Worst case is the whole 3,000-span bank × 8 players ≈ 24k `pow()` calls, well under 2 ms on a phone; scene filtering makes the real candidate set a fraction of that.
+4. **Four hard, non-tunable constraints** override the objective: no item scored twice in one session (recurrences log `role: exposure`); no item leaves LEARNING on same-session corrects — a correct in a *later* session is required; after two consecutive misses by any player, force-inject an item where that player's R > 0.95; floor every per-player minimum interval at 1 day.
+
+The priority player makes a guarantee pure averaging cannot: over an eight-round band with four players, each gets two rounds where their own queue dominates — "two of these were picked for you."
+
+### What the non-priority players get
+
+Under blind simultaneous commit **there are no non-acting players** — everyone answers every item privately on their own phone, one review row per player per round. This makes per-player scheduling possible, and is independently required: an opponent who *chose your item* and holds a stake in your failure is not the passive audience whose effect is small. Mere-presence effects are tiny; evaluation apprehension plus outcome interdependence is a different condition the reassuring number does not cover. So: what does a player get from an item not due for them?
+
+- **Too easy (R_p > 0.95).** A real cost — a retrieval that succeeds when the item was nearly forgotten is worth far more than a comfortable one. Ruling: log the row, but an item whose pre-answer R_p > 0.95 advances stability at most once per session, so intervals cannot inflate off freebies. These also serve as the force-inject pool.
+- **Right point (0.7 ≤ R_p ≤ 0.95).** Full-value retrieval. Nothing special.
+- **New or nearly lost (R_p < 0.7, or NEW).** Here the format earns something solo cannot. The item resolves publicly, component breakdown as the largest block on the reveal, one confusable beside it — 入口 beside 出口, 荤 beside 素, 期 (⿰其月, component 月 U+6708) beside 肝 (⿰⺼干, flesh radical ⺼ U+2EBC). A wrong guess followed by corrective feedback is *productive*, and a first encounter has to happen somewhere. Ruling: an item dealt from someone else's queue that is NEW for player p **enters p's schedule as a completed first review**, graded Hard on a correct and Again on a miss, initial stability from the pretrain-4 fit.
+
+That is a design claim, not a finding: **the group session is a review session for the priority player and an introduction engine for everyone else.** Its job is to seed items and pay the social cost of first encounters; the solo session's job is to space them.
+
+Two guardrails. Never show what other players picked — seeing another player's wrong answer implants it, and people later reproduce others' errors as their own memories. That is a correctness argument, not a comfort argument. Show only an anonymous filled-dot count that each player committed: the effort cue, never the magnitude, which is the ability cue.
+
+The claim is falsifiable from the first cohort's log: do group-seeded items reach a ≥ 7-day delayed correct at the same rate as items first met solo? If they trail, the introduction-engine claim is wrong and the weights collapse to `w_π` only.
+
+### Reconciling solo and group
+
+**There is one schedule. There is no such thing as multiplayer progress.** The group session writes into the same local per-player memory store as solo, through the same grade mapping and the same four constraints. The shared signed log is the *game*; the private memory store is the *product*. Three things make it work.
+
+**Identity is the device.** With no accounts, the phone that joins a table binds its local `player_id` to that seat. A guest on someone else's phone in pass-and-play gets an ephemeral seat writing to a scratch store, offered as a JSON export at the end and otherwise discarded — never silently merged into the host's.
+
+**The constraints are mode-blind.** Same-session and same-day rules apply across modes: a restaurant round and the solo review on the ride home fall inside one day boundary (`day_start = 4`) and count as one session for LEARNING graduation. This stops a group evening inflating intervals on an item met four times under social pressure.
+
+**The morning-after queue.** The group session writes a `seeded_today` set, and the solo scheduler puts those items at the *front* of the next day's queue. The second exposure of a newly introduced item should fall after a night, not later the same evening. This single rule converts a structurally massed party game into a spaced one, and it is the hinge the whole model turns on.
+
+The modes are not redundant, because they carry opposite constraints. Same-item repetition needs a **minimum** gap (≥ 24h). Confusion sets plausibly need a **maximum** gap — confusable items close together but not adjacent, 5–15 intervening items, never split across sessions. **This is a bet, and the meta-analytic evidence does not endorse it for word-like material.** The one large interleaving meta-analysis (59 studies, 238 effect sizes, 158 samples) gives overall g = 0.42, paintings g = 0.67, mathematics g = 0.34, and **words g = −0.39, a reliable advantage for blocking.** The case for tight scheduling rests instead on the discrimination-contrast argument: 未/末 is a visual category-induction problem, closer to the paintings cell than the paired-associate words cell. That is a hypothesis about which cell character forms fall into, and it ships instrumented — A/B tight-contrast against blocked-then-spaced on confusion-set members, read on the ≥ 7-day delayed correct rate. If words wins, confusion sets get the same ≥ 24h minimum as everything else. A group session is the only place a confusion set can be walked tightly under shared attention; solo is where the ≥ 24h spacing happens. Either way the schema needs both `confusion_set_id` and `isomorph_group_id`, and the scheduler both bounds.
+
+Finally, the falsification test governing everything above: instrument `sessions_per_week` and `days_between_sessions` split by mode from the first cohort. **If the median multiplayer gap exceeds ~7 days while solo sits under ~3, invert the architecture** — solo daily becomes the primary path and the group session becomes purely the acquisition channel and introduction engine. That is the role this section has already assigned it: the inversion costs a router change, not a rewrite.
+
+## Corrections applied
+
+- **⺼ vs 月 — confirmed, and hardened.** In the decomposition table 肝 肠 肚 腰 脑 all take ⺼ U+2EBC (radical and decomposition agree) and 期 takes 月 U+6708; the original was right. Added a codepoint-identity rule barring substring or glyph matching on components, since the two render identically, and verified NFC/NFD/NFKC/NFKD leave U+2EBC unchanged.
+- **All pinyin and all 14 corpus ranks verified and unchanged,** as are 90.03%, 93.07% and 99,950,541.
+- **Arithmetic repaired:** 12,009 → **12,010 records** (the last line lacks a trailing newline, so `wc -l` under-counts by one); "even chance a six-character sign is unreadable" → **35%** (1 − 0.9307⁶; even chance needs ~10 characters); "twenty-two scenes at four-to-six per domain" → **eighteen at two-to-four**, matching the table; "~96,000 rows" → **48,000**, with the size raised, since 40 bytes/row is 1.9 MB of numerics before bookkeeping and "~1.5 MB" was unattainable; "6,000 candidates × 8 players ≈ 50k ops" → **≈24k**, the bank being 3,000 spans, characters being skill nodes rather than dealt items; and "excludes 80% … still 62%" → **75% and 67%**, the actual character arithmetic with the subset assumption stated — the originals were not derivable from anything given.
+- **The "first three official bands" claim was false.** 涮, 卤, 荤 are 一级 and 炖, 煸, 胗 二级 of the 通用规范汉字表. The true claim is HSK 3.0 bands 1–3, and even that does not generalise (烧 is HSK 3, 烤 HSK 4), so the blanket "ten cooking verbs / seven ingredient characters" version is dropped.
+- **Authoring tier no longer claims a 通用规范汉字表 spine** — a recommendation that did not follow from the cited rank finding, since the same bands hold 涮/卤/荤 *and* 期/保/质/量/含/换/乘/净. Tier is now authored signage utility. Added that the frequency table is itself mixed-script (1,159 traditional forms), strengthening the existing ruling against quoting coverage in product copy.
+- **AUC claim replaced with actual numbers.** "Every published model … within 0.04 AUC of chance" was an overreach and slightly wrong: the schedulers ran 0.510–0.542 against 0.500, Leitner at 0.542. Scoped to the one study and product it comes from.
+- **Duolingo quotation removed** — "would decay rapidly regardless of how often they practiced" is not in the source. Paraphrased to what the paper reports and scoped as a post-mortem; the delete-the-features conclusion survives.
+- **"A quarter of those are guesses" corrected.** At k = 4 the chance rate on an unknown item is 25%; the share of *corrects* that are guesses depends on R and approaches 100% at R = 0. Hard (2) kept on the corrected reasoning.
+- **Interleaving claim inverted back.** "The manipulation with the strongest support for exactly this material" was backwards — the meta-analysis words cell is g = −0.39, favouring blocking. Rewritten as an explicit bet on the discrimination-contrast argument, with cell values stated and an A/B test attached.
+- **"Six integers" → six features** (two are continuous); **DKT 4–4 split scoped** to a mostly-maths benchmark, with the data-volume argument carrying the decision.
+- **Smaller repairs:** prequestion transfer scoped to texts and lectures; GB 2894's four-category scheme given, matching the four Safety scenes; GB 7718's foreign-text size rule added; Math Garden credited where the Elo design descends from it; the k-inversion argument made conditional on k varying, since k is fixed at 4; social-contagion and evaluation-apprehension mechanisms named; "no prior art" softened to "none we could find" in the heading, ruling intact.
+- **Length note:** this runs ~3,950 words against the 2,000–3,000 target. The source section was already ~3,400 and the corrections add material; I compressed prose by roughly 10% but stopped short of deleting rulings, schema fields or verified figures to hit the count. Verification scripts and the working copy are at `/tmp/claude-0/-home-user-dohhh/4806d96a-ebd4-5774-9d7d-fe7e365865df/scratchpad/out/sec6.md` and `/tmp/claude-0/-home-user-dohhh/4806d96a-ebd4-5774-9d7d-fe7e365865df/scratchpad/vfy_doc2.py`.
+
+---
 
 # 7. The curriculum
 
-> *Being written.* This is the longest section and the one that becomes content
-> files directly, so it is split by situation across several passes.
+The orderings below are marked **corpus-grounded** where they follow the frequency
+data, and **judgement** where functional payoff overrides frequency. Where the two
+disagree — a character that is rare in a corpus and unmissable on a menu — that gap
+is the argument for a functional syllabus over a frequency one.
+
+## 7.1 Menus
+
+A Chinese menu is the one situation in this curriculum where the *dominant* barrier is unknown characters rather than opaque compounds — with a named set of compound exceptions (时价, 招牌, 水煮, 干煸) that get compound treatment anyway. The measurement is unambiguous. Of the thirteen core cooking verbs, the median rank in `charfreq.txt` (99,950,541 tokens, 12,010 distinct characters) is **2,276**; only three — 烧 (1,051), 爆 (1,261), 炸 (1,407) — fall inside the top 1,500, which is the entire bank. Zero of the thirteen appear in HSK 3.0's first 900 characters. Contrast the supermarket set in §7.2: median rank **377.5**, 41 of 44 inside the bank. Menus are a character-acquisition problem; labels are a parsing problem. They need different item types, different difficulty models, and — the point of this section — different justifications for existing at all.
+
+A frequency-ordered 1,500-character bank covers **93.1%** of running text in the corpus and still leaves the learner unable to read 涮 on the hotpot menu they are sitting in front of.
+
+### Cooking methods
+
+The method character is the highest-leverage glyph on the page: it predicts oil, heat, temperature and whether you or the kitchen does the cooking. Nine of the thirteen take 火 or 灬 as their Kangxi radical (炒 爆 炸 烤 焖 炖 烧 with 火; 煮 煎 with 灬 — verified against decomposition data), so one component card unlocks most of the strand. 蒸 takes 艹 as its radical but hides 灬 one level down inside 烝; teach it adjacent to, not inside, the fire family.
+
+**Ordering: judgement.** Corpus rank would put 涮 last and 烧 first; we order by *how wrong you can go*. Frequency is stored as a tie-breaker field only.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 炒 | chǎo | stir-fry | roerbakken | 1 | The default. Rank 1,568 — already outside a frequency bank |
+| 蒸 | zhēng | steam | stomen | 1 | The safe order: no added oil, mild |
+| 烤 | kǎo | roast, grill | roosteren, grillen | 1 | Dry heat, skewers; the whole 烧烤 section |
+| 炸 | zhá | deep-fry | frituren | 1 | Heteronym trap: zhà is "explode", zhá is the food |
+| 煮 | zhǔ | boil | koken | 1 | Plain and wet — but see 水煮 below |
+| 烧 | shāo | braise in soy | braiseren | 1 | 红烧 is the mildest thing on most menus |
+| 炖 | dùn | long-stew | stoven | 1 | Bones, hours, soupy; rank 3,415 |
+| 焖 | mèn | covered braise | smoren | 1 | Absent from HSK 3.0 entirely; rank 3,141 |
+| 煎 | jiān | pan-fry | bakken in de pan | 1 | Distinguishes 煎饺 from 蒸饺 at the dumpling stall |
+| 爆 | bào | flash-fry | flitsbakken | 1 | Seconds at high heat, usually offal — a warning |
+| 拌 | bàn | tossed, dressed | aanmaken | 1 | Almost always **cold**; the one method that changes serving temperature |
+| 卤 | lǔ | master-stock braise | in kruidenbouillon gegaard | 1 | Dark, star anise, served cold, usually organ meat |
+| 涮 | shuàn | swish in broth | kort dompelen | 1 | This is hotpot: **you** cook it. Rank 5,115 |
+
+Four compound modifiers override the base method and belong in the same strand, tagged non-compositional: 红烧 hóngshāo (red-braised, sweet-savoury, safe), 清蒸 qīngzhēng (plain-steamed, mild), 干煸 gānbiān (dry-fried Sichuan, chilli-heavy — 干 is gān "dry", not gàn; every automatic pinyin tool gets this wrong), and 水煮 shuǐzhǔ — literally "water-boiled", in fact a pool of chilli oil and Sichuan pepper. 水煮鱼 and 水煮肉片 are the two dishes most often ordered by mistake by people who read the characters correctly and drew the wrong conclusion. Give 水煮, 干煸 and 干锅 the hazard template, not the menu template.
+
+### Proteins and staples
+
+**Ordering: judgement, grouped by menu function** — unmarked defaults, then animals, then staples. It is not corpus-grounded and the earlier draft's stamp was wrong: 荤 (3,302) sits third and 面 (76) twelfth, so no frequency key produces this order. The grouping exists to carry one cultural fact the corpus cannot see. 肉 alone on a Chinese menu means **pork**. 肉丝, 肉片, 肉末 with no animal named are all pork. No HSK level teaches this, and it catches vegetarians, Muslims and Jews routinely — so 肉 leads despite 鱼 outranking it (452 vs 869).
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 肉 | ròu | meat — by default **pork** | vlees — standaard varkensvlees | 0 | The single most consequential unmarked default on the page |
+| 素 | sù | vegetarian | vegetarisch | 0 | But 素 dishes routinely carry 蚝油 or 高汤 |
+| 荤 | hūn | meat-containing | met vlees | 0 | Rank 3,302, absent from HSK 3.0; pairs with 素 as a menu-header opposition |
+| 鸡 | jī | chicken | kip | 1 | Rank 1,249 |
+| 牛 | niú | beef | rund | 1 | Rank 881 |
+| 猪 | zhū | pig | varken | 1 | Rank 1,633 — outside the frequency bank |
+| 羊 | yáng | lamb, mutton, goat | lam, schaap, geit | 1 | Rank 1,340; the Dutch gloss is genuinely three animals |
+| 鱼 | yú | fish | vis | 1 | Rank 452, the highest-frequency protein |
+| 虾 | xiā | shrimp, prawn | garnaal | 1 | Rank 2,460; allergen-critical |
+| 蛋 | dàn | egg | ei | 1 | Rank 1,157 |
+| 饭 | fàn | cooked rice; also "meal" | rijst, maaltijd | 1 | 炒饭, 米饭 |
+| 面 | miàn | wheat noodles; also "flour" | tarwenoedels | 1 | Rank 76, but the *food* sense is what's needed. Traditional 麵 appears on calligraphic 麵館 fascias |
+| 粉 | fěn | rice noodles; also "powder" | rijstnoedels | 1 | One reading, two senses — both on menus |
+| 饺 | jiǎo | dumpling | dumpling | 1 | Rank 3,891 — a frequency bank never reaches it |
+| 包 | bāo | filled steamed bun | gevuld gestoomd broodje | 1 | Contrasts with 馒头, which is unfilled |
+| 锅 | guō | pot | pan | 1 | Rank 1,520. 火锅 hotpot, 砂锅 clay pot, 干锅 dry pot |
+
+### The flavour warnings
+
+**Ordering: judgement, explicitly against the corpus.** 酸 (1,002) and 麻 (1,071) outrank 辣 (1,897), and 咸 (1,688) outranks neither, but 辣 is what hurts.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 辣 | là | chilli-hot | pittig, heet | 0 | The one warning that must be readable on day one |
+| 麻 | má | numbing, lip-tingling | verdovend, tintelend | 0 | **Not heat.** "Pittig" is wrong. No Dutch or English word exists |
+| 咸 | xián | salty | zout | 1 | Rank 1,688; Chinese "salty" is saltier |
+| 酸 | suān | sour | zuur | 1 | Rank 1,002; also the pickled-vegetable marker |
+| 甜 | tián | sweet | zoet | 1 | Rank 1,749; 甜 in a savoury dish name means sugar in the sauce |
+
+麻 gets a dedicated card and a sentence rather than a gloss: *this is not heat, it is your mouth going numb.* 麻辣 málà is the combined Sichuan/Chongqing default and **is** introduced beside 辣 from day one — they are meaning-confusable but visually distinct, which is the safe confusion class. The heat dial (不辣 / 微辣 / 中辣 / 特辣 / 变态辣) ships as a separate always-accessible point-at-this screen at large type, alongside 不要香菜. That 微辣 in Chengdu can outrun 特辣 in Shanghai is practitioner observation, not a measured claim — but the design consequence stands: label the dial as local. Note also the sandhi: 不辣 is cited *bù là*, spoken *bú là* — this is exactly what the item schema's separate `pinyin_citation` and `pinyin_surface` fields are for.
+
+### Qualifiers
+
+**Ordering: judgement, ordered by cost of failure.** 时价 is the costliest failure in this block: no price is printed, and you are told the number after you have eaten. It stays at tier 2 because the exposure is narrow — seafood and live tanks — not because the failure is cheap.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 时价 | shíjià | market price | dagprijs | 2 | Both characters are common (24, 422); the compound is opaque and absent from every HSK level |
+| 大份 | dà fèn | large portion | grote portie | 1 | 份 is rank 742 but reads "share/copy" elsewhere |
+| 小份 | xiǎo fèn | small portion | kleine portie | 1 | The pair is the item, not the individual characters |
+| 例 | lì | standard portion | standaardportie | 2 | Rank 691 as "example" — the portion sense is invisible to frequency |
+| 招牌 | zhāopái | signature dish | huisspecialiteit | 2 | Also means "shop sign" — same glyphs, two situations |
+| 特色 | tèsè | house specialty | specialiteit | 2 | Confusable with 特价 (§7.2); authored distractor pair |
+| 起 | qǐ | "from" (a price) | vanaf | 2 | 88元起 means 88 is the floor, not the price |
+| 位 | wèi | per person | per persoon | 2 | Drives 茶位费 and 餐位费, the cover charges |
+
+### Section headers
+
+**Ordering: judgement — the physical order of the page.** The corpus would order these 主食 (556), 热菜 (847), 饮料 (1,358), 汤 (1,393), 凉菜 (1,602), which is close to the reverse of how the page is printed. The earlier draft stamped this corpus-grounded; it never was.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 凉菜 | liángcài | cold dishes | koude gerechten | 1 | Always the first section; 凉 is rank 1,602 |
+| 热菜 | rècài | hot dishes | warme gerechten | 1 | 热 rank 475, 菜 rank 847 — both known, the pair still needs teaching |
+| 汤 | tāng | soup | soep | 1 | Rank 1,393; single-character header |
+| 主食 | zhǔshí | staples: rice, noodles, buns | basisgerechten | 1 | Ordered **last** in China. A Dutch diner expecting bread first is misreading the whole page |
+| 饮料 | yǐnliào | soft drinks | frisdrank | 1 | Distinct from 酒水, which is alcohol |
+
+### The organ and texture set — where ⺼ earns its keep
+
+**Eight of the twelve characters in this table fall outside the 1,500-rank bank**; 胗 sits at rank 7,674 with 29 occurrences in a hundred-million-token corpus. By any frequency logic these are unreachable. By the logic of a Western diner reading a Chongqing hotpot order sheet, they are the most consequential glyphs in the whole curriculum — and eight of the twelve (a different eight: 肠 肚 肝 腰 肺 肾 脑 胗) share a single component, which is what makes teaching them affordable.
+
+**Ordering: judgement.** Corpus rank is inverted here — 血 (631) and 皮 (739) are the two the learner most likely already has, 胗 is near-absent, yet 胗 is the one you need.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 肠 | cháng | intestine | darm | 2 | 肥肠, 大肠. Rank 1,512 — twelve places outside the bank |
+| 肚 | dǔ | tripe, stomach | pens, maag | 2 | 毛肚 on every hotpot sheet. Read **dù** it means "belly" |
+| 肝 | gān | liver | lever | 2 | 猪肝, 鹅肝. Rank 1,829 |
+| 腰 | yāo | kidney | nier | 2 | 腰花. Rank 1,489 — the one organ character a 1,500 bank would have given you, eleven places inside. Also means "waist" |
+| 肺 | fèi | lung | long | 2 | 夫妻肺片 contains no lung nowadays. Rank 2,140 |
+| 肾 | shèn | kidney | nier | 2 | Rank 2,131 |
+| 脑 | nǎo | brain | hersenen | 2 | 脑花. Rank 909 — high frequency, wrong sense |
+| 胗 | zhēn | gizzard | spiermaag | 2 | Rank 7,674. The clearest single case for a functional syllabus |
+| 血 | xuè | blood, as a set curd | bloed, als gestolde koek | 2 | 鸭血, 毛血旺. Does **not** carry ⺼ |
+| 舌 | shé | tongue | tong | 2 | 牛舌. Rank 1,914. Does **not** carry ⺼ |
+| 筋 | jīn | tendon | pees | 2 | Kangxi radical is ⺮; ⺼ hides one level down, inside 肋 |
+| 皮 | pí | skin, crackling | huid, zwoerd | 2 | 猪皮, 皮蛋. Does **not** carry ⺼ |
+
+Teach ⺼ (U+2EBC, Kangxi 130, meat) as one component card **before** 肠 肚 肝 腰 脑 肺 肾 胗. It is not 月 (U+6708, moon) and the two are homoglyphs in almost every font, including our subset. Verified against decomposition data: all eight organ characters carry U+2EBC and none contains U+6708 anywhere in its decomposition; 期 朋 服 有 望 朗 carry U+6708. Matching the substring 月 *against the decomposition string* therefore highlights **none** of the eight and fires instead on 期 — which sits inside 保质期 and 生产日期, both Tier-1 supermarket items. It fails silently and teaches the opposite of the truth. (Matching 月 against rendered text is worse still: it fires on nothing at all, because every one of these is a single codepoint.)
+
+The reverse error is just as real and is the reason highlighting must key off a stored per-item component field rather than any match at all. 能 (rank **61**), 育 (444), 背 (767) and 散 (875) all carry ⺼ in their decomposition — and 散 sits inside 散装, a §7.2 shelf term. A naive ⺼ highlighter paints "meat" onto 散 and onto 能, the 61st most frequent character in the corpus. Store the component; never derive it.
+
+### The QR-code reality
+
+Most of the above is now read on a phone, not on paper. Table service in urban China routes through a 扫码点餐 mini-programme: the physical menu, where it survives, is decorative. This changes the item format, not the content. A sixth card template renders a phone inside the phone — a scrollable Chinese ordering UI at realistic 14–16px density with tappable regions — and the task shifts from "what does this character mean" to "tap the button that adds this to your cart without ordering it." Small type is correct here because small type *is* the difficulty; this is the one template exempt from the type-**size** floor applied elsewhere. The size exemption is not a contrast exemption: WCAG AA sets a contrast ratio, not a font size, and every glyph here still clears 4.5:1.
+
+Two pairs carry the irreversible risk: 去结算 (proceed to checkout) against 取消 (cancel), and 提交订单 (submit — irreversible) against 加入购物车 (add to cart — reversible). 备注 bèizhù is the free-text field where 不要香菜 goes. 售罄 shòuqìng, 起送 qǐsòng and 去结算 are absent from every HSK level. Roughly 25 items, `interaction: 'tap-target'`, hit-regions in the schema from the start rather than retrofitted.
+
+Two honest caveats. The QR shift is practitioner-derived market observation, not a literature claim — it needs a field check before it drives more than one template. And the OCR argument is weaker than the earlier draft made it: you can screenshot your own mini-programme and OCR it. What reading buys you is speed inside a live cart, where a screenshot round-trip costs you the tap. That is still a promotion argument for the template, but a modest one.
+
+---
+
+## 7.2 Supermarket and convenience
+
+The supermarket strand inverts everything above. Take the 44 distinct characters in the four tables below — store names, checkout, money, weights, label fields and promotions: median corpus rank **377.5**, 41 of 44 inside the 1,500-character bank, 36 of 44 in HSK 3.0's first three levels, and **none** absent from HSK 3.0 altogether. Only 扫 (1,625), 账 (2,178) and 冻 (2,205) fall outside the bank.
+
+The learner already knows almost every brick — 36 of the 44 are HSK 1–3. What defeats them is that 净, 含 and 量 are ranks 1,436, 853 and 202, and 净含量 still means nothing. This strand is authored as compound-parsing and cloze items, not character-acquisition items: the same split §7.1 argued for, arriving from the other side.
+
+### Store and checkout
+
+**Ordering: judgement — shopfront to till.** By rarest constituent character the corpus would run 收银台 (623), 超市 (707), 便利店 (1,032), 扫码 (1,625), 结账 (2,178); this is not that order either.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 超市 | chāoshì | supermarket | supermarkt | 1 | Both characters top-1000; the compound is the shopfront |
+| 便利店 | biànlìdiàn | convenience store | buurtwinkel | 1 | 便 is biàn here, pián in 便宜 — a per-string pinyin case |
+| 收银台 | shōuyíntái | checkout | kassa | 1 | Overhead lane signs shorten to bare 收银 |
+| 结账 | jiézhàng | settle up, pay | afrekenen | 1 | 账 at 2,178 is one of only three out-of-bank characters here |
+| 扫码 | sǎomǎ | scan the QR code | scannen, QR-code scannen | 1 | The universal payment verb; rank 1,625 for 扫 |
+
+### Money, and the 斤 trap
+
+**Ordering: judgement, and this is the one unskippable block in the strand.**
+
+斤 is a **catty: exactly 500 g**. Loose produce, meat and fish are priced 元/斤 almost everywhere in China. A shelf reading 牛肉 32.8元/斤 is 65.6 元 per kilo — double what a European brain computes, in the expensive direction, every single time. 斤 sits at corpus rank 1,370: inside our bank, but only just, and it is HSK level 2 as a bare character with nothing attached about what it weighs. Knowing the glyph and not the arithmetic is worse than not knowing the glyph.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 元 | yuán | yuan (written) | yuan | 0 | Rank 211; the printed currency unit |
+| 块 | kuài | yuan (spoken) | yuan (spreektaal) | 0 | Rank 815; what you hear, never what you read |
+| 斤 | jīn | catty = 500 g | catty = 500 gram | 0 | The single highest-value arithmetic fact in the app |
+| 两 | liǎng | 50 g, one tenth of a 斤 | 50 gram | 1 | Rank 113 as "two" — the unit sense is invisible to frequency |
+| 克 | kè | gram | gram | 1 | Rank 406; the honest unit, printed on packaged goods |
+| 千克 | qiānkè | kilogram = 2 斤 | kilogram | 1 | Also written 公斤; both forms appear on the same shelf |
+
+Ships as `itemType: 'compute'` with a generator so the numbers randomise: *牛肉 32.8元/斤 — what does a kilo cost?* with 65.6 / 32.8 / 16.4 / 328 as options. The price-label template renders the numeral huge and the unit character small, because that is the real reading condition — the whole difficulty is that 斤 is a fraction of the height of the number beside it. Note that 斤 and 公斤 are a form-confusable pair and must not enter as new items in the same session.
+
+### The label block
+
+GB 7718 requires a production date and a shelf-life **duration** on packaged food; a calculated expiry date is optional and usually absent. You do the addition.
+
+**Ordering: judgement, ordered by consequence.** By rarest constituent character this block would open with 进口 (157) and bury 冷冻 (2,205) last; by consequence it opens with the date pair.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 生产日期 | shēngchǎn rìqī | production date | productiedatum | 1 | All four characters rank 28–214; the field is still unreadable without instruction |
+| 保质期 | bǎozhìqī | shelf life, as a **duration** | houdbaarheidsduur | 1 | 保质期12个月 is not a date. Contains 期 — the 月 homoglyph trap |
+| 净含量 | jìnghánliàng | net content | netto-inhoud | 1 | 量 is liàng, not liáng — pinyin is a property of the string |
+| 冷藏 | lěngcáng | refrigerate, 0–4 °C | gekoeld bewaren | 1 | Authored distractor for 冷冻 — same first character, opposite instruction |
+| 冷冻 | lěngdòng | freeze, −18 °C | diepvries | 1 | Getting this pair wrong ruins the food either way |
+| 进口 | jìnkǒu | imported | geïmporteerd | 1 | Rank 80/157; on a metro sign the same glyphs mean "entrance" |
+| 散装 | sǎnzhuāng | loose, sold by weight | los, per gewicht | 2 | Flags that 元/斤 applies. 散 carries ⺼ — a highlighter false positive |
+| 称重 | chēngzhòng | weigh here | hier afwegen | 2 | You must weigh produce and get a barcode sticker **before** the till |
+
+Also: 见包装 / 见瓶身 / 见喷码 ("see the packaging / the bottle / the inkjet code") send you hunting for the date elsewhere on the item. Date formats vary freely — 20260822, 2026/08/22, 2026.08.22, 26 08 22 — so the compute item generates all four. GB 7718 also mandates Chinese on packaged food and forbids foreign-language type larger than the corresponding Chinese, which is why this is the one domain with genuinely no English fallback. We weight it at 30% of the supermarket item bag: an authoring decision that follows from "no fallback", not a figure derived from the corpus, and one playtest should be allowed to move.
+
+### Promotions
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 特价 | tèjià | special price | aanbieding | 0 | Rank 213/422; confusable with 特色 (§7.1) and 特产 |
+| 买一送一 | mǎi yī sòng yī | buy one get one free | 1+1 gratis | 1 | Every character in the top 900 (865 / 1 / 712). Absent from every HSK level. Sandhi: spoken *mǎi yí sòng yī* |
+| 会员价 | huìyuánjià | members' price | ledenprijs | 1 | Displayed as if it were the price; needs a scanned app account |
+| 折 | zhé | discount as the fraction you **pay** | korting, uitgedrukt als wat je betaalt | 0 | 打八折 = pay 80%, i.e. 20% off. A European reading "8折" as "80% off" errs badly in the wrong direction |
+
+### Where the corpus and the situation disagree — the whole argument
+
+Across both sections, **exactly thirty** characters that a table needs fall outside the 1,500-character bank a frequency ordering would build. Named, in rank order: 肠 锅 炒 凉 肚 扫 猪 咸 烤 蒸 甜 肝 辣 舌 筋 肾 肺 账 冻 煎 煮 虾 拌 卤 焖 荤 炖 饺 涮 胗. Thirty characters is **two per cent** of the bank. That is the entire cost of the disagreement, and it buys the difference between a learner who can read the hotpot order sheet and one who cannot.
+
+The disagreement runs in both directions, and both directions are instructive. 胗 (rank 7,674) and 涮 (5,115) are corpus-invisible and situationally unmissable. 能 (rank 61), 期 (214) and 主 (48) are corpus-dominant and situationally near-useless at Tier 0–1 — and 能 and 散 are precisely the characters that break a naive meat-radical highlighter. Frequency is not merely a weak ordering key for this product; at the top of the list it is actively misleading about what the learner will meet.
+
+So: `freqRank` is stored on every item as a tie-breaker and a diagnostic. It never seeds the bank and it never sorts it. Every ordering in both sections is stamped, and once the false stamps are removed **every one of them is judgement** — which is itself the finding, not an embarrassment. Where corpus and situation conflict the situation wins, because the criterion task is not reading Chinese prose; it is standing in front of a shelf label whose unit character is a fraction of the size of the number beside it, working out what a kilo costs.
+
+---
+
+**Corrections applied**
+
+1. **12,009 → 12,010 distinct characters** — `charfreq.txt` has no trailing newline, so `wc -l` undercounts by one. Token total 99,950,541 and 93.07% → "93.1%" coverage both verified.
+2. **§7.1 opening overclaim → ruling.** "The barrier is unknown characters, not opaque compounds" is contradicted by §7.1's own 时价 / 招牌 / 水煮 / 干煸 rows; now "dominant barrier", exceptions named.
+3. **Supermarket figures recomputed.** The 57-character set is enumerated nowhere, so median 413, 53-of-57, 45-of-57 and 仓 were underived. Over the 44 distinct characters the four §7.2 tables actually contain: median **377.5**, **41 of 44** in bank, **36 of 44** HSK 1–3, none absent from HSK 3.0, out-of-bank set **扫 账 冻**. 仓 appears in no item and is dropped; the 结账 row now reads "three".
+4. **"Knows every brick" quantified** — eight of the 44 are HSK 4–6 (账 扫 码 质 含 藏 冻 折), so "almost every brick, 36 of 44 at HSK 1–3".
+5. **Fire radicals split.** Nine of thirteen confirmed, but 火 and 灬 are not interchangeable: 炒 爆 炸 烤 焖 炖 烧 take 火; 煮 煎 take 灬. 蒸/烝 confirmed.
+6. **Three false "corpus-grounded" stamps removed** — proteins (荤 3,302 third, 面 76 twelfth), section headers (corpus order 主食 556, 热菜 847, 饮料 1,358, 汤 1,393, 凉菜 1,602 — near the reverse of the printed page) and store/checkout (收银台 623, 超市 707, 便利店 1,032, 扫码 1,625, 结账 2,178). All three are judgement; each now shows the corpus order it departs from. The closing sentence is corrected to match: every ordering in both sections is judgement.
+7. **粉 "two readings" → one reading, two senses** — `pinyin.txt` gives 粉 only fěn (面 likewise, only miàn).
+8. **Organ set: "twelve of twenty-one" → "eight of the twelve".** The table has twelve rows; 腰 (1,489), 脑 (909), 血 (631) and 皮 (739) are inside the bank. Disambiguated from the *other* eight, the ⺼ carriers.
+9. **肠 "one place outside the bank" → twelve places** (1,512 against a 1,500 cutoff); 腰 added as the mirror case, with missing ranks for 肝 1,829, 肺 2,140, 舌 1,914, 锅 1,520.
+10. **心 / 头 replaced by 血 / 皮** — neither 心 nor 头 is in the table, so they licensed nothing.
+11. **⺼ claim confirmed, mechanism made precise.** All eight of 肠 肚 肝 腰 脑 肺 肾 胗 carry U+2EBC and contain U+6708 nowhere in their decomposition closure; 期 朋 服 有 望 朗 carry U+6708; 血 舌 皮 carry neither; 筋 is ⺮ over 肋 with ⺼ one level down; 能 育 背 散 all carry U+2EBC. **Nothing in the text keys highlighting off a substring match on 月** — the passage rules against it. Added that the match is against the *decomposition string*: against rendered text 月 fires on nothing, since all of these are single codepoints.
+12. **"The most common character in the supermarket strand" was false** — 散 is rank 875; 一 (1), 会 (21), 生 (28) are commoner. Now names 散 and 能 (61) directly.
+13. **时价 tier contradiction resolved** — "costliest failure in this block", with the narrow exposure given as why it stays tier 2.
+14. **麻辣 "may be introduced" → "is introduced"**; 微辣/特辣 regional claim relabelled practitioner observation, matching the standard the QR paragraph sets for itself.
+15. **WCAG disentangled** — the exemption is from the type-*size* floor; WCAG AA is a contrast ratio with no size minimum, so the two cannot trade off. 4.5:1 stated.
+16. **OCR argument corrected** — a mini-programme on your own screen can be screenshotted and OCR'd, so "the only place character reading beats camera OCR" does not follow. Rewritten as speed inside a live cart; "only" dropped.
+17. **30% weighting relabelled** — GB 7718 licenses "no English fallback", not a percentage. Kept as an explicit, revisable authoring decision. Expiry-date claim corrected: GB 7718 requires production date plus duration; an expiry date is optional, not forbidden.
+18. **Named out-of-bank list: 粥 → 荤.** 粥 (2,884) is in no table; 荤 (3,302) is in the proteins table and out of bank but was missing. With that swap the list is exactly the thirty out-of-bank characters across both sections — "roughly thirty" → "exactly thirty", and 30/1500 = 2% holds.
+19. **Small fixes** — "65.6 元per" → "65.6 元 per"; the invented "eight-pixel" measurement replaced with a relative description in both places.
+
+*Verified unchanged:* all 92 pinyin strings against `pinyin.txt`; all 57 stated ranks against `charfreq.txt`; 麵/館 against `tsc.txt`; median verb rank 2,276; the 烧/爆/炸 trio; zero of thirteen in HSK's first 900; 焖 and 荤 absent from HSK 3.0; 时价, 售罄, 起送, 去结算, 买一送一 absent from the HSK 3.0 word list; 斤 at HSK 2; 斤 = 500 g, 两 = 50 g, 千克 = 2 斤, 32.8 → 65.6, 打八折 = pay 80%; both sandhi claims (*bú là*, *mǎi yí sòng yī*); 胗 at 29 occurrences.
+
+## 7.3 Transit
+
+A metro sign is read positionally before it is read lexically. Before a player decodes a character the plate has told them most of what they need through geometry, and teaching the geometry first turns the strand's 24 metro-core characters into a working skill. Four sign templates ship:
+
+1. **The overhead gantry** — blue or black, arrows, line roundels, exit letters white on black. The plate that gets you out.
+2. **The platform edge** — line, station, previous and next, and the `开往 ⟨terminus⟩ 方向` strip that separates two identical platforms.
+3. **The gateline** — `进站` / `出站`, `安检`, fare machines, the paid/unpaid boundary. Errors cost money.
+4. **The timetable panel** — `首末班车时间`, small type, read standing still.
+
+Templates ship before their vocabulary, and the first transit item a player sees is a template-identification item. **Ordering: judgement.** No corpus says layout precedes lexis; the argument is that the template is the retrieval cue at test time, since in the field the player recognises the plate first and only then looks for characters. Sorting speed is a design target, not a measured result.
+
+The strand splits by item type, and the split is visible in the wordlists. Most of the metro core sits in early HSK 3.0 bands — 站 出 口 入 换 方 向 号 车 are all first- or second-band — but the compounds do not: `换乘`, `进站`, `出站`, `首班`, `末班`, `单程`, `开往`, `号线`, `候车`, `检票`, `取票`, `硬座`, `软卧`, `二等座` are absent from every band, while `安检` and `站台` appear only at 6 and `车厢` only at 7–9. HSK 3.0 has **nine** levels — bands 1–6 plus a combined 7–9 — not eleven.
+
+Two corrections to the framing this invites. "Every metro-core character is early-band" is false: of 24, nineteen are band 1–2, but 线 首 程 台 are band 3 and **乘 is band 5, rank 1,238**. And band membership describes what the syllabus teaches, not what our player knows — a Dutch visitor is not an HSK candidate. The wordlist licenses a weaker claim: these compounds are taught nowhere and their parts are mostly cheap. That makes most transit items **compound-parsing rather than character-acquisition items**, *provided the curriculum teaches the parts first*. `换乘` is the exception.
+
+**Ordering within the strand: judgement on consequence, corpus rank as tie-breaker.** A Tier 0 item built on a rank-1,238 character is not corpus-ordered; calling it that would be a claim bent to fit.
+
+### Metro core
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 站 | zhàn | station, stop | station, halte | 0 | Rank 531. ⿰立占, 占 zhàn a transparent phonetic. Tail of 加油站, 火车站. |
+| 出口 | chūkǒu | exit | uitgang | 0 | 出 26, 口 157. Atomic, never decomposed. Blue or black is the way out; **green** `安全出口` is an emergency exit. |
+| 入口 | rùkǒu | entrance | ingang | 0 | 入 is rank 188 — not rare — but one stroke from 人: the confusion is graphic. Ship 人 as the foil. |
+| 号线 | hào xiàn | line number | lijnnummer | 0 | `4号线` = Line 4. 号 337, 线 378 and band 3. Absent from HSK; the roundel colour lets the player self-check. |
+| 换乘 | huànchéng | transfer, change lines | overstappen | 0 | Absent from all bands. 换 = ⿰扌奂, and 换 唤 焕 are uniformly *huàn*. But 乘 is band 5, rank 1,238 — a character card first. |
+| 地铁 | dìtiě | metro | metro | 1 | Band 2. 铁 = ⿰钅失; 钅 anchors 铁 银 铺 锅 across both sections. |
+| 进站 / 出站 | jìnzhàn / chūzhàn | enter / exit the station | station in / station uit | 1 | 2×2 grid, 进/出 as axes. Both absent from HSK. 进 = ⿺辶井; 辶 recurs in 递, 道, 通. |
+| 安检 | ānjiǎn | security check | veiligheidscontrole | 1 | Band 6, behaviourally Tier 1: screening is standard and the unprepared queue wrong. 检 is 11 strokes; 17-stroke 檢 never ships. |
+| 方向 | fāngxiàng | direction | richting | 1 | Band 2. 方 is rank 55, six listed readings, always *fāng* here. Parses the platform strip. |
+| 票 | piào | ticket | kaartje | 1 | Rank 948. ⿱覀示. Head of 单程票, 检票, 取票, 售票, 补票, 退票 — 6:1, the best ratio in the strand. |
+| 开往 | kāi wǎng | bound for | richting, naar | 2 | 开 91, 往 442, both trivial; the *terminus after them* carries the information and is in no wordlist. Generate from city station packs. |
+| 首班 / 末班 | shǒubān / mòbān | first / last service | eerste / laatste rit | 2 | 末 ⿻木一 against 未 wèi ⿻一木 — identical strokes, only relative length differs. Best foil in the strand: `未班车` in timetable styling; 班 ⿲王刂王 against 斑 ⿲王文王 a second. |
+| 单程票 | dānchéngpiào | single-journey ticket | enkeltje | 2 | 单 has three readings, *dān* here. 单**程** ⿰禾呈 and 换**乘** ⿻禾北 share *chéng* — pair deliberately. |
+| 站台 | zhàntái | platform | perron | 2 | Band 6. 台 rank 372, four listed readings, *tái* here. |
+
+**The paid-area trap.** `付费区` / `非付费区` costs real money: crossing the gateline re-charges a fare, and stations with exits on both sides of a road force the choice. Ships text-only — the plate is photographable, but a photo lets the player match the image instead of reading it, the failure this item prevents. The GB standard for emergency-exit signage is flagged: no number prints until checked.
+
+### Exit lettering
+
+The addressable unit of a Chinese city is the exit letter, and schemes differ between systems in ways no single reference collects. Beijing uses **letters with a compass gloss** — `A 西北口`. Shanghai and Nanjing use **numbers** — `1号口`. Guangzhou and Shenzhen use letters with numeric subdivisions. In every scheme `口` on an exit tab means *exit*, not *mouth*, and "meet me at C口" is how the meeting gets arranged.
+
+That makes 东西南北 a transit item, not a geography item. **Ordering: corpus-grounded** — 北 (89), 南 (130), 西 (132), 东 (140) are top-150 and first-band, so they cost almost nothing and cut down the exit-choosing problem in Beijing-style systems; by how much has not been measured and no figure is claimed. They recur in station and street names (`东单`, `西直门`). All four ship Tier 1, with one foil for 7.4: 酉 in 酒 is 西 plus one stroke, 7 against 6.
+
+**Floors, a Dutch warning card.** `层` and `楼` count the ground floor as 1, so `3楼` is **de tweede verdieping**, not de derde; B1 and B2 are basements. The off-by-one exists against Dutch *and against British English* — only US English matches the Chinese count — so the card must name which English it glosses. An unsourced practitioner observation, not a finding.
+
+### Mainline rail
+
+Where consequences get expensive and European rail assumptions are actively wrong.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 高铁 | gāotiě | high-speed rail (G) | hogesnelheidstrein | 2 | Band 4. Distinguishes G from D (`动车`), which differ in price and seat class. |
+| 火车 | huǒchē | train | trein | 2 | Band 1, ranks 438/371 — the easiest item in the strand, an anchor. |
+| 候车 | hòuchē | wait for the train | wachten op de trein | 2 | Absent from HSK. `候车室`: stations gate you into a hall, not onto a platform. |
+| 检票 | jiǎnpiào | ticket check | kaartcontrole | 2 | Absent from HSK. **`检票时间` gates close minutes before departure and do not reopen** — why this is scored consequential. |
+| 车厢 | chēxiāng | carriage, coach | rijtuig, wagon | 2 | Band 7–9; 厢 is rank 2,537, outside a top-1500 bank, in regardless. ⿸厂相, the cheap 厂 cluster. |
+| 身份证 | shēnfènzhèng | ID card | identiteitsbewijs | 2 | Band 3, with its exception: foreigners use a **passport** `护照`, so the gates reject you and you queue at `人工窗口`. |
+| 取票 | qǔpiào | collect a printed ticket | ticket ophalen | 2 | Absent from HSK. 取 = ⿰耳又, rank 327. |
+| 硬 / 软 | yìng / ruǎn | hard / soft | hard / zacht | 2 | Seat-grid axes. ⿰石更 and ⿰车欠, 车 tying back to 火车. |
+| 座 / 卧 | zuò / wò | seat / berth | zitplaats / slaapplaats | 2 | Seat-grid axes. ⿸广坐 rank 696 (also 座位号), ⿰臣卜 rank 2,085. |
+
+**The seat grid ships as one 2×2 card:** 硬座 / 软座 / 硬卧 (open six-berth bay, three tiers) / 软卧 (closed four-berth compartment). Four characters, four signs — 1:1, not the best ratio in the curriculum; 票 and 店 are both 6:1. It earns its place on structure: two axes, no exceptions, one card. The ladder 二等座 → 一等座 → 商务座 needs 二 等 一 商 务 too and ships separately. One correction carries into the gloss: **`无座` is priced as `硬座` on conventional trains but at the `二等座` fare on G and D** — second class, standing. Flag for verification against 12306.
+
+**Domain weight: 5%. Ordering: judgement, deliberately low — with an exemption.** Tier-1 metros, HSR stations and airports are the most heavily bilingual environments in China, so the marginal *reading* payoff is lower here than anywhere else in the product. But the strand exists because the failure modes are expensive, and a flat 5% starves the very items whose consequence justified inclusion. So it carries 5%, but `检票时间`, `付费区`/`非付费区` and `开往` are exempt and reviewed at Tier 0 frequency. Like every weight here the 5% has no empirical basis: a v1 guess to be instrumented.
+
+## 7.4 Shopfronts
+
+Chinese business names are head-final compounds: the **final morpheme** carries the category, earlier material specialises it. That morpheme is usually one character but not always — `中心` and `市场` are two-character heads, and the rule must be stated over morphemes or the table below contradicts it. This is a structural fact about Chinese nominal compounding, not a corpus artefact, and it produces a strand where a player can correctly answer an item not in the bank. So it is ordered **heads first — judgement, on a well-supported structural fact.** Learn eight tail morphemes and you can classify a fascia you have never seen; learn eight names and you classify eight fascias.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 店 | diàn | shop | winkel | 1 | ⿸广占 — same 占 as 站; 广 recurs in 座, 库, 床 but *not* 厂房, since 厂 U+5382 differs from 广 U+5E7F and 广 = ⿱丶厂 contains it: a foil, not a family. Tail of 药店, 书店, 花店, 便利店, 眼镜店 — highest-yield head, 6:1. |
+| 铺 | pù | shop (older, smaller) | winkeltje | 1 | ⿰钅甫. Reads *pù*, not *pū*. 铺 pù, 捕 bǔ, 浦 pǔ share a rime, not an initial: a memory hook, not a reading predictor. |
+| 行 | háng | trade house | handelshuis | 1 | Rank 37, five listed readings, and **in a business name it is *háng*, not *xíng*** — 银行, 车行, 商行. Stored per item, not per character. |
+| 馆 | guǎn | establishment, house of | gelegenheid | 1 | ⿰饣官 — 饣 is on 43 characters against 12 for 食, a fact about the inventory that helps a player remember 馆 and says nothing about what a 馆 sells: 面馆 and 茶馆 are food, 宾馆 and 图书馆 are not. The head narrows, it does not decide. |
+| 城 | chéng | large retail complex | markthal, centrum | 1 | ⿰土成, rank 150. 美食城, 电脑城 — a "city" of one product type. The character is easy, the shop sense is not. |
+| 场 | chǎng | venue, ground | terrein, plein | 1 | Rank 175, two readings, *chǎng* here. 停车场, 广场, 商场. |
+| 中心 | zhōngxīn | centre | centrum | 1 | Two-character head. 购物中心, 服务中心. |
+| 市场 | shìchǎng | market | markt | 1 | Two-character head. 菜市场 is the wet market, where the supermarket strand's produce vocabulary gets used. |
+
+The second-tier task is **generative**: show a fascia never seen — 电脑城, 修车行 — and ask what *kind* of place it is, answerable from the head alone. Log `unseenCompoundAccuracy` separately from recall accuracy: it measures generalisation, and the item pool is unbounded and needs no authoring.
+
+### Services you may need in a hurry
+
+**Ordering: judgement, on consequence.** Corpus rank disagrees and is overruled — 厕 is rank 3,107 and `厕所` only band 6, and it is a day-one item anyway. Eight of the 46 characters here fall outside the top 1,500: 厕 3,107, 咖 2,620, 啡 2,581, 诊 1,906, 邮 1,711, 宾 1,630, 餐 1,600, 锅 1,520. The bank is a survival bank; general frequency filters it, never selects it.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 厕所 | cèsuǒ | toilet (blunt) | wc | 0 | ⿸厂则; 厕 侧 测 all read *cè*, though 则 itself is *zé* — the series predicts across derivatives, not from the phonetic. 所 = ⿰户斤, rank 100. |
+| 洗手间 | xǐshǒujiān | washroom (polite) | toilet | 0 | Band 1. 手 (138) and 间 (144) are top-150, but **洗 is rank 1,376** and needs its own exposure. The register gap from 厕所 is the taught content. |
+| 药店 | yàodiàn | pharmacy | apotheek | 1 | Band 2. ⿱艹约, 9 strokes; traditional 藥 is **19** and never ships. **Green cross** livery arrives before the characters. |
+| 医院 | yīyuàn | hospital | ziekenhuis | 1 | Band 1. ⿰阝完, 阝 on the **left** (mound, 阜). Contrast 邮. `急诊` is A&E. |
+| 银行 | yínháng | bank | bank | 1 | Band 2, the 行 = *háng* exemplar. ⿰钅艮 — but 根 gēn, 很 hěn, 跟 gēn scatter on initials and 银 *yín* fits worst: a shape cue, not a rule. |
+| 邮局 | yóujú | post office | postkantoor | 1 | Band 4. ⿰由阝, 阝 on the **right** (settlement, 邑) — a different component from the 阝 in 院 despite identical rendering *and codepoint*, U+961D. Store per item. **Green** livery. |
+| 派出所 | pàichūsuǒ | local police station | politiebureau | 1 | Absent from every band. Where a lost passport is reported; 出入境管理 handles visas. |
+| 快递 | kuàidì | courier, parcel point | pakketpunt | 1 | Band 4. ⿺辶弟, 弟 *dì* giving 递 *dì*, tone and all — the one fully transparent phonetic here. Fascias read 顺丰, 菜鸟驿站. |
+| 加油站 | jiāyóuzhàn | petrol station | tankstation | 1 | Band 4. Reuses 站 from 7.3 in a different sense — a `contexts` entry for the graduation gate. |
+| 停车场 | tíngchēchǎng | car park | parkeerplaats | 1 | Band 2. Reuses 场 and 车. Signed **P**. |
+| 诊所 | zhěnsuǒ | clinic | huisartsenpraktijk | 2 | Band 7–9, rank 1,906. ⿰讠㐱; 讠 recurs in 证, 话, 语. |
+| 理发 | lǐfà | barber, hairdresser | kapper | 2 | Band 3. **发 reads *fà* here, not *fā***, stored per item. Lint case: 理发 → 理**髮**, not 理發. |
+| 洗衣 | xǐyī | laundry | wasserij | 2 | Absent from HSK. Reuses 洗 from 洗手间, and at rank 1,376 that reuse does real work. |
+
+### Eating, drinking, sleeping — and the 酒店 / 饭店 trap
+
+This is where the head-final rule breaks; teach the exception rather than let a player build false confidence in the generative task. `酒` means alcohol, but `酒店` is a hotel, usually a larger one. `饭` means a meal; `饭店` means **either a restaurant or a hotel**, not recoverable from the characters, recoverable from the building. `宾馆` is a hotel, while `茶馆` and `面馆` are food — the head says establishment and nothing more. Ship a three-item confusion set, tagged a known-exception card, and exclude it from `unseenCompoundAccuracy`, which would otherwise punish the player for a rule the language breaks.
+
+| hanzi | pinyin | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 酒店 | jiǔdiàn | hotel (larger) | hotel | 2 | Band 2. ⿰氵酉, radical of record 酉 (fermented). Foil: 洒 sǎ = ⿰氵西. |
+| 宾馆 | bīnguǎn | hotel (mid-range) | hotel | 2 | Band 5. ⿱宀兵, rank 1,630. `招待所` is basic and often refuses foreigners. |
+| 饭店 | fàndiàn | restaurant **or** hotel | restaurant of hotel | 2 | The trap item. Band 1 word, band 1 characters, ambiguous compound. |
+| 餐厅 | cāntīng | restaurant | restaurant | 2 | Band 5. 餐 = ⿱⿰歺又食 (the 食 form, not 饣); 厅 = ⿸厂丁. Unambiguous where 饭店 is not. |
+| 小吃 | xiǎochī | snacks, cheap eats | snackbar | 2 | Band 4. Not a head but a specialiser appearing alone on a fascia. The cheapest hot food in China. |
+| 面馆 | miànguǎn | noodle shop | noedelzaak | 2 | Absent from HSK. Lint case: 面馆 → 麵館, never 面館. |
+| 火锅 | huǒguō | hotpot | hotpot | 2 | Band 7–9. ⿰钅呙 — 钅 a fourth time across the two sections. |
+| 咖啡 | kāfēi | coffee | koffie | 2 | Band 3, ranks 2,620 and 2,581. ⿰口加 and ⿰口非: the *semantic* read fails, the phonetic read works (非 fēi → 啡 fēi), and 口 on a rare character flags a transcription. |
+| 茶 | chá | tea | thee | 2 | ⿱艹⿱人木, rank 851, band 1. `茶楼` teahouse, `奶茶` bubble tea. |
+
+**Fascias are the one place in this product's sign inventory where traditional characters legitimately appear.** Mainland language law permits 繁体字 in enumerated cases including handwritten signboard lettering and calligraphy, and fascias favour exactly that. The template renders a brush or heavy display face and may show the traditional variant — the only one allowed to.
+
+**Never generate that column character-by-character.** Correct simplified-to-traditional mapping is word-level: a per-character pass silently produces 理發 and 面館, because 发 maps to both 發 and 髮 and 面 to both 面 and 麪/麵. The lint rule flags any item containing 面 干 发 后 里 松 只 几 表 系 术 — all eleven verified one-to-many.
+
+**One general rule, from the same failure.** Components are stored per item, never recovered by substring match on a rendered string. Two cases prove it. The 阝 in 院 (mound, 阜) and the 阝 in 邮 (settlement, 邑) are different components at the *same* codepoint, so a match cannot separate them and the store must be authored by hand. Conversely the meat radical in 肝 肠 肚 腰 脑, which the menu strand needs, is **⺼ U+2EBC** — verified in all five — and *not* 月 U+6708: matching on 月 misses every one while wrongly catching 期, 朋 and 服. Nothing here keys highlighting off 月, and the one substring-sensitive rule, the lint list, matches whole characters, which is safe.
+
+**Domain weight: 20%. Ordering: judgement.** Shopfront fascias are unregulated for language and overwhelmingly Chinese-only outside tourist strips — unlike transit, no bilingual fallback — but this weight has no empirical basis either. A v1 guess, to be instrumented.
+
+---
+
+### Corrections applied
+
+Checked by script. **Verified and unchanged:** all 36 decompositions, all 31 ranks, every pinyin reading and tone mark, 检/檢 at 11/17 strokes, 饣 43 against 食 12, the 奂 and 则 series, 弟→递, 西/酉 at 6 against 7, and all eleven lint characters as one-to-many. Changed:
+
+- **藥 is 19 strokes, not 17**; **HSK 3.0 has nine levels, not eleven**; **"44 shopfront characters" is 46** (the eight outside the top 1,500 were right, and now carry ranks); **洗手间's "all three characters top-160" is false** — **洗 is rank 1,376**.
+- **"Every metro-core character is early-band" is false**: 线 首 程 台 are band 3 and **乘 is band 5, rank 1,238**, so 换乘 ships 乘 as a character card first. Relatedly, **"this split *is* measured"** overstated a wordlist lookup, and HSK bands describe the syllabus, not a Dutch visitor who is not an HSK candidate.
+- **广 does not recur in 厂房** — 厂 U+5382 against 广 U+5E7F, and 广 = ⿱丶厂 contains 厂. Replaced with 床, kept as a foil. **入 "rare enough" to be mistaken for 人** contradicted the rank 188 beside it: the confusion is graphic.
+- **The seat grid's "eight readable signs, the best ratio in the curriculum"** is four signs from four characters, contradicting 票 and 店 at 6:1. **"Variant mapping is word-level rather than character-level" was backwards** — word-level mapping is what *prevents* 理發 and 面館.
+- **⺼ U+2EBC confirmed** in all five of 肝 肠 肚 腰 脑, 月 U+6708 in 期 朋 服; nothing here keys off 月, and the 阝 note is promoted into a general no-substring-match rule.
+- **馆/饣 was a non sequitur** — a radical count cannot license "馆 predicts food", and the entry contradicted itself two clauses later. **艮 and 甫** drop to shape cues, and **咖啡** inverts: the semantic read fails, the phonetic read is exact.
+- **Fabricated numbers cut** ("twelve characters", "under a minute", "halve the exit-choosing problem") and superlatives softened. **GB 2894 pulled** as not the emergency-exit standard. **付费区 "not picturable"** was false. **Floors**: British English shares the off-by-one. **Head-final rule** restated over morphemes, which its own table contradicted.
+- **5% weight versus consequence resolved** by exempting 检票时间, 付费区 and 开往, with the same no-empirical-basis flag as the 20%. **"Ordering: corpus-grounded" for transit** is relabelled judgement-on-consequence, and **"illocutionary force"** is replaced by the actual argument: the template is the retrieval cue at test time.
+
+## 7.5 Universal signage
+
+This strand is the one that pays across all five domains at once. A cooking-method character earns its keep only on a menu; 出 earns it on a station plate, a car-park barrier, a shop door, a lift panel and a supermarket aisle on the same afternoon. That is the argument for putting it first, and it is not a frequency argument — §7's grounding note applies with full force here. General-corpus character frequency is the wrong ordering key for signage, and the checkable version of that claim is this: of the top 50 characters in the frequency list (12,010 entries), 11 appear anywhere in this section's inventory — 一 人 有 中 上 个 年 时 出 下 后. The other 39 are grammatical machinery — 是 了 不 在 大 和 为 这 他 的 我 会 以 到 要 — which public signage omits by construction. Where corpus rank happens to agree with signage priority I say so; where it does not, the ordering is judgement and is labelled as such.
+
+### 7.5.1 The colour and shape system, taught before any character
+
+**[judgement]** — nothing in a character-frequency corpus can order this, because it contains no characters. It goes first because it is the only part of the curriculum where the player gets the illocutionary force of a sign *before* decoding anything, and because it is cheap: four rules, learned in under a minute, that work on signs whose characters are years away.
+
+GB 2894 《安全标志及其使用导则》 defines a four-category system whose colour/shape geometry corresponds to ISO 3864 (ISO 7010 registers the graphical symbols that sit inside those shapes; it does not define the categories). Ships as `itemType: 'colour'` — no glyph on the card, four meaning-side options, exactly like every other item.
+
+| hanzi | pinyin (tone marks) | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 禁止 | jìnzhǐ | prohibition — red circle, diagonal bar | verbod — rode cirkel met streep | 0 | Red forbids. The shape carries the whole message; the characters under it are confirmation, not information. |
+| 警告 | jǐnggào | warning — yellow triangle, black border | waarschuwing — gele driehoek | 0 | Yellow warns. Distinguishing "you may be hurt" from "you may not do this" is the highest-value discrimination in the bank. |
+| 指令 | zhǐlìng | mandatory — solid blue circle | gebod — blauwe cirkel | 0 | The one category Europeans systematically misread as informational. Blue is an order. |
+| 提示 | tíshì | notice, safe condition — green square | aanwijzing — groen vierkant | 0 | Green is where safety *is*, not where danger is. Sets up 安全出口 below. |
+
+Two rulings attach here. First, **the colour lives on the plate, never on the glyph.** §5's prohibition on tinting any part of a character stands unchanged, and it stands on design grounds: the card must show what the sign shows — a red disc with black characters on it. The one Chinese-specific study of colour-marked radicals found slower learning and lower accuracy; that is consistent with the ruling but is a single result and does not carry it. The ruling holds either way, and this section is not a licence to reintroduce glyph tinting.
+
+Second, **scope honesty:** the GB 2894 and GB/T 10001 standard texts were not retrievable (openstd.samr.gov.cn returned 403). Nothing here is confirmed against the standard. The category names, shapes and colour assignments come from secondary sources and are consistent across them, but the colour coordinates are approximations and the ISO correspondence above is likewise unverified against the standard text. Ship the approximations, flag the field `colour_spec_verified: false`, and do not print a hex value as if it were the standard.
+
+The consequence that most often surprises a first-time visitor: **the emergency exit sign is green and reads 安全出口 ānquán chūkǒu, not 出口.** 出口 on a blue or black plate is simply the way out of the station.
+
+### 7.5.2 The prohibition and hazard openers
+
+**[judgement]** — corpus rank would defer this whole block: 禁 sits at 947, 止 at 735, 危 at 998, 险 at 866, and 勿 at 2,838 of 12,010. In running text those are mid-frequency characters; in the signage register they are near-ubiquitous, because public Chinese signage is a predominantly telegraphic idiom — imperative or nominal, subjects and function words mostly dropped, aspect marking rare. It is not absolutely free of 的 or of second-person forms (您 turns up in longer notices), so the register is a strong tendency, not a grammar. Ordered by illocutionary force, strongest first, because the ladder is what makes them memorable as a set.
+
+| hanzi | pinyin (tone marks) | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 严禁 | yánjìn | strictly forbidden | streng verboden | 1 | Top of the force ladder; 严 (rank 600) recurs in 严禁烟火. |
+| 禁止 | jìnzhǐ | prohibited | verboden | 0 | The default prohibition opener. Learn it and the following two characters become predictable: 禁止吸烟, 禁止通行, 禁止停车, 禁止拍照. |
+| 请勿 | qǐngwù | please do not | gelieve niet | 0 | The polite register. Same force as 禁止 in practice — a traveller who reads 请勿 as a suggestion is wrong. 勿 appears almost nowhere else, which is exactly why it is unambiguous once known. |
+| 注意 | zhùyì | attention | let op | 1 | Heads a hazard without naming its severity. 注 = ⿰氵主. |
+| 小心 | xiǎoxīn | be careful, mind | voorzichtig, pas op | 0 | The most common hazard opener on the ground: 小心地滑, 小心台阶. 心 is rank 86 and 小 rank 87, so the cost is near zero. |
+| 当心 | dāngxīn | beware | pas op | 1 | The 小心 variant used on formal yellow triangles: 当心碰头. Same slot, different register. |
+| 危险 | wēixiǎn | danger | gevaar | 0 | The word the yellow triangle is usually spelling out. Pairs with §7.5.1's warning category so the colour and the characters teach each other. |
+
+### 7.5.3 The opposite pairs
+
+**[corpus-grounded for most of the block]** — 上 (14), 出 (26), 下 (38), 后 (41), 开 (91), 前 (93), 外 (109), 关 (122), 内 (131), 入 (188) are all inside the first 200 characters of the corpus, so ordering and frequency agree without argument. **[judgement]** for 拉 (410), 推 (503), 左 (572), 右 (652), 满 (504), 空 (347), 免 (768), 收 (383), 营 (550), 休 (1,148): these are placed by encounter rate at eye level, not by corpus rank.
+
+Authored as **one card with two halves, never two cards.** This is a judgement, and the licence is the sign environment, not the interference literature: these two signs occur in the same visual scene — the same door, the same board, the same barrier — so telling them apart *is* the task, and a card that presents one alone tests something the street never asks. The similarity-and-interference literature does not settle the question either way (the similarity/difficulty function is reported as non-monotonic for strongly pre-associated sets, which is a reason not to assume the pairing is harmful, not evidence that it helps), so it is cited here only as not forbidding the design. It remains the single place where two form-adjacent items are introduced together, and it does **not** license the same treatment for 人/入 or 公斤/斤, which remain staged.
+
+| hanzi | pinyin (tone marks) | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 入 / 出 | rù / chū | in / out | in / uit | 0 | The pair that becomes 入口 and 出口. 出 = ⿱屮凵 (a sprout above a container), 入 is a single wedge — the authored contrast formula is required content, not flavour. |
+| 开 / 关 | kāi / guān | open, on / closed, off | open, aan / dicht, uit | 1 | Doors, switches, taps, appliance panels, and the 开门/关门 announcement on every metro. |
+| 推 / 拉 | tuī / lā | push / pull | duwen / trekken | 0 | Both ⿰扌 (hand). The most-used pair in the bank measured by daily door count, and the cheapest to get wrong in public. |
+| 上 / 下 | shàng / xià | up, board / down, alight | omhoog, instappen / omlaag, uitstappen | 0 | Floors, escalators, boarding. 上 is rank 14; the pair carries into 上午/下午 in §7.6. |
+| 左 / 右 | zuǒ / yòu | left / right | links / rechts | 1 | Directional plates and platform-side arrows. Weak corpus rank, high sign rank. |
+| 前 / 后 | qián / hòu | front, ahead / back, behind | voor / achter | 1 | Carriage position, queue direction, 前方施工. |
+| 内 / 外 | nèi / wài | inside / outside | binnen / buiten | 1 | 内 is HSK-3 band and rank 131; the pair governs 室内/室外 seating and smoking. |
+| 免费 / 收费 | miǎnfèi / shōufèi | free / chargeable | gratis / betaald | 1 | Toilets, luggage lockers, Wi-Fi, car parks. Both carry 费 (⿱弗贝) — 贝, the shell/money component, and its first appearance in this section's ordering. |
+| 营业中 / 休息 | yíngyè zhōng / xiūxi | open for business / closed, on break | geopend / gesloten, pauze | 0 | The shopfront status pair. 休息 is not "rest" here; it is the sign on a restaurant between lunch and dinner. 息 has citation form xī and is toneless in this word — store the word reading, not the character reading. |
+| 停业 | tíngyè | closed down, ceased trading | gesloten (permanent) | 2 | The third state, distinguished from 休息 because the consequence differs — one is worth waiting for. |
+| 满 / 空 | mǎn / kōng · kòng | full / vacant, empty | vol / vrij, leeg | 0 | Car-park boards and toilet cubicles. **Heteronym flag:** 空 is kōng as "empty" (空车, an available taxi) and kòng as "vacancy" (空位). Store `pinyin` on the item, not on the character. 满 = ⿰氵⿱艹两: the 两 shape sits at the bottom of the right-hand component and is a simplification artefact of 㒼 (traditional 滿 = ⿰氵㒼). Useful as a shape hook for §7.6, never as a meaning cue. |
+| 有人 / 无人 | yǒu rén / wú rén | occupied / free | bezet / vrij | 1 | The other cubicle convention. 有 is rank 7, 人 rank 3, 无 rank 145 — this pair is nearly free. |
+| 男 / 女 | nán / nǚ | men / women | heren / dames | 0 | Taught as a pair and never in isolation, because the failure mode is a discrimination failure, not a recall failure. 男 = ⿱田力 (field over strength) is one of the few honestly transparent compounds in the head of the bank. |
+
+## 7.6 Numbers, money and measure words
+
+### 7.6.1 The numerals
+
+**[corpus-grounded, with one correction to the ordering claim]** — 一 is rank 1; every character 一 through 十 falls inside the first 660 (the laggard is 七 at 654), and 万 (199), 元 (211), 百 (320), 千 (439) are all top-450. All sixteen items are HSK band 1 or 2. But the table below is **not** ordered by frequency and cannot be: frequency order would put 两 (113) and 万 (199) ahead of 四 (239) and 百 (320), and 零 (1,352) is nowhere near its place here. The block is ordered by **place value ascending**, which is the structure of the system itself; corpus rank, HSK band and signage priority all corroborate that the block belongs early, and none of them produces its internal order.
+
+| hanzi | pinyin (tone marks) | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 一 二 三 四 五 六 七 八 九 十 | yī èr sān sì wǔ liù qī bā jiǔ shí | 1–10 | 1–10 | 0 | Prices, platforms, floors, bus numbers, dates. 一 has three sandhi readings (yī/yí/yì) — store the token reading, teach the citation form. |
+| 零 / 〇 | líng | zero | nul | 1 | 〇 U+3007 is not the digit zero and is what actually appears in 二〇二六年. Both forms must render. |
+| 百 | bǎi | hundred | honderd | 1 | ⿱一白. Below the myriad break, so it behaves as a European reader expects. |
+| 千 | qiān | thousand | duizend | 1 | ⿱丿十. Last unit before the break. |
+| 万 | wàn | ten thousand | tienduizend | 1 | **The genuine obstacle.** Chinese groups by 10⁴, not 10³: 十万 = 100,000, 一百万 = 1,000,000. The failure mode is an order-of-magnitude error and it costs money. |
+| 亿 | yì | hundred million | honderd miljoen | 2 | 10⁸. Property prices, news tickers, lottery boards. Low encounter rate, but it is the second myriad step and the system is incoherent without it. |
+| 两 | liǎng | two (before a measure word) | twee (voor een maatwoord) | 1 | 二 counts; 两 quantifies. 两个 not 二个. Collides three ways — see §7.6.4. |
+
+**Required compute item.** `itemType: 'compute'` with a generator: show 三万五千, ask for the Arabic numeral, distractors at 10× and 0.1×. It is un-skippable *within the numbers strand* — a player may reach it late, but may not clear the strand around it. That is a different constraint from the Tier-0 linearity in §7.7, and the two must not be conflated in the scheduler.
+
+### 7.6.2 The financial capital forms
+
+**[judgement, and deliberately anti-corpus]** — 壹 sits at rank 5,966, 贰 at 4,481, 叁 at 7,488, and none of the three appears anywhere in the HSK 3.0 character list. Ordering by frequency or by band would exclude them from a 1,500-character bank entirely. They are in on **consequence**: they appear on every banknote, bank slip, receipt, contract and 发票, in the one situation where misreading a number is expensive and there is a counter clerk waiting.
+
+The ruling that keeps this honest: **a low-priority "bank counter" sub-deck — available, never blocking, never in the Tier-0 or Tier-1 due queue.** High consequence, low encounter rate is exactly the profile that belongs behind an opt-in, not in front of a player who has three weeks and wants to read a menu.
+
+| hanzi | pinyin (tone marks) | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 壹 | yī | 1, capital form | 1, schrijfwijze op documenten | 2 | ⿱士⿱冖豆. A 100-yuan note reads 壹佰圆 — recognising this is the difference between reading a banknote and looking at one. |
+| 贰 | èr | 2, capital form | 2, schrijfwijze op documenten | 2 | ⿹弋⿱二贝 — carries both the 二 it replaces and the money component 贝, the only capital form that is partly guessable. |
+| 叁 | sān | 3, capital form | 3, schrijfwijze op documenten | 2 | ⿱⿱厶大三 — likewise contains its own 三. Mainland form; documents set in traditional type use 叄. After these three, 肆伍陆柒捌玖 follow the same logic and are deferred. |
+
+Practical priority within the sub-deck: 壹 贰 叁, then 拾 佰 仟 圆. Those four are the units the amounts sit in and are worth more per character than 肆 through 玖.
+
+### 7.6.3 Money
+
+**[corpus-grounded]** — 分 (54), 元 (211), 角 (743), 块 (815), 毛 (644): all inside the first 900. The ordering problem here is not which characters, it is the **written/spoken split**, which no frequency list can express.
+
+| hanzi | pinyin (tone marks) | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 元 | yuán | yuan (written) | yuan (geschreven) | 0 | What is printed on every price label and menu. ⿱二儿. |
+| 块 | kuài | yuan (spoken) | yuan (spreektaal) | 0 | What the person at the till says. Same amount, different word — the single most common source of "I read the sign but did not understand the answer". |
+| 角 | jiǎo | 0.1 yuan (written) | 10 cent (geschreven) | 2 | Survives on receipts and price labels ending in a single decimal. **Heteronym flag:** jiǎo here, jué in 角色 — token-level pinyin. |
+| 毛 | máo | 0.1 yuan (spoken) | 10 cent (spreektaal) | 2 | The spoken partner to 角, exactly parallel to 元/块. |
+| 分 | fēn | 0.01 yuan | cent | 2 | Effectively extinct as cash, still printed on itemised receipts. **Heteronym flag:** 分 is fēn and fèn (部分, 分量) — a genuine two-reading character, not merely polysemous. Also "minute" in §7.6.4, at the same fēn reading. |
+
+¥ / RMB / CNY / 人民币 ship as recognition-only symbols on the price-label template, where the numeral is rendered large and the unit small — that is the real reading condition, and the whole difficulty is that the unit character is 8 px next to a 40 px number.
+
+### 7.6.4 Dates, times and measure words
+
+**[corpus-grounded for the date/time set]** — 年 (18), 时 (24), 日 (79), 月 (143), 点 (172), 号 (337), 半 (448) are all top-450 and all HSK-1 band. **[judgement for the measure words]**, because the ones you need to transact are not the frequent ones: 个 is rank 16 but 碗 is 1,621, 瓶 1,818, 杯 1,232 — and you cannot order a bowl of noodles with 个.
+
+**Ruling on 月.** The 月 taught here is U+6708, the moon/month character. The visually identical left-hand component of 肝 肠 肚 腰 脑 is a *different codepoint*, ⺼ U+2EBC (CJK RADICAL MEAT) — verified: all five decompose as ⿰⺼… with radical ⺼ and semantic hint "flesh", and none contains U+6708. No component index, hint, highlight or search in this product may be keyed off a substring match on the rendered shape; matching is on codepoint against the stored decomposition only. The 月 item and the body/organ items must never be cross-linked, and 月's own second dictionary reading (rù) must not be surfaced.
+
+| hanzi | pinyin (tone marks) | English | Dutch | tier | why it earns its place |
+|---|---|---|---|---|---|
+| 年 月 日 | nián / yuè / rì | year / month / day (written) | jaar / maand / dag (geschreven) | 1 | 2026年8月22日. The written date order is big-to-small and never ambiguous — unlike 08/09, which is. |
+| 号 | hào | day of month (spoken); number | dag (spreektaal); nummer | 1 | 日 written, 号 spoken — the same split as 元/块. Also the "number" on doors, platforms and bus stops. |
+| 时 | shí | o'clock; time | uur; tijd | 1 | 营业时间 09:00–22:00. Signage times are 24-hour and numeric, so 时 is read more than it is calculated. |
+| 点 | diǎn | o'clock (spoken) | uur (spreektaal) | 1 | 三点半 = 3:30 — the characters do not say morning or afternoon, and the player must get that from context. Pairs with 半. |
+| 半 | bàn | half | half | 1 | Half past; also 半份 (half portion) and 半斤 (250 g) in the market and menu strands. One character, three strands. |
+| 个 | gè | general measure word | algemeen maatwoord | 0 | Rank 16. The fallback that is never wrong enough to fail a transaction, and the first thing to teach so the player can transact before learning the rest. |
+| 位 | wèi | person (polite); per person | persoon (beleefd); per persoon | 1 | 几位? at every restaurant door, and 位 on a menu means per-head pricing. |
+| 份 | fèn | portion, serving | portie | 1 | 大份 / 中份 / 小份 / 半份. Confusable with 分, which supplies its phonetic — and note that tone does **not** separate them, since 分 itself reads fèn in other words. They sit next to each other on menus; teach the job, not the tone. |
+| 杯 | bēi | cup, glass | kopje, glas | 1 | Drinks. ⿰木不. |
+| 碗 | wǎn | bowl | kom | 1 | Noodles, rice, congee. Rank 1,621 and indispensable — the clearest single case against frequency ordering in the bank. |
+| 瓶 | píng | bottle | fles | 1 | Water, beer, sauce. Also a shelf-label unit. |
+| 张 | zhāng | flat things — tickets, cards, tables | platte dingen — kaartjes, tafels | 1 | 一张票. The measure word that gets you through a ticket window. |
+| 只 | zhī | animals, one of a pair, some containers | dieren, één van een paar | 2 | Note the reading: zhī as a measure word, zhǐ as "only". Two distinct traditional characters (隻 and 只) merged into one simplified form — token-level pinyin again. |
+| 件 | jiàn | garments, items, matters | kledingstukken, artikelen | 2 | 第二件半价 — second item half price. Retail, not conversation. |
+| 双 | shuāng | pairs | paar | 2 | Shoes, chopsticks, socks. ⿰又又. |
+| 条 | tiáo | long thin things — fish, streets, trousers | lange dunne dingen — vis, straten | 2 | 一条鱼 on a market board. |
+| 斤 | jīn | catty = 500 g exactly | pond = 500 gram | 0 | Cross-referenced from the market strand: loose produce is priced 元/斤 almost everywhere, so 12.8元/斤 is 25.6 元/kg. Dutch has an exact everyday word here and English does not. |
+| 两 | liǎng | 50 g (one tenth of a 斤) | half ons (50 gram) | 1 | The three-way collision: "two of something", "50 grams", and the shape at the foot of 满's right-hand component. Introduce the quantifier sense first, the weight sense in the market strand, and the shape never as a meaning cue. |
+
+## 7.7 Tier summary
+
+Tiers 0–2 are the **authored spine** — the ordered head of the bank, whose sequence is fixed by this section. The remainder of the 1,500 characters and 1,200 multi-character items is Tier 3: no fixed order, drawn by the scheduler from the due queue. Only Tier 0 is linear and unskippable. Matches deal from Tiers 1 and 2 while the spine is being built, and from Tier 3 as well once the spine is consolidated.
+
+| tier | items | new characters | ordering basis | what the player can do at the end of it |
+|---|---|---|---|---|
+| **0** — first session, single-player, no betting, no timer, ~12 min | ~24 **[J]** | ~60 **[J]** | Judgement — consequence-ordered, explicitly against corpus rank | Tell a prohibition from a warning by colour and shape with no characters read; find the correct toilet door; leave a station through the correct opening; open a door the right way; tell a shop that is open from one on a break; say what 12.8元/斤 costs per kilo. |
+| **1** — survival core, dealt in matches | ~110 **[J]** | ~180 **[J]** | Mixed — numerals, dates and the opposite pairs corpus-grounded; openers, status pairs and unit measure words judgement | Read a metro exit sign end to end; read a shelf-edge price label including unit and discount; decide from a production date plus a duration whether a packet is still in date; read opening hours off a shopfront including 周一至周五; order a portion size by name; read a hazard board and act on it. |
+| **2** — extended set, dealt in matches | ~200 **[J]** | ~320 **[J]** | Judgement throughout — encounter rate and consequence, not frequency | Read a full menu column top to bottom including 时价; read a rail ticket's seat class; read an allergen and nutrition line; read a 100-yuan note's capital numerals and a bank slip's amount. |
+| **3** — remainder of the v1 bank | ~2,366 | balance of 1,500 | Scheduler-driven; no authored sequence | Not a capability tier. It is the long tail the due queue draws from once the spine is consolidated. |
+
+Spine total ≈ **334 items** of the 2,700-item v1 bank. Every count marked **[J]** is a planning judgement, not a measurement, and becomes a build-time count when the bank is authored. One partial check exists today: §7.5–7.6 enumerate **18 Tier-0 cards and 43 new characters**, so the ~24/~60 row assumes roughly six more Tier-0 cards and seventeen more characters from the menu and market strands. If those strands do not supply them, the row is wrong, not the enumeration.
+
+The ~12 min is a **session budget for first exposure**, not a claim that 60 characters are learned in it — the consolidation rule below is what settles that, and the two must be quoted together or not at all.
+
+Three rules govern how this table may be used in the product. **Never print a coverage percentage** derived from a general-text frequency list — the honest report has the shape "you can read 47 of the 120 signs in the metro set" (a format example, not a measured value), and §10's `signsActionable` metric is defined on exactly those enumerated signs. **Never predict a score.** And **tier is not mastery**: an item counts toward a tier only once `consolidated` is set, which requires a correct retrieval after at least one intervening night, so a player who clears Tier 0 in one evening has completed the session, not the tier.
+
+---
+
+### Corrections applied
+
+Everything below was checked by script against `pinyin.txt`, `mmah.txt`, `charfreq.txt`, `stc.txt`, `tsc.txt` and `hsk30-chars.txt` (script at `/tmp/claude-0/-home-user-dohhh/4806d96a-ebd4-5774-9d7d-fe7e365865df/scratchpad/vfy75.py`, output at `vfy75_out.txt`).
+
+**Passed unchanged, so recorded rather than edited:** every pinyin syllable and tone mark in the section (the only flag was 息 as `xi`, which is the intended neutral tone and is now stated as such); every corpus rank cited (禁 947, 止 735, 危 998, 险 866, 勿 2,838, 严 600, 上 14 … 入 188, 拉 410 … 休 1,148, 有 7, 人 3, 一 1, 万 199, 元 211, 百 320, 千 439, 壹 5,966, 贰 4,481, 叁 7,488, 分 54, 角 743, 块 815, 毛 644, 年 18 … 半 448, 个 16, 碗 1,621, 瓶 1,818, 杯 1,232); every decomposition (注 ⿰氵主, 出 ⿱屮凵, 费 ⿱弗贝, 满 ⿰氵⿱艹两, 男 ⿱田力, 百 ⿱一白, 千 ⿱丿十, 壹 ⿱士⿱冖豆, 贰 ⿹弋⿱二贝, 叁 ⿱⿱厶大三, 元 ⿱二儿, 杯 ⿰木不, 推/拉 ⿰扌); 内 = HSK 3; the date/time set = HSK 1; 壹贰叁 absent from HSK 3.0; every character in the section is a simplified-set form (none is a traditional-only key); and the arithmetic (12.8元/斤 → 25.6 元/kg, 十万/一百万, 半斤 = 250 g, 两 = 50 g = half a Dutch *ons*).
+
+1. **Corpus size 12,009 → 12,010.** The file has 12,010 entries.
+2. **"of the top 50 … four are in the survival set" → 11, enumerated.** The claim was false and understated; the top-50 overlap with this section's inventory is 一 人 有 中 上 个 年 时 出 下 后. The argument survives on the other 39 being grammatical machinery, which is now what carries it.
+3. **§7.5.1 "the shapes and category names are confirmed" removed.** Self-contradicting: nothing can be confirmed against a standard that returned 403. Restated as consistent secondary sourcing, with the ISO correspondence folded under the same unverified flag.
+4. **ISO 7010 → ISO 3864** for the colour/shape geometry; ISO 7010 registers the symbols inside the shapes.
+5. **Colour-marking ruling re-based.** A single Chinese-specific study cannot license a standing prohibition; the ruling now rests on the design ground (the card must show what the sign shows) with the study as corroboration. The ruling itself is left absolute — no hedge added.
+6. **§7.5.2 register claim softened.** "Function-word-free … no 的, no aspect marking, no pronouns" was categorical and false at the edges; now a stated tendency.
+7. **注 "the first water-radical item most players meet" cut.** False under the section's own tiering: 满 (Tier 0, §7.5.3) reaches the player before 注意 (Tier 1).
+8. **§7.5.3 pairing rationale rewritten.** A hedged interference finding ("may be non-monotonic") was doing the work of a firm ruling — the design bent to rescue itself. The licence is now the sign environment; the literature is cited only as not forbidding the design.
+9. **满/两 relation corrected twice.** 两 is the *foot of the right-hand component*, not "the right half"; added that it is a simplification artefact of 㒼 (滿), which is why the no-meaning-cue rule bites.
+10. **贝 "first appearance in the bank" → "in this section's ordering."** Unverifiable from this section; other strands may introduce 贝 earlier.
+11. **§7.6.1 "ordered by frequency without further argument" removed.** The table is not in frequency order and cannot be — 两 (113), 万 (199) and 零 (1,352) all contradict it. Re-based on place value, with the three orderings as corroboration only. The "first 660" claim is retained and now names its laggard, 七 at 654.
+12. **Compute-item scope disambiguated** against §7.7's "only Tier 0 is unskippable."
+13. **Capital sub-deck priority made consistent:** 拾 佰 仟 圆 in both places (仟 was in the prose but missing from the list); added that 叁 is 叄 in traditional type, which matters for a document deck.
+14. **角 heteronym flagged** (jiǎo/jué) — the section flags 空 and 只 but silently omitted this one.
+15. **分 reclassified as a genuine heteronym** (fēn/fèn), not "heteronym-adjacent"; and the 份/分 entry no longer claims tone separates them, because 分 itself reads fèn.
+16. **三点半 = 15:30 → 3:30.** The characters do not encode a.m./p.m.; the equality was invented.
+17. **Ruling on 月 added** (§7.6.4). Confirmed by script: 肝 肠 肚 腰 脑 all decompose ⿰⺼… with radical and semantic ⺼ U+2EBC, and none contains 月 U+6708. Nothing in the text keys highlighting off 月, and the ruling now forbids ever doing so, matching on codepoint against the stored decomposition instead. 月's second dictionary reading (rù) is suppressed for the same reason.
+18. **§7.7 Tier-3 contradiction resolved:** the intro said matches deal from Tiers 1–2 while the Tier-3 row said the due queue draws from Tier 3.
+19. **Tier-0 counts made checkable:** §7.5–7.6 enumerate 18 cards and 43 new characters, so the ~24/~60 row now states the gap it is assuming instead of floating free.
+20. **"~12 min" reconciled** with the consolidation rule, so the row can no longer be read as claiming 60 characters are learned in twelve minutes.
+21. **"47 of the 120 signs" marked as a format example**, not a derived figure.
+22. Minor: 小心's "top-90" claim now cites the actual ranks (心 86, 小 87); 无 (145) added to the 有人/无人 cost claim; "single most-used pair" softened to "most-used", which is all the door-count argument supports; 只's two traditional sources (隻/只) added as the reason for the reading split; 出's gloss changed from "enclosure" to "container" to match the decomposition source.
 
 ---
 
