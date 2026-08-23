@@ -1,4 +1,4 @@
-import type { Category, CategoryId } from './types.js';
+import type { Category, CategoryId, Locale } from './types.js';
 
 /**
  * The category deck.
@@ -60,6 +60,55 @@ export function categoryById(id: CategoryId): Category | undefined {
   return BY_ID.get(id);
 }
 
-export function categoryName(id: CategoryId): string {
+/**
+ * Category names in Dutch, keyed by the same ids as {@link CATEGORIES}. Ids and
+ * glyphs are protocol-adjacent (see above) and stay locale-independent; only
+ * the display name is translated.
+ */
+export const CATEGORY_NAMES_NL: Readonly<Record<CategoryId, string>> = {
+  history: 'Geschiedenis & Beschavingen',
+  centralasia: 'Centraal-Aziatische Geschiedenis',
+  eastasia: 'Oost-Aziatische Ontwikkeling',
+  geography: 'Aardrijkskunde & Systemen van de Aarde',
+  literature: 'Literatuur & Poëzie',
+  art: 'Beeldende Kunst',
+  music: 'Muziek & Podiumkunsten',
+  screen: 'Film & Televisie',
+  physics: 'Natuurkunde & Astronomie',
+  chemistry: 'Scheikunde & Materialen',
+  biology: 'Biologie & Geneeskunde',
+  maths: 'Wiskunde & Logica',
+  technology: 'Technologie & Computerwetenschap',
+  silicon: 'Halfgeleiders & Lithografie',
+  swe: 'Software-engineering & Algoritmen',
+  finance: 'Financiën & Gestructureerde Producten',
+  sport: 'Europese Sport',
+  autoimmune: 'Auto-immuunziekten',
+  obgyn: 'Verloskunde & Gynaecologie',
+  dutch: 'Nederlandse Geschiedenis & Politiek, 1400-1900',
+  maker: '3D-printen & Lasers',
+  lawip: 'Nederlands & Internationaal IE-recht',
+  fashionmodern: 'Modegeschiedenis, 1940-Nu',
+  fashionhistoric: 'Historische Mode',
+  africa: 'Afrikaanse Geschiedenis',
+  royalsmedieval: 'Middeleeuwse & Renaissance Koningshuizen',
+  royalsmodern: 'Moderne Europese Koningshuizen',
+  archmodern: 'Moderne Architectuur',
+  archhistoric: 'Historische Architectuur',
+  castles: 'Kastelen & Paleizen',
+  videogames: 'Videogames',
+  greekmyth: 'Griekse Mythologie',
+  norsemyth: 'Noordse Mythologie',
+  celticmyth: 'West-Europese Mythologie',
+  assyrian: 'Assyrische & Fenicische Geschiedenis & Mythologie',
+  screentech: 'Schermtechnologie, 1980-Nu',
+  eastasiahistory: 'Oost-Aziatische Geschiedenis',
+  centralasiadev: 'Centraal-Aziatische Ontwikkeling',
+  microecon: 'Micro-economie',
+  macroecon: 'Macro-economie',
+};
+
+export function categoryName(id: CategoryId, locale: Locale = 'en'): string {
+  if (locale === 'nl') return CATEGORY_NAMES_NL[id] ?? BY_ID.get(id)?.name ?? id;
   return BY_ID.get(id)?.name ?? id;
 }

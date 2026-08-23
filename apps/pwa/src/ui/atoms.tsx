@@ -2,6 +2,7 @@ import { DIFFICULTY_TIERS, shortenId, type Difficulty } from '@dohhh/engine';
 import type { ConnectionStatus } from '@dohhh/net';
 import { Chip, Typography } from '@heroui/react';
 import { useEffect, useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 /** Page frame. Every screen is a single column that fits a phone in one hand. */
 export function Screen({
@@ -58,7 +59,8 @@ export function ConnectionPill({
   /** Distinguishes "still waiting for the first peer" from "someone just dropped." */
   everConnected?: boolean;
 }): ReactNode {
-  const { colour, label } = describe(status, peerCount, everConnected);
+  const { t } = useTranslation('common');
+  const { colour, label } = describe(t, status, peerCount, everConnected);
   return (
     <Chip color={colour} variant="soft" size="sm" className="shrink-0">
       {label}
@@ -67,25 +69,32 @@ export function ConnectionPill({
 }
 
 function describe(
+  t: (key: string, options?: Record<string, unknown>) => string,
   status: ConnectionStatus,
   peerCount: number,
   everConnected: boolean,
 ): { colour: 'success' | 'warning' | 'danger' | 'default'; label: string } {
   switch (status) {
     case 'connected':
-      return { colour: 'success', label: `${peerCount} device${peerCount === 1 ? '' : 's'}` };
+      return { colour: 'success', label: t('connection.devices_count', { count: peerCount }) };
     case 'connecting':
-      return { colour: 'warning', label: everConnected ? 'Reconnecting' : 'Connecting' };
+      return {
+        colour: 'warning',
+        label: everConnected ? t('connection.reconnecting') : t('connection.connecting'),
+      };
     case 'alone':
       // Same underlying status either way, but a very different thing to
       // tell a player: a host who has never had a joiner is just waiting;
       // someone who *had* a peer and lost them needs to know that dropped,
       // not that nobody ever showed up.
-      return { colour: 'warning', label: everConnected ? 'Reconnecting' : 'Waiting for others' };
+      return {
+        colour: 'warning',
+        label: everConnected ? t('connection.reconnecting') : t('connection.waiting_for_others'),
+      };
     case 'failed':
       // Said plainly rather than spun forever: with no server there is no relay
       // of last resort, and some networks simply will not carry this (R-15).
-      return { colour: 'danger', label: 'No connection' };
+      return { colour: 'danger', label: t('connection.no_connection') };
     default:
       return { colour: 'default', label: status };
   }
@@ -166,32 +175,17 @@ export function StalledWarning({
   everConnected?: boolean;
   afterMs?: number;
 }): ReactNode {
+  const { t } = useTranslation('common');
   const stalled = useElapsed(afterMs) && peerCount === 0 && status !== 'failed';
 
   if (status === 'failed') {
-    return (
-      <Notice tone="danger">
-        Could not reach any peer-discovery relay. Check this device is online. Dohhh needs one
-        brief handshake through public infrastructure before it can talk device-to-device.
-      </Notice>
-    );
+    return <Notice tone="danger">{t('stalled.relay_failed')}</Notice>;
   }
   if (!stalled) return null;
   if (everConnected) {
-    return (
-      <Notice tone="warn">
-        Lost the connection to the other device. Still trying to reconnect automatically - if this
-        does not clear up, check you are both still online and on the same network.
-      </Notice>
-    );
+    return <Notice tone="warn">{t('stalled.lost_connection')}</Notice>;
   }
-  return (
-    <Notice tone="warn">
-      Still nobody else here. The usual causes: the others have not opened the game yet, they typed a
-      different code, or you are on networks that will not let devices talk directly - mobile data
-      especially. Getting everyone onto the same Wi-Fi fixes it.
-    </Notice>
-  );
+  return <Notice tone="warn">{t('stalled.nobody_here')}</Notice>;
 }
 
 /** True once `ms` has passed since this hook first mounted with this duration. */

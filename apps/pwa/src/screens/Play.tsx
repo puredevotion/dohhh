@@ -4,27 +4,31 @@ import {
   canChooseCategory,
   canChooseDifficulty,
   canDraw,
-  categoryById,
+  categoryName,
   DIFFICULTY_ORDER,
   DIFFICULTY_TIERS,
   isActingPlayer,
   isBanned,
   questionById,
-  SEED_PACK,
   scoreboard,
   teamOf,
   type CategoryId,
+  type ContentPack,
   type Difficulty,
   type GameState,
+  type Locale,
   type TurnRecord,
 } from '@dohhh/engine';
 import { Button, Card, Chip, ProgressBar } from '@heroui/react';
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { SOLO_DEAL_DELAY_MS, useApp } from '../lib/store.js';
+import { packFor, SOLO_DEAL_DELAY_MS, useApp } from '../lib/store.js';
 import { ConnectionPill, Notice, Screen, StalledWarning, TierBadge, useElapsed } from '../ui/atoms.jsx';
 
 export function Play(): ReactNode {
+  const { t } = useTranslation('play');
+  const { t: tc } = useTranslation('common');
   const snapshot = useApp((s) => s.snapshot);
   const identity = useApp((s) => s.identity);
   const deal = useApp((s) => s.deal);
@@ -35,6 +39,8 @@ export function Play(): ReactNode {
   const error = useApp((s) => s.error);
   const dismissError = useApp((s) => s.dismissError);
   const leave = useApp((s) => s.leave);
+  const locale = useApp((s) => s.locale);
+  const pack = packFor(locale);
 
   const state = snapshot?.state ?? null;
   if (state === null || identity === null || snapshot === null) return null;
@@ -42,12 +48,9 @@ export function Play(): ReactNode {
   if (isBanned(state, identity.id)) {
     return (
       <Screen title={state.name}>
-        <Notice tone="danger">
-          The host removed you from this game. Whatever was in progress for your team continues
-          without you; you can start or join a different one.
-        </Notice>
+        <Notice tone="danger">{t('banned.notice')}</Notice>
         <Button variant="ghost" fullWidth onPress={leave}>
-          Leave
+          {tc('actions.leave')}
         </Button>
       </Screen>
     );
@@ -58,9 +61,9 @@ export function Play(): ReactNode {
   const acting = rows.find((row) => row.isActing);
   const myTeam = teamOf(state, me);
   const iAmActing = isActingPlayer(state, me);
-  const question = activeQuestion(state, SEED_PACK);
+  const question = activeQuestion(state, pack);
   const active = state.active;
-  const category = active?.categoryId == null ? undefined : categoryById(active.categoryId);
+  const activeCategoryName = active?.categoryId == null ? undefined : categoryName(active.categoryId, locale);
   const lastTurn = state.history.at(-1) ?? null;
   // minTeams: 1 is only ever set by hostSolo - see rules.ts. A solo game has
   // no network at all (createLocalTransport), so a connection pill or a
@@ -69,13 +72,13 @@ export function Play(): ReactNode {
 
   return (
     <Screen
-      title={acting === undefined ? state.name : `${acting.team.name} to play`}
+      title={acting === undefined ? state.name : t('title.team_to_play', { team: acting.team.name })}
       subtitle={
         state.suddenDeath
-          ? 'Sudden death: the leaders are level and playing it out.'
+          ? t('subtitle.sudden_death')
           : state.endgameArmedRound !== null
-            ? 'Final round: someone has crossed the line, so everyone gets an equal number of turns.'
-            : `Round ${state.roundIndex + 1}, first to ${state.rules.targetScore}`
+            ? t('subtitle.final_round')
+            : t('subtitle.round', { round: state.roundIndex + 1, target: state.rules.targetScore })
       }
       aside={
         solo ? undefined : (
@@ -92,7 +95,7 @@ export function Play(): ReactNode {
           <div className="flex items-center justify-between gap-3">
             <span>{error}</span>
             <Button variant="ghost" size="sm" onPress={dismissError}>
-              Dismiss
+              {t('dismiss')}
             </Button>
           </div>
         </Notice>
@@ -122,6 +125,7 @@ export function Play(): ReactNode {
           lastTurn={lastTurn}
           onDeal={deal}
           canDealNow={canDraw(state, me)}
+          pack={pack}
         />
       ) : active.categoryId === null ? (
         <ChooseCategory
@@ -130,12 +134,13 @@ export function Play(): ReactNode {
           canChoose={canChooseCategory(state, me)}
           onPick={pickCategory}
           onTimeout={callTime}
+          locale={locale}
         />
       ) : question === null ? (
         <ChooseTier
           state={state}
           canChoose={canChooseDifficulty(state, me)}
-          categoryName={category?.name ?? active.categoryId}
+          categoryName={activeCategoryName ?? active.categoryId}
           onPick={bet}
           onTimeout={callTime}
         />
@@ -147,7 +152,7 @@ export function Play(): ReactNode {
           prompt={question.question.prompt}
           options={question.options}
           repeat={active.repeat}
-          categoryName={category?.name ?? active.categoryId}
+          categoryName={activeCategoryName ?? active.categoryId}
           difficulty={active.difficulty ?? 'graduate'}
           onAnswer={answer}
           onTimeout={callTime}
@@ -155,11 +160,7 @@ export function Play(): ReactNode {
         />
       )}
 
-      {myTeam === undefined && (
-        <Notice>
-          You are watching this one. You will be able to join a team for the next game.
-        </Notice>
-      )}
+      {myTeam === undefined && <Notice>{t('watching_notice')}</Notice>}
     </Screen>
   );
 }
@@ -180,15 +181,14 @@ function UnexpectedPeerWarning({
   state: GameState;
   peerCount: number;
 }): ReactNode {
+  const { t } = useTranslation('play');
   const settled = useElapsed(5_000);
   const knownPlayers = Object.keys(state.players).length;
   const deviceCount = peerCount + 1;
   if (!settled || deviceCount <= knownPlayers) return null;
   return (
     <Notice tone="warn">
-      {deviceCount} devices connected but only {knownPlayers} known player
-      {knownPlayers === 1 ? '' : 's'}. Someone may be watching who never joined - the join code is
-      the only lock this game has.
+      {t('unexpected_peer', { count: knownPlayers, deviceCount, knownPlayers })}
     </Notice>
   );
 }
@@ -210,6 +210,7 @@ function TurnAnnouncer({
   lastTurn: TurnRecord | null;
   actingTeamName: string | null;
 }): ReactNode {
+  const { t } = useTranslation('play');
   const [message, setMessage] = useState('');
   const lastAnnouncedTurn = useRef<number | null>(null);
   const lastAnnouncedActor = useRef<string | null>(null);
@@ -227,14 +228,18 @@ function TurnAnnouncer({
     const parts: string[] = [];
     if (turnChanged && lastTurn !== null) {
       lastAnnouncedTurn.current = lastTurn.turnIndex;
-      const team = state.teams.find((t) => t.id === lastTurn.teamId)?.name ?? 'They';
-      const outcome = lastTurn.timedOut ? 'ran out of time' : lastTurn.correct ? 'were right' : 'were wrong';
+      const team = state.teams.find((team) => team.id === lastTurn.teamId)?.name ?? t('announcer.they');
+      const outcome = lastTurn.timedOut
+        ? t('announcer.ran_out_of_time')
+        : lastTurn.correct
+          ? t('announcer.were_right')
+          : t('announcer.were_wrong');
       const delta = lastTurn.delta > 0 ? `+${lastTurn.delta}` : `${lastTurn.delta}`;
-      parts.push(`${team} ${outcome}, ${delta} points.`);
+      parts.push(t('announcer.outcome', { team, outcome, delta }));
     }
     if (actorChanged && actingTeamName !== null) {
       lastAnnouncedActor.current = actingTeamName;
-      parts.push(`${actingTeamName}'s turn.`);
+      parts.push(t('announcer.turn', { team: actingTeamName }));
     }
     setMessage(parts.join(' '));
   }, [lastTurn, actingTeamName, state.teams]);
@@ -247,6 +252,7 @@ function TurnAnnouncer({
 }
 
 function Scores({ state, me }: { state: GameState; me: string }): ReactNode {
+  const { t } = useTranslation('play');
   const rows = scoreboard(state);
   const myTeamId = teamOf(state, me)?.id;
   return (
@@ -263,12 +269,12 @@ function Scores({ state, me }: { state: GameState; me: string }): ReactNode {
               <span className="truncate text-sm font-medium">{row.team.name}</span>
               {row.team.id === myTeamId && (
                 <Chip color="success" variant="soft" size="sm">
-                  you
+                  {t('scores.you')}
                 </Chip>
               )}
               {row.isActing && (
                 <Chip color="accent" variant="soft" size="sm">
-                  playing
+                  {t('scores.playing')}
                 </Chip>
               )}
             </span>
@@ -276,7 +282,7 @@ function Scores({ state, me }: { state: GameState; me: string }): ReactNode {
           </div>
           <ProgressBar
             value={Math.round(row.progress * 100)}
-            aria-label={`${row.team.name} progress toward ${state.rules.targetScore}`}
+            aria-label={t('scores.progress_label', { team: row.team.name, target: state.rules.targetScore })}
             size="sm"
             color={row.isLeader ? 'success' : 'default'}
             className="mt-2"
@@ -289,7 +295,7 @@ function Scores({ state, me }: { state: GameState; me: string }): ReactNode {
       ))}
       {state.streak > 1 && (
         <p className="text-center text-xs text-muted">
-          {state.streak} correct in a row - the turn has not moved.
+          {t('scores.streak', { count: state.streak })}
         </p>
       )}
     </div>
@@ -309,34 +315,39 @@ function BetweenTurns({
   lastTurn,
   onDeal,
   canDealNow,
+  pack,
 }: {
   state: GameState;
   me: string;
   lastTurn: TurnRecord | null;
   onDeal: () => void;
   canDealNow: boolean;
+  pack: ContentPack;
 }): ReactNode {
+  const { t } = useTranslation('play');
   const actingTeam = scoreboard(state).find((row) => row.isActing)?.team;
 
   return (
     <div className="flex flex-col gap-4">
-      {lastTurn !== null && <Outcome record={lastTurn} state={state} />}
+      {lastTurn !== null && <Outcome record={lastTurn} state={state} pack={pack} />}
 
       <Card>
         <Card.Header>
-          <Card.Title>{actingTeam?.name ?? 'Next team'} are up</Card.Title>
+          <Card.Title>
+            {t('between_turns.title', { team: actingTeam?.name ?? t('between_turns.next_team') })}
+          </Card.Title>
           <Card.Description>
             {canDealNow
-              ? "You'll get three categories to choose from for their question. They cannot deal their own - that is what stops them knowing the question in advance."
+              ? t('between_turns.description_can_deal')
               : state.rules.minTeams === 1
-                ? 'The dealer is drawing three categories to choose from.'
-                : 'An opposing team is dealing three categories to choose from.'}
+                ? t('between_turns.description_solo_dealing')
+                : t('between_turns.description_opponent_dealing')}
           </Card.Description>
         </Card.Header>
         {canDealNow && (
           <Card.Footer>
             <Button variant="primary" size="lg" fullWidth onPress={onDeal}>
-              Deal three categories
+              {t('between_turns.deal_button')}
             </Button>
           </Card.Footer>
         )}
@@ -346,7 +357,7 @@ function BetweenTurns({
         state.rules.minTeams === 1 ? (
           <SoloDealCountdown state={state} />
         ) : (
-          <p className="text-center text-sm text-muted">Waiting for your opponents to deal.</p>
+          <p className="text-center text-sm text-muted">{t('between_turns.waiting_for_opponents')}</p>
         )
       )}
     </div>
@@ -361,32 +372,47 @@ function BetweenTurns({
  * rationale on `attachSoloBot` in store.ts.
  */
 function SoloDealCountdown({ state }: { state: GameState }): ReactNode {
+  const { t } = useTranslation('play');
+  const { t: tc } = useTranslation('common');
   const continueSolo = useApp((s) => s.continueSolo);
   const remaining = useCountdown(`${state.gameId}:${state.turnIndex}:solo-deal`, SOLO_DEAL_DELAY_MS);
   return (
     <div className="flex items-center justify-between gap-3 rounded-xl border border-border/40 px-4 py-3">
       <span className="font-mono text-sm tabular-nums text-muted">
-        Next question in {Math.max(0, Math.ceil(remaining / 1000))}s
+        {t('solo_deal_countdown.next_question_in', { seconds: Math.max(0, Math.ceil(remaining / 1000)) })}
       </span>
       <Button variant="secondary" size="sm" onPress={continueSolo}>
-        Continue
+        {tc('actions.continue')}
       </Button>
     </div>
   );
 }
 
-function Outcome({ record, state }: { record: TurnRecord; state: GameState }): ReactNode {
-  const question = questionById(SEED_PACK, record.questionId);
-  const team = state.teams.find((t) => t.id === record.teamId);
+function Outcome({
+  record,
+  state,
+  pack,
+}: {
+  record: TurnRecord;
+  state: GameState;
+  pack: ContentPack;
+}): ReactNode {
+  const { t } = useTranslation('play');
+  const question = questionById(pack, record.questionId);
+  const team = state.teams.find((team) => team.id === record.teamId);
   const correctText = question?.options[question.answer];
+  const outcome = record.timedOut
+    ? t('outcome.ran_out_of_time')
+    : record.correct
+      ? t('outcome.were_right')
+      : t('outcome.were_wrong');
 
   return (
     <Card variant={record.correct ? 'secondary' : 'tertiary'}>
       <Card.Header>
         <Card.Title className="flex items-center justify-between gap-3 text-base">
           <span>
-            {team?.name ?? 'They'}{' '}
-            {record.timedOut ? 'ran out of time' : record.correct ? 'were right' : 'were wrong'}
+            {team?.name ?? t('outcome.they')} {outcome}
           </span>
           <span
             className={`font-mono tabular-nums ${record.delta > 0 ? 'text-success' : 'text-danger-text'}`}
@@ -400,7 +426,9 @@ function Outcome({ record, state }: { record: TurnRecord; state: GameState }): R
           <p className="text-default-foreground">{question.prompt}</p>
           {record.chosenText !== null && (
             <p>
-              <span className="text-muted">{record.correct ? 'Answered: ' : 'They said: '}</span>
+              <span className="text-muted">
+                {record.correct ? t('outcome.answered') : t('outcome.they_said')}
+              </span>
               <span
                 className={`font-medium ${record.correct ? 'text-success' : 'text-danger-text'}`}
               >
@@ -410,7 +438,7 @@ function Outcome({ record, state }: { record: TurnRecord; state: GameState }): R
           )}
           {!record.correct && correctText !== undefined && (
             <p>
-              <span className="text-muted">Answer: </span>
+              <span className="text-muted">{t('outcome.answer')}</span>
               <span className="font-medium text-success">{correctText}</span>
             </p>
           )}
@@ -432,13 +460,16 @@ function ChooseCategory({
   canChoose,
   onPick,
   onTimeout,
+  locale,
 }: {
   state: GameState;
   options: readonly CategoryId[];
   canChoose: boolean;
+  locale: Locale;
   onPick: (categoryId: CategoryId) => void;
   onTimeout: () => void;
 }): ReactNode {
+  const { t } = useTranslation('play');
   const turnIndex = state.active?.turnIndex ?? -1;
   const picked = useRef<number | null>(null);
   const [pending, setPending] = useState(false);
@@ -451,13 +482,13 @@ function ChooseCategory({
     <div className="flex flex-col gap-4">
       <Card>
         <Card.Header>
-          <Card.Title>Choose a category</Card.Title>
+          <Card.Title>{t('choose_category.title')}</Card.Title>
           <Card.Description>
             {canChoose
-              ? 'Pick one of the three - they will not know which until you do.'
+              ? t('choose_category.description_can_choose')
               : state.rules.minTeams === 1
-                ? 'The dealer is revealing which one you get.'
-                : 'An opposing player is choosing which of three categories to deal.'}
+                ? t('choose_category.description_solo_revealing')
+                : t('choose_category.description_opponent_choosing')}
           </Card.Description>
         </Card.Header>
       </Card>
@@ -472,7 +503,7 @@ function ChooseCategory({
       {canChoose && (
         <div className="flex flex-col gap-3">
           {options.map((categoryId) => {
-            const category = categoryById(categoryId);
+            const label = categoryName(categoryId, locale);
             return (
               <button
                 key={categoryId}
@@ -486,7 +517,7 @@ function ChooseCategory({
                 }}
                 className="no-select rounded-2xl border border-border/40 px-4 py-4 text-left transition hover:border-accent/60 hover:bg-accent/5 disabled:cursor-default disabled:opacity-60"
               >
-                <span className="font-medium">{category?.name ?? categoryId}</span>
+                <span className="font-medium">{label}</span>
               </button>
             );
           })}
@@ -509,6 +540,7 @@ function ChooseTier({
   onPick: (difficulty: Difficulty) => void;
   onTimeout: () => void;
 }): ReactNode {
+  const { t } = useTranslation('play');
   const turnIndex = state.active?.turnIndex ?? -1;
   const picked = useRef<number | null>(null);
   const [pending, setPending] = useState(false);
@@ -521,16 +553,16 @@ function ChooseTier({
     <div className="flex flex-col gap-4">
       <Card>
         <Card.Header>
-          <Card.Description>Your category is</Card.Description>
+          <Card.Description>{t('choose_tier.your_category_is')}</Card.Description>
           <Card.Title className="text-2xl">{categoryName}</Card.Title>
         </Card.Header>
         <Card.Content>
           <p className="text-sm text-muted">
             {canChoose
-              ? 'How hard do you want it? You are betting before you see the question.'
-              : `Waiting for ${
-                  scoreboard(state).find((row) => row.isActing)?.team.name ?? 'them'
-                } to choose a level.`}
+              ? t('choose_tier.betting_question')
+              : t('choose_tier.waiting_for_team', {
+                  team: scoreboard(state).find((row) => row.isActing)?.team.name ?? t('choose_tier.waiting_for_them'),
+                })}
           </p>
         </Card.Content>
       </Card>
@@ -574,7 +606,7 @@ function ChooseTier({
                   </span>
                 </div>
                 <p className="mt-1 text-xs text-muted">
-                  {tier.timeoutMs / 1000} seconds to answer
+                  {t('choose_tier.seconds_to_answer', { seconds: tier.timeoutMs / 1000 })}
                 </p>
               </button>
             );
@@ -610,6 +642,7 @@ function LiveQuestion({
   onTimeout: () => void;
   amOpponent: boolean;
 }): ReactNode {
+  const { t } = useTranslation('play');
   const turnKey = `${state.gameId}:${state.active?.turnIndex ?? -1}:answer:${difficulty}`;
   // activeTimeoutMs(state) would also work here, but LiveQuestion only ever
   // renders once a difficulty is chosen (that's what makes `difficulty` a
@@ -661,7 +694,7 @@ function LiveQuestion({
         <Card.Header>
           <Card.Description>
             {categoryName}
-            {repeat && ' - seen before, the pack ran dry'}
+            {repeat && t('live_question.repeat_suffix')}
           </Card.Description>
           <Card.Title className="text-xl leading-snug">{prompt}</Card.Title>
         </Card.Header>
@@ -694,13 +727,11 @@ function LiveQuestion({
 
       {iAmActing && nominatedName !== null && (
         <p className="text-center text-xs text-muted">
-          {nominatedName}&apos;s turn to answer for the team - though anyone on it can tap.
+          {t('live_question.nominated_note', { name: nominatedName })}
         </p>
       )}
       {!iAmActing && (
-        <p className="text-center text-sm text-muted">
-          Their question. You can see it, so no helping.
-        </p>
+        <p className="text-center text-sm text-muted">{t('live_question.opponent_note')}</p>
       )}
 
       <CallTimeButton onPress={onTimeout} />
@@ -710,9 +741,10 @@ function LiveQuestion({
 
 /** Any peer may call time (R-3) - a stuck turn should never need to wait out a stagger nobody's device is running. */
 function CallTimeButton({ onPress }: { onPress: () => void }): ReactNode {
+  const { t } = useTranslation('play');
   return (
     <Button variant="ghost" size="sm" fullWidth onPress={onPress}>
-      Something stuck? Call time
+      {t('call_time_button')}
     </Button>
   );
 }
@@ -737,6 +769,7 @@ function PhaseTimer({
   state: GameState;
   onTimeout: () => void;
 }): ReactNode {
+  const { t } = useTranslation('play');
   const remaining = useCountdown(turnPhaseKey, durationMs);
   const lowTimeMessage = useLowTimeAnnouncement(remaining, turnPhaseKey);
   const me = useApp((s) => s.identity?.id ?? '');
@@ -751,13 +784,13 @@ function PhaseTimer({
       <span
         className={`font-mono text-sm tabular-nums ${remaining <= 10_000 ? 'text-danger-text' : 'text-muted'}`}
       >
-        {Math.max(0, Math.ceil(remaining / 1000))}s to decide
+        {t('phase_timer.seconds_to_decide', { seconds: Math.max(0, Math.ceil(remaining / 1000)) })}
       </span>
       <span aria-live="assertive" role="status" className="sr-only">
         {lowTimeMessage}
       </span>
       <Button variant="ghost" size="sm" onPress={onTimeout}>
-        Call time
+        {t('phase_timer.call_time')}
       </Button>
     </div>
   );
@@ -816,6 +849,7 @@ function readOrStampTurnStart(key: string): number {
  * once, the moment remaining time first crosses ten seconds, per turn phase.
  */
 function useLowTimeAnnouncement(remaining: number, key: string): string {
+  const { t } = useTranslation('play');
   const announcedFor = useRef<string | null>(null);
   if (remaining > 10_000 || remaining <= 0) {
     if (remaining > 10_000) announcedFor.current = null;
@@ -823,7 +857,7 @@ function useLowTimeAnnouncement(remaining: number, key: string): string {
   }
   if (announcedFor.current === key) return '';
   announcedFor.current = key;
-  return 'Ten seconds left.';
+  return t('low_time_announcement');
 }
 
 function useAutoTimeout({

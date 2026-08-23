@@ -1,0 +1,39 @@
+{
+  "connection": {
+    "devices_count_one": "{{count}} apparaat",
+    "devices_count_other": "{{count}} apparaten",
+    "reconnecting": "Opnieuw verbinden",
+    "connecting": "Verbinden",
+    "waiting_for_others": "Wachten op anderen",
+    "no_connection": "Geen verbinding"
+  },
+  "stalled": {
+    "relay_failed": "Kon geen enkele peer-discovery-relay bereiken. Controleer of dit apparaat online is. Dohhh heeft een korte handshake via openbare infrastructuur nodig voordat apparaten rechtstreeks met elkaar kunnen praten.",
+    "lost_connection": "De verbinding met het andere apparaat is verbroken. Er wordt automatisch geprobeerd opnieuw te verbinden - als dit niet lukt, controleer of jullie beiden nog online zijn en op hetzelfde netwerk.",
+    "nobody_here": "Nog steeds niemand anders hier. De gebruikelijke oorzaken: de anderen hebben het spel nog niet geopend, ze hebben een andere code getypt, of jullie zitten op netwerken die apparaten niet rechtstreeks laten praten - mobiel internet vooral. Iedereen op dezelfde wifi zetten verhelpt dit meestal."
+  },
+  "storage_degraded": "Er wordt nu niets opgeslagen - waarschijnlijk door privénavigatie of geblokkeerde opslag. Dit tabblad verversen kost je je plek in het spel.",
+  "actions": {
+    "back": "Terug",
+    "leave": "Verlaten",
+    "continue": "Doorgaan",
+    "start": "Start"
+  },
+  "language": {
+    "label": "Taal",
+    "en": "English",
+    "nl": "Nederlands"
+  },
+  "qr": {
+    "drawing_error": "Kon de QR-code niet tekenen. Lees de vier woorden voor in plaats daarvan.",
+    "drawing": "Bezig met tekenen...",
+    "scan_alt": "Scan om dit spel te joinen",
+    "point_camera": "Richt je camera op de code van de andere telefoon.",
+    "turn_on_camera": "Camera aanzetten",
+    "starting_camera": "Camera wordt gestart...",
+    "permission_denied": "Cameratoegang werd geweigerd.",
+    "unavailable": "Camera niet beschikbaar.",
+    "no_camera": "Dit apparaat heeft geen camera die de browser kan gebruiken.",
+    "https_required": "Browsers staan cameratoegang alleen toe via HTTPS (of op localhost). Gebruik in plaats daarvan de code van vier woorden."
+  }
+}

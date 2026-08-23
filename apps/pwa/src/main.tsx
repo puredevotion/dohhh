@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 import { App } from './App.jsx';
 import { ErrorBoundary } from './ErrorBoundary.jsx';
+import './lib/i18n.js';
 import { UpdatePrompt } from './UpdatePrompt.jsx';
 import './styles.css';
 

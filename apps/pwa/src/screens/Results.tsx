@@ -1,11 +1,13 @@
 import { finalStandings, streakHistogram, type GameState } from '@dohhh/engine';
 import { Button, Card, Chip } from '@heroui/react';
 import type { ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useApp } from '../lib/store.js';
 import { ActionBar, Notice, Screen } from '../ui/atoms.jsx';
 
 export function Results(): ReactNode {
+  const { t } = useTranslation('results');
   const snapshot = useApp((s) => s.snapshot);
   const leave = useApp((s) => s.leave);
   const state = snapshot?.state ?? null;
@@ -16,11 +18,14 @@ export function Results(): ReactNode {
 
   return (
     <Screen
-      title={winner === undefined ? 'Game over' : `${winner.team.name} win`}
+      title={winner === undefined ? t('game_over') : t('winner_title', { name: winner.team.name })}
       subtitle={
         state.suddenDeath
-          ? 'Settled in sudden death.'
-          : `${state.roundIndex} rounds, ${state.history.length} questions.`
+          ? t('sudden_death_subtitle')
+          : t('standings_subtitle', {
+              rounds: t('rounds_count', { count: state.roundIndex }),
+              questions: t('questions_count', { count: state.history.length }),
+            })
       }
     >
       <div className="flex flex-col gap-2">
@@ -38,7 +43,7 @@ export function Results(): ReactNode {
               <span className="truncate font-medium">{row.team.name}</span>
               {row.team.id === state.winnerTeamId && (
                 <Chip color="success" variant="soft" size="sm">
-                  winner
+                  {t('winner_chip')}
                 </Chip>
               )}
             </span>
@@ -51,14 +56,14 @@ export function Results(): ReactNode {
 
       <Card variant="secondary">
         <Card.Header>
-          <Card.Title className="text-base">Every question</Card.Title>
+          <Card.Title className="text-base">{t('every_question_title')}</Card.Title>
         </Card.Header>
         <Card.Content className="flex max-h-72 flex-col gap-1.5 overflow-y-auto text-sm">
           {state.history.map((record) => (
             <div key={record.turnIndex} className="flex items-baseline justify-between gap-3">
               <span className="min-w-0 truncate text-muted">
-                {state.teams.find((t) => t.id === record.teamId)?.name ?? 'team'} - {record.categoryId}{' '}
-                <span className="text-muted">({record.difficulty})</span>
+                {state.teams.find((t2) => t2.id === record.teamId)?.name ?? t('team_fallback')} -{' '}
+                {record.categoryId} <span className="text-muted">({record.difficulty})</span>
               </span>
               <span
                 className={`font-mono tabular-nums ${
@@ -74,7 +79,7 @@ export function Results(): ReactNode {
 
       <ActionBar>
         <Button variant="primary" size="lg" fullWidth onPress={leave}>
-          Done
+          {t('done')}
         </Button>
       </ActionBar>
     </Screen>
@@ -90,6 +95,7 @@ export function Results(): ReactNode {
  * every game: if the winning streaks are routinely long, the default changes.
  */
 function StreakReport({ state }: { state: GameState }): ReactNode {
+  const { t } = useTranslation('results');
   const histogram = streakHistogram(state);
   const runs = Object.entries(histogram)
     .map(([length, count]) => ({ length: Number(length), count }))
@@ -102,22 +108,14 @@ function StreakReport({ state }: { state: GameState }): ReactNode {
   return (
     <Card variant="secondary">
       <Card.Header>
-        <Card.Title className="text-base">Streaks</Card.Title>
-        <Card.Description>
-          Longest unbroken run of correct answers: {longest}.
-        </Card.Description>
+        <Card.Title className="text-base">{t('streaks_title')}</Card.Title>
+        <Card.Description>{t('longest_streak', { count: longest })}</Card.Description>
       </Card.Header>
       <Card.Content>
         {longest >= 6 ? (
-          <Notice tone="warn">
-            One team held the turn for {longest} questions in a row. If that keeps happening, turn on
-            &quot;pass the turn after 3 in a row&quot; when hosting - otherwise the other teams spend
-            the game watching.
-          </Notice>
+          <Notice tone="warn">{t('streak_warning', { count: longest })}</Notice>
         ) : (
-          <p className="text-sm text-muted">
-            The turn moved around, which is what you want.
-          </p>
+          <p className="text-sm text-muted">{t('streak_ok')}</p>
         )}
       </Card.Content>
     </Card>

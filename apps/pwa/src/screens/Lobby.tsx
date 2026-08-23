@@ -1,7 +1,8 @@
-import { confusablePlayerPairs, isBanned, SEED_PACK_HASH, startCheck, teamOf } from '@dohhh/engine';
+import { confusablePlayerPairs, isBanned, startCheck, teamOf } from '@dohhh/engine';
 import { ticketUrl } from '@dohhh/net';
 import { Button, Card, Chip, Input } from '@heroui/react';
 import { useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { ticketFor, useApp } from '../lib/store.js';
 import {
@@ -18,8 +19,11 @@ import { QrImage } from '../ui/qr.jsx';
 const MESH_COMFORT_LIMIT = 10;
 
 export function Lobby(): ReactNode {
+  const { t } = useTranslation('lobby');
+  const { t: tc } = useTranslation('common');
   const snapshot = useApp((s) => s.snapshot);
   const identity = useApp((s) => s.identity);
+  const locale = useApp((s) => s.locale);
   const addTeam = useApp((s) => s.addTeam);
   const sitWith = useApp((s) => s.sitWith);
   const leaveCurrentTeam = useApp((s) => s.leaveCurrentTeam);
@@ -35,13 +39,10 @@ export function Lobby(): ReactNode {
   if (state === null || identity === null || snapshot === null) {
     return (
       <Screen title="Lobby">
-        <Notice>
-          Waiting for the game to arrive from the other devices. If nothing happens, the code may be
-          wrong or you may be on a different network.
-        </Notice>
+        <Notice>{t('waiting_for_game')}</Notice>
         <ActionBar>
           <Button variant="ghost" fullWidth onPress={leave}>
-            Leave
+            {tc('actions.leave')}
           </Button>
         </ActionBar>
       </Screen>
@@ -51,12 +52,10 @@ export function Lobby(): ReactNode {
   if (isBanned(state, identity.id)) {
     return (
       <Screen title={state.name}>
-        <Notice tone="danger">
-          The host removed you from this game. You can still start or join a different one.
-        </Notice>
+        <Notice tone="danger">{t('removed')}</Notice>
         <ActionBar>
           <Button variant="ghost" fullWidth onPress={leave}>
-            Leave
+            {tc('actions.leave')}
           </Button>
         </ActionBar>
       </Screen>
@@ -66,14 +65,18 @@ export function Lobby(): ReactNode {
   const myTeam = teamOf(state, identity.id);
   const gate = startCheck(state, identity.id);
   const isHost = state.hostId === identity.id;
-  const ticket = ticketFor({ gameId: state.gameId, joinCode: state.joinCode });
-  const packMatches = SEED_PACK_HASH.startsWith(ticket.packHash);
+  const ticket = ticketFor({ gameId: state.gameId, joinCode: state.joinCode }, locale);
+  const packMatches = snapshot.state?.packHash === undefined || ticket.packHash.startsWith(snapshot.state.packHash);
   const deviceCount = snapshot.peerCount + 1;
 
   return (
     <Screen
       title={state.name}
-      subtitle={isHost ? 'You are hosting' : `Hosted by ${state.players[state.hostId]?.username ?? 'someone'}`}
+      subtitle={
+        isHost
+          ? t('hosting_you')
+          : t('hosting_other', { name: state.players[state.hostId]?.username ?? t('someone') })
+      }
       aside={
         <ConnectionPill
           status={snapshot.status}
@@ -82,12 +85,7 @@ export function Lobby(): ReactNode {
         />
       }
     >
-      {!packMatches && (
-        <Notice tone="danger">
-          Your question pack does not match this game. You would be asked different questions from
-          everyone else. Update both devices before playing.
-        </Notice>
-      )}
+      {!packMatches && <Notice tone="danger">{t('pack_mismatch')}</Notice>}
 
       <StalledWarning
         status={snapshot.status}
@@ -100,46 +98,33 @@ export function Lobby(): ReactNode {
           <div className="flex items-center justify-between gap-3">
             <span>{error}</span>
             <Button variant="ghost" size="sm" onPress={dismissError}>
-              Dismiss
+              {t('dismiss')}
             </Button>
           </div>
         </Notice>
       )}
 
-      {snapshot.diverged && (
-        <Notice tone="warn">
-          This device disagrees with another about what has happened in this game. That should not
-          be possible; restart the game rather than playing on.
-        </Notice>
-      )}
+      {snapshot.diverged && <Notice tone="warn">{t('diverged')}</Notice>}
 
-      {snapshot.peerVersionMismatch && (
-        <Notice tone="warn">
-          Another device in this room is running a different version of Dohhh or a different
-          question pack. It has been ignored rather than risking a mismatched game - update every
-          device to the same version.
-        </Notice>
-      )}
+      {snapshot.peerVersionMismatch && <Notice tone="warn">{t('peer_version_mismatch')}</Notice>}
 
       {confusablePlayerPairs(state).map(({ a, b }) => (
         <Notice key={`${a}-${b}`} tone="warn">
-          {state.players[a]?.username ?? 'Someone'} and {state.players[b]?.username ?? 'someone'} have
-          names that look identical at a glance - worth checking who's actually who before the game
-          gets going.
+          {t('confusable_names', {
+            a: state.players[a]?.username ?? t('someone'),
+            b: state.players[b]?.username ?? t('someone'),
+          })}
         </Notice>
       ))}
 
       {deviceCount > MESH_COMFORT_LIMIT && (
-        <Notice tone="warn">
-          {deviceCount} devices connected. Every device connects to every other, so this has been
-          tested to about eight. Expect it to get slow.
-        </Notice>
+        <Notice tone="warn">{t('mesh_warning', { count: deviceCount })}</Notice>
       )}
 
       <Card>
         <Card.Header>
-          <Card.Title>Invite</Card.Title>
-          <Card.Description>Have them point a camera at this, or read the words out.</Card.Description>
+          <Card.Title>{t('invite.title')}</Card.Title>
+          <Card.Description>{t('invite.description')}</Card.Description>
         </Card.Header>
         <Card.Content className="flex flex-col gap-4">
           <QrImage value={ticketUrl(globalThis.location.origin + globalThis.location.pathname, ticket)} />
@@ -155,14 +140,12 @@ export function Lobby(): ReactNode {
 
       <Card>
         <Card.Header>
-          <Card.Title>Teams</Card.Title>
-          <Card.Description>
-            Any number per team. Join one, or switch - joining another moves you off the last one.
-          </Card.Description>
+          <Card.Title>{t('teams.title')}</Card.Title>
+          <Card.Description>{t('teams.description')}</Card.Description>
         </Card.Header>
         <Card.Content className="flex flex-col gap-3">
           {state.teams.length === 0 && (
-            <p className="text-sm text-muted">No teams yet. Make the first one.</p>
+            <p className="text-sm text-muted">{t('teams.none_yet')}</p>
           )}
           {state.teams.map((team) => {
             const mine = team.id === myTeam?.id;
@@ -178,7 +161,7 @@ export function Lobby(): ReactNode {
                   <div className="flex items-center gap-2">
                     {mine && (
                       <Chip color="success" variant="soft" size="sm">
-                        You
+                        {t('teams.you')}
                       </Chip>
                     )}
                     <Button
@@ -186,19 +169,19 @@ export function Lobby(): ReactNode {
                       size="sm"
                       onPress={() => (mine ? leaveCurrentTeam(team.id) : sitWith(team.id))}
                     >
-                      {mine ? 'Leave' : 'Join'}
+                      {mine ? t('teams.leave') : t('teams.join')}
                     </Button>
                   </div>
                 </div>
                 <div className="mt-1.5 flex flex-col gap-1 text-sm text-muted">
                   {team.memberIds.length === 0 ? (
-                    <span className="text-xs italic">empty</span>
+                    <span className="text-xs italic">{t('teams.empty')}</span>
                   ) : (
                     team.memberIds.map((id) => (
                       <div key={id} className="flex items-center justify-between gap-2">
-                        <PlayerTag id={id} username={state.players[id]?.username ?? 'someone'} />
+                        <PlayerTag id={id} username={state.players[id]?.username ?? t('someone')} />
                         {isHost && id !== identity.id && (
-                          <KickButton onPress={() => kickPlayer(id)} />
+                          <KickButton onPress={() => kickPlayer(id)} t={t} />
                         )}
                       </div>
                     ))
@@ -212,8 +195,8 @@ export function Lobby(): ReactNode {
             <Input
               value={teamName}
               onChange={(event) => setTeamName(event.target.value)}
-              placeholder="Team name"
-              aria-label="New team name"
+              placeholder={t('teams.name_placeholder')}
+              aria-label={t('teams.name_label')}
               maxLength={24}
               fullWidth
             />
@@ -225,7 +208,7 @@ export function Lobby(): ReactNode {
                 setTeamName('');
               }}
             >
-              Add
+              {t('teams.add')}
             </Button>
           </div>
         </Card.Content>
@@ -234,13 +217,15 @@ export function Lobby(): ReactNode {
       {state.spectatorIds.length > 0 && (
         <Card variant="secondary">
           <Card.Header>
-            <Card.Title className="text-base">Not on a team yet</Card.Title>
+            <Card.Title className="text-base">{t('spectators.title')}</Card.Title>
           </Card.Header>
           <Card.Content className="flex flex-col gap-1 text-sm text-muted">
             {state.spectatorIds.map((id) => (
               <div key={id} className="flex items-center justify-between gap-2">
-                <PlayerTag id={id} username={state.players[id]?.username ?? 'someone'} />
-                {isHost && id !== identity.id && <KickButton onPress={() => kickPlayer(id)} />}
+                <PlayerTag id={id} username={state.players[id]?.username ?? t('someone')} />
+                {isHost && id !== identity.id && (
+                  <KickButton onPress={() => kickPlayer(id)} t={t} />
+                )}
               </div>
             ))}
           </Card.Content>
@@ -249,36 +234,40 @@ export function Lobby(): ReactNode {
 
       <Card variant="secondary">
         <Card.Header>
-          <Card.Title className="text-base">This game</Card.Title>
+          <Card.Title className="text-base">{t('game_info.title')}</Card.Title>
         </Card.Header>
         <Card.Content className="flex flex-col gap-1 text-sm text-muted">
-          <Line label="First to" value={`${state.rules.targetScore} points`} />
           <Line
-            label="Correct answer"
+            label={t('game_info.first_to_label')}
+            value={t('game_info.first_to_value', { count: state.rules.targetScore })}
+          />
+          <Line
+            label={t('game_info.correct_answer_label')}
             value={
               state.rules.maxCorrectStreakPerTurn === null
-                ? 'keeps the turn, no limit'
-                : `keeps the turn, max ${state.rules.maxCorrectStreakPerTurn}`
+                ? t('game_info.correct_answer_no_limit')
+                : t('game_info.correct_answer_max', { count: state.rules.maxCorrectStreakPerTurn })
             }
           />
           <Line
-            label="Scores"
-            value={state.rules.scoreFloor === null ? 'can go negative' : 'floored at zero'}
+            label={t('game_info.scores_label')}
+            value={
+              state.rules.scoreFloor === null
+                ? t('game_info.scores_negative')
+                : t('game_info.scores_floored')
+            }
           />
         </Card.Content>
       </Card>
 
       <Card variant="secondary">
         <Card.Header>
-          <Card.Title className="text-base">Room</Card.Title>
-          <Card.Description>
-            The join code is the only lock this game has otherwise - closing the door stops anyone
-            new from joining, whether or not they have it. Players already here are unaffected.
-          </Card.Description>
+          <Card.Title className="text-base">{t('room.title')}</Card.Title>
+          <Card.Description>{t('room.description')}</Card.Description>
         </Card.Header>
         <Card.Content className="flex items-center justify-between gap-3">
           <span className="text-sm text-default-foreground">
-            {state.locked ? 'Locked - nobody new can join' : 'Open - anyone with the code can join'}
+            {state.locked ? t('room.locked') : t('room.open')}
           </span>
           {isHost ? (
             <Button
@@ -286,11 +275,11 @@ export function Lobby(): ReactNode {
               size="sm"
               onPress={() => setRoomLocked(!state.locked)}
             >
-              {state.locked ? 'Unlock' : 'Lock'}
+              {state.locked ? t('room.unlock') : t('room.lock')}
             </Button>
           ) : (
             <Chip color={state.locked ? 'warning' : 'default'} variant="soft" size="sm">
-              {state.locked ? 'Locked' : 'Open'}
+              {state.locked ? t('room.locked_chip') : t('room.open_chip')}
             </Chip>
           )}
         </Card.Content>
@@ -303,18 +292,16 @@ export function Lobby(): ReactNode {
               <p className="text-center text-xs text-muted">{gate.reason}</p>
             )}
             <Button variant="primary" size="lg" fullWidth isDisabled={!gate.ready} onPress={begin}>
-              Start the game
+              {t('start.start_game')}
             </Button>
           </>
         ) : (
           <div className="rounded-xl border border-border/40 px-4 py-3 text-center text-sm text-muted">
-            {myTeam === undefined
-              ? 'Pick a team, then wait for the host.'
-              : 'Ready. Waiting for the host to start.'}
+            {myTeam === undefined ? t('start.pick_team') : t('start.ready_waiting')}
           </div>
         )}
         <Button variant="ghost" fullWidth onPress={leave}>
-          Leave game
+          {t('start.leave_game')}
         </Button>
       </ActionBar>
     </Screen>
@@ -322,12 +309,18 @@ export function Lobby(): ReactNode {
 }
 
 /** Host-only, confirm-on-second-press rather than a modal - a kick is rare enough not to need one. */
-function KickButton({ onPress }: { onPress: () => void }): ReactNode {
+function KickButton({
+  onPress,
+  t,
+}: {
+  onPress: () => void;
+  t: (key: string) => string;
+}): ReactNode {
   const [confirming, setConfirming] = useState(false);
   if (!confirming) {
     return (
       <Button variant="ghost" size="sm" onPress={() => setConfirming(true)}>
-        Kick
+        {t('kick.kick')}
       </Button>
     );
   }
@@ -340,7 +333,7 @@ function KickButton({ onPress }: { onPress: () => void }): ReactNode {
         onPress();
       }}
     >
-      Confirm kick?
+      {t('kick.confirm')}
     </Button>
   );
 }

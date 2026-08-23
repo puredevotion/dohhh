@@ -13,6 +13,9 @@ export type GameId = string;
 export type CategoryId = string;
 export type QuestionId = string;
 
+/** Supported content/UI languages. */
+export type Locale = 'en' | 'nl';
+
 /**
  * The bet. Names are the product (see ADVERSARIAL-REVIEW R-13): a player is not
  * asked "do you know this" but "how much do you think you know this".

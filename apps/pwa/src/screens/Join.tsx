@@ -2,6 +2,7 @@ import { completeWord, isValidJoinCode, WORDS_PER_CODE } from '@dohhh/engine';
 import { parseScanned } from '@dohhh/net';
 import { Button, Card, Input, Spinner } from '@heroui/react';
 import { useEffect, useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { navigate, useRoute } from '../lib/router.js';
 import { useApp } from '../lib/store.js';
@@ -9,6 +10,8 @@ import { ActionBar, Notice, Screen } from '../ui/atoms.jsx';
 import { QrCamera } from '../ui/qr.jsx';
 
 export function Join(): ReactNode {
+  const { t } = useTranslation('join');
+  const { t: tc } = useTranslation('common');
   const route = useRoute();
   const joinByCode = useApp((s) => s.joinByCode);
   const joinByTicket = useApp((s) => s.joinByTicket);
@@ -33,7 +36,7 @@ export function Join(): ReactNode {
   const codeReady = isValidJoinCode(code);
 
   return (
-    <Screen title="Join a game" subtitle="Scan the host's code, or type the four words.">
+    <Screen title={t('title')} subtitle={t('subtitle')}>
       <div className="flex gap-2">
         <Button
           variant={mode === 'scan' ? 'primary' : 'ghost'}
@@ -41,7 +44,7 @@ export function Join(): ReactNode {
           fullWidth
           onPress={() => setMode('scan')}
         >
-          Scan a code
+          {t('scan_a_code')}
         </Button>
         <Button
           variant={mode === 'type' ? 'primary' : 'ghost'}
@@ -49,7 +52,7 @@ export function Join(): ReactNode {
           fullWidth
           onPress={() => setMode('type')}
         >
-          Type the words
+          {t('type_the_words')}
         </Button>
       </div>
 
@@ -58,7 +61,7 @@ export function Join(): ReactNode {
           <div className="flex flex-col gap-2">
             <span>{error}</span>
             <Button variant="ghost" size="sm" onPress={dismissError}>
-              Try again
+              {t('try_again')}
             </Button>
           </div>
         </Notice>
@@ -81,10 +84,8 @@ export function Join(): ReactNode {
       ) : (
         <Card>
           <Card.Header>
-            <Card.Title>Four words</Card.Title>
-            <Card.Description>
-              Ask the host to read them out. Order matters; capitals do not.
-            </Card.Description>
+            <Card.Title>{t('four_words')}</Card.Title>
+            <Card.Description>{t('four_words_description')}</Card.Description>
           </Card.Header>
           <Card.Content className="flex flex-col gap-3">
             {words.map((word, index) => (
@@ -110,11 +111,11 @@ export function Join(): ReactNode {
             isDisabled={!codeReady || busy !== null}
             onPress={() => void joinByCode(code)}
           >
-            {codeReady ? 'Join this game' : 'Enter all four words'}
+            {codeReady ? t('join_this_game') : t('enter_all_four_words')}
           </Button>
         )}
         <Button variant="ghost" fullWidth onPress={() => navigate('/')}>
-          Back
+          {tc('actions.back')}
         </Button>
       </ActionBar>
     </Screen>
@@ -135,6 +136,7 @@ function WordField({
   value: string;
   onChange: (next: string) => void;
 }): ReactNode {
+  const { t } = useTranslation('join');
   const matches = value.trim().length >= 2 ? completeWord(value, 4) : [];
   const exact = matches.length === 1 && matches[0] === value.trim().toLowerCase();
 
@@ -147,8 +149,8 @@ function WordField({
         <Input
           value={value}
           onChange={(event) => onChange(event.target.value)}
-          placeholder="word"
-          aria-label={`Word ${position} of the join code`}
+          placeholder={t('word_placeholder')}
+          aria-label={t('word_label', { position })}
           autoComplete="off"
           autoCapitalize="none"
           autoCorrect="off"

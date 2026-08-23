@@ -1,0 +1,77 @@
+{
+  "banned": {
+    "notice": "The host removed you from this game. Whatever was in progress for your team continues without you; you can start or join a different one."
+  },
+  "title": {
+    "team_to_play": "{{team}} to play"
+  },
+  "subtitle": {
+    "sudden_death": "Sudden death: the leaders are level and playing it out.",
+    "final_round": "Final round: someone has crossed the line, so everyone gets an equal number of turns.",
+    "round": "Round {{round}}, first to {{target}}"
+  },
+  "dismiss": "Dismiss",
+  "watching_notice": "You are watching this one. You will be able to join a team for the next game.",
+  "unexpected_peer_one": "{{deviceCount}} devices connected but only {{knownPlayers}} known player. Someone may be watching who never joined - the join code is the only lock this game has.",
+  "unexpected_peer_other": "{{deviceCount}} devices connected but only {{knownPlayers}} known players. Someone may be watching who never joined - the join code is the only lock this game has.",
+  "announcer": {
+    "ran_out_of_time": "ran out of time",
+    "were_right": "were right",
+    "were_wrong": "were wrong",
+    "outcome": "{{team}} {{outcome}}, {{delta}} points.",
+    "turn": "{{team}}'s turn.",
+    "they": "They"
+  },
+  "scores": {
+    "you": "you",
+    "playing": "playing",
+    "progress_label": "{{team}} progress toward {{target}}",
+    "streak_one": "{{count}} correct in a row - the turn has not moved.",
+    "streak_other": "{{count}} correct in a row - the turn has not moved."
+  },
+  "between_turns": {
+    "next_team": "Next team",
+    "title": "{{team}} are up",
+    "description_can_deal": "You'll get three categories to choose from for their question. They cannot deal their own - that is what stops them knowing the question in advance.",
+    "description_solo_dealing": "The dealer is drawing three categories to choose from.",
+    "description_opponent_dealing": "An opposing team is dealing three categories to choose from.",
+    "deal_button": "Deal three categories",
+    "waiting_for_opponents": "Waiting for your opponents to deal."
+  },
+  "solo_deal_countdown": {
+    "next_question_in": "Next question in {{seconds}}s"
+  },
+  "outcome": {
+    "ran_out_of_time": "ran out of time",
+    "were_right": "were right",
+    "were_wrong": "were wrong",
+    "they": "They",
+    "answered": "Answered: ",
+    "they_said": "They said: ",
+    "answer": "Answer: "
+  },
+  "choose_category": {
+    "title": "Choose a category",
+    "description_can_choose": "Pick one of the three - they will not know which until you do.",
+    "description_solo_revealing": "The dealer is revealing which one you get.",
+    "description_opponent_choosing": "An opposing player is choosing which of three categories to deal."
+  },
+  "choose_tier": {
+    "your_category_is": "Your category is",
+    "betting_question": "How hard do you want it? You are betting before you see the question.",
+    "waiting_for_them": "them",
+    "waiting_for_team": "Waiting for {{team}} to choose a level.",
+    "seconds_to_answer": "{{seconds}} seconds to answer"
+  },
+  "live_question": {
+    "repeat_suffix": " - seen before, the pack ran dry",
+    "nominated_note": "{{name}}'s turn to answer for the team - though anyone on it can tap.",
+    "opponent_note": "Their question. You can see it, so no helping."
+  },
+  "call_time_button": "Something stuck? Call time",
+  "phase_timer": {
+    "seconds_to_decide": "{{seconds}}s to decide",
+    "call_time": "Call time"
+  },
+  "low_time_announcement": "Ten seconds left."
+}

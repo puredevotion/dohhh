@@ -1,6 +1,7 @@
 import { DEFAULT_RULES, type RulesConfig } from '@dohhh/engine';
 import { Button, Card, Input, Switch } from '@heroui/react';
 import { useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { navigate } from '../lib/router.js';
 import { useApp } from '../lib/store.js';
@@ -14,6 +15,8 @@ import { ActionBar, Notice, Screen } from '../ui/atoms.jsx';
  * failure mode should be able to fix its own game without waiting for a release.
  */
 export function Create(): ReactNode {
+  const { t } = useTranslation('create');
+  const { t: tc } = useTranslation('common');
   const host = useApp((s) => s.host);
   const identity = useApp((s) => s.identity);
   const [name, setName] = useState('');
@@ -32,20 +35,20 @@ export function Create(): ReactNode {
 
   return (
     <Screen
-      title="Host a game"
-      subtitle={`You will be the host, ${identity?.username ?? 'you'}. Others scan your code to join.`}
+      title={t('title')}
+      subtitle={t('subtitle', { username: identity?.username ?? t('default_username') })}
     >
       <Card>
         <Card.Header>
-          <Card.Title>Name the game</Card.Title>
-          <Card.Description>Shown to anyone who scans your code.</Card.Description>
+          <Card.Title>{t('name_card.title')}</Card.Title>
+          <Card.Description>{t('name_card.description')}</Card.Description>
         </Card.Header>
         <Card.Content>
           <Input
             value={name}
             onChange={(event) => setName(event.target.value)}
-            placeholder="Thursday night"
-            aria-label="Game name"
+            placeholder={t('name_placeholder')}
+            aria-label={t('name_label')}
             maxLength={40}
             fullWidth
           />
@@ -54,57 +57,43 @@ export function Create(): ReactNode {
 
       <Card>
         <Card.Header>
-          <Card.Title>Target score</Card.Title>
-          <Card.Description>
-            46 is the standard. Whoever crosses it first wins outright - no waiting for the round to
-            finish, no equal-turns fairness rule.
-          </Card.Description>
+          <Card.Title>{t('target_card.title')}</Card.Title>
+          <Card.Description>{t('target_card.description')}</Card.Description>
         </Card.Header>
         <Card.Content>
           <Input
             value={target}
             onChange={(event) => setTarget(event.target.value)}
             inputMode="numeric"
-            aria-label="Target score"
+            aria-label={t('target_label')}
             fullWidth
           />
-          {!targetOk && (
-            <p className="mt-2 text-xs text-danger-text">Pick a number between 5 and 1000.</p>
-          )}
+          {!targetOk && <p className="mt-2 text-xs text-danger-text">{t('target_error')}</p>}
         </Card.Content>
       </Card>
 
       <Card>
         <Card.Header>
-          <Card.Title>House rules</Card.Title>
-          <Card.Description>Both off is the game exactly as specified.</Card.Description>
+          <Card.Title>{t('rules_card.title')}</Card.Title>
+          <Card.Description>{t('rules_card.description')}</Card.Description>
         </Card.Header>
         <Card.Content className="flex flex-col gap-4">
           <Switch isSelected={capStreak} onChange={setCapStreak}>
             <div className="flex flex-col">
-              <span className="text-sm font-medium">Pass the turn after 3 in a row</span>
-              <span className="text-xs text-muted">
-                Without this, a team that keeps answering correctly keeps the turn forever - which
-                can mean one team plays the whole game while everyone watches.
-              </span>
+              <span className="text-sm font-medium">{t('cap_streak.label')}</span>
+              <span className="text-xs text-muted">{t('cap_streak.description')}</span>
             </div>
           </Switch>
           <Switch isSelected={floorScore} onChange={setFloorScore}>
             <div className="flex flex-col">
-              <span className="text-sm font-medium">Never go below zero</span>
-              <span className="text-xs text-muted">
-                Kinder, but it makes the professor-level question a free bet, which is the whole
-                tension gone.
-              </span>
+              <span className="text-sm font-medium">{t('floor_score.label')}</span>
+              <span className="text-xs text-muted">{t('floor_score.description')}</span>
             </div>
           </Switch>
         </Card.Content>
       </Card>
 
-      <Notice>
-        You need at least two teams with a player each before the game can start. Two people on one
-        team is not a game.
-      </Notice>
+      <Notice>{t('notice')}</Notice>
 
       <ActionBar>
         <Button
@@ -112,12 +101,12 @@ export function Create(): ReactNode {
           size="lg"
           fullWidth
           isDisabled={!targetOk}
-          onPress={() => host(name.trim().length === 0 ? 'Dohhh game' : name.trim(), rules)}
+          onPress={() => host(name.trim().length === 0 ? t('default_game_name') : name.trim(), rules)}
         >
-          Open the lobby
+          {t('open_lobby')}
         </Button>
         <Button variant="ghost" fullWidth onPress={() => navigate('/')}>
-          Back
+          {tc('actions.back')}
         </Button>
       </ActionBar>
     </Screen>

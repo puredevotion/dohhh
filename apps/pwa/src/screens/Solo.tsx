@@ -1,6 +1,7 @@
 import { DEFAULT_RULES, type RulesConfig } from '@dohhh/engine';
 import { Button, Card, Input, Switch } from '@heroui/react';
 import { useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { navigate } from '../lib/router.js';
 import { useApp } from '../lib/store.js';
@@ -12,6 +13,8 @@ import { ActionBar, Screen } from '../ui/atoms.jsx';
  * the rest (team, bot, start) the instant this screen hands it the rules.
  */
 export function Solo(): ReactNode {
+  const { t } = useTranslation('solo');
+  const { t: tc } = useTranslation('common');
   const hostSolo = useApp((s) => s.hostSolo);
   const [capStreak, setCapStreak] = useState(false);
   const [floorScore, setFloorScore] = useState(false);
@@ -27,16 +30,12 @@ export function Solo(): ReactNode {
   };
 
   return (
-    <Screen
-      title="Play solo"
-      subtitle="A local dealer deals you a choice of three categories the instant you're ready - no opponent, no waiting."
-    >
+    <Screen title={t('title')} subtitle={t('subtitle')}>
       <Card>
         <Card.Header>
-          <Card.Title>Target score</Card.Title>
+          <Card.Title>{t('target_score.title')}</Card.Title>
           <Card.Description>
-            {DEFAULT_RULES.targetScore} is the standard. Reach it and the game ends - there's
-            nobody else to catch up.
+            {t('target_score.description', { target: DEFAULT_RULES.targetScore })}
           </Card.Description>
         </Card.Header>
         <Card.Content>
@@ -44,36 +43,31 @@ export function Solo(): ReactNode {
             value={target}
             onChange={(event) => setTarget(event.target.value)}
             inputMode="numeric"
-            aria-label="Target score"
+            aria-label={t('target_score_label')}
             fullWidth
           />
           {!targetOk && (
-            <p className="mt-2 text-xs text-danger-text">Pick a number between 5 and 1000.</p>
+            <p className="mt-2 text-xs text-danger-text">{t('target_score_error')}</p>
           )}
         </Card.Content>
       </Card>
 
       <Card>
         <Card.Header>
-          <Card.Title>House rules</Card.Title>
-          <Card.Description>Both off is the game exactly as specified.</Card.Description>
+          <Card.Title>{t('house_rules.title')}</Card.Title>
+          <Card.Description>{t('house_rules.description')}</Card.Description>
         </Card.Header>
         <Card.Content className="flex flex-col gap-4">
           <Switch isSelected={capStreak} onChange={setCapStreak}>
             <div className="flex flex-col">
-              <span className="text-sm font-medium">Cap correct streaks at 3</span>
-              <span className="text-xs text-muted">
-                Purely a display reset here - solo, nobody's waiting for the turn back regardless.
-              </span>
+              <span className="text-sm font-medium">{t('cap_streak.label')}</span>
+              <span className="text-xs text-muted">{t('cap_streak.description')}</span>
             </div>
           </Switch>
           <Switch isSelected={floorScore} onChange={setFloorScore}>
             <div className="flex flex-col">
-              <span className="text-sm font-medium">Never go below zero</span>
-              <span className="text-xs text-muted">
-                Kinder, but it makes the Dohhh-tier question a free bet, which is the whole tension
-                gone.
-              </span>
+              <span className="text-sm font-medium">{t('floor_score.label')}</span>
+              <span className="text-xs text-muted">{t('floor_score.description')}</span>
             </div>
           </Switch>
         </Card.Content>
@@ -87,10 +81,10 @@ export function Solo(): ReactNode {
           isDisabled={!targetOk}
           onPress={() => hostSolo(rules)}
         >
-          Start
+          {tc('actions.start')}
         </Button>
         <Button variant="ghost" fullWidth onPress={() => navigate('/')}>
-          Back
+          {tc('actions.back')}
         </Button>
       </ActionBar>
     </Screen>

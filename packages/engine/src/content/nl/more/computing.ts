@@ -1,0 +1,681 @@
+import type { CategoryContent } from '../../row.js';
+
+/** Halfgeleiders en software-engineering, tweede deel. Correcte optie eerst; wordt bij build geroteerd. */
+
+export const MORE_SILICON: CategoryContent = {
+  graduate: [
+    [
+      'Waar verwijst de "toon" (tone) van een fotoresist naar?',
+      [
+        'Of belichte gebieden bij ontwikkeling worden verwijderd (positief) of juist behouden (negatief)',
+        'Of de resist reageert op ultraviolet licht of op een elektronenbundel',
+        'Of de resist wordt opgebracht door spin-coating of door dampdepositie',
+        'Of de resist een post-exposure bake nodig heeft',
+      ],
+      0,
+      'Positieve toon overheerst omdat die over het algemeen betere resolutie geeft bij geïsoleerde structuren; negatieve toon overleeft in specifieke gevallen met dichte lijnenpatronen.',
+    ],
+    [
+      'Waarvoor dient chemisch-mechanische planarisatie?',
+      [
+        'De wafer tussen lagen weer vlak maken zodat de lithografie scherp blijft',
+        'Native oxide verwijderen voor de gate-depositie',
+        'De wafer verdunnen voor verpakking, zodat gestapelde die-assemblages binnen het hoogtebudget blijven',
+        'Deeltjesvervuiling na het etsen verwijderen',
+      ],
+      0,
+      'De scherptediepte bij moderne numerieke aperturen is enkele tientallen nanometers, dus topografie van een vorige laag is fataal zonder deze stap.',
+    ],
+    [
+      'Wat betekent "yield" als economische grootheid in de halfgeleiderindustrie?',
+      [
+        'Het aandeel dies op een wafer dat aan de specificatie voldoet en verkocht kan worden',
+        'Het aantal wafers dat een fab per week kan verwerken',
+        'Het aandeel van het waferoppervlak dat door bruikbare dies wordt ingenomen',
+        'De verhouding tussen functionerende en totale transistors op een die',
+      ],
+      0,
+      'Omdat yield afneemt met de die-oppervlakte, is dit precies de reden dat grote ontwerpen worden opgesplitst en waarom binning als bedrijfspraktijk bestaat.',
+    ],
+    [
+      'Wat is een drempelspanning (threshold voltage)?',
+      [
+        'De gate-spanning waarbij een MOSFET-kanaal merkbaar begint te geleiden',
+        'De drain-spanning waarbij de transistor in verzadiging raakt',
+        'De gate-spanning waarbij de oxidelaag doorslaat',
+        'De minimale voedingsspanning waarbij een logische poort correct schakelt',
+      ],
+      0,
+      'De variabiliteit ervan tussen nominaal identieke componenten is een van de centrale problemen van geschaalde productie.',
+    ],
+    [
+      'Wat heeft DRAM nodig dat SRAM niet nodig heeft?',
+      [
+        'Periodieke refresh, omdat lading weglekt uit de opslagcondensator',
+        'Een apart voedingsniveau voor de sense-versterkers',
+        'Foutcorrectiecodes om überhaupt te functioneren',
+        'Een eigen klokdomein onafhankelijk van de processor',
+      ],
+      0,
+      'Één transistor en één condensator per cel tegenover zes transistors: dichtheid in ruil voor refresh-vermogen en latentie.',
+    ],
+    [
+      'Waarvoor wordt "multi-patterning" gebruikt?',
+      [
+        'Structuren afdrukken die fijner zijn dan één belichting kan oplossen',
+        'Meerdere wafers gelijktijdig belichten om de doorvoer te verhogen',
+        'Hetzelfde patroon op meerdere diepten binnen een gestapeld component afdrukken',
+        'Optische en elektronenbundellithografie combineren op één laag',
+      ],
+      0,
+      'LELE en SADP waren het antwoord op het feit dat 193 nm door zijn resolutie heen was, en elke extra belichting kost cyclustijd, overlay-budget en geld.',
+    ],
+    [
+      'Wat betekent de term "epitaxie"?',
+      [
+        'Groei van een kristallijne laag waarvan het rooster aansluit op het onderliggende substraat',
+        'Depositie van een amorfe film die later door annealing kristalliseert',
+        'Implantatie van doteringsionen gevolgd door roosterherstel',
+        'Selectieve verwijdering van materiaal langs kristalvlakken',
+      ],
+      0,
+      'Gespannen silicium werkt precies door bewuste roostermismatch, wat de ladingsdragersmobiliteit verhoogt zonder het materiaal te veranderen.',
+    ],
+    [
+      'Wat is het doel van een guard ring in de layout van een geïntegreerd circuit?',
+      [
+        'Zwevende ladingsdragers opvangen om latch-up en substraatkoppeling te onderdrukken',
+        'Bescherming tegen elektrostatische ontlading bieden bij de pads',
+        'Een referentiepotentiaal instellen voor analoge comparators',
+        'De scribe-lijn markeren voor het verzagen van de wafer',
+      ],
+      0,
+      'Het is een van de standaard structurele verdedigingen tegen een CMOS-faalmodus die anders catastrofaal en zelfversterkend is.',
+    ],
+    [
+      'Wat stelt een "roofline-analyse" van een accelerator-kernel vast?',
+      [
+        'Of de prestatie wordt beperkt door rekendoorvoer of door geheugenbandbreedte, op basis van de rekenintensiteit',
+        'De theoretische piek-FLOPS van het apparaat, op basis van klokfrequentie en het aantal beschikbare fused-multiply-add-eenheden',
+        'De optimale thread-blockgrootte voor een gegeven kernel',
+        'De energie die per drijvendekommabewerking wordt verbruikt',
+      ],
+      0,
+      'Williams, Waterman en Patterson. Het vertelt je welke optimalisatie de moeite waard is, wat nuttiger is dan de piekwaarde kennen.',
+    ],
+    [
+      'Wat onderscheidt een systolische array van een algemene SIMD-eenheid?',
+      [
+        'Data stroomt ritmisch tussen vaste verwerkingseenheden',
+        'Er wordt één instructie uitgevoerd over veel onafhankelijke lanes',
+        'Er is out-of-order-uitvoering mogelijk binnen elke verwerkingseenheid',
+        'Er is geen klok nodig, omdat alles asynchroon werkt',
+      ],
+      0,
+      'Het idee van Kung en Leiserson uit 1978. Hergebruik van operanden binnen de array is precies wat matrix-vermenigvuldigingsversnellers energiezuinig maakt.',
+    ],
+  ],
+  phd: [
+    [
+      'Wat kwantificeert de term "overlay-budget"?',
+      [
+        'De toelaatbare misregistratie tussen opeenvolgende gepatroneerde lagen, in nanometers',
+        'De totale beschikbare belichtingsdosis over een wafer',
+        'De tolerantie op de kritische afmeting binnen één laag',
+        'De toelaatbare vervorming van de wafer tijdens de verwerking',
+      ],
+      0,
+      'Multi-patterning verbruikt dit snel, omdat elke extra belichting zijn eigen fout aan de stapeling toevoegt.',
+    ],
+    [
+      'Waarom heeft EUV een pellicle nodig, en waarom is dat moeilijk?',
+      [
+        'Om deeltjes van het masker weg te houden',
+        'Om de resist tijdens de belichting tegen oxidatie te beschermen',
+        'Om straling buiten de gewenste band uit de plasmabron te filteren',
+        'Om het masker plat tegen zijn elektrostatische chuck te houden',
+      ],
+      0,
+      'Transmissie en mechanische stevigheid trekken in tegengestelde richting, en dat is waarom pellicle-vrij werken zo lang werd getolereerd.',
+    ],
+    [
+      'Waarop is onderzoek naar "negatieve capaciteit" bij transistors gericht?',
+      [
+        'De grens van 60 mV per decade in de subthreshold-helling doorbreken met een ferro-elektrische gatestack',
+        'Gatelekstroom verminderen tot onder de grens van direct tunnelen',
+        'De noodzaak van een gate-dielektricum helemaal wegnemen, en daarmee de lekstroom die het veroorzaakt',
+        'Interne spanningsversterking bieden voor analoge schakelingen',
+      ],
+      0,
+      'De Boltzmann-limiet bepaalt de bodem van de voedingsspanning. Of gestabiliseerde negatieve capaciteit echt is of een meetartefact, wordt uitgebreid bediscussieerd.',
+    ],
+    [
+      'Waar verwijst de "memory wall" naar?',
+      [
+        'De groeiende kloof tussen processordoorvoer en geheugenbandbreedte-latentie, waardoor datatransport de kosten domineert',
+        'De fysieke grens aan DRAM-celschaling onder 10 nm',
+        'De adresruimtelimiet door 32-bits pointers, die het adresseerbare geheugen begrensde lang voordat capaciteit goedkoop werd',
+        'Het maximale aantal geheugenkanalen dat een package kan ondersteunen',
+      ],
+      0,
+      'Wulf en McKee, 1995. Elke cachehiërarchie, prefetcher en near-memory-voorstel sindsdien is een reactie hierop.',
+    ],
+    [
+      'Wat is het doel van een redistribution layer in geavanceerde verpakking?',
+      [
+        'Padposities op die-niveau herrouteren naar de pitch en locatie die het package vereist',
+        'Extra metaallagen bieden voor routing op de die zelf',
+        'Warmte van hotspots over het package-deksel verspreiden',
+        'Analoge en digitale voedingsdomeinen isoleren',
+      ],
+      0,
+      'Dit is wat fan-out wafer-level packaging en 2,5D-interposerassemblages mogelijk maakt zonder de die te wijzigen.',
+    ],
+    [
+      'Wat stelt "process-voltage-temperature"-hoekanalyse vast?',
+      [
+        'Dat een ontwerp timing en vermogen haalt over de gecombineerde uitersten van productie- en bedrijfsvariatie',
+        'De optimale voedingsspanning voor een gegeven klokfrequentie',
+        'Het faalpercentage van een component onder versnelde veroudering, geëxtrapoleerd naar de beoogde levensduur van het onderdeel',
+        'De maximale junctietemperatuur die het package kan verdragen',
+      ],
+      0,
+      'Het aantal hoeken explodeert combinatorisch bij geavanceerde nodes, en dat is precies waarom statistische timinganalyse bestaat.',
+    ],
+    [
+      'Wat beperkt het praktische voordeel van een grotere GPU-cache bij inferentie met grote modellen?',
+      [
+        'Werksets zijn veel groter dan enige haalbare cache',
+        'Cachecoherentie-overhead groeit sneller dan het hitpercentage',
+        'Grotere caches verlengen noodzakelijkerwijs de klokperiode',
+        'Compilers kunnen caches groter dan een vaste omvang niet benutten',
+      ],
+      0,
+      'Daarom gaat de engineering-inspanning naar HBM-bandbreedte, kwantisatie en operatorfusie in plaats van naar cachecapaciteit.',
+    ],
+    [
+      'Wat is het verschil tussen wafer-level en panel-level packaging?',
+      [
+        'Panel-level verwerkt grotere rechthoekige substraten, wat de oppervlaktebenutting verbetert ten koste van strengere controle op kromtrekken',
+        'Panel-level geldt alleen voor geheugencomponenten, omdat logica-dies het thermische budget van de panel-molding niet zouden verdragen',
+        'Wafer-level vereist through-silicon vias en panel-level niet',
+        'Panel-level kan geen fan-out-interconnect ondersteunen',
+      ],
+      0,
+      'Ronde wafers verspillen randoppervlak op rechthoekige dies; panelen verspillen minder maar zijn moeilijker vlak te houden, en dat is precies de afruil.',
+    ],
+    [
+      'Wat betekent "design technology co-optimisation" in de praktijk?',
+      [
+        'Procesregels en ontwerpregels samen itereren',
+        'Een ontwerp optimaliseren nadat het proces volledig is gekarakteriseerd',
+        'Een foundry-proces selecteren door een referentieontwerp te benchmarken',
+        'Het package en de printplaat gelijktijdig co-designen',
+      ],
+      0,
+      'De celhoogte van een standaardcel in aantal tracks is de klassieke gedeelde variabele: een keuze die tegelijk een proces- en een ontwerpbeperking is.',
+    ],
+    [
+      'Waarom wordt CFET (complementary FET) gezien als opvolger van nanosheet?',
+      [
+        'Verticaal stapelen van n- en p-componenten halveert de celvoetafdruk zonder verdere laterale schaling',
+        'Het maakt een gate-dielektricum overbodig, omdat het kanaal elektrostatisch op afstand wordt aangestuurd',
+        'Het maakt het mogelijk het kanaal uit een tweedimensionaal materiaal te vervaardigen',
+        'Het maakt EUV-lithografie overbodig',
+      ],
+      0,
+      'Het haalt oppervlakte uit de derde dimensie zodra laterale schaling is uitgeput; de moeilijkheid is het tweede component erboven te bouwen zonder het eerste te beschadigen.',
+    ],
+  ],
+  professor: [
+    [
+      'Wat betekent het einde van Dennard-schaling eigenlijk?',
+      [
+        'De voedingsspanning daalde niet langer mee met de featuregrootte',
+        'De transistordichtheid nam niet langer toe met elke node',
+        'De klokfrequentie bereikte een harde fysieke limiet',
+        'Lithografie kon geen kleinere structuren meer oplossen',
+      ],
+      0,
+      'Het is een spanningsverhaal, geen dichtheidsverhaal: de drempelspanning kon niet verder dalen zonder dat lekstroom explodeerde, en dat is waarom de frequentie stokte en het aantal cores toenam.',
+    ],
+    [
+      'Wat is het fundamentele obstakel bij het gebruik van tweedimensionale halfgeleiders in logica?',
+      [
+        'Het vormen van laagohmige contacten met een atomair dun kanaal, samen met wafer-brede uniformiteit',
+        'De volledige afwezigheid van een bandgap bij al zulke materialen',
+        'Onverenigbaarheid met elk bekend gate-dielektricum, omdat er geen oxide van nature groeit op het kanaalmateriaal',
+        'Een ladingsdragersmobiliteit die intrinsiek lager is dan die van silicium',
+      ],
+      0,
+      'Contactweerstand is de langlopende barrière. Mobiliteit kan concurrerend zijn en de bandgap is prima bij de transitiemetaal-dichalcogeniden.',
+    ],
+    [
+      'Wat impliceert de "dark silicon"-projectie voor architectuur?',
+      [
+        'Specialisatie - veel accelerators, waarvan er tegelijk maar weinig actief zijn',
+        'Het aantal cores moet worden begrensd op een vast getal per die',
+        'Klokfrequenties moeten proportioneel dalen met elke node',
+        'Geheugen moet op de die worden geïntegreerd om vermogen te besparen',
+      ],
+      0,
+      'Het is het structurele argument voor heterogene SoC\'s: als je niet alles kunt voeden, maak dan elk onderdeel heel goed in één taak.',
+    ],
+    [
+      'Wat is de stand van het debat over in-memory of near-memory computing?',
+      [
+        'Analoge crossbar-benaderingen bieden grote efficiëntiewinst maar kennen beperkingen in precisie, drift en programmeerkosten',
+        'Ze presteren bewezen beter dan digitale accelerators over alle workloads',
+        'Ze worden beperkt door lithografie in plaats van door apparaatfysica',
+        'Ze kunnen matrixvermenigvuldiging in principe niet uitvoeren, omdat een crossbar alleen elementgewijze producten berekent',
+      ],
+      0,
+      'Niet-ideaal gedrag van componenten is de terugkerende barrière: de efficiëntiecase is sterk op papier, en schrijfduurzaamheid en variabiliteit blijven ervan afknabbelen.',
+    ],
+    [
+      'Wat probeert de UCIe-standaard te bewerkstelligen?',
+      [
+        'Een open specificatie voor die-naar-die-interconnectie, zodat chiplets van verschillende leveranciers samengesteld kunnen worden',
+        'Een gemeenschappelijke thermische interfacestandaard voor multi-die-packages',
+        'Een gedeeld testprotocol voor known-good-die-screening, zodat samengestelde packages geen verdere test nodig hebben',
+        'Een uniforme naamgevingsconventie voor procesnodes tussen foundries',
+      ],
+      0,
+      'Het technische deel is het makkelijkste deel: een open chipletmarkt heeft ook test-, aansprakelijkheids- en bedrijfsmodellen nodig die nog niet bestaan.',
+    ],
+    [
+      'Wat is de fysieke oorsprong van de stochastische resistlimiet bij EUV?',
+      [
+        'Poisson-statistiek van geabsorbeerde fotonen in combinatie met de discrete chemie van zuurgeneratie en quenching',
+        'Alleen thermische diffusie van het fotozuur tijdens de post-exposure bake',
+        'Ongelijke belichting over de belichtingsspleet, wat een systematische dosisgradiënt langs de scanrichting achterlaat',
+        'Maskerruwheid die rechtstreeks wordt overgedragen in het resistbeeld',
+      ],
+      0,
+      'Schotruis stelt een bodem: bij een gegeven dosis hebben structuurranden een verdeling in plaats van een positie, en defectpercentages zijn de staart van die verdeling.',
+    ],
+    [
+      'Wat is de betekenis van backside power delivery voor ontwerpmethodologie?',
+      [
+        'Het ontkoppelt vermogens- en signaalrouting, wat de floorplanning verandert en nieuwe EDA-ondersteuning voor tweezijdige nets vereist',
+        'Het maakt on-chip decoupling-capaciteit overbodig',
+        'Het maakt het mogelijk de voedingsspanning te verhogen zonder betrouwbaarheidsverlies',
+        'Het elimineert elektromigratieproblemen volledig, omdat de voedingsrails geen metaallagen meer delen met signalen',
+      ],
+      0,
+      'De vertraging in de tooling is de echte kostenpost: een procescapaciteit waarvoor niemand kan ontwerpen, is nog geen capaciteit.',
+    ],
+    [
+      'Wat stelt de "more than Moore"-benadering voor?',
+      [
+        'Waarde komt in toenemende mate uit heterogene integratie en functiediversificatie in plaats van uit geometrische schaling',
+        'Schaling gaat door, maar met nieuwe materialen in plaats van nieuwe lithografie',
+        'Kwantumcomputing verdringt klassieke schaling volledig, waardoor verdere investering in siliciumprocesnodes misplaatst zou zijn',
+        'Softwareoptimalisatie vervangt hardwarevooruitgang als bron van prestatie',
+      ],
+      0,
+      'Sensoren, RF en verpakking als volwaardige bijdragers. Het is een uitspraak over waar waarde naartoe verschuift zodra één exponentiële groei vertraagt.',
+    ],
+    [
+      'Waarom is thermisch beheer de bindende beperking bij 3D-gestapelde logica?',
+      [
+        'Vermogensdichtheid vermenigvuldigt zich terwijl het warmteafvoerpad langer wordt door tussenliggende dies',
+        'Through-silicon vias kunnen niet genoeg stroom voeren',
+        'Bondingprocessen kunnen de bedrijfstemperaturen niet doorstaan',
+        'Gestapelde dies kunnen na assemblage niet worden getest, waardoor één slechte laag de hele stapel veroordeelt',
+      ],
+      0,
+      'Dat is waarom geheugen-op-logica-stapeling er als eerste kwam: DRAM heeft een veel lagere vermogensdichtheid dan logica, dus dezelfde geometrie is veel minder straffend.',
+    ],
+    [
+      'Wat impliceert de economie van een geavanceerde fab voor de industriestructuur?',
+      [
+        'Kapitaalintensiteit en yield-leercurves drijven naar zeer weinig fabrikanten aan de geavanceerde rand',
+        'Kosten begunstigen veel kleine gespecialiseerde fabs boven enkele grote',
+        'Apparatuurkosten zijn genoeg gedaald om de toetredingsdrempel te verlagen',
+        'Fab-economie wordt gedomineerd door arbeid in plaats van kapitaal, en daarom volgt de kostprijs de lokale loonniveaus',
+      ],
+      0,
+      'Tientallen miljarden per fab tegenover een leercurve die volume beloont: de concentratie is een gevolg van de kostenstructuur, geen beleidskeuze.',
+    ],
+  ],
+};
+
+export const MORE_SOFTWARE: CategoryContent = {
+  graduate: [
+    [
+      'Wat maakt structural sharing mogelijk in een persistente datastructuur?',
+      [
+        'Nieuwe versies hergebruiken ongewijzigde subbomen',
+        'Gelijktijdige lezers vermijden locks door de hele structuur te kopiëren',
+        'Oude versies worden automatisch opgeruimd door garbage collection bij een update',
+        'Updates worden lui toegepast en verzameld tot het lezen',
+      ],
+      0,
+      'Dit is wat immutable maps en vectoren praktisch maakt in plaats van louter principieel.',
+    ],
+    [
+      'Wat is het verschil tussen een interface en een abstracte klasse, in talen die beide hebben?',
+      [
+        'Een interface specificeert een contract zonder toestand; een abstracte klasse kan toestand en implementatie bevatten',
+        'Een interface kan worden geïnstantieerd en een abstracte klasse niet, wat de omgekeerde beperking is van de gebruikelijke',
+        'Een interface ondersteunt enkelvoudige overerving en een abstracte klasse meervoudige',
+        'Een interface wordt tijdens het uitvoeren gecontroleerd en een abstracte klasse tijdens het compileren',
+      ],
+      0,
+      'Default-methoden op interfaces vertroebelden dit aanzienlijk, en dat is waarom het diamond-probleem daarmee terugkwam.',
+    ],
+    [
+      'Wat vereist "tail call optimisation" van een aanroep?',
+      [
+        'Dat de aanroep de laatste actie van de functie is, zodat het stackframe dat van de aanroeper kan vervangen in plaats van uitbreiden',
+        'Dat de functie niet recursief is, omdat een recursieve aanroep altijd een frame moet achterlaten voor zijn returnwaarde',
+        'Dat alle argumenten by value worden doorgegeven',
+        'Dat het returntype statisch bekend is',
+      ],
+      0,
+      'Zonder dit put recursie in functionele stijl de stack uit, en dat is waarom sommige talen het garanderen en andere niet kunnen.',
+    ],
+    [
+      'Wat is een race condition, precies?',
+      [
+        'Programmagedrag dat afhangt van de ongesynchroniseerde relatieve timing van gelijktijdige operaties',
+        'Twee threads die om dezelfde lock strijden, zodat een van beide moet wachten tot de ander die vrijgeeft',
+        'Een deadlock die ontstaat door het verkrijgen van locks in verschillende volgorden',
+        'Prestatieverlies door contentie op cacheregels',
+      ],
+      0,
+      'Lockcontentie en false sharing zijn prestatieproblemen; een race is een correctheidsprobleem, en dat onderscheid raakt voortdurend verloren.',
+    ],
+    [
+      'Wat bereikt dependency injection eigenlijk?',
+      [
+        'Afhankelijkheden worden van buiten aangeleverd in plaats van intern geconstrueerd, zodat ze vervangbaar zijn',
+        'Circulaire afhankelijkheden tussen modules worden automatisch opgelost',
+        'Levensduren van objecten worden beheerd door een container in plaats van door het programma',
+        'Interfaces worden automatisch gegenereerd uit concrete klassen, zodat er geen abstractie met de hand geschreven hoeft te worden',
+      ],
+      0,
+      'Door de container beheerde levensduren zijn een veelvoorkomend bijverschijnsel, niet het doel - het doel is testbaarheid en vervangbaarheid.',
+    ],
+    [
+      'Wat garandeert een "pure functie"?',
+      [
+        'Het resultaat hangt alleen af van de argumenten, en er treden geen waarneembare nevenwerkingen op',
+        'Ze gooit nooit een exceptie',
+        'Ze termineert altijd, waardoor ze veilig eager geëvalueerd kan worden zonder enig risico op divergentie',
+        'Ze kan in constante tijd worden geëvalueerd',
+      ],
+      0,
+      'Terminatie is een apart begrip - totaliteit - en een pure functie kan volkomen legitiem eindeloos blijven lopen.',
+    ],
+    [
+      'Wat is het doel van een bloomfilter in een opslagengine?',
+      [
+        'Schijftoegangen vermijden voor sleutels die zeker niet in een bestand voorkomen',
+        'De sleutelindex zodanig comprimeren dat hij precies in het geheugen past',
+        'Sleutels ordenen voor efficiënte bereikscans',
+        'Corruptie in opgeslagen blokken detecteren',
+      ],
+      0,
+      'Een fout-positief kost één onnodige leesactie; een fout-negatief zou een correctheidsbug zijn, en dat is waarom die asymmetrie ertoe doet.',
+    ],
+    [
+      'Wat signaleert het verhogen van het hoofdversienummer in semantic versioning?',
+      [
+        'Een niet-achterwaarts-compatibele wijziging van de publieke API',
+        'Een aanzienlijke toevoeging van nieuwe functionaliteit',
+        'Een wijziging in de interne implementatie zonder effect op de API',
+        'Een wijziging die hercompilatie vereist maar geen aanpassing van de broncode',
+      ],
+      0,
+      'Het is een sociaal contract in plaats van een afgedwongen eigenschap, en dat is waarom tooling die het mechanisch controleert zo waardevol is.',
+    ],
+    [
+      'Wat is het verschil tussen concurrency en parallellisme?',
+      [
+        'Concurrency gaat over het structureren van onafhankelijke taken; parallellisme over ze tegelijk uitvoeren',
+        'Concurrency vereist meerdere cores en parallellisme niet',
+        'Concurrency geldt voor I/O en parallellisme voor berekeningen, dus de twee komen nooit samen in één programma voor',
+        'Het zijn dezelfde eigenschap, alleen beschreven op verschillende abstractieniveaus',
+      ],
+      0,
+      'Pikes formulering. Een machine met één core kan concurrent zijn, en een dataparallelle lus hoeft in geen interessant opzicht concurrent te zijn.',
+    ],
+    [
+      'Wat betekent "soundness" van een typesysteem?',
+      [
+        'Correct getypeerde programma\'s kunnen de klasse fouten die het typesysteem wil uitsluiten, niet vertonen',
+        'Elk programma dat correct draait, kan worden getypeerd, zodat de checker nooit een werkend programma afwijst',
+        'Type-inferentie termineert altijd met een principaal type',
+        'Types worden tijdens uitvoering gewist zonder de semantiek te veranderen',
+      ],
+      0,
+      'Het omgekeerde - elk correct programma is typeerbaar - is completeness, en geen nuttig typesysteem heeft beide.',
+    ],
+  ],
+  phd: [
+    [
+      'Wat geeft Hindley-Milner type-inferentie op om beslisbaar te blijven?',
+      [
+        'Polymorfie van hogere rang - kwantoren mogen alleen op het buitenste niveau voorkomen',
+        'Parametrische polymorfie volledig',
+        'Typeklassen en elke vorm van overloading',
+        'Recursieve types van elke soort, die in plaats daarvan expliciet via fixpunt-operatoren geïntroduceerd moeten worden',
+      ],
+      0,
+      'Let-polymorfie op het bovenste niveau blijft beslisbaar; rank-2-inferentie is beslisbaar maar onpraktisch, en rank-N is dat niet.',
+    ],
+    [
+      'Wat is de betekenis van "lineaire types"?',
+      [
+        'Een waarde moet precies één keer worden gebruikt',
+        'Types zijn zodanig geordend dat subtypering een lineaire keten vormt',
+        'Typecontrole loopt in tijd lineair met de programmagrootte',
+        'Waarden mogen hoogstens één keer worden gebruikt, zodat lekken worden voorkomen',
+      ],
+      0,
+      'Precies-één-keer versus hoogstens-één-keer is het onderscheid tussen lineair en affien, en het ownership-model van Rust ligt het dichtst bij de affiene lezing.',
+    ],
+    [
+      'Wat voegt "separation logic" toe aan Hoare-logica?',
+      [
+        'Een scheidende conjunctie waarmee assertions disjuncte heapregio\'s kunnen beschrijven, zodat lokale redenering samengesteld kan worden',
+        'Een behandeling van concurrency via interleaving-semantiek',
+        'Een weakest-precondition-calculus voor imperatieve programma\'s, ter vervanging van de voorwaartse redenering van de oorspronkelijke regels',
+        'Een methode om terminatie van recursieve procedures te bewijzen',
+      ],
+      0,
+      'Reynolds en O\'Hearn. De frame-regel is de opbrengst: je kunt een functie verifiëren zonder de rest van de heap te vermelden.',
+    ],
+    [
+      'Welke oplossing voor het "expression problem" bieden object-algebra\'s?',
+      [
+        'Gevallen coderen als interfacemethoden',
+        'Pattern matching op sealed types met exhaustiviteitscontrole',
+        'Reflectie over de typehiërarchie tijdens uitvoering',
+        'Boilerplate visitor-code genereren uit een schema',
+      ],
+      0,
+      'Oliveira en Cook. Final-tagless-encoderingen zijn de nauw verwante functionele formulering van dezelfde truc.',
+    ],
+    [
+      'Wat beschrijft het ABA-probleem bij lock-free programmeren?',
+      [
+        'Een compare-and-swap die slaagt omdat een waarde na tussentijdse wijzigingen terugkeerde naar zijn oorspronkelijke stand',
+        'Twee threads die gelijktijdig waarden wisselen en beide corrumperen, omdat geen van beide wissels op zichzelf atomair is',
+        'Een retry-lus die onder contentie nooit vooruitgang boekt',
+        'Een toegang die de orderegels van het geheugenmodel schendt',
+      ],
+      0,
+      'Versiegetagde pointers en hazard pointers zijn de standaardverdedigingen, en dit is waarom naïeve lock-free stacks subtiel fout zijn.',
+    ],
+    [
+      'Wat is de essentiële moeilijkheid bij het verifiëren van concurrency onder een zwak geheugenmodel?',
+      [
+        'Hardware- en taalmodellen staan herordeningen toe',
+        'Gelijktijdige programma\'s hebben te veel interleavings om op te sommen',
+        'Geheugenmodellen zijn voor alle echte hardware ongespecificeerd',
+        'Compilers herordenen alleen bij undefined behaviour',
+      ],
+      0,
+      'C11 en de promising-semantics-onderzoekslijn bestaan omdat sequentiële consistentie niet is wat de machine daadwerkelijk geeft.',
+    ],
+    [
+      'Wat draagt "property-based testing" bij ten opzichte van voorbeeldgebaseerd testen?',
+      [
+        'Invarianten die tegen gegenereerde invoer worden gecontroleerd',
+        'Uitputtende verificatie voor alle invoer binnen een begrensd domein',
+        'Formeel bewijs van de beweerde eigenschappen',
+        'Coverage-gestuurde verkenning van programmapaden',
+      ],
+      0,
+      'QuickCheck. Shrinking is het ondergewaardeerde deel: een willekeurige fout is bijna nutteloos en een minimale fout is een bruikbaar bugrapport.',
+    ],
+    [
+      'Wat is het verschil tussen een monad-transformer-stack en een interpretatie via een vrije monad?',
+      [
+        'Een transformer-stack legt de interpretatie van effecten vast in de types; een vrije monad stelt die uit naar een interpretator',
+        'Vrije monaden kunnen helemaal geen toestand uitdrukken, omdat hun interpretatoren noodzakelijkerwijs zuiver en toestandloos zijn',
+        'Transformer-stacks vereisen higher-kinded types en vrije monaden niet',
+        'Vrije monaden zijn per definitie performanter',
+      ],
+      0,
+      'De interpretatie uitstellen is wat vrije-monade-programma\'s testbaar maakt door interpretatoren te verwisselen; de prijs is meestal prestatie.',
+    ],
+    [
+      'Wat stelt het byzantijnse-generaals-resultaat vast voor praktische systemen?',
+      [
+        'Consensus vereist meer dan twee derde correcte deelnemers wanneer fouten arbitrair kunnen zijn',
+        'Consensus is onmogelijk zodra er een defecte deelnemer is',
+        'Consensus vereist synchrone berichtaflevering, met een bekende grens op zowel transmissie- als verwerkingstijd',
+        'Consensus vereist in alle gevallen digitale handtekeningen',
+      ],
+      0,
+      'De drie-f-plus-een-grens. Handtekeningen veranderen de grens in het geauthenticeerde geval, en dat is precies waarom het niet-geauthenticeerde resultaat apart wordt gesteld.',
+    ],
+    [
+      'Wat is "region-based memory management"?',
+      [
+        'Objecten toewijzen aan regio\'s die in hun geheel worden vrijgegeven',
+        'Reference counting toegepast per allocatie-arena',
+        'Generationele garbage collection met een heap per generatie',
+        'Handmatige allocatie met door de compiler gecontroleerde free-aanroepen',
+      ],
+      0,
+      'Tofte en Talpin. Het is de intellectuele voorloper van arena-allocatie en, verder stroomafwaarts, van lifetime-analyse in ownership-systemen.',
+    ],
+  ],
+  professor: [
+    [
+      'Waarop loopt de "proposities als types"-correspondentie stuk bij klassieke logica?',
+      [
+        'Excluded middle heeft geen directe computationele inhoud en vereist continuations of controle-operatoren om te interpreteren',
+        'Implicatie kan niet als functietype worden gemodelleerd zodra negatie in het propositionele fragment wordt toegelaten',
+        'Conjunctie en disjunctie zijn niet dueel in de typetheorie',
+        'Kwantoren kunnen niet worden weergegeven zonder dependent types',
+      ],
+      0,
+      'Griffins observatie verbindt klassiek redeneren met call/cc, wat een filosofische mismatch omzette in een programmeerconstructie.',
+    ],
+    [
+      'Wat is de betekenis van "cubische typetheorie"?',
+      [
+        'Ze geeft computationele inhoud aan univalentie',
+        'Ze maakt dependent types overbodig',
+        'Ze levert een beslisbare gelijkheid voor alle inductieve types',
+        'Ze vervangt intensionele door extensionele gelijkheid, overal',
+      ],
+      0,
+      'Univalentie als axioma breekt canoniciteit; de kubische modellen herstellen berekenbaarheid, en dat is wat het meer dan een fundamentele curiositeit maakt.',
+    ],
+    [
+      'Wat stelt de aan CAP verwante "CALM"-stelling vast?',
+      [
+        'Een gedistribueerd programma kan coördinatievrij zijn precies wanneer het monotoon is',
+        'Consistentie en beschikbaarheid kunnen beide worden bereikt bij partitionering voor monotone programma\'s',
+        'Elk uiteindelijk consistent programma kan lineariseerbaar worden gemaakt',
+        'Coördinatie is vereist voor elk programma met meer dan één schrijver',
+      ],
+      0,
+      'Hellerstein en Alvaro. Het maakt van "heb ik coördinatie nodig?" een controleerbare eigenschap van de logica in plaats van folklore.',
+    ],
+    [
+      'Wat moet "gradual typing" oplossen om sound te zijn?',
+      [
+        'Grenzen tussen getypeerde en ongetypeerde code hebben runtime-controles nodig, en schuldtoewijzing wanneer die falen',
+        'Type-inferentie moet slagen op het ongetypeerde deel',
+        'Dynamische types moeten worden gewist voor uitvoering, zodat geen enkele runtime-representatie ervan in het gecompileerde programma overleeft',
+        'Het ongetypeerde fragment moet worden beperkt tot een beslisbaar subset',
+      ],
+      0,
+      'Takikawa et al. toonden dat de prestatiekosten catastrofaal kunnen zijn, en dat is waarom verschillende systemen kozen voor onsound erasure.',
+    ],
+    [
+      'Wat voegt de onderzoekslijn rond "concurrent revisions" of mergeable replicated data types toe aan CRDT\'s?',
+      [
+        'Merge-functies afgeleid uit de typestructuur en een gemeenschappelijke voorouder, wat drieweg- in plaats van tweeweg-mergesemantiek geeft',
+        'Sterke consistentie zonder coördinatie, bereikt door elke operatie ongeacht aankomstvolgorde te laten commuteren',
+        'Automatische conflictoplossing die geen applicatiesemantiek nodig heeft',
+        'Het wegnemen van de noodzaak van causale aflevering',
+      ],
+      0,
+      'Het gebruik van de voorouderstatus is wat een merge in staat stelt "veranderd" te onderscheiden van "was altijd al zo", iets wat een join-semilattice niet kan zien.',
+    ],
+    [
+      'Wat is de fundamentele grens van gradual-verification-benaderingen zoals refinement types?',
+      [
+        'Het aantonen van verplichtingen steunt op beslisbare theorieën',
+        'Refinement types kunnen geen rekenkundige eigenschappen uitdrukken',
+        'Ze kunnen niet worden gecombineerd met polymorfie',
+        'Ze vereisen in alle gevallen analyse van het volledige programma',
+      ],
+      0,
+      'SMT-solvers zijn wat Liquid Haskell en F* praktisch maakt, en de grens van de ondersteunde theorieën is de grens van de automatisering.',
+    ],
+    [
+      'Wat identificeert onderzoek naar "algebraïsche effecten" als het lastige semantische probleem?',
+      [
+        'Interactie tussen handlers',
+        'Effecten kunnen niet worden getypeerd zonder dependent types',
+        'Handlers kunnen niet worden gecompileerd zonder continuations',
+        'Effectpolymorfie is onbeslisbaar',
+      ],
+      0,
+      'Dezelfde moeilijkheid die monad-transformers expliciet maken als stapelvolgorde; algebraïsche effecten verbergen de volgorde in plaats van de vraag weg te nemen.',
+    ],
+    [
+      'Wat garandeert "deterministisch parallellisme" zoals in Concurrent Revisions of LVars?',
+      [
+        'Hetzelfde resultaat ongeacht de scheduling, bereikt door te beperken tot monotone leesbewerkingen en roostergewaardeerde toestand',
+        'Dat parallelle uitvoering altijd sneller is dan sequentiële',
+        'Dat geen twee threads ooit dezelfde locatie benaderen',
+        'Dat deadlock door constructie onmogelijk is, omdat geen thread ooit wacht op een resource die door een andere thread wordt vastgehouden',
+      ],
+      0,
+      'Threshold reads zijn de truc: je mag alleen waarnemen dat een waarde een bepaald punt in het rooster heeft overschreden, nooit de huidige partiële toestand ervan.',
+    ],
+    [
+      'Wat is de betekenis van "Reflections on Trusting Trust" voor geverifieerde toolchains?',
+      [
+        'Een gecompromitteerde compiler kan zijn eigen achterdeur onzichtbaar reproduceren',
+        'Compilers kunnen in principe niet formeel worden geverifieerd',
+        'Het bootstrappen van een compiler vereist een bestaande binary van diezelfde compiler',
+        'Optimaliserende compilers introduceren noodzakelijkerwijs beveiligingslekken',
+      ],
+      0,
+      'Thompson, 1984. Diverse double compiling is het praktische antwoord, en reproduceerbare builds zijn de geïndustrialiseerde versie ervan.',
+    ],
+    [
+      'Wat toont CompCert aan, en wat niet?',
+      [
+        'Dat een machinegecontroleerde, semantiekbehoudende compiler haalbaar is',
+        'Dat alle compilers met bescheiden inspanning kunnen worden geverifieerd',
+        'Dat optimalisatie en verificatie elkaar uitsluiten',
+        'Dat geverifieerde compilers een geïnterpreteerde tussentaal vereisen',
+      ],
+      0,
+      'Het fuzzing-onderzoek van Yang et al. vond bugs in elke gangbare compiler en vrijwel geen in de geverifieerde passes van CompCert - het restrisico verplaatste zich in plaats van te verdwijnen.',
+    ],
+  ],
+};

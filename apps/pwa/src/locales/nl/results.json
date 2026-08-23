@@ -1,0 +1,18 @@
+{
+  "game_over": "Spel afgelopen",
+  "winner_title": "{{name}} winnen",
+  "sudden_death_subtitle": "Beslist in sudden death.",
+  "rounds_count_one": "{{count}} ronde",
+  "rounds_count_other": "{{count}} rondes",
+  "questions_count_one": "{{count}} vraag",
+  "questions_count_other": "{{count}} vragen",
+  "standings_subtitle": "{{rounds}}, {{questions}}.",
+  "winner_chip": "winnaar",
+  "every_question_title": "Alle vragen",
+  "team_fallback": "team",
+  "streaks_title": "Reeksen",
+  "longest_streak": "Langste ononderbroken reeks goede antwoorden: {{count}}.",
+  "streak_warning": "Een team hield de beurt {{count}} vragen op rij. Blijft dit gebeuren, zet dan \"beurt doorgeven na 3 op rij\" aan als host - anders zitten de andere teams alleen maar toe te kijken.",
+  "streak_ok": "De beurt ging steeds rond, en dat is precies wat je wilt.",
+  "done": "Klaar"
+}

@@ -1,5 +1,7 @@
+import type { Locale } from '@dohhh/engine';
 import { Button, Card, Input, Typography } from '@heroui/react';
 import { useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useApp } from '../lib/store.js';
 import { Screen } from '../ui/atoms.jsx';
@@ -14,13 +16,30 @@ import { Screen } from '../ui/atoms.jsx';
  * appears afterwards, small, as a device fingerprint.
  */
 export function Onboarding(): ReactNode {
+  const { t } = useTranslation('onboarding');
+  const { t: tc } = useTranslation('common');
   const signUp = useApp((s) => s.signUp);
+  const locale = useApp((s) => s.locale);
+  const setLocale = useApp((s) => s.setLocale);
   const [username, setUsername] = useState('');
   const ready = username.trim().length > 0;
 
   return (
     <Screen>
       <div className="flex flex-1 flex-col justify-center gap-8 py-10">
+        <div className="flex justify-center gap-2" role="group" aria-label={tc('language.label')}>
+          {(['en', 'nl'] as const satisfies readonly Locale[]).map((option) => (
+            <Button
+              key={option}
+              variant={locale === option ? 'primary' : 'ghost'}
+              size="sm"
+              onPress={() => setLocale(option)}
+            >
+              {tc(`language.${option}`)}
+            </Button>
+          ))}
+        </div>
+
         <div className="text-center">
           <div className="mx-auto mb-6 h-20 w-20 rounded-full border-4 border-tier-graduate/70 p-2">
             <div className="h-full w-full rounded-full border-4 border-tier-phd/70 p-1.5">
@@ -28,28 +47,24 @@ export function Onboarding(): ReactNode {
             </div>
           </div>
           <Typography.Heading level={1} className="text-3xl font-semibold tracking-tight">
-            Dohhh
+            {t('title')}
           </Typography.Heading>
           <Typography.Paragraph className="mx-auto mt-3 max-w-xs text-sm text-muted">
-            Eighteen categories. Three levels of nerve. Fifteen points if you are right about the
-            hard one, ten off if you are not - and you choose the level before you see the
-            question.
+            {t('tagline')}
           </Typography.Paragraph>
         </div>
 
         <Card>
           <Card.Header>
-            <Card.Title>Pick a name</Card.Title>
-            <Card.Description>
-              However your friends know you. It does not have to be unique.
-            </Card.Description>
+            <Card.Title>{t('pick_name')}</Card.Title>
+            <Card.Description>{t('pick_name_description')}</Card.Description>
           </Card.Header>
           <Card.Content className="flex flex-col gap-3">
             <Input
               value={username}
               onChange={(event) => setUsername(event.target.value)}
-              placeholder="Ada"
-              aria-label="Your name"
+              placeholder={t('name_placeholder')}
+              aria-label={t('name_label')}
               autoComplete="nickname"
               maxLength={24}
               fullWidth
@@ -61,14 +76,12 @@ export function Onboarding(): ReactNode {
               isDisabled={!ready}
               onPress={() => signUp(username)}
             >
-              Start playing
+              {t('start_playing')}
             </Button>
           </Card.Content>
         </Card>
 
-        <p className="text-center text-xs text-muted">
-          Nothing is sent to a server. Your key stays on this device.
-        </p>
+        <p className="text-center text-xs text-muted">{t('privacy_note')}</p>
       </div>
     </Screen>
   );

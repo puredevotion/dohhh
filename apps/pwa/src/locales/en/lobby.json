@@ -1,0 +1,63 @@
+{
+  "waiting_for_game": "Waiting for the game to arrive from the other devices. If nothing happens, the code may be wrong or you may be on a different network.",
+  "removed": "The host removed you from this game. You can still start or join a different one.",
+  "hosting_you": "You are hosting",
+  "hosting_other": "Hosted by {{name}}",
+  "pack_mismatch": "Your question pack does not match this game. You would be asked different questions from everyone else. Update both devices before playing.",
+  "dismiss": "Dismiss",
+  "diverged": "This device disagrees with another about what has happened in this game. That should not be possible; restart the game rather than playing on.",
+  "peer_version_mismatch": "Another device in this room is running a different version of Dohhh or a different question pack. It has been ignored rather than risking a mismatched game - update every device to the same version.",
+  "confusable_names": "{{a}} and {{b}} have names that look identical at a glance - worth checking who's actually who before the game gets going.",
+  "someone": "Someone",
+  "mesh_warning": "{{count}} devices connected. Every device connects to every other, so this has been tested to about eight. Expect it to get slow.",
+  "invite": {
+    "title": "Invite",
+    "description": "Have them point a camera at this, or read the words out."
+  },
+  "teams": {
+    "title": "Teams",
+    "description": "Any number per team. Join one, or switch - joining another moves you off the last one.",
+    "none_yet": "No teams yet. Make the first one.",
+    "you": "You",
+    "leave": "Leave",
+    "join": "Join",
+    "empty": "empty",
+    "name_placeholder": "Team name",
+    "name_label": "New team name",
+    "add": "Add"
+  },
+  "spectators": {
+    "title": "Not on a team yet"
+  },
+  "game_info": {
+    "title": "This game",
+    "first_to_label": "First to",
+    "first_to_value": "{{count}} points",
+    "correct_answer_label": "Correct answer",
+    "correct_answer_no_limit": "keeps the turn, no limit",
+    "correct_answer_max": "keeps the turn, max {{count}}",
+    "scores_label": "Scores",
+    "scores_negative": "can go negative",
+    "scores_floored": "floored at zero"
+  },
+  "room": {
+    "title": "Room",
+    "description": "The join code is the only lock this game has otherwise - closing the door stops anyone new from joining, whether or not they have it. Players already here are unaffected.",
+    "locked": "Locked - nobody new can join",
+    "open": "Open - anyone with the code can join",
+    "lock": "Lock",
+    "unlock": "Unlock",
+    "locked_chip": "Locked",
+    "open_chip": "Open"
+  },
+  "start": {
+    "pick_team": "Pick a team, then wait for the host.",
+    "ready_waiting": "Ready. Waiting for the host to start.",
+    "start_game": "Start the game",
+    "leave_game": "Leave game"
+  },
+  "kick": {
+    "kick": "Kick",
+    "confirm": "Confirm kick?"
+  }
+}

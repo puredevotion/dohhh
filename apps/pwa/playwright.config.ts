@@ -12,15 +12,15 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   reporter: 'list',
   use: {
-    baseURL: 'http://localhost:4173',
+    baseURL: 'http://localhost:4319',
     trace: 'on-first-retry',
   },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {
     // Preview (not dev) so the PWA service worker registration and build
     // output match what actually ships, and so startup is fast and quiet.
-    command: 'pnpm build && pnpm preview --port 4173 --strictPort',
-    url: 'http://localhost:4173',
+    command: 'pnpm build && pnpm preview --port 4319 --strictPort',
+    url: 'http://localhost:4319',
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,
   },

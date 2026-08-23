@@ -1,0 +1,77 @@
+{
+  "banned": {
+    "notice": "De host heeft je uit dit spel verwijderd. Wat er nog liep voor jouw team gaat door zonder jou; je kunt een ander spel starten of joinen."
+  },
+  "title": {
+    "team_to_play": "{{team}} speelt"
+  },
+  "subtitle": {
+    "sudden_death": "Sudden death: de koplopers staan gelijk en spelen het uit.",
+    "final_round": "Laatste ronde: iemand is over de streep, dus iedereen krijgt evenveel beurten.",
+    "round": "Ronde {{round}}, eerst tot {{target}}"
+  },
+  "dismiss": "Sluiten",
+  "watching_notice": "Je kijkt nu even toe. Bij het volgende spel kun je bij een team.",
+  "unexpected_peer_one": "{{deviceCount}} apparaten verbonden, maar slechts {{knownPlayers}} bekende speler. Misschien kijkt iemand mee die nooit is toegetreden - de joincode is het enige slot dat dit spel heeft.",
+  "unexpected_peer_other": "{{deviceCount}} apparaten verbonden, maar slechts {{knownPlayers}} bekende spelers. Misschien kijkt iemand mee die nooit is toegetreden - de joincode is het enige slot dat dit spel heeft.",
+  "announcer": {
+    "ran_out_of_time": "was te laat",
+    "were_right": "had het goed",
+    "were_wrong": "had het fout",
+    "outcome": "{{team}} {{outcome}}, {{delta}} punten.",
+    "turn": "{{team}} is aan de beurt.",
+    "they": "Zij"
+  },
+  "scores": {
+    "you": "jij",
+    "playing": "aan de beurt",
+    "progress_label": "{{team}} voortgang naar {{target}}",
+    "streak_one": "{{count}} goed op een rij - de beurt is niet doorgegaan.",
+    "streak_other": "{{count}} goed op een rij - de beurt is niet doorgegaan."
+  },
+  "between_turns": {
+    "next_team": "Volgend team",
+    "title": "{{team}} is aan de beurt",
+    "description_can_deal": "Jij krijgt drie categorieën om uit te kiezen voor hun vraag. Ze mogen niet zelf delen - dat voorkomt dat ze de vraag al van tevoren kennen.",
+    "description_solo_dealing": "De deler trekt drie categorieën om uit te kiezen.",
+    "description_opponent_dealing": "Een tegenstander deelt drie categorieën om uit te kiezen.",
+    "deal_button": "Deel drie categorieën",
+    "waiting_for_opponents": "Wachten tot je tegenstanders delen."
+  },
+  "solo_deal_countdown": {
+    "next_question_in": "Volgende vraag in {{seconds}}s"
+  },
+  "outcome": {
+    "ran_out_of_time": "was te laat",
+    "were_right": "had het goed",
+    "were_wrong": "had het fout",
+    "they": "Zij",
+    "answered": "Geantwoord: ",
+    "they_said": "Zij zeiden: ",
+    "answer": "Antwoord: "
+  },
+  "choose_category": {
+    "title": "Kies een categorie",
+    "description_can_choose": "Kies een van de drie - zij weten niet welke totdat jij kiest.",
+    "description_solo_revealing": "De deler onthult welke categorie jij krijgt.",
+    "description_opponent_choosing": "Een tegenstander kiest welke van de drie categorieën gedeeld wordt."
+  },
+  "choose_tier": {
+    "your_category_is": "Jouw categorie is",
+    "betting_question": "Hoe moeilijk wil je het? Je zet in voordat je de vraag ziet.",
+    "waiting_for_them": "hen",
+    "waiting_for_team": "Wachten tot {{team}} een niveau kiest.",
+    "seconds_to_answer": "{{seconds}} seconden om te antwoorden"
+  },
+  "live_question": {
+    "repeat_suffix": " - al eens gezien, de vragenpot is op",
+    "nominated_note": "{{name}} mag antwoorden voor het team - al kan iedereen erop tikken.",
+    "opponent_note": "Hun vraag. Jij mag hem zien, dus niet meehelpen."
+  },
+  "call_time_button": "Vastgelopen? Roep tijd",
+  "phase_timer": {
+    "seconds_to_decide": "{{seconds}}s om te beslissen",
+    "call_time": "Roep tijd"
+  },
+  "low_time_announcement": "Nog tien seconden."
+}

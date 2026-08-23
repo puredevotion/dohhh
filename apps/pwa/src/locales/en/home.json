@@ -1,0 +1,16 @@
+{
+  "signed_in_as": "Signed in as",
+  "save": "Save",
+  "edit": "edit",
+  "device_label": "device {{id}}",
+  "rename": "rename",
+  "device_placeholder": "e.g. My phone",
+  "device_aria_label": "Device label",
+  "host_game": "Host a game",
+  "join_game": "Join a game",
+  "play_solo": "Play solo",
+  "rejoin_last_game": "Rejoin my last game",
+  "betting_title": "How the betting works",
+  "betting_description": "The tiers are named after who should get them right, and the questions are written to that. None of them is general knowledge.",
+  "betting_rules": "An opposing team deals you a choice of three categories; you choose how hard a question to take on it. Right, and you keep the turn. Wrong, and it costs you and moves on. First to {{target}} wins outright."
+}

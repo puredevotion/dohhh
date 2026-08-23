@@ -1,0 +1,13 @@
+{
+  "title": "Doe mee met een spel",
+  "subtitle": "Scan de code van de host, of typ de vier woorden.",
+  "scan_a_code": "Scan een code",
+  "type_the_words": "Typ de woorden",
+  "try_again": "Probeer opnieuw",
+  "four_words": "Vier woorden",
+  "four_words_description": "Vraag de host om ze voor te lezen. Volgorde is belangrijk; hoofdletters niet.",
+  "word_label": "Woord {{position}} van de joincode",
+  "word_placeholder": "woord",
+  "join_this_game": "Doe mee met dit spel",
+  "enter_all_four_words": "Vul alle vier de woorden in"
+}

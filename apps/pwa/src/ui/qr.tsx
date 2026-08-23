@@ -5,6 +5,7 @@ import QrScanner from 'qr-scanner';
 // browsers without a native BarcodeDetector, which is most of them.
 import workerUrl from 'qr-scanner/qr-scanner-worker.min.js?url';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 QrScanner.WORKER_PATH = workerUrl;
 
@@ -15,6 +16,7 @@ QrScanner.WORKER_PATH = workerUrl;
  * the middle of being invited to a game.
  */
 export function QrImage({ value, size = 260 }: { value: string; size?: number }): ReactNode {
+  const { t } = useTranslation('common');
   const [dataUrl, setDataUrl] = useState<string | null>(null);
   const [failed, setFailed] = useState(false);
 
@@ -42,7 +44,7 @@ export function QrImage({ value, size = 260 }: { value: string; size?: number })
   if (failed) {
     return (
       <div className="flex items-center justify-center rounded-2xl border border-danger/40 bg-danger/10 p-6 text-center text-sm">
-        Could not draw the QR code. Read the four words out instead.
+        {t('qr.drawing_error')}
       </div>
     );
   }
@@ -53,9 +55,9 @@ export function QrImage({ value, size = 260 }: { value: string; size?: number })
       style={{ width: size, height: size }}
     >
       {dataUrl === null ? (
-        <span className="text-xs text-neutral-500">Drawing...</span>
+        <span className="text-xs text-neutral-500">{t('qr.drawing')}</span>
       ) : (
-        <img src={dataUrl} alt="Scan to join this game" className="h-full w-full" />
+        <img src={dataUrl} alt={t('qr.scan_alt')} className="h-full w-full" />
       )}
     </div>
   );
@@ -69,6 +71,7 @@ export type ScanState = 'idle' | 'starting' | 'scanning' | 'denied' | 'unsupport
  * because "scanning does not work" with no explanation ends the game.
  */
 export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactNode {
+  const { t } = useTranslation('common');
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [state, setState] = useState<ScanState>('idle');
   const [detail, setDetail] = useState<string | null>(null);
@@ -100,7 +103,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
       try {
         if (!(await QrScanner.hasCamera())) {
           setState('unsupported');
-          setDetail('This device has no camera the browser can use.');
+          setDetail(t('qr.no_camera'));
           return;
         }
         scanner = new QrScanner(
@@ -120,11 +123,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         setState(/denied|permission/i.test(message) ? 'denied' : 'unsupported');
-        setDetail(
-          globalThis.isSecureContext === false
-            ? 'Browsers only allow camera access over HTTPS (or on localhost). Use the four-word code instead.'
-            : message,
-        );
+        setDetail(globalThis.isSecureContext === false ? t('qr.https_required') : message);
       }
     })();
 
@@ -152,9 +151,7 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center">
             {state === 'idle' && (
               <>
-                <p className="text-sm text-muted">
-                  Point your camera at the other phone&apos;s code.
-                </p>
+                <p className="text-sm text-muted">{t('qr.point_camera')}</p>
                 <Button
                   variant="primary"
                   onPress={() => {
@@ -162,17 +159,16 @@ export function QrCamera({ onScan }: { onScan: (text: string) => void }): ReactN
                     setArmed(true);
                   }}
                 >
-                  Turn on the camera
+                  {t('qr.turn_on_camera')}
                 </Button>
               </>
             )}
-            {state === 'starting' && <p className="text-sm text-muted">Starting camera...</p>}
+            {state === 'starting' && (
+              <p className="text-sm text-muted">{t('qr.starting_camera')}</p>
+            )}
             {(state === 'denied' || state === 'unsupported') && (
               <p className="text-sm text-danger-text">
-                {state === 'denied'
-                  ? 'Camera permission was refused.'
-                  : 'Camera unavailable.'}{' '}
-                {detail}
+                {state === 'denied' ? t('qr.permission_denied') : t('qr.unavailable')} {detail}
               </p>
             )}
           </div>

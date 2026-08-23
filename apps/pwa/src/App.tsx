@@ -1,4 +1,5 @@
 import { useEffect, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useRoute } from './lib/router.js';
 import { useApp } from './lib/store.js';
@@ -23,6 +24,7 @@ const IN_GAME_PATHS = new Set(['/lobby', '/play', '/results']);
  * rendering, which is the usual way this kind of app tears itself.
  */
 export function App(): ReactNode {
+  const { t } = useTranslation('common');
   const route = useRoute();
   const identity = useApp((s) => s.identity);
   const session = useApp((s) => s.session);
@@ -97,10 +99,7 @@ export function App(): ReactNode {
 
   const degradedBanner = storageDegraded && (
     <div className="mx-auto w-full max-w-md px-5 pt-3">
-      <Notice tone="warn">
-        Nothing is saving right now - private browsing or storage being blocked, most likely.
-        Reloading this tab will lose your place in the game.
-      </Notice>
+      <Notice tone="warn">{t('storage_degraded')}</Notice>
     </div>
   );
 

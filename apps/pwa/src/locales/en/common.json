@@ -1,0 +1,39 @@
+{
+  "connection": {
+    "devices_count_one": "{{count}} device",
+    "devices_count_other": "{{count}} devices",
+    "reconnecting": "Reconnecting",
+    "connecting": "Connecting",
+    "waiting_for_others": "Waiting for others",
+    "no_connection": "No connection"
+  },
+  "stalled": {
+    "relay_failed": "Could not reach any peer-discovery relay. Check this device is online. Dohhh needs one brief handshake through public infrastructure before it can talk device-to-device.",
+    "lost_connection": "Lost the connection to the other device. Still trying to reconnect automatically - if this does not clear up, check you are both still online and on the same network.",
+    "nobody_here": "Still nobody else here. The usual causes: the others have not opened the game yet, they typed a different code, or you are on networks that will not let devices talk directly - mobile data especially. Getting everyone onto the same Wi-Fi fixes it."
+  },
+  "storage_degraded": "Nothing is saving right now - private browsing or storage being blocked, most likely. Reloading this tab will lose your place in the game.",
+  "actions": {
+    "back": "Back",
+    "leave": "Leave",
+    "continue": "Continue",
+    "start": "Start"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "nl": "Nederlands"
+  },
+  "qr": {
+    "drawing_error": "Could not draw the QR code. Read the four words out instead.",
+    "drawing": "Drawing...",
+    "scan_alt": "Scan to join this game",
+    "point_camera": "Point your camera at the other phone's code.",
+    "turn_on_camera": "Turn on the camera",
+    "starting_camera": "Starting camera...",
+    "permission_denied": "Camera permission was refused.",
+    "unavailable": "Camera unavailable.",
+    "no_camera": "This device has no camera the browser can use.",
+    "https_required": "Browsers only allow camera access over HTTPS (or on localhost). Use the four-word code instead."
+  }
+}

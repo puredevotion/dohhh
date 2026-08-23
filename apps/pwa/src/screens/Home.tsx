@@ -1,17 +1,22 @@
-import { DEFAULT_RULES, DIFFICULTY_ORDER, DIFFICULTY_TIERS, shortenId } from '@dohhh/engine';
+import { DEFAULT_RULES, DIFFICULTY_ORDER, DIFFICULTY_TIERS, shortenId, type Locale } from '@dohhh/engine';
 import { Button, Card, Input, Typography } from '@heroui/react';
 import { useEffect, useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { navigate } from '../lib/router.js';
 import { useApp } from '../lib/store.js';
 import { Screen } from '../ui/atoms.jsx';
 
 export function Home(): ReactNode {
+  const { t } = useTranslation('home');
+  const { t: tc } = useTranslation('common');
   const identity = useApp((s) => s.identity);
   const rename = useApp((s) => s.rename);
   const deviceLabel = useApp((s) => s.deviceLabel);
   const renameDevice = useApp((s) => s.renameDevice);
   const resume = useApp((s) => s.resume);
+  const locale = useApp((s) => s.locale);
+  const setLocale = useApp((s) => s.setLocale);
   const [resumable, setResumable] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [draftName, setDraftName] = useState('');
@@ -36,16 +41,29 @@ export function Home(): ReactNode {
   return (
     <Screen>
       <div className="flex flex-1 flex-col justify-center gap-6 py-8">
+        <div className="flex justify-center gap-2" role="group" aria-label={tc('language.label')}>
+          {(['en', 'nl'] as const satisfies readonly Locale[]).map((option) => (
+            <Button
+              key={option}
+              variant={locale === option ? 'primary' : 'ghost'}
+              size="sm"
+              onPress={() => setLocale(option)}
+            >
+              {tc(`language.${option}`)}
+            </Button>
+          ))}
+        </div>
+
         <div>
           <Typography.Paragraph className="text-sm text-muted">
-            Signed in as
+            {t('signed_in_as')}
           </Typography.Paragraph>
           {editingName ? (
             <div className="flex items-center gap-2">
               <Input
                 value={draftName}
                 onChange={(event) => setDraftName(event.target.value)}
-                aria-label="Your name"
+                aria-label={t('signed_in_as')}
                 autoComplete="nickname"
                 maxLength={24}
                 autoFocus
@@ -60,7 +78,7 @@ export function Home(): ReactNode {
                   setEditingName(false);
                 }}
               >
-                Save
+                {t('save')}
               </Button>
             </div>
           ) : (
@@ -75,7 +93,7 @@ export function Home(): ReactNode {
               <Typography.Heading level={1} className="text-3xl font-semibold tracking-tight">
                 {identity.username}
               </Typography.Heading>
-              <span className="text-xs text-muted underline">edit</span>
+              <span className="text-xs text-muted underline">{t('edit')}</span>
             </button>
           )}
           {editingDevice ? (
@@ -83,8 +101,8 @@ export function Home(): ReactNode {
               <Input
                 value={draftDevice}
                 onChange={(event) => setDraftDevice(event.target.value)}
-                placeholder="e.g. My phone"
-                aria-label="Device label"
+                placeholder={t('device_placeholder')}
+                aria-label={t('device_aria_label')}
                 maxLength={24}
                 autoFocus
                 fullWidth
@@ -97,7 +115,7 @@ export function Home(): ReactNode {
                   setEditingDevice(false);
                 }}
               >
-                Save
+                {t('save')}
               </Button>
             </div>
           ) : (
@@ -110,22 +128,22 @@ export function Home(): ReactNode {
               }}
             >
               <p className="font-mono text-xs text-muted">
-                device {deviceLabel ?? shortenId(identity.id, 8)}
+                {t('device_label', { id: deviceLabel ?? shortenId(identity.id, 8) })}
               </p>
-              <span className="text-xs text-muted underline">rename</span>
+              <span className="text-xs text-muted underline">{t('rename')}</span>
             </button>
           )}
         </div>
 
         <div className="flex flex-col gap-3">
           <Button variant="primary" size="lg" fullWidth onPress={() => navigate('/create')}>
-            Host a game
+            {t('host_game')}
           </Button>
           <Button variant="secondary" size="lg" fullWidth onPress={() => navigate('/join')}>
-            Join a game
+            {t('join_game')}
           </Button>
           <Button variant="ghost" size="lg" fullWidth onPress={() => navigate('/solo')}>
-            Play solo
+            {t('play_solo')}
           </Button>
           {resumable && (
             <Button
@@ -137,27 +155,22 @@ export function Home(): ReactNode {
                 });
               }}
             >
-              Rejoin my last game
+              {t('rejoin_last_game')}
             </Button>
           )}
         </div>
 
         <Card variant="secondary">
           <Card.Header>
-            <Card.Title className="text-base">How the betting works</Card.Title>
-            <Card.Description>
-              The tiers are named after who should get them right, and the questions are written to
-              that. None of them is general knowledge.
-            </Card.Description>
+            <Card.Title className="text-base">{t('betting_title')}</Card.Title>
+            <Card.Description>{t('betting_description')}</Card.Description>
           </Card.Header>
           <Card.Content className="flex flex-col gap-3 text-sm text-default-foreground">
             {DIFFICULTY_ORDER.map((difficulty) => (
               <Row key={difficulty} tier={difficulty} tierInfo={DIFFICULTY_TIERS[difficulty]} />
             ))}
             <p className="mt-1 text-xs text-muted">
-              An opposing team deals you a choice of three categories; you choose how hard a question
-              to take on it. Right, and you keep the turn. Wrong, and it costs you and moves on. First
-              to {DEFAULT_RULES.targetScore} wins outright.
+              {t('betting_rules', { target: DEFAULT_RULES.targetScore })}
             </p>
           </Card.Content>
         </Card>

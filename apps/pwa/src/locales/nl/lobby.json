@@ -1,0 +1,63 @@
+{
+  "waiting_for_game": "Wachten tot het spel binnenkomt vanaf de andere apparaten. Gebeurt er niets, dan klopt de code misschien niet of zit je op een ander netwerk.",
+  "removed": "De host heeft je uit dit spel verwijderd. Je kunt nog wel een nieuw spel starten of een ander spel joinen.",
+  "hosting_you": "Jij bent host",
+  "hosting_other": "Gehost door {{name}}",
+  "pack_mismatch": "Jouw vragenpakket komt niet overeen met dit spel. Je zou andere vragen krijgen dan iedereen anders. Update beide apparaten voordat je gaat spelen.",
+  "dismiss": "Sluiten",
+  "diverged": "Dit apparaat heeft een ander beeld dan een ander apparaat van wat er in dit spel is gebeurd. Dat zou niet moeten kunnen; start het spel opnieuw in plaats van door te spelen.",
+  "peer_version_mismatch": "Een ander apparaat in deze ruimte draait een andere versie van Dohhh of een ander vragenpakket. Het is genegeerd om geen mismatch-risico te lopen - update alle apparaten naar dezelfde versie.",
+  "confusable_names": "{{a}} en {{b}} hebben namen die op het eerste gezicht identiek lijken - de moeite van het checken waard wie wie is voordat het spel begint.",
+  "someone": "Iemand",
+  "mesh_warning": "{{count}} apparaten verbonden. Elk apparaat verbindt met elk ander apparaat, dus dit is getest tot ongeveer acht. Reken op vertraging.",
+  "invite": {
+    "title": "Uitnodigen",
+    "description": "Laat ze hier de camera op richten, of lees de woorden voor."
+  },
+  "teams": {
+    "title": "Teams",
+    "description": "Elk aantal per team. Doe mee met een team, of wissel - meedoen met een ander team haalt je van het vorige af.",
+    "none_yet": "Nog geen teams. Maak het eerste.",
+    "you": "Jij",
+    "leave": "Verlaten",
+    "join": "Meedoen",
+    "empty": "leeg",
+    "name_placeholder": "Teamnaam",
+    "name_label": "Naam nieuw team",
+    "add": "Toevoegen"
+  },
+  "spectators": {
+    "title": "Nog niet in een team"
+  },
+  "game_info": {
+    "title": "Dit spel",
+    "first_to_label": "Eerste bij",
+    "first_to_value": "{{count}} punten",
+    "correct_answer_label": "Goed antwoord",
+    "correct_answer_no_limit": "houdt de beurt, geen limiet",
+    "correct_answer_max": "houdt de beurt, max {{count}}",
+    "scores_label": "Scores",
+    "scores_negative": "kan negatief worden",
+    "scores_floored": "wordt niet negatief"
+  },
+  "room": {
+    "title": "Ruimte",
+    "description": "De joincode is de enige beveiliging die dit spel heeft - de deur sluiten voorkomt dat iemand nieuw kan meedoen, ook met de code. Spelers die er al zijn, merken er niets van.",
+    "locked": "Gesloten - niemand nieuw kan meedoen",
+    "open": "Open - iedereen met de code kan meedoen",
+    "lock": "Sluiten",
+    "unlock": "Openen",
+    "locked_chip": "Gesloten",
+    "open_chip": "Open"
+  },
+  "start": {
+    "pick_team": "Kies een team en wacht dan op de host.",
+    "ready_waiting": "Klaar. Wachten tot de host start.",
+    "start_game": "Start het spel",
+    "leave_game": "Spel verlaten"
+  },
+  "kick": {
+    "kick": "Verwijderen",
+    "confirm": "Verwijderen bevestigen?"
+  }
+}

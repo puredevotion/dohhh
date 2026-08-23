@@ -1,0 +1,13 @@
+{
+  "title": "Join a game",
+  "subtitle": "Scan the host's code, or type the four words.",
+  "scan_a_code": "Scan a code",
+  "type_the_words": "Type the words",
+  "try_again": "Try again",
+  "four_words": "Four words",
+  "four_words_description": "Ask the host to read them out. Order matters; capitals do not.",
+  "word_label": "Word {{position}} of the join code",
+  "word_placeholder": "word",
+  "join_this_game": "Join this game",
+  "enter_all_four_words": "Enter all four words"
+}

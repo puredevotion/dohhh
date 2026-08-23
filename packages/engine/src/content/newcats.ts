@@ -52,13 +52,13 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'What is the primary function of regulatory T cells (Tregs) relevant to autoimmunity?',
-      ['Suppressing immune responses against self', 'Producing antibodies - a tempting but wrong inference', 'Killing virus-infected cells directly', 'Presenting antigen to B cells'],
+      ['Suppressing immune responses against self', 'Producing antibodies', 'Killing virus-infected cells directly', 'Presenting antigen to B cells'],
       0,
       'Tregs, marked by the transcription factor FOXP3, maintain peripheral tolerance by dampening autoreactive T-cell activity; their dysfunction (as in IPEX syndrome) causes severe multi-organ autoimmunity.',
     ],
     [
       'Ankylosing spondylitis is most strongly associated with which genetic marker?',
-      ['HLA-B27', 'HLA-DR4', 'HLA-DQ2', 'BRCA1 - a widely repeated misstatement'],
+      ['HLA-B27', 'HLA-DR4', 'HLA-DQ2', 'BRCA1'],
       0,
       'The majority of people with ankylosing spondylitis carry HLA-B27, though most HLA-B27 carriers never develop the disease, showing the marker is a risk factor, not a cause.',
     ],
@@ -70,7 +70,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Myasthenia gravis is caused by antibodies against which target?',
-      ['Acetylcholine receptors at the neuromuscular junction', 'Insulin receptors - an easy but mistaken assumption - a frequent point of confusion', 'Thyroid peroxidase', 'Red blood cell surface antigens'],
+      ['Acetylcholine receptors at the neuromuscular junction', 'Insulin receptors', 'Thyroid peroxidase', 'Red blood cell surface antigens'],
       0,
       'Antibodies block or destroy nicotinic acetylcholine receptors on the postsynaptic muscle membrane, impairing neuromuscular transmission and causing fatigable weakness.',
     ],
@@ -96,7 +96,7 @@ export const AUTOIMMUNE: CategoryContent = {
   phd: [
     [
       'Anti-dsDNA antibodies are most specifically associated with which condition and complication?',
-      ['Systemic lupus erythematosus, correlating with lupus nephritis activity', 'Rheumatoid arthritis, correlating with joint erosion', 'Graves\' disease, correlating with exophthalmos - an easy but mistaken assumption', 'Coeliac disease, correlating with villous atrophy'],
+      ['Systemic lupus erythematosus, correlating with lupus nephritis activity', 'Rheumatoid arthritis, correlating with joint erosion', 'Graves\' disease, correlating with exophthalmos', 'Coeliac disease, correlating with villous atrophy'],
       0,
       'Anti-dsDNA titres often track disease activity and are particularly linked to immune complex deposition in the kidneys, making them useful for monitoring lupus nephritis flares.',
     ],
@@ -120,19 +120,19 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'In myasthenia gravis, which finding on repetitive nerve stimulation is characteristic?',
-      ['Decremental response with repeated stimulation', 'Incremental response with repeated stimulation', 'No change regardless of stimulation rate', 'Response only at high frequencies - a tempting but wrong inference'],
+      ['Decremental response with repeated stimulation', 'Incremental response with repeated stimulation', 'No change regardless of stimulation rate', 'Response only at high frequencies'],
       0,
       'Progressive failure of neuromuscular transmission as available functional receptors are exhausted produces a decrementing compound muscle action potential, distinguishing it from presynaptic disorders like Lambert-Eaton syndrome, which shows an incremental response.',
     ],
     [
       'Anti-TPO (thyroid peroxidase) antibodies are most associated with which pair of conditions?',
-      ['Hashimoto\'s thyroiditis and, less specifically, Graves\' disease', 'Coeliac disease and psoriasis only', 'Myasthenia gravis exclusively - a frequent point of confusion - a widely repeated misstatement', 'Ankylosing spondylitis exclusively'],
+      ['Hashimoto\'s thyroiditis and, less specifically, Graves\' disease', 'Coeliac disease and psoriasis only', 'Myasthenia gravis exclusively', 'Ankylosing spondylitis exclusively'],
       0,
       'Anti-TPO antibodies are found in the large majority of Hashimoto\'s patients and a substantial minority of Graves\' patients, reflecting shared underlying thyroid autoimmunity even though the clinical thyroid state differs.',
     ],
     [
       'Central tolerance in T-cell development occurs primarily through what process?',
-      ['Negative selection of self-reactive thymocytes in the thymus', 'Antibody class switching in the bone marrow', 'Complement-mediated lysis in the spleen - an easy but mistaken assumption', 'Regulatory T-cell suppression in peripheral lymph nodes'],
+      ['Negative selection of self-reactive thymocytes in the thymus', 'Antibody class switching in the bone marrow', 'Complement-mediated lysis in the spleen', 'Regulatory T-cell suppression in peripheral lymph nodes'],
       0,
       'Thymocytes that bind self-peptide-MHC complexes too strongly during thymic selection are deleted via apoptosis (negative selection); AIRE-expressing medullary thymic epithelial cells present a broad range of tissue-specific antigens to enable this.',
     ],
@@ -162,13 +162,13 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Which cytokine, when inhibited, is a mainstay biologic treatment for giant cell arteritis, targeting a pathway distinct from TNF?',
-      ['IL-6 (via tocilizumab)', 'IL-2 - a tempting but wrong inference', 'IL-10', 'IFN-alpha'],
+      ['IL-6 (via tocilizumab)', 'IL-2', 'IL-10', 'IFN-alpha'],
       0,
       'Tocilizumab blocks the IL-6 receptor, and IL-6 is a key driver of the systemic inflammatory response in giant cell arteritis, allowing steroid-sparing maintenance therapy.',
     ],
     [
       'Antiphospholipid syndrome, which can occur alone or alongside lupus, is characterised by which triad of clinical risk?',
-      ['Thrombosis, pregnancy morbidity, and antiphospholipid antibodies (e.g. lupus anticoagulant, anti-cardiolipin)', 'Photosensitivity, oral ulcers, and arthritis', 'Dry eyes, dry mouth, and parotid swelling', 'Muscle weakness, ptosis, and diplopia - an easy but mistaken assumption - a frequent point of confusion - a widely repeated misstatement'],
+      ['Thrombosis, pregnancy morbidity, and antiphospholipid antibodies (e.g. lupus anticoagulant, anti-cardiolipin)', 'Photosensitivity, oral ulcers, and arthritis', 'Dry eyes, dry mouth, and parotid swelling', 'Muscle weakness, ptosis, and diplopia'],
       0,
       'The syndrome is defined by recurrent thrombosis or pregnancy loss in the presence of persistent antiphospholipid antibodies, and it substantially raises miscarriage and stroke risk.',
     ],
@@ -188,7 +188,7 @@ export const AUTOIMMUNE: CategoryContent = {
   professor: [
     [
       'The "hygiene hypothesis" link to rising autoimmune disease incidence is most directly supported by which observation?',
-      ['Higher autoimmune and allergic disease rates in populations with reduced early-life microbial and helminth exposure', 'Higher rates exclusively in populations with high antibiotic use in adulthood - an easy but mistaken assumption - a frequent point of confusion', 'Uniform autoimmune rates across all industrialised and non-industrialised populations', 'Lower rates of autoimmune disease in urban compared to rural areas universally'],
+      ['Higher autoimmune and allergic disease rates in populations with reduced early-life microbial and helminth exposure', 'Higher rates exclusively in populations with high antibiotic use in adulthood', 'Uniform autoimmune rates across all industrialised and non-industrialised populations', 'Lower rates of autoimmune disease in urban compared to rural areas universally'],
       0,
       'Epidemiological comparisons, including migration studies, show that populations with reduced exposure to commensal microbes and helminths in early life have higher rates of autoimmune and atopic disease, though the causal mechanisms (regulatory T-cell education, microbiome diversity) remain actively debated.',
     ],
@@ -212,7 +212,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'In rheumatoid arthritis pathogenesis, citrullination of proteins by peptidylarginine deiminase (PAD) enzymes is thought to be triggered in the lungs or gums by exposure to what?',
-      ['Cigarette smoke and periodontal pathogens such as Porphyromonas gingivalis', 'Ultraviolet radiation exclusively', 'Dietary gluten exclusively', 'Cold exposure exclusively - an easy but mistaken assumption - a frequent point of confusion'],
+      ['Cigarette smoke and periodontal pathogens such as Porphyromonas gingivalis', 'Ultraviolet radiation exclusively', 'Dietary gluten exclusively', 'Cold exposure exclusively'],
       0,
       'Smoking and P. gingivalis (notably via its own PAD enzyme) are implicated in generating citrullinated peptides at mucosal sites, which in HLA-DR "shared epitope" carriers can break tolerance and generate the anti-CCP response years before joint symptoms.',
     ],
@@ -230,19 +230,19 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Rituximab, a B-cell-depleting therapy used across several autoimmune diseases, targets which surface marker?',
-      ['CD20', 'CD4 - a tempting but wrong inference', 'CD8', 'CD25'],
+      ['CD20', 'CD4', 'CD8', 'CD25'],
       0,
       'CD20 is expressed on B cells from the pre-B stage through most mature B-cell stages but not on plasma cells, meaning rituximab depletes the B-cell pool while sparing existing antibody-secreting plasma cells in the short term.',
     ],
     [
       'The historical case that helped establish the autoimmune basis of Hashimoto\'s thyroiditis, as originally described by Hakaru Hashimoto in 1912, was based on what pathological finding?',
-      ['Diffuse lymphocytic infiltration of the thyroid gland ("struma lymphomatosa")', 'Thyroid gland calcification visible on plain radiograph - a widely repeated misstatement', 'Elevated TSH receptor antibody titre measured by radioimmunoassay', 'A palpable thyroid nodule biopsy showing papillary carcinoma'],
+      ['Diffuse lymphocytic infiltration of the thyroid gland ("struma lymphomatosa")', 'Thyroid gland calcification visible on plain radiograph', 'Elevated TSH receptor antibody titre measured by radioimmunoassay', 'A palpable thyroid nodule biopsy showing papillary carcinoma'],
       0,
       'Hashimoto described four cases of goitre with dense lymphocytic infiltration, terming it struma lymphomatosa; the autoimmune, antibody-mediated basis was only established decades later once antibody assays existed, since Hashimoto worked purely from histology.',
     ],
     [
       'IgG4-related disease, increasingly recognised as unifying several previously separate conditions (e.g. autoimmune pancreatitis, Riedel\'s thyroiditis, some cases of retroperitoneal fibrosis), is characterised histologically by what triad?',
-      ['Dense lymphoplasmacytic infiltrate, storiform fibrosis, and obliterative phlebitis', 'Granuloma formation with caseating necrosis', 'Eosinophilic microabscesses without fibrosis', 'Vasculitis with fibrinoid necrosis only - an easy but mistaken assumption - a frequent point of confusion'],
+      ['Dense lymphoplasmacytic infiltrate, storiform fibrosis, and obliterative phlebitis', 'Granuloma formation with caseating necrosis', 'Eosinophilic microabscesses without fibrosis', 'Vasculitis with fibrinoid necrosis only'],
       0,
       'This histological triad, along with elevated tissue IgG4+ plasma cells and often elevated serum IgG4, allowed pathologists to recognise that organ-specific fibroinflammatory conditions previously thought unrelated share a common underlying process.',
     ],
@@ -272,7 +272,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Complement component deficiencies, particularly of early classical pathway components like C1q, C2, or C4, are a recognised but paradoxical risk factor for which autoimmune disease?',
-      ['Systemic lupus erythematosus', 'Multiple sclerosis', 'Type 1 diabetes - a frequent point of confusion', 'Ankylosing spondylitis'],
+      ['Systemic lupus erythematosus', 'Multiple sclerosis', 'Type 1 diabetes', 'Ankylosing spondylitis'],
       0,
       'Early complement deficiency impairs clearance of apoptotic cell debris and immune complexes, allowing self-antigens (particularly nuclear material) to persist and drive autoimmunity, explaining why a deficiency in an immune pathway can paradoxically predispose to an autoimmune disease.',
     ],
@@ -289,7 +289,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'The corpus luteum, formed after ovulation, primarily secretes which hormone to maintain early pregnancy?',
-      ['Progesterone', 'FSH - a widely repeated misstatement', 'Oxytocin', 'Testosterone'],
+      ['Progesterone', 'FSH', 'Oxytocin', 'Testosterone'],
       0,
       'Progesterone from the corpus luteum maintains the endometrial lining; if pregnancy occurs, hCG from the developing placenta keeps the corpus luteum active until the placenta itself takes over hormone production around 8-10 weeks.',
     ],
@@ -319,13 +319,13 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Gestational diabetes is typically screened for using which test, usually between 24 and 28 weeks?',
-      ['Oral glucose tolerance test (OGTT)', 'HbA1c alone - a widely repeated misstatement', 'Random capillary glucose only', 'Urine dipstick alone'],
+      ['Oral glucose tolerance test (OGTT)', 'HbA1c alone', 'Random capillary glucose only', 'Urine dipstick alone'],
       0,
       'The OGTT measures the body\'s response to a glucose load, capturing the relative insulin resistance driven by placental hormones (particularly human placental lactogen) that peaks in the third trimester.',
     ],
     [
       'An ectopic pregnancy most commonly implants in which location?',
-      ['The fallopian tube (ampullary region)', 'The ovary - a frequent point of confusion', 'The cervix', 'The abdominal cavity'],
+      ['The fallopian tube (ampullary region)', 'The ovary', 'The cervix', 'The abdominal cavity'],
       0,
       'Over 90% of ectopic pregnancies occur in the fallopian tube, most often the ampulla, and rupture there is a leading cause of first-trimester maternal mortality if not caught early.',
     ],
@@ -355,13 +355,13 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'The Apgar score, used to assess a newborn\'s condition immediately after birth, evaluates which five components?',
-      ['Appearance (colour), Pulse, Grimace (reflex), Activity (tone), Respiration', 'Weight, length, head circumference, temperature, blood glucose', 'Blood type, Rh factor, bilirubin, haematocrit, glucose - a tempting but wrong inference', 'Gestational age, birth weight, sex, parity, delivery mode'],
+      ['Appearance (colour), Pulse, Grimace (reflex), Activity (tone), Respiration', 'Weight, length, head circumference, temperature, blood glucose', 'Blood type, Rh factor, bilirubin, haematocrit, glucose', 'Gestational age, birth weight, sex, parity, delivery mode'],
       0,
       'Devised by Virginia Apgar in 1952, the five components are each scored 0-2 at one and five minutes after birth, giving a quick, standardised assessment of the need for resuscitation.',
     ],
     [
       'Uterine fibroids (leiomyomas) are benign tumours arising from which tissue?',
-      ['Smooth muscle of the myometrium', 'Endometrial glandular tissue', 'Ovarian stromal tissue - a widely repeated misstatement', 'Cervical squamous epithelium'],
+      ['Smooth muscle of the myometrium', 'Endometrial glandular tissue', 'Ovarian stromal tissue', 'Cervical squamous epithelium'],
       0,
       'Fibroids are monoclonal smooth-muscle tumours, are the most common pelvic tumour in women, and are oestrogen- and progesterone-sensitive, which is why they typically grow during reproductive years and shrink after menopause.',
     ],
@@ -399,7 +399,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Placenta accreta spectrum disorders are strongly associated with which prior obstetric history?',
-      ['Previous caesarean section, especially with a co-existing placenta praevia', 'Previous vaginal delivery without complication', 'Nulliparity with no prior surgery', 'Previous forceps delivery only - a frequent point of confusion - a widely repeated misstatement'],
+      ['Previous caesarean section, especially with a co-existing placenta praevia', 'Previous vaginal delivery without complication', 'Nulliparity with no prior surgery', 'Previous forceps delivery only'],
       0,
       'Scarring from prior uterine surgery, particularly caesarean section, disrupts the normal decidua-myometrium interface, allowing abnormally deep trophoblastic invasion in a subsequent pregnancy, and risk rises sharply with each additional caesarean.',
     ],
@@ -417,7 +417,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Asherman syndrome, a recognised cause of secondary amenorrhoea and infertility, results from what pathological process?',
-      ['Intrauterine adhesions/scarring, often following dilation and curettage or endometritis', 'Autoimmune destruction of the endometrium', 'Congenital absence of the uterus', 'Ovarian hyperstimulation - a frequent point of confusion - a widely repeated misstatement - a tempting but wrong inference'],
+      ['Intrauterine adhesions/scarring, often following dilation and curettage or endometritis', 'Autoimmune destruction of the endometrium', 'Congenital absence of the uterus', 'Ovarian hyperstimulation'],
       0,
       'Damage to the basal endometrial layer, most commonly from post-partum or post-abortion curettage, can lead to fibrous adhesions obliterating the uterine cavity, diagnosed by hysteroscopy and treated by adhesiolysis.',
     ],
@@ -441,13 +441,13 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'The triple test (or quad test) used in second-trimester aneuploidy screening measures maternal serum levels of which markers (quad version)?',
-      ['AFP, hCG, unconjugated oestriol, and inhibin A', 'Progesterone, LH, FSH, and prolactin', 'CA-125, HE4, AFP, and hCG - a tempting but wrong inference', 'TSH, free T4, hCG, and AFP only'],
+      ['AFP, hCG, unconjugated oestriol, and inhibin A', 'Progesterone, LH, FSH, and prolactin', 'CA-125, HE4, AFP, and hCG', 'TSH, free T4, hCG, and AFP only'],
       0,
       'Characteristic patterns of these four markers shift the estimated risk of trisomy 21, trisomy 18, and neural tube defects; it has been increasingly supplemented or replaced by non-invasive prenatal testing using cell-free fetal DNA.',
     ],
     [
       'Which mechanism explains why combined hormonal contraceptives increase venous thromboembolism risk?',
-      ['Oestrogen-induced increases in hepatic clotting factor synthesis and reduced protein S/antithrombin activity', 'Direct mechanical vessel wall injury - an easy but mistaken assumption - a frequent point of confusion - a widely repeated misstatement', 'Progestin-induced platelet count elevation', 'Reduced fibrinolysis via a renal mechanism only'],
+      ['Oestrogen-induced increases in hepatic clotting factor synthesis and reduced protein S/antithrombin activity', 'Direct mechanical vessel wall injury', 'Progestin-induced platelet count elevation', 'Reduced fibrinolysis via a renal mechanism only'],
       0,
       'Ethinylestradiol increases hepatic synthesis of several clotting factors (II, VII, X) and reduces natural anticoagulants, tilting haemostatic balance toward a mildly procoagulant state, which is why VTE history is a contraindication.',
     ],
@@ -467,7 +467,7 @@ export const OBGYN: CategoryContent = {
   professor: [
     [
       'Semmelweis\'s 1847 intervention that dramatically reduced puerperal fever mortality in the Vienna maternity clinic involved what specific practice?',
-      ['Handwashing with a chlorinated lime solution between autopsy work and attending labouring women', 'Isolating febrile mothers in a separate ward', 'Boiling all surgical instruments - an easy but mistaken assumption - a frequent point of confusion', 'Restricting medical student access to the wards entirely'],
+      ['Handwashing with a chlorinated lime solution between autopsy work and attending labouring women', 'Isolating febrile mothers in a separate ward', 'Boiling all surgical instruments', 'Restricting medical student access to the wards entirely'],
       0,
       'Semmelweis correctly inferred "cadaverous particles" were being carried from autopsies to birthing patients, though germ theory did not yet exist to explain why; his chlorinated lime handwashing protocol cut mortality dramatically, but his ideas were largely rejected by contemporaries during his lifetime.',
     ],
@@ -485,7 +485,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'The pathophysiological hallmark of pre-eclampsia, now understood to originate from abnormal placentation, involves failure of what specific process in early pregnancy?',
-      ['Trophoblastic remodelling of the maternal spiral arteries into low-resistance vessels', 'Closure of the ductus venosus - a frequent point of confusion - a widely repeated misstatement', 'Fusion of the amnion and chorion', 'Formation of the primitive streak'],
+      ['Trophoblastic remodelling of the maternal spiral arteries into low-resistance vessels', 'Closure of the ductus venosus', 'Fusion of the amnion and chorion', 'Formation of the primitive streak'],
       0,
       'Shallow trophoblast invasion leaves the spiral arteries narrow and high-resistance, causing placental hypoperfusion; the resulting release of anti-angiogenic factors (like soluble Flt-1) into the maternal circulation drives the systemic endothelial dysfunction of clinical pre-eclampsia.',
     ],
@@ -503,7 +503,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'The Krukenberg tumour is a specific type of ovarian metastasis notable for which primary origin?',
-      ['Gastrointestinal signet-ring cell adenocarcinoma, classically gastric', 'Primary breast cancer exclusively', 'Primary lung squamous cell carcinoma', 'Primary thyroid carcinoma - a frequent point of confusion - a widely repeated misstatement'],
+      ['Gastrointestinal signet-ring cell adenocarcinoma, classically gastric', 'Primary breast cancer exclusively', 'Primary lung squamous cell carcinoma', 'Primary thyroid carcinoma'],
       0,
       'Krukenberg tumours are bilateral, mucin-producing signet-ring cell metastases most classically from gastric adenocarcinoma, spreading via transperitoneal or lymphatic routes to seed the ovaries.',
     ],
@@ -521,13 +521,13 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Uterine inversion, a rare but life-threatening third-stage complication, is most classically associated with what iatrogenic risk factor?',
-      ['Excessive cord traction or fundal pressure before placental separation', 'Prolonged first stage of labour', 'Epidural anaesthesia', 'Use of a partograph - a widely repeated misstatement - a tempting but wrong inference'],
+      ['Excessive cord traction or fundal pressure before placental separation', 'Prolonged first stage of labour', 'Epidural anaesthesia', 'Use of a partograph'],
       0,
       'Pulling on the umbilical cord or pushing on the uterine fundus before the placenta has physiologically separated can invert the fundus through the cervix, causing profound vagal-mediated hypotension and haemorrhage requiring emergency manual replacement.',
     ],
     [
       'The BRCA1 and BRCA2 mutations, relevant to risk-reducing salpingo-oophorectomy counselling, confer elevated lifetime risk predominantly for which gynaecological cancer, alongside breast cancer?',
-      ['Ovarian (and fallopian tube) cancer', 'Cervical cancer', 'Vulvar cancer - a frequent point of confusion', 'Gestational trophoblastic disease'],
+      ['Ovarian (and fallopian tube) cancer', 'Cervical cancer', 'Vulvar cancer', 'Gestational trophoblastic disease'],
       0,
       'BRCA mutations impair homologous recombination DNA repair; the elevated ovarian/fallopian tube cancer risk, combined with the lack of an effective ovarian screening test, is why risk-reducing salpingo-oophorectomy is offered once childbearing is complete, and why recent research increasingly implicates fallopian tube fimbrial epithelium as the origin site for many "ovarian" high-grade serous cancers.',
     ],
@@ -545,13 +545,13 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'The historical introduction of the partograph, standardising labour monitoring, is most associated with reducing which specific complication when used to trigger timely intervention?',
-      ['Obstructed labour progressing to uterine rupture or prolonged labour morbidity', 'Postpartum depression', 'Neonatal jaundice - a widely repeated misstatement - a tempting but wrong inference', 'Preterm birth rate'],
+      ['Obstructed labour progressing to uterine rupture or prolonged labour morbidity', 'Postpartum depression', 'Neonatal jaundice', 'Preterm birth rate'],
       0,
       'By plotting cervical dilation against time and flagging when progress crosses "alert" and "action" lines, the partograph (developed from Friedman\'s labour curve work and championed by the WHO) was designed to prompt earlier intervention in obstructed or prolonged labour, particularly valuable in resource-limited settings without continuous individualised monitoring.',
     ],
     [
       'Placental mosaicism detected on chorionic villus sampling (CVS), discordant from the true fetal karyotype, is best explained by which embryological phenomenon?',
-      ['Confined placental mosaicism arising from a post-zygotic mitotic error restricted largely to trophoblast lineage', 'Maternal cell contamination of the sample exclusively', 'A laboratory culture artefact with no biological basis', 'Paternal uniparental disomy affecting only the fetus - an easy but mistaken assumption - a frequent point of confusion'],
+      ['Confined placental mosaicism arising from a post-zygotic mitotic error restricted largely to trophoblast lineage', 'Maternal cell contamination of the sample exclusively', 'A laboratory culture artefact with no biological basis', 'Paternal uniparental disomy affecting only the fetus'],
       0,
       'Because the trophoblast and inner cell mass diverge very early in development, a mitotic error occurring after this split can be confined to the placental lineage, meaning a CVS result showing an abnormal karyotype does not always reflect the fetus itself, and follow-up amniocentesis is often warranted.',
     ],
@@ -574,13 +574,13 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'William of Orange (William the Silent) is chiefly remembered as what?',
-      ['The leader of the Dutch Revolt against Spanish rule', 'The first King of the Netherlands', 'The founder of the VOC - a tempting but wrong inference', 'A Habsburg governor loyal to Spain'],
+      ['The leader of the Dutch Revolt against Spanish rule', 'The first King of the Netherlands', 'The founder of the VOC', 'A Habsburg governor loyal to Spain'],
       0,
       'William led the early resistance and became stadtholder of several provinces; he was assassinated in 1584 but is regarded as the founding figure of Dutch independence and the House of Orange-Nassau\'s political role.',
     ],
     [
       'The 1579 Union of Utrecht is significant because it did what?',
-      ['Bound the northern provinces together in a defensive alliance against Spain, forming the basis of the later Republic', 'Ended the Eighty Years\' War - an easy but mistaken assumption - a frequent point of confusion - a widely repeated misstatement', 'Created the Kingdom of the Netherlands', 'Split the Netherlands from Belgium permanently'],
+      ['Bound the northern provinces together in a defensive alliance against Spain, forming the basis of the later Republic', 'Ended the Eighty Years\' War', 'Created the Kingdom of the Netherlands', 'Split the Netherlands from Belgium permanently'],
       0,
       'The Union created a confederal structure among Holland, Zeeland, Utrecht, and other northern provinces, functioning as the constitutional backbone of the Dutch Republic until 1795, even though it was originally meant to be provisional.',
     ],
@@ -610,7 +610,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'Johan de Witt, Grand Pensionary of Holland in the mid-1600s, is most associated with which political tendency?',
-      ['Republican, "True Freedom" governance minimising the stadtholder\'s power', 'Strengthening the House of Orange\'s monarchical authority', 'Alliance with Spain against France', 'Abolishing the VOC - an easy but mistaken assumption - a frequent point of confusion'],
+      ['Republican, "True Freedom" governance minimising the stadtholder\'s power', 'Strengthening the House of Orange\'s monarchical authority', 'Alliance with Spain against France', 'Abolishing the VOC'],
       0,
       'De Witt led the "True Freedom" era (roughly 1650-1672) during which no stadtholder was appointed in Holland, concentrating power instead in the merchant-oligarchic States; he was killed by a mob in 1672 amid the crisis of the Rampjaar.',
     ],
@@ -634,7 +634,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'The United Kingdom of the Netherlands, created in 1815, united which two regions under one crown?',
-      ['The former Dutch Republic territories and the former Austrian (Southern) Netherlands, roughly modern Belgium', 'The Netherlands and Luxembourg only, excluding Belgium', 'The Netherlands and Prussia - an easy but mistaken assumption - a frequent point of confusion - a widely repeated misstatement', 'The Netherlands and the Dutch East Indies as an equal partner state'],
+      ['The former Dutch Republic territories and the former Austrian (Southern) Netherlands, roughly modern Belgium', 'The Netherlands and Luxembourg only, excluding Belgium', 'The Netherlands and Prussia', 'The Netherlands and the Dutch East Indies as an equal partner state'],
       0,
       'The Congress of Vienna merged the north and south to create a buffer state against France, under King William I; the union proved unstable and Belgium seceded in 1830.',
     ],
@@ -660,13 +660,13 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'The Synod of Dort (1618-1619) is significant in Dutch religious-political history because it did what?',
-      ['Condemned Arminianism and affirmed strict Calvinist orthodoxy, with political consequences for the Remonstrant faction', 'United Catholics and Protestants under one creed', 'Abolished the Reformed Church as the public church', 'Created the States General - a frequent point of confusion - a widely repeated misstatement - a tempting but wrong inference'],
+      ['Condemned Arminianism and affirmed strict Calvinist orthodoxy, with political consequences for the Remonstrant faction', 'United Catholics and Protestants under one creed', 'Abolished the Reformed Church as the public church', 'Created the States General'],
       0,
       'The Synod\'s condemnation of the Arminian "Remonstrants" was entangled with the political rivalry between Stadtholder Maurice of Orange and Grand Pensionary Johan van Oldenbarnevelt, who was executed in 1619 partly as a result of the ensuing power struggle.',
     ],
     [
       'Johan van Oldenbarnevelt, executed in 1619, had been the dominant political figure of the early Republic in which role?',
-      ['Land\'s Advocate (later Grand Pensionary) of Holland', 'Stadtholder of all seven provinces', 'Admiral of the fleet - an easy but mistaken assumption', 'Governor-General of the VOC in Batavia'],
+      ['Land\'s Advocate (later Grand Pensionary) of Holland', 'Stadtholder of all seven provinces', 'Admiral of the fleet', 'Governor-General of the VOC in Batavia'],
       0,
       'As the leading civilian statesman, Oldenbarnevelt had guided the Republic through the Twelve Years\' Truce negotiations, but his Arminian sympathies and rivalry with Stadtholder Maurice led to his trial and execution on charges that were substantially politically motivated.',
     ],
@@ -696,7 +696,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'The Patriottentijd (Patriot period) of the 1780s in the Dutch Republic was characterised primarily by conflict between which two factions?',
-      ['Democratic "Patriots" seeking reform against the Orangist stadtholderate and its supporters', 'Catholic and Protestant factions over church governance', 'The VOC and WIC over trading monopolies - a widely repeated misstatement - a tempting but wrong inference', 'Northern and southern provinces over language rights'],
+      ['Democratic "Patriots" seeking reform against the Orangist stadtholderate and its supporters', 'Catholic and Protestant factions over church governance', 'The VOC and WIC over trading monopolies', 'Northern and southern provinces over language rights'],
       0,
       'Influenced by Enlightenment and American revolutionary ideas, the Patriots sought to curtail Stadtholder William V\'s power and expand civic political participation; Prussian military intervention in 1787 restored Orangist authority until the French-backed Batavian Revolution of 1795.',
     ],
@@ -714,13 +714,13 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'William I of the Netherlands, before becoming king in 1815, had been a member of which prior ruling house\'s branch, and in what capacity relevant to Dutch history?',
-      ['The House of Orange-Nassau, as the son of the last stadtholder William V', 'The House of Habsburg, as a Spanish-appointed governor', 'The House of Bonaparte, as a French-appointed administrator', 'The House of Hohenzollern, as a Prussian general only - a widely repeated misstatement'],
+      ['The House of Orange-Nassau, as the son of the last stadtholder William V', 'The House of Habsburg, as a Spanish-appointed governor', 'The House of Bonaparte, as a French-appointed administrator', 'The House of Hohenzollern, as a Prussian general only'],
       0,
       'William I was the son of Stadtholder William V and returned from exile after Napoleon\'s fall to be proclaimed sovereign prince, then king, restoring Orange rule but now as a constitutional monarch rather than a stadtholder.',
     ],
     [
       'The Cultivation System (cultuurstelsel), introduced in the Dutch East Indies from 1830, required what of Javanese farmers?',
-      ['Devoting a portion of land or labour to government-designated export crops instead of subsistence crops', 'Paying taxes exclusively in silver coin with no labour obligation', 'Relocating entirely to plantations run by private European settlers', 'Converting to Christianity as a condition of land tenure - an easy but mistaken assumption - a frequent point of confusion'],
+      ['Devoting a portion of land or labour to government-designated export crops instead of subsistence crops', 'Paying taxes exclusively in silver coin with no labour obligation', 'Relocating entirely to plantations run by private European settlers', 'Converting to Christianity as a condition of land tenure'],
       0,
       'Villages were required to devote roughly a fifth of their land (or equivalent labour) to crops like coffee, sugar, and indigo for the colonial government, generating enormous revenue for the Netherlands (the "cultuurprocenten") while provoking recurrent famine and later reformist criticism.',
     ],
@@ -758,7 +758,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'The doctrine of "particularism" in Dutch Republic historiography refers to what structural feature of governance?',
-      ['The strong retention of sovereignty by individual provinces and cities rather than a strong central state', 'A unique form of religious toleration unmatched elsewhere in Europe', 'A specific VOC trading policy in Japan - a frequent point of confusion - a widely repeated misstatement - a tempting but wrong inference', 'The stadtholder\'s personal control of foreign policy'],
+      ['The strong retention of sovereignty by individual provinces and cities rather than a strong central state', 'A unique form of religious toleration unmatched elsewhere in Europe', 'A specific VOC trading policy in Japan', 'The stadtholder\'s personal control of foreign policy'],
       0,
       'Sovereignty in the Republic formally rested with the individual provincial States, which delegated only limited, revocable authority to the States General; this decentralised structure produced both remarkable resilience and chronic difficulty in mounting swift, unified action.',
     ],
@@ -812,7 +812,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'The Java War (1825-1830), fought in the Dutch East Indies during roughly the same period as Belgian secession, was led on the Javanese side chiefly by whom?',
-      ['Prince Diponegoro', 'Sultan Agung', 'Raden Saleh', 'Trunojoyo - a widely repeated misstatement'],
+      ['Prince Diponegoro', 'Sultan Agung', 'Raden Saleh', 'Trunojoyo'],
       0,
       'Diponegoro\'s five-year guerrilla resistance against Dutch colonial expansion and the erosion of Javanese court authority was enormously costly to the colonial treasury, and its financial strain is one factor historians cite in the subsequent turn toward the revenue-maximising Cultivation System from 1830.',
     ],
@@ -841,19 +841,19 @@ export const MAKER: CategoryContent = {
   graduate: [
     [
       'FDM (Fused Deposition Modelling) 3D printing works by what basic process?',
-      ['Melting and extruding thermoplastic filament layer by layer', 'Curing liquid resin with ultraviolet light', 'Sintering powdered metal with a laser - a tempting but wrong inference', 'Cutting layers from solid sheet material'],
+      ['Melting and extruding thermoplastic filament layer by layer', 'Curing liquid resin with ultraviolet light', 'Sintering powdered metal with a laser', 'Cutting layers from solid sheet material'],
       0,
       'A heated nozzle melts filament and deposits it along a programmed path, with each layer bonding to the one below as it cools, making FDM the most common and accessible consumer 3D printing method.',
     ],
     [
       'SLA (stereolithography) 3D printing cures which material to build a part?',
-      ['Liquid photopolymer resin', 'Thermoplastic filament', 'Metal powder - a widely repeated misstatement', 'Paper sheets'],
+      ['Liquid photopolymer resin', 'Thermoplastic filament', 'Metal powder', 'Paper sheets'],
       0,
       'A laser or light source selectively cures liquid resin layer by layer, generally producing much finer surface detail than FDM, at the cost of more complex post-processing (washing and further UV curing).',
     ],
     [
       'PLA filament is popular for beginner 3D printing largely because of what property?',
-      ['It prints at relatively low temperatures with minimal warping and is derived from renewable resources', 'It has the highest heat resistance of any common filament', 'It is the strongest engineering filament available', 'It requires no cooling fan during printing - an easy but mistaken assumption - a frequent point of confusion'],
+      ['It prints at relatively low temperatures with minimal warping and is derived from renewable resources', 'It has the highest heat resistance of any common filament', 'It is the strongest engineering filament available', 'It requires no cooling fan during printing'],
       0,
       'Polylactic acid, made from fermented plant starch, is easy to print with low odour and low warping compared to ABS, though it has lower heat and impact resistance than engineering plastics like ABS or nylon.',
     ],
@@ -877,7 +877,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'CO2 lasers, common in hobbyist laser cutters, are typically best suited for cutting which materials?',
-      ['Organic materials like wood, acrylic, and paper', 'Bare metal sheets', 'Reflective aluminium', 'Pure copper - a widely repeated misstatement - a tempting but wrong inference'],
+      ['Organic materials like wood, acrylic, and paper', 'Bare metal sheets', 'Reflective aluminium', 'Pure copper'],
       0,
       'CO2 lasers operate at a wavelength (around 10.6 micrometres) well absorbed by organic and many polymer materials, but poorly absorbed by (and often reflected by) untreated bare metals, unlike fiber lasers.',
     ],
@@ -889,7 +889,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'A 3D printer\'s "first layer" calibration is critical mainly because of what?',
-      ['Poor bed adhesion on the first layer causes the whole print to warp, shift, or fail', 'It determines the printer\'s maximum speed for the rest of the print', 'It sets the colour of the filament - an easy but mistaken assumption - a frequent point of confusion', 'It only affects the very top of tall prints'],
+      ['Poor bed adhesion on the first layer causes the whole print to warp, shift, or fail', 'It determines the printer\'s maximum speed for the rest of the print', 'It sets the colour of the filament', 'It only affects the very top of tall prints'],
       0,
       'If the first layer does not adhere properly to the build plate, subsequent layers have no stable foundation, which is why bed levelling and first-layer height/speed settings receive so much attention in printer setup.',
     ],
@@ -907,13 +907,13 @@ export const MAKER: CategoryContent = {
     ],
     [
       'The RepRap project, started in the mid-2000s, was significant in the 3D printing world chiefly for pursuing what goal?',
-      ['Open-source, self-replicating 3D printers that could print many of their own parts', 'The first commercial industrial metal 3D printer', 'The first laser cutter for home use', 'Patenting stereolithography - a frequent point of confusion - a widely repeated misstatement'],
+      ['Open-source, self-replicating 3D printers that could print many of their own parts', 'The first commercial industrial metal 3D printer', 'The first laser cutter for home use', 'Patenting stereolithography'],
       0,
       'Adrian Bowyer\'s RepRap project aimed to design printers capable of printing a large share of their own components, and its open-source designs are widely credited with sparking the affordable desktop 3D printer boom of the following decade.',
     ],
     [
       'Laser classifications (such as Class 1, Class 3R, Class 4) primarily indicate what?',
-      ['The potential hazard level of the laser to eyes and skin', 'The wavelength of light emitted', 'The country of manufacture', 'The maximum cutting speed - an easy but mistaken assumption'],
+      ['The potential hazard level of the laser to eyes and skin', 'The wavelength of light emitted', 'The country of manufacture', 'The maximum cutting speed'],
       0,
       'Laser safety classes rank devices by output power and associated risk, from Class 1 (safe under normal use) up to Class 4 (hazardous even from diffuse reflections), and most hobbyist cutting/engraving lasers fall into the higher-risk classes requiring enclosures and eye protection.',
     ],
@@ -933,7 +933,7 @@ export const MAKER: CategoryContent = {
   phd: [
     [
       'DLP (Digital Light Processing) resin printing differs from laser-based SLA chiefly in how it cures each layer; what is that difference?',
-      ['DLP projects an entire layer\'s image at once using a digital projector, rather than tracing it point-by-point with a laser', 'DLP uses no light source at all, curing resin thermally', 'DLP always prints slower than SLA regardless of part size', 'DLP requires no build platform - an easy but mistaken assumption - a frequent point of confusion - a widely repeated misstatement'],
+      ['DLP projects an entire layer\'s image at once using a digital projector, rather than tracing it point-by-point with a laser', 'DLP uses no light source at all, curing resin thermally', 'DLP always prints slower than SLA regardless of part size', 'DLP requires no build platform'],
       0,
       'Because a DLP projector exposes a full cross-section simultaneously, layer print time is largely independent of the number of features in that layer, whereas laser-based SLA must trace each point, making DLP often faster for geometrically complex layers.',
     ],
@@ -957,13 +957,13 @@ export const MAKER: CategoryContent = {
     ],
     [
       'Q-switching in laser physics is a technique used to produce what kind of laser output?',
-      ['Very short, high-peak-power pulses by rapidly modulating cavity losses', 'Continuous, perfectly stable output with no pulsing - a tempting but wrong inference', 'A beam with no measurable divergence at any distance', 'Multiple simultaneous wavelengths from a single gain medium'],
+      ['Very short, high-peak-power pulses by rapidly modulating cavity losses', 'Continuous, perfectly stable output with no pulsing', 'A beam with no measurable divergence at any distance', 'Multiple simultaneous wavelengths from a single gain medium'],
       0,
       'By allowing energy to build up in the gain medium while the cavity Q (quality factor) is deliberately kept low, then rapidly switching to high Q, a large amount of stored energy is released almost instantaneously, producing pulses with far higher peak power than the laser could sustain continuously - used, for example, in laser marking and tattoo removal.',
     ],
     [
       'Population inversion, a prerequisite for laser action, refers to what specific condition in the gain medium?',
-      ['More atoms/ions in a higher-energy excited state than in the lower-energy state involved in the lasing transition', 'Complete depletion of the ground state population', 'Equal populations in all energy states - an easy but mistaken assumption - a frequent point of confusion - a widely repeated misstatement', 'A physical inversion of the laser cavity mirrors'],
+      ['More atoms/ions in a higher-energy excited state than in the lower-energy state involved in the lasing transition', 'Complete depletion of the ground state population', 'Equal populations in all energy states', 'A physical inversion of the laser cavity mirrors'],
       0,
       'Under normal thermal equilibrium, lower energy states are always more populated; achieving the "inverted" condition (via optical, electrical, or chemical pumping) is what allows stimulated emission to dominate over absorption, enabling net light amplification.',
     ],
@@ -975,7 +975,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'Layer adhesion problems between successive FDM layers, distinct from bed adhesion, are primarily governed by what parameter?',
-      ['Nozzle temperature and cooling rate, which control how well successive layers thermally fuse together', 'Bed levelling alone - a frequent point of confusion - a widely repeated misstatement - a tempting but wrong inference', 'The colour of the filament', 'Ambient humidity of the filament storage only, with no printing-time factor'],
+      ['Nozzle temperature and cooling rate, which control how well successive layers thermally fuse together', 'Bed levelling alone', 'The colour of the filament', 'Ambient humidity of the filament storage only, with no printing-time factor'],
       0,
       'Insufficient nozzle temperature or excessive cooling can prevent adjacent layers from properly re-melting and fusing at their interface, producing weak interlayer bonds and, in severe cases, visible splitting - a mechanically distinct failure mode from first-layer bed adhesion issues.',
     ],
@@ -993,7 +993,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'Continuous wave (CW) fiber lasers used in industrial cutting typically use which element as the active dopant in the fiber\'s core?',
-      ['Ytterbium', 'Neon - a widely repeated misstatement', 'Argon', 'Chromium'],
+      ['Ytterbium', 'Neon', 'Argon', 'Chromium'],
       0,
       'Ytterbium-doped fiber lasers dominate industrial cutting and welding because ytterbium offers high efficiency, a favourable emission wavelength (around 1070 nm) well absorbed by metals, and excellent beam quality from the fiber geometry itself.',
     ],
@@ -1011,7 +1011,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'Multi Jet Fusion (MJF), an HP-developed powder-bed process, differs from laser-based SLS chiefly in its fusing mechanism; what is it?',
-      ['A fusing agent is inkjet-printed onto the powder bed, then infrared energy is applied across the whole bed to selectively heat and fuse the treated areas', 'A laser scans the surface exactly as in SLS, with no chemical agent involved', 'Parts are fused using ultrasonic vibration alone - an easy but mistaken assumption - a frequent point of confusion - a widely repeated misstatement - a tempting but wrong inference', 'Powder is fused by localised microwave heating with no printed agent'],
+      ['A fusing agent is inkjet-printed onto the powder bed, then infrared energy is applied across the whole bed to selectively heat and fuse the treated areas', 'A laser scans the surface exactly as in SLS, with no chemical agent involved', 'Parts are fused using ultrasonic vibration alone', 'Powder is fused by localised microwave heating with no printed agent'],
       0,
       'Because the whole bed is exposed to infrared energy at once (with only the inkjet-deposited fusing agent driving localised heating above the fusion point), MJF can achieve substantially faster build rates than laser-scanning SLS, at some trade-off in fine feature resolution.',
     ],
@@ -1025,7 +1025,7 @@ export const MAKER: CategoryContent = {
   professor: [
     [
       'Theodore Maiman\'s 1960 demonstration of the first working laser used which gain medium?',
-      ['A synthetic ruby crystal', 'Helium-neon gas - an easy but mistaken assumption', 'A semiconductor diode', 'Carbon dioxide gas'],
+      ['A synthetic ruby crystal', 'Helium-neon gas', 'A semiconductor diode', 'Carbon dioxide gas'],
       0,
       'Maiman\'s ruby laser, built at Hughes Research Laboratories, produced pulsed output at 694.3 nm and beat several better-funded groups (including those pursuing gas and semiconductor approaches) to the first practical demonstration, in some tension with Townes and Schawlow\'s earlier theoretical groundwork.',
     ],
@@ -1043,7 +1043,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'In laser physics, the "gain medium" linewidth and the specific longitudinal cavity modes it can support together determine what practical laser property?',
-      ['Whether the laser operates in single-mode or multi-mode (and hence its coherence length and spectral purity)', 'The physical size of the laser housing only - a frequent point of confusion - a widely repeated misstatement - a tempting but wrong inference', 'The colour of the safety warning label required', 'The laser\'s electrical power consumption exclusively'],
+      ['Whether the laser operates in single-mode or multi-mode (and hence its coherence length and spectral purity)', 'The physical size of the laser housing only', 'The colour of the safety warning label required', 'The laser\'s electrical power consumption exclusively'],
       0,
       'Only cavity modes that fall within the gain medium\'s bandwidth and satisfy the resonance condition can lase; whether one or several such modes are supported determines single- versus multi-longitudinal-mode operation, directly affecting coherence length - critical for applications like interferometry or certain types of precision cutting.',
     ],
@@ -1079,7 +1079,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'Diode-pumped solid-state (DPSS) lasers largely superseded older flashlamp-pumped solid-state lasers (e.g. early Nd:YAG systems) primarily because of what advantage?',
-      ['Significantly higher electrical-to-optical efficiency and longer pump-source lifetime', 'Being the only method capable of continuous-wave output at all', 'Requiring no cooling system whatsoever - a widely repeated misstatement - a tempting but wrong inference', 'Eliminating the need for any resonant cavity'],
+      ['Significantly higher electrical-to-optical efficiency and longer pump-source lifetime', 'Being the only method capable of continuous-wave output at all', 'Requiring no cooling system whatsoever', 'Eliminating the need for any resonant cavity'],
       0,
       'Semiconductor laser diodes convert electrical input to pump light far more efficiently than flashlamps and last vastly longer before replacement, which along with better spectral matching to the gain medium\'s absorption bands drove the shift to DPSS designs across many precision laser applications from the 1990s onward.',
     ],
@@ -1097,7 +1097,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'The historiography of the RepRap project credits its explicit design goal of self-replication to which specific proposed sequence of adoption, sometimes analogised to biological reproduction?',
-      ['A geometric ("viral") growth model in which each printer could produce parts for several more printers, accelerating adoption exponentially', 'A strictly linear, one-printer-per-year replacement model - a frequent point of confusion - a widely repeated misstatement - a tempting but wrong inference', 'A model in which no printer could ever produce parts for another printer', 'A purely theoretical goal never intended for practical realisation'],
+      ['A geometric ("viral") growth model in which each printer could produce parts for several more printers, accelerating adoption exponentially', 'A strictly linear, one-printer-per-year replacement model', 'A model in which no printer could ever produce parts for another printer', 'A purely theoretical goal never intended for practical realisation'],
       0,
       'Bowyer and colleagues explicitly framed self-replication in terms of potential exponential ("viral") propagation, where each machine capable of producing a significant fraction of another machine\'s parts could accelerate distribution far faster than conventional manufacturing and sales, a framing that shaped much of the project\'s open-source ethos and subsequent commercial derivatives.',
     ],

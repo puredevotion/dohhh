@@ -1,0 +1,22 @@
+{
+  "title": "Speel solo",
+  "subtitle": "Een lokale dealer geeft je meteen een keuze uit drie categorieën zodra je er klaar voor bent - geen tegenstander, geen wachten.",
+  "target_score": {
+    "title": "Streefscore",
+    "description": "{{target}} is de standaard. Haal je die score, dan is het spel afgelopen - er is niemand anders die je moet bijhouden."
+  },
+  "target_score_label": "Streefscore",
+  "target_score_error": "Kies een getal tussen 5 en 1000.",
+  "house_rules": {
+    "title": "Huisregels",
+    "description": "Beide uit is het spel precies zoals bedoeld."
+  },
+  "cap_streak": {
+    "label": "Maximeer goede reeksen op 3",
+    "description": "Hier puur een visuele reset - solo wacht niemand op de beurt die terugkomt."
+  },
+  "floor_score": {
+    "label": "Nooit onder nul",
+    "description": "Vriendelijker, maar het maakt de Dohhh-vraag een gratis gok, en dat is precies de spanning die dan verdwijnt."
+  }
+}

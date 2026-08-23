@@ -1,0 +1,32 @@
+{
+  "title": "Host a game",
+  "subtitle": "You will be the host, {{username}}. Others scan your code to join.",
+  "default_username": "you",
+  "default_game_name": "Dohhh game",
+  "name_card": {
+    "title": "Name the game",
+    "description": "Shown to anyone who scans your code."
+  },
+  "name_placeholder": "Thursday night",
+  "name_label": "Game name",
+  "target_card": {
+    "title": "Target score",
+    "description": "46 is the standard. Whoever crosses it first wins outright - no waiting for the round to finish, no equal-turns fairness rule."
+  },
+  "target_label": "Target score",
+  "target_error": "Pick a number between 5 and 1000.",
+  "rules_card": {
+    "title": "House rules",
+    "description": "Both off is the game exactly as specified."
+  },
+  "cap_streak": {
+    "label": "Pass the turn after 3 in a row",
+    "description": "Without this, a team that keeps answering correctly keeps the turn forever - which can mean one team plays the whole game while everyone watches."
+  },
+  "floor_score": {
+    "label": "Never go below zero",
+    "description": "Kinder, but it makes the professor-level question a free bet, which is the whole tension gone."
+  },
+  "notice": "You need at least two teams with a player each before the game can start. Two people on one team is not a game.",
+  "open_lobby": "Open the lobby"
+}

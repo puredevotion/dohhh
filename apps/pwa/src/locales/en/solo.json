@@ -1,0 +1,22 @@
+{
+  "title": "Play solo",
+  "subtitle": "A local dealer deals you a choice of three categories the instant you're ready - no opponent, no waiting.",
+  "target_score": {
+    "title": "Target score",
+    "description": "{{target}} is the standard. Reach it and the game ends - there's nobody else to catch up."
+  },
+  "target_score_label": "Target score",
+  "target_score_error": "Pick a number between 5 and 1000.",
+  "house_rules": {
+    "title": "House rules",
+    "description": "Both off is the game exactly as specified."
+  },
+  "cap_streak": {
+    "label": "Cap correct streaks at 3",
+    "description": "Purely a display reset here - solo, nobody's waiting for the turn back regardless."
+  },
+  "floor_score": {
+    "label": "Never go below zero",
+    "description": "Kinder, but it makes the Dohhh-tier question a free bet, which is the whole tension gone."
+  }
+}

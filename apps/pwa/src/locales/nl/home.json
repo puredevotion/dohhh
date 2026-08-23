@@ -1,0 +1,16 @@
+{
+  "signed_in_as": "Ingelogd als",
+  "save": "Opslaan",
+  "edit": "bewerk",
+  "device_label": "apparaat {{id}}",
+  "rename": "hernoem",
+  "device_placeholder": "bv. Mijn telefoon",
+  "device_aria_label": "Apparaatlabel",
+  "host_game": "Organiseer een spel",
+  "join_game": "Doe mee met een spel",
+  "play_solo": "Speel solo",
+  "rejoin_last_game": "Hervat mijn laatste spel",
+  "betting_title": "Zo werkt het gokken",
+  "betting_description": "De niveaus zijn genoemd naar wie ze zou moeten weten, en de vragen zijn daarop geschreven. Geen van allemaal is algemene kennis.",
+  "betting_rules": "Een tegenstander legt je drie categorieën voor; jij kiest hoe moeilijk een vraag je aandurft. Goed, en je houdt de beurt. Fout, en het kost je punten en de beurt gaat door. Wie als eerste {{target}} bereikt, wint."
+}

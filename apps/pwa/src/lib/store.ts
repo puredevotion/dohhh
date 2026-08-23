@@ -16,13 +16,17 @@ import {
   openTeam,
   SEED_PACK,
   SEED_PACK_HASH,
+  SEED_PACK_NL,
+  SEED_PACK_NL_HASH,
   setRoomLocked as setRoomLockedEvent,
   startGame,
   withUsername,
   type CategoryId,
+  type ContentPack,
   type Difficulty,
   type GameId,
   type Identity,
+  type Locale,
   type PlayerId,
   type RulesConfig,
   type SignedEvent,
@@ -45,9 +49,21 @@ import {
 } from '@dohhh/net';
 import { create } from 'zustand';
 
+import { i18n } from './i18n.js';
 import { navigate } from './router.js';
 
 const LAST_GAME_KEY = 'dohhh.lastGame.v1';
+const LOCALE_KEY = 'dohhh.locale.v1';
+
+/** The content pack for a given locale - question text differs, everything else about the game does not. */
+export function packFor(locale: Locale): ContentPack {
+  return locale === 'nl' ? SEED_PACK_NL : SEED_PACK;
+}
+
+/** The hash peers compare at join time, matching whichever pack {@link packFor} would pick. */
+function packHashFor(locale: Locale): string {
+  return locale === 'nl' ? SEED_PACK_NL_HASH : SEED_PACK_HASH;
+}
 /** How long the solo dealer waits before dealing the next question - exported so Play.tsx's countdown matches it exactly. */
 export const SOLO_DEAL_DELAY_MS = 20_000;
 /**
@@ -78,10 +94,13 @@ export interface AppState {
   readonly deviceLabel: string | null;
   /** True once persistent storage has failed and silently degraded to memory-only. */
   readonly storageDegraded: boolean;
+  /** UI language and, via {@link packFor}, which content pack a hosted/solo game deals from. */
+  readonly locale: Locale;
 
   signUp: (username: string) => void;
   rename: (username: string) => void;
   renameDevice: (label: string) => void;
+  setLocale: (locale: Locale) => void;
   host: (name: string, rules: Partial<RulesConfig>) => void;
   /**
    * A solo game against a local auto-dealer: no network, no lobby, no
@@ -264,6 +283,7 @@ export const useApp = create<AppState>((set, get) => {
     error: null,
     deviceLabel: store.get(DEVICE_LABEL_KEY),
     storageDegraded: false,
+    locale: (store.get(LOCALE_KEY) as Locale | null) ?? 'en',
 
     signUp: (username) => {
       const identity = createIdentity(username);
@@ -291,16 +311,23 @@ export const useApp = create<AppState>((set, get) => {
       set({ deviceLabel: trimmed });
     },
 
+    setLocale: (locale) => {
+      store.set(LOCALE_KEY, locale);
+      set({ locale });
+      void i18n.changeLanguage(locale);
+    },
+
     host: (name, rules) => {
       const identity = get().identity;
       if (identity === null) return;
+      const locale = get().locale;
       teardown();
       let log: EventLog | undefined;
       const game = createGame({
         identity,
         name,
         rules,
-        packHash: SEED_PACK_HASH,
+        packHash: packHashFor(locale),
         makeLog: (gameId) => {
           log = new EventLog(gameId);
           return log;
@@ -308,7 +335,7 @@ export const useApp = create<AppState>((set, get) => {
       });
       const session = new GameSession({
         identity,
-        pack: SEED_PACK,
+        pack: packFor(locale),
         gameId: game.gameId,
         joinCode: game.joinCode,
         seed: log?.events ?? [],
@@ -320,6 +347,7 @@ export const useApp = create<AppState>((set, get) => {
     hostSolo: (rules) => {
       const identity = get().identity;
       if (identity === null) return;
+      const locale = get().locale;
       teardown();
       const bot = createIdentity('The House');
       let log: EventLog | undefined;
@@ -330,7 +358,7 @@ export const useApp = create<AppState>((set, get) => {
         // engine - everything else about the rules is whatever the player
         // picked, same as a hosted one.
         rules: { ...rules, minTeams: 1 },
-        packHash: SEED_PACK_HASH,
+        packHash: packHashFor(locale),
         makeLog: (gameId) => {
           log = new EventLog(gameId);
           return log;
@@ -338,7 +366,7 @@ export const useApp = create<AppState>((set, get) => {
       });
       const session = new GameSession({
         identity,
-        pack: SEED_PACK,
+        pack: packFor(locale),
         gameId: game.gameId,
         joinCode: game.joinCode,
         seed: log?.events ?? [],
@@ -380,7 +408,7 @@ export const useApp = create<AppState>((set, get) => {
         });
         return;
       }
-      const refusal = checkTicket(found, { packHash: SEED_PACK_HASH });
+      const refusal = checkTicket(found, { packHash: packHashFor(get().locale) });
       if (refusal !== null) {
         set({ busy: null, error: explainRefusal(refusal) });
         return;
@@ -388,7 +416,7 @@ export const useApp = create<AppState>((set, get) => {
       teardown();
       const session = new GameSession({
         identity,
-        pack: SEED_PACK,
+        pack: packFor(get().locale),
         gameId: found.gameId,
         joinCode: code,
         seed: loadEvents(store, found.gameId),
@@ -403,7 +431,7 @@ export const useApp = create<AppState>((set, get) => {
       if (identity === null) return;
       // Refuse at the door, with a readable reason, rather than desyncing on
       // turn nine (R-11).
-      const refusal = checkTicket(ticket, { packHash: SEED_PACK_HASH });
+      const refusal = checkTicket(ticket, { packHash: packHashFor(get().locale) });
       if (refusal !== null) {
         set({ error: explainRefusal(refusal), busy: null });
         return;
@@ -411,7 +439,7 @@ export const useApp = create<AppState>((set, get) => {
       teardown();
       const session = new GameSession({
         identity,
-        pack: SEED_PACK,
+        pack: packFor(get().locale),
         gameId: ticket.gameId,
         joinCode: ticket.joinCode,
         seed: loadEvents(store, ticket.gameId),
@@ -438,7 +466,7 @@ export const useApp = create<AppState>((set, get) => {
         teardown();
         const session = new GameSession({
           identity,
-          pack: SEED_PACK,
+          pack: packFor(get().locale),
           gameId: last.gameId,
           joinCode: last.joinCode,
           seed: events,
@@ -548,14 +576,17 @@ export const useApp = create<AppState>((set, get) => {
 });
 
 /** The ticket a host shows on screen. Derived, never stored. */
-export function ticketFor(state: {
-  readonly gameId: GameId;
-  readonly joinCode: string;
-}): JoinTicket {
+export function ticketFor(
+  state: {
+    readonly gameId: GameId;
+    readonly joinCode: string;
+  },
+  locale: Locale,
+): JoinTicket {
   return buildTicket({
     gameId: state.gameId,
     joinCode: state.joinCode,
-    packHash: SEED_PACK_HASH,
+    packHash: packHashFor(locale),
   });
 }
 

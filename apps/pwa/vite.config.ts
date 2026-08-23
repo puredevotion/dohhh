@@ -43,7 +43,9 @@ export default defineConfig({
         // capable rather than merely installable.
         globPatterns: ['**/*.{js,css,html,png,svg,woff2}'],
         navigateFallback: 'index.html',
-        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // Both language question packs ship in one bundle (unused-locale code
+        // isn't split out yet), which pushed this past the old 4 MiB ceiling.
+        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
       },
     }),
   ],

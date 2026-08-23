@@ -1,0 +1,18 @@
+{
+  "game_over": "Game over",
+  "winner_title": "{{name}} win",
+  "sudden_death_subtitle": "Settled in sudden death.",
+  "rounds_count_one": "{{count}} round",
+  "rounds_count_other": "{{count}} rounds",
+  "questions_count_one": "{{count}} question",
+  "questions_count_other": "{{count}} questions",
+  "standings_subtitle": "{{rounds}}, {{questions}}.",
+  "winner_chip": "winner",
+  "every_question_title": "Every question",
+  "team_fallback": "team",
+  "streaks_title": "Streaks",
+  "longest_streak": "Longest unbroken run of correct answers: {{count}}.",
+  "streak_warning": "One team held the turn for {{count}} questions in a row. If that keeps happening, turn on \"pass the turn after 3 in a row\" when hosting - otherwise the other teams spend the game watching.",
+  "streak_ok": "The turn moved around, which is what you want.",
+  "done": "Done"
+}

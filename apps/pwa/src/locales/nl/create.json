@@ -1,0 +1,32 @@
+{
+  "title": "Start een spel",
+  "subtitle": "Jij bent de host, {{username}}. Anderen scannen jouw code om mee te doen.",
+  "default_username": "jij",
+  "default_game_name": "Dohhh-spel",
+  "name_card": {
+    "title": "Geef het spel een naam",
+    "description": "Zichtbaar voor iedereen die jouw code scant."
+  },
+  "name_placeholder": "Donderdagavond",
+  "name_label": "Naam van het spel",
+  "target_card": {
+    "title": "Streefscore",
+    "description": "46 is de standaard. Wie deze score als eerste haalt wint meteen - geen wachten tot de ronde klaar is, geen regel over gelijke beurten."
+  },
+  "target_label": "Streefscore",
+  "target_error": "Kies een getal tussen 5 en 1000.",
+  "rules_card": {
+    "title": "Huisregels",
+    "description": "Beide uit is het spel precies zoals bedoeld."
+  },
+  "cap_streak": {
+    "label": "Geef de beurt door na 3 op een rij",
+    "description": "Zonder deze regel houdt een team dat steeds goed antwoordt de beurt voor altijd - waardoor één team het hele spel speelt terwijl de rest toekijkt."
+  },
+  "floor_score": {
+    "label": "Nooit onder nul",
+    "description": "Aardiger, maar het maakt de professor-vraag een gratis gok, en dat is precies de spanning die dan verdwijnt."
+  },
+  "notice": "Je hebt minstens twee teams met elk een speler nodig voordat het spel kan beginnen. Twee mensen in één team is geen spel.",
+  "open_lobby": "Open de lobby"
+}
