@@ -48,6 +48,8 @@ import { create } from 'zustand';
 import { navigate } from './router.js';
 
 const LAST_GAME_KEY = 'dohhh.lastGame.v1';
+/** How long the solo dealer waits before dealing the next question - exported so Play.tsx's countdown matches it exactly. */
+export const SOLO_DEAL_DELAY_MS = 20_000;
 /**
  * Purely local, purely cosmetic: a label for *this device*, distinct from
  * the player's username. The hash (identity.id) is what every signature and
@@ -88,6 +90,8 @@ export interface AppState {
    * a team and never answers, so the human always bets and answers alone.
    */
   hostSolo: (rules: Partial<RulesConfig>) => void;
+  /** Skips the dealer's between-turns wait and deals the next question immediately. A no-op outside a solo game's dealing pause. */
+  continueSolo: () => void;
   joinByCode: (code: string) => Promise<void>;
   joinByTicket: (ticket: JoinTicket) => Promise<void>;
   resume: () => Promise<boolean>;
@@ -189,21 +193,23 @@ export const useApp = create<AppState>((set, get) => {
    * already keeps it that way; nothing here has to re-implement that rule,
    * only decide when to act.
    *
-   * Dealing the *next* question is deliberately delayed a beat rather than
+   * Dealing the *next* question is deliberately delayed rather than
    * committed the instant it's possible. Without the delay, the very first
    * version of this dealt immediately: a commit's `session.emit()` calls
    * every subscriber again synchronously, including this one, so resolving
    * a turn and dealing the next one both happened inside one synchronous
    * call stack - React never got a render in between, so the "you were
    * right/wrong" outcome card (only shown while `active === null`, between
-   * turns) was skipped entirely. The score still updated, which is the only
-   * thing that was visibly different, and looked exactly like a mystery
-   * with no feedback. Revealing a category, by contrast, stays instant:
-   * there's no card to skip past on that step, only a fast "which of
-   * three" moment that dwelling on adds nothing to.
+   * turns) was skipped entirely. `SOLO_DEAL_DELAY_MS` is long enough to
+   * actually read that card (Play.tsx shows a matching countdown), and
+   * `soloDealNow` - set here, called by the `continueSolo` action - lets a
+   * player skip the wait instead of being stuck reading at the game's
+   * pace. Revealing a category, by contrast, stays instant: there's no
+   * card to skip past on that step, only a fast "which of three" moment
+   * that dwelling on adds nothing to.
    */
+  let soloDealNow: (() => void) | null = null;
   const attachSoloBot = (session: GameSession, bot: Identity): void => {
-    const DEAL_DELAY_MS = 2_600;
     let dealTimer: ReturnType<typeof setTimeout> | null = null;
     let scheduledForTurn: number | null = null;
     session.subscribe((snapshot) => {
@@ -211,6 +217,7 @@ export const useApp = create<AppState>((set, get) => {
       if (s === null || s.phase !== 'playing') {
         if (dealTimer !== null) clearTimeout(dealTimer);
         dealTimer = null;
+        soloDealNow = null;
         return;
       }
       if (s.active === null) {
@@ -222,12 +229,16 @@ export const useApp = create<AppState>((set, get) => {
           session.commit(drawTurn(session.log, bot, s.turnIndex));
           return;
         }
-        dealTimer = setTimeout(() => {
+        const dealNow = (): void => {
+          if (dealTimer !== null) clearTimeout(dealTimer);
           dealTimer = null;
+          soloDealNow = null;
           if (session.state?.phase === 'playing' && session.state.active === null) {
             session.commit(drawTurn(session.log, bot, s.turnIndex));
           }
-        }, DEAL_DELAY_MS);
+        };
+        soloDealNow = dealNow;
+        dealTimer = setTimeout(dealNow, SOLO_DEAL_DELAY_MS);
         return;
       }
       if (s.active.categoryId === null) {
@@ -349,6 +360,8 @@ export const useApp = create<AppState>((set, get) => {
       session.commit(startGame(session.log, identity));
       navigate('/play');
     },
+
+    continueSolo: () => soloDealNow?.(),
 
     joinByCode: async (code) => {
       const identity = get().identity;

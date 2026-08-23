@@ -21,7 +21,7 @@ import {
 import { Button, Card, Chip, ProgressBar } from '@heroui/react';
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 
-import { useApp } from '../lib/store.js';
+import { SOLO_DEAL_DELAY_MS, useApp } from '../lib/store.js';
 import { ConnectionPill, Notice, Screen, StalledWarning, TierBadge, useElapsed } from '../ui/atoms.jsx';
 
 export function Play(): ReactNode {
@@ -343,10 +343,34 @@ function BetweenTurns({
       </Card>
 
       {!canDealNow && isActingPlayer(state, me) && (
-        <p className="text-center text-sm text-muted">
-          {state.rules.minTeams === 1 ? 'Dealing...' : 'Waiting for your opponents to deal.'}
-        </p>
+        state.rules.minTeams === 1 ? (
+          <SoloDealCountdown state={state} />
+        ) : (
+          <p className="text-center text-sm text-muted">Waiting for your opponents to deal.</p>
+        )
       )}
+    </div>
+  );
+}
+
+/**
+ * The solo dealer's between-turns pause, visible rather than silent: a
+ * countdown so it's clear something is about to happen (not stuck), and a
+ * "Continue" button because the outcome card above is worth reading once,
+ * not necessarily for the full pause on every turn - see the delay's own
+ * rationale on `attachSoloBot` in store.ts.
+ */
+function SoloDealCountdown({ state }: { state: GameState }): ReactNode {
+  const continueSolo = useApp((s) => s.continueSolo);
+  const remaining = useCountdown(`${state.gameId}:${state.turnIndex}:solo-deal`, SOLO_DEAL_DELAY_MS);
+  return (
+    <div className="flex items-center justify-between gap-3 rounded-xl border border-border/40 px-4 py-3">
+      <span className="font-mono text-sm tabular-nums text-muted">
+        Next question in {Math.max(0, Math.ceil(remaining / 1000))}s
+      </span>
+      <Button variant="secondary" size="sm" onPress={continueSolo}>
+        Continue
+      </Button>
     </div>
   );
 }
