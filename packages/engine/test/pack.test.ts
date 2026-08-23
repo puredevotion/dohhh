@@ -47,7 +47,7 @@ describe.each([
 
   it('covers every category at every difficulty', () => {
     const stats = packStats(pack);
-    expect(CATEGORY_IDS.length).toBe(40);
+    expect(CATEGORY_IDS.length).toBe(61);
     expect(stats.total).toBe(CATEGORY_IDS.length * DIFFICULTY_ORDER.length * 15);
     expect(stats.thinnest.count).toBeGreaterThanOrEqual(15);
   });
@@ -155,7 +155,7 @@ describe('rotation', () => {
     // The rotation is only safe if it is meaning-preserving, so assert it
     // directly rather than trusting the arithmetic.
     const chunk = {
-      graduate: [['Prompt?', ['right', 'w1', 'w2', 'w3'], 0, 'because'] as const],
+      msc: [['Prompt?', ['right', 'w1', 'w2', 'w3'], 0, 'because'] as const],
       phd: [['Prompt?', ['w1', 'right', 'w2', 'w3'], 1, 'because'] as const],
       professor: [['Prompt?', ['w1', 'w2', 'w3', 'right'], 3, 'because'] as const],
     };
@@ -200,7 +200,7 @@ describe('question selection', () => {
     for (let i = 0; i < 40; i += 1) {
       const picked = selectQuestion({
         pack: SEED_PACK,
-        category: 'physics',
+        category: 'astronomy',
         difficulty: 'professor',
         nonce: `nonce-${i}`,
         exclude: [],
@@ -216,7 +216,7 @@ describe('question selection', () => {
       const picked = selectQuestion({
         pack: SEED_PACK,
         category: 'maths',
-        difficulty: 'graduate',
+        difficulty: 'msc',
         nonce: `n-${i}`,
         exclude: asked,
       });
@@ -229,12 +229,12 @@ describe('question selection', () => {
 
   it('flags a repeat rather than stalling once the pool is drained', () => {
     const all = SEED_PACK.questions
-      .filter((q) => q.category === 'maths' && q.difficulty === 'graduate')
+      .filter((q) => q.category === 'maths' && q.difficulty === 'msc')
       .map((q) => q.id);
     const picked = selectQuestion({
       pack: SEED_PACK,
       category: 'maths',
-      difficulty: 'graduate',
+      difficulty: 'msc',
       nonce: 'drained',
       exclude: all,
     });
@@ -267,7 +267,7 @@ describe('option presentation', () => {
   });
 
   it('moves the correct answer around across nonces', () => {
-    const question = questionById(SEED_PACK, 'history-graduate-1') as Question;
+    const question = questionById(SEED_PACK, 'history-msc-1') as Question;
     const positions = new Set<number>();
     const rng = createRng('positions');
     for (let i = 0; i < 60; i += 1) {

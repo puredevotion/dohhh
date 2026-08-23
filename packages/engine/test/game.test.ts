@@ -98,8 +98,8 @@ describe('drawing a question', () => {
 
   it('rotates the nominated answerer within a team across its turns', () => {
     const table = twoTeams();
-    table.playTurn('graduate', false); // team A, nominated player 0
-    table.playTurn('graduate', false); // team B
+    table.playTurn('bscba', false); // team A, nominated player 0
+    table.playTurn('bscba', false); // team B
     table.draw(); // team A again
     expect(table.state().active?.nominatedId).toBe(table.player(1).id);
   });
@@ -123,7 +123,7 @@ describe('drawing a question', () => {
     for (let i = 0; i < CATEGORY_IDS.length; i += 1) {
       table.draw();
       seen.push(table.pickCategory());
-      table.choose('graduate');
+      table.choose('bscba');
       table.answer(false);
     }
     expect(new Set(seen).size).toBe(CATEGORY_IDS.length);
@@ -132,8 +132,8 @@ describe('drawing a question', () => {
 
 describe('scoring', () => {
   const cases = [
-    { difficulty: 'graduate', correct: true, delta: 1 },
-    { difficulty: 'graduate', correct: false, delta: -1 },
+    { difficulty: 'bscba', correct: true, delta: 1 },
+    { difficulty: 'bscba', correct: false, delta: -1 },
     { difficulty: 'phd', correct: true, delta: 5 },
     { difficulty: 'phd', correct: false, delta: -3 },
     { difficulty: 'professor', correct: true, delta: 15 },
@@ -163,7 +163,7 @@ describe('scoring', () => {
     expect(table.state().streak).toBe(2);
     expect(table.state().scores[teamA as string]).toBe(10);
 
-    table.playTurn('graduate', false);
+    table.playTurn('bscba', false);
     state = table.state();
     expect(state.cursor).toBe(1);
     expect(state.streak).toBe(0);
@@ -184,16 +184,36 @@ describe('scoring', () => {
   });
 
   it('caps a streak only when the house rule says so (R-1)', () => {
+    // msc, not bscba: bscba carries its own fixed streak cap (see rules.ts),
+    // so this test needs a tier with no cap of its own to isolate the house
+    // rule's effect.
     const spec = twoTeams();
-    for (let i = 0; i < 6; i += 1) spec.playTurn('graduate', true);
+    for (let i = 0; i < 6; i += 1) spec.playTurn('msc', true);
     // Spec-faithful: six correct answers, still the same team's turn.
     expect(spec.state().cursor).toBe(0);
     expect(spec.state().streak).toBe(6);
 
     const capped = twoTeams({ maxCorrectStreakPerTurn: 3 });
-    for (let i = 0; i < 3; i += 1) capped.playTurn('graduate', true);
+    for (let i = 0; i < 3; i += 1) capped.playTurn('msc', true);
     expect(capped.state().cursor).toBe(1);
     expect(capped.state().streak).toBe(0);
+  });
+
+  it('caps a streak at bscba even with no house rule set', () => {
+    const table = twoTeams();
+    for (let i = 0; i < 3; i += 1) table.playTurn('bscba', true);
+    expect(table.state().cursor).toBe(1);
+    expect(table.state().streak).toBe(0);
+  });
+
+  it('lets a house rule tighten, but not loosen, the bscba tier cap', () => {
+    const tighter = twoTeams({ maxCorrectStreakPerTurn: 1 });
+    tighter.playTurn('bscba', true);
+    expect(tighter.state().cursor).toBe(1);
+
+    const looser = twoTeams({ maxCorrectStreakPerTurn: 10 });
+    for (let i = 0; i < 3; i += 1) looser.playTurn('bscba', true);
+    expect(looser.state().cursor).toBe(1);
   });
 
   it('never asks the same question twice while the pool holds', () => {
@@ -285,9 +305,9 @@ describe('authority', () => {
     const table = twoTeams();
     table.draw();
     table.pickCategory();
-    table.choose('graduate');
+    table.choose('bscba');
     table.choose('professor');
-    expect(table.state().active?.difficulty).toBe('graduate');
+    expect(table.state().active?.difficulty).toBe('bscba');
     expect(table.state().rejected.some((r) => r.reason.includes('already chosen'))).toBe(true);
   });
 });
@@ -375,12 +395,12 @@ describe('the finish line', () => {
 
     // Team A finally misses; the turn passes but the game is not over, because
     // team B has not had its turn in this round.
-    table.playTurn('graduate', false);
+    table.playTurn('bscba', false);
     state = table.state();
     expect(state.phase).toBe('playing');
     expect(state.cursor).toBe(1);
 
-    table.playTurn('graduate', false);
+    table.playTurn('bscba', false);
     state = table.state();
     expect(state.phase).toBe('finished');
     expect(state.winnerTeamId).toBe(teamA);
@@ -402,9 +422,9 @@ describe('the finish line', () => {
     const [teamA, teamB] = table.state().turnOrder;
 
     table.playTurn('phd', true); // A: 5, target crossed, endgame armed
-    table.playTurn('graduate', false); // A: 4, turn passes
+    table.playTurn('bscba', false); // A: 4, turn passes
     table.playTurn('phd', true); // B: 5
-    table.playTurn('graduate', false); // B: 4, round completes -> 4 v 4
+    table.playTurn('bscba', false); // B: 4, round completes -> 4 v 4
 
     let state = table.state();
     expect(state.phase).toBe('playing');
@@ -414,8 +434,8 @@ describe('the finish line', () => {
     expect(state.turnOrder).toHaveLength(2);
 
     table.playTurn('professor', true); // A: 19
-    table.playTurn('graduate', false); // A: 18, turn passes
-    table.playTurn('graduate', false); // B: 3, round completes
+    table.playTurn('bscba', false); // A: 18, turn passes
+    table.playTurn('bscba', false); // B: 3, round completes
 
     state = table.state();
     expect(state.phase).toBe('finished');
@@ -435,7 +455,7 @@ describe('the finish line', () => {
 describe('convergence', () => {
   it('produces identical state from any arrival order', () => {
     const table = twoTeams();
-    for (let i = 0; i < 8; i += 1) table.playTurn(i % 2 === 0 ? 'phd' : 'graduate', i % 3 !== 0);
+    for (let i = 0; i < 8; i += 1) table.playTurn(i % 2 === 0 ? 'phd' : 'bscba', i % 3 !== 0);
     const canonical = table.state();
     expect(table.log.size).toBeGreaterThan(20);
 

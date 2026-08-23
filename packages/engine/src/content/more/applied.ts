@@ -3,7 +3,7 @@ import type { CategoryContent } from '../row.js';
 /** Maths, Technology and Sport, second chunk. Correct option first; rotated at build. */
 
 export const MORE_MATHS: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does the intermediate value theorem require of the function?',
       [
@@ -337,7 +337,7 @@ export const MORE_MATHS: CategoryContent = {
 };
 
 export const MORE_TECHNOLOGY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does a hash table\'s load factor affect?',
       [
@@ -676,7 +676,7 @@ export const MORE_TECHNOLOGY: CategoryContent = {
 };
 
 export const MORE_SPORT: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'In Formula One, once qualifying begins the FIA\'s parc fermé regulations restrict teams to what?',
       [
@@ -686,7 +686,7 @@ export const MORE_SPORT: CategoryContent = {
         'Whether team radio communication with drivers is permitted during the session, and what restrictions the FIA imposes on message content',
       ],
       0,
-      'Parc fermé locks a car\'s mechanical setup from the start of qualifying through to the race, so a team cannot run a low-fuel, soft qualifying configuration and then swap in a completely different race setup overnight. Only a short, FIA-supervised list of changes is allowed: tyre pressures can be adjusted, the front wing angle can be tweaked, worn brake pads or discs can be replaced, and fuel can be topped up to race load, but ride height, dampers, anti-roll bars and aerodynamic surfaces beyond the front wing stay frozen. Teams can request an exemption to make larger changes, but the cost is starting the race from the pit lane rather than the grid position earned in qualifying, which keeps the incentive structure honest. A related piece of trivia: parc fermé also technically covers the physical impounding of the car after the race for post-race scrutineering, which is where the French term (literally \'closed park\') originally comes from in motorsport regulation.',
+      'Parc fermé locks the car\'s setup from qualifying through race day. Only a short FIA-approved list of changes is allowed: tyre pressures, front wing angle, worn brake components, and fuel. Larger changes incur a pit-lane start penalty rather than the earned grid position.',
     ],
     [
       'In athletics, what does a wind-assisted mark mean?',
@@ -798,7 +798,7 @@ export const MORE_SPORT: CategoryContent = {
         'A kick that bounces first inside the opposition\'s 22 after crossing the opposition\'s try line and being played back into the field of play',
       ],
       0,
-      'The rule rewards a specific, difficult kick: launched from the kicking team\'s own half, it must bounce in the field of play and then roll or bounce into touch inside the opponents\' 22, at which point the kicking team keeps the throw against the run of possession instead of conceding it as normal touch-kicks do. World Rugby introduced it on 1 August 2021 to punish teams that stack defenders in the backfield to shut down attacking width, since a back-three player pulled up to cover the kick creates space elsewhere; the trade-off it forces between defending the kick and defending the line is exactly the point. It was trialled alongside the goal-line dropout and mirrors, in spirit, other sports\' attempts to legislate against risk-averse defensive shapes, and it has since become a fixture of both the men\'s and women\'s international game. A neat piece of related trivia is the law\'s numeric naming convention itself, borrowed loosely from Australian rules football\'s long-standing \'50-metre\' zone language, though the two sports\' actual rules share no mechanism.',
+      'A kick from the kicking team\'s own half that bounces in the field of play before going out inside the opposition\'s 22 results in the kicking team keeping the throw-in, normally conceded on touch-kicks.',
     ],
     [
       'In 2021, UEFA abolished which long-standing tie-breaking rule for two-legged knockout ties in its European club competitions?',
@@ -809,7 +809,7 @@ export const MORE_SPORT: CategoryContent = {
         'The seeding advantage granted to the higher-ranked club in the event of a tied aggregate score',
       ],
       0,
-      'The away goals rule was introduced by UEFA for the 1965/66 European Cup Winners\' Cup, and its first competitive use came almost immediately: Budapest Honved eliminated Dukla Prague in the second round despite a 4-4 aggregate scoreline, because Honved\'s three away goals beat Dukla\'s two. The idea was to reward attacking football at grounds where visiting teams historically struggled and to discourage negative, purely defensive away performances. By the 2010s the competitive landscape had reversed: data showed home advantage had shrunk so much that the rule was now incentivising visiting teams to defend a narrow lead rather than attack, the opposite of its original purpose, which is why UEFA\'s competitions committee voted to scrap it starting from the 2021/22 season. Its removal meant a tie level on aggregate after both legs now goes straight to extra time and penalties with no weighting for where goals were scored — a genuinely significant shift in two-legged tactics that many managers and pundits initially resisted, since for over five decades entire away-leg game plans had been built around chasing or protecting exactly that kind of goal.',
+      'Introduced in 1965/66 to reward attacking play away from home, home advantage had shrunk enough that the rule incentivized away teams to defend narrow leads rather than attack—the opposite of its intent. UEFA scrapped it for the 2021/22 season.',
     ],
     [
       'What is the principal statistical objection to using penalty conversion rate to rank takers?',
@@ -910,7 +910,7 @@ export const MORE_SPORT: CategoryContent = {
         '60%',
       ],
       0,
-      'UEFA introduced the squad cost ratio as a straightforward affordability test after the old break-even rule under Financial Fair Play proved easy for state-backed and ownership-subsidised clubs to route around: it simply caps wages, transfer amortisation and agent fees at a set percentage of a club\'s football-related revenue. The cap was phased in deliberately gently, starting at 90% in 2023/24 and stepping down through 80% in 2024/25, before landing at its permanent 70% ceiling from 2025/26, giving clubs time to restructure wage bills rather than triggering sudden breaches. This matters because it targets the actual mechanism of financial doping — unsustainable spending relative to income — rather than the accounting-period break-even figure that clubs like Manchester City and Paris Saint-Germain were repeatedly investigated over without changing behaviour. A related piece of trivia: in the first enforcement round under the full 70% ceiling, UEFA sanctioned twelve clubs including Chelsea, Barcelona, Lyon and Aston Villa in July 2025, with Chelsea alone fined roughly €31 million across the football earnings and squad cost rules combined.',
+      'UEFA introduced the ratio as an affordability test after break-even rules proved easy to circumvent. It caps wages, transfer amortization and agent fees at 70% of football-related revenue, phased gently from 90% in 2023/24 to its permanent 70% ceiling from 2025/26.',
     ],
     [
       'What did the European Court of Justice establish in its 2006 ruling in Meca-Medina and Majcen v Commission?',
@@ -921,7 +921,7 @@ export const MORE_SPORT: CategoryContent = {
         'That the \'specificity of sport\' doctrine exempts federation disciplinary and eligibility rules entirely from the EU\'s single-market and competition-law obligations, regardless of their economic effect on athletes',
       ],
       0,
-      'Two long-distance swimmers, David Meca-Medina and Igor Majcen, challenged a four-year doping ban imposed over a positive nandrolone test, arguing anti-doping rules were purely sporting and therefore outside EU law\'s reach; the Court disagreed, holding that a rule\'s sporting character does not automatically place it beyond competition law if it has genuine economic effects on athletes\' ability to work. This narrowed the earlier \'purely sporting rules\' exception carved out in cases like Walrave and Donà, forcing federations to show their rules were proportionate to a legitimate objective rather than simply asserting sporting autonomy. It sits alongside Bosman as one of the two pillars of EU sports law, but where Bosman was about free movement of workers, Meca-Medina is the competition-law precedent that governing bodies still have to reckon with when drafting eligibility and disciplinary rules. A genuine trivia footnote: the case is sometimes miscited as a doping-substance ruling, but the Court never assessed the science of nandrolone at all — the whole judgment turns on jurisdiction, not toxicology, and the swimmers\' underlying ban was upheld regardless.',
+      'Two swimmers challenged a doping ban, arguing anti-doping rules were purely sporting and beyond EU law. The Court ruled that a rule\'s sporting character does not automatically exempt it from competition law if it has genuine economic effects on athletes\' work.',
     ],
     [
       'In 2014 the UCI fundamentally changed the technical rules governing cycling\'s Hour Record. What was the change?',
@@ -932,7 +932,7 @@ export const MORE_SPORT: CategoryContent = {
         'A minimum attempt duration of forty-five minutes, together with a requirement that attempts be independently ratified by two continental federations, was introduced to disqualify short, high-intensity efforts',
       ],
       0,
-      'After Eddy Merckx set 49.431 km in Mexico City in 1972, a wave of aerodynamic innovations by riders like Francesco Moser and later Chris Boardman and Graeme Obree pushed the mark further using aero bars, disc wheels and radical body positions; in 1997 the UCI retroactively froze the record to Merckx-era equipment, reclassifying the aerodynamic attempts as a separate \'Best Human Effort\' category rather than the official record. That freeze held for seventeen years until 2014, when the UCI reversed course and opened the record back up to modern time-trial technology, prompting a rush of attempts including Bradley Wiggins\'s successful ride the following year. The episode is a case study in how governing bodies wrestle with technology outpacing the spirit of a record, choosing at different points to protect a historical baseline and then to let equipment evolve. A specific trivia detail: Ondřej Sosenka\'s 2005 mark of 49.700 km, set in Moscow under the Merckx-style restriction, stood as the record for almost a decade until the 2014 rule change unlocked dramatically higher distances.',
+      'The UCI froze the record to Merckx-era 1972 equipment in 1997 to manage technological arms races. That restriction lasted seventeen years until 2014, when the UCI reversed course and allowed modern time-trial technology, prompting attempts with dramatically higher distances.',
     ],
     [
       'What does the biological-passport approach to anti-doping rest on?',

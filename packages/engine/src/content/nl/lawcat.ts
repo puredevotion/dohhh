@@ -3,12 +3,12 @@ import type { CategoryContent } from '../row.js';
 /** Nederlands & internationaal IE-recht. */
 
 export const LAWIP: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Uit hoeveel boeken is het Nederlandse Burgerlijk Wetboek opgebouwd?',
       ['tien', 'zes', 'vier', 'acht'],
       0,
-      'Het BW loopt van Boek 1 (personen- en familierecht) tot Boek 10 (internationaal privaatrecht), met de Boeken 7 en 7A voor specifieke overeenkomsten. Het verving in fasen, van 1970 tot 1992, het oude wetboek uit 1838.',
+      'Het Burgerlijk Wetboek loopt van Boek 1 tot Boek 10 en verving van 1970 tot 1992 het oude wetboek uit 1838.',
     ],
     [
       'Wat is de beste omschrijving van de Hoge Raad der Nederlanden?',
@@ -63,7 +63,7 @@ export const LAWIP: CategoryContent = {
         'Een voorlopig recht dat door elk land afzonderlijk door het eigen octrooibureau moet worden bevestigd',
       ],
       0,
-      'Een "Europees octrooi" dat door het EOB onder het Europees Octrooiverdrag wordt verleend, is in feite een bundel: het moet in elk aangewezen land worden gevalideerd en kan daar afzonderlijk worden herroepen of gelicentieerd. Het eenheidsoctrooi, dat pas echt één enkel recht creëert, is pas in 2023 operationeel geworden.',
+      'Een "Europees octrooi" door het EOB is een bundel nationale octrooien: het moet in elk land worden gevalideerd en kan daar afzonderlijk worden herroepen of gelicentieerd. Het eenheidsoctrooi werd in 2023 operationeel.',
     ],
     [
       'Om patenteerbaar te zijn in de meeste rechtssystemen moet een uitvinding nieuw, niet-voor-de-hand-liggend (inventief) zijn en wat nog meer?',
@@ -75,7 +75,7 @@ export const LAWIP: CategoryContent = {
       'Waar staat het Nederlandse woord "auteursrecht" het meest direct voor?',
       ['Het recht van de auteur', 'Uitgeeflicentie', 'Bedrijfsgeheim', 'Modelrecht'],
       0,
-      'Continentaal-Europese systemen, waaronder het Nederlandse, benaderen auteursrecht als een "recht van de auteur", gericht op de persoonlijke en morele band van de maker met het werk, in tegenstelling tot de Angelsaksische "copyright"-traditie, die historisch draaide om het economische recht om te kopiëren.',
+      'Continentaal-Europese systemen benaderen auteursrecht als "recht van auteur", gericht op persoonlijke en morele band, in tegenstelling tot Angelsaksische "copyright" die economisch recht op kopiëring benadrukt.',
     ],
     [
       'Wat maakt het Benelux-merken- en modellensysteem ongewoon?',
@@ -130,7 +130,7 @@ export const LAWIP: CategoryContent = {
         'Het verdubbelt automatisch het licentietarief dat een generieke fabrikant voor de rest van de octrooitermijn moet betalen',
       ],
       0,
-      'ABC\'s bestaan omdat geneesmiddelen en landbouwchemicaliën vaak jaren van regelgevend onderzoek nodig hebben voordat ze op de markt mogen komen, waardoor stilletjes wordt ingeleverd op de effectieve jaren octrooibescherming die er daadwerkelijk zijn om het product te verkopen. EU-Verordening 469/2009 (geneesmiddelen) en 1610/96 (gewasbeschermingsmiddelen) herstellen tot vijf extra jaren, berekend uit het verschil tussen aanvraag en eerste marktvergunning, verminderd met vijf jaar. De regeling werd in de jaren negentig deels ingevoerd om aan te sluiten bij de Amerikaanse termijnherstelregels onder de Hatch-Waxman Act, zodat in de EU gevestigde innovators niet in het nadeel waren tegenover Amerikaanse concurrenten. Bovenop het reguliere ABC is een extra verlenging van zes maanden voor pediatrisch gebruik mogelijk als de houder onderzoek verricht dat vereist is onder de EU-verordening inzake geneesmiddelen voor kinderen.',
+      'ABC\'s verlengen octrooitermijn tot vijf jaar na twintig jaar voor pharma en landbouwchemicaliën, ter compensatie voor regelgeving. EU-Verordeningen 469/2009 en 1610/96 bepalen berekening; gericht op pariteit met Amerikaanse termijnherstel.',
     ],
     [
       'Wat bereikt een aanvraag onder het Patent Cooperation Treaty (PCT) precies?',
@@ -141,7 +141,7 @@ export const LAWIP: CategoryContent = {
         'Het levert een octrooitermijnverlenging op die identiek is in effect aan een aanvullend beschermingscertificaat',
       ],
       0,
-      'Het PCT, sinds de inwerkingtreding in 1978 beheerd door WIPO, laat een aanvrager één internationale aanvraag indienen en een internationaal onderzoeksrapport en voorlopig advies ontvangen, maar de daadwerkelijke beslissing over verlening blijft volledig bij elk nationaal of regionaal bureau, zoals het EOB, zodra de aanvrager de "nationale fase" ingaat, doorgaans zo\'n 30 of 31 maanden na de prioriteitsdatum. Dit levert waardevolle tijd op en centraliseert de vroege kosten, terwijl de veel duurdere beslissing over welke specifieke landen het waard zijn om afzonderlijk voor te betalen wordt uitgesteld. Het heeft geen enkele relatie met merken of modellen, die in plaats daarvan via het afzonderlijke Protocol van Madrid en het Haags Systeem lopen. WIPO meldt dat het PCT inmiddels ruim 250.000 internationale aanvragen per jaar ontvangt, wat het de drukste enkele toegangspoort in wereldwijde octrooiaanvragen maakt.',
+      'Het PCT laat aanvragers één internationale aanvraag indienen met prioriteitsdatum en onderzoeksrapport, dan naar nationale fase (~30 maanden) waar elk bureau zelf over verlening beslist. Dit centraliseert vroege kosten terwijl keuze van landen wordt uitgesteld.',
     ],
     [
       'Onder de EU-richtlijn bedrijfsgeheimen (2016/943) komt informatie alleen in aanmerking voor bescherming als bedrijfsgeheim wanneer aan welke combinatie van voorwaarden is voldaan?',
@@ -152,7 +152,7 @@ export const LAWIP: CategoryContent = {
         'De informatie heeft ononderbroken minstens vijf volledige jaren geheim bestaan voordat een vordering wordt ingesteld',
       ],
       0,
-      'In tegenstelling tot octrooien of merken is bescherming van bedrijfsgeheimen niet geregistreerd en wordt zij louter bepaald door drie cumulatieve voorwaarden in artikel 2 van de richtlijn, die nauw aansluiten bij artikel 39 van de TRIPS-overeenkomst: de informatie moet geheim zijn, ze moet commerciële waarde hebben precies omdat ze geheim is, en de houder moet redelijke maatregelen hebben genomen om dat zo te houden. De richtlijn van 2016 harmoniseerde wat voorheen een lappendeken was van nationale leerstukken van oneerlijke concurrentie en contractenrecht in de EU-lidstaten, en gaf houders van bedrijfsgeheimen voor het eerst een echt uniform civielrechtelijk rechtsmiddel tegen onrechtmatig gebruik. De richtlijn werd ook opgesteld met oog voor het parallelle Amerikaanse kader, de Defend Trade Secrets Act, aangenomen in hetzelfde jaar, waardoor twee rechtstradities die geheimhouding meer dan een eeuw heel verschillend hadden benaderd naar elkaar toe groeiden.',
+      'Bedrijfsgeheimenbesch. bepaald door drie voorwaarden uit Richtlijn 2016/943: geheim zijn, commerciële waarde door geheimhouding, redelijke maatregelen genomen. Dit harmoniseerde nationale leerstukken en gaf houders uniform civielrechtelijk rechtsmiddel.',
     ],
   ],
   phd: [
@@ -165,7 +165,7 @@ export const LAWIP: CategoryContent = {
         'Alleen of de waren in dezelfde fysieke winkels worden verkocht',
       ],
       0,
-      'De "globale beoordeling" van het HvJEU, uit zaken als Sabel/Puma en Canon/MGM, behandelt deze factoren als onderling afhankelijk - een zeer onderscheidend ouder merk kan verwarring veroorzaken zelfs bij een tamelijk ongelijkend later teken, omdat onderscheidend vermogen en gelijkenis tegen elkaar afgewogen worden.',
+      'De "globale beoordeling" van het HvJEU behandelt factoren als onderling afhankelijk - zeer onderscheidend ouder merk kan verwarring veroorzaken zelfs bij ongelijkend later teken.',
     ],
     [
       'Waar gaat artikel 17 van de EU-richtlijn auteursrecht uit 2019 (voorheen het omstreden "artikel 13") primair over?',
@@ -176,7 +176,7 @@ export const LAWIP: CategoryContent = {
         'De omvang van de uitzondering voor privékopiëren van fysieke media',
       ],
       0,
-      'Artikel 17 maakt platforms zoals YouTube direct aansprakelijk voor niet-toegestane uploads, tenzij zij licenties verkrijgen of "beste inspanningen" leveren om de beschikbaarheid van gemelde werken te voorkomen - een verschuiving ten opzichte van het eerdere "veilige haven"-model voor hostingaansprakelijkheid onder de Richtlijn elektronische handel.',
+      'Artikel 17 maakt platforms direct aansprakelijk voor niet-toegestane uploads, tenzij zij licenties hebben of "beste inspanningen" leveren - verschuiving van eerdere "veilige haven"-model onder de Richtlijn elektronische handel.',
     ],
     [
       'Waarover heeft het Uniform Octrooigerecht (UPC), dat in 2023 van start ging, rechtsmacht?',
@@ -187,7 +187,7 @@ export const LAWIP: CategoryContent = {
         'Merkgeschillen binnen de EU, een aangelegenheid die juist uitsluitend is voorbehouden aan het EUIPO en nationale merkenrechters',
       ],
       0,
-      'Het UPC geeft één rechtssysteem rechtsmacht over zowel het nieuwe eenheidsoctrooi als, gedurende een overgangsperiode, klassieke Europese octrooien (behalve bij opt-out), waardoor het niet langer nodig is inbreuk in elk land afzonderlijk te bepleiten - de grootste structurele verandering in de Europese octrooiprocesvoering in decennia.',
+      'Het UPC geeft één rechtssysteem rechtsmacht over eenheidsoctrooi en klassieke Europese octrooien, waardoor inbreuk niet in elk land afzonderlijk moet worden bepleist.',
     ],
     [
       'In Windsurfing Chiemsee/Huber (1999) behandelde het HvJEU de vraag of een geografische naam als merk kan functioneren, en oordeelde het wat?',
@@ -198,7 +198,7 @@ export const LAWIP: CategoryContent = {
         'Geografische aanduidingen beschermd onder afzonderlijke EU-kwaliteitsregelingen voor landbouwproducten en gewone merken worden als volledig identieke juridische begrippen behandeld die dezelfde registratieroute vereisen',
       ],
       0,
-      'De zaak betrof "Chiemsee", de naam van een Beiers meer, gebruikt voor de verkoop van sportkleding, en het HvJEU oordeelde dat de Merkenrichtlijn beschrijvende geografische termen van registratie uitsluit, tenzij het merk onderscheidend vermogen, of ingeburgerdheid, door gebruik heeft verkregen, wat betekent dat het publiek die naam nu associeert met een specifieke handelsoorsprong in plaats van louter de plaats zelf. De regel voorkomt dat één handelaar een plaatsnaam monopoliseert die concurrenten legitiem nodig hebben om te beschrijven waar hun eigen waren daadwerkelijk vandaan komen, terwijl een merk dat aantoonbaar erkenning heeft verworven door daadwerkelijk marktgebruik toch wordt beloond. Dezelfde logica van verkregen onderscheidend vermogen verklaart waarom een simpele geografische term zelden op eigen kracht wordt geregistreerd, maar een specifiek, gestileerd gebruik dat decennialang is opgebouwd soms wel. Het blijft een van de fundamentele arresten van het HvJEU over absolute weigeringsgronden onder wat nu artikel 4 van de EU-Merkenrichtlijn is.',
+      '"Chiemsee" (Beiers meer) stelde dat geografische termen van registratie zijn uitgesloten, tenzij merk onderscheidend vermogen door gebruik heeft verkregen - publiek associeert dan naam met handelsoorsprong, niet plaats. Dit voorkomt monopolisering van plaatsnamen voor concurrenten.',
     ],
     [
       'In Brüstle/Greenpeace (2011) legde het HvJEU de uitsluiting van octrooien op toepassingen van menselijke embryo\'s uit de Biotechnologierichtlijn op welke manier uit?',
@@ -209,7 +209,7 @@ export const LAWIP: CategoryContent = {
         'De richtlijn beperkt octrooien op biotechnologische uitvindingen met embryonaal materiaal op geen enkele manier',
       ],
       0,
-      'De Duitse neurobioloog Oliver Brüstle hield een octrooi op neurale precursorcellen afgeleid van menselijke embryonale stamcellen, en Greenpeace vocht dit aan onder de uitsluiting in Richtlijn 98/44/EG van "toepassingen van menselijke embryo\'s voor industriële of commerciële doeleinden"; het HvJEU gaf die uitdrukking een autonome, ruime, EU-brede betekenis in plaats van deze over te laten aan uiteenlopende nationale moraliteitsnormen. De uitspraak sloot in feite EU-octrooien uit op uitvindingen die de voorafgaande vernietiging van een menselijk embryo vereisen, ook al was het geoctrooieerde zelf de resulterende cellijn, niet het embryo. Dit werd later verfijnd in International Stem Cell Corporation/Comptroller General (2014), waarin werd geoordeeld dat parthenoten - onbevruchte eicellen die zijn gestimuleerd om te delen maar niet in staat zijn zich tot een mens te ontwikkelen - buiten de uitsluiting vallen. Deze reeks zaken toont octrooigemachtigden die soms genoodzaakt zijn oprecht omstreden bio-ethische grenzen te beoordelen in plaats van louter technische.',
+      'Brüstle hield octrooi op neurale precursorcellen van menselijke embryonale stamcellen. Greenpeace betwistte dit onder Richtlijn 98/44/EG-uitsluiting; het HvJEU gaf dit autonome, ruime betekenis en sloot octrooien uit op uitvindingen die embryovernietiging vereisen.',
     ],
     [
       'Wat betekent het leerstuk van "uitputting van rechten" in het EU-merken- en auteursrecht?',
@@ -220,7 +220,7 @@ export const LAWIP: CategoryContent = {
         'Een rechthebbende kan parallelimport van waar dan ook tegenhouden zodra de goederen de fabriek hebben verlaten',
       ],
       0,
-      'Dit is de juridische basis voor de interne markt van de EU voor originele goederen: zaken als Silhouette/Hartlauer bevestigden dat de EU regionale (niet internationale) uitputting toepast, zodat een rechthebbende parallelimport van buiten de EER WEL kan tegenhouden, ook na een met toestemming verrichte eerste verkoop binnen de EER.',
+      'Dit is juridische basis voor interne markt van originele goederen: de EU past regionale (niet internationale) uitputting toe, zodat rechthebbende parallelimport van buiten de EER kan tegenhouden.',
     ],
     [
       'In Google France/Louis Vuitton (2010) oordeelde het HvJEU dat een zoekmachine die het merk van een concurrent als betaald zoekwoord verkoopt wat doet?',
@@ -231,7 +231,7 @@ export const LAWIP: CategoryContent = {
         'Maakt alleen inbreuk als de zoekmachine zelf, in plaats van de adverteerder, rechtstreeks profijt trekt van die specifieke zoekwoordverkoop',
       ],
       0,
-      'Het Hof verdeelde de aansprakelijkheid nauwkeurig: Googles eigen handelen bij het verkopen van zoekwoorden was geen "gebruik in het economisch verkeer" van het merk op een manier die zelf inbreuk vormde, maar als de resulterende gesponsorde advertentie zo onduidelijk was dat een redelijk geïnformeerde internetgebruiker niet kon zien of de geadverteerde goederen van de merkhouder of een concurrent kwamen, schaadde dat de essentiële herkomstfunctie van het merk en kon de adverteerder aansprakelijk zijn. Dit trok een scherpe grens tussen neutrale technische tussenkomst en werkelijk verwarrend gebruik, en het model werd later in Interflora/Marks & Spencer (2011) uitgebreid tot de "investeringsfunctie" van een bekend merk naast de herkomstfunctie. Zoekwoordreclame blijft een van de meest bevochten hoeken van het EU-merkenrecht, juist omdat het beoordelen van de "duidelijkheid" van een advertentie zo feitelijk specifiek is. De onderliggende klacht van Louis Vuitton betrof concurrenten die de eigen merknaam kochten om aan nepgoederen verwante producten te adverteren, wat het geschil helemaal tot bij het HvJEU bracht.',
+      'Google als zoekmachine maakte zelf geen inbreuk, maar gesponsorde advertenties schaden herkomstfunctie als consument niet kan zien of goederen van merkhouder of concurrent zijn. Dit trekt grens tussen neutrale tussenkomst en verwarrend gebruik.',
     ],
     [
       'Waarom was TRIPS (de WTO-overeenkomst inzake de handelsaspecten van de intellectuele eigendom) van belang?',
@@ -253,7 +253,7 @@ export const LAWIP: CategoryContent = {
         'Alleen situaties waarin bewezen wordt dat de totale omzet van de gedaagde in die specifieke productmarkt, over de betreffende inbreukperiode, de vergelijkbare omzet van de merkhouder zelf overtrof',
       ],
       0,
-      'Bellure verkocht "geursimulatie"-parfums met vergelijkingslijsten die openlijk L\'Oréals bekende geuren bij naam noemden, zonder iemand te verwarren over de herkomst, maar het HvJEU oordeelde dat bescherming tegen het "trekken van onrechtmatig voordeel" uit het imago van een bekend merk geen verwarring of zelfs schade vereist - simpelweg meeliften om de eigen verkoop van de imitator te vergroten is voldoende. Dit was omstreden omdat het de investering en imagowaarde van een bekend merk in feite als een bijna zelfstandig eigendomsrecht beschermt, ver voorbij de traditionele rechtvaardiging van het voorkomen van misleiding van consumenten. Hetzelfde arrest oordeelde ook dat regels voor vergelijkende reclame niet gebruikt kunnen worden om anderszins inbreukmakend meeliften te legitimeren, waarmee een verdediging werd afgesloten die Bellure daarnaast had geprobeerd. Het blijft een veelaangehaald voorbeeld van hoe het EU-merkenrecht opschuift naar bescherming van het merkimago als zodanig, een verschuiving die sommige wetenschappers nog steeds te ver vinden gaan ten opzichte van de traditionele herkomstfunctie van het merk.',
+      'Bellure verkocht "geursimulatie"-parfums met L\'Oréals geurennamen, zonder verwarring. Het HvJEU oordeelde dat bescherming tegen "onrechtmatig voordeel"-meeliften geen verwarring vereist - simpelweg meeliften voor verkoop volstaat.',
     ],
     [
       'Waarover ging het arrest van het HvJEU in Levola Hengelo/Smilde Foods (2018)?',
@@ -264,7 +264,7 @@ export const LAWIP: CategoryContent = {
         'Of het verpakkingsontwerp van een smeerkaas beschermd kan worden',
       ],
       0,
-      'Het HvJEU oordeelde dat smaak niet auteursrechtelijk beschermd kan worden omdat deze niet met voldoende precisie en objectiviteit kan worden vastgesteld om aan het "werk"-vereiste onder het EU-auteursrecht te voldoen - een Nederlandse zaak (over de kruidenkaasspread Heks\'nkaas) die een echt open leerstellige vraag beslechtte.',
+      'Het HvJEU oordeelde dat smaak niet auteursrechtelijk beschermd kan worden omdat deze niet met voldoende precisie en objectiviteit kan worden vastgesteld om aan het "werk"-vereiste onder het EU-auteursrecht te voldoen.',
     ],
     [
       'Wat maakt het Protocol van Madrid mogelijk voor een merkhouder?',
@@ -286,7 +286,7 @@ export const LAWIP: CategoryContent = {
         'Het recht om het werk in het openbaar uit te voeren',
       ],
       0,
-      'Beide leerstukken laten de eigenaar van een rechtmatig verkregen fysiek exemplaar dit doorverkopen of uitlenen zonder verdere toestemming van de rechthebbende, omdat het distributierecht wordt beschouwd als uitgeput door de eerste toegestane verkoop van dat specifieke exemplaar - hoewel EU-rechtspraak (zoals UsedSoft) op omstreden wijze een versie hiervan ook toepaste op sommige gedownloade software.',
+      'Beide leerstukken laten eigenaar van rechtmatig verkregen exemplaar het doorverkopen of uitlenen zonder verder toestemming, omdat distributierecht uitgeput is door eerste toegestane verkoop.',
     ],
     [
       'In Stichting Brein/Ziggo en XS4ALL (2017) oordeelde het HvJEU dat het exploiteren van een online indexeringsplatform als The Pirate Bay wat inhoudt?',
@@ -297,7 +297,7 @@ export const LAWIP: CategoryContent = {
         'Merkinbreuk in plaats van een auteursrechtelijke aangelegenheid, omdat het indexeren van content in essentie een merkfunctie is',
       ],
       0,
-      'Deze Nederlandse verwijzingszaak, aangespannen door anti-piraterijstichting Brein tegen twee Nederlandse internetproviders die zij tot blokkering van de site wilde dwingen, oordeelde dat Pirate Bay\'s exploitanten door het indexeren en categoriseren van torrentbestanden, met volledige kennis dat de meeste naar inbreukmakende content verwezen, een "onmisbare rol" speelden ver voorbij neutrale technische facilitering, waardoor ze zelf mededelers aan het publiek werden, ook al stonden de daadwerkelijke bestanden op de eigen computers van gebruikers via peer-to-peer-delen. Dat sloot een gat waardoor indexeringssites konden beweren dat ze slechts naar materiaal linkten in plaats van zelf iets inbreukmakends te hosten. De uitspraak maakte direct het blokkeringsbevel tegen Pirate Bay mogelijk waartegen Ziggo en XS4ALL zich jarenlang hadden verzet. Hij past in een leerstellige lijn met GS Media en Renckhoff, allemaal deel van de geleidelijke uitbreiding door het HvJEU van "mededeling aan het publiek" tot internettussenpersonen die eerdere rechtspraak in een grijs gebied had gelaten.',
+      'Het indexeren en categoriseren van torrentbestanden met volledige kennis van inbreuk maakt exploitanten tot "mededelers aan het publiek", niet tot neutrale tussenpersonen, ook al stonden de bestanden op gebruikerscomputers.',
     ],
     [
       'Wat staat de EU-"SPC-fabricagevrijstelling" uit 2019 (Verordening 2019/933) toe, als uitzondering op de exclusiviteit van het aanvullend beschermingscertificaat?',
@@ -308,7 +308,7 @@ export const LAWIP: CategoryContent = {
         'De ABC-termijn wordt met twee jaar verkort voor elk vrijstellingsverzoek dat een aanvrager met succes indient',
       ],
       0,
-      'Voor deze wijziging bevonden in de EU gevestigde generieke fabrikanten zich in een echt concurrentienadeel tegenover rivalen in landen zonder gelijkwaardig termijnverlengingsregime, omdat zij niet eens voor export mochten produceren terwijl het ABC nog liep, waardoor ze jaren aan opstarttijd verloren ten opzichte van concurrenten in het buitenland. De vrijstelling laat hen, onder strikte meldings- en etiketteringsvoorwaarden, produceren puur voor niet-EU-exportmarkten of voor voorraadopbouw, zodat een generieke versie op precies de dag dat het ABC verstrijkt in de EU kan worden gelanceerd. Het was een bewust industriebeleidscompromis tussen innoverende farmaceutische bedrijven en de lobby van generieke en biosimilaire fabrikanten. De vrijstelling geldt alleen voor ABC\'s aangevraagd op of na 1 juli 2019, met een gefaseerde overgang voor eerdere certificaten, zodat het praktische effect op de markt jaren nodig had om zich volledig te manifesteren.',
+      'EU-fabrikanten mogen gedurende het ABC-termijn produceren uitsluitend voor export of voorraadbouw, niet voor EU-verkoop - dit compenseert hun concurrentienadeel en stelt hen in staat generieke versies te lanceren wanneer het certificaat verstrijkt.',
     ],
     [
       'Waartegen biedt een niet-ingeschreven Gemeenschapsmodel onder het EU-modellenrecht de houder specifiek bescherming?',
@@ -319,7 +319,7 @@ export const LAWIP: CategoryContent = {
         'Alleen tegen modellen die zijn ingeschreven in dezelfde lidstaat als de houder, een aanpak die het EU-regime helemaal niet volgt',
       ],
       0,
-      'Dit is het belangrijkste praktische verschil met een ingeschreven Gemeenschapsmodel, dat een echt monopolierecht is dat zelfs geldt tegen onafhankelijke ontwerpers: het niet-ingeschreven recht (dat slechts drie jaar duurt) vereist het bewijs dat de vermeende inbreukmaker het ontwerp daadwerkelijk heeft gekopieerd.',
+      'Belangrijkste verschil met ingeschreven model: niet-ingeschreven recht (drie jaar) vereist bewijs dat inbreukmaker daadwerkelijk heeft gekopieerd.',
     ],
   ],
   professor: [
@@ -332,7 +332,7 @@ export const LAWIP: CategoryContent = {
         'Het Verdrag van Rome inzake naburige rechten van uitvoerende kunstenaars, een instrument dat een geheel andere categorie naburige rechten regelt die niets met filterverplichtingen te maken heeft',
       ],
       0,
-      'Het Hof oordeelde dat zulke filterverplichtingen artikel 15 van de Richtlijn elektronische handel (geen algemene toezichtsplicht) zouden schenden en de vrijheid van ondernemerschap van de provider en de rechten van gebruikers op gegevensbescherming en vrije meningsuiting onevenredig zouden belasten - een redenering die later werd gecompliceerd, maar niet omgekeerd, door artikel 17 van de auteursrechtrichtlijn uit 2019, dat het Hof afzonderlijk moest verenigen in Polen/Parlement en Raad (2022).',
+      'Het Hof oordeelde dat filterverplichtingen artikel 15 van de Richtlijn elektronische handel zouden schenden en vrijheid van ondernemerschap, gegevensbescherming en vrije meningsuiting onevenredig belasten.',
     ],
     [
       'Waarin was het Benelux-Gerechtshof, opgericht in 1974, historisch van betekenis?',
@@ -343,7 +343,7 @@ export const LAWIP: CategoryContent = {
         'Het gerecht dat het grensgeschil tussen Nederland en België over Baarle-Nassau beslechtte',
       ],
       0,
-      'Het ging vooraf aan, en diende deels als model voor, het prejudiciële mechanisme dat later enorm werd opgeschaald door het HvJEU, en was decennialang de gezaghebbende uitlegger van de Uniforme Benelux-wet inzake merken en modellen, voordat unificatie op EU-niveau grotendeels zijn IE-rechtspraak verving.',
+      'Het ging vooraf aan het HvJEU-prejudiciële mechanisme en diende als model, was decennialang gezaghebbende uitlegger van Uniforme Benelux-wet inzake merken en modellen, voordat EU-unificatie zijn IE-rechtspraak grotendeels verving.',
     ],
     [
       'Wat oordeelde Svensson/Retriever Sverige (2014) over hyperlinken naar een werk dat al vrij online beschikbaar is met toestemming van de rechthebbende?',
@@ -354,7 +354,7 @@ export const LAWIP: CategoryContent = {
         'Het vereist alleen afzonderlijke toestemming zodra de website die linkt zelf een abonnementskosten begint te vragen aan bezoekers voor toegang tot haar eigen pagina\'s',
       ],
       0,
-      'Zweedse journalisten daagden een nieuwsaggregatiesite voor de rechter voor het linken naar hun vrij en rechtmatig toegankelijke artikelen, en het HvJEU oordeelde dat, omdat de rechthebbende de werken al toegankelijk had gemaakt voor alle internetgebruikers bij de eerste plaatsing, een verdere hyperlink geen "nieuw publiek" bereikt dat niet al onder die oorspronkelijke toestemming viel, zodat er geen nieuwe mededelingshandeling ontstaat die afzonderlijke toestemming vereist. Het Hof liet open, en beantwoordde later anders in GS Media en Renckhoff, wat gebeurt wanneer de doelinhoud achter een betaalmuur staat of zonder toestemming van de rechthebbende werd geplaatst. Het begrip "nieuw publiek" ontstond hier niet zelf; het werd overgenomen uit eerdere rechtspraak over satelliet- en kabeldoorgifte, SGAE/Rafael Hoteles, en hergebruikt voor de context van internethyperlinks. Dat hergebruik van één flexibele leerstellige toets over zeer verschillende technologieën is een terugkerend kenmerk van hoe de auteursrechtelijke rechtspraak van het HvJEU zich sinds de InfoSoc-richtlijn heeft ontwikkeld.',
+      'Journalisten daagden nieuwsaggregatiesite aan voor linken naar vrij toegankelijke artikelen. Het HvJEU oordeelde dat omdat werken al voor alle gebruikers toegankelijk waren, hyperlinks geen "nieuw publiek" bereiken waarvoor afzonderlijke toestemming nodig is.',
     ],
     [
       'In het arrest Football Dataco/Yahoo! (2012) van het HvJEU oordeelde het Hof dat auteursrechtelijke bescherming van een databank onder de Databankrichtlijn wat specifiek vereist, en wat uitsluit?',
@@ -365,7 +365,7 @@ export const LAWIP: CategoryContent = {
         'Dat de gegevens zelf origineel zijn, ongeacht de rangschikking, een vereiste dat de Databankrichtlijn in werkelijkheid niet stelt aan auteursrechtelijke bescherming',
       ],
       0,
-      'Dit ontkoppelde auteursrechtelijke bescherming van het afzonderlijke sui-generis databankrecht (dat wel investering in het verkrijgen, controleren en presenteren van gegevens beschermt): "zweet van het voorhoofd" alleen - hier, de vakkundigheid in het plannen van voetbalwedstrijden - kan geen auteursrecht vestigen, alleen echte creatieve selectie of rangschikking kan dat.',
+      'Dit ontkoppelde auteursrecht van sui-generis databankrecht: "zweet van voorhoofd" kan geen auteursrecht vestigen, alleen echte creatieve selectie of rangschikking kan dat.',
     ],
     [
       'Op welk specifiek scenario ging de leer uit IHT Internationale Heiztechnik/Ideal-Standard (1994) over merkuitputting binnen concernherstructureringen in?',
@@ -376,7 +376,7 @@ export const LAWIP: CategoryContent = {
         'Of merkrechten het faillissement van de oorspronkelijke eigenaar overleven, een afzonderlijke insolventierechtelijke vraag die wordt beheerst door nationale faillissementswetten en de EU-Insolventieverordening, niet door de merkuitputtingsrechtspraak van het HvJEU die in deze verwijzing aan de orde was',
       ],
       0,
-      'Het HvJEU oordeelde dat wanneer merkrechten in verschillende staten in handen zijn van entiteiten zonder voortdurende economische band, de verkrijger WEL invoer van de originele goederen van de andere partij onder dat merk kan blokkeren - vrijwillige versnippering van eigendom doorbreekt uitputting, in tegenstelling tot een enkele bedrijfsreorganisatie met behoud van eenheid van zeggenschap.',
+      'Het HvJEU oordeelde dat wanneer merkrechten in verschillende staten zonder economische band zijn, de verkrijger WEL invoer kan blokkeren - vrijwillige versnippering doorbreekt uitputting, in tegenstelling tot bedrijfsreorganisatie met eenheid van zeggenschap.',
     ],
     [
       'GS Media/Sanoma (2016) breidde de "nieuw publiek"-analyse voor hyperlinks uit tot content die zonder toestemming van de rechthebbende is geplaatst, en liet aansprakelijkheid vooral van wat afhangen?',
@@ -387,7 +387,7 @@ export const LAWIP: CategoryContent = {
         'Of de oorspronkelijke inbreukmaker die de onrechtmatige content het eerst plaatste, al is geïdentificeerd en elders met succes is aangeklaagd',
       ],
       0,
-      'De Nederlandse roddelsite GeenStijl, via uitgever GS Media, linkte naar uitgelekte, ongepubliceerde Playboy-foto\'s die op een site van een derde stonden, zonder toestemming van Sanoma, en het HvJEU oordeelde dat dit een niet-toegestane mededeling aan een "nieuw publiek" kon vormen - maar liet aansprakelijkheid specifiek afhangen van de daadwerkelijke of geachte wetenschap van de linker over de onrechtmatige plaatsing, met een weerlegbaar vermoeden van die wetenschap wanneer het linken met winstoogmerk gebeurt. Dit beslechtte echte onzekerheid over of gewone internetgebruikers risico lopen op aansprakelijkheid door simpelweg te linken naar iets dat achteraf illegaal blijkt te zijn, waardoor te goeder trouw handelende niet-commerciële linkers werden beschermd terwijl winstgedreven aggregators aan een strengere norm werden onderworpen. GeenStijl had Sanoma specifiek getergd door telkens een nieuwe link te publiceren zodra een kopie werd verwijderd, een detail waar de conclusie van de advocaat-generaal nadrukkelijk naar verwees. De uitspraak wordt vaak samen met Svensson en Renckhoff gelezen als de driedelige kaart van het HvJEU van hoe verschillend het EU-auteursrecht linken, opnieuw linken na verwijdering, en volledig herhosten behandelt.',
+      'GeenStijl linkte naar uitgelekte Playboy-foto\'s zonder Sanoma\'s toestemming. Het HvJEU oordeelde dit niet-toegestane mededeling aan "nieuw publiek" kan zijn, maar aansprakelijkheid hangt af van of linker wist dat plaatsing onrechtmatig was.',
     ],
     [
       'Artikel 6bis van de Berner Conventie, over morele rechten, werd door de Verenigde Staten historisch vooral weerstaan wegens spanning met welk kenmerk van de Amerikaanse auteursrechtpraktijk van vóór 1976?',
@@ -398,7 +398,7 @@ export const LAWIP: CategoryContent = {
         'De Amerikaanse praktijk om auteursrecht alleen aan eigen burgers te verlenen, een beperking die in werkelijkheid nooit heeft bestaan in het Amerikaanse auteursrecht',
       ],
       0,
-      'Work-for-hire wijst het oorspronkelijke auteurschap zelf toe aan de werkgever, wat ongemakkelijk staat tegenover een moreel recht dat is gebaseerd op een persoonlijke band tussen een individuele maker en het werk - deels waarom de VS, bij toetreding tot Berne in 1989, het standpunt innam dat het bestaande Amerikaanse recht (merkachtige remedies tegen oneerlijke concurrentie en smaad) al voldeed, in plaats van een algemene wet over morele rechten in te voeren.',
+      'Work-for-hire wijst auteurschap toe aan werkgever, ongemakkelijk tegenover morele rechten op persoonlijke banden. Daarom stelde VS bij Berne-toetreding 1989 dat bestaand recht al voldeed, in plaats van morele-rechtenwet in te voeren.',
     ],
     [
       'De "essentiële functie"-leer van het HvJEU, ontwikkeld vanaf Hoffmann-La Roche/Centrafarm (1978), omschrijft de kernfunctie van een merk als wat?',
@@ -409,7 +409,7 @@ export const LAWIP: CategoryContent = {
         'Het aanduiden van de geografische oorsprong van de goederen, een functie die in plaats daarvan wordt vervuld door geografische aanduidingen, niet door het gewone merkenrecht',
       ],
       0,
-      'Deze "herkomstfunctie"-redenering (een Nederlandse verwijzingszaak, tegen de Nederlandse geneesmiddelenherverpakker Centrafarm) is het leerstellige aangrijpingspunt dat het HvJEU nog altijd gebruikt om te bepalen hoe ver een merkhouder herverpakking, rebranding en parallelhandel mag beheersen - bescherming reikt alleen zo ver als nodig om die herkomstgarantie te bewaren, niet om de houder tegen alle concurrentie te beschermen.',
+      'Deze "herkomstfunctie"-redenering bepaalt hoe ver merkhouders herverpakking, rebranding en parallelhandel mogen beheersen - bescherming reikt alleen zo ver als nodig om herkomstgarantie te bewaren.',
     ],
     [
       'Wat oordeelde Land Nordrhein-Westfalen/Renckhoff (2018) over een leerling die een vrij toegankelijke foto, eerder met toestemming van de auteur geplaatst, opnieuw uploadt naar een schoolwebsite?',
@@ -420,7 +420,7 @@ export const LAWIP: CategoryContent = {
         'Dit is toegestaan onder de EU-citaatuitzondering, omdat de herupload een educatief doel diende',
       ],
       0,
-      'In tegenstelling tot hyperlinken, dat alleen naar content wijst die nog op de oorspronkelijke host staat, haalt het daadwerkelijk kopiëren en opnieuw uploaden van een bestand naar een onafhankelijke server de blijvende zeggenschap van de rechthebbende over dat specifieke exemplaar volledig uit handen - als de oorspronkelijke plaatsing later wordt verwijderd, blijft de onafhankelijk geherupdate kopie desalniettemin bestaan, wat het Hof beschouwde als een materieel andere, extra handeling die eigen toestemming vereist. Dit trok een scherpe leerstellige grens tussen linken, doorgaans veilig zolang het doel rechtmatig beschikbaar blijft, en herhosten, dat doorgaans nieuwe toestemming vereist, gebaseerd op de verschillende mate van blijvende zeggenschap die de rechthebbende in elk scenario behoudt. Het onderliggende geschil betrof een Spaanse reisfoto die werd hergebruikt voor een aardrijkskundepresentatie van een leerling, nauwelijks het soort zaak dat men zou verwachten in de auteursrechtelijke rechtspraak van het HvJEU op zo\'n grote leerstellige schaal. De uitspraak kreeg kritiek van sommige auteursrechtwetenschappers die stelden dat zij de praktische realiteit onderschat dat de meeste heruploade content, eenmaal vrij openbaar, weinig resterende economische schade oplevert door een verdere, niet-commerciële kopie.',
+      'Opnieuw uploaden naar onafhankelijke server haalt zeggenschap van rechthebbende uit handen - als origineel wordt verwijderd, blijft kopie bestaan en vereist eigen toestemming. Dit trekt grens tussen linken (veilig) en herhosten (toestemming nodig).',
     ],
     [
       'Wat beschermde de Nederlandse "geschriftenbescherming", een sui-generis regeling in het Nederlandse auteursrecht, vóór haar afschaffing in 2018?',
@@ -431,7 +431,7 @@ export const LAWIP: CategoryContent = {
         'Foto\'s zonder artistieke waarde, een categorie die in werkelijkheid nooit onder deze specifiek op geschriften gerichte sui-generis leer viel',
       ],
       0,
-      'Deze uniek Nederlandse leer gaf een dunne bescherming (vooral tegen letterlijk overnemen) aan louter feitelijke of functionele teksten die de gewone drempel van oorspronkelijkheid niet haalden; zij werd door wetswijziging geschrapt nadat de rechtspraaklijn van het HvJEU in Football Dataco en Infopaq duidelijk maakte dat het EU-auteursrecht een echte oorspronkelijkheidsnorm vereiste, zonder ruimte voor een lichtere nationale regeling.',
+      'Deze Nederlandse sui-generis leer gaf bescherming aan feitelijke teksten die oorspronkelijkheidsnorm niet haalden. Zij werd geschrapt nadat HvJEU (Football Dataco, Infopaq) duidelijk maakte dat EU-auteursrecht echte oorspronkelijkheid vereist.',
     ],
     [
       'In Huawei/ZTE (2015) stelde het HvJEU een onderhandelingskader vast dat bepaalt wanneer het verzoek van een houder van een standaard-essentieel octrooi om een verbod wat doet?',
@@ -442,7 +442,7 @@ export const LAWIP: CategoryContent = {
         'Hangt uitsluitend af van de vraag of de gebruiker al een geheimhoudingsovereenkomst met de octrooihouder heeft ondertekend',
       ],
       0,
-      'Huawei bezat octrooien die essentieel waren voor een telecomstandaard en had zich bij een standaardisatie-organisatie verplicht deze op FRAND-voorwaarden (fair, redelijk en niet-discriminerend) te licentiëren; het Hof oordeelde dat het aanvragen van een verbod tegen een bereidwillige licentienemer artikel 102 kan schenden, tenzij de SEO-houder de vermeende inbreukmaker eerst waarschuwt, een specifiek schriftelijk FRAND-aanbod doet, en de gebruiker daarna voortvarend en te goeder trouw reageert, bijvoorbeeld door zekerheid of een gemotiveerd tegenaanbod te bieden. Dit weegt de eigendomsrechten van de SEO-houder af tegen het risico dat dreigingen met een verbod de licentiehouder dwingen tot royalty\'s ver boven de werkelijke FRAND-waarde, een verschijnsel dat mededingingswetenschappers "hold-up" noemen, wat enorm van belang is gezien hoe dwingend een verbod wordt wanneer een enkele standaard, zoals een mobiel netwerkprotocol, voor elke concurrent praktisch onvermijdelijk is. Nationale rechters, vooral in Duitsland en het VK, zijn sindsdien merkbaar uit elkaar gaan lopen in hoe strikt zij elke stap van de zogenoemde Huawei-volgorde toepassen, waardoor SEO-verbodsprocedures een van de meest forumshoppende terreinen van de Europese octrooipraktijk zijn. De zaak zelf ontstond uit een geschil over LTE-essentiële octrooien op het hoogtepunt van de smartphoneoctrooioorlogen van het begin van de jaren 2010.',
+      'Huawei bezat octrooien essentieel voor telecomunicatiestandaard met FRAND-licentieverplichting; het Hof oordeelde dat verbodsvorderingen artikel 102 kunnen schenden, tenzij SEO-houder eerst waarschuwt en specifiek FRAND-aanbod doet. Dit weegt eigendomsrechten tegen "hold-up"-risico.',
     ],
     [
       'Aan welke twee voorwaarden moet een "parodie" volgens het arrest van het HvJEU in Deckmyn/Vandersteen (2014) over de parodie-uitzondering onder de InfoSoc-richtlijn voldoen, zonder andere vaak veronderstelde voorwaarden te moeten vervullen?',
@@ -453,7 +453,7 @@ export const LAWIP: CategoryContent = {
         'Korter zijn dan het oorspronkelijke werk en niet meer dan tien procent daarvan gebruiken',
       ],
       0,
-      'Het Hof oordeelde ook, ongewoon, dat nationale rechters de legitieme belangen van de oorspronkelijke auteur moeten afwegen tegen vrijheid van meningsuiting - en in het onderliggende geschil, een Belgische zaak over een racistische bewerking van een omslag van het stripverhaal "Suske en Wiske", liet dit ruimte voor het falen van het parodieverweer als de boodschap van de parodie een discriminerende boodschap overbracht die de reputatie van de oorspronkelijke auteur schaadde.',
+      'Het Hof oordeelde dat parodie werking van oorspronkelijk werk oproepen en humor/spot vereist. Rechters moeten belangen van auteur tegen vrijheid van meningsuiting afwegen. Parodieverweer kan falen als boodschap discriminerend is.',
     ],
     [
       'Behandelde Sky plc/SkyKick UK Ltd (2020) de vraag of het registreren van een merk voor een uitzonderlijk brede specificatie, zoals eenvoudigweg "computersoftware", wat kan opleveren?',
@@ -464,7 +464,7 @@ export const LAWIP: CategoryContent = {
         'Een grond voor het betreffende nationale of EU-merkenbureau om registratie al vóór verlening uitdrukkelijk te weigeren, een materiële toetsing die het HvJEU verklaarde dat zulke bureaus in feite verplicht zijn uit te voeren in de onderzoeksfase',
       ],
       0,
-      'Cloudmigratiebedrijf voor e-mail SkyKick, aangeklaagd door omroep Sky wegens merken die enorme categorieën dekten, waaronder simpelweg "computersoftware", betoogde dat Sky\'s registraties deels ongeldig waren wegens gebrek aan duidelijkheid en deels te kwader trouw waren aangevraagd zonder werkelijke intentie ze zo breed te gebruiken; het HvJEU oordeelde dat een te brede specificatie niet automatisch ongeldig is wegens gebrek aan duidelijkheid of nauwkeurigheid, maar dat kwade trouw een registratie deels ongeldig kan maken, voor de waren of diensten waarvoor nooit werkelijk gebruik was bedoeld, terwijl zij standhoudt voor waren die daadwerkelijk bedoeld en gebruikt waren. Dit was praktisch van belang omdat brede "portfolio"-aanvragen een gangbaar defensief procesmiddel zijn, en de uitspraak gaf gedaagden een echte, zij het beperkte, manier om zulke registraties terug te snoeien in plaats van een alles-of-niets geldigheidsstrijd te voeren. In de terugverwezen Britse uitspraak werden Sky\'s merken deels te kwader trouw geacht voor delen van de wijdlopige specificatie, maar Sky won toch zijn onderliggende inbreukvordering tegen SkyKick op de engere waren die overeind bleven. De zaak is nu een standaardverwijzing in advies aan merkaanvragers over de risico\'s van het opblazen van een specificatie ver voorbij werkelijke commerciële plannen.',
+      'SkyKick betoogde dat Sky\'s brede merken ongeldig waren wegens gebrek aan duidelijkheid of kwade trouw. Het HvJEU oordeelde dat te brede specificaties niet automatisch ongeldig zijn, maar kwade trouw kan registratie deels ongeldig maken.',
     ],
     [
       'De rechtspraaklijnen "Slovak Telekom" en het eerdere "Bronner" van het HvJEU over weigering van licentie of levering als misbruik van machtspositie onder artikel 102 VWEU zijn leerstellig van belang voor het IE-recht omdat zij bepalen wanneer wat moet wijken voor het mededingingsrecht?',
@@ -475,7 +475,7 @@ export const LAWIP: CategoryContent = {
         'Auteursrecht kan onder geen enkele omstandigheid worden afgedwongen tegen een onderneming met machtspositie, een algemene regel die geen enkele EU-mededingings- of auteursrechtelijke instantie in enige gepubliceerde beslissing ooit heeft aangenomen',
       ],
       0,
-      'Bronner (1998) stelde een strenge onmisbaarheid-plus-uitsluitingstoets vast die verplichte licentiëring onder het mededingingsrecht echt uitzonderlijk maakte (in contrast met de eerdere, meer interventionistische Magill-zaak), en deze spanning tussen het belonen van door IE gedreven investering en het voorkomen van concurrentiebeperkende uitsluiting blijft een van de meest leerstellig betwiste kruispunten tussen IE-recht en mededingingsrecht in de EU.',
+      'Bronner (1998) stelde strenge onmisbaarheid-plus-uitsluitingstoets vast die verplichte licentiëring onder mededingingsrecht uitzonderlijk maakt. Deze spanning blijft leerstellig betwist kruispunt.',
     ],
     [
       'Welke vraag van rechtsmacht onder de EU-Merkenverordening behandelde AMS Neve/Heritage Audio (2019)?',
@@ -486,7 +486,7 @@ export const LAWIP: CategoryContent = {
         'Of merkgeschillen via arbitrage moeten worden beslecht in plaats van via een procedure zodra een EU-merk is verleend',
       ],
       0,
-      'Het in het VK gevestigde AMS Neve klaagde het Spaanse bedrijf Heritage Audio in het VK aan wegens vermeend inbreukmakende online advertenties en verkoop gericht op Britse consumenten, en het HvJEU oordeelde dat "de lidstaat waar de inbreukmakende handeling is verricht" onder de EUM-verordening ook de staat omvat waar de door onlinecontent aangetrokken consumenten of handelaren zich bevinden, niet alleen de staat waar de gedaagde het materiaal fysiek publiceerde of gevestigd is. Dit was van enorm belang voor onlinehandel, omdat het een rechthebbende toestaat te procederen waar de commerciële schade daadwerkelijk landt, in plaats van gedwongen te worden elke verkoper in zijn eigen thuisjurisdictie te achtervolgen. De "gerichtheid"-toets die het Hof toepaste volgt vergelijkbare redeneringen uit eerdere rechtspraak van het HvJEU over rechtsmacht bij online smaad en consumentenovereenkomsten, wat laat zien dat het EU-internationaal privaatrecht convergeert naar één algemene aanpak om te bepalen waar een online handeling daadwerkelijk plaatsvindt. AMS Neve is een Britse fabrikant van audioapparatuur, vooral bekend van klassieke analoge studiomengpanelen, wat het onderliggende merkgeschil een merkwaardig nichesfeer van hoogwaardige opnamestudio\'s geeft voor een zaak die uiteindelijk de EU-doctrine over online-rechtsmacht heeft herschapen.',
+      'AMS Neve klaagde Heritage Audio aan in het VK wegens online advertenties gericht op consumenten. Het HvJEU oordeelde dat "lidstaat waar inbreuk plaatsvindt" ook de staat omvat waar online content consumenten aantrekt.',
     ],
   ],
 };

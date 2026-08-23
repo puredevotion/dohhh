@@ -2,7 +2,7 @@ import type { CategoryContent } from '../row.js';
 
 /** Literature & Poetry, second chunk. Correct option first; rotated at build. */
 export const MORE_LITERATURE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What is free indirect discourse?',
       [

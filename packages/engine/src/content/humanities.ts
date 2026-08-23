@@ -11,7 +11,7 @@ import type { CategoryContent } from './row.js';
  */
 
 export const HISTORY: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'The Treaty of Utrecht (1713) settled which war?',
@@ -133,10 +133,103 @@ export const HISTORY: CategoryContent = {
       'Sweden left definitively in 1523; Norway remained tied to Denmark until 1814.',
     ],
   ],
+  bscba: [
+
+    [
+      'Which Roman general and statesman became the first emperor of Rome?',
+      ['Augustus', 'Julius Caesar', 'Mark Antony', 'Pompey the Great'],
+      0,
+      'Octavian, known as Augustus, ruled from 27 BCE until his death in 14 CE, establishing the principate that defined the Roman Empire.',
+    ],
+    [
+      'What was the capital of the Byzantine Empire?',
+      ['Constantinople', 'Athens', 'Antioch', 'Alexandria'],
+      0,
+      'Founded by Constantine I as Nova Roma, it remained the empire\'s capital for over a thousand years until its fall in 1453.',
+    ],
+    [
+      'In what year did Rome traditionally fall, marking the end of the Western Roman Empire?',
+      ['476 CE', '410 CE', '395 CE', '1453 CE'],
+      0,
+      'The deposition of the last Western emperor Romulus Augustulus by Germanic leader Odoacer is the conventional date.',
+    ],
+    [
+      'Which early Islamic caliphate immediately followed the Rashidun period?',
+      ['The Umayyad Caliphate', 'The Abbasid Caliphate', 'The Fatimid Caliphate', 'The Ottoman Empire'],
+      0,
+      'The Umayyads ruled from 661 to 750 CE, expanding Islamic territory from Spain to the borders of China.',
+    ],
+    [
+      'Which Chinese emperor ordered the construction of much of the Great Wall?',
+      ['Qin Shi Huang', 'Kangxi', 'Kublai Khan', 'Yongzheng'],
+      0,
+      'The Qin Dynasty ruler ordered the wall built around the 3rd century BCE to defend against northern invasions.',
+    ],
+    [
+      'What period in European history is roughly dated from the 5th to 10th centuries, following the fall of Rome?',
+      ['The Dark Ages', 'The Renaissance', 'The High Middle Ages', 'The Early Medieval Period'],
+      0,
+      'The term reflects the scarcity of written records and general economic decline in western Europe during this era.',
+    ],
+    [
+      'Which Roman emperor legalized Christianity throughout the empire?',
+      ['Constantine I', 'Julian', 'Theodosius I', 'Diocletian'],
+      0,
+      'Constantine issued the Edict of Milan in 313 CE, granting tolerance to Christianity; Theodosius later made it official.',
+    ],
+    [
+      'The Hundred Years\' War was fought primarily between which two kingdoms?',
+      ['England and France', 'France and the Holy Roman Empire', 'England and Scotland', 'France and Spain'],
+      0,
+      'This series of conflicts lasted from 1337 to 1453, determining control of vast territories in medieval Europe.',
+    ],
+    [
+      'Which Portuguese explorer was the first European to reach India by sea around Africa?',
+      ['Vasco da Gama', 'Bartolomeu Dias', 'Pedro Cabral', 'Henry the Navigator'],
+      0,
+      'Da Gama\'s 1498 voyage established a direct sea route from Europe to Asia, bypassing Middle Eastern merchants.',
+    ],
+    [
+      'In what century did Johann Gutenberg invent the movable-type printing press?',
+      ['15th century', '14th century', '16th century', '13th century'],
+      0,
+      'Gutenberg\'s invention around 1440 revolutionized information distribution and enabled rapid idea dissemination.',
+    ],
+    [
+      'Which French king earned the epithet "the Sun King"?',
+      ['Louis XIV', 'Louis XVI', 'Louis XIII', 'Louis XII'],
+      0,
+      'Louis XIV reigned from 1643 to 1715 and presided over France\'s golden age of culture and military dominance.',
+    ],
+    [
+      'What was the primary grievance of the American colonies against British rule before 1776?',
+      ['Taxation without representation', 'Religious persecution', 'Prohibition of westward expansion', 'Forced military conscription'],
+      0,
+      '"No taxation without representation" captured colonial anger at being taxed without elected representation in Parliament.',
+    ],
+    [
+      'In what year did the French Revolution begin with the storming of the Bastille?',
+      ['1789', '1776', '1799', '1815'],
+      0,
+      'The Bastille\'s fall on 14 July symbolized assault on royal absolutism and is now France\'s national holiday.',
+    ],
+    [
+      'Which Frankish emperor unified much of western Europe in the early 9th century?',
+      ['Charlemagne', 'Otto I', 'Frederick Barbarossa', 'Louis the Pious'],
+      0,
+      'Charlemagne\'s empire lasted only a generation but established the template for European power structures.',
+    ],
+    [
+      'What was the primary trade network connecting Europe, Asia and Africa in the medieval period?',
+      ['The Silk Road', 'The Amber Route', 'The Spice Routes', 'The Tea Roads'],
+      0,
+      'Despite its name, the Silk Road carried spices, ceramics, and precious metals. Its decline spurred European exploration.',
+    ],
+  ],
 };
 
 export const GEOGRAPHY: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'The Coriolis parameter f is equal to what?',
@@ -273,10 +366,103 @@ export const GEOGRAPHY: CategoryContent = {
       'Its counter-intuitive feature is that fine clays need higher velocities to erode than sands, because cohesion holds them together.',
     ],
   ],
+  bscba: [
+
+    [
+      'What is the primary source of energy driving Earth\'s atmospheric and oceanic circulation?',
+      ['The Sun', 'Geothermal energy from the Earth\'s interior', 'Tidal friction from the Moon', 'Radioactive decay in the core'],
+      0,
+      'Solar radiation heats the atmosphere unevenly, creating temperature gradients that drive wind and ocean currents.',
+    ],
+    [
+      'Which ocean covers the largest area of Earth\'s surface?',
+      ['The Pacific Ocean', 'The Atlantic Ocean', 'The Indian Ocean', 'The Arctic Ocean'],
+      0,
+      'The Pacific covers roughly 165 million square kilometres, representing nearly 46% of Earth\'s ocean surface.',
+    ],
+    [
+      'What is the name of the imaginary line that divides Earth into the Northern and Southern hemispheres at 0° latitude?',
+      ['The Equator', 'The Prime Meridian', 'The Tropic of Cancer', 'The Tropic of Capricorn'],
+      0,
+      'At the equator, Earth\'s radius is greatest and the rotation is fastest in terms of surface velocity.',
+    ],
+    [
+      'Which type of plate boundary is most commonly associated with active volcanic eruptions?',
+      ['Convergent boundaries', 'Divergent boundaries', 'Transform boundaries', 'Passive margins'],
+      0,
+      'Subduction zones, where oceanic plates descend beneath continental plates, drive the most frequent volcanic activity.',
+    ],
+    [
+      'What is the term for the phenomenon where moisture-bearing winds lose their water on one side of a mountain, creating drier conditions on the other?',
+      ['Rain shadow effect', 'Orographic uplift', 'Convective precipitation', 'Frontal system'],
+      0,
+      'Air forced upward cools and loses moisture; descending air on the lee side is warm and dry.',
+    ],
+    [
+      'How many continents are conventionally recognized in the standard geographical model?',
+      ['Seven', 'Six', 'Five', 'Eight'],
+      0,
+      'The division varies by region and convention, but the seven-continent model is most common in English-speaking geography.',
+    ],
+    [
+      'What is permafrost?',
+      ['Soil or rock that remains frozen year-round in polar and high-altitude regions', 'A permanent glacial layer beneath all mountains', 'Underground rock that never thaws', 'The deepest layer of Earth\'s crust'],
+      0,
+      'Permafrost can be tens to hundreds of metres thick and covers roughly 25% of the Northern Hemisphere\'s land area.',
+    ],
+    [
+      'Which warm ocean current significantly moderates the climate of northwestern Europe?',
+      ['The Gulf Stream', 'The Canary Current', 'The Humboldt Current', 'The Kuroshio Current'],
+      0,
+      'The North Atlantic Drift, an extension of the Gulf Stream, transports tropical heat and keeps ports ice-free.',
+    ],
+    [
+      'What is the approximate circumference of Earth at the equator?',
+      ['40,075 kilometres', '25,000 kilometres', '50,000 kilometres', '30,000 kilometres'],
+      0,
+      'Earth is slightly oblate, so the circumference around the poles is about 40,008 kilometres.',
+    ],
+    [
+      'Which mountain range contains the world\'s highest peak?',
+      ['The Himalayas', 'The Andes', 'The Rocky Mountains', 'The Alps'],
+      0,
+      'Mount Everest rises to 8,849 metres and remains the ultimate mountaineering objective.',
+    ],
+    [
+      'What is the process by which solid rock is broken down into smaller fragments by natural processes?',
+      ['Weathering', 'Erosion', 'Deposition', 'Metamorphism'],
+      0,
+      'Weathering occurs in place through mechanical, chemical, or biological processes; it precedes erosion and transport.',
+    ],
+    [
+      'What is the primary difference between weather and climate?',
+      ['Weather describes short-term atmospheric conditions; climate describes long-term patterns', 'Weather is local and climate is global', 'Weather changes daily but climate never changes', 'Weather is predictable but climate is random'],
+      0,
+      'Weather is atmospheric conditions experienced today; climate is the statistics of weather over decades or centuries.',
+    ],
+    [
+      'What are the three major categories of rock classified by their mode of formation?',
+      ['Igneous, sedimentary, and metamorphic', 'Mineral, crystal, and ore', 'Granite, limestone, and slate', 'Plutonic, volcanic, and extrusive'],
+      0,
+      'Igneous forms from magma; sedimentary from compressed sediment; metamorphic from heat and pressure on existing rock.',
+    ],
+    [
+      'What is a watershed?',
+      ['An area of land whose surface water drains to a particular waterbody', 'The dividing line between two ocean basins', 'A region where two climate zones meet', 'A glacial valley shaped by flowing ice'],
+      0,
+      'Watersheds range from local to continental scales and are fundamental units for understanding water cycles.',
+    ],
+    [
+      'Which process moves weathered rock and soil fragments from one location to another?',
+      ['Erosion', 'Weathering', 'Consolidation', 'Lithification'],
+      0,
+      'Erosion is driven by water, wind, ice, and gravity; it is distinguished from weathering by the transport component.',
+    ],
+  ],
 };
 
 export const LITERATURE: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'Which term did Bakhtin use for the coexistence of distinct social voices within a novel?',
@@ -401,6 +587,99 @@ export const LITERATURE: CategoryContent = {
       ['The Yoruba', 'The Mande', 'The Amhara', 'The Zulu'],
       1,
       'Transmitted by Mande griots, it recounts the founding of the Mali Empire in the 13th century.',
+    ],
+  ],
+  bscba: [
+
+    [
+      'Who is the protagonist of Jane Austen\'s novel "Pride and Prejudice"?',
+      ['Elizabeth Bennet', 'Jane Bennet', 'Emma Woodhouse', 'Anne Elliot'],
+      0,
+      'Elizabeth\'s wit and independence, and her journey to overcome prejudice against Mr. Darcy, drive the novel.',
+    ],
+    [
+      'Which author wrote the dystopian novel "1984"?',
+      ['George Orwell', 'Aldous Huxley', 'Ray Bradbury', 'Margaret Atwood'],
+      0,
+      'Published in 1949, Orwell\'s novel depicts a totalitarian future state and introduced the concept of Big Brother.',
+    ],
+    [
+      'In which Shakespeare tragedy does the protagonist feign madness while seeking revenge?',
+      ['Hamlet', 'Macbeth', 'Othello', 'King Lear'],
+      0,
+      'Hamlet\'s delayed revenge on his uncle Claudius remains one of literature\'s most analyzed plots.',
+    ],
+    [
+      'What is a sonnet?',
+      ['A 14-line poem with a specific rhyme scheme and metre', 'A brief lyric poem about love', 'A narrative poem in blank verse', 'A dramatic poem meant to be performed'],
+      0,
+      'The Petrarchan and Shakespearean sonnets are the two major forms; both have 14 lines in iambic pentameter.',
+    ],
+    [
+      'Who wrote the novel "The Great Gatsby"?',
+      ['F. Scott Fitzgerald', 'Ernest Hemingway', 'John Steinbeck', 'William Faulkner'],
+      0,
+      'Published in 1925, Fitzgerald\'s work captures the excess and disillusionment of the Jazz Age.',
+    ],
+    [
+      'What is a metaphor in literature?',
+      ['A comparison between two unlike things without using "like" or "as"', 'An exaggeration used for emphasis', 'A reference to another work of art', 'A statement that contradicts itself'],
+      0,
+      '"Love is a rose" is a metaphor; "love is like a rose" is a simile using comparative language.',
+    ],
+    [
+      'Which Russian novelist wrote "War and Peace"?',
+      ['Leo Tolstoy', 'Fyodor Dostoevsky', 'Ivan Turgenev', 'Nikolai Gogol'],
+      0,
+      'Published in the 1860s, this epic novel interweaves fictional and historical events during the Napoleonic Wars.',
+    ],
+    [
+      'What is the primary sequence of events in a narrative called?',
+      ['The plot', 'The setting', 'The theme', 'The exposition'],
+      0,
+      'Plot encompasses the causal chain of events from exposition through resolution, distinguishing it from mere chronology.',
+    ],
+    [
+      'Who wrote the novel "Wuthering Heights"?',
+      ['Emily Bronte', 'Charlotte Bronte', 'Anne Bronte', 'George Eliot'],
+      0,
+      'Published under the pen name Ellis Bell in 1847, this gothic romance remains Emily\'s sole novel.',
+    ],
+    [
+      'What is a flashback in narrative?',
+      ['A return in time to events earlier than the main action', 'A sudden scene of intense action', 'A shift in narrative perspective', 'A repetition of an earlier scene'],
+      0,
+      'Flashbacks interrupt linear chronology and are often used to reveal character motivation or backstory.',
+    ],
+    [
+      'Who is traditionally credited as the author of the ancient Greek epic "The Odyssey"?',
+      ['Homer', 'Hesiod', 'Ovid', 'Virgil'],
+      0,
+      'Scholars debate Homer\'s identity, but both the Odyssey and the Iliad are attributed to him in classical tradition.',
+    ],
+    [
+      'What is alliteration?',
+      ['The repetition of beginning consonant sounds in nearby words', 'The use of words with similar meanings', 'A comparison between two things', 'The repetition of vowel sounds'],
+      0,
+      'Common in poetry and prose, alliteration creates musicality and emphasis through sound patterning.',
+    ],
+    [
+      'Which author wrote "Alice\'s Adventures in Wonderland"?',
+      ['Lewis Carroll', 'J.M. Barrie', 'Charles Dickens', 'Oscar Wilde'],
+      0,
+      'Carroll (pen name of Charles Dodgson) published this whimsical tale in 1865; it spawned a sequel.',
+    ],
+    [
+      'What is irony in literature?',
+      ['A discrepancy between appearance and reality or expectation and outcome', 'A humorous comparison', 'A character\'s internal conflict', 'A hidden meaning in dialogue'],
+      0,
+      'Situational irony occurs when outcomes contradict expectations; dramatic irony when readers know what characters do not.',
+    ],
+    [
+      'Who wrote the novel "Crime and Punishment"?',
+      ['Fyodor Dostoevsky', 'Leo Tolstoy', 'Ivan Turgenev', 'Aleksandr Dumas'],
+      0,
+      'Published in 1866, this Russian masterpiece explores morality, guilt, and redemption through protagonist Raskolnikov.',
     ],
   ],
 };

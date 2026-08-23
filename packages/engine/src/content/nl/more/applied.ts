@@ -3,7 +3,7 @@ import type { CategoryContent } from '../../row.js';
 /** Wiskunde, technologie en sport, tweede reeks. Juiste antwoord staat eerst; wordt bij het bouwen gerandomiseerd. */
 
 export const MORE_MATHS: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat vereist de tussenwaardestelling van de functie?',
       [
@@ -337,7 +337,7 @@ export const MORE_MATHS: CategoryContent = {
 };
 
 export const MORE_TECHNOLOGY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat beïnvloedt de belastingsfactor van een hashtabel?',
       [
@@ -676,7 +676,7 @@ export const MORE_TECHNOLOGY: CategoryContent = {
 };
 
 export const MORE_SPORT: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'In de Formule 1 beperkt het parc-fermé-reglement van de FIA, zodra de kwalificatie begint, teams tot wat?',
       [
@@ -686,7 +686,7 @@ export const MORE_SPORT: CategoryContent = {
         'Of teamradiocommunicatie met coureurs tijdens de sessie is toegestaan, en welke beperkingen de FIA aan de inhoud van berichten stelt',
       ],
       0,
-      'Parc fermé vergrendelt de mechanische afstelling van een auto vanaf het begin van de kwalificatie tot de race, zodat een team niet een lichte, zachte kwalificatie-afstelling kan rijden en \'s nachts een compleet andere race-afstelling kan monteren. Slechts een korte, door de FIA gecontroleerde lijst van wijzigingen is toegestaan: bandenspanning kan worden aangepast, de hoek van de voorvleugel kan worden bijgesteld, versleten remblokken of -schijven kunnen worden vervangen, en brandstof kan worden bijgevuld tot racegewicht, maar rijhoogte, dempers, torsiestaven en aerodynamische oppervlakken buiten de voorvleugel blijven vastliggen. Teams kunnen een uitzondering aanvragen om grotere wijzigingen aan te brengen, maar de prijs is dat ze de race vanuit de pitstraat starten in plaats van vanaf de startpositie die in de kwalificatie is verdiend, wat de prikkelstructuur eerlijk houdt. Een aanverwant weetje: parc fermé omvat ook technisch het fysiek in beslag nemen van de auto na de race voor postrace-keuring, waar de Franse term (letterlijk \'gesloten park\') oorspronkelijk vandaan komt in het motorsportreglement.',
+      'Parc fermé vergrendelt de mechanische afstelling van een auto vanaf het begin van de kwalificatie tot de race. Alleen een korte, FIA-goedgekeurde lijst van wijzigingen is toegestaan: bandenspanning, voorvleugel-hoek, en rem-onderdelen.',
     ],
     [
       'Wat betekent een wind-geassisteerde prestatie in de atletiek?',
@@ -798,7 +798,7 @@ export const MORE_SPORT: CategoryContent = {
         'Een schop die eerst binnen de 22 van de tegenstander stuit nadat hij over de doellijn van de tegenstander is gegaan en terug in het speelveld is gespeeld',
       ],
       0,
-      'De regel beloont een specifieke, moeilijke schop: gelanceerd vanuit de eigen helft van het schoppende team, moet hij in het speelveld stuiten en daarna rollend of stuitend binnen de 22 van de tegenstander uit gaan, waarbij het schoppende team de inworp tegen de loop van het balbezit in behoudt in plaats van die op de normale manier af te staan zoals bij gewone schoppen naar de zijlijn. World Rugby voerde de regel op 1 augustus 2021 in om teams te straffen die verdedigers opstapelen in het achterveld om aanvallende breedte dicht te zetten, omdat een speler uit de achterlinie die wordt opgetrokken om de schop te dekken elders ruimte creëert; de afruil die dit afdwingt tussen het verdedigen van de schop en het verdedigen van de lijn is precies het punt. De regel werd getest naast de doellijn-dropout en weerspiegelt, in geest, de poging van andere sporten om risicomijdende verdedigende opstellingen tegen te gaan, en is inmiddels een vast onderdeel van zowel het mannen- als het vrouwelijke interlandrugby. Een aardig aanverwant weetje is de numerieke naamgevingsconventie van de regel zelf, losjes ontleend aan de langlopende "50-meter"-zone-terminologie van Australian rules football, hoewel de daadwerkelijke regels van de twee sporten geen mechanisme delen.',
+      'De regel beloont een specifieke schop: vanuit de eigen helft, die in het speelveld stuit en daarna binnen de tegenstander\'s 22 uit gaat. Het dwingt verdedigers om aanvallende breedte niet dicht te zetten.',
     ],
     [
       'Welke langlopende beslissingsregel voor knock-outduels over twee wedstrijden in zijn Europese clubcompetities schafte de UEFA in 2021 af?',
@@ -809,7 +809,7 @@ export const MORE_SPORT: CategoryContent = {
         'Het zaaivoordeel dat aan de hoger gerangschikte club werd toegekend bij een gelijke stand over twee wedstrijden',
       ],
       0,
-      'De uitdoelpuntenregel werd door de UEFA ingevoerd voor de Europacup II van 1965/66, en het eerste competitieve gebruik kwam bijna direct: Budapest Honvéd schakelde Dukla Praag uit in de tweede ronde ondanks een 4-4 over twee wedstrijden, omdat Honvéds drie uitdoelpunten die van Dukla\'s twee versloegen. Het idee was om aanvallend voetbal te belonen op velden waar bezoekende teams historisch moeite hadden, en negatieve, puur verdedigende uitwedstrijden te ontmoedigen. Tegen de jaren 2010 was het competitieve landschap omgekeerd: gegevens toonden dat thuisvoordeel zo was geslonken dat de regel nu bezoekende teams stimuleerde om een smalle voorsprong te verdedigen in plaats van aan te vallen, precies het omgekeerde van het oorspronkelijke doel, en daarom stemde het competitiecomité van de UEFA om de regel vanaf het seizoen 2021/22 af te schaffen. De afschaffing betekende dat een gelijke stand over twee wedstrijden na beide duels rechtstreeks naar verlenging en strafschoppen ging zonder enige weging voor waar doelpunten waren gescoord - een werkelijk ingrijpende verschuiving in de tactiek over twee wedstrijden waar veel trainers en analisten zich in eerste instantie tegen verzetten, omdat er meer dan vijf decennia lang hele uitwedstrijdplannen waren gebouwd rond precies dat soort doelpunt jagen of beschermen.',
+      'Ingevoerd in 1965 om aanvallend voetbal te belonen, maar tegen 2010 werkte het tegengesteld: het stimuleerde bezoekers tot verdediging. De UEFA schrapte het in 2021.',
     ],
     [
       'Wat is het belangrijkste statistische bezwaar tegen het gebruik van het conversiepercentage van strafschoppen om nemers te rangschikken?',
@@ -910,7 +910,7 @@ export const MORE_SPORT: CategoryContent = {
         '60%',
       ],
       0,
-      'De UEFA voerde de squad cost ratio in als een eenvoudige betaalbaarheidstoets nadat de oude break-evenregel onder Financial Fair Play makkelijk te omzeilen bleek voor door de staat gesteunde en door eigenaren gesubsidieerde clubs: hij plafonneert simpelweg lonen, transferamortisatie en makelaarshonoraria op een vastgesteld percentage van de voetbalgerelateerde omzet van een club. Het plafond werd bewust geleidelijk ingefaseerd, beginnend op 90% in 2023/24 en stapsgewijs afnemend naar 80% in 2024/25, voordat het uitkwam op het permanente plafond van 70% vanaf 2025/26, waardoor clubs tijd kregen om loonlijsten te herstructureren in plaats van plotselinge overtredingen te veroorzaken. Dit is belangrijk omdat het het werkelijke mechanisme van financiële doping aanpakt - onhoudbare uitgaven ten opzichte van inkomsten - in plaats van het boekhoudkundige break-evencijfer waarover clubs als Manchester City en Paris Saint-Germain herhaaldelijk werden onderzocht zonder dat hun gedrag veranderde. Een aanverwant weetje: in de eerste handhavingsronde onder het volledige plafond van 70% strafte de UEFA in juli 2025 twaalf clubs, waaronder Chelsea, Barcelona, Lyon en Aston Villa, waarbij Chelsea alleen al ongeveer 31 miljoen euro boete kreeg over de regels voor voetbalinkomsten en squad cost samen.',
+      'De squad cost ratio plafonneert lonen, transferamortisatie en makelaarshonoraria op 70% van voetbalgerelateerde omzet, geleidelijk ingefaseerd van 90% in 2023/24. Dit pakt het werkelijke mechanisme van financiële doping aan in plaats van break-evencijfers.',
     ],
     [
       'Wat stelde het Europees Hof van Justitie vast in zijn uitspraak van 2006 in de zaak Meca-Medina en Majcen tegen de Commissie?',
@@ -921,7 +921,7 @@ export const MORE_SPORT: CategoryContent = {
         'Dat de doctrine van de "specificiteit van de sport" tucht- en toelaatbaarheidsregels van bonden volledig vrijstelt van de verplichtingen van de interne markt en het mededingingsrecht van de EU, ongeacht hun economisch effect op atleten',
       ],
       0,
-      'Twee langeafstandzwemmers, David Meca-Medina en Igor Majcen, betwistten een vierjarige dopingschorsing opgelegd na een positieve test op nandrolon, en betoogden dat antidopingregels puur sportief waren en daarom buiten het bereik van het EU-recht vielen; het Hof was het daarmee oneens en oordeelde dat het sportieve karakter van een regel die niet automatisch buiten het mededingingsrecht plaatst als de regel echte economische effecten heeft op het vermogen van atleten om te werken. Dit beperkte de eerdere uitzondering voor "puur sportieve regels" die in eerdere zaken zoals Walrave en Donà was uitgesneden, en dwong bonden om aan te tonen dat hun regels proportioneel waren aan een legitiem doel in plaats van simpelweg sportieve autonomie te claimen. Ze staat samen met Bosman als een van de twee pijlers van het Europese sportrecht, maar waar Bosman ging over het vrije verkeer van werknemers, is Meca-Medina het mededingingsrechtelijke precedent waarmee bonden nog steeds rekening moeten houden bij het opstellen van toelaatbaarheids- en tuchtregels. Een echt weetje: de zaak wordt soms verkeerd geciteerd als een uitspraak over een dopingmiddel, maar het Hof heeft de wetenschap van nandrolon helemaal niet beoordeeld - het gehele arrest draait om bevoegdheid, niet toxicologie, en de onderliggende schorsing van de zwemmers bleef in ieder geval gehandhaafd.',
+      'Het Hof oordeelde dat sportieve regels met economische gevolgen niet automatisch buiten het mededingingsrecht vallen. Dit beperkte eerdere "puur sportieve" uitzonderingen.',
     ],
     [
       'In 2014 wijzigde de UCI fundamenteel de technische regels voor het uurrecord in het wielrennen. Wat was de wijziging?',
@@ -932,7 +932,7 @@ export const MORE_SPORT: CategoryContent = {
         'Er werd een minimale poogduur van vijfenveertig minuten ingevoerd, samen met een vereiste dat pogingen door twee continentale bonden onafhankelijk worden bekrachtigd, om korte, hoog-intensieve pogingen te diskwalificeren',
       ],
       0,
-      'Na Eddy Merckx die in 1972 in Mexico-Stad 49,431 km reed, dreef een golf aerodynamische innovaties door renners zoals Francesco Moser en later Chris Boardman en Graeme Obree de mark verder met behulp van stuurverlengers, schijfwielen en radicale lichaamsposities; in 1997 vroor de UCI het record met terugwerkende kracht in op materiaal uit het Merckx-tijdperk, en herclassificeerde de aerodynamische pogingen als een afzonderlijke categorie "Best Human Effort" in plaats van het officiële record. Die bevriezing hield stand zeventien jaar lang tot 2014, toen de UCI van koers veranderde en het record weer openstelde voor moderne tijdrittechnologie, wat een golf van pogingen teweegbracht, waaronder de succesvolle rit van Bradley Wiggins het jaar erop. De episode is een casestudy in hoe bonden worstelen met technologie die de geest van een record overtreft, en op verschillende momenten kiezen voor het beschermen van een historische basislijn en dan voor het laten evolueren van materiaal. Een specifiek weetje: de mark van Ondřej Sosenka van 49,700 km uit 2005, gezet in Moskou onder de Merckx-stijl-beperking, stond bijna een decennium als record totdat de regelwijziging van 2014 aanzienlijk grotere afstanden ontsloot.',
+      'In 1997 bevroor de UCI het record op 1972-materiaal, maar in 2014 opende het modern aerodynamisch materiaal weer toe.',
     ],
     [
       'Waarop berust de biologische-paspoort-benadering van antidoping?',

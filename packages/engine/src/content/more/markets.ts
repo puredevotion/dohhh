@@ -3,7 +3,7 @@ import type { CategoryContent } from '../row.js';
 /** Finance & Structured Products, second chunk. Correct option first; rotated at build. */
 
 export const MORE_FINANCE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does a bond\'s convexity measure?',
       [

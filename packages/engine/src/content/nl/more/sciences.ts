@@ -3,7 +3,7 @@ import type { CategoryContent } from '../../row.js';
 /** Natuurkunde, chemie en biologie, tweede deel. Correcte optie eerst; wordt bij build geroteerd. */
 
 export const MORE_PHYSICS: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat verbetert het Debye-model ten opzichte van het model van Einstein voor warmtecapaciteit?',
       [
@@ -332,7 +332,7 @@ export const MORE_PHYSICS: CategoryContent = {
 };
 
 export const MORE_CHEMISTRY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat voorspelt het principe van Le Chatelier voor een evenwicht onder verhoogde druk?',
       [
@@ -671,7 +671,7 @@ export const MORE_CHEMISTRY: CategoryContent = {
 };
 
 export const MORE_BIOLOGY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat detecteert een Southern blot?',
       [

@@ -3,7 +3,7 @@ import type { CategoryContent } from '../row.js';
 /** Art, Music and Screen, second chunk. Correct option first; rotated at build. */
 
 export const MORE_ART: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What is chiaroscuro?',
       [
@@ -342,7 +342,7 @@ export const MORE_ART: CategoryContent = {
 };
 
 export const MORE_MUSIC: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What is a Neapolitan chord\'s usual function?',
       [
@@ -681,7 +681,7 @@ export const MORE_MUSIC: CategoryContent = {
 };
 
 export const MORE_SCREEN: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What is a match on action?',
       [

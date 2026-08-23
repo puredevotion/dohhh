@@ -3,7 +3,7 @@ import type { CategoryContent } from '../../row.js';
 /** Halfgeleiders en software-engineering, tweede deel. Correcte optie eerst; wordt bij build geroteerd. */
 
 export const MORE_SILICON: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Waar verwijst de "toon" (tone) van een fotoresist naar?',
       [
@@ -342,7 +342,7 @@ export const MORE_SILICON: CategoryContent = {
 };
 
 export const MORE_SOFTWARE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat maakt structural sharing mogelijk in een persistente datastructuur?',
       [

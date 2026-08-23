@@ -7,7 +7,7 @@ import type { CategoryContent } from '../../row.js';
  * History (asia2.ts).
  */
 export const MORE_EAST_ASIA: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'De Chinese Speciale Economische Zones, ingesteld vanaf 1980, omvatten welke stad?',
       [
@@ -62,7 +62,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
       'In welk jaar voerde Hongkong zijn koppeling van de munt aan de Amerikaanse dollar in (het Linked Exchange Rate System)?',
       ['1983', '1997', '1990', '1978'],
       0,
-      'Het Linked Exchange Rate System, dat de Hongkongse dollar koppelde aan 7,80 per Amerikaanse dollar, werd ingevoerd in oktober 1983, op het hoogtepunt van een valutacrisis die was ontstaan door onzekerheid over de toekomst van de kolonie nadat de gesprekken over de overdracht van 1997 waren begonnen. Het verving een zwevende koers die sinds 1974 gold en werd ontworpen door econoom John Greenwood, ingevoerd onder minister van Financiën John Bremridge om vertrouwen te herstellen via een mechanisme in de stijl van een currency board in plaats van discretionair centralebankbeleid. De koppeling bleek stevig genoeg om de Aziatische financiële crisis van 1997-98 ongeschonden te doorstaan, in tegenstelling tot bijna elke andere munt in de regio, al ging dat gepaard met reële kosten in de vorm van deflatie en werkloosheid, omdat aanpassing via prijzen moest verlopen in plaats van via de wisselkoers. Een gerelateerd detail: de koppeling is sinds die tijd maar één keer formeel aangepast, in 2005, toen een "convertibiliteitszone" van 7,75-7,85 de enkelvoudige vaste koers verving.',
+      'Ingevoerd oktober 1983 op 7,80 per dollar om vertrouwen te herstellen na onzekerheid over 1997-overdracht. De koppeling standhield de Aziatische crisis van 1997-98, in tegenstelling tot andere munten, al met deflatie als gevolg.',
     ],
     [
       'Waarop richtte Singapore zich vooral in reactie op zijn recessie van 1985-86, de eerste sinds de onafhankelijkheid?',
@@ -73,13 +73,13 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'De invoering van het eerste wettelijke minimumloon van Singapore om de binnenlandse vraag te ondersteunen',
       ],
       0,
-      'De neergang van Singapore in 1985-86, de eerste recessie sinds de onafhankelijkheid, werd door de Economic Committee van de regering aangemerkt als een kostenprobleem in plaats van een vraagprobleem, waardoor het belangrijkste ingezette instrument een forse verlaging was van het verplichte werkgeversaandeel in het Central Provident Fund, van 25% naar richting 10%, wat de loonkosten verlaagde zonder de waarde van de Singaporese dollar of het strakke begrotingsbeleid van het land aan te tasten. Het CPF, normaal een verplicht pensioenspaarsysteem, diende hier ook als macro-economisch instrument, precies omdat lonen en niet-loonkosten door de staat werden behandeld als een variabele die direct kon worden bijgestuurd, een kenmerk van het instrumentarium van de stadstaat als ontwikkelingsstaat. De episode versterkte Singapores voorkeur voor aanpassing via lonen en kosten in plaats van via de wisselkoers, in lijn met het langdurige groeimodel van een sterke munt en hoge besparingen. Een gerelateerd detail: de CPF-verlaging werd in de jaren daarna geleidelijk teruggedraaid zodra de groei aantrok, in plaats van in één keer, om te voorkomen dat het net opgeloste loonkostenprobleem opnieuw zou ontstaan.',
+      'Regering zag recessie van 1985-86 als kostenprobleem; verlaagde werkgeversaandeel in CPF van 25% naar ~10%. Dit drukte loonkosten zonder wisselkoersverandering, wat Singapores voorkeur voor loonflexibiliteit weerspiegelt.',
     ],
     [
       'In welk jaar werd het Hsinchu Science-Based Industrial Park opgericht, het Taiwanese model voor de omschakeling naar halfgeleiders?',
       ['1980', '1987', '1973', '1995'],
       0,
-      'Het Hsinchu Science-Based Industrial Park opende in 1980, gebouwd naast twee van Taiwans belangrijkste onderzoeksuniversiteiten, specifiek om in de VS opgeleide ingenieurs terug te halen om halfgeleider- en elektronicabedrijven op te richten en te bemannen, waarvan TSMC later het bekendste voorbeeld werd. Het belichaamde een staatsstrategie, uitgevoerd via het Industrial Technology Research Institute, om Taiwans kleine en middelgrote exportbedrijven hoger op de waardeketen te brengen in plaats van te concurreren op loonkosten. Belastingvrijstellingen, laagrentende leningen en versoepelde douaneprocedures voor huurders vormden het stimuleringspakket, en de pijplijn van terugkerende ingenieurs, deels gebouwd op Taiwanees-Amerikaanse professionele netwerken, vormde de aanbodzijde van arbeid. TSMC zelf werd pas in 1987 opgericht, zeven jaar na de opening van het park, wat laat zien hoe lang het duurde voordat het rendement zich manifesteerde.',
+      'Hsinchu opende in 1980 om VS-ingenieurs terug te halen voor halfgeleiders/electronica (later TSMC). Via ITRI gebruikte Taiwan belastingvrijstellingen, leningen en douaneversoepeling om bedrijven op de waardeketen te tillen.',
     ],
     [
       'Wat bekrachtigde het 14e Congres van de Chinese Communistische Partij formeel in 1992?',
@@ -90,7 +90,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Een vast tijdschema voor de volledige convertibiliteit van de renminbi op de kapitaalrekening',
       ],
       0,
-      'Het 14e Partijcongres van oktober 1992 bekrachtigde formeel het rapport van Jiang Zemin, dat een "socialistische markteconomie" uitroept tot expliciet doel van de hervorming, en maakte zo een einde aan jaren van ideologische onduidelijkheid over de vraag of markten een tijdelijk hulpmiddel waren of een permanent kenmerk van het Chinese socialisme. Het volgde rechtstreeks op Deng Xiaopings Zuidelijke Rondreis eerder dat jaar, toen hij Shenzhen en Guangdong bezocht om de marktgerichte hervorming opnieuw legitiem te maken na de terugval die volgde op Tiananmen in 1989-91. De formulering liet de partij het politieke machtsmonopolie behouden, terwijl ze elke schijn liet varen dat centrale planning, in plaats van markten, de meeste middelen zou toewijzen. Een gerelateerd detail: de zinsnede werd het jaar daarop in de Chinese grondwet opgenomen, bij de wijziging van 1993.',
+      'October 1992 bekrachtigde het 14e Congress "socialistische markteconomie" als doel, na Dengs Zuidelijke Rondreis. Dit eindigde ideologische onduidelijkheid: markten zouden, niet centrale planning, middelen toewijzen.',
     ],
     [
       'Waaruit bestond Malaysia\'s reactie op de Aziatische financiële crisis, ingevoerd in september 1998?',
@@ -101,7 +101,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Nationalisatie van de gehele binnenlandse banksector',
       ],
       0,
-      'In september 1998 koppelde de regering van Mahathir Mohamad de ringgit aan 3,80 per dollar en verbood ze de handel in de munt buitenslands, waarmee ze zowel de IMF-orthodoxie die op Thailand, Indonesië en Korea werd toegepast als het gangbare economische advies van die tijd trotseerde. De maatregel stelde de centrale bank Bank Negara in staat de rente te verlagen om de groei te steunen zonder de munt op open markten te verdedigen, ten koste van een tijdelijke afsnijding van Malaysia van portefeuillekapitaal. Het werd een waar natuurlijk experiment waarnaar in het latere debat over kapitaalcontroles van beide kanten werd verwezen, omdat Malaysia\'s herstel ongeveer vergelijkbaar was met dat van zijn buurlanden onder IMF-programma\'s, terwijl het de voorwaarden van het Fonds volledig vermeed. Een gerelateerd detail: de controles vielen samen met het ontslag en de latere rechtszaak tegen vicepremier Anwar Ibrahim, die de IMF-aanpak had voorgestaan, waardoor de economische kwestie verstrengeld raakte met een politieke machtsstrijd.',
+      'September 1998: Mahathir koppelde ringgit aan 3,80/dollar en verbood buitenlandse handel, trotseerde IMF. Dit liet Bank Negara de rente verlagen. Maleisië\'s herstel leek op IMF-landen, zonder voorwaarden.',
     ],
   ],
   phd: [
@@ -169,7 +169,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Het leidde tot de onmiddellijke ineenstorting van de merchantbanksector, nog voor enig overheidsoptreden',
       ],
       0,
-      'Kia Motors\' aanvraag voor noodleningen in juli 1997, gevolgd door een feitelijk faillissement dat najaar, was belangrijk omdat het een groot, niet-marginaal falen van een chaebol was dat liet zien hoeveel schuldgefinancierde bedrijfsexpansie was doorgeschoten voorbij enig aannemelijk rendement op kapitaal, nog voordat de regionale besmetting uit Thailand Seoel volledig had bereikt. Het getreuzel van de overheid over de vraag of Kia moest worden genationaliseerd, gedwongen moest fuseren of failliet mocht gaan, kostte weken die buitenlandse crediteuren opvatten als een teken dat de staat een politiek belangrijk faillissement niet langer kon beheersen, wat de kapitaalvlucht versnelde. Kia werd in 1998 uiteindelijk overgenomen door Hyundai, na een door de rechtbank begeleid surseanceproces, in plaats van directe nationalisatie door de staat. Een gerelateerd detail: Kia\'s crisis viel bijna precies samen met de ineenstorting van Hanbo Steel in januari 1997, waardoor historici de twee gebeurtenissen meestal samen behandelen als de binnenlandse waarschuwingssignalen die voorafgingen aan het IMF-verzoek van november 1997.',
+      'Kia failleerde juli-september 1997; toonde schuldfinanciering voorbij rendement vóór regionale besmetting. Regering aarzelde tussen nationalisatie/fusie, wat buitenlandse crediteuren opvatten als controle-verlies. Hyundai nam Kia over.',
     ],
     [
       'Waarnaar verwijst Japans "jusen"-crisis van het midden van de jaren negentig?',
@@ -180,7 +180,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Een overheidsreddingsoperatie voor consumentenkredietbedrijven (sarakin)',
       ],
       0,
-      'De jusen waren gespecialiseerde hypotheekmaatschappijen die in de jaren zeventig door banken werden opgericht en, verstoken van gewone hypotheekactiviteit zodra banken zelf die markt betraden, zich zwaar op vastgoedspeculatie stortten tijdens de zeepbeljaren en daarmee ten onder gingen. Hun afwikkeling in 1995-96 was politiek explosief omdat landbouwcoöperaties, via Norinchukin, hun enorme bedragen hadden geleend en beschermd moesten worden, terwijl de overheid uiteindelijk publiek geld inzette om een deel van de verliezen te dekken - een eerste in het naoorlogse Japan. De episode wordt gezien als het moment waarop het Japanse ministerie van Financiën reddingsoperaties niet langer stilletjes kon regelen zonder dat belastingbetalers het merkten, een voorbode van de grotere bankfaillissementen van 1997-98. Een gerelateerd detail: de publieke bijdrage van ongeveer 685 miljard yen leidde tot zoveel weerstand in het parlement dat verdere bankherkapitalisatie bijna twee jaar werd uitgesteld.',
+      'Jusen waren hypotheekmaatschappijen die failliet gingen door vastgoedspeculatie. Afwikkeling 1995-96 was politiek explosief: landbouwcoöperaties moesten beschermd worden met publiek geld - een eerste in Japan. Dit maakte reddingsoperaties zichtbaar.',
     ],
     [
       'Waarom is het Recruit-schandaal van 1988-89 in Japan vooral belangrijk voor de geschiedenis van de zeepbeleconomie?',
@@ -191,7 +191,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Dat kruiselings aandelenbezit binnen keiretsu de anti-monopoliewet had geschonden',
       ],
       0,
-      'Het Recruit-schandaal barstte in 1988 los toen bleek dat het conglomeraat Recruit Cosmos niet-genoteerde aandelen, die gegarandeerd enorm in waarde zouden stijgen zodra ze naar de beurs gingen, had verspreid onder meer dan 90 politici, ambtenaren en zakenmensen, voornamelijk als tegenprestatie verbonden aan Recruits vastgoed- en telecombelangen. Het is belangrijk voor de geschiedenis van de zeepbel omdat het laat zien hoe gewoon het was geworden om politieke toegang te ruilen voor een gegarandeerde vermogenswinst, terwijl grond- en aandelenprijzen nog stegen, met veel van de speculatieve winst van die tijd die via informele toewijzingen liep in plaats van via de open handel. Premier Noboru Takeshita trad er in 1989 om af, en het schandaal wordt vaak samen met het uiteenspatten van de zeepbel gezien als bewijs van institutioneel verval in diezelfde periode. Een gerelateerd detail: het leidde rechtstreeks tot het hervormingspakket van 1994 dat kiesdistricten met één zetel invoerde in het Lagerhuis, bedoeld om de geldpolitiek die het schandaal blootlegde terug te dringen.',
+      'Recruit-schandaal (1988): niet-genoteerde aandelen onder 90+ politici/ambtenaren als tegenprestatie. Dit toonde dat politieke toegang tegen gegarandeerde winsten werd geruild. Premier Takeshita trad af; institutioneel verval.',
     ],
     [
       'Waarop richtte het Amerikaans-Japanse Structural Impediments Initiative (1989-90) zich, in tegenstelling tot eerdere sectorspecifieke handelsgeschillen?',
@@ -202,7 +202,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         "Japans invoerquota op landbouwproducten, geïsoleerd bekeken",
       ],
       0,
-      'Het Structural Impediments Initiative escaleerde van de sectorspecifieke geschillen uit begin en midden jaren tachtig (auto\'s, halfgeleiders) naar het argument dat Japans hele binnenlandse economische bouwwerk - meerlagige groothandelsdistributie, beperkende wetten op grondgebruik en grote winkels, keiretsu-leveranciersbanden - het handelsoverschot in stand hield, ongeacht de wisselkoers. Het weerspiegelde een Amerikaanse diagnose dat de yenstijging na Plaza alleen niet had geholpen om het onevenwicht te verkleinen, zodat het probleem structureel moest zijn in plaats van louter macro-economisch. Japan reageerde met toezeggingen om de wet op grote winkels te verruimen en de publieke investeringen te verhogen, veranderingen die doorgaans als slechts deels effectief worden beoordeeld. Een gerelateerd detail: de SII-gesprekken liepen parallel met acties onder Sectie 301 en Super 301 van de handelswet, waarmee Washington zowel een coöperatief als een eenzijdig spoor tegelijk had.',
+      'Escaleerde van sectorgeschillen naar claim dat Japans structuren (distributie, grondgebruik, keiretsu) het handelsonevenwicht in stand hielden. Yenstijging na Plaza hielp niet, dus was probleem structureel. Japan beloofde veranderingen; deels effectief.',
     ],
     [
       'Waarom mislukte China\'s poging tot algehele prijshervorming in 1988 om tot blijvende liberalisering te leiden?',
@@ -213,7 +213,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Een veto van de Staatsraad draaide de hervorming terug voordat ze werd doorgevoerd',
       ],
       0,
-      'Toen de leiding midden 1988 liet doorschemeren dat algehele prijsliberalisering aankwam, reageerden huishoudens met paniekaankopen van alles van zout tot televisies en haastten ze zich om banktegoeden op te nemen, uit vrees dat spaargeld zou worden weggevaagd voordat de prijzen werden vrijgegeven - een zichzelf versterkende dynamiek die de inflatie tegen het eind van het jaar boven de 18% duwde. De Staatsraad trok zich binnen enkele maanden terug op een bezuinigingsprogramma van kredietverstrakking en prijscontroles, in plaats van door te zetten, wat de kloof verhardde tussen hervormers die snellere marktwerking voorstonden en conservatieven die de paniek als bewijs van de gevaren daarvan aanhaalden. Die inflatie en de stedelijke bezorgdheid over levensonderhoud die ze veroorzaakte, worden doorgaans gerekend tot de economische grieven die bijdroegen aan de protesten die het jaar daarop culmineerden op het Tiananmenplein. Een gerelateerd detail: de episode van 1988 is de reden waarom Chinas latere prijshervormingen, inclusief de duale aanpak, veel geleidelijker werden beheerd met meer aandacht voor publieke signalering.',
+      'Midden 1988: aankondiging prijsliberalisering leidde tot paniekaankopen en bankopnames. Inflatie boven 18%. Staat trok zich terug; hervormers en conservatieven verdeelden. Gaf stedelijke zorgen die naar Tiananmen 1989 voerden.',
     ],
     [
       'Wat deed de unificatie van Chinas wisselkoerssysteem in januari 1994 precies?',
@@ -224,7 +224,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Verleende Chinese bedrijven volledige convertibiliteit op de lopende rekening',
       ],
       0,
-      'Tot januari 1994 hanteerde China een duaal wisselkoerssysteem - een overgewaardeerde officiële koers voor transacties binnen het staatsplan en een veel zwakkere, marktbepaalde koers beschikbaar bij swapcentra voor al het overige - en de hervorming van 1994 schrapte de officiële koers en unificeerde deze rond het niveau van de swapcentra, ongeveer 8,7 yuan per dollar, feitelijk een grote devaluatie van de officiële koers. Ze schafte ook de vreemde-valutacertificaten af die buitenlanders moesten gebruiken, en bewoog richting convertibiliteit op de lopende rekening, formeel bereikt in 1996 onder Artikel VIII van het IMF, terwijl convertibiliteit op de kapitaalrekening beperkt bleef. De unificatie wordt algemeen gezien als een sterke stimulans voor het exportvermogen tot halverwege de jaren negentig en als het wegnemen van een belangrijke bron van winstbejag door arbitrage. Een gerelateerd detail: de geünificeerde koers werd daarna meer dan tien jaar vrijwel vast gehouden tegenover de dollar, tot de overstap naar een beheerde zweving in juli 2005.',
+      'Januari 1994: China unificeerde twee wisselkoersen op ~8,7 yuan/dollar (grote devaluatie). Schafte vreemde-valutacertificaten af, bewoog naar lopende-rekening convertibiliteit (1996). Dit stimuleerde export en verwijderde arbitrage.',
     ],
     [
       'Hoeveel bedroeg het door het IMF geleide reddingspakket voor Zuid-Korea van december 1997 ongeveer, en wat onderscheidde de structuur ervan?',
@@ -235,7 +235,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Ongeveer 100 miljard dollar, rechtstreeks gefinancierd door de centrale banken van de G7 buiten het IMF om',
       ],
       0,
-      'Het Koreaanse pakket van december 1997 bedroeg ongeveer 57 miljard dollar, destijds de grootste door het IMF geleide reddingsoperatie ooit samengesteld, met een combinatie van een IMF-standbyregeling van 21 miljard dollar met fondsen van de Wereldbank en de Asian Development Bank, plus een nieuwe bilaterale "tweede verdedigingslinie" van toegezegde, voorwaardelijke reserves van landen zoals de VS en Japan, die alleen zouden worden aangesproken als de eerste tranche ontoereikend bleek. Die voorwaardelijke structuur liet het totaalbedrag groter en geruststellender overkomen voor markten zonder dat elke dollar meteen werd uitgekeerd, een sjabloon dat later in andere crisisprogramma\'s werd herbruikt. Korea maakte gebruik van het IMF- en multilaterale deel, maar had het bilaterale deel grotendeels niet nodig, omdat het vertrouwen begin 1998 sneller herstelde dan gevreesd. Een gerelateerd detail: Korea betaalde de IMF-lening drie jaar eerder dan gepland volledig terug, in augustus 2001, wat in eigen land werd aangehaald als rechtvaardiging van de aanpassingen.',
+      'December 1997: ~57 miljard dollar pakket, toen grootste IMF-operatie: standby 21 miljard plus Wereldbank/ADB en bilaterale "tweede verdedigingslinie" van VS/Japan. Structuur maakte totaal groter zonder alles meteen uit te keren. Korea gebruikte IMF/multilateraal; bilateraal niet nodig.',
     ],
   ],
   professor: [
@@ -303,7 +303,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Het volgde op IMF-voorwaarden verbonden aan een standbylening voor Hongkong',
       ],
       0,
-      'In augustus 1998 gaf de Hong Kong Monetary Authority ongeveer 118 miljard Hongkongse dollar uit om rechtstreeks blue-chipaandelen en indexfutures op te kopen, een buitengewone interventie voor een instelling die als currency board was gebouwd, met als ontwerpprincipe juist geen discretionaire marktmacht uit te oefenen. Het doelwit was een "dubbele slag"-strategie die aan hedgefondsen werd toegeschreven: gelijktijdig de Hongkongse dollar en de aandelenmarkt shorten, in de verwachting dat het verdedigen van de koppeling via hogere rente de aandelenkoersen zelf onderuit zou halen en de shortpositie zou laten renderen, ongeacht of de munt standhield. De interventie werkte in de beperkte zin dat de koppeling standhield en de overheid de verworven aandelen later met winst verkocht via het in 1999 genoteerde Tracker Fund, maar ze kreeg voortdurende kritiek voor het opgeven van de vrijemarktprincipes waar Hongkong trots op was. Een gerelateerd detail: ambtenaren rechtvaardigden de stap deels met het argument dat de markt echt disfunctioneel was geworden door een smalle, gemakkelijk te manipuleren samenstelling van de aandelenindex op dat moment.',
+      'Augustus 1998: HKMA kocht ~118 miljard HK$ aandelen/futures tegen "dubbele slag" (hedgefondsen shorten dollar+aandelen). Buitengewoon voor currency board; koppeling standhield, aandelen later met winst verkocht. Kritiek op verlies van marktprincipes.',
     ],
     [
       'Op welk empirisch punt draaide het debat vooral of de Aziatische crisis van 1997-98 werd gedreven door "fundamentals" of door "paniek"?',
@@ -314,7 +314,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Of kapitaalcontroles in elk land in hetzelfde kalenderjaar waren opgeheven',
       ],
       0,
-      'Het "paniek"-verhaal van Radelet en Sachs betoogde dat de crisislanden slachtoffer waren van een liquiditeitsrun in plaats van werkelijk insolvent, en wees op cijfers voor kortetermijn-buitenlandse schuld die de bruikbare reserves ver overtroffen - wat betekende dat gecoördineerde terugtrekking door crediteuren zelfvervullend kon worden, ook al waren de onderliggende economieën fundamenteel gezond, net als bij een bankrun. Het rivaliserende "fundamentals"-kamp, geassocieerd met onder anderen Corsetti, Pesenti en Roubini, wees op echte zwaktes - overinvestering, zwak banktoezicht, verwante kredietverlening - die de landen kwetsbaar maakten los van enig coördinatieprobleem bij crediteuren. De strijd was enorm belangrijk voor het beleid, omdat een paniekdiagnose impliceert dat de strakke begrotings- en monetaire voorwaarden van het IMF de zaken verergerden, terwijl een fundamentals-diagnose impliceert dat de aanpassing grotendeels noodzakelijk was. Een gerelateerd detail: het debat is nooit volledig beslecht, en de meeste latere syntheses behandelen de crisis als een mengeling - echte kwetsbaarheden die een zelfvervullende run mogelijk maakten waar dat anders niet het geval zou zijn geweest.',
+      'Paniek-verhaal (Radelet, Sachs): schuld overtroffen reserves, zelfvervullende runs mogelijk ondanks gezonde fundamentals. Fundamentals-kamp (Corsetti, Pesenti, Roubini): echte zwaktes (overinvestering, zwak toezicht). Onderscheid bepaalde beleid: paniek vs aanpassing-nodig.',
     ],
     [
       'Waar plaatste de "moral hazard"-verklaring voor de investeringsboom in Oost-Azië vóór 1997, ontwikkeld door onder meer Ronald McKinnon en Huw Pill en weerklonken in Paul Krugmans essay uit 1998 over de crisis, het fundamentele probleem?',
@@ -325,7 +325,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Monetaire verstrakking die binnenlandse banken dwong tot risicovollere, ongedekte leningen in vreemde valuta',
       ],
       0,
-      'McKinnon en Pill, en afzonderlijk Krugman, betoogden dat de investeringsboom van de regio werd aangewakkerd door impliciete garanties: banken en de grote bedrijven die zij financierden, geloofden - terecht, zoals later bleek bij verschillende reddingsoperaties - dat de staat de verliezen zou opvangen als het misging, waardoor ze hefboomwerking en steeds risicovollere projecten financierden zonder het neerwaartse risico te beprijzen zoals een ongegarandeerde kredietverstrekker zou doen. Dit verschilt van het paniek-versus-fundamentals-debat door de nadruk te leggen op een specifieke institutionele vertekening - de garantie zelf - in plaats van op een pure liquiditeitsrun of algeheel zwak toezicht, en het gaf het moral-hazard-kamp een argument om insolvente instellingen daadwerkelijk failliet te laten gaan in plaats van ze te redden, omdat reddingsoperaties precies het gedrag waren dat de theorie de schuld gaf. Critici wierpen tegen dat de garanties, hoe reëel ook, op zichzelf niet de snelheid en omvang van de ommekeer van 1997 konden verklaren, omdat de garanties op de vooravond van de crisis niet waren veranderd. Een gerelateerd detail: Krugmans essay, getiteld "What Happened to Asia?", was deels geschreven als een herziening van zijn eigen, kritischer standpunt van voor de crisis over hoeveel het "wonder" te danken had aan werkelijke efficiëntiewinsten.',
+      'McKinnon, Pill, Krugman: impliciete overheidsgaranties veroorzaakten boom: banken/bedrijven financierden hefboomwerking zonder neerwaartse risico in te prijzen. Verschilt van paniek-versus-fundamentals op institutionele vertekening. Critici: garanties konden snelheid 1997 niet verklaren.',
     ],
     [
       'Waarover liepen de onderhandelingen van Indonesië met het IMF begin 1998 herhaaldelijk stuk, welk specifiek voorstel van Soeharto\'s adviseurs betreft?',
@@ -336,7 +336,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Een schuldmoratorium dat zowel de staats- als de private buitenlandse schuld dekte',
       ],
       0,
-      'Begin 1998, toen de rupiah in vrije val was, drongen Soeharto\'s adviseurs - het meest zichtbaar de Amerikaanse econoom Steve Hanke - een currency-boardregeling aan die de rupiah star aan de dollar zou koppelen, met de redenering dat een harde koppeling met volledige reservedekking het vertrouwen zou herstellen zoals dat eerder voor Hongkong en Argentinië had gewerkt. Het IMF en de meeste buitenlandse regeringen waren hier sterk tegen, met het argument dat de reserves en het banksysteem van Indonesië bij lange na niet gezond genoeg waren om een starre koppeling te verdedigen, en dat het aankondigen van zo\'n koppeling zonder de capaciteit om die te handhaven een speculatieve aanval zou uitnodigen die de reserves volledig zou leegtrekken. Het geschil vertraagde de IMF-steun op een moment dat de rupiah wanhopig een geloofwaardig ankerpunt nodig had, en wordt vaak aangehaald als voorbeeld van hoe omstreden het technische advies rond de crisis daadwerkelijk was, zelfs onder marktvriendelijke economen. Een gerelateerd detail: het idee van het currency board werd losgelaten zodra Soeharto in mei 1998 aftrad, na rellen en desertie binnen zijn eigen kabinet.',
+      'Begin 1998: Soeharto\'s team (Steve Hanke) drong currency board aan voor rupiah-dollar koppeling. IMF/buitenlandse regeringen verzetten zich: reserves/banksysteem niet gezond genoeg, zou speculatie uitlokken. Geschil vertraagde IMF-steun. Soeharto verliet idee mei 1998.',
     ],
     [
       'Waarom was Chinas Vennootschapswet van 1993 vooral belangrijk voor de hervorming van staatsbedrijven?',
@@ -347,7 +347,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Ze schiep een goedkeuringsvereiste door het Nationale Volkscongres voor het sluiten van elk groot bedrijf',
       ],
       0,
-      'Chinas Vennootschapswet van 1993 leverde voor het eerst een algemeen juridisch kader voor besloten en naamloze vennootschappen, wat belangrijk was omdat de hervorming van staatsbedrijven in de jaren negentig steeds meer de vorm aannam van "vennootschappelijkheid" - het omvormen van een bedrijf tot een vennootschap met een raad van bestuur en aandeelhouders, soms volledig in staatshanden, soms deels beursgenoteerd - in plaats van rechtstreekse privatisering of voortgezette directe bureaucratische controle. Ze gaf juridische dekking aan de beursnoteringen in Shanghai en Shenzhen die in 1990 waren begonnen zonder een deugdelijke wettelijke grondslag, en ondersteunde de taal van het "moderne bedrijfssysteem" uit het Derde Plenum van 1993. Vennootschappelijkheid stelde de staat in staat een controlerend belang te behouden, vaak via ondoorzichtige holdingstructuren, terwijl toch toegang tot kapitaalmarkten mogelijk bleef en managers aan minstens nominaal bestuurstoezicht werden onderworpen. Een gerelateerd detail: veel vroege beursgangen begin jaren negentig waren "gesplitste" beursintroducties waarbij slechts een minderheidstranche van aandelen werd uitgegeven terwijl het merendeel van de aandelen in staatsbezit onverhandelbaar bleef, een erfenis die pas werd opgelost bij de aandelenhervorming van 2005-06.',
+      '1993 Vennootschapswet gaf juridisch kader voor bedrijfshervorming via "vennootschappelijkheid". Gaf dekking aan Shanghai/Shenzhen-notiering (1990+), ondersteunde "moderner systeem". Staat behield controle via vennootschappelijkheid met kapitaaltoegang.',
     ],
     [
       'Welke koerswending markeerde Chun Doo-hwans stabilisatieprogramma van begin jaren tachtig in Korea, in verhouding tot het tijdperk van Park Chung-hee?',
@@ -358,7 +358,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         "Koreas eerste vijfjarenplan, ter vervanging van ad-hocdoelstellingen",
       ],
       0,
-      'Aan de macht gekomen na de moord op Park en midden in de nasleep van de schuldgefinancierde campagne voor zware en chemische industrie eind jaren zeventig, die serieuze overcapaciteit en inflatie had veroorzaakt, koos het economische team van Chun Doo-hwan - onder leiding van technocraten als Kim Jae-ik - begin jaren tachtig voor een strak monetair beleid, begrotingsdiscipline en geleidelijke financiële en handelsliberalisering, in plaats van nieuwe door de staat gestuurde industriële campagnes te lanceren. De inflatie daalde binnen enkele jaren van dubbele naar enkele cijfers, en de periode wordt in de literatuur over de ontwikkelingsstaat vaak gezien als het moment waarop het Koreaanse beleid begon industriële promotie en macro-economisch beheer te ontkoppelen, in plaats van beide via dezelfde discretionaire hefbomen te sturen. Chun behield desondanks veel autoritaire industriebeleidsinstrumenten - de gedwongen fusies van de "Big Deals" van het decennium daarna hebben hier eerdere voorlopers - waardoor de omschakeling partieel was in plaats van een volledige omhelzing van marktliberalisme. Een gerelateerd detail: Kim Jae-ik, de architect van het programma, kwam om bij het bombardement van Rangoon in 1983 dat ook enkele kabinetsministers doodde, een grote discontinuïteit in het Koreaanse economische beleidspersoneel.',
+      'Na Park\'s moord en schuldgefinancierde zware-industrie-campagne, koos Chun\'s team onder Kim Jae-ik begin jaren tachtig voor strak monetair beleid en geleidelijke liberalisering. Inflatie daalde; industriële promotie ontkoppelde van macro-beheer. Autoritaire instrumenten bleven.',
     ],
     [
       'Waarom wordt de oprichting van de beurzen van Shanghai en Shenzhen in 1990-91 door historici vaak als bijzonder betekenisvol gezien?',
@@ -369,7 +369,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Ze werden nadrukkelijk opgericht om het Drieklovendamproject te financieren',
       ],
       0,
-      'De beurzen van Shanghai en Shenzhen openden respectievelijk in december 1990 en 1991, jaren voordat China een algemene vennootschapswet (1993), een effectenwet (1998) of duidelijke antwoorden had op de vraag welke eigendomsrechten een "aandeel" eigenlijk verschafte ten opzichte van een nominaal staatsbedrijf. De gangbare theorie van financiële ontwikkeling, gebaseerd op de historische ervaring van markten zoals Londen of New York, gaat er doorgaans van uit dat beurzen ontstaan nadat er al juridische infrastructuur bestaat die aandeelhouders beschermt; Chinas geval draaide die volgorde om, door eerst de markt te bouwen en de wet er later omheen te vormen zodra problemen opdoken. Die volgorde is een van de redenen waarom de literatuur over Chinas aandelenmarkten zoveel aandacht besteedt aan gesplitste aandelenstructuren, zwakke bescherming van minderheidsaandeelhouders en door de staat gecontroleerde beursnoteringen, in plaats van de beurzen te behandelen als gewone mechanismen voor kapitaalallocatie. Een gerelateerd detail: beide beurzen werden aanvankelijk deels opgezet als omkeerbare proefprojecten die konden worden gesloten als ze politiek gevoelig zouden worden, een van de redenen waarom ze administratief gescheiden bleven in plaats van tot één nationale beurs te worden samengevoegd.',
+      '1990-91: Shanghai/Shenzhen openden jaren voor vennootschaps- en effectenwetten, zonder eigendomsrechten duidelijk. Keerde gebruikelijke volgorde om: markt eerst, recht later. Verklaart: gesplitste structuren, zwakke minderheidsscherming, staatcontrole.',
     ],
     [
       'Waarom is de verhoging van de Japanse consumptiebelasting van 3% naar 5% in april 1997, onder premier Hashimoto Ryutaro, vooral belangrijk in het macro-economische debat?',
@@ -380,7 +380,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Ze werd binnen een jaar teruggedraaid onder druk van het bedrijfsleven, voordat ze de consumptie kon beïnvloeden',
       ],
       0,
-      'De regering van Hashimoto verhoogde de consumptiebelasting van 3% naar 5% in april 1997, op een moment dat Japans herstel van de neergang van begin jaren negentig nog kwetsbaar was, en de meeste latere beschouwingen behandelen de belastingverhoging, samen met het gelijktijdig verlopen van een eerdere verlaging van de inkomstenbelasting en verminderde uitgaven aan publieke werken, als een verstrakking van het begrotingsbeleid net voordat bank- en effectenhuisfaillissementen - Sanyo Securities, Hokkaido Takushoku, Yamaichi - en de regionale crisis de economie van buitenaf troffen. Het bruto binnenlands product kromp in het begrotingsjaar 1997 voor het eerst sinds de oliecrises, en de episode werd een standaard waarschuwend voorbeeld in het latere debat over Japans herhaalde pogingen om de begroting te saneren te vroeg in een herstel. Hashimoto zelf noemde de timing later een fout, en de eigen daaropvolgende stimuleringspakketten van de regering eind 1997 en in 1998 worden doorgaans gelezen als een erkenning daarvan. Een gerelateerd detail: dezelfde discussie kwam terug toen Japan de consumptiebelasting opnieuw verhoogde, voorzichtiger en in gefaseerde stappen vanaf 2014 en 2019, waarbij beleidsmakers 1997 nadrukkelijk aanhaalden als de episode die moest worden vermeden.',
+      'April 1997: Hashimoto verhoogde consumptiebelasting 3% naar 5% tijdens kwetsbaar herstel. Begrotingsverstrakking vóór bankfaillissementen en regionale crisis. BBP kromp voor eerst sinds oliecrises. Waarschuwing tegen te vroege sanering; Hashimoto noemde fout.',
     ],
     [
       'Waarin onderscheidt Zhao Ziyangs kuststrategie voor ontwikkeling, aangekondigd in 1988, zich in accent van het eerdere SEZ-beleid?',
@@ -391,7 +391,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'De geografische focus van de hervorming verschoof naar het binnenland van het Yangtze-bekken, vóór de kust',
       ],
       0,
-      'Zhao Ziyangs kuststrategie voor ontwikkeling breidde het SEZ-model van preferentiële belastingbehandeling, gestroomlijnde vergunningen en exportgerichtheid uit naar een veel groter deel van kust-China - ongeveer 160 miljoen mensen verspreid over Guangdong, Fujian, Jiangsu, Zhejiang, Shandong en andere provincies - in plaats van die behandeling beperkt te houden tot Shenzhen, Zhuhai, Shantou, Xiamen en Hainan. De logica bouwde expliciet voort op het "vliegende ganzen"-idee om de goedkope arbeid en bestaande lichte industrie van kust-China te benutten om arbeidsintensieve productie te vangen die wegtrok uit Japan, Korea, Taiwan en Hongkong, waardoor Chinas integratie in regionale productienetwerken ruim voor de WTO-toetreding werd verdiept. De strategie is een van de redenen waarom de inkomenskloof tussen kust en binnenland in de jaren negentig scherp toenam in plaats van te verkleinen, omdat binnenlandse provincies dezelfde behandeling niet kregen tot latere, beperktere initiatieven na 2000. Een gerelateerd detail: Zhaos eigen politieke val na de onderdrukking van Tiananmen in 1989 draaide de kuststrategie niet terug, omdat Dengs Zuidelijke Rondreis van 1992 de door export geleide kustgroei bevestigde en zo mogelijk versnelde.',
+      'Zhao\'s kuststrategie breidde SEZ-model naar ~160m mensen (niet alleen Shenzhen/Zhuhai/Shantou/Xiamen) via "vliegende ganzen" voor arbeidsintensieve productie uit Japan/Korea/Taiwan/Hongkong. Chinas regionale integratie verdiepte, maar kust-binnenland kloof nam toe.',
     ],
   ],
 };

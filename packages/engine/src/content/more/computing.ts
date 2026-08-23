@@ -3,7 +3,7 @@ import type { CategoryContent } from '../row.js';
 /** Semiconductors and Software Engineering, second chunk. Correct option first; rotated at build. */
 
 export const MORE_SILICON: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does a photoresist\'s "tone" refer to?',
       [
@@ -342,7 +342,7 @@ export const MORE_SILICON: CategoryContent = {
 };
 
 export const MORE_SOFTWARE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does structural sharing enable in a persistent data structure?',
       [

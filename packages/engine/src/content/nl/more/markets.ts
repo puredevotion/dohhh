@@ -3,7 +3,7 @@ import type { CategoryContent } from '../../row.js';
 /** Financiën & gestructureerde producten, tweede reeks. Juiste antwoord staat eerst; wordt bij het bouwen gerandomiseerd. */
 
 export const MORE_FINANCE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat meet de convexiteit van een obligatie?',
       [

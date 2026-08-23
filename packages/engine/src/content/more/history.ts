@@ -8,7 +8,7 @@ import type { CategoryContent } from '../row.js';
  * the answer here carries no information and needs none.
  */
 export const MORE_HISTORY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'The Golden Bull of 1356 regulated what?',
       [

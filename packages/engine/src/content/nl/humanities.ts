@@ -11,7 +11,7 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const HISTORY: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'De Vrede van Utrecht (1713) beëindigde welke oorlog?',
@@ -34,8 +34,8 @@ export const HISTORY: CategoryContent = {
       'Welk rijk werd verslagen in de Slag bij Manzikert in 1071?',
       [
         'Het Byzantijnse Rijk',
-        'Het Abbasidische Kalifaat, destijds in verval onder Turkse militaire controle',
-        'Het Bulgaarse Rijk onder zijn laatste heersers uit de Krum-lijn',
+        'Het Abbasidische Kalifaat onder Turkse militaire bevelhebbing',
+        'Het Bulgaarse Rijk onder zijn heersers uit de Krum-lijn',
         'Het Fatimidische Kalifaat, tijdens een veldtocht noordwaarts vanuit Syrië',
       ],
       0,
@@ -50,7 +50,7 @@ export const HISTORY: CategoryContent = {
     [
       'Great Zimbabwe was de hoofdstad van een staat gebouwd door welk volk?',
       [
-        'De Shona',
+        'De Shona, handelaren in goud en ivoor',
         'Het Koninkrijk Kush, dat zich vanaf de midden-Nijl zuidwaarts uitbreidde',
         'De Ashanti, in de loop van hun westwaartse goudhandel',
         'De Songhai, aan de zuidgrens van hun Sahel-rijk',
@@ -110,7 +110,7 @@ export const HISTORY: CategoryContent = {
     ],
     [
       'De Schenking van Pepijn (756) droeg gebied over aan wie?',
-      ['De Longobardische koningen', 'Het pausdom', 'De abdij van Saint-Denis', 'Het Byzantijnse exarchaat'],
+      ['De Longobardische koningen', 'Het pausdom in Italië', 'De abdij van Saint-Denis', 'Het Byzantijnse exarchaat'],
       1,
       'Pepijn de Korte droeg het voormalige exarchaat van Ravenna over aan de paus, de kiem van de Kerkelijke Staat.',
     ],
@@ -133,10 +133,102 @@ export const HISTORY: CategoryContent = {
       'Zweden verliet de unie definitief in 1523; Noorwegen bleef tot 1814 aan Denemarken verbonden.',
     ],
   ],
+  bscba: [
+    [
+      'Welke Romeinse generaal en staatsman werd de eerste keizer van Rome?',
+      ['Augustus', 'Julius Caesar', 'Marcus Antonius', 'Pompeius de Grote'],
+      0,
+      'Octavianus, bekend als Augustus, regeerde van 27 v.Chr. tot zijn dood in 14 n.Chr. en stichtte het principaat dat het Romeinse Rijk definieerde.',
+    ],
+    [
+      'Wat was de hoofdstad van het Byzantijnse Rijk?',
+      ['Constantinopel', 'Athene', 'Antiochië', 'Alexandrië'],
+      0,
+      'Door Constantijn I gesticht als Nova Roma bleef het meer dan duizend jaar de hoofdstad totdat het in 1453 viel.',
+    ],
+    [
+      'In welk jaar viel Rome traditioneel, wat het einde van het Westrijnse Rijk markeerde?',
+      ['476 n.Chr.', '410 n.Chr.', '395 n.Chr.', '1453 n.Chr.'],
+      0,
+      'Het afzetten van de laatste westrijnse keizer Romulus Augustulus door Germaanse leider Odoacer is de gebruikelijke datum.',
+    ],
+    [
+      'Welk vroeg-islamitisch kalifaat volgde onmiddellijk op de Rashidun-periode?',
+      ['Het Omayyaden-Kalifaat', 'Het Abbasidische Kalifaat', 'Het Fatimidische Kalifaat', 'Het Ottomaanse Rijk'],
+      0,
+      'De Omayyaden regeerden van 661 tot 750 n.Chr., uitbreidend van Spanje tot de grenzen van China.',
+    ],
+    [
+      'Welke Chinese keizer gaf opdracht voor de bouw van veel van de Chinese Muur?',
+      ['Qin Shi Huang', 'Kangxi', 'Kublai Khan', 'Yongzheng'],
+      0,
+      'De Qin-dynastieheersers gaven opdracht voor de muur rond de 3e eeuw v.Chr. ter verdediging tegen noordelijke invallen.',
+    ],
+    [
+      'Welke periode in Europese geschiedenis wordt ruwweg gedateerd van de 5e tot 10e eeuw, na het val van Rome?',
+      ['De Donkere Middeleeuwen', 'De Renaissance', 'De Hoge Middeleeuwen', 'De Vroege Middeleeuwen'],
+      0,
+      'De term weerspiegelt de schaarste aan geschreven bronnen en algemene economische achteruitgang in Westeuropa gedurende deze periode.',
+    ],
+    [
+      'Welke Romeinse keizer legaliseerde het Christendom in heel het imperium?',
+      ['Constantijn I', 'Julianus', 'Theodosius I', 'Diocletianus'],
+      0,
+      'Constantijn gaf in 313 n.Chr. het Edict van Milaan uit; Theodosius maakte het later officieel.',
+    ],
+    [
+      'De Honderdjarige Oorlog werd vooral gevoerd tussen welke twee koninkrijken?',
+      ['Engeland en Frankrijk', 'Frankrijk en het Heilige Rooms Rijk', 'Engeland en Schotland', 'Frankrijk en Spanje'],
+      0,
+      'Deze reeks conflicten duurde van 1337 tot 1453 en bepaalde controle over grote territoria in het middeleeuwse Europa.',
+    ],
+    [
+      'Welke Portugese ontdekkingsreiziger was de eerste Europeaan die per zee via Afrika naar India reisde?',
+      ['Vasco da Gama', 'Bartolomeus Dias', 'Pedro Cabral', 'Hendrik de Zeevaarder'],
+      0,
+      'Da Gama\'s reis van 1498 stelde een directe zeeweg van Europa naar Azië vast, waarmee Middellandse-Zeehandelaren werden omzeild.',
+    ],
+    [
+      'In welke eeuw vond Gutenberg het beweegbare-type drukkerspers uit?',
+      ['15e eeuw', '14e eeuw', '16e eeuw', '13e eeuw'],
+      0,
+      'Gutenberg\'s uitvinding rond 1440 revolutioneerde informatiedistributie en maakte snelle ideeverspreiding mogelijk.',
+    ],
+    [
+      'Welke Franse koning verkreeg de bijnaam "de Zonnekoning"?',
+      ['Lodewijk XIV', 'Lodewijk XVI', 'Lodewijk XIII', 'Lodewijk XII'],
+      0,
+      'Lodewijk XIV regeerde van 1643 tot 1715 en presiderend over Frankrijks gouden tijdperk van cultuur en militaire dominantie.',
+    ],
+    [
+      'Wat was de voornaamste grief van de Amerikaanse kolonies tegen Britse heerschappij voor 1776?',
+      ['Belastingen zonder vertegenwoordiging', 'Godsdienstige vervolgingen', 'Verbod op westwaartse expansie', 'Gedwongen militaire conscriptie'],
+      0,
+      '"Geen belasting zonder vertegenwoordiging" vatte koloniale woede samen over belastingen zonder gekozen vertegenwoordiging in het Parlement.',
+    ],
+    [
+      'In welk jaar begon de Franse Revolutie met de bestorming van de Bastille?',
+      ['1789', '1776', '1799', '1815'],
+      0,
+      'De val van de Bastille op 14 juli symboliseerde aanval op koninklijk absolutisme en is nu Frankriks nationale feestdag.',
+    ],
+    [
+      'Welke Frankische keizer verenigde veel van Westeuropa in de vroege 9e eeuw?',
+      ['Charlemagne', 'Otto I', 'Frederik Barbarossa', 'Lodewijk de Vrome'],
+      0,
+      'Charlemagne\'s rijk duurde slechts één generatie maar stelde het sjabloon voor Europese machtstructuren vast.',
+    ],
+    [
+      'Wat was het voornaamste handelsnetwerk dat Europa, Azië en Afrika in de middeleeuwen verbond?',
+      ['De Zijderoute', 'De Amberroutte', 'De Specerijroutes', 'De Theeroutes'],
+      0,
+      'Ondanks zijn naam vervoerde de Zijderoute specerijen, keramiek en edelmetalen. Zijn neergang spoorde Europese verkenning aan.',
+    ],
+  ],
 };
 
 export const GEOGRAPHY: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'Waaraan is de Coriolisparameter f gelijk?',
@@ -169,7 +261,7 @@ export const GEOGRAPHY: CategoryContent = {
     [
       'Het Grote Slenksysteem loopt van Libanon zuidwaarts tot ongeveer welk land?',
       [
-        'Mozambique',
+        'Mozambique, in het centraal-zuiden van Afrika',
         'Kenia, eindigend bij het zuidelijke uiteinde van de Gregory-slenk',
         'Egypte, waar de Rode-Zeeslenk samenkomt met de Nijl',
         'Zambia, aan de westelijke arm van het Oost-Afrikaanse systeem',
@@ -273,15 +365,107 @@ export const GEOGRAPHY: CategoryContent = {
       'Het contra-intuïtieve kenmerk is dat fijne klei hogere snelheden nodig heeft om te eroderen dan zand, omdat cohesie de deeltjes samenhoudt.',
     ],
   ],
+  bscba: [
+    [
+      'Wat is de voornaamste energiebron voor aardse atmosferische en oceanische circulatie?',
+      ['De Zon', 'Geothermische energie uit het aardeinterieur', 'Getijdenwrijving van de Maan', 'Radioactief verval in de kern'],
+      0,
+      'Zonnestraling verwarmt de atmosfeer ongelijk, wat temperatuurgradiënten maakt die wind en oceaanstromingen drijven.',
+    ],
+    [
+      'Welke oceaan bedekt het grootste deel van het aardoppervlak?',
+      ['De Stille Oceaan', 'De Atlantische Oceaan', 'De Indische Oceaan', 'De Noordelijke IJszee'],
+      0,
+      'De Stille Oceaan bedekt ruwweg 165 miljoen vierkante kilometer, ongeveer 46% van het oceanisch oppervlak van de aarde.',
+    ],
+    [
+      'Wat is de naam van de denkbeeldige lijn die de aarde in Noord- en Zuid-Halfrond verdeelt op 0° breedte?',
+      ['De Evenaar', 'De Nulmeridiaan', 'De Steenbokskeerkring', 'De Kankerkering'],
+      0,
+      'Op de evenaar is de aarde-straal het grootste en de rotatie het snelst in termen van oppervlaktesnelheid.',
+    ],
+    [
+      'Welk type plaatgrens wordt meestal verbonden met actieve vulkanische uitbarstingen?',
+      ['Convergente grenzen', 'Divergente grenzen', 'Transformgrenzen', 'Passieve marges'],
+      0,
+      'Subductiezones, waar oceanische platen onder continentale platen duiken, drijven de meest frequente vulkanische activiteit.',
+    ],
+    [
+      'Wat is de term voor het fenomeen waarbij vochtdragende winden hun water aan één kant van een berg verliezen?',
+      ['Regenschaduweffect', 'Orografische opwelling', 'Convectieve neerslag', 'Frontale systemen'],
+      0,
+      'Lucht gedwongen omhoog koelt af en verliest vocht; dalende lucht aan de lijzijde is warm en droog.',
+    ],
+    [
+      'Hoeveel continenten worden conventioneel erkend in het standaard aardrijkskundig model?',
+      ['Zeven', 'Zes', 'Vijf', 'Acht'],
+      0,
+      'De verdeling varieert per regio en traditie, maar het zeven-continentmodel is het meest voorkomend in Engels-sprekende aardrijkskunde.',
+    ],
+    [
+      'Wat is permafrost?',
+      ['Bodem of rots die het hele jaar bevroren blijft in pool- en hoogtelandgebieden', 'Een permanente gletsjerslaag onder alle bergen', 'Ondergrondse rots die nooit ontdooit', 'De diepste laag van de aardkorst'],
+      0,
+      'Permafrost kan tientallen tot honderden meters dik zijn en bedekt ruwweg 25% van het landbereik van de noordelijke halfrond.',
+    ],
+    [
+      'Welke warme oceaanstroom matig het klimaat van noordwest-Europa aanzienlijk?',
+      ['De Golfstroom', 'De Canarische stroom', 'De Humboldt-stroom', 'De Kuroshio-stroom'],
+      0,
+      'De Noord-Atlantische stroom, verlengde van de Golfstroom, vervoert tropische warmte en houdt havens ijsvrij.',
+    ],
+    [
+      'Wat is de geschatte omtrek van de aarde aan de evenaar?',
+      ['40.075 kilometer', '25.000 kilometer', '50.000 kilometer', '30.000 kilometer'],
+      0,
+      'De aarde is licht afgeplat, dus de omtrek rond de polen is ongeveer 40.008 kilometer.',
+    ],
+    [
+      'Welk bergketen bevat de hoogste bergpiek ter wereld?',
+      ['De Himalaya', 'De Andes', 'De Rocky Mountains', 'De Alpen'],
+      0,
+      'Mount Everest stijgt tot 8.849 meter en blijft het ultieme bergsportobjektief.',
+    ],
+    [
+      'Wat is het proces waarbij massieve rots in kleinere brokken wordt opgebroken door natuurlijke processen?',
+      ['Verwering', 'Erosie', 'Afzetting', 'Metamorfisme'],
+      0,
+      'Verwering treedt ter plaatse op door mechanische, chemische, of biologische processen; dit gaat erosie en vervoer vooraf.',
+    ],
+    [
+      'Wat is het voornaamste onderscheid tussen weer en klimaat?',
+      ['Weer beschrijft korte-termijn atmosferische omstandigheden; klimaat beschrijft lange-termijn patronen', 'Weer is lokaal en klimaat is globaal', 'Weer verandert dagelijks maar klimaat verandert nooit', 'Weer is voorspelbaar maar klimaat is willekeurig'],
+      0,
+      'Weer is atmosferische toestand vandaag; klimaat is statistiek van weer over tientallen of honderden jaren.',
+    ],
+    [
+      'Wat zijn de drie voornaamste categorieën rots geclassificeerd naar hun vormingswijze?',
+      ['Vuil, sedimentair, en metamorf', 'Mineraal, kristal, en erts', 'Graniet, kalksteen, en lei', 'Plutonisch, vulkanisch, en extrusieven'],
+      0,
+      'Vuil vormt zich uit magma; sedimentair uit gecomprimeerd sediment; metamorf uit hitte en druk op bestaande rots.',
+    ],
+    [
+      'Wat is een stroomgebied?',
+      ['Een landgebied waarvan oppervlaktewater uitwatert naar een bepaald waterlichaam', 'De scheidingslijn tussen twee oceaanbekkens', 'Een streek waar twee klimaatszones samenkomen', 'Een gletsjerdal gevormd door stromend ijs'],
+      0,
+      'Stroomgebieden variëren van lokaal tot continentale schaal en zijn fundamentele eenheden voor watercyclustudies.',
+    ],
+    [
+      'Welk proces verplaatst verweerde rots- en bodembrokken van ene plaats naar ander?',
+      ['Erosie', 'Verwering', 'Consolidatie', 'Lithificatie'],
+      0,
+      'Erosie wordt gedreven door water, wind, ijs, en zwaartekracht; onderscheiden door vervoerscomponent van verwering.',
+    ],
+  ],
 };
 
 export const LITERATURE: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'Welke term gebruikte Bachtin voor het naast elkaar bestaan van verschillende sociale stemmen binnen een roman?',
       [
-        'Heteroglossie',
+        'Heteroglossie, het mengsel van verschillende taalstijlen en registers',
         'Polyfonie, wat verwijst naar het formele contrapunt van plotlijnen binnen één werk',
         'Vervreemding, het vreemd maken van gewone waarneming',
         'Interpellatie, het aanroepen van een subject door ideologie',
@@ -292,7 +476,7 @@ export const LITERATURE: CategoryContent = {
     [
       'De kritische term "objective correlative" wordt vooral geassocieerd met wie?',
       [
-        'T.S. Eliot',
+        'T.S. Eliot, in zijn invloedrijke toneelkritiek',
         'I.A. Richards, tijdens het ontwikkelen van de praktische kritiek',
         'William Empson, in zijn verhandeling over ambiguïteit',
         'Cleanth Brooks, in zijn verdediging van het gedicht als autonoom object',
@@ -314,7 +498,7 @@ export const LITERATURE: CategoryContent = {
     [
       'Wie schreef De Meester en Margarita?',
       [
-        'Michail Boelgakov',
+        'Michail Boelgakov, die het in de jaren 1930 schreef',
         'Boris Pasternak, in de jaren voor Doktor Zjivago',
         'Andrej Platonov, wiens belangrijkste werken ook onderdrukt werden',
         'Isaac Babel, voor zijn arrestatie en executie in 1940',
@@ -401,6 +585,98 @@ export const LITERATURE: CategoryContent = {
       ['De Yoruba', 'De Mande', 'De Amhara', 'De Zulu'],
       1,
       'Overgeleverd door Mande-griots, verhaalt het over de stichting van het Malinese Rijk in de 13e eeuw.',
+    ],
+  ],
+  bscba: [
+    [
+      'Wie is de protagonist van Jane Austen\'s roman "Pride and Prejudice"?',
+      ['Elizabeth Bennet', 'Jane Bennet', 'Emma Woodhouse', 'Anne Elliot'],
+      0,
+      'Elizabeth\'s scherpte en onafhankelijkheid, en haar reis naar voorbijgaan aan vooroordelen tegen meneer Darcy, drijven de roman.',
+    ],
+    [
+      'Welke auteur schreef het dystopische roman "1984"?',
+      ['George Orwell', 'Aldous Huxley', 'Ray Bradbury', 'Margaret Atwood'],
+      0,
+      'In 1949 gepubliceerd, Orwell\'s roman toont een totalitaire toekomst en introduceerde het concept van Big Brother.',
+    ],
+    [
+      'In welke Shakespearetragedia simuleert de protagonist waanzin terwijl hij wraak zoekt?',
+      ['Hamlet', 'Macbeth', 'Othello', 'Koning Lear'],
+      0,
+      'Hamlet\'s vertraagde wraak op zijn oom Claudius blijft een van de meest geanalyseerde intrigues in de literatuur.',
+    ],
+    [
+      'Wat is een sonnet?',
+      ['Een gedicht van 14 regels met een specifiek rijmschema en meter', 'Een kort lyrisch gedicht over liefde', 'Een verhalend gedicht in blankeverzen', 'Een dramatisch gedicht bedoeld voor opvoering'],
+      0,
+      'De Petrarcaanse en Shakespearese sonnetten zijn de twee voornaamste vormen; beide hebben 14 regels in jambische pentameter.',
+    ],
+    [
+      'Wie schreef de roman "The Great Gatsby"?',
+      ['F. Scott Fitzgerald', 'Ernest Hemingway', 'John Steinbeck', 'William Faulkner'],
+      0,
+      'In 1925 gepubliceerd, Fitzgerald\'s werk vangt de overvloed en desillussie van het Jazzwerktuig.',
+    ],
+    [
+      'Wat is een metafoor in literatuur?',
+      ['Een vergelijking tussen twee ongelijke dingen zonder "als" of "maar"', 'Een overdrijving voor nadruk', 'Een verwijzing naar ander kunstwerk', 'Een uitspraak die zichzelf tegenspricht'],
+      0,
+      '"Liefde is een roos" is een metafoor; "liefde is als een roos" is een vergelijking met vergelijkend taalgebruik.',
+    ],
+    [
+      'Welke Russische romanschrijver schreef "Oorlog en Vrede"?',
+      ['Lev Tolstoj', 'Fjodor Dostojevski', 'Ivan Toegenjev', 'Nikolaj Gogol'],
+      0,
+      'In de jaren 1860 gepubliceerd verweeft deze eposeroman fictieve en historische gebeurtenissen tijdens de Napoleontische Oorlogen.',
+    ],
+    [
+      'Wat is de voornaamste reeks van gebeurten in een verhaal genoemd?',
+      ['De intrige', 'De setting', 'Het thema', 'De expositie'],
+      0,
+      'De intrige omvat de causale reeks van gebeurtenissen van expositie tot oplossing, onderscheidt van louter volgorde.',
+    ],
+    [
+      'Wie schreef de roman "Wuthering Heights"?',
+      ['Emily Bronte', 'Charlotte Bronte', 'Anne Bronte', 'George Eliot'],
+      0,
+      'In 1847 gepubliceerd onder het pseudoniem Ellis Bell, blijft Emily\'s enige roman deze gotische romance.',
+    ],
+    [
+      'Wat is een terugblik in vertelwerk?',
+      ['Een terugkeer in tijd naar gebeurtenissen eerder dan de voornaamste handeling', 'Een plotselinge scène van intense actie', 'Een verschuiving van vertelperspectief', 'Een herhaling van een eerdere scène'],
+      0,
+      'Terugblikken onderbreken lineaire chronologie en dienen meestal om karaktermotivatie of voorgeschiedenis bloot te leggen.',
+    ],
+    [
+      'Wie wordt traditioneel erkend als de auteur van het oude Griekse epos "De Odyssee"?',
+      ['Homerus', 'Hesiodos', 'Ovidius', 'Vergilius'],
+      0,
+      'Geleerden debatteren over Homerus\' identiteit, maar beide de Odyssee en de Ilias worden hem in klasieke traditie toegeschreven.',
+    ],
+    [
+      'Wat is alliteratie?',
+      ['De herhaling van beginnende medeklinkerklanken in nabij woorden', 'Gebruik van woorden met vergelijke betekenissen', 'Een vergelijking tussen twee dingen', 'De herhaling van klinkergeluiden'],
+      0,
+      'Veel voorkomen in poëzie en proza, alliteratie schept muzikaliteit en nadruk door klankpatroon.',
+    ],
+    [
+      'Welke auteur schreef "Alice\'s avonturen in Wonderland"?',
+      ['Lewis Carroll', 'J.M. Barrie', 'Charles Dickens', 'Oscar Wilde'],
+      0,
+      'Carroll (pseudoniem van Charles Dodgson) publiceerde dit grillige verhaal in 1865; het bracht een vervolg voort.',
+    ],
+    [
+      'Wat is ironie in literatuur?',
+      ['Een discrepantie tussen schijn en werkelijkheid of verwachting en uitkomst', 'Een humoristische vergelijking', 'Innerlijk conflict van een karakter', 'Verborgen betekenis in dialoog'],
+      0,
+      'Situationele ironie treedt op als uitkomsten verwachtingen tegenspreken; dramatische ironie als lezers meer weten dan karakters.',
+    ],
+    [
+      'Wie schreef de roman "Misdaad en Straf"?',
+      ['Fjodor Dostojevski', 'Lev Tolstoj', 'Ivan Toegenjev', 'Aleksandr Dumas'],
+      0,
+      'In 1866 gepubliceerd, verkent deze Russische meesterwerk moraliteit, schuld en verlossing via protagonist Raskolnikov.',
     ],
   ],
 };

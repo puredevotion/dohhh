@@ -3,7 +3,7 @@ import type { CategoryContent } from '../../row.js';
 /** Kunst, muziek en beeldmedia, tweede reeks. Juiste antwoord staat eerst; wordt bij het bouwen gerandomiseerd. */
 
 export const MORE_ART: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat is chiaroscuro?',
       [
@@ -342,7 +342,7 @@ export const MORE_ART: CategoryContent = {
 };
 
 export const MORE_MUSIC: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat is de gebruikelijke functie van een Napolitaanse akkoord?',
       [
@@ -681,7 +681,7 @@ export const MORE_MUSIC: CategoryContent = {
 };
 
 export const MORE_SCREEN: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat is een "match on action"?',
       [

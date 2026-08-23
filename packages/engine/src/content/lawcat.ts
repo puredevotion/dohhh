@@ -3,7 +3,174 @@ import type { CategoryContent } from './row.js';
 /** Dutch & International IP Law. */
 
 export const LAWIP: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Under most copyright systems worldwide, is copyright registration required for a work to gain copyright protection?',
+      [
+        'No, copyright arises automatically upon creation in virtually all countries that are signatories to major international copyright treaties',
+        'Yes, every country requires registration with a national copyright office before protection begins',
+        'Only in the United States and Japan',
+        'Only if the work is published in printed form',
+      ],
+      0,
+      'The Berne Convention established that copyright is automatic—no registration, notice, or other formality is required. Most countries today follow this principle, though some maintain optional national registries for evidentiary purposes.',
+    ],
+    [
+      'What is a trademark\'s primary legal purpose?',
+      [
+        'To identify the source or origin of goods or services and distinguish them from others',
+        'To prevent any other company from using similar words or symbols',
+        'To extend the copyright protection of a brand name indefinitely',
+        'To grant exclusive rights to use a particular word in any context whatsoever',
+      ],
+      0,
+      'A trademark\'s core function is to serve as a badge of origin, helping consumers recognise goods or services from a particular source. This origin-indicating function is what most trademark laws protect.',
+    ],
+    [
+      'Which of the following is NOT typically considered patentable subject matter?',
+      [
+        'A naturally occurring gene sequence extracted from a human body without modification',
+        'A novel chemical compound synthetically created in a laboratory',
+        'A new manufacturing process for producing semiconductors',
+        'A useful device combining existing components in an innovative way',
+      ],
+      0,
+      'Natural products, laws of nature, and abstract ideas are generally unpatentable in most jurisdictions. However, a genetically modified organism or a purified natural substance with new properties may be patentable.',
+    ],
+    [
+      'What does "first-to-file" mean in patent law?',
+      [
+        'The person who files a patent application first has priority, regardless of who actually invented it',
+        'Only the original inventor is entitled to file a patent application',
+        'Patent rights belong to whoever publishes about the invention in a peer-reviewed journal first',
+        'Inventors must publish their discovery before filing a patent to establish priority',
+      ],
+      0,
+      'Most countries worldwide, including the EU and many others, use a first-to-file system where the earliest filing date determines priority. The US historically used first-to-invent until 2013.',
+    ],
+    [
+      'How long does a standard patent grant protect an invention?',
+      [
+        '20 years from the filing date of the application',
+        '17 years from the date the patent is granted',
+        'Life of the inventor plus 50 years',
+        'Indefinitely, as long as the patent holder pays annual renewal fees',
+      ],
+      0,
+      'The standard patent term in most countries is 20 years from the filing date. However, the invention itself becomes public at filing, and the actual protection period can be reduced if the patent takes years to examine and grant.',
+    ],
+    [
+      'What is a trade secret?',
+      [
+        'Information that derives value from not being generally known and is kept secret through reasonable efforts',
+        'A patent that has not yet been published by the patent office',
+        'A trademark that is confidential and not disclosed to the public',
+        'A copy of a company\'s financial records locked in a safe',
+      ],
+      0,
+      'Trade secrets protect information through secrecy and reasonable protective measures rather than through registration. They require no formal procedures but offer protection only so long as the information remains confidential.',
+    ],
+    [
+      'Which international treaty established that copyright protection does not require registration or notice?',
+      [
+        'The Berne Convention for the Protection of Literary and Artistic Works',
+        'The Paris Convention for the Protection of Industrial Property',
+        'The TRIPS Agreement',
+        'The World Intellectual Property Organization Founding Treaty',
+      ],
+      0,
+      'The Berne Convention (1886) established in Article 5(2) that copyright protection is automatic and does not depend on any formality like registration, notice, or deposit. TRIPS and the WIPO treaties later incorporated this principle.',
+    ],
+    [
+      'What is the Madrid Protocol primarily used for?',
+      [
+        'Filing trademark applications in multiple countries through a single WIPO procedure',
+        'Harmonising copyright laws across European Union member states',
+        'Enforcing patents across all countries simultaneously',
+        'Registering geographical indications for agricultural products',
+      ],
+      0,
+      'The Madrid Protocol, administered by WIPO, centralises trademark filing through one application covering multiple designated countries. However, each country\'s office still examines the mark under its own substantive law.',
+    ],
+    [
+      'What is the basic requirement for copyright protection of a literary or artistic work?',
+      [
+        'The work must be original and be expressed in a tangible medium (written, recorded, etc.)',
+        'The work must be commercially published',
+        'The work must be registered with a national copyright office',
+        'The work must be at least 100 pages long or one hour in duration',
+      ],
+      0,
+      'Copyright protects original literary and artistic works once they are fixed in a tangible medium—such as writing, recording, or digital storage. Originality and fixation are the key requirements; publication or registration are not.',
+    ],
+    [
+      'What does the European Patent Office (EPO) grant?',
+      [
+        'A bundle of national patents in designated countries, which must be validated and enforced separately in each',
+        'A single European patent that is automatically valid and enforceable identically throughout the entire EU',
+        'Only utility patents, while design patents are handled exclusively by WIPO',
+        'A preliminary patent right that becomes a full patent only after European Union approval',
+      ],
+      0,
+      'A European patent granted by the EPO under the European Patent Convention is really a bundle that must be validated in each designated country and can be separately enforced or revoked in each.',
+    ],
+    [
+      'Which of the following best describes the Paris Convention\'s contribution to international patent and trademark law?',
+      [
+        'It established the "priority right" allowing applicants to file in multiple countries while retaining their first filing date',
+        'It abolished patents in developing countries',
+        'It created WIPO as its enforcement agency',
+        'It unified patent examination procedures across all signatory nations',
+      ],
+      0,
+      'The Paris Convention (1883) introduced the priority right: applicants can file in one member country and then file in other members within 12 months for patents or 6 months for trademarks while keeping the original filing date as priority.',
+    ],
+    [
+      'What distinguishes a moral right from an economic right in copyright?',
+      [
+        'Moral rights protect the author\'s personal connection to a work (attribution, integrity) and are generally inalienable',
+        'Moral rights last only one year while economic rights last for the copyright term',
+        'Economic rights apply only to books; moral rights apply only to visual art',
+        'Moral rights exist only in English-speaking countries',
+      ],
+      0,
+      'Moral rights—the right of attribution and the right against distortion or mutilation—protect the author\'s reputation and personal bond with their work. Unlike economic rights, they typically cannot be sold or transferred, even in civil-law countries where authors assign their economic rights.',
+    ],
+    [
+      'What does it mean if a trademark becomes "generic"?',
+      [
+        'The term has become the common name for the product in ordinary language, risking loss of trademark protection',
+        'The trademark has been registered in multiple countries',
+        'The trademark owner has allowed third parties to use the mark in advertising',
+        'The trademark is no longer fashionable among consumers',
+      ],
+      0,
+      'Genericide occurs when a trademark becomes the ordinary name for the product itself (like "aspirin" or "escalator" in the US). Trademark owners combat this by always pairing the mark with the product\'s generic name.',
+    ],
+    [
+      'What is the primary role of the World Intellectual Property Organization (WIPO)?',
+      [
+        'To administer international IP treaties and provide services for patent, trademark, and design registration and dispute resolution',
+        'To directly prosecute counterfeiters and conduct enforcement raids globally',
+        'To set uniform IP laws that all countries must immediately adopt',
+        'To grant patents and trademarks directly, replacing national patent and trademark offices',
+      ],
+      0,
+      'WIPO, a UN specialised agency since 1974, administers treaties like the Paris Convention, Berne Convention, PCT, and Madrid Protocol. It provides services and dispute resolution but does not enforce IP rights—that remains a national court function.',
+    ],
+    [
+      'How does copyright protection differ from patent protection in terms of scope?',
+      [
+        'Copyright protects literary and artistic expression, while patents protect inventions and technical solutions',
+        'Patents protect ideas, while copyrights protect physical objects only',
+        'Copyright is renewable indefinitely, while patents are granted only once',
+        'Patents protect moral rights, while copyrights protect only economic rights',
+      ],
+      0,
+      'Copyright protects the original expression of ideas in literary and artistic works (books, music, films, software). Patents protect inventions and technical solutions. They cover different subject matter and different legal mechanisms.',
+    ],
+  ],
+  msc: [
     [
       'The Dutch Burgerlijk Wetboek is organised into how many books?',
       ['ten', 'six', 'four', 'eight'],
@@ -130,7 +297,7 @@ export const LAWIP: CategoryContent = {
         'Automatically doubles the royalty rate a generic manufacturer must pay for the remainder of the patent term',
       ],
       0,
-      'SPCs exist because pharmaceutical and agrochemical products often need years of regulatory testing before they can be marketed, quietly eating into the effective years of patent life actually available to sell the product. EU Regulation 469/2009 (medicinal products) and 1610/96 (plant protection products) restore up to five extra years, calculated from the gap between filing and first marketing authorisation minus five years. The scheme was introduced in the 1990s partly to match US-style term-restoration rules under the Hatch-Waxman Act, so EU-based innovators weren\'t disadvantaged relative to American competitors. A further six-month paediatric extension is available on top of the standard SPC if the holder conducts studies required under the EU\'s Paediatric Regulation.',
+      'SPCs extend patent term by up to five years to compensate for time spent in regulatory testing before a drug can be marketed. EU Regulations 469/2009 (medicines) and 1610/96 (plant protection) calculate the extension from the gap between filing and first marketing authorisation.',
     ],
     [
       'Filing an application under the Patent Cooperation Treaty (PCT) achieves what, precisely?',
@@ -141,7 +308,7 @@ export const LAWIP: CategoryContent = {
         'Produces a patent term extension identical in effect to a Supplementary Protection Certificate',
       ],
       0,
-      'The PCT, administered by WIPO since entering into force in 1978, lets an applicant file one international application and receive an international search report and preliminary opinion, but the actual decision to grant remains entirely with each national or regional office, such as the EPO, once the applicant enters the \'national phase,\' typically around 30 or 31 months after the priority date. This buys valuable time and centralises early costs while deferring the far more expensive decision about which specific countries are worth paying for separately. It has no relationship at all to trademarks or industrial designs, which instead route through the separate Madrid Protocol and Hague System. WIPO reports the PCT now receives well over 250,000 international applications a year, making it the busiest single gateway in global patent filing.',
+      'The PCT lets applicants file one international application, receive a search report, but each national office decides grant separately. Trademarks and designs use the Madrid Protocol and Hague System instead.',
     ],
     [
       'Under the EU Trade Secrets Directive (2016/943), information qualifies for protection as a trade secret only if it meets which combination of conditions?',
@@ -152,7 +319,7 @@ export const LAWIP: CategoryContent = {
         'It has existed in secret continuously for at least five full years before any claim is made',
       ],
       0,
-      'Unlike patents or trademarks, trade secret protection is unregistered and defined purely by three cumulative conditions in Article 2 of the Directive, closely echoing Article 39 of the TRIPS Agreement: the information must be secret, it must have commercial value precisely because it is secret, and the holder must have taken reasonable steps to keep it that way. The 2016 Directive harmonised what had previously been a patchwork of national unfair-competition and contract-law doctrines across EU member states, giving trade secret holders a genuinely uniform civil remedy for misappropriation for the first time. It was also drafted with a deliberate eye toward the parallel US framework, the Defend Trade Secrets Act, passed the same year, converging two legal traditions that had approached secrecy protection quite differently for over a century.',
+      'Trade secret protection requires three conditions: the information is secret, derives commercial value from secrecy, and is subject to reasonable protective efforts.',
     ],
   ],
   phd: [
@@ -187,7 +354,7 @@ export const LAWIP: CategoryContent = {
         'Trademark disputes across the EU, a matter instead reserved exclusively to the EUIPO and national trademark courts',
       ],
       0,
-      'The UPC gives a single court system jurisdiction over both the new Unitary Patent and, during a transition period, classical European patents (unless opted out), replacing the need to litigate infringement separately in each country - the single biggest structural change to European patent litigation in decades.',
+      'The UPC gives a single court jurisdiction over Unitary Patents and classical European patents, eliminating the need to litigate separately in each country.',
     ],
     [
       'In Windsurfing Chiemsee v Huber (1999), the CJEU addressed whether a geographical name could function as a trademark, holding what?',
@@ -198,7 +365,7 @@ export const LAWIP: CategoryContent = {
         'Geographical indications protected under separate EU agri-food quality schemes and ordinary trademarks are treated as fully identical legal concepts requiring the same registration route',
       ],
       0,
-      'The case concerned \'Chiemsee,\' the name of a Bavarian lake, used to sell sportswear, and the CJEU held that the Trademark Directive bars descriptive geographical terms from registration unless the mark has acquired distinctiveness, or secondary meaning, through use, meaning the public now associates that name with a specific trade origin rather than merely the place itself. The rule stops one trader monopolising a place-name that competitors legitimately need to describe where their own goods genuinely come from, while still rewarding a mark that has demonstrably earned recognition through real market use. The same acquired-distinctiveness logic explains why a plain geographic term rarely clears registration on its own, but a specific stylised use built up over decades sometimes can. It remains one of the CJEU\'s foundational rulings on absolute grounds for refusal under what is now Article 4 of the EU Trademark Directive.',
+      'Descriptive geographical terms cannot be registered unless they have acquired secondary meaning through use—the public associates the name with a specific origin, not the place itself.',
     ],
     [
       'In Brüstle v Greenpeace (2011), the CJEU interpreted the Biotech Directive\'s exclusion of patents on uses of human embryos in what way?',
@@ -209,7 +376,7 @@ export const LAWIP: CategoryContent = {
         'The Directive does not restrict biotech patents involving embryonic material in any way',
       ],
       0,
-      'German neurobiologist Oliver Brüstle held a patent on neural precursor cells derived from human embryonic stem cells, and Greenpeace challenged it under Directive 98/44/EC\'s exclusion of \'uses of human embryos for industrial or commercial purposes\'; the CJEU gave that phrase an autonomous, broad EU-wide meaning rather than leaving it to divergent national morality standards. The ruling effectively barred EU patents on inventions requiring the prior destruction of a human embryo, even though the patented invention itself was the resulting cell line, not the embryo. It was later refined in International Stem Cell Corporation v Comptroller General (2014), which held that parthenotes - unfertilised eggs stimulated to divide but incapable of developing into a human being - fall outside the exclusion. This line of cases shows patent examiners occasionally forced to adjudicate genuinely contested bioethical boundaries rather than purely technical ones.',
+      'Inventions requiring human embryo destruction cannot be patented, even if the patented invention is the resulting cell line. Parthenotes fall outside the exclusion.',
     ],
     [
       'The "exhaustion of rights" doctrine in EU trademark and copyright law means what?',
@@ -231,7 +398,7 @@ export const LAWIP: CategoryContent = {
         'Infringes only if the search engine itself, rather than the advertiser, profits directly from that specific keyword sale',
       ],
       0,
-      'The Court split liability carefully: Google\'s own conduct in selling keywords was not \'use in the course of trade\' of the mark in a way that itself constituted infringement, but if the resulting sponsored ad was so unclear that a reasonably well-informed internet user couldn\'t tell whether the advertised goods came from the trademark owner or a rival, that harmed the mark\'s essential origin function and could make the advertiser liable. This drew a sharp line between neutral technical intermediation and genuinely confusing use, and the template was later extended in Interflora v Marks & Spencer (2011) to cover a reputed mark\'s \'investment function\' as well as its origin function. Keyword advertising remains one of the most heavily litigated corners of EU trademark law precisely because judging the \'clarity\' of an ad is such a fact-specific exercise. Louis Vuitton\'s underlying complaint concerned rivals buying its own brand name to advertise counterfeit-adjacent goods, which is what pushed the dispute all the way to the CJEU.',
+      'Google\'s keyword sales are not trademark infringement, but an advertiser is liable if the ad is unclear and consumers can\'t tell whose goods are advertised.',
     ],
     [
       'TRIPS (the WTO\'s Agreement on Trade-Related Aspects of Intellectual Property Rights) was significant because it did what?',
@@ -253,7 +420,7 @@ export const LAWIP: CategoryContent = {
         'Only situations where the defendant\'s total turnover in that specific product market, over the relevant infringement period, is shown to have exceeded the trademark owner\'s own comparable turnover',
       ],
       0,
-      'Bellure marketed \'smell-alike\' perfumes using comparison lists that openly referenced L\'Oréal\'s famous fragrances by name, without confusing anyone about origin, yet the CJEU held that protection against \'taking unfair advantage\' of a reputed mark\'s image doesn\'t require confusion or even detriment to the mark - simply riding on its coat-tails to boost the imitator\'s own sales is enough. This was controversial because it effectively protects the investment and image value built into a famous mark almost as a freestanding property right, well beyond the traditional rationale of preventing consumer deception. The same judgment also held that comparative-advertising rules cannot be used to legitimise otherwise-infringing free-riding, closing off a defence Bellure had separately tried to rely on. It remains a frequently cited example of EU trademark law drifting toward protecting brand image as such, a shift some scholars still argue overreaches the mark\'s traditional origin function.',
+      'A reputed mark\'s protection against "unfair advantage" doesn\'t require confusion—free-riding on the mark\'s image is enough.',
     ],
     [
       'The CJEU\'s ruling in Levola Hengelo v Smilde Foods (2018) addressed whether what could be protected by copyright?',
@@ -286,7 +453,7 @@ export const LAWIP: CategoryContent = {
         'The right to perform the work publicly',
       ],
       0,
-      'Both doctrines let the owner of a lawfully acquired physical copy resell or lend it without the copyright holder\'s further permission, since the distribution right is considered spent (exhausted) by the first authorised sale of that specific copy - though EU case law (e.g. UsedSoft) controversially extended a version of this to some downloaded software.',
+      'Both doctrines let owners of lawfully acquired copies resell or lend them without copyright holder permission, since the distribution right is exhausted by first sale.',
     ],
     [
       'In Stichting Brein v Ziggo and XS4ALL (2017), the CJEU held that operating an online indexing platform like The Pirate Bay constitutes what?',
@@ -297,7 +464,7 @@ export const LAWIP: CategoryContent = {
         'A trademark infringement rather than a copyright matter, since indexing content is fundamentally a branding function',
       ],
       0,
-      'This Dutch-referred case, brought by anti-piracy foundation Stichting Brein against two Dutch internet service providers it wanted forced into blocking the site, found that by indexing and categorising torrent files with full knowledge that most pointed to infringing content, Pirate Bay\'s operators played an \'indispensable role\' well beyond neutral technical facilitation, making them communicators to the public in their own right even though the actual files sat on users\' own computers via peer-to-peer sharing. That closed a gap that had let indexing sites argue they merely linked to material rather than hosting anything infringing themselves. The ruling directly enabled the site-blocking order against Pirate Bay that Ziggo and XS4ALL had resisted for years beforehand. It sits in a doctrinal line with GS Media and Renckhoff, all part of the CJEU gradually expanding \'communication to the public\' to cover internet intermediaries that earlier case law had left in a grey zone.',
+      'Indexing torrent files with knowledge that most point to infringing content makes operators communicators to the public, well beyond neutral facilitation.',
     ],
     [
       'The 2019 EU \'SPC Manufacturing Waiver\' (Regulation 2019/933) permits what, as an exception to Supplementary Protection Certificate exclusivity?',
@@ -308,7 +475,7 @@ export const LAWIP: CategoryContent = {
         'The SPC term is shortened by two years for every waiver request an applicant successfully files',
       ],
       0,
-      'Before this amendment, EU-based generic manufacturers were at a real competitive disadvantage against rivals in countries with no equivalent term-extension regime, since they could not even manufacture for export while the SPC ran, losing years of ramp-up time relative to competitors abroad. The waiver lets them manufacture, under strict notification and labelling conditions, purely for non-EU export markets or to stockpile so a generic version can launch in the EU on the very day the SPC expires. It was a deliberate industrial-policy compromise struck between innovator pharmaceutical companies and the generic and biosimilar manufacturing lobby. The waiver only applies to SPCs filed on or after 1 July 2019, with a phased transition for earlier ones, so its practical effect on the market took several years to fully materialise.',
+      'The waiver lets EU-based generic manufacturers produce under the SPC term solely for non-EU export or EU stockpiling before expiry, addressing their disadvantage against non-EU competitors. Applies to SPCs filed on or after 1 July 2019.',
     ],
     [
       'Under EU design law, an unregistered Community design gives the holder protection against what, specifically?',
@@ -332,7 +499,7 @@ export const LAWIP: CategoryContent = {
         'The Rome Convention on performers\' rights, an instrument dealing with an entirely separate category of related rights unconnected to filtering obligations',
       ],
       0,
-      'The Court held such filtering obligations would breach Article 15 of the eCommerce Directive (no general monitoring duty) and disproportionately burden the ISP\'s freedom to conduct business and users\' rights to data protection and free expression - a line of reasoning later complicated, but not overturned, by Article 17 of the 2019 Copyright Directive, which the Court had to separately reconcile in Poland v Parliament and Council (2022).',
+      'Filtering obligations breach Article 15 of the eCommerce Directive (no general monitoring duty) and burden freedom of business and user rights.',
     ],
     [
       'The Benelux Court of Justice, established in 1974, was historically significant as what?',
@@ -354,7 +521,7 @@ export const LAWIP: CategoryContent = {
         'Requires separate authorisation only once the website doing the linking itself starts charging visitors a subscription fee to access its own pages',
       ],
       0,
-      'Swedish journalists sued a news-aggregation site for linking to their freely, lawfully accessible articles, and the CJEU held that because the rightsholder had already made the works available to all internet users when first posting them, a further hyperlink reaches no \'new public\' not already accounted for in that original authorisation, so no fresh act of communication to the public requiring separate consent occurs. The Court left open, and later resolved differently in GS Media and Renckhoff, what happens when the target content is paywalled or was posted without the rightsholder\'s consent in the first place. The \'new public\' concept itself did not originate here; it was borrowed from earlier satellite and cable retransmission case law, SGAE v Rafael Hoteles, and repurposed for the internet-hyperlinking context. That recycling of one flexible doctrinal test across very different technologies is a recurring feature of how CJEU copyright jurisprudence has developed since the InfoSoc Directive.',
+      'Hyperlinking to freely accessible works reaches no "new public" beyond those already targeted in the original posting, so no fresh authorisation is needed.',
     ],
     [
       'In the CJEU\'s Football Dataco v Yahoo! (2012) ruling, the Court held that copyright protection for a database under the Database Directive requires what, specifically excluding what?',
@@ -365,7 +532,7 @@ export const LAWIP: CategoryContent = {
         'That the data itself be original, regardless of arrangement, a requirement the Database Directive does not in fact impose on copyright protection',
       ],
       0,
-      'This decoupled copyright protection from the separate sui generis database right (which does protect investment in obtaining/verifying/presenting data): "sweat of the brow" alone - here, the skill in scheduling football fixtures - cannot ground copyright, only genuine creative selection or arrangement can.',
+      'Copyright requires genuine creative selection or arrangement; "sweat of the brow" alone does not ground copyright protection.',
     ],
     [
       'The doctrine from IHT Internationale Heiztechnik v Ideal-Standard (1994) on trademark exhaustion within corporate group restructurings addressed what specific scenario?',
@@ -376,7 +543,7 @@ export const LAWIP: CategoryContent = {
         'Whether trademark rights survive the bankruptcy of the original owner, a distinct insolvency-law question governed by national bankruptcy statutes and the EU Insolvency Regulation rather than by the CJEU\'s trademark exhaustion case law at issue in this particular reference',
       ],
       0,
-      'The CJEU held that once trademark rights in different states are held by entities with no continuing economic connection, the assignee CAN block imports of the other party\'s genuine goods under that mark - voluntary fragmentation of ownership breaks exhaustion, unlike a mere corporate reorganisation retaining unified control.',
+      'When trademark rights in different states are held by unrelated entities, the assignee can block imports of genuine goods—voluntary fragmentation breaks exhaustion.',
     ],
     [
       'GS Media v Sanoma (2016) extended the \'new public\' hyperlinking analysis to content posted without the rightsholder\'s consent, holding that liability turns chiefly on what?',
@@ -387,7 +554,7 @@ export const LAWIP: CategoryContent = {
         'Whether the original infringer who first posted the unlawful content has already been identified and successfully sued elsewhere',
       ],
       0,
-      'Dutch gossip site GeenStijl, via publisher GS Media, linked to leaked, unpublished Playboy photographs hosted on a third-party site without Sanoma\'s consent, and the CJEU held this could amount to an unauthorised communication to a \'new public\' - but made liability turn specifically on the linker\'s knowledge, actual or constructive, of the unlawful posting, with a rebuttable presumption of that knowledge where the linking is done for financial gain. This resolved genuine uncertainty about whether ordinary internet users risk liability merely for linking to something that turns out to be pirated, shielding good-faith non-commercial linkers while holding profit-motivated aggregators to a stricter standard. GeenStijl had specifically taunted Sanoma by publishing fresh links each time a copy got taken down, a detail the Advocate General\'s opinion pointedly referenced. The ruling is often read alongside Svensson and Renckhoff as the CJEU\'s three-part map of how differently EU copyright law treats linking, re-linking after takedown, and outright re-hosting.',
+      'Linking to unlawfully posted content can be communication to a "new public" when the linker knows of the unlawful posting. Knowledge is presumed where linking is for financial gain.',
     ],
     [
       'Article 6bis of the Berne Convention, on moral rights, was historically resisted by the United States chiefly because of tension with what feature of pre-1976 American copyright practice?',
@@ -398,7 +565,7 @@ export const LAWIP: CategoryContent = {
         'The US practice of granting copyright only to citizens, a restriction that in fact never existed under US copyright law at any point',
       ],
       0,
-      'Work-for-hire assigns original authorship itself to the corporate employer, which sits awkwardly against a moral right premised on a personal bond between an individual creator and the work - part of why the US, on joining Berne in 1989, took the position that existing US law (trademark-style unfair competition and defamation remedies) already sufficed, rather than enacting a general moral rights statute.',
+      'Work-for-hire assigns original authorship to the corporate employer, which conflicts with moral rights based on personal creator bonds.',
     ],
     [
       'The CJEU\'s "essential function" doctrine, developed from Hoffmann-La Roche v Centrafarm (1978) onward, defines a trademark\'s core legal purpose as what?',
@@ -409,7 +576,7 @@ export const LAWIP: CategoryContent = {
         'Signalling the geographic origin of the goods, a function performed instead by geographical indications, not by ordinary trademark law',
       ],
       0,
-      'This "origin function" reasoning (a Dutch-referred case, against the Dutch pharmaceutical repackager Centrafarm) is the doctrinal anchor the CJEU still uses to decide how far a trademark owner may control repackaging, rebranding and parallel trade - protection extends only so far as needed to preserve that guarantee-of-origin, not to shield the owner from all competition.',
+      'A trademark\'s "origin function" is the doctrinal anchor for trademark protection—it extends only as far as needed to preserve the guarantee of origin.',
     ],
     [
       'Land Nordrhein-Westfalen v Renckhoff (2018) held that a student re-uploading a freely accessible photograph, previously posted with the author\'s consent, to a school website constitutes what?',
@@ -420,7 +587,7 @@ export const LAWIP: CategoryContent = {
         'A use permitted under the EU quotation exception, because the re-upload served an educational purpose',
       ],
       0,
-      'Unlike hyperlinking, which merely points to content still sitting on its original host, actually copying a file and re-uploading it to an independent server takes the rightsholder\'s continued control over that specific copy entirely out of their hands - if the original posting is later removed, the independently re-uploaded copy persists regardless, which the Court treated as a materially different, additional act requiring its own authorisation. This drew a sharp doctrinal line between linking, generally safe so long as the target stays lawfully available, and re-hosting, which generally requires fresh consent, based on the different degree of ongoing control the rightsholder retains in each scenario. The underlying dispute involved a Spanish travel photograph reused for a student\'s geography class presentation, hardly the kind of case one would expect to reach the CJEU\'s copyright jurisprudence on such a grand doctrinal scale. The ruling drew criticism from some copyright scholars who argued it undervalues the practical reality that most re-uploaded content, once freely public, carries little remaining economic harm from a further, non-commercial copy.',
+      'Re-uploading a file to an independent server is a new act of communication to the public requiring fresh authorisation, unlike hyperlinking which merely points to the original. If the original is removed, the re-uploaded copy persists independently, placing it outside rightsholder control.',
     ],
     [
       'In Dutch copyright doctrine, the "geschriftenbescherming" (protection of writings) was a sui generis regime that protected what, before its abolition in 2018?',
@@ -431,7 +598,7 @@ export const LAWIP: CategoryContent = {
         'Photographs lacking artistic merit, a category that in fact was never covered by this specifically text-focused sui generis doctrine',
       ],
       0,
-      'This uniquely Dutch doctrine gave a thin protection (mainly against literal copying) to purely factual or functional texts that failed the ordinary originality threshold; it was scrapped by legislative amendment after the CJEU\'s Football Dataco and Infopaq line of cases made clear EU copyright law required a genuine originality standard with no room for a lesser national regime.',
+      'This Dutch doctrine protected factual texts lacking ordinary originality. It was abolished after CJEU cases made clear EU law required genuine originality.',
     ],
     [
       'In Huawei v ZTE (2015), the CJEU set out a negotiation framework determining when a standard-essential patent holder\'s request for an injunction does what?',
@@ -442,7 +609,7 @@ export const LAWIP: CategoryContent = {
         'Depends solely on whether the implementer has already signed a non-disclosure agreement with the patent holder',
       ],
       0,
-      'Huawei held patents essential to a telecoms standard and had committed to a standards body to license them on FRAND (fair, reasonable and non-discriminatory) terms; the Court held that seeking an injunction against a willing licensee could breach Article 102 unless the SEP holder first alerted the alleged infringer, made a specific written FRAND offer, and the implementer then responded diligently and in good faith, for example by providing security or a reasoned counter-offer. This balances the SEP holder\'s property rights against the risk that injunction threats let them extract royalties far above true FRAND value, a phenomenon competition scholars call \'hold-up,\' which matters enormously given how coercive an injunction becomes when a single standard, such as a mobile network protocol, is practically unavoidable for any competitor. National courts, especially in Germany and the UK, have since diverged noticeably in how strictly they apply each step of the so-called Huawei sequence, making SEP injunction litigation one of the most forum-shopped areas of European patent practice. The case itself arose from a dispute over LTE-essential patents at the height of the smartphone patent wars of the early 2010s.',
+      'An injunction against a willing licensee may breach Article 102 unless the SEP holder alerts infringer, makes a FRAND offer, and implementer responds diligently.',
     ],
     [
       'The CJEU\'s ruling in Deckmyn v Vandersteen (2014) on the parody exception under the InfoSoc Directive held that a "parody" must satisfy which two conditions, without needing to satisfy others often assumed?',
@@ -453,7 +620,7 @@ export const LAWIP: CategoryContent = {
         'Being shorter than the original work and using no more than ten percent of it',
       ],
       0,
-      'The Court also held, unusually, that national courts must weigh the legitimate interests of the original author against expression rights - and in the underlying dispute, a Belgian case about a racist reworking of a "Spike and Suzy" comic cover, left room for the parody defence to fail anyway if the parody\'s message conveyed a discriminatory message harmful to the original author\'s reputation.',
+      'A parody defence may fail if its message is discriminatory and harmful to the original author\'s reputation, even if it evokes the original work.',
     ],
     [
       'Sky plc v SkyKick UK Ltd (2020) addressed whether registering a trademark for an excessively broad specification, such as simply \'computer software,\' can amount to what?',
@@ -464,7 +631,7 @@ export const LAWIP: CategoryContent = {
         'Grounds for the relevant national or EU trademark office to refuse registration outright before grant, a substantive review the CJEU held such offices are in fact required to conduct at the examination stage',
       ],
       0,
-      'Cloud email migration company SkyKick, sued by broadcaster Sky over marks covering vast categories including simply \'computer software,\' argued Sky\'s registrations were partly invalid for lacking clarity and partly filed in bad faith without any real intention to use them that broadly; the CJEU held that an overly broad specification is not automatically invalid for lack of clarity or precision, but bad faith can invalidate a registration in part, for the goods or services never genuinely intended to be used, even though it survives for goods actually intended and used. This mattered practically because sweeping \'portfolio\' filings are a common defensive litigation tool, and the ruling gave defendants a real, if narrow, way of cutting such registrations back rather than facing an all-or-nothing validity fight. On the remitted UK judgment, Sky\'s marks were found partly made in bad faith for parts of the sprawling specification, yet Sky still won its underlying infringement claim against SkyKick on the narrower goods that survived. The case is now a standard citation in advice to trademark filers about the risks of padding a specification well beyond genuine commercial plans.',
+      'Bad faith can invalidate a registration in part for goods never genuinely intended for use, while surviving for goods actually used.',
     ],
     [
       'The "Slovak Telekom" and earlier "Bronner" lines of CJEU case law on refusal to license/supply as abuse of dominance under Article 102 TFEU are doctrinally significant to IP law because they define when what must yield to competition law?',
@@ -475,7 +642,7 @@ export const LAWIP: CategoryContent = {
         'Copyright cannot be enforced against a dominant firm under any circumstances, a blanket rule no EU competition or copyright authority has ever actually adopted in any reported decision',
       ],
       0,
-      'Bronner (1998) set a demanding indispensability-plus-foreclosure test that made compulsory licensing under competition law genuinely exceptional (contrast the earlier, more interventionist Magill), and this tension between rewarding IP-driven investment and preventing anticompetitive foreclosure remains one of the most doctrinally contested intersections between IP and competition law in the EU.',
+      'Bronner (1998) set a demanding indispensability-plus-foreclosure test making compulsory licensing under competition law genuinely exceptional.',
     ],
     [
       'AMS Neve v Heritage Audio (2019) addressed which jurisdictional question under the EU Trade Mark Regulation?',
@@ -486,7 +653,7 @@ export const LAWIP: CategoryContent = {
         'Whether trademark disputes must be resolved through arbitration rather than litigation once an EU trademark has been granted',
       ],
       0,
-      'UK-based AMS Neve sued Spanish company Heritage Audio in the UK over allegedly infringing online advertisements and sales targeting UK consumers, and the CJEU held that \'the member state in which the act of infringement has been committed\' under the EUTM Regulation includes the state where consumers or traders targeted by online content are located, not only the state where the defendant physically published the material or is established. This mattered enormously for online commerce, since it lets a rightsholder sue where the commercial harm actually lands rather than being forced to chase every seller in its own home jurisdiction. The \'targeting\' test the Court applied tracks similar reasoning from earlier CJEU jurisdiction case law on online defamation and consumer contracts, showing EU private international law converging on one general approach to locating where an online act actually happens. AMS Neve is a British audio-equipment maker best known for classic analogue studio mixing consoles, which gives the underlying trademark dispute an oddly niche, high-end-recording-studio backstory for a case that ended up reshaping EU online-jurisdiction doctrine.',
+      'Infringement jurisdiction includes states where consumers targeted by online content are located, not only where the defendant is established.',
     ],
   ],
 };

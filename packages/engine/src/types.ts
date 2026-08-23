@@ -20,7 +20,7 @@ export type Locale = 'en' | 'nl';
  * The bet. Names are the product (see ADVERSARIAL-REVIEW R-13): a player is not
  * asked "do you know this" but "how much do you think you know this".
  */
-export type Difficulty = 'graduate' | 'phd' | 'professor';
+export type Difficulty = 'bscba' | 'msc' | 'phd' | 'professor';
 
 export interface Category {
   readonly id: CategoryId;

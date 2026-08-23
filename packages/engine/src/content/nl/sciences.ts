@@ -3,7 +3,7 @@ import type { CategoryContent } from '../row.js';
 /** Natuurkunde & astronomie, chemie & materialen, biologie & geneeskunde. */
 
 export const PHYSICS: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'Volgens de equipartitiestelling hoort er hoeveel energie bij elke kwadratische vrijheidsgraad?',
@@ -163,7 +163,7 @@ export const PHYSICS: CategoryContent = {
 };
 
 export const CHEMISTRY: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'Hoe wordt een Lewiszuur gedefinieerd?',
@@ -323,7 +323,174 @@ export const CHEMISTRY: CategoryContent = {
 };
 
 export const BIOLOGY: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Wat is de primaire functie van een enzym in een biochemische reactie?',
+      [
+        'Het activeringsenergie verlagen en de reactiesnelheid vergroten',
+        'Het evenwichtspunt van de reactie verschuiven',
+        'Energie in de vorm van ATP leveren',
+        'Als reactant fungeren die door de reactie wordt verbruikt',
+      ],
+      0,
+      'Enzymen katalyseren reacties door Ea te verlagen, waardoor meer substraatmoleculen de barrière kunnen overwinnen. Ze veranderen het evenwicht niet.',
+    ],
+    [
+      'Glycolyse, citroenzuurcyclus en elektronentransportketen zijn stadia van welk proces?',
+      [
+        'Aërobe cellulaire ademhaling',
+        'Anaërobe fermentatie',
+        'Fotosynthese',
+        'Transcriptie en translatie',
+      ],
+      0,
+      'Deze drie stadia oxideren glucose gezamenlijk en oogsten energie als ATP. Anaërobe ademhaling omzeilt de elektronentransportketen.',
+    ],
+    [
+      'Welke structurele eigenschap onderscheidt DNA van RNA vooral?',
+      [
+        'DNA bevat deoxyribose en thymine; RNA bevat ribose en uracil',
+        'DNA is enkelvoudig; RNA is dubbelstrengig',
+        'DNA bevindt zich alleen in de kern; RNA bevindt zich alleen in het cytoplasma',
+        'DNA wordt in de cel sneller gesynthetiseerd dan RNA',
+      ],
+      0,
+      'De suiker (deoxyribose versus ribose) en de pyrimidinebasis (thymine versus uracil) onderscheiden deze nucleïnezuren chemisch.',
+    ],
+    [
+      'Hoe heet het proces waarbij de volgorde van een mRNA wordt gebruikt om de volgorde van aminozuren in een eiwit te bepalen?',
+      [
+        'Translatie',
+        'Transcriptie',
+        'Replicatie',
+        'Mutatie',
+      ],
+      0,
+      'Translatie aan de ribosome decodeert mRNA in polypeptide met behulp van tRNA-adapters. Transcriptie is DNA naar mRNA; replicatie is DNA naar DNA.',
+    ],
+    [
+      'Wat is de primaire uitkomst van mitose in een lichaamscel?',
+      [
+        'Productie van twee genetisch identieke diploïde dochtercellen',
+        'Productie van vier genetisch verschillende haploïde cellen',
+        'Uitwisseling van genetisch materiaal tussen homologe chromosomen',
+        'Scheiding van zusterchromatiden bij het centromeer',
+      ],
+      0,
+      'Mitose produceert twee identieke kopieën van de oudercel en bewaart het diploïde getal. Meiose produceert vier verschillende haploïde cellen.',
+    ],
+    [
+      'Welk organellum is verantwoordelijk voor het grootste deel van de ATP-productie in een eukaryote cel onder aëroïe omstandigheden?',
+      [
+        'Mitochondrion',
+        'Chloroplast',
+        'Ribosom',
+        'Golgi-apparaat',
+      ],
+      0,
+      'Het mitochondriale binnenste membraan herbergt de elektronentransportketen en ATP-synthase, producerend veel meer ATP dan glycolyse.',
+    ],
+    [
+      'Wat is in fotosynthese de primaire bron van het zuurstofgas dat aan de atmosfeer wordt vrijgegeven?',
+      [
+        'Het splitsen van watermoleculen tijdens de lichtafhankelijke reacties',
+        'De afbraak van glucose in de Calvincyclus',
+        'De reductie van koolstofdioxide om suikers te vormen',
+        'De oxidatie van chlorofylpigmenten',
+      ],
+      0,
+      'Fotolyse van water bij fotosysteem II geeft O₂ vrij, doneert elektronen en levert protonen. De Calvincyclus produceert geen O₂.',
+    ],
+    [
+      'De driedimensionale vorm van een eiwit wordt vooral bepaald door?',
+      [
+        'De volgorde en eigenschappen van zijn aminozuren',
+        'Het aantal waterstofbruggen gevormd met water',
+        'De pH en ionische sterkte van de cel',
+        'De concentratie van ribosomen tijdens translatie',
+      ],
+      0,
+      'Aminozuurvolgorde bepaalt vouwing via hydrofobe effect, disulfidebindingen, waterstofbruggen en elektrostatische interacties.',
+    ],
+    [
+      'In een monohybride kruising van twee heterozygote ouders voor een dominante eigenschap, wat is de verwachte fenotypische verhouding?',
+      [
+        '3 dominant : 1 recessief',
+        '1 dominant : 1 recessief',
+        '2 dominant : 1 recessief',
+        '1 dominant : 2 recessief',
+      ],
+      0,
+      'Alleelsegregatie levert fenotypisch 25% homozygoot dominant, 50% heterozygoot en 25% homozygoot recessief op.',
+    ],
+    [
+      'Wat is de primaire functie van de fosfolipidendubbellaag in een celmembraan?',
+      [
+        'Een selectieve barrière bieden die de in- en uitgang van stoffen beheerst',
+        'Energie produceren voor actieve transportprocessen',
+        'Nieuwe eiwitten voor de cel synthetiseren',
+        'Genetische informatie voor de cel opslaan',
+      ],
+      0,
+      'Amfipathische fosfolipiden vormen een hydrofobe kern met hydrofiele koppen in waterhoudende omgevingen, wat selectieve permeabiliteit mogelijk maakt.',
+    ],
+    [
+      'Een receptoreiwit op een celoppervlak bindt een signaalmolecuul. Wat is het meest directe gevolg?',
+      [
+        'Een verandering in de conformatie van de receptor die een intracellulaire respons uitlokt',
+        'Onmiddellijke afbraak van het signaalmolecuul tot afvalstoffen',
+        'Synthese van nieuwe receptoreiwitten ter vervanging van de geactiveerde',
+        'Transcriptie van alle genen in de celkern',
+      ],
+      0,
+      'Ligandenbinding veroorzaakt conformatieverandering in de receptor, waardoor het kan interageren met signaaleiwitten of ionen verder stroomafwaarts.',
+    ],
+    [
+      'Structuren in verschillende soorten die een gemeenschappelijke voorouder delen en vergelijkbare botstructuur maar verschillende functies hebben, heten hoe?',
+      [
+        'Homologe structuren',
+        'Analoge structuren',
+        'Vestigiale structuren',
+        'Adaptieve structuren',
+      ],
+      0,
+      'Homologe structuren duiden op gemeenschappelijke afkomst wanneer natuurlijke selectie een gedeelde voorouderlijke sjabloon voor verschillende doeleinden wijzigt.',
+    ],
+    [
+      'Als individuen met een bepaalde eigenschap meer overleven en reproduceren dan anderen, wat gebeurt er over generaties?',
+      [
+        'De frequentie van die eigenschap in de populatie neemt toe',
+        'Het mutatiepercentage voor die eigenschap versnelt',
+        'De eigenschap wordt recessief in de populatie',
+        'De eigenschap wordt alleen aan vrouwelijk nageslacht doorgegeven',
+      ],
+      0,
+      'Verschillend reproducerend succes van individuen met gunstige eigenschappen veroorzaakt verandering in allelfrequentie, de essentie van natuurlijke selectie.',
+    ],
+    [
+      'Wat doet DNA-polymerase tijdens DNA-replicatie?',
+      [
+        'Synthetiseert een nieuw DNA-streng door nucleotiden in de 5-prime naar 3-prime richting toe te voegen',
+        'Ontwindt de dubbelhelix door waterstofbruggen tussen baseparen te breken',
+        'Verwijdert korte RNA-primers synthetiseerd door primase',
+        'Leest na en corrigeert niet-overeenkomende baseparen na voltooide replicatie',
+      ],
+      0,
+      'DNA-polymerase katalyseert fosfodiesterbindingsvorming tussen binnenkomende deoxynucleotiden en het groeiende 3-OH-strengeinde.',
+    ],
+    [
+      'Als een organisme heterozygoot is voor een gen waarbij één allel dominant is, wat zal het fenotype tonen?',
+      [
+        'Het fenotype geassocieerd met het dominante allel',
+        'Het fenotype geassocieerd met het recessieve allel',
+        'Een mengsel van beide fenotypes',
+        'Welk fenotype ook het meest voorkomend is in de populatie',
+      ],
+      0,
+      'Dominantie verwijst naar fenotypische expressie in een heterozygoot, niet naar de frequentie van het allel of prevalentie in de populatie.',
+    ],
+  ],
+  msc: [
 
     [
       'Wat vertegenwoordigt de Michaelis-constante Km in de enzymkinetiek?',

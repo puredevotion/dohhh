@@ -2,7 +2,7 @@ import type { CategoryContent } from '../../row.js';
 
 /** Centraal-Aziatische geschiedenis, tweede reeks. Juiste antwoord staat eerst; wordt bij het bouwen gerandomiseerd. */
 export const MORE_CENTRAL_ASIA: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Waar staat het Kushanrijk vooral voor bekend?',
       [

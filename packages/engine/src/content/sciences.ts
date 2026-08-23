@@ -3,7 +3,7 @@ import type { CategoryContent } from './row.js';
 /** Physics & Astronomy, Chemistry & Materials, Biology & Medicine. */
 
 export const PHYSICS: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'The equipartition theorem assigns how much energy per quadratic degree of freedom?',
@@ -158,7 +158,7 @@ export const PHYSICS: CategoryContent = {
 };
 
 export const CHEMISTRY: CategoryContent = {
-  graduate: [
+  msc: [
 
     [
       'A Lewis acid is defined as what?',
@@ -318,7 +318,174 @@ export const CHEMISTRY: CategoryContent = {
 };
 
 export const BIOLOGY: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'What is the primary function of an enzyme in a biochemical reaction?',
+      [
+        'To lower the activation energy and increase reaction rate',
+        'To change the equilibrium position of the reaction',
+        'To provide energy in the form of ATP',
+        'To serve as a reactant that is consumed by the reaction',
+      ],
+      0,
+      'Enzymes catalyze reactions by reducing Ea, allowing more substrate molecules to surmount the barrier. They do not alter equilibrium.',
+    ],
+    [
+      'Glycolysis, the citric acid cycle, and electron transport chain are stages of what process?',
+      [
+        'Aerobic cellular respiration',
+        'Anaerobic fermentation',
+        'Photosynthesis',
+        'Transcription and translation',
+      ],
+      0,
+      'These three stages collectively oxidize glucose and harvest energy as ATP. Anaerobic respiration bypasses the electron transport chain.',
+    ],
+    [
+      'Which structural feature primarily distinguishes DNA from RNA?',
+      [
+        'DNA contains deoxyribose and thymine; RNA contains ribose and uracil',
+        'DNA is single-stranded; RNA is double-stranded',
+        'DNA is found only in the nucleus; RNA is found only in the cytoplasm',
+        'DNA is synthesized faster than RNA in the cell',
+      ],
+      0,
+      'The sugar (deoxyribose vs ribose) and the pyrimidine base (thymine vs uracil) distinguish these nucleic acids chemically.',
+    ],
+    [
+      'The process by which the sequence of an mRNA is used to determine the sequence of amino acids in a protein is called what?',
+      [
+        'Translation',
+        'Transcription',
+        'Replication',
+        'Mutation',
+      ],
+      0,
+      'Translation at the ribosome decodes mRNA into polypeptide using tRNA adapters. Transcription is DNA to mRNA; replication is DNA to DNA.',
+    ],
+    [
+      'What is the primary outcome of mitosis in a somatic cell?',
+      [
+        'Production of two genetically identical diploid daughter cells',
+        'Production of four genetically different haploid cells',
+        'Exchange of genetic material between homologous chromosomes',
+        'Separation of sister chromatids at the centromere',
+      ],
+      0,
+      'Mitosis produces two identical copies of the parent cell, preserving the diploid number. Meiosis produces four distinct haploid cells.',
+    ],
+    [
+      'Which organelle is responsible for most ATP production in an eukaryotic cell under aerobic conditions?',
+      [
+        'Mitochondrion',
+        'Chloroplast',
+        'Ribosome',
+        'Golgi apparatus',
+      ],
+      0,
+      'The mitochondrial inner membrane hosts the electron transport chain and ATP synthase, yielding far more ATP than glycolysis.',
+    ],
+    [
+      'In photosynthesis, what is the primary source of the oxygen gas released to the atmosphere?',
+      [
+        'The splitting of water molecules during the light-dependent reactions',
+        'The breakdown of glucose in the Calvin cycle',
+        'The reduction of carbon dioxide to form sugars',
+        'The oxidation of chlorophyll pigments',
+      ],
+      0,
+      'Photolysis of water at photosystem II releases O₂, donates electrons, and provides protons. The Calvin cycle does not produce O₂.',
+    ],
+    [
+      'The three-dimensional shape of a protein is primarily determined by what?',
+      [
+        'The sequence and properties of its amino acids',
+        'The number of hydrogen bonds formed with water',
+        'The pH and ionic strength of the cell',
+        'The concentration of ribosomes during translation',
+      ],
+      0,
+      'Amino acid sequence determines folding via hydrophobic effect, disulfide bonds, hydrogen bonding, and electrostatic interactions.',
+    ],
+    [
+      'In a monohybrid cross of two heterozygous parents for a dominant trait, what is the expected phenotypic ratio?',
+      [
+        '3 dominant : 1 recessive',
+        '1 dominant : 1 recessive',
+        '2 dominant : 1 recessive',
+        '1 dominant : 2 recessive',
+      ],
+      0,
+      'Allele segregation yields 25% homozygous dominant, 50% heterozygous, and 25% homozygous recessive genotypes phenotypically.',
+    ],
+    [
+      'What is the primary function of the phospholipid bilayer in a cell membrane?',
+      [
+        'To provide a selective barrier controlling entry and exit of substances',
+        'To produce energy for active transport processes',
+        'To synthesize new proteins for the cell',
+        'To store genetic information for the cell',
+      ],
+      0,
+      'Amphipathic phospholipids form a hydrophobic core with hydrophilic heads facing aqueous environments, permitting selective permeability.',
+    ],
+    [
+      'A receptor protein on a cell surface binds a signaling molecule. What is the most direct consequence?',
+      [
+        'A change in the receptor\'s conformation that triggers an intracellular response',
+        'Immediate breakdown of the signaling molecule into waste products',
+        'Synthesis of new receptor proteins to replace the activated one',
+        'Transcription of all genes in the cell nucleus',
+      ],
+      0,
+      'Ligand binding induces conformational change in the receptor, allowing it to interact with downstream signaling proteins or ions.',
+    ],
+    [
+      'Structures in different species sharing a common ancestor and similar bone structure but different functions are called what?',
+      [
+        'Homologous structures',
+        'Analogous structures',
+        'Vestigial structures',
+        'Adaptive structures',
+      ],
+      0,
+      'Homologous structures indicate common descent through natural selection modifying a shared ancestral template for different uses.',
+    ],
+    [
+      'If individuals with a particular trait survive and reproduce more than others, what occurs over generations?',
+      [
+        'The frequency of that trait increases in the population',
+        'The mutation rate for that trait accelerates',
+        'The trait becomes recessive in the population',
+        'The trait is passed only to female offspring',
+      ],
+      0,
+      'Differential reproductive success of individuals with favorable traits causes allele frequency change, the essence of natural selection.',
+    ],
+    [
+      'During DNA replication, what does DNA polymerase do?',
+      [
+        'Synthesizes a new DNA strand by adding nucleotides in the 5-prime to 3-prime direction',
+        'Unwinds the double helix by breaking hydrogen bonds between base pairs',
+        'Removes short RNA primers synthesized by primase',
+        'Proofreads and corrects mismatched base pairs after replication is complete',
+      ],
+      0,
+      'DNA polymerase catalyzes phosphodiester bond formation between incoming deoxynucleotides and the growing 3-OH strand end.',
+    ],
+    [
+      'If an organism is heterozygous for a gene where one allele is dominant, what will its phenotype show?',
+      [
+        'The phenotype associated with the dominant allele',
+        'The phenotype associated with the recessive allele',
+        'A blend of both phenotypes',
+        'Whichever phenotype is more common in the population',
+      ],
+      0,
+      'Dominance refers to phenotypic expression in a heterozygote, not the allele\'s frequency or the trait\'s population prevalence.',
+    ],
+  ],
+  msc: [
 
     [
       'In enzyme kinetics, what does the Michaelis constant Km represent?',

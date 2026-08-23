@@ -3,7 +3,7 @@ import type { CategoryContent } from '../row.js';
 /** Physics, Chemistry and Biology, second chunk. Correct option first; rotated at build. */
 
 export const MORE_PHYSICS: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does the Debye model improve on relative to Einstein\'s model of heat capacity?',
       [
@@ -332,7 +332,7 @@ export const MORE_PHYSICS: CategoryContent = {
 };
 
 export const MORE_CHEMISTRY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does Le Chatelier\'s principle predict for an equilibrium under increased pressure?',
       [
@@ -671,7 +671,7 @@ export const MORE_CHEMISTRY: CategoryContent = {
 };
 
 export const MORE_BIOLOGY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does a Southern blot detect?',
       [

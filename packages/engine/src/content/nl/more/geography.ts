@@ -2,7 +2,7 @@ import type { CategoryContent } from '../../row.js';
 
 /** Aardrijkskunde & aardsystemen, tweede reeks. Juiste optie eerst; wordt bij build geroteerd. */
 export const MORE_GEOGRAPHY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat drukt de Bowen-ratio uit?',
       [

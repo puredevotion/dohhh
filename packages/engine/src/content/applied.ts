@@ -3,7 +3,174 @@ import type { CategoryContent } from './row.js';
 /** Mathematics & Logic, Technology & Computing, Sport & Games. */
 
 export const MATHS: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'What does the intermediate value theorem state about continuous functions?',
+      [
+        'A continuous function on a closed interval attains every value between its minimum and maximum',
+        'Every continuous function on a closed interval is uniformly continuous',
+        'A continuous function must be differentiable at some point in the interval',
+        'If f is continuous on [a, b], then f is monotonic on some subinterval',
+      ],
+      0,
+      'It guarantees that for any y between f(a) and f(b), some c in [a, b] satisfies f(c) = y.',
+    ],
+    [
+      'For two real numbers a and b, what is the relationship between the arithmetic mean and the geometric mean?',
+      [
+        'The arithmetic mean is always greater than or equal to the geometric mean',
+        'The geometric mean is always greater than the arithmetic mean',
+        'They are equal only when a = b',
+        'The arithmetic mean is always strictly less than the geometric mean',
+      ],
+      0,
+      'The AM-GM inequality holds for non-negative numbers. Equality occurs only when a = b.',
+    ],
+    [
+      'What is the limit of (1 + 1/n)^n as n approaches infinity?',
+      [
+        'Euler\'s number e, approximately 2.71828',
+        'π, approximately 3.14159',
+        '1',
+        'Infinity',
+      ],
+      0,
+      'This is the fundamental definition of e, the base of the natural logarithm.',
+    ],
+    [
+      'In a triangle, what does the law of cosines allow you to compute?',
+      [
+        'The length of any side given the other two sides and the included angle',
+        'Whether the triangle is acute, right or obtuse from the three side lengths alone',
+        'The area of the triangle directly',
+        'The radius of the circumscribed circle',
+      ],
+      0,
+      'It generalises the Pythagorean theorem: c² = a² + b² − 2ab cos(C).',
+    ],
+    [
+      'What is a local extremum of a function?',
+      [
+        'A point where the function value is greater or less than nearby points',
+        'The single greatest or least value on the entire domain',
+        'Any point where the derivative is zero',
+        'A point that lies on the boundary of the function\'s domain',
+      ],
+      0,
+      'A local maximum or minimum, not necessarily global. The derivative being zero is necessary for interior local extrema (Fermat\'s theorem) but not sufficient.',
+    ],
+    [
+      'What does Rolle\'s theorem assume about a function f on [a, b]?',
+      [
+        'f is continuous on [a, b], differentiable on (a, b), and f(a) = f(b)',
+        'f is monotonic and f(a) < f(b)',
+        'f is differentiable everywhere and strictly increasing',
+        'f is positive throughout and has no zeros',
+      ],
+      0,
+      'Under these conditions, some c in (a, b) has f\'(c) = 0.',
+    ],
+    [
+      'In a geometric sequence, how is each term related to the previous one?',
+      [
+        'By multiplication by a constant ratio',
+        'By addition of a constant difference',
+        'By a quadratic function of the term index',
+        'By the previous two terms in a Fibonacci-like rule',
+      ],
+      0,
+      'A geometric sequence: a, ar, ar², ar³, ... with ratio r.',
+    ],
+    [
+      'What does the power rule of differentiation state?',
+      [
+        'd/dx(x^n) = n·x^(n−1) for any real number n',
+        'd/dx(x^n) = x^(n−1) for positive integers n',
+        'd/dx(x^n) = n·x^n for all n',
+        'd/dx(x^n) = n for all n',
+      ],
+      0,
+      'One of the most fundamental derivatives in calculus; extends to any real exponent via limits.',
+    ],
+    [
+      'A function is convex if what property holds?',
+      [
+        'The line segment connecting any two points on the graph lies above or on the graph itself',
+        'The function is always increasing',
+        'The second derivative is positive',
+        'The function has no local maxima',
+      ],
+      0,
+      'Equivalently, f(λx + (1−λ)y) ≤ λf(x) + (1−λ)f(y) for λ ∈ [0, 1].',
+    ],
+    [
+      'What does the fundamental theorem of algebra guarantee?',
+      [
+        'A polynomial of degree n has exactly n complex roots counting multiplicity',
+        'A polynomial of degree n has at least n real roots',
+        'The roots of a polynomial can always be found by a closed formula',
+        'A polynomial of degree n has at most n critical points',
+      ],
+      0,
+      'This is why polynomial equations of degree ≥ 5 cannot always be solved by radicals.',
+    ],
+    [
+      'In modular arithmetic, what does a ≡ b (mod m) mean?',
+      [
+        'm divides (a − b), so a and b leave the same remainder when divided by m',
+        'a and b are equal',
+        'a is less than b modulo m',
+        'a times b equals m',
+      ],
+      0,
+      'Fundamental to number theory and cryptography; allows arithmetic modulo any integer m.',
+    ],
+    [
+      'What is the sum of the interior angles of a convex n-gon?',
+      [
+        '(n − 2) × 180 degrees',
+        'n × 180 degrees',
+        '360 degrees for any n',
+        '(n + 2) × 90 degrees',
+      ],
+      0,
+      'A triangle (n=3) has 180°, a quadrilateral (n=4) has 360°, etc.',
+    ],
+    [
+      'A function is surjective (onto) if what condition holds?',
+      [
+        'Every element in the codomain is the image of at least one element in the domain',
+        'Every element in the domain maps to a distinct element in the codomain',
+        'The function has an inverse',
+        'The function\'s range is a proper subset of its codomain',
+      ],
+      0,
+      'Surjectivity and injectivity are distinct properties; a bijection is both.',
+    ],
+    [
+      'What is a critical point of a differentiable function?',
+      [
+        'A point where the derivative is zero or undefined',
+        'A local maximum or minimum',
+        'A point where the function is continuous',
+        'The endpoint of the domain',
+      ],
+      0,
+      'Not all critical points are local extrema; inflection points with horizontal tangents are also critical points.',
+    ],
+    [
+      'The derivative of sin(x) with respect to x is what?',
+      [
+        'cos(x)',
+        'sin(x)',
+        '−sin(x)',
+        '1 / cos(x)',
+      ],
+      0,
+      'A fundamental trigonometric derivative; cos(x) and sin(x) swap roles under differentiation.',
+    ],
+  ],
+  msc: [
 
     [
       'For a real symmetric matrix, the spectral theorem guarantees what?',
@@ -163,7 +330,174 @@ export const MATHS: CategoryContent = {
 };
 
 export const TECHNOLOGY: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'What is the primary purpose of DNS in the internet?',
+      [
+        'To translate human-readable domain names into IP addresses',
+        'To encrypt data transmitted between servers',
+        'To route packets across the global internet',
+        'To manage memory allocation on a server',
+      ],
+      0,
+      'DNS (Domain Name System) is a distributed database; www.example.com → 93.184.216.34 is the classic example.',
+    ],
+    [
+      'In HTTP, what does a 404 status code indicate?',
+      [
+        'The requested resource was not found on the server',
+        'The server is temporarily unavailable',
+        'The request is forbidden due to permissions',
+        'The server has moved the resource permanently',
+      ],
+      0,
+      'Client error (4xx range); a 301 or 302 would indicate the resource has moved.',
+    ],
+    [
+      'What is a relational database?',
+      [
+        'A database that organises data into tables with rows and columns, related by keys',
+        'A database that stores only text files',
+        'A database designed exclusively for social networks',
+        'A database where every record links to exactly one other record',
+      ],
+      0,
+      'SQL databases like PostgreSQL and MySQL are relational; the key concept is the table structure and foreign key relationships.',
+    ],
+    [
+      'What is the time complexity of binary search on a sorted array?',
+      [
+        'O(log n)',
+        'O(n)',
+        'O(n log n)',
+        'O(1)',
+      ],
+      0,
+      'Binary search repeatedly halves the search space; you can only afford this because the input is sorted.',
+    ],
+    [
+      'What does the OSI model describe?',
+      [
+        'A seven-layer framework for network communication and protocols',
+        'The structure of a relational database',
+        'How web servers handle HTTP requests',
+        'The layers of the JavaScript runtime environment',
+      ],
+      0,
+      'Open Systems Interconnection model; layers are Physical, Data Link, Network, Transport, Session, Presentation, Application.',
+    ],
+    [
+      'What is a hash function in cryptography?',
+      [
+        'A function that maps input data to a fixed-size byte string, ideally one-way and collision-resistant',
+        'A method to encrypt data using a secret key',
+        'An algorithm to sort data efficiently',
+        'A technique to compress large files',
+      ],
+      0,
+      'SHA-256, MD5 (now broken) are examples. Computing the hash is fast; reversing it is computationally infeasible.',
+    ],
+    [
+      'What does API stand for?',
+      [
+        'Application Programming Interface',
+        'Asynchronous Protocol Integration',
+        'Automated Processing Integration',
+        'Application Protocol Initialization',
+      ],
+      0,
+      'An API defines how software components communicate; REST APIs over HTTP are ubiquitous.',
+    ],
+    [
+      'In a stack data structure, what does LIFO mean?',
+      [
+        'Last-In-First-Out: the most recently added element is removed first',
+        'Linear-Item-First-Operations',
+        'Load-Integrated-File-Output',
+        'Low-Intensity-Fast-Operations',
+      ],
+      0,
+      'Stack example: a browser\'s back button remembers pages in LIFO order.',
+    ],
+    [
+      'What is caching?',
+      [
+        'Storing frequently accessed data in fast memory to avoid repeated slow lookups',
+        'Permanently deleting old data to free space',
+        'Encrypting sensitive information',
+        'Splitting data across multiple servers',
+      ],
+      0,
+      'CPU caches, Redis, browser caches, and CDNs all follow this principle: trade storage for latency.',
+    ],
+    [
+      'What does ACID stand for in database transactions?',
+      [
+        'Atomicity, Consistency, Isolation, Durability',
+        'Asynchronous Computation In Databases',
+        'Automatic Concurrency Isolation Design',
+        'Application Concurrency In Deployment',
+      ],
+      0,
+      'ACID guarantees ensure data integrity even if the system fails during a transaction.',
+    ],
+    [
+      'What is the difference between HTTP and HTTPS?',
+      [
+        'HTTPS encrypts the connection using TLS, while HTTP sends data in plaintext',
+        'HTTPS is faster than HTTP',
+        'HTTP is used only for mobile apps',
+        'HTTPS cannot handle large files',
+      ],
+      0,
+      'TLS (Transport Layer Security) protects HTTP traffic from eavesdropping; HTTPS is now standard.',
+    ],
+    [
+      'In object-oriented programming, what is encapsulation?',
+      [
+        'Bundling data and methods together while hiding internal details from the outside',
+        'Copying code from one class to another',
+        'Running multiple programs on one machine',
+        'Converting objects to JSON format',
+      ],
+      0,
+      'Encapsulation uses access modifiers (public, private) to control what outside code can see.',
+    ],
+    [
+      'What is the purpose of version control systems like Git?',
+      [
+        'To track changes to code, allow collaboration, and maintain a history of versions',
+        'To compile code into executables',
+        'To encrypt source code for security',
+        'To automatically test code before deployment',
+      ],
+      0,
+      'Version control enables teams to work on the same codebase, revert mistakes, and understand project history.',
+    ],
+    [
+      'What is load balancing in distributed systems?',
+      [
+        'Distributing incoming requests across multiple servers to avoid overloading any one',
+        'Evenly spacing database queries over time',
+        'Ensuring all data is replicated on every server',
+        'Compressing files before transmission',
+      ],
+      0,
+      'Load balancers improve availability and performance by spreading work; round-robin is a simple strategy.',
+    ],
+    [
+      'What does SQL stand for?',
+      [
+        'Structured Query Language',
+        'System Query Link',
+        'Sequential Quality Language',
+        'Synchronous Query Layer',
+      ],
+      0,
+      'SQL is used to query relational databases; SELECT, INSERT, UPDATE, DELETE are the fundamental operations.',
+    ],
+  ],
+  msc: [
 
     [
       'What does TLS session resumption avoid?',
@@ -333,7 +667,174 @@ export const TECHNOLOGY: CategoryContent = {
 };
 
 export const SPORT: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'In football (soccer), how many players per side are on the field during normal play?',
+      [
+        '11',
+        '9',
+        '10',
+        '12',
+      ],
+      0,
+      'A standard team in football has eleven players: one goalkeeper, defenders, midfielders, and forwards.',
+    ],
+    [
+      'In tennis, what is the sequence of points within a single game?',
+      [
+        '0, 15, 30, 40, game',
+        '0, 10, 20, 30, 40, game',
+        '0, 1, 2, 3, 4, game',
+        'They go straight to 1, 2, 3, 4',
+      ],
+      0,
+      'The scoring system (15, 30, 40) is historical; at deuce (40-40), a player must win by 2 points.',
+    ],
+    [
+      'What is the offside rule in football (soccer)?',
+      [
+        'A player is in an offside position if closer to the opponent\'s goal line than both the ball and two defenders',
+        'A player cannot pass backwards to a teammate',
+        'A player cannot receive the ball while running faster than their team\'s average speed',
+        'A player automatically commits a foul after three passes in a row',
+      ],
+      0,
+      'Offside prevents goal-hanging; the rule exists to keep the game flowing and prevent unfair advantage.',
+    ],
+    [
+      'In cricket, how many deliveries make up an over?',
+      [
+        '6',
+        '8',
+        '10',
+        '4',
+      ],
+      0,
+      'An over is a set of 6 legal deliveries bowled by one bowler; a cricket innings consists of multiple overs.',
+    ],
+    [
+      'What is the primary objective in rugby union?',
+      [
+        'To score more points than the opposing team by carrying an oval ball across the goal line or kicking it between the goal posts',
+        'To keep the ball in the air for as long as possible',
+        'To complete as many passes as the opposing team',
+        'To prevent the opposing team from touching the ball',
+      ],
+      0,
+      'A try (5 points) is scored by grounding the ball in the in-goal area; conversions and penalties are also worth points.',
+    ],
+    [
+      'In basketball, how many points is a basket worth if scored from beyond the arc?',
+      [
+        '3 points',
+        '2 points',
+        '4 points',
+        '1 point',
+      ],
+      0,
+      'The three-point line is further from the basket than a normal shot; baskets inside are 2 points.',
+    ],
+    [
+      'What is a serve in tennis?',
+      [
+        'The stroke that begins each point, served from behind the baseline into the opponent\'s service box',
+        'Returning the ball directly to the opponent',
+        'Any shot played from the sideline',
+        'The line that marks the edge of the court',
+      ],
+      0,
+      'A serve must land in the service box; two failed serves (faults) result in a double fault and loss of the point.',
+    ],
+    [
+      'In baseball, what is a home run?',
+      [
+        'When a batter hits the ball over the outfield fence in fair territory, or hits the ball far enough to circle all the bases',
+        'When a base runner returns to their starting position',
+        'A run scored in the batter\'s home stadium',
+        'Any hit that allows a runner to advance two bases',
+      ],
+      0,
+      'A home run scores the batter and any runners on base; it\'s the most powerful individual play in baseball.',
+    ],
+    [
+      'In hockey, what is icing?',
+      [
+        'Shooting the puck from behind the midline so it travels beyond the opponent\'s goal line without being touched',
+        'Cooling the rink to make the ice surface harder',
+        'Checking an opponent against the boards',
+        'A violation where a player holds the puck for too long',
+      ],
+      0,
+      'Icing results in a face-off in the offending team\'s zone; it prevents long-distance stalling tactics.',
+    ],
+    [
+      'In swimming, what is freestyle?',
+      [
+        'A stroke where the swimmer uses any technique (typically front crawl) to reach the finish line fastest',
+        'A swimming style where no movement is required',
+        'A race where swimmers alternate between different strokes',
+        'A competition that takes place in a river instead of a pool',
+      ],
+      0,
+      'Front crawl is nearly always the fastest stroke, so swimmers choose it for freestyle events.',
+    ],
+    [
+      'What is a break in snooker?',
+      [
+        'The opening stroke, where the player attempts to scatter the racked balls',
+        'A pause during the match to recover',
+        'A foul committed by hitting the cue ball twice',
+        'The point at which a player loses their turn',
+      ],
+      0,
+      'The player breaking attempts to pot object balls and establish a strong opening position.',
+    ],
+    [
+      'In golf, what is a birdie?',
+      [
+        'A score of one stroke under par for a hole',
+        'A score of one stroke over par for a hole',
+        'A score equal to par for a hole',
+        'The final hole in a round of 18 holes',
+      ],
+      0,
+      'An eagle is two strokes under par; a bogey is one stroke over par.',
+    ],
+    [
+      'In table tennis, what must happen for a serve to be valid?',
+      [
+        'The ball must bounce on the server\'s side of the net first, then clear the net and land on the opponent\'s side',
+        'The ball must go directly over the net without bouncing',
+        'The server must hit the ball below waist height',
+        'The ball must be thrown from at least 30 cm above the table',
+      ],
+      0,
+      'A serve that fails to clear the net or lands outside the opponent\'s side is a point for the opponent.',
+    ],
+    [
+      'What is the role of a wicket-keeper in cricket?',
+      [
+        'To stand behind the stumps and catch the ball or break the wicket to dismiss batsmen',
+        'To patrol the boundary and catch balls hit for six',
+        'To call out when a batsman is out',
+        'To ensure the pitch is level and well-maintained',
+      ],
+      0,
+      'The wicket-keeper is the only fielder allowed to wear protective gloves and pads beyond the batsman\'s gear.',
+    ],
+    [
+      'In badminton, what is a shuttlecock?',
+      [
+        'The small projectile with a cork base and feathered crown that players hit across the net',
+        'A penalty card shown to a player who breaks the rules',
+        'The method of serving in doubles matches',
+        'The line that marks out-of-bounds in the court',
+      ],
+      0,
+      'A shuttlecock travels differently than a ball: it decelerates rapidly in flight, making badminton tactically distinct.',
+    ],
+  ],
+  msc: [
 
     [
       'An expected-goals (xG) model estimates what?',

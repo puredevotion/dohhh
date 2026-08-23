@@ -18,7 +18,7 @@ import type { CategoryContent } from './row.js';
  */
 
 export const FINANCE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'In a cash CDO capital structure, what does the equity tranche do?',
       [
@@ -187,6 +187,173 @@ export const FINANCE: CategoryContent = {
       ],
       0,
       'Hagan\'s expansion is what made it usable on a swaption desk in real time; its known pathology is negative densities at low strikes, which the shifted and free-boundary variants patch.',
+    ],
+  ],
+  bscba: [
+    [
+      'A plain vanilla interest-rate swap between two parties serves what primary purpose?',
+      [
+        'Allows each party to exchange fixed and floating interest payments on a notional amount',
+        'Eliminates interest-rate risk entirely by locking in today\'s rate for all future periods',
+        'Transfers credit risk from one counterparty to the other without affecting cash flows',
+        'Enables the sale of a bond position without recognising a loss on the balance sheet',
+      ],
+      0,
+      'Each party swaps one cash flow stream for another on the same notional; neither party\'s underlying debt obligation changes.',
+    ],
+    [
+      'How do bond prices typically respond to an increase in market interest rates?',
+      [
+        'Bond prices fall',
+        'Bond prices remain unchanged because the coupon is fixed',
+        'Bond prices rise to compensate investors',
+        'Bond prices are unaffected by interest-rate changes',
+      ],
+      0,
+      'Present value of future cash flows declines as the discount rate rises; this is the fundamental inverse relationship between price and yield.',
+    ],
+    [
+      'In a securitised asset pool, what is the primary role of the equity tranche?',
+      [
+        'It absorbs initial losses before other investors experience any loss',
+        'It guarantees the safety of the senior notes to investors',
+        'It receives cash flows only after all other tranches are fully paid',
+        'It holds all the underlying assets in a trust account for investors',
+      ],
+      0,
+      'Being subordinated, the equity tranche faces losses first; in exchange, it receives residual interest payments (excess spread).',
+    ],
+    [
+      'What is the defining difference between a call option and a put option?',
+      [
+        'A call gives the right to buy at a set price; a put gives the right to sell at a set price',
+        'A call can only be exercised once, while a put can be exercised multiple times during its life',
+        'Calls have intrinsic value while puts consist only of time value',
+        'Calls are used only by buyers of stock, and puts only by investors who sell short',
+      ],
+      0,
+      'The distinction is purely directional: calls profit from price increases, puts from price decreases.',
+    ],
+    [
+      'Why do banks originate mortgages and then sell them as mortgage-backed securities rather than hold them until maturity?',
+      [
+        'To transfer credit risk to capital markets and free up capital for new lending',
+        'Because mortgages cannot generate positive returns if held on the balance sheet',
+        'To reduce their exposure to interest-rate volatility and prepayment risk',
+        'Because bank regulators prohibit banks from holding mortgages directly',
+      ],
+      0,
+      'Securitization transfers credit risk to investors and releases regulatory capital; the originator earns fees on origination and servicing.',
+    ],
+    [
+      'What does a credit spread represent in bond markets?',
+      [
+        'The difference in yield between a corporate bond and a government bond of similar maturity',
+        'The fee charged by credit rating agencies to assess bond credit quality',
+        'The percentage of principal that must be held as collateral by the issuer',
+        'The maximum percentage gain an investor can earn if a bond is called early',
+      ],
+      0,
+      'The spread reflects the market\'s perception of the issuer\'s default risk; wider spreads indicate higher perceived risk.',
+    ],
+    [
+      'A forward contract and a futures contract both allow you to lock in a price today for delivery later. What is a key difference?',
+      [
+        'Futures are standardised and traded on exchanges; forwards are customised and traded over-the-counter',
+        'Forwards require no initial payment while futures require an upfront premium',
+        'Futures are used only for commodities while forwards apply only to financial assets',
+        'Forward contracts can be broken by either party, but futures contracts cannot',
+      ],
+      0,
+      'Exchange-traded futures have standardised contracts, daily marking to market, and clearing-house guarantees; forwards are bespoke.',
+    ],
+    [
+      'In the context of international finance, covered interest parity refers to what?',
+      [
+        'The relationship that ensures two currencies with different interest rates will have equal returns when currency risk is hedged',
+        'A central bank\'s promise to support a currency\'s peg by intervening in foreign exchange markets',
+        'A requirement that international bonds must be backed by collateral in the borrower\'s home currency',
+        'A regulation requiring banks to hedge all their foreign exchange exposures',
+      ],
+      0,
+      'If the interest-rate differential is not offset by the forward premium, arbitrage should eliminate the discrepancy.',
+    ],
+    [
+      'What does the yield curve represent?',
+      [
+        'The relationship between bond maturity and yield for bonds of the same credit quality',
+        'The cumulative return an investor has earned on their bond portfolio to date',
+        'The daily fluctuations in the prices of actively traded government bonds',
+        'The percentage of a bond\'s value that is paid as a coupon each year',
+      ],
+      0,
+      'A typical yield curve slopes upward because investors demand higher returns for longer maturities; an inverted curve often signals recession expectations.',
+    ],
+    [
+      'How does a dividend payment typically affect the value of a stock?',
+      [
+        'The stock price typically falls by approximately the dividend amount on the ex-dividend date',
+        'Dividends increase stock price permanently by the amount of cash distributed',
+        'Stock price is completely unaffected by dividend announcements',
+        'Dividends reduce the company\'s total value but increase the stock price due to tax benefits',
+      ],
+      0,
+      'The stock is worth less after dividends because cash has left the company; the shareholder has cash but the stock is worth less.',
+    ],
+    [
+      'What is the main benefit of portfolio diversification?',
+      [
+        'It reduces portfolio risk by combining assets that do not move in perfect lockstep with each other',
+        'It guarantees that all investors will earn the same return as the market index',
+        'It eliminates the need for investors to monitor their holdings',
+        'It ensures that at least one investment in the portfolio will always outperform the market',
+      ],
+      0,
+      'Combining assets with imperfect correlation reduces the portfolio\'s overall volatility without sacrificing expected return.',
+    ],
+    [
+      'In fixed-income markets, what does a basis point represent?',
+      [
+        'One hundredth of a percent (0.01%)',
+        'One percent',
+        'The smallest unit that government bond yields can change',
+        'The fee charged by a bond dealer on a transaction',
+      ],
+      0,
+      'Basis points are the standard unit for quoting spreads and small changes in yields; 100 bps equals one percentage point.',
+    ],
+    [
+      'What is a floating-rate note (FRN)?',
+      [
+        'A bond whose coupon interest rate adjusts periodically based on a reference rate such as LIBOR or SOFR',
+        'A bond issued by a company whose revenues fluctuate with market conditions',
+        'A government bond whose value adjusts for inflation by changing the face amount',
+        'A short-term security that matures unpredictably based on market conditions',
+      ],
+      0,
+      'As reference rates change, coupon payments on FRNs adjust; this protects investors from rising rates but reduces upside if rates fall.',
+    ],
+    [
+      'In derivatives trading, what does collateral serve to do?',
+      [
+        'Reduce the risk that a counterparty will default by securing the transaction with an asset pledge',
+        'Increase the leverage available to traders in derivatives markets',
+        'Determine the notional amount that can be traded in a single derivatives contract',
+        'Replace the need for credit ratings by guaranteeing all derivative transactions',
+      ],
+      0,
+      'Collateral is posted to protect the non-defaulting party; in a default, the collateral can be liquidated to recover losses.',
+    ],
+    [
+      'What is arbitrage in financial markets?',
+      [
+        'Simultaneously buying and selling the same or equivalent assets in different markets to profit from price discrepancies',
+        'Predicting future price movements using historical price patterns and technical analysis',
+        'Buying undervalued stocks and holding them until they rise back to fair value',
+        'Using leverage to amplify returns on a portfolio of risky assets',
+      ],
+      0,
+      'Arbitrage locks in profit with minimal risk by exploiting mispricings; when exploited widely, arbitrage helps prices converge to fair value.',
     ],
   ],
 };

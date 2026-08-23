@@ -15,6 +15,14 @@ export interface DifficultyTier {
   readonly award: number;
   readonly penalty: number;
   readonly timeoutMs: number;
+  /**
+   * A cap on correct-answer streaks that belongs to the tier itself rather
+   * than to a host's house rules - `null`/absent means the tier imposes none
+   * of its own (the house rule in {@link RulesConfig.maxCorrectStreakPerTurn}
+   * still applies if a host sets one). Where both are set, {@link resolve}
+   * takes whichever is stricter; a tier cap is a floor a host cannot loosen.
+   */
+  readonly maxStreak?: number | null;
 }
 
 /**
@@ -29,13 +37,26 @@ export interface DifficultyTier {
  * `graduate`. All three floors are now specialist floors.
  */
 export const DIFFICULTY_TIERS: Readonly<Record<Difficulty, DifficultyTier>> = {
-  graduate: {
-    id: 'graduate',
-    label: 'Easy Peasy',
+  bscba: {
+    id: 'bscba',
+    label: 'BSc/BA',
+    audience:
+      'Someone with a bachelor\'s degree in this field - BSc or BA level. An engaged amateur might get lucky, but this is still a specialist floor, not general knowledge.',
+    blurb: 'BSc or BA in the field',
+    award: 1,
+    penalty: -1,
+    timeoutMs: 45_000,
+    // Fixed to the tier, not a house rule: this floor is meant to move fast
+    // rather than let one team camp on it indefinitely.
+    maxStreak: 3,
+  },
+  msc: {
+    id: 'msc',
+    label: 'MSc',
     audience:
       'Someone with a master\'s degree in this field - MSc or MA level. Not general knowledge, and not something an educated non-specialist should reliably get.',
     blurb: 'MSc or MA in the field',
-    award: 1,
+    award: 2,
     penalty: -1,
     timeoutMs: 45_000,
   },
@@ -61,7 +82,7 @@ export const DIFFICULTY_TIERS: Readonly<Record<Difficulty, DifficultyTier>> = {
   },
 };
 
-export const DIFFICULTY_ORDER: readonly Difficulty[] = ['graduate', 'phd', 'professor'];
+export const DIFFICULTY_ORDER: readonly Difficulty[] = ['bscba', 'msc', 'phd', 'professor'];
 
 export interface RulesConfig {
   readonly targetScore: number;

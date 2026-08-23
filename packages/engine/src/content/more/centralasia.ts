@@ -2,7 +2,7 @@ import type { CategoryContent } from '../row.js';
 
 /** Central Asian History, second chunk. Correct option first; rotated at build. */
 export const MORE_CENTRAL_ASIA: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'The Kushan Empire is best known for what?',
       [

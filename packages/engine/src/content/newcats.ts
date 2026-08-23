@@ -1,7 +1,99 @@
 import type { CategoryContent } from './row.js';
 
 export const AUTOIMMUNE: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'What is the fundamental difference between an infection and an autoimmune disease?',
+      ['Infection involves immune attack on foreign pathogens; autoimmune disease involves immune attack on self-tissue', 'Infection only affects the respiratory system', 'Autoimmune diseases are always contagious', 'Infections are always acute while autoimmune diseases are always chronic'],
+      0,
+      'Infections are triggered by foreign pathogens and warrant immune responses, while autoimmune conditions result from inappropriate responses against self-antigens.',
+    ],
+    [
+      'Type 1 diabetes involves autoimmune destruction of which cell type in the pancreas?',
+      ['Beta cells that produce insulin', 'Alpha cells that produce glucagon', 'Acinar cells that produce digestive enzymes', 'Ductal epithelial cells'],
+      0,
+      'Beta cells in the pancreatic islets normally produce and release insulin to regulate blood glucose; their destruction leads to insulin deficiency and requires lifelong insulin therapy.',
+    ],
+    [
+      'Which of the following is classified as an autoimmune disease?',
+      ['Rheumatoid arthritis', 'Seasonal influenza', 'Streptococcal infection', 'Fungal skin infection'],
+      0,
+      'Rheumatoid arthritis is characterized by chronic, destructive inflammation of the joints due to immune attack on joint tissues, whereas the other options are infections caused by specific pathogens.',
+    ],
+    [
+      'What is a primary feature of Hashimoto\'s thyroiditis?',
+      ['Immune-mediated destruction of thyroid tissue leading to hypothyroidism', 'Excess thyroid hormone production from overstimulation', 'Thyroid hormone resistance in peripheral tissues', 'Iodine deficiency affecting thyroid function'],
+      0,
+      'Lymphocytes infiltrate and damage the thyroid gland\'s ability to produce hormones, eventually causing the hypothyroid state that characterizes this common autoimmune condition.',
+    ],
+    [
+      'Graves\' disease differs from Hashimoto\'s thyroiditis in that it causes which thyroid state?',
+      ['Hyperthyroidism from stimulating antibodies', 'Hypothyroidism from tissue destruction', 'Normal thyroid function with fatigue', 'Complete loss of thyroid hormone production'],
+      0,
+      'Graves\' disease involves antibodies that activate the TSH receptor, driving continuous hormone synthesis and release, the opposite of the destructive mechanism in Hashimoto\'s.',
+    ],
+    [
+      'Coeliac disease is triggered by an immune response to which dietary protein?',
+      ['Gluten found in wheat and other grains', 'Casein found in milk products', 'Lactose found in dairy', 'Keratin found in skin'],
+      0,
+      'In genetically susceptible individuals, gluten peptides are modified by tissue enzymes and presented to immune cells, triggering an attack on the small intestinal lining that impairs nutrient absorption.',
+    ],
+    [
+      'Multiple sclerosis is characterized by immune attack on which component of nerve fibers?',
+      ['The myelin sheath that insulates and speeds nerve signals', 'The nerve cell bodies in the brain', 'Muscle cells', 'The spinal fluid'],
+      0,
+      'Myelin damage slows or blocks nerve impulses, producing the progressive neurological symptoms including weakness, balance problems, and visual disturbances typical of MS.',
+    ],
+    [
+      'Which therapy class has revolutionized treatment of autoimmune diseases like rheumatoid arthritis by targeting specific immune molecules?',
+      ['Biologic therapies that block key inflammatory cytokines', 'Antibiotics that kill the pathogens causing disease', 'Hormone replacement therapy', 'Vitamin supplementation alone'],
+      0,
+      'Drugs such as TNF-alpha inhibitors and other biologics target specific signaling molecules that drive inflammation, offering more targeted and often more effective treatment than older nonspecific immunosuppressants.',
+    ],
+    [
+      'Systemic lupus erythematosus (SLE) is notable for affecting which characteristic pattern of organ systems?',
+      ['Multiple organ systems simultaneously, including joints, skin, kidneys, and heart', 'Only the skin and hair', 'Exclusively the respiratory system', 'Only the endocrine organs'],
+      0,
+      'SLE is truly "systemic" because anti-self antibodies circulate throughout the body, depositing in multiple tissues and potentially causing widespread inflammation and organ damage.',
+    ],
+    [
+      'Psoriasis, an autoimmune skin condition, is driven primarily by activation of which type of immune cell?',
+      ['T cells, particularly Th17 cells that produce inflammatory cytokines', 'Red blood cells', 'Bone marrow stem cells', 'Nerve cells in the skin'],
+      0,
+      'Th17 cells produce the cytokine IL-17, which drives the excessive skin cell proliferation and inflammation characteristic of psoriatic plaques.',
+    ],
+    [
+      'Myasthenia gravis is caused by autoantibodies that target which structure at muscle cells?',
+      ['Acetylcholine receptors at the neuromuscular junction', 'Mitochondria within muscle cells', 'The muscle cell membrane away from the junction', 'Bone cells adjacent to muscles'],
+      0,
+      'Antibodies block or destroy the acetylcholine receptors needed for nerve-to-muscle communication, resulting in the characteristic muscle weakness and fatigue that worsens with activity.',
+    ],
+    [
+      'Ankylosing spondylitis is strongly genetically associated with which molecular marker?',
+      ['HLA-B27', 'HLA-DR4', 'HLA-DQ2', 'The BRCA1 gene'],
+      0,
+      'The vast majority of people with ankylosing spondylitis carry the HLA-B27 allele, though most HLA-B27 carriers never develop the disease, indicating it is a risk factor rather than a cause.',
+    ],
+    [
+      'What role do regulatory T cells (Tregs) normally play in preventing autoimmune disease?',
+      ['They suppress inappropriate immune responses against self-antigens', 'They produce antibodies against invading pathogens', 'They kill virus-infected cells', 'They produce insulin to regulate blood glucose'],
+      0,
+      'Tregs actively dampen self-reactive immune responses through contact and release of suppressive cytokines, maintaining the tolerance that prevents autoimmunity.',
+    ],
+    [
+      'Inflammatory bowel diseases like Crohn\'s disease involve immune attack primarily on which organ system?',
+      ['The gastrointestinal tract, causing intestinal inflammation and tissue damage', 'The nervous system exclusively', 'Only the liver', 'The skeletal system'],
+      0,
+      'Crohn\'s disease causes full-thickness inflammation in the GI tract that can occur anywhere from mouth to anus, contrasting with ulcerative colitis, which affects only the colon and rectum.',
+    ],
+    [
+      'Sjögren\'s syndrome classically causes which pair of symptoms from autoimmune damage to specific glands?',
+      ['Dry eyes and dry mouth from lymphocytic infiltration of lacrimal and salivary glands', 'Excessive sweating and fever', 'Weight gain and hypothyroidism', 'Joint swelling and muscle weakness'],
+      0,
+      'Immune cells infiltrate the lacrimal and salivary glands, reducing tear and saliva production and causing the "sicca" (dry) symptoms that define this condition\'s primary presentation.',
+    ],
+  ],
+  msc: [
     [
       'Type 1 diabetes results from autoimmune destruction of which cells?',
       ['Pancreatic beta cells', 'Pancreatic alpha cells', 'Hepatocytes', 'Adrenal cortex cells'],
@@ -190,7 +282,7 @@ export const AUTOIMMUNE: CategoryContent = {
       'The "hygiene hypothesis" link to rising autoimmune disease incidence is most directly supported by which observation?',
       ['Higher autoimmune and allergic disease rates in populations with reduced early-life microbial and helminth exposure', 'Higher rates exclusively in populations with high antibiotic use in adulthood', 'Uniform autoimmune rates across all industrialised and non-industrialised populations', 'Lower rates of autoimmune disease in urban compared to rural areas universally'],
       0,
-      'Epidemiological comparisons, including migration studies, show that populations with reduced exposure to commensal microbes and helminths in early life have higher rates of autoimmune and atopic disease, though the causal mechanisms (regulatory T-cell education, microbiome diversity) remain actively debated.',
+      'Populations with reduced early-life exposure to commensal microbes and helminths show higher rates of autoimmune and atopic disease.',
     ],
     [
       'The concept of "epitope spreading" in autoimmune disease progression describes what?',
@@ -208,7 +300,7 @@ export const AUTOIMMUNE: CategoryContent = {
       'The historiography of autoimmune disease classification shifted significantly after which discovery clarified that autoreactivity itself is not inherently pathological?',
       ['The demonstration that low-affinity autoreactive B and T cells are a normal, tolerated part of the healthy immune repertoire', 'The discovery of the ABO blood group system', 'The isolation of insulin in 1921 by Banting and Best, which transformed treatment of type 1 diabetes but did not address autoimmune mechanisms', 'The invention of the ELISA technique'],
       0,
-      'Early 20th-century immunology under Ehrlich\'s "horror autotoxicus" assumed the body could not mount immune responses against itself; later work showing that low-level autoreactivity is normal and tightly regulated reframed autoimmune disease as a failure of regulation rather than a categorical breach of an absolute rule.',
+      'Earlier "horror autotoxicus" doctrine forbade autoimmunity; recognizing that low-level autoreactivity is normal reframed disease as failed regulation, not absolute rule-breach.',
     ],
     [
       'In rheumatoid arthritis pathogenesis, citrullination of proteins by peptidylarginine deiminase (PAD) enzymes is thought to be triggered in the lungs or gums by exposure to what?',
@@ -220,7 +312,7 @@ export const AUTOIMMUNE: CategoryContent = {
       'The "two-hit" model of autoimmune disease pathogenesis in a genetically susceptible individual typically requires which second component?',
       ['An environmental trigger, such as infection, that breaks tolerance or exposes a susceptible tissue', 'A second independent set of identical genetic risk alleles', 'Simultaneous vaccination against two unrelated pathogens', 'A decline in total antibody production across every immunoglobulin isotype, as seen in common variable immunodeficiency rather than autoimmunity'],
       0,
-      'Genetic susceptibility (e.g. HLA associations) is generally necessary but not sufficient; concordance in identical twins for most autoimmune diseases is well under 100%, implicating environmental triggers like viral infection, microbiome shifts, or hormonal change as the second hit.',
+      'Genetic susceptibility (e.g. HLA associations) is necessary but not sufficient; low twin concordance implicates environmental triggers (viral infection, microbiome shifts, hormonal change) alongside genetic risk.',
     ],
     [
       'Neonatal lupus and congenital heart block in infants of mothers with lupus or Sjogren\'s are mediated by transplacental transfer of which antibodies?',
@@ -268,7 +360,7 @@ export const AUTOIMMUNE: CategoryContent = {
       'Which historical experiment is credited with first demonstrating that autoimmune disease could be induced experimentally by immunising an animal with its own tissue plus adjuvant?',
       ['Experimental autoimmune encephalomyelitis induction by Rivers and colleagues using CNS tissue and adjuvant', 'Landsteiner\'s discovery of the ABO blood group system in 1900, work that reshaped transfusion medicine but was unrelated to autoimmune induction', 'Ehrlich\'s side-chain theory experiments', 'Burnet\'s clonal selection theory publication'],
       0,
-      'In the 1930s, Rivers and Schwentker showed that injecting rhesus monkeys with brain tissue emulsified in adjuvant produced a demyelinating encephalomyelitis, establishing EAE as the first deliberately induced autoimmune disease model and a direct experimental refutation of "horror autotoxicus".',
+      'Rivers and Schwentker demonstrated that tissue plus adjuvant could trigger immune-mediated neurological disease, providing experimental proof of induced autoimmunity.',
     ],
     [
       'Complement component deficiencies, particularly of early classical pathway components like C1q, C2, or C4, are a recognised but paradoxical risk factor for which autoimmune disease?',
@@ -280,7 +372,99 @@ export const AUTOIMMUNE: CategoryContent = {
 };
 
 export const OBGYN: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Which organ produces the egg that is released during ovulation?',
+      ['The ovary', 'The uterus', 'The fallopian tube', 'The vagina'],
+      0,
+      'Ovaries contain follicles with developing eggs; during each menstrual cycle, one mature follicle releases an egg that travels down the fallopian tube toward the uterus.',
+    ],
+    [
+      'Following ovulation, the corpus luteum produces which hormone needed to prepare the uterus for pregnancy?',
+      ['Progesterone', 'Estrogen only, without progesterone', 'Testosterone', 'Prolactin'],
+      0,
+      'Progesterone thickens the uterine lining (endometrium) and maintains it, necessary for implantation if fertilization occurs, or it sheds if pregnancy does not happen.',
+    ],
+    [
+      'Polycystic ovary syndrome (PCOS) is often characterized by which two main features?',
+      ['Irregular menstrual cycles and elevated androgens', 'Complete absence of menstruation from birth', 'Excessive menstrual bleeding with no hormonal changes', 'Only elevated blood glucose'],
+      0,
+      'PCOS involves disrupted ovulation (causing irregular or absent periods) and hormone imbalance with excess androgens, often accompanied by multiple small cysts on the ovaries.',
+    ],
+    [
+      'Endometriosis is defined as the presence of endometrial tissue where?',
+      ['Outside the uterine cavity, typically on ovaries or peritoneum', 'Only inside the uterine muscle', 'Only in the cervix', 'Only in the vagina'],
+      0,
+      'Ectopic endometrial tissue responds to cyclical hormones just like normal endometrium, causing pain, heavy bleeding, and often infertility when located outside the uterus.',
+    ],
+    [
+      'Pre-eclampsia is a pregnancy complication characterized by which two main findings after 20 weeks?',
+      ['High blood pressure and protein in the urine', 'Low blood pressure exclusively', 'High glucose levels without hypertension', 'Excessive weight loss'],
+      0,
+      'Pre-eclampsia develops when the placenta fails to establish normal circulation, causing maternal hypertension and kidney dysfunction that require delivery for resolution.',
+    ],
+    [
+      'What is the primary mechanism by which combined oral contraceptive pills prevent pregnancy?',
+      ['Suppressing the LH surge needed to trigger ovulation', 'Killing sperm in the uterus', 'Creating a physical barrier in the fallopian tube', 'Dissolving the egg immediately after ovulation'],
+      0,
+      'The hormone combination prevents the brain from signaling the ovary to mature and release an egg, making pregnancy impossible without ovulation.',
+    ],
+    [
+      'What is an ectopic pregnancy?',
+      ['Implantation of the embryo outside the uterus, most commonly in the fallopian tube', 'A pregnancy in the lower part of the uterus', 'A pregnancy with twins or multiples', 'A pregnancy with no fetal heartbeat detected'],
+      0,
+      'Ectopic pregnancies cannot develop normally and pose serious danger to the mother from rupture and bleeding, requiring prompt diagnosis and treatment.',
+    ],
+    [
+      'Gestational diabetes occurs when what develops in pregnancy?',
+      ['Insulin resistance from placental hormones, leading to elevated blood glucose', 'Destruction of the pancreas before pregnancy', 'Absence of any pancreatic beta cells', 'Excessive insulin production from the fetus'],
+      0,
+      'Placental hormones, particularly human placental lactogen, reduce the mother\'s insulin sensitivity, causing some women to exceed their capacity to maintain normal glucose levels.',
+    ],
+    [
+      'Postpartum hemorrhage is most commonly caused by what?',
+      ['Failure of the uterus to contract adequately after delivery', 'Retained placenta exclusively', 'Tears in the birth canal only', 'Maternal bleeding disorders'],
+      0,
+      'The uterus normally contracts after delivery to compress bleeding vessels; inadequate contractions (atony) fail to control bleeding, making it the leading cause of life-threatening maternal blood loss.',
+    ],
+    [
+      'What does the Pap smear screen for?',
+      ['Abnormal cervical cells that may progress to cervical cancer', 'Ovarian cancer exclusively', 'Uterine fibroids', 'Bacterial infections of the cervix'],
+      0,
+      'The Pap smear detects dysplastic cells caused by human papillomavirus infection before they become invasive cancer, allowing for early treatment.',
+    ],
+    [
+      'When is menopause clinically diagnosed?',
+      ['After 12 consecutive months without a menstrual period', 'At the first hot flash', 'On a woman\'s 50th birthday regardless of symptoms', 'After one missed period'],
+      0,
+      'The 12-month threshold reflects complete cessation of ovarian function and hormone production, distinguishing menopause from the transitional perimenopause that precedes it.',
+    ],
+    [
+      'What does the Apgar score assess in a newborn?',
+      ['Five vital signs and reflexes at one and five minutes after birth', 'The baby\'s birth weight and length only', 'The mother\'s recovery status', 'The placenta\'s condition'],
+      0,
+      'Appearance, Pulse, Grimace reflex, Activity tone, and Respiration are scored 0-2 each, giving a quick standardized assessment of whether the newborn needs immediate intervention.',
+    ],
+    [
+      'Uterine fibroids are benign tumors arising from which tissue?',
+      ['Smooth muscle of the uterine wall', 'Endometrial glandular tissue', 'Ovarian tissue', 'Cervical tissue'],
+      0,
+      'Fibroids are hormone-sensitive and grow during reproductive years, often causing heavy bleeding and pelvic pressure, though many are asymptomatic.',
+    ],
+    [
+      'HPV vaccination prevents infection with which virus that causes cervical cancer?',
+      ['Human papillomavirus', 'Human immunodeficiency virus', 'Hepatitis B virus', 'Herpes simplex virus'],
+      0,
+      'HPV types 16 and 18 cause the majority of cervical cancers; vaccines targeting these high-risk types have dramatically reduced cervical cancer rates in vaccinated populations.',
+    ],
+    [
+      'What is adenomyosis and how does it differ anatomically from endometriosis?',
+      ['Adenomyosis involves endometrial tissue invading the uterine muscle wall; endometriosis occurs outside the uterus', 'They are identical conditions with different names', 'Adenomyosis only affects post-menopausal women', 'Endometriosis never causes pain'],
+      0,
+      'Adenomyosis causes uterine thickening and pain from internal invasion, while endometriosis creates pain from ectopic tissue elsewhere in the pelvis, though both involve ectopic endometrium.',
+    ],
+  ],
+  msc: [
     [
       'Which hormone surge directly triggers ovulation?',
       ['Luteinising hormone (LH)', 'Follicle-stimulating hormone (FSH)', 'Progesterone', 'Oestrogen alone, without any LH involvement'],
@@ -321,13 +505,13 @@ export const OBGYN: CategoryContent = {
       'Gestational diabetes is typically screened for using which test, usually between 24 and 28 weeks?',
       ['Oral glucose tolerance test (OGTT)', 'HbA1c alone', 'Random capillary glucose only', 'Urine dipstick alone'],
       0,
-      'The OGTT measures the body\'s response to a glucose load, capturing the relative insulin resistance driven by placental hormones (particularly human placental lactogen) that peaks in the third trimester.',
+      'The OGTT measures the body\'s glucose response, capturing placental-hormone-driven insulin resistance that becomes marked in late pregnancy.',
     ],
     [
       'An ectopic pregnancy most commonly implants in which location?',
       ['The fallopian tube (ampullary region)', 'The ovary', 'The cervix', 'The abdominal cavity'],
       0,
-      'Over 90% of ectopic pregnancies occur in the fallopian tube, most often the ampulla, and rupture there is a leading cause of first-trimester maternal mortality if not caught early.',
+      'The fallopian tube (especially the ampulla) is the most common implantation site; rupture is a major cause of maternal mortality if not detected early.',
     ],
     [
       'Postpartum haemorrhage (PPH) is most commonly caused by which single factor?',
@@ -425,13 +609,13 @@ export const OBGYN: CategoryContent = {
       'The dating of pregnancy by crown-rump length is most accurate during which window?',
       ['Approximately 10 to 13+6 weeks\' gestation', 'The first 4 weeks after conception', 'After 20 weeks, using femur length instead', 'Only in the third trimester'],
       0,
-      'Early first-trimester biological variability in growth is minimal, making crown-rump length the most accurate dating method in this window; later dating relies increasingly on biparietal diameter and femur length, which have wider natural variation.',
+      'Before 14 weeks, fetal growth variation is minimal, making ultrasound dating most accurate; later measurements (biparietal diameter, femur length) have wider natural variation.',
     ],
     [
       'Shoulder dystocia during delivery is most classically managed initially with which manoeuvre?',
       ['McRoberts manoeuvre (hyperflexion and abduction of maternal hips)', 'Immediate caesarean section, performed as soon as dystocia is recognised', 'Fundal pressure as the first-line step', 'Forceps rotation as the first-line step'],
       0,
-      'McRoberts manoeuvre increases the functional pelvic diameter and rotates the symphysis, often freeing the impacted anterior shoulder without further intervention; fundal pressure is specifically avoided as first-line as it can worsen impaction.',
+      'McRoberts manoeuvre increases the functional pelvic diameter and often frees impacted shoulders without additional intervention; fundal pressure worsens impaction and is avoided as initial management.',
     ],
     [
       'Vasa praevia, a rare but high-risk obstetric condition, refers to what anatomical finding?',
@@ -469,7 +653,7 @@ export const OBGYN: CategoryContent = {
       'Semmelweis\'s 1847 intervention that dramatically reduced puerperal fever mortality in the Vienna maternity clinic involved what specific practice?',
       ['Handwashing with a chlorinated lime solution between autopsy work and attending labouring women', 'Isolating febrile mothers in a separate ward', 'Boiling all surgical instruments', 'Restricting medical student access to the wards entirely'],
       0,
-      'Semmelweis correctly inferred "cadaverous particles" were being carried from autopsies to birthing patients, though germ theory did not yet exist to explain why; his chlorinated lime handwashing protocol cut mortality dramatically, but his ideas were largely rejected by contemporaries during his lifetime.',
+      'Semmelweis inferred autopsy particles caused puerperal fever and used chlorinated lime handwashing to cut mortality; his ideas were largely rejected during his lifetime.',
     ],
     [
       'The obstetric forceps, credited largely to the Chamberlen family, were notable historically for what unusual practice surrounding their use?',
@@ -529,7 +713,7 @@ export const OBGYN: CategoryContent = {
       'The BRCA1 and BRCA2 mutations, relevant to risk-reducing salpingo-oophorectomy counselling, confer elevated lifetime risk predominantly for which gynaecological cancer, alongside breast cancer?',
       ['Ovarian (and fallopian tube) cancer', 'Cervical cancer', 'Vulvar cancer', 'Gestational trophoblastic disease'],
       0,
-      'BRCA mutations impair homologous recombination DNA repair; the elevated ovarian/fallopian tube cancer risk, combined with the lack of an effective ovarian screening test, is why risk-reducing salpingo-oophorectomy is offered once childbearing is complete, and why recent research increasingly implicates fallopian tube fimbrial epithelium as the origin site for many "ovarian" high-grade serous cancers.',
+      'BRCA mutations impair DNA repair, raising ovarian and fallopian-tube cancer risk; because no effective screening exists, risk-reducing surgery is offered after childbearing is complete.',
     ],
     [
       'Choriocarcinoma, a malignant gestational trophoblastic neoplasm, is notable clinically for which unusual feature relative to most solid cancers?',
@@ -541,25 +725,117 @@ export const OBGYN: CategoryContent = {
       'Amniotic fluid embolism, a rare but often catastrophic peripartum event, is now understood to involve which pathophysiological process rather than simple mechanical vascular obstruction?',
       ['An anaphylactoid-like maternal immune/inflammatory response to fetal antigens entering the maternal circulation', 'Pure mechanical blockage of the pulmonary vasculature by particulate debris, with no inflammatory component, once the dominant textbook theory', 'Direct toxic effect of amniotic fluid enzymes on the myocardium alone', 'A purely coagulation-factor-mediated event unrelated to any immune response'],
       0,
-      'The historical "embolism" name persists, but the clinical and laboratory picture (sudden cardiovascular collapse, bronchospasm, coagulopathy) resembles anaphylaxis, leading many to term it "anaphylactoid syndrome of pregnancy" instead, reflecting a maternal immune reaction to fetal material rather than simple mechanical obstruction alone.',
+      'The term "embolism" persists, but the clinical picture (collapse, bronchospasm, coagulopathy) resembles anaphylaxis, suggesting a maternal immune reaction to fetal material.',
     ],
     [
       'The historical introduction of the partograph, standardising labour monitoring, is most associated with reducing which specific complication when used to trigger timely intervention?',
       ['Obstructed labour progressing to uterine rupture or prolonged labour morbidity', 'Postpartum depression', 'Neonatal jaundice', 'Preterm birth rate'],
       0,
-      'By plotting cervical dilation against time and flagging when progress crosses "alert" and "action" lines, the partograph (developed from Friedman\'s labour curve work and championed by the WHO) was designed to prompt earlier intervention in obstructed or prolonged labour, particularly valuable in resource-limited settings without continuous individualised monitoring.',
+      'The partograph plots cervical dilation against time; crossing alert/action lines prompts intervention for obstructed labour, particularly valuable in resource-limited settings.',
     ],
     [
       'Placental mosaicism detected on chorionic villus sampling (CVS), discordant from the true fetal karyotype, is best explained by which embryological phenomenon?',
       ['Confined placental mosaicism arising from a post-zygotic mitotic error restricted largely to trophoblast lineage', 'Maternal cell contamination of the sample exclusively', 'A laboratory culture artefact with no biological basis', 'Paternal uniparental disomy affecting only the fetus'],
       0,
-      'Because the trophoblast and inner cell mass diverge very early in development, a mitotic error occurring after this split can be confined to the placental lineage, meaning a CVS result showing an abnormal karyotype does not always reflect the fetus itself, and follow-up amniocentesis is often warranted.',
+      'When mitotic errors occur after trophoblast separation, they may affect only placental tissue, so abnormal CVS results may not reflect fetal karyotype; amniocentesis confirms fetal status.',
     ],
   ],
 };
 
 export const DUTCH: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'The Eighty Years\' War was fought between which two powers?',
+      ['The Dutch rebels and Spain', 'France and England', 'The Netherlands and Belgium', 'Prussia and Austria'],
+      0,
+      'From 1568 to 1648, the northern provinces of the Low Countries fought for independence from Spanish Habsburg rule, eventually establishing the Dutch Republic.',
+    ],
+    [
+      'William of Orange (William the Silent) is primarily remembered for what role?',
+      ['Leading the Dutch Revolt against Spanish rule', 'Founding the VOC', 'Being the first King of the Netherlands', 'Signing the Peace of Munster'],
+      0,
+      'As stadtholder and military leader, William led the early resistance to Spain and is regarded as the founder of Dutch independence and the House of Orange\'s political prominence.',
+    ],
+    [
+      'What was the significance of the Union of Utrecht in 1579?',
+      ['It bound the northern provinces together in alliance against Spain, forming the basis of the Dutch Republic', 'It ended the Eighty Years\' War', 'It united all the Low Countries under one ruler', 'It abolished the monarchy'],
+      0,
+      'The Union created a confederal structure among the northern provinces, serving as the foundation for the Dutch state\'s government and independence for over two centuries.',
+    ],
+    [
+      'The Dutch East India Company (VOC), founded in 1602, was pioneering chiefly because it did what?',
+      ['Issued publicly tradable shares to raise capital for global trade', 'Banned all trade with non-European countries', 'Operated without any government oversight', 'Focused exclusively on European trade'],
+      0,
+      'The VOC pooled capital from many investors through shares traded on the Amsterdam exchange, allowing unprecedented investment in Asian trade and colonial ventures.',
+    ],
+    [
+      'The 1672 event known as the "Rampjaar" (Disaster Year) involved what?',
+      ['Simultaneous invasion by France, England, and allied German bishoprics threatening the Republic', 'A naval victory over Spain', 'The death of William the Silent', 'The founding of the Dutch Republic'],
+      0,
+      'This military crisis, when multiple enemies invaded from different directions, nearly destroyed the Republic and led to the fall of the merchant-Republican government.',
+    ],
+    [
+      'The "stadtholder" in Dutch history was best described as what kind of office?',
+      ['A provincial military and administrative official, often held by the Prince of Orange', 'An elected monarch with absolute power', 'A religious leader of the Reformed Church', 'A leader of the merchant guilds'],
+      0,
+      'Stadtholders, typically members of the House of Orange, held military command and significant provincial powers, though their authority varied by period and province.',
+    ],
+    [
+      'What was the Peace of Munster (1648)?',
+      ['The treaty that formally recognized Dutch independence from Spain', 'A peace agreement between France and Spain', 'A domestic agreement within the Dutch Republic', 'An agreement between the Netherlands and England'],
+      0,
+      'Spain formally acknowledged the independence of the Republic of the Seven United Netherlands, ending the Eighty Years\' War and establishing the Dutch state as a sovereign power.',
+    ],
+    [
+      'The Twelve Years\' Truce (1609-1621) was significant because it did what?',
+      ['Paused the Eighty Years\' War, allowing both sides to consolidate before fighting resumed', 'Permanently ended the war with Spain', 'United the Netherlands with Spain under one crown', 'Abolished the stadtholderate permanently'],
+      0,
+      'Both Spain and the Republic agreed to stop fighting temporarily due to exhaustion and financial strain, though hostilities resumed when the truce expired.',
+    ],
+    [
+      'Which of the following was a major focus of Dutch global commerce in the 17th century?',
+      ['Trading in spices and goods from the East Indies', 'Agricultural exports to France', 'Manufacturing glass exclusively', 'Mining operations in Germany'],
+      0,
+      'The VOC dominated trade routes to Asia, particularly the spice trade in the Indonesian archipelago, bringing enormous wealth to the Dutch Republic.',
+    ],
+    [
+      'The United Kingdom of the Netherlands, created in 1815 after Napoleon\'s fall, united which two regions?',
+      ['The former Dutch Republic and the Southern Netherlands (roughly modern Belgium)', 'The Netherlands and Luxembourg only', 'The Netherlands and Flanders', 'The Netherlands and all German lands'],
+      0,
+      'The Congress of Vienna merged north and south to create a buffer state against France, though the union proved unstable and Belgium seceded in 1830.',
+    ],
+    [
+      'The 1830 Belgian secession from the United Kingdom of the Netherlands was driven largely by what?',
+      ['Religious and linguistic tensions between Catholic south and Protestant-dominated north', 'A trade dispute over the VOC alone', 'Disagreement over naval policy exclusively', 'A succession crisis after the king\'s death'],
+      0,
+      'The largely Catholic, French-speaking southern provinces chafed under Protestant-dominated rule and unequal political representation, leading to revolution and independence.',
+    ],
+    [
+      'Johan de Witt, a prominent 17th-century Dutch leader, held what political position?',
+      ['Grand Pensionary of Holland, the chief civilian official', 'Stadtholder of all seven provinces', 'Admiral of the naval fleet', 'Director-General of the VOC'],
+      0,
+      'De Witt led the republic during the "True Freedom" period when no stadtholder was appointed in Holland, concentrating power in the merchant oligarchy.',
+    ],
+    [
+      'The Anglo-Dutch Wars of the 17th century were fought primarily over what?',
+      ['Competition for maritime trade and colonial dominance', 'Religious differences between the denominations', 'Control of Rhine river tolls exclusively', 'Succession to the Spanish throne'],
+      0,
+      'England and the Dutch Republic competed fiercely for shipping routes and overseas trading posts, with naval warfare defining the three conflicts between 1652 and 1674.',
+    ],
+    [
+      'What was the Kingdom of Holland (1806-1810) during the Napoleonic era?',
+      ['A French satellite state ruled by Napoleon\'s brother Louis', 'A restored independent republic', 'A kingdom restored to the House of Orange', 'A purely military occupation with no civilian government'],
+      0,
+      'Napoleon installed his brother Louis as king over the Netherlands as a nominally independent satellite state, though France later annexed it outright in 1810.',
+    ],
+    [
+      'The 1848 constitutional reforms associated with Johan Rudolph Thorbecke primarily accomplished what?',
+      ['Shifted the Netherlands toward constitutional monarchy with stronger parliamentary power', 'Abolished the monarchy entirely', 'Restored absolute rule to the king', 'Reunited the Netherlands and Belgium'],
+      0,
+      'Thorbecke\'s reforms curbed royal authority by making ministers answerable to an elected parliament, modernizing Dutch governance in line with liberal and democratic principles.',
+    ],
+  ],
+  msc: [
     [
       'The medieval and early modern Low Countries came under Burgundian rule primarily through what process?',
       ['A series of dynastic marriages and inheritances by the Dukes of Burgundy', 'Direct military conquest by France', 'A papal grant confirming the Dukes\' authority over the Low Countries, a claim without historical basis', 'Election by the local Estates'],
@@ -588,7 +864,7 @@ export const DUTCH: CategoryContent = {
       'The Dutch East India Company (VOC), founded in 1602, was notable as one of the first companies to do what?',
       ['Issue tradable shares to the public', 'Operate without any government charter', 'Ban all trade with Asia', 'Function purely as a naval defence force with no trading activity'],
       0,
-      'The VOC pooled capital from many investors via the Amsterdam stock exchange, commonly cited as the first formal stock exchange, giving it the capital base to fund fleets, fortresses, and a private army across Asia.',
+      'The VOC raised capital from many investors via securities trading, giving it unprecedented resources to fund military fleets, fortresses, and a private army across Asia.',
     ],
     [
       'The Twelve Years\' Truce (1609-1621) was significant because it did what?',
@@ -684,7 +960,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'The "First Stadtholderless Period" (1650-1672) in Holland arose directly from what political decision after the death of William II?',
-      ['The States of Holland\'s decision not to appoint a new stadtholder for that province while William II\'s son was an infant', 'A formal constitutional amendment abolishing the office nationally', 'A popular referendum against the House of Orange', 'A treaty imposed by France following its invasion of the Republic, an event that in fact occurred more than two decades after this decision'],
+      ['Choosing to govern without a stadtholder while William II\'s heir was too young to rule', 'A formal constitutional amendment abolishing the office nationally', 'A popular referendum against the House of Orange', 'A treaty imposed by France following its invasion of the Republic, an event that in fact occurred more than two decades after this decision'],
       0,
       'William II died suddenly in 1650 shortly before his son (the future William III) was born; Holland\'s regents seized the opportunity to govern without a stadtholder, ushering in the "True Freedom" era under Johan de Witt.',
     ],
@@ -710,7 +986,7 @@ export const DUTCH: CategoryContent = {
       'The VOC was formally dissolved in 1799, chiefly for what proximate reason?',
       ['Chronic financial insolvency compounded by war losses and mismanagement, leading its debts and assets to be taken over by the Batavian Republic state', 'A unilateral decision by Asian trading partners to cease all trade', 'Direct British military conquest of all VOC territory', 'Its replacement immediately by the WIC as the sole chartered company, a claim that does not hold since the WIC had already existed for well over a century as a separate charter by that point'],
       0,
-      'Decades of corruption, war losses (especially during the Fourth Anglo-Dutch War), and mounting debt left the once-dominant company insolvent; the state absorbed its territories and liabilities, later forming the core of the Dutch East Indies colonial administration.',
+      'Decades of corruption and war losses left the company deeply insolvent; the state absorbed its territories and debts, forming the basis of colonial administration.',
     ],
     [
       'William I of the Netherlands, before becoming king in 1815, had been a member of which prior ruling house\'s branch, and in what capacity relevant to Dutch history?',
@@ -740,7 +1016,7 @@ export const DUTCH: CategoryContent = {
       'The Perpetual Edict (Eeuwig Edict) of 1667 attempted to do what?',
       ['Permanently bar the offices of stadtholder and army Captain-General from being held by the same person', 'Formally end the Republic\'s alliance with England', 'Abolish the VOC\'s trading charter across all Asian territories, an unrelated commercial matter the edict did not address', 'Establish Dutch as the sole official language of the Republic'],
       0,
-      'Pushed through at Holland\'s initiative shortly before the Rampjaar, the edict tried to bar the Prince of Orange from ever combining civil and military supreme command, entrenching De Witt\'s republican settlement - an arrangement overturned within five years once the 1672 crisis restored both offices to William III.',
+      'This edict attempted to bar the Orange prince from holding both civil and military command, entrenching republican rule until the 1672 crisis restored both offices to William III.',
     ],
   ],
   professor: [
@@ -748,7 +1024,7 @@ export const DUTCH: CategoryContent = {
       'The Act of Abjuration (Plakkaat van Verlatinghe, 1581) is historiographically significant because it did what?',
       ['Formally declared that Philip II had forfeited sovereignty over the rebellious provinces, articulating a contractual theory of monarchy', 'Restored full allegiance to Spain under new terms', 'Created the title of King of the Netherlands', 'Ended the Union of Utrecht and dissolved the confederal structure, the opposite of what happened, since the Union continued to bind the provinces together afterward'],
       0,
-      'The Plakkaat argued that a ruler who violates his subjects\' rights and privileges forfeits his authority, a contractual justification for resistance later cited as an influence on, though not a direct model for, later revolutionary declarations including some scholars\' comparisons to the American Declaration of Independence.',
+      'The Plakkaat argued a ruler forfeits authority if violating subjects\' rights, providing contractual justification for resistance that influenced later revolutionary thinking.',
     ],
     [
       'The "Alteration" (Alteratie) of Amsterdam in 1578 refers to what specific local event?',
@@ -790,7 +1066,7 @@ export const DUTCH: CategoryContent = {
       'The "Doelistenbeweging" of 1748 was an episode of urban unrest in Amsterdam primarily provoked by what grievance?',
       ['Popular anger at tax-farming abuses, leading to demands including restoration of the stadtholderate', 'A religious dispute over Anabaptist rights', 'VOC bankruptcy, following a sudden collapse in the spice trade, an event that in fact happened decades later in 1799', 'A famine caused by crop failure'],
       0,
-      'Resentment against corrupt tax-farmers (who purchased the right to collect excise taxes) triggered riots and a broader civic movement that, among other demands, called for William IV to be made stadtholder in provinces where the office was vacant, illustrating how fiscal grievance could feed Orangist restoration politics.',
+      'Tax-farmer corruption sparked riots and civic demands, including restoration of the stadtholderate in vacant provinces, showing how fiscal grievance fueled Orangist restoration.',
     ],
     [
       'The "Hollandse Waterlinie" (Dutch Water Line) as a defensive concept, historically employed against invasion, functioned by what mechanism?',
@@ -802,48 +1078,140 @@ export const DUTCH: CategoryContent = {
       'The historiographical debate over the "General Crisis of the Seventeenth Century" as applied to the Dutch Republic is complicated by what apparent anomaly?',
       ['The Republic experienced its "Golden Age" of prosperity and cultural flourishing during the very period much of Europe suffered severe economic and political crisis', 'The Republic had no cultural production of note in this period', 'The Republic was entirely unaffected by the Thirty Years\' War, having no involvement at all, a claim contradicted by the Republic\'s active military and diplomatic role throughout that conflict', 'The Republic\'s population declined by half during this century'],
       0,
-      'While much of Europe faced war, climatic stress, and state breakdown in the mid-1600s, the Dutch Republic\'s trade-based economy and relatively decentralised, commercially-oriented governance model appeared to buck or at least substantially cushion the wider "general crisis" pattern historians have proposed, a puzzle much debated since Trevor-Roper\'s and others\' original framing.',
+      'While much of Europe faced war and state breakdown in the mid-1600s, the Dutch Republic\'s decentralised, commerce-oriented governance appeared to cushion the "general crisis" pattern.',
     ],
     [
       'The 1785-87 Patriot crisis ended with Prussian military intervention on behalf of the Orangist stadtholder; this intervention is often linked historiographically to which dynastic connection?',
       ['Wilhelmina of Prussia, wife of Stadtholder William V, being sister to the Prussian king, who intervened partly on her and her husband\'s behalf', 'A prior Dutch-Prussian trade treaty with a mutual defence clause', 'Prussian territorial claims on Gelderland, disputed since the Peace of Munster, a longstanding border dispute distinct from the dynastic tie invoked for the 1787 intervention', 'A papal request for Protestant solidarity'],
       0,
-      'Wilhelmina\'s personal appeals to her brother Frederick William II of Prussia were a significant factor in Prussia\'s 1787 invasion restoring William V\'s authority, illustrating how dynastic family ties could translate directly into international military intervention in a nominally republican state\'s internal politics.',
+      'Family connections between European ruling houses could directly influence military action; dynastic ties sometimes outweighed formal neutrality.',
     ],
     [
       'The Java War (1825-1830), fought in the Dutch East Indies during roughly the same period as Belgian secession, was led on the Javanese side chiefly by whom?',
       ['Prince Diponegoro', 'Sultan Agung', 'Raden Saleh', 'Trunojoyo'],
       0,
-      'Diponegoro\'s five-year guerrilla resistance against Dutch colonial expansion and the erosion of Javanese court authority was enormously costly to the colonial treasury, and its financial strain is one factor historians cite in the subsequent turn toward the revenue-maximising Cultivation System from 1830.',
+      'Diponegoro\'s costly five-year resistance drained the treasury, and financial strain is cited as a factor in the subsequent revenue-focused Cultivation System from 1830.',
     ],
     [
       'The "Aanspraak" and constitutional role of the Council of State (Raad van State) in the pre-1795 Dutch Republic is best characterised as what, in tension with the States General?',
       ['A body with formal advisory and some executive functions (notably over the army and finances) whose real authority was persistently contested and curtailed by provincial sovereignty claims', 'The Republic\'s supreme judicial court with final say over all provincial disputes, a description that overstates its authority since provincial sovereignty meant no such body ever held truly final say', 'A purely ceremonial body with no policy role in military or fiscal matters', 'The body that formally declared war, superseding the States General'],
       0,
-      'Though nominally significant, especially regarding military and financial administration, the Council of State\'s authority was frequently hollowed out in practice by the individual provinces\' insistence on their own sovereign prerogatives, exemplifying the structural tension between confederal particularism and any centralising body.',
+      'Though nominally significant for military and finance, the Council\'s authority was hollowed by provincial sovereign claims, exemplifying confederal particularism versus centralisation.',
     ],
     [
       'Thorbecke\'s 1848 reforms are sometimes contrasted by historians with the far more conservative response to 1848 unrest elsewhere in Europe; what specific Dutch political circumstance is usually credited with easing this comparatively smooth transition?',
       ['King William II\'s personal, reportedly overnight, shift from conservative to reformist position amid fear of revolutionary contagion', 'A prior civil war that had already destroyed the old order', 'Direct French military pressure for reform, following the 1848 revolution in Paris, a factor historians generally regard as secondary to the king\'s own change of heart', 'The complete abolition of the monarchy before reforms began'],
       0,
-      'William II is famously said to have gone "from very conservative to very liberal in a single night" upon hearing of revolutions elsewhere in Europe in early 1848, personally commissioning Thorbecke\'s reforms rather than resisting them, a monarchical pre-emption that avoided the violent confrontations seen in states like Prussia and Austria that year.',
+      'William II reportedly shifted from conservative to liberal "in a single night" on hearing of 1848 revolutions elsewhere, commissioning reforms that avoided violent confrontation.',
     ],
     [
       'The Grote Vergadering (Great Assembly) convened in The Hague in 1651 addressed what central constitutional question?',
       ['Whether and how a stadtholder should be appointed to succeed the recently deceased William II', 'Whether to grant Amsterdam a seat in the States General', 'Whether to ratify the Peace of Munster', 'Whether to charter the WIC as a second great trading company, a decision that had in fact already been made decades earlier'],
       0,
-      'Convened after William II\'s sudden death left his heir an infant, delegates from all seven provinces failed to agree on a stadtholder for Holland - though several other provinces did appoint one - and that decision by omission is what opened the First Stadtholderless Period and De Witt\'s ascendancy.',
+      'Convened after William II\'s death with his heir an infant, delegates failed to agree on appointing a stadtholder for Holland, ushering in the "True Freedom" era and De Witt\'s ascendancy.',
     ],
   ],
 };
 
 export const MAKER: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'What is 3D printing?',
+      ['A manufacturing process that builds objects layer by layer from digital designs', 'A technique for creating photographs', 'A method of flattening printed sheets', 'A process exclusively for metal parts'],
+      0,
+      'In additive manufacturing, material (plastic, resin, powder, or metal) is deposited layer-by-layer following a digital model, enabling creation of complex shapes impossible with traditional subtractive machining.',
+    ],
+    [
+      'What are the three primary categories of 3D printing technology?',
+      ['Extrusion-based, resin, and powder-based methods', 'Only plastic, metal, and ceramic methods', 'Manual, automatic, and mechanical methods', 'Color, black and white, and grayscale methods'],
+      0,
+      'Extrusion methods like FDM melt and deposit filament; resin methods cure liquid polymers with light; powder methods fuse material with heat or binders.',
+    ],
+    [
+      'FDM (Fused Deposition Modeling) creates objects from what starting material?',
+      ['Plastic filament that is melted and extruded', 'Liquid resin', 'Powder particles', 'Sheets of material'],
+      0,
+      'A heated nozzle melts thermoplastic filament and deposits it layer by layer, with each layer bonding to the previous one as it cools, making it the most common consumer 3D printing method.',
+    ],
+    [
+      'What advantage does resin-based 3D printing offer over FDM?',
+      ['Much finer surface detail and smoother finish', 'Lower equipment cost exclusively', 'Faster printing speed for all shapes', 'No need for any post-processing'],
+      0,
+      'Resin printers cure liquid photopolymer with light or laser, producing highly detailed parts with excellent surface quality, though post-processing (washing and curing) is more involved than FDM.',
+    ],
+    [
+      'What is "support material" in 3D printing used for?',
+      ['Holding up overhanging or unsupported sections during printing', 'Increasing the strength of the final part', 'Improving print speed', 'Reducing the cost of materials'],
+      0,
+      'Support structures are temporary scaffolding printed beneath overhangs to prevent the part from drooping or failing; they are removed after printing is complete.',
+    ],
+    [
+      'Which filament material is most beginner-friendly for FDM printing?',
+      ['PLA, due to low printing temperature and minimal warping', 'ABS, which prints best at the lowest temperatures', 'Carbon fiber composite, which handles best during printing', 'Nylon, the easiest material to print'],
+      0,
+      'Polylactic acid (PLA) is derived from renewable plant sources, prints at lower temperatures, produces less odor, and warps less than materials like ABS.',
+    ],
+    [
+      'What is "infill" in 3D printing?',
+      ['The internal structure inside a hollow-walled print', 'The outer layer of the print', 'Support material beneath overhangs', 'The platform the part prints on'],
+      0,
+      'Rather than solid plastic throughout, the interior uses a lightweight lattice pattern at a chosen density percentage to balance strength with print time and material use.',
+    ],
+    [
+      'What are laser cutters primarily used for?',
+      ['Cutting and engraving materials by vaporizing them with a focused laser beam', 'Welding metal sheets together', 'Polishing surfaces to a shine', 'Heating objects without cutting or engraving'],
+      0,
+      'A concentrated laser beam creates intense heat that vaporizes or melts material along a programmed path, enabling precise cutting of wood, acrylic, leather, and other suitable materials.',
+    ],
+    [
+      'CO2 lasers are best suited for cutting which types of materials?',
+      ['Organic materials like wood, acrylic, leather, and paper', 'Bare metal sheets', 'Reflective materials like mirror', 'Only plastic bottles'],
+      0,
+      'CO2 lasers operate at a wavelength well-absorbed by organic and polymer materials but poorly absorbed by bare metals, making them ideal for wood and acrylic work.',
+    ],
+    [
+      'Fiber lasers are generally preferred for which application?',
+      ['Cutting and engraving metal', 'Cutting acrylic sheets', 'Engraving wood with detail', 'Cutting paper and cardboard'],
+      0,
+      'Fiber lasers emit a shorter wavelength that metals absorb efficiently, making them standard for industrial metal cutting and marking applications.',
+    ],
+    [
+      'What is "first layer adhesion" critical for in 3D printing?',
+      ['Ensuring the first layer bonds properly to the build platform so subsequent layers have a stable foundation', 'Determining the color of the final print', 'Controlling the printing speed only', 'Setting the nozzle diameter'],
+      0,
+      'If the opening layer does not adhere properly, it may shift or peel away, causing the entire print to fail; bed leveling receives much attention for this reason.',
+    ],
+    [
+      'What does "warping" mean in 3D printing?',
+      ['Uneven cooling causing parts of a print to shrink and warp out of shape', 'The nozzle moving too quickly', 'Color fading during printing', 'The material becoming transparent'],
+      0,
+      'As thermoplastic cools from printing temperature, uneven cooling rates cause differential shrinkage that can lift corners or distort the part; heated beds and enclosures help prevent this.',
+    ],
+    [
+      'Laser safety is important because of what primary hazard?',
+      ['The laser beam can cause permanent eye and skin damage if not properly protected', 'Lasers always explode without warning', 'Laser light is toxic if you touch it', 'Lasers create radioactive material'],
+      0,
+      'Even brief direct exposure to a laser beam can cause irreversible eye damage or skin burns; proper enclosures and safety glasses are essential for any laser equipment.',
+    ],
+    [
+      'Why is ventilation or fume extraction important when laser cutting?',
+      ['Cutting many materials releases toxic smoke and fumes that are hazardous to breathe', 'To keep the laser tube cool exclusively', 'To prevent static electricity buildup', 'To improve the machine\'s cutting speed'],
+      0,
+      'Vaporizing materials like PVC releases toxic gases like chlorine; proper fume extraction or ventilation protects the operator from respiratory hazards.',
+    ],
+    [
+      'What is SLS (Selective Laser Sintering) 3D printing?',
+      ['A powder-based process where a laser fuses powder particles together layer by layer', 'An extrusion-based process identical to FDM', 'A resin-curing process, the same as SLA', 'A manual layering technique'],
+      0,
+      'A laser selectively sinters (fuses) powder particles together, building the part while unsintered powder provides support; commonly used for nylon and other engineered materials.',
+    ],
+  ],
+  msc: [
     [
       'FDM (Fused Deposition Modelling) 3D printing works by what basic process?',
       ['Melting and extruding thermoplastic filament layer by layer', 'Curing liquid resin with ultraviolet light', 'Sintering powdered metal with a laser', 'Cutting layers from solid sheet material'],
       0,
-      'A heated nozzle melts filament and deposits it along a programmed path, with each layer bonding to the one below as it cools, making FDM the most common and accessible consumer 3D printing method.',
+      'A heated nozzle melts filament and deposits it along a programmed path, with each layer bonding to underlying layers as it cools.',
     ],
     [
       'SLA (stereolithography) 3D printing cures which material to build a part?',
@@ -891,7 +1259,7 @@ export const MAKER: CategoryContent = {
       'A 3D printer\'s "first layer" calibration is critical mainly because of what?',
       ['Poor bed adhesion on the first layer causes the whole print to warp, shift, or fail', 'It determines the printer\'s maximum speed for the rest of the print', 'It sets the colour of the filament', 'It only affects the very top of tall prints'],
       0,
-      'If the first layer does not adhere properly to the build plate, subsequent layers have no stable foundation, which is why bed levelling and first-layer height/speed settings receive so much attention in printer setup.',
+      'If the opening layer does not adhere properly, subsequent layers have no stable foundation, requiring careful bed levelling and height/speed calibration.',
     ],
     [
       '"Infill" in 3D printing refers to what?',
@@ -933,7 +1301,7 @@ export const MAKER: CategoryContent = {
   phd: [
     [
       'DLP (Digital Light Processing) resin printing differs from laser-based SLA chiefly in how it cures each layer; what is that difference?',
-      ['DLP projects an entire layer\'s image at once using a digital projector, rather than tracing it point-by-point with a laser', 'DLP uses no light source at all, curing resin thermally', 'DLP always prints slower than SLA regardless of part size', 'DLP requires no build platform'],
+      ['DLP projects entire layer images simultaneously, whereas laser SLA traces point-by-point', 'DLP uses no light source at all, curing resin thermally', 'DLP always prints slower than SLA regardless of part size', 'DLP requires no build platform'],
       0,
       'Because a DLP projector exposes a full cross-section simultaneously, layer print time is largely independent of the number of features in that layer, whereas laser-based SLA must trace each point, making DLP often faster for geometrically complex layers.',
     ],
@@ -959,7 +1327,7 @@ export const MAKER: CategoryContent = {
       'Q-switching in laser physics is a technique used to produce what kind of laser output?',
       ['Very short, high-peak-power pulses by rapidly modulating cavity losses', 'Continuous, perfectly stable output with no pulsing', 'A beam with no measurable divergence at any distance', 'Multiple simultaneous wavelengths from a single gain medium'],
       0,
-      'By allowing energy to build up in the gain medium while the cavity Q (quality factor) is deliberately kept low, then rapidly switching to high Q, a large amount of stored energy is released almost instantaneously, producing pulses with far higher peak power than the laser could sustain continuously - used, for example, in laser marking and tattoo removal.',
+      'Q-switching builds energy in a low-Q cavity, then rapidly switches to high-Q to release a powerful pulse.',
     ],
     [
       'Population inversion, a prerequisite for laser action, refers to what specific condition in the gain medium?',
@@ -981,7 +1349,7 @@ export const MAKER: CategoryContent = {
     ],
     [
       'In laser engraving, the relationship between spot size and depth of field is governed by which optical parameter of the focusing lens?',
-      ['Its focal length, with shorter focal lengths giving a smaller spot but shallower depth of field', 'Its physical diameter alone, independent of focal length', 'The colour of the lens coating, which determines transmitted wavelength, a coating property relevant to transmission efficiency but not to focal geometry', 'The laser tube\'s total wattage'],
+      ['Shorter focal-length lenses concentrate light into tighter spots at the cost of less optical depth for focus.', 'Its physical diameter alone, independent of focal length', 'The colour of the lens coating, which determines transmitted wavelength, a coating property relevant to transmission efficiency but not to focal geometry', 'The laser tube\'s total wattage'],
       0,
       'Shorter focal length lenses concentrate the beam to a smaller, more intense spot (useful for fine detail or cutting thin material) but bring focus to a sharper point with less tolerance for material height variation, a classic optical trade-off familiar from photographic lens design.',
     ],
@@ -1007,7 +1375,7 @@ export const MAKER: CategoryContent = {
       'In FDM printing, "retraction" settings control what specific extruder behaviour?',
       ['Pulling filament backward slightly before and after non-printing (travel) moves, to reduce oozing and stringing', 'The speed at which the print bed heats up to its target temperature, a separate parameter governed by the bed heater, not the extruder', 'The angle of overhang the printer can handle', 'The total amount of filament used per print'],
       0,
-      'Without retraction, residual pressure and continued minor extrusion during travel moves leaves fine strings of plastic ("stringing") between features; retraction distance and speed are tuned per filament type and hotend design to minimise this without causing under-extrusion at the resumed print point.',
+      'Without retraction, travel moves leave plastic strings between features; retraction relieves pressure, reducing stringing.',
     ],
     [
       'Multi Jet Fusion (MJF), an HP-developed powder-bed process, differs from laser-based SLS chiefly in its fusing mechanism; what is it?',
@@ -1063,19 +1431,19 @@ export const MAKER: CategoryContent = {
       'In resin 3D printing, "print through" or unwanted cure of resin beyond the intended layer is primarily governed by which material property of the photopolymer?',
       ['Its cure depth characteristics, described by the Jacobs working curve relating exposure energy to cure depth', 'Its viscosity at room temperature alone, independent of cure chemistry', 'Its colour pigment concentration exclusively, independent of any photoinitiator behaviour, a factor that can shift results somewhat but is secondary to the resin\'s core photoinitiator chemistry', 'The build platform\'s thermal conductivity'],
       0,
-      'The Jacobs equation (cure depth versus the natural log of exposure) models how deeply light penetrates and cures resin beyond the nominal layer thickness; formulators tune photoinitiator and absorber/dye concentrations to control this penetration depth (Dp) and critical exposure (Ec), balancing cure-through strength against unwanted over-cure into supports or fine features.',
+      'The Jacobs equation (cure depth vs. log exposure) enables setting layer thickness below theoretical cure depth while ensuring full per-layer curing and high resolution.',
     ],
     [
       'Selective laser melting of certain high-reflectivity, high-thermal-conductivity metals (like pure copper or aluminium) is technically challenging chiefly because of what combined property?',
       ['High reflectivity limits energy absorption while high thermal conductivity rapidly dissipates the absorbed heat, together demanding much higher laser power/different wavelengths (e.g. green or blue lasers) than needed for steels', 'These metals cannot be powderised at all by any known atomisation process, a claim contradicted by the routine commercial production of copper and aluminium powders via gas atomisation for other manufacturing processes entirely unrelated to this specific laser melting challenge', 'These metals have no measurable melting point', 'These metals react explosively with inert shielding gas'],
       0,
-      'Standard infrared fiber lasers, well suited to steels, struggle with highly reflective, thermally conductive metals like copper because so little energy is absorbed and what is absorbed disperses quickly; this has driven development of green and blue wavelength laser systems, which reflective metals absorb considerably more efficiently.',
+      'Infrared fiber lasers suit steels but struggle with reflective, thermally-conductive copper due to poor absorption and rapid heat dissipation.',
     ],
     [
       'The "vat photopolymerisation" family (which includes SLA, DLP, and MSLA) shares a common risk of a specific failure mode related to platform separation forces; what is it?',
       ['Suction/peel forces between the cured layer and the vat film or tank floor can delaminate or distort thin, large cross-section features', 'Overheating of the UV light source itself during extended print runs, a maintenance concern for the light engine but unrelated to the mechanical peel forces at the vat interface', 'Excess humidity condensing on the resin surface', 'Static electricity discharge damaging the LCD masking panel'],
       0,
-      'Each layer must physically separate from the resin tank film (or, in top-down SLA, simply lift clear) before the next layer prints; large flat cross-sections generate high peel forces that can warp, tear, or fail to release cleanly, which is why many designs favour angled orientation and minimised first-layer cross-sectional area relative to the build.',
+      'Each layer must separate from the tank film before the next prints; large flat sections may over-stress soft underlayers, causing warping.',
     ],
     [
       'Diode-pumped solid-state (DPSS) lasers largely superseded older flashlamp-pumped solid-state lasers (e.g. early Nd:YAG systems) primarily because of what advantage?',
@@ -1093,7 +1461,7 @@ export const MAKER: CategoryContent = {
       'In powder-bed fusion additive manufacturing, the phenomenon of "balling" - spheroidisation of melted metal rather than smooth track formation - is primarily driven by what physical effect?',
       ['Marangoni convection and surface tension effects in the melt pool under certain laser power/scan speed combinations', 'Excessive shielding gas flow rate disturbing the melt pool surface', 'Powder particles that are too small in diameter, regardless of laser parameters, a contributing factor in some cases but not the primary driver described here', 'Ambient room lighting interfering with the laser sensor'],
       0,
-      'Under certain combinations of insufficient energy density or excessive scan speed, surface tension-driven flow (often described via the Marangoni effect) can cause the melt pool to contract into discrete spheres rather than forming a continuous, well-wetted track, a well-studied defect mode in optimising process parameters for new metal powders.',
+      'Insufficient energy or excessive speed can cause Marangoni effect deformation, creating voids especially in high-aspect-ratio features.',
     ],
     [
       'The historiography of the RepRap project credits its explicit design goal of self-replication to which specific proposed sequence of adoption, sometimes analogised to biological reproduction?',
@@ -1105,7 +1473,7 @@ export const MAKER: CategoryContent = {
       'Femtosecond ("ultrafast") laser micromachining achieves very different material interaction than continuous-wave or nanosecond-pulsed lasers primarily because of what mechanism?',
       ['Pulse durations shorter than the timescale of thermal diffusion into surrounding material, enabling "cold" ablation with minimal heat-affected zone', 'Simply because the average power is always higher than other laser types', 'Because femtosecond lasers cannot be focused to a small spot at all', 'Because they operate exclusively in the microwave range, not the optical range, a claim that is simply false since femtosecond micromachining lasers operate at optical and near-infrared wavelengths'],
       0,
-      'Because energy is deposited faster than it can conduct away as heat, femtosecond pulses can ablate material directly (often via nonlinear multiphoton absorption) with a dramatically reduced heat-affected zone compared to longer-pulse or CW lasers, enabling precision micromachining of heat-sensitive materials that would otherwise crack or melt excessively.',
+      'Femtosecond pulses deposit energy faster than heat can conduct away, enabling direct ablation in transparent materials without bulk heating.',
     ],
     [
       'Albert Einstein\'s 1917 paper on radiation, decades before any working laser existed, established which theoretical prerequisite later required for lasing?',

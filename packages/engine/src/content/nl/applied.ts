@@ -3,7 +3,174 @@ import type { CategoryContent } from '../row.js';
 /** Wiskunde & Logica, Technologie & Computing, Sport & Spelen. */
 
 export const MATHS: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Wat stelt de tussenwaardestelling over continue functies?',
+      [
+        'Een continue functie op een gesloten interval bereikt elke waarde tussen haar minimum en maximum',
+        'Elke continue functie op een gesloten interval is uniform continu',
+        'Een continue functie moet differentieerbaar zijn op enig punt in het interval',
+        'Als f continu is op [a, b], dan is f monotoon op een subinterval',
+      ],
+      0,
+      'Voor elke y tussen f(a) en f(b) bestaat een c in [a, b] zodat f(c) = y.',
+    ],
+    [
+      'Wat is de relatie tussen het rekenkundig gemiddelde en het meetkundig gemiddelde voor twee reële getallen a en b?',
+      [
+        'Het rekenkundig gemiddelde is altijd groter dan of gelijk aan het meetkundig gemiddelde',
+        'Het meetkundig gemiddelde is altijd groter dan het rekenkundig gemiddelde',
+        'Ze zijn gelijk alleen wanneer a = b',
+        'Het rekenkundig gemiddelde is altijd strikt kleiner dan het meetkundig gemiddelde',
+      ],
+      0,
+      'De AM-GM-ongelijkheid geldt voor niet-negatieve getallen. Gelijkheid treedt alleen op wanneer a = b.',
+    ],
+    [
+      'Wat is de limiet van (1 + 1/n)^n als n naar oneindig gaat?',
+      [
+        'Het getal e van Euler, ongeveer 2,71828',
+        'π, ongeveer 3,14159',
+        '1',
+        'Oneindig',
+      ],
+      0,
+      'Dit is de fundamentele definitie van e, het grondtal van de natuurlijke logaritme.',
+    ],
+    [
+      'Wat stelt de cosinusregel u in staat te berekenen in een driehoek?',
+      [
+        'De lengte van elke zijde gegeven de andere twee zijden en de ingesloten hoek',
+        'Of de driehoek scherp, recht of stomp is uit de drie zijdenlengten',
+        'De oppervlakte van de driehoek direct',
+        'De straal van de omgeschreven cirkel',
+      ],
+      0,
+      'Het veralgemeent de stelling van Pythagoras: c² = a² + b² − 2ab cos(C).',
+    ],
+    [
+      'Wat is een lokaal extremum van een functie?',
+      [
+        'Een punt waar de functiewaarde groter of kleiner is dan nabijgelegen punten',
+        'De enige grootste of kleinste waarde op het hele domein',
+        'Elk punt waar de afgeleide nul is',
+        'Een punt dat op de grens van het domein van de functie ligt',
+      ],
+      0,
+      'Een lokaal maximum of minimum, niet noodzakelijk globaal. De afgeleide nul is nodig voor binnenlandse lokale extrema (Fermats stelling) maar niet voldoende.',
+    ],
+    [
+      'Wat veronderstelt de stelling van Rolle over een functie f op [a, b]?',
+      [
+        'f is continu op [a, b], differentieerbaar op (a, b), en f(a) = f(b)',
+        'f is monotoon en f(a) < f(b)',
+        'f is overal differentieerbaar en strikt stijgend',
+        'f is overal positief en heeft geen nulpunten',
+      ],
+      0,
+      'Onder deze voorwaarden geldt voor een c in (a, b) dat f\'(c) = 0.',
+    ],
+    [
+      'Hoe is elke term van een meetkundige rij met de vorige term gerelateerd?',
+      [
+        'Door vermenigvuldiging met een constante verhouding',
+        'Door optelling van een constant verschil',
+        'Door een kwadratische functie van de termindex',
+        'Door de vorige twee termen in een Fibonacci-achtige regel',
+      ],
+      0,
+      'Een meetkundige rij: a, ar, ar², ar³, ... met verhouding r.',
+    ],
+    [
+      'Wat stelt de machtregelregel van differentiatie?',
+      [
+        'd/dx(x^n) = n·x^(n−1) voor elk reëel getal n',
+        'd/dx(x^n) = x^(n−1) voor positieve gehele getallen n',
+        'd/dx(x^n) = n·x^n voor alle n',
+        'd/dx(x^n) = n voor alle n',
+      ],
+      0,
+      'Een van de meest fundamentele afgeleiden in calculus; breidt zich uit tot alle reële exponenten via limieten.',
+    ],
+    [
+      'Wanneer is een functie convex?',
+      [
+        'Wanneer het lijnstuk dat twee willekeurige punten op de grafiek verbindt, boven of op de grafiek zelf ligt',
+        'Wanneer de functie altijd stijgend is',
+        'Wanneer de tweede afgeleide positief is',
+        'Wanneer de functie geen lokale maxima heeft',
+      ],
+      0,
+      'Equivalent: f(λx + (1−λ)y) ≤ λf(x) + (1−λ)f(y) voor λ ∈ [0, 1].',
+    ],
+    [
+      'Wat garandeert de hoofdstelling van de algebra?',
+      [
+        'Een polynoom van graad n heeft precies n complexe wortels met multipliciteit',
+        'Een polynoom van graad n heeft minstens n reële wortels',
+        'De wortels van een polynoom kunnen altijd gevonden worden door een gesloten formule',
+        'Een polynoom van graad n heeft hooguit n kritieke punten',
+      ],
+      0,
+      'Dit is waarom polynoomvergelijkingen van graad ≥ 5 niet altijd opgelost kunnen worden met radicalen.',
+    ],
+    [
+      'Wat betekent a ≡ b (mod m) in modulaire rekenkunde?',
+      [
+        'm deelt (a − b), dus a en b laten dezelfde rest bij deling door m',
+        'a en b zijn gelijk',
+        'a is kleiner dan b modulo m',
+        'a maal b is gelijk aan m',
+      ],
+      0,
+      'Fundamenteel voor getaltheorie en cryptografie; maakt rekenen modulo elk geheel getal m mogelijk.',
+    ],
+    [
+      'Wat is de som van de binnenhoeken van een convexe n-hoek?',
+      [
+        '(n − 2) × 180 graden',
+        'n × 180 graden',
+        '360 graden voor elk n',
+        '(n + 2) × 90 graden',
+      ],
+      0,
+      'Een driehoek (n=3) heeft 180°, een vierhoek (n=4) heeft 360°, enzovoort.',
+    ],
+    [
+      'Wanneer is een functie surjectief (onto)?',
+      [
+        'Wanneer elk element in het codomein het beeld is van minstens één element in het domein',
+        'Wanneer elk element in het domein afbeeldt op een ander element in het codomein',
+        'Wanneer de functie een inverse heeft',
+        'Wanneer het bereik van de functie een echte deelverzameling van het codomein is',
+      ],
+      0,
+      'Surjectiviteit en injectiviteit zijn verschillende eigenschappen; een bijectie is allebei.',
+    ],
+    [
+      'Wat is een kritiek punt van een differentieerbare functie?',
+      [
+        'Een punt waar de afgeleide nul of ongedefinieerd is',
+        'Een lokaal maximum of minimum',
+        'Een punt waar de functie continu is',
+        'Het eindpunt van het domein',
+      ],
+      0,
+      'Niet alle kritieke punten zijn lokale extrema; buigpunten met horizontale raaklijnen zijn ook kritieke punten.',
+    ],
+    [
+      'Wat is de afgeleide van sin(x) naar x?',
+      [
+        'cos(x)',
+        'sin(x)',
+        '−sin(x)',
+        '1 / cos(x)',
+      ],
+      0,
+      'Een fundamentele trigonometrische afgeleide; cos(x) en sin(x) rollen elkaar om bij differentiatie.',
+    ],
+  ],
+  msc: [
 
     [
       'Wat garandeert de spectraalstelling voor een reële symmetrische matrix?',
@@ -168,7 +335,174 @@ export const MATHS: CategoryContent = {
 };
 
 export const TECHNOLOGY: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Wat is het primaire doel van DNS op het internet?',
+      [
+        'Mensleesbare domeinnamen vertalen naar IP-adressen',
+        'Gegevens versleutelen die tussen servers worden verzonden',
+        'Pakketten over het mondiale internet routeren',
+        'Geheugenallocatie op een server beheren',
+      ],
+      0,
+      'DNS (Domain Name System) is een gedistribueerde database; www.example.com → 93.184.216.34 is het klassieke voorbeeld.',
+    ],
+    [
+      'Wat geeft een 404-statuscode in HTTP aan?',
+      [
+        'De aangevraagde bron is op de server niet gevonden',
+        'De server is tijdelijk niet beschikbaar',
+        'Het verzoek is verboden door permissies',
+        'De server heeft de bron permanent verplaatst',
+      ],
+      0,
+      'Clientfout (4xx-bereik); 301 of 302 zou aangeven dat de bron is verplaatst.',
+    ],
+    [
+      'Wat is een relationele database?',
+      [
+        'Een database die gegevens in tabellen organiseert met rijen en kolommen, gerelateerd door sleutels',
+        'Een database die alleen tekstbestanden opslaat',
+        'Een database ontworpen uitsluitend voor sociale netwerken',
+        'Een database waar elke record aan precies één ander record is gekoppeld',
+      ],
+      0,
+      'SQL-databases zoals PostgreSQL en MySQL zijn relationeel; het sleutelconcept is tabelstructuur en vreemde-sleutelrelaties.',
+    ],
+    [
+      'Wat is de tijdscomplexiteit van binair zoeken op een gesorteerde array?',
+      [
+        'O(log n)',
+        'O(n)',
+        'O(n log n)',
+        'O(1)',
+      ],
+      0,
+      'Binair zoeken halveert herhaaldelijk de zoekruimte; je kunt dit alleen doen omdat de invoer gesorteerd is.',
+    ],
+    [
+      'Wat beschrijft het OSI-model?',
+      [
+        'Een zeven-laags raamwerk voor netwerkcommunicatie en protocollen',
+        'De structuur van een relationele database',
+        'Hoe webservers HTTP-verzoeken verwerken',
+        'De lagen van de JavaScript-runtimeomgeving',
+      ],
+      0,
+      'Open Systems Interconnection-model; lagen zijn Fysiek, Data Link, Netwerk, Transport, Sessie, Presentatie, Toepassing.',
+    ],
+    [
+      'Wat is een hashfunctie in cryptografie?',
+      [
+        'Een functie die invoergegevens afbeeldt op een byte-string van vaste grootte, ideaal eenrichtings- en botsingsbestendig',
+        'Een methode om gegevens met een geheime sleutel te versleutelen',
+        'Een algoritme om gegevens efficiënt te sorteren',
+        'Een techniek om grote bestanden te comprimeren',
+      ],
+      0,
+      'SHA-256, MD5 (nu verbroken) zijn voorbeelden. De hash berekenen is snel; omkering is rekenkundig onhaalbaar.',
+    ],
+    [
+      'Waarvoor staat API?',
+      [
+        'Application Programming Interface',
+        'Asynchronous Protocol Integration',
+        'Automated Processing Integration',
+        'Application Protocol Initialization',
+      ],
+      0,
+      'Een API bepaalt hoe softwarecomponenten communiceren; REST-API\'s via HTTP zijn alomtegenwoordig.',
+    ],
+    [
+      'Wat betekent LIFO in een stapelgegevensstructuur?',
+      [
+        'Last-In-First-Out: het meest recent toegevoegde element wordt eerst verwijderd',
+        'Linear-Item-First-Operations',
+        'Load-Integrated-File-Output',
+        'Low-Intensity-Fast-Operations',
+      ],
+      0,
+      'Stapelvoorbeeld: de back-knop van een browser onthoudt pagina\'s in LIFO-volgorde.',
+    ],
+    [
+      'Wat is caching?',
+      [
+        'Veelgebruikte gegevens opslaan in snelle geheugen om herhaalde trage zoekopdrachten te vermijden',
+        'Oude gegevens permanent verwijderen om ruimte vrij te maken',
+        'Gevoelige informatie versleutelen',
+        'Gegevens verdelen over meerdere servers',
+      ],
+      0,
+      'CPU-caches, Redis, browsercaches en CDN\'s volgen dit principe: verwissel opslag voor latentie.',
+    ],
+    [
+      'Waarvoor staat ACID in databasetransacties?',
+      [
+        'Atomicity, Consistency, Isolation, Durability',
+        'Asynchronous Computation In Databases',
+        'Automatic Concurrency Isolation Design',
+        'Application Concurrency In Deployment',
+      ],
+      0,
+      'ACID-garanties zorgen voor gegevensintegriteit zelfs als het systeem tijdens een transactie uitvalt.',
+    ],
+    [
+      'Wat is het verschil tussen HTTP en HTTPS?',
+      [
+        'HTTPS versleutelt de verbinding met TLS, terwijl HTTP gegevens in platte tekst verzendt',
+        'HTTPS is sneller dan HTTP',
+        'HTTP wordt alleen voor mobiele apps gebruikt',
+        'HTTPS kan geen grote bestanden verwerken',
+      ],
+      0,
+      'TLS (Transport Layer Security) beschermt HTTP-verkeer tegen afluisteren; HTTPS is nu standaard.',
+    ],
+    [
+      'Wat is inkapseling in objectgeoriënteerd programmeren?',
+      [
+        'Gegevens en methoden bundelen terwijl interne details voor buiten verborgen worden',
+        'Code van één klasse naar een ander kopiëren',
+        'Meerdere programma\'s op één machine uitvoeren',
+        'Objecten naar JSON-indeling converteren',
+      ],
+      0,
+      'Inkapseling gebruikt toegangsaanpassers (public, private) om te bepalen wat buitencode kan zien.',
+    ],
+    [
+      'Wat is het doel van versiebeheersystemen zoals Git?',
+      [
+        'Wijzigingen in code bijhouden, samenwerking ermögelijken en een versiegeschiedenis onderhouden',
+        'Code in executables compileren',
+        'Broncode voor beveiliging versleutelen',
+        'Code automatisch testen voor implementatie',
+      ],
+      0,
+      'Versiebeheer stelt teams in staat op dezelfde codebase te werken, fouten ongedaan te maken en projectgeschiedenis te begrijpen.',
+    ],
+    [
+      'Wat is load balancing in gedistribueerde systemen?',
+      [
+        'Inkomende aanvragen verdelen over meerdere servers om één server niet te overbelasten',
+        'Databasequery\'s gelijkmatig over de tijd verdelen',
+        'Ervoor zorgen dat alle gegevens op elke server gerepliceerd zijn',
+        'Bestanden voor verzending comprimeren',
+      ],
+      0,
+      'Load balancers verbeteren beschikbaarheid en prestaties door werk te spreiden; round-robin is een eenvoudige strategie.',
+    ],
+    [
+      'Waarvoor staat SQL?',
+      [
+        'Structured Query Language',
+        'System Query Link',
+        'Sequential Quality Language',
+        'Synchronous Query Layer',
+      ],
+      0,
+      'SQL wordt gebruikt om relationele databases op te vragen; SELECT, INSERT, UPDATE, DELETE zijn fundamentele bewerkingen.',
+    ],
+  ],
+  msc: [
 
     [
       'Wat voorkomt TLS-sessieherstel?',
@@ -338,7 +672,174 @@ export const TECHNOLOGY: CategoryContent = {
 };
 
 export const SPORT: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Hoeveel spelers per team zijn er tijdens normaal spel in voetbal?',
+      [
+        '11',
+        '9',
+        '10',
+        '12',
+      ],
+      0,
+      'Een standaardteam in voetbal heeft elf spelers: één keeper, verdedigers, middenvelders en aanvallers.',
+    ],
+    [
+      'Wat is de volgorde van punten binnen een enkele game in tennis?',
+      [
+        '0, 15, 30, 40, game',
+        '0, 10, 20, 30, 40, game',
+        '0, 1, 2, 3, 4, game',
+        'Ze gaan direct naar 1, 2, 3, 4',
+      ],
+      0,
+      'Het scoresysteem (15, 30, 40) is historisch; bij deuce (40-40) moet een speler met 2 punten winnen.',
+    ],
+    [
+      'Wat is de buitenspelregel in voetbal?',
+      [
+        'Een speler staat buitenspel als hij dichter bij de doellijn van de tegenstander is dan bal en twee verdedigers',
+        'Een speler mag niet achterwaarts naar een teamgenoot passen',
+        'Een speler mag niet de bal ontvangen terwijl hij sneller loopt dan de gemiddelde snelheid van het team',
+        'Een speler pleegt automatisch een overtreding na drie passes op rij',
+      ],
+      0,
+      'Buitenspel voorkomt doel-hangen; de regel bestaat om het spel vlottend en eerlijk te houden.',
+    ],
+    [
+      'Hoeveel worpen vormen een over in cricket?',
+      [
+        '6',
+        '8',
+        '10',
+        '4',
+      ],
+      0,
+      'Een over bestaat uit zes wettelijke worpen door één werper; een cricket-inning bestaat uit meerdere overs.',
+    ],
+    [
+      'Wat is het primaire doel in rugby union?',
+      [
+        'Meer punten scoren dan het tegenstander door de ovale bal over de doellijn te dragen of ertussen te trappen',
+        'De bal zo lang mogelijk in de lucht houden',
+        'Zoveel passes voltooien als het tegenstander',
+        'Voorkomen dat het tegenstander de bal aanraakt',
+      ],
+      0,
+      'Een try (5 punten) wordt gescoord door de bal in het in-goal-gebied tegen de grond te drukken; conversies en strafschoppen geven ook punten.',
+    ],
+    [
+      'Hoeveel punten is een basket waard als deze wordt gemaakt vanaf buiten de drielijnenboog in basketbal?',
+      [
+        '3 punten',
+        '2 punten',
+        '4 punten',
+        '1 punt',
+      ],
+      0,
+      'De drielijnenboog is verder weg van de basket dan een normale schot; baskets binnenin zijn 2 punten waard.',
+    ],
+    [
+      'Wat is een opslag in tennis?',
+      [
+        'De slag die elk punt begint, gespeeld vanaf achter de basislijm in het servicevak van de tegenstander',
+        'De bal direct naar de tegenstander terugkaatsen',
+        'Elke slag gespeeld vanaf de zijlijn',
+        'De lijn die de grens van het veld aangeeft',
+      ],
+      0,
+      'Een opslag moet in het servicevak landen; twee mislukte opslagen (fouten) resulteren in een dubbele fout en verlies van het punt.',
+    ],
+    [
+      'Wat is een homerun in honkbal?',
+      [
+        'Wanneer een slagman de bal over het buitenveldhek in fair territory slaat, of de bal ver genoeg slaat om alle bases te ronden',
+        'Wanneer een honkenloper naar hun startpositie terugkeert',
+        'Een run gescoord op het thuisstadion van de slagman',
+        'Elke klap die een loper twee bases vooruit stelt',
+      ],
+      0,
+      'Een homerun laat de slagman en alle loper op bases scoren; het is de krachtigste individuele zet in honkbal.',
+    ],
+    [
+      'Wat is icing in ijshockey?',
+      [
+        'Het ijsstuk van achter de middellijn schieten zodat het voorbij de doellijn van de tegenstander reist zonder aanraking',
+        'De piste koelen om het ijsoppervlak harder te maken',
+        'Een tegenstander tegen de wanden checken',
+        'Een overtreding waarbij een speler de puck te lang vasthoudt',
+      ],
+      0,
+      'Icing resulteert in een face-off in de zone van de overtredende team; het voorkomt lange-afstandsstalling.',
+    ],
+    [
+      'Wat is vrij zwemmen in het zwemmen?',
+      [
+        'Een slag waarbij de zwemmer elke techniek gebruikt (typisch voorkruipcrawl) om de finish het snelst te bereiken',
+        'Een zwemstijl waarbij geen beweging vereist is',
+        'Een race waarbij zwemmers afwisselen tussen verschillende slagen',
+        'Een competitie die plaatsvindt in een rivier in plaats van een zwembad',
+      ],
+      0,
+      'Voorkruipcrawl is bijna altijd de snelste slag, dus zwemmers kiezen dit voor vrij-zwemmevenementen.',
+    ],
+    [
+      'Wat is een break in snooker?',
+      [
+        'De openingslag waarbij de speler probeert de gestelde ballen te verspreiden',
+        'Een pauze tijdens de wedstrijd om bij te komen',
+        'Een fout waarbij de speelstok-bal twee keer wordt geraakt',
+        'Het moment waarop een speler zijn beurt verliest',
+      ],
+      0,
+      'De speler die breakt probeert objectballen in te zakken en een sterke openingspositie op te stellen.',
+    ],
+    [
+      'Wat is een birdie in golf?',
+      [
+        'Een score van één slag onder par voor een hole',
+        'Een score van één slag boven par voor een hole',
+        'Een score gelijk aan par voor een hole',
+        'De laatste hole in een ronde van 18 holes',
+      ],
+      0,
+      'Een eagle is twee slagen onder par; een bogey is één slag boven par.',
+    ],
+    [
+      'Wat moet er in tafeltennis gebeuren om een opslag geldig te zijn?',
+      [
+        'De bal moet eerst aan de zijde van de opslager stuiteren, dan over het net gaan en aan de zijde van de tegenstander landen',
+        'De bal moet direct over het net gaan zonder te stuiteren',
+        'De opslager moet de bal onder de taillehoogte slaan',
+        'De bal moet van minstens 30 cm boven de tafel worden geworpen',
+      ],
+      0,
+      'Een opslag die het net niet passeert of buiten de zijde van de tegenstander landen, resulteert in een punt voor de tegenstander.',
+    ],
+    [
+      'Wat is de rol van een wicketkeeper in cricket?',
+      [
+        'Achter de wickets staan en de bal vangen of de wicket breken om batsmans uit te krijgen',
+        'De grens patrouilleren en ballen die voor zes worden geslagen vangen',
+        'Roepen wanneer een batsman uit is',
+        'Ervoor zorgen dat het veld vlak en goed onderhouden is',
+      ],
+      0,
+      'De wicketkeeper is de enige veldspeler die beschermende handschoenen en schenen mag dragen voorbij de uitrusting van de batsman.',
+    ],
+    [
+      'Wat is een volant in badminton?',
+      [
+        'Het kleine projectiel met kurken basis en veerenkroon dat spelers over het net slaan',
+        'Een strafkaart gegeven aan een speler die de regels breekt',
+        'De manier van serveren in dubbelspartijen',
+        'De lijn die de out-of-bounds aangeven op het veld',
+      ],
+      0,
+      'Een volant beweegt anders dan een bal: het vertraagt snel in vlucht, waardoor badminton tactisch verschillend is.',
+    ],
+  ],
+  msc: [
 
     [
       'Wat schat een expected-goals-model (xG) in?',

@@ -1,7 +1,7 @@
 import type { CategoryContent } from '../row.js';
 
 export const AUTOIMMUNE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Type 1-diabetes ontstaat door auto-immune afbraak van welke cellen?',
       ['Bètacellen van de pancreas', 'Alfacellen van de pancreas', 'Hepatocyten', 'Cellen van de bijnierschors'],
@@ -10,7 +10,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Reumatoïde artritis wordt klassiek geassocieerd met welk auto-antilichaam?',
-      ['Reumafactor', 'Anti-dsDNA', 'Anti-Jo-1, een antisynthetase-antilichaam dat samenhangt met myositis en interstitiële longziekte', 'Anti-centromeer'],
+      ['Reumafactor', 'Anti-dsDNA', 'Anti-Jo-1', 'Anti-centromeer'],
       0,
       'Reumafactor richt zich op het Fc-deel van IgG, al worden anti-CCP-antilichamen inmiddels als specifieker voor RA beschouwd. Anti-dsDNA is juist kenmerkend voor lupus.',
     ],
@@ -70,7 +70,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Myasthenia gravis wordt veroorzaakt door antilichamen tegen welk doelwit?',
-      ['Acetylcholinereceptoren op de neuromusculaire overgang', 'Insulinereceptoren - een makkelijke maar onjuiste aanname', 'Thyreoperoxidase', 'Oppervlakteantigenen van rode bloedcellen'],
+      ['Acetylcholinereceptoren op de neuromusculaire overgang', 'Insulinereceptoren', 'Thyreoperoxidase', 'Oppervlakteantigenen van rode bloedcellen'],
       0,
       'Antilichamen blokkeren of vernietigen nicotinerge acetylcholinereceptoren op het postsynaptische spiermembraan, wat de neuromusculaire overdracht belemmert en vermoeibare spierzwakte veroorzaakt.',
     ],
@@ -96,7 +96,7 @@ export const AUTOIMMUNE: CategoryContent = {
   phd: [
     [
       'Anti-dsDNA-antilichamen worden het meest specifiek geassocieerd met welke aandoening en complicatie?',
-      ['Systemische lupus erythematodes, gecorreleerd met de activiteit van lupusnefritis', 'Reumatoïde artritis, gecorreleerd met gewrichtserosie', 'De ziekte van Graves, gecorreleerd met exoftalmie - een makkelijke maar onjuiste aanname', 'Coeliakie, gecorreleerd met villusatrofie'],
+      ['Systemische lupus erythematodes, gecorreleerd met de activiteit van lupusnefritis', 'Reumatoïde artritis, gecorreleerd met gewrichtserosie', 'De ziekte van Graves, gecorreleerd met exoftalmie', 'Coeliakie, gecorreleerd met villusatrofie'],
       0,
       'Anti-dsDNA-titers volgen vaak de ziekteactiviteit en zijn in het bijzonder gekoppeld aan immuuncomplexafzetting in de nieren, waardoor ze nuttig zijn bij het volgen van opflakkeringen van lupusnefritis.',
     ],
@@ -122,7 +122,7 @@ export const AUTOIMMUNE: CategoryContent = {
       'Bij myasthenia gravis is welke bevinding bij repetitieve zenuwstimulatie kenmerkend?',
       ['Een afnemende respons bij herhaalde stimulatie', 'Een toenemende respons bij herhaalde stimulatie', 'Geen verandering, ongeacht de stimulatiefrequentie', 'Alleen een respons bij hoge frequenties'],
       0,
-      'Het progressief falen van de neuromusculaire overdracht, doordat de beschikbare functionele receptoren uitgeput raken, geeft een afnemende samengestelde spieractiepotentiaal, wat het onderscheidt van presynaptische aandoeningen zoals het Lambert-Eaton-syndroom, dat juist een toenemende respons laat zien.',
+      'Progressief falen van receptoren geeft afnemende respons bij stimulatie, in tegenstelling tot Lambert-Eaton-syndroom.',
     ],
     [
       'Anti-TPO-antilichamen (thyreoperoxidase) worden het meest geassocieerd met welk paar aandoeningen?',
@@ -132,7 +132,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Centrale tolerantie in de ontwikkeling van T-cellen komt vooral tot stand via welk proces?',
-      ['Negatieve selectie van zelfreactieve thymocyten in de thymus', 'Klasseswitch van antilichamen in het beenmerg', 'Complementgemedieerde lysis in de milt - een makkelijke maar onjuiste aanname', 'Onderdrukking door regulatoire T-cellen in perifere lymfeklieren'],
+      ['Negatieve selectie van zelfreactieve thymocyten in de thymus', 'Klasseswitch van antilichamen in het beenmerg', 'Complementgemedieerde lysis in de milt', 'Onderdrukking door regulatoire T-cellen in perifere lymfeklieren'],
       0,
       'Thymocyten die tijdens de thymusselectie te sterk binden aan zelfpeptide-MHC-complexen worden via apoptose verwijderd (negatieve selectie); AIRE-expresserende medullaire thymusepitheelcellen presenteren een breed scala aan weefselspecifieke antigenen om dit mogelijk te maken.',
     ],
@@ -168,7 +168,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Het antifosfolipidensyndroom, dat alleen of samen met lupus kan voorkomen, wordt gekenmerkt door welke drieledige klinische risico\'s?',
-      ['Trombose, zwangerschapscomplicaties en antifosfolipide-antilichamen (bijv. lupusanticoagulans, anti-cardiolipine)', 'Fotogevoeligheid, mondzweren en artritis', 'Droge ogen, een droge mond en zwelling van de parotisklier', 'Spierzwakte, ptosis en dubbelzien - een makkelijke maar onjuiste aanname'],
+      ['Trombose, zwangerschapscomplicaties en antifosfolipide-antilichamen (bijv. lupusanticoagulans, anti-cardiolipine)', 'Fotogevoeligheid, mondzweren en artritis', 'Droge ogen, een droge mond en zwelling van de parotisklier', 'Spierzwakte, ptosis en dubbelzien'],
       0,
       'Het syndroom wordt gedefinieerd door terugkerende trombose of zwangerschapsverlies bij aanwezigheid van persisterende antifosfolipide-antilichamen, en het verhoogt het risico op miskraam en beroerte aanzienlijk.',
     ],
@@ -188,9 +188,9 @@ export const AUTOIMMUNE: CategoryContent = {
   professor: [
     [
       'De koppeling van de "hygiënehypothese" aan de stijgende incidentie van auto-immuunziekten wordt het meest direct ondersteund door welke observatie?',
-      ['Hogere percentages auto-immuun- en allergische aandoeningen in populaties met minder microbiële en helminthenblootstelling vroeg in het leven', 'Hogere percentages uitsluitend in populaties met hoog antibioticagebruik op volwassen leeftijd - een makkelijke maar onjuiste aanname', 'Uniforme auto-immuunpercentages in alle geïndustrialiseerde en niet-geïndustrialiseerde populaties', 'Overal lagere percentages auto-immuunziekte in stedelijke vergeleken met landelijke gebieden'],
+      ['Hogere percentages auto-immuun- en allergische aandoeningen in populaties met minder microbiële en helminthenblootstelling vroeg in het leven', 'Hogere percentages uitsluitend in populaties met hoog antibioticagebruik op volwassen leeftijd', 'Uniforme auto-immuunpercentages in alle geïndustrialiseerde en niet-geïndustrialiseerde populaties', 'Overal lagere percentages auto-immuunziekte in stedelijke vergeleken met landelijke gebieden'],
       0,
-      'Epidemiologische vergelijkingen, waaronder migratiestudies, tonen dat populaties met minder blootstelling aan commensale micro-organismen en helminthen vroeg in het leven hogere percentages auto-immuun- en atopische ziekte hebben, al blijven de causale mechanismen (educatie van regulatoire T-cellen, microbioomdiversiteit) actief bediscussieerd.',
+      'Populaties met minder microbiële blootstelling vroeg in het leven hebben hogere auto-immuun- en atopische percentages.',
     ],
     [
       'Het concept "epitoopverspreiding" in de progressie van auto-immuunziekte beschrijft wat?',
@@ -208,19 +208,19 @@ export const AUTOIMMUNE: CategoryContent = {
       'De historiografie van de classificatie van auto-immuunziekte verschoof aanzienlijk na welke ontdekking die duidelijk maakte dat autoreactiviteit zelf niet inherent pathologisch is?',
       ['Het aantonen dat laag-affiene autoreactieve B- en T-cellen een normaal, getolereerd deel zijn van het gezonde immuunrepertoire', 'De ontdekking van het ABO-bloedgroepsysteem', 'De isolatie van insuline in 1921 door Banting en Best, wat de behandeling van type 1-diabetes transformeerde maar geen auto-immuunmechanismen betrof', 'De uitvinding van de ELISA-techniek'],
       0,
-      'De vroeg-20e-eeuwse immunologie onder Ehrlichs "horror autotoxicus" ging ervan uit dat het lichaam nooit immuunreacties tegen zichzelf kon opwekken; later werk dat aantoonde dat een lage graad van autoreactiviteit normaal en strikt gereguleerd is, herkaderde auto-immuunziekte als een falen van regulatie in plaats van een categorische doorbreking van een absolute regel.',
+      'De vroeg-20e-eeuwse immunologie onder Ehrlichs "horror autotoxicus" ging ervan uit dat het lichaam nooit zichzelf kon aanvallen; later werk toonde aan dat lage-graads autoreactiviteit normaal en strikt gereguleerd is.',
     ],
     [
       'Bij de pathogenese van reumatoïde artritis wordt gedacht dat citrullinering van proteïnen door peptidylarginine-deiminase (PAD)-enzymen in de longen of het tandvlees wordt uitgelokt door blootstelling aan wat?',
-      ['Sigarettenrook en periodontale pathogenen zoals Porphyromonas gingivalis', 'Uitsluitend ultraviolette straling', 'Uitsluitend gluten uit de voeding', 'Uitsluitend koudeblootstelling - een makkelijke maar onjuiste aanname'],
+      ['Sigarettenrook en periodontale pathogenen zoals Porphyromonas gingivalis', 'Uitsluitend ultraviolette straling', 'Uitsluitend gluten uit de voeding', 'Uitsluitend koudeblootstelling'],
       0,
-      'Roken en P. gingivalis (met name via zijn eigen PAD-enzym) worden in verband gebracht met het genereren van gecitrullineerde peptiden op slijmvliesplaatsen, wat bij dragers van de HLA-DR "shared epitope" de tolerantie kan doorbreken en jarenlang voor gewrichtsklachten al de anti-CCP-respons kan opwekken.',
+      'Roken en P. gingivalis genereren gecitrullineerde peptiden op slijmvliesplaatsen, waardoor bij HLA-DR dragers de tolerantie kan doorbreken.',
     ],
     [
       'Het "two-hit"-model van de pathogenese van auto-immuunziekte bij een genetisch vatbaar individu vereist doorgaans welke tweede component?',
       ['Een omgevingsfactor, zoals een infectie, die de tolerantie doorbreekt of een vatbaar weefsel blootlegt', 'Een tweede, onafhankelijke set identieke genetische risicoallelen', 'Gelijktijdige vaccinatie tegen twee ongerelateerde pathogenen', 'Een daling van de totale antilichaamproductie over elk immunoglobulinisotype, zoals gezien bij common variable immunodeficiency in plaats van auto-immuniteit'],
       0,
-      'Genetische vatbaarheid (bijv. HLA-associaties) is doorgaans noodzakelijk maar niet voldoende; de concordantie bij eeneiige tweelingen voor de meeste auto-immuunziekten ligt ver onder 100%, wat wijst op omgevingsfactoren zoals virale infectie, verschuivingen in het microbioom of hormonale verandering als tweede trigger.',
+      'Genetische vatbaarheid is noodzakelijk maar niet voldoende; lage eeneiige-tweelingconcordantie wijst op omgevingsfactoren.',
     ],
     [
       'Neonatale lupus en congenitaal hartblok bij kinderen van moeders met lupus of het syndroom van Sjögren worden veroorzaakt door transplacentaire overdracht van welke antilichamen?',
@@ -242,9 +242,9 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'IgG4-gerelateerde ziekte, die steeds meer wordt erkend als het samenbrengen van verschillende voorheen afzonderlijke aandoeningen (bijv. auto-immune pancreatitis, de ziekte van Riedel, sommige gevallen van retroperitoneale fibrose), wordt histologisch gekenmerkt door welke drieledige bevinding?',
-      ['Dicht lymfoplasmacellulair infiltraat, storiforme fibrose en obliteratieve flebitis', 'Granuloomvorming met verkazende necrose', 'Eosinofiele micro-abcessen zonder fibrose', 'Uitsluitend vasculitis met fibrinoïde necrose - een makkelijke maar onjuiste aanname'],
+      ['Dicht lymfoplasmacellulair infiltraat, storiforme fibrose en obliteratieve flebitis', 'Granuloomvorming met verkazende necrose', 'Eosinofiele micro-abcessen zonder fibrose', 'Uitsluitend vasculitis met fibrinoïde necrose'],
       0,
-      'Deze histologische drieledige bevinding, samen met verhoogde IgG4+ plasmacellen in het weefsel en vaak verhoogd serum-IgG4, maakte het voor pathologen mogelijk om te herkennen dat orgaanspecifieke fibro-inflammatoire aandoeningen die eerder als ongerelateerd werden gezien, een gemeenschappelijk onderliggend proces delen.',
+      'De drieledige histologische bevinding en verhoogde IgG4+ cellen permitteren herkenning van voorheen ongerelateerde aandoeningen.',
     ],
     [
       'Het Lambert-Eaton-myastheensyndroom, vaak paraneoplastisch bij kleincellig longcarcinoom, betreft auto-antilichamen tegen welk presynaptisch doelwit, wat het elektrofysiologisch onderscheidt van myasthenia gravis?',
@@ -254,7 +254,7 @@ export const AUTOIMMUNE: CategoryContent = {
     ],
     [
       'Anti-MuSK-antilichamen definiëren een klinisch onderscheiden subgroep van myasthenia gravis die opvalt door welk kenmerk?',
-      ['Overwegend bulbaire en respiratoire betrokkenheid met een slechtere respons op standaard acetylcholinesteraseremmers', 'Uitsluitend oculaire symptomen met een uitstekende respons op pyridostigmine', 'Alleen beginnend bij patiënten boven de 70 jaar, zonder erkende vorm met eerder begin, een claim die wordt weersproken door goed gedocumenteerde gevallen bij jongere volwassenen en kinderen', 'Volledige afwezigheid van enig detecteerbaar auto-antilichaam, per definitie'],
+      ['Overwegend bulbaire en respiratoire betrokkenheid met een slechtere respons op standaard acetylcholinesteraseremmers', 'Uitsluitend oculaire symptomen met een uitstekende respons op pyridostigmine', 'Alleen beginnend bij patiënten boven de 70 jaar', 'Volledige afwezigheid van enig detecteerbaar auto-antilichaam'],
       0,
       'MuSK (spierspecifiek kinase) is nodig voor het clusteren van acetylcholinereceptoren op de neuromusculaire overgang; anti-MuSK-MG treft doorgaans ernstiger de bulbaire en respiratoire spieren en reageert vaak slecht op pyridostigmine, waardoor eerdere immunosuppressie nodig is.',
     ],
@@ -268,19 +268,19 @@ export const AUTOIMMUNE: CategoryContent = {
       'Welk historisch experiment krijgt de eer voor het eerst experimenteel aan te tonen dat auto-immuunziekte kan worden opgewekt door een dier te immuniseren met zijn eigen weefsel plus adjuvans?',
       ['Het opwekken van experimentele auto-immune encefalomyelitis door Rivers en collega\'s met CZS-weefsel en adjuvans', 'Landsteiners ontdekking van het ABO-bloedgroepsysteem in 1900, werk dat de transfusiegeneeskunde herschiep maar niet gerelateerd was aan het opwekken van auto-immuniteit', 'Ehrlichs experimenten rond de zijketentheorie', 'Burnets publicatie van de theorie van klonale selectie'],
       0,
-      'In de jaren dertig toonden Rivers en Schwentker aan dat het injecteren van rhesusapen met breinweefsel geëmulgeerd in adjuvans een demyeliniserende encefalomyelitis veroorzaakte, waarmee EAE werd vastgesteld als het eerste bewust opgewekte auto-immuunziektemodel en een directe experimentele weerlegging van "horror autotoxicus".',
+      'In de jaren dertig toonden Rivers en Schwentker aan dat het injecteren van apen met breinweefsel in adjuvans encefalomyelitis veroorzaakte, het eerste opgewekte auto-immuunziektemodel.',
     ],
     [
       'Complementcomponentdeficiënties, met name van vroege klassieke-routecomponenten zoals C1q, C2 of C4, zijn een erkende maar paradoxale risicofactor voor welke auto-immuunziekte?',
       ['Systemische lupus erythematodes', 'Multiple sclerose', 'Type 1-diabetes', 'Spondylitis ankylopoetica'],
       0,
-      'Vroege complementdeficiëntie belemmert de opruiming van apoptotisch celafval en immuuncomplexen, waardoor lichaamseigen antigenen (met name nucleair materiaal) blijven bestaan en auto-immuniteit aandrijven, wat verklaart waarom een deficiëntie in een immuunroute paradoxaal genoeg kan voorbeschikken tot een auto-immuunziekte.',
+      'Complementdeficiëntie belemmert opruiming van apoptotisch afval, waardoor auto-antigenen auto-immuniteit aandrijven.',
     ],
   ],
 };
 
 export const OBGYN: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Welke hormoonpiek veroorzaakt direct de eisprong?',
       ['Luteïniserend hormoon (LH)', 'Follikelstimulerend hormoon (FSH)', 'Progesteron', 'Oestrogeen alleen, zonder enige betrokkenheid van LH'],
@@ -295,7 +295,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Het polycysteus-ovariumsyndroom (PCOS) wordt klassiek gediagnosticeerd met welke set criteria?',
-      ['Rotterdam-criteria (twee van de drie: oligo-/anovulatie, hyperandrogenisme, polycysteuze ovariummorfologie)', 'APGAR-criteria, het neonatale scoresysteem afgenomen na één en vijf minuten, gebruikt om baby\'s te beoordelen in plaats van ovariële aandoeningen te diagnosticeren', 'Bishop-score-criteria', 'Tanner-stadiëring'],
+      ['Rotterdam-criteria (twee van de drie: oligo-/anovulatie, hyperandrogenisme, polycysteuze ovariummorfologie)', 'APGAR-criteria', 'Bishop-score-criteria', 'Tanner-stadiëring'],
       0,
       'De Rotterdam-criteria vereisen slechts twee van de drie kenmerken, wat verklaart waarom PCOS zich zo uiteenlopend presenteert - sommige vrouwen hebben normaal uitziende ovaria, andere geen klinisch hyperandrogenisme.',
     ],
@@ -313,7 +313,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Pre-eclampsie wordt klassiek gedefinieerd als nieuw ontstane hypertensie na 20 weken zwangerschap plus welk extra kenmerk?',
-      ['Proteïnurie of ander bewijs van maternale orgaandisfunctie', 'Zwangerschapsdiabetes', 'Placenta praevia, waarbij de placenta het baarmoederhalskanaal bedekt, een aparte aandoening die behandeld wordt met een geplande keizersnede', 'Meerlingzwangerschap'],
+      ['Proteïnurie of ander bewijs van maternale orgaandisfunctie', 'Zwangerschapsdiabetes', 'Placenta praevia', 'Meerlingzwangerschap'],
       0,
       'Moderne definities zijn verbreed van proteïnurie alleen naar andere markers van eindorgaandisfunctie (renaal, hepatisch, neurologisch, hematologisch), wat weerspiegelt dat pre-eclampsie een multisysteemaandoening van placentaire oorsprong is.',
     ],
@@ -393,7 +393,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Het mechanisme waarmee magnesiumsulfaat het risico op insulten verlaagt bij ernstige pre-eclampsie/eclampsie wordt het best begrepen als wat?',
-      ['Cerebrale vasodilatatie en NMDA-receptorantagonisme, waardoor de neuronale prikkelbaarheid afneemt', 'Directe antihypertensieve werking via ACE-remming', 'Diurese die cerebraal oedeem verminderd', 'Bèta-adrenerge blokkade die de perifere vaatweerstand verlaagt, het mechanisme dat in plaats daarvan gebruikt wordt door middelen zoals labetalol'],
+      ['Cerebrale vasodilatatie en NMDA-receptorantagonisme, waardoor de neuronale prikkelbaarheid afneemt', 'Directe antihypertensieve werking via ACE-remming', 'Diurese die cerebraal oedeem verminderd', 'Bèta-adrenerge blokkade die de perifere vaatweerstand verlaagt'],
       0,
       'Al wordt het exacte mechanisme nog steeds besproken, men denkt dat magnesium centraal werkt door NMDA-receptoren te antagoneren en perifeer door de cerebrale vasculatuur te verwijden, waardoor vasospasme en ischemie verminderen in plaats van simpelweg als sedativum te werken.',
     ],
@@ -405,13 +405,13 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Welk anticonceptiemechanisme is vooral verantwoordelijk voor de werkzaamheid van het koperspiraaltje (IUD), in tegenstelling tot hormonale spiraaltjes?',
-      ['Een lokaal ontstekings-/spermicide effect dat giftig is voor zaadcellen en eicellen, waardoor bevruchting wordt verhinderd', 'Systemische onderdrukking van de eisprong via een aanhoudend hormonaal effect, het mechanisme waarop de gecombineerde orale anticonceptiepil in plaats daarvan steunt', 'Verdikking van het cervixslijm door progestageen', 'Atrofie van het endometrium door blootstelling aan progestageen'],
+      ['Een lokaal ontstekings-/spermicide effect dat giftig is voor zaadcellen en eicellen, waardoor bevruchting wordt verhinderd', 'Systemische onderdrukking van de eisprong via een aanhoudend hormonaal effect', 'Verdikking van het cervixslijm door progestageen', 'Atrofie van het endometrium door blootstelling aan progestageen'],
       0,
-      'Koperionen wekken een steriele ontstekingsreactie op in de baarmoederholte die direct giftig is voor de beweeglijkheid en levensvatbaarheid van zaadcellen, en werkt vooral vóór de bevruchting in plaats van als abortief middel, in tegenstelling tot progestageen-afgevende spiraaltjes die ook het endometrium dunner maken.',
+      'Koperspiraaltjes wekken steriele ontsteking op die zaadcellen doodt, vooral vóór bevruchting.',
     ],
     [
       'Het syndroom van Turner (45,X) presenteert zich doorgaans met welke reproductief-endocriene bevinding?',
-      ['Primaire ovariële insufficiëntie door versnelde follikelatresie (streepgonaden)', 'Vroegtijdige puberteit met normale vruchtbaarheid', 'Geïsoleerd androgeenoverschot met verder typische puberteitsontwikkeling, een patroon dat juist gezien wordt bij aandoeningen zoals PCOS', 'Normale ovariumfunctie met alleen kleine gestalte'],
+      ['Primaire ovariële insufficiëntie door versnelde follikelatresie (streepgonaden)', 'Vroegtijdige puberteit met normale vruchtbaarheid', 'Geïsoleerd androgeenoverschot met verder typische puberteitsontwikkeling', 'Normale ovariumfunctie met alleen kleine gestalte'],
       0,
       'Snel verlies van eicellen vóór of kort na de geboorte laat streepgonaden achter met minimale follikelreserve, waardoor de meeste mensen met het syndroom van Turner hormoonsuppletie nodig hebben om de puberteit op te wekken en zeer beperkte natuurlijke vruchtbaarheid hebben.',
     ],
@@ -423,7 +423,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Het dateren van een zwangerschap aan de hand van de kop-stuitlengte is het nauwkeurigst binnen welk venster?',
-      ['Ongeveer 10 tot 13+6 weken zwangerschap', 'De eerste 4 weken na de conceptie', 'Na 20 weken, waarbij in plaats daarvan de femurlengte wordt gebruikt', 'Alleen in het derde trimester'],
+      ['Ongeveer 10 tot 13+6 weken zwangerschap', 'De eerste 4 weken na de conceptie', 'Na 20 weken', 'Alleen in het derde trimester'],
       0,
       'De biologische variabiliteit in groei is minimaal in de vroege eerste trimester, waardoor de kop-stuitlengte de nauwkeurigste dateringsmethode is binnen dit venster; latere datering steunt steeds meer op de biparietale diameter en de femurlengte, die een grotere natuurlijke variatie hebben.',
     ],
@@ -435,7 +435,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Vasa praevia, een zeldzame maar zeer risicovolle obstetrische aandoening, verwijst naar welke anatomische bevinding?',
-      ['Foetale bloedvaten die door de vliezen lopen, nabij of over het baarmoederhalskanaal, onbeschermd door placenta of navelstreng', 'Placentaweefsel dat het baarmoederhalskanaal bedekt, zonder enige blootgestelde foetale vaten, het kenmerkende beeld van placenta praevia in plaats van vasa praevia', 'Voorliggen van de navelstreng door de cervix', 'Alleen een abnormale insertie van de navelstreng in de placentarand'],
+      ['Foetale bloedvaten die door de vliezen lopen, nabij of over het baarmoederhalskanaal, onbeschermd door placenta of navelstreng', 'Placentaweefsel dat het baarmoederhalskanaal bedekt, zonder enige blootgestelde foetale vaten', 'Voorliggen van de navelstreng door de cervix', 'Alleen een abnormale insertie van de navelstreng in de placentarand'],
       0,
       'Onbeschermde vaten kunnen scheuren zodra de vliezen breken, wat leidt tot snelle foetale verbloeding; opsporing via echografie tijdens de zwangerschap maakt een geplande vroege keizersnede vóór de bevalling mogelijk, wat de uitkomsten enorm verbetert.',
     ],
@@ -469,7 +469,7 @@ export const OBGYN: CategoryContent = {
       'Semmelweis\'s interventie in 1847, die de kraamvrouwenkoorts-mortaliteit in de Weense verlosafdeling drastisch verlaagde, hield welke specifieke praktijk in?',
       ['Handen wassen met een chloorkalkoplossing tussen autopsiewerk en het bijstaan van barende vrouwen', 'Het isoleren van koortsige moeders op een aparte afdeling', 'Het uitkoken van alle chirurgische instrumenten', 'Het volledig beperken van de toegang van medische studenten tot de afdelingen'],
       0,
-      'Semmelweis leidde terecht af dat "kadaverdeeltjes" van autopsies naar barende patiënten werden overgebracht, al bestond de kiemtheorie nog niet om dit te verklaren; zijn handwasprotocol met chloorkalk verlaagde de mortaliteit drastisch, maar zijn ideeën werden tijdens zijn leven grotendeels afgewezen door zijn tijdgenoten.',
+      'Semmelweis begreep dat autopsiedeeltjes naar barende vrouwen werden overgebracht; zijn protocol van handwassen met chloorkalk verlaagde mortaliteit drastisch.',
     ],
     [
       'De obstetrische verlostang, grotendeels toegeschreven aan de familie Chamberlen, was historisch gezien opmerkelijk vanwege welke ongewone praktijk rondom het gebruik ervan?',
@@ -487,7 +487,7 @@ export const OBGYN: CategoryContent = {
       'Het pathofysiologische kenmerk van pre-eclampsie, inmiddels begrepen als voortkomend uit een abnormale placentavorming, betreft het falen van welk specifiek proces in de vroege zwangerschap?',
       ['De trofoblastische ombouw van de maternale spiraalarteriën tot vaten met lage weerstand', 'De sluiting van de ductus venosus', 'De fusie van amnion en chorion', 'De vorming van de primitieve streep'],
       0,
-      'Ondiepe trofoblastinvasie laat de spiraalarteriën smal en met hoge weerstand achter, wat leidt tot placentaire onderdoorbloeding; de daaropvolgende afgifte van antiangiogene factoren (zoals oplosbaar Flt-1) in de maternale circulatie drijft de systemische endotheeldisfunctie van klinische pre-eclampsie.',
+      'Ondiepe trofoblastinvasie veroorzaakt nauw-resistente vaten en placentaire onderdoorbloeding die endotheeldisfunctie aandrijft.',
     ],
     [
       'Het foetofoetaal transfusiesyndroom komt specifiek voor bij welk type meerlingzwangerschap, en waarom?',
@@ -497,7 +497,7 @@ export const OBGYN: CategoryContent = {
     ],
     [
       'Het Mayer-Rokitansky-Küster-Hauser-syndroom (MRKH) presenteert zich met welke combinatie van bevindingen?',
-      ['Aangeboren afwezigheid of hypoplasie van de baarmoeder en de bovenste vagina, met normale ovariumfunctie en een 46,XX-karyotype', 'Afwezigheid van ovaria met een 45,X-karyotype, zoals bij het klassieke syndroom van Turner, een aparte chromosomale aandoening die ook verschilt in de ontwikkeling van de baarmoeder', 'Dubbelzinnige geslachtsorganen met verhoogde androgenen', 'Een normale baarmoeder met vaginale agenesie veroorzaakt door androgeenongevoeligheid'],
+      ['Aangeboren afwezigheid of hypoplasie van de baarmoeder en de bovenste vagina, met normale ovariumfunctie en een 46,XX-karyotype', 'Afwezigheid van ovaria met een 45,X-karyotype', 'Dubbelzinnige geslachtsorganen met verhoogde androgenen', 'Een normale baarmoeder met vaginale agenesie veroorzaakt door androgeenongevoeligheid'],
       0,
       'MRKH ontstaat door mislukte ontwikkeling van de müllerse gangen, terwijl de ovaria (die een andere embryologische oorsprong hebben) en secundaire geslachtskenmerken normaal blijven, wat het onderscheidt van het androgeenongevoeligheidssyndroom, dat gepaard gaat met een 46,XY-karyotype en testes.',
     ],
@@ -511,7 +511,7 @@ export const OBGYN: CategoryContent = {
       'Chronische villitis van onbekende oorzaak (VUE), een placentaire pathologische bevinding, wordt het sterkst geassocieerd met welke klinische uitkomst wanneer ernstig en terugkerend?',
       ['Foetale groeivertraging en herhaalde zwangerschapsverlies', 'Macrosomie bij het blootgestelde kind, door een gewijzigde placentaire hormoonsignalering', 'Overtijdheid zonder complicaties', 'Onvruchtbaarheid bij het mannelijke nageslacht'],
       0,
-      'VUE vertegenwoordigt een maternaal immuuninfiltraat gericht tegen het foetale vlokweefsel, in essentie een reactie die doet denken aan graft-versus-host; ernstige of terugkerende VUE wordt geassocieerd met groeivertraging en herhaling in volgende zwangerschappen, al is de trigger nog niet volledig begrepen.',
+      'VUE is een maternaal immuun-infiltraat tegen foetaal weefsel, graft-versus-host-achtig, geassocieerd met groeivertraging.',
     ],
     [
       'De historische verschuiving van kraamvrouwenkoorts, toegeschreven aan miasma, naar een op besmetting gebaseerde en uiteindelijk bacteriële verklaring, werd na Semmelweis substantieel bevorderd door wiens latere werk op het gebied van de kiemtheorie?',
@@ -529,37 +529,37 @@ export const OBGYN: CategoryContent = {
       'De BRCA1- en BRCA2-mutaties, relevant voor advisering over risicoverlagende salpingo-oöforectomie, geven een verhoogd levenslang risico vooral op welke gynaecologische kanker, naast borstkanker?',
       ['Eierstok- (en eileider-) kanker', 'Baarmoederhalskanker', 'Vulvakanker', 'Zwangerschapstrofoblastziekte'],
       0,
-      'BRCA-mutaties verstoren homologe-recombinatie-DNA-herstel; het verhoogde risico op eierstok-/eileiderkanker, gecombineerd met het ontbreken van een effectieve screeningstest voor de eierstokken, verklaart waarom risicoverlagende salpingo-oöforectomie wordt aangeboden zodra de kinderwens vervuld is, en waarom recent onderzoek steeds vaker het fimbriale epitheel van de eileider aanwijst als de oorsprong van veel "ovariële" hooggradige sereuze kankers.',
+      'BRCA-mutaties verstoren DNA-herstel en verhogen risico op eierstok-/eileiderkanker; dit rechtvaardigt risicoverlagende salpingo-oöforectomie na afronding van kinderwens.',
     ],
     [
       'Choriocarcinoom, een kwaadaardige zwangerschapstrofoblastneoplasie, is klinisch opmerkelijk vanwege welk ongewoon kenmerk ten opzichte van de meeste solide kankers?',
       ['Zeer hoge genezingskans, zelfs bij uitgezaaide ziekte, grotendeels dankzij hCG als gevoelige tumormarker en hoge chemogevoeligheid', 'Volledige chemoresistentie, waarbij alleen chirurgie nodig is', 'Uitsluitend voorkomen bij postmenopauzale vrouwen', 'Afwezigheid van elke meetbare serummarker, wat surveillance moeilijk maakt, het tegenovergestelde van wat daadwerkelijk wordt gezien bij deze hCG-afscheidende tumor'],
       0,
-      'Omdat choriocarcinoom betrouwbaar hCG afscheidt, kan de respons op chemotherapie (klassiek op basis van methotrexaat, of EMA-CO bij hoogrisicoziekte) worden gevolgd met een eenvoudige serummarker, wat ook bij wijdverspreide uitzaaiing een zeer hoge genezingskans geeft in vergelijking met de meeste andere uitgezaaide solide kankers.',
+      'hCG-afscheiding permet serieuze monitoring van chemotherapie-respons met hoge genezingskans zelfs bij uitgezaaide ziekte.',
     ],
     [
       'Vruchtwaterembolie, een zeldzame maar vaak catastrofale peripartumgebeurtenis, wordt nu begrepen als een bepaald pathofysiologisch proces in plaats van een eenvoudige mechanische vaatobstructie; welk proces is dat?',
       ['Een anafylactoïde-achtige maternale immuun-/ontstekingsreactie op foetale antigenen die de maternale circulatie binnenkomen', 'Pure mechanische blokkade van de longvaten door deeltjesresten, zonder enige ontstekingscomponent, ooit de dominante leerboektheorie', 'Direct toxisch effect van vruchtwaterenzymen op het myocard alleen', 'Een puur stollingsfactor-gemedieerde gebeurtenis zonder enige immuunreactie'],
       0,
-      'De historische naam "embolie" blijft bestaan, maar het klinische en laboratoriumbeeld (plotselinge cardiovasculaire collaps, bronchospasme, coagulopathie) lijkt op anafylaxie, wat velen ertoe brengt het "anafylactoïde syndroom van de zwangerschap" te noemen, wat wijst op een maternale immuunreactie op foetaal materiaal in plaats van louter mechanische obstructie.',
+      'Het klinische beeld (cardiovasculaire collaps, bronchospasme, coagulopathie) lijkt op anafylaxie, wijzend op een immuunreactie in plaats van mechanische obstructie.',
     ],
     [
       'De historische introductie van het partogram, dat de bewaking van de bevalling standaardiseerde, wordt vooral geassocieerd met het verminderen van welke specifieke complicatie wanneer het wordt gebruikt om tijdig ingrijpen uit te lokken?',
       ['Belemmerde bevalling die overgaat in baarmoederruptuur of langdurige morbiditeit door de bevalling', 'Postpartumdepressie', 'Neonatale geelzucht', 'Het percentage vroeggeboorten'],
       0,
-      'Door de ontsluiting van de baarmoederhals tegen de tijd uit te zetten en te signaleren wanneer de vooruitgang de "alarm"- en "actie"-lijnen overschrijdt, was het partogram (ontwikkeld op basis van Friedmans arbeidscurve en gepromoot door de WHO) bedoeld om vroeger ingrijpen bij belemmerde of langdurige bevalling te stimuleren, met name waardevol in omgevingen met beperkte middelen zonder continue individuele bewaking.',
+      'Het partogram stelt alarm- en actielijnen uit voor baarmoederhalsontsluitingsvorderingen om vroeg ingrijpen bij belemmerde bevalling te triggeren.',
     ],
     [
       'Placentaire mozaïcisme, ontdekt bij vlokkentest (CVS) en afwijkend van het werkelijke foetale karyotype, wordt het best verklaard door welk embryologisch fenomeen?',
       ['Beperkt placentair mozaïcisme dat ontstaat door een post-zygote mitotische fout die grotendeels beperkt blijft tot de trofoblastlijn', 'Alleen maternale celcontaminatie van het monster', 'Een kweekartefact in het laboratorium zonder biologische basis', 'Paternale uniparentale disomie die alleen de foetus treft'],
       0,
-      'Omdat de trofoblast en de binnenste celmassa zeer vroeg in de ontwikkeling uit elkaar gaan, kan een mitotische fout die na deze splitsing optreedt beperkt blijven tot de placentaire lijn, wat betekent dat een CVS-resultaat met een afwijkend karyotype niet altijd de foetus zelf weerspiegelt, en vervolgvruchtwaterpunctie vaak gerechtvaardigd is.',
+      'Omdat trofoblast en epiblast vroeg splitsen, kan CVS-mozaïcisme beperkt tot placenta zijn; vervolgvruchtwaterpunctie wordt aanbevolen.',
     ],
   ],
 };
 
 export const DUTCH: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'De middeleeuwse en vroegmoderne Lage Landen kwamen voornamelijk via welk proces onder Bourgondisch gezag?',
       ['Een reeks dynastieke huwelijken en erfenissen door de hertogen van Bourgondië', 'Een directe militaire verovering door Frankrijk', 'Een pauselijke bul die het gezag van de hertogen over de Lage Landen bevestigde, een claim zonder historische grondslag', 'Verkiezing door de lokale Staten'],
@@ -616,7 +616,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'Het jaar 1672, in de Nederlandse geschiedenis bekend als het "Rampjaar", wordt herinnerd voor wat?',
-      ['De gelijktijdige invasie door Frankrijk, Engeland en bondgenoten onder Duitse bisschoppen, die de Republiek bijna overweldigde', 'De oprichting van de VOC', 'De dood van Willem de Zwijger', 'De Belgische afscheiding, die de Republiek zelf pas in 1830 trof, een ongerelateerde negentiende-eeuwse gebeurtenis twee eeuwen later'],
+      ['De gelijktijdige invasie door Frankrijk, Engeland en bondgenoten onder Duitse bisschoppen, die de Republiek bijna overweldigde', 'De oprichting van de VOC', 'De dood van Willem de Zwijger', 'De Belgische afscheiding'],
       0,
       'Frankrijk onder Lodewijk XIV viel vanuit het zuiden binnen, terwijl Engeland en bondgenoten onder bisschoppen elders aanvielen; deze crisis deed het regime van De Witt ten val komen en bracht Willem III van Oranje aan de macht als militaire redder van de Republiek.',
     ],
@@ -656,7 +656,7 @@ export const DUTCH: CategoryContent = {
       'De Pacificatie van Gent (1576) had als doel wat, voordat zij uiteindelijk mislukte?',
       ['Alle zeventien Nederlandse gewesten, katholiek en protestant, verenigen tegen de Spaanse troepen', 'Formeel de onafhankelijkheid van Spanje uitroepen', 'Het calvinisme als enige staatsgodsdienst instellen', 'De VOC oprichten om de handel met Oost-Indië te bundelen, een instelling die decennia later werd opgericht om geheel andere commerciële redenen'],
       0,
-      'Na de plundering van Antwerpen tijdens de Spaanse Furie verenigde de Pacificatie kortstondig noord en zuid tegen het muitende Spaanse leger, maar religieuze en politieke verdeeldheid (verscherpt doordat de Unie van Atrecht zich in 1579 weer bij Spanje aansloot) brak deze fragiele eenheid al snel weer open.',
+      'De Pacificatie verenigde kort noord en zuid tegen het muitende Spaanse leger maar verloor aan religieuze verdeeldheid.',
     ],
     [
       'De Synode van Dordrecht (1618-1619) is van belang in de Nederlandse religieus-politieke geschiedenis omdat zij wat deed?',
@@ -692,13 +692,13 @@ export const DUTCH: CategoryContent = {
       'De Nederlandse rol in de Negenjarige Oorlog en de Spaanse Successieoorlog werd na 1688 in belangrijke mate bepaald door de positie van Willem III als wat?',
       ['Stadhouder van de Republiek en, tegelijkertijd, koning van Engeland (samen met Maria II)', 'Heilig Roomse keizer, die gezamenlijk over de Habsburgse erflanden regeerde, een titel die in werkelijkheid door zijn rivalen, de Oostenrijkse Habsburgers, werd gedragen', 'Koning van Frankrijk door huwelijk', 'Door de paus benoemde beschermheer van Nederland'],
       0,
-      'De Glorious Revolution maakte van Willem III een dubbele vorst-stadhouder, waardoor het Nederlandse en Engelse buitenlandse beleid voor de daaropvolgende decennia tegen het Frankrijk van Lodewijk XIV werden afgestemd, een personele unie die uniek was in de rechtstreekse verbinding tussen de twee staten.',
+      'De Glorious Revolution maakte Willem III dubbele vorst-stadhouder en stelde NL/Engels beleid tegen Lodewijk XIV af.',
     ],
     [
       'De Patriottentijd van de jaren 1780 in de Republiek werd vooral gekenmerkt door een conflict tussen welke twee facties?',
       ['Democratische "patriotten" die hervormingen nastreefden tegen het Oranjegezinde stadhouderschap en zijn aanhangers', 'Katholieke en protestantse facties over het kerkbestuur', 'De VOC en de WIC over handelsmonopolies', 'Noordelijke en zuidelijke provincies over taalrechten'],
       0,
-      'Beïnvloed door verlichtingsideeën en de Amerikaanse revolutie streefden de patriotten ernaar de macht van stadhouder Willem V te beperken en de burgerlijke politieke participatie uit te breiden; de Prusische militaire interventie van 1787 herstelde het Oranjegezinde gezag, tot de door Frankrijk gesteunde Bataafse Revolutie van 1795.',
+      'Patriotten wilden Willem V bevoldoen en burgerlijke politieke macht uitbreiden; Pruisische interventie herstelde het Oranjegezag in 1787.',
     ],
     [
       'De Bataafse Republiek (1795-1806) werd gesticht na welke gebeurtenis?',
@@ -722,7 +722,7 @@ export const DUTCH: CategoryContent = {
       'Het cultuurstelsel, vanaf 1830 ingevoerd in Nederlands-Indië, verplichtte Javaanse boeren tot wat?',
       ['Een deel van hun land of arbeid besteden aan door de overheid aangewezen exportgewassen in plaats van voedingsgewassen', 'Belasting uitsluitend betalen in zilveren munt, zonder arbeidsverplichting', 'Volledig verhuizen naar plantages die door particuliere Europese kolonisten werden gerund', 'Zich bekeren tot het christendom als voorwaarde voor grondbezit'],
       0,
-      'Dorpen werden verplicht om ongeveer een vijfde van hun land (of het equivalent in arbeid) te besteden aan gewassen zoals koffie, suiker en indigo voor de koloniale overheid, wat enorme inkomsten voor Nederland genereerde (de "cultuurprocenten"), maar ook herhaaldelijk hongersnood veroorzaakte en later reformistische kritiek uitlokte.',
+      'Dorpen besteedden ongeveer een vijfde van hun land aan gewassen voor de overheid, wat inkomsten genereerde maar ook hongersnood veroorzaakte.',
     ],
     [
       'De Nederlandse "Tiendaagse Veldtocht" van 1831 verwijst naar welke militaire episode?',
@@ -738,7 +738,7 @@ export const DUTCH: CategoryContent = {
     ],
     [
       'Het Eeuwig Edict van 1667 poogde wat te bewerkstelligen?',
-      ['Permanent verbieden dat de ambten van stadhouder en kapitein-generaal van het leger door één en dezelfde persoon werden bekleed', 'Formeel een einde maken aan het bondgenootschap van de Republiek met Engeland', 'Het handelsoctrooi van de VOC in alle Aziatische gebieden afschaffen, een ongerelateerde commerciële kwestie die het edict niet behandelde', 'Het Nederlands vastleggen als enige officiële taal van de Republiek'],
+      ['Permanent verbieden dat de ambten van stadhouder en kapitein-generaal van het leger door één en dezelfde persoon werden bekleed', 'Formeel een einde maken aan het bondgenootschap van de Republiek met Engeland', 'Het handelsoctrooi van de VOC in alle Aziatische gebieden afschaffen', 'Het Nederlands vastleggen als enige officiële taal van de Republiek'],
       0,
       "Kort voor het Rampjaar op initiatief van Holland doorgevoerd, poogde het edict te voorkomen dat de prins van Oranje ooit het burgerlijke en militaire opperbevel zou combineren, waarmee het de republikeinse regeling van De Witt verankerde - een regeling die binnen vijf jaar werd omvergeworpen toen de crisis van 1672 beide ambten weer bij Willem III bracht.",
     ],
@@ -748,7 +748,7 @@ export const DUTCH: CategoryContent = {
       'Het Plakkaat van Verlatinghe (1581) is historiografisch van belang omdat het wat deed?',
       ['Het verklaarde formeel dat Filips II zijn soevereiniteit over de opstandige gewesten had verspeeld, en formuleerde daarmee een contractuele opvatting van het vorstendom', 'Het herstelde de volledige trouw aan Spanje onder nieuwe voorwaarden', 'Het creëerde de titel Koning der Nederlanden', 'Het beëindigde de Unie van Utrecht en ontbond de confederale structuur, het tegenovergestelde van wat er gebeurde, aangezien de Unie de gewesten daarna juist bleef binden'],
       0,
-      'Het Plakkaat betoogde dat een vorst die de rechten en privileges van zijn onderdanen schendt zijn gezag verspeelt, een contractuele rechtvaardiging voor verzet die later door sommige geleerden als invloed op - hoewel niet als rechtstreeks model voor - latere revolutionaire verklaringen wordt genoemd, waaronder vergelijkingen met de Amerikaanse Onafhankelijkheidsverklaring.',
+      'Het Plakkaat betoogde dat een vorst die rechten schendt zijn gezag verspeelt - contractuele rechtvaardiging voor verzet.',
     ],
     [
       'De Alteratie van Amsterdam in 1578 verwijst naar welke specifieke plaatselijke gebeurtenis?',
@@ -760,55 +760,55 @@ export const DUTCH: CategoryContent = {
       'De leer van het "particularisme" in de historiografie van de Republiek verwijst naar welk structureel kenmerk van het bestuur?',
       ['Het feit dat de soevereiniteit sterk bij de afzonderlijke gewesten en steden bleef berusten in plaats van bij een sterke centrale staat', 'Een unieke vorm van religieuze tolerantie zonder weerga elders in Europa', 'Een specifiek VOC-handelsbeleid in Japan', 'De persoonlijke controle van de stadhouder over het buitenlands beleid'],
       0,
-      'De soevereiniteit in de Republiek berustte formeel bij de afzonderlijke provinciale Staten, die slechts beperkte, herroepbare bevoegdheden aan de Staten-Generaal overdroegen; deze gedecentraliseerde structuur leverde zowel een opmerkelijke veerkracht op als een chronische moeite om snel en eenduidig te handelen.',
+      'Soevereiniteit berustte bij provinciale Staten die beperkte bevoegdheden aan de Staten-Generaal gaven - zowel veerkracht als traagheid.',
     ],
     [
       'De oorsprong van de Eerste Engels-Nederlandse Oorlog in de jaren 1650 wordt door historici vaak in belangrijke mate herleid tot welke specifieke Engelse wet?',
       ['De Scheepvaartwet (Navigation Act) van 1651, die de handel met Engelse kolonies beperkte tot Engelse schepen', 'De Bill of Rights van 1689', 'De Test Act, die niet-anglicanen uitsloot van Engelse overheidsfuncties, een binnenlandse religieuze wet zonder verband met de Engels-Nederlandse handelsrivaliteit', 'De Act of Settlement'],
       0,
-      'De Scheepvaartwet trof rechtstreeks de Nederlandse dominantie in het commerciële vrachtvervoer, en de daaruit voortvloeiende spanningen escaleerden tegen 1652 tot een zeeoorlog, wat de latere Engels-Nederlandse oorlogen kadert als in de kern geschillen over de regulering van de maritieme handel, en niet als dynastieke of religieuze twisten.',
+      'De Scheepvaartwet bedreigde Nederlandse handel-dominantie en escaleerde in 1652 tot zeeoorlog over maritiem beleid.',
     ],
     [
       'Het begrip "regenten" in de historiografie van de Republiek verwijst naar welke sociaal-politieke groep?',
       ['De stedelijke koopmans-patriciërsoligarchie die het stadsbestuur en, via de Staten, de provinciale en nationale politiek domineerde', 'Uitsluitend de calvinistische geestelijkheid', 'VOC-scheepskapiteins, wier senioriteit hun burgerlijke rang bepaalde, een maritiem loopbaanpad dat geen automatische aanspraak op een stedelijk bestuursambt met zich meebracht', 'De landadel van Gelderland'],
       0,
-      'Regentenfamilies, vaak door onderlinge huwelijken verbonden en zelfvoorzienend via cooptatie in de stadsbesturen, vormden de feitelijke heersende klasse van de steden van de Republiek, en hun belangen (commercieel, vaak vredelievend) liepen vaak uiteen met het meer oorlogsgezinde, door het volk gesteunde Huis Oranje.',
+      'Regentenfamilies vormden de feitelijke heersende klasse van de steden - hun handelsbelangen verschilden van het Huis Oranje.',
     ],
     [
       'De moord op Johan en Cornelis de Witt door een Oranjegezinde volksmenigte in Den Haag in 1672 is historiografisch opmerkelijk vanwege welk extra detail dat historici van politiek geweld vaak aanhalen?',
       ['Berichten dat delen van de lichamen van de broers werden verminkt en naar verluidt door de menigte werden opgegeten, een extreme daad die later in de Nederlandse politieke herinnering werd aangehaald', 'Dat Willem III de menigte persoonlijk de straat op leidde', 'Dat de moord plaatsvond binnen de vergaderzaal van de Staten-Generaal', 'Dat het onmiddellijk leidde tot een Franse terugtrekking uit de Republiek, een claim die niet door de historische bronnen wordt gestaafd, aangezien de Franse troepen nog maandenlang in de Republiek bleven'],
       0,
-      'De extremiteit van de lynchpartij, met inbegrip van de wijdverspreid gerapporteerde verminking, maakte haar tot een blijvend symbool van de onberekenbaarheid van Oranjegezind-republikeins factiegeweld in de Nederlandse politieke herinnering, en moderne historici twisten nog altijd over de mate waarin Willem III hiervan op voorhand wist of het stilzwijgend goedkeurde.',
+      'De extremiteit van de lynchpartij maakte haar tot symbool van onberekenbaarheid van Oranjegezind factiegeweld in NL.',
     ],
     [
       'Het Verdrag van Westminster (1674), dat een einde maakte aan de Derde Engels-Nederlandse Oorlog, is opmerkelijk vanwege welke bepaling met betrekking tot Nieuw-Nederland?',
       ['Het bevestigde de Nederlandse afstand van Nieuw-Nederland (Nieuw-Amsterdam/New York) aan Engeland, eerst afgestaan in 1667 en hier herbevestigd na de korte Nederlandse herovering van 1673', 'Het gaf Nieuw-Amsterdam permanent terug aan Nederlands bestuur', 'Het creëerde een gezamenlijk bestuurde kolonie onder een gedeeld Engels-Nederlands octrooi, een regeling die onder de bepalingen van het ondertekende verdrag nooit daadwerkelijk werd ingevoerd', 'Het verplichtte Engeland tot het betalen van herstelbetalingen voor het verlies van de kolonie'],
       0,
-      'Nederlandse troepen hadden New York in 1673 kort heroverd (en hernoemd tot Nieuw-Oranje), maar het verdrag van 1674 bevestigde het Engelse bezit, wat een einde maakte aan het rechtstreekse Nederlandse koloniale bestuur over wat later New York werd, in ruil voor het Nederlandse behoud van Suriname uit dezelfde onderhandelingsronde.',
+      'NL heroverde New York in 1673 maar verdrag 1674 bevestigde Engels bezit in ruil voor NL behoud van Suriname.',
     ],
     [
       'De Doelistenbeweging van 1748 was een episode van stedelijke onrust in Amsterdam die vooral werd uitgelokt door welke grief?',
       ['Volkswoede over misbruiken bij de belastingpacht, wat leidde tot eisen zoals het herstel van het stadhouderschap', 'Een religieus geschil over de rechten van doopsgezinden', 'Het faillissement van de VOC, na een plotselinge ineenstorting van de specerijenhandel, een gebeurtenis die in werkelijkheid decennia later, in 1799, plaatsvond', 'Een hongersnood veroorzaakt door misoogsten'],
       0,
-      'Wrok tegen corrupte belastingpachters (die het recht kochten om accijnzen te innen) leidde tot oproer en een bredere burgerbeweging die, naast andere eisen, opriep om Willem IV tot stadhouder te benoemen in de gewesten waar het ambt vacant was, wat illustreert hoe fiscale grieven konden bijdragen aan Oranjegezinde herstelpolitiek.',
+      'Wrok tegen belastingpachters escaleerde tot oproer en roeping voor Willem IV als stadhouder, fiscaal-politieke grief.',
     ],
     [
       'De Hollandse Waterlinie als verdedigingsconcept, historisch ingezet tegen invasies, functioneerde via welk mechanisme?',
       ['Het opzettelijk onder water zetten van een strook laaggelegen land, waardoor een onneembare barrière voor vijandelijke legers ontstond, terwijl versterkte punten voor de verdedigers begaanbaar bleven', 'Het bouwen van een doorlopende stenen muur langs de oostgrens', 'Het volledig omleiden van de Rijn naar de Noordzee', 'Het opblazen van de belangrijkste rivierovergangen om elke nadering volledig te blokkeren, een destructievere tactiek die niet het daadwerkelijke mechanisme was waarmee de Waterlinie indringers tegenhield'],
       0,
-      'Door gecontroleerde onderwaterzetting van polderland te benutten, creëerde de Waterlinie (ingezet in 1672 tegen de Fransen en tot in de twintigste eeuw onderhouden) een ondiepe, onbevaarbare en onbegaanbare barrière die zware cavalerie en artillerie tot stilstand bracht, zonder dat daar een doorlopende versterkte muur voor nodig was.',
+      'Gecontroleerde onderwaterzetting creëerde onbevaarbare barrière tegen cavalerie/artillerie zonder doorlopende muur.',
     ],
     [
       'Het historiografische debat over de "Algemene Crisis van de Zeventiende Eeuw" toegepast op de Republiek wordt gecompliceerd door welke schijnbare anomalie?',
-      ['De Republiek beleefde haar "Gouden Eeuw" van voorspoed en culturele bloei net in de periode waarin een groot deel van Europa een zware economische en politieke crisis doormaakte', 'De Republiek bracht in deze periode geen cultuur van betekenis voort', 'De Republiek werd door de Dertigjarige Oorlog volledig ongemoeid gelaten en had daar geen enkele betrokkenheid bij, een claim die wordt weersproken door de actieve militaire en diplomatieke rol van de Republiek gedurende dat gehele conflict', 'De bevolking van de Republiek nam in deze eeuw met de helft af'],
+      ['De Republiek beleefde haar "Gouden Eeuw" van voorspoed en culturele bloei net in de periode waarin een groot deel van Europa een zware economische en politieke crisis doormaakte', 'De Republiek bracht in deze periode geen cultuur van betekenis voort', 'De Republiek werd door de Dertigjarige Oorlog volledig ongemoeid gelaten en had daar geen enkele betrokkenheid bij', 'De bevolking van de Republiek nam in deze eeuw met de helft af'],
       0,
-      'Terwijl grote delen van Europa halverwege de zeventiende eeuw met oorlog, klimaatstress en staatsverval te maken hadden, leek de op handel gebaseerde economie en het relatief gedecentraliseerde, op de handel gerichte bestuursmodel van de Republiek het bredere patroon van de door historici veronderstelde "algemene crisis" te weerstaan, of in elk geval aanzienlijk te verzachten - een raadsel dat sinds de oorspronkelijke duiding van Trevor-Roper en anderen uitgebreid wordt bediscussieerd.',
+      'De Republiek leek de "algemene crisis" van Europa halverwege de 17e eeuw te weerstaan door haar handel-gedreven economie.',
     ],
     [
       'De patriottencrisis van 1785-1787 eindigde met een Pruisische militaire interventie ten gunste van de Oranjegezinde stadhouder; deze interventie wordt historiografisch vaak in verband gebracht met welke dynastieke band?',
-      ['Wilhelmina van Pruisen, de echtgenote van stadhouder Willem V, was de zus van de Pruisische koning, die deels namens haar en haar echtgenoot ingreep', 'Een eerder Nederlands-Pruisisch handelsverdrag met een clausule over wederzijdse defensie', 'Pruisische territoriale aanspraken op Gelderland, betwist sinds de Vrede van Munster, een langlopend grensgeschil dat losstaat van de dynastieke band die voor de interventie van 1787 wordt aangehaald', 'Een pauselijk verzoek om protestantse solidariteit'],
+      ['Wilhelmina van Pruisen, de echtgenote van stadhouder Willem V, was de zus van de Pruisische koning, die deels namens haar en haar echtgenoot ingreep', 'Een eerder Nederlands-Pruisisch handelsverdrag met een clausule over wederzijdse defensie', 'Pruisische territoriale aanspraken op Gelderland', 'Een pauselijk verzoek om protestantse solidariteit'],
       0,
-      'De persoonlijke verzoeken van Wilhelmina aan haar broer Frederik Willem II van Pruisen vormden een belangrijke factor in de Pruisische invasie van 1787, die het gezag van Willem V herstelde, wat illustreert hoe dynastieke familiebanden zich rechtstreeks konden vertalen in internationale militaire interventie in de binnenlandse politiek van een nominaal republikeinse staat.',
+      'Wilhelmina\'s verzoeken aan haar Pruisische broer zetten militaire interventie in gang die Willem V herstelde.',
     ],
     [
       'De Java-oorlog (1825-1830), uitgevochten in Nederlands-Indië ongeveer gelijktijdig met de Belgische afscheiding, werd aan Javaanse zijde vooral geleid door wie?',
@@ -820,13 +820,13 @@ export const DUTCH: CategoryContent = {
       'De constitutionele rol van de Raad van State in de Republiek vóór 1795 wordt het best gekarakteriseerd als wat, in spanning met de Staten-Generaal?',
       ['Een orgaan met formele adviserende en enkele uitvoerende bevoegdheden (met name over leger en financiën), waarvan het feitelijke gezag voortdurend werd betwist en beknot door aanspraken op provinciale soevereiniteit', 'Het hoogste gerechtshof van de Republiek, met de uiteindelijke beslissingsbevoegdheid over alle provinciale geschillen, een omschrijving die het gezag van de Raad overschat, omdat de provinciale soevereiniteit betekende dat geen enkel orgaan werkelijk de uiteindelijke beslissingsbevoegdheid had', 'Een louter ceremonieel orgaan zonder enige beleidsrol op militair of fiscaal gebied', 'Het orgaan dat formeel de oorlog verklaarde, met voorrang boven de Staten-Generaal'],
       0,
-      'Hoewel formeel van belang, vooral op het gebied van militair en financieel bestuur, werd het gezag van de Raad van State in de praktijk vaak uitgehold doordat de afzonderlijke gewesten bleven vasthouden aan hun eigen soevereine voorrechten, wat de structurele spanning illustreert tussen confederaal particularisme en elk centraliserend orgaan.',
+      'De Raad van State had formeel gezag maar werd in praktijk uitgehold door provinciale soevereiniteit.',
     ],
     [
       'Historici plaatsen Thorbeckes hervormingen van 1848 soms tegenover de veel conservatievere reactie op de onrust van 1848 elders in Europa; welke specifieke Nederlandse politieke omstandigheid wordt doorgaans genoemd als verklaring voor deze relatief soepele overgang?',
       ['De persoonlijke, naar verluidt van de ene op de andere nacht voltrokken, ommekeer van koning Willem II van conservatief naar hervormingsgezind, uit angst voor revolutionaire besmetting', 'Een eerdere burgeroorlog die de oude orde al had verwoest', 'Rechtstreekse Franse militaire druk voor hervorming, na de revolutie van 1848 in Parijs, een factor die historici doorgaans als ondergeschikt beschouwen aan de eigen ommekeer van de koning', 'De volledige afschaffing van de monarchie voordat de hervormingen begonnen'],
       0,
-      'Van Willem II wordt gezegd dat hij "in één nacht van zeer conservatief naar zeer liberaal" omsloeg toen hij begin 1848 hoorde van revoluties elders in Europa, en dat hij persoonlijk opdracht gaf voor Thorbeckes hervormingen in plaats van zich daartegen te verzetten, een vorstelijke anticipatie die de gewelddadige confrontaties vermeed die dat jaar in staten als Pruisen en Oostenrijk plaatsvonden.',
+      'Willem II sloeg in 1848 om van conservatief naar liberaal en gaf persoonlijk opdracht voor Thorbeckes hervormingen, vermijdend geweld.',
     ],
     [
       'De Grote Vergadering die in 1651 in Den Haag samenkwam, behandelde welke centrale constitutionele vraag?',
@@ -838,7 +838,7 @@ export const DUTCH: CategoryContent = {
 };
 
 export const MAKER: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Hoe werkt FDM (Fused Deposition Modelling) 3D-printen in essentie?',
       ['Thermoplastisch filament wordt gesmolten en laag voor laag geëxtrudeerd', 'Vloeibare hars wordt uitgehard met ultraviolet licht', 'Metaalpoeder wordt met een laser gesinterd', 'Materiaal wordt in lagen gesneden uit een vast plaat'],
@@ -915,7 +915,7 @@ export const MAKER: CategoryContent = {
       'Waar geven laserclassificaties (zoals Klasse 1, Klasse 3R, Klasse 4) vooral een indicatie van?',
       ['Het potentiële risiconiveau van de laser voor ogen en huid', 'De golflengte van het uitgezonden licht, uitgedrukt in nanometers', 'Het land van fabricage', 'De maximale snijsnelheid'],
       0,
-      'Laserveiligheidsklassen rangschikken apparaten naar uitgangsvermogen en het bijbehorende risico, van Klasse 1 (veilig bij normaal gebruik) tot Klasse 4 (gevaarlijk zelfs bij diffuse reflecties), en de meeste hobbylasersnijders en -graveermachines vallen in de hogere risicoklassen die omkastingen en oogbescherming vereisen.',
+      'Laserklassen rangschikken risico van Klasse 1 (veilig) tot Klasse 4 (gevaarlijk); hobbysnijders vereisen omkasting/bescherming.',
     ],
     [
       'Waarom wordt rookafzuiging als essentiële veiligheidsuitrusting beschouwd bij lasersnijden?',
@@ -933,7 +933,7 @@ export const MAKER: CategoryContent = {
   phd: [
     [
       'Waarin verschilt DLP (Digital Light Processing) hars-printen vooral van laser-gebaseerde SLA in de manier waarop elke laag wordt uitgehard?',
-      ['DLP projecteert de afbeelding van een hele laag in één keer met een digitale projector, in plaats van deze punt voor punt te tekenen met een laser', 'DLP gebruikt helemaal geen lichtbron en hardt de hars thermisch uit', 'DLP print altijd trager dan SLA, ongeacht de grootte van het onderdeel', 'DLP heeft geen bouwplatform nodig'],
+      ['DLP projecteert de afbeelding van een hele laag in één keer met een digitale projector', 'DLP gebruikt helemaal geen lichtbron en hardt de hars thermisch uit', 'DLP print altijd trager dan SLA', 'DLP heeft geen bouwplatform nodig'],
       0,
       'Omdat een DLP-projector een volledige doorsnede tegelijk belicht, is de printtijd per laag grotendeels onafhankelijk van het aantal details in die laag, terwijl laser-gebaseerde SLA elk punt moet natekenen, waardoor DLP bij geometrisch complexe lagen vaak sneller is.',
     ],
@@ -945,51 +945,51 @@ export const MAKER: CategoryContent = {
     ],
     [
       'Waarin verschilt SLM (Selective Laser Melting) in metalen additieve fabricage vooral van DMLS (Direct Metal Laser Sintering)?',
-      ['SLM smelt het metaalpoeder volledig tot een homogene massa, terwijl DMLS traditioneel deeltjes sintert onder het smeltpunt (hoewel de termen inmiddels door veel fabrikanten vaak inwisselbaar gebruikt worden)', 'SLM gebruikt helemaal geen laser en berust in plaats daarvan volledig op elektronenstraalversmelting in een vacuümkamer, een aanpak die vooral wordt toegepast voor titanium- en nikkellegeringen in de lucht- en ruimtevaart', 'DMLS kan alleen aluminium verwerken', 'SLM kan geen volledig dichte onderdelen produceren'],
+      ['SLM smelt het metaalpoeder volledig tot een homogene massa, terwijl DMLS traditioneel deeltjes sintert onder het smeltpunt', 'SLM gebruikt helemaal geen laser en berust op elektronenstraalversmelting in een vacuümkamer', 'DMLS kan alleen aluminium verwerken', 'SLM kan geen volledig dichte onderdelen produceren'],
       0,
-      'Het oorspronkelijke technische onderscheid was volledige versmelting (SLM) versus sinteren of gedeeltelijke versmelting onder het smeltpunt (DMLS) van metaaldeeltjes, hoewel het gebruik van de termen in marketing na verloop van tijd is vervaagd omdat de meeste moderne systemen ongeacht de gebruikte term bijna volledige dichtheid bereiken.',
+      'SLM smelt volledig; DMLS sintert onder smeltpunt, maar termen vervagen nu omdat beide hoge dichtheid bereiken.',
     ],
     [
       'Waarin verschilt binder jetting, gebruikt voor zowel polymeer- als metaal-3D-printen, fundamenteel van laser-gebaseerde poedermethoden?',
-      ['Er wordt een vloeibaar bindmiddel afgezet om poederdeeltjes aan elkaar te lijmen, waarna een afzonderlijke nabewerkingsstap met sinteren of uitharden nodig is voor volledige sterkte', 'Er wordt helemaal geen poederbed gebruikt; in plaats daarvan wordt direct een voorgebonden filament geëxtrudeerd door een verwarmde nozzle, een aanpak die qua materiaaltoevoer sterk op FDM lijkt', 'Poeder wordt gesmolten met een laser die identiek is aan die van SLS', 'Het kan onder geen enkele omstandigheid metalen onderdelen produceren'],
+      ['Er wordt een vloeibaar bindmiddel afgezet om poederdeeltjes aan elkaar te lijmen, waarna een afzonderlijke nabewerkingsstap met sinteren of uitharden nodig is voor volledige sterkte', 'Er wordt helemaal geen poederbed gebruikt; in plaats daarvan wordt direct een voorgebonden filament geëxtrudeerd door een verwarmde nozzle', 'Poeder wordt gesmolten met een laser die identiek is aan die van SLS', 'Het kan onder geen enkele omstandigheid metalen onderdelen produceren'],
       0,
-      'Omdat binder jetting tijdens het printen vertrouwt op een kleefmiddel in plaats van een smeltende energiebron, zijn metalen onderdelen die met binder jetting zijn gemaakt "groen" (broos) totdat ze een ontbindings- en sintercyclus in een oven doorlopen die het uiteindelijke onderdeel dichter en sterker maakt.',
+      'Binder jetting-onderdelen zijn "groen" tot een sintering in een oven die ze dichter en sterker maakt.',
     ],
     [
       'Welk type laseroutput wordt geproduceerd met Q-switching in de laserfysica?',
       ['Zeer korte pulsen met hoog piekvermogen, door de verliezen in de cavity snel te moduleren', 'Continue, volledig stabiele uitgang zonder enige pulsvorming', 'Een straal zonder meetbare divergentie op enige afstand', 'Meerdere gelijktijdige golflengten uit één versterkingsmedium, zoals bij bepaalde afstembare of multimode lasersystemen'],
       0,
-      'Door energie te laten opbouwen in het versterkingsmedium terwijl de Q (kwaliteitsfactor) van de cavity opzettelijk laag wordt gehouden, en dan snel om te schakelen naar een hoge Q, komt een grote hoeveelheid opgeslagen energie bijna instantaan vrij, wat pulsen oplevert met een veel hoger piekvermogen dan de laser continu zou kunnen leveren - gebruikt bijvoorbeeld bij lasermarkering en tattooverwijdering.',
+      'Q-switching laat energie opbouwen en geeft het snel vrij, zeer hoge piekvermogens voor lasermarkering/tattooverwijdering.',
     ],
     [
       'Naar welke specifieke toestand in het versterkingsmedium verwijst populatie-inversie, een vereiste voor laserwerking?',
       ['Meer atomen/ionen in een hogere-energietoestand dan in de lagere-energietoestand die bij de laserovergang betrokken is', 'Volledige uitputting van de grondtoestandspopulatie', 'Gelijke populaties in alle energietoestanden', 'Een fysieke omkering van de spiegels van de lasercavity'],
       0,
-      'Bij normaal thermisch evenwicht zijn lagere energietoestanden altijd sterker bevolkt; het bereiken van de "geïnverteerde" toestand (via optische, elektrische of chemische pompbron) is wat ervoor zorgt dat gestimuleerde emissie de overhand krijgt boven absorptie, zodat netto lichtversterking mogelijk wordt.',
+      'Populatie-inversie (meer atomen in hogere toestanden) zorgt ervoor dat gestimuleerde emissie absorptie overtreft, netto versterking mogelijk makend.',
     ],
     [
       'Door welke eigenschap is continue laserwerking over het algemeen makkelijker te bereiken in een viertrapslasersysteem dan in een drietrapssysteem?',
       ['Het onderste laserniveau is niet de grondtoestand en valt snel terug, waardoor een moeilijk te overwinnen hoge drempelpopulatie wordt vermeden', 'Er is helemaal geen pompbron nodig, en de laserwerking berust alleen op spontane emissie zonder enige externe energietoevoer aan het versterkingsmedium', 'Het werkt alleen met gasvormige versterkingsmedia', 'Het produceert geen spontane emissie'],
       0,
-      'In een drietrapssysteem is het onderste laserniveau de sterk bevolkte grondtoestand, waardoor meer dan de helft van de populatie moet worden aangeslagen alleen al om transparantie te bereiken; het onderste niveau van een viertrapssysteem ligt boven de grondtoestand en ontlaadt zich snel, wat de vereiste pompdrempel voor continue werking drastisch verlaagt.',
+      'Drietraps: onderste niveau is grondtoestand (hoge pompdrempel); viertraps: onderste boven grondtoestand (lage pompdrempel).',
     ],
     [
       'Door welke parameter worden hechtingsproblemen tussen opeenvolgende FDM-lagen, los van bedhechting, vooral bepaald?',
       ['Nozzletemperatuur en afkoelsnelheid, die bepalen hoe goed opeenvolgende lagen thermisch met elkaar versmelten', 'Uitsluitend de afstelling van het bed', 'De kleur van het filament', 'Alleen de luchtvochtigheid tijdens de opslag van het filament, zonder enige factor tijdens het printen zelf of de gekozen nozzle-instellingen'],
       0,
-      'Een te lage nozzletemperatuur of te sterke koeling kan verhinderen dat aangrenzende lagen op hun grensvlak goed opnieuw smelten en versmelten, wat zwakke hechting tussen lagen oplevert en in ernstige gevallen zichtbaar loslaten - een mechanisch ander faalgedrag dan problemen met de hechting van de eerste laag aan het bed.',
+      'Te lage nozzeltemperatuur/koeling verhindert smelting tussen lagen, wat zwakke hechting en loslaten veroorzaakt.',
     ],
     [
       'Door welke optische eigenschap van de focusserende lens wordt bij lasergraveren de relatie tussen spotgrootte en scherptediepte bepaald?',
       ['De brandpuntsafstand, waarbij een kortere brandpuntsafstand een kleinere spot geeft maar een geringere scherptediepte', 'Alleen de fysieke diameter van de lens, ongeacht het materiaal of de coating, en onafhankelijk van de brandpuntsafstand', 'De kleur van de lenscoating, die de doorgelaten golflengte bepaalt', 'Het totale vermogen van de laserbuis'],
       0,
-      'Lenzen met een kortere brandpuntsafstand bundelen de straal tot een kleinere, intensere spot (nuttig voor fijne details of het snijden van dun materiaal), maar brengen het brandpunt op een scherper punt met minder tolerantie voor variatie in materiaalhoogte, een klassieke optische afweging die ook bekend is uit fotografische lensontwerpen.',
+      'Kortere brandpuntsafstand geeft kleinere spot (fijne details) maar minder tolerantie voor materiaalhoogte-variatie.',
     ],
     [
       'Waaraan wordt de opvallende anisotropie (richtingafhankelijkheid) van de sterkte van SLS-onderdelen doorgaans vooral toegeschreven?',
       ['Voorkeurshechting en restspanningspatronen langs de bouwrichting (Z) versus binnen het XY-vlak van de laag', 'Willekeurige variatie in de deeltjesgrootte van het poeder zonder enig richtingspatroon, wat in de praktijk zelden meetbare invloed heeft op de sterkte', 'De kleur van het gebruikte poeder, die de laserabsorptie beïnvloedt', 'Alleen de omgevingstemperatuur van de ruimte tijdens het printen'],
       0,
-      'Omdat elke laag wordt gesinterd voordat de volgende wordt aangebracht, is de hechting tussen lagen langs de bouwas doorgaans wat zwakker dan de grondiger versmolten verbindingen binnen één gesinterde laag, wat meetbare verschillen in sterkte oplevert afhankelijk van de oriëntatie van het onderdeel - een verschijnsel dat conceptueel, hoewel via een ander mechanisme, ook bekend is van de eigen Z-as-zwakte van FDM.',
+      'Hechting tussen SLS-lagen is zwakker langs de Z-as dan binnen lagen, vergelijkbaar met FDM Z-as-zwakte.',
     ],
     [
       'Welk element wordt doorgaans gebruikt als actieve dotering in de kern van de vezel bij continugolf (CW) fiberlasers voor industrieel snijden?',
@@ -1007,7 +1007,7 @@ export const MAKER: CategoryContent = {
       'Welk specifiek extrudergedrag wordt bij FDM-printen geregeld door de "retractie"-instellingen?',
       ['Het filament net voor en na niet-printende (reis)bewegingen iets terugtrekken, om druipen en draadvorming te verminderen', 'De snelheid waarmee het printbed opwarmt tot de doeltemperatuur, doorgaans geregeld via een apart PID-algoritme in de firmware', 'De hoek van overhang die de printer kan verwerken', 'De totale hoeveelheid filament die per print wordt gebruikt'],
       0,
-      'Zonder retractie zorgen resterende druk en voortgezette lichte extrusie tijdens reisbewegingen voor dunne kunststofdraadjes ("stringing") tussen onderdelen; retractieafstand en -snelheid worden per filamenttype en hotend-ontwerp afgestemd om dit te minimaliseren zonder onderextrusie te veroorzaken bij het hervatten van het printen.',
+      'Retractie trekt filament terug tijdens reisbewegingen om draadvorming ("stringing") te voorkomen.',
     ],
     [
       'Waarin verschilt Multi Jet Fusion (MJF), een door HP ontwikkeld poederbedproces, vooral van laser-gebaseerd SLS wat het versmeltingsmechanisme betreft?',
@@ -1019,7 +1019,7 @@ export const MAKER: CategoryContent = {
       'Door wat aan het grensvlak tussen hars en optiek te handhaven bereikt Carbon\'s CLIP-proces (Continuous Liquid Interface Production) een continue, niet-stapsgewijze bouwbeweging?',
       ['Een dunne, zuurstofdoorlatende "dode zone" die verhindert dat de hars direct tegen het venster uithardt, waardoor het onderdeel continu omhoog kan worden getrokken', 'Een vacuümkamer zonder enige zuurstof boven de hars', 'Een fysiek bewegende film die identiek is aan de FEP-folie van een standaard bottom-up MSLA-printer', 'Een laser die sneller scant dan enige DLP-projector kan verversen'],
       0,
-      'Zuurstof die door een doorlatend venster diffundeert, remt het uitharden precies aan het oppervlak, waardoor het onderdeel nooit hoeft los te laten van een uitgeharde film tussen lagen zoals bij SLA/DLP/MSLA - het bouwplatform stijgt gewoon continu omhoog, wat de directe bron is van het grote snelheidsvoordeel van CLIP bij veel geometrieën.',
+      'Zuurstof-diffusie remt uitharden aan het oppervlak zodat CLIP continu omhoog stijgt zonder lagen los te laten.',
     ],
   ],
   professor: [
@@ -1027,91 +1027,91 @@ export const MAKER: CategoryContent = {
       'Welk versterkingsmedium gebruikte Theodore Maiman bij zijn demonstratie in 1960 van de eerste werkende laser?',
       ['Een synthetisch rubijnkristal', 'Helium-neongas', 'Een halfgeleiderdiode', 'Koolstofdioxidegas'],
       0,
-      'Maimans rubijnlaser, gebouwd bij Hughes Research Laboratories, produceerde gepulste uitgang op 694,3 nm en was een aantal beter gefinancierde groepen (waaronder groepen die gas- en halfgeleiderbenaderingen nastreefden) voor bij het eerste praktische demonstratie, in enige spanning met het eerdere theoretische grondwerk van Townes en Schawlow.',
+      'Maimans rubijnlaser (Hughes, 694,3 nm, gepulst) was eerste praktische demonstratie, vóór beter-gefinancierde groepen.',
     ],
     [
       'Hoe noemden Charles Townes en Arthur Schawlow het voorgestelde apparaat in hun theoretische artikel uit 1958, dat het eerdere maserconcept uitbreidde naar optische frequenties, voordat de term "laser" gangbaar werd?',
       ['De "optische maser"', 'De "fotonversterker"', 'De "coherente lichtgenerator"', 'Het "kwantumstraalapparaat"'],
       0,
-      'Hun artikel, gebaseerd op Townes\' eerdere werk aan de microgolfmaser (Microwave Amplification by Stimulated Emission of Radiation), stelde voor om versterking door gestimuleerde emissie uit te breiden naar zichtbaar licht, en het acroniem "laser" (Light Amplification by Stimulated Emission of Radiation) werd kort daarna bedacht door Gordon Gould.',
+      'Hun artikel breidde de maser uit naar zichtbaar licht; "laser" (Light Amplification by Stimulated Emission of Radiation) werd kort daarna door Gould bedacht.',
     ],
     [
       'Door welke ongewone patentkwestie is de rol van Gordon Gould in de geschiedenis van de laser historisch opvallend?',
       ['Ondanks dat hij de term "laser" bedacht en vroege notities had opgesteld, verloor hij eerste geschillen over patentprioriteit en bracht hij bijna drie decennia door in rechtszaken voordat hij de belangrijkste patenten kon zekerstellen', 'Hij had vanaf het begin onbetwiste patentrechten zonder enige rechtszaak, wat hem in staat stelde meteen na de eerste aanvraag licenties te innen bij fabrikanten', 'Hij mocht wettelijk nooit enig laser-gerelateerd patent ontvangen', 'Zijn patenten golden alleen voor laserprintertoepassingen, niet voor laser in het algemeen, een beperking die destijds werd vastgelegd in aparte licentieovereenkomsten met fabrikanten van kantoorapparatuur en later ook met leveranciers van medische apparatuur'],
       0,
-      'Goulds notitieboek uit 1957 (wel notarieel bekrachtigd, maar niet meteen als patent ingediend) ging vooraf aan de formele patentaanvraag van Townes en Schawlow, maar door procedurele misstappen begon hij pas in de jaren zeventig-tachtig belangrijke patentzaken te winnen, waarna hij na decennia van geschillen alsnog aanzienlijke licentie-inkomsten verwierf.',
+      'Goulds notitieboek (1957) ging vooraf aan Townes/Schawlow; procedurele fouten zorgden voor decennia litigatie.',
     ],
     [
       'Welke praktische eigenschap van een laser wordt samen bepaald door de lijnbreedte van het versterkingsmedium en de specifieke longitudinale cavitymodi die het kan ondersteunen?',
       ['Of de laser in enkelvoudige of meervoudige modus werkt (en dus zijn coherentielengte en spectrale zuiverheid)', 'Alleen de fysieke omvang van de laserbehuizing, los van de gebruikte optica, het versterkingsmedium of enige cavity-eigenschap', 'De kleur van het vereiste veiligheidswaarschuwingslabel', 'Uitsluitend het elektrische stroomverbruik van de laser, ongeacht de gebruikte cavity-configuratie'],
       0,
-      'Alleen cavitymodi die binnen de bandbreedte van het versterkingsmedium vallen en aan de resonantievoorwaarde voldoen, kunnen laseren; of één of meerdere van dergelijke modi worden ondersteund, bepaalt of de werking enkelvoudig of meervoudig longitudinaal is, wat direct de coherentielengte beïnvloedt - cruciaal voor toepassingen zoals interferometrie of bepaalde vormen van precisiesnijden.',
+      'Cavitymodi in versterkingsmedium-bandbreedte bepalen coherentie: enkelvoudig (hoge coherentie) vs meervoudig (lage coherentie).',
     ],
     [
       'Het historische geschil tussen Chuck Hulls 3D Systems en latere houders van FDM-patenten is minder bekend dan het parallelle geschil over welke specifieke technologie, zodra de oorspronkelijke kernpatenten uit 1992 (in handen van Stratasys, uit Scott Crumps aanvraag van 1989) rond 2009 verliepen?',
       ['De daaropvolgende explosie van betaalbare open-source en commerciële FDM-printers, wat lijkt op wat er gebeurde na het verlopen van de SLA-patenten', 'De uitvinding van de eerste CNC-router, decennia eerder gepatenteerd, een geheel andere fabricagetechnologie met haar eigen, veel oudere patentgeschiedenis', 'Het eerste patent op spuitgieten', 'Het eerste patent op koolstofvezelcomposieten'],
       0,
-      'Zoals de innovatie rond SLA breder werd nadat de patenten uit het Hull-tijdperk verliepen, wordt het verlopen in 2009 van de kernpatenten van Stratasys op FDM (samen met het eerdere grondwerk van het RepRap-project) algemeen gezien als aanjager van de daaropvolgende opkomst van betaalbare consumenten-FDM-printers van veel nieuwe fabrikanten.',
+      'Het verlopen van Stratasys\' FDM-patenten in 2009 (met RepRap-grondwerk) dreef betaalbare consumenten-FDM-printers.',
     ],
     [
       'Hoe wordt het fysieke verschijnsel van de "olifantsvoet"-vervorming aan de basis van FDM-prints het beste verklaard?',
       ['Verzachte, nog warme onderste lagen worden naar buiten samengedrukt onder het gewicht van de erboven geprinte lagen, voordat ze volledig zijn uitgehard', 'Te sterke retractie-instellingen', 'Onvoldoende vuldichtheid in het hele geprinte onderdeel', 'Een printbed dat scheef staat in plaats van waterpas'],
       0,
-      'Omdat de eerste paar lagen relatief warm en meegaand blijven terwijl er lagen bovenop worden aangebracht, kan het opgehoopte gewicht een lichte uitwaartse bolling aan de basis veroorzaken voordat de onderste lagen volledig afkoelen en verstijven, wat verschilt van kromtrekking (dat optillen inhoudt, geen bolling).',
+      'Warme onderste lagen worden samengedrukt door bovengelegen lagen, wat bolling veroorzaakt (niet optillen/kromtrek).',
     ],
     [
       'Door welke materiaaleigenschap van het fotopolymeer wordt "doorharden" of onbedoeld uitharden van hars voorbij de bedoelde laag bij hars-3D-printen vooral bepaald?',
       ['De uithardingsdiepte-eigenschappen, beschreven door de Jacobs-werkcurve die de belichtingsenergie relateert aan de uithardingsdiepte', 'Uitsluitend de viscositeit bij kamertemperatuur, los van de uithardingschemie, de gebruikte fotoinitiator of enig ander formuleringsdetail', 'Alleen de concentratie van kleurpigment, los van enig gedrag van de fotoinitiator of het absorbeermiddel', 'De thermische geleidbaarheid van het bouwplatform'],
       0,
-      'De Jacobs-vergelijking (uithardingsdiepte versus de natuurlijke logaritme van de belichting) modelleert hoe diep licht doordringt en hars uithardt voorbij de nominale laagdikte; formuleerders stellen de concentraties van fotoinitiator en absorbeermiddel/kleurstof af om deze penetratiediepte (Dp) en kritische belichting (Ec) te regelen, waarbij sterkte door goede doorharding wordt afgewogen tegen ongewenst doorharden in supports of fijne details.',
+      'De Jacobs-curve modelleert uithardingsdiepte; formuleerders balanceren doorharding vs ongewenste penetratie.',
     ],
     [
       'Waarom is selectief lasersmelten van bepaalde metalen met hoge reflectiviteit en hoge thermische geleidbaarheid (zoals puur koper of aluminium) technisch uitdagend?',
       ['Hoge reflectiviteit beperkt de energieabsorptie, terwijl hoge thermische geleidbaarheid de geabsorbeerde warmte snel afvoert, wat samen een veel hoger laservermogen/andere golflengten (bijv. groen of blauw licht) vereist dan nodig is voor staal', 'Deze metalen kunnen door geen enkel bekend atomisatieproces tot poeder worden verwerkt, ongeacht of daarbij gasatomisatie, plasmatomisatie, een roterende elektrode of enige andere industriële poederproductiemethode wordt gebruikt om de deeltjes te vormen', 'Deze metalen hebben geen meetbaar smeltpunt', 'Deze metalen reageren explosief met inert beschermgas zoals argon of stikstof, wat elk gebruik van poederbedfusie voor deze metalen onmogelijk zou maken'],
       0,
-      'Standaard infrarood-fiberlasers, uitstekend geschikt voor staal, hebben moeite met sterk reflecterende, thermisch goed geleidende metalen zoals koper omdat er zo weinig energie wordt geabsorbeerd en wat wel wordt geabsorbeerd zich snel verspreidt; dit heeft de ontwikkeling van laser­systemen met groene en blauwe golflengte gestimuleerd, die door reflecterende metalen aanzienlijk efficiënter worden geabsorbeerd.',
+      'IR-fiberlasers hebben moeite met reflectieve metalen (Cu, Al); groene/blauwe golflengte wordt efficiënter geabsorbeerd.',
     ],
     [
       'Welk specifiek risico op een faalwijze, gerelateerd aan scheidingskrachten bij het platform, delen technieken uit de familie van vatfotopolymerisatie (waaronder SLA, DLP en MSLA)?',
       ['Zuig- en losraakkrachten tussen de uitgeharde laag en de vatfolie of tankbodem kunnen dunne onderdelen met een groot doorsnedeoppervlak doen delamineren of vervormen', 'Overhitting van de UV-lichtbron zelf tijdens langdurige printruns, wat vooral bij goedkopere lcd-panelen een bekend en veelbesproken slijtageprobleem is dat de levensduur van het paneel verkort', 'Overmatige luchtvochtigheid die op het harsoppervlak condenseert', 'Statische elektriciteitsontlading die het lcd-maskerpaneel beschadigt'],
       0,
-      'Elke laag moet fysiek loskomen van de folie van de harstank (of, bij top-down SLA, gewoon vrij omhoog komen) voordat de volgende laag wordt geprint; grote platte doorsnedes veroorzaken hoge loslaatkrachten die kunnen leiden tot vervorming, scheuren of onvolledig loskomen, wat verklaart waarom veel ontwerpen een hoek-oriëntatie en een geminimaliseerd doorsnedeoppervlak van de eerste laag ten opzichte van de rest van de bouw verkiezen.',
+      'Loslaakrachten voor grote platte doorsnedes kunnen vervorming/scheuren veroorzaken; schuin oriënteren werkt beter.',
     ],
     [
       'Waarom hebben diode-gepompte solid-state (DPSS) lasers oudere, flitslamp-gepompte solid-state lasers (zoals vroege Nd:YAG-systemen) grotendeels verdrongen?',
       ['Een aanzienlijk hoger elektrisch-naar-optisch rendement en een langere levensduur van de pompbron', 'Het zijn de enige methode die überhaupt continue-golf-uitgang kan leveren, iets wat flitslampgepompte systemen nooit hebben kunnen bereiken', 'Ze hebben helemaal geen koelsysteem nodig', 'Ze maken elke resonantiecavity overbodig'],
       0,
-      'Halfgeleiderlaserdiodes zetten elektrische input veel efficiënter om in pomplicht dan flitslampen en gaan enorm veel langer mee voordat vervanging nodig is, wat samen met een betere spectrale afstemming op de absorptiebanden van het versterkingsmedium de verschuiving naar DPSS-ontwerpen in veel precisielasertoepassingen sinds de jaren negentig heeft aangedreven.',
+      'Laserdiodes hebben hoger rendement dan flitslampen en langere levensduur, wat DPSS-adoption sinds jaren negentig aandreef.',
     ],
     [
       'Wat kwantificeert de kwaliteitsmaat M-kwadraat (M2) van de straal in de laserfysica?',
       ['Hoe dicht de focusseerbaarheid en divergentie van een reële laserstraal de theoretisch ideale (diffractie-gelimiteerde, Gaussische) straal benadert', 'Het totale uitgangsvermogen van de laser, gemeten aan de opening', 'De golflengtestabiliteit bij temperatuurverandering', 'Het fysieke gewicht van de laserkop'],
       0,
-      'Een M2-waarde van 1 vertegenwoordigt een perfecte, diffractie-gelimiteerde Gaussische straal; reële laserstralen hebben een M2 groter dan 1, en deze factor beïnvloedt direct hoe klein de straal kan worden gefocusseerd voor een gegeven optisch systeem, wat enorm belangrijk is voor precisiesnijden en fijn graveren.',
+      'M2=1 is perfects diffractie-gelimiteerd; reële lasers M2>1, beïnvloedend focusserend vermogen voor snijden.',
     ],
     [
       'Waardoor wordt "balling" - het vormen van bolletjes van gesmolten metaal in plaats van een gladde spoor - bij poederbedfusie in additieve fabricage vooral veroorzaakt?',
       ['Marangoni-convectie en oppervlaktespanningseffecten in het smeltbad bij bepaalde combinaties van laservermogen en scansnelheid', 'Een te hoge doorstroomsnelheid van het beschermgas die het oppervlak van het smeltbad verstoort en spatten in de bouwkamer veroorzaakt', 'Poederdeeltjes die simpelweg te klein zijn in diameter, ongeacht de laserparameters of de scanstrategie', 'Omgevingslicht in de ruimte dat de lasersensor verstoort'],
       0,
-      'Bij bepaalde combinaties van onvoldoende energiedichtheid of te hoge scansnelheid kan door oppervlaktespanning gedreven stroming (vaak beschreven via het Marangoni-effect) ervoor zorgen dat het smeltbad samentrekt tot afzonderlijke bolletjes in plaats van een doorlopend, goed bevochtigd spoor te vormen, een goed onderzocht defect bij het optimaliseren van procesparameters voor nieuwe metaalpoeders.',
+      'Marangoni-effectdriving oppervlaktespanning kan smeltbad doen disintegreren in bolletjes bij suboptimale parameters.',
     ],
     [
       'Aan welk specifiek voorgesteld verspreidingsmodel, soms vergeleken met biologische reproductie, wordt in de geschiedschrijving van het RepRap-project de expliciete ontwerpdoelstelling van zelfreplicatie toegeschreven?',
       ['Een geometrisch ("viraal") groeimodel waarin elke printer onderdelen kon produceren voor meerdere andere printers, wat de verspreiding versnelde', 'Een strikt lineair vervangingsmodel van één printer per jaar, vergelijkbaar met de gestage productiegroei bij conventionele fabricagelijnen uit die tijd', 'Een model waarin geen printer ooit onderdelen kon produceren voor een andere printer', 'Een puur theoretisch doel dat nooit bedoeld was om praktisch gerealiseerd te worden'],
       0,
-      'Bowyer en collega\'s formuleerden zelfreplicatie expliciet in termen van mogelijke exponentiële ("virale") verspreiding, waarbij elke machine die een aanzienlijk deel van de onderdelen van een andere machine kon produceren de verspreiding veel sneller kon versnellen dan conventionele productie en verkoop, een formulering die veel van de open-source-ethos van het project en de latere commerciële afgeleiden heeft gevormd.',
+      'Bowyer formuleerde zelfreplicatie in termen van exponentiële ("virale") verspreiding, wat de open-source-ethos van het project vormde.',
     ],
     [
       'Waardoor bereikt femtosecond ("ultrasnelle") lasermicrobewerking een heel andere interactie met materiaal dan continue-golf- of nanosecondegepulseerde lasers?',
       ['Pulsduren die korter zijn dan de tijdschaal van thermische diffusie in het omringende materiaal, wat "koude" ablatie met een minimale warmte-beïnvloede zone mogelijk maakt', 'Simpelweg omdat het gemiddelde vermogen altijd hoger is dan bij andere lasertypes, wat op zichzelf al voldoende zou zijn om elk denkbaar materiaal onmiddellijk te verdampen', 'Omdat femtosecondelasers helemaal niet tot een kleine spot kunnen worden gefocusseerd', 'Omdat ze uitsluitend in het microgolfgebied werken, niet in het optische gebied'],
       0,
-      'Omdat energie sneller wordt afgezet dan ze als warmte kan weg­geleiden, kunnen femtosecondepulsen materiaal direct ableren (vaak via niet-lineaire multifoton-absorptie) met een drastisch verkleinde warmte-beïnvloede zone in vergelijking met langerdurende of continue-golf-lasers, wat precisiebewerking van warmtegevoelige materialen mogelijk maakt die anders zouden scheuren of te veel zouden smelten.',
+      'Femtoseconde-pulsenergie wordt sneller afgezet dan warmte-afleiding, mogelijk makend koude ablatie met minimale thermale schade.',
     ],
     [
       'Welke theoretische voorwaarde, later vereist voor laserwerking, legde Albert Einstein vast in zijn stralingsartikel uit 1917, decennia voordat er een werkende laser bestond?',
       ['Dat een atoom in een aangeslagen toestand door een invallend foton gestimuleerd kan worden om een tweede, identiek en coherent foton uit te zenden', 'Dat populatie-inversie thermodynamisch onmogelijk is in elk reëel medium', 'Dat licht onder geen enkele omstandigheid coherent versterkt zou kunnen worden', 'Dat gestimuleerde emissie alleen bij microgolffrequenties zou kunnen optreden, nooit bij optische frequenties'],
       0,
-      'Einstein leidde gestimuleerde emissie af als theoretisch tegenhanger van spontane emissie en absorptie, puur op basis van thermodynamische argumenten, decennia voordat de maser van Townes of de laser van Maiman bestonden; de coherentie-eigenschap die hij daarbij vaststelde is de directe theoretische voorloper van elke laser die sindsdien is gebouwd.',
+      'Einstein leidde gestimuleerde emissie af via thermodynamische argumenten, decennia voor maser/laser.',
     ],
   ],
 };

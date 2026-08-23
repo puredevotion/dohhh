@@ -17,7 +17,7 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const SILICON: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Bij welke golflengte werkt EUV-lithografie?',
       ['13,5 nm', '193 nm', '248 nm', '1,06 um'],
@@ -183,10 +183,102 @@ export const SILICON: CategoryContent = {
       'Esmaeilzadeh et al., 2011. Het is de structurele reden voor de omschakeling naar gespecialiseerde accelerators: als je niet alles tegelijk kunt bestromen, laat dan het deel dat je wel bestroomt bij de taak passen.',
     ],
   ],
+  bscba: [
+    [
+      'Wat is het doel van een halfgeleidermasker in lithografie?',
+      ['Het patroon definiëren dat op de wafer wordt overgedragen', 'Het UV-licht versterken', 'De temperatuur tijdens verwerking meten', 'De wafer op zijn plaats houden'],
+      0,
+      'Het gepatroneerde masker (reticle) wordt op de wafer geprojecteerd om het circuitpatroon via projectie- of contactbelichting te creëren.',
+    ],
+    [
+      'Wat is een geïntegreerde schakeling (IC)?',
+      ['Een enkele halfgeleiderschip met meerdere transistors en componenten', 'Een lichtbron die in lithografie wordt gebruikt', 'Een apparaat dat elektrische weerstand meet', 'Een materiaal dat voor isolatie van bedrading wordt gebruikt'],
+      0,
+      'Een IC combineert transistors, dioden, weerstanden en condensatoren op één substraat en vormt de basis van moderne elektronica.',
+    ],
+    [
+      'Wat is doping bij halfgeleiderproductie?',
+      ['Het toevoegen van onzuiverheden aan zuiver silicium om n-type of p-type geleiding te creëren', 'De wafer verhitten tot het smeltpunt', 'Een laser gebruiken om patronen in silicium te snijden', 'De wafer bedekken met isolatiemateriaal'],
+      0,
+      'Donoren (n-type) en acceptoren (p-type) maken de elektrische eigenschappen mogelijk die juncties en transistors werkend maken.',
+    ],
+    [
+      'Wat is de primaire functie van een transistor?',
+      ['Signalen versterken of stroom schakelen met een klein stuursingaal', 'Elektrische lading tijdelijk opslaan', 'Warmte afvoeren die door andere componenten wordt gegenereerd', 'Spanning over een circuit meten'],
+      0,
+      'Een transistor werkt als poort: een kleine spanning of stroom aan de ingang regelt grotere stromen aan de uitgang.',
+    ],
+    [
+      'Wat is het verschil tussen silicium en germanium als halfgeleiders?',
+      ['Silicium heeft een grotere bandgap, is veel voorkomender en is thermisch stabieler; germanium heeft lagere ladingsdragerbeweeglijkheid', 'Silicium wordt nooit in moderne elektronica gebruikt omdat het te fragiel is', 'Germanium geleid beter bij alle temperaturen', 'Silicium kan niet met fosfor worden gedoteerd'],
+      0,
+      'Siliciums grotere bandgap (1,1 eV vs 0,67 eV) en overvloed maakten het de industriestandaard ondanks germaniums vroege gebruik.',
+    ],
+    [
+      'Wat is de relatie tussen transistorgrootte en verwerkingsknooppunt?',
+      ['Een kleinere node (bijv. 5 nm) betekent over het algemeen kleinere transistors en hogere dichtheid', 'Knooppuntnamen verwijzen alleen naar vervaardigingskosten, niet naar fysieke grootte', 'Kleinere knoopnummers geven langzamere transistors aan', 'Knooppuntnamen hebben geen verband met werkelijke transistorafmetingen'],
+      0,
+      'Verwerkingsknooppunten bepalen de minimale kenmerkomvang en interconnectdichtheid, wat hogere transistoraantallen per oppervlakte-eenheid mogelijk maakt.',
+    ],
+    [
+      'Waar verwijst "lekstroom" naar in halfgeleiderinrichtingen?',
+      ['Ongewenste stroomstroom door een transistor in de uitgeschakelde toestand', 'Vermogen dat tijdens normale werking wordt verbruikt', 'Elektromagnetische straling die door het apparaat wordt uitgezonden', 'Verlies van materiaal door oxidatie'],
+      0,
+      'Lekstroom is statische vermogensverspreiding; deze stijgt exponentieel met temperatuur en beperkt de batterijduur in mobiele apparaten.',
+    ],
+    [
+      'Wat is een fotomasker?',
+      ['Een sjabloon met een patroon van transparante en ondoorzichtige gebieden om een circuitontwerp op een wafer over te dragen', 'Een beschermingsdekking voor de fotoresist tijdens bakken', 'Een hulpmiddel voor het meten van de golflengte van licht', 'Een chemische verbinding die wordt gebruikt om fotoresist te ontwikkelen'],
+      0,
+      'Het fotomasker wordt aan licht blootgesteld; het doorgelaten patroon bereikt de fotoresist-gecoate wafer eronder.',
+    ],
+    [
+      'Wat is het doel van fotoresist in halfgeleiderverwerking?',
+      ['Een lichtgevoelig materiaal dat bij blootstelling oplosbaar of onoplosbaar wordt, wat de basis vormt voor patroonoverdracht', 'Een beschermende laag tegen hitte tijdens vervaardiging', 'Een stof die elektrische geleiding verhoogt', 'Een chemische stof die oxidatielagen verwijdert'],
+      0,
+      'Fotoresist wordt op de wafer aangebracht; UV-blootstelling bepaalt gebieden voor daaropvolgende etsing of dopering.',
+    ],
+    [
+      'Wat wordt bedoeld met "opbrengst" in halfgeleiderproductie?',
+      ['Het percentage werkende apparaten dat per wafer wordt geproduceerd', 'Het totale aantal transistors op een die', 'De snelheid waarmee wafers worden verwerkt', 'De dikte van het siliciumsubstraat'],
+      0,
+      'Opbrengst is van cruciaal belang voor kosten per die; defecten verminderen opbrengst, waardoor verwerking met lage defecten van het grootste belang is.',
+    ],
+    [
+      'Wat is thermische oxidatie in halfgeleiderproductie?',
+      ['Het proces van het groeien van een siliciumoxidelaag door silicium in zuurstof of stoom te verhitten', 'Een methode om de wafer na verwerking af te koelen', 'Een chemische reactie om onzuiverheden te verwijderen', 'Een techniek om dopantconcentratie te verhogen'],
+      0,
+      'Thermisch oxide (SiO2) werkt als isolator en kan als gate-diëlektricum in oudere transistorgeneraties worden gebruikt.',
+    ],
+    [
+      'Wat is het doel van een diffusiestap in halfgeleiderverwerking?',
+      ['Dopantatomen in het siliciumsubstraat verplaatsen door verhitten, waardoor ze thermisch kunnen verspreiden', 'Overtollige fotoresist na blootstelling verwijderen', 'De dikte van gedeponeerde lagen meten', 'De wafer tussen verwerkingsstappen afkoelen'],
+      0,
+      'Diffusie verplaatst dopanten van het oppervlak naar de massa en creëert gedoteerde regio\'s die de transistorstructuur vormen.',
+    ],
+    [
+      'Wat is etsen in halfgeleiderproductie?',
+      ['Het proces van selectief materiaal verwijderen (oxide, polysilicium of metaal) met chemische of fysieke middelen', 'Een methode om nieuw materiaal op de wafer aan te brengen', 'Een techniek om elektrische eigenschappen te meten', 'Een verhittingsproces om coatings uit te harden'],
+      0,
+      'Nat etsen gebruikt vloeibare chemicaliën; droog etsen gebruikt ion- of plasmabombardement. Beide zijn selectief op basis van het fotomasker.',
+    ],
+    [
+      'Wat is een p-n-junctie?',
+      ['De grens tussen p-type en n-type halfgeleidermateriaal, vormt de basis van dioden en transistors', 'Een verbindingspunt in een printplaat', 'Een meetinstrument dat bij tests wordt gebruikt', 'Een chemische bindingsmethode'],
+      0,
+      'Bij de junctie creëren diffusie van meerderheidsmeerstellers en elektrostatische krachten een depletiegebied dat stroomstroom controleert.',
+    ],
+    [
+      'Waar staat "CMOS" voor?',
+      ['Complementaire metaaloxydehalfgeleider, combineert n-type en p-type transistors op dezelfde chip', 'Common-Modular Operating System', 'Crystalline Metal-Oxide Surface', 'Coordinated Multi-Object Structure'],
+      0,
+      'CMOS paren nMOS- en pMOS-transistors; omdat slechts één tegelijk geleidt, is statische vermogensverspreiding minimaal.',
+    ],
+  ],
 };
 
 export const SOFTWARE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat betekent referentiele transparantie?',
       [
@@ -350,6 +442,98 @@ export const SOFTWARE: CategoryContent = {
       ],
       0,
       'Types als objecten, termen als morfismen, en de hele driehoek is waarom categorietheorie steeds opduikt in taalontwerp in plaats van een gimmick te zijn.',
+    ],
+  ],
+  bscba: [
+    [
+      'Wat is een functie in programmering?',
+      ['Een benoemd codeblok dat een specifieke taak uitvoert en kan worden hergebruikt', 'Een verklaring die een variabele declareert', 'Een type lus dat code herhaalt', 'Een gegevensstructuur voor het opslaan van lijsten'],
+      0,
+      'Functies kapselen logica in, verminderen codeduplica en nemen parameters aan en geven waarden terug.',
+    ],
+    [
+      'Wat is een variabele?',
+      ['Een benoemde container voor het opslaan van een waarde die tijdens programma-uitvoering kan veranderen', 'Een verklaring die programmaflow controleert', 'Een wiskundige constante', 'Een functie die uitvoer afdrukt'],
+      0,
+      'Variabelen hebben typen (int, string, enz.) en bereik; hun waarden kunnen worden gewijzigd terwijl het programma wordt uitgevoerd.',
+    ],
+    [
+      'Wat is het doel van een lus?',
+      ['Een codeblok een opgegeven aantal keren of terwijl een voorwaarde waar is, herhalen', 'Een nieuwe functie definiëren', 'Een opmerking in code creëren', 'De uitvoering van een programma beëindigen'],
+      0,
+      'Veelgebruikte lussen zijn for, while en foreach; ze verminderen codeduplica door verklaringen voorwaardelijk uit te voeren.',
+    ],
+    [
+      'Wat is de tijdscomplexiteit O(n)?',
+      ['Lineaire tijd: de runtime groeit proportioneel met invoergrootte', 'Constante tijd: de runtime hangt niet af van invoergrootte', 'Logaritmische tijd: de runtime groeit als log n', 'Exponentiële tijd: de runtime groeit als 2^n'],
+      0,
+      'Een algoritme met O(n)-complexiteit duurt ongeveer n stappen voor n items; verdubbeling van n verdubbelt de runtime.',
+    ],
+    [
+      'Wat is recursie?',
+      ['Wanneer een functie zichzelf aanroept, rechtstreeks of indirect, om een kleinere instantie van hetzelfde probleem op te lossen', 'Een lusopdracht die code herhaalt', 'Een methode voor het opslaan van gegevens in een boomstructuur', 'Een techniek voor het versnellen van programma\'s'],
+      0,
+      'Recursie vereist een basisgeval (wanneer stoppen) en een recursief geval (hoe voortuitgang naar het basisgeval maken).',
+    ],
+    [
+      'Wat is gegevensabstractie?',
+      ['Implementatiedetails achter een interface verbergen, zodat gebruikers zonder inzicht kunnen interageren', 'Alle gegevens in geheugen opslaan zonder deze in te delen', 'Alle opmerkingen uit broncode verwijderen', 'Duplicaatkopieen van gegevens maken'],
+      0,
+      'Klassen, modules en abstracte gegevenstypen gebruiken allemaal abstractie om complexiteit te beheren door alleen het nodige bloot te stellen.',
+    ],
+    [
+      'Wat is een gegevensstructuur?',
+      ['Een georganiseerde manier om gegevens efficiënt op te slaan en op te halen, zoals arrays, gelinkte lijsten, stapels of bomen', 'Een variabeleverklaring', 'Een type lus', 'Een geheugentoewijzingstechniek'],
+      0,
+      'De keuze van gegevensstructuur beïnvloedt algoritmeperformance; verschillende structuren optimaliseren voor verschillende bewerkingen.',
+    ],
+    [
+      'Wat is het doel van een sorteeralgoritme?',
+      ['Elementen in een specifieke volgorde rangschikken, meestal oplopend of aflopend, om efficiënt zoeken in te schakelen', 'Dubbele elementen uit een lijst verwijderen', 'Een lijst in kleinere sublisten splitsen', 'Het aantal elementen tellen'],
+      0,
+      'Veel voorkomende sorteeringen zijn quicksort, mergesort en heapsort; keuze hangt af van gegevens en prestatievereisten.',
+    ],
+    [
+      'Wat is een string in programmering?',
+      ['Een reeks tekens die tekst vertegenwoordigt', 'Een type integervariabele', 'Een lus die code herhaalt', 'Een functie die rekenkundige bewerkingen uitvoert'],
+      0,
+      'Strings zijn onveranderbaar in veel talen (Java, Python); bewerkingen ervan creëren nieuwe strings in plaats van de origineel te wijzigen.',
+    ],
+    [
+      'Wat is het verschil tussen een lijst en een tuple?',
+      ['Een lijst is veranderbaar en een tuple is onveranderbaar in de meeste talen', 'Beide zijn identiek en kunnen onderling worden gebruikt', 'Een lijst bevat getallen en een tuple bevat tekst', 'Tuples zijn altijd sneller dan lijsten'],
+      0,
+      'Onveranderlijkheid van tuples stelt ze in staat als woordenboeksleutels te dienen en maakt gelijktijdige toegang veiliger.',
+    ],
+    [
+      'Wat is een array?',
+      ['Een verzameling elementen die op opeenvolgende geheugenlocaties worden opgeslagen, allemaal van hetzelfde type', 'Een verklaring die code herhaalt', 'Een functie die een waarde retourneert', 'Een type sorteeralgoritme'],
+      0,
+      'Arrays maken willekeurige toegang mogelijk (O(1) lookup per index) maar hebben vaste grootte in veel talen.',
+    ],
+    [
+      'Wat is een gelinkte lijst?',
+      ['Een gegevensstructuur waarbij elk element naar het volgende verwijst, wat dynamische grootte mogelijk maakt zonder voorafgaande toewijzing', 'Een manier om gegevens in oplopende volgorde te sorteren', 'Een techniek voor gegevenscompressie', 'Een methode voor het opslaan van multidimensionale arrays'],
+      0,
+      'Gelinkte lijsten hebben O(n)-toegangstijd maar laten efficiënte invoeging en verwijdering toe als u de knoopwijzer hebt.',
+    ],
+    [
+      'Wat is een hashtabel?',
+      ['Een gegevensstructuur die een hashfunctie gebruikt om sleutels toe te wijzen aan waarden, wat snelle lookup inschakelt', 'Een methode voor het sorteren van arrays', 'Een boomachtige structuur voor hiërarchische gegevens', 'Een techniek voor geheugenbeheer'],
+      0,
+      'Hashtabellen bereiken O(1) gemiddelde-case lookup; botsingen moeten worden afgehandeld door chaining of probing.',
+    ],
+    [
+      'Wat is een object in objectgeoriënteerd programmeren?',
+      ['Een instantie van een klasse die gegevens (attributen) en gedrag (methoden) bevat', 'Een variabele die een getal opslaat', 'Een functie die een berekening uitvoert', 'Een type lus'],
+      0,
+      'Objecten bundelen staat en gedrag; overerving en polymorfisme laten codeherbbruik en flexibele ontwerpen toe.',
+    ],
+    [
+      'Wat is overerving in objectgeoriënteerd programmeren?',
+      ['Een mechanisme waarbij een klasse (subklasse) attributen en methoden erft van een andere klasse (superklasse), codeduplica verminderend', 'Een manier om gegevens in geheugen op te slaan', 'Een techniek voor het versnellen van programma\'s', 'Een methode voor het organiseren van variabelen'],
+      0,
+      'Overerving maakt is-a-relaties mogelijk; een subklasse kan geërfde methoden negeren voor gespecialiseerd gedrag.',
     ],
   ],
 };

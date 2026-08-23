@@ -14,7 +14,99 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const CENTRAL_ASIA: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Welke Chinese dynastie was in de middeleeuwen de voornaamste concurrent voor invloed in Centraal-Azië?',
+      ['De Tang', 'De Qin', 'De Song', 'De Yuan'],
+      0,
+      'De Tang-dynastie (618-907) was de belangrijkste Chinese macht in Centraal-Azië vóór de Mongoolse expansie.',
+    ],
+    [
+      'Welk groot geloof verspreide zich van Zuid-Azië oostwaarts door Centraal-Azië langs handelsroutes?',
+      ['Boeddhisme', 'Islam', 'Christendom', 'Zoroastrianisme'],
+      0,
+      'Het boeddhisme reisde van India via Centraal-Azië naar Oost-Azië langs Zijderotenetwerken.',
+    ],
+    [
+      'Welk koopmansvolk wordt historisch het meest erkend voor het ontwikkelen van overland handelsnetwerken in Centraal-Azië?',
+      ['De Sogdiërs', 'De Turkse volkeren', 'De Perziërs', 'De Arabieren'],
+      0,
+      'Sogdische kooplieden uit Samarkand en Boekhara domineerden langeafstandshandel in de regio.',
+    ],
+    [
+      'Wat was het voornaamste economische systeem van middeleeuwse nomadische volkeren in Centraal-Azië?',
+      ['Veehouderij van vee', 'Landbouw', 'Zeehandel en visserij', 'Mijnbouw en metallurgie'],
+      0,
+      'Nomadische veehouderij van paarden, schapen en jakken vormde de economische basis van steppemaatschappijen.',
+    ],
+    [
+      'Welke Mongoolse leider verenigde de verschillende stamconfederaties van de Centraal-Aziatische steppe?',
+      ['Temüjin (Dzjengis Khan)', 'Batu Khan', 'Timoer', 'Koeblai Khan'],
+      0,
+      'Temüjin verenigde de Mongoolse stammen in het begin van de 13e eeuw en werd Dzjengis Khan.',
+    ],
+    [
+      'Het Timoeridenrijk, dat Samarkand en Herat regeerde, stond bekend om het patroneren van wat?',
+      ['Kunst, architectuur en geleerdheid', 'Zeevaartonderzoek', 'Infanteriegerichte oorlogvoering', 'Landbouwinnovatie'],
+      0,
+      'Timoeridenheersers maakten hun hoofdsteden tot centra van astronomie, wiskunde en literatuur.',
+    ],
+    [
+      'Welke middeleeuwse Centraal-Aziatische stad werd beroemd als belangrijk centrum van islamitisch leren?',
+      ['Boekhara', 'Kashgar', 'Samarkand', 'Tasjkent'],
+      0,
+      'Boekhara was eeuwenlang een belangrijk knooppunt van islamitisch recht en wiskunde.',
+    ],
+    [
+      'Waarom werd Centraal-Azië voor opeenvolgende rijken en mogendheden strategisch belangrijk?',
+      ['Controle over handelsroutes tussen verre beschavingen creëerde rijkdom en politieke invloed', 'Enorme voorraden edelmetalen', 'Vruchtbaar landbouwland geschikt voor graanteelt', 'Toegang tot warmwaterhavens'],
+      0,
+      'De geografische positie tussen beschavingen maakte Centraal-Aziatische handelsroutes economisch vitaal.',
+    ],
+    [
+      'In welke eeuw intensiveerde het Russische Rijk zijn expansie in Centraal-Azië?',
+      ['De negentiende eeuw', 'De zestiende eeuw', 'De achttiende eeuw', 'De twintigste eeuw'],
+      0,
+      'De Russische keizerijkse expansie in Centraal-Azië versnelde aanzienlijk in de jaren 1800.',
+    ],
+    [
+      'Wat waren de khanaten die Centraal-Azië in de vroegmoderne periode regeerden?',
+      ['Onafhankelijke staten geregeerd door khans, met steden als Boekhara, Chiwa en Kokand als hoofdsteden', 'Provincies direct bestuurd door de Russische Tsar', 'Door het Ottomaanse Rijk gelicenteerde handelsvennootschappen', 'Nomadische confederaties zonder vaste stedelijke centra'],
+      0,
+      'Boekhara, Chiwa en Kokand waren onafhankelijke khanaten die Centraal-Azië regeerden tot de Russische verovering.',
+    ],
+    [
+      'Welke bergketens vormden de oostelijke en zuidelijke grenzen van het historische Centraal-Azië?',
+      ['De Pamir en Tian Shan', 'De Kaukasus en Karpaten', 'De Uralen en Altai', 'Alleen de Himalaya'],
+      0,
+      'De Pamir en Tian Shan creëerden natuurlijke barrières tussen Centraal-Azië en Oost-/Zuid-Azië.',
+    ],
+    [
+      'Hoe werd islam de dominante religie van Centraal-Azië?',
+      ['Door militaire verovering en daaropvolgende handelsnetwerken die moslimdinvloed uitbreiden', 'Uitsluitend via vredige zendingswerk', 'Het was het inheems geloof van de regio vóór invasies', 'Door Europese koloniale expansie'],
+      0,
+      'Arabische veroveringen vanaf de 7e eeuw brachten islam; kooplieden breidden daarna moslimdinvloed uit.',
+    ],
+    [
+      'Wat was het voornaamste doel van karavansera\'s langs de Zijderoute?',
+      ['Kooplieden schuilplaats, veiligheid en handelsmogelijkheden bieden', 'Als militaire versterkingen dienen', 'Luxegoederen verwerken en verfijnen voor doorverkoop', 'Boeddhistische pelgrims huisvesten'],
+      0,
+      'Karavansera\'s waren versterkte wegkanten-herbergen die gastvrijheid en veiligheid voor kooplieden boden.',
+    ],
+    [
+      'Na de val van Mongoolse eenheid, welke etnische en linguïstische groepen werden dominant in Centraal-Azië?',
+      ['Turkse en Oezbeekse volkeren', 'Scythen en Sarmathen', 'Hunnen en Rouran', 'Franken en Germaanse stammen'],
+      0,
+      'Turkse en Oezbeekse groepen regeerden Centraal-Azië nadat de Mongoolse macht in regionale khanaten uiteenviel.',
+    ],
+    [
+      'Welke grote geopolitieke competitie vorm gaf aan de geschiedenis van Centraal-Azië in de negentiende eeuw?',
+      ['Britse en Russische keizerlijke belangen die om regionale dominantie wedijveren', 'Ottomaanse en Perzische dynastieke rivaliteit', 'Chinese en Mongoolse territoriale conflicten', 'Arabische en Joodse politieke geschillen'],
+      0,
+      'Groot-Brittannië en Rusland wedijverden om invloed in Centraal-Azië, het zogenoemde "Great Game".',
+    ],
+  ],
+  msc: [
     [
       'De Slag bij Talas in 751 werd uitgevochten tussen Tang-troepen en welke macht?',
       ['Het Abbasidische kalifaat', 'Het Omajjadische kalifaat', 'Het Tibetaanse Rijk', 'Het Oeigoerse Khaganaat'],
@@ -180,7 +272,99 @@ export const CENTRAL_ASIA: CategoryContent = {
  * categorie.
  */
 export const EAST_ASIA: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'Welke term beschrijft een regering die actief economische ontwikkeling stuurt via strategische planning en gerichte investeringen?',
+      ['Ontwikkelingsstaat', 'Centraal geplande economie', 'Laissez-faire-kapitalisme', 'Feodale economie'],
+      0,
+      'De ontwikkelingsstaat gebruikte selectieve investeringen om snelle industriële groei in Oost-Azië te bevorderen.',
+    ],
+    [
+      'Wat waren zaibatsu in naoorlogs Japan?',
+      ['Grote familiegecontroleerde bedrijfsconcerns die over meerdere sectoren waren gediversifieerd', 'Door de regering eigendom fabrieken', 'Vakbonden in zware industrie', 'Landbouwcoöperatieven voor marketing'],
+      0,
+      'Zaibatsu waren massieve concerns als Mitsubishi en Mitsui die Japan domineerden.',
+    ],
+    [
+      'Waarom benadrukten Zuid-Korea en Taiwan exportgestuurde groeistrategieën in de jaren 1960-1980?',
+      ['Kleine binnenlandse markten maakten buitenlandse verkoop essentieel voor valuta voor ontwikkeling', 'Overvloedige natuurlijke hulpbronnen voor internationale verkoop', 'Regeringsmandaat om alle import uit te roeien', 'Koloniaal erfgoed vereist specifieke handelspartners'],
+      0,
+      'Exportverkoop genereerde vreemde valuta nodig voor industriële investeringen in deze kleine markten.',
+    ],
+    [
+      'Welke vier Oost- en Zuidoost-Aziatische economieën werden in de jaren 1980 bekend als "Tijger"- of "Draak"-economieën?',
+      ['Zuid-Korea, Taiwan, Hongkong en Singapore', 'Japan, Thailand, Maleisië en Indonesië', 'China, Vietnam, Filipijnen en Cambodja', 'Vietnam, Laos, Myanmar en Thailand'],
+      0,
+      'De Vier Tijgers bereikten snelle groei via exportfabricage en buitenlandse investeringen.',
+    ],
+    [
+      'Wat droeg directe buitenlandse investeringen (DBI) bij aan Oost-Aziatische landen tijdens snelle industrialisering?',
+      ['Kapitaal, fabricagetechnologie en managementdeskundigheid', 'Alleen lageloonarbeidskansen', 'Koloniale politieke controle en schuld', 'Milieuschade zonder economisch voordeel'],
+      0,
+      'DBI verschafte kapitaal en technologie die de verschuiving naar exportfabricage mogelijk maakte.',
+    ],
+    [
+      'Wat beoogde Chinas "hervormings- en openingsbeleid" dat in 1978 begon te bereiken?',
+      ['Geleidelijke invoering van marktmechanismen bij opening voor buitenlandse investeringen', 'Onmiddellijke verwerping van alle communistische structuren', 'Terugkeer van de economie van industrie naar landbouw', 'Verdere isolatie van wereldeconomische systemen'],
+      0,
+      'De hervormingen voerden geleidelijk marktmechanismen in terwijl staatscontrole behouden bleef.',
+    ],
+    [
+      'Wat waren speciale economische zones (SEZ) in China?',
+      ['Aangewezen kustgebieden met gunstig beleid om buitenlandse investeringen en fabricage aan te trekken', 'Militaire gesloten zones voor buitenlanders', 'Landbouw- en innovatiegebieden', 'Historische en culturele bewaringssites'],
+      0,
+      'SEZ\'s als Shenzhen boden belastingvoordelen aan om multinationale fabricage aan te trekken.',
+    ],
+    [
+      'Wat introduceerde Vietnams "Doi Moi" (Vernieuwing) hervormingsbeleid van 1986?',
+      ['Marktmechanismen en beperkte private bedrijven terwijl de Communistische Partij politieke controle behield', 'Volledige overgang naar Westerse representatieve democratie', 'Grotere economische isolatie van de wereldmarkt', 'Uitbreiding van centraal geplande socialistische productie'],
+      0,
+      'Doi Moi introduceerde markthervorming vergelijkbaar met Chinas economische opening.',
+    ],
+    [
+      'Welk land werd in de jaren 1980 de werelds grootste exporteur van elektronica en halfgeleiders?',
+      ['Japan', 'Zuid-Korea', 'Duitsland', 'Taiwan'],
+      0,
+      'Japan domineerde wereldwijd elektronicafabricage in de jaren 1980.',
+    ],
+    [
+      'Welke strategie gebruikten Maleisië en Thailand om multinationale fabricageinvesteringen aan te trekken?',
+      ['Lage arbeidskosten, politieke stabiliteit en toegang tot natuurlijke hulpbronnen bieden', 'Onafhankelijk inheemse technologiebedrijven bouwen', 'Buitenlandse eigendom strikt beperken om lokale industrieën te beschermen', 'Uitsluitend vertrouwen op landbouw- en grondstoffenexport'],
+      0,
+      'Lage lonen en stabiliteit trokken buitenlandse fabrikanten naar de regio.',
+    ],
+    [
+      'Hoe beïnvloedde snelle industrialisering in Oost-Azië de plattelandsbevolking?',
+      ['Plattelandsarbeidskrachten migreerden naar steden op zoek naar fabrieksbanen', 'Plattelandsgebieden werden zware industriecentra', 'Boerderijen werden productiever door alleen mechanisering', 'Stedelijke bevolking daalde omdat arbeidskrachten naar landbouw terugkeerden'],
+      0,
+      'Plattelandsarbeidskrachten migreerden naar steden voor fabriekswerk en hogere lonen.',
+    ],
+    [
+      'Welke rol speelden Japanse bedrijven in Oost-Aziatische industrialisatienetwerken?',
+      ['Ze investeerden in joint ventures, droegen technologie over en trainden lokale arbeidskrachten in de regio', 'Ze hielden alle geavanceerde technologie en voorkwamen andermans toegang', 'Ze vermeden investeringen buiten Japan', 'Ze exploiteerden hulpbronnen terwijl lokale industriële ontwikkeling werd verhinderd'],
+      0,
+      'Japanse bedrijven investeerden regionaal via joint ventures en technologielicenties.',
+    ],
+    [
+      'Waarom was infrastructuurinvestering kritiek voor Oost-Aziatische ontwikkeling in deze periode?',
+      ['Havens, wegen en energiesystemen maakten vervaardigings- en handelsnetwerken essentieel voor groei mogelijk', 'Infrastructuur was verspillend en vertragde ontwikkeling', 'Het diende vooral militaire doeleinden en strategie', 'Het werd door Westerse koloniale mogendheden tegen plaatselijk belang opgelegd'],
+      0,
+      'Havens, wegen en elektriciteitsnetten maakten vervaardigings- en exporthandel mogelijk.',
+    ],
+    [
+      'Wat gebeurde er met de rol van landbouw in snel industrialiserende Oost-Aziatische economieën?',
+      ['Het aandeel van landbouwproductie in het BBP daalde naarmate economieën verschoven naar fabricage en diensten', 'Het economisch belang van landbouw bleef stabiel', 'Landbouwproductie nam toe zonder verschuiving naar industrie', 'Landbouw verdween volledig uit deze economieën'],
+      0,
+      'Het aandeel van landbouw in het BBP daalde naarmate vervaardiging en diensten groeiden.',
+    ],
+    [
+      'Welke internationale instelling hielp infrastructuur en ontwikkeingsprojecten in Oost-Azië financieren?',
+      ['De Aziatische Ontwikkelingsbank en Wereldbank', 'OPEC', 'De Sovjet-Comecon-bloc', 'De Europese Unie'],
+      0,
+      'De Aziatische Ontwikkelingsbank financierde infrastructuur in Oost-Azië.',
+    ],
+  ],
+  msc: [
     [
       'Wat beschrijft het Japanse "hoofdbanksysteem"?',
       [

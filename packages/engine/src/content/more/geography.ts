@@ -2,7 +2,7 @@ import type { CategoryContent } from '../row.js';
 
 /** Geography & Earth Systems, second chunk. Correct option first; rotated at build. */
 export const MORE_GEOGRAPHY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'What does the Bowen ratio express?',
       [

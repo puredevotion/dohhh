@@ -18,7 +18,7 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const FINANCE: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat doet de equity-tranche in de kapitaalstructuur van een cash CDO?',
       [
@@ -187,6 +187,173 @@ export const FINANCE: CategoryContent = {
       ],
       0,
       "Hagans expansie is wat het bruikbaar maakte op een swaptiondesk in real time; het bekende probleem is negatieve dichtheden bij lage strikes, wat de shifted- en free-boundary-varianten verhelpen.",
+    ],
+  ],
+  bscba: [
+    [
+      'Een gewone renteswap tussen twee partijen dient wat primair doel?',
+      [
+        'Stelt elke partij in staat vaste en variabele rentebetalingen op een nominale bedrag uit te wisselen',
+        'Elimineert het renterisico volledig door het rentetarief voor alle toekomstige periodes vast te leggen',
+        'Draagt kredietrisico van de ene tegenpartij naar de andere over zonder kasstromen te beïnvloeden',
+        'Stelt de verkoop van een obligatiepositie mogelijk zonder een verlies in de balans op te nemen',
+      ],
+      0,
+      'Elke partij wisselt de ene kasstroomstroom in voor een ander bedrag op dezelfde nominale waarde; geen van beide partijen verandert de onderliggende schuldverplichting.',
+    ],
+    [
+      'Hoe reageren obligatieprijzen typisch op een stijging van de rentetarieven op de markt?',
+      [
+        'Obligatieprijzen dalen',
+        'Obligatieprijzen blijven onveranderd omdat de coupon vast staat',
+        'Obligatieprijzen stijgen om beleggers schadeloos te stellen',
+        'Obligatieprijzen worden niet beïnvloed door rentewijzigingen',
+      ],
+      0,
+      'De contante waarde van toekomstige kasstromen daalt naarmate de discontovoet stijgt; dit is de fundamentele omgekeerde relatie tussen prijs en rendement.',
+    ],
+    [
+      'In een gesecuritiseerde activapot, wat is de primaire rol van de equity-tranche?',
+      [
+        'Het absorbeert initiële verliezen vóór dat andere beleggers enig verlies ondergaan',
+        'Het garandeert de veiligheid van de senior notes aan beleggers',
+        'Het ontvangt kasstromen pas nadat alle andere tranches volledig zijn betaald',
+        'Het houdt alle onderliggende activa in een trustaccount voor beleggers',
+      ],
+      0,
+      'Omdat het achtergesteld is, ondergaat de equity-tranche eerst verliezen; als tegenpartij ontvangt het resterende rentebetaling (excess spread).',
+    ],
+    [
+      'Wat is het wezenlijke verschil tussen een callopie en een putoptie?',
+      [
+        'Een call geeft het recht om op een vastgestelde prijs te kopen; een put geeft het recht om op een vastgestelde prijs te verkopen',
+        'Een call kan slechts eenmaal worden uitgeoefend, terwijl een put meerdere keren gedurende de looptijd ervan kan worden uitgeoefend',
+        'Calls hebben intrinsieke waarde terwijl puts alleen uit tijdswaarde bestaan',
+        'Calls worden alleen gebruikt door aankoopers van aandelen, puts alleen door beleggers die short gaan',
+      ],
+      0,
+      'Het onderscheid is zuiver richtinggevend: calls profiteren van prijsstijgingen, puts van prijsdalingen.',
+    ],
+    [
+      'Waarom geven banken hypotheken uit en verkopen ze deze vervolgens als mortgage-backed securities in plaats van ze tot volwassenheid aan te houden?',
+      [
+        'Om kredietrisico naar de kapitaalmarkten over te dragen en kapitaal vrij te maken voor nieuwe leningen',
+        'Omdat hypotheken geen positief rendement kunnen genereren als ze op de balans worden aangehouden',
+        'Om hun blootstelling aan renterisico en prepaymentrisico te verminderen',
+        'Omdat banktoezichthouders banken verbieden hypotheken rechtstreeks aan te houden',
+      ],
+      0,
+      'Securitisatie draagt kredietrisico over aan beleggers en geeft regelgevingskapitaal vrij; de originator verdient vergoedingen op origination en servicing.',
+    ],
+    [
+      'Wat vertegenwoordigt een creditspread in obligatiemarkten?',
+      [
+        'Het verschil in rendement tussen een bedrijfsobligatie en een staatsobligatie met dezelfde looptijd',
+        'Het bedrag dat creditratingbureaus in rekening brengen om de kredietkwaliteit van obligaties te beoordelen',
+        'Het percentage van de hoofdsom dat de uitgever als onderpand moet aanhouden',
+        'De maximale procentuele winst die een belegger kan behalen als een obligatie voortijdig wordt afgeroepen',
+      ],
+      0,
+      'De spread weerspiegelt de marktperceptie van het wanbetalingsrisico van de uitgever; bredere spreads wijzen op hoger waargenomen risico.',
+    ],
+    [
+      'Een forwardcontract en een futurescontract stellen je beide in staat vandaag een prijs vast te leggen voor latere levering. Wat is een belangrijk verschil?',
+      [
+        'Futures zijn gestandaardiseerd en verhandeld op beurzen; forwards zijn aangepast en verhandeld over-the-counter',
+        'Forwards vereisen geen initiële betaling, terwijl futures een vooruitbetaalde premie vereisen',
+        'Futures worden alleen voor grondstoffen gebruikt, forwards alleen voor financiële activa',
+        'Forwardcontracten kunnen door beide partijen worden verbroken, maar futurescontracten niet',
+      ],
+      0,
+      'Ter beurze verhandelde futures hebben gestandaardiseerde contracten, dagelijkse marktherziening en clearinghousegarantie; forwards zijn op maat gemaakt.',
+    ],
+    [
+      'In de context van internationale financiën: waarop slaat de gedekte rentepariteit?',
+      [
+        'De relatie die ervoor zorgt dat twee valuta\'s met verschillende rentetarieven gelijke rendementen hebben wanneer het valutarisico wordt afgedekt',
+        'Een belofte van een centrale bank om een valutapeg te ondersteunen door op de wisselkoersmarkt in te grijpen',
+        'Een vereiste dat internationale obligaties door onderpand in de thuisvaluta van de lener moeten worden gedekt',
+        'Een regel dat banken al hun wisselkoersposities moeten afdekken',
+      ],
+      0,
+      'Indien het renteverschil niet wordt gecompenseerd door de forward-premie, zou arbitrage de discrepantie moeten elimineren.',
+    ],
+    [
+      'Wat vertegenwoordigt de rentecurve?',
+      [
+        'De relatie tussen obligatielooptijd en rendement voor obligaties met dezelfde kredietkwaliteit',
+        'Het cumulatieve rendement dat een belegger tot nu toe op zijn obligatieportefeuille heeft behaald',
+        'De dagelijkse schommelingen in de prijzen van actief verhandelde staatsobligaties',
+        'Het percentage van de waarde van een obligatie dat elk jaar als coupon wordt uitbetaald',
+      ],
+      0,
+      'Een typische rentecurve loopt opwaarts omdat beleggers hogere rendementen eisen voor langere looptijden; een omgekeerde curve wijst vaak op recessieverwachtingen.',
+    ],
+    [
+      'Hoe beïnvloedt een dividenduitbetaling typisch de waarde van een aandeel?',
+      [
+        'De aandeelkoers daalt op de ex-dividenddatum doorgaans met ongeveer het dividendbedrag',
+        'Dividenden verhogen de aandeelkoers permanent met het bedrag van de verdeelde contanten',
+        'De aandeelkoers wordt helemaal niet beïnvloed door dividendaankondigingen',
+        'Dividenden verminderen de totale waarde van het bedrijf maar verhogen de aandeelkoers vanwege belastingvoordelen',
+      ],
+      0,
+      'Het aandeel is minder waard na dividenden omdat contanten het bedrijf hebben verlaten; de aandeelhouder heeft contanten maar het aandeel is minder waard.',
+    ],
+    [
+      'Wat is het belangrijkste voordeel van portefeuille-diversificatie?',
+      [
+        'Het vermindert portefeuillerisico door activa te combineren die niet in perfecte synchronisatie met elkaar bewegen',
+        'Het garandeert dat alle beleggers hetzelfde rendement als de marktindex behalen',
+        'Het elimineert de noodzaak voor beleggers om hun bezittingen in de gaten te houden',
+        'Het zorgt ervoor dat minstens één belegging in de portefeuille altijd beter dan de markt presteert',
+      ],
+      0,
+      'Het combineren van activa met onvolmaakte correlatie vermindert de totale volatiliteit van de portefeuille zonder het verwachte rendement op te offeren.',
+    ],
+    [
+      'Wat vertegenwoordigt een basispunt in de rentemarkten?',
+      [
+        'Een honderdste van een procent (0,01%)',
+        'Één procent',
+        'De kleinste eenheid waarmee staatsobligatierendementen kunnen veranderen',
+        'De vergoeding die een obligatiehandelaar in rekening brengt voor een transactie',
+      ],
+      0,
+      'Basispunten zijn de standaardeenheid voor het noteren van spreads en kleine veranderingen in rendementen; 100 bp is gelijk aan één procentpunt.',
+    ],
+    [
+      'Wat is een floating-rate note (FRN)?',
+      [
+        'Een obligatie waarvan de couponrente periodiek wordt aangepast op basis van een referentievoet zoals LIBOR of SOFR',
+        'Een obligatie uitgegeven door een bedrijf waarvan de inkomsten fluctueren met de marktomstandigheden',
+        'Een staatsobligatie waarvan de waarde wordt aangepast voor inflatie door het gezicht bedrag te wijzigen',
+        'Een kortetermijnzekerheid die onvoorspelbaar vervalt op basis van marktomstandigheden',
+      ],
+      0,
+      'Naarmate referentietarifieven veranderen, passen couponbetalingen op FRN\'s zich aan; dit beschermt beleggers tegen stijgende rentetarieven maar vermindert opwaartse potentieel als rentes dalen.',
+    ],
+    [
+      'Wat doet onderpand in derivatenhandel?',
+      [
+        'Vermindert het risico dat een tegenpartij in gebreke blijft door de transactie met een activapandrecht te beveiligen',
+        'Verhoogt de hefboomwerking die beschikbaar is voor handelaren in derivatenmarkten',
+        'Bepaalt het nominale bedrag dat in een enkel derivatencontract kan worden verhandeld',
+        'Vervangt de noodzaak voor kredietratings door alle derivaattransacties te garanderen',
+      ],
+      0,
+      'Onderpand wordt geplaatst om de niet-in-gebreke-blijvende partij te beschermen; in geval van wanbetaling kan het onderpand worden geliquideerd om verliezen terug te winnen.',
+    ],
+    [
+      'Wat is arbitrage in financiële markten?',
+      [
+        'Gelijktijdig dezelfde of gelijkwaardige activa in verschillende markten kopen en verkopen om van prijsverschillen winst te maken',
+        'Toekomstige prijsbewegingen voorspellen met behulp van historische prijspatronen en technische analyse',
+        'Onderwaardeeerde aandelen kopen en ze vasthouden tot ze terugkeren naar eerlijke waarde',
+        'Hefboomwerking gebruiken om rendementen op een portefeuille met risicovolle activa te vergroten',
+      ],
+      0,
+      'Arbitrage vergrendelt winst met minimaal risico door mispricing uit te buiten; wanneer veel uitgebuit, helpt arbitrage prijzen naar eerlijke waarde te convergeren.',
     ],
   ],
 };

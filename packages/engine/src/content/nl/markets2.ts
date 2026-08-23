@@ -8,7 +8,7 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const MACROECON: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat stelt de Lucas-kritiek over beleidsevaluatie?',
       [
@@ -95,7 +95,7 @@ export const MACROECON: CategoryContent = {
         'Jonge actoren sparen meer dan oude actoren ontsparen in elke periode, wat marktclearing doorbreekt',
       ],
       0,
-      'Anders dan het Ramsey-model met een oneindige horizon kan een OLG-economie kapitaal oveaccumuleren: als de evenwichtsrente onder de bevolkingsgroei ligt, heeft de economie meer kapitaal dan de gouden regel vereist, en zou elke generatie beter af zijn door minder te sparen en in plaats daarvan een niet-gefinancierde overdracht van jong naar oud te laten lopen. Diamond (1965) bouwde dit voort op Samuelsons pure-ruil-OLG-paper uit 1958, en het werd het klassieke theoretische argument waarom een omslagstelsel voor pensioenen welvaartsverhogend kan zijn in plaats van louter een gedwongen-sparen-vertekening. Het resultaat hangt ervan af dat er niemand "voorbij het einde" is om een transversaliteitsvoorwaarde af te dwingen, precies het kenmerk dat oneindige-horizon-dynastieke modellen wegnemen. Een verwant weetje: als generaties verbonden zijn door operatieve erfenissen, zoals in Barro\'s model uit 1974, valt de economie feitelijk terug op één oneindig levend huishouden en verdwijnt de mogelijkheid van inefficiëntie.',
+      'Een OLG-economie kan kapitaal oveaccumuleren: als de evenwichtsrente onder bevolkingsgroei ligt, heeft de economie meer kapitaal dan nodig. Diamond (1965) gaf het klassieke argument waarom pensioenstelsel welvaartsverhogend kan zijn.',
     ],
     [
       'De oorspronkelijke Taylor-regel (1993) stelt de beleidsrente vast als een functie van wat, met welk kenmerk?',
@@ -106,7 +106,7 @@ export const MACROECON: CategoryContent = {
         'Alleen de werkloosheid, gewogen naar de afwijking ten opzichte van de natuurlijke voet',
       ],
       0,
-      'Taylors regel schrijft voor de nominale rente met meer dan één-op-één te verhogen wanneer inflatie boven de doelstelling stijgt, zodat de reële rente zelf stijgt - het "Taylor-principe" - en dat is wat inflatieverwachtingen stabiliseert in plaats van ze te accommoderen. John Taylor stelde het in 1993 voor als een eenvoudige beschrijving die redelijk goed paste bij het Fed-gedrag tijdens het Volcker-Greenspan-tijdvak, en het werd de standaardmaatstaf om te beoordelen of feitelijk beleid te los of te strak is. Nieuw-Keynesiaanse theorie liet later zien dat een coëfficiënt onder één op inflatie indeterminacy kan opleveren - zelfvervullende inflatieverwachtingen - wat sommige economen aanwijzen als bijdrage aan de "Grote Inflatie" van de jaren zeventig onder een passieve Fed-reactiefunctie. Een verwant weetje: Taylors regel gebruikt een schatting van de "natuurlijke" reële rente en potentiële output, beide onwaarneembaar, wat verklaart waarom real-time meningsverschil over de door de regel voorgeschreven rente zeer groot kan zijn, zelfs onder economen die het eens zijn over de vorm.',
+      'Taylors regel verhoogt rente meer dan één-op-één bij inflatiestijging - het "Taylor-principe". John Taylor introduceerde het in 1993 als Fed-beschrijving. Een coëfficiënt onder één kan indeterminacy en zelfvervullende verwachtingen opleveren.',
     ],
     [
       'De wet van Okun, in haar standaard "gap"-vorm, verbindt welke twee variabelen, en welke ruwe verhouding is historisch gebruikelijk in de VS?',
@@ -117,7 +117,7 @@ export const MACROECON: CategoryContent = {
         'De groeivoet van werkgelegenheid met de groeivoet van alleen de kapitaalvoorraad',
       ],
       0,
-      'Arthur Okuns empirische regelmaat uit 1962 stelt dat het met één procentpunt dichten van de werkloosheidskloof historisch ruwweg twee procentpunt bovengemiddelde outputgroei vergde, omdat bedrijven ook uren per werknemer, arbeidsparticipatie en productiviteit aanpassen in plaats van alleen het personeelsbestand. Het is decennialang gebruikt als een snelle vuistregel om de outputgap af te leiden uit werkloosheidscijfers, omdat het bbp zelf veel zwaarder en met langere vertraging wordt herzien dan de werkloosheid. De relatie is een statistische regelmaat en geen structurele wet, en de geschatte coëfficiënt is sinds de crisis van 2008 merkbaar verzwakt en minder stabiel geworden, wat discussies over "banenloze herstelperiodes" voedt. Als verwant detail: Okun leidde de relatie oorspronkelijk af tijdens zijn werk voor de Council of Economic Advisers onder Kennedy, gemotiveerd door precies het praktische probleem groeidoelen te vertalen naar werkgelegenheidsbeloften.',
+      'Okun (1962): één procentpunt werkloosheidskloof dicht = twee procentpunt outputgroei. Statistische regelmaat, niet structureel. Is sinds 2008 verzwakt. Snelle vuistregel voor outputgap uit werkloosheid.',
     ],
     [
       'In de reële-conjunctuurcyclustheorie (Kydland en Prescott, 1982), wat wordt geïdentificeerd als de primaire aanjager van aggregate schommelingen?',
@@ -128,7 +128,7 @@ export const MACROECON: CategoryContent = {
         'Exogene verschuivingen in de geldhoeveelheid die werken via kortetermijn nominale prijs- en loonrigiditeiten',
       ],
       0,
-      'RBC-theorie behandelt conjunctuurcycli als de efficiënte evenwichtsreactie van optimaliserende actoren op reële technologieschokken, waarbij huishoudens en bedrijven rationeel arbeid en consumptie in de tijd substitueren als productiviteit tijdelijk stijgt of daalt - wat betekent dat recessies in het zuivere model geen marktfalen zijn dat gecorrigeerd moet worden. Kydland en Prescotts "Time to Build and Aggregate Fluctuations" (1982) introduceerde dit naast een calibratiemethodologie - het matchen van een klein aantal momenten in plaats van parameters schatten via likelihood - die bijna even invloedrijk en controversieel was als de inhoudelijke claim zelf, en het leverde hen de Nobelprijs van 2004 op. De implicatie dat recessies grotendeels efficiënte reacties zijn, riep de Nieuw-Keynesiaanse tegenbeweging op, die nominale rigiditeiten opnieuw invoerde om een rol voor vraagbeleid te herstellen. Een verwant weetje: RBC\'s eerste calibratie leunde sterk op Solow-residu-maatstaven van technologieschokken, waarvan critici direct opmerkten dat ze verdacht groot waren en verdacht gecorreleerd met zaken die helemaal geen "technologie" zouden moeten zijn, zoals dalende gemeten productiviteit in recessies.',
+      'RBC-theorie: conjunctuurcycli zijn efficiënte evenwichtsreactie op technologieschokken. Kydland-Prescott (1982) introduceerden calibratie; Nobelprijs 2004. De claim dat recessies efficiënt zijn riep Nieuw-Keynesiaanse tegenbeweging op.',
     ],
     [
       'In het Kydland-Prescott/Barro-Gordon-model van monetair beleid, waarom genereert discretionair beleid een inflatiebias vergeleken met een geloofwaardige nul-inflatieregel?',
@@ -139,7 +139,7 @@ export const MACROECON: CategoryContent = {
         'Onder discretie eisen loononderhandelaars bij elke opeenvolgende contractherziening een aanmerkelijk grotere inflatierisicopremie',
       ],
       0,
-      'Zonder bindingsmechanisme heeft een discretionaire beleidsmaker elke periode een prikkel om een verrassingsinflatie te veroorzaken om de output tijdelijk boven de natuurlijke voet te tillen; rationele private actoren anticiperen deze verleiding en verwerken die in hun verwachtingen, zodat de economie eindigt met de hogere inflatie maar zonder de beoogde outputwinst - een kostbaar evenwicht dat puur voortkomt uit het onvermogen van de beleidsmaker om zijn eigen toekomstige handen te binden. Kydland en Prescott (1977) formuleerden het algemene tijdsinconsistentieprobleem, en Barro en Gordon (1983) formaliseerden het specifieke inflatiebias-resultaat, samen het sterkste theoretische argument voor onafhankelijkheid van centrale banken, expliciete inflatiedoelen en "conservatieve" centralebankiers (Rogoff, 1985) als bindingsvervangers. Dit is de theoretische ruggengraat achter de wereldwijde overstap naar inflatiedoelstellingsregimes. Een verwant weetje: Nieuw-Zeeland voerde in 1990 als eerste land ter wereld een formele inflatiedoelstelling in, met expliciete verwijzing naar precies dit soort geloofwaardigheidsproblemen als motivatie.',
+      'Discretionaire beleidsmakers hebben prikkel voor verrassingsinflatie; rationele actoren anticiperen en prijzen dit in. Resultaat: hogere inflatie zonder outputwinst. Kydland-Prescott (1977) en Barro-Gordon (1983) rechtvaardigen centrale-bankonafhankelijkheid.',
     ],
     [
       'De "tweelingtekort"-hypothese verbindt een begrotingstekort aan een lopende-rekeningtekort via welke nationale-rekeningenidentiteit?',
@@ -150,7 +150,7 @@ export const MACROECON: CategoryContent = {
         'Een begrotingsoverschot volgend jaar is vereist door de budgetrestrictie van de overheid',
       ],
       0,
-      'Uit de nationale rekeningen volgt dat het lopende-rekeningsaldo gelijk is aan private besparingen minus binnenlandse investeringen minus het begrotingstekort van de overheid, zodat een groter begrotingstekort dat niet wordt gecompenseerd door hogere private besparingen mechanisch ook het lopende-rekeningtekort doet toenemen - het land als geheel leent meer van het buitenland. Het patroon werd genoemd naar aanleiding van de Amerikaanse ervaring in de jaren tachtig, toen grote tekorten onder Reagan samenvielen met een groeiend handelstekort en dollarappreciatie, en het herhaalde zich in de jaren 2000. Het theoretische tegenwicht is Ricardiaanse equivalentie, die stelt dat rationele huishoudens hun besparingen zouden verhogen om het overheidstekort volledig te compenseren, waardoor de lopende rekening onveranderd blijft - het empirische debat over hoeveel compensatie er werkelijk plaatsvindt, is precies het debat over hoe sterk de tweelingtekortband in de praktijk is. Een verwant weetje: de identiteit geldt per definitie ongeacht de theorie, zodat geschillen over "tweelingtekorten" in feite geschillen zijn over het gedragsmatige antwoord van private besparingen, niet over de boekhouding zelf.',
+      'Lopende-rekeningsaldo = private besparingen - investeringen - begrotingstekort. Groter tekort verhoogt lopende-rekeningtekort. Genoemd naar jaren tachtig onder Reagan. Ricardiaanse equivalentie suggereert compensatie door huishoudenbesparingen.',
     ],
     [
       'In standaard groeiboekhouding wordt het "Solow-residu" berekend als wat?',
@@ -161,7 +161,7 @@ export const MACROECON: CategoryContent = {
         'Het verschil tussen bruto- en netto-investeringen, gecorrigeerd voor een veronderstelde afschrijvingsvoet van kapitaal in de tijd',
       ],
       0,
-      'Onder constante schaalvoordelen en competitieve factormarkten kan outputgroei worden ontleed in de groei van kapitaal gewogen naar het kapitaalinkomensaandeel, de groei van arbeid gewogen naar het arbeidsinkomensaandeel, en een restterm - het Solow-residu - geïnterpreteerd als groei van totale factorproductiviteit, in essentie technologische en organisatorische vooruitgang. Solow introduceerde de methode in zijn paper van 1957, maar Moses Abramovitz\'s botte beschrijving van het residu als "een maatstaf van onze onwetendheid" is blijven hangen, omdat het alles vangt wat de boekhouding anders niet kan verklaren, inclusief slecht gemeten inputs. De techniek werd centraal in ontwikkelingsdebatten, het beroemdst in Krugmans "The Myth of Asia\'s Miracle", dat stelde dat veel Oost-Aziatische groei factoraccumulatie weerspiegelde in plaats van TFP-groei, anders dan groei in volwassen industriële economieën. Een verwant weetje: Jorgenson en Griliches verfijnden de methode later met kwaliteitsgecorrigeerde, vintage-gewogen maatstaven van groei van kapitaal- en arbeidsinput, wat de omvang van het onverklaarde residu ten opzichte van Solows oorspronkelijke schattingen aanzienlijk verkleinde.',
+      'Outputgroei = kapitaalgroei × aandeel + arbeid × aandeel + restterm (Solow-residu = TFP). Solow (1957). Abramovitz: "maatstaf van onze onwetendheid". Centraal in ontwikkelingsdiscussies.',
     ],
     [
       'Mundells criteria voor de optimale muntzone (1961) identificeren wat als het belangrijkste alternatief voor onafhankelijke wisselkoersaanpassing bij het opvangen van een asymmetrische schok tussen regio\'s die één munt delen?',
@@ -172,7 +172,7 @@ export const MACROECON: CategoryContent = {
         'Een gedeeld extern tarief dat uniform wordt toegepast op handel met niet-leden',
       ],
       0,
-      'Als een regio die door een negatieve schok wordt getroffen haar eigen munt niet kan devalueren omdat ze deze deelt met niet-getroffen regio\'s, dan is factormobiliteit de alternatieve aanpassingsmarge: werknemers verhuizen naar waar nog werk is, wat de regionale werkgelegenheid herstelt zonder enige prijs- of wisselkoersverandering. Mundells paper uit 1961 maakte hiervan de analytische maatstaf om te beoordelen of een groep regio\'s of landen überhaupt één munt zou moeten delen, en het werd decennia later de lens waardoor economen het ontwerp van de eurozone beoordeelden. Blanchard en Katz\'s empirische vergelijking vond arbeidsmobiliteit over Europese grenzen veel lager dan over Amerikaanse staten, een blijvende structurele zorg over de veerkracht van de euro tegen regionale schokken. Als verwant weetje: Mundell zelf werd later een prominente intellectuele voorstander van de Europese monetaire unie, een standpunt dat volgens sommigen op gespannen voet stond met zijn eigen criteria uit 1961, die suggereerden dat Europa een relatief slechte fit was voor één munt.',
+      'Zonder munteigen devaluatie is factormobiliteit het alternatief. Mundell (1961) stelde dit als maatstaf voor muntunies. Blanchard-Katz: arbeidsmobiliteit over Europa veel lager dan VS - zorg voor eurostabiliteit.',
     ],
   ],
   phd: [
@@ -284,7 +284,7 @@ export const MACROECON: CategoryContent = {
         'Een eenmalige devaluatie die ver van tevoren wordt aangekondigd om verloren exportprijsconcurrentiekracht te herstellen',
       ],
       0,
-      'Een sudden stop is een scherpe, grotendeels onverwachte ommekeer in de beschikbaarheid van buitenlands kapitaal, die een opkomende economie dwingt haar lopende-rekeningtekort zeer snel te sluiten, doorgaans via een grote reële wisselkoersdepreciatie en een instorting van binnenlandse bestedingen - en de outputkosten worden versterkt wanneer bedrijven en banken schulden in vreemde valuta hebben, omdat depreciatie dan direct hun balansen verslechtert. Het concept, ontwikkeld door Calvo en medewerkers, was gemotiveerd door de Mexicaanse pesocrisis van 1994-95, de Aziatische crisis van 1997 en de ineenstorting van Argentinië in 2001, en het voedde rechtstreeks kwantitatieve modellen met af en toe bindende onderpandbeperkingen, zoals Mendoza\'s sudden-stop-raamwerk uit 2010. Het benadrukte een kanaal dat afwijkt van klassieke, door begrotingen aangedreven muntcrises: de schok ontstaat in de bereidheid van internationale kapitaalmarkten om te lenen, niet primair in eerst verslechterende binnenlandse fundamentals. Een verwant weetje: de uitdrukking wordt vaak toegeschreven aan een uitspraak van Rudi Dornbusch - dat crises niet gevaarlijk zijn door hun snelheid, maar omdat "het niet de snelheid is die doodt, maar de plotselinge stop".',
+      'Sudden stop: scherpe ommekeer in buitenlandse kapitaal die lopende-rekening snel sluit via depreciatie. Calvo, gemotiveerd door Mexicaanse/Aziatische/Argentijnse crises. Schokken uit marktbereidheid, niet fundamentals.',
     ],
     [
       'Sargent en Wallaces "unpleasant monetarist arithmetic" (1981) laat zien dat strakker geld vandaag de inflatie op lange termijn kan verhogen als wat geldt?',
@@ -295,7 +295,7 @@ export const MACROECON: CategoryContent = {
         'De omloopsnelheid van geld is sterk procyclisch en stijgt scherp en voorspelbaar tijdens elke desinflatie-episode',
       ],
       0,
-      'Als de tekorten van een overheid uiteindelijk gefinancierd moeten worden door een combinatie van obligatie-uitgifte en seigniorage, dwingt het verkrappen van de geldgroei vandaag - wat nu seignioragebaten verlaagt - de overheid meer schuld nu uit te geven, waardoor een grotere voorraad opbouwt die uiteindelijk nog sneller gemonetariseerd moet worden om aan de intertemporele budgetrestrictie van de overheid te voldoen, zodat een desinflatie vandaag in contante-waardetermen averechts kan werken. Sargent en Wallaces paper uit 1981 was een directe uitdaging aan de monetaristische orthodoxie dat geldgroei alleen de inflatie bepaalt, met de stelling dat de houdbaarheid van fiscaal beleid onlosmakelijk verbonden is met de inflatie-uitkomst - een voorloper van de latere fiscale theorie van het prijsniveau. Het resultaat blijft een levende zorg wanneer een nominaal onafhankelijke centrale bank naast een onhoudbare begrotingspositie opereert, omdat de rekenkunde niet vereist dat de centrale bank haar mandaat opgeeft, alleen dat de fiscale autoriteit haar uiteindelijk dwingt. Een verwant weetje: de paper wordt vaak aangehaald in discussies over Latijns-Amerikaanse desinflatiepogingen in de jaren tachtig, waar strak geldbeleid gecombineerd met ongehervormde begrotingstekorten herhaaldelijk faalde om de inflatie duurzaam te verlagen.',
+      'Geldverkrapping vandaag dwingt toekomstige gemonetarisering als tekorten niet aanpassen. Sargent-Wallace (1981): fiscale houdbaarheid onlosmakelijk met inflatie - voorloper fiscale prijsniveautheorie.',
     ],
     [
       'De forward-premiumpuzzel in internationale financiën verwijst naar welke empirische regelmatigheid?',
@@ -306,7 +306,7 @@ export const MACROECON: CategoryContent = {
         'Spotwisselkoersen zijn aanzienlijk volatieler dan verklaard kan worden door nieuws over renteverschillen alleen',
       ],
       0,
-      'Ongedekte renteparitéit voorspelt dat de valuta met de hogere rente genoeg in waarde moet dalen om verwachte rendementen tussen valuta gelijk te trekken, maar Fama\'s regressie uit 1984 van wisselkoersveranderingen op renteverschillen vindt doorgaans het omgekeerde teken - valuta met hoge rente stijgen gemiddeld in waarde - wat betekent dat een "carry trade" die leent in de valuta met lage rente en investeert in die met hoge rente een positief verwacht overrendement oplevert in plaats van nul. Dit is een van de meest duurzame anomalieën in internationale monetaire financiën, en de leidende verklaringen behandelen het als compensatie voor een in de tijd variërende risicopremie (of een "peso-probleem" van zeldzaam, ongemodelleerd crashrisico) in plaats van een pure schending van rationele verwachtingen. De puzzel doet er ver buiten de academische wereld toe omdat carry-trade-strategieën gebaseerd op precies deze regelmaat een groot deel vormden van speculatieve valutaposities vóór de crisis van 2008. Een verwant weetje: de carry trade liep in 2008 catastrofaal terug toen de lage-rente-financieringsvaluta, de Japanse yen, een scherpe veilige-havenappreciatie doormaakte precies op het moment dat hij verder zou moeten depreciëren, waardoor jaren aan opgebouwde carry-winsten in weken werden weggevaagd.',
+      'Ongedekte rentepariteit voorspelt depreciatie bij hoge rente; Fama (1984) vond appreciatie. Positieve "carry trade"-rendementen. Duurzame anomalie; variabele risicopremies of "peso-problemen" als verklaring.',
     ],
     [
       'In Calvo\'s gefaseerde-prijsvorming-model (1983), welke stochastische aanname genereert nominale prijsrigiditeit?',
@@ -317,7 +317,7 @@ export const MACROECON: CategoryContent = {
         'Bedrijven passen prijzen aan volgens een gefaseerd maar volledig voorspelbaar overlappend schema, zoals in het contractmodel van Taylor (1980)',
       ],
       0,
-      'In het Calvo-model is de kans dat een bedrijf zijn prijs mag herzien elke periode een constante, geheugenloze kans, wat het prijsvormingsprobleem hanteerbaar maakt omdat de optimale keuze van een herziend bedrijf alleen afhangt van de aggregate toestand, niet van zijn eigen idiosyncratische prijsgeschiedenis - en het aggregeren over bedrijven op deze manier levert precies de voorwaartskijkende Nieuw-Keynesiaanse Phillips-curve op die huidige inflatie koppelt aan verwachte toekomstige inflatie en reële marginale kosten. Dit verschilt van Taylors alternatief uit 1980 van deterministische, vastgelegde overlappende contracten, en van menukosten- of Rotemberg-kwadratische-aanpassingskosten-modellen die vergelijkbare aggregate implicaties genereren doordat bedrijven bewust kiezen wanneer ze een kost betalen om aan te passen in plaats van te wachten op een willekeurige trekking. Ondanks dat het een vreemde letterlijke beschrijving van bedrijfsgedrag is - geen echt bedrijf gooit een munt om te bepalen of het herprijst - blijft de Calvo-aanname de standaardbouwsteen in praktisch elk DSGE-model van centrale banken vanwege het analytische gemak. Een verwant weetje: empirisch werk met scanner- en detailhandelsprijsdata (bijv. Bils en Klenow) vond feitelijke frequenties en patronen van prijsveranderingen die slechts losjes bij het Calvo-verhaal pasten, wat hernieuwde belangstelling voor toestandsafhankelijke menukostenalternatieven opwekte.',
+      'Calvo-model: elk bedrijf herziet prijs met constante kans. Optimale keuze hangt van aggregate toestand af. Levert voorwaartskijkende NK Phillips-curve op. Standaard in DSGE-modellen vanwege analytisch gemak.',
     ],
     [
       'De fiscale theorie van het prijsniveau stelt dat het prijsniveau wordt vastgepind door wat, in tegenstelling tot de standaard monetaristische visie?',
@@ -328,7 +328,7 @@ export const MACROECON: CategoryContent = {
         'De omvang van de balans van de centrale bank strikt uitgedrukt als ratio tot nominaal bbp per kwartaal',
       ],
       0,
-      'De fiscale theorie van het prijsniveau, geassocieerd met Sims, Woodford en Cochrane, herinterpreteert de stroombudgetrestrictie van de overheid niet als een louter boekhoudkundige identiteit die fiscaal beleid passief moet vervullen, maar als een evenwichtswaarderingsvergelijking: als fiscaal beleid "actief" is - overschotten passen zich niet aan om de schuld-bbp-ratio te stabiliseren - dan moet het prijsniveau bewegen om de reële waarde van nominale schuld te laten overeenkomen met de verdisconteerde stroom van verwachte overschotten, wat fiscaal beleid een onafhankelijk kanaal geeft om inflatie te bepalen, zelfs bij een vaste geldhoeveelheid. Dit keert de gangbare causaliteit om waarin de centrale bank inflatie bepaalt en fiscaal beleid zich eenvoudigweg aanpast om solvabel te blijven, en het is aangevoerd om zowel de verrassend lage inflatie na de grote opkoopprogramma\'s van 2008 als de fiscaal gedreven inflatiestijging na de pandemie te verklaren. De theorie is werkelijk betwist, deels omdat ze afhangt van het classificeren van fiscaal beleid als "actief" versus "passief", een onderscheid dat in real time moeilijk te verifiëren is. Een verwant weetje: de implicaties van de theorie zijn bijzonder scherp voor een muntunie als de eurozone, waar één centrale bank tegenover veel afzonderlijke nationale fiscale autoriteiten staat, waarvan de ECB er geen enkele rechtstreeks controleert.',
+      'Fiscale prijsniveautheorie (Sims, Woodford, Cochrane): budgetrestrictie als waardering. "Actief" fiscaal beleid met vaste overschotten = prijsniveau verschuift om schuld aan te passen. Geeft fiscaal beleid inflatiekanaal.',
     ],
     [
       'Wat is het centrale conceptuele verschil tussen eerste-generatie (Krugman, 1979) en tweede-generatie (Obstfeld, 1994/96) modellen van muntcrises?',
@@ -339,7 +339,7 @@ export const MACROECON: CategoryContent = {
         'Eerste-generatiecrises worden vooral gedreven door insolventie van de bankensector, en tweede-generatiecrises alleen door lopende-rekeningtekorten',
       ],
       0,
-      'Krugmans oorspronkelijke model uit 1979 laat aanhoudende, onhoudbare gemonetariseerde begrotingstekorten geleidelijk de eindige reservevoorraad van een centrale bank uitputten die een koppeling verdedigt, wat een deterministische, voorzienbare speculatieve aanval oplevert op het moment dat reserves een kritische drempel overschrijden. Obstfelds latere werk modelleert in plaats daarvan een beleidsmaker die de kosten en baten van verdedigen versus loslaten van de koppeling afweegt, wat meerdere zelfconsistente evenwichten kan opleveren: een koppeling kan overleven als markten geloven dat dat zal gebeuren, of instorten louter omdat markten dat verwachten, zelfs wanneer onderliggende fundamentals de koppeling anders onbeperkt zouden ondersteunen. Het onderscheid was enorm belangrijk voor het interpreteren van echte episodes - de ERM-crisis van 1992, waarin het pond en de lire onder aanval kwamen ondanks redelijk gezonde fundamentals, leek veel meer op een zelfvervullende tweede-generatiegebeurtenis dan op het klassieke reserve-uitputtingsverhaal dat bij veel Latijns-Amerikaanse koppelinginstortingen uit de jaren tachtig paste. Een verwant weetje: nadat de Aziatische financiële crisis van 1997-98 het belang blootlegde van private-sector- en bankbalansen die geen van beide varianten goed modelleerde, begonnen onderzoekers te spreken van een "derde generatie" crisismodellen die die kanalen incorporeerden.',
+      'Krugman (1979): reserves uitputten door tekorten - voorzienbare crisis. Obstfeld: beleidsmaker weegt kosten/baten af - meerdere evenwichten. Koppeling kan instorten door verwachting alleen. Cruciaal voor ERM-crisis (1992).',
     ],
   ],
   professor: [
@@ -462,7 +462,7 @@ export const MACROECON: CategoryContent = {
         'Het demonstreerde dat tweede-generatie-crisismodellen volledig samenvallen met eerste-generatiemodellen zodra verwachtingen rationeel worden',
       ],
       0,
-      'Tweede-generatiemodellen van muntcrises hadden een lastig kenmerk: onder algemene kennis van fundamentals konden meerdere evenwichten naast elkaar bestaan, zodat de theorie kon zeggen dat een crisis mogelijk was, maar niet wanneer of of ze werkelijk zou plaatsvinden. Morris en Shin leenden de "global games"-techniek - elke speculant een iets ander, privaat waargenomen ruizig signaal over het werkelijke fundamentele niveau geven - wat algemene kennis doorbreekt en, opmerkelijk, de veelheid samenvouwt tot één enkel evenwicht bepaald door de exacte verdeling van overtuigingen, wat de voorspellende kracht van het model herstelt. Dit selectiemechanisme bleek veel algemener dan alleen muntcrises: het is sindsdien toegepast op bankruns, herfinancieringscrises van staatsschuld, en elke strategische situatie met coördinatiemotieven en meerdere evenwichten onder algemene kennis. Een verwant weetje: het onderliggende global-games-instrumentarium werd oorspronkelijk ontwikkeld in de pure speltheorie door Carlsson en van Damme in 1993, jaren voordat Morris en Shin het in de internationale macro-economie importeerden.',
+      'Tweede-generatiemodellen: meerdere evenwichten onder algemene kennis - geen duidelijkheid wanneer crisis optreedt. Morris-Shin voegden "global games"-techniek toe: privaat ruizige signalen breken algemene kennis en selecteren uniek evenwicht. Toepasbaar op bankruns en hersfinancieringscrises.',
     ],
     [
       'In het Gertler-Kiyotaki-raamwerk van financiële intermediatie, wat beperkt banken\'s vermogen om krediet te verstrekken tijdens een crisis?',
@@ -473,7 +473,7 @@ export const MACROECON: CategoryContent = {
         'De nulgrens op de rente die de centrale bank betaalt op reservetegoeden van banken',
       ],
       0,
-      'Gertler en Kiyotaki (voortbouwend op Gertler-Karadi) modelleren banken zelf als onderhevig aan een agency-probleem: omdat een bankier altijd wat middelen zou kunnen afwenden voor privaat gewin, zullen externe spaarders alleen lenen tot een multiple van het eigen nettovermogen van de bankier, zodat een schok die direct het kapitaal van de intermediair treft - niet alleen het nettovermogen van de kredietnemer, zoals in de financiële versneller van Bernanke-Gertler-Gilchrist - het kredietaanbod van de hele economie onmiddellijk verkrapt. Dit gaf theoretische onderbouwing aan een apart post-2008 beleidsinstrument: een centrale bank kan optreden als intermediair van laatste redmiddel, activa rechtstreeks op haar eigen minder beperkte balans kopen wanneer private intermediatie verstoord is, in plaats van alleen de beleidsrente te verlagen. Het raamwerk is expliciet bedoeld om de balanskanalen aan de kant van de kredietnemer, zoals Kiyotaki-Moores aan activaprijzen gekoppelde onderpandbeperkingen, aan te vullen, niet te vervangen, omdat de twee aan verschillende kanten van de kredietrelatie werken. Een verwant weetje: deze literatuur wordt vaak aangehaald als de academische onderbouwing voor de gerichte kredietverruimingsfaciliteiten van de Federal Reserve in 2008-09, zoals de Commercial Paper Funding Facility en TALF, die feitelijk de balans van de Fed substitueerden voor verstoorde private intermediatie.',
+      'Gertler-Kiyotaki: banken onderhevig aan agency-probleem - spaarders lenen tot multiple van bankiersvermogen. Schokken aan bankkapitaal beperken creditaanbod. Rechtvaardigt centrale bank als laatste-redmiddel intermediair met balans.',
     ],
     [
       'Jordà\'s local-projection-methode (2005) voor het schatten van impulsresponsies verschilt van een VAR vooral door wat te doen?',
@@ -484,7 +484,7 @@ export const MACROECON: CategoryContent = {
         'Het gehele dynamische systeem schatten in continue tijd in plaats van op de door de onderzoeker gekozen discrete datafrequentie',
       ],
       0,
-      'Een VAR schat één set coëfficiënten en itereert dat ene geschatte systeem dan vooruit om de impulsrespons op elke horizon uit te tekenen, zodat elke misspecificatie in het model zich opstapelt naarmate de horizon groeit; local projections voeren in plaats daarvan een nieuwe, directe lineaire regressie uit van de uitkomst h periodes vooruit op de schok en controlevariabelen, afzonderlijk voor elke horizon h, waarbij wat statistische efficiëntie wordt ingewisseld voor robuustheid tegen misspecificatie en gemakkelijke accommodatie van niet-lineaire of toestandsafhankelijke responsies. Deze flexibiliteit - de geschatte respons laten afhangen van of de economie in een recessie of expansie verkeert, bijvoorbeeld - is lastig netjes in een VAR te bouwen, wat een groot deel is van waarom local projections extreem populair werden in toegepast werk over fiscale multipliers en monetaire transmissie na Jordà\'s paper. Onder een correct gespecificeerd lineair model zijn de twee methoden asymptotisch equivalent en convergeren ze naar dezelfde populatie-impulsrespons; ze wijken vooral af in eindige steekproeven en onder misspecificatie, en precies daar leeft het praktische debat tussen beide. Een verwant weetje: de populariteitsgolf van local projections viel samen met, en maakte deels mogelijk, de opkomst van toestandsafhankelijke schattingen van fiscale multipliers die vragen of overheidsuitgaven effectiever zijn in recessies dan in expansies.',
+      'VAR itereert één geschat systeem; local projections voeren afzonderlijke regressies per horizon uit. VAR: misspecificatie stapeelt; LP: robuuster, laat niet-lineaire responsies toe. LP populair in fiscale multiplier- en transmissiestudies.',
     ],
     [
       'Eichengreens "golden fetters"-these stelt dat de interbellum-goudstandaard de Grote Depressie vooral verergerde via welk mechanisme?',
@@ -495,7 +495,7 @@ export const MACROECON: CategoryContent = {
         'Het vereiste dat elke grote munt in 1931 gelijktijdig en met een identieke marge devalueerde, in één gecoördineerde aanpassing',
       ],
       0,
-      'Eichengreen stelde dat de herstelde interbellum-goudstandaard de geloofwaardigheid en coöperatieve flexibiliteit van het vooroorlogse systeem miste, zodat wanneer goud uit een land begon te stromen, de centrale bank gedwongen werd tot anticyclische renteverhogingen en deflatie om de pariteit te verdedigen precies wanneer expansief beleid het meest nodig was, en omdat grote economieën door vaste koersen aan goud gekoppeld waren, werd de krimp die in de VS begon wereldwijd doorgegeven en versterkt. Het klinkende empirische bewijs van de these is een natuurlijk experiment: landen die het eerst van goud afstapten - Groot-Brittannië in 1931, kort daarna de Noordse landen - herstelden het snelst, terwijl de "goudblok"-landen, met Frankrijk als voornaamste voorbeeld, die tot medio jaren dertig aan de pariteit vasthielden, de diepste en langdurigste depressies doorstonden. Dit "eerder van goud af, eerder herstel"-patroon is een van de robuustste landenvergelijkende regelmatigheden in de economische geschiedenis van die periode, en het vormde direct het latere denken over monetair beleid. Een verwant weetje: Ben Bernankes eigen academische onderzoek naar de Depressie leunde sterk op precies deze bevinding over de goudstandaard als transmissiemechanisme, ruim voordat hij Fed-voorzitter werd en soortgelijke redenering toepaste op de crisis van 2008.',
+      'Interbellum-goudstandaard: miste flexibiliteit, dwong anticyclische renteverhogingen/deflatie wanneer expansie nodig was. Landen die eerst van goud afstapten (GB 1931) herstelden snelst; "goudblok"-landen (France) hadden langste depressies. "Eerder af, eerder herstel"-patroon.',
     ],
     [
       'In het Eaton-Gersovitz-raamwerk (1981) van staatsschuld, wat disciplineert een overheid tegen wanbetaling, gegeven dat staten niet failliet kunnen worden verklaard door een rechtbank?',
@@ -506,13 +506,13 @@ export const MACROECON: CategoryContent = {
         'Het opleggen van gecoördineerde handelssancties door een supranationale autoriteit bij elke wanbetaling',
       ],
       0,
-      'Omdat er geen supranationale rechtbank is die de activa van een staat kan beslaan zoals binnenlands faillissementsrecht de activa van een bedrijf kan beslaan, modelleerden Eaton en Gersovitz wanbetalingsdiscipline als puur reputatiegedreven: een overheid die in gebreke blijft, verliest voortaan toegang tot internationale kredietmarkten, zodat ze alleen kiest voor wanbetaling wanneer het directe voordeel van niet-terugbetalen groter is dan de verdisconteerde waarde van voortgezette markttoegang, en kredietverstrekkers prijzen schuld op hun beurt op basis van deze endogene wanbetalingskans. Dit reputatie-en-uitsluitingsmechanisme werd de basis van de moderne kwantitatieve literatuur over staatsschuld, met name Arellano\'s model uit 2008, gebruikt om te verklaren waarom wanbetaling zich clustert in slechte economische toestanden en waarom obligatiespreads oplopen in de aanloop naar wanbetaling in plaats van alleen erna. Een langdurig empirisch probleem voor deze klasse modellen is dat pure reputatie-uitsluiting alleen veel minder wanbetaling impliceert dan de geschiedenis werkelijk laat zien, wat waarom latere generaties van de literatuur directe output- en handelskosten van wanbetaling toevoegden om waargenomen frequenties beter te matchen. Een verwant weetje: ondanks dat het reputatiemechanisme nominaal permanente uitsluiting impliceert, hebben werkelijk in gebreke gebleven staten - Argentinië en Rusland de meest aangehaalde voorbeelden - historisch binnen een handvol jaren aanzienlijke markttoegang herwonnen, een raadsel dat de theoretische literatuur nog altijd niet volledig heeft opgelost.',
+      'Eaton-Gersovitz: wanbetalingsdiscipline via reputatie-uitsluiting van kredietmarkten. Een staat kiest wanbetaling als voordeel groter is dan verlies van markttoegang. Kredietverstrekkers prijzen schuld op endogene wanbetalingskans. Basis moderne staatsschuld-literatuur.',
     ],
   ],
 };
 
 export const MICROECON: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Waaraan wordt een Pigouviaanse belasting gelijkgesteld?',
       [
@@ -588,7 +588,7 @@ export const MICROECON: CategoryContent = {
         'Een uitkomst waarvan geen coalitie profijtelijk kan afwijken',
       ],
       0,
-      'De laatste is de kern, uit de coöperatieve speltheorie, en dominante strategieën zijn de sterkere voorwaarde in de derde.',
+      'De coalitie-benadering is de kern uit coöperatieve speltheorie. Dominante strategieën zijn de sterkste voorwaarde. Nash-evenwicht vereist geen eenzijdige afwijking voordelig is.',
     ],
     [
       'Aan wat moet een instrumentele variabele voldoen?',
@@ -610,7 +610,7 @@ export const MICROECON: CategoryContent = {
         'De markt bereikt nooit een evenwicht, omdat elk bedrijf een blijvende prikkel houdt om welke prijs de ander ook rekent te onderbieden',
       ],
       0,
-      'Met een homogeen product, identieke constante marginale kosten en geen capaciteitslimieten kan elk bedrijf de hele markt veroveren door zijn rivaal met een willekeurig klein bedrag te onderbieden, zodat de enige prijs waarvan geen van beide wil afwijken gelijk is aan marginale kosten - dezelfde uitkomst als perfecte concurrentie, zelfs met slechts twee verkopers. Dit is de paradox: intuïtie zegt dat minder bedrijven hogere prijzen zou moeten opleveren, maar Bertrand-duopolieconcurrentie stort direct in naar de competitieve benchmark. Echte markten vermijden dit via capaciteitsbeperkingen (de Edgeworth-oplossing), productdifferentiatie of herhaalde interactie die stilzwijgende collusie ondersteunt. Het resultaat is genoemd naar Joseph Bertrands sceptische recensie uit 1883 van Cournots model van hoeveelheidsconcurrentie, geschreven bijna vijftig jaar na Cournots oorspronkelijke boek uit 1838.',
+      'Bertrand duopolie met homogeen product en identieke kosten: prijs = marginale kosten - competitieve uitkomst ondanks twee bedrijven. Paradox tegenover intuïtie. Echte markten vermijden via capaciteit, productdifferentiatie of collusie.',
     ],
     [
       'In een Cournot-oligopolie met n identieke bedrijven, constante marginale kosten en lineaire vraag, wat gebeurt er met de evenwichtsmarge boven kosten (de Lerner-index) als het aantal bedrijven n groot wordt?',
@@ -621,7 +621,7 @@ export const MICROECON: CategoryContent = {
         'Ze stijgt met n, omdat de residuele vraag van elk bedrijf minder elastisch wordt als rivalen zich vermenigvuldigen',
       ],
       0,
-      'In het symmetrische Cournot-evenwicht voldoet de marge aan de Lerner-voorwaarde (P-MC)/P gelijk aan 1/(n keer de marktelasticiteit van de vraag), zodat de marge naarmate n groeit krimpt richting nul en de uitkomst convergeert naar prijs gelijk aan marginale kosten - de competitieve grens. Dit koppelt marktstructuur rechtstreeks aan een meetbare concentratiestatistiek: in het symmetrische Cournot-evenwicht is de bedrijfstakbrede Lerner-index gelijk aan de Herfindahl-Hirschman-index gedeeld door de vraagelasticiteit, een van de meest heldere bruggen tussen speltheorie en toegepaste mededingingsmeting. Cournots boek uit 1838 gaat 45 jaar vooraf aan Bertrands kritiek en introduceerde ook de reactiefunctie - wat moderne speltheoretici een beste-respons-curve noemen - decennia voordat Nash het evenwichtsbegrip in het algemeen formaliseerde.',
+      'Cournot: marge = 1/(n × elasticiteit). Marge → 0 als n groot. Lerner-index = HHI/elasticiteit - brug tussen theorie en mededinging. Cournot (1838) introduceerde reactiefunctie voor Nash formaliseerde evenwicht.',
     ],
     [
       'Bij derdegraads prijsdiscriminatie tussen marktsegmenten die niet aan elkaar kunnen doorverkopen, wat bepaalt de relatieve prijzen die een winstmaximaliserende monopolist rekent?',
@@ -632,7 +632,7 @@ export const MICROECON: CategoryContent = {
         'De prijs is het hoogst in welk segment dan ook met het grootste aantal koeprs, ongeacht hoe elastisch hun vraag is',
       ],
       0,
-      'De optimale marge van elk segment volgt de standaard monopolieprijsregel apart toegepast: (P-MC)/P is gelijk aan één gedeeld door de absolute waarde van de vraagelasticiteit van dat segment, zodat een minder prijsgevoelige groep proportioneel meer betaalt. Joan Robinsons "Economics of Imperfect Competition" uit 1933 werkte de formele voorwaarden uit, voortbouwend op A.C. Pigous eerdere taxonomie die eerste-, tweede- en derdegraads discriminatie onderscheidde naar informatievereisten. Het schoolboekvoorbeeld is business class versus toeristenklasse bij luchtvaartmaatschappijen, omdat de schema\'s van zakenreizigers hun vraag veel minder elastisch maken dan die van vakantiegangers. Een vaak gemist detail: derdegraads discriminatie kan de totale welvaart verlagen ten opzichte van uniforme prijsstelling, ook al verhoogt het de winst, afhankelijk van hoe de output in elk segment toe- of afneemt.',
+      'Derdegraads discriminatie: marge = 1/elasticiteit per segment. Minder elastische vraag → hogere marge. Robinson (1933). Vb: business vs toeristen klasse. Kan welvaart verlagen ondanks hogere winst.',
     ],
     [
       'In Akerlofs "market for lemons", welk mechanisme kan ervoor zorgen dat de markt voor tweedehands auto\'s instort totdat alleen nog auto\'s van lage kwaliteit worden verhandeld?',
@@ -643,7 +643,7 @@ export const MICROECON: CategoryContent = {
         'Een bindend prijsplafond opgelegd door toezichthouders ligt onder de reserveringswaarde die eigenaren van goede auto\'s vereisen om te verkopen',
       ],
       0,
-      'Omdat koopers kwaliteit niet kunnen onderscheiden, weerspiegelt de prijs die ze willen betalen de gemiddelde kwaliteit van het aanbod; als die prijs daalt, zijn eigenaren van bovengemiddelde auto\'s de eersten die zich terugtrekken uit de markt, wat de gemiddelde kwaliteit verder verlaagt en kan escaleren naar een markt die nauwelijks iets anders dan "citroenen" verhandelt. Akerlofs paper uit 1970 in de Quarterly Journal of Economics werd een van de grondleggende teksten van de informatie-economie, en toonde dat asymmetrische informatie alleen - zonder marktmacht of externaliteit - anderszins wederzijds voordelige handel kan vernietigen. Hij deelde de Nobelprijs van 2001 met Michael Spence en Joseph Stiglitz voor werk over markten met asymmetrische informatie. Een blijvend weetje: de paper werd naar verluidt afgewezen door meerdere grote tijdschriften als te triviaal voordat hij uiteindelijk werd gepubliceerd.',
+      'Asymmetrische informatie: koopers betalen voor gemiddelde kwaliteit. Hoge-kwaliteit eigenaren trekken zich terug; gemiddelde daalt - markt verhandelt alleen "citroenen". Akerlof (1970) toonde asymmetrie kan handel vernietigen.',
     ],
     [
       'In Spence\'s job-market-signaleringsmodel, wat maakt onderwijs een geloofwaardig signaal van de onwaargenomen bekwaamheid van een werknemer, ook als onderwijs zelf niets toevoegt aan productiviteit?',
@@ -654,7 +654,7 @@ export const MICROECON: CategoryContent = {
         'Minder bekwame werknemers is wettelijk verboden om de kwalificatie te verkrijgen, wat de loonkloof tussen groepen in stand houdt',
       ],
       0,
-      'Het model leunt op een single-crossing-eigenschap: omdat het verkrijgen van onderwijs minder kostbaar is (in moeite of opgeofferde tijd) voor bekwame werknemers, vinden zij het de moeite waard om hun type via scholing te signaleren, terwijl minder bekwame werknemers dat niet doen, en bedrijven kunnen rationeel bekwaamheid afleiden uit de kwalificatie in een scheidend evenwicht, ook al heeft onderwijs geen effect op productiviteit. Spence\'s paper uit 1973 is deels beroemd door de evenwichtsveelheid die het blootlegde - poolende evenwichten waarin niemand signaleert kunnen naast scheidende evenwichten bestaan, en welke zich voordoet hangt af van geloofsovertuigingen buiten het evenwicht. Hij deelde de Nobelprijs van 2001 met George Akerlof en Joseph Stiglitz specifiek voor analyses van markten met asymmetrische informatie. Een verwant weetje: signaleringsmodellen van dit soort gaven economen een formele reden waarom kwalificaties maatschappelijk verkwistend kunnen zijn, ook al is het privé rationeel voor elke werknemer om ze te verkrijgen.',
+      'Spence signaling: onderwijs goedkoper voor bekwamen (single-crossing). Bekwamen signaleren via scholing, minder bekwamen niet. Bedrijven leiden type uit kwalificatie af. Meerdere evenwichten mogelijk. Nobelprijs 2001 (Akerlof, Stiglitz).',
     ],
     [
       'De Nash-onderhandelingsoplossing selecteert de individueel rationele, Pareto-efficiënte overeenkomst die welke grootheid maximaliseert?',
@@ -665,7 +665,7 @@ export const MICROECON: CategoryContent = {
         'De uitbetaling van welke partij dan ook met de sterkere alternatieve optie, alleen gewogen naar relatieve risicoaversie',
       ],
       0,
-      'Nash (1950) leidde de oplossing axiomatisch af uit vier voorwaarden - Pareto-efficiëntie, symmetrie, invariantie onder affiene transformaties van nut en onafhankelijkheid van irrelevante alternatieven - en toonde dat ze een unieke uitkomst vastleggen: die welke het product van elke onderhandelaars winst boven het onenigheidspunt maximaliseert. Het niet-coöperatieve tegenhanger kwam decennia later toen Rubinsteins alternerende-biedingen-onderhandelingsspel uit 1982, in de Binmore-Rubinstein-Wolinsky-resultaten, werd getoond te convergeren naar de Nash-oplossing als de tijd tussen biedingen krimpt en verdiscontering verdwijnt. Het is dezelfde John Nash die later werd geportretteerd in "A Beautiful Mind", en zowel zijn evenwichtsbegrip als zijn onderhandelingsoplossing blijven fundamentele instrumenten in arbeidsonderhandelingen en contracttheorie.',
+      'Nash (1950): product van winsten boven onenigheidspunt maximaliseert unieke oplossing. Vier axioma\'s (Pareto, symmetrie, affiene invariantie, onafhankelijkheid van irrelevante alternatieven). Rubinsteins alternerend-bod model (1982) convergeert ernaar als verdiscontering verdwijnt.',
     ],
     [
       'De eerste hoofdstelling van de welvaartseconomie stelt dat, onder standaardvoorwaarden (geen externaliteiten, complete markten, prijsnemende actoren), elke competitieve-evenwichtsallocatie wat is?',
@@ -676,7 +676,7 @@ export const MICROECON: CategoryContent = {
         'Uniek bepaald door de initiële toewijzing, zodat het resulterende evenwicht altijd uniek is',
       ],
       0,
-      'De stelling, rigoureus vastgesteld binnen het Arrow-Debreu-algemeen-evenwichtsraamwerk, zegt alleen dat competitief evenwicht geen kans op wederzijds voordeel verspilt - ze zwijgt over hoe eerlijk of ongelijk die allocatie is, omdat een wild ongelijke initiële toewijzing tot een even Pareto-efficiënt evenwicht leidt als een eerlijke. De tweede welvaartsstelling levert het omgekeerde: elke Pareto-efficiënte allocatie kan zelf worden ondersteund als een competitief evenwicht na passende lump-sum-herverdeling van toewijzingen. Arrow (1951) en Debreu (1951) leverden de formele bewijzen, en maakten van Adam Smiths "onzichtbare hand"-intuïtie en Pareto\'s eigen vroege-1900\'s efficiëntiebegrip een precieze wiskundige uitspraak. Een gangbare examenval is "efficiënt" en "goed" als synoniemen behandelen - een competitief evenwicht kan één persoon alles geven en toch Pareto-efficiënt zijn.',
+      'Competitief evenwicht waste geen kans op wederzijds voordeel: Pareto-efficiënt. Zwijgt over eerlijkheid - ongelijke toewijzing ook efficiënt. Arrow-Debreu-raamwerk. Niet te verwarren met "goed": een evenwicht kan alles aan één iemand geven.',
     ],
   ],
   phd: [
@@ -755,7 +755,7 @@ export const MICROECON: CategoryContent = {
         'Er wordt tegen geen enkele prijs verzekering aangeboden, omdat competitieve verzekeraars niet kunnen breakeven zodra adverse selectie aanwezig is',
       ],
       0,
-      'Rothschild en Stiglitz toonden dat een poolend contract niet als evenwicht kan overleven, omdat een rivaliserende verzekeraar altijd winstgevend de laag-risicotypes zou kunnen "afromen" met een contract dat minder dekking biedt tegen een lagere premie die alleen zij zouden willen; het overlevende kandidaat-evenwicht scheidt in plaats daarvan types, waarbij hoog-risicokoopers volledige verzekering krijgen tegen hun eigen eerlijke odds terwijl laag-risicokoopers partiële dekking moeten accepteren als precies de vertekening die hoog-risiconabootsing afschrikt. Voor sommige parameterwaarden bestaat er helemaal geen evenwicht in pure strategieën, een werkelijk lastig kenmerk dat latere oplossingen aanwakkerde zoals die van Wilson (1977) en Miyazaki\'s anticipatie op kruissubsidiërende evenwichten. De paper uit 1976 in de Quarterly Journal of Economics door Michael Rothschild en Joseph Stiglitz is een van de werken aangehaald in Stiglitz\'s aandeel van de Nobelprijs van 2001 voor de economie van asymmetrische informatie.',
+      'Scheiding in evenwicht: hoog-risico krijgt volledige dekking, laag-risico partiële. Rival kan poolend contract niet ondermijnen. Voor bepaalde parameters geen evenwicht. Nobelprijs 2001 (Stiglitz).',
     ],
     [
       'Wat vestigt het Myerson-Satterthwaite-theorema (1983) als onmogelijkheidsresultaat voor bilaterale handel onder private informatie?',
@@ -766,7 +766,7 @@ export const MICROECON: CategoryContent = {
         'Ex-post efficiëntie wordt alleen onhaalbaar wanneer waarderingen getrokken worden uit verdelingen die asymmetrisch zijn tussen de twee marktzijden',
       ],
       0,
-      'Anders dan bij eenzijdige private-informatiesituaties, waar Groves-achtige mechanismen efficiëntie en budgetneutraliteit kunnen bereiken, is het tweezijdige geval werkelijk moeilijker: zodra de mogelijke waarderingen van koper en verkoper overlappen en beide privé bekend zijn, moet elk mechanisme dat efficiënte handel bereikt of een verwacht tekort draaien of een van de partijen dwingen om af te zien van een deal die het liever niet zou willen sluiten - er is geen ontsnapping via slimmer mechanismeontwerp. Dit doet er ver buiten de speelgoed-"één koper, één verkoper"-opzet toe: het verklaart waarom echte dubbele veilingen en onderhandelde deals systematisch inefficiënt zijn puur door informatie, zonder dat marktmacht nodig is om de inefficiëntie te genereren. Het theorema bouwt rechtstreeks voort op Myersons bredere mechanismeontwerpinstrumentarium, werk erkend in zijn gedeelde Nobelprijs van 2007 samen met Leonid Hurwicz en Eric Maskin.',
+      'Tweezijdig: geen mechanisme kan efficiëntie, prikkelcompatibiliteit en budgetneutraliteit tegelijk bereiken bij overlappende waarderingsbereiken. Anders dan eenzijdig geval. Nobelprijs 2007 (Myerson).',
     ],
     [
       'In een common-value-veiling beschrijft de "winnaarsvloek" welk systematisch patroon voor koopers die er geen rekening mee houden?',
@@ -777,7 +777,7 @@ export const MICROECON: CategoryContent = {
         'Veilingopbrengst valt systematisch en voorspelbaar onder de privé bekende reserveringsprijs van de verkoper zodra het aantal concurrerende bieders volledig onbeperkt is',
       ],
       0,
-      'Wanneer de schatting van elke bieder van een gedeelde, onbekende werkelijke waarde ruis bevat, is het feit van de hoogste schatting hebben zelf informatief - onder voorwaarde van winnen was jouw schatting waarschijnlijk uit de bovenste staart getrokken relatief aan de werkelijke waarde - zodat rationele bieders hun biedingen naar beneden moeten aanpassen, agressiever naarmate het aantal rivalen groeit, of anders systematisch te veel betalen. Het effect werd empirisch gedocumenteerd voordat het theoretisch geformaliseerd werd - petroleumingenieurs die schreven in een vaktijdschrift uit 1971 (Capen, Clapp en Campbell) merkten op dat oliebedrijven te veel boden op offshore boorrechten, jaren voordat Robert Wilsons paper uit 1977 het rigoureuze speltheoretische fundering gaf. Het is een verschijnsel dat te onderscheiden is van eenvoudig overbieden - een volledig rationele bieder die correct corrigeert voor de vloek valt er niet aan ten prooi, en precies die strategische aanpassing maken naïeve bieders niet.',
+      'Winnen signaleert dat je schatting uit de bovenste staart stamde. Rationele bieders corrigeren naar beneden. Naïeve bieders betalen te veel. Empirisch getoond door Capen et al. (1971). Wilson (1977) gaf theoretische basis.',
     ],
     [
       'Het Vickrey-Clarke-Groves-mechanisme (VCG) bereikt efficiënte voorziening van een collectief goed met privé bekende waarderingen door wat te doen?',
@@ -788,7 +788,7 @@ export const MICROECON: CategoryContent = {
         'De betaling van elke actor gelijkstellen aan zijn eigen gerapporteerde waardering, volledig terugbetaald wanneer het goed uiteindelijk niet wordt voorzien',
       ],
       0,
-      'De Groves-klasse van mechanismen, waarvan VCG\'s collectieve-goed-versie het leidende voorbeeld is, koppelt de betaling van elke actor aan de externaliteit die zijn rapport aan de rest van de groep oplegt (de Clarke-"pivot"-regel), wat waarheidsgetrouw rapporteren een dominante strategie maakt ongeacht wat anderen rapporteren - een opmerkelijk sterke prikkelgarantie. Het addertje is dat het mechanisme over het algemeen niet exact budgetneutraal is, een beperking geformaliseerd door Green en Laffont en in geest weerspiegeld door de tweezijdige Myerson-Satterthwaite-onmogelijkheid. In de praktijk gebruiken grote online advertentieveilingen vaak de verwante generalized-second-price-regel in plaats van echte VCG, een bekende afwijking van het theoretisch prikkelcompatibele ontwerp die de optimale strategieën van bieders verandert.',
+      'Clarke-pivot regel: betaling = externaliteit op anderen. Dominante strategie voor waarheid. Groves-klasse. Niet budgetneutraal in het algemeen. Online advertenties gebruiken generalized-second-price als praktische variant.',
     ],
     [
       'Het volkstheorema voor oneindig herhaalde spellen stelt dat, naarmate de discontovoet van spelers naar één neigt, welke verzameling uitkomsten ondersteund kan worden als subgame-perfecte evenwichten?',
@@ -799,7 +799,7 @@ export const MICROECON: CategoryContent = {
         'Elke uitkomst dan ook, omdat verdiscontering die naar één neigt alle beperkingen op haalbare strategieën wegneemt',
       ],
       0,
-      'Met voldoende geduldige spelers kunnen triggerstrategieën - samenwerken zolang de andere partij dat doet, en elke afwijking straffen door terug te vallen naar een slecht evenwicht voor altijd daarna - uitkomsten ondersteunen die voor beide partijen veel beter zijn dan het Nash-evenwicht van het stagespel, zolang die uitkomsten individueel rationeel zijn (beter dan de minmax-strafuitbetaling van een speler) en technisch haalbaar. Fudenberg en Maskin (1986) gaven de meest volledige rigoureuze karakterisering, ook voor spellen waar de stagespel-evenwichtsuitbetalingen de benodigde strafruimte nog niet omvatten. Het is de standaard formele verklaring voor werkelijke stilzwijgende collusie, zoals duopolisten die prijzen ver boven de eenmalige Bertrand-uitkomst ondersteunen zonder ooit expliciet te communiceren. Het theorema kreeg zijn naam "folk" omdat speltheoretici het basisidee informeel jarenlang begrepen en verhandelden voordat iemand een algemeen bewijs opschreef.',
+      'Triggerstrategieën: samenwerk zolang ander doet, straf eeuwig na afwijking. Individueel rationeel en haalbaar → ondersteund. Fudenberg-Maskin (1986). Verklaart stilzwijgende collusie bij voldoende geduld.',
     ],
     [
       'Het Bulow-Klemperer-resultaat (1996) vergelijkt eenvoudige veilingen met geoptimaliseerde onderhandeling, en concludeert wat over het aantrekken van één extra bieder?',
@@ -810,7 +810,7 @@ export const MICROECON: CategoryContent = {
         'Optimale reserveringsprijzen worden volledig overbodig zodra het aantal bieders drie overschrijdt, voor elke waarderingsverdeling',
       ],
       0,
-      'Het resultaat zegt dat een verkoper over het algemeen beter af is met het besteden van moeite aan het aantrekken van één extra echte bieder naar een eenvoudige oplopende veiling zonder reserveringsprijs dan aan het fijnafstemmen van het mechanisme (een optimale reserveringsprijs) voor een kleinere groep bieders, omdat concurrentie zelf meer werk verricht dan slimme prijsstelling. Het herkaderde een langlopend debat over veilingontwerp voor privatiseringen en verkoop van activa, met een verschuiving van de nadruk naar deelname en weg van mechanismeverfijning. Paul Klemperer bracht de theorie later in de praktijk als adviseur bij het ontwerp van de Britse 3G- en andere spectrumveilingen, terwijl Jeremy Bulows academische werk zich uitstrekte over veilingtheorie en corporate finance aan Stanfords businessschool.',
+      'Voeg één bieder toe aan eenvoudige veiling: beter dan optimale reserveringsprijs tunen. Concurrentie werkt harder dan mechanismeontwerp. Praktisch toegepast in spectrumveilingen.',
     ],
     [
       'Het Gale-Shapley-deferred-acceptance-algoritme, wanneer de ene zijde de voorstellen doet, produceert een stabiele matching met welke strategische eigenschap voor de voorstellende zijde?',
@@ -821,7 +821,7 @@ export const MICROECON: CategoryContent = {
         'Stabiliteit vereist dat beide zijden volledige en volledig waarheidsgetrouwe voorkeursrangschikkingen over elke mogelijke partner indienen, anders kan geen stabiele matching gegarandeerd worden',
       ],
       0,
-      'Gale en Shapleys algoritme uit 1962 heeft een asymmetrische prikkeleigenschap, later verscherpt door Dubins-Freedman en door Alvin Roths toegepaste werk: de voorstellende zijde heeft geen prikkel om haar voorkeuren te verkeerd voor te stellen, omdat het algoritme voorstellers hun meest geprefereerde uitkomst geeft onder alle stabiele matchings, terwijl de ontvangende zijde soms kan profiteren van strategische verkeerde voorstelling. Stabiele matchings zijn ook niet in het algemeen uniek, hoewel het algoritme altijd de door-de-voorsteller-optimale selecteert uit welke stabiele matchings dan ook bestaan. Dit instrumentarium ligt ten grondslag aan echte instituties zoals het Amerikaanse National Resident Matching Program voor artsen en verscheidene grootstedelijke schoolkeuzesystemen (onder andere Boston en New York). Lloyd Shapley deelde de Nobelprijs van 2012 met Alvin Roth voor het omzetten van deze theorie in werkende marktontwerpen; David Gale was in 2008 overleden, en de Nobelprijs wordt nooit postuum toegekend.',
+      'Voorstellende zijde: dominante strategie om waarheid te zeggen. Algoritme geeft hun zwak-best stabiel evenwicht. Ontvangende zijde kan profiteren van leugen. Nobelprijs 2012 (Roth).',
     ],
     [
       'De Coase-conjectuur betreft een monopolist van duurzame goederen die zijn prijs frequent kan herzien in de tijd. Wat voorspelt deze naarmate het interval tussen prijsherzieningen naar nul krimpt?',
@@ -832,7 +832,7 @@ export const MICROECON: CategoryContent = {
         'De optimale strategie van de monopolist convergeert naar verhuren in plaats van uitverkopen, wat de statische monopoliewinst volledig herstelt',
       ],
       0,
-      'Coases informele observatie uit 1972, later geformaliseerd door Stokey (1981), Bulow (1982) en Gul-Sonnenschein-Wilson (1986), is dat een verkoper van duurzame goederen die zich niet kan binden aan toekomstige prijzen feitelijk concurreert met zijn eigen toekomstige zelf: koopers met een hoge waardering, anticiperend dat onverkochte voorraad later prijsverlagingen zal afdwingen, wachten eenvoudigweg, en naarmate herzieningsmomenten frequenter worden versnelt deze uitholling totdat prijs en winst instorten richting de competitieve benchmark. Echte bedrijven bestrijden dit door bindingsmechanismen aan te nemen die het model per aanname niet toelaat - leasen in plaats van verkopen, geplande veroudering, of gelimiteerde-editiereleases - en dat is precies waarom sommige beroemde verkopers van duurzame goederen hun product historisch verhuurden in plaats van uitverkochten. IBM\'s decennialange praktijk van het leasen in plaats van verkopen van zijn mainframecomputers is het schoolboekvoorbeeld van een bedrijf dat precies dit bindingsprobleem ontwijkt.',
+      'Monopolist concurreert met eigen toekomstig zelf: koopers wachten op prijsdalingen. Prijs→marginale kosten als herzieningstermijn→0. Formalisering: Stokey, Bulow, Gul-Sonnenschein-Wilson.',
     ],
     [
       'Holmstroms informativiteitsprincipe (1979), in principaal-agentmodellen van moral hazard, stelt dat een optimaal prikkelcontract positief gewicht moet leggen op welke signalen?',
@@ -843,7 +843,7 @@ export const MICROECON: CategoryContent = {
         'Een vast loon dat elk signaal negeert, wanneer de agent risiconeutraal is en de principaal risicoavers',
       ],
       0,
-      'Holmstrom toonde dat het conditioneren van betaling op een extra signaal - zelfs een dat slechts zwak gecorreleerd is met inspanning - de afweging verbetert tussen het bieden van prikkels en het verzekeren van een risicoaverse agent tegen ruis, zolang dat signaal niet al volledig redundant is met informatie die het contract al gebruikt. Dit is de theoretische basis voor relatieve-prestatiebeoordeling, zoals het koppelen van bestuurdersbeloning aan bedrijfsprestaties netto van een sectorindex, wat gemeenschappelijke schokken filtert die de manager niet veroorzaakte. Holmstroms latere werk met Milgrom (1991) breidde het raamwerk uit naar multitasking, en toonde dat het te precies meten van één dimensie van een baan inspanning kan wegtrekken van niet-gemeten maar waardevolle taken. Bengt Holmstrom deelde de Nobelprijs van 2016 met Oliver Hart voor deze bijdragen aan contracttheorie.',
+      'Elk informatief signaal helpt afweging tussen prikkels en verzekering, zelfs als zwak gecorreleerd. Basis voor relatieve prestatie: salarisbeschrijving netto sectorindex. Nobelprijs 2016 (Holmstrom).',
     ],
   ],
   professor: [
@@ -911,7 +911,7 @@ export const MICROECON: CategoryContent = {
         'Een gewogen gemiddelde van het eigen bod van de bieder en het tweede-hoogste rivaliserende bod, met gewichten bepaald door de risicoaversie van elke bieder',
       ],
       0,
-      'Myersons mijlpaalresultaat leidt de opbrengstmaximaliserende toewijzingsregel rechtstreeks af uit de mechanismeontwerptheorie: rangschik en wijs toe naar virtuele waardering, phi(v) gelijk aan v minus (1 minus F(v)) gedeeld door f(v), in plaats van naar waarde zelf; onder "reguliere" verdelingen met toenemende hazardvoeten en symmetrische bieders reduceert dit tot het vertrouwde veilingformaat met een reserveringsprijs, maar met asymmetrische bieder­verdelingen kan de opbrengst-optimale regel het goed daadwerkelijk toewijzen aan een bieder die niet de hoogste waardering heeft, een werkelijk contra-intuïtieve implicatie die centraal blijft in debatten over asymmetrisch veilingontwerp. Roger Myerson deelde de Nobelprijs van 2007 met Leonid Hurwicz en Eric Maskin voor het leggen van de grondvesten van de mechanismeontwerptheorie, waarvan deze paper een centraal stuk is. Het virtuele-waarderingsbegrip werd later onmisbaar bij het analyseren van aanbestedingsveilingen waar de kostenverdelingen van bieders werkelijk verschillen tussen bedrijven.',
+      'Virtuele waardering = v - (1-F(v))/f(v). Rangschik en wijs toe naar virtueel, niet waardering. Asymmetrische bieders: optimaal goed aan laagste-waardering bieder. Nobelprijs 2007 (Myerson).',
     ],
     [
       'Het simultane-oplopende-veilingontwerp gebruikt voor FCC-spectrumverkoop, ontwikkeld met inbreng van Milgrom en Wilson, werd vooral gekozen om welk probleem op te lossen ten opzichte van sequentiële of verzegelde verkoop van licenties?',
@@ -922,7 +922,7 @@ export const MICROECON: CategoryContent = {
         'Het maximaliseert overheidsopbrengst door elke bieder te dwingen één verzegeld bod voor alle licenties tegelijk in te dienen',
       ],
       0,
-      'Het FCC-ontwerp van 1994, vormgegeven met adviseurs waaronder Paul Milgrom en Robert Wilson, liet bieders evoluerende prijzen over veel licenties gelijktijdig waarnemen en aanpassen welke bundels ze nastreefden naarmate informatie binnenkwam, wat het "blootstellingsprobleem" verminderde waarbij een bieder die een bundel complementaire licenties nodig heeft het risico loopt slechts een deel ervan te winnen met verlies. Het was niet letterlijk een VCG-mechanisme (dat op deze schaal onpraktisch is qua rekenkracht) en het elimineerde strategisch signaleren niet - beroemd is dat bieders in sommige FCC-veilingen midden jaren negentig de laatste cijfers van hun biedingen gebruikten om beoogde territoriale verdelingen aan rivalen te signaleren, een echt en goed gedocumenteerd verschijnsel waar toezichthouders later tegen probeerden te ontwerpen. Milgroms latere "incentive auction", die in 2016-17 televisie-omroepspectrum voor mobiel gebruik herbestemde via een gekoppeld omgekeerd-en-voorwaarts simultaan ontwerp, wordt vaak aangehaald als een van de meest complexe marktmechanismen ooit in de praktijk gebracht.',
+      'Simultaan oplopend ontwerp laat bieders prijzen en bundels in real-time aanpassen: vermijdt blootstellingsprobleem. Niet letterlijk VCG. Bieders signaleerden via cijferpatronen. 2016-17 incentive auction herstructureerde spectrum.',
     ],
     [
       'In het Baron-Myerson-model (1982) van optimale regulering van een monopolist met privé bekende productiekosten, welke vertekening laat de optimale regel van de regulator bestaan ten opzichte van prijsstelling tegen marginale kosten?',
@@ -933,7 +933,7 @@ export const MICROECON: CategoryContent = {
         'De regulator reproduceert eenvoudigweg de ongereguleerde monopolieuitkomst in elk geval, omdat asymmetrische informatie over de werkelijke kosten van het bedrijf elke welvaartsverhogende interventie volkomen nutteloos maakt',
       ],
       0,
-      'Geconfronteerd met een bedrijf wiens werkelijke kosten het niet kan waarnemen, moet de regulator wat efficiëntie opgeven om de rente te beperken die laag-kostenbedrijven zouden kunnen onttrekken door hoog-kostenbedrijven na te doen, en het resulterende optimale contract vertoont "geen vertekening aan de top" (het meest efficiënte type produceert op het efficiënte niveau) maar toenemende onderproductie voor minder efficiënte types, omdat het vertekenen van hun output is wat nabootsing onaantrekkelijk maakt voor het efficiënte type. Dit patroon - efficiëntie aan de top, neerwaartse vertekening elders - komt overal terug in mechanismeontwerp, inclusief in Mirrlees\'s optimale-inkomstenbelastingmodel, en het Baron-Myerson-raamwerk werd later ingevouwen in Laffont en Tiroles bredere theorie van regulering en aanbesteding onder asymmetrische informatie. Het resultaat gaf de reguleringseconomie haar eerste volledig rigoureuze behandeling van de afweging tussen allocatieve efficiëntie en het onttrekken van informatierente.',
+      'Asymmetrische kosten: "geen vertekening aan de top" (efficiënt type produceert efficiënt), onderproductie elders (rente beperken). Patroon universeel in mechanismeontwerp. Basis Laffont-Tirole reguleringstheorie.',
     ],
     [
       'De Grossman-Hart-Moore-eigendomsrechtentheorie van het bedrijf verklaart de grens tussen verticale integratie en arm\'s-length-contractering met een beroep op wat, gegeven dat contracten noodzakelijkerwijs incompleet zijn?',
@@ -944,7 +944,7 @@ export const MICROECON: CategoryContent = {
         'Het belastingvoordeel van verticale integratie ten opzichte van arm\'s-length-contractering onder een standaard vennootschapsbelastingcode',
       ],
       0,
-      'Omdat contracten niet elke toekomstige contingentie kunnen specificeren, betogen Grossman en Hart (1986) en Hart en Moore (1990) dat eigendom van een cruciaal fysiek actief ertoe doet omdat het bepaalt wie de sterkere positie heeft bij ex-postheronderhandeling (via de geloofwaardige dreiging om de ander toegang te ontzeggen), en dat vormt op zijn beurt elke partijs prikkel om kostbare, relatiespecifieke investeringen te doen voordat de relatie zelfs begint - integratie wijst residuele controlerechten toe in plaats van de mogelijkheid van opportunisme achteraf te elimineren. Dit formaliseerde Oliver Williamsons eerdere, informelere transactiekostenintuïtie over waarom sommige transacties binnen bedrijven plaatsvinden en andere via de markt. Oliver Hart deelde de Nobelprijs van 2016 met Bengt Holmstrom expliciet voor bijdragen aan contracttheorie inclusief deze eigendomsrechtenbenadering van bedrijfsgrenzen, een van de meest aangehaalde raamwerken in de economie van organisatie.',
+      'Onvolledige contracten: eigendom bepaalt heronderhandelingskracht (toegang weigeren). Vormt prikkels voor relatiespecifieke investeringen. Integratiekeuze bepaald door residuele controlerechten. Nobelprijs 2016 (Hart).',
     ],
     [
       'In Mirrlees\'s model van optimale niet-lineaire inkomstenbelasting (1971) met onwaarneembare bekwaamheid, wat is het beroemde resultaat voor het marginale belastingtarief aan de absolute top van een begrensde bekwaamheidsverdeling?',
@@ -955,7 +955,7 @@ export const MICROECON: CategoryContent = {
         'Het wordt gelijkgesteld aan het economiewijde gemiddelde belastingtarief, om algehele opbrengstneutraliteit te behouden',
       ],
       0,
-      'De logica volgt dezelfde prikkelcompatibiliteitsmechanica die overal in mechanismeontwerp gebruikt wordt: omdat niemand boven de hoogste verdiener staat in een begrensd-typemodel, is er geen prikkelcompatibiliteitsbeperking boven hem meer om te verlichten, zodat het belasten van zijn arbeidsaanbod aan de marge alleen welvaartsverlies creëert zonder informatief voordeel, wat het optimale toptarief naar nul drijft. Dit beroemde resultaat is ook fragiel - het hangt af van een begrensde bekwaamheidsverdeling, en Emmanuel Saez\'s werk uit 2001 toonde dat zodra je de empirisch realistischer onbegrensde Pareto-staart toelaat die typisch is voor echte inkomensverdelingen, de "nul aan de top"-conclusie verdwijnt en zelfs kan omkeren. James Mirrlees deelde de Nobelprijs van 1996 met William Vickrey voor deze en verwante bijdragen aan de informatie-economie, en het resultaat blijft een van de meest aangehaalde maar ook meest verkeerd toegepaste bevindingen van de publieke economie, vaak ten onrechte ingeroepen als een algemeen argument voor lage toptarieven.',
+      'Begrensde bekwaamheid: marginaal tarief = nul aan top (geen prikkelcompatibiliteitsbeperking boven). Fragiel: Pareto-staart (onbegrensd) → nul kan omkeren (Saez 2001). Nobelprijs 1996 (Mirrlees).',
     ],
     [
       'In het Shapiro-Stiglitz-efficiëntielonenmodel (1984), waarom kenmerkt onvrijwillige werkloosheid het arbeidsmarktevenwicht ook al zijn lonen perfect flexibel?',
@@ -966,7 +966,7 @@ export const MICROECON: CategoryContent = {
         'Bedrijven mogen wettelijk geen nominale lonen verlagen onder een psychologisch belangrijk referentiepunt vastgesteld door het vorige contract',
       ],
       0,
-      'Als inspanning niet perfect gemonitord kan worden en de arbeidsmarkt sluitend is, zou een ontslagen werknemer onmiddellijk een identieke baan kunnen vinden tegen hetzelfde loon, zodat lijntrekken geen werkelijke kost zou hebben - om werknemers iets te laten verliezen, betaalt elk bedrijf boven het marktclearende niveau, maar omdat elk bedrijf hetzelfde redeneert, overtreft het resulterende economiewijde loon het niveau dat de arbeidsmarkt zou doen sluiten, en de resulterende evenwichtswerkloosheid is precies wat de dreiging van baanverlies geloofwaardig maakt (de "no-shirking-voorwaarde"). Dit gaf reële loonrigiditeit en onvrijwillige werkloosheid een rigoureuze microfundering zonder te verwijzen naar rigide nominale contracten of vakbondsonderhandelingsmacht. Joseph Stiglitz deelde de Nobelprijs van 2001 deels voor dit en verwant werk over asymmetrische informatie, terwijl Carl Shapiro een prominente carrière in mededingingseconomie voortzette, later als hoofdeconoom bij de antitrustafdeling van het Amerikaanse Ministerie van Justitie.',
+      'Inspanning niet perfect monitord: bedrijven betalen boven marktclearing (baanverlies kostbaar). Allemaal betalen evenzeer → evenwichtswerkloosheid maakt "no-shirking" geloofwaardig. Nobelprijs 2001 (Stiglitz).',
     ],
     [
       'Hotellings lineaire-stadmodel van ruimtelijke concurrentie (1929) wordt populair gecrediteerd met een "principe van minimale differentiatie". Wat toonde latere formele analyse van het volledige tweetraps-locatie-dan-prijsspel werkelijk aan?',
@@ -977,7 +977,7 @@ export const MICROECON: CategoryContent = {
         'Bedrijven vestigen zich op de twee kwartielpunten van de lijn in evenwicht, wat de resulterende markt splitst in vier gelijke en perfect symmetrische geografische segmenten voor consumenten aan weerszijden',
       ],
       0,
-      'Hotellings eigen paper uit 1929 wordt breed gecrediteerd met de voorspelling dat concurrenten zich rond het centrum van een markt clusteren - de intuïtie die vaak wordt aangeroepen voor waarom benzinestations of politieke partijen convergeren - maar dit is een bekend geval waarin het beroemde resultaat de rigoureuze modellering niet werkelijk overleeft: d\'Aspremont, Gabszewicz en Thisse toonden in 1979 dat met het correct gespecificeerde tweetrapsspel en kwadratische transportkosten het unieke subgame-perfecte evenwicht in plaats daarvan bedrijven aan de twee uiterste einden van de markt laat vestigen, wat differentiatie maximaliseert in plaats van minimaliseert, om de prijsconcurrentie die daarop volgt te verzachten. De instabiliteit is te herleiden tot het feit dat met lineaire transportkosten het prijs-subspel discontinu is, wat Bertrand-achtige onderbiedingsprikkels genereert die het evenwicht dat Hotelling oorspronkelijk claimde te vinden doet instorten. Het is een favoriet lesvoorbeeld van een breed aangehaald "schoolboekresultaat" dat de oorspronkelijke bron niet werkelijk levert zodra het met moderne evenwichtsinstrumenten wordt gecontroleerd.',
+      'Hotelling claimt: concurrenten clusteren in midden. Fout! D\'Aspremont-Gabszewicz-Thisse (1979): uniek evenwicht = uitersten. Minimale differentiatie. Lineaire kosten → discontinu prijsspel → Bertrand-onderbieiding.',
     ],
     [
       'In Tullocks rent-seeking-contestmodel, waarin deelnemers middelen besteden om een vaste prijs te winnen volgens een contestsuccesfunctie, wat is het opmerkelijke resultaat over totale in evenwicht verspilde middelen?',
@@ -988,7 +988,7 @@ export const MICROECON: CategoryContent = {
         'Alleen de uiteindelijke winnaar maakt kosten in evenwicht, omdat verliezende deelnemers zich kosteloos kunnen terugtrekken voordat het contest afloopt',
       ],
       0,
-      'Tullocks contestformalisering uit 1980 ging verder dan de eerdere, eenvoudigere intuïtie (geassocieerd met Richard Posner) dat competitieve rent-seeking ruwweg de volledige waarde van de betwiste prijs zou moeten dissiperen; met een voldoende convexe contestsuccesfunctie - waarbij marginale inspanning ongewoon productief is in het verhogen van de winkans - kan het symmetrische Nash-evenwicht deelnemers laten zien die gezamenlijk meer uitgeven dan de prijs waard is, een werkelijk verkwistend overdissipatieresultaat. Dit geeft lobbywerk, procesvoering en patentwedloopmodellen een formele reden om te verwachten dat de maatschappelijke kost van rent-seeking de omvang van de betwiste overdracht overstijgt, niet slechts gelijkstelt. Gordon Tullock, die de term "rent-seeking" zelf muntte in een afzonderlijke paper uit 1967, sloot de cirkel over het formeel meten van de potentiële kosten pas met dit contestmodel uit 1980, meer dan een decennium later.',
+      'Voldoende convexe contestfunctie: totale rent-seeking kan prijswaarde overstijgen (overdissipatie). Niet alleen gelijk aan prijs. Formeel modellering van lobbywerk en patentwedloop. Tullock (1980).',
     ],
     [
       'De theorie van tweezijdige markten van Rochet en Tirole verklaart waarom een platform (zoals een betaalkaartnetwerk) sterk asymmetrische prijzen kan rekenen aan de twee zijden die het verbindt. Wat is het kerninzicht achter die asymmetrie?',
@@ -999,7 +999,7 @@ export const MICROECON: CategoryContent = {
         'Tweezijdige markten zijn wiskundig identiek aan standaard eenzijdige markten zodra de vraagcurves van de twee zijden simpelweg worden opgeteld',
       ],
       0,
-      'In een gewone eenzijdige markt doet alleen het algemene prijsniveau ertoe voor de standaard markuplogica, maar op een tweezijdig platform is de aanwezigheid van elke zijde direct waardevol voor de andere zijde - kaarthouders waarderen brede acceptatie door winkeliers, winkeliers waarderen een grote basis van kaarthouders - zodat een winst- of welvaartsmaximaliserend platform doorgaans de zijde subsidieert die prijsgevoeliger is of de grotere externaliteit voor de andere zijde genereert (gratis of beloningskaarten voor consumenten, vergoedingen voor winkeliers), zelfs wanneer de marginale kost van bediening voor die gesubsidieerde zijde strikt positief is. Dit inzicht - "prijsstructuur doet ertoe, niet alleen het niveau" - herschikte de mededingingsrechtelijke behandeling van kaartnetwerken, matchmakingplatforms en advertentiegefinancierde media. Het stond ook centraal in de beslissing van het Amerikaanse Hooggerechtshof in Ohio v. American Express uit 2018, en Jean Tiroles fundamentele bijdragen hier vloeiden voort in zijn Nobelprijs van 2014 voor de analyse van marktmacht en regulering.',
+      'Tweezijdig: kruiszijdige externaliteiten. Prijs-structuur doet ertoe (niet alleen niveau). Platform subsidieert gevoeliger zijde/grotere externaliteit. Beperkt mededingingsrecht. Nobelprijs 2014 (Tirole).',
     ],
     [
       'Milgrom en Roberts\'s signaleringsmodel van limietprijsstelling (1982) toont dat een monopolist die een toetreder tegenover zich heeft die onzeker is over de kosten van de monopolist, wat zal doen ten opzichte van de volledige-informatie-optimale prijs van de monopolist?',
@@ -1010,7 +1010,7 @@ export const MICROECON: CategoryContent = {
         'De prijs uniform randomiseren over alle haalbare niveaus, omdat elke deterministische prijsregel het type van de monopolist volledig onthult en daarom nutteloos is',
       ],
       0,
-      'Eerdere limietprijsstelling in Bain- en Sylos-Postma-stijl was door Chicago-school-speltheoretici bekritiseerd (in de geest van Seltens kritiek op niet-geloofwaardige dreigingen) als incoherent zodra toetreding als een echt sequentieel spel wordt gemodelleerd, omdat een prijs vandaag geen mechanische macht heeft om het toekomstige gedrag van de monopolist te binden. Milgrom en Roberts herstelden een rigoureuze rechtvaardiging onder onvolledige informatie: een werkelijk laag-kostenmonopolist vindt het de moeite waard om onder zijn eigen volledige-informatie-optimum te prijzen precies omdat die lage prijs kostbaarder is voor een hoog-kostenmonopolist om na te doen, wat het een geloofwaardig - al kostbaar - Bayesiaans signaal maakt dat toetreding ontmoedigt. De paper, samen met verwant Milgrom-Robertswerk over predatie en reputatie-effecten, hielp de theoretische fundering van de industriële organisatie op solide speltheoretische grond te herbouwen in het begin van de jaren tachtig, een periode die IO-economen soms omschrijven als de "tweede golf" van het vakgebied na de eerdere structuur-gedrag-prestatie-traditie.',
+      'Oude limietprijstheorie: ongeloofwaardig onder volledige informatie. Milgrom-Roberts: onvolledige informatie herstelt geloofwaardigheid. Laag-kost prijzen onder optimum als kostbaar Bayesiaans signaal tegen toetreding.',
     ],
   ],
 };

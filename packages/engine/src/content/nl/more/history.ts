@@ -8,7 +8,7 @@ import type { CategoryContent } from '../../row.js';
  * positie van het antwoord hier draagt geen informatie en hoeft dat ook niet.
  */
 export const MORE_HISTORY: CategoryContent = {
-  graduate: [
+  msc: [
     [
       'Wat regelde de Gouden Bul van 1356?',
       [

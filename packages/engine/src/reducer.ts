@@ -362,7 +362,7 @@ function apply(state: GameState, event: SignedEvent, pack: ContentPack): GameSta
       if (state.players[author] === undefined) return 'unknown player';
       // Timing out before choosing a level still costs something, at the
       // cheapest tier: doing nothing must not be free.
-      const difficulty: Difficulty = active.difficulty ?? 'graduate';
+      const difficulty: Difficulty = active.difficulty ?? 'bscba';
       return resolve(state, active, {
         answererId: null,
         chosenIndex: -1,
@@ -447,8 +447,13 @@ function resolve(state: GameState, active: ActiveTurn, res: Resolution): GameSta
   };
 
   const streak = res.correct ? state.streak + 1 : 0;
-  const capped =
-    state.rules.maxCorrectStreakPerTurn !== null && streak >= state.rules.maxCorrectStreakPerTurn;
+  // A tier's own cap (if any) is a floor a host cannot loosen; where both are
+  // set, the stricter one wins.
+  const caps = [state.rules.maxCorrectStreakPerTurn, tier.maxStreak ?? null].filter(
+    (n): n is number => n !== null,
+  );
+  const effectiveCap = caps.length === 0 ? null : Math.min(...caps);
+  const capped = effectiveCap !== null && streak >= effectiveCap;
   // Spec-faithful: a correct answer returns the turn to the same team, without
   // limit, unless a house rule caps it (R-1).
   const keepTurn = res.correct && !capped;

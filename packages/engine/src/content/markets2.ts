@@ -8,7 +8,99 @@ import type { CategoryContent } from './row.js';
  */
 
 export const MACROECON: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      "What does GDP measure?",
+      ["The total monetary value of all final goods and services produced within a country in a time period", "The total income earned by all citizens of a country, regardless of where it was earned", "The total value of exports minus imports in international trade", "The total wealth held by all people and businesses in a country"],
+      0,
+      "GDP measures flow of final production within a geographic territory, not wealth or income of citizens abroad.",
+    ],
+    [
+      "What is the difference between real and nominal GDP?",
+      ["Real GDP adjusts for price changes; nominal GDP is measured at current prices", "Real GDP excludes government spending and nominal GDP includes it", "Real GDP measures only traded goods and nominal GDP includes services", "Real GDP is always smaller than nominal GDP"],
+      0,
+      "Real GDP adjusts for inflation so comparisons show actual production changes; nominal reflects current prices.",
+    ],
+    [
+      "What is inflation?",
+      ["A sustained increase in the general price level of goods and services over time", "An increase in the amount of money in circulation in an economy", "A situation where some prices rise while others fall", "The rate at which the central bank increases the money supply annually"],
+      0,
+      "Inflation is the rate the average price level increases; it erodes purchasing power.",
+    ],
+    [
+      "What are the main types of unemployment?",
+      ["Frictional, structural, and cyclical", "Temporary, permanent, and involuntary", "Classical, Keynesian, and supply-side", "Visible, hidden, and transitional"],
+      0,
+      "Frictional results from job search, structural from skill mismatches, cyclical from weak demand in recessions.",
+    ],
+    [
+      "What does the Phillips curve describe?",
+      ["A negative relationship between inflation and unemployment rates", "A positive relationship between wages and worker productivity", "A negative relationship between interest rates and money quantity", "A positive relationship between government spending and private investment"],
+      0,
+      "The Phillips curve shows lower unemployment associates with higher inflation, though the relationship has shifted over time.",
+    ],
+    [
+      "What is the difference between the money supply and the monetary base?",
+      ["The money supply includes cash and deposits; the monetary base is only currency and reserves", "The monetary base is larger than the money supply", "The money supply is controlled by banks; the monetary base by the central bank", "The money supply is a stock; the monetary base is a flow"],
+      0,
+      "The monetary base (cash and reserves) is most liquid; the money supply includes cash, checking accounts, and other assets.",
+    ],
+    [
+      "What is expansionary fiscal policy?",
+      ["Government increases spending or cuts taxes to stimulate the economy during recession", "The government runs a budget deficit instead of a surplus", "The government invests in infrastructure and education", "The central bank increases the money supply to lower interest rates"],
+      0,
+      "Expansionary fiscal policy boosts demand when the economy is slack using higher spending or lower taxes.",
+    ],
+    [
+      "What is the multiplier effect?",
+      ["An initial spending increase leads to larger total output increase as money circulates through the economy", "The effect of doubling the money supply on the price level", "The profit a firm makes on each dollar of sales", "The increase in efficiency when a firm doubles its size"],
+      0,
+      "The multiplier shows how initial spending expands through the economy as recipients spend their income.",
+    ],
+    [
+      "What is crowding out?",
+      ["Government borrowing raises interest rates, reducing private investment", "When large firms prevent smaller firms from entering a market", "A situation where public goods prevent production of private goods", "When inflation reduces the real value of people\'s savings"],
+      0,
+      "Crowding out occurs when government borrowing drives up rates, making private borrowing and investment more expensive.",
+    ],
+    [
+      "What is the production possibilities frontier?",
+      ["A curve showing maximum combinations of two goods an economy can produce with available resources", "A graph of how production costs vary with volume produced", "The boundary between countries that determines trade flows", "A line showing the relationship between labor productivity and real wages"],
+      0,
+      "The PPF shows the trade-off between producing different goods; points inside represent inefficiency.",
+    ],
+    [
+      "What does the aggregate demand curve show?",
+      ["The total quantity of goods and services demanded at each price level", "The amount of private investment demanded at each interest rate", "The quantity of one specific good demanded at different prices", "The amount of government spending planned at each income level"],
+      0,
+      "Aggregate demand is total spending on final goods at each overall price level; it slopes downward.",
+    ],
+    [
+      "What is stagflation?",
+      ["A simultaneous combination of high inflation and high unemployment or low growth", "A temporary pause in inflation followed by resumption of price increases", "A situation where unemployment falls as inflation rises", "A period of persistent budget deficits without inflation"],
+      0,
+      "Stagflation combines stagnant growth with inflation, challenging policy responses and troubling 1970s economies.",
+    ],
+    [
+      "What is comparative advantage in international trade?",
+      ["The ability to produce something at a lower opportunity cost than another country", "The ability to produce more of something than another country using the same resources", "The advantage rich countries have over poor countries", "The tariff protection a country grants to domestic industries"],
+      0,
+      "Comparative advantage determines specialization: countries should specialize in what costs them least relatively.",
+    ],
+    [
+      "What is purchasing power parity?",
+      ["The same basket of goods should cost the same in different countries at current exchange rates", "The ability of a currency to maintain stable value over time", "A government policy to stabilize prices of essential goods", "An agreement between countries on a fixed exchange rate"],
+      0,
+      "PPP suggests exchange rates adjust so identical goods cost the same internationally; deviations occur from trade costs.",
+    ],
+    [
+      "What is the function of a central bank?",
+      ["To control the money supply, set monetary policy, and serve as lender of last resort", "To ensure government budgets are balanced and approve fiscal spending", "To set prices for all goods to prevent inflation", "To provide commercial banking services to the general public"],
+      0,
+      "Central banks control monetary policy through interest rates and the money supply; they stabilize financial systems.",
+    ],
+  ],
+  msc: [
     [
       "The Lucas critique says what about policy evaluation?",
       ["Estimated relationships shift when policy changes, because agents' decision rules depend on the policy regime", "Rational expectations render systematic monetary policy entirely ineffective at every horizon, however short it may be", "Econometric models cannot be identified without exclusion restrictions", "Aggregate demand management is undermined by crowding out of private investment"],
@@ -285,7 +377,99 @@ export const MACROECON: CategoryContent = {
 };
 
 export const MICROECON: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      "What does the law of diminishing marginal returns describe?",
+      ["As one input increases while others are fixed, its marginal product eventually declines", "The total output of a firm must fall as it expands production beyond a certain point", "Workers become less productive as they gain experience on a job", "An increase in all inputs by the same percentage reduces total output"],
+      0,
+      "Diminishing marginal returns is fundamental: adding successive units of a variable input produces smaller output additions.",
+    ],
+    [
+      "In a perfectly competitive market, what is true of long-run equilibrium?",
+      ["Firms earn zero economic profit and price equals average total cost", "Firms set price equal to marginal revenue and restrict output to maximize profit", "Firms charge a price above average cost to recover fixed costs", "Firms can earn persistent positive profit despite free entry"],
+      0,
+      "Zero economic profit characterizes long-run competition: price equals average total cost, so firms cannot improve by changing.",
+    ],
+    [
+      "What is consumer surplus?",
+      ["The difference between what a buyer is willing to pay and what they actually pay", "The total satisfaction a consumer receives from consumption", "The income left over after a consumer pays for purchases", "The gain a consumer makes by buying when prices are falling"],
+      0,
+      "Consumer surplus measures the extra benefit from purchasing at a price lower than the buyer\'s reservation price.",
+    ],
+    [
+      "What is an opportunity cost?",
+      ["The value of the next-best alternative forgone by choosing something else", "The explicit out-of-pocket monetary cost of a purchase", "The total amount of money spent on a good or service", "The actual cost plus the time spent acquiring something"],
+      0,
+      "Opportunity cost underlies rational decision-making: choosing one thing means giving up the next-best option.",
+    ],
+    [
+      "Why is there deadweight loss in monopoly?",
+      ["The monopolist produces less than the socially optimal quantity, leaving mutually beneficial trades unrealized", "The monopolist must pay workers more than competitive firms", "Consumers must buy more units than they want", "The monopolist faces higher production costs than competitive firms"],
+      0,
+      "Deadweight loss arises because the monopolist restricts output below competitive level to maintain price above cost.",
+    ],
+    [
+      "What is a sunk cost?",
+      ["A cost already incurred that cannot be recovered", "The total amount spent on fixed capital in a business", "An expense that will definitely occur in the future", "The cost of labor that varies with production level"],
+      0,
+      "Sunk costs should be ignored in economic decisions because they cannot be recovered regardless of future choices.",
+    ],
+    [
+      "What does comparative advantage describe?",
+      ["The ability to produce something at a lower opportunity cost than another party", "The ability to produce more of something than another party with the same resources", "The advantage a large firm has over smaller competitors", "The skill a worker develops through job specialization"],
+      0,
+      "Comparative advantage, not absolute advantage, determines specialization: parties should focus on what costs them relatively less.",
+    ],
+    [
+      "Why do tariffs and quotas create deadweight loss?",
+      ["They prevent mutually beneficial trades, reducing total surplus available from exchange", "They increase the price that domestic consumers pay for goods", "They protect domestic firms from having to compete on quality", "They reduce government revenue from taxes"],
+      0,
+      "Trade restrictions reduce quantity traded below efficient level, preventing voluntary transactions beneficial to both sides.",
+    ],
+    [
+      "What does an indifference curve represent?",
+      ["All combinations of two goods that give a consumer the same level of satisfaction", "The budget constraint on how much a consumer can spend", "The diminishing marginal utility of successive units", "The trade-off between current and future consumption"],
+      0,
+      "An indifference curve shows bundles providing equal utility, sloping downward because consumers trade off goods.",
+    ],
+    [
+      "What is price elasticity of demand?",
+      ["The percentage change in quantity demanded divided by the percentage change in price", "The change in quantity demanded when price rises by one dollar", "The slope of the demand curve measured in dollars per unit", "The responsiveness of price to changes in consumer income"],
+      0,
+      "Price elasticity measures buyer responsiveness to price changes: elastic means quantity changes a lot.",
+    ],
+    [
+      "What is the difference between normal and inferior goods?",
+      ["Normal goods\' demand rises with income; inferior goods\' demand falls with income", "Normal goods are necessities and inferior goods are luxuries", "Normal goods are produced competitively and inferior goods by monopolies", "Normal goods have elastic demand and inferior goods have inelastic demand"],
+      0,
+      "Income effects distinguish these: when income rises, consumers buy more normal goods but less inferior goods.",
+    ],
+    [
+      "What creates negative externalities?",
+      ["A party outside a transaction bears a cost not reflected in the transaction\'s price", "Firms with economies of scale can lower prices below competitive levels", "Workers lose income when technology reduces demand for their skills", "Consumers must pay taxes on purchases of taxed goods"],
+      0,
+      "Negative externalities occur when producers or consumers impose costs on third parties who receive no compensation.",
+    ],
+    [
+      "What distinguishes fixed costs from variable costs?",
+      ["Fixed costs do not change with output; variable costs change with quantity produced", "Fixed costs are paid to employees and variable costs are paid to suppliers", "Fixed costs are paid once at start and variable costs are paid continuously", "Fixed costs are certain and variable costs are uncertain"],
+      0,
+      "Fixed costs like rent don\'t change with output; variable costs like materials do change with production volume.",
+    ],
+    [
+      "What is producer surplus?",
+      ["The difference between the price a seller receives and the minimum price they will accept", "The total revenue a firm receives from selling its product", "The profit a firm earns after paying all of its costs", "The value of unsold inventory remaining at period\'s end"],
+      0,
+      "Producer surplus measures the benefit sellers receive by selling at a price above their reservation price.",
+    ],
+    [
+      "What is a market failure?",
+      ["A situation where free markets fail to allocate resources efficiently, often from externalities or asymmetric information", "A market that collapses when a major firm exits", "A situation where firms fail to maximize profit due to poor management", "A period when market prices fall significantly below historical averages"],
+      0,
+      "Market failures occur when unregulated markets don\'t achieve efficiency—examples include pollution, monopoly, and information asymmetry.",
+    ],
+  ],
+  msc: [
     [
       "What is a Pigouvian tax set equal to?",
       ["The marginal external cost at the efficient level of the activity", "The average social cost of the activity across all producers", "The consumer surplus lost to the externality", "The total damage caused by the activity, divided among producers"],

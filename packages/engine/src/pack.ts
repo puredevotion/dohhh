@@ -48,7 +48,7 @@ export function packStats(pack: ContentPack): PackStats {
     if (row === undefined) continue;
     row[q.difficulty] = (row[q.difficulty] ?? 0) + 1;
   }
-  let thinnest = { category: CATEGORY_IDS[0] as CategoryId, difficulty: 'graduate' as Difficulty, count: Number.POSITIVE_INFINITY };
+  let thinnest = { category: CATEGORY_IDS[0] as CategoryId, difficulty: 'bscba' as Difficulty, count: Number.POSITIVE_INFINITY };
   for (const category of CATEGORY_IDS) {
     for (const difficulty of DIFFICULTY_ORDER) {
       const count = byCategory[category]?.[difficulty] ?? 0;

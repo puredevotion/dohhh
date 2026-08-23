@@ -21,7 +21,15 @@ export type Row = readonly [
   explanation: string,
 ];
 
-export type CategoryContent = Readonly<Record<Difficulty, readonly Row[]>>;
+/**
+ * Partial rather than a full `Record`: content is authored incrementally
+ * (a chunk can cover one tier and leave the rest for a later chunk in the
+ * same category, per {@link expand}'s variadic concatenation), and the bank
+ * grows one tier at a time across the whole category list rather than one
+ * category at a time - a category mid-rollout for a new tier legitimately
+ * has no rows for it yet.
+ */
+export type CategoryContent = Readonly<Partial<Record<Difficulty, readonly Row[]>>>;
 
 /**
  * Flatten one or more content chunks for a category into engine questions.
@@ -34,8 +42,8 @@ export type CategoryContent = Readonly<Record<Difficulty, readonly Row[]>>;
  */
 export function expand(category: CategoryId, ...chunks: readonly CategoryContent[]): Question[] {
   const out: Question[] = [];
-  for (const difficulty of ['graduate', 'phd', 'professor'] as const) {
-    const rows = chunks.flatMap((chunk) => chunk[difficulty]);
+  for (const difficulty of ['bscba', 'msc', 'phd', 'professor'] as const) {
+    const rows = chunks.flatMap((chunk) => chunk[difficulty] ?? []);
     rows.forEach((row, index) => {
       const [prompt, options, answer, explanation] = row;
       const id = `${category}-${difficulty}-${index + 1}`;

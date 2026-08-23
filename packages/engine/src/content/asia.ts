@@ -13,7 +13,99 @@ import type { CategoryContent } from './row.js';
  */
 
 export const CENTRAL_ASIA: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'During the medieval period, which was the primary Chinese dynasty competing for influence in Central Asia?',
+      ['The Tang', 'The Qin', 'The Song', 'The Yuan'],
+      0,
+      'The Tang Dynasty (618-907) was the major Chinese imperial power in Central Asia before Mongol expansion.',
+    ],
+    [
+      'What major religious faith spread from South Asia eastward through Central Asia along trade routes?',
+      ['Buddhism', 'Islam', 'Christianity', 'Zoroastrianism'],
+      0,
+      'Buddhism traveled from India through Central Asia into East Asia via Silk Road networks.',
+    ],
+    [
+      'Which merchant people are historically most credited with developing overland trade networks across Central Asia?',
+      ['The Sogdians', 'The Turkic peoples', 'The Persians', 'The Arabs'],
+      0,
+      'Sogdian merchants from Samarkand and Bukhara dominated long-distance trade across the region.',
+    ],
+    [
+      'What was the primary economic system of medieval Central Asian nomadic peoples?',
+      ['Pastoral herding of livestock', 'Agricultural farming', 'Marine trade and fishing', 'Mining and metalwork'],
+      0,
+      'Nomadic pastoralism of horses, sheep, and yaks provided the economic foundation of steppe societies.',
+    ],
+    [
+      'Which Mongol leader unified the diverse tribal confederations of the Central Asian steppe?',
+      ['Temüjin (Chinggis Khan)', 'Batu Khan', 'Timur', 'Kublai Khan'],
+      0,
+      'Temüjin unified the Mongol tribes in the early 13th century, becoming Chinggis Khan.',
+    ],
+    [
+      'The Timurid Empire, which ruled Samarkand and Herat, was known for patronizing what?',
+      ['Art, architecture, and scholarship', 'Naval exploration', 'Infantry-based warfare', 'Agricultural innovation'],
+      0,
+      'Timurid rulers made their capitals centers of astronomy, mathematics, and literature.',
+    ],
+    [
+      'Which medieval Central Asian city became famous as a major center of Islamic learning?',
+      ['Bukhara', 'Kashgar', 'Samarkand', 'Tashkent'],
+      0,
+      'Bukhara was a major hub of Islamic jurisprudence and mathematics for centuries.',
+    ],
+    [
+      'Why did Central Asia become strategically important to successive empires and powers?',
+      ['Control of trade routes between distant civilizations created wealth and political leverage', 'Vast deposits of precious metals', 'Fertile agricultural land suited to grain crops', 'Access to warm-water ocean ports'],
+      0,
+      'Geographic position between civilizations made Central Asian trade routes economically vital.',
+    ],
+    [
+      'In which century did the Russian Empire intensify its expansion into Central Asia?',
+      ['The nineteenth century', 'The sixteenth century', 'The eighteenth century', 'The twentieth century'],
+      0,
+      'Russian imperial expansion into Central Asia accelerated significantly during the 1800s.',
+    ],
+    [
+      'What were the khanates that ruled Central Asia in the early modern period?',
+      ['Independent states ruled by khans, with cities like Bukhara, Khiva, and Kokand as capitals', 'Provinces directly administered by the Russian Tsar', 'Trading companies licensed by the Ottoman Empire', 'Nomadic confederations without fixed urban centers'],
+      0,
+      'Bukhara, Khiva, and Kokand were independent khanates ruling Central Asia until Russian conquest.',
+    ],
+    [
+      'Which mountain ranges formed the eastern and southern boundaries of historical Central Asia?',
+      ['The Pamirs and Tian Shan', 'The Caucasus and Carpathians', 'The Urals and Altai', 'The Himalayas alone'],
+      0,
+      'The Pamirs and Tian Shan created natural barriers between Central Asia and East/South Asia.',
+    ],
+    [
+      'How did Islam become the dominant religion of Central Asia?',
+      ['Through military conquest and subsequent merchant networks expanding Muslim influence', 'Exclusively through peaceful missionary work', 'It was the region\'s indigenous faith before any invasions', 'Through European colonial expansion'],
+      0,
+      'Arab conquests from the 7th century brought Islam; merchants then expanded Muslim influence.',
+    ],
+    [
+      'What was the primary purpose of caravanserais built along the Silk Road?',
+      ['To provide merchants shelter, security, and trading facilities for goods and livestock', 'To serve as military fortifications', 'To process and refine luxury goods for resale', 'To house Buddhist pilgrims traveling to holy sites'],
+      0,
+      'Caravanserais were fortified roadside inns providing hospitality and security for merchants.',
+    ],
+    [
+      'After the decline of Mongol unity, which ethnic and linguistic groups became dominant in Central Asia?',
+      ['Turkic and Uzbek peoples', 'Scythians and Sarmatians', 'Huns and Rouran', 'Franks and Germanic tribes'],
+      0,
+      'Turkic and Uzbek groups ruled Central Asia after Mongol power fragmented into regional khanates.',
+    ],
+    [
+      'What major geopolitical competition shaped Central Asian history in the nineteenth century?',
+      ['British and Russian imperial interests vying for regional dominance', 'Ottoman and Persian dynastic rivalry', 'Chinese and Mongol territorial conflicts', 'Arab and Jewish political disputes'],
+      0,
+      'Britain and Russia competed for influence in Central Asia, the so-called "Great Game".',
+    ],
+  ],
+  msc: [
     [
       'The Battle of Talas in 751 was fought between Tang forces and which power?',
       ['The Abbasid Caliphate', 'The Umayyad Caliphate', 'The Tibetan Empire', 'The Uyghur Khaganate'],
@@ -178,7 +270,99 @@ export const CENTRAL_ASIA: CategoryContent = {
  * in more/eastasia.ts for the rest of this category.
  */
 export const EAST_ASIA: CategoryContent = {
-  graduate: [
+  bscba: [
+    [
+      'What term describes a government that actively guides economic development through strategic planning and targeted investment?',
+      ['Developmental state', 'Centrally planned economy', 'Laissez-faire capitalism', 'Feudal economy'],
+      0,
+      'The developmental state used selective investment to promote rapid industrial growth in East Asia.',
+    ],
+    [
+      'What were zaibatsu in postwar Japan?',
+      ['Large family-controlled business conglomerates diversified across multiple sectors', 'Government-owned manufacturing plants', 'Labor unions in heavy industry', 'Agricultural marketing cooperatives'],
+      0,
+      'Zaibatsu were massive conglomerates like Mitsubishi and Mitsui that dominated Japan.',
+    ],
+    [
+      'Why did South Korea and Taiwan emphasize export-led growth strategies in the 1960s-1980s?',
+      ['Limited domestic markets made foreign sales essential for earning foreign currency to finance development', 'Abundant natural resources for international sale', 'Government mandate to eliminate all imports', 'Colonial legacy requiring specific trade partners'],
+      0,
+      'Export sales generated foreign currency needed for industrial investment in these small markets.',
+    ],
+    [
+      'Which four East and Southeast Asian economies became known as the "Tiger" or "Dragon" economies in the 1980s?',
+      ['South Korea, Taiwan, Hong Kong, and Singapore', 'Japan, Thailand, Malaysia, and Indonesia', 'China, Vietnam, Philippines, and Cambodia', 'Vietnam, Laos, Myanmar, and Thailand'],
+      0,
+      'The Four Tigers achieved rapid growth through export manufacturing and foreign investment.',
+    ],
+    [
+      'What did foreign direct investment (FDI) contribute to East Asian countries during rapid industrialization?',
+      ['Capital, manufacturing technology, and management expertise', 'Only low-wage labor opportunities', 'Colonial-style political control and debt', 'Environmental degradation without economic benefit'],
+      0,
+      'FDI provided capital and technology enabling the shift to export manufacturing.',
+    ],
+    [
+      'What did China\'s "reform and opening up" policy beginning in 1978 aim to achieve?',
+      ['Gradual introduction of market mechanisms while opening to foreign investment', 'Immediate abandonment of all communist structures', 'Return of the economy from industry to agriculture', 'Further isolation from global economic systems'],
+      0,
+      'The reforms gradually introduced market mechanisms while maintaining state control.',
+    ],
+    [
+      'What were Special Economic Zones (SEZs) established in China?',
+      ['Designated coastal areas with preferential policies designed to attract foreign investment and manufacturing', 'Military restricted zones closed to foreigners', 'Agricultural development and innovation areas', 'Historical and cultural preservation sites'],
+      0,
+      'SEZs like Shenzhen offered tax incentives to attract multinational manufacturing.',
+    ],
+    [
+      'What did Vietnam\'s "Doi Moi" (Renovation) reform policy of 1986 introduce?',
+      ['Market mechanisms and limited private enterprise while the Communist Party retained political control', 'Complete transition to Western-style representative democracy', 'Greater economic isolation from the global market', 'Expansion of centrally planned socialist production'],
+      0,
+      'Doi Moi introduced market reforms similar to China\'s economic opening.',
+    ],
+    [
+      'Which country became the world\'s largest exporter of electronics and semiconductors in the 1980s?',
+      ['Japan', 'South Korea', 'Germany', 'Taiwan'],
+      0,
+      'Japan dominated global electronics manufacturing in the 1980s.',
+    ],
+    [
+      'What strategy did Malaysia and Thailand use to attract multinational manufacturing investment?',
+      ['Offering low labor costs, political stability, and access to natural resources', 'Building indigenous technology companies independently', 'Strictly restricting foreign ownership to protect local industries', 'Relying exclusively on agricultural and raw material exports'],
+      0,
+      'Low wages and stability attracted foreign manufacturers to the region.',
+    ],
+    [
+      'How did rapid industrialization in East Asia affect the rural population?',
+      ['Rural workers migrated to cities seeking factory employment', 'Rural areas became centers of heavy industry', 'Farms became more productive through mechanization alone', 'Urban populations declined as workers returned to agriculture'],
+      0,
+      'Rural workers migrated to cities for manufacturing jobs and higher wages.',
+    ],
+    [
+      'What role did Japanese companies play in East Asian industrialization networks?',
+      ['They invested in joint ventures, transferred technology, and trained local workers across the region', 'They hoarded all advanced technology and prevented others from accessing it', 'They avoided investment outside Japan', 'They exploited resources while preventing local industrial development'],
+      0,
+      'Japanese firms invested regionally through joint ventures and technology licensing.',
+    ],
+    [
+      'Why was infrastructure investment critical to East Asian development during this period?',
+      ['Ports, roads, and power systems enabled manufacturing and trade networks essential for growth', 'Infrastructure was wasteful and slowed development', 'It primarily served military purposes and strategy', 'It was imposed by Western colonial powers against local interest'],
+      0,
+      'Ports, roads, and power grids enabled manufacturing and export trade.',
+    ],
+    [
+      'What happened to agriculture\'s role in rapidly industrializing East Asian economies?',
+      ['Agricultural production\'s share of GDP declined as economies shifted to manufacturing and services', 'Agriculture remained stable in economic importance', 'Farm output increased without any shift toward industry', 'Agriculture disappeared entirely from these economies'],
+      0,
+      'Agriculture\'s share of GDP fell as manufacturing and services grew.',
+    ],
+    [
+      'Which international institution helped finance infrastructure and development projects across East Asia?',
+      ['The Asian Development Bank and World Bank', 'OPEC', 'The Soviet Comecon bloc', 'The European Union'],
+      0,
+      'The Asian Development Bank financed infrastructure across East Asia.',
+    ],
+  ],
+  msc: [
     [
       'The Japanese "main bank system" describes what?',
       [
