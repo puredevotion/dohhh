@@ -89,12 +89,6 @@ export const LAWIP: CategoryContent = {
       'The Benelux Office for Intellectual Property (BOIP) predates the EU trademark system and still runs a genuinely unified three-country registration, one of the oldest supranational IP regimes in the world.',
     ],
     [
-      'Hugo Grotius is most often credited as a foundational figure of what field?',
-      ['International law, especially the law of the sea and just war theory', 'Dutch criminal procedure', 'Trademark law, particularly the registration procedures used by the Benelux Office for Intellectual Property', 'Modern tax law'],
-      0,
-      'Grotius\'s "Mare Liberum" (1609) argued the sea could not be owned by any nation, defending Dutch trading rights against Portuguese claims, and his "De Jure Belli ac Pacis" (1625) is a foundation of the modern law of war and peace.',
-    ],
-    [
       'WIPO, the World Intellectual Property Organization, operates as what?',
       [
         'A specialised agency of the United Nations administering IP treaties',
@@ -117,17 +111,6 @@ export const LAWIP: CategoryContent = {
       'The priority period is 12 months for patents and 6 months for trademarks and designs. It exists precisely because simultaneous worldwide filing was never realistic, so the Convention lets a later foreign filing be treated as if it happened on the first filing date.',
     ],
     [
-      'The Raad van State (Council of State) in the Netherlands performs which dual role?',
-      [
-        'Advising the government on draft legislation and acting as the highest general administrative court',
-        'Serving as the upper house of Parliament',
-        'Prosecuting corruption cases against civil servants',
-        'Auditing the national budget and publishing an annual report reviewed directly by the States-General each autumn',
-      ],
-      0,
-      'This dual advisory-and-judicial role dates back to 1531 in some form, and the administrative court function was formally consolidated when the Netherlands reorganised administrative justice in the 1990s.',
-    ],
-    [
       'The economic rights in a copyrighted work (e.g. reproduction, distribution) differ from moral rights chiefly because moral rights do what?',
       [
         'Protect the author\'s personal connection to the work (attribution, integrity) and are generally non-transferable',
@@ -139,29 +122,40 @@ export const LAWIP: CategoryContent = {
       'Moral rights - the right of attribution and the right against distortion or mutilation of the work - are treated in most civil-law systems, including the Dutch one, as inalienable even after the economic rights are assigned or sold.',
     ],
     [
-      'EU law\'s relationship to Dutch domestic law is governed by the principle that EU law has what?',
+      'A Supplementary Protection Certificate (SPC) under EU law does what for a patented pharmaceutical or plant protection product?',
       [
-        'Primacy over conflicting national law, with directly effective provisions applied by Dutch courts',
-        'No effect unless separately re-enacted by the Dutch parliament',
-        'Effect only in tax and customs matters, and even then only after formal ratification by the States-General',
-        'Primacy only over Dutch case law, not statutes',
+        'Extends exclusivity beyond the twenty-year patent term, for up to five years, to compensate for time lost during regulatory marketing approval',
+        'Grants an entirely new twenty-year patent term that begins running only once the original patent\'s own twenty-year term has fully expired',
+        'Converts the patent into a trademark registration covering the same product for an indefinite period',
+        'Automatically doubles the royalty rate a generic manufacturer must pay for the remainder of the patent term',
       ],
       0,
-      'The Netherlands\' famously EU-friendly (monist) constitutional tradition, combined with CJEU doctrines of primacy and direct effect established in cases like Van Gend en Loos - itself a Dutch case - means Dutch courts routinely set aside conflicting domestic provisions.',
+      'SPCs exist because pharmaceutical and agrochemical products often need years of regulatory testing before they can be marketed, quietly eating into the effective years of patent life actually available to sell the product. EU Regulation 469/2009 (medicinal products) and 1610/96 (plant protection products) restore up to five extra years, calculated from the gap between filing and first marketing authorisation minus five years. The scheme was introduced in the 1990s partly to match US-style term-restoration rules under the Hatch-Waxman Act, so EU-based innovators weren\'t disadvantaged relative to American competitors. A further six-month paediatric extension is available on top of the standard SPC if the holder conducts studies required under the EU\'s Paediatric Regulation.',
+    ],
+    [
+      'Filing an application under the Patent Cooperation Treaty (PCT) achieves what, precisely?',
+      [
+        'Secures a single international filing that preserves the priority date and delays national or regional phase entry, without itself granting any patent',
+        'Grants a single unified patent that is automatically enforceable in an identical way across every one of the PCT\'s contracting states',
+        'Triggers automatic grant of a European patent without any examination by the EPO',
+        'Produces a patent term extension identical in effect to a Supplementary Protection Certificate',
+      ],
+      0,
+      'The PCT, administered by WIPO since entering into force in 1978, lets an applicant file one international application and receive an international search report and preliminary opinion, but the actual decision to grant remains entirely with each national or regional office, such as the EPO, once the applicant enters the \'national phase,\' typically around 30 or 31 months after the priority date. This buys valuable time and centralises early costs while deferring the far more expensive decision about which specific countries are worth paying for separately. It has no relationship at all to trademarks or industrial designs, which instead route through the separate Madrid Protocol and Hague System. WIPO reports the PCT now receives well over 250,000 international applications a year, making it the busiest single gateway in global patent filing.',
+    ],
+    [
+      'Under the EU Trade Secrets Directive (2016/943), information qualifies for protection as a trade secret only if it meets which combination of conditions?',
+      [
+        'Secrecy, commercial value derived from that secrecy, and reasonable steps by its holder to keep it secret',
+        'It has been formally registered with a national or EU intellectual property office',
+        'It has been disclosed only under a formally signed, notarised non-disclosure and confidentiality agreement negotiated specifically between the two contracting commercial parties involved',
+        'It has existed in secret continuously for at least five full years before any claim is made',
+      ],
+      0,
+      'Unlike patents or trademarks, trade secret protection is unregistered and defined purely by three cumulative conditions in Article 2 of the Directive, closely echoing Article 39 of the TRIPS Agreement: the information must be secret, it must have commercial value precisely because it is secret, and the holder must have taken reasonable steps to keep it that way. The 2016 Directive harmonised what had previously been a patchwork of national unfair-competition and contract-law doctrines across EU member states, giving trade secret holders a genuinely uniform civil remedy for misappropriation for the first time. It was also drafted with a deliberate eye toward the parallel US framework, the Defend Trade Secrets Act, passed the same year, converging two legal traditions that had approached secrecy protection quite differently for over a century.',
     ],
   ],
   phd: [
-    [
-      'Van Gend en Loos (1963), the case that established direct effect in EU law, arose from a dispute over what?',
-      [
-        'A Dutch importer challenging a customs duty increase on a chemical product as contrary to the EEC Treaty',
-        'A trademark dispute between two Dutch textile firms',
-        'A Dutch copyright claim against a German publisher over unauthorised translation rights in a technical manual',
-        'A patent infringement claim brought before the Hoge Raad',
-      ],
-      0,
-      'Van Gend en Loos NV challenged a reclassification that raised the duty on formaldehyde-based glue imported from Germany, arguing it breached the Treaty\'s standstill on customs duties - a mundane trade dispute that produced one of the most important rulings in EU legal history.',
-    ],
     [
       'The "likelihood of confusion" test in EU trademark law under the EUTMR weighs which factors together?',
       [
@@ -196,15 +190,26 @@ export const LAWIP: CategoryContent = {
       'The UPC gives a single court system jurisdiction over both the new Unitary Patent and, during a transition period, classical European patents (unless opted out), replacing the need to litigate infringement separately in each country - the single biggest structural change to European patent litigation in decades.',
     ],
     [
-      'The Peace of Münster (1648), ending the Eighty Years\' War, is significant in international law for what?',
+      'In Windsurfing Chiemsee v Huber (1999), the CJEU addressed whether a geographical name could function as a trademark, holding what?',
       [
-        'Recognising the Dutch Republic\'s full sovereign independence from Spain',
-        'Establishing the first European patent system',
-        'Creating the Benelux customs union, an arrangement not formed until three centuries later, after the Second World War',
-        'Founding the VOC as a chartered trading company',
+        'A geographical name can be registered if it has acquired distinctiveness through use, even though purely descriptive geographical terms are ordinarily excluded',
+        'Geographical names can never be registered as trademarks under any circumstances whatsoever',
+        'Geographical names are automatically registrable whenever the goods in question are not actually produced in that place',
+        'Geographical indications protected under separate EU agri-food quality schemes and ordinary trademarks are treated as fully identical legal concepts requiring the same registration route',
       ],
       0,
-      'Münster (part of the wider Peace of Westphalia) formally ended Spanish claims over the Republic after eighty years of revolt, and is often cited alongside Westphalia generally as an early landmark of the modern state-sovereignty system that underlies international law.',
+      'The case concerned \'Chiemsee,\' the name of a Bavarian lake, used to sell sportswear, and the CJEU held that the Trademark Directive bars descriptive geographical terms from registration unless the mark has acquired distinctiveness, or secondary meaning, through use, meaning the public now associates that name with a specific trade origin rather than merely the place itself. The rule stops one trader monopolising a place-name that competitors legitimately need to describe where their own goods genuinely come from, while still rewarding a mark that has demonstrably earned recognition through real market use. The same acquired-distinctiveness logic explains why a plain geographic term rarely clears registration on its own, but a specific stylised use built up over decades sometimes can. It remains one of the CJEU\'s foundational rulings on absolute grounds for refusal under what is now Article 4 of the EU Trademark Directive.',
+    ],
+    [
+      'In Brüstle v Greenpeace (2011), the CJEU interpreted the Biotech Directive\'s exclusion of patents on uses of human embryos in what way?',
+      [
+        'The exclusion covers any human ovum from the moment of fertilisation capable of commencing human development, including use of stem cells derived by destroying an embryo',
+        'The exclusion applies only to embryos older than fourteen days',
+        'The exclusion covers only cloned embryos produced through somatic cell nuclear transfer, not naturally fertilised ones',
+        'The Directive does not restrict biotech patents involving embryonic material in any way',
+      ],
+      0,
+      'German neurobiologist Oliver Brüstle held a patent on neural precursor cells derived from human embryonic stem cells, and Greenpeace challenged it under Directive 98/44/EC\'s exclusion of \'uses of human embryos for industrial or commercial purposes\'; the CJEU gave that phrase an autonomous, broad EU-wide meaning rather than leaving it to divergent national morality standards. The ruling effectively barred EU patents on inventions requiring the prior destruction of a human embryo, even though the patented invention itself was the resulting cell line, not the embryo. It was later refined in International Stem Cell Corporation v Comptroller General (2014), which held that parthenotes - unfertilised eggs stimulated to divide but incapable of developing into a human being - fall outside the exclusion. This line of cases shows patent examiners occasionally forced to adjudicate genuinely contested bioethical boundaries rather than purely technical ones.',
     ],
     [
       'The "exhaustion of rights" doctrine in EU trademark and copyright law means what?',
@@ -218,10 +223,15 @@ export const LAWIP: CategoryContent = {
       'This is the legal basis for the EU\'s single market in genuine goods: cases like Silhouette v Hartlauer confirmed the EU applies regional (not international) exhaustion, so a rightsholder CAN still block parallel imports from outside the EEA even after EEA-consented first sale.',
     ],
     [
-      'The Dutch "lex Wolff" / notion of "onrechtmatige daad" (wrongful act) in Book 6 BW corresponds most closely to which common-law concept?',
-      ['Tort liability', 'Consideration in contract formation', 'Adverse possession', 'Promissory estoppel'],
+      'In Google France v Louis Vuitton (2010), the CJEU held that a search engine selling a competitor\'s trademark as a paid keyword does what?',
+      [
+        'Does not itself infringe the trademark, but the advertiser purchasing the keyword may infringe if the resulting ad harms the mark\'s origin or advertising function',
+        'Always infringes the trademark regardless of how clearly the resulting sponsored advertisement distinguishes the advertiser\'s own goods from those of the trademark owner, and regardless of any actual confusion',
+        'Never infringes under any circumstances, since keyword purchase is not \'use\' by anyone in the course of trade',
+        'Infringes only if the search engine itself, rather than the advertiser, profits directly from that specific keyword sale',
+      ],
       0,
-      'Article 6:162 BW\'s onrechtmatige daad is the Dutch general tort provision, requiring a wrongful act attributable to the defendant, damage, and causation - structurally similar to common-law negligence but derived from a civilian codified-fault tradition rather than case-by-case duty analysis.',
+      'The Court split liability carefully: Google\'s own conduct in selling keywords was not \'use in the course of trade\' of the mark in a way that itself constituted infringement, but if the resulting sponsored ad was so unclear that a reasonably well-informed internet user couldn\'t tell whether the advertised goods came from the trademark owner or a rival, that harmed the mark\'s essential origin function and could make the advertiser liable. This drew a sharp line between neutral technical intermediation and genuinely confusing use, and the template was later extended in Interflora v Marks & Spencer (2011) to cover a reputed mark\'s \'investment function\' as well as its origin function. Keyword advertising remains one of the most heavily litigated corners of EU trademark law precisely because judging the \'clarity\' of an ad is such a fact-specific exercise. Louis Vuitton\'s underlying complaint concerned rivals buying its own brand name to advertise counterfeit-adjacent goods, which is what pushed the dispute all the way to the CJEU.',
     ],
     [
       'TRIPS (the WTO\'s Agreement on Trade-Related Aspects of Intellectual Property Rights) was significant because it did what?',
@@ -235,15 +245,15 @@ export const LAWIP: CategoryContent = {
       'TRIPS (1994) was the first IP agreement backed by a binding, cross-retaliation-capable enforcement mechanism - a WTO member found in breach can face trade sanctions in unrelated sectors, which is far stronger than anything WIPO treaties alone provided.',
     ],
     [
-      'The Dutch "Grand Pensionary" (Raadpensionaris) of Holland, exemplified by Johan de Witt, functioned as what?',
+      'L\'Oréal v Bellure (2009) extended trademark protection for marks with a reputation to cover what, going beyond the traditional confusion-based test?',
       [
-        'The leading political officer of the States of Holland, often the Republic\'s de facto chief statesman during stadtholderless periods',
-        'The military commander-in-chief of the Dutch army',
-        'The presiding judge of the Hoge Raad\'s predecessor court',
-        'The head of the VOC\'s board of directors, a role that in fact carried no formal political authority over the States of Holland whatsoever',
+        'Taking unfair advantage of the mark\'s reputation through free-riding, even where there is no likelihood of confusion and no harm to the mark\'s distinctiveness',
+        'Only cases where the copied product used packaging design identical, rather than merely similar, to the original',
+        'Only counterfeit goods bearing a registered mark that is identical rather than merely similar',
+        'Only situations where the defendant\'s total turnover in that specific product market, over the relevant infringement period, is shown to have exceeded the trademark owner\'s own comparable turnover',
       ],
       0,
-      'During the "First Stadtholderless Period" (1650-1672), with no stadtholder from the House of Orange in Holland, de Witt as Grand Pensionary effectively ran Republic policy - until the disastrous Rampjaar of 1672 saw him and his brother Cornelis lynched by an Orangist mob.',
+      'Bellure marketed \'smell-alike\' perfumes using comparison lists that openly referenced L\'Oréal\'s famous fragrances by name, without confusing anyone about origin, yet the CJEU held that protection against \'taking unfair advantage\' of a reputed mark\'s image doesn\'t require confusion or even detriment to the mark - simply riding on its coat-tails to boost the imitator\'s own sales is enough. This was controversial because it effectively protects the investment and image value built into a famous mark almost as a freestanding property right, well beyond the traditional rationale of preventing consumer deception. The same judgment also held that comparative-advertising rules cannot be used to legitimise otherwise-infringing free-riding, closing off a defence Bellure had separately tried to rely on. It remains a frequently cited example of EU trademark law drifting toward protecting brand image as such, a shift some scholars still argue overreaches the mark\'s traditional origin function.',
     ],
     [
       'The CJEU\'s ruling in Levola Hengelo v Smilde Foods (2018) addressed whether what could be protected by copyright?',
@@ -279,15 +289,26 @@ export const LAWIP: CategoryContent = {
       'Both doctrines let the owner of a lawfully acquired physical copy resell or lend it without the copyright holder\'s further permission, since the distribution right is considered spent (exhausted) by the first authorised sale of that specific copy - though EU case law (e.g. UsedSoft) controversially extended a version of this to some downloaded software.',
     ],
     [
-      'The 1839 Treaty of London, which finalised Belgian independence from the Netherlands, also famously guaranteed what?',
+      'In Stichting Brein v Ziggo and XS4ALL (2017), the CJEU held that operating an online indexing platform like The Pirate Bay constitutes what?',
       [
-        'The perpetual neutrality of Belgium, later invoked by Britain in 1914',
-        'Dutch sovereignty over the entire Scheldt estuary',
-        'A permanent customs union between Belgium and the Netherlands',
-        'Luxembourg\'s incorporation into the Netherlands, an arrangement that in fact never took effect under the treaty\'s final terms',
+        'A \'communication to the public\' under the InfoSoc Directive, making the platform operators themselves liable, not merely the individual uploaders',
+        'Mere passive hosting protected by the eCommerce Directive\'s safe harbour, carrying no liability at all',
+        'Lawful conduct, because the indexing platform itself stores none of the actual copyrighted files, only hyperlinks, magnet links, and associated descriptive metadata',
+        'A trademark infringement rather than a copyright matter, since indexing content is fundamentally a branding function',
       ],
       0,
-      'Britain\'s treaty obligation to defend Belgian neutrality became the proximate legal trigger for its declaration of war on Germany in August 1914 after the German invasion of Belgium - a nineteenth-century Dutch-Belgian settlement with an outsized twentieth-century consequence.',
+      'This Dutch-referred case, brought by anti-piracy foundation Stichting Brein against two Dutch internet service providers it wanted forced into blocking the site, found that by indexing and categorising torrent files with full knowledge that most pointed to infringing content, Pirate Bay\'s operators played an \'indispensable role\' well beyond neutral technical facilitation, making them communicators to the public in their own right even though the actual files sat on users\' own computers via peer-to-peer sharing. That closed a gap that had let indexing sites argue they merely linked to material rather than hosting anything infringing themselves. The ruling directly enabled the site-blocking order against Pirate Bay that Ziggo and XS4ALL had resisted for years beforehand. It sits in a doctrinal line with GS Media and Renckhoff, all part of the CJEU gradually expanding \'communication to the public\' to cover internet intermediaries that earlier case law had left in a grey zone.',
+    ],
+    [
+      'The 2019 EU \'SPC Manufacturing Waiver\' (Regulation 2019/933) permits what, as an exception to Supplementary Protection Certificate exclusivity?',
+      [
+        'EU-based generic and biosimilar manufacturers may produce the protected product during the SPC term solely for export to non-EU markets or for EU \'day-1\' stockpiling before expiry',
+        'Any manufacturer worldwide may sell the SPC-protected product freely within the EU during the certificate\'s term',
+        'SPC holders must license their product on FRAND-equivalent terms to at least one generic or biosimilar competitor immediately once the certificate itself is formally granted by the relevant national patent office',
+        'The SPC term is shortened by two years for every waiver request an applicant successfully files',
+      ],
+      0,
+      'Before this amendment, EU-based generic manufacturers were at a real competitive disadvantage against rivals in countries with no equivalent term-extension regime, since they could not even manufacture for export while the SPC ran, losing years of ramp-up time relative to competitors abroad. The waiver lets them manufacture, under strict notification and labelling conditions, purely for non-EU export markets or to stockpile so a generic version can launch in the EU on the very day the SPC expires. It was a deliberate industrial-policy compromise struck between innovator pharmaceutical companies and the generic and biosimilar manufacturing lobby. The waiver only applies to SPCs filed on or after 1 July 2019, with a phased transition for earlier ones, so its practical effect on the market took several years to fully materialise.',
     ],
     [
       'Under EU design law, an unregistered Community design gives the holder protection against what, specifically?',
@@ -299,17 +320,6 @@ export const LAWIP: CategoryContent = {
       ],
       0,
       'This is the key practical difference from a registered Community design, which is a true monopoly right effective even against independent creators: the unregistered right (lasting only three years) requires proving the alleged infringer actually copied the design.',
-    ],
-    [
-      'The 1585 Fall of Antwerp to Spanish forces during the Dutch Revolt had which major long-term economic consequence for Amsterdam?',
-      [
-        'A large influx of skilled merchants and refugees from the southern Netherlands fleeing north, fuelling Amsterdam\'s rise as a commercial centre',
-        'The permanent loss of Amsterdam\'s access to the North Sea',
-        'The transfer of the VOC\'s charter from Amsterdam to Antwerp',
-        'A ban on Amsterdam trading with the Baltic region, a restriction that was never actually imposed by any Dutch, Spanish, or Hanseatic authority at any point during this period',
-      ],
-      0,
-      'The Spanish reconquest of Antwerp, followed by the Dutch closure of the Scheldt to shipping, pushed capital, skilled labour and Calvinist merchants north - a migration widely credited as one of the key sparks of the Dutch Golden Age just as Antwerp\'s own commercial dominance collapsed.',
     ],
   ],
   professor: [
@@ -336,15 +346,15 @@ export const LAWIP: CategoryContent = {
       'It predates and partly modelled the preliminary-reference mechanism later scaled up hugely by the CJEU, and for decades was the authoritative interpreter of the Uniform Benelux Trademark and Designs Laws before EU-level unification largely displaced its IP docket.',
     ],
     [
-      'The "Rampjaar" of 1672 saw the Dutch Republic simultaneously at war with which combination of powers?',
+      'Svensson v Retriever Sverige (2014) held that hyperlinking to a work already freely available online with the rightsholder\'s consent does what?',
       [
-        'France, England, and the bishoprics of Münster and Cologne',
-        'Spain, Portugal, and the Holy Roman Empire',
-        'Sweden, Denmark, and the Hanseatic League',
-        'Austria, Prussia, and Poland-Lithuania, none of which were in fact involved in the Rampjaar coalition against the Republic',
+        'Does not require the rightsholder\'s separate authorisation, because it is not communicated to a \'new public\' beyond those the original posting already targeted',
+        'Always infringes copyright regardless of the target content\'s availability or how the original rightsholder first published it',
+        'Only infringes when the link uses framing techniques rather than an ordinary clickable hyperlink',
+        'Requires separate authorisation only once the website doing the linking itself starts charging visitors a subscription fee to access its own pages',
       ],
       0,
-      'The "Disaster Year" combined Louis XIV\'s invasion (the Franco-Dutch War) with the Third Anglo-Dutch War and attacks by the allied bishops of Münster and Cologne - a near-simultaneous four-front crisis that led directly to the lynching of Johan and Cornelis de Witt and William III\'s rise to power.',
+      'Swedish journalists sued a news-aggregation site for linking to their freely, lawfully accessible articles, and the CJEU held that because the rightsholder had already made the works available to all internet users when first posting them, a further hyperlink reaches no \'new public\' not already accounted for in that original authorisation, so no fresh act of communication to the public requiring separate consent occurs. The Court left open, and later resolved differently in GS Media and Renckhoff, what happens when the target content is paywalled or was posted without the rightsholder\'s consent in the first place. The \'new public\' concept itself did not originate here; it was borrowed from earlier satellite and cable retransmission case law, SGAE v Rafael Hoteles, and repurposed for the internet-hyperlinking context. That recycling of one flexible doctrinal test across very different technologies is a recurring feature of how CJEU copyright jurisprudence has developed since the InfoSoc Directive.',
     ],
     [
       'In the CJEU\'s Football Dataco v Yahoo! (2012) ruling, the Court held that copyright protection for a database under the Database Directive requires what, specifically excluding what?',
@@ -369,15 +379,15 @@ export const LAWIP: CategoryContent = {
       'The CJEU held that once trademark rights in different states are held by entities with no continuing economic connection, the assignee CAN block imports of the other party\'s genuine goods under that mark - voluntary fragmentation of ownership breaks exhaustion, unlike a mere corporate reorganisation retaining unified control.',
     ],
     [
-      'The 1667 Treaty of Breda, ending the Second Anglo-Dutch War, is remembered for the territorial exchange in which the Dutch retained what, while ceding New Netherland (New York) to England?',
+      'GS Media v Sanoma (2016) extended the \'new public\' hyperlinking analysis to content posted without the rightsholder\'s consent, holding that liability turns chiefly on what?',
       [
-        'Suriname and the nutmeg-producing island of Run in the Banda Islands',
-        'Ceylon and the Cape Colony',
-        'Formosa and the Pescadores',
-        'Malacca and Batavia, two territories the Dutch already firmly held well before the 1667 treaty was ever negotiated',
+        'Whether the linker knew or should have known the linked content was unlawfully posted, with knowledge presumed where the linking is done for financial gain',
+        'Whether the linked content is hosted on a server physically located outside the European Union',
+        'Whether the link uses a shortened URL rather than the original, unabbreviated web address',
+        'Whether the original infringer who first posted the unlawful content has already been identified and successfully sued elsewhere',
       ],
       0,
-      'The Dutch judged Suriname\'s sugar plantations and, crucially, sole control of nutmeg-rich Run (already effectively secured) more valuable than Manhattan - a decision that reads very differently with three and a half centuries of hindsight than it did to contemporaries fixated on the spice trade.',
+      'Dutch gossip site GeenStijl, via publisher GS Media, linked to leaked, unpublished Playboy photographs hosted on a third-party site without Sanoma\'s consent, and the CJEU held this could amount to an unauthorised communication to a \'new public\' - but made liability turn specifically on the linker\'s knowledge, actual or constructive, of the unlawful posting, with a rebuttable presumption of that knowledge where the linking is done for financial gain. This resolved genuine uncertainty about whether ordinary internet users risk liability merely for linking to something that turns out to be pirated, shielding good-faith non-commercial linkers while holding profit-motivated aggregators to a stricter standard. GeenStijl had specifically taunted Sanoma by publishing fresh links each time a copy got taken down, a detail the Advocate General\'s opinion pointedly referenced. The ruling is often read alongside Svensson and Renckhoff as the CJEU\'s three-part map of how differently EU copyright law treats linking, re-linking after takedown, and outright re-hosting.',
     ],
     [
       'Article 6bis of the Berne Convention, on moral rights, was historically resisted by the United States chiefly because of tension with what feature of pre-1976 American copyright practice?',
@@ -402,15 +412,15 @@ export const LAWIP: CategoryContent = {
       'This "origin function" reasoning (a Dutch-referred case, against the Dutch pharmaceutical repackager Centrafarm) is the doctrinal anchor the CJEU still uses to decide how far a trademark owner may control repackaging, rebranding and parallel trade - protection extends only so far as needed to preserve that guarantee-of-origin, not to shield the owner from all competition.',
     ],
     [
-      'The 1780-1784 Fourth Anglo-Dutch War is distinguished from the prior three chiefly because it arose over what?',
+      'Land Nordrhein-Westfalen v Renckhoff (2018) held that a student re-uploading a freely accessible photograph, previously posted with the author\'s consent, to a school website constitutes what?',
       [
-        'British retaliation against covert Dutch trade with the rebelling American colonies, exposed by the Amsterdam merchant William Lee\'s draft treaty',
-        'A dispute over fishing rights in the North Sea',
-        'Dutch support for the Jacobite rising, an episode that took place decades earlier and involved no formal Dutch state participation whatsoever, contrary to occasional popular claims',
-        'Competition over the Spice Islands with the Portuguese',
+        'A new act of communication to the public requiring fresh authorisation, because the photograph was placed on a different server independent of the original posting',
+        'No new communication occurs at all, since the photograph had already been made freely and lawfully accessible to any internet user well before the student\'s re-upload',
+        'Infringement only of moral rights, not of the economic reproduction or communication-to-the-public rights',
+        'A use permitted under the EU quotation exception, because the re-upload served an educational purpose',
       ],
       0,
-      'The discovery of a draft Dutch-American treaty carried by the captured American diplomat Henry Laurens gave Britain a pretext to declare war before the Dutch could join the League of Armed Neutrality, and the war proved catastrophic for the already-declining Republic\'s trade and finances.',
+      'Unlike hyperlinking, which merely points to content still sitting on its original host, actually copying a file and re-uploading it to an independent server takes the rightsholder\'s continued control over that specific copy entirely out of their hands - if the original posting is later removed, the independently re-uploaded copy persists regardless, which the Court treated as a materially different, additional act requiring its own authorisation. This drew a sharp doctrinal line between linking, generally safe so long as the target stays lawfully available, and re-hosting, which generally requires fresh consent, based on the different degree of ongoing control the rightsholder retains in each scenario. The underlying dispute involved a Spanish travel photograph reused for a student\'s geography class presentation, hardly the kind of case one would expect to reach the CJEU\'s copyright jurisprudence on such a grand doctrinal scale. The ruling drew criticism from some copyright scholars who argued it undervalues the practical reality that most re-uploaded content, once freely public, carries little remaining economic harm from a further, non-commercial copy.',
     ],
     [
       'In Dutch copyright doctrine, the "geschriftenbescherming" (protection of writings) was a sui generis regime that protected what, before its abolition in 2018?',
@@ -424,15 +434,15 @@ export const LAWIP: CategoryContent = {
       'This uniquely Dutch doctrine gave a thin protection (mainly against literal copying) to purely factual or functional texts that failed the ordinary originality threshold; it was scrapped by legislative amendment after the CJEU\'s Football Dataco and Infopaq line of cases made clear EU copyright law required a genuine originality standard with no room for a lesser national regime.',
     ],
     [
-      'The Statute for the Kingdom of the Netherlands (1954) restructured the relationship between the Netherlands, Suriname and the Netherlands Antilles chiefly by doing what?',
+      'In Huawei v ZTE (2015), the CJEU set out a negotiation framework determining when a standard-essential patent holder\'s request for an injunction does what?',
       [
-        'Establishing them as equal constituent countries within one Kingdom, replacing colonial subordination, short of full independence',
-        'Granting Suriname and the Antilles immediate full independence',
-        'Merging all three into a single unitary state, an outcome the 1954 Statute was in fact specifically designed to avoid at every stage of the negotiations',
-        'Placing them under United Nations trusteeship',
+        'Can constitute an abuse of a dominant position under Article 102 TFEU, unless the SEP holder first follows specified good-faith licensing steps before suing',
+        'Is automatically an abuse of dominance in every single case, regardless of either party\'s prior conduct',
+        'Can never amount to an abuse of dominance under Article 102 TFEU, because patent rights are treated as absolute and wholly immune from competition-law scrutiny under settled EU case law',
+        'Depends solely on whether the implementer has already signed a non-disclosure agreement with the patent holder',
       ],
       0,
-      'The Statuut created a genuinely novel constitutional form - a Kingdom of formally equal countries sharing a head of state, defence and foreign affairs - that survives today between the Netherlands, Aruba, Curaçao and Sint Maarten, after Suriname exercised its right under the Statute to secede to full independence in 1975.',
+      'Huawei held patents essential to a telecoms standard and had committed to a standards body to license them on FRAND (fair, reasonable and non-discriminatory) terms; the Court held that seeking an injunction against a willing licensee could breach Article 102 unless the SEP holder first alerted the alleged infringer, made a specific written FRAND offer, and the implementer then responded diligently and in good faith, for example by providing security or a reasoned counter-offer. This balances the SEP holder\'s property rights against the risk that injunction threats let them extract royalties far above true FRAND value, a phenomenon competition scholars call \'hold-up,\' which matters enormously given how coercive an injunction becomes when a single standard, such as a mobile network protocol, is practically unavoidable for any competitor. National courts, especially in Germany and the UK, have since diverged noticeably in how strictly they apply each step of the so-called Huawei sequence, making SEP injunction litigation one of the most forum-shopped areas of European patent practice. The case itself arose from a dispute over LTE-essential patents at the height of the smartphone patent wars of the early 2010s.',
     ],
     [
       'The CJEU\'s ruling in Deckmyn v Vandersteen (2014) on the parody exception under the InfoSoc Directive held that a "parody" must satisfy which two conditions, without needing to satisfy others often assumed?',
@@ -446,15 +456,15 @@ export const LAWIP: CategoryContent = {
       'The Court also held, unusually, that national courts must weigh the legitimate interests of the original author against expression rights - and in the underlying dispute, a Belgian case about a racist reworking of a "Spike and Suzy" comic cover, left room for the parody defence to fail anyway if the parody\'s message conveyed a discriminatory message harmful to the original author\'s reputation.',
     ],
     [
-      'Grotius\'s concept of "mare liberum" was directly opposed by the English jurist John Selden in a treatise arguing for what?',
+      'Sky plc v SkyKick UK Ltd (2020) addressed whether registering a trademark for an excessively broad specification, such as simply \'computer software,\' can amount to what?',
       [
-        '"Mare clausum" - that the sea, or portions of it, could indeed be subject to sovereign ownership and closure',
-        'The abolition of all maritime trade regulation',
-        'Universal freedom of navigation with no exceptions, a position Selden explicitly rejected rather than argued for in his own treatise',
-        'Papal authority over division of the oceans between Spain and Portugal',
+        'Bad faith, at least in part, if there was no genuine intention to use the mark across the full breadth of goods or services claimed',
+        'An automatic ground for revoking the entire registration regardless of any actual use shown for narrower goods within it',
+        'A criminal offence under EU trademark law',
+        'Grounds for the relevant national or EU trademark office to refuse registration outright before grant, a substantive review the CJEU held such offices are in fact required to conduct at the examination stage',
       ],
       0,
-      'Selden\'s "Mare Clausum" (written around 1618 but published in 1635) was commissioned partly in response to Dutch fishing in what England considered its waters, and the Grotius-Selden dispute over open versus closed seas is still cited as the founding fault line of modern debates over maritime jurisdiction and, later, exclusive economic zones.',
+      'Cloud email migration company SkyKick, sued by broadcaster Sky over marks covering vast categories including simply \'computer software,\' argued Sky\'s registrations were partly invalid for lacking clarity and partly filed in bad faith without any real intention to use them that broadly; the CJEU held that an overly broad specification is not automatically invalid for lack of clarity or precision, but bad faith can invalidate a registration in part, for the goods or services never genuinely intended to be used, even though it survives for goods actually intended and used. This mattered practically because sweeping \'portfolio\' filings are a common defensive litigation tool, and the ruling gave defendants a real, if narrow, way of cutting such registrations back rather than facing an all-or-nothing validity fight. On the remitted UK judgment, Sky\'s marks were found partly made in bad faith for parts of the sprawling specification, yet Sky still won its underlying infringement claim against SkyKick on the narrower goods that survived. The case is now a standard citation in advice to trademark filers about the risks of padding a specification well beyond genuine commercial plans.',
     ],
     [
       'The "Slovak Telekom" and earlier "Bronner" lines of CJEU case law on refusal to license/supply as abuse of dominance under Article 102 TFEU are doctrinally significant to IP law because they define when what must yield to competition law?',
@@ -468,15 +478,15 @@ export const LAWIP: CategoryContent = {
       'Bronner (1998) set a demanding indispensability-plus-foreclosure test that made compulsory licensing under competition law genuinely exceptional (contrast the earlier, more interventionist Magill), and this tension between rewarding IP-driven investment and preventing anticompetitive foreclosure remains one of the most doctrinally contested intersections between IP and competition law in the EU.',
     ],
     [
-      'The Twelve Years\' Truce (1609-1621) in the Eighty Years\' War is notable in Dutch legal and colonial history chiefly because it coincided with what?',
+      'AMS Neve v Heritage Audio (2019) addressed which jurisdictional question under the EU Trade Mark Regulation?',
       [
-        'A domestic religious-political crisis (the Arminian/Gomarist dispute) resolved at the Synod of Dort, and the chartering of the Dutch West India Company just after the truce lapsed',
-        'The founding of the VOC, which had in fact already been chartered in 1602',
-        'The abolition of the office of stadtholder, a step the Republic in fact never took at any single point in time before the French invasion of 1795 finally dissolved the Republic altogether for good',
-        'The permanent cession of the Dutch East Indies to Portugal',
+        'Whether a court in the member state where consumers are targeted by online advertising and offers for sale has jurisdiction over an EU trademark infringement claim, even if the defendant is established elsewhere',
+        'Whether an EU trademark can be enforced at all outside the single member state where it was originally registered',
+        'Whether jurisdiction always lies exclusively with the courts of the country where the defendant is incorporated or otherwise formally established, regardless of where in the EU any resulting commercial harm to the trademark owner actually occurred',
+        'Whether trademark disputes must be resolved through arbitration rather than litigation once an EU trademark has been granted',
       ],
       0,
-      'With the external war paused, internal tensions between Arminian "Remonstrants" (favouring provincial and States-of-Holland authority, associated with Grand Pensionary Oldenbarnevelt) and orthodox Calvinist "Gomarists" (backed by Stadtholder Maurice) escalated to the 1618-1619 Synod of Dort and Oldenbarnevelt\'s execution - a reminder that the Truce years were a fight over the Republic\'s internal constitutional balance, not merely a lull in the war with Spain.',
+      'UK-based AMS Neve sued Spanish company Heritage Audio in the UK over allegedly infringing online advertisements and sales targeting UK consumers, and the CJEU held that \'the member state in which the act of infringement has been committed\' under the EUTM Regulation includes the state where consumers or traders targeted by online content are located, not only the state where the defendant physically published the material or is established. This mattered enormously for online commerce, since it lets a rightsholder sue where the commercial harm actually lands rather than being forced to chase every seller in its own home jurisdiction. The \'targeting\' test the Court applied tracks similar reasoning from earlier CJEU jurisdiction case law on online defamation and consumer contracts, showing EU private international law converging on one general approach to locating where an online act actually happens. AMS Neve is a British audio-equipment maker best known for classic analogue studio mixing consoles, which gives the underlying trademark dispute an oddly niche, high-end-recording-studio backstory for a case that ended up reshaping EU online-jurisdiction doctrine.',
     ],
   ],
 };

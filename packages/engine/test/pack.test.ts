@@ -25,7 +25,7 @@ describe('seed pack', () => {
 
   it('covers every category at every difficulty', () => {
     const stats = packStats(SEED_PACK);
-    expect(CATEGORY_IDS.length).toBe(23);
+    expect(CATEGORY_IDS.length).toBe(40);
     expect(stats.total).toBe(CATEGORY_IDS.length * DIFFICULTY_ORDER.length * 15);
     expect(stats.thinnest.count).toBeGreaterThanOrEqual(15);
   });

@@ -678,15 +678,15 @@ export const MORE_TECHNOLOGY: CategoryContent = {
 export const MORE_SPORT: CategoryContent = {
   graduate: [
     [
-      'What does a Pythagorean expectation estimate?',
+      'In Formula One, once qualifying begins the FIA\'s parc fermé regulations restrict teams to what?',
       [
-        'A team\'s expected win share from points or goals scored and conceded',
-        'The probability a match ends in a draw given both teams\' form',
-        'A player\'s contribution above a replacement-level substitute',
-        'The number of fixtures needed for league position to become reliable',
+        'A short, pre-declared list of changes such as tyre pressures, front wing angle and worn brake components',
+        'Deciding which two drivers are entered for the race weekend',
+        'Choosing the order in which their cars leave the pit lane during the session',
+        'Whether team radio communication with drivers is permitted during the session, and what restrictions the FIA imposes on message content',
       ],
       0,
-      'James devised it for baseball, and the exponent has to be refitted per sport - which is a reminder that it is an empirical regularity, not a law.',
+      'Parc fermé locks a car\'s mechanical setup from the start of qualifying through to the race, so a team cannot run a low-fuel, soft qualifying configuration and then swap in a completely different race setup overnight. Only a short, FIA-supervised list of changes is allowed: tyre pressures can be adjusted, the front wing angle can be tweaked, worn brake pads or discs can be replaced, and fuel can be topped up to race load, but ride height, dampers, anti-roll bars and aerodynamic surfaces beyond the front wing stay frozen. Teams can request an exemption to make larger changes, but the cost is starting the race from the pit lane rather than the grid position earned in qualifying, which keeps the incentive structure honest. A related piece of trivia: parc fermé also technically covers the physical impounding of the car after the race for post-race scrutineering, which is where the French term (literally \'closed park\') originally comes from in motorsport regulation.',
     ],
     [
       'In athletics, what does a wind-assisted mark mean?',
@@ -790,15 +790,26 @@ export const MORE_SPORT: CategoryContent = {
   ],
   phd: [
     [
-      'What does a "wins above replacement" style metric require that a simple rate statistic does not?',
+      'Under rugby union\'s \'50:22\' law, first trialled by World Rugby in 2021, when does the kicking team win the throw-in at the resulting lineout?',
       [
-        'A baseline defining replacement level',
-        'A complete play-by-play record of every match',
-        'An adjustment for the strength of every opponent faced',
-        'A separate model for each position played',
+        'A kick from inside the kicking team\'s own half that bounces in the field of play before going out inside the opposition\'s 22',
+        'A kick from anywhere on the pitch that is caught cleanly inside the opposition\'s 22 without bouncing',
+        'A kick from inside the opposition\'s own half that bounces before going out inside the opposition\'s 22',
+        'A kick that bounces first inside the opposition\'s 22 after crossing the opposition\'s try line and being played back into the field of play',
       ],
       0,
-      'The baseline is where implementations diverge most, which is why two published WAR figures for the same player rarely agree.',
+      'The rule rewards a specific, difficult kick: launched from the kicking team\'s own half, it must bounce in the field of play and then roll or bounce into touch inside the opponents\' 22, at which point the kicking team keeps the throw against the run of possession instead of conceding it as normal touch-kicks do. World Rugby introduced it on 1 August 2021 to punish teams that stack defenders in the backfield to shut down attacking width, since a back-three player pulled up to cover the kick creates space elsewhere; the trade-off it forces between defending the kick and defending the line is exactly the point. It was trialled alongside the goal-line dropout and mirrors, in spirit, other sports\' attempts to legislate against risk-averse defensive shapes, and it has since become a fixture of both the men\'s and women\'s international game. A neat piece of related trivia is the law\'s numeric naming convention itself, borrowed loosely from Australian rules football\'s long-standing \'50-metre\' zone language, though the two sports\' actual rules share no mechanism.',
+    ],
+    [
+      'In 2021, UEFA abolished which long-standing tie-breaking rule for two-legged knockout ties in its European club competitions?',
+      [
+        'The away goals rule, under which a goal scored away from home had broken a tie level on aggregate since 1965',
+        'The requirement for a replay following a semi-final drawn on aggregate after extra time',
+        'The golden goal rule deciding extra time in the second leg',
+        'The seeding advantage granted to the higher-ranked club in the event of a tied aggregate score',
+      ],
+      0,
+      'The away goals rule was introduced by UEFA for the 1965/66 European Cup Winners\' Cup, and its first competitive use came almost immediately: Budapest Honved eliminated Dukla Prague in the second round despite a 4-4 aggregate scoreline, because Honved\'s three away goals beat Dukla\'s two. The idea was to reward attacking football at grounds where visiting teams historically struggled and to discourage negative, purely defensive away performances. By the 2010s the competitive landscape had reversed: data showed home advantage had shrunk so much that the rule was now incentivising visiting teams to defend a narrow lead rather than attack, the opposite of its original purpose, which is why UEFA\'s competitions committee voted to scrap it starting from the 2021/22 season. Its removal meant a tie level on aggregate after both legs now goes straight to extra time and penalties with no weighting for where goals were scored — a genuinely significant shift in two-legged tactics that many managers and pundits initially resisted, since for over five decades entire away-leg game plans had been built around chasing or protecting exactly that kind of goal.',
     ],
     [
       'What is the principal statistical objection to using penalty conversion rate to rank takers?',
@@ -810,17 +821,6 @@ export const MORE_SPORT: CategoryContent = {
       ],
       0,
       'A career of forty penalties supports almost no discrimination between plausible true rates - the classic small-sample trap in sports analytics.',
-    ],
-    [
-      'What does the "hot hand" literature now conclude?',
-      [
-        'Early studies were biased by a selection artefact',
-        'The effect was confirmed as large by the original studies and has never been challenged',
-        'The effect is entirely absent once shot difficulty is controlled',
-        'The question is unanswerable because streaks cannot be defined',
-      ],
-      0,
-      'Miller and Sanjurjo identified the bias in conditioning on a streak. It is a rare case of a famous null result being partly reversed on statistical grounds.',
     ],
     [
       'What does the Duckworth-Lewis-Stern method model, in structure?',
@@ -902,26 +902,37 @@ export const MORE_SPORT: CategoryContent = {
   ],
   professor: [
     [
-      'What does the "moneyball" episode actually demonstrate about market efficiency?',
+      'UEFA\'s squad cost ratio, phased in as part of the Financial Sustainability Regulations that replaced Financial Fair Play, caps a club\'s spending on wages, transfer amortisation and agent fees at what share of relevant revenue once fully phased in for the 2025/26 season?',
       [
-        'A specific inefficiency in valuing on-base skill',
-        'That sports labour markets are permanently inefficient',
-        'That statistical analysis outperforms scouting in all contexts',
-        'That payroll has no relationship to competitive success',
+        '70%',
+        '90%',
+        '80%',
+        '60%',
       ],
       0,
-      'Hakes and Sauer showed the on-base premium correcting within a few seasons - the interesting finding is the speed of the correction.',
+      'UEFA introduced the squad cost ratio as a straightforward affordability test after the old break-even rule under Financial Fair Play proved easy for state-backed and ownership-subsidised clubs to route around: it simply caps wages, transfer amortisation and agent fees at a set percentage of a club\'s football-related revenue. The cap was phased in deliberately gently, starting at 90% in 2023/24 and stepping down through 80% in 2024/25, before landing at its permanent 70% ceiling from 2025/26, giving clubs time to restructure wage bills rather than triggering sudden breaches. This matters because it targets the actual mechanism of financial doping — unsustainable spending relative to income — rather than the accounting-period break-even figure that clubs like Manchester City and Paris Saint-Germain were repeatedly investigated over without changing behaviour. A related piece of trivia: in the first enforcement round under the full 70% ceiling, UEFA sanctioned twelve clubs including Chelsea, Barcelona, Lyon and Aston Villa in July 2025, with Chelsea alone fined roughly €31 million across the football earnings and squad cost rules combined.',
     ],
     [
-      'What is the current state of evidence on repetitive head impacts and chronic traumatic encephalopathy?',
+      'What did the European Court of Justice establish in its 2006 ruling in Meca-Medina and Majcen v Commission?',
       [
-        'A dose-response association is established, while incidence, individual risk and diagnosis in life remain unresolved',
-        'Causation is established with quantified individual risk for contact-sport athletes',
-        'No association has been demonstrated beyond case series, and those series are drawn from symptomatic donors only',
-        'The condition can now be diagnosed reliably in living patients by imaging',
+        'That sporting rules, including anti-doping regulations, are not automatically exempt from EU competition law merely because they are sport-specific',
+        'That national anti-doping agencies must impose identical suspension lengths across every EU member state for the same offence',
+        'That doping sanctions imposed by international federations cannot be challenged before national courts',
+        'That the \'specificity of sport\' doctrine exempts federation disciplinary and eligibility rules entirely from the EU\'s single-market and competition-law obligations, regardless of their economic effect on athletes',
       ],
       0,
-      'Post-mortem case series carry severe selection bias, which is why prospective cohorts and in-vivo biomarkers are where the field is now.',
+      'Two long-distance swimmers, David Meca-Medina and Igor Majcen, challenged a four-year doping ban imposed over a positive nandrolone test, arguing anti-doping rules were purely sporting and therefore outside EU law\'s reach; the Court disagreed, holding that a rule\'s sporting character does not automatically place it beyond competition law if it has genuine economic effects on athletes\' ability to work. This narrowed the earlier \'purely sporting rules\' exception carved out in cases like Walrave and Donà, forcing federations to show their rules were proportionate to a legitimate objective rather than simply asserting sporting autonomy. It sits alongside Bosman as one of the two pillars of EU sports law, but where Bosman was about free movement of workers, Meca-Medina is the competition-law precedent that governing bodies still have to reckon with when drafting eligibility and disciplinary rules. A genuine trivia footnote: the case is sometimes miscited as a doping-substance ruling, but the Court never assessed the science of nandrolone at all — the whole judgment turns on jurisdiction, not toxicology, and the swimmers\' underlying ban was upheld regardless.',
+    ],
+    [
+      'In 2014 the UCI fundamentally changed the technical rules governing cycling\'s Hour Record. What was the change?',
+      [
+        'Modern aerodynamic time-trial equipment was allowed again, ending the seventeen-year restriction to Eddy Merckx\'s 1972 setup',
+        'The record was split permanently into separate \'standard equipment\' and \'superhuman\' categories judged on power output alone',
+        'Indoor velodrome attempts were banned in favour of outdoor road-circuit attempts only',
+        'A minimum attempt duration of forty-five minutes, together with a requirement that attempts be independently ratified by two continental federations, was introduced to disqualify short, high-intensity efforts',
+      ],
+      0,
+      'After Eddy Merckx set 49.431 km in Mexico City in 1972, a wave of aerodynamic innovations by riders like Francesco Moser and later Chris Boardman and Graeme Obree pushed the mark further using aero bars, disc wheels and radical body positions; in 1997 the UCI retroactively froze the record to Merckx-era equipment, reclassifying the aerodynamic attempts as a separate \'Best Human Effort\' category rather than the official record. That freeze held for seventeen years until 2014, when the UCI reversed course and opened the record back up to modern time-trial technology, prompting a rush of attempts including Bradley Wiggins\'s successful ride the following year. The episode is a case study in how governing bodies wrestle with technology outpacing the spirit of a record, choosing at different points to protect a historical baseline and then to let equipment evolve. A specific trivia detail: Ondřej Sosenka\'s 2005 mark of 49.700 km, set in Moscow under the Merckx-style restriction, stood as the record for almost a decade until the 2014 rule change unlocked dramatically higher distances.',
     ],
     [
       'What does the biological-passport approach to anti-doping rest on?',
@@ -966,17 +977,6 @@ export const MORE_SPORT: CategoryContent = {
       ],
       0,
       'The idealised standard deviation normalises for schedule length, which is why an eighty-two-game and a thirty-eight-game league can be compared at all.',
-    ],
-    [
-      'What is the significance of the "44-second" rule change literature in analysing shot-clock sports?',
-      [
-        'Rule changes provide natural experiments for how strategy responds to constraint, identified by discontinuity in time',
-        'It establishes the optimal shot-clock duration for maximising scoring rate, which is what the governing bodies were seeking',
-        'It demonstrates that rule changes have no lasting tactical effect',
-        'It shows that possession length is unrelated to scoring efficiency',
-      ],
-      0,
-      'The methodological attraction is exogeneity: the rule changes for reasons unrelated to any single team\'s strategy, which is rare in observational sport data.',
     ],
     [
       'What does the "referee bias" literature identify most robustly?',

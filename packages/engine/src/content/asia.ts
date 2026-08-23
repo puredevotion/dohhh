@@ -171,6 +171,12 @@ export const CENTRAL_ASIA: CategoryContent = {
   ],
 };
 
+/**
+ * Kept strictly to 1980-2000 economic/development content - anything more
+ * general (theory with no date, or dated outside that window) moved to the
+ * new East Asian History category (asia2.ts) instead. See MORE_EAST_ASIA
+ * in more/eastasia.ts for the rest of this category.
+ */
 export const EAST_ASIA: CategoryContent = {
   graduate: [
     [
@@ -253,28 +259,6 @@ export const EAST_ASIA: CategoryContent = {
       'The subsequent argument - fundamentals versus self-fulfilling panic, and whether the IMF\'s fiscal conditionality made it worse - reshaped the field\'s view of capital-account liberalisation.',
     ],
     [
-      'MITI\'s "administrative guidance" is best described as what?',
-      [
-        'Informal, largely non-statutory direction of industry investment, capacity and cartel arrangements',
-        'Statutory licensing of all industrial investment above a notified threshold, enforced by the trade ministry',
-        'Direct state ownership of firms in designated strategic sectors',
-        'Allocation of foreign exchange to exporters by administrative quota',
-      ],
-      0,
-      'Johnson\'s "developmental state" made it famous; the revisionist literature argues its successes are heavily selected and its failures - aluminium, aerospace - understated.',
-    ],
-    [
-      'What does China\'s hukou system principally determine?',
-      [
-        'Household registration, and with it local entitlement to schooling, health care and housing',
-        'The right to hold urban land-use rights as collateral against a bank loan, a mortgage or a corporate bond',
-        'Eligibility for employment in state-owned enterprises',
-        'Internal travel permission between provinces',
-      ],
-      0,
-      'It is why a large migrant workforce could be urban in employment while remaining rural in entitlement - a central mechanism of the growth model and of its inequality.',
-    ],
-    [
       'The 1994 fiscal reform (fenshuizhi) in China did what?',
       [
         'Recentralised tax revenue to Beijing while leaving expenditure obligations with local government',
@@ -288,28 +272,6 @@ export const EAST_ASIA: CategoryContent = {
   ],
   professor: [
     [
-      'What does the "dual circulation" strategy announced in 2020 prioritise?',
-      [
-        'The domestic market as the mainstay, with external engagement retained as complementary',
-        'Import substitution across all strategic sectors within a decade',
-        'Renminbi internationalisation as the primary route to external resilience, backed by bilateral swap lines',
-        'Bilateral currency swap lines in place of dollar reserves',
-      ],
-      0,
-      'Read at the time as a hedge against decoupling; the analytical question is whether it is a genuine reorientation of demand or a relabelling of the existing rebalancing agenda.',
-    ],
-    [
-      'What is the principal empirical objection to the "middle income trap" as a concept?',
-      [
-        'Transition probabilities out of middle income are not unusual once income bands are defined consistently',
-        'It applies only to resource exporters, and so carries no general content once terms of trade are controlled for',
-        'It cannot be tested because too few countries have reached high income',
-        'It conflates purchasing-power and market-exchange-rate measures of income',
-      ],
-      0,
-      'Im and Rosenblatt made the case sharply. The policy discussion generally continued regardless, which is itself an interesting fact about the field.',
-    ],
-    [
       'The failures of Yamaichi Securities and the Long-Term Credit Bank in 1997-98 marked what?',
       [
         'The end of the convoy system, and the beginning of genuine failure and nationalisation in Japanese finance',
@@ -319,28 +281,6 @@ export const EAST_ASIA: CategoryContent = {
       ],
       0,
       'Until then the Ministry of Finance had arranged rescues so that no major institution actually failed - which is precisely how the losses were allowed to accumulate unrecognised.',
-    ],
-    [
-      'Why is the term "Beijing Consensus" contested in the development literature?',
-      [
-        'It attributes a coherent transferable model to a policy record that was gradualist, experimental and internally inconsistent',
-        'It was coined by Chinese officials as an explicit counter-programme to the Washington Consensus, and only later adopted abroad',
-        'It describes only the post-2008 stimulus period and not the reform era',
-        'It conflates Chinese policy with the earlier East Asian developmental state',
-      ],
-      0,
-      'Ramo\'s 2004 coinage. "Crossing the river by feeling for the stones" is not a model, and the successful elements are hard to separate from the sheer scale of catch-up available.',
-    ],
-    [
-      'What does the literature on China\'s "excess savings" identify as the main driver of the high household saving rate?',
-      [
-        'Precautionary motives under weak social insurance, compounded by demographic and sex-ratio effects on competitive saving',
-        'Financial repression on its own, holding household deposit rates below the market-clearing level for two decades after 1994',
-        'A cultural preference for thrift with no measurable economic determinant',
-        'Mandatory contributions to the state pension system',
-      ],
-      0,
-      'Wei and Zhang\'s competitive-saving argument from the sex ratio is the most striking single finding; the corporate and government sectors also save heavily, which the household framing tends to obscure.',
     ],
   ],
 };
