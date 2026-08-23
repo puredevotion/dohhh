@@ -623,8 +623,12 @@ function LiveQuestion({
   const nominatedName = nominated == null ? null : state.players[nominated]?.username ?? null;
 
   // Opponents call time, not the team on the clock, and they stagger by a
-  // deterministic offset so five devices do not all fire the same event at once.
-  useAutoTimeout({ enabled: amOpponent, remaining, state, onTimeout });
+  // deterministic offset so five devices do not all fire the same event at
+  // once. Solo has no opponents at all - the acting player is the only
+  // human in the game - so it must be able to time itself out too, or a
+  // missed answer just hangs forever with nobody else there to call it.
+  const solo = state.rules.minTeams === 1;
+  useAutoTimeout({ enabled: solo || amOpponent, remaining, state, onTimeout });
 
   // canAnswerNow only flips false once the store's own re-render lands, which
   // is a real gap on mobile browsers that can fire duplicate touch+click
@@ -737,7 +741,10 @@ function PhaseTimer({
   const lowTimeMessage = useLowTimeAnnouncement(remaining, turnPhaseKey);
   const me = useApp((s) => s.identity?.id ?? '');
   const amOpponent = !isActingPlayer(state, me);
-  useAutoTimeout({ enabled: amOpponent, remaining, state, onTimeout });
+  // Same reasoning as LiveQuestion: solo has no opponent to call time, so
+  // the acting (and only) player has to be able to time itself out.
+  const solo = state.rules.minTeams === 1;
+  useAutoTimeout({ enabled: solo || amOpponent, remaining, state, onTimeout });
 
   return (
     <div className="flex items-center justify-between gap-3">
