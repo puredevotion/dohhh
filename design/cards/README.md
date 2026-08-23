@@ -71,7 +71,7 @@ that gets built, so it gets the room.
 ### What was cut, and why
 
 An earlier version added a panel on whether you can see the animal in 牛 羊 鱼 鸭 猪,
-and a second on 肉 hiding inside 肝 肠 肚 腰 脑 as 月. Both were true, both were
+and a second on 肉 hiding inside 肝 肠 肚 腰 脑 as ⺼. Both were true, both were
 interesting, and together they turned the breakdown of one word into a lecture on
 the category — the internal structure of five characters on a card whose item was
 a single word. That is the coherence principle being violated by exactly the
@@ -82,12 +82,24 @@ characters are pictures and most are not, and when you cannot see it, it is not
 there.* That line is what stops a learner inventing etymology. The tour was not
 doing that work.
 
+### ⺼ is not 月
+
+The component in 肝 肠 肚 腰 脑 肺 肾 胗 is **⺼, U+2EBC, Kangxi radical 130 "meat"** — the
+bound form of 肉. It is *not* 月, U+6708, the moon. They are homoglyphs: identical in
+almost every font, different characters underneath. Verified against Make Me a Hanzi:
+all eight organ characters carry ⺼; 期 朋 朗 服 有 望 carry the real 月.
+
+This is an implementation constraint, not trivia. Highlighting must key off a stored
+per-item component field, **never a substring match on 月** — 期 sits inside 保质期, the
+best-before date and a Tier-1 supermarket item, so the naive rule would teach that a
+shelf-life label contains a body part.
+
 Nothing is lost, only relocated. Each radical gets taught on a card where it is
 the operative component rather than a bolt-on:
 
 | Radical | Taught on an item whose answer is | Then opens |
 | --- | --- | --- |
-| 月 (from 肉) | an organ dish | 肝 肠 肚 腰 脑 |
+| ⺼ (bound form of 肉) | an organ dish | 肝 肠 肚 腰 脑 |
 | 鸟 | poultry | 鸡 鸭 鹅 鸽 |
 | 鱼 | seafood | 鱿 鳗 鲈 鳕 |
 
