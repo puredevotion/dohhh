@@ -394,7 +394,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Welke structurele factoren maakten Zuid-Italië chronisch onderontwikkeld na eenheid?',
       [
-        'Feodale latifundia, hulpbronnen naar het noorden',
+        'Feodale latifundia en noordwaartse trekking',
         'Zuid-Italianen waren van nature minder capabel',
         'De Mafia veroorzaakte alleen armoedte',
         'Het Noorden had geen feodale geschiedenis',
@@ -438,7 +438,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Wat was de filosofische basis van Mussolini\'s corporatistisch economisch model?',
       [
-        'Staatssyndicaten vervingen de vrije markt',
+        'Staatssyndicaten verdrongen de markt',
         'Vestiging van vrij-marktkapitalisme',
         'Welverdeling aan arbeiders alleen',
         'Herstel van feodale landbouwstelsels',
@@ -482,7 +482,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Welk institutioneel kenmerk van de Eerste Republiek ondermijnden Tangentopoli\'s onthullingen fundamenteel?',
       [
-        'Het brak het "partitocrazia"-systeem',
+        'Het brak "partitocrazia"',
         'Het had geen institutioneel gevolg',
         'Het versterkte de monarchie',
         'Het verminderde stemrechten',
@@ -506,7 +506,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Hoe vertegenwoordigde Florence\'s catasto-hervorming van 1427 technologische en bestuurlijke innovatie die staatsvoeding hervormdde?',
       [
-        'Een gestandaardiseerde eigendomstelling',
+        'Een eigendomstelling',
         'Het schrapte alle belasting',
         'Het herstelde puur feodalisme',
         'Het vond aandelenmarkten uit',
@@ -627,7 +627,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Wat vertegenwoordigden het Verdrag van Maastricht (1992) en euroverandering (1999-2002) symbolisch voor Italiaanse naoorlogse soevereiniteit?',
       [
-        'Vrijwillige overdracht van monetaire soevereiniteit',
+        'Overdracht van monetaire soevereiniteit',
         'Italië verwerpen de euro permanent',
         'Maastricht had geen economisch gevolg',
         'Italië gaf vrijwillig alle soevereiniteit op',
@@ -638,7 +638,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Hoe verschilde Mazzini\'s "guerra popolare" (volksorlog)-ideologie van massamassale campagneinsurrectie van Cavour\'s elitaire diplomatieke realisme?',
       [
-        'Mazzini beeldde federaal republicanisme in door grassroots-opstand; Cavour vertrouwde op diplomatieke staatschaff, welke structureel superieur bleek',
+        'Cavour\'s diplomatie versloeg Mazzini\'s opstand',
         'Mazzini ondersteunde monarchie en Cavour republicanisme',
         'Ze hadden identieke visies',
         'Volksbewegingen slaagden onmiddellijk',
@@ -649,7 +649,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Wat onthulden Silvio Berlusconi\'s meerdere premierschap (1994-2011) over grondwettelijke spanningen in Tweede Republiek?',
       [
-        'Zijn mediabezitstoewijzingsconflicten, gerechtelijke vorderingen voor corruptie, institutionele uitdagingen testen grondwettelijke grenzen op uitvoerend gezag en onthulden democratische kwetsbaarheid',
+        'Belangenconflicten en corruptieprocessen',
         'Berlusconi had geen politieke invloed',
         'Hij herstelde fascisme onmiddellijk',
         'Grondwettelijk recht versterkte zich zonder controversie',
@@ -660,7 +660,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Hoe hervormdde de pauselijke "wereldlijke macht"-verlies in 1870 en oplossing in Lateraansverdrag (1929) kerk-staatsrelaties in verenigd Italië?',
       [
-        'De verlies in 1870 creëerde "Romeinse Vraag", vervreemden het pausdom totdat 1929 Vaticaanstad\'s soevereiniteit conflict oploste, institutionaliseerde separatie',
+        'De breuk van 1870, opgelost in 1929',
         'Het Pausdom heroverde alle wereldlijke macht',
         'Kerk en staat werden onmiddellijk gescheiden',
         'Het Lateraansverdrag had geen gevolgen',

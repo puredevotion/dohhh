@@ -660,7 +660,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In het zich ontwikkelende cardiovasculaire systeem ondergaan endotheelcellen EMT om neural kristaf te vormen. Welk transcriptiefactornetwerk beheerst endocardiale kussensinvasie?',
       [
-        'Snail/Slug-gemedieerde remming van E-cadherin met Wnt/β-catenine en Notch signalering activatie',
+        'Snail/Slug remmen E-cadherin, met Wnt/β-catenine en Notch',
         'Rechtstreeks MyoD-afhankelijke myogene differentiatie van endotheelcellen in cardiomyocyten',
         'HIF-1α-afhankelijke metabolische verschuiving van oxidatieve fosforylatie naar glycolyse',
         'Krüppel-achtige factor 4 (KLF4) reactivering van pluripotent genexpressieprogramma',
