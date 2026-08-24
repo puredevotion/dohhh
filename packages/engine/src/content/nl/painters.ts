@@ -625,15 +625,15 @@ export const PAINTERS: CategoryContent = {
       'Nederlands schilders mengden experimenteel tempera en olie, elk voordeel exploiteerend (snel-instelling tempera onderchildering, olie glazuurverfijning); technologische pragmatisme trompetteerde ideologische puurheid.',
     ],
     [
-      'In hedendaagse bewaringscthica, bespreek de interpretatieve en filosofische inzetten van kiezen tussen herzienbaarheid en esthetische interventie in "hertekening" van significante verfverlies.',
+      'In de hedendaagse conserveringsethiek, waarom geven restauratoren doorgaans de voorkeur aan herroepbare retouches boven volledige esthetische reconstructie bij significant verfverlies?',
       [
-        'Herzienbaarheid houdt opties open',
-        'Herzienbaarheid is altijd ethisch superieur',
-        'Esthetische voltooiing is altijd correct',
-        'Bewaringscethica zijn irrelevant voor schilderijarestauratie',
+        'Herroepbaarheid houdt toekomstige opties open',
+        'Herroepbaarheid is altijd ethisch superieur',
+        'Esthetische voltooiing is altijd juist',
+        'Conserveringsethiek is irrelevant voor schilderijrestauratie',
       ],
       0,
-      'Herzienbaarheid bewaart toekomstige herundezoek maar aanvaardt esthetische incompleteness; integratie riskeert getuigenis obfuscatie en legt present-smak als historische feit af. Dit dilemma heeft geen universele oplossing.',
+      'Herroepbare retouches laten toekomstig onderzoek en herbehandeling toe, maar aanvaarden esthetische onvolkomenheid; volledige reconstructie riskeert het verhullen van bewijsmateriaal en presenteert een eigentijdse keuze als historisch feit.',
     ],
     [
       'Hoe beïnvloedt het optische fenomeen "halatie" (licht passerend door transparante verflagen en terugkaatsend) de fenomenologische ervaring van oude meester-geglazuurde oppervlakken in galerieverlichting contexten?',

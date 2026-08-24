@@ -625,7 +625,7 @@ export const PAINTERS: CategoryContent = {
       'Netherlandish painters experimentally mixed tempera and oil, exploiting each\'s advantages (fast-set tempera underpainting, oil glaze refinement); technological pragmatism trumped ideological purity.',
     ],
     [
-      'In contemporary conservation ethics, discuss the interpretive and philosophical stakes of choosing between reversibility and aesthetic intervention in the "in-painting" of significant paint loss.',
+      'In contemporary conservation ethics, why do conservators generally favor reversible in-painting over full aesthetic reconstruction when treating significant paint loss?',
       [
         'Reversibility keeps options open',
         'Reversibility is always ethically superior',
