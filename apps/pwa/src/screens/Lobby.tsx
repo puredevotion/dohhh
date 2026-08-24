@@ -66,7 +66,7 @@ export function Lobby(): ReactNode {
   const gate = startCheck(state, identity.id);
   const isHost = state.hostId === identity.id;
   const ticket = ticketFor({ gameId: state.gameId, joinCode: state.joinCode }, locale);
-  const packMatches = snapshot.state?.packHash === undefined || ticket.packHash.startsWith(snapshot.state.packHash);
+  const packMatches = snapshot.state?.packHash === undefined || snapshot.state.packHash.startsWith(ticket.packHash);
   const deviceCount = snapshot.peerCount + 1;
 
   return (
