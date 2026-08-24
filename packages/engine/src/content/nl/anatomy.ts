@@ -16,7 +16,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Welk van het volgende beschrijft het best de structuur van een synoviale gewricht?',
       [
-        'Twee botuiteindes bedekt met hyaline kraakbeen, gescheiden door een vloeistofgepelde kapsel',
+        'Botuiteindes met hyaline kraakbeen in een vloeistofkapsel',
         'Botten bij elkaar gehouden door vezelig bindweefsel zonder ruimte ertussen',
         'Kraakbeenachtige schijf die twee botuiteindes volledig samensmelten',
         'Twee botten verbonden door elastische ligamenten die een semi-mobiel gewricht vormen',
@@ -27,7 +27,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Wat is het primaire structurele verschil tussen Type I en Type II spiervezels?',
       [
-        'Type I vezels zijn slow-twitch met hoge oxidatieve capaciteit; Type II zijn fast-twitch met hoge glycolytische capaciteit',
+        'Type I is slow-twitch en oxidatief; Type II is fast-twitch en glycolytisch',
         'Type I vezels worden uitsluitend in het hart gevonden; Type II in skeletspier',
         'Type II vezels bevatten meer mitochondriën en voeren aërobe metabolisme uit',
         'Type I vezels hebben dikker myofilamenten en genereren meer kracht',
@@ -115,7 +115,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Wat is de primaire functie van de fundus van de maag?',
       [
-        'Afscheiding van maagvliezen en enzymebergting',
+        'Maagsapafscheiding',
         'Bergting van voedsel en begin mixen',
         'Pylorische sfincter controle',
         'Opname van voedingsstoffen',
@@ -126,7 +126,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Waar is de lever primair aan vastgehecht?',
       [
-        'Diafragma via coronair- en falksvormige ligamenten',
+        'Diafragma via het falksvormige ligament',
         'Maag via het gastrohepale ligament',
         'Milt via het gastrospleenligament',
         'Alvleesklier via pancreatiocoduodenale aders',
@@ -172,7 +172,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In de microstructuur van compact bot, waruit bestaat het Haversian systeem?',
       [
-        'Concentrische lamellen van gemineraliseerde matrix rond een centraal kanaal met bloedvaten en zenuwen',
+        'Concentrische lamellen rond een kanaal met vaten en zenuwen',
         'Radiërend trabeculae van sponsbotten ondersteund door een dichte buitenschaal',
         'Langsgericht rijen van osteocyten ingebed in evenwijdige collageenvezels',
         'Onderling verbonden holten gevoerd door osteoblasten en gescheiden door gemineraliseerde septa',
@@ -205,7 +205,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In spierfysiologie, wat is de structurele relatie tussen Z-schijf en dunne filamenten?',
       [
-        'Dunne filamenten verankerd aan beide zijden in Z-schijven en overlappen in het midden',
+        'Dunne filamenten verankeren aan Z-schijven en overlappen midden',
         'Dunne filamenten strekken zich uit van Z-schijven naar myosine koppen in de A-band',
         'Z-schijven bestaan geheel uit actine en tropomyosine moleculen',
         'Dunne filamenten zijn loodrecht aan Z-schijven bevestigd via titin moleculen',
@@ -216,7 +216,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De coronaire circulatie wordt vooral gevoed door takken van welke vaten vanuit de aorta?',
       [
-        'Linker- en rechterkroonslagaders',
+        'L/R kroonslagaders',
         'Tussenribslagaders',
         'Interne borstbeemslagader',
         'Longarteriële takken',
@@ -227,7 +227,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Welke anatomische structuur vertraagt geleiding tussen atria en ventrikels?',
       [
-        'Atrioventriculaire knoop',
+        'AV-knoop',
         'Sinusknoop',
         'His bundel',
         'Purkinje vezels',
@@ -238,7 +238,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Welk orgaan voert bloed rechtstreeks via de portalader naar de lever?',
       [
-        'Darmen, maag, alvleesklier en milt',
+        'Darmkanaal en milt',
         'Hart en longen',
         'Nieren en bijnierkliertjes',
         'Hersenen en ruggenmerg',
@@ -249,7 +249,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Wanneer het diafragma samentrekt, wat gebeurt er met de intralong druk?',
       [
-        'De druk wordt meer negatief (beneden luchtdruk)',
+        'De druk wordt negatief (subatmosferisch)',
         'De druk stijgt boven atmosferische druk',
         'De druk blijft constant',
         'De druk wordt gelijk aan atmosferische druk',
@@ -271,7 +271,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Wat houdt de gastro-esofageale overgang normaal gesloten?',
       [
-        'Onderste slokdarmsfincter (LES)',
+        'De LES',
         'Bovenste slokdarmsfincter',
         'Pylorische sfincter',
         'Ileocecale klep',
@@ -339,7 +339,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Botremodellering wordt gecoördineerd door welk moleculair signalpad geactiveerd door mechanische belasting?',
       [
-        'Wnt/β-catenine pad via osteocyten mechanotransdictie',
+        'Wnt/β-catenine via mechanotransductie',
         'Notch signalering in osteoblasten differentiatie',
         'Hedgehog signalering in osteoklasten activatie',
         'FGF receptor signalering in endochondrale osificatie',
@@ -361,7 +361,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Draait de myosine kop tijdens powerstroke rond welk functioneel gebied?',
       [
-        'Het nekgebied dat katalytisch domein met hefboomarm verbindt',
+        'Het nekgebied tussen domein en hefboomarm',
         'De ATP bindingzak in nucleotide bindingnauw',
         'De actine bindingsinterface op het onderste 50 kDa domein',
         'Het regeleiwitlichte keten aan het eind van hefboomarm',
@@ -372,7 +372,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De coronaire circulatie vertoont metabolische autoregulatie door welk primair mechanisme?',
       [
-        'Adenosineophoping die arterioolweerstand vermindert',
+        'Adenosine verlaagt arterioolweerstand',
         'Myogeen respons op perfusiedrukveranderingen',
         'Sympathische systeemvasocontrictie',
         'Endotheliale stikstofmonoxide productie uit schuif',
@@ -405,7 +405,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De bloed-lucht barrière van alveolus bestaat uit hoeveel cellagen in totaal?',
       [
-        'Drie: alveolus epitheel, basale membraan en capillair endotheel',
+        'Drie: epitheel, basale membraan, endotheel',
         'Twee: alveolus epitheel en capillair endotheel alleen',
         'Vier: inclusief duidelijke intersticiële laag',
         'Vijf: met extra oppervlaktespanning producerende laag',
@@ -416,7 +416,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In ventilatie-perfusie matching, welke anatomische factor creëert regionale bloedstroommverschillen?',
       [
-        'Zwaartekrachtdrukgradiënt tussen apicale en basale alveoli',
+        'Zwaartekracht geeft drukgradiënt door de long',
         'Differentiaalbepaling van pulmonale slagaders per lob',
         'Voorkeur bronchiaal dilatatie in apicale segmenten',
         'Ongelijke surfactantverspreiding over longgebieden',
@@ -438,7 +438,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De sphincter van Oddi regelt stroming in welk orgaan via de grote duodenum papil?',
       [
-        'Duodenum via de grote duodenum papil',
+        'Duodenum, via de grote papil',
         'Jejunum via ligament van Treitz',
         'Maag via pylorische sfincter',
         'Ileum via ileocecale klep',
@@ -449,7 +449,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Wat detecteert het juxtaglomerulaire apparaat en wat leidt tot renineafscheiding?',
       [
-        'Verminderde nierperusidruk of natriumafgifte naar macula densa',
+        'Lage perfusiedruk of laag natrium bij macula densa',
         'Verhoogde filteringsdruk in Bowman capsule',
         'Verhoging van glomerulaire filtratie snelheid boven basaal',
         'Hyperkaliëmie gedetecteerd door granulaire cellen',
@@ -460,7 +460,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De Müller (paramesonefros) buis geeft aanleiding tot welke vrouwelijke voortplantingsstructuren?',
       [
-        'Fallopian buizen, baarmoeder en bovenvagina',
+        'Fallopian buizen en baarmoeder',
         'Eierstokken en follikelcellen',
         'Vagina en vestibulaire klieren alleen',
         'Clitoris en grote vestibulaire klieren',
@@ -482,7 +482,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Uit welke vier embryologische bronnen desenvolt het diafragma?',
       [
-        'Septum transversum, pleuroperitonale membraan, dorsaal mesenterium van slokdarm en lichaamsmuschatialisering',
+        'Septum transversum, pleuroperitonale plooien, slokdarmmesenterium, lichaamswand',
         'Laterale plaat mesoderm, intermediaire mesoderm, somatische mesoderm en endoderm',
         'Paraxiale mesoderm alleen, gesegmenteerd in phrenische somites',
         'Neurale kristcellen migrerend ventraal van hersenstam',
@@ -493,7 +493,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In de vrouwelijke urethra, wat zijn parauretrale klieren (Skene klieren) embryologisch homoloog aan?',
       [
-        'Prostaatklieren in prostatische urethra',
+        'De prostaatklier',
         'Bulbourethrale (Cowper) klieren',
         'Littré urethralekelieren',
         'Zaadblaasjes',
@@ -506,7 +506,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Mechanische belasting induceert osteocyten dendrieten om signalen door welk extracellulair mechanisme over te dragen?',
       [
-        'Vloeistofschuif door canaliculi activeert connexine-43 kanalen, vermindert sclerostine afscheiding en heft Wnt pad remming op',
+        'Vloeistofschuif activeert connexine-43, wat sclerostine verlaagt',
         'Direct contact tussen osteocytenprocessen en osteoklasten voorganger via RANKL downregulatie',
         'Verhoogde intersticiële vloeistofdruk triggert osteoprotegerine afscheiding van benliggende cellen',
         'Mechanische vervorming van integrine-rijke focale adhesies vrijstellende sequestered BMP-6',
@@ -517,7 +517,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De ultrastructurele geometrie van geclassificeerde fibrocartilage enthesis omvat apatietkristallen in voorkeur oriëntatie. Wat is gevolg van anisotropie?',
       [
-        'Heterogene stress verspreiding dissipeert mechanische energie en vermindert interfaciale schuifspanning concentratie',
+        'Heterogene stress dissipeert energie aan het grensvlak',
         'Uniforme mineralisatie over zone voorkomt microbarst voortplanting in aangrenzend bot',
         'Georiënteerde kristallen verhogen wateropname, verbeteren viscoëlastische dempering',
         'Kristal anisotropie laat snelle adaptieve remodellering toe in antwoord op veranderde belastingsrichting',
@@ -528,7 +528,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De myosine powerstroke genereert kracht via conformatiewijziging waar converter domein ~70° rond nekgebied draait. Wat maakt overgang energetisch gunstig?',
       [
-        'Fosfaatafgifte uit myosine actieve plaats verlaagt grondtoestandenergie van pre-powerstroke conformatie',
+        'Fosfaatafgifte verlaagt de pre-powerstroke energie',
         'ATP terugbinding stabiliseert onmiddellijk post-powerstroke toestand, drij overgang voorwaarts',
         'Actine binding verhoogt activeringsenergie omgekeerde reactie, maakt terugstappen verwaarloosbaar',
         'Thermische energie bij lichaamstemperatuur gelijk ~3 pN·nm werkuitvoering per slag',
@@ -539,7 +539,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De fetale ductus venosus laat placenta bloed hepatische sinusoïden passeren. Wat is embryologisch lot na geboorte en wat genetische factor regelt sluiting?',
       [
-        'De ductus venosus vernauwd in antwoord verhoogde postnatale portalveneus flux en later verwijderd door intima endotheel proliferatie',
+        'Vernauwt bij hogere portalflux, dan verwijderd door endotheel',
         'Blijft patent in 30% volwassenen als anatomisch variant',
         'Involueert via apoptose getriggerd door HIF-1α in antwoord verhoogde zuurstoftensie',
         'Mechanisch gesloten door navelstrengthrombose voor hepatische circulatie matuur',
@@ -550,7 +550,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In coronaire autoregulatie wordt relatie tussen coronaire bloedstroom en hartspierstofwisseling constant gehouden. Welk arteriool mechanisme verklaar dit?',
       [
-        'Adenosine ophoping van ATP catabolisme activeert A2A receptoren op gladde spier, opponeert adrenergische vasocontrictie',
+        'Adenosine uit ATP catabolisme activeert A2A, tegen vasoconstrictie',
         'Myogene mechanismen voelen transmulaire drukveranderingen via mechanoreceptor ionkanalen',
         'Endotheliale stikstofmonoxide productie proportioneel stofwisselingsnelheid',
         'Sympathische zenuwterugtrekking vermindert α-adrenergische toon tijdens verhoogde metabolische vraag',
@@ -561,7 +561,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De scalenen (ventrale, middel, achter) innerveerd door welke cervicale zenuuwortels en mechanische rol gedurende geforceerde inademing?',
       [
-        'Cervicaal 3–8 zenuuwortels; tillen ribbe 1–2 omhoog, verhogen thoraxinlaat diameter',
+        'Cervicaal 3–8; tillen ribben 1–2, verruimen thoraxinlaat',
         'Cervicaal 1–2 alleen; comprimeren thoraxkaviteit voor uitademing',
         'Thoracaal 1–4; stabiliseren mediastinum',
         'Cervicaal 5–7; drukken ribben 3–6 omlaag gedurende rustige ademen',
@@ -572,7 +572,7 @@ export const ANATOMY: CategoryContent = {
     [
       'De pulmonale circulatie vertoont unieke naleggeneidsconstituering tegenover systemische circulatie. Hoe beïnvloedt zwaartekrachthydrostatische druk capillair rekrutering en regionale V/Q?',
       [
-        'Apicale zone heeft ingeduwen capillairen en ventilatie-beperkt perfusie; basale zone heeft gediste capillairen met perfusie-beperkte gasuitwisseling',
+        'Top is ventilatie-beperkt; basis is perfusie-beperkt',
         'Apicale capillairen maximaal gerekruteerd; basale capillairen blijven ingeduwen wegens lage transmulaire druk',
         'Zwaartekracht heeft verwaarloosbaar effect; regionale V/Q verschillen worden geheel bepaald door bronchiaal toon',
         'Hydrostatische druk verhoogt capillair permeabiliteit uniform, vermindert diffusieafstand globaal',
@@ -583,7 +583,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Het kleine darmenepitheel vertoont proliferatie-differentiatie gradiënt met stamcellen in crypten delend elke 24–48 uur. Welke moleculaire factoren regelen transit vergroting?',
       [
-        'Wnt/β-catenine signalering (hoog in crypten) en BMP/TGF-β signalering (hoog op villi) creëren tegengestelde gradiënt',
+        'Wnt hoog in crypten; BMP/TGF-β hoog op villi, tegengesteld',
         'Notch signalering uitsluitend in transit-amplifië cellen blokkeert verdere deling',
         'Hedgehog liganden afgezonderd apicaal verdrijven differentiëren cellen basaal',
         'FGF10 van mesenchymale fibroblasten stimuleert alle epitheliale proliferatie uniform',
@@ -594,7 +594,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Galzuur-afhankelijke activatie van farnesoid X receptor (FXR) in ileal enterocyten triggert welke darme en hepatische terugkoppellussen?',
       [
-        'FGF19 (FGF15 in muizen) afscheiding remt CYP7A1, vermindert galzuursynthese en verhoogt FXR-gemedieerde SHP expressie',
+        'FGF19 remt CYP7A1, wat galzuursynthese verlaagt',
         'Rechtstreekse hepatocyt activering van SREBP-2 verhoogt cholesterol opname en synthese',
         'Verminderde portal glucosesignalering downregulatoren hepatische lipogenese',
         'Ilale barrièreverstenging voorkomt secundaire galzuur absorptie, vermindert enterohepatal circulatie',
@@ -605,7 +605,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Het tubuloglomerulaire feedback (TGF) mechanisme detecteert natriumchloride concentratiewijzigingen macula densa en modulen glomerulaire filtratiesnelheid?',
       [
-        'Verhoogde NaCl opname via NKCC2 cotransporter verhoogt ATP metabolisme en adenosine afgifte, veroorzaakt afferente arteriool vasocontrictie en renine onderdrukking',
+        'NKCC2-opname geeft adenosine af, wat de afferente arteriool vernauwt',
         'Macula densa cellen voelen rechtstreeks angiotensin II in juxtaglomerulaire ruimte',
         'Verhoogde intraglomerulaire druk opent rechtstreeks mechanoreceptoren op granulaire cellen',
         'Prostaglandine E2 vrijgesteld van verzamelbuiscellen remt renine afscheiding systemisch',
@@ -616,7 +616,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Anti-Müller hormoon (AMH), afgezonderd door Sertoli cellen, onderdrukt Müller buikontwikkeling in mannen via welke receptor en intracellulaire signalering?',
       [
-        'Type II serine/threonine kinase receptor activeert SMAD2/3-SMAD4 complexen, blokkeert transcriptiefactoren bevorderend Müller lot',
+        'Type II serine/threonine kinase receptor activeert SMAD2/3-SMAD4',
         'Estrogeen receptor β op Müller mesenchym, blokkeert paracrien Wnt signalering',
         'Notch signalering in mesonefros mesenchym triggert caspase-gemedieerde Müller buis apoptose',
         'TrkB tyrosine kinase receptor in ducaal epitheel activeert FoxA2-afhankelijke differentiatie in Wolffian structuren',
@@ -627,7 +627,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Het gubernaculaire mesenchym van fetale testis expresseert welke groeifactoren en transcriptiefactoren bevorderend daling?',
       [
-        'INSL3 (insulineloos peptide 3) van Leydig cellen activeert RXFP2 receptoren op gubernaculair mesenchym, bevordert desmine en myod1 expressie voor migratie',
+        'INSL3 van Leydig cellen activeert RXFP2, verhoogt desmine voor migratie',
         'BMP4 van coeloomisch epitheel drijft gubernaculaire ossificatie',
         'Sonic hedgehog van mesonefros mesenchym triggert apoptose-gedreven gubernaculaire resorptie',
         'GDNF van ureterische buis trekt testiculaire kiemcellen aan via RET signalering',
@@ -638,7 +638,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Het diafragma\'s musculatisering omvat ingroei van phrenische (C3–C5) en lagere intercostale (T7–T12) motorneuron axonen. Wat embryologisch proces verklaar duale innervatie?',
       [
-        'Phrenische zenuw bereikt centrale tendon (septum transversum, cardiaal mesodermbasis) terwijl intercostal zenuwen musculaire lichaamsgedeelten (somatische mesoderm) innerveren',
+        'Phrenische zenuw naar centrale tendon; intercostale zenuwen naar lichaamswandspier',
         'Diafragma ontstaat alleen uit paraxiale mesoderm, duaal innervatie weerspiegelt plurisegmentale myotoom basis',
         'Phrenische en intercostal zenuwen ondergaan uitgebreide commissurale verbindingen postnaal',
         'Lager cervicaal en thoracaal motorpool ondergaan Hox genafhankelijke migratie naar het zich ontwikkelende diafragma',
@@ -649,7 +649,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Het vrouwelijk orgasme omvat gecoördineerde ritmische contracties (0.8 Hz) van baarmoeder, vagina en beklemmingsspieren. Wat is fysiologische basis verhoogde geslachtsbloedstroom?',
       [
-        'Vasocongestieve engorgement via arteriële dilatatie (stikstofmonoxide, VIP) en myotonia via sympathische adrenergische toon; refracteraire periode omvat norepinephrine-gemedieerde adrenergische remming',
+        'NO/VIP vasocongestie en adrenergische myotonia; norepinephrine drijft refracteraire periode',
         'Estrogeen upgradeert α-adrenergische receptoren, veroorzaakt vasocontrictie en myotonia omgekeerd door oxytocine gedurende orgasme',
         'Parasympathische vasodilatie gevolgd door sympathische remming gedurende refracteraire periode',
         'Pelavische splanchnische zenuwstimulatie triggert rechtstreeks ritmische baarmoedercontracties onafhankelijk hormonale factoren',

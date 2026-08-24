@@ -38,7 +38,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Wie werd in 1871 de eerste Duitse Keizer?',
       [
-        'Willem I van Pruisen',
+        'Willem I',
         'Willem II',
         'Otto von Bismarck',
         'Frederik Willem IV',
@@ -137,7 +137,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Wat was het directe gevolg van Duitslands nederlaag in Wereldoorlog II in 1945?',
       [
-        'Verdeling in geallieerde bezettingszones',
+        'Verdeling in bezettingszones',
         'Herstel van de Pruisische monarchie',
         'Duitse expansie naar het oosten',
         'Eenmaking onder een Duitse supermacht',
@@ -216,7 +216,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Welk conflict van 1866 verwijderde Oostenrijk definitief uit Duitse aangelegenheden?',
       [
-        'De Oostenrijks-Pruisische Oorlog',
+        'Pruisen-Oostenrijk Oorlog',
         'De Napoleontische Oorlogen',
         'De Dertigjarige Oorlog',
         'De Spaanse Successieoorlog',
@@ -227,7 +227,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Wat legde herstelbetalingen en grondverlies op Frankrijk na de Frans-Pruisische Oorlog?',
       [
-        'Het Verdrag van Frankfurt (1871)',
+        'Verdrag van Frankfurt (1871)',
         'Het Verdrag van Parijs (1815)',
         'Het Verdrag van Westfalen (1648)',
         'Het Verdrag van Wenen (1815)',
@@ -583,7 +583,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Hoe interpreteren geleerden nu Oost-Duitse "staatsocialisme" aangaande legitimiteit en surveillancecoëxistentie?',
       [
-        'Surveillance gemengd met onderhandelde naleving',
+        'Surveillance met onderhandelde naleving',
         'Als geheel vrijwillig en populair',
         'Als geen veiligheidsapparaat stellend',
         'Als identiek aan West-Duitse bestuursstructuren',

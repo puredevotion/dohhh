@@ -5,7 +5,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'Welke Frankische dynastie, bekend om hun "langharige koningen", regeerde vóór de Karolingen?',
       [
-        'De Merovingische dynastie',
+        'De Merovingen',
         'De Visigotische dynastie',
         'De Ostrogotische dynastie',
         'De Vandaalse dynastie',
@@ -27,7 +27,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'Welke dynastie, gesticht door Hugo Capet, maakte Parijs tot haar machtsbasis en domineerde Frankrijk geleidelijk?',
       [
-        'De Kapetingische dynastie',
+        'De Kapetingen',
         'De Karolingische dynastie',
         'De Anjou-dynastie',
         'De Bourgondische dynastie',
@@ -82,7 +82,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'Welke gebeurtenis in 1789 wordt beschouwd als symbolisch begin van de Franse Revolutie?',
       [
-        'De bestorming van de Bastille door Parijzenaars',
+        'De bestorming van de Bastille',
         'De executie van Koning Lodewijk XVI',
         'De Verklaring van de Rechten van de Mens',
         'De oproeping van de Staten-Generaal',

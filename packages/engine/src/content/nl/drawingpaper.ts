@@ -38,7 +38,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'Wat is het primaire verschil tussen krijt en zacht pastel als tekenmedium?',
       [
-        'Pastel heeft een bindmiddel (gom of olie); krijt niet',
+        'Pastel heeft een bindmiddel; krijt niet',
         'Krijt is feller in kleur dan pastel',
         'Pastel kan niet op papier worden verblend',
         'Krijt wordt alleen voor onderlaag gebruikt',
@@ -93,7 +93,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In intagliodruktechniek, wat is het primaire onderscheid tussen etsing en gravering?',
       [
-        'Etsing gebruikt zuur; gravering snijdt lijnen met de hand',
+        'Etsing gebruikt zuur; gravering snijdt met de hand',
         'Gravering maakt diepere lijnen dan etsing',
         'Etsing kan alleen op koper; gravering alleen op staal',
         'Gravering vereist zuur; etsing niet',
@@ -115,7 +115,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'Welke hiervan is een handgereedschap gebruikt om tekenmedium aan te brengen of te verblenden?',
       [
-        'Een verblendingsstompje (of tortillon)',
+        'Een verblendingsstompje',
         'Een deckle',
         'Een barb',
         'Een schaafstuk',
@@ -137,7 +137,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In welk medium maakte Leonardo da Vinci veel van zijn beroemde anatomische en compositie-studies?',
       [
-        'Zilverpoint en krijt op voorbereikt papier',
+        'Zilverpoint en krijt',
         'Alleen inkt en waterverf',
         'Grafiethoudpotlood (in moderne zin)',
         'Alleen houtskool',
@@ -471,7 +471,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'Hoe betrekken wetenschappelijke debatten over Michelangelo\'s rode-krijt-tekenech zich op debatten over toegankelijkheid van rode-krijt-aanbod in Florence in 1510s?',
       [
-        'Rode-krijt-zeldzaamheid informeert attributietheorieën',
+        'Rode-krijt-zeldzaamheid informeert attributie',
         'Rode-krijt-aanbod had geen effect op tekenpraxis',
         'Alle Old Masters gebruikten rode-krijt gelijk',
         'Michelangelo gebruikte exclusief zwart-krijt',
@@ -482,7 +482,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In drukwetenschap, welke technische vooruitgang in staal-oppervlaktech in 19e eeuw transformeerde productie-economie van intaglio-afdrukken?',
       [
-        'Staal-oppervlak liet platen veel meer afdrukken overleven',
+        'Staal-oppervlak liet platen meer afdrukken overleven',
         'Staal-oppervlak werd alleen in 20e eeuw uitgevonden',
         'Staal-oppervlak verzwakte koperen platen',
         'Staal-oppervlak had geen effect op afdruk-productie',
@@ -572,7 +572,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In conservering-ethiek, hoe hebben recente debatten over omkeeringsbach van voorbije interventies in Old Master-tekeningen benaderingen tot behandeling-besluiten gewijzigd?',
       [
-        'Onomkeerbare oude methoden dreven naar minimale interventie',
+        'Onomkeerbare methoden dreven naar minimale interventie',
         'Alle conservering-besluiten zijn ethisch equivalent',
         'Historische conservering was altijd optimaal',
         'Omkeeringsbach is geen conservering-belangstelling',
@@ -660,7 +660,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In druk-conservering-ethiek, hoe heeft de opkomst van "omkeerbare verandering" als standaard oudere conservering-besluiten betwist die esthetische "verbetering" boven historische nauwkeurigheid bevoorrechtten?',
       [
-        'Omkeeringsbach-standaarden betwisten oude agressieve behandelingen',
+        'Nieuwe standaarden betwisten oude agressieve fixes',
         'Alle conservering-besluiten zijn ethisch equivalent',
         'Historische conservering was altijd optimaal',
         'Omkeeringsbach is geen conservering-belangstelling',

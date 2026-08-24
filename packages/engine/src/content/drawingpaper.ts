@@ -16,7 +16,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In printmaking, what is the defining characteristic of a relief print?',
       [
-        'The artist carves away material to leave raised surfaces that receive ink',
+        'Carving away material leaves raised, ink-receiving surfaces',
         'Ink is applied to a polished stone surface via a chemical process',
         'The image is etched into metal using acid',
         'Ink sits in grooves cut into a printing plate',
@@ -38,7 +38,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the primary difference between chalk and soft pastel as drawing media?',
       [
-        'Pastel is bound with gum or oil; chalk is pure pigment and mineral',
+        'Pastel has a binder; chalk is unbound pigment',
         'Chalk is more vibrant in color than pastel',
         'Pastel cannot be blended on paper',
         'Chalk is used only for underpainting',
@@ -49,7 +49,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In silverpoint drawing, what surface is required to work on?',
       [
-        'Paper prepared with a white ground (bone meal or lead white)',
+        'Paper prepared with a white ground',
         'Raw paper, prepared the same as for graphite',
         'A waxed metal plate',
         'A primed wooden panel',
@@ -71,7 +71,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is watercolor in the context of drawing?',
       [
-        'A transparent painting medium where pigment is bound with gum arabic and dissolved in water',
+        'Pigment bound in gum arabic and dissolved in water',
         'A type of graphite pencil mixed with water',
         'An opaque paint used exclusively for finished works',
         'A wet drawing technique using ink on unsized paper',
@@ -82,7 +82,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What does the term "preparatory drawing" or "study" typically mean in art history?',
       [
-        'A sketch or drawing made by an artist before creating the final composition',
+        'A sketch made before the final composition',
         'A finished drawing intended for exhibition',
         'A copy of another artist\'s work for educational purposes',
         'A drawing made after a sculpture is completed',
@@ -93,7 +93,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In intaglio printmaking, what is the primary distinction between etching and engraving?',
       [
-        'Etching uses acid to bite the plate; engraving uses a hand-tool to cut lines directly',
+        'Etching uses acid; engraving cuts lines by hand',
         'Engraving produces deeper lines than etching',
         'Etching can only be done on copper; engraving only on steel',
         'Engraving requires acid; etching does not',
@@ -104,7 +104,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the purpose of fixative spray applied to charcoal or pastel drawings?',
       [
-        'To bind loose pigment particles and prevent smudging',
+        'To bind pigment and prevent smudging',
         'To darken the colors and increase saturation',
         'To make the drawing water-resistant',
         'To permanently set the paper to a wooden backing',
@@ -115,7 +115,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'Which of these is a hand tool used to apply or blend drawing media?',
       [
-        'A blending stump (or tortillon)',
+        'A blending stump',
         'A deckle',
         'A burr',
         'A scraper',
@@ -126,7 +126,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What does "connoisseurship" mean in the context of drawing collections?',
       [
-        'Expert knowledge and aesthetic judgment in authenticating and evaluating artworks',
+        'Expert judgment in authenticating artworks',
         'The process of framing drawings for display',
         'A formal degree in art history',
         'The restoration and cleaning of old drawings',
@@ -148,7 +148,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the main advantage of using India ink in pen-and-ink drawing?',
       [
-        'It is permanent, waterproof, and does not fade over time',
+        'It is permanent and waterproof',
         'It is easily erasable and allows for corrections',
         'It creates a glossy finish when dry',
         'It can be diluted with water to create color gradations',
@@ -172,7 +172,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the significance of the "white ground" technique used in Old Master drawings, particularly during the Northern Renaissance?',
       [
-        'It created a neutral mid-tone that allowed artists to work with both light and dark without pre-toning the paper',
+        'It created a stable, neutral mid-tone base',
         'It prevented silver oxidation in silverpoint drawings',
         'It was purely decorative and did not affect the drawing process',
         'It allowed transparent watercolor to be applied over ink',
@@ -183,7 +183,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In etching, what technical effect does creating a deeper bite produce?',
       [
-        'Darker, richer printed lines due to increased ink retention in deeper grooves',
+        'Darker, richer lines from more retained ink',
         'Lighter lines, as deeper grooves hold less ink',
         'A glossy finish on the finished print',
         'The ability to print in multiple colors from one plate',
@@ -205,7 +205,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What conservation challenge is specific to silverpoint drawings over long periods?',
       [
-        'The silver oxidizes and tarnishes, darkening the drawing over centuries',
+        'The silver oxidizes and tarnishes over time',
         'The prepared ground absorbs moisture and becomes unstable',
         'The silver migrates into the paper fibers, causing brittleness',
         'Silverpoint drawings invariably fade unless kept in complete darkness',
@@ -216,7 +216,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In lithography, what is the chemical principle behind the grease-resist process?',
       [
-        'Grease repels water and attracts oil-based ink; non-greasy areas absorb water and repel ink',
+        'Grease attracts oil ink; water repels it',
         'The limestone surface converts grease into a waterproof seal',
         'Oil-based ink bonds permanently to grease while water washes away other particles',
         'Grease penetrates the stone, hardening its surface',
@@ -227,7 +227,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What role did preparatory drawings play in Renaissance workshop practice?',
       [
-        'They were essential for compositional development, transfer to larger surfaces, and apprentice training',
+        'They served compositional, transfer, and training roles',
         'They were considered inferior and discarded after the final work was completed',
         'They served only as personal sketches never shared or valued',
         'They were mandatory preliminary stages that all artists had to complete before painting',
@@ -238,7 +238,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How does aquatint differ from traditional etching in technical execution?',
       [
-        'Aquatint uses a fine resin dust to create tonal areas; acid bites around the particles, leaving speckled marks when wiped',
+        'Fine resin dust creates speckled tonal areas',
         'Aquatint uses a liquid resist instead of a wax ground',
         'Aquatint is a surface technique requiring no acid bath',
         'Aquatint can only be used on steel plates, not copper',
@@ -249,7 +249,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the primary difference between a collector\'s drawing and a museum-quality drawing in terms of condition and market assessment?',
       [
-        'Museum-quality drawings meet conservation standards with minimal loss and stable materials; collector-grade may have repairs, fading, or oxidation affecting value and preservation',
+        'Museum drawings meet stricter conservation standards',
         'Collector drawings are always more valuable than museum drawings',
         'Museum-quality drawings are newer and therefore more desirable',
         'Collector-grade drawings cannot be insured or sold',
@@ -260,7 +260,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In Old Master drawing authentication, what does "attributional ambiguity" typically indicate?',
       [
-        'Scholarly uncertainty about which artist created a work due to stylistic similarities, shared workshops, or incomplete documentation',
+        'Scholarly uncertainty about who created a work',
         'A deliberate forgery that experts have agreed to reject',
         'A work that is entirely unsigned and therefore worthless',
         'A drawing copied so skillfully that the original artist is unknowable',
@@ -271,7 +271,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What technical advantage did drypoint offer to Renaissance and later engravers?',
       [
-        'It created a rich, velvety line through the burr of displaced metal, without requiring acid',
+        'It produced a rich, velvety line without acid',
         'It was faster than etching and required no chemical expertise',
         'It could produce an unlimited number of prints from a single plate',
         'It allowed artists to work on softer metals than traditional engraving',
@@ -282,7 +282,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the significance of the "underdrawing" visible in many Old Master paintings when examined under infrared reflectography?',
       [
-        'It reveals the artist\'s initial compositional thinking and often hidden preparatory work that differs from the final painted image',
+        'It reveals the artist\'s hidden compositional changes',
         'It indicates that the painting was a copy of an earlier work',
         'It proves that the artist used a stencil for accuracy',
         'It shows where conservation restorers have made repairs',
@@ -293,7 +293,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'Why do pastel drawings require special archival storage and mounting techniques?',
       [
-        'Pastel pigment is loosely bound and can shift, flake, or blend with adjacent layers through pressure and vibration',
+        'Pastel pigment is loosely bound and can shift or flake',
         'Pastel is chemically reactive with most mounting materials',
         'Pastel cannot tolerate humidity above 30%',
         'Pastel drawings spontaneously fade without UV protection',
@@ -304,7 +304,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In connoisseurship, what is a "pentimento" and why is it significant in authentication?',
       [
-        'A visible change or correction made by the artist during creation—pentimenti indicate working method and often support genuine attribution',
+        'A visible artist\'s correction during creation',
         'A signature or monogram hidden in a drawing',
         'A preparation technique where chalk is rubbed into paper',
         'A chemical marker used to date old drawings',
@@ -315,7 +315,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What does the term "state" mean when referring to an engraving or etching?',
       [
-        'Each version of a print after changes are made to the plate—early states are often more valued and more limited',
+        'Each version of a print after plate changes',
         'The condition of a printed sheet when it arrives from the printmaker',
         'The country or region where a print was created',
         'The number of colors used in the print',
@@ -326,7 +326,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How do scholars use X-ray fluorescence (XRF) spectroscopy to analyze Old Master drawings?',
       [
-        'It identifies elemental composition of inks and pigments non-destructively, revealing media, dating, and sometimes forgeries',
+        'It identifies ink and pigment composition',
         'It measures the thickness of paper fibers to determine origin',
         'It detects forged signatures through ink analysis',
         'It removes harmful conservation treatments from drawings',
@@ -339,7 +339,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What structural property of Renaissance chalk grounds, particularly regarding particle size distribution, affected the tonal range achievable in Old Master drawings?',
       [
-        'Finer particle grounds allowed more subtle mid-tone modeling and prevented graphite from embedding too deeply, crucial for preserving surface detail',
+        'Finer grounds allowed more subtle mid-tone modeling',
         'Coarser grounds absorbed more water and were preferred for watercolor overlay',
         'Particle size had no documented effect on drawing technique',
         'Finer grounds were used only for underpainting and rejected for finished work',
@@ -350,7 +350,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In Rembrandt\'s etching practice, what technical innovation did his adoption of "surface tone" printing represent?',
       [
-        'Selectively wiping the plate unevenly, leaving ink residue in specific areas to create atmospheric tonal variation without additional biting',
+        'Uneven wiping left ink residue for tonal variation',
         'Using a second etching needle to create tonal hatching',
         'Applying multiple chalk grounds before etching',
         'Printing on dampened paper to create tonal gradations',
@@ -361,7 +361,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How does the degradation pathway of iron gall ink differ from modern synthetic inks in conservation chemistry?',
       [
-        'Iron gall ink oxidizes and acidifies the paper over centuries, often causing browning and paper embrittlement; modern inks are more stable but some synthetic dyes are subject to photofading',
+        'Iron gall ink acidifies and embrittles paper over time',
         'Iron gall ink never fades while modern inks degrade quickly',
         'Both inks degrade identically and require identical conservation treatment',
         'Modern inks are always more fugitive and require darker storage conditions',
@@ -372,7 +372,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the significance of the "wet-on-wet" technique in Old Master watercolor, and how does it relate to paper sizing?',
       [
-        'Unsized or lightly sized paper allows pigment and water to penetrate deeply, enabling gradual diffusion and soft edges—heavily sized paper resists this effect',
+        'Lightly sized paper lets pigment diffuse and soften edges',
         'Wet-on-wet requires heavy sizing to prevent paper deterioration',
         'Sizing prevents wet-on-wet technique and was deliberately avoided',
         'Paper sizing has no effect on watercolor diffusion or edge quality',
@@ -383,7 +383,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In printmaking scholarship, what does the term "cancellation proof" reveal about print editions and artist intent?',
       [
-        'An impression printed after the plate was deliberately damaged or cancelled, establishing the edition\'s end and proving limited production',
+        'A print made after the plate was deliberately cancelled',
         'A proofing stage before the final edition was printed',
         'A mistake in the edition that was rejected by the artist',
         'A print created during the artist\'s lifetime to verify quality control',
@@ -394,7 +394,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How did 18th-century chalk drawing technique evolve in response to improvements in papermaking and the availability of synthetic pigments?',
       [
-        'Smoother, more consistent papers and stable synthetic pigments enabled bolder color combinations and larger, more ambitious compositions than earlier practices',
+        'Better paper and pigments enabled bolder, larger works',
         'Synthetic pigments made chalk drawing obsolete',
         'Papermaking innovations had no effect on drawing technique or pigment selection',
         'Artists abandoned chalk in favor of graphite after synthetic pigments were invented',
@@ -405,7 +405,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What is the theoretical framework for "hands" analysis in Old Master drawing authentication, and what are its limitations?',
       [
-        'Stylometric analysis of line weight, rhythm, and mark-making patterns identifies likely authorship, but workshop collaboration, copying, and artistic evolution complicate certainty',
+        'Mark-making analysis suggests authorship, imperfectly',
         'Hands analysis is a definitive scientific method with no room for error',
         'Only graphite or ink drawings can be analyzed by hands authentication',
         'Modern forensic technology has made connoisseurship obsolete',
@@ -416,7 +416,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In silverpoint oxidation research, what has infrared reflectography revealed about the visual and material changes in Old Master silverpoint over 500+ years?',
       [
-        'The tarnish layer is not merely surface oxidation but penetrates into paper, creating a visible darkening that persists despite cleaning attempts',
+        'Tarnish penetrates the paper, not just the surface',
         'Silverpoint never oxidizes if stored properly',
         'Tarnish can be completely reversed by modern conservation methods',
         'Oxidation occurs only in the presence of sulfur compounds and is entirely preventable',
@@ -427,7 +427,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How does the concept of "printmaking as drawing" challenge traditional definitions, particularly in the context of monotype?',
       [
-        'Monotype combines printing and drawing: the artist draws on the plate in ink or paint, then prints it—creating a unique image that blurs the boundary between the two media',
+        'Monotype blurs printing and drawing into one image',
         'Monotype is purely a printmaking process with no relationship to drawing',
         'Monotype requires the same repeated pulling as traditional edition prints',
         'Monotype drawings were invented in the 20th century',
@@ -438,7 +438,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What role did the anatomical drawing studies of Michelangelo play in Renaissance theory of disegno, and how did this influence printmaking illustration?',
       [
-        'Michelangelo\'s published anatomical prints elevated drawing as foundational intellectual discipline; anatomy became essential to academic printmaking instruction and figure studies',
+        'His prints made anatomy central to art training',
         'Michelangelo had no influence on printmaking practice',
         'Anatomical studies were considered irrelevant to printmaking',
         'Renaissance artists avoided anatomy in their published works',
@@ -449,7 +449,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In conservation science, what is the "browning reaction" in iron gall ink, and how does it relate to lignin content in paper?',
       [
-        'Iron sulfate (from oxidized gall ink) catalyzes oxidation of paper lignin, producing chromophoric compounds; acid-free paper with low lignin resists this process',
+        'Iron sulfate catalyzes lignin oxidation in paper',
         'Browning is purely a surface phenomenon unrelated to paper chemistry',
         'Only modern papers experience browning; old papers are resistant',
         'Browning occurs only when drawings are exposed to light',
@@ -460,7 +460,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What does the term "reproductive engraving" mean in art-historical context, and why did its decline after 1870 reshape the market for original drawings?',
       [
-        'Reproductive engravings were skilled copies of paintings/drawings made for mass circulation; photography and photomechanical printing replaced them, suddenly elevating demand for original drawings as unique objects',
+        'Photography replaced these mass-copied prints',
         'Reproductive engravings were the main source of artistic income',
         'Photography made original drawings less valuable',
         'Reproductive engravings are still the dominant printmaking technique',
@@ -471,7 +471,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How do scholarly debates about Michelangelo\'s red chalk drawing technique relate to debates about the accessibility of red chalk supply in Florence during the 1510s?',
       [
-        'Documentation of red chalk rarity and cost informs theories about which drawings Michelangelo executed personally versus studio work, as red chalk use was economically significant',
+        'Chalk scarcity informs attribution theories',
         'Red chalk supply had no effect on drawing practice',
         'All Old Masters used red chalk equally',
         'Michelangelo exclusively used black chalk',
@@ -482,7 +482,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In printmaking history, what technical advances in steel-facing technology in the 19th century transformed the production economics of intaglio prints?',
       [
-        'Steel facing allowed copper plates to withstand thousands of impressions without wear, enabling larger editions and lower per-print costs—fundamentally reshaping print markets',
+        'Steel-faced plates survived far more impressions',
         'Steel facing was invented only in the 20th century',
         'Steel facing weakened copper plates',
         'Steel facing had no effect on print production',
@@ -493,7 +493,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How have recent provenance research methodologies (including archival cross-referencing and market databases) improved attribution confidence in drawings with unclear ownership histories?',
       [
-        'Digital databases of historical collections, sales records, and archival documents enable researchers to reconstruct ownership chains and detect forgeries through anachronistic market appearances',
+        'Digital databases help reconstruct ownership chains',
         'Provenance research has made attribution less reliable',
         'Digital tools cannot improve attribution certainty',
         'Archival research is irrelevant to authentication',
@@ -506,7 +506,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In what ways has recent nanotechnology-based analysis of Old Master paper and media altered the understanding of manufacturing processes and trade networks for drawing materials before 1600?',
       [
-        'Nanoparticle analysis of paper fibers and ink residues reveals geographic sourcing of materials, mill practices, and trade pathways that were previously invisible—rewriting histories of artistic supply chains and material availability',
+        'It reveals sourcing, mill practices, and trade routes',
         'Nanotechnology has not contributed to art historical understanding',
         'Old Master papers and inks cannot be analyzed by modern technology',
         'Trade networks for art materials were well-documented and required no new research',
@@ -517,7 +517,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What recent scholarship debates the attributional stability of Rembrandt\'s later etchings, particularly regarding the role of studio assistants in plate preparation and printing?',
       [
-        'Collaborative analysis of impression states, wear patterns, and technical execution has led scholars like Erik Hinterding to question whether traditional single-artist attribution obscures complex workshop participation in plate revision and edition management',
+        'Scholars increasingly question single-artist attribution',
         'Rembrandt working practices were completely understood decades ago',
         'Studio assistants played no role in Rembrandt\'s printmaking output',
         'Modern scholarship has consensus on all Rembrandt etchings\' authenticity',
@@ -528,7 +528,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How have conservation studies of the Cranach workshop\'s use of translucent paint layers in preparatory drawings on tinted paper informed understanding of "underpainting-as-finished-work" in Northern Renaissance practice?',
       [
-        'Detailed technical examination reveals Cranach\'s intentional exploitation of tinted grounds and transparent media to create finished drawings of remarkable visual effect—reframing Renaissance painting-drawing boundaries',
+        'Cranach exploited tinted grounds and transparent media',
         'Cranach used traditional Old Master techniques',
         'Tinted paper had no effect on Cranach\'s technique',
         'Conservation studies cannot inform art historical understanding',
@@ -539,7 +539,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In what ways does the recent re-examination of Leonardo\'s mirror-script writings on drawing pages challenge assumptions about left-handed drawing technique and compositional development?',
       [
-        'Detailed study of line pressure, directional hatching, and spatial organization in mirror-script pages reveals counterintuitive execution patterns suggesting mixed-handedness or specific compositional strategies not evident in traditional interpretations',
+        'Pressure and hatching patterns suggest mixed-handedness',
         'Leonardo\'s handedness is well-established with no remaining questions',
         'Mirror script contains no information about artistic technique',
         'Leonardo\'s drawing methods are fully understood',
@@ -550,7 +550,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How have recent studies of Japanese woodcut technique and Hokusai\'s collaborative workshop practices revised Western understanding of "authorship" in Old Master prints?',
       [
-        'Japanese workshop models reveal extensive collaborative involvement of carvers, printers, and designers—challenging Western single-author concepts and demonstrating that "artist" identification often obscures complex collective practice',
+        'Carvers, printers, and designers shared authorship',
         'Japanese prints had no influence on Western art history',
         'Hokusai\'s technique is irrelevant to understanding Western prints',
         'Authorship concepts have remained stable across all cultures and periods',
@@ -561,7 +561,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What does contemporary material culture research on the market for Old Master drawings (1900–1945) reveal about the role of aesthetic ideology in canonizing certain types of drawings over others?',
       [
-        'Early 20th-century collectors\' aesthetic preferences—favoring "pure drawing" over preparatory work or studies—shaped institutional acquisition policies and scholarly canon, marginalizing alternative drawing traditions and non-Western drawing practices',
+        'Collectors\' taste for "pure drawing" shaped the canon',
         'Historical aesthetics had no effect on which drawings were valued',
         'All Old Master drawings have always been equally valued',
         'Market forces are irrelevant to art historical canon formation',
@@ -572,7 +572,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In conservation ethics, how have recent debates about the reversibility of past interventions in Old Master drawings reshaped approaches to treatment decisions?',
       [
-        'Recognition that many 20th-century conservation methods (certain adhesives, coatings, mounts) are not reversible has prompted paradigm shifts toward minimally invasive approaches and acceptance that some damage is preferable to irreversible intervention',
+        'Irreversible treatments push toward minimal intervention',
         'All conservation methods are equally reversible',
         'Conservation reversibility is not an ethical concern',
         'Modern conservation is always superior to historical treatments',
@@ -583,7 +583,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What does the emerging field of "digital drawing authentication" using spectral imaging and machine learning reveal about the limitations of human connoisseurship in high-stakes attributions?',
       [
-        'Computational analysis of mark-making patterns, pigment distributions, and micro-features reveals authorial "fingerprints" that exceed human perceptual resolution, occasionally contradicting connoisseur opinions and highlighting cognitive biases in traditional attribution',
+        'Algorithms reveal patterns humans miss',
         'Digital methods cannot improve attribution accuracy',
         'Connoisseurship has always been infallible',
         'Machine learning cannot analyze artistic style',
@@ -594,7 +594,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How have archival revelations about 18th-century printmakers\' workshop contracts and piece-rate systems altered understanding of creative agency and economic coercion in historical print production?',
       [
-        'Discovery of documented contracts reveals harsh economic constraints, design limitations, and patron control often erased from romantic narratives of "artistic genius"—repositioning many prints as economically coerced objects',
+        'Contracts reveal harsh patron control behind "genius"',
         'Economic history is irrelevant to understanding print authorship',
         'All artists in history enjoyed complete creative freedom',
         'Workshop contracts tell us nothing about actual creative practice',
@@ -605,7 +605,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What recent scholarship on the chemical degradation of watercolor pigments, particularly synthetic aniline dyes in 19th-century drawings, challenges conservation assumptions about UV light exposure?',
       [
-        'Studies reveal that certain aniline dyes degrade not through photofading but through oxidative reactions with atmospheric ozone and sulfur dioxide, making light-controlled storage insufficient and requiring improved air quality management',
+        'Ozone, not just light, degrades aniline dyes',
         'Watercolor pigments never degrade in dark storage',
         'UV light is the only cause of pigment fading',
         'Synthetic dyes are more stable than natural pigments',
@@ -616,7 +616,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In how does the recent discovery of hidden inscriptions (detected via infrared and X-radiography) in Michelangelo\'s preparatory drawings reframe interpretations of his working methods and studio accountability?',
       [
-        'Hidden notes, cost notations, and attributional markings reveal layers of workshop organization, apprentice instruction, and commercial practice previously invisible, complicating "genius" narratives with evidence of systematic didactic methods',
+        'Hidden notes reveal workshop organization',
         'Michelangelo\'s drawings contain no hidden information',
         'Infrared imaging has no value for art historical study',
         'Hidden inscriptions are merely accidental marks',
@@ -627,7 +627,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What does current provenance scholarship on drawings looted during WWII reveal about the persistent institutional reluctance to repatriate or acknowledge works with incomplete ownership histories?',
       [
-        'Comprehensive databases and matching of documented holdings with Holocaust theft records have identified thousands of drawings whose current holders resist restitution, revealing ongoing institutional conflicts between historical accuracy and possessory claims',
+        'Databases show holders resisting restitution',
         'All looted artworks have been successfully returned',
         'Provenance research cannot identify stolen drawings',
         'Institutional reluctance to repatriate is not a current issue',
@@ -638,7 +638,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'How have recent studies of the Dürer workshop\'s print matrices (woodblocks and copper plates) using non-destructive 3D scanning altered understanding of plate revision, reuse, and collaborative authorship?',
       [
-        '3D surface mapping reveals extensive evidence of erasure, overworking, and serial modification of plates across decades, indicating ongoing workshop revision, collaborative participation, and reuse patterns that contradict single-artist ascriptions',
+        '3D mapping reveals decades of plate revision',
         'Dürer\'s plates were never reused or modified',
         '3D scanning cannot provide information about print matrices',
         'All Dürer prints were created without revision',
@@ -649,7 +649,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'What recent theoretical work in visual culture studies challenges the Western "drawing as transcription of vision" metaphor by comparing it to Chinese literati drawing traditions?',
       [
-        'Scholars like James Cahill argue that Chinese literati drawing operates under fundamentally different epistemological assumptions—not capturing visual appearance but expressing conceptual, philosophical, and textual knowledge—revealing the culturally specific nature of "drawing" itself',
+        'Cahill: literati drawing expresses ideas, not likeness',
         'All drawing traditions share identical purposes',
         'Western and Chinese drawing are not comparable',
         'Cultural studies are irrelevant to art historical analysis',
@@ -660,7 +660,7 @@ export const DRAWING_PAPER: CategoryContent = {
     [
       'In print conservation ethics, how has the emergence of "reversible alteration" as a standard challenged older conservation decisions that prioritized aesthetic "improvement" over historical accuracy?',
       [
-        'Modern reversibility standards have called into question mid-20th-century conservation decisions (removing patina, aggressive cleaning, edge trimming) that enhanced appearance but destroyed historical evidence—prompting reconsideration of what conservation is ethically "for"',
+        'New standards challenge past aggressive fixes',
         'All conservation decisions are ethically equivalent',
         'Historical conservation was always optimal',
         'Reversibility is not a conservation concern',

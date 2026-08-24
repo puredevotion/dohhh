@@ -5,7 +5,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the primary function of lymph nodes?',
       [
-        'To filter lymph and generate immune responses against pathogens',
+        'To filter lymph and generate immune responses',
         'To store and regulate blood glucose levels',
         'To produce red blood cells for oxygen transport',
         'To secrete digestive enzymes into the gastrointestinal tract',
@@ -49,7 +49,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is a synapse?',
       [
-        'The junction between a neuron and another excitable cell where neurotransmitters are released',
+        'The junction between a neuron and another excitable cell',
         'The region of a neuron that receives electrical signals from other neurons',
         'A type of ion channel found in nerve cell membranes',
         'The protective sheath surrounding axons in the peripheral nervous system',
@@ -60,7 +60,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'The thoracic duct drains lymph from which region of the body?',
       [
-        'The left upper body, left lower body, and most of the abdominal and pelvic organs',
+        'The left side of the body and most abdominal organs',
         'Only the right upper body and right side of the thorax',
         'Only the legs and lower abdomen',
         'Only the head and neck regions',
@@ -82,7 +82,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What do neurotransmitters do at the synapse?',
       [
-        'Transmit signals from the presynaptic neuron to the postsynaptic cell',
+        'Transmit signals to the postsynaptic cell',
         'Generate action potentials in the axon initial segment',
         'Prevent the reuptake of ions from the synaptic cleft',
         'Strengthen the myelin sheath around axons',
@@ -104,7 +104,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the function of the myelin sheath?',
       [
-        'To increase the speed of action potential propagation along the axon',
+        'To speed up action potential conduction along axons',
         'To prevent the axon from forming synapses',
         'To store glucose for neuron energy metabolism',
         'To synthesize neurotransmitters at the axon terminal',
@@ -115,7 +115,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Which of the following best describes the relationship between lymph vessels and blood capillaries?',
       [
-        'Lymphatic capillaries collect interstitial fluid that has escaped blood capillaries, returning it to the circulation',
+        'Lymphatic capillaries return leaked interstitial fluid to the blood',
         'Lymphatic capillaries produce plasma proteins that blood capillaries require',
         'Blood capillaries drain directly into lymphatic vessels without any interstitial space',
         'Lymphatic capillaries transport oxygen and glucose while blood capillaries transport immune cells',
@@ -126,7 +126,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the role of the parasympathetic nervous system?',
       [
-        'To promote "rest and digest" responses and lower heart rate and blood pressure',
+        'To promote "rest and digest" responses',
         'To increase heart rate and blood pressure in response to threats',
         'To control voluntary muscle contraction',
         'To regulate the production of hormones in the hypothalamus',
@@ -137,7 +137,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Lymphocyte homing to specific lymphoid organs is primarily directed by which molecules?',
       [
-        'Adhesion molecules and chemokines that guide cells to specific tissues',
+        'Adhesion molecules and chemokines',
         'Hormones secreted by the adrenal gland',
         'Neurotransmitters released by sympathetic nerve endings',
         'Antibodies produced by plasma cells',
@@ -148,7 +148,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Which of these structures is part of the peripheral nervous system?',
       [
-        'Spinal nerves and cranial nerves',
+        'Spinal and cranial nerves',
         'The cerebral cortex',
         'The brainstem',
         'The cerebellum',
@@ -159,7 +159,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is lymph primarily composed of?',
       [
-        'Water, dissolved proteins, lymphocytes, and other immune cells filtered from blood plasma',
+        'Filtered plasma with proteins and immune cells',
         'Red blood cells and hemoglobin in suspension',
         'Bile salts and digestive enzymes',
         'Cerebrospinal fluid that has leaked from the brain',
@@ -172,7 +172,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do T cells preferentially accumulate in the paracortex of lymph nodes during an immune response?',
       [
-        'Via CCL21-CCR7 signaling that directs T cells from blood to the paracortex, where CCL19 and CCL21 are expressed by stromal cells',
+        'Via CCR7 signaling that directs T cells from blood to the paracortex',
         'Through random migration; T cells have no preferential trafficking signal',
         'By being actively transported by dendritic cells that carry them from the cortex into the paracortex',
         'Via CXCL12 gradients that are exclusively found surrounding the germinal center',
@@ -183,7 +183,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Which is the correct anatomical relationship between peyer\'s patches and lymphatic drainage?',
       [
-        'Peyer\'s patches are gut-associated lymphoid tissue in the small intestine; lymph drains from them via afferent vessels to mesenteric lymph nodes',
+        'Peyer\'s patches are gut-associated lymphoid tissue that drains to mesenteric lymph nodes',
         'Peyer\'s patches are lymph nodes in the mesentery that directly connect to blood vessels',
         'Peyer\'s patches produce lymph directly into the intestinal lumen',
         'Peyer\'s patches have no lymphatic drainage; antigens are absorbed directly into the blood',
@@ -194,7 +194,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the structural difference between a multipolar and bipolar neuron?',
       [
-        'Multipolar neurons have one axon and multiple dendrites; bipolar neurons have one axon and one dendrite',
+        'Multipolar neurons have multiple dendrites; bipolar neurons have one',
         'Multipolar neurons transmit signals faster than bipolar neurons',
         'Bipolar neurons are found only in the spinal cord; multipolar in the brain',
         'Multipolar neurons use acetylcholine; bipolar neurons use dopamine',
@@ -205,7 +205,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How does the blood-brain barrier regulate immune cell entry into the CNS?',
       [
-        'Tight junctions between endothelial cells restrict paracellular transport; specific adhesion molecules mediate selective leukocyte crossing',
+        'Tight junctions restrict transport; adhesion molecules allow selective leukocyte crossing',
         'The blood-brain barrier is fully permeable to all immune cells without regulation',
         'Immune cells never cross into the CNS even in inflammation',
         'All immune cells are freely filtered into the cerebrospinal fluid by the choroid plexus',
@@ -227,7 +227,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the functional significance of High Endothelial Venules (HEVs) in lymph nodes?',
       [
-        'Specialized postcapillary venules expressing selectins and addressins that enable lymphocyte extravasation into the node',
+        'Postcapillary venules that enable lymphocyte extravasation',
         'Blood vessels that directly connect to afferent lymphatic vessels',
         'Venues that transport lymph from the medullary cords back to circulation',
         'Vessels responsible for draining the node via the efferent lymphatic vessels',
@@ -238,7 +238,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How does the vagus nerve (CN X) influence immune responses in the gut and other organs?',
       [
-        'Parasympathetic fibers release acetylcholine at muscarinic M3 receptors on immune cells and epithelial cells, modulating inflammation',
+        'Parasympathetic fibers release acetylcholine, modulating inflammation',
         'The vagus nerve has no connection to immune function; it only controls digestion',
         'It increases inflammation by releasing TNF-alpha and IL-6',
         'It blocks all lymphocyte activation through sympathomimetic pathways',
@@ -249,7 +249,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the anatomical basis for the blood-CSF barrier at the choroid plexus?',
       [
-        'Tight junctions between choroid plexus epithelial cells, combined with selective transporter proteins',
+        'Tight junctions between choroid plexus epithelial cells',
         'An impermeable wall of bone separating blood from cerebrospinal fluid',
         'Complete mixing of blood and CSF without any barrier function',
         'A layer of arachnoid cells that physically prevent all molecules from crossing',
@@ -282,7 +282,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Describe the microarchitecture of a secondary follicle in a lymph node.',
       [
-        'It contains a dark-staining germinal center (centroblasts and centrocytes) surrounded by a lighter-staining mantle zone of naive B cells',
+        'A dark germinal center surrounded by a lighter mantle zone',
         'It is a random aggregation of lymphocytes with no organized zones',
         'It consists of a single layer of epithelial cells',
         'It is located in the medullary region and is devoid of B cells',
@@ -293,7 +293,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Which spinal cord tract carries pain and temperature sensation from the contralateral side of the body?',
       [
-        'The spinothalamic tract (via the spinoreticular and spinomesencephalic projections as well)',
+        'The spinothalamic tract, which crosses in the spinal cord',
         'The dorsal column (fasciculus gracilis and cuneatus)',
         'The corticospinal tract (motor, not sensory)',
         'The vestibulocerebellar tract',
@@ -304,7 +304,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How does neuroinflammation through microglial activation affect the CNS immune response?',
       [
-        'Activated microglia release pro-inflammatory cytokines (TNF-alpha, IL-1beta) and antigen-present to T cells, bridging innate and adaptive immunity',
+        'Activated microglia release cytokines and present antigen',
         'Microglia only remove debris and have no role in inflammation',
         'Microglia block all immune responses in the brain permanently',
         'Microglia produce only anti-inflammatory mediators',
@@ -315,7 +315,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Which molecules guide B cells specifically to follicles within lymph nodes?',
       [
-        'CXCL13 (a B-cell chemokine) and CXCR5 receptors on B cells create a chemotactic gradient toward B-cell zones',
+        'CXCL13-CXCR5 signaling creates a chemotactic gradient toward B-cell zones',
         'CCL19 and CCL21, which also guide T cells',
         'Antigens themselves directly pull B cells into follicles',
         'Fibroblastic reticular cells that physically push B cells into follicles',
@@ -326,7 +326,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the structural and functional role of the glomerular filtration barrier (GFB) in immune surveillance of the kidneys?',
       [
-        'The GFB is a highly selective filter preventing large proteins and cells from entering the Bowman\'s space, while allowing solutes to pass for immune monitoring',
+        'A highly selective filter blocking large proteins and cells',
         'The GFB is fully permeable to all immune cells for constant kidney patrolling',
         'The GFB has no immune function; it only filters metabolic wastes',
         'The GFB actively transports immune complexes into the urine for removal',
@@ -339,7 +339,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Explain the role of Lymphatic Endothelial Cell (LEC) production of lymphangiogenic factors in the context of immune trafficking and resolution of inflammation.',
       [
-        'LECs secrete VEGF-C and VEGF-D to promote lymphangiogenesis, which restores lymphatic capacity and accelerates antigen clearance during resolution',
+        'LECs secrete VEGF-C/D to drive lymphangiogenesis during resolution',
         'LECs actively prevent lymphangiogenesis by secreting anti-VEGF molecules',
         'Lymphangiogenesis delays inflammation resolution indefinitely',
         'LECs have no active role in immune trafficking; they are only passive conduits',
@@ -350,7 +350,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do pattern recognition receptors (PRRs) on tissue-resident immune cells and lymphatic endothelium directly integrate innate sensing with lymphatic trafficking?',
       [
-        'TLRs and other PRRs on LECs and dendritic cells sense PAMPs, triggering upregulation of chemokines (CCL19, CXCL12) and adhesion molecules that enhance lymphocyte recruitment',
+        'TLRs on LECs sense PAMPs, upregulating chemokines and adhesion molecules',
         'PRRs only function in blood; LECs are PRR-negative',
         'PRR signaling suppresses all lymphocyte recruitment to draining nodes',
         'PRRs are found exclusively on T cells, not on stromal or endothelial cells',
@@ -361,7 +361,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Describe the laminar organization and functional specialization of layers within a dorsal root ganglion (DRG) and their relationship to immune trafficking.',
       [
-        'DRGs contain neuronal somata (surrounded by satellite glial cells) and a capsule of fibroblasts; immune infiltration into DRGs during neuropathies depends on capsular permeability and perineuronal inflammation',
+        'DRG somata are protected by satellite glial cells and a fibroblastic capsule',
         'DRGs are immune-privileged and never experience any immune cell infiltration',
         'DRGs lack any organized structure or immune barrier',
         'The DRG capsule is functionally identical to the blood-brain barrier',
@@ -372,7 +372,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How does the topology of lymphatic capillaries (with their overlapping endothelial junctions and lack of tight junctions) enable selective uptake of lymph-borne antigens and trafficking?',
       [
-        'Overlapping junctions form primary lymphatic vessels that open and close with interstitial pressure changes, enabling macrophage-mediated antigen sampling and immune cell entry into lymph',
+        'Overlapping junctions let immune cells and antigen enter lymph',
         'Tight junctions in lymphatic capillaries prevent all antigen uptake',
         'Lymphatic capillaries actively pump antigens into themselves against diffusion',
         'Antigens are absorbed only in blood capillaries, not lymphatic capillaries',
@@ -383,7 +383,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the molecular and cellular basis for immune tolerance in the mesenteric lymph nodes (mLNs) to commensal antigens versus activated responses to pathogenic antigens?',
       [
-        'Commensal antigens drive tolerogenic dendritic cells expressing IL-10 and TGF-beta to induce Foxp3+ regulatory T cells; pathogenic antigens activate inflammatory DCs',
+        'Commensal antigens induce tolerogenic DCs that promote regulatory T cells',
         'All antigens from the gut are immediately rejected regardless of source',
         'The mLNs have no capacity to distinguish commensals from pathogens',
         'Commensal antigens trigger the same inflammatory response as pathogenic antigens',
@@ -394,7 +394,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How does purinergic signaling (ATP/ADP) through P2X7 receptors on immune cells regulate lymphatic trafficking and inflammation?',
       [
-        'ATP released by stressed cells activates P2X7 on innate immune cells, promoting inflammasome activation and IL-1beta secretion, which enhances lymphatic recruitment',
+        'ATP activates P2X7, triggering inflammasome activation and IL-1beta release',
         'Purinergic signaling is irrelevant to immune trafficking',
         'P2X7 activation suppresses all immune responses and prevents lymph node activation',
         'ATP only functions in neuronal synaptic transmission, not immune signaling',
@@ -405,7 +405,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Explain the role of calcitonin gene-related peptide (CGRP) and neuropeptides in regulating immune cell trafficking through sympathetic lymph-node innervation.',
       [
-        'CGRP and substance P released from sympathetic nerve terminals modulate immune cell trafficking by altering vascular permeability, chemokine gradients, and T/B cell compartmentalization',
+        'CGRP and substance P from nerve terminals modulate trafficking',
         'Neuropeptides have no role in immune cell trafficking',
         'CGRP exclusively affects pain sensation; it does not influence immunity',
         'Sympathetic innervation of lymph nodes prevents all immune trafficking',
@@ -416,7 +416,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do follicular helper T cells (Tfh) and follicular dendritic cells (FDCs) coordinate germinal center reactions in lymph nodes, and what lymphatic factors sustain this microenvironment?',
       [
-        'FDCs present antigen via CR2, Tfh provide IL-21/IL-4 for B cell help; stromal cell-derived lymphangiogenic factors (VEGF-C) expand lymphatic capacity to accommodate the growing GC',
+        'FDCs present antigen while VEGF-C expands lymphatics',
         'Tfh and FDCs are not functionally interconnected',
         'Germinal centers require no lymphatic support',
         'Tfh inhibit FDC function and collapse germinal centers',
@@ -427,7 +427,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Describe the cytoarchitecture and functional role of the subfornical organ (SFO) and organum vasculosum laminae terminalis (OVLT) in immune sensing and neuroimmune integration.',
       [
-        'These circumventricular organs lack a functional blood-brain barrier and contain tanycytes, permitting immune surveillance of blood-borne pathogens and cytokines; they relay immune signals to hypothalamic fever centers',
+        'These organs lack a blood-brain barrier, allowing immune surveillance of the blood',
         'These structures are purely sensory organs for blood osmolarity; they have no immune function',
         'The blood-brain barrier is fully functional at these sites',
         'These organs secrete immunosuppressive factors that block all CNS immune responses',
@@ -438,7 +438,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do skin-resident memory T cells (TRM) in the epidermis integrate with lymphatic traffic in the context of a secondary challenge?',
       [
-        'TRM persist in epidermis via IL-15 signaling; upon antigen re-exposure, they rapidly produce IFN-gamma and recruit innate cells, which migrate via lymphatics to draining nodes to amplify Tfh-B cell responses',
+        'TRM persist via IL-15 and recruit innate cells to draining nodes',
         'Skin TRM are immediately flushed into lymphatics upon antigen encounter',
         'TRM provide no protective function and are replaced by circulating memory cells',
         'Lymphatics are absent from skin; TRM function in immune isolation',
@@ -449,7 +449,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Explain the anatomical organization and functional significance of the retrorubral nucleus (RRN) and periaqueductal gray (PAG) in nociceptive signaling and immune-pain interactions.',
       [
-        'PAG integrates nociceptive input and descends via the rostroventral medulla to modulate dorsal horn pain gates; RRN mediates endogenous analgesia and stress-immune axis suppression',
+        'PAG modulates pain gates; RRN mediates analgesia',
         'These structures only control motor movements, not pain or immunity',
         'The PAG has no connection to immune function',
         'Nociceptive pathways bypass the brainstem entirely',
@@ -460,7 +460,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the role of medullary thymic epithelial cells (mTECs) and AIRE in central tolerance and lymphatic drainage of apoptotic lymphocytes in the thymus?',
       [
-        'AIRE-expressing mTECs display tissue-restricted antigens via MHC-II to eliminate autoreactive thymocytes; lymphatic drainage via medullary lymphatic endothelial cells (mlECs) clears apoptotic cells',
+        'AIRE+ mTECs eliminate autoreactive thymocytes via medullary lymphatic clearance',
         'mTECs have no role in tolerance; they only provide structural support',
         'AIRE prevents all T cell maturation and blocks lymphatic drainage',
         'Apoptotic cells accumulate indefinitely in the thymic medulla without drainage',
@@ -471,7 +471,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do soluble mediators released during neurogenic inflammation (via TRPV1+ sensory neurons) regulate the composition and trafficking of local innate immune cells and their migration into draining lymphatics?',
       [
-        'Substance P, CGRP, and glutamate from sensory terminals activate mast cells and endothelial cells, promoting vascular leakage and production of chemokines (CCL2, CXCL1) that recruit neutrophils and monocytes into lymphatics',
+        'Sensory neuropeptides activate mast cells and drive chemokine-mediated recruitment',
         'Sensory neuropeptides prevent all immune cell recruitment',
         'Neurogenic inflammation is independent of immune cell trafficking',
         'Substance P and CGRP exclusively control pain; they have no immunological role',
@@ -482,7 +482,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Explain the phenomenon of "immune memory" at the level of lymph node stromal architecture and how long-lived plasma cell niches in bone marrow relate to lymphatic recirculation.',
       [
-        'After resolution, memory B cell zones and low-level antigen persistence in lymph node FDCs sustain Tfh-like cells; LLPCs in bone marrow niches (sustained by CXCL12-producing osteoblasts) produce steady-state antibodies independent of active lymphatic recirculation',
+        'Bone marrow LLPC niches sustain steady-state antibodies independent of lymphatic recirculation',
         'Immune memory is stored exclusively in blood; lymph nodes are inactive after infection',
         'Bone marrow plasma cells require continuous circulation of antigen via lymphatics to function',
         'Lymph node stromal architecture provides no memory function',
@@ -493,7 +493,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do Sphingosine-1-phosphate (S1P) gradients across lymph node borders regulate lymphocyte egress versus retention, and what is the role of S1P1 receptor signaling in thymic egress of developing T cells?',
       [
-        'S1P concentrations are high in blood/lymph and low in lymphoid tissue; S1P1-mediated signaling drives T cell exit from thymus and lymph nodes via a chemotactic gradient, whereas S1P1 antagonism traps lymphocytes in secondary lymphoid organs',
+        'S1P1 signaling along a blood-lymphoid gradient drives T cell egress',
         'S1P only functions in barrier lipid metabolism; it has no signaling role in immunity',
         'S1P gradients are identical inside and outside lymph nodes',
         'Thymic egress is controlled exclusively by cortisol and adrenal hormones',
@@ -506,7 +506,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Critically assess the emerging role of lymphatic-derived VEGF-C signaling in the resolution of tertiary lymphoid structures (TLS) in chronic inflammation, autoimmunity, and cancer microenvironments.',
       [
-        'VEGF-C-driven lymphangiogenesis at TLS peripheries facilitates immune cell egress and antigen drainage, yet paradoxically may enable metastatic dissemination in tumors via angiolymphatic routes; chronic VEGF-C expression perpetuates TLS formation in autoimmunity',
+        'VEGF-C lymphangiogenesis aids egress but may enable tumor dissemination',
         'Lymphatic expansion universally suppresses all immune responses',
         'Lymphangiogenesis has no role in TLS biology',
         'VEGF-C only functions in developmental lymphangiogenesis, not homeostatic remodeling',
@@ -517,7 +517,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do recent single-cell transcriptomics and spatial biology studies reveal previously unrecognized subsets of fibroblastic reticular cells (FRCs) and their specialized roles in segregating T and B cell niches and shaping priming versus tolerance outcomes?',
       [
-        'Transcriptomic screening has identified FRC subsets with distinct chemokine (CCL19, CXCL13, CXCL10) and immunomodulatory molecule (PD-L1, TGF-beta) profiles that create chemotactic gradients and tolerogenic vs. inflammatory priming zones',
+        'FRC subsets show chemokine profiles that create tolerogenic vs. inflammatory zones',
         'All FRCs are functionally identical',
         'FRCs are only structural; they have no regulatory chemokine roles',
         'Spatial organization of lymph nodes is random and has no bearing on immune outcomes',
@@ -528,7 +528,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Discuss the implications of recent discoveries of the "glymphatic system" in the CNS and its potential overlap with meningeal lymphatic vessels in clearing protein aggregates and metabolic byproducts during sleep, and how dysfunction contributes to neuroinflammatory disease.',
       [
-        'The glymphatic system relies on aquaporin-4+ astrocytic aquaporins to clear interstitial solutes during sleep; meningeal lymphatics (discovered via two-photon imaging) may augment this via meningeal fluid clearance, and impaired glymphatic-lymphatic function links to Alzheimer\' pathogenesis',
+        'AQP4-dependent glymphatic clearance, aided by meningeal lymphatics',
         'The glymphatic system is not functionally connected to lymphatics',
         'Meningeal lymphatics have no clearance function',
         'Sleep has no bearing on CNS immune clearance',
@@ -539,7 +539,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Explain the mechanistic basis for vagal afferent signaling from the gut microbiota-immune axis integrating with the solitary tract nucleus (NTS) to modulate systemic tolerance and barrier integrity via the dorsal motor nucleus output.',
       [
-        'Vagal afferents sense microbial metabolites (short-chain fatty acids, AhR ligands) and immune cytokines (IL-10) via TLRs, signaling the NTS and activating parasympathetic preganglionic fibers in the dorsal motor nucleus that release acetylcholine at intestinal submucosal neurons and immune cells, promoting mucus production, tight junction integrity, and IL-10 secretion',
+        'Vagal afferents relay microbial signals to the NTS via cholinergic output',
         'The vagus has no connection to the microbiota or immune barrier function',
         'Microbial metabolites directly activate immune cells without CNS integration',
         'The dorsal motor nucleus only controls gastric acid secretion',
@@ -550,7 +550,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do recent advances in understanding lymph node lymphatics reveal roles for initial lymphatic endothelial cells (iLECs) in antigen transcytosis and the "local checkpoint" hypothesis in regulating T cell priming?',
       [
-        'iLECs express both lymphatic markers (Podoplanin) and capillary-like permeability; they transcytose antigens and produce CCL21, creating a "priming threshold" where only sufficiently activated dendritic cells release lymphocytes into efferent lymphatics while suppressing premature naive cell egress',
+        'iLECs transcytose antigen and produce CCL21, gating lymphocyte egress',
         'Antigen transcytosis only occurs in blood capillaries',
         'Initial lymphatics are non-selective; all lymphocytes immediately egress',
         'iLECs have no regulatory role in T cell responses',
@@ -561,7 +561,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Discuss the emerging concept of "trained immunity" in tissue-resident innate lymphoid cells (ILCs) and how their cross-talk with lymphatic endothelium via IL-22 and IL-17 production affects barrier-protective immunity and lymphangiogenic remodeling.',
       [
-        'Activated ILCs (ILC3 primarily) produce IL-22/IL-17, promoting epithelial tight junction proteins (claudins, occludin) and stimulating stromal cells to produce lymphangiogenic VEGF-C, creating a feed-forward loop where barrier integrity supports lymphatic expansion for microbial antigen sampling',
+        'ILC3-derived IL-22/IL-17 strengthens epithelium and expands lymphatics',
         'ILCs have no role in barrier function or lymphangiogenesis',
         'IL-22 exclusively promotes inflammatory destruction',
         'Lymphatic expansion is independent of innate lymphoid signaling',
@@ -572,7 +572,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do optogenetic and chemogenetic dissections of distinct somatosensory pathways (e.g., C-nociceptors vs. A-delta mechanoreceptors) reveal differential modulation of immune cell trafficking through dorsal horn circuits and rostral spinomesencephalic projections to the PAG?',
       [
-        'C-nociceptor (TRPV1+) activation generates pain-immune coupling via substance P release in dorsal horn, promoting local leukocyte recruitment; PAG integration suppresses pain while activating stress-immune axis and downstream sympathetic lymphoid organ modulation, whereas A-delta mechanoreceptors bypass these circuits',
+        'C-nociceptors drive substance P release; A-delta fibers do not',
         'All sensory modalities produce identical immune effects',
         'Nociceptors have no immune-relevant functions beyond pain signaling',
         'The spinomesencephalic tract only carries pain, not immune-relevant information',
@@ -583,7 +583,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Assess the role of tissue factor (TF) and thrombin signaling on lymphatic endothelial cells and immune cells in exacerbating lymphatic fibrosis and immune dysregulation in post-COVID-19 syndrome and long-COVID pathophysiology.',
       [
-        'Persistent viral antigens or viral proteins activate TLR/TF signaling in lymphatic endothelial cells and macrophages, promoting PAR-1/PAR-2-mediated myofibroblast differentiation and lymphatic remodeling; aberrant Tfh-B cell interactions in lymph nodes produce prolonged autoantibodies against self-antigens and pathogenic immune complexes',
+        'Persistent viral antigens drive TF/PAR signaling and fibrosis',
         'TF signaling is irrelevant to lymphatic pathology',
         'Long-COVID is purely psychological with no immunological basis',
         'Lymphatic fibrosis does not contribute to immune dysregulation',
@@ -594,7 +594,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Discuss the mechanistic integration of circadian rhythm-controlled changes in lymph flow, aquaporin-4 water channel activity in glymphatic astrocytes, and sleep-wake-dependent meningeal immune cell trafficking in the context of CNS infection and clearance of neuroinflammatory mediators.',
       [
-        'Circadian oscillations in aquaporin-4 expression and meningeal lymphatic drainage peak during non-REM sleep, facilitating CSF-ISF exchange and clearance of IL-1beta, TNF-alpha, and microbial antigens; disrupted sleep dysregulates this rhythm, impairing neuroinflammatory resolution',
+        'AQP4 and meningeal drainage peak in non-REM sleep',
         'Circadian rhythms have no effect on lymphatic function',
         'Meningeal lymphatics are constitutively inactive during sleep',
         'Neuroinflammatory mediators are not cleared via lymphatic pathways',
@@ -605,7 +605,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do recent cryo-EM and structural studies of CXCR5 and CCR7 chemokine receptors on B and T cells, combined with cryo-EM of their cognate ligands (CXCL13 and CCL21) bound to glycosaminoglycans (GAGs) in lymph node stromal matrices, explain differential lymphocyte compartmentalization and the molecular basis for "ectopic" lymphoid organ formation in autoimmunity?',
       [
-        'GAG-chemokine complexes create stabilized, local gradients in stromal matrices; CXCR5-CXCL13 interactions preferentially position B cells near FDCs while CCR7-CCL21 positions T cells in paracortex. Dysregulated GAG-chemokine presentation in inflamed tissues drives ectopic TLS with pathogenic B cell and Tfh accumulation',
+        'GAG-bound chemokine gradients separate B and T cell zones and drive ectopic TLS',
         'Chemokine receptor structure is irrelevant to lymphocyte trafficking',
         'GAGs have no role in chemokine presentation',
         'Ectopic lymphoid structures are randomly distributed with no chemical basis',
@@ -616,7 +616,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Critically evaluate the hypothesis that dysregulated acetylcholine synthesis and parasympathetic signaling through the nucleus basalis of Meynert (NBM) and septum impairs cholinergic anti-inflammatory pathways during neuroinflammation in Alzheimer\' disease, Parkinson\' disease, and other neurodegenerative proteinopathies.',
       [
-        'Cholinergic neurons from the NBM and septal complex release acetylcholine onto vagal preganglionic neurons and directly onto brain innate immune cells (microglia), suppressing TNF-alpha and promoting IL-10; degeneration of cholinergic neurons in proteinopathies results in unopposed pro-inflammatory microglial activation and impaired glymphatic-lymphatic clearance',
+        'NBM cholinergic loss unleashes microglial neuroinflammation',
         'Cholinergic signaling has no role in neuroinflammation',
         'Proteinopathies do not affect cholinergic system integrity',
         'The NBM and septum only regulate memory, not immunity',
@@ -627,7 +627,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'How do single-cell multi-omic studies integrate transcriptomics, chromatin accessibility (ATAC-seq), and cell-cell interaction predictions to reveal crosstalk between tissue-resident memory T cells, memory B cells, and lymphatic endothelial cells in sustained mucosal immunity and the cellular and molecular basis of trained mucosal immunity?',
       [
-        'Multi-omic integration reveals that TRM-FDC-LEC signaling axes involve TRM-derived IL-21/IFN-gamma-driven upregulation of FDC survival factors (BAFF, APRIL) and LEC VEGF-C production; this maintains long-lived mucosal memory B cells and expanded mucosal lymphatics, priming rapid secondary responses against recurring pathogens',
+        'TRM-derived IL-21 sustains FDC survival and LEC VEGF-C output',
         'TRM, FDC, and LEC crosstalk is not demonstrable at the molecular level',
         'Mucosal memory is short-lived and requires continuous antigen exposure',
         'Lymphatic expansion is antigen-independent and serves no memory function',
@@ -638,7 +638,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Discuss the bidirectional communication between the enteric nervous system (ENS) and intestinal-associated lymphoid tissue (IALT) via neurotrophic factors and microbial metabolite sensing.',
       [
-        'Enteric neurons produce NGF and GDNF supporting ILC2/ILC3 development; microbial aryl-hydrocarbon receptor (AhR) ligands activate vagal afferents signaling the dorsal vagal complex, which releases acetylcholine to suppress TNF-alpha in IALT macrophages',
+        'Enteric neurotrophins support ILCs; AhR-vagal signaling curbs macrophage TNF-alpha',
         'The ENS is fully isolated from immune signaling by the epithelial barrier',
         'Enteric neurons only innervate smooth muscle; they have no immune function',
         'Microbial metabolites are absorbed systemically without local mucosal signaling',
@@ -649,7 +649,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'What is the emerging understanding of the meningeal immune landscape and the roles of meningeal lymphatics, stromal cells, and border-associated macrophages in CNS immune tolerance versus neuroimmune activation?',
       [
-        'Meningeal LVs enable antigen drainage and immune surveillance; stromal fibroblasts produce TGF-beta and IL-10; BAMs (TIM4+/CD11c+) mediate tolerogenic responses to CNS self-antigen while responding to pathogenic antigen via TLR-NLRP3 activation',
+        'Meningeal lymphatics enable antigen drainage while stromal cells and BAMs maintain tolerogenic CNS immunity',
         'The meninges are immune-privileged; no immune cells reside there',
         'Meningeal lymphatics do not contribute to CNS immune tolerance',
         'Border-associated macrophages originate exclusively from circulating monocytes with no developmental pathway from yolk sac macrophages',
@@ -660,7 +660,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Explain how integrative whole-organism studies linking circadian immune oscillations, meningeal lymphatic pulsatility, and sleep-stage-dependent glymphatic CSF-ISF exchange reveal mechanisms of neurodegeneration in circadian-disruption and sleep-disorder models.',
       [
-        'Circadian oscillations in lymphocyte adhesion molecule expression and HPA axis output drive peak lymphocyte egress from nodes at night; meningeal lymphatic pulsatility synchronizes with sleep-stage transitions (non-REM peak); glymphatic-lymphatic clearance of amyloid-beta and tau maximizes during NREM sleep, protecting against proteinopathy',
+        'Circadian egress, meningeal pulsatility, and NREM clearance protect neurons',
         'Circadian rhythms are irrelevant to lymphatic or glymphatic function',
         'Lymphatic pulsatility is unrelated to sleep cycles',
         'Neurodegeneration is unaffected by sleep quality or immune drainage patterns',

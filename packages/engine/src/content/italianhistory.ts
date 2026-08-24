@@ -82,7 +82,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What major event in 1870 completed Italian territorial unification?',
       [
-        'Italian forces captured Rome and annexed papal territories',
+        'Italian troops seized Rome',
         'Pope Pius IX voluntarily joined the kingdom',
         'International powers granted Rome to Italy',
         'The Vatican signed a peace treaty',
@@ -172,7 +172,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Why did Cavour\'s monarchist approach ultimately prevail over Mazzini\'s republican vision?',
       [
-        'Piedmont\'s military strength and diplomatic skill outmaneuvered grassroots movements; realpolitik proved more effective than ideology',
+        'Realpolitik beat idealism',
         'Republics were inherently unstable',
         'The papacy demanded a monarchy',
         'Mazzini controlled the military',
@@ -194,7 +194,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'The conflict between Mazzini\'s vision and Cavour\'s strategy resulted in which outcome?',
       [
-        'Unification as a constitutional monarchy, not as a republic',
+        'Constitutional monarchy, not a republic',
         'Italy became an ecclesiastical theocracy',
         'Italy split into independent republics',
         'Mazzini\'s model was universally adopted',
@@ -238,7 +238,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'The Congress of Vienna (1815) deliberately fragmented Italy under Austrian dominance. What was Metternich\'s aim?',
       [
-        'To prevent future unification by maintaining a balance of weak, competing states',
+        'To prevent unification',
         'To unify Italy immediately',
         'To establish an Italian republic',
         'To restore papal territorial power',
@@ -249,7 +249,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Who commanded Italian forces that captured Rome in 1870?',
       [
-        'General Raffaele Cadorna',
+        'General Cadorna',
         'Giuseppe Garibaldi',
         'King Victor Emmanuel II',
         'Camillo Cavour',
@@ -271,7 +271,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'The Lateran Treaty (1929) established what regarding papal status?',
       [
-        'Vatican City as an independent sovereign state under the Pope',
+        'Vatican City, independent under the Pope',
         'Full papal restoration of the Papal States',
         'Joint governance of Rome by Pope and Italy',
         'Complete Church-state separation',
@@ -282,7 +282,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Mussolini\'s 1939 Pact of Steel with Nazi Germany committed Italy to what?',
       [
-        'Unconditional military support for Germany in any conflict',
+        'Unconditional support for Germany',
         'Merger of Italian and German governments',
         'Surrender of Italian colonies to Germany',
         'Immediate adoption of Nazi racial laws',
@@ -315,7 +315,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Why was Piedmont\'s alpine geographic position advantageous for unification?',
       [
-        'It straddled the Alps, controlling both Italian and trans-Alpine resources, enabling diplomatic leverage',
+        'It straddled the Alps',
         'It was the richest region in Italy',
         'It had the largest population',
         'It was protected from all invasion',
@@ -326,7 +326,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the dominance of Piedmontese and Tuscan dialects during unification affect Italian language?',
       [
-        'Piedmont\'s political leadership and Tuscany\'s literary heritage made their dialects the foundation of standard Italian',
+        'Political power and literary prestige',
         'The Pope decreed only Piedmontese would be spoken',
         'All Italians naturally spoke the same dialect',
         'Southern Italians refused to learn other dialects',
@@ -339,7 +339,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the Peace of Westphalia (1648) institutionalize Italian fragmentation under Habsburg duopoly?',
       [
-        'It confirmed the partition of Italy between Austrian and Spanish spheres, preventing unification for 123 years',
+        'Partition between Austria and Spain',
         'It granted France complete dominion over Italy',
         'It restored the Roman Empire under papal authority',
         'It established the first united Italian kingdom',
@@ -350,7 +350,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What was the strategic doctrine underlying Metternich\'s deliberate Italian fragmentation post-1815?',
       [
-        'A unified Italy would threaten Austrian Mediterranean hegemony; weak, competing states served Austrian security interests',
+        'A unified Italy would threaten Austrian hegemony',
         'Metternich believed unified Italy would become too democratic',
         'He wanted to strengthen papal political power',
         'He supported Italian independence and nationalism',
@@ -361,7 +361,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Why did the failed 1848–49 liberal-nationalist uprisings reshape Italian political strategy?',
       [
-        'Military defeats by Austria and regional divisions discredited popular revolution, redirecting élites toward diplomatic and military statecraft',
+        'Defeat discredited popular revolt',
         'The uprisings immediately succeeded',
         'There was no military defeat',
         'Italians rejected nationalism entirely',
@@ -372,7 +372,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Garibaldi\'s pragmatic acceptance of Victor Emmanuel II diverge from Mazzini\'s republicanism?',
       [
-        'Garibaldi prioritized unification over ideology; Mazzini rejected monarchy, creating strategic fractures that Cavour exploited',
+        'Garibaldi put unity above ideology',
         'Mazzini led monarchist plots',
         'Garibaldi wanted to restore the Papacy',
         'They had identical political visions',
@@ -383,7 +383,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What was the "Non expedit" decree, and how did it hinder Italian nation-building?',
       [
-        'Pius IX forbade Catholic participation in the new kingdom, alienating the papacy and weakening democratic participation',
+        'Pius IX barred Catholics from politics',
         'It required Catholics to support unification',
         'It mandated papal rule over all Italy',
         'It abolished Italian language and culture',
@@ -394,7 +394,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What structural factors made southern Italy chronically underdeveloped after unification?',
       [
-        'Centuries of feudal latifundia, Bourbon neglect of infrastructure, and Risorgimento resource extraction northward created persistent inequality',
+        'Feudal latifundia, resource extraction',
         'Southern Italians were inherently less capable',
         'The Mafia solely caused all poverty',
         'The North had no feudal history',
@@ -405,7 +405,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'The southern "brigandage war" (1861–1876) reflected which underlying social conflict?',
       [
-        'Landless peasants, conscription resistance, and Piedmontese military repression created quasi-guerrilla rural insurgency',
+        'Peasant unrest against conscription',
         'Spanish invaders started the revolts',
         'Foreign mercenaries alone caused brigandage',
         'It was purely a Mafia criminal enterprise',
@@ -416,7 +416,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What characterized Giovanni Giolitti\'s governance (1903–1914) as a transitional phase between liberal Italy and fascism?',
       [
-        'Strategic suffrage expansion and labor negotiation without fundamental structural reform, deferring deeper social change',
+        'Suffrage expansion without structural reform',
         'Complete rejection of democracy',
         'Total alliance with the Papacy against secularism',
         'Restoration of absolute monarchy',
@@ -427,7 +427,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the notion of "vittoria mutilata" (mutilated victory) fuel resentment after World War I?',
       [
-        'Italy won but failed to acquire all promised Italian-speaking territories (Fiume, Dalmatia), creating nationalist grievances fascism exploited',
+        'Fewer gains than promised',
         'Italy lost the entire war',
         'Italy gained more than promised',
         'Italy was never involved in WWI',
@@ -438,7 +438,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What was the philosophical basis of Mussolini\'s corporatist economic model?',
       [
-        'State-controlled syndicates organized labor and capital, abolishing class conflict and free markets for total mobilization',
+        'State syndicates replaced markets',
         'Establishment of free-market capitalism',
         'Wealth redistribution to workers alone',
         'Restoration of feudal agricultural systems',
@@ -449,7 +449,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Italy\'s racial laws of 1938 differ initially from Nazi Germany\'s implementation?',
       [
-        'Italian laws were less strictly enforced due to social and Catholic resistance; WWII hardship later enabled harsher persecution',
+        'Enforcement was initially laxer than Germany\'s',
         'Italian racial laws were as severe from the start',
         'Italy never enacted racial laws',
         'Italy immediately exceeded Nazi racial measures',
@@ -460,7 +460,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What paradoxical political status resulted from Italy\'s September 1943 armistice and subsequent war declaration?',
       [
-        'Italy became a co-belligerent fighting with the Allies while the north remained German-occupied, splitting the nation militarily and ideologically',
+        'Split into Allied south, German north',
         'Italy peacefully withdrew from WWII entirely',
         'Italy remained unified under Mussolini',
         'Germany immediately evacuated Italy',
@@ -471,7 +471,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the Italian Communist Party\'s (PCI) institutional status reshape postwar democracy?',
       [
-        'The PCI\'s electoral legitimacy and refusal of power established it as a permanent opposition that constrained centrist hegemony and institutionalized pluralism',
+        'The PCI stayed a legitimate opposition',
         'The PCI immediately seized total power',
         'It had no electoral support',
         'It rejected all democratic participation',
@@ -482,7 +482,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What institutional feature of the First Republic did Tangentopoli\'s exposures fundamentally undermine?',
       [
-        'The "partitocrazia" system that had structured Italian politics since 1948, triggering constitutional and electoral transition',
+        'It broke "partitocrazia"',
         'It had no institutional impact',
         'It strengthened the monarchy',
         'It reduced voting rights',
@@ -493,7 +493,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Petrarch\'s articulation of humanist virtue in the 14th century prefigure Florentine civic republicanism?',
       [
-        'Petrarch\'s elevation of classical rhetoric and virtue as tools for civic excellence became foundational to Florentine republican ideology',
+        'Classical virtue underpinned civic ideology',
         'Petrarch invented fascism',
         'Petrarch was a monarchist',
         'Classical learning had no role in Renaissance politics',
@@ -506,7 +506,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Florence\'s catasto reform of 1427 represent a technological and administrative innovation reshaping late-medieval state power?',
       [
-        'Standardized property census and progressive taxation enabled direct wealth assessment, prefiguring modern bureaucratic centralization and the Medici\'s financial-political apparatus',
+        'A standardized census',
         'It abolished all taxation',
         'It restored pure feudalism',
         'It invented stock markets',
@@ -517,7 +517,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the condottieri system both enable and constrain centralized Italian state development?',
       [
-        'Mercenary contractors freed city-states from feudal levies while preventing unified military command, enabling territorial expansion but inhibiting national integration',
+        'Freed cities, blocked unified command',
         'Condottieri had no political influence',
         'They immediately unified Italy',
         'They abolished all military activity',
@@ -528,7 +528,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the Treaty of Utrecht (1713) and subsequent Bourbon regalism alter the ecclesiastical-political balance in Naples?',
       [
-        'Utrecht confirmed Bourbon hegemony while reducing papal secular claims, establishing regalist subordination of Church appointments to state authority',
+        'Utrecht subordinated Church to the state',
         'The Papacy gained complete territorial control',
         'Ecclesiastical authority was abolished entirely',
         'The treaty had no political consequences',
@@ -539,7 +539,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What ideological legacy did the failed Jacobin republics (1799–1815) leave despite their military collapse under Vienna?',
       [
-        'Constitutional representation, secularization, and nationalist ideology became models that resurged in 1820, 1848, and the Risorgimento',
+        'Constitutional ideals resurged later',
         'Jacobinism had no lasting intellectual legacy',
         'The Jacobins immediately unified Italy',
         'Nationalism was invented after 1815',
@@ -550,7 +550,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Cavour\'s realpolitik depart from the failed 1848–49 uprisings, and what was his core strategic insight?',
       [
-        'Cavour abandoned popular nationalism for great-power alliance diplomacy, recognizing that only elite statecraft and foreign support could defeat Austria',
+        'Cavour chose diplomacy over revolt',
         'Cavour supported popular revolution exclusively',
         'He rejected all ties with foreign powers',
         'He relied only on diplomatic letters',
@@ -561,7 +561,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What was the strategic significance of the secret Plombières agreement (1858) between Cavour and Napoleon III?',
       [
-        'It secured French military support against Austria but committed Italy to ceding Nice and Savoy, establishing unification\'s secular-monarchist character at the cost of nationalist ideology',
+        'French support at the cost of Nice and Savoy',
         'Plombières prohibited any French alliance',
         'It guaranteed Italy would become a French colony',
         'It established immediate papal rule',
@@ -572,7 +572,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the structural underdevelopment of the southern Mezzogiorno—rooted in latifundia feudalism—complicate postwar national integration?',
       [
-        'Centuries of large-estate agriculture, brigandage, and Piedmontese colonial resource extraction created persistent class and regional dualism resistant to assimilation',
+        'Feudal latifundia, resource extraction',
         'The South was instantly prosperous',
         'Structural inequality came solely from the Mafia',
         'North and South were equally developed',
@@ -583,7 +583,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'Why did Giovanni Gentile\'s philosophical actualism, codified in the Riforma Gentile (1923), serve fascist totalitarian pedagogy?',
       [
-        'Gentile\'s metaphysical nationalism elevated the ethical state as history\'s actualization, justifying subordination of individual reason to collective fascist will',
+        'It elevated the state above reason',
         'Gentile opposed fascism',
         'He advocated pure individualism',
         'His philosophy was unconnected to education',
@@ -594,7 +594,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Italian internment camps in Libya, Greece, and the Balkans (1940–43) reveal fascist imperial methodology distinct from Nazi genocide?',
       [
-        'Italian camps relied on forced labor, starvation, and exposure rather than industrial extermination, exposing fascist racial violence across Mediterranean territories',
+        'Forced labor, starvation, not extermination',
         'Italy never established camps',
         'Italian deaths were from natural causes only',
         'Camps were purely for criminal rehabilitation',
@@ -605,7 +605,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What institutional mechanisms enabled the PCI\'s integration into First Republic consensus despite Cold War anticommunism?',
       [
-        'Proportional representation and constitutional constraints made large-party consensus hegemonic, incorporating communist legitimacy as a permanent structural opposition',
+        'Representation institutionalized the PCI',
         'The PCI was immediately excluded from politics',
         'The PCI and fascists united',
         'Italy had no postwar democratic institutions',
@@ -616,7 +616,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Mussolini\'s intervention in World War I (1915) and subsequent defeat reshape fascism\'s emerging ideology?',
       [
-        'WWI\'s "mutilated victory" gap between nationalist expectations and territorial gains, combined with postwar biennio rosso crisis, created psychic and material conditions for fascist rise',
+        'Mutilated-victory resentment',
         'Italy won complete victory',
         'Italy suffered no casualties',
         'Postwar prosperity eliminated fascism',
@@ -627,7 +627,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What did the Maastricht Treaty (1992) and euro transition (1999–2002) represent symbolically for Italian postwar sovereignty?',
       [
-        'A voluntary supranational integration subordinating autonomous fiscal policy to ECB rules, inverting 150 years of Risorgimento monetary nationalism',
+        'Voluntary transfer of monetary sovereignty',
         'Italy rejected the euro permanently',
         'Maastricht had no economic impact',
         'Italy voluntarily abandoned all sovereignty',
@@ -638,7 +638,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did Mazzini\'s "guerra popolare" (people\'s war) ideology of mass peasant insurrection differ from Cavour\'s elite diplomatic realism?',
       [
-        'Mazzini envisioned federal republicanism through grassroots uprising; Cavour relied on diplomatic and military statecraft, which proved structurally superior',
+        'Cavour\'s statecraft outmatched Mazzini\'s uprising',
         'Mazzini supported monarchy and Cavour supported republicanism',
         'They had identical visions',
         'Popular movements immediately succeeded',
@@ -649,7 +649,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'What did Silvio Berlusconi\'s multiple premierships (1994–2011) reveal about constitutional tensions in the Second Republic?',
       [
-        'His media-ownership conflicts of interest, judicial trials for corruption, and institutional challenges tested constitutional limits on executive power and exposed democratic fragility',
+        'Conflicts of interest and corruption trials',
         'Berlusconi had no political influence',
         'He immediately restored fascism',
         'Constitutional law strengthened without controversy',
@@ -660,7 +660,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
     [
       'How did the papal "temporal power" loss in 1870 and its resolution in the Lateran Treaty (1929) reshape church-state relations in unified Italy?',
       [
-        'The 1870 loss created the "Roman Question," alienating the papacy until 1929 when Vatican City\'s sovereignty resolved the conflict and institutionalized separation',
+        'The 1870 rift, resolved in 1929',
         'The Papacy regained all territorial power',
         'Church and state were immediately separated',
         'The Lateran Treaty had no consequences',

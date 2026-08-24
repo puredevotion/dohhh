@@ -46,7 +46,7 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'Wie leidde Portugal\'s herstel van onafhankelijkheid in 1640?',
-      ['Johan IV van Braganza', 'Afonso III', 'Manuël I', 'Hendrik de Zeevaarder'],
+      ['Johan IV', 'Afonso III', 'Manuël I', 'Hendrik de Zeevaarder'],
       0,
       'Johan IV van Braganza leidde de Portugese Restauratie (Restauração) in 1640, waarbij Spaanse heerschappij werd omvergeworpen en een dynastie werd gesticht die tot 1910 regeerde.',
     ],
@@ -70,9 +70,9 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'Wie was de primaire dictator van Portugal\'s Estado Novo?',
-      ['António de Oliveira Salazar', 'Getúlio Vargas', 'Miguel Primo de Rivera', 'Francisco Franco'],
+      ['Salazar', 'Getúlio Vargas', 'Miguel Primo de Rivera', 'Francisco Franco'],
       0,
-      'Salazar regeerde Portugal van 1932 tot 1968. Zijn Estado Novo was een van Europa\'s langstdurende dictaturen.',
+      'António de Oliveira Salazar regeerde Portugal van 1932 tot 1968. Zijn Estado Novo was een van Europa\'s langstdurende dictaturen.',
     ],
     [
       'In welk jaar vond de Anjerrevolutie plaats?',
@@ -174,7 +174,7 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'Waarom slaagde de coup van de Beweging van de Gewapende Strijdkrachten (MFA) in 1974 met minimaal bloedvergieten?',
-      ['Dienstplichtigen weigerden te schieten', 'Het hele leger muitte', 'De regering kapituleerde vrijwillig', 'Internationale druk dwong naleving'],
+      ['Weigering om te schieten', 'Het hele leger muitte', 'De regering kapituleerde vrijwillig', 'Internationale druk dwong naleving'],
       0,
       'Het regime verloor dwangmacht toen dienstplichtigen fraterniseerden met burgers in plaats van te schieten. Officerafdeling voorkwam dat het regime geweld kon gebruiken tegen de coup.',
     ],
@@ -236,7 +236,7 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'Na 1964 escaleerden de Koloniale Oorlogen in militaire betekenis omdat:',
-      ['Verschuiving naar conventionele oorlog', 'Portugal won beslissend', 'Geallieerde interventie slaagde', 'Een vredesakkoord werd onderhandeld'],
+      ['Naar conventionele oorlog', 'Portugal won beslissend', 'Geallieerde interventie slaagde', 'Een vredesakkoord werd onderhandeld'],
       0,
       'Van 1970–1974 gebruikten opstandelingen conventionele tactieken; Portugese verliezen piekerden. Dit militaire patstelling overtuigde de officieren dat het regime bankroet was.',
     ],
@@ -272,7 +272,7 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'Recente wetenschap (Pina Cabral, Vilar) over Portugese regionale identiteit betoogt dat natievorming systematiseerde:',
-      ['Uitwissing van regionale eigenheid', 'Respect voor regionale autonomie', 'Federale politieke structuren', 'Geen natievorming vond plaats'],
+      ['Uitwissing van eigenheid', 'Respect voor regionale autonomie', 'Federale politieke structuren', 'Geen natievorming vond plaats'],
       0,
       'Cabral en anderen tonen aan hoe Estado Novo-centralisatie en katholiek nationalisme Moorse, Sefardische en regionale cultuurerfenissen uitwisten onderliggend aan Portugese heterogeniteit.',
     ],
@@ -304,7 +304,7 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'De fiscale ineenstorting van de Eerste Republiek vanaf 1912 was gegrond in de institutionele onmogelijkheid van:',
-      ['Bureaucratie en belastingen combineren', 'Behoud monarchie', 'Koloniale territoria controleren', 'Militaire interventie voorkomen'],
+      ['Bureaucratie en belastingen', 'Behoud monarchie', 'Koloniale territoria controleren', 'Militaire interventie voorkomen'],
       0,
       'Liberale hervormingsretoriek vervreemde landeigenaren die belastinginning controleerden. De staat kon geen inkomstenbronnen verliezen terwijl uitgaven voor bureaucratische modernisering toenamen.',
     ],
@@ -340,7 +340,7 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'Lusotropicalisme zoals ingezet door Salazar\'s regime functioneerde als:',
-      ['Dwang gemaskeerd als vermenging', 'Wetenschappelijke waarheid', 'Een kritiek op racisme', 'Een economische theorie'],
+      ['Dwang als vermenging', 'Wetenschappelijke waarheid', 'Een kritiek op racisme', 'Een economische theorie'],
       0,
       'Freyre\'s lusotropicalisme legitimeerde geforceerde assimilatie en rassenwerken door vermenging te romantiseren. Salazar bewapende het om extractief kolonialisme als cultureel welwillend te verdedigen.',
     ],
@@ -352,13 +352,13 @@ export const PORTUGUESE_HISTORY: CategoryContent = {
     ],
     [
       'De Raad van de Revolutie van de Grondwet van 1976 (militair veto over executive) vertegenwoordigde:',
-      ['Geïnstitutionaliseerde MFA-rifts', 'Permanente militaire regel', 'Zuivere burgersuprematisme', 'Geen militaire invloed'],
+      ['Vastgelopen MFA-rifts', 'Permanente militaire regel', 'Zuivere burgersuprematisme', 'Geen militaire invloed'],
       0,
       'De Raad institutionaliseerde militaire institutionele belangen zonder dictatuur te creëren. Opeenvolgende grondwetsherzieningen verminderden geleidelijk haar bevoegdheden naarmate democratie consolideerde.',
     ],
     [
       'Portugese EU-toetreding vereiste administratieve harmonisatie vooral in:',
-      ['Arbeids- en tariefrecht', 'Grenscontrole', 'Militaire aankoop', 'Nationaal taalbeleid'],
+      ['Arbeidsregels', 'Grenscontrole', 'Militaire aankoop', 'Nationaal taalbeleid'],
       0,
       'EU acquis communautaire (vooral arbeids- en milieustandaarden) conflicteerde met Portugese industriële en agraire belangen. Dekolonisatie beperkte statelijke harmonisatiecapaciteit.',
     ],

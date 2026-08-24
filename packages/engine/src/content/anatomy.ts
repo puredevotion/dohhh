@@ -16,7 +16,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Which of the following best describes the structure of a synovial joint?',
       [
-        'Two bone ends covered in hyaline cartilage, separated by a fluid-filled capsule',
+        'Cartilage-covered bone ends in a fluid-filled capsule',
         'Bones held together by fibrous connective tissue with no space between them',
         'Cartilaginous disc completely fusing two bone ends',
         'Two bones connected by elastic ligaments forming a semi-mobile joint',
@@ -27,7 +27,7 @@ export const ANATOMY: CategoryContent = {
     [
       'What is the primary structural difference between Type I and Type II muscle fibers?',
       [
-        'Type I fibers are slow-twitch with high oxidative capacity; Type II are fast-twitch with high glycolytic capacity',
+        'Type I is slow-twitch and oxidative; Type II is fast-twitch and glycolytic',
         'Type I fibers are exclusively found in the heart; Type II in skeletal muscle',
         'Type II fibers contain more mitochondria and perform aerobic metabolism',
         'Type I fibers have thicker myofilaments and generate greater force',
@@ -115,7 +115,7 @@ export const ANATOMY: CategoryContent = {
     [
       'What is the primary function of the fundus of the stomach?',
       [
-        'Secretion of gastric juices and enzyme storage',
+        'Gastric juice secretion',
         'Storage of food and initial mixing',
         'Pyloric sphincter control',
         'Absorption of nutrients',
@@ -126,7 +126,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The liver is primarily attached to which structure?',
       [
-        'Diaphragm via the coronary and falciform ligaments',
+        'Diaphragm via the falciform ligament',
         'Stomach by the gastrohepatic ligament',
         'Spleen by the gastrosplenic ligament',
         'Pancreas by pancreaticoduodenal veins',
@@ -172,7 +172,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In the microstructure of compact bone, what is the Haversian system composed of?',
       [
-        'Concentric lamellae of mineralized matrix surrounding a central canal containing blood vessels and nerves',
+        'Concentric lamellae around a canal with vessels and nerves',
         'Radiating trabeculae of spongy bone supported by a dense outer shell',
         'Longitudinal rows of osteocytes embedded in parallel collagen fibers',
         'Interconnected cavities lined by osteoblasts and separated by mineralized septa',
@@ -205,7 +205,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In muscle physiology, what is the structural relationship between the Z-disc and thin filaments?',
       [
-        'Thin filaments are anchored at both ends to Z-discs and overlap in the middle',
+        'Thin filaments anchor to Z-discs at both ends, overlapping midway',
         'Thin filaments extend from Z-discs toward myosin heads in the A-band',
         'Z-discs are composed entirely of actin and tropomyosin molecules',
         'Thin filaments are attached perpendicular to Z-discs via titin molecules',
@@ -216,7 +216,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The coronary circulation is primarily supplied by branches of which vessels arising from the aorta?',
       [
-        'Left and right coronary arteries',
+        'L/R coronary arteries',
         'Intercostal arteries',
         'Internal mammary arteries',
         'Bronchial arteries',
@@ -227,7 +227,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Which anatomical structure is responsible for slowing conduction velocity between atria and ventricles?',
       [
-        'Atrioventricular node',
+        'AV node',
         'Sinoatrial node',
         'Bundle of His',
         'Purkinje fibers',
@@ -238,7 +238,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The hepatic portal vein carries blood from which organ directly to the liver?',
       [
-        'Intestines, stomach, pancreas, and spleen',
+        'The GI tract and spleen',
         'Heart and lungs',
         'Kidneys and adrenal glands',
         'Brain and spinal cord',
@@ -249,7 +249,7 @@ export const ANATOMY: CategoryContent = {
     [
       'During inspiration, contraction of the diaphragm results in which change to intrapulmonary pressure?',
       [
-        'Pressure becomes more negative (subatmospheric)',
+        'Pressure becomes negative (subatmospheric)',
         'Pressure increases above atmospheric',
         'Pressure remains constant',
         'Pressure equalizes with atmospheric pressure',
@@ -271,7 +271,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The gastroesophageal junction is normally maintained in a closed state by which structure?',
       [
-        'Lower esophageal sphincter (LES)',
+        'The LES',
         'Upper esophageal sphincter',
         'Pyloric sphincter',
         'Ileocecal valve',
@@ -339,7 +339,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Bone remodeling is coordinated by which molecular signaling pathway activated by mechanical strain?',
       [
-        'Wnt/β-catenin pathway through osteocyte mechanotransduction',
+        'Wnt/β-catenin signaling via mechanotransduction',
         'Notch signaling cascade in osteoblast differentiation',
         'Hedgehog signaling in osteoclast activation',
         'FGF receptor signaling in endochondral ossification',
@@ -361,7 +361,7 @@ export const ANATOMY: CategoryContent = {
     [
       'During the powerstroke of myosin, the myosin head pivots around which functional region?',
       [
-        'The neck region connecting the catalytic domain to the lever arm',
+        'The neck region linking domain and lever arm',
         'The ATP-binding pocket in the nucleotide-binding cleft',
         'The actin-binding interface on the lower 50 kDa domain',
         'The regulatory light chain at the end of the lever arm',
@@ -372,7 +372,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The coronary circulation exhibits metabolic autoregulation through which primary mechanism?',
       [
-        'Adenosine accumulation reducing arteriolar resistance',
+        'Adenosine buildup lowers arteriolar resistance',
         'Myogenic response to changes in perfusion pressure',
         'Sympathetic nervous system vasoconstriction',
         'Endothelial nitric oxide production from shear stress',
@@ -383,7 +383,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Fetal shunting via the foramen ovale is maintained by which pressure gradient mechanism?',
       [
-        'Left atrial pressure exceeds right atrial pressure, keeping the septum primum valve probe open',
+        'Left atrial pressure exceeds right, sealing the septum primum',
         'Right atrial pressure exceeds left atrial pressure, forcing blood across the defect',
         'The ductus venosus diverts blood directly into the left atrium',
         'Preferential pulmonary vascular dilation increases left-to-right shunting',
@@ -405,7 +405,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The blood-air barrier of the alveolus consists of how many cell layers total?',
       [
-        'Three: alveolar epithelium, basement membrane, and capillary endothelium',
+        'Three: epithelium, basement membrane, endothelium',
         'Two: alveolar epithelium and capillary endothelium only',
         'Four: including a distinct interstitial layer',
         'Five: with an additional surfactant-producing mucous layer',
@@ -416,7 +416,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In the ventilation-perfusion (V/Q) matching of lung zones, which anatomical factor creates regional differences in blood flow?',
       [
-        'Gravitational pressure gradient between apical and basal alveoli',
+        'Gravity creates a pressure gradient down the lung',
         'Differential branching of the pulmonary arteries by lobe',
         'Preferential bronchiolar dilation in apical segments',
         'Unequal distribution of surfactant across lung regions',
@@ -438,7 +438,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The sphincter of Oddi controls flow between the ampulla of Vater and which organ?',
       [
-        'Duodenum via the major duodenal papilla',
+        'Duodenum, via the major papilla',
         'Jejunum via the ligament of Treitz',
         'Stomach via the pyloric sphincter',
         'Ileum via the ileocecal valve',
@@ -449,7 +449,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The juxtaglomerular apparatus senses changes in plasma osmolality and sodium concentration, triggering renin release when which condition is detected?',
       [
-        'Decreased renal perfusion pressure or sodium delivery to the macula densa',
+        'Low renal perfusion or low sodium at the macula densa',
         'Increased filtration pressure in Bowman\'s capsule',
         'Elevation of glomerular filtration rate above baseline',
         'Hyperkalemia detected by granular cells',
@@ -460,7 +460,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The Müllerian (paramesonephric) duct gives rise to which reproductive structures in females?',
       [
-        'Fallopian tubes, uterus, and upper vagina',
+        'Fallopian tubes and uterus',
         'Ovaries and follicle cells',
         'Vagina and vestibular glands only',
         'Clitoris and greater vestibular glands',
@@ -471,7 +471,7 @@ export const ANATOMY: CategoryContent = {
     [
       'During testicular descent, the gubernaculum attaches the testis to which structure guiding migration?',
       [
-        'The scrotum via a mesenchymal condensation',
+        'The scrotum, via a condensation',
         'The epididymis via the mesorchium',
         'The internal spermatic fascia directly',
         'The inguinal ligament via cremaster muscle',
@@ -482,7 +482,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The diaphragm develops from which four embryological sources?',
       [
-        'Septum transversum, pleuroperitoneal membrane, dorsal mesentery of esophagus, and muscularization of body wall',
+        'Septum transversum, pleuroperitoneal folds, esophageal mesentery, body wall',
         'Lateral plate mesoderm, intermediate mesoderm, somatic mesoderm, and endoderm',
         'Paraxial mesoderm alone, segmented into phrenic somites',
         'Neural crest cells migrating ventrally from the brainstem',
@@ -493,7 +493,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In the female urethra, the paraurethral glands (Skene\'s glands) are embryological homologs of which male structure?',
       [
-        'The prostatic glands in the prostatic urethra',
+        'The prostate gland',
         'The bulbourethral (Cowper\'s) glands',
         'The urethral glands of Littré',
         'The seminal vesicles',
@@ -506,7 +506,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Mechanical loading induces osteocyte dendrites to transmit signals via which extracellular mechanism that eventually suppresses osteoclast activation?',
       [
-        'Fluid shear stress through canaliculi activates connexin-43 channels, reducing sclerostin secretion and relieving Wnt pathway inhibition',
+        'Canalicular fluid shear activates connexin-43, lowering sclerostin',
         'Direct contact between osteocyte processes and osteoclast precursors via RANKL downregulation',
         'Increased interstitial fluid pressure triggering osteoprotegerin release from bone lining cells',
         'Mechanical distortion of integrin-rich focal adhesions releasing sequestered BMP-6',
@@ -517,7 +517,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The ultrastructural geometry of the calcified fibrocartilage enthesis involves apatite crystals organized in a preferred orientation relative to load vectors. What is the biological consequence of this anisotropy?',
       [
-        'Heterogeneous stress distribution dissipates mechanical energy and reduces interfacial shear stress concentration',
+        'Heterogeneous stress dissipates energy at the interface',
         'Uniform mineralization across the zone prevents microcrack propagation into adjacent bone',
         'Oriented crystals increase water uptake, improving viscoelastic damping',
         'Crystal anisotropy allows rapid adaptive remodeling in response to changing load direction',
@@ -528,7 +528,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The myosin powerstroke generates force through a conformational change where the converter domain pivots ~70° around the neck region. What thermodynamic condition makes this transition energetically favorable?',
       [
-        'Phosphate release from the myosin active site lowers the ground state energy of the pre-powerstroke conformation',
+        'Phosphate release lowers the pre-powerstroke ground state',
         'ATP rebinding immediately stabilizes the post-powerstroke state, driving the transition forward',
         'Actin binding increases the activation energy of the reverse reaction, making backward steps negligible',
         'Thermal energy at body temperature equals the ~3 pN·nm of work performed per stroke',
@@ -539,7 +539,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The fetal ductus venosus allows placental blood to bypass hepatic sinusoids. What is the embryological fate of this shunt after birth, and what genetic factor governs its closure?',
       [
-        'The ductus venosus constricts in response to increased postnatal portal venous flow and is later obliterated by proliferation of intimal endothelium',
+        'It constricts as portal flow rises, then intimal endothelium obliterates it',
         'It remains patent indefinitely in 30% of adults as an anatomical variant',
         'It involutes via apoptosis triggered by HIF-1α in response to increased oxygen tension',
         'It is mechanically closed by umbilical vein thrombosis before hepatic circulation matures',
@@ -550,7 +550,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In coronary autoregulation, the relationship between coronary blood flow and myocardial oxygen consumption is maintained constant across a wide perfusion pressure range. Which arteriolar mechanism primarily accounts for this metabolic coupling at physiological heart rates?',
       [
-        'Adenosine accumulation from ATP catabolism activates A2A receptors on vascular smooth muscle, opposing adenergic vasoconstriction',
+        'Adenosine from ATP catabolism activates A2A receptors, opposing vasoconstriction',
         'Myogenic mechanisms sensing transmural pressure changes via mechanoreceptor ion channels',
         'Endothelial nitric oxide production proportional to oxygen consumption rates',
         'Sympathetic nerve withdrawal reducing α-adrenergic tone during increased metabolic demand',
@@ -561,7 +561,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The scalenes (anterior, medius, posterior) are innervated by which cervical nerve roots, and what is their mechanical role during forced inspiration?',
       [
-        'Cervical 3–8 nerve roots; they elevate ribs 1–2, increasing thoracic inlet diameter',
+        'Cervical 3–8; they elevate ribs 1–2 to widen the thoracic inlet',
         'Cervical 1–2 only; they compress the thoracic cavity for expiration',
         'Thoracic 1–4; they stabilize the mediastinum',
         'Cervical 5–7; they depress ribs 3–6 during quiet respiration',
@@ -572,7 +572,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The pulmonary circulation exhibits unique compliance characteristics compared to the systemic circulation. How does gravity-induced hydrostatic pressure affect capillary recruitment and regional V/Q matching in upright humans?',
       [
-        'Apical zone has collapsed capillaries and ventilation-limited perfusion; basal zone has distended capillaries with perfusion-limited gas exchange',
+        'Apex is ventilation-limited; base is perfusion-limited',
         'Apical capillaries are maximally recruited; basal capillaries remain collapsed due to low transmural pressure',
         'Gravity has negligible effect; regional V/Q differences are determined entirely by bronchiolar tone',
         'Hydrostatic pressure increases capillary permeability uniformly, reducing diffusion distance globally',
@@ -583,7 +583,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The small intestinal epithelium exhibits a proliferation-differentiation gradient with stem cells in crypts dividing every 24–48 hours. What molecular factors regulate transit amplification and apical migration of progenitor cells along this axis?',
       [
-        'Wnt/β-catenin signaling (high in crypts) and BMP/TGF-β signaling (high on villi) create a gradient opposing Wnt',
+        'Wnt is high in crypts; BMP/TGF-β is high on villi, opposing it',
         'Notch signaling exclusively in transit-amplifying cells blocks further division',
         'Hedgehog ligands secreted apically repel differentiating cells basally',
         'FGF10 from mesenchymal fibroblasts drives all epithelial proliferation uniformly',
@@ -594,7 +594,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Bile acid-dependent activation of the farnesoid X receptor (FXR) in ileal enterocytes triggers which intestinal and hepatic feedback loops regulating cholesterol homeostasis?',
       [
-        'FGF19 (FGF15 in mice) secretion inhibits CYP7A1, reducing bile acid synthesis and increasing FXR-mediated SHP expression',
+        'FGF19 secretion inhibits CYP7A1, cutting bile acid synthesis',
         'Direct hepatocyte activation of SREBP-2 increases cholesterol uptake and synthesis',
         'Reduced portal glucose signaling downregulates hepatic lipogenesis',
         'Ileal barrier tightening prevents secondary bile acid absorption, reducing enterohepatic circulation',
@@ -605,7 +605,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The tubuloglomerular feedback (TGF) mechanism detects changes in sodium chloride concentration at the macula densa and modulates glomerular filtration rate through which effector mechanism?',
       [
-        'Increased NaCl uptake by NKCC2 cotransporter increases ATP metabolism and adenosine release, causing afferent arteriolar vasoconstriction and renin suppression',
+        'NKCC2-mediated NaCl uptake releases adenosine, constricting the afferent arteriole',
         'Macula densa cells directly sense angiotensin II in the juxtaglomerular space',
         'Increased intraglomerular pressure directly opens mechanoreceptors on granular cells',
         'Prostaglandin E2 released from collecting duct cells inhibits renin secretion systemically',
@@ -616,7 +616,7 @@ export const ANATOMY: CategoryContent = {
     [
       'Anti-Müllerian hormone (AMH), secreted by Sertoli cells, suppresses Müllerian duct development in males via which receptor and intracellular signaling cascade?',
       [
-        'Type II serine/threonine kinase receptor activating SMAD2/3-SMAD4 complexes, blocking transcription factors promoting Müllerian fate',
+        'Type II serine/threonine kinase receptor activating SMAD2/3-SMAD4',
         'Estrogen receptor β on Müllerian mesenchyme, blocking paracrine Wnt signaling',
         'Notch signaling in mesonephric mesenchyme triggering caspase-mediated Müllerian duct apoptosis',
         'TrkB tyrosine kinase receptor in ductal epithelium activating FoxA2-dependent differentiation into Wolffian structures',
@@ -627,7 +627,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The gubernacular mesenchyme of the fetal testis expresses which growth factors and transcription factors that promote descent, and how do they interact with the surrounding genital ridge?',
       [
-        'INSL3 (insulin-like peptide 3) from Leydig cells activates RXFP2 receptors on gubernacular mesenchyme, promoting desmin and myod1 expression for migration',
+        'INSL3 from Leydig cells activates RXFP2, upregulating desmin for migration',
         'BMP4 from coelomic epithelium drives gubernacular ossification',
         'Sonic hedgehog from mesonephric mesenchyme triggers apoptosis-driven gubernacular resorption',
         'GDNF from the ureteric bud attracts testicular germ cells via RET signaling',
@@ -638,7 +638,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The diaphragm\'s muscularization involves ingrowth of phrenic (C3–C5) and lower intercostal (T7–T12) motor nerve axons. What embryological process explains the dual innervation of this structure that develops from multiple germ origins?',
       [
-        'The phrenic nerve reaches the central tendon (septum transversum, cardiac mesoderm origin) while intercostal nerves innervate the muscularized body-wall portions (somatic mesoderm)',
+        'Phrenic nerve to the central tendon; intercostal nerves to the body-wall muscle',
         'The diaphragm develops solely from paraxial mesoderm, and dual innervation reflects plurisegmental myotome origin',
         'Phrenic and intercostal nerves undergo extensive commissural connections post-natally',
         'Lower cervical and thoracic motor pools undergo Hox gene-dependent migration toward the developing diaphragm',
@@ -649,7 +649,7 @@ export const ANATOMY: CategoryContent = {
     [
       'The female orgasm involves coordinated rhythmic contractions (0.8 Hz) of the uterus, vagina, and pelvic floor muscles. What is the physiological basis for the increased genital blood flow and myotonia preceding orgasm, and which neurotransmitter system is responsible for the refractory period afterward?',
       [
-        'Vasocongestive engorgement via arterial dilation (nitric oxide, VIP) and myotonia via sympathetic adrenergic tone; refractory period involves norepinephrine-mediated adrenergic inhibition',
+        'NO/VIP vasocongestion and adrenergic myotonia; norepinephrine drives the refractory period',
         'Estrogen upregulates α-adrenergic receptors, causing vasoconstriction and myotonia that is reversed by oxytocin during orgasm',
         'Parasympathetic-driven parasympathetic vasodilation followed by sympathetic inhibition during refractory period',
         'Pelvic splanchnic nerve stimulation directly triggers rhythmic uterine contractions independent of hormonal factors',
@@ -660,7 +660,7 @@ export const ANATOMY: CategoryContent = {
     [
       'In the developing cardiovascular system, endothelial cells lining the cardiac outflow tract undergo epithelial-mesenchymal transition (EMT) to form neural crest-derived smooth muscle. Which transcription factor network governs this invasion of the endocardial cushions?',
       [
-        'Snail/Slug-mediated repression of E-cadherin coupled with Wnt/β-catenin and Notch signaling activation',
+        'Snail/Slug repress E-cadherin, aided by Wnt/β-catenin and Notch',
         'Direct MyoD-dependent myogenic differentiation of endothelial cells into cardiomyocytes',
         'HIF-1α-dependent metabolic shift from oxidative phosphorylation to glycolysis',
         'Krüppel-like factor 4 (KLF4) reactivation of a pluripotent gene expression program',

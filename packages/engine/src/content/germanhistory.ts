@@ -5,7 +5,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Which Prussian monarch is most famous for military reform and territorial expansion in the 18th century?',
       [
-        'Frederick II (Frederick the Great)',
+        'Frederick the Great',
         'Frederick William I',
         'Charles XII of Sweden',
         'Joseph II of Austria',
@@ -16,7 +16,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What approach did Otto von Bismarck use to achieve German unification?',
       [
-        'Pragmatic power politics prioritizing national interest over ideology',
+        'Pragmatic power politics over ideology',
         'Democratic reform and constitutional compromise',
         'Alliance with socialist movements',
         'Religious authority and papal support',
@@ -27,7 +27,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Which conflict in 1870–1871 led directly to German unification?',
       [
-        'The Franco-Prussian War',
+        'Franco-Prussian War',
         'The Austro-Prussian War',
         'The Crimean War',
         'The Napoleonic Wars',
@@ -38,7 +38,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Who became the first German Emperor (Kaiser) in 1871?',
       [
-        'William I of Prussia',
+        'William I',
         'William II',
         'Otto von Bismarck',
         'Frederick William IV',
@@ -60,7 +60,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What was the primary cause of instability in the early Weimar Republic?',
       [
-        'Resentment of the harsh Treaty of Versailles and military restrictions',
+        'Resentment of the Treaty of Versailles',
         'Successful industrialization abroad',
         'Unified political consensus among parties',
         'Universal support from neighboring nations',
@@ -82,7 +82,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What was the structure of the Weimar government?',
       [
-        'A federal parliamentary republic with a president and chancellor',
+        'A federal parliamentary republic',
         'An absolute monarchy',
         'A unitary dictatorship',
         'A confederation with no central power',
@@ -93,7 +93,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Which global event destabilized Weimar in 1929?',
       [
-        'The stock market crash and Great Depression',
+        'The 1929 stock market crash',
         'Japanese invasion of Manchuria',
         'Italian fascist expansion',
         'Soviet agricultural collectivization',
@@ -104,7 +104,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What marked the beginning of Nazi rule in Germany?',
       [
-        'Hitler\'s appointment as Chancellor in 1933 and seizure of power',
+        'Hitler\'s appointment',
         'The Treaty of Versailles in 1919',
         'The hyperinflation of 1923',
         'The Munich Putsch of 1923',
@@ -115,7 +115,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What did the 1935 Nuremberg Laws establish?',
       [
-        'Legal discrimination that revoked Jewish citizenship and prohibited Jewish-non-Jewish marriage',
+        'Revoked Jewish citizenship',
         'Military alliances with Italy and Japan',
         'Territorial expansion into Austria',
         'A democratic constitutional framework',
@@ -126,7 +126,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What core ideology defined the Nazi regime?',
       [
-        'Fascism combined with virulent antisemitism and racial supremacy',
+        'Fascist antisemitism',
         'Liberal democracy',
         'Marxist communism',
         'Constitutional monarchy',
@@ -137,7 +137,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What resulted directly from Germany\'s 1945 defeat in World War II?',
       [
-        'Division into four Allied occupation zones, eventually creating East and West Germany',
+        'Four Allied occupation zones',
         'Restoration of the Prussian monarchy',
         'German eastward expansion',
         'Unification under a German-led superstate',
@@ -148,7 +148,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Which structure symbolized Cold War division between East and West Germany?',
       [
-        'The Berlin Wall, constructed in 1961',
+        'The Berlin Wall',
         'The Treaty of Versailles',
         'The Reformation',
         'The Congress of Vienna',
@@ -159,7 +159,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What caused the fall of the Berlin Wall in 1989?',
       [
-        'The collapse of Soviet power and the end of Cold War tensions',
+        'Collapse of Soviet power',
         'A military invasion from the West',
         'An internal West German revolution',
         'Economic success of East Germany',
@@ -172,7 +172,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What name describes the loose association of 39 German states from 1815 to 1866?',
       [
-        'The German Confederation (Deutscher Bund)',
+        'German Confederation',
         'The Zollverein',
         'The Holy Roman Empire',
         'The Prussian League',
@@ -183,7 +183,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Which Prussian-led customs union excluded Austria and unified German tariffs?',
       [
-        'The Zollverein, established in 1834',
+        'The Zollverein',
         'The Hanseatic League',
         'The Rheinischer Bund',
         'The Germanic Trade Union',
@@ -194,7 +194,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What was the Frankfurt Parliament of 1848–1849 attempting to accomplish?',
       [
-        'Creating a unified German nation-state with a constitutional framework',
+        'A unified German nation-state',
         'Enforcing Austrian dominance over Germany',
         'Negotiating trade treaties with France',
         'Addressing theological disputes from the Reformation',
@@ -205,7 +205,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What principle drove Bismarck\'s statement about German unification being achieved through "blood and iron"?',
       [
-        'That military force, not negotiation, would be necessary to unify Germany',
+        'Military force, not negotiation',
         'A purely defensive military doctrine',
         'Economic sanctions as a primary tool',
         'Diplomatic persuasion and negotiation',
@@ -238,7 +238,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What term describes Bismarck\'s conservative coalition uniting landowners and industrialists?',
       [
-        'Sammlungspolitik (policy of gathering)',
+        'Sammlungspolitik',
         'Kulturkampf (cultural struggle)',
         'Weltpolitik (world politics)',
         'Lebensraum (living space)',
@@ -249,7 +249,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What was the Spartacist League\'s attempt to seize power during early Weimar?',
       [
-        'An armed communist uprising in 1919, quickly crushed by paramilitary Freikorps',
+        'A communist uprising crushed by Freikorps',
         'A successful social democratic reform movement',
         'An alliance with Nazi forces',
         'A peaceful peasant movement',
@@ -260,7 +260,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What did the 1924 Dawes Plan accomplish?',
       [
-        'Restructured German reparations and provided American loans to stabilize the economy',
+        'Restructured reparations plan',
         'Demanded complete German disarmament',
         'Proposed Soviet-German cooperation',
         'Authorized French occupation of the Ruhr',
@@ -271,7 +271,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What characterized the "Golden Twenties" period (ca. 1924–1929) in Weimar?',
       [
-        'Cultural and economic revival fueled by American loans and reduced reparations pressure',
+        'Cultural and economic revival',
         'Complete economic collapse',
         'Rejection of all foreign investment',
         'Communist industrialization success',
@@ -282,7 +282,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Which legal mechanism granted Hitler emergency legislative powers in 1933?',
       [
-        'The Enabling Act (Ermächtigungsgesetz), passed on 23 March 1933',
+        'The Enabling Act (1933)',
         'A military coup',
         'A nationwide referendum',
         'A presidential decree alone',
@@ -293,7 +293,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What pseudoscientific foundation justified Nazi race laws and persecution?',
       [
-        'False racial theories claiming Aryan superiority and fears of racial "pollution"',
+        'False Aryan racial superiority theories',
         'A doctrine derived from Christian theology',
         'Economic competition with Jewish businesses',
         'Legitimate biological science accepted worldwide',
@@ -304,7 +304,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What term encompasses the Nazi genocide against Jews and other targeted groups?',
       [
-        'The Holocaust (or Shoah)',
+        'The Holocaust',
         'Kristallnacht',
         'The Final Solution',
         'The Blitzkrieg',
@@ -315,7 +315,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did the Marshall Plan influence the recovery of West Germany?',
       [
-        'American economic aid (1948–1952) funded industrial and economic reconstruction',
+        'American economic aid (1948-1952)',
         'Military occupation lasting indefinitely',
         'Reparations payments flowing to the Soviet Union',
         'Forced Soviet-style agricultural collectivization',
@@ -326,7 +326,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What ideological division characterized Cold War Germany?',
       [
-        'West Germany pursued liberal democracy and capitalism; East Germany was a communist Soviet satellite',
+        'Liberal capitalist West, communist East',
         'Both were monarchies seeking restoration',
         'Both maintained equal internal democracy',
         'East Germany was capitalist, West Germany was socialist',
@@ -339,7 +339,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did the Landwehr reforms (1807–1815) transform Prussian military organization?',
       [
-        'By combining regular army with militia reserves, enabling mass conscription and modern warfare',
+        'Combining regular army with militia reserves',
         'By relying exclusively on mercenary forces',
         'By prioritizing naval over land forces',
         'By abolishing standing armies for feudal levies',
@@ -350,7 +350,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did Zollverein tariff structure specifically isolate Austria while integrating German states?',
       [
-        'High external tariffs with free internal trade bound non-Austrian states economically to Prussia',
+        'High external tariffs, free internal trade',
         'Equal tariffs applied universally without discrimination',
         'Subsidies exclusively favored agrarian interests',
         'Complete elimination of all inter-state tariffs',
@@ -361,7 +361,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What historiographical debate addressed whether German unification resulted from elite action or popular nationalism?',
       [
-        'Unification "from above" (Bismarck\'s elite decisions) versus "from below" (nationalist movements)',
+        'Unification "from above" versus "from below"',
         'Whether Prussia or Austria should have led unification',
         'Whether industrialization or agriculture drove development',
         'Whether German culture predated the nation-state',
@@ -372,7 +372,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What underlying state-society tensions did Kulturkampf (1871–1878) expose in the new Empire?',
       [
-        'Conflict between centralized nationalism and organized Catholicism\'s competing papal loyalties',
+        'Nationalism versus Catholic papal loyalty',
         'Purely theological doctrinal disputes',
         'A Catholic campaign for political dominance',
         'An anti-Jewish alliance between Protestants and Catholics',
@@ -383,7 +383,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did Sammlungspolitik represent a strategic shift in maintaining elite dominance?',
       [
-        'By uniting agrarian and industrial elites against rising socialist movements and expanding suffrage',
+        'Uniting agrarian and industrial elites',
         'By implementing democratic electoral reforms',
         'By allying conservative factions with socialists',
         'By pursuing militaristic party organization',
@@ -394,7 +394,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did German industrial development under the Second Reich exceed Britain\'s by 1914?',
       [
-        'Germany surpassed Britain in heavy industry output and developed more cartelized industrial forms',
+        'Germany surpassed Britain in heavy industry',
         'Britain remained perpetually dominant in all sectors',
         'Germany focused exclusively on agriculture',
         'Industrial development was negligible in both nations',
@@ -405,7 +405,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What does the historiographical concept of "vetoization" explain about Weimar?',
       [
-        'How entrenched elites blocked democratic solutions through mutual obstruction, enabling dictatorship',
+        'Entrenched elites blocked democratic solutions',
         'The process of successful democratization',
         'How plural veto powers protected individual liberties',
         'A strengthening of socialist electoral power',
@@ -416,7 +416,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did the "stab-in-the-back myth" (Dolchstoßlegende) function ideologically in Weimar politics?',
       [
-        'A false narrative that civilians betrayed an undefeated military, delegitimizing the republic and fueling revanchism',
+        'A false narrative of civilian betrayal',
         'An accurate historical assessment of military conditions in 1918',
         'A Socialist propaganda creation',
         'An Austrian political claim against Germany',
@@ -427,7 +427,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'Which constitutional weaknesses in Weimar enabled Hitler\'s consolidation of power?',
       [
-        'Article 48 emergency powers, proportional representation fragmenting the Reichstag, and a weak chancellor relative to the president',
+        'Article 48 powers and Reichstag fragmentation',
         'A system too restrictive for any executive action',
         'Excessive constitutional protection of civil liberties',
         'A prohibition on political party formation',
@@ -438,7 +438,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What did Nazi "Gleichschaltung" accomplish in restructuring civil society?',
       [
-        'Total penetration and Nazi control of all organizations and institutions, eliminating autonomous associations',
+        'Total Nazi control of all organizations',
         'Decentralization of power to local communities',
         'Strengthening the Reichstag\'s legislative authority',
         'Abolishing political parties in favor of monarchy',
@@ -449,7 +449,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did SS ideology differ from Wehrmacht professional military doctrine?',
       [
-        'The SS embraced Nazi racial ideology and crimes against humanity; Wehrmacht maintained professional doctrine though implicated',
+        'The SS embraced Nazi racial ideology',
         'They were identical in purpose and actions',
         'The Wehrmacht rejected all Nazi ideology',
         'The SS was exclusively a labor organization',
@@ -460,7 +460,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did the "Lebensraum" concept justify Nazi expansion eastward?',
       [
-        'Territorial acquisition for German colonization justified by eliminating deemed "inferior" populations',
+        'German territorial colonization',
         'A peaceful cultural exchange program',
         'A trade agreement with Eastern nations',
         'A defensive treaty with Poland',
@@ -471,7 +471,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did the compromised Nazi-era backgrounds of West German elites affect early Federal Republic politics?',
       [
-        'Incomplete denazification enabled continuity of traditional conservative and military elites despite Nazi complicity',
+        'Incomplete denazification enabled elite continuity',
         'West Germany completely purged all Nazi-era officials',
         'The Federal Republic was established with perfect democratic purity',
         'Nazi-era personnel had no involvement in postwar governance',
@@ -482,7 +482,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How do historians debate whether Cold War division was aberration or revealing deeper fractures?',
       [
-        'Between those seeing 1945 division as anomalous versus those identifying longstanding ideological and regional divisions',
+        'Division as anomaly versus longstanding divisions',
         'All historians agree on a single interpretation',
         'The debate is purely ideological without scholarly substance',
         'Historical evidence clearly resolves the question unambiguously',
@@ -493,7 +493,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What institutional factors enabled West Germany\'s "Economic Miracle" (Wirtschaftswunder)?',
       [
-        'Marshall Aid, 1948 currency reform, and the social market economy model combining capitalism with welfare provisions',
+        'Marshall Aid and currency reform',
         'Central Soviet planning',
         'Agricultural focus excluding industrial development',
         'Complete rejection of foreign investment and aid',
@@ -506,7 +506,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How does recent scholarship reframe the Frankfurt Parliament\'s failure in light of transnational comparative analysis?',
       [
-        'By showing constitutional liberalism faced similar structural obstacles across Europe, not uniquely German pathologies',
+        'Constitutional liberalism faced obstacles across Europe',
         'By proving German liberals were incompetent compared to other nations',
         'By confirming Germany was destined for authoritarian rule',
         'By endorsing Treitschke\'s nationalist historiography',
@@ -517,7 +517,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How does Christopher Clark\'s reassessment of the July Crisis situate German agency in World War I origins?',
       [
-        'Within a multipolar European Great Power system rather than as unilateral German aggression',
+        'Within a multipolar European Great Power system',
         'By absolving Germany entirely of responsibility',
         'By claiming war was inevitable regardless of policy',
         'By promoting an earlier Sonderweg thesis',
@@ -528,7 +528,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What historiographical concept explains Weimar collapse through elite deadlock and institutional fragmentation?',
       [
-        'Vetoization: how entrenched elites blocked solutions and enabled dictatorship through mutual obstruction',
+        'Vetoization: entrenched elites blocked solutions',
         'Democratic strengthening through plural veto powers',
         'Weimar\'s successful plural protection of individual liberties',
         'Increasing power concentration in socialist parties',
@@ -539,7 +539,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did the Deutsche Arbeitsfront (Nazi Labor Front) restructure labor relations distinctly from Weimar?',
       [
-        'By eliminating autonomous collective bargaining, integrating workers into corporatist structures while suppressing wages',
+        'Corporatist control of labor',
         'By strengthening independent trade unions',
         'By reducing state involvement in labor matters',
         'By adopting Soviet-style communist labor organization',
@@ -550,7 +550,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What does Raul Hilberg\'s institutional analysis emphasize about the Holocaust\'s bureaucratic character?',
       [
-        'How genocide emerged through cumulative radicalization, bureaucratic momentum, and technological coordination across state apparatus',
+        'Cumulative radicalization and bureaucratic momentum',
         'That genocide was spontaneous mob violence without organization',
         'That technology played no role in atrocities',
         'That it resulted solely from one individual\'s decision',
@@ -561,7 +561,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How do debates on "ordinary perpetrators" complicate functionalist interpretations of Nazi crimes?',
       [
-        'By showing ideological commitment and individual choice coexisted with bureaucratic roles, beyond pure functionalism',
+        'Ideological commitment coexisting with bureaucratic roles',
         'By proving all perpetrators were committed ideologues',
         'By absolving institutional actors of responsibility',
         'By returning exclusively to intentionalist Nazi ideology explanations',
@@ -572,7 +572,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What historiographical significance does Eckart Kehr\'s "battle fleet theory" hold for Imperial German politics?',
       [
-        'That naval expansion reflected and reinforced elite coalitions blocking domestic reform while driving aggressive foreign policy',
+        'Naval expansion reinforced elite coalitions',
         'Purely military technical analysis disconnected from politics',
         'That naval power is irrelevant to political development',
         'A theory originating in the Nazi period',
@@ -583,7 +583,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How do scholars now interpret East German "state socialism" regarding legitimacy and surveillance coexistence?',
       [
-        'As combining repressive Stasi surveillance with elements of performance and negotiated compliance, not pure coercion',
+        'Surveillance mixed with negotiated compliance',
         'As entirely voluntary and popular',
         'As having no security apparatus',
         'As identical to West German governance structures',
@@ -594,7 +594,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What historiographical innovation does Timothy Snyder\'s "bloodlands" concept introduce to Nazi-Soviet comparison?',
       [
-        'Centering Eastern European civilian victims where Nazi and Soviet violence overlapped geographically and temporally',
+        'Centering Eastern European civilian victims',
         'By exonerating one side entirely',
         'By claiming Eastern Europe was historically irrelevant',
         'By ignoring ideology in favor of pure geography',
@@ -605,7 +605,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How did monetary sovereignty and the Deutsche Mark function symbolically in West German post-war identity?',
       [
-        'The DM symbolized economic success and autonomy distinct from Nazi and Soviet occupation legacies',
+        'The DM symbolized economic autonomy',
         'Currency was irrelevant to national identity',
         'The DM strengthened German-Soviet relations',
         'West Germany lacked independent monetary policy',
@@ -616,7 +616,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What historiographical debates characterized the 1980s Historikerstreit (historians\' dispute)?',
       [
-        'Intentionalists versus functionalists; exceptionalists versus comparativists; differing moral-political stances on German responsibility',
+        'Intentionalists versus functionalists debate',
         'Universal scholarly agreement on all interpretations',
         'Purely ideological disputes without scholarly rigor',
         'A dispute among non-specialist commentators',
@@ -627,7 +627,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How does Konrad Jarausch\'s "German Dilemma" framework interpret longue durée tensions in German governance?',
       [
-        'As structural tension between localism/pluralism and centralization/unification, impeding stable liberal democracy',
+        'Tension between pluralism and centralization',
         'As proof of inherent German inferiority',
         'As uniquely German without European parallel',
         'As permanently resolved by German unification in 1871',
@@ -638,7 +638,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How does Dagmar Herzog\'s work on sexuality complicate monolithic interpretations of Nazi control?',
       [
-        'By showing Nazis exercised both repression and permission regarding sexuality, revealing regime complexity and contradiction',
+        'Repression and permission of sexuality coexisted',
         'By claiming Nazis entirely ignored sexuality',
         'By asserting sexual freedom flourished under Nazism',
         'By proving Nazi repression was completely ineffective',
@@ -649,7 +649,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'How have scholars reassessed West Germany\'s 1968 student movements regarding generational reckoning with history?',
       [
-        'As driven by youth confronting unclaimed parental Nazi-era complicity and Cold War militarization, reshaping historical consciousness',
+        'Youth confronting parental Nazi-era complicity',
         'As entirely imported from foreign movements',
         'As completely disconnected from historical concerns',
         'As supporting existing institutional authorities',
@@ -660,7 +660,7 @@ export const GERMAN_HISTORY: CategoryContent = {
     [
       'What does David Calleo\'s "German Problem" framework suggest about European integration\'s role?',
       [
-        'Integrating German power within European institutions prevents traditional dominance while enabling cooperative stability',
+        'Integrating German power within European institutions',
         'That Germany should openly dominate Europe',
         'That European integration is irrelevant to German power',
         'That Germany is naturally peaceful without institutional constraints',

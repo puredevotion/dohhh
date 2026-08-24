@@ -5,7 +5,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In quantum mechanics, what does the Born rule establish?',
       [
-        'The probability of measuring a particular outcome is the squared magnitude of its amplitude',
+        'A probability equals the squared magnitude of the amplitude',
         'Energy and momentum are always conserved in quantum interactions',
         'Electrons exist as particles rather than probability waves',
         'The position of a particle can only be known to one decimal place',
@@ -27,7 +27,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In special relativity, what happens to time for an object moving near light speed?',
       [
-        'Time passes more slowly in the moving object\'s frame relative to a stationary observer',
+        'Time passes more slowly for the moving object',
         'Time stops completely once the object reaches half light speed',
         'Time always moves at the same rate for all observers regardless of motion',
         'The moving object experiences time speeding up proportionally to its velocity',
@@ -49,7 +49,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In quantum tunneling, how does a particle cross a barrier higher than its total energy?',
       [
-        'The wave function extends into the barrier, with non-zero amplitude on the far side',
+        'The wave function stays non-zero past the barrier',
         'The particle slows down temporarily to gather extra kinetic energy',
         'It doesn\'t cross; the barrier always reflects quantum particles',
         'The particle splits into smaller pieces that individually have enough energy',
@@ -71,7 +71,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How does the Heisenberg uncertainty principle restrict simultaneous knowledge of conjugate variables?',
       [
-        'The product of uncertainties in position and momentum has a minimum non-zero value',
+        'Position and momentum uncertainty has a minimum non-zero product',
         'Either position or momentum is always exactly zero for any particle',
         'Velocity and acceleration cannot both be measured on the same day',
         'Measuring one property destroys the particle, preventing measurement of the other',
@@ -82,7 +82,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does superposition in quantum mechanics allow?',
       [
-        'A system can exist in multiple states simultaneously until measured',
+        'A system exists in multiple states until measured',
         'A particle can be in two different locations at the same instant',
         'An electron can have two different velocities measured at once',
         'Energy can be both created and destroyed without conservation',
@@ -93,7 +93,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In general relativity, what does spacetime curvature represent?',
       [
-        'The effect of mass and energy on the geometry of space and time',
+        'Mass and energy curve the geometry of space and time',
         'A visual representation that has no physical significance',
         'The speed at which light travels through a region',
         'The strength of the weak nuclear force in a region',
@@ -104,7 +104,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the Compton effect evidence for?',
       [
-        'Light behaves as particles with energy proportional to frequency',
+        'Light behaves as particles with energy set by frequency',
         'Electrons always move at the speed of light',
         'Matter cannot reflect electromagnetic radiation',
         'Photons increase in frequency when absorbed by electrons',
@@ -126,7 +126,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is wave-particle duality?',
       [
-        'All matter and energy exhibit both wave and particle properties depending on observation',
+        'Matter and energy show both wave and particle behavior',
         'Particles and waves are fundamentally separate entities that never interact',
         'Particles are made of many tiny waves vibrating together',
         'Only light exhibits wave behavior; matter is purely particulate',
@@ -137,7 +137,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the principle of relativity state in special relativity?',
       [
-        'The laws of physics are the same in all inertial reference frames',
+        'Physics is the same in all inertial reference frames',
         'All reference frames experience identical time intervals',
         'Velocity is relative, but acceleration is absolute',
         'The speed of light varies depending on the observer\'s motion',
@@ -148,7 +148,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is antimatter?',
       [
-        'Matter composed of particles identical to ordinary particles except opposite electric charge',
+        'Particles identical to ordinary matter but opposite in charge',
         'A hypothetical form of matter that repels regular matter at all distances',
         'The empty space between atoms and electrons',
         'A supersymmetric partner of ordinary matter that only exists in accelerators',
@@ -159,7 +159,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In quantum field theory, what are quantum fields?',
       [
-        'Fundamental entities permeating all space; particles are excitations of these fields',
+        'Fields that permeate space; particles are their excitations',
         'Mathematical artifacts used only for convenience in calculations',
         'Physical forces that directly push particles from one place to another',
         'Regions of space where the uncertainty principle does not apply',
@@ -172,7 +172,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the Bell test determine about local hidden variable theories?',
       [
-        'They cannot reproduce all quantum mechanical predictions; entanglement requires non-local correlations',
+        'They cannot reproduce all quantum mechanical predictions',
         'They provide a complete description of quantum mechanics at the subatomic scale',
         'They are mathematically equivalent to quantum mechanics but easier to compute',
         'They predict a fixed value for particle properties before measurement occurs',
@@ -183,7 +183,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What role does the Lagrangian play in classical and quantum field theory?',
       [
-        'From it, one derives equations of motion and conserved quantities via symmetries',
+        'It yields equations of motion and conserved quantities',
         'It encodes the probability distribution of particle positions',
         'It directly measures the total energy content of a system',
         'It specifies the boundary conditions that particles must satisfy',
@@ -205,7 +205,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does renormalization address in quantum field theory?',
       [
-        'Divergent integrals arising from virtual particle loops; physical predictions emerge by absorbing infinities into redefined parameters',
+        'Divergent loop integrals absorbed into redefined parameters',
         'The fact that measurements always yield finite results while theory predicts infinite values',
         'The need to modify quantum mechanics at very short distances',
         'How to convert the Lagrangian into a Hamiltonian formalism',
@@ -216,7 +216,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the physical significance of gauge symmetry in field theory?',
       [
-        'It constrains the theory\'s structure and predicts the existence of gauge bosons (force carriers)',
+        'It predicts the existence of gauge bosons (force carriers)',
         'It ensures that all particles in the theory move at the speed of light',
         'It eliminates the need to specify boundary conditions in calculations',
         'It proves that all forces reduce to gravity at sufficient energy scales',
@@ -227,7 +227,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the Higgs mechanism accomplish?',
       [
-        'Generates mass for gauge bosons and fermions through spontaneous symmetry breaking',
+        'Gives mass to gauge bosons and fermions via symmetry breaking',
         'Explains why certain particles decay faster than others',
         'Provides a unified description of the weak and electromagnetic interactions',
         'Predicts the mass of the electron with high precision',
@@ -238,7 +238,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the coupling constant in quantum field theory control?',
       [
-        'The strength of interaction between particles; its value determines perturbation series convergence',
+        'The strength of interaction between particles',
         'The total momentum carried by all particles in a system',
         'The rate at which particles decay into lighter products',
         'The number of spatial dimensions accessible to the theory',
@@ -249,7 +249,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In statistical mechanics, what is the Boltzmann distribution?',
       [
-        'It gives the probability of a system state as proportional to exp(-E/kT)',
+        'The probability of a state is proportional to exp(-E/kT)',
         'It proves that entropy always increases in isolated systems',
         'It describes how particles move randomly in gases',
         'It relates temperature to the average kinetic energy of particles',
@@ -260,7 +260,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What distinguishes quantum chromodynamics from quantum electrodynamics?',
       [
-        'QCD has a non-abelian symmetry group (SU(3)); its coupling strengthens at large distances (confinement)',
+        'QCD has a non-abelian SU(3) symmetry group with confinement',
         'QED describes massive particles while QCD only describes massless ones',
         'QCD applies only to the strong nuclear force, while QED applies everywhere',
         'QED predicts infinite divergences; QCD avoids them through additional symmetries',
@@ -271,7 +271,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is asymptotic freedom?',
       [
-        'The coupling strength decreases at shorter distances (higher energies) in certain theories like QCD',
+        'The coupling weakens at shorter distances in theories like QCD',
         'The ability of particles to escape from a potential well with only kinetic energy',
         'The property that all particles eventually decay into stable end products',
         'The principle that no force can accelerate a particle beyond light speed',
@@ -282,7 +282,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is a path integral in Feynman formulation?',
       [
-        'A sum over all possible particle trajectories weighted by phase factors, yielding probability amplitudes',
+        'A sum over all trajectories weighted by phase factors',
         'The classical trajectory that minimizes the action functional',
         'An integral over momentum space that computes scattering cross sections',
         'The set of Feynman diagrams that contribute to a process',
@@ -304,7 +304,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the CPT theorem guarantee?',
       [
-        'Physical laws are unchanged under simultaneous charge conjugation, parity inversion, and time reversal',
+        'Physical laws are unchanged under combined C, P, and T',
         'Energy and momentum are always conserved in quantum interactions',
         'Particles and antiparticles have identical lifetimes and decay modes',
         'The speed of light is the same in all reference frames',
@@ -315,7 +315,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the running coupling constant?',
       [
-        'The effective coupling strength that changes with the energy scale probed',
+        'The coupling strength that changes with the energy scale',
         'A constant that appears in the coupling of particles to external fields',
         'The rate at which coupling strength degrades due to particle decay',
         'A parameter that varies in time during the evolution of a system',
@@ -326,7 +326,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In the Standard Model, what role do the W and Z bosons play?',
       [
-        'They mediate the weak nuclear force, enabling processes like beta decay',
+        'They mediate the weak nuclear force',
         'They carry the strong force between quarks inside hadrons',
         'They bind electrons to nuclei in atoms',
         'They transmit gravitational attraction between massive objects',
@@ -339,7 +339,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the renormalization group equation (beta function) quantify in asymptotically free theories?',
       [
-        'The rate of change of the coupling constant with energy scale; it vanishes at infrared and ultraviolet fixed points',
+        'The rate of change of the coupling constant with energy scale',
         'The probability distribution for particle positions in a quantum field',
         'The rate at which virtual particles are created and annihilated in loops',
         'The relationship between mass and coupling strength in a theory',
@@ -350,7 +350,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What physical mechanism underlies quark confinement in QCD?',
       [
-        'Color flux tubes between quarks have tension; separating them costs energy that creates quark pairs, preventing isolated colored objects',
+        'Color flux tubes have tension; separating quarks creates new pairs',
         'The strong force has infinite range, binding quarks permanently through a potential',
         'Quarks are actually composite objects made of smaller, even more confined constituents',
         'Confinement is an approximation that breaks down at very high temperatures',
@@ -361,7 +361,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the physical meaning of a topological term in a Lagrangian?',
       [
-        'It contributes to the action without affecting equations of motion; it changes under large gauge transformations and is quantized',
+        'It contributes to the action but not the equations of motion',
         'It describes particles that exist only on the boundary of a system',
         'It encodes information about the Coulomb potential in the theory',
         'It is an artifact of regularization that disappears in the continuum limit',
@@ -372,7 +372,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do anomalies in quantum field theory arise, and what do they signify?',
       [
-        'Classical symmetries are broken at the quantum level by loop diagrams; they reveal triangle diagrams mixing fermions and vector bosons',
+        'Classical symmetries are broken at the quantum level by loop diagrams',
         'They are calculation errors that disappear with correct regularization schemes',
         'They indicate that a classical symmetry is no longer exact after quantization',
         'They prove that a theory is inconsistent and must be abandoned',
@@ -383,7 +383,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In effective field theory, what determines the power counting and organization of operators?',
       [
-        'The scaling dimension of operators relative to the cutoff; higher-dimension operators are suppressed by inverse powers of the EFT scale',
+        'The scaling dimension of operators relative to the cutoff',
         'The total number of loops in Feynman diagrams contributing to a process',
         'Whether a symmetry is explicitly broken or spontaneously broken in the UV theory',
         'The mass hierarchy of particles in the underlying theory',
@@ -394,7 +394,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the significance of the Calabi-Yau manifold in string theory?',
       [
-        'Its geometry encodes compactified extra dimensions; the number of moduli determines the number of low-energy particle generations and gauge groups',
+        'Its geometry encodes the compactified extra dimensions',
         'It is a solution to Einstein\'s equations describing black holes in extra dimensions',
         'It proves that string theory is the only consistent quantum gravity',
         'It demonstrates that supersymmetry must be exact at all energy scales',
@@ -405,7 +405,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What role does the operator product expansion (OPE) play in conformal field theory?',
       [
-        'It decomposes products of operators at nearby points into sums of local operators with coefficients determined by conformal symmetry',
+        'It decomposes nearby operator products into sums of local operators',
         'It relates two-point functions to four-point functions through crossing equations',
         'It proves that all correlation functions are determined by a single coupling constant',
         'It shows that conformal dimensions must be integers',
@@ -416,7 +416,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How does the AdS/CFT correspondence provide insight into strongly-coupled gauge theories?',
       [
-        'It maps a strongly-coupled CFT to a weakly-coupled gravity theory in AdS space, enabling computation of non-perturbative observables',
+        'It maps a strongly-coupled CFT to a weakly-coupled gravity theory',
         'It proves that gravity and gauge theory are fundamentally identical',
         'It shows that all quantum field theories are equivalent to string theories',
         'It eliminates the need for renormalization in quantum field theory',
@@ -427,7 +427,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is meant by asymptotic safety in quantum gravity?',
       [
-        'An ultraviolet fixed point of the gravitational coupling that keeps the theory finite without requiring supersymmetry or extra dimensions',
+        'An ultraviolet fixed point of the gravitational coupling',
         'A proof that gravity must be screened by matter at high energies',
         'The statement that gravity decouples from other interactions above the Planck scale',
         'A mechanism preventing the graviton from appearing in scattering processes',
@@ -438,7 +438,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the Zamolodchikov c-theorem establish in two-dimensional field theories?',
       [
-        'A function that decreases along RG flows from UV to IR fixed points, providing an irreversibility direction in time',
+        'A function that decreases monotonically along RG flows',
         'That all two-dimensional theories must have conformal symmetry in the UV',
         'That coupling constants can never increase along any physical evolution',
         'That entropy production must always equal the anomaly coefficient',
@@ -449,7 +449,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the physical origin of black hole entropy in string theory?',
       [
-        'Degeneracy of microstates (D-branes, string modes) at or near the event horizon whose counting matches the Bekenstein-Hawking formula',
+        'Degeneracy of microstates near the event horizon',
         'The entanglement entropy between the black hole interior and exterior',
         'A deep symmetry principle that requires entropy proportional to surface area',
         'Quantum corrections to the Einstein-Hilbert action near the singularity',
@@ -460,7 +460,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do instanton solutions in gauge theory illuminate non-perturbative physics?',
       [
-        'They are topologically non-trivial field configurations that tunnel between different vacuum sectors; they suppress by exponential factors exp(-8π²/g²)',
+        'Topologically non-trivial configurations that tunnel between vacua',
         'They are artifacts of perturbation theory that vanish in the exact solution',
         'They represent virtual particles produced in loop diagrams',
         'They prove that all coupling constants must be rational numbers',
@@ -471,7 +471,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the significance of moduli in string theory compactifications?',
       [
-        'Scalar fields arising from geometric deformations; their vacuum expectation values determine low-energy coupling constants and particle masses',
+        'Scalar fields from geometric deformations of the compactification',
         'Particles that mediate the weak nuclear force in the compactified theory',
         'Extra dimensions that cannot be accessed by any physical experiments',
         'Mathematical parameters that affect predictions but are unobservable in principle',
@@ -482,7 +482,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What role do superconformal algebras play in supersymmetric theories?',
       [
-        'They extend the conformal group by adding supersymmetric generators; they constrain correlation functions and anomaly coefficients more heavily than conformal symmetry alone',
+        'They extend the conformal group with supersymmetric generators',
         'They prove that supersymmetry must be spontaneously broken at low energies',
         'They eliminate all quantum corrections to the Lagrangian',
         'They guarantee that all couplings remain finite at all energy scales',
@@ -493,7 +493,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the beta function for a scalar coupling λ in φ⁴ theory at one loop?',
       [
-        'β(λ)=(3λ²)/(16π²), demonstrating that φ⁴ theory is asymptotically free in the coupling',
+        'β(λ)=(3λ²)/(16π²) at one loop',
         'A negative quantity that drives the coupling toward zero at all energy scales',
         'Zero to all loop orders, making φ⁴ a conformal theory',
         'Proportional to the renormalized mass, not the coupling itself',
@@ -506,7 +506,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the swampland conjecture, and why is it important for string theory phenomenology?',
       [
-        'It proposes that most effective field theories consistent with gravity have no consistent UV completion in string theory; it restricts viable particle physics models',
+        'Most gravity-consistent EFTs lack a UV completion in string theory',
         'It proves that all quantum field theories can be embedded into string theory',
         'It demonstrates that supersymmetry must be broken at energies below the weak scale',
         'It eliminates the need for dark matter in cosmological models',
@@ -517,7 +517,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do the anomaly polynomial and Green-Schwarz mechanism ensure 10D superstring consistency?',
       [
-        'The anomaly polynomial factorizes if anomaly coefficients satisfy specific conditions; the GS mechanism cancels residual anomalies via Chern-Simons terms',
+        'The anomaly polynomial factorizes under specific conditions',
         'They eliminate the need for supersymmetry in the 10-dimensional theory',
         'They prove that gauge groups must be U(1) factors only',
         'They require all fermions to have identical masses',
@@ -528,7 +528,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the resurgence structure in asymptotic series, and how does it relate to trans-series in field theory?',
       [
-        'An asymptotic perturbative series encodes information about non-perturbative corrections; trans-series sum all sectors (instantons, fractional instantons) into a transseries',
+        'An asymptotic series encodes information about non-perturbative corrections',
         'A mathematical coincidence that allows perturbative calculations to reproduce non-perturbative results',
         'A symmetry that ensures the coupling constant is invariant under transformations',
         'A mechanism that eliminates the need for renormalization in certain theories',
@@ -539,7 +539,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How does the Sachdev-Ye-Kitaev model illuminate quantum gravity in the large-N limit?',
       [
-        'It is a solvable model of N fermions with all-to-all random interactions exhibiting a gravity dual and chaos-scrambling black hole behavior',
+        'A solvable random-coupling fermion model with a gravity dual',
         'It proves that gravity is purely classical and requires no quantum treatment',
         'It demonstrates that entropy always increases in quantum systems',
         'It shows that holography applies only to theories with large gauge groups',
@@ -550,7 +550,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is M-theory, and what evidence supports its existence as a unified framework for string dualities?',
       [
-        'An 11-dimensional theory conjectured to underlie all five superstring theories; dualities map between them, suggesting a unique underlying theory',
+        'An 11-dimensional theory conjectured to underlie all superstring theories',
         'A purely mathematical construction with no physical relevance to particle physics',
         'A specific type of string theory that includes all known particle physics',
         'A mechanism that proves gravity and quantum mechanics are incompatible',
@@ -561,7 +561,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do you calculate the soft graviton theorem and what does it reveal about scattering amplitudes?',
       [
-        'Soft limits of amplitudes with low-energy gravitons factor into simple universal factors; they encode asymptotic symmetries (BMS group) and memory effects',
+        'Soft graviton limits factor into simple universal factors',
         'By taking the limit where all external particles approach the speed of light',
         'Using only tree-level Feynman diagrams without any loop corrections',
         'It demonstrates that gravitons are fundamentally different from other particles',
@@ -572,7 +572,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the meaning of a replica trick calculation in entanglement entropy, and what are its limitations?',
       [
-        'It uses Zₙ=Tr(ρ^n) analytic continuation n→1 to extract S_E=−∂_nZₙ; it assumes analytic continuation is valid but may miss non-trivial saddles',
+        'It analytically continues Zₙ=Tr(ρ^n) from n→1 to extract S_E',
         'A method that only applies to free field theories without interactions',
         'A way to compute entropy that works for all quantum systems without exception',
         'A technique that proves entanglement entropy is always proportional to volume',
@@ -583,7 +583,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do brane dynamics and DBI actions capture non-perturbative string effects in D-brane systems?',
       [
-        'The DBI action governs D-brane motion in dynamical background fields; it becomes singular as brane tension/mass diverges, encoding instability thresholds and flux effects',
+        'The DBI action governs D-brane motion in dynamical background fields',
         'They describe how open strings emit closed strings in scattering processes',
         'They prove that D-branes cannot exist in consistent string theories',
         'They show that supersymmetry is exact in all brane configurations',
@@ -594,7 +594,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the Hirzebruch signature theorem, and how does it constrain anomalies in spinor electrodynamics?',
       [
-        'The signature of a manifold equals the index of a Dirac-type operator; in QED, the chiral anomaly coefficients match topological invariants (genus formulas)',
+        'The signature of a manifold equals the index of a Dirac-type operator',
         'A result showing that all curved spaces must have positive scalar curvature',
         'A theorem that eliminates the need for renormalization in field theory',
         'A statement that all manifolds have identical topological properties',
@@ -605,7 +605,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do the Regge limit and BFKL equation govern high-energy scattering in QCD?',
       [
-        's→∞ at fixed momentum transfer exhibits Regge behavior (sᵅ(t)); BFKL resums large-x logs via pomeron (spin-2, intercept>1), changing power laws',
+        's→∞ at fixed momentum transfer exhibits Regge behavior',
         'They only apply to electromagnetic scattering, not to strong interactions',
         'They prove that all scattering cross sections decrease with energy',
         'They eliminate the need for perturbation theory in QCD calculations',
@@ -616,7 +616,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the holomorphic anomaly in topological string theory, and what structure does it reveal?',
       [
-        'F-terms lose holomorphy at genus>0 due to worldsheet instantons; the anomaly equation relates F_g to lower genera, encoding mirror symmetry and instanton sums',
+        'F-terms lose holomorphy at genus>0 due to worldsheet instantons',
         'A sign that topological strings are not consistently defined',
         'A mechanism that makes all topological correlators zero above tree level',
         'A symmetry that protects string theory from quantum corrections',
@@ -627,7 +627,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do lattice QCD simulations at finite baryon density encounter the sign problem, and what insights does it provide about QCD phase transitions?',
       [
-        'The fermionic determinant becomes complex at μ≠0, preventing Monte Carlo sampling; reweighting/analytic continuation infer phase diagrams (color-flavor locked, quark-gluon plasma)',
+        'The fermionic determinant becomes complex at μ≠0',
         'Lattice spacing must be reduced infinitely to access finite density',
         'The sign problem is purely a computational artifact with no physical meaning',
         'It demonstrates that the QCD phase diagram is identical at all densities',
@@ -638,7 +638,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the meaning of F-theory as a geometric approach to string compactifications, and how does it relate to heterotic duality?',
       [
-        'F-theory is a 12D formalism where the elliptic fibration geometry encodes gauge sectors and matter; it unifies type IIB and heterotic via duality',
+        'F-theory is a 12D formalism using elliptic fibration geometry',
         'A theory that requires more than 11 fundamental dimensions',
         'A method that eliminates the need for all other string theory dualities',
         'A proof that gravity decouples from gauge interactions at low energies',
@@ -649,7 +649,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'How do infrared divergences in gravity differ from those in Yang-Mills theory, and what is soft theorems\' role in their cancellation?',
       [
-        'Gravity has both soft photon and soft graviton divergences (one-soft, two-soft); soft theorems factor them out universally, reducing IR structure but not removing it entirely',
+        'Gravity has both soft photon and soft graviton divergences',
         'Gravity has no infrared divergences due to the long range of gravitational force',
         'Yang-Mills and gravity have identical infrared structures with no distinction',
         'Soft theorems prove that all infrared divergences can be completely eliminated',
@@ -660,7 +660,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What does the generalized entropy (Wald entropy) predict for black hole thermodynamics in higher-curvature gravity?',
       [
-        'S=∫ dA·∂L/∂R_abcd for general Lagrangians; corrections to Bekenstein-Hawking S=A/(4G) arise from R², R³, ... terms, modifying temperature and stability',
+        'S=∫ dA·∂L/∂R_abcd, correcting Bekenstein-Hawking for general Lagrangians',
         'It proves that black hole entropy is always exactly A/(4G) regardless of theory',
         'It shows that black holes violate the second law of thermodynamics',
         'It eliminates the need for quantum mechanics to understand black holes',

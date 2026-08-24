@@ -16,7 +16,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe splitsen de d-orbitaalenergieën in een octaëdrisch metaalcomplex volgens kristalveldentheorie?',
       [
-        'De vijf d-orbitalen zijn niet langer gedegenereerd; sommige zijn in energie verhoogd en sommige verlaagd',
+        'De d-orbitalen splitsen in twee energieniveaus',
         'Alle vijf d-orbitalen nemen energie gelijk toe',
         'De d-orbitalen splitsen in s- en p-orbitalen',
         'Alleen de dz2-orbitaal wordt beïnvloed door het ligandenveld',
@@ -27,7 +27,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat kenmerkt een Lewis zuur-basen interactie in coördinatiechemie?',
       [
-        'Een coördinatiecovalente binding vormt tussen een elektronenpaar-donor en acceptor',
+        'Een elektronenpaardonor bindt aan een acceptor',
         'Overdracht van protonen tussen species',
         'Vorming van ionbindingen tussen neutrale liganden en metaalionen',
         'Breking van sigmaverbindingen in de ligand',
@@ -38,7 +38,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is het primaire verschil tussen octaëdrische en tetraëdrische coördinatiegeometrie?',
       [
-        'Octaëdrisch heeft 6 liganden in een ongeveer octaëdrische vorm; tetraëdrisch heeft 4 liganden die een tetraëder vormen',
+        'Octaëdrisch heeft 6 liganden; tetraëdrisch heeft 4',
         'Beide geometrieën hebben altijd hetzelfde coördinatiegetal',
         'Tetraëdrisch is altijd stabieler dan octaëdrisch',
         'Het verschil is alleen in kleur, niet in geometrie',
@@ -49,7 +49,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In transitiemetaalchemie, wat ordent de spectrochemische reeks?',
       [
-        'Liganden naar volgorde van hun kristalveldsplitsingssterkte',
+        'Liganden op volgorde van splitsingssterkte',
         'Metalen naar volgorde van oxidatiestaatsstabiliteit',
         'Golflengten van licht geabsorbeerd door complexen',
         'Thermische stabiliteit van coördinatieverbindingen',
@@ -71,7 +71,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In vastestofchemie, wat is een roosterconstante?',
       [
-        'De afstand tussen equivalente roosterpunten in een eenheidscel',
+        'Afstand tussen roosterpunten',
         'Het aantal atomen per eenheidscel',
         'De hoek waaronder atomen elkaar afstoten',
         'De trilfrequentie van atomen in evenwicht',
@@ -93,7 +93,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de primaire rol van een katalysator in een metaalkcomplex-gekatalyseerde reactie?',
       [
-        'Verlaag activeringsenergie zonder stoichiometrisch verbruikt te worden',
+        'Verlaag activeringsenergie zonder verbruikt te worden',
         'Verschuif de evenwichtsconstante om producten te bevoordelen',
         'Verhoog de enthalpie van de reactie',
         'Lever warmte-energie aan het reactiesysteem',
@@ -115,7 +115,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de primaire ligand van hemoglobine in reversibele zuurstofbinding?',
       [
-        'Het ijzer(II)-centrum in een protoporfyrine IX hemegroep',
+        'Het ijzer(II)-centrum in een hemegroep',
         'Histidineresiduen binden direct moleculair zuurstof',
         'Sulfidebridgen coördineren zuurstofmoleculen',
         'Carboxylaatgroepen vormen reversibele O2-addukten',
@@ -126,7 +126,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In het complex [Fe(CN)6]4−, hoeveel elektronenparen doneert cyanide aan ijzer?',
       [
-        '6 elektronenparen (CN− is een 2-electrondonor, 6 × 2 = 12 totaal)',
+        '6 elektronenparen',
         '3 elektronenparen',
         '6 ongepaarde elektronen',
         '12 eenzame paren van de liganden',
@@ -148,7 +148,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Welke factor bepaalt primair of een transitiemetaalbindingscomplex gekleurd is?',
       [
-        'd-orbitalaufspaltung laat elektronische overgangen in zichtbaar bereik tussen d-orbitalen toe',
+        'd-orbitalaufspaltung staat overgangen in zichtbaar licht toe',
         'De aanwezigheid van paramagnetische elektronen in het complex',
         'De lading van het complexion',
         'De massa van de ligandatomen',
@@ -159,7 +159,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is het cheleert-effect, en waarom vormen chelerende liganden stabieler complexen?',
       [
-        'Meertandige liganden binden via meerdere donorsites, stabiliteit verhogend door entropische en enthalpische factoren',
+        'Meertandige liganden binden via meerdere donorsites',
         'Chelerende liganden vormen zwakker bindingen dan monodentaat equivalenten',
         'Chelatie vereist alleen ionische binding',
         'Chelatormiddelen bevatten altijd stikstof',
@@ -172,7 +172,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Waarom veroorzaakt CN− grotere kristalveldsplitsing (Δ) dan F−, ondanks F− kleiner is?',
       [
-        'CN− is een sterke σ-donor met significante π-terugbinding van gevulde d-orbitalen, terwijl F− zuiver σ-doneerend is',
+        'CN− heeft π-terugbinding, F− is zuiver σ',
         'F− is een sterkveldligand omdat het elektronegatief is',
         'Beide liganden veroorzaken identieke d-orbitalaufspaltung',
         'CN− en F− kunnen geen octaëdrische complexen vormen',
@@ -183,7 +183,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In ligandveldtheorie, wat is de rol van π-terugbinding in metaalkarbonylbindingen?',
       [
-        'Metaal-d-elektronen doneren in onbezette π*-orbitalen op CO, wat M–L binding versterkt',
+        'Metaal-d-elektronen doneren in π*-orbitalen op CO',
         'Ligand-elektronen worden onomkeerbaar overgebracht naar metaal d-orbitalen',
         'De metaaloxidatietoestand neemt toe door elektronverlies',
         'π-binding is destructief en verzwakt complexstabiliteit',
@@ -194,7 +194,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe openbaart het Jahn–Teller-effect zich in octaëdrisch Cu(II) d9-complexen?',
       [
-        'Axiale verlenging of compressie verwijdert degeneratie, wat grondtoestandenergie verlaagt',
+        'Axiale verlenging of compressie verwijdert degeneratie',
         'Het complex stoot spontaan één ligand uit om vierkant-piramidaal te worden',
         'Het metaal oxideert naar Cu(III) om een d8-configuratie te bereiken',
         'Alle octaëdrische Cu(II)-complexen zijn perfect symmetrisch',
@@ -205,7 +205,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de relatie tussen magnetisch moment en ongepaarde d-elektronen in transitiemetaalbindingscomplexen?',
       [
-        'Ongepaarde elektronen dragen elk ~1 Bohr-magneton bij; μ = √[n(n+2)] μB waarbij n = ongepaarde elektronen',
+        'μ = √[n(n+2)] μB, waarbij n het aantal ongepaarde elektronen is',
         'Magnetisch moment wordt alleen bepaald door atoomnummer',
         'Gepaarde elektronen in d-orbitalen heffen alle magnetisme volledig op',
         'Alleen s-elektronen dragen bij aan het totale magnetische moment',
@@ -216,7 +216,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In de NaCl (steenzout)-structuur, wat is de coördinatiesfeer van elk ion?',
       [
-        'Elke Na+ is octaëdrisch omgeven door 6 Cl−, en elke Cl− door 6 Na+',
+        'Na+ heeft 6 Cl−-buren; Cl− heeft 6 Na+-buren',
         'Elk ion is tetraëdrisch gecoördineerd aan 4 buurrijstofburen',
         'Na+ en Cl− vormen afwisselende ketens met CN = 2',
         'De structuur is amorf zonder lange-afstandsorde',
@@ -227,7 +227,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is het cheleert-effect, en hoe verschilt het van eenvoudige ligandverdringing?',
       [
-        'Chelatie biedt entropische en enthalpische stabilisatie versus monodentaat liganden (cheleert-effect); vermindert labiliteit',
+        'Chelatie biedt extra entropische en enthalpische stabilisatie',
         'Monodentaat liganden vormen sterkere bindingen dan chelerende liganden',
         'Chelatie vereist alleen ionische binding',
         'Chelatormiddelen moeten alleen stikstofdonoren bevatten',
@@ -238,7 +238,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe beïnvloedt elektronendichtheid op het metaal de reactiviteit van een organometaalbindingscomplex?',
       [
-        'Elektronenrijke metalen zijn nucleofiel en vallen elektrofiele substraten aan; elektronarme metalen vallen nucleofiele substraten aan',
+        'Elektronenrijke metalen zijn nucleofiel; elektronarme zijn elektrofiel',
         'Alle metalen vertonen identieke reactiviteit ongeacht elektronische omgeving',
         'Alleen d10-metalen zijn reactief in organometaalbindingskatalyse',
         'De ligandumgeving heeft geen effect op metaalreactiviteit',
@@ -249,7 +249,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is het verschil tussen "hogespin" en "laagespin" configuraties in octaëdrische complexen?',
       [
-        'Hogespin: zwakkveld → elektronen verspreid over alle 5 d-orbitalen; laagespin: sterkveld → elektronen vullen eerst lagere orbitalen',
+        'Zwakkveld geeft hogespin; sterkveld geeft laagespin',
         'Hogespin en laagespin verwijzen naar de kernspintoestand',
         'Hogespin-complexen zijn altijd tetraëdrisch; laagespin zijn octaëdrisch',
         'De termen beschrijven ligandsterieklant, geen elektronische effecten',
@@ -260,7 +260,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In redoxkatalyse, hoe regenereert de elektronoverdrachtketen de katalysator?',
       [
-        'Stapsgewijze elektronoverdracht: substraat gereduceerd, intermediair geoxideerd terug, katalysator gerelateerd en klaar voor volgende cyclus',
+        'Elektronoverdracht regenereert de katalysator elke cyclus',
         'Het metaalcentrum wordt permanent geoxideerd of gereduceerd',
         'Alle elektronen worden tegelijk in één stap overgebracht',
         'Omkeerbaarheid wordt voorkomen om reactie vooruit te drijven',
@@ -271,7 +271,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Welke structuurrol spelen histidineresiduen in hemoproteïnen?',
       [
-        'Histidine is de vijfde axiale ligand aan hemijzer, stabiliseert eiwitbinding en stelt zuurstofaffiniteit af',
+        'Histidine is de vijfde axiale hemeligand',
         'Histidine bindt direct zuurstofmoleculen',
         'Histidine is alleen aan de peptiderug gekoppeld',
         'IJzer(III)-hemoproteïnen binden nooit zuurstof',
@@ -282,7 +282,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe verschilt metaal-naar-ligand ladingsoverspreiding (MLCT) van ligand-naar-metaal ladingsoverspreiding (LMCT)?',
       [
-        'MLCT: elektron van metaal d-orbitaal naar ligand π*; LMCT: elektron van gevulde ligandorbitaal naar metaal d-orbitaal',
+        'MLCT: metaal naar ligand π*; LMCT: ligand naar metaal d-orbitaal',
         'Beide processen zijn identiek en de termen zijn verwisselbaar',
         'MLCT treedt alleen op in neutrale complexen; LMCT alleen in kationische species',
         'LMCT-absorpties treden altijd op bij hogere energie dan MLCT',
@@ -293,7 +293,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de empirische relatie tussen kristalveldsplitsing (Δ) en absorptiegolflengte in d–d overgangen?',
       [
-        'De energie van de geabsorbeerde foton gelijk Δ; grotere Δ verschuift absorptie naar kortere golflengten (blauwe verschuiving)',
+        'Fotonenergie is gelijk aan Δ; grotere Δ geeft kortere golflengten',
         'Δ is onafhankelijk van absorptiegolflengte',
         'Langere golflengten komen altijd overeen met grotere kristalveldsplitsingen',
         'Absorptiegolflengte wordt bepaald door ligandmassa, niet door aufspaltingsenergie',
@@ -304,7 +304,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In cytochroom P450-oxidatiekatalyse, wat is de rol van het ijzercentrum?',
       [
-        'Fe(II) of Fe(III) cyclus door oxidatietoestanden om O2 te activeren en hogevalentie oxospecies voor hydroxylatie te vormen',
+        'IJzer doorloopt oxidatietoestanden naar een oxospecies',
         'Ijzer is een structuurschaafwerk zonder katalytische rol',
         'Ijzer bindt uitsluitend stikstof en kan niet met zuurstof interageren',
         'De eiwitruggengraat voert alle zuurstofactivering uit',
@@ -315,7 +315,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de "18-elektronenregel" in organometaalchemie?',
       [
-        'Stabiele organometaalbindingscomplexen hebben vaak 18 valentie-elektronen, d, s, p-orbitalen vulvend zoals noblegassen',
+        'Stabiele complexen hebben vaak 18 valentie-elektronen totaal',
         'Alle metalen moeten onafhankelijk van liganden precies 18 d-elektronen hebben',
         'De regel is alleen van toepassing op hoofd-groepselementen',
         '18 elektronen garanderen complexontbinding',
@@ -326,7 +326,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe relateert het nephelauxietisch effect complexkleur in transitiemetalen?',
       [
-        'Ligand-elektronendichtheid vergroot d-orbitalen, vermindert interelektronische afstoting en verlaagt Δ (rodeverschuiving)',
+        'Ligand-elektronen vergroten d-orbitalen, verlagen Δ',
         'Liganden verhogen effectieve kernlading op metalelectronen',
         'Nephelauxietische effecten verschuiven complexkleuren altijd naar blauw',
         'Alleen p-blok elementen ondervinden nephelauxietische effecten',
@@ -339,7 +339,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In het hoekige overlapmodel (AOM), hoe dragen σ en π-interacties afzonderlijk bij aan d-orbitalenergieën?',
       [
-        'σ-donatie en π-afstoting worden behandeld als onafhankelijke orbitaaloverlappen; π van elke ligandas verhoogt bepaalde d-orbitalenergieën (bijv. dxy, dxz)',
+        'σ-donatie en π-afstoting zijn onafhankelijke overlappen',
         'σ en π-interacties hebben identieke effecten op alle d-orbitalen',
         'π-interacties hebben geen effect op d-orbitalenergie',
         'Alle d-orbitalen zijn gelijk gestabiliseerd door zowel σ als π-interacties',
@@ -350,7 +350,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is het Bailar-draaimechanisme, en wat verklaart het?',
       [
-        'Een octaëdrisch ↔ trigonaal-prismatische pseudorotatie wat snelle ligandpositionele uitwisseling zonder complexdissociatie toelaat',
+        'Een octaëdrisch ↔ trigonaal-prismatische pseudorotatie',
         'Een eenelektronredoxproces wat ongepaarde-elektronenintermediaten oplevert',
         'Spontane complexontbinding bij hoge temperatuur',
         'Een symmetrische rotatie zonder geometrische veranderingen',
@@ -361,7 +361,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe versterken σ-donatie en π-terugbinding in de M–CO-binding elkaar (synergisch effect)?',
       [
-        'σ-donatie verhoogt metaal e−-dichtheid → verbeterde π-terugdonatie naar CO π*; verzwakt C≡O en stabiliseert M–L binding',
+        'σ-donatie verhoogt dichtheid, versterkt terugdonatie',
         'π-terugbinding heft σ-donatie-effecten op',
         'σ-donatie en π-terugbinding zijn onafhankelijk',
         'Alleen zwakkveld CO vertoont beide σ en π-interacties',
@@ -372,7 +372,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In de Born–Haber-cyclus, wat is de roosterenthalpie en hoe is het gerelateerd aan kristalstructuur?',
       [
-        'ΔH_latt is de energie om één mol vaste ionische verbinding in gasvormige ionen te scheiden; correleert met iongrootte en lading',
+        'Energie om één mol ionische vaste stof te scheiden',
         'Roosterenthalpie is de smeltenthalpie',
         'Roosterenthalpie is de vervluchtigingsenthalpie van één element',
         'Roosterenthalpie voorspelt alleen de kleur van de verbinding',
@@ -383,7 +383,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Welke rol speelt spin-orbitale koppeling (SOC) in elektronische structuur en spectroscopie van zware transitiemetalen?',
       [
-        'SOC splitst gedegenereerde niveaus (fijnstructuur), mengt spin en orbitaal hoekimpulsmomentum, en laat "verboden" d–d overgangen toe',
+        'SOC mengt spin- en orbitaalmomentum',
         'SOC is verwaarloosbaar voor alle eerste-rij transitiemetalen',
         'SOC maakt singletttoestanden onmogelijk in ontspannen',
         'Alleen zware metalen ondervinden SOC-effecten',
@@ -394,7 +394,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de rol van het P-cluster in nitrogenase, en hoe bevordert zijn redoxtoestand N2-reductie?',
       [
-        '[Fe8S7Cys]^(++/+) wisselt oxidatietoestanden, elektronenoverdracht-shuttlend van Fe-eiwit naar FeMo-cofactor tijdens N2-reductie',
+        'Het P-cluster shuttlet elektronen naar de FeMo-cofactor',
         'Het P-cluster heeft een vaste oxidatietoestand en neemt niet deel aan elektronenoverdracht',
         'Het P-cluster slaat sulfide op voor N2-binding',
         'P-clusters zijn evolutionaire overblijfselen zonder functie',
@@ -405,7 +405,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is het kwantitatieve verschil in pakefficiëntie tussen FCC en BCC-structuren?',
       [
-        'FCC bereikt ~74% pakking (coördinatiegetal 12); BCC bereikt ~68% (CN = 8); FCC is de close-pack arrangement',
+        'FCC pakt ~74% (CN 12); BCC pakt ~68% (CN 8)',
         'BCC en FCC hebben identieke pakking-efficiëntie',
         'BCC is altijd dichter dan FCC',
         'Pakfractie is onafhankelijk van kristalgeometrie',
@@ -416,7 +416,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In heterogene katalyse, wat zijn ensembleeffecten en hoe controleren zij oppervlaktereactiviteit?',
       [
-        'Substraatreactiviteit hangt af van geometrische rangschikking en elektronische toestand van metaaloppervlaktopatomen (specifieke vlakken, defecten)',
+        'Reactiviteit hangt af van atoomgeometrie en toestand',
         'Alle metaaloppervlakken zijn chemisch equivalent',
         'Heterogene katalyse hangt alleen af van bulkmetaaleigenschappen',
         'Oppervlaktestructuur heeft geen invloed op reactiemechanisme',
@@ -427,7 +427,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de D4h puntgroep, en welke metaalbindingscomplexen adopteren deze geometrie?',
       [
-        'Vierkant-planar (CN=4, coplanair): Pt(II), Au(III), Ni(II) met sterkveldliganden; volgt typisch 16-elektronenregel',
+        'Vierkant-planaire geometrie: Pt(II), Au(III), Ni(II)-complexen',
         'Alleen tetraëdrische complexen; D4h kan geen planaire structuren beschrijven',
         'D4h is exclusief voor octaëdrische geometrieën',
         'D4h is geen geldige puntgroep voor transitiemetaalbindingscomplexen',
@@ -438,7 +438,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In bindingsmodellen van transitiemetaalkarbonylen, verklaar het verschil tussen synergische binding en niet-bindende elektronenafstoting.',
       [
-        'Synergisch: samengebouwde σ-donatie + π-terugbinding versterken elkaar M–CO-sterkte; niet-bindend is bijkomende e−–e− afstoting',
+        'Synergische binding versterkt M–CO; niet-bindend is toevallige afstoting',
         'Synergische binding en niet-bindend overlap zijn hetzelfde concept',
         'Niet-bindend overlap is vereist voor M–CO bindingen; synergische binding is zeldzaam',
         'Alleen CO vertoont synergische binding; andere liganden niet',
@@ -449,7 +449,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is oxidatietoestandambiguïteit in transitiemetaalbindingscomplexen met redox-actieve liganden?',
       [
-        'Liganden zoals bipiridine, fenanthroline, semikinononen kunnen elektronen accepteren/doneren; formele oxidatietoestandtoewijzing wordt ambigueus',
+        'Redox-actieve liganden maken formele oxidatietoestandtoewijzing ambigueus',
         'Oxidatietoestanden zijn altijd ondubbelzinnig toegewezen voor alle complexen',
         'Redox-actieve liganden zijn denkbeeldig en bestaan niet',
         'Alleen metalen, nooit liganden, nemen deel aan redoxchemie',
@@ -460,7 +460,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In perovskietstructuren (ABX3), wat voorspelt de Goldschmidt-tolerantiefactor?',
       [
-        't = (r_A + r_X) / [√2(r_B + r_X)]; t ≈ 1 kubisch, t < 1 vervormd/orthorhombisch, t > 1 ongunstig',
+        't = (r_A+r_X)/[√2(r_B+r_X)]; t ≈ 1 is kubisch',
         'De tolerantiefactor is irrelevant voor perovskietstabiliteit',
         't is altijd 1 voor alle perovskieten',
         'De tolerantiefactor voorspelt alleen kleur',
@@ -471,7 +471,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de Tolman-elektronische parameter (TEP) en hoe wordt het gebruikt in ligandkarakterisering?',
       [
-        'TEP is CO-strekfrequentie (ν_CO) van [Ni(L)(CO)3]; lagere ν_CO → meer donerend ligand; kwantificeert donatievermogens',
+        'TEP is de CO-strekfrequentie van [Ni(L)(CO)3]',
         'TEP meet alleen ligandsterieklant',
         'TEP is alleen voor stikstofdonorliganden gedefinieerd',
         'Hogere ν_CO waarden geven altijd sterkere donoren aan',
@@ -482,7 +482,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe beïnvloeden vervormingen van octaëdrische symmetrie het d-orbitaldiagram?',
       [
-        'Verlaagde symmetrie verwijdert gedegenereerde orbitalenniveaus en splitst ze volgens de nieuwe puntgroep',
+        'Verlaagde symmetrie splitst d-orbitalen verder',
         'Vervormingen hebben geen effect op d-orbitalenergieën',
         'Alle vervormingen verhogen alle d-orbitalen gelijk',
         'Vervormingen verhogen octaëdrische symmetrie',
@@ -493,7 +493,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In heterometaalbindings-clusterscomplexen, wat is het voordeel van gemengdmetaalsites ten opzichte van homometaalbindingsclusters?',
       [
-        'Verschillende metalen kunnen verschillende substraten of intermediaten op nabijgelegen sites activeren, coöperatieve katalyse en substraten selectiviteit inschakeling',
+        'Verschillende metalen activeren verschillende substraten op nabijgelegen sites',
         'Alle metalen in een cluster gedragen zich altijd identiek',
         'Gemengdmetaalbindingsclusters zijn altijd minder stabiel dan enkelelementclusters',
         'Verschillende metalen concurreren voor dezelfde site en verminderen totale activiteit',
@@ -506,7 +506,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe verbetert ligandveld-dichtheidsfunctionaaltheorie (LF-DFT) kristalveldentheorie?',
       [
-        'LF-DFT bevat quantum-mechanische uitwisseling, correlatie, en covalentie; inschakeling niet-empirische Δ-berekening en f-orbitalbehandeling',
+        'LF-DFT voegt kwantumuitwisseling toe',
         'LF-DFT is eenvoudig kristalveldentheorie hernoemd',
         'LF-DFT voorspelt alleen geometrie',
         'LF-DFT is vervangen',
@@ -517,7 +517,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de spectroscopische oorsprong van de gele kleur in [Fe(H2O)6]3+, en waarom domineert LMCT absorptie?',
       [
-        'Zwakke d–d overgangen (~900 nm) worden overschaduwd door intense LMCT (OH2→Fe(III), ~400 nm); Fe(III) oxidatiemacht overschrijdt zwakke H2O-veldsterkte',
+        'Intense LMCT overschaduwt zwakke d–d overgangen',
         '[Fe(H2O)6]3+ is kleurloos',
         'Water is een sterkveldligand wat laage-spin Fe(III) oplevert',
         'Alle ijzerwaterabindingreacties hebben identieke spectra',
@@ -528,7 +528,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe bevordert spin-orbitale koppeling intersysteemkruising en niet-stralingsverval in metaalbindingscomplex fotodynamica?',
       [
-        'SOC mengt singlettriplet-toestanden, verlaagt ISC-barrières en versnelt stralingsloos verval naar donkere triplettoestanden',
+        'SOC verlaagt de ISC-barrière door toestandsmenging',
         'Spin-orbitale koppeling voorkomt al opgewekt-toestandverval',
         'SOC is irrelevant voor metaalbindingscomplex fotofysica',
         'Alleen organische kleurstofvensters ondergaan intersysteemkruising',
@@ -539,7 +539,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat DFT-gebaseerd raamwerk verklaart substraat selectiviteit in nitrogenase (N2 versus N2H+ reductie)?',
       [
-        'Hydride-bindingintermediaten, redox-toestands-afhankelijke activering, en metaal–zwavelcluster coöperatiegevoel; DFT modellering onthult toestand-specifieke selectiviteit',
+        'Redoxafhankelijke activering en clustercoöperatie',
         'Nitrogenase selecteert willekeurig',
         'Sterische uitsluiting alleen verklaart selectiviteit',
         'Quantum-tunneling is het enige mechanisme',
@@ -550,7 +550,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de p–d uitwisselingsinteractie in transitiemetaaloxiden, en hoe controleert het elektronische eigenschappen?',
       [
-        'Orbitaal mengen tussen metaal d-banden en ligand p-banden wijzigt bandbreedte, on-site energieën, controle ladingsoverspreiding-karakter en isolatorgedrag',
+        'Menging van d-banden met p-banden',
         'p–d uitwisseling is verwaarloosbaar in alle oxiden',
         'Alleen de d-band dragen bij; p-banden zijn inert',
         'p–d uitwisseling verhoogt altijd geleiding',
@@ -561,7 +561,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe behandelt Marcus–Hush elektronoverdrachttheorie reorganisatie-energie in metaalbindingscomplex redoxkatalyse?',
       [
-        'λ = λ_inner (bindinglengte, trillingen) + λ_outer (oplosmiddelpolymerisatie); hoge-λ systemen vereisen grote overpotentialen voor snelle ET',
+        'λ_inner (trillingen) + λ_outer (oplosmiddel)',
         'Marcus theorie is achterhaald',
         'Reorganisatie-energie hangt alleen af van temperatuur',
         'Alle redoxreacties hebben identieke λ',
@@ -572,7 +572,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat onderscheidt binnensfeer van buitensfeer elektronoverdracht-mechanismen gekatalyseerd door transitiemetaalbindingscomplexen?',
       [
-        'Binnensfeer: bruggeligand verbindt donor en acceptor, directe tunneling; buitensfeer: geen brug, elektronsprongen door ruimte',
+        'Binnensfeer gebruikt een brug; buitensfeer niet',
         'Binnensfeer en buitensfeer mechanismen zijn identiek',
         'Alleen buitensfeer mechanismen treden op in biologische systemen',
         'Binnensfeer mechanismen vereisen altijd volledig gevulde d-schaal',
@@ -583,7 +583,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In homogene katalyse, wat is het katalytische omzetnummer (TON) en welke factoren beperken het?',
       [
-        'TON = molproduct / molkatalysator; beperkt door katalysator deactivering (zijreacties, ligandverlies, aggregatie, productremming)',
+        'TON-verhouding, beperkt door deactivering',
         'TON is de snelheid van één katalytische cyclus',
         'TON is onafhankelijk van katalysatorstructuur',
         'Alle homogene katalysatoren bereiken oneindige TON',
@@ -594,7 +594,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In Type I blauwe kopperencentra, welke elektronische toestanden inschakelen snelle elektronoverdracht-cyclus in enzymen?',
       [
-        'Cu(II) d9 vervormd tetraëdrisch/trigonaal; intense LMCT (600 nm, blauw); omkeerbare Cu(II)/(I) cyclus met geoptimaliseerde geometrie voor snelle ET',
+        'Vervormde Cu(II) d9 geeft snelle cyclus',
         'Blauwe kopperencentra zijn altijd Cu(I) d10',
         'Blauwe koper heeft geen elektronoverdracht-rol',
         'Blauwe kleur geeft kopperenvergiftiging aan',
@@ -605,7 +605,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Waarom heeft [Fe(H2O)6]2+ zwakke d–d overgangen terwijl FeS-clusters intense Fe–S ladingsoverspreiding-absorptie vertonen?',
       [
-        '[Fe(H2O)6]2+ is d6 LS (zwakke d–d verboden); FeS-clusters vertonen sterke Fe(d) → S(p*) MLCT (~400 nm) door Fe–S covalentie',
+        'FeS-clusters tonen sterke Fe–S ladingsoverdracht',
         '[Fe(H2O)6]2+ is altijd blauw',
         'Alle ijzercomplexen vertonen identieke CT-overgangen',
         'Ladingsoverspreiding is irrelevant voor ijzerbiochemie',
@@ -616,7 +616,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe beïnvloedt het elektronische aard van opgewekte toestanden (MC, MLCT, LMCT) fotokatalyetische prestatie in kleurstofgesensiibiliseerde zonnecellen?',
       [
-        'MLCT-toestanden zijn lang-leef (~1 μs), lage-energie (~2 eV), inschakeling efficiënte elektroninjectie in TiO2; MC-toestanden zijn reactief maar kort-leef',
+        'Lang-leef MLCT helpt elektroninjectie in TiO2',
         'Alle opgewekte toestanden zijn gelijk nuttig voor fotokatalyse',
         'Opgewekte-toestandaard is irrelevant voor fotokatalyse-efficiëntie',
         'Alleen LMCT-toestanden zijn nuttig',
@@ -627,7 +627,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat onthult het Creutz–Taube-complex [(NH3)5Ru–pyrazine–Ru(NH3)5]5+ over valentie delocalisatie?',
       [
-        'Dit bruggde Ru(II)–Ru(III) complex vertoont Robin–Day Klasse III delokalisatie; pyrazinebrugvaciliteert snelle e−-hoppend, verduisterend oxidatietoestand',
+        'Toont Klasse III delokalisatie via pyrazine',
         'Valentie delokalisatie treedt nooit op',
         'Het Creutz–Taube-complex is altijd vastgestelde valentie',
         'Bruggliganden voorkomen elektronoverdracht',
@@ -638,7 +638,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Hoe verfijnen continuum-oplossmiddelmodellen (PCM, COSMO) DFT-voorspellingen van metaalbindingscomplex redoxpotentialen?',
       [
-        'Ze lossen Poisson–Boltzmann vergelijking op voor bulk-oplosmiddelscreening, correctie lange-afstand Coulomb-effecten op ΔG(redox) versus gas-fase DFT',
+        'Modelleert screening van Coulomb-effecten',
         'Oplossmiddelmodellen hebben geen effect op redoxpotentiaal-voorspellingen',
         'Redoxpotentialen hangen alleen af van oxidatietoestand',
         'Alleen expliciete watermoleculen zijn relevant',
@@ -649,7 +649,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de rol van hemilabile liganden in katalyse, en hoe verschillen zij van statische chelerende liganden?',
       [
-        'Hemilabile liganden hebben één gemakkelijk dissociabel donor-arm; dynamisch fluxioneel gedrag bloot substrate-bindingssites zonder volledige ontbinding',
+        'Één donor-arm dissocieert reversibel en opent een substraatsite',
         'Hemilabile liganden zijn permanent vastgehecht',
         'Statische en hemilabile liganden hebben identieke katalytische eigenschappen',
         'Hemilabile liganden verschijnen alleen in stoichiometrische reacties',
@@ -660,7 +660,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de computationele uitdaging van spinovergangtemperatuur (SCO) voorspelling voor ijzer(II)-complexen?',
       [
-        'Entropie-bijdragen van moleculaire herschikking (ΔS_vib) en elektronische degeneratie moeten berekend worden; kleine ΔG = ΔH − TΔS vereist hoge nauwkeurigheid',
+        'Nauwkeurige ΔS_vib en elektronische entropie zijn nodig omdat ΔG klein is',
         'SCO-temperaturen zijn experimenteel vast en variëren nooit',
         'Alleen de enthalpie van de overgang is belangrijk; entropie is irrelevant',
         'Computationele methoden overschatten SCO-temperaturen altijd van orden van grootte',

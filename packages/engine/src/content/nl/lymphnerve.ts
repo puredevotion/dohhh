@@ -5,7 +5,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de primaire functie van lymfeknoppen?',
       [
-        'Lymfe filteren en immuunresponsen tegen pathogenen genereren',
+        'Lymfe filteren en immuunresponsen genereren',
         'Bloedssuiker opslaan en reguleren',
         'Rode bloedcellen produceren voor zuurstoftransport',
         'Spijsverteringsenzymen in het maagdarmkanaal afscheiden',
@@ -49,7 +49,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is een synaps?',
       [
-        'De verbinding tussen een neuron en een ander excitabel cel waar neurotransmitters vrijkomen',
+        'De verbinding tussen een neuron en een andere excitabele cel',
         'Het gebied van een neuron dat elektrische signalen van andere neuronen ontvangt',
         'Een soort ionkanaal gevonden in celmembranen van zenuwen',
         'De beschermende schede rond axonen in het perifeer zenuwstelsel',
@@ -60,7 +60,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'De thoracale ductus voert lymfe af van welk lichaamsgebied?',
       [
-        'De linkerbovenzijde, linkeronderzijde en het meeste van buikorganen en bekkenorganen',
+        'De linkerzijde van het lichaam en de meeste buikorganen',
         'Alleen de rechterbovenzijde en rechterkant van de thorax',
         'Alleen de benen en onderbuik',
         'Alleen hoofd- en halsregio\'s',
@@ -82,7 +82,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat doen neurotransmitters op de synaps?',
       [
-        'Signalen van de presynaptische naar de postsynaptische cel overbrengen',
+        'Signalen naar de postsynaptische cel overbrengen',
         'Actiepotenties in het axoninitiaalgebied genereren',
         'Heropname van ionen uit de synaptische spleet voorkomen',
         'De myeline-schede rond axonen versterken',
@@ -104,7 +104,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de functie van de myeline-schede?',
       [
-        'De snelheid van actiepotenaal-voortplanting langs het axon versnellen',
+        'De snelheid van axongeleiding verhogen',
         'Voorkomen dat het axon synapsen vormt',
         'Glucose opslaan voor neuronenergiestofwisseling',
         'Neurotransmitters in het axonterminal synthetiseren',
@@ -115,7 +115,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Welke van de volgende beschrijft het beste de relatie tussen lymfaatse en bloedcapillairen?',
       [
-        'Lymfatische capillairen verzamelen interstitieel vocht dat uit bloedcapillairen is ontsnapt en voeren dit terug naar de circulatie',
+        'Lymfatische capillairen voeren ontsnapt interstitieel vocht terug naar het bloed',
         'Lymfatische capillairen produceren plasmaeiwittenv waarvan bloedcapillairen afhangen',
         'Bloedcapillairen draineren rechtstreeks in lymfatische vaten zonder interstitiële ruimte',
         'Lymfatische capillairen transporteren zuurstof en glucose terwijl bloedcapillairen immuuncellen transporteren',
@@ -126,7 +126,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de rol van het parasympatische zenuwstelsel?',
       [
-        '"Rust en vertering" reacties bevorderen en hartslag en bloeddruk verlagen',
+        '"Rust en vertering" reacties bevorderen',
         'Hartslag en bloeddruk verhogen als reactie op bedreigingen',
         'Vrijwillige spiercontractie controleren',
         'De productie van hormonen in de hypothalamus reguleren',
@@ -137,7 +137,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Lymfocyt-homing naar specifieke lymfoïde organen wordt primair geleid door welke moleculen?',
       [
-        'Adhesiemoleculen en chemokinen die cellen naar specifieke weefsels leiden',
+        'Adhesiemoleculen en chemokinen',
         'Hormonen uitgescheiden door de bijnier',
         'Neurotransmitters vrijgegeven door sympatische zenuwuiteinden',
         'Antilichamen geproduceerd door plasmacellen',
@@ -148,7 +148,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Welk van deze structuren maakt deel uit van het perifeer zenuwstelsel?',
       [
-        'Spinale zenuwen en craniale zenuwen',
+        'Spinale en craniale zenuwen',
         'De hersenenschors',
         'De hersenstam',
         'De kleine hersenen',
@@ -159,7 +159,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Waaruit bestaat lymfe primair?',
       [
-        'Water, opgeloste eiwitten, lymfocyten en andere immuuncellen gefilterd uit bloedplasma',
+        'Gefilterd bloedplasma met eiwitten en immuuncellen',
         'Rode bloedcellen en hemoglobine in suspensie',
         'Gal zouten en spijsverteringsenzymen',
         'Cerebrospinaalvocht dat uit de hersenen is weggespijkerd',
@@ -172,7 +172,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe accumuleren T-cellen voorkeur in de paracortex van lymfeknoppen tijdens een immuunrespons?',
       [
-        'Via CCL21-CCR7-signalering die T-cellen van bloed naar paracortex leidt, waar CCL19 en CCL21 door stromale cellen worden uitgescheiden',
+        'Via CCR7-signalering die T-cellen van bloed naar de paracortex leidt',
         'Via willekeurige migratie; T-cellen hebben geen voorkeurverkeerssignaal',
         'Door actief te worden getransporteerd door dendritische cellen die ze van cortex naar paracortex dragen',
         'Via CXCL12-gradiënten die exclusief rond het keimcentrum voorkomen',
@@ -183,7 +183,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de juiste anatomische relatie tussen Peyer-plekken en lymfatische drainage?',
       [
-        'Peyer-plekken zijn darmgeassocieerd lymfoïd weefsel in de dunne darm; lymfe voert ervan af via afferente vaten naar mesenterische lymfeknoppen',
+        'Peyer-plekken zijn darmgeassocieerd lymfoïd weefsel dat draineert naar mesenterische lymfeknoppen',
         'Peyer-plekken zijn lymfeknoppen in het mesenterium die rechtstreeks met bloedvaten verbonden zijn',
         'Peyer-plekken produceren lymfe rechtstreeks in het darmlumen',
         'Peyer-plekken hebben geen lymfatische drainage; antigenen worden rechtstreeks in het bloed opgenomen',
@@ -194,7 +194,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is het structurele verschil tussen een multipolaire en bipolaire neuron?',
       [
-        'Multipolaire neuronen hebben één axon en meerdere dendriten; bipolaire neuronen hebben één axon en één dendriet',
+        'Multipolaire neuronen hebben meerdere dendrieten; bipolaire hebben er één',
         'Multipolaire neuronen zenden signalen sneller door dan bipolaire neuronen',
         'Bipolaire neuronen worden alleen in het ruggenmerg gevonden; multipolair in de hersenen',
         'Multipolaire neuronen gebruiken acetylcholine; bipolaire neuronen dopamine',
@@ -205,7 +205,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe reguleert de bloed-hersenbarrière de ingang van immuuncellen in het CZS?',
       [
-        'Strakke juncties tussen endotheelcellen beperken paracellulair transport; specifieke adhesiemoleculen mediëren selectieve leukocyt-passage',
+        'Strakke juncties beperken transport; adhesiemoleculen staan selectieve leukocyt-passage toe',
         'De bloed-hersenbarrière is volledig doorlaatbaar voor alle immuuncellen zonder regulatie',
         'Immuuncellen dringen nooit het CZS in, zelfs niet bij ontsteking',
         'Alle immuuncellen worden vrij gefilterd in cerebrospinaalvocht door het plexus choroideus',
@@ -227,7 +227,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de functionele betekenis van High Endothelial Venules (HEVs) in lymfeknoppen?',
       [
-        'Gespecialiseerde postcapillaire venules die selectines en addressines uitdrukken die lymfocytenextrasatie in de knoop mogelijk maken',
+        'Postcapillaire venules die lymfocytenextravasatie in de knoop mogelijk maken',
         'Bloedvaten die rechtstreeks met afferente lymfatische vaten verbonden zijn',
         'Venues die lymfe van medullair koorden terug naar circulatie transporteren',
         'Vaten verantwoordelijk voor drainage van de knoop via efferente lymfatische vaten',
@@ -238,7 +238,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe beïnvloedt de vaguszenuw (CN X) immuunresponsen in de darm en andere organen?',
       [
-        'Parasympatische vezels geven acetylcholine af op muskarine M3-receptoren op immuun- en epitheelcellen, ontsteking modulerend',
+        'Parasympatische vezels geven acetylcholine af en moduleren ontsteking',
         'De vaguszenuw heeft geen relatie met immuunfunctie; het controleert alleen spijsvertering',
         'Het verhoogt ontsteking door TNF-alfa en IL-6 vrij te geven',
         'Het blokkeert alle lymfocytenactivering via sympathomimetische wegen',
@@ -249,7 +249,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de anatomische basis voor de bloed-CSF-barrière op het plexus choroideus?',
       [
-        'Strakke juncties tussen choroideus plexus epitheelcellen, gecombineerd met selectieve transportereiwitten',
+        'Strakke juncties tussen choroideus plexus epitheelcellen',
         'Een ondoordringbare beenbeenbarrière die bloed van cerebrospinaalvocht scheidt',
         'Volledige menging van bloed en CSF zonder barrièrefunctie',
         'Een laag arachnoidale cellen die fysiek alle moleculen belemmeren',
@@ -282,7 +282,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Beschrijf de microarchitectuur van een secundaire follikel in een lymfeknoop.',
       [
-        'Het bevat een donker gekleurde keimcentrum (centroblastische en centrocytische) omgeven door een lichter gekleurde mantelzone van naïeve B-cellen',
+        'Een donker keimcentrum omgeven door een lichtere mantelzone van naïeve B-cellen',
         'Het is een willekeurige aggregatie van lymfocyten zonder georganiseerde zones',
         'Het bestaat uit een enkele laag epitheelcellen',
         'Het is gelokaliseerd in de medullair regio en is vrij van B-cellen',
@@ -293,7 +293,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Welk ruggenmerg-kanaal voert pijn- en temperatuurgevoel van de contralaterale lichaamszijde?',
       [
-        'De spinothalamische kanaal (via spinoreticulaire en spinomesencephale projecties ook)',
+        'De spinothalamische kanaal, die in het ruggenmerg kruist',
         'De dorsale kolom (fasciculus gracilis en cuneatus)',
         'De corticospinale kanaal (motorisch, niet sensorisch)',
         'De vestibulocerebellaire kanaal',
@@ -304,7 +304,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe beïnvloedt neuro-ontsteking door microgliale activering de CZS-immuunrespons?',
       [
-        'Geactiveerde microglia geven pro-inflammatoire cytokines (TNF-alfa, IL-1beta) af en presenteren antigeen aan T-cellen, wat aangeboren en adaptieve immuniteit verbindt',
+        'Geactiveerde microglia geven cytokinen af en presenteren antigeen',
         'Microglia verwijderen alleen puin en hebben geen rol in ontsteking',
         'Microglia blokkeren alle immuunresponsen in de hersenen permanent',
         'Microglia produceren alleen anti-inflammatoire mediatoren',
@@ -315,7 +315,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Welke moleculen leiden B-cellen specifiek naar follikels in lymfeknoppen?',
       [
-        'CXCL13 (B-cel-chemokine) en CXCR5-receptoren op B-cellen creëren chemoatactische gradiënt naar B-cel-zones',
+        'CXCL13-CXCR5-signalering creëert een chemoatactische gradiënt naar B-cel-zones',
         'CCL19 en CCL21, die ook T-cellen leiden',
         'Antigenen zelf trekken B-cellen rechtstreeks naar follikels',
         'Fibroblastische reticulaire cellen die B-cellen fysiek naar follikels duwen',
@@ -326,7 +326,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de structurele en functionele rol van de glomerulaire filtratie barrière (GFB) in immuun-bewaking van de nieren?',
       [
-        'De GFB is een zeer selectief filter dat grote eiwitten en cellen voorkomt in Bowman\'s ruimte, terwijl opgeloste stoffen doorgang toestaan voor immuun-bewaking',
+        'Een zeer selectief filter dat grote eiwitten en cellen blokkeert',
         'De GFB is volledig doorlaatbaar voor alle immuuncellen voor constante nierpatrouille',
         'De GFB heeft geen immuunfunctie; het filtert alleen metabolische afvalstoffen',
         'De GFB transporteert immuun-complexen actief in de urine ter verwijdering',
@@ -339,7 +339,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Verklaar de rol van Lymphatische Endotheelcel (LEC) productie van lymfangiogene factoren in context van immuun-verkeer en resolutie van ontsteking.',
       [
-        'LEC\'s scheiden VEGF-C en VEGF-D uit om lymfangiogenese te bevorderen, wat lymfatische capaciteit herstelt en antígeen-opruiming versnelt tijdens resolutie',
+        'LEC\'s scheiden VEGF-C/D uit om lymfangiogenese te bevorderen tijdens resolutie',
         'LEC\'s voorkomen actief lymfangiogenese door anti-VEGF moleculen uit te scheiden',
         'Lymfangiogenese vertraagt ontsteking oneindig',
         'LEC\'s hebben geen actieve rol in immuun-verkeer; zij zijn slechts passieve geleiders',
@@ -350,7 +350,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe integreren patroonherkenningsreceptoren (PRR\'s) op weefsel-inwonerdendrietische cellen en lymfatisch endotheel aangeboren detectie met lymfatisch verkeer direct?',
       [
-        'TLR\'s en andere PRR\'s op LEC\'s en dendritische cellen voelen PAMP\'s, triggeren upregulering van chemokinen (CCL19, CXCL12) en adhesiemoleculen die lymfocyt-rekrutering verbeteren',
+        'TLR\'s op LEC\'s voelen PAMP\'s en verhogen chemokinen en adhesiemoleculen',
         'PRR\'s werken alleen in bloed; LEC\'s zijn PRR-negatief',
         'PRR-signalering onderdrukt alle lymfocyt-rekrutering naar afvoerknoppen',
         'PRR\'s worden exclusief op T-cellen gevonden, niet op stromale of endotheelcellen',
@@ -361,7 +361,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Beschrijf de laminaire organisatie en functionele specialisatie van lagen in een dorsale worteleganglion (DRG) en hun relatie tot immuun-verkeer.',
       [
-        'DRG\'s bevatten neuronsoma\'s (omringd door satellietgliële cellen) en een fibroblastische capsule; immuun-infiltratie in DRG\'s tijdens neuropathieën hangt af van capsulair permeabiliteit en perineuraal-ontsteking',
+        'DRG-soma\'s worden beschermd door satellietgliële cellen en een fibroblastische capsule',
         'DRG\'s zijn immuun-geprivilegieerd en ervaren nooit immuun-celinfilttratie',
         'DRG\'s missen enige georganiseerde structuur of immuun-barrière',
         'De DRG-capsule is functioneel identiek aan de bloed-hersenbarrière',
@@ -372,7 +372,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe stelt de topologie van lymfatische capillairen (met overlappende endotheelverbindingen en gebrek aan strakke juncties) selectieve opname van lymfatische antigenen en verkeer mogelijk?',
       [
-        'Overlappende juncties vormen primaire lymfatische vaten die openen en sluiten met interstitiële drukveranderingen, waardoor macrofaag-gemedieerde antígeen-bemonsterig en immuun-celingang in lymfe mogelijk is',
+        'Overlappende juncties laten immuuncellen en antigeen in lymfe binnentreden',
         'Strakke juncties in lymfatische capillairen voorkomen alle antígeen-opname',
         'Lymfatische capillairen pompen actief antigenen tegen diffusie in zichzelf',
         'Antigenen worden alleen in bloedcapillairen opgenomen, niet in lymfatische capillairen',
@@ -383,7 +383,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de moleculaire en cellulaire basis voor immuun-tolerantie in mesenterische lymfeknoppen (mLN\'s) tot commensaal antigenen versus geactiveerde reacties op pathogene antigenen?',
       [
-        'Commensaal-antigenen stimuleren tolerogene dendritische cellen die IL-10 en TGF-beta uitdrukken om Foxp3+ regelende T-cellen te induceren; pathogene antigenen activeren inflammatoire DC\'s',
+        'Commensaal-antigenen induceren tolerogene DC\'s die regulerende T-cellen bevorderen',
         'Alle antigenen uit de darm worden onmiddellijk afgewezen ongeacht bron',
         'De mLN\'s hebben geen capaciteit om commensalen van pathogenen te onderscheiden',
         'Commensaal-antigenen triggeren dezelfde inflammatoire reactie als pathogene antigenen',
@@ -394,7 +394,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe reguleert purinerge signalering (ATP/ADP) via P2X7-receptoren op immuuncellen lymfatisch verkeer en ontsteking?',
       [
-        'ATP vrijgegeven door gestresste cellen activeert P2X7 op aangeboren immuuncellen, inflammasoom-activering en IL-1beta-afscheiding bevorderend, wat lymfatische rekrutering versterkt',
+        'ATP activeert P2X7, wat inflammasoom-activering en IL-1beta-afgifte veroorzaakt',
         'Purinerge signalering is irrelevant voor immuun-verkeer',
         'P2X7-activering onderdrukt alle immuunresponsen en voorkomt lymfeknoop-activering',
         'ATP werkt alleen in neuronale synapostransmissie, niet immuun-signalering',
@@ -405,7 +405,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Verklaar de rol van calcitonine-gerelateerd peptide (CGRP) en neuropeptiden in het reguleren van immuun-celverkeer via sympathieke lymfeknoop-innervatie.',
       [
-        'CGRP en stof P vrijgegeven van sympathieke zenuwuiteinden moduleren immuun-celverkeer door vasculaire permeabiliteit, chemokine-gradiënten en T/B-cel-compartimentalisering te veranderen',
+        'CGRP en stof P van zenuwuiteinden moduleren immuun-celverkeer',
         'Neuropeptiden hebben geen rol in immuun-celverkeer',
         'CGRP beïnvloedt uitsluitend pijngewaarwording; het beïnvloedt immuuniteit niet',
         'Sympathieke innervatie van lymfeknoppen voorkomt al immuun-verkeer',
@@ -416,7 +416,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe coördineren folliculaire helper T-cellen (Tfh) en folliculaire dendritische cellen (FDC\'s) keimcentrumreacties in lymfeknoppen, en welke lymfatische factoren ondersteunen deze microomgeving?',
       [
-        'FDC\'s presenteren antigeen via CR2, Tfh leveren IL-21/IL-4 voor B-cel-hulp; stromale celafgeleide lymfangiogene factoren (VEGF-C) breiden lymfatische capaciteit uit om groeiende GC aan te passen',
+        'FDC\'s presenteren antigeen en VEGF-C breidt lymfatieken uit',
         'Tfh en FDC\'s zijn niet functioneel onderling verbonden',
         'Keimcentra vereisen geen lymfatische ondersteuning',
         'Tfh remmen FDC-functie en storten keimcentra in',
@@ -427,7 +427,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Beschrijf de cytoarchitectuur en functionele rol van het subforniculaire orgaan (SFO) en organum vasculosum laminae terminalis (OVLT) in immuun-detectie en neuro-immuunintegratie.',
       [
-        'Deze circumventriculaire organen missen een functionele bloed-hersenbarrière en bevatten tanycyten, waardoor immuun-bewaking van bloedgebonden pathogenen en cytokinen toestaat; zij sturen immuunsignalen naar hypothalamische koortsencentra',
+        'Deze organen missen een bloed-hersenbarrière, wat immuun-bewaking van het bloed toestaat',
         'Deze structuren zijn louter sensori-organen voor bloedosmolariteit; zij hebben geen immuunfunctie',
         'De bloed-hersenbarrière werkt volledig op deze plaatsen',
         'Deze organen scheiden immuunsuppressieve factoren uit die alle CZS-immuunresponsen blokkeren',
@@ -438,7 +438,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe integreren huid-inwonergeheugen T-cellen (TRM) in epidermis met lymfatisch verkeer in context van secundaire uitdaging?',
       [
-        'TRM volharden in epidermis via IL-15-signalering; bij herhalde antígeen-blootstelling geven zij snel IFN-gamma af en rekruteren aangeboren cellen, die via lymfatieken naar afvoerknoppen migreren om Tfh-B-cel-responsen te versterken',
+        'TRM volharden via IL-15 en rekruteren aangeboren cellen naar afvoerknoppen',
         'Huid TRM worden onmiddellijk in lymfatieken gespoeld bij antígeen-ontmoeting',
         'TRM leveren geen beschermende functie en worden vervangen door circulerende geheugen-cellen',
         'Lymfatieken ontbreken in huid; TRM werken in immuunologische isolatie',
@@ -449,7 +449,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Verklaar de anatomische organisatie en functionele betekenis van de retrorubrale kern (RRN) en periaqueductale grijs (PAG) in nociceptieve signalering en immuun-pijninteracties.',
       [
-        'PAG integreert nociceptieve ingang en daalt via rostroventraal medulla om dorsale hoorn-pijnpoorten te moduleren; RRN medieert endogene analgésie en stress-immuun-asstapelremming',
+        'PAG moduleert pijnpoorten; RRN medieert analgésie',
         'Deze structuren controleren alleen motorbewegingen, niet pijn of immuuniteit',
         'De PAG heeft geen relatie tot immuunfunctie',
         'Nociceptieve wegen omzeilen hersenstam helemaal',
@@ -460,7 +460,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de rol van medullair thymusepitheel-cellen (mTEC\'s) en AIRE in centrale tolerantie en lymfatische drainage van apoptotische lymfocyten in de thymus?',
       [
-        'AIRE-uitdrukkende mTEC\'s geven weefsel-beperkte antigenen via MHC-II weer om autoreactieve thymocyten uit te elimineren; lymfatische drainage via medullair lymfatisch endotheel (mlEC\'s) schakelt apoptotische cellen uit',
+        'AIRE+ mTEC\'s elimineren autoreactieve thymocyten via medullair lymfatische opruiming',
         'mTEC\'s hebben geen rol in tolerantie; zij bieden alleen structuurondersteuning',
         'AIRE voorkomt alle T-celrijping en blokkeert lymfatische drainage',
         'Apoptotische cellen hopen zich oneindig in medullair thymus op zonder drainage',
@@ -471,7 +471,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe reguleren oplosbare mediatoren vrijgegeven tijdens neurogenische ontsteking (via TRPV1+ sensorische neuronen) de samenstelling en verkeer van lokale aangeboren immuuncellen en hun migratie in afvoerlymfatieken?',
       [
-        'Stof P, CGRP en glutamaat van sensoriële uiteinden activeren mastcellen en endotheelcellen, vasculaire lekkage en chemokine-productie (CCL2, CXCL1) bevorderend die neutrofielen en monocyten in lymfatieken rekruteren',
+        'Sensorische neuropeptiden activeren mastcellen en drijven chemokine-gemedieerde rekrutering',
         'Sensorische neuropeptiden voorkomen alle immuun-cel-rekrutering',
         'Neurogenische ontsteking is onafhankelijk van immuun-celverkeer',
         'Stof P en CGRP controleren uitsluitend pijn; zij hebben geen immuunologische rol',
@@ -482,7 +482,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Verklaar het verschijnsel van "immuun-geheugen" op niveau van lymfeknoop-stromalearchitectuur en hoe langdurig plasma-cel-nichen in beenmerg met lymfatische-recirculatie zich verhouden.',
       [
-        'Na resolutie ondersteunen geheugen-B-cel-zones en laag antígeen-persistentie in lymfeknoop-FDC\'s Tfh-achtige cellen; LLPC\'s in beenmerg-nichen (ondersteund door CXCL12-producerende osteoblasten) produceren steady-state antilichamen onafhankelijk van actieve lymfatische-recirculatie',
+        'Beenmerg-LLPC-nichen ondersteunen antilichamen onafhankelijk van recirculatie',
         'Immuun-geheugen wordt uitsluitend in bloed opgeslagen; lymfeknoppen zijn inactief na infectie',
         'Beenmerg plasma-cellen vereisen continue antígeen-circulatie via lymfatieken',
         'Lymfeknoop-stromalarchitectuur levert geen geheugen-functie',
@@ -493,7 +493,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe reguleren Sphingosine-1-fosfaat (S1P) gradiënten over lymfeknoop-grenzen lymfocyt-egress versus retentie, en wat is de rol van S1P1-receptorsignalering in thymus-egress van ontwikkelende T-cellen?',
       [
-        'S1P-concentraties zijn hoog in bloed/lymfe en laag in lymfoïd weefsel; S1P1-gemedieerde signalering stimuleert T-cel-uitgang van thymus en lymfeknoppen via chemoatactische gradiënt, terwijl S1P1-antagonisme lymfocyten in secundaire lymfoïde organen vangt',
+        'S1P1-signalering langs een bloed-lymfoïde gradiënt stimuleert T-cel-uitgang',
         'S1P werkt alleen in barrièrelipidstofwisseling; het heeft geen signaleringrol in immuuniteit',
         'S1P-gradiënten zijn identiek binnen en buiten lymfeknoppen',
         'Thymus-egress wordt uitsluitend door cortisol en bijnier-hormonen gecontroleerd',
@@ -506,7 +506,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Evalueer kritisch de opkomende rol van lymfatisch-afgeleide VEGF-C-signalering in resolutie van tertiaire lymfoïde structuren (TLS) in chronische ontsteking, auto-immuniteit en tumor-microomgevingen.',
       [
-        'VEGF-C-gestuurde lymfangiogenese bij TLS-randen vergemakkelijkt immuun-cel-egress en antígeen-drainage, maar kan paradoxaal metastatische verspreiding in tumoren via angiolymfatische routes mogelijk maken; chronische VEGF-C-expressie perpetueert TLS-vorming in auto-immuniteit',
+        'VEGF-C-lymfangiogenese helpt egress maar kan tumoren verspreiden',
         'Lymfatische expansie onderdrukt universeel alle immuunresponsen',
         'Lymfangiogenese speelt geen rol in TLS-biologie',
         'VEGF-C werkt alleen in ontwikkelings-lymfangiogenese, niet homeostase-remodeling',
@@ -517,7 +517,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe onthullen recente single-cel-transcriptomics en spatiale biologie studies voorheen onerkende subsets van fibroblastische reticulaire cellen (FRC\'s) en hun gespecialiseerde rollen in scheidende T- en B-cel-nichen en vormende priming versus tolerantie-uitkomsten?',
       [
-        'Transcriptomisch screenen identificeerde FRC-subsets met onderscheidende chemokine (CCL19, CXCL13, CXCL10) en immunomodulatoire molecuul (PD-L1, TGF-beta) profielen die chemoatactische gradiënten en tolerogene vs. inflammatoire priming-zones creëren',
+        'FRC-subsets tonen chemokine-profielen die tolerogene vs. inflammatoire zones creëren',
         'Alle FRC\'s zijn functioneel identiek',
         'FRC\'s zijn alleen structureel; zij hebben geen regelgevend chemokine-rol',
         'Ruimtelijke organisatie van lymfeknoppen is willekeurig en heeft geen immuun-uitkomsten',
@@ -528,7 +528,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Bespreek de implicaties van recente ontdekkingen van het "glyfatische systeem" in het CZS en zijn potentiële overlap met menigale lymfatische vaten in het schoonmaken van eiwitaggregaten en metabolische bijproducten tijdens slaap, en hoe disfunctie bij neuro-inflammatoire ziektes bijdraagt.',
       [
-        'Het glyfatische systeem vertrouwt op aquaporen-4+ astrocytaire aquaporen om interstitiële opgeloste stoffen schoon te maken tijdens slaap; menigale lymfatieken (ontdekt via twee-foton-beeldvorming) kunnen dit aanvullen via meninge-vloeistof-opruiming, en verslechterde glyfatisch-lymfatische functie linkt aan Alzheimer-pathogenese',
+        'AQP4-afhankelijke glyfatische opruiming, aangevuld door meniale lymfatieken',
         'Het glyfatische systeem is niet functioneel verbonden met lymfatieken',
         'Menigale lymfatieken hebben geen opruimingsfunctie',
         'Slaap heeft geen relatie tot CZS-immuun-opruiming',
@@ -539,7 +539,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Verklaar de mechanistische basis voor vaginale afferent-signalering van microbiota-immuunaxis-integratie met nucleus tractus solitarius (NTS) om systeemtolerantie en barrière-integriteit via dorsale motorische kernuitgang te moduleren.',
       [
-        'Vaginale afferenten voelen microbiële metabolieten (korte-keten-vetzuren, AhR-liganden) en immuun-cytokinen (IL-10) via TLR\'s, signalering van NTS en activering van parasympatische pregangliare vezels in dorsale motor-kern die acetylcholine op intestinale submucosale neuronen en immuuncellen afscheiden, mucus-productie, strakke junctie-integriteit en IL-10-afscheiding bevorderend',
+        'Vaginale afferenten sturen microbiële signalen naar de NTS via cholinergische output',
         'De vagus heeft geen relatie tot microbiota of immuun-barrière-functie',
         'Microbiële metabolieten activeren direct immuuncellen zonder CZS-integratie',
         'De dorsale motor-kern controleert alleen maagazuurafscheiding',
@@ -550,7 +550,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe onthullen recente vooruitgangen in inzicht in lymfeknoop-lymfatieken rollen voor initiële lymfatisch endotheelcellen (iLEC\'s) in antígeen-transytose en de "lokale controlepunt" hypothese in T-cel-primering-regulering?',
       [
-        'iLEC\'s drukken zowel lymfatieke markeringen (Podoplanine) als capillair-achtige doorlaatbaarheid uit; zij transcytoseren antigenen en produceren CCL21, creëren een "priming-drempel" waar alleen voldoende geactiveerde dendritische cellen lymfocyten in efferente lymfatieken vrijgeven terwijl voortijdige naïeve cel-egress wordt onderdrukt',
+        'iLEC\'s transcytoseren antigeen en produceren CCL21, wat lymfocyt-egress poort',
         'Antígeen-transytose treedt alleen op in bloedcapillairen',
         'Initiële lymfatieken zijn niet-selectief; alle lymfocyten vertrekken onmiddellijk',
         'iLEC\'s hebben geen regelgevend rol in T-cel-responsen',
@@ -561,7 +561,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Bespreek het opkomend concept van "getrainde immuuniteit" in weefsel-inwonerinnate lymfoïde cellen (ILC\'s) en hoe hun crosstalk met lymfatisch endotheel via IL-22 en IL-17 afscheiding barrière-beschermende immuuniteit en lymfangiogene remodeling beïnvloedt.',
       [
-        'Geactiveerde ILC\'s (ILC3 primair) produceren IL-22/IL-17, epitheeliale strakke junctie-eiwitten (claudines, occludine) bevorderend en stromale cellen stimuleend om lymfangiogene VEGF-C te produceren, wat een terugkoppellus creëert waarin barrière-integriteit lymfatische expansie ondersteunt voor microbiële antígeen-bemonsterig',
+        'ILC3-afgeleide IL-22/IL-17 versterkt epitheel en breidt lymfatieken uit',
         'ILC\'s hebben geen rol in barrière-functie of lymfangiogenese',
         'IL-22 bevordert uitsluitend inflammatoire destructie',
         'Lymfatische expansie is onafhankelijk van aangeboren lymfoïde-signalering',
@@ -572,7 +572,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe onthullen optogenetische en chemogenetische dissecties van onderscheidende somatosensorische wegen (bijv. C-nociceptoren vs. A-delta mechanoreceptoren) differentiële modulering van immuun-celverkeer door dorsale hoornschakelingen en rostraal spinomesencephale projecties naar PAG?',
       [
-        'C-nociceptor (TRPV1+) activering genereert pijn-immuun-koppeling via stof P-vrijgave in dorsale hoorn, lokale leukocyt-rekrutering bevorderend; PAG-integratie onderdrukt pijn terwijl stress-immuun-as en afwaartse sympathieke lymfoïde orgaan-modulering wordt geactiveerd, terwijl A-delta mechanoreceptoren deze schakelingen omzeilen',
+        'C-nociceptoren stimuleren stof P-vrijgave; A-delta-vezels doen dit niet',
         'Alle sensoriële modaliteiten produceren identieke immuun-effecten',
         'Nociceptoren hebben geen immuun-relevante functies buiten pijnsignalering',
         'De spinomesencephale kanaal draagt alleen pijn, geen immuun-relevante informatie',
@@ -583,7 +583,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Evalueer de rol van weefsel-factor (TF) en trombine-signalering op lymfatische endotheelcellen en immuuncellen in exacerbing lymfatische fibrose en immuun-disfunctie in post-COVID-19-syndroom en long-COVID-pathofysiologie.',
       [
-        'Persistente virale antigenen of virale eiwitten activeren TLR/TF-signalering in lymfatische endotheelcellen en macrofagen, bevorderend PAR-1/PAR-2-gemedieerde myofibroblast-differentiatie en lymfatische remodeling; aberrante Tfh-B-cel-interacties in lymfeknoppen produceren langdurige auto-antilichamen tegen zelf-antigenen en pathogene immuun-complexen',
+        'Persistente virale antigenen stimuleren TF/PAR-signalering en fibrose',
         'TF-signalering is irrelevant voor lymfatische pathologie',
         'Long-COVID is louter psychologisch zonder immuunologische basis',
         'Lymfatische fibrose draagt niet bij aan immuun-disfunctie',
@@ -594,7 +594,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Bespreek de mechanistische integratie van circadiane-ritme-gecontroleerde veranderingen in lymfeflow, aquaporen-4 waterkanaal-activiteit in glyfatische astrocyten en slaap-wake-afhankelijke menigale immuun-cel-verkeer in context van CZS-infectie en opruiming van neuro-inflammatoire mediatoren.',
       [
-        'Circadiale oscillaties in aquaporen-4-expressie en meninge-lymfatische drainage bereiken piek tijdens niet-REM-slaap, wat CSF-ISF-uitwisseling en opruiming van IL-1beta, TNF-alfa en microbiële antigenen vergemakkelijkt; verstoorde slaap verstoort deze ritme, verslechtert neuro-inflammatoire resolutie',
+        'AQP4 en meniale drainage bereiken piek tijdens niet-REM-slaap',
         'Circadiale ritmes hebben geen effect op lymfatische functie',
         'Menigale lymfatieken zijn constitutief inactief tijdens slaap',
         'Neuro-inflammatoire mediatoren worden niet via lymfatische wegen opgeruimd',
@@ -605,7 +605,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe onthullen recente cryo-EM en structuurstudies van CXCR5 en CCR7-chemokine-receptoren op B- en T-cellen, gecombineerd met cryo-EM van hun cognate liganden (CXCL13 en CCL21) gebonden aan glycosaminoglycanen (GAG\'s) in lymfeknoop-stromalmatrices, differentiële lymfocyt-compartimentalisering en moleculair basis voor "ectopische" lymfoïde orgaan-vorming in auto-immuniteit?',
       [
-        'GAG-chemokine-complexen creëren gestabiliseerde, lokale gradiënten in stromalmatrices; CXCR5-CXCL13-interacties positioneren B-cellen voorkeurig bij FDC\'s terwijl CCR7-CCL21 T-cellen in paracortex positioneert. Dysgereguleerde GAG-chemokine-presentatie in ontstoken weefsels stimuleert ectopische TLS met pathogene B-cel- en Tfh-accumulatie',
+        'GAG-gebonden gradiënten scheiden B- en T-celzones en stimuleren ectopische TLS',
         'Chemokine-receptorstructuur is irrelevant voor lymfocyt-verkeer',
         'GAG\'s hebben geen rol in chemokine-presentatie',
         'Ectopische lymfoïde structuren zijn willekeurig verdeeld met geen chemische basis',
@@ -616,7 +616,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Evalueer kritisch de hypothese dat dysgereguleerde acetylcholine-synthese en parasympatisch signalering door nucleus basalis van Meynert (NBM) en septum cholinergische anti-inflammatoire wegen verslechtert tijdens neuro-ontsteking in Alzheimer-ziekte, Parkinson-ziekte en ander neurodegeneratieve proteinaggregaten-ziektes.',
       [
-        'Cholinergische neuronen van NBM en septaal complex geven acetylcholine af op vaginale pregangliare neuronen en rechtstreeks op hersenaangeboren immuuncellen (microglia), onderdrukt TNF-alfa en bevordert IL-10; degeneratie van cholinergische neuronen in proteinaggregaten-ziektes resulteert in ontegensproke pro-inflammatoire microgliale activering en verslechterde glyfatisch-lymfatische opruiming',
+        'NBM-cholinergisch verlies ontketent microgliale neuro-ontsteking',
         'Cholinergische signalering heeft geen rol in neuro-ontsteking',
         'Proteinaggregaten-ziektes beïnvloeden niet cholinergische systeemintegriteit',
         'NBM en septum reguleren alleen geheugen, niet immuuniteit',
@@ -627,7 +627,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Hoe integreren single-cel-multi-omics studies transcriptomics, chromatine-toegankelijkheid (ATAC-seq) en cel-cel-interactievoorspellingen lymfatische cellopeluchtspoor tussen weefsel-inwonergeheugen T-cellen, geheugen-B-cellen en lymfatische endotheelcellen in aangehouden mucosale immuuniteit en de cellulair en moleculaire basis van getrainde mucosale immuuniteit?',
       [
-        'Multi-omics-integratie onthult dat TRM-FDC-LEC-signaleringassen TRM-afgeleide IL-21/IFN-gamma-gestuurde upregulering van FDC-overlevingsfactoren (BAFF, APRIL) en LEC VEGF-C-productie inhouden; dit handhaaft langdurig mucosale geheugen-B-cellen en uitgebreide mucosale lymfatieken, priming snelle secundaire reacties tegen terugkerende pathogenen',
+        'TRM-afgeleide IL-21 ondersteunt FDC-overleving en LEC VEGF-C-productie',
         'TRM-, FDC- en LEC-crosstalk is niet aantoonbaar op moleculair niveau',
         'Mucosaal geheugen is kortstondig en vereist continue antígeen-blootstelling',
         'Lymfatische expansie is antígeen-onafhankelijk en dient geen geheugen-functie',
@@ -638,7 +638,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Bespreek de bidirectionele communicatie tussen het enterische zenuwstelsel (ENS) en darmgeassocieerde lymfoïde weefsel (IALT) via neurotrofische factoren en microbiële metaboliet-detectie.',
       [
-        'Enterische neuronen produceren NGF en GDNF die ILC2/ILC3-ontwikkeling ondersteunen; microbiële aryl-koolwaterstof-receptor (AhR) liganden activeren vaginale afferenten die dorsaal vaginale complex signaleren, wat acetylcholine afscheidt om TNF-alfa in IALT-macrofagen te onderdrukken',
+        'Enterische neurotrofinen ondersteunen ILC\'s; AhR-signalering remt macrofaag-TNF-alfa',
         'De ENS is volledig geïsoleerd van immuun-signalering door epitheelbarrière',
         'Enterische neuronen zenuwen alleen gladde spier; zij hebben geen immuun-functie',
         'Microbiële metabolieten worden systemisch opgenomen zonder lokale mucosale signalering',
@@ -649,7 +649,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Wat is de opkomende inzicht in het meniale immuunlandschap en de rollen van meniale lymfatieken, stromale cellen en grens-geassocieerde macrofagen in CZS-immuun-tolerantie versus neuro-immuun-activering?',
       [
-        'Meniale LV\'s maken antígeen-drainage en immuun-bewaking mogelijk; stromale fibroblasten produceren TGF-beta en IL-10; BAM\'s (TIM4+/CD11c+) mediëren tolerogene reacties op CZS-zelf-antigeen terwijl zij op pathogeen antigeen reageren via TLR-NLRP3-activering',
+        'Meniale lymfatieken maken antígeen-drainage mogelijk terwijl stromale cellen en BAM\'s tolerantie handhaven',
         'De meninges zijn immuun-geprivilegieerd; geen immuuncellen bevinden zich daar',
         'Meniale lymfatieken dragen niet bij aan CZS-immuun-tolerantie',
         'Grens-geassocieerde macrofagen ontstaan uitsluitend uit circulerende monocyten zonder ontwikkelingpad van dooierzakmacrofagen',
@@ -660,7 +660,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
     [
       'Verklaar hoe integratieve hele-organisme studies die circadiale immuun-oscillaties, meniale lymfatische pulsatiliteit en slaap-fase-afhankelijke glyfatische CSF-ISF-uitwisseling linken mechanismen van neurodegeneration in circadiale-verstoringsen slaap-stoornis-modellen onthullen.',
       [
-        'Circadiale oscillaties in lymfocyt-adhesiemolecuul-expressie en HPA-as-output stimuleert piek lymfocyt-egress uit knoppen \'s nachts; meniale lymfatische pulsatiliteit synchroniseert met slaap-fase-overgangen (niet-REM-piek); glyfatisch-lymfatische opruiming van amyloid-beta en tau maximaliseert tijdens NREM-slaap, beschermt tegen proteinaggregaten-ziekte',
+        'Circadiale egress, meniale pulsatiliteit en NREM-opruiming beschermen neuronen',
         'Circadiale ritmes zijn irrelevant voor lymfatische of glyfatische functie',
         'Lymfatische pulsatiliteit is onafhankelijk van slaap-cycli',
         'Neurodegeneration wordt niet beïnvloed door slaapkwaliteit of immuun-drainage-patronen',

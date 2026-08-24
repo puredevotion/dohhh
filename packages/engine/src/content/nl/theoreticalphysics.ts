@@ -5,7 +5,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat stelt de Born-regel in de kwantummechanica vast?',
       [
-        'De waarschijnlijkheid van een bepaalde meting is het kwadraat van de amplitude-grootte',
+        'Een kans is het kwadraat van de amplitude-grootte',
         'Energie en impuls blijven altijd behouden in kwantuminteracties',
         'Elektronen bestaan als deeltjes in plaats van waarschijnlijkheidsgolven',
         'De positie van een deeltje kan alleen tot één decimaal nauwkeurig bekend zijn',
@@ -27,7 +27,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In de speciale relativiteit, wat gebeurt er met de tijd voor een object dat dicht bij de lichtsnelheid beweegt?',
       [
-        'Tijd verstrijkt langzamer in het frame van het bewegende object ten opzichte van een stilstaande waarnemer',
+        'Tijd verstrijkt langzamer voor het bewegende object',
         'Tijd stopt volledig zodra het object half de lichtsnelheid bereikt',
         'Tijd beweegt altijd even snel voor alle waarnemers, ongeacht hun beweging',
         'Het bewegende object ervaart dat tijd sneller verstrijkt evenredig met zijn snelheid',
@@ -38,7 +38,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Welk principe verhindert dat twee identieke elektronen dezelfde kwantumtoestand innemen?',
       [
-        'Het uitsluitingsprincipe van Pauli',
+        'Pauli\'s uitsluitingsprincipe',
         'Het onzekerheidsbeginsel',
         'Het correspondentieprincipe',
         'Het gelijkwaardigheidsbeginsel',
@@ -49,7 +49,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe steekt een deeltje bij kwantumtunneling door een barrière hoger dan zijn totale energie?',
       [
-        'De golffunctie strekt zich in de barrière uit met niet-nul amplitude aan de andere kant',
+        'De golffunctie blijft niet-nul voorbij de barrière',
         'Het deeltje vertraagt tijdelijk om extra kinetische energie te verzamelen',
         'Het steekt niet door; de barrière weerkaatst altijd kwantumdeeltjes',
         'Het deeltje splitst in kleinere stukken die elk genoeg energie hebben',
@@ -71,7 +71,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe beperkt het onzekerheidsbeginsel van Heisenberg de gelijktijdige kennis van conjugate variabelen?',
       [
-        'Het product van onzekerheden in positie en impuls heeft een minimale niet-nul waarde',
+        'Positie- en impulsonzekerheid heeft een minimaal niet-nul product',
         'Positie of impuls is altijd exact nul voor elk deeltje',
         'Snelheid en versnelling kunnen niet op dezelfde dag worden gemeten',
         'Meting van één eigenschap vernietigt het deeltje, wat meting van de ander voorkomt',
@@ -82,7 +82,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat stelt superpositie in de kwantummechanica mogelijk?',
       [
-        'Een systeem kan tegelijk in meerdere toestanden bestaan totdat het wordt gemeten',
+        'Een systeem bestaat in meerdere toestanden tot meting',
         'Een deeltje kan op twee verschillende plaatsen tegelijk zijn',
         'Een elektron kan twee verschillende snelheden tegelijk hebben',
         'Energie kan zonder behoud worden aangemaakt en vernietigd',
@@ -93,7 +93,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In de algemene relativiteit, wat vertegenwoordigt ruimtetijd-kromming?',
       [
-        'Het effect van massa en energie op de geometrie van ruimte en tijd',
+        'Massa en energie krommen ruimte en tijd',
         'Een visuele weergave zonder fysieke betekenis',
         'De snelheid waarmee licht door een gebied reist',
         'De sterkte van de zwakke kernkracht in een gebied',
@@ -126,7 +126,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is golf-deeltjesdualiteit?',
       [
-        'Alle materie en energie vertonen zowel golf- als deeltjeskwaliteiten afhankelijk van observatie',
+        'Materie en energie vertonen zowel golf- als deeltjesgedrag',
         'Deeltjes en golven zijn fundamenteel gescheiden entiteiten die nooit wisselwerken',
         'Deeltjes bestaan uit veel kleine trillingen die samen bewegen',
         'Alleen licht vertoont golfgedrag; materie is zuiver deeltjesachtig',
@@ -148,7 +148,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is antimaterie?',
       [
-        'Materie samengesteld uit deeltjes identiek aan gewone deeltjes, behalve tegengestelde elektrische lading',
+        'Deeltjes identiek aan gewone materie maar met omgekeerde lading',
         'Een hypothetische vorm van materie die gewone materie op alle afstanden afstoot',
         'De lege ruimte tussen atomen en elektronen',
         'Een supersymmetrische partner van gewone materie die alleen in versnellers bestaat',
@@ -159,7 +159,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In de kwantumveldtheorie, wat zijn kwantumvelden?',
       [
-        'Fundamentele entiteiten die alle ruimte doordringen; deeltjes zijn aangestoken van deze velden',
+        'Velden die alle ruimte doordringen; deeltjes zijn hun excitaties',
         'Wiskundige artefacten die alleen voor gemaksberekeningen worden gebruikt',
         'Fysieke krachten die deeltjes rechtstreeks van de ene plaats naar de ander duwen',
         'Gebieden van ruimte waar het onzekerheidsbeginsel niet van toepassing is',
@@ -172,7 +172,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat bepaalt de Bell-test over theorieën van verborgen lokale variabelen?',
       [
-        'Ze kunnen niet alle voorspellingen van de kwantummechanica reproduceren; verstrengeling vereist niet-lokale correlaties',
+        'Ze kunnen niet alle voorspellingen van de kwantummechanica reproduceren',
         'Ze geven een volledige beschrijving van de kwantummechanica op subatomaire schaal',
         'Ze zijn wiskundig gelijkwaardig aan de kwantummechanica maar gemakkelijker te berekenen',
         'Ze voorspellen een vaste waarde voor deeltjeskwaliteiten voor meting optreedt',
@@ -183,7 +183,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de rol van de Lagrangiaan in klassieke en kwantumveldtheorie?',
       [
-        'Hieruit leiden we bewegingsvergelijkingen en behoudgrootheden af via symmetrieën',
+        'Hieruit volgen bewegingsvergelijkingen en behoudsgrootheden',
         'Het codeert de waarschijnlijkheidsverdeling van deeltjesposities',
         'Het meet rechtstreeks de totale energie-inhoud van een systeem',
         'Het specificeert grensvuldigingscondities die deeltjes moeten vervullen',
@@ -205,7 +205,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat behandelt renormalisatie in de kwantumveldtheorie?',
       [
-        'Divergente integralen van virtuele deeltjeslusses; fysieke voorspellingen ontstaan door oneindighedente absorberen in opnieuw bepaalde parameters',
+        'Divergente lusintegralen, geabsorbeerd in opnieuw bepaalde parameters',
         'Het feit dat metingen altijd eindige resultaten geven terwijl theorie oneindigheid voorspelt',
         'De noodzaak om de kwantummechanica op zeer korte afstanden aan te passen',
         'Hoe de Lagrangiaan in formalisme van Hamilton wordt omgezet',
@@ -216,7 +216,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de fysieke betekenis van ijksymmetrie in veldtheorie?',
       [
-        'Het beperkt de structuur van de theorie en voorspelt bestaan van ijkbosonen (krachtdragers)',
+        'Het voorspelt het bestaan van ijkbosonen (krachtdragers)',
         'Het zorgt ervoor dat alle deeltjes in de theorie met lichtsnelheid bewegen',
         'Het elimineert de noodzaak om grensvuldigingscondities in berekeningen in te stellen',
         'Het bewijst dat alle krachten zich tot zwaartekracht reduceren bij voldoende energie',
@@ -238,7 +238,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat bestuurt de koppelingsconstante in de kwantumveldtheorie?',
       [
-        'De sterkte van wisselwerking tussen deeltjes; de waarde bepaalt convergentie van storingsreeksen',
+        'De sterkte van wisselwerking tussen deeltjes',
         'Het totale impulsmoment dat door alle deeltjes wordt gedragen',
         'Het tempo waarmee deeltjes in lichtere producten vervallen',
         'Het aantal ruimtelijke dimensies dat toegankelijk voor de theorie is',
@@ -249,7 +249,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In de statistische mechanica, wat is de Boltzmann-verdeling?',
       [
-        'De waarschijnlijkheid van een systeemtoestand is evenredig aan exp(-E/kT)',
+        'Een toestandskans is evenredig aan exp(-E/kT)',
         'Het bewijst dat entropie in geïsoleerde systemen altijd toeneemt',
         'Het beschrijft hoe deeltjes willekeurig in gassen bewegen',
         'Het koppelt temperatuur aan de gemiddelde kinetische energie van deeltjes',
@@ -260,7 +260,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat onderscheidt kwantumchromodynamica van kwantumelektrodynamica?',
       [
-        'QCD heeft niet-abelse symmetriegroep (SU(3)); sterkte neemt toe bij grote afstanden (opsluiting)',
+        'QCD heeft een niet-abelse SU(3)-symmetrie met opsluiting',
         'QED beschrijft massieve deeltjes terwijl QCD alleen massaloze deeltjes beschrijft',
         'QCD geldt alleen voor sterke kernkracht, QED overal',
         'QED voorspelt oneindige divergenties; QCD voorkomt deze via extra symmetrieën',
@@ -271,7 +271,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is asymptotische vrijheid?',
       [
-        'De koppelingsterkte neemt af op kortere afstanden (hogere energieën) in bepaalde theorieën zoals QCD',
+        'De koppeling verzwakt bij kortere afstanden in theorieën zoals QCD',
         'Het vermogen van deeltjes om uit een potentiaalput te ontsnappen met alleen kinetische energie',
         'De eigenschap dat alle deeltjes uiteindelijk in stabiele eindproducten vervallen',
         'Het principe dat geen kracht een deeltje sneller dan licht kan versnellen',
@@ -282,7 +282,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is een padintegraal in Feynman-formulering?',
       [
-        'Som over alle mogelijke deeltjesbanen gewogen met fasefactoren, opbrengsten waarschijnlijkheidsamplitudes',
+        'Som over alle banen gewogen met fasefactoren',
         'De klassieke baan die de actiefunctionaal minimaliseert',
         'Een integraal over impulsruimte die verstrooiingsdwarsdoorsnedes berekent',
         'De verzameling Feynman-diagrammen die een proces bijdragen',
@@ -293,7 +293,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is spontane symmetriebreking?',
       [
-        'Wanneer de grondtoestand van een systeem minder symmetrie heeft dan zijn Lagrangiaan',
+        'De grondtoestand heeft minder symmetrie dan de Lagrangiaan',
         'Wanneer Lagrangiaantermen een bekende behoudswet schenden',
         'Wanneer kwantumfluctuaties de exacte symmetrie van een klassiek veld vernietigen',
         'Wanneer externe krachten een systeem buiten evenwicht stoten',
@@ -304,7 +304,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat garandeert de CPT-stelling?',
       [
-        'Fysische wetten zijn ongewijzigd onder gelijktijdige ladingsconjugatie, pariteitsinversie en tijdomkering',
+        'Fysische wetten zijn ongewijzigd onder gecombineerde C, P en T',
         'Energie en impuls blijven altijd behouden in kwantuminteracties',
         'Deeltjes en antideeltjes hebben identieke levensduren en vervalmodi',
         'De lichtsnelheid is hetzelfde in alle referentieframes',
@@ -315,7 +315,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de rennende koppelingsconstante?',
       [
-        'De effectieve koppelingsterkte die verandert met de onderzochte energieschaal',
+        'De koppelingsterkte die verandert met energieschaal',
         'Een constante die verschijnt in de koppeling van deeltjes aan externe velden',
         'Het tempo waarmee koppelingsterkte afneemt door deeltjesvervalling',
         'Een parameter die in de tijd varieert tijdens systeemevolutie',
@@ -326,7 +326,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In het Standaardmodel, welke rol spelen de W- en Z-bosonen?',
       [
-        'Ze vermittelen de zwakke kernkracht, wat processen zoals bètavervalling mogelijk maakt',
+        'Ze vermittelen de zwakke kernkracht',
         'Ze dragen sterke kracht tussen quarks in hadronen',
         'Ze binden elektronen aan atoomkernen',
         'Ze verzenden zwaartekrachtaantrekking tussen massieve objecten',
@@ -339,7 +339,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat kwantificeert de renormalisatiegroupvergelijking (bètafunctie) in asymptotisch vrije theorieën?',
       [
-        'De veranderingssnelheid van koppelingsconstante met energieschaal; deze verdwijnt bij infrarood- en ultravioletfixpunten',
+        'De veranderingssnelheid van koppeling met energieschaal',
         'De kansverdeling voor deeltjesposities in een kwantumveld',
         'Het tempo waarmee virtuele deeltjes in lusses ontstaan en verdwijnen',
         'De relatie tussen massa en koppelingsterkte in een theorie',
@@ -350,7 +350,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Welk fysiek mechanisme onderheeft quarkopsluiting in QCD?',
       [
-        'Kleurfluxbuizen tussen quarks hebben spanning; scheiden koste energie creëert quarkparen, verhinderend geïsoleerde gekleurde objecten',
+        'Kleurfluxbuizen hebben spanning; scheiden van quarks maakt nieuwe paren',
         'De sterke kracht heeft oneindige bereik, bindende quarks permanent via potentiaal',
         'Quarks zijn eigenlijk samengestelde objecten van nog kleinere, nog ingeperkte constituenten',
         'Opsluiting is een benadering die breekt bij zeer hoge temperaturen',
@@ -361,7 +361,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de fysieke betekenis van een topologische term in een Lagrangiaan?',
       [
-        'Het draagt bij aan actie zonder bewegingsvergelijkingen aan te tasten; het verandert onder grote ijktransformaties en is gekwantiseerd',
+        'Het draagt bij aan de actie, maar niet aan de bewegingsvergelijkingen',
         'Het beschrijft deeltjes die alleen op de grens van een systeem bestaan',
         'Het codeert informatie over het Coulomb-potentiaal in de theorie',
         'Het is een artefact van regularisatie die verdwijnt in continue limiet',
@@ -372,7 +372,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe ontstaan anomalieën in de kwantumveldtheorie en wat geven ze aan?',
       [
-        'Klassieke symmetrieën worden op kwantumniveau gebroken door lusdiagrammen; ze onthullen driehoekdiagrammen die fermionen en vectorbosonen mengen',
+        'Klassieke symmetrieën worden op kwantumniveau gebroken door lusdiagrammen',
         'Ze zijn berekeningsfouten die verdwijnen met correcte regularisatieschema\'s',
         'Ze geven aan dat een klassieke symmetrie na kwantisering niet meer exact is',
         'Ze bewijzen dat een theorie inconsistent is en verlaten moet worden',
@@ -383,7 +383,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In effectieve veldtheorie, wat bepaalt powertellingen en organisatie van operatoren?',
       [
-        'De schaalafmeting van operatoren ten opzichte van afsnijding; hogerdimensionale operatoren worden onderdrukt door inverse machten van EFT-schaal',
+        'De schaalafmeting van operatoren ten opzichte van de afsnijding',
         'Het totale aantal lusses in Feynman-diagrammen die bijdragen aan een proces',
         'Of symmetrie expliciet of spontaan in de UV-theorie wordt gebroken',
         'De massahiërarchie van deeltjes in onderliggende theorie',
@@ -394,7 +394,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is het belang van de Calabi-Yau-variëteit in stringtheorie?',
       [
-        'De geometrie codeert verdichte extra dimensies; aantal modi bepaalt aantal laagenergetische deeltjesgeneraties en ijkgroepen',
+        'De geometrie codeert de verdichte extra dimensies',
         'Het is een oplossing van Einsteins vergelijkingen die zwarte gaten in extra dimensies beschrijft',
         'Het bewijst dat stringtheorie de enige consistente kwantumzwaartekracht is',
         'Het toont aan dat supersymmetrie op alle energieschalen exact moet zijn',
@@ -405,7 +405,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Welke rol speelt de operatorproduksuitbreiding (OPE) in conforme veldtheorie?',
       [
-        'Het decomponeert producten van operatoren dicht bij elkaar in sommen lokale operatoren met coëfficiënten bepaald door conforme symmetrie',
+        'Het decomponeert nabije operatorproducten in sommen lokale operatoren',
         'Het relateert tweezesfunctie aan viersesfunctie via kruisvergelijkingen',
         'Het bewijst dat alle correlatiefuncties bepaald worden door één koppelingsconstante',
         'Het toont aan dat conforme dimensies gehele getallen moeten zijn',
@@ -416,7 +416,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe biedt AdS/CFT-correspondentie inzicht in sterk gekoppelde ijktheorieën?',
       [
-        'Het kaarten zwakkelijk gekoppelde CFT op zwakkelijk gekoppelde zwaartekrachttheorie in AdS-ruimte, berekening niet-perturbatieve waarneembaarheden inschakelen',
+        'Het kaart sterk gekoppelde CFT op zwak gekoppelde zwaartekracht',
         'Het bewijst dat zwaartekracht en ijktheorie fundamenteel identiek zijn',
         'Het toont aan dat alle kwantumveldtheorieën gelijkwaardig zijn aan stringtheorieën',
         'Het elimineert renormalisatie noodzaak in kwantumveldtheorie',
@@ -427,7 +427,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat wordt bedoeld met asymptotische veiligheid in kwantumzwaartekracht?',
       [
-        'Een ultravioletfixpunt van zwaartekrachtskoppeling dat theorie eindig houdt zonder supersymmetrie of extra dimensies',
+        'Een ultravioletfixpunt van de zwaartekrachtskoppeling',
         'Een bewijs dat zwaartekracht op hoge energieën door materie moet worden afgeschermd',
         'De verklaring dat zwaartekracht van andere interacties ontkoppelt boven Planck-schaal',
         'Een mechanisme zwaartekrachtdeeltje voorkoming in verstrooiingsprocessen',
@@ -438,7 +438,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat stelt de Zamolodchikov c-theorema in tweedimensionale veldtheorieën vast?',
       [
-        'Een functie die afneemt langs RG-stromen van UV naar IR-fixpunten, irreversibiliteit in tijd richtend',
+        'Een functie die monotoon afneemt langs RG-stromen',
         'Dat alle tweedimensionale theorieën UV-conforme symmetrie moeten hebben',
         'Dat koppelingsconstanten nooit kunnen toenemen langs fysische evolutie',
         'Dat entropieproductie altijd anomaliecoëfficiënt moet gelijk zijn',
@@ -449,7 +449,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de fysieke oorsprong van zwartgatentropie in stringtheorie?',
       [
-        'Degeneratie microtoestanden (D-branen, stringmodi) bij/dicht bij horizont waarvan tellen Bekenstein-Hawking-formule aansluit',
+        'Degeneratie van microtoestanden dicht bij de horizont',
         'De verstrengeling entropie tussen zwartgatinterieur en buitenkant',
         'Een diep symmetrieprincipe dat entropie oppervlakte vereist',
         'Kwantumcorrecties op Einstein-Hilbert-werking dicht singulariteit',
@@ -460,7 +460,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe geven instantonoplossingen in ijktheorie niet-perturbatieve fysica inzicht?',
       [
-        'Ze zijn topologisch niet-triviale veldconfiguraties die tussen vacuümsectoren tunnelen; onderdrukt door exponentiële factoren exp(-8π²/g²)',
+        'Topologisch niet-triviale configuraties die tussen vacua tunnelen',
         'Ze zijn artefacten van storingstheorie die in exacte oplossing verdwijnen',
         'Ze vertegenwoordigen virtuele deeltjes in lusdiagrammen geproduceerd',
         'Ze bewijzen dat koppelingsconstanten rationale getallen moeten zijn',
@@ -471,7 +471,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is het belang van modi in stringtheoriecompactificaties?',
       [
-        'Scalaarvelden voortvloeiing geometrische vervormingen; hun vacuümwaarden bepalen laagenergetiekoppelingsconstanten en deeltjesmassa\'s',
+        'Scalaarvelden uit geometrische vervormingen van de verdichting',
         'Deeltjes die zwakke kernkracht in verdichte theorie vermittelen',
         'Extra dimensies ontoegankelijk voor fysische experimenten',
         'Wiskundige parameters beïnvloedende voorspellingen maar onwaarneembaar in beginsel',
@@ -482,7 +482,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Welke rol spelen superconforme algebra\'s in supersymmetrische theorieën?',
       [
-        'Ze breiden conforme groep uit door supersymmetrische generatoren toe te voegen; beperken correlatiefuncties en anomaliecoëfficiënten meer dan conforme symmetrie alleen',
+        'Ze breiden de conforme groep uit met supersymmetrische generatoren',
         'Ze bewijzen dat supersymmetrie spontaan op lage energieën moet breken',
         'Ze elimineren alle kwantumcorrecties op Lagrangiaan',
         'Ze garanderen dat alle koppelingen op alle energieschalen eindig blijven',
@@ -493,7 +493,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de bètafunctie voor scalaire koppeling λ in φ⁴ theorie op één lus?',
       [
-        'β(λ)=(3λ²)/(16π²), toont dat φ⁴ theorie asymptotisch vrijheid in koppeling is',
+        'β(λ)=(3λ²)/(16π²) op één lus',
         'Een negatieve hoeveelheid drijft koppeling naar nul op alle energieschalen',
         'Nul op alle lusorden, makend φ⁴ conforme theorie',
         'Evenredig met grenormaliseerde massa, niet koppeling zelf',
@@ -506,7 +506,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is het moeras-vermoeden en waarom is het belangrijk voor stringtheoriefenomenologie?',
       [
-        'Het stelt voor dat meeste effectieve veldtheorieën consistent met zwaartekracht geen consistente UV-voltooiing in stringtheorie hebben; het beperkt levensvatbare deeltjesfysicamodellen',
+        'Zwaartekracht-consistente EFT\'s missen vaak UV-voltooiing',
         'Het bewijst dat alle kwantumveldtheorieën in stringtheorie kunnen worden ingebed',
         'Het demonstreert dat supersymmetrie onder zwakke schaal moet breken',
         'Het elimineert donkere materienoodzaak in kosmologische modellen',
@@ -517,7 +517,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe zorgen het anomalypolynoom en Green-Schwarz-mechanisme voor 10D-superstringconsistentie?',
       [
-        'Het anomalypolynoom ontbindt als anomaliecoëfficiënten specifieke voorwaarden vervullen; GS-mechanisme annuleert resterende anomalieën via Chern-Simons-termen',
+        'Het anomalypolynoom ontbindt onder specifieke voorwaarden',
         'Ze elimineren supersymmetrienoodzaak in 10-dimensionale theorie',
         'Ze bewijzen dat ijkgroepen U(1)-factoren alleen moeten zijn',
         'Ze vereisen dat alle fermionen identieke massa\'s hebben',
@@ -528,7 +528,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de resurgentiestructuur in asymptotische reeksen en verband met transseries in veldtheorie?',
       [
-        'Een asymptotische perturbatieve reeks codeert niet-perturbatiecorrecties informatie; transseries sommeren alle sectoren (instantonen, fractionele instantonen) in transseries',
+        'Een asymptotische reeks codeert informatie over niet-perturbatieve correcties',
         'Wiskundige toeval dat perturbatieve berekeningen niet-perturbatieve resultaten reproduceren',
         'Een symmetrie die koppelingsconstante onder transformaties invariant verzekert',
         'Een mechanisme dat renormalisatie in bepaalde theorieën elimineert noodzaak',
@@ -539,7 +539,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe verlicht het Sachdev-Ye-Kitaev-model kwantumzwaartekracht in grote-N-limiet?',
       [
-        'Het is oplossbaar N-fermionen model met alles-op-alles willekeurige koppelingen vertoonend zwaartekrachtdual en chaos-verspreidingzwartgatgedrag',
+        'Een oplosbaar model van willekeurig gekoppelde fermionen met zwaartekrachtdual',
         'Het bewijst dat zwaartekracht zuiver klassiek is en geen kwantumbehandeling vereist',
         'Het demonstreert dat entropie in kwantumsystemen altijd toeneemt',
         'Het toont aan dat holografie alleen op theorieën met grote ijkgroepen van toepassing is',
@@ -550,7 +550,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is M-theorie en welk bewijs ondersteunt bestaan ervan als verengd raamwerk voor stringdualiëren?',
       [
-        'Een 11-dimensionale theorie verondersteld alle vijf superstringtheorieën onderheffen; dualiëren kaarten ertussenuit, suggererend unieke onderliggende theorie',
+        'Een 11-dimensionale theorie die alle superstringtheorieën zou onderheffen',
         'Een zuiver wiskundige constructie zonder fysieke relevantie deeltjesfysica',
         'Een bepaalde stringtheorie-type dat alle bekende deeltjesfysica insluit',
         'Een mechanisme bewijzend zwaartekracht en kwantummechanica onverenigbaar zijn',
@@ -561,7 +561,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe berekent men de zachte gravitonstelling en wat openbaart zij over verstrooiingsamplitudes?',
       [
-        'Zachtlimieten amplitudes met laagenergiegrravitonen factoren in eenvoudige universele factoren; zij coderen asymptotische symmetrieën (BMS-groep) en geheugeneffecten',
+        'Zachte-gravitonlimieten factoren in eenvoudige universele factoren',
         'Door limiet waar alle externe deeltjes lichtsnelheid naderen te nemen',
         'Gebruikend alleen boom-Feynman-diagrammen zonder lusecorrecties',
         'Het toont aan dat gravitonen fundamenteel verschillen van andere deeltjes',
@@ -572,7 +572,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat betekent trickberekening in verstrengeling-entropie en wat zijn beperkingen?',
       [
-        'Het gebruikt Zₙ=Tr(ρ^n) analytische voortzetting n→1 naar S_E=−∂_nZₙ extractie; veronderstelt analytische voortzetting geldig maar kan niet-triviale zadelputten missen',
+        'Het zet Zₙ=Tr(ρ^n) analytisch voort van n→1 om S_E te bepalen',
         'Een methode toepasbaar alleen op vrije veldtheorieën zonder interacties',
         'Een manier entropie berekenen werkend voor alle kwantumsystemen zonder uitzondering',
         'Een techniek bewijzend verstrengeling-entropie altijd volume evenredig is',
@@ -583,7 +583,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe vangen braandynamica en DBI-werking niet-perturbatieve stringeffecten in D-braansystemen?',
       [
-        'De DBI-werking beheerst D-braanbeweging in dynamische achtergrondvelden; wordt singulier als braanspanning/massa divergeert, coderende instabiliteit drempels en fluxeffecten',
+        'De DBI-werking beheerst D-braanbeweging in dynamische achtergrondvelden',
         'Ze beschrijven hoe open strings gesloten strings in verstrooiingsprocessen uitzenden',
         'Ze bewijzen dat D-branen in consistente stringtheorieën niet kunnen bestaan',
         'Ze tonen aan dat supersymmetrie exact in alle braanconfiguraties is',
@@ -594,7 +594,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is de Hirzebruch-handtekeningstelling en hoe beperkt zij anomalieën in spinorelektrodynamica?',
       [
-        'De handtekening variëteit gelijk aan index Dirac-type operator; in QED, chirale anomaliecoëfficiënten passen topologische invarianten (genusformules)',
+        'De handtekening is gelijk aan de Dirac-operatorindex',
         'Een resultaat toont alle gekromde ruimten positieve scalairkromming moeten hebben',
         'Een stelling elimineert renormalisatie in veldtheorie noodzaak',
         'Een verklaring alle variëteiten topologische eigenschappen identiek hebben',
@@ -605,7 +605,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe beheersten Regge-limiet en BFKL-vergelijking hogeenergie-verstrooiing in QCD?',
       [
-        's→∞ bij vaste impulsoverbracht vertonen Regge-gedrag (sᵅ(t)); BFKL somt grote-x logaritmes via pommeron (spin-2, intercept>1), veranderingsmachtwetten',
+        's→∞ bij vaste impulsoverdracht vertoont Regge-gedrag',
         'Ze gelden alleen voor elektromagnetische verstrooiing, niet sterke interacties',
         'Ze bewijzen dat verstrooiingsdwarsdoorsnedes energie altijd afnemen met',
         'Ze elimineren storingstheorie noodzaak in QCD-berekeningen',
@@ -616,7 +616,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat is holomorfe anomalie in topologische stringtheorie en structuur openbaart zij?',
       [
-        'F-termen verliezen holomorfie op genus>0 door wereldbladinstantonen; anomalievergelijking stelt F_g aan lagere genera, coderingspegelsmmetrie en instantonsommen',
+        'F-termen verliezen holomorfie op genus>0',
         'Een teken topologische strings niet consistent bepaald zijn',
         'Een mechanisme maked topologische correlators nul boven boomniveau',
         'Een symmetrie beschermend stringtheorie kwantumcorrecties',
@@ -627,7 +627,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe ondervinden roosterqcd-simulaties bij eindige baryondichtheid het tekenprobleem en inzicht QCD-faseover gangen?',
       [
-        'Fermionische determinant wordt complex op μ≠0, voorkomend Monte Carlo-bemonstering; herwaarderen/analytische voortzetting stellent fasediagrammen (kleurvlakvergrendeld, quark-gluonplasma)',
+        'De fermionische determinant wordt complex bij μ≠0',
         'Rooster-afstand moet oneindig gereduceerd naar eindige dichtheid toegang',
         'Tekenvraagstuk is zuiver computationaalcartefact zonder fysieke betekenis',
         'Het demonstreert QCD-fasediagram identiek op alle dichtheden is',
@@ -638,7 +638,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat betekent F-theorie als geometrisch stringcompactificatieraamwerk en relatie heterotische dualiteit?',
       [
-        'F-theorie 12D formalisme elliptische vezelbundel geometrie codeert ijksectoren en stof; unifieert type IIB en heterotisch via dualiteit',
+        'F-theorie is een 12D-formalisme met elliptische vezelbundelgeometrie',
         'Een theorie vereist meer dan 11 fundamentele dimensies',
         'Een methode elimineert noodzaak alle andere stringdualiteiten theorie',
         'Een bewijs zwaartekracht ijkinteracties lage energieën ontkoppelt',
@@ -649,7 +649,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Hoe verschillen infrarood-divergenties in zwaartekracht van Yang-Mills-theorie en zachte stellingen\' rol in annulering?',
       [
-        'Zwaartekracht heeft zachte foton en zachte gravitondivergentie (één-zacht, twee-zacht); zachte stelling factoren universeel, IR-structuur verminderend maar niet volledig verwijderend',
+        'Zwaartekracht heeft zowel zachte foton- als gravitondivergenties',
         'Zwaartekracht heeft geen infrarood-divergenties vanwege lange bereik zwaartekrachtskracht',
         'Yang-Mills en zwaartekracht identieke infrarood-structuur zonder onderscheid',
         'Zachte stellingen bewijzen alle infrarood-divergenties volledig kunnen geëlimineerd worden',
@@ -660,7 +660,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'Wat voorspelt gegeneraliseerde entropie (Wald-entropie) voor zwartgatthermodynamica hogerekromming-zwaartekracht?',
       [
-        'S=∫ dA·∂L/∂R_abcd voor algemene Lagrangiaanen; correcties op Bekenstein-Hawking S=A/(4G) ontstaat van R², R³, ... termen, wijzigend temperatuur en stabiliteit',
+        'S=∫ dA·∂L/∂R_abcd, correctie op Bekenstein-Hawking',
         'Het bewijst zwartegatentropie altijd exact A/(4G) ongeacht theorie is',
         'Het toont aan zwartegatten tweede thermodynamicawet schenden',
         'Het elimineert kwantummechanica noodzaak zwartegatten begrijpen',

@@ -5,7 +5,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'Which Frankish dynasty, known for their "long-haired kings," ruled before the Carolingians?',
       [
-        'The Merovingian dynasty',
+        'The Merovingians',
         'The Visigothic dynasty',
         'The Ostrogothic dynasty',
         'The Vandal dynasty',
@@ -16,7 +16,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What was the significance of Charlemagne\'s coronation on Christmas Day 800?',
       [
-        'He was crowned Holy Roman Emperor, uniting spiritual and temporal authority',
+        'He was crowned Holy Roman Emperor',
         'He became the first Christian king of France',
         'He declared himself Pope of the Western Church',
         'He conquered Rome and established a new religious capital',
@@ -38,7 +38,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What was the primary cause of the Hundred Years\' War between England and France?',
       [
-        'English kings\' claims to the French throne and control of Norman and Angevin lands',
+        'English claims to the French throne',
         'French invasion of English territories in Britain',
         'Religious differences between English Catholics and French Protestants',
         'Trade disputes over control of Mediterranean ports',
@@ -49,7 +49,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'Who was Joan of Arc and what was her role in the Hundred Years\' War?',
       [
-        'A French peasant girl who claimed divine visions and led French forces against the English',
+        'A French peasant girl who led French troops',
         'An English general who defeated French armies at Crécy',
         'A French noblewoman who negotiated peace treaties with England',
         'A French scholar who taught military strategy to the dauphin',
@@ -60,7 +60,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What system of governance characterized the reign of Louis XIV?',
       [
-        'Absolute monarchy, with power concentrated in the hands of the king',
+        'Absolute monarchy, centered on the king',
         'Constitutional monarchy with a powerful parliament',
         'Democratic republic with elected officials',
         'Feudal system with powerful independent nobles',
@@ -71,7 +71,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What was the Edict of Nantes (1598) and whom did it protect?',
       [
-        'Henry IV\'s decree granting religious toleration and civil rights to French Huguenots',
+        'Henry IV\'s decree granting religious toleration to Huguenots',
         'Louis XIV\'s law abolishing all Protestant churches in France',
         'A papal bull establishing the authority of the Pope in France',
         'A feudal contract between the king and French nobility',
@@ -82,7 +82,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What event in 1789 is considered the symbolic start of the French Revolution?',
       [
-        'The storming of the Bastille by Parisians',
+        'The storming of the Bastille',
         'The execution of King Louis XVI',
         'The Declaration of the Rights of Man',
         'The convocation of the Estates-General',
@@ -93,7 +93,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'Which period saw the rapid executions during the French Revolution, including King Louis XVI?',
       [
-        'The Reign of Terror under Robespierre\'s Committee of Public Safety',
+        'The Reign of Terror under Robespierre',
         'The Directoire period of moderate republicanism',
         'The Consulate under Napoleon\'s leadership',
         'The Restoration under Louis XVIII',
@@ -104,7 +104,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did Napoleon Bonaparte rise to power in France?',
       [
-        'Through a military coup called the Coup of 18 Brumaire in 1799, exploiting Directoire weakness',
+        'The Coup of 18 Brumaire in 1799',
         'By being elected president in a democratic vote',
         'By inheriting the throne from King Louis XVI',
         'By leading a popular peasant uprising against the nobility',
@@ -115,7 +115,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What was the primary purpose of the Napoleonic Code introduced in 1804?',
       [
-        'To establish a unified system of civil law replacing feudal and local legal traditions',
+        'To establish a unified system of civil law',
         'To confirm the absolute power of the Catholic Church in all legal matters',
         'To restore feudal privileges to the French aristocracy',
         'To establish a democratic legislative body independent of the executive',
@@ -126,7 +126,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Congress of Vienna (1814–1815) respond to Napoleon\'s defeat?',
       [
-        'It restored the Bourbon monarchy under Louis XVIII and redrew European boundaries to prevent French dominance',
+        'It restored the Bourbon monarchy and redrew European boundaries',
         'It eliminated France entirely and divided its territory among neighboring nations',
         'It established a democratic republic throughout Europe',
         'It appointed Napoleon\'s son as ruler of a weakened France',
@@ -137,7 +137,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What was the outcome of the 1848 Revolution in France?',
       [
-        'It established the Second Republic, abolished slavery in French colonies, and briefly introduced universal male suffrage',
+        'It established the Second Republic and expanded voting rights',
         'It permanently ended the French monarchy and established a democratic government',
         'It led to the immediate unification of all European states',
         'It restored the Bourbon dynasty to absolute power',
@@ -159,7 +159,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What system of government was established by the Fifth Republic constitution in 1958?',
       [
-        'A semi-presidential system with a directly elected president as head of state and a prime minister',
+        'A semi-presidential system with an elected president',
         'An absolute monarchy with ceremonial powers only',
         'A pure parliamentary democracy with no separate executive',
         'A military dictatorship under de Gaulle\'s direct command',
@@ -172,7 +172,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'Which Merovingian practice of dividing the kingdom equally among sons created chronic instability and regional fragmentation?',
       [
-        'Partible inheritance, weakening central authority and enabling rival brothers to wage territorial wars',
+        'Partible inheritance, weakening central royal authority',
         'Primogeniture, which concentrated all wealth in the eldest son',
         'Matrilineal succession, placing power in female regents and their chosen heirs',
         'Elective monarchy, requiring constant competitive campaigns among nobles',
@@ -183,7 +183,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What military innovation did Pepin III employ to defeat the Lombards and secure papal alliance?',
       [
-        'Heavy cavalry tactics using stirrups, enabling mounted knights to dominate on the battlefield',
+        'Heavy cavalry tactics using stirrups on horseback',
         'Naval galleys that controlled Mediterranean trade routes to Byzantine territories',
         'Greek fire technology adopted from Byzantine sources for siege warfare',
         'Elephants imported from North Africa for psychological impact against enemies',
@@ -194,7 +194,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What educational and cultural program did Charlemagne implement to strengthen his empire?',
       [
-        'The Carolingian Renaissance, reviving classical learning through monasteries and scribal reform',
+        'The Carolingian Renaissance, reviving classical learning',
         'A system of secular universities teaching Greek philosophy and rhetoric',
         'Mandatory military academies for training noble officers',
         'Trade schools teaching merchants advanced accounting and navigation',
@@ -205,7 +205,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Treaty of Verdun (843) affect the Carolingian Empire\'s structure and legacy?',
       [
-        'It partitioned the empire into three kingdoms: West Francia, East Francia, and Lothair\'s central realm',
+        'It partitioned the empire into three kingdoms',
         'It unified all Frankish territories under a single heir\'s direct rule',
         'It transferred imperial authority entirely to the Byzantine Emperor',
         'It abolished feudalism and established direct royal governance over all regions',
@@ -216,7 +216,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What feudal strategy did Philip Augustus (r. 1180–1223) use to expand Capetian domain at Angevin expense?',
       [
-        'He exploited John Lackland\'s unpopularity and rebellion by confiscating Norman and Angevin lands in France',
+        'He confiscated Norman and Angevin lands from John Lackland',
         'He purchased English territories from a succession of bankrupt English kings',
         'He married the daughter of the English king to claim English throne for his heirs',
         'He negotiated trade agreements that isolated English merchants from French ports',
@@ -227,7 +227,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What religious conflict did the Albigensian Crusade (1209–1229) address in southern France?',
       [
-        'It was a crusade against Cathar heretics in Occitania, extending papal and northern French control southward',
+        'It was a crusade against Cathar heretics in Occitania',
         'It was a conflict between French Catholics and Muslim invaders from North Africa',
         'It was a civil war between rival Capetian heirs over the throne',
         'It was a revolt by southern nobles against northern French taxation',
@@ -238,7 +238,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What role did Joan of Arc\'s trial and execution play in English political legitimacy?',
       [
-        'Her condemnation by a pro-English ecclesiastical court delegitimized English rule and became a symbol of French resistance',
+        'Her condemnation by a pro-English court delegitimized English rule',
         'Her execution permanently demoralized the French and ensured English victory in the Hundred Years\' War',
         'Her trial established English legal authority over French ecclesiastical matters',
         'Her execution unified English and French churches under papal control',
@@ -249,7 +249,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Wars of Religion (1562–1598) reflect conflicts beyond mere sectarian doctrine?',
       [
-        'They entailed factional power struggles between Guise and Bourbon families, with religion serving as a political organizing principle',
+        'They entailed factional power struggles between Guise and Bourbon families',
         'They were purely theological debates about scriptural interpretation with no political dimension',
         'They were civil wars between peasants and nobility over land redistribution',
         'They were foreign invasions by Spanish and Italian Catholic armies seeking territorial conquest',
@@ -260,7 +260,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What economic policy did Jean-Baptiste Colbert implement to strengthen France under Louis XIV?',
       [
-        'Mercantilism, promoting manufacturing, controlling commerce, accumulating bullion, and reducing imports',
+        'Mercantilism, controlling commerce and accumulating bullion',
         'Free trade with all European nations and colonial territories',
         'Feudal-style agricultural communes with no central fiscal control',
         'Direct state ownership of all merchant ships and trading companies',
@@ -271,7 +271,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What role did the Parlement of Paris (a judicial body, not a legislature) play in opposing 18th-century fiscal reform?',
       [
-        'It used its power to register royal edicts to block taxation reforms, claiming to defend traditional privileges',
+        'It used its power to block royal edicts on taxation reform',
         'It supported the crown by implementing all proposed fiscal measures',
         'It attempted to establish democratic voting rights for all French subjects',
         'It allied with foreign powers to prevent French state consolidation',
@@ -282,7 +282,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did enlightenment philosophies, particularly those of Diderot and Rousseau, influence French Revolutionary ideology?',
       [
-        'They promoted rational critique of absolute monarchy, challenged religious orthodoxy, and articulated popular sovereignty concepts',
+        'They promoted rational critique of absolute monarchy and religious orthodoxy',
         'They defended feudalism and aristocratic privilege as natural and divinely ordained',
         'They advocated for stronger central monarchy and expanded royal authority',
         'They rejected all forms of social organization as inherently corrupt',
@@ -293,7 +293,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What transformation did the Civil Constitution of the Clergy (1790) attempt, and what resistance did it provoke?',
       [
-        'It subordinated the Church to state authority, making clergy elected and paid by the state, causing a papal schism',
+        'It subordinated the Church to state authority, causing a papal schism',
         'It granted the Church unlimited control over state taxation and legal authority',
         'It abolished all religious institutions and converted churches to public warehouses',
         'It restored feudal church lands and strengthened papal authority over France',
@@ -304,7 +304,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Thermidorian Reaction (July 1794) mark a turning point in the Revolution?',
       [
-        'It executed Robespierre and the Committee of Public Safety, ending the Terror and shifting toward conservative republicanism',
+        'It executed Robespierre, ending the Terror',
         'It reinforced radical Jacobin control and accelerated executions',
         'It restored the Bourbon monarchy to absolute power immediately',
         'It established democratic socialism as France\'s governing ideology',
@@ -315,7 +315,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What military crisis prompted the Directory\'s invitation to Napoleon and his coup in 1799?',
       [
-        'Losses in Egypt, invasion threats on multiple borders, and successful royalist uprisings destabilized the Republic',
+        'Military losses and royalist uprisings destabilized the Republic',
         'Napoleon voluntarily stepped forward to prevent a foreign monarchy from invading France',
         'The Directory sought to expand democracy through a military revolutionary council',
         'Britain decisively defeated the French fleet, making Napoleon a defensive necessity',
@@ -326,7 +326,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Hundred Days (March–June 1815) demonstrate Napoleon\'s enduring appeal and its limits?',
       [
-        'He escaped Elba, rallied loyal armies without firing a shot, but lost decisively at Waterloo, demonstrating popular support yet military inferiority',
+        'He escaped Elba, rallied loyal armies, but lost decisively at Waterloo',
         'He successfully reconquered Europe and established a permanent dynasty',
         'He voluntarily abdicated to restore the Bourbons without military confrontation',
         'He was immediately arrested and executed upon escaping his exile',
@@ -339,7 +339,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What distinguished Austrasian hegemony from Neustrian political structures in the early Merovingian period, and what drove their rivalry?',
       [
-        'Austrasia\'s eastern frankish base and military aristocracy clashed with Neustria\'s western Frankish elite over control of the king and treasury',
+        'Austrasia\'s eastern military aristocracy clashed with Neustria\'s western elite over the king',
         'Austrasia was a Roman province while Neustria was entirely Germanic without institutional structures',
         'Neustria always held greater wealth, while Austrasia relied purely on military conquest',
         'They practiced fundamentally different religions, with Austrasia pagan and Neustria Catholic',
@@ -350,7 +350,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did Pepin III\'s introduction of heavy cavalry tactics and the feudal contract system enable Carolingian military supremacy?',
       [
-        'Mounted knights with stirrups and the feudal obligation system created a professional, hierarchical army superior to light infantry and mercenary forces',
+        'Mounted knights with stirrups created a superior professional army',
         'Pepin invented the catapult and gunpowder, giving him technological dominance',
         'He trained exclusively peasant armies using conscription and mass mobilization',
         'He relied entirely on Byzantine mercenaries for all military campaigns',
@@ -361,7 +361,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What pedagogical reforms in the Carolingian Renaissance, particularly Charlemagne\'s Admonitio Generalis, transformed literacy and intellectual culture?',
       [
-        'Standardized Latin script (Carolingian minuscule), required monastery literacy programs, and clerical education reforms disseminated classical texts throughout the empire',
+        'Standardized script and monastery literacy programs disseminated classical texts',
         'He abolished Latin and promoted only Germanic languages for governance',
         'He closed all monasteries and established secular universities exclusively for nobility',
         'He imposed a single dialect of Latin that eliminated regional language variation',
@@ -372,7 +372,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did Capetian feudal strategies, particularly marriage alliances and systematic vassal litigation, achieve dominance without superior military force initially?',
       [
-        'By marrying into major fiefs, exploiting feudal homage to override rivals\' claims, and using ecclesiastical courts to delegitimize Angevin and Burgundian titles',
+        'By marrying into major fiefs and exploiting feudal homage',
         'By conquering all territories through military campaigns in the first generation',
         'By purchasing all lands through accumulated merchant wealth',
         'By enforcing mandatory religious conversions to consolidate loyalty',
@@ -383,7 +383,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What structural weakness in the Angevin inheritance system did Philip Augustus exploit to fragment English holdings in France?',
       [
-        'John Lackland\'s succession generated rebellious barons, enabling Philip to isolate him diplomatically and militarily, confiscating lands under feudal forfeiture',
+        'John Lackland\'s rebellious barons let Philip confiscate his lands',
         'The Angevin inheritance was too wealthy to defend effectively',
         'English barons voluntarily transferred their French lands to the French crown',
         'A treaty automatically transferred Angevin properties to the Capetian line',
@@ -394,7 +394,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Mendicant orders\' integration into courtly culture and intellectual networks influence late medieval Capetian governance?',
       [
-        'Dominicans and Franciscans provided theological legitimacy for royal authority, served as advisors, and embedded papal interests within the court',
+        'Dominicans and Franciscans provided theological legitimacy and served as royal advisors',
         'They completely separated spiritual and temporal authority, refusing all political involvement',
         'They eliminated Benedictine monasticism and consolidated all religious authority in Rome',
         'They established independent communes that limited royal jurisdictional reach',
@@ -405,7 +405,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What role did Salic law doctrine play in legitimizing Valois succession and excluding English claims after 1328?',
       [
-        'French jurists invoked Salic law (prohibiting female succession and succession through females) to argue the English line failed through female inheritance, consolidating Valois dynastic legitimacy',
+        'French jurists invoked Salic law against the English claim',
         'Salic law was invented in the 14th century to support English claims against the French',
         'It was a Roman law principle that had nothing to do with medieval succession',
         'It established male elective monarchy rather than hereditary succession',
@@ -416,7 +416,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did factional struggles during the Fronde (1648–1653)—between the crown, Parlement, and nobility—reshape royal absolutism?',
       [
-        'The Fronde\'s nobility and judicial resistance prompted Mazarin and later Louis XIV to centralize power, disarm magnates, and subordinate the Parlement',
+        'The Fronde prompted Louis XIV to centralize power and disarm the magnates',
         'The Fronde successfully established parliamentary democracy and limited royal authority permanently',
         'The Fronde was a peasant revolt with no impact on elite power structures',
         'It resulted in the immediate restoration of feudal independence to regional nobles',
@@ -427,7 +427,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What fiscal crisis mechanisms—tax farming, venality of offices, inflation—created the structural deficits that destabilized the late 18th-century monarchy?',
       [
-        'Tax farmers retained portions of collection revenues; office sales mortgaged future income; currency debasement inflated prices without increasing revenue, creating chronic deficits',
+        'Tax farming and venal offices created chronic deficits',
         'The monarchy intentionally spent money to weaken the nobility',
         'France had no actual fiscal crisis; the Revolution was purely ideological',
         'Foreign loans eliminated any financial pressure on the French state',
@@ -438,7 +438,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did parlementaire resistance to royal edicts—particularly the Maupeou reforms (1768–1774)—embody competing concepts of sovereignty?',
       [
-        'Parlements invoked ancient constitutional rights against arbitrary monarchy; Maupeou abolished them to assert undivided sovereignty. Their restoration symbolized a compromise between absolute and limited monarchy',
+        'Parlements invoked ancient rights; Maupeou abolished them',
         'Parlements were the sole legitimate authority and always defeated royal reforms',
         'The Maupeou reforms were temporary and had no lasting impact',
         'Parlements and the crown always cooperated without conflict',
@@ -449,7 +449,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did physiocratic theory—asserting that land is the sole source of wealth and proposing a single tax (impôt unique)—influence pre-Revolutionary fiscal debate?',
       [
-        'Physiocrats offered radical fiscal simplification and challenged mercantile privilege, attracting reformist ministers but alienating financiers and guilds, deepening the fiscal crisis',
+        'Physiocrats\' fiscal simplification attracted reformers',
         'Physiocrats successfully implemented their system and eliminated all deficits',
         'They had no influence on 18th-century thought and were entirely dismissed',
         'Their theory reinforced tax farming and venal offices',
@@ -460,7 +460,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What constitutional ambiguities and clerical resistance to the Civil Constitution of the Clergy created a counter-revolutionary recruitment base after 1791?',
       [
-        'Bishops rejected state-appointed clergy; non-juring priests became symbols of resistance, recruiting aristocrats and peasants in western departments into counter-revolutionary armies',
+        'Non-juring priests became symbols of resistance',
         'All clergy eagerly embraced the Civil Constitution without resistance',
         'It had no religious dimension and was purely a fiscal measure',
         'The Constitution unified all clergy behind the Revolutionary government',
@@ -471,7 +471,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did Robespierre\'s Committee of Public Safety justify escalating terror through discourse on "virtue" and the general will?',
       [
-        'Robespierre equated virtue with revolutionary terror, arguing that eliminating enemies of the people was a moral necessity for realizing the general will, making terror an ideological practice',
+        'Robespierre equated virtue with terror as a moral necessity for the general will',
         'Robespierre was entirely opposed to terror and worked to prevent executions',
         'The Committee used terror without any ideological justification',
         'Robespierre accepted classical liberalism and individual rights without condition',
@@ -482,7 +482,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What role did mass conscription (levée en masse, 1793) play in Revolutionary and Napoleonic military dominance, and how did it transform warfare?',
       [
-        'Mass conscription subordinated civilians to state military authority on an unprecedented scale, enabling armies of hundreds of thousands that overwhelmed professional European forces through sheer numerical superiority',
+        'Mass conscription created huge, overwhelming armies',
         'Mass conscription was unpopular and never actually implemented',
         'It was used only for the navy and had no effect on land warfare',
         'Other European nations had already implemented larger conscription programs',
@@ -493,7 +493,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did Napoleon\'s Continental System—a trade embargo against Britain—reshape European economic integration and ultimately generate resistance to French dominance?',
       [
-        'The blockade redirected trade, enriched French manufacturers, but impoverished allied economies and neutral states, generating resentment that fueled nationalist opposition to French occupation',
+        'The blockade enriched France but impoverished its allies',
         'The Continental System eliminated all international trade permanently',
         'It was universally praised and strengthened French alliances',
         'Britain was economically devastated and surrendered to France',
@@ -506,7 +506,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the compositiones (compositional rules for distributing Merovingian inheritances among Frankish kingdoms) institutionalize a political system that paradoxically weakened central authority while establishing precedent for later feudal hierarchies?',
       [
-        'Compositiones created rules for succession but fragmented sovereignty, enabling powerful officials to manipulate between competing heirs and gradually shift authority from weak kings to themselves',
+        'Compositiones fragmented sovereignty via rival heirs',
         'Compositiones completely abolished inheritance and installed elected rulers',
         'They strengthened central monarchy by concentrating all power in one heir',
         'They were imported from Rome and had nothing to do with Frankish custom',
@@ -517,7 +517,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'To what extent did the early Carolingian fiscal crisis—stemming from declining penitential taxation and monetization challenges—constrain Pepin III and Charlemagne\'s military expansion?',
       [
-        'Declining Church penitential payments and limited monetization forced Pepin and Charlemagne to redistribute church lands as fiefs to sustain cavalry, binding fiscal crisis to feudal emergence',
+        'Fiscal decline forced Pepin and Charlemagne to grant church lands as fiefs',
         'They had unlimited monetary resources and never faced fiscal constraints',
         'Fiscal policy was irrelevant to military capability or feudalization',
         'The Church funded all military campaigns through tithes and freely donated resources',
@@ -528,7 +528,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did late 7th-century Neustrian hegemony under Mayors of the Palace (particularly the Pippinid clan) foreshadow the process by which administrative offices could be weaponized into political dynasties?',
       [
-        'Mayors accumulated hereditary office holding, used administrative authority over royal treasuries to build personal war bands, then transformed administrative power into dynastic dominion',
+        'Mayors used administrative authority to build war bands and found dynasties',
         'Mayors were temporary officers with no opportunity to accumulate power or found dynasties',
         'Administrative offices were always separate from political power',
         'The Pippinids never held office and had no role in Merovingian governance',
@@ -539,7 +539,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What historiographical debate addresses whether Benedictine monastic reform (Cluny, later Cîteaux) enabled or constrained Capetian secular authority in the 11th–13th centuries?',
       [
-        'Revisionist scholars argue reformed monasteries strengthened royal piety and authority through legitimacy, while others see monastic independence as fragmenting secular jurisdiction and enabling ecclesiastical exemptions',
+        'Scholars debate monastic reform\'s effect on royal authority',
         'All monasteries were completely subordinate to the crown at all times',
         'Monasteries and secular rulers had no interactions whatsoever',
         'Benedictine reform was purely a spiritual movement with no political implications',
@@ -550,7 +550,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Capetian marriage strategy—Eleanor of Aquitaine\'s marriage to Louis VII, then Henry II of England, then control of vast Angevin lands—expose dynastic fragility and create the preconditions for the Hundred Years\' War?',
       [
-        'Eleanor\'s multiple marriages created a paradox: Capetians briefly held Aquitaine through her (as queen), but she married into Angevin power, installing Henry II as a rival. Three centuries of war ensued.',
+        'Eleanor\'s remarriage to Henry II installed a rival power',
         'Eleanor\'s marriages had no political significance whatsoever',
         'The marriages unified France permanently without conflict',
         'Eleanor was never involved in political marriages or governance',
@@ -561,7 +561,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'To what extent did the Mendicant orders\' intellectual independence and urban preaching reshape both papal authority and secular royal ideology in the 13th century?',
       [
-        'Mendicants\' theology legitimized papal authority against local bishops while their confessional access to lay elites enabled popes and kings to use them as ideological intermediaries, blurring sacred and secular authority',
+        'Mendicants legitimized papal authority for kings',
         'Mendicants were entirely subordinate to local bishops with no independent role',
         'They completely rejected papal authority and advocated revolutionary democracy',
         'They had no connection to urban life or popular preaching',
@@ -572,7 +572,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did Valois legitimacy doctrine—employing Salic law, descent from Philip III, and symbolic distinction from English "usurpers"—construct a proto-nationalist French identity that endured beyond the dynasty itself?',
       [
-        'Valois jurists weaponized Salic law to exclude English claims while establishing hereditary French monarchy as the natural embodiment of "France"—a concept that transcended dynastic particularity',
+        'Valois jurists used Salic law to build a proto-national French identity',
         'National identity existed before the Valois and had nothing to do with them',
         'Salic law was universally accepted and played no role in legitimacy disputes',
         'The Valois had no particular claim to French identity or legitimacy',
@@ -583,7 +583,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the aristocratic factionalism of the Fronde—disguised within feudal homage relations and parlementaire constitutional claims—expose the ideological contradictions between absolute monarchy and noble privilege?',
       [
-        'Frondeurs invoked customary rights, feudal contracts, and the Parlement\'s "constitutional" role to resist centralization. Their failure showed that absolute monarchy required eliminating all competing jurisdictions and claims.',
+        'Frondeurs invoked feudal and parlementaire rights.',
         'The Fronde successfully established democratic government',
         'There were no contradictions between absolutism and noble privilege',
         'The Fronde was purely a peasant revolt',
@@ -594,7 +594,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'To what extent did the intendant system—centralizing royal bureaucracy bypassing noble authority—represent a transformation of feudal personalism into rational-legal authority?',
       [
-        'Intendants as salaried, appointed officials answered to the crown rather than holding hereditary offices or titles. This substituted legal rationality and direct royal authority for feudal reciprocity and inherited jurisdiction.',
+        'Intendants were salaried appointees, not hereditary officeholders.',
         'Intendants were feudal vassals with no new features compared to earlier officials',
         'They had no impact on governance or administrative structure',
         'The intendant system strengthened feudal noble independence',
@@ -605,7 +605,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did competing economic theories—physiocratic landed wealth vs. mercantilist commerce/manufacture—structure the ideological battle over fiscal reform in late-18th-century court politics?',
       [
-        'Physiocrats (landed interests) attacked tax farming and manufacturing monopolies; mercantilists defended guilds and privileged trade. These rival theories mapped onto social interests, making reform a zero-sum conflict.',
+        'Physiocrats attacked tax farming and guild monopolies.',
         'Physiocratic and mercantilist economists agreed completely',
         'Economic theory had no influence on actual political reform',
         'The court had no interest in abstract economic debate',
@@ -616,7 +616,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'What historiographical debate surrounds Gallicanism\'s relationship to French sovereignty: Did ecclesiastical autonomy strengthen or constrain the state\'s religious and jurisdictional authority?',
       [
-        'Revisionist scholars argue Gallicanism paradoxically strengthened royal authority by subordinating the Church to state interests while simultaneously constraining absolute monarchy through residual ecclesiastical jurisdictions',
+        'Gallicanism both strengthened and constrained royal authority',
         'Gallicanism completely abolished royal religious authority',
         'The Church maintained absolute independence from all state control',
         'Gallicanism was a purely theological concept with no political implications',
@@ -627,7 +627,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the social composition of the September Massacres (1792)—not organized killing but spontaneous crowd violence—reveal the Revolutionary breakdown of public order and the emergence of terror as an unarticulated popular practice?',
       [
-        'The Massacres involved Paris crowds killing clergy and aristocrats without state direction, suggesting spontaneous fear and popular violence that preceded and enabled Jacobin terror as an ideology',
+        'Crowds killed clergy and aristocrats without state direction, prefiguring terror',
         'The September Massacres were entirely orchestrated by government and were not spontaneous at all',
         'They had no connection to the Reign of Terror',
         'The crowds were a tiny minority and had negligible historical impact',
@@ -638,7 +638,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'To what extent did the Vendean uprising (1793–1796) represent a counter-revolutionary peasant revolt vs. a coordinated royalist insurrection, and what does this debate reveal about rural politicization?',
       [
-        'Historians debate whether Vendean grievances (conscription, dechristianization, Church schism) mobilized autonomous peasant militias or whether they were tools of émigré and noble coordination—a question revealing how rural populations became politicized',
+        'Historians debate whether Vendean grievance was autonomous or elite-coordinated',
         'The Vendee was entirely a peasant democratic uprising with no class complications',
         'It was solely an elite conspiracy with no peasant involvement',
         'The Vendean region was not politically active during the Revolution',
@@ -649,7 +649,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'How did the Directoire\'s structural instability—oscillating between oligarchic and democratic factions, unable to secure stable property or army loyalty—create the preconditions for Napoleon\'s Coup of 18 Brumaire as a rational choice for stabilization?',
       [
-        'The Directoire lacked a coherent military command, faced constant electoral reversals, and could not tax effectively. Napoleon offered oligarchs a stability solution: military authority subordinated to their property interests.',
+        'The unstable Directoire made Napoleon\'s coup a rational choice.',
         'The Directoire was highly stable and faced no crises',
         'The coup was entirely accidental and unplanned',
         'The Directoire could have easily adapted and survived without Napoleon',
@@ -660,7 +660,7 @@ export const FRENCH_HISTORY: CategoryContent = {
     [
       'To what extent did the Napoleonic Code\'s codification of property law, abolition of feudalism, and secularization of civil law constitute a Revolution in legal philosophy rather than merely implementing Revolutionary policy?',
       [
-        'The Code transformed jurisprudence by replacing custom-based feudal law with rationalized, published statutes. This codification process itself—not just content—revolutionized legal epistemology across Europe.',
+        'The Code replaced feudal custom with published statutes.',
         'The Code was purely administrative with no philosophical innovations',
         'It was entirely derived from feudal law without changes',
         'Legal philosophy was irrelevant to the Code\'s construction',

@@ -5,7 +5,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'When light travels from glass into air, what physically happens at the critical angle?',
       [
-        'The refracted ray travels along the interface at 90° to the normal',
+        'The refracted ray grazes the interface at 90°',
         'The light undergoes partial reflection and partial refraction',
         'The wavelength decreases as the ray exits the glass',
         'Absorption increases because the photons lose energy',
@@ -16,7 +16,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'What region forms at the boundary when p-type and n-type semiconductor materials are brought into contact?',
       [
-        'A depletion region with an electric field from charge separation',
+        'A depletion region with a built-in electric field',
         'A conducting layer that short-circuits across the junction',
         'A thermal barrier that prevents any current flow',
         'A metallic interface with zero resistance',
@@ -49,7 +49,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'How are X-rays produced in a clinical tube?',
       [
-        'High-speed electrons strike a metal target and emit photons via deceleration',
+        'Electrons strike a metal target and emit photons',
         'Ionized atoms in a gas emit characteristic radiation',
         'Radioactive decay of tungsten nuclei in the tube',
         'Friction between rotating electrodes generates electromagnetic radiation',
@@ -60,7 +60,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'What is the primary mechanism of heat transfer through a solid metal rod held between two heat sources?',
       [
-        'Conduction via lattice vibrations and free electron motion',
+        'Conduction via phonons and free electrons',
         'Convection as metal atoms physically move through the rod',
         'Radiation from thermal vibrations inside the metal lattice',
         'Phase change at the interface between hot and cold regions',
@@ -71,7 +71,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'A laser beam is characterized by coherence. What does coherence mean in this context?',
       [
-        'Electromagnetic waves maintain constant phase and amplitude relationships',
+        'Waves maintain a constant phase relationship',
         'The beam travels in a perfectly straight line without divergence',
         'All photons are emitted simultaneously in a single burst',
         'The beam intensity is uniform across its entire cross-section',
@@ -93,7 +93,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'Why does sound travel faster through water than through air at the same temperature?',
       [
-        'Water\'s higher density and bulk modulus support faster stress propagation',
+        'Water\'s bulk modulus enables faster stress waves',
         'Water has more oxygen molecules that vibrate faster',
         'Sound waves in water are electromagnetic rather than mechanical',
         'Salinity in water increases the speed of acoustic waves',
@@ -104,7 +104,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In a forward-biased p-n junction diode, what causes current to flow across the junction?',
       [
-        'External voltage reduces the depletion width and allows diffusion current to dominate',
+        'External voltage narrows the depletion region',
         'Electrons and holes are created by thermal energy inside the junction',
         'The depletion region becomes thicker and conducts more easily',
         'Tunneling through the depletion region occurs at room temperature',
@@ -115,7 +115,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'Fiber optics relies on light traveling through the core due to repeated total internal reflection. Why not use a mirror-coated hollow tube instead?',
       [
-        'Fiber guides light with lower loss; mirrors scatter and absorb; fiber core preserves coherence and intensity',
+        'Fiber guides light with much lower loss than mirrors',
         'Mirror tubes require vacuum, while fiber works in any environment',
         'Light travels faster through solid glass than in air or vacuum',
         'Fiber is cheaper to manufacture at scale',
@@ -137,7 +137,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'A car horn moves toward you at high speed. Why does its pitch sound higher than when stationary?',
       [
-        'Motion compresses the sound wave wavelength, increasing frequency heard by the observer',
+        'Motion compresses the wavelength, raising pitch',
         'The horn radiates more power when moving, so amplitude increases',
         'Doppler shift changes the speed of sound in air',
         'The car\'s acceleration creates a resonance cavity effect',
@@ -148,7 +148,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'A photodiode converts light to electrical current. Which quantum process enables this conversion?',
       [
-        'Photons excite electrons across the band gap; electric field separates them before recombination',
+        'Photons excite electrons across the band gap',
         'Light heats the material, increasing electron thermal velocity',
         'Photons directly transfer momentum to electrons without energy loss',
         'Laser light induces stimulated emission that cascades into current',
@@ -159,7 +159,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In nuclear engineering, the macroscopic cross-section Σ = N·σ relates to the microscopic cross-section σ. What does N represent?',
       [
-        'Number density of nuclei per unit volume',
+        'Number density of nuclei',
         'Number of neutrons emitted per fission',
         'Total mass number of the target nucleus',
         'Number of reactions occurring per second',
@@ -172,7 +172,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'Stimulated Raman scattering in a fiber-optic link becomes problematic above a certain power threshold. What physical mechanism limits amplification?',
       [
-        'Nonlinear mode-coupling and energy transfer deplete the pump wave, reducing gain',
+        'Nonlinear pump depletion reduces the gain',
         'Thermal expansion of the fiber core reduces the refractive index',
         'Rayleigh scattering of the Stokes wave dominates at high power',
         'Spontaneous emission in the fiber becomes incoherent and injects noise',
@@ -183,7 +183,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In III-V semiconductor heterostructures used for LEDs, why is the band-gap energy of the cladding layer larger than the active layer?',
       [
-        'Carrier confinement: the larger gap creates a potential well that traps electrons and holes in the narrower-gap active region',
+        'A potential well confines carriers in the active layer',
         'Optical transparency in the cladding prevents loss of emitted photons',
         'Lattice constant mismatch requires a graded composition',
         'Thermal management: wider-gap materials conduct heat more efficiently',
@@ -194,7 +194,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In the context of computational fluid dynamics (CFD), turbulent flow is closed by adding terms to the Navier–Stokes equations. What is this closure typically called?',
       [
-        'Turbulence modeling, using eddy viscosity or Reynolds stress models',
+        'Turbulence modeling, via eddy viscosity models',
         'Spectral decomposition of vorticity fields',
         'Time-averaging to eliminate fluctuating pressure terms',
         'Artificial diffusion to stabilize numerical schemes',
@@ -205,7 +205,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In ultrasonic phased-array imaging, how does time-delay focusing enable spatial resolution in the axial direction?',
       [
-        'Delaying element pulses creates constructive interference at a focal depth; off-axis reflections destructively interfere',
+        'Delays focus constructive interference at one depth',
         'Delayed signals scatter less from off-axis structures',
         'Frequency shifts from Doppler effect allow depth discrimination',
         'Acoustic impedance mismatch varies with depth, enhancing borders',
@@ -216,7 +216,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'A synchrotron X-ray beamline uses a silicon(111) analyzer crystal to achieve energy resolution. What is the underlying principle?',
       [
-        'Dynamical diffraction in the crystal has a narrow Darwin curve; energy mismatch causes destructive interference',
+        'The crystal has a narrow Darwin curve in energy',
         'The crystal\'s thermal vibrations are minimized, reducing recoil shift',
         'Silicon(111) planes are perfectly parallel, eliminating geometric broadening',
         'The analyzer selects photons by wavelength via the photoelectric effect',
@@ -227,7 +227,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'Why does the thermal conductivity of copper decrease as temperature increases, despite more vibrations?',
       [
-        'Increased phonon-phonon (Umklapp) scattering at higher T reduces mean free path more than phonon population increases',
+        'Umklapp scattering shortens the phonon mean free path',
         'Electrons become less free as the lattice expands',
         'The Fermi level rises and reduces the density of states',
         'Copper undergoes a phase transition that reduces conduction',
@@ -238,7 +238,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In externally modulated lithium-niobate Mach–Zehnder modulators, how does an applied voltage modulate the intensity of light?',
       [
-        'Voltage changes the refractive index of LiNbO₃ via the Pockels effect, creating a phase shift that controls path-to-path interference',
+        'Voltage shifts the refractive index via the Pockels effect',
         'Voltage directly ionizes trapped electrons, changing absorption',
         'Voltage induces birefringence that splits the beam',
         'Voltage shifts the band gap, altering photon-phonon coupling',
@@ -249,7 +249,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In polymer-matrix composite materials, fiber alignment and fiber-matrix adhesion both influence stiffness. Which has the greater effect on longitudinal modulus at high fiber volume fractions?',
       [
-        'Fiber alignment dominates; even perfect adhesion cannot recover modulus if fibers are misaligned',
+        'Fiber alignment dominates the longitudinal modulus',
         'Adhesion is more critical; poor bonding negates the fiber\'s contribution regardless of alignment',
         'Both contribute equally because Poisson\'s ratio couples them',
         'Volume fraction alone determines modulus independent of alignment or adhesion',
@@ -260,7 +260,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'Acoustooptic deflectors in laser scanning systems rely on a traveling acoustic wave to diffract light. What determines the diffraction angle?',
       [
-        'The acoustic frequency: higher frequency creates a finer diffraction grating with larger deflection angles',
+        'Higher acoustic frequency increases the deflection angle',
         'The laser wavelength relative to the acoustic wavelength',
         'The intensity of the acoustic wave, which controls how many phonons are scattered',
         'The piezoelectric coefficient of the crystals used',
@@ -271,7 +271,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In nuclear reactor neutronics, the multiplication factor k_eff > 1 indicates a diverging chain reaction. What is the physical origin of multiplication?',
       [
-        'Each fission releases multiple neutrons; if enough cause subsequent fissions, the rate exponentially grows',
+        'Each fission releases neutrons that trigger more fissions',
         'Neutron capture in non-fissile isotopes releases secondary neutrons',
         'Moderator thermalization converts fast neutrons into slow neutrons indefinitely',
         'Decay heat from fission products creates additional thermal neutrons',
@@ -282,7 +282,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In high-performance x86 processors, thermal-aware clock throttling reduces frequency when junction temperature exceeds a threshold. Why is throttling necessary?',
       [
-        'Leakage current and electromigration rates increase exponentially with temperature, reducing chip lifetime and reliability',
+        'Leakage current and electromigration increase exponentially with temperature',
         'Higher temperature causes the transistors to physically expand beyond the chip boundary',
         'The power supply voltage cannot be sustained above a certain temperature',
         'Thermal runaway is prevented by reducing the supply voltage proportionally',
@@ -293,7 +293,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In medical ultrasound, the acoustic streaming effect causes fluid motion even in the absence of bulk flow. What is the mechanism?',
       [
-        'Acoustic radiation pressure exerts a nonlinear time-averaged force on particles, dragging them along the beam path',
+        'Radiation pressure exerts a steady nonlinear force on particles',
         'Acoustic cavitation creates bubbles that collapse and push fluid sideways',
         'The piezoelectric transducer vibrates at audio frequencies, mechanically stirring the medium',
         'Thermal gradients from absorption create convective currents',
@@ -304,7 +304,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In a thermoacoustic engine, a temperature gradient along a stack drives acoustic oscillations. What thermodynamic cycle does this resemble?',
       [
-        'Stirling cycle: gas parcels undergo cyclic compression/expansion at different temperatures, extracting work from the gradient',
+        'Gas parcels cycle between hot and cold, resembling a Stirling engine',
         'Carnot cycle with the stack replacing a piston engine',
         'Brayton cycle in which the working fluid flows at constant pressure',
         'Otto cycle compressed into an acoustic wave instead of discrete strokes',
@@ -315,7 +315,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In avalanche photodiodes (APDs), internal gain from impact ionization extends the useful signal range, but introduces noise. What is the primary source of excess noise?',
       [
-        'Randomness in impact ionization: some carriers trigger more secondary ionizations than others, creating shot-noise multiplication',
+        'Impact ionization varies randomly between carriers',
         'Thermal noise from the high reverse-bias voltage',
         'Tunneling-induced dark current that is not amplified',
         'Spontaneous emission of photons within the junction',
@@ -326,7 +326,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'Terahertz radiation (0.1–10 THz) lies between microwaves and infrared. Why is THz generation and detection more difficult than at adjacent frequencies?',
       [
-        'THz photons have lower energy than mid-IR (requiring sensitive detectors), yet wavelengths demand mm-scale components (unlike microwaves)',
+        'THz sits between quantum and wavelength engineering limits',
         'THz is strongly absorbed by water vapor at all pressures',
         'No solid-state materials exist with band gaps in the THz energy range',
         'Quantum tunneling of charge carriers prevents THz propagation in semiconductors',
@@ -339,7 +339,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In nonlinear fiber optics, self-phase modulation (SPM) broadens a pulse spectrum while preserving energy. What is the underlying nonlinear mechanism?',
       [
-        'High optical intensity modulates the refractive index via the nonlinear susceptibility χ(3), creating a self-induced phase shift that varies across the pulse profile',
+        'Intensity modulates the index via χ(3) nonlinearity',
         'Stimulated Raman scattering red-shifts the spectrum while SPM compresses the pulse',
         'Two-photon absorption creates a loss gradient that stretches the pulse in time',
         'Kerr rotation of the polarization couple-mode couples orthogonal temporal modes',
@@ -350,7 +350,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In molecular-beam epitaxy (MBE), why is the growth rate typically limited to ∼1 μm/h despite molecular-beam fluxes of 10¹⁶ cm⁻² s⁻¹?',
       [
-        'Atomic residence time, diffusion barriers, and step-edge incorporation kinetics limit how many incident atoms stick at the growth temperature',
+        'Residence time and diffusion kinetics limit atom sticking',
         'The vacuum chamber cannot support higher deposition rates without excessive outgassing',
         'Thermal radiation from the substrate limits the maximum temperature',
         'The electron gun for reflection high-energy electron diffraction (RHEED) damages the surface at higher rates',
@@ -361,7 +361,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In direct numerical simulation (DNS) of turbulence, why is the computational cost prohibitive for high Reynolds numbers?',
       [
-        'Grid resolution must scale with the Kolmogorov length η ∝ Re^(-3/4) d; total grid points ∝ Re^(2.25), making cost ∝ Re^(4.25) with explicit time-stepping',
+        'Grid must resolve the Kolmogorov length, so cost scales steeply with Re',
         'Turbulence is chaotic; accurate prediction requires exponentially longer time steps',
         'The Navier–Stokes equations become singular above a critical Reynolds number',
         'Molecular diffusion effects become dominant at high Re, requiring quantum simulation',
@@ -372,7 +372,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In octupole-enhanced nuclear resonance fluorescence (NRF), why can nuclei with zero quadrupole moment (Q = 0) exhibit narrower resonances than dipole-only transitions?',
       [
-        'Octupole transitions have longer lifetimes (smaller Einstein A coefficients); with no quadrupole mixing, only pure octupole decay dominates, yielding Fourier-limited linewidth',
+        'Octupole transitions have longer lifetimes and no quadrupole mixing',
         'Zero quadrupole moment prevents hyperfine broadening',
         'Octupole transitions are purely magnetic, avoiding electric-field fluctuations',
         'NRF resonances sharpen because photon recoil is eliminated in the nucleus',
@@ -383,7 +383,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In silicon photomultipliers (SiPMs), Geiger-mode avalanche photodiodes operate in parallel with integrated quench resistors. What advantage does parallel architecture provide over single-element APDs?',
       [
-        'Pixel-by-pixel independent Geiger discharges allow proportional output (photon counting); fill factor and active area are decoupled from recovery time and afterpulse probability',
+        'Independent pixel discharges allow proportional photon counting',
         'Parallel pixels reduce the operating voltage required for impact ionization',
         'The quench resistors prevent any afterpulsing or dark-count events',
         'Pixel cross-talk enables signal amplification beyond single-photon sensitivity',
@@ -394,7 +394,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In ferrofluid dynamics, the magnetic field gradient causes particle chains to form and interact. Why does the bulk viscosity increase dramatically above a critical field strength?',
       [
-        'Chain formation and magnetic coupling create load-bearing structures; their rotation under shear dissipates energy via friction between chains and fluid',
+        'Field-induced chains form load-bearing structures that resist shear',
         'Thermal energy melts the chains, increasing molecular motion',
         'The magnetic dipole-dipole interaction becomes repulsive at high field',
         'Iron-oxide particles undergo phase separation, trapping fluid between aggregates',
@@ -405,7 +405,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In X-ray crystallography at synchrotrons, harmonic rejection using a Si(999) reflection suppresses higher-order contamination. Why not simply use a monochromator filter?',
       [
-        'Bragg angle θ ∝ n·d·sinθ: high-order reflection (e.g., n=9) requires a grazing angle so steep that only the 9th harmonic satisfies it; filters would absorb the fundamental',
+        'Only the 9th-order reflection satisfies Bragg at that grazing angle',
         'Si(999) is immune to thermal deformation because it is deeply bound in the lattice',
         'Harmonic filtering reduces coherence, whereas Si(999) preserves transverse coherence',
         'Only Si(999) can achieve the required photon flux at hard X-ray energies',
@@ -416,7 +416,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In supercritical fluid extraction (SFE), why does extraction efficiency peak at a specific density near the critical point, rather than increasing monotonically with pressure?',
       [
-        'Near T_c and ρ_c, solvent density changes dramatically with small P or T changes (high compressibility); extraction can be tuned, but above ρ_c, further pressure increases density without improving solute solvation power',
+        'Near the critical point, small pressure changes tune density and solvation sharply',
         'Supercritical fluids undergo a phase transition at the critical point that traps solutes',
         'The critical point causes cavitation that damages the extraction vessel',
         'Entropy dominates over enthalpy above the critical point, reducing extraction',
@@ -427,7 +427,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In high-harmonic generation (HHG) from atomic gases driven by intense infrared lasers, what prevents efficient generation of harmonics beyond the ionization plateau?',
       [
-        'Depletion of neutral atoms: ionization rate increases with intensity; ionized plasma does not efficiently radiate harmonics and begins to absorb via free-free transitions',
+        'Depletion of neutral atoms limits harmonic radiation from the plasma',
         'Harmonics above the plateau have wavelengths shorter than the laser spot size, diffracting out of the generation region',
         'Quantum defect of excited states increases for higher-lying states, suppressing recombination',
         'Phase-matching breaks down because the group-velocity mismatch becomes intolerable',
@@ -438,7 +438,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In seismic waveguide propagation, why do guided P-waves along a near-surface layer exhibit a turning-point structure in depth that depends on frequency?',
       [
-        'Seismic velocity increases with depth; low frequencies (long wavelengths) refract deeply before turning, while high frequencies reflect near the surface—a depth-dependent frequency structure',
+        'Rising velocity with depth turns low frequencies deep and high ones shallow',
         'Poisson\'s ratio varies with depth, creating a dispersive medium',
         'Attenuation is frequency-dependent, preventing low frequencies from penetrating deeply',
         'The layer thickness is wavelength-dependent, confining only certain modes',
@@ -449,7 +449,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In quantum cascade lasers (QCLs), the optical transition occurs between closely spaced subbands in the conduction band (ΔE ∼ 100 meV), not between distant bands. Why is this design advantageous?',
       [
-        'Subband spacing can be engineered via quantum-well width; small ΔE yields mid-to-far-infrared wavelengths; intersubband transitions avoid band-edge effects and allow direct current injection without electron-hole recombination',
+        'Engineered subband spacing tunes the infrared wavelength directly',
         'Closely spaced subbands reduce thermal broadening of the laser linewidth',
         'Intersubband transitions eliminate Auger recombination, extending device lifetime',
         'The laser can access wavelengths impossible with conventional semiconductors',
@@ -460,7 +460,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In fractional quantum Hall effect (FQHE), composite fermions emerge as bound states of electrons and magnetic flux quanta. Why does this reduce the many-body problem?',
       [
-        'Composite fermions see an effective magnetic field reduced by the flux-quanta attachment; the system maps to an integer filling factor of composite fermions, simplifying Slater-determinant descriptions',
+        'Flux attachment maps the state to integer filling of composite fermions',
         'Flux quantization constrains the total number of particles, making the state unique',
         'Electron-electron interactions become negligible in the FQHE regime',
         'The FQHE state is non-degenerate, eliminating topological order complexity',
@@ -471,7 +471,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In resonant x-ray scattering (RXS) at absorption edges, resonant enhancement of specific scattering peaks reveals charge or orbital ordering. Why are RXS spectra more sensitive to subtle ordering than non-resonant diffraction?',
       [
-        'RXS probes the site-dependent x-ray absorption near edge structure (XANES); resonance enhances scattering that is forbidden in non-resonant diffraction and reveals symmetry breaking at the atomic level',
+        'Resonance enhances scattering forbidden in non-resonant diffraction',
         'Resonant scattering eliminates multiple scattering, improving angular resolution',
         'RXS is immune to strain-induced peak broadening',
         'Coherence length diverges at resonance, allowing detection of nanoscale order',
@@ -482,7 +482,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In electromagnetically induced transparency (EIT), a weak probe laser becomes transparent when a strong control laser couples two transitions of an atom. What is the underlying mechanism?',
       [
-        'Control-laser coupling creates a dark state (superposition of ground and excited levels) that does not couple to the probe; quantum interference destructively cancels probe absorption',
+        'A dark-state superposition destructively cancels probe absorption',
         'The control laser ionizes the upper state, preventing absorption of the probe',
         'Rabi oscillations from the control laser cause rapid excited-state decay',
         'The control laser shifts the atomic resonance frequency away from the probe wavelength',
@@ -493,7 +493,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In microfluidic electrokinetic instability, a thin permselective membrane (ion-exchange layer) under high electric field exhibits vortex roll cells. What triggers the instability?',
       [
-        'Ion-concentration polarization creates a destabilizing buoyancy gradient; electrokinetic flow at the interface generates shear-driven vortices, amplified by nonlinear electrokinetic forces',
+        'Ion polarization destabilizes the flow at the interface',
         'The membrane undergoes charge reversal at high voltage',
         'Joule heating causes thermal convection inside the membrane',
         'Electrophoresis of macromolecules creates a secondary flow',
@@ -506,7 +506,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In the context of laser-plasma instabilities during inertial confinement fusion (ICF) hohlraum heating, stimulated Raman scattering (SRS) and stimulated Brillouin scattering (SBS) can couple via a common ion-acoustic wave. What is the physical consequence of this coupling?',
       [
-        'Coupled SRS-SBS enables parametric instability with reduced threshold; a single pump photon pair-converts to a Stokes photon and an ion-acoustic wave that also backscatters the pump, enhancing depletion of laser energy at lower intensity',
+        'Coupling lowers the threshold for parametric pump depletion',
         'Coupling increases the Stokes-wave frequency shift beyond the Raman or Brillouin frequency alone',
         'Ion-acoustic waves become self-sustaining and generate electromagnetic noise',
         'The pump beam splits into two distinct refracted beams with different wavevectors',
@@ -517,7 +517,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In topological photonics, valley-Hall photonic crystals break time-reversal symmetry to create one-way edge states. How does photonic analog of the valley-Hall effect preserve directionality without magnetic fields?',
       [
-        'Structural asymmetry (e.g., C₃-symmetry breaking in triangular lattice) creates non-equivalent K and K\' valleys with opposite Berry curvatures; edge states at the K-K\' boundary inherit valley chirality, suppressing backscattering',
+        'Broken symmetry gives valleys opposite Berry curvature and chirality',
         'Optical activity (natural circular dichroism) from the material breaks time-reversal symmetry',
         'Spatially varying nonlinear absorption creates an effective nonreciprocal medium',
         'The photonic band gap opens and closes periodically, confining light at the boundaries',
@@ -528,7 +528,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In advanced nuclear reactor fuel (TRISO particles), the SiC coating layer can sustain fission-product pressure and temperature gradients without failure. What atomic-scale mechanism allows SiC to retain strength to ∼1600 °C?',
       [
-        'SiC is a wide-band-gap ceramic with strong covalent Si-C bonds; point-defect mobility remains low even above the Debye temperature because kT does not exceed the migration barrier for dislocation climb, preserving creep resistance',
+        'Strong covalent Si-C bonds keep point-defect mobility low even near 1600 °C',
         'SiC forms a non-crystalline protective layer that prevents fission gas diffusion',
         'The SiC crystal structure undergoes a phase transition that locks in mechanical stability',
         'Fission fragments chemically bond to the SiC lattice, strengthening it locally',
@@ -539,7 +539,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In scanning tunneling microscopy (STM) of a metal, the tunnel current I is exponentially sensitive to gap spacing z. However, on samples with electronic disorder (e.g., surface roughness of the density of states), constant-current STM exhibits apparent topography that does not match physical topography. Why does this artifact occur?',
       [
-        'Constant-current feedback adjusts z to maintain fixed I; if the density of states varies laterally, the tip height oscillates to preserve I, mapping DOS landscape rather than geometric height',
+        'Feedback adjusts tip height to hold I, so it maps DOS, not real topography',
         'Thermal vibrations of the tip broaden the tunneling resonance, reducing spatial resolution',
         'The tunnel barrier height changes with sample composition, affecting exponential sensitivity',
         'Tip-sample interactions create an attractive force that dominates over electronic effects',
@@ -550,7 +550,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In femtosecond laser ablation of solids, ultrashort pulses avoid thermal diffusion into the bulk. However, the ablation threshold (fluence F_th) exhibits a nonmonotonic dependence on pulse duration τ below ∼100 fs. What causes this non-monotonicity?',
       [
-        'For τ < 100 fs, competing electron-phonon coupling (thermalizing electrons) and lattice heating timescales create a minimum F_th; shorter τ require higher fluence to reach thermal runaway before electron-phonon equilibration',
+        'Below the electron-phonon coupling time, shorter pulses need higher fluence',
         'Below 100 fs, multi-photon ionization becomes dominant, raising the ionization threshold',
         'The laser wavelength shifts into the ultraviolet, decreasing absorption cross-section',
         'Plasma shielding prevents shorter pulses from reaching the surface',
@@ -561,7 +561,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In magnetohydrodynamic (MHD) turbulence subject to a strong background magnetic field B₀, energy cascade is anisotropic: turbulent eddies preferentially elongate along B₀, creating a "pencil-shaped" spectrum in k-space. What fundamental difference in mode coupling causes this anisotropy compared to ordinary fluid turbulence?',
       [
-        'Magnetic tension (∝ B₀²) suppresses perpendicular motions; energy preferentially cascades along B₀ because parallel modes decouple from Lorentz force effects, and nonlinear interactions favor k‖ > k⊥ structures',
+        'Magnetic tension suppresses perpendicular motion, favoring cascade along B₀',
         'The Alfvén wave dispersion relation ω = v_A k‖ limits cascade to parallel wavenumbers',
         'Viscous dissipation is anisotropic due to anisotropic viscosity in a magnetized plasma',
         'Magnetic reconnection creates narrow current sheets that fragment perpendicular turbulence',
@@ -572,7 +572,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In supercritical water oxidation (SCWO) for hazardous-waste treatment, ionic product K_w of water near the critical point (374 °C, 22 MPa) can be up to 10⁻¹¹, far higher than 10⁻¹⁴ at 25 °C. How does this dramatic change in K_w affect reaction kinetics of organic oxidation?',
       [
-        'Higher K_w means higher [H⁺] and [OH⁻]; hydroxyl radical (•OH) from water dissociation or chain-reaction sequences becomes more abundant, accelerating free-radical oxidation of organics at supercritical conditions',
+        'Higher K_w raises [H⁺]/[OH⁻], boosting •OH radicals and oxidation',
         'Higher K_w decreases solubility of organic compounds, slowing oxidation',
         'The dielectric constant of water decreases near T_c, reducing ion dissociation despite higher K_w',
         'Supercritical water inhibits water-mediated radical reactions, requiring alternative pathways',
@@ -583,7 +583,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In optical frequency combs from mode-locked femtosecond lasers, the frequency-comb teeth are spaced by Δf_rep (repetition rate) and offset by f_CEO (carrier-envelope-offset frequency). Why is stabilizing f_CEO critical for broadband spectroscopy applications, while Δf_rep can be comparatively loose?',
       [
-        'f_CEO controls the phase evolution of the envelope within each optical cycle; its fluctuation causes the comb teeth to drift in absolute frequency, breaking phase coherence across the spectrum; Δf_rep only sets tooth spacing, not absolute frequency',
+        'f_CEO sets absolute comb-tooth frequency; Δf_rep only sets spacing',
         'f_CEO determines the laser power; Δf_rep does not affect output intensity',
         'f_CEO locks the spectrum to optical resonances; Δf_rep is determined by cavity length automatically',
         'Stabilizing Δf_rep is impossible; only f_CEO can be controlled electronically',
@@ -594,7 +594,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In plasmonic metamaterials designed with sub-wavelength features, the effective magnetic permeability μ_eff can be negative (μ_eff < 0) even though individual metal constituents are non-magnetic. What is the origin of this effective magnetism?',
       [
-        'Subwavelength structure (e.g., split-ring resonators) creates closed-loop charge oscillations; circulating currents generate a magnetic dipole moment that couples to incident magnetic field B, yielding negative μ_eff at resonance',
+        'Circulating currents in split-ring resonators give a resonant magnetic response',
         'Free electrons in the metal acquire orbital angular momentum, mimicking intrinsic spin magnetism',
         'The plasma frequency of the metal shifts below the operational frequency, reversing the permeability sign',
         'Nonlinear effects at high field strength induce permanent magnetization',
@@ -605,7 +605,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In cryogenic neutron detection using superfluid ⁴He (superfluid-He target), prompt nuclear recoils ionize the superfluid, generating quasiparticle excitations observable via bolometer. Why does this approach achieve sensitivity to low-mass dark matter candidates while conventional semiconductors cannot?',
       [
-        'Ionization energy in superfluid He is extremely small (∼ meV); low-mass dark-matter nucleon recoils (∼ keV) create detectable quasiparticles; semiconductor band gaps (eV) require higher-energy recoils, missing low-mass signals',
+        'Superfluid He\'s tiny ionization energy catches recoils eV band gaps miss',
         'Superfluid He has higher density than semiconductors, increasing cross-section',
         'Helium is insensitive to photon backgrounds that plague semiconductor detectors',
         'Cryogenic bolometer response is inherently faster than semiconductor electronics',
@@ -616,7 +616,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In resonant inelastic X-ray scattering (RIXS) at 3d transition-metal K-edges, the intermediate state is a 1s core hole coupled to the 3d valence electrons. Why does RIXS access excitations (e.g., d-d transitions, magnons) that are dipole-forbidden in conventional spectroscopy?',
       [
-        'RIXS selects intermediate state via resonance; quadrupole and higher-multipole transitions to the 3d intermediate state become allowed (even if dipole-forbidden to ground state); final-state excitations inherit selection rules from the intermediate state, accessing forbidden transitions',
+        'Resonance allows multipole transitions forbidden by ground-state dipole rules',
         'RIXS provides momentum resolution, allowing scattering vectors that bypass dipole rules',
         'The 1s core hole screening changes the effective nuclear charge seen by 3d electrons, enabling new transitions',
         'RIXS excitation wavelength can be tuned to resonantly enhance dipole-forbidden lines',
@@ -627,7 +627,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In high-temperature superconductors (cuprates), the pseudogap (PG) opens below T* and suppresses spectral weight at the Fermi level, yet the superconducting gap opens below T_c < T*. What is the relationship between PG and superconducting pairing, and why are they distinct phenomena?',
       [
-        'PG is a bosonic excitation-driven (spin/charge fluctuation) energy scale above T_c; superconducting gap is fermionic (quasiparticle) below T_c; PG precursor effects and pre-formed pairs may contribute, but distinct mechanisms—PG survives to T*, while SC gap only exists T < T_c',
+        'PG is a bosonic fluctuation scale above T_c; SC gap is a fermionic gap below T_c',
         'PG and SC gap are the same phenomenon; T_c measures when pair coherence onsets, while T* measures when pairing starts',
         'PG is a feature of the density of states; SC gap is a transport phenomenon',
         'PG arises from phonon screening; SC gap arises from electron-electron interactions',
@@ -638,7 +638,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In accretion-disk radiation transfer, the vertical structure satisfies hydrostatic equilibrium and radiative energy balance. At high accretion rates (super-Eddington), the disk becomes geometrically thick. What causes the disk to "puff up," and why does this limit the local radiative efficiency?',
       [
-        'Radiation pressure ∇P_rad dominates gravity vertically; thick disk (H/R ∼ 1) means radiation pressure-supported geometry; effective opacity increases with height, trapping radiation and reducing local radiative efficiency below the thin-disk limit',
+        'Radiation pressure dominates gravity, puffing up the disk and trapping radiation',
         'Magnetic instability (MRI) creates turbulent heating that puffs the disk',
         'Thermal conduction vertically transports energy, reducing the local temperature gradient',
         'At super-Eddington rates, nuclear burning ignites in the disk, providing additional support',
@@ -649,7 +649,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In time-resolved X-ray diffraction (TR-XRD) during femtosecond laser-induced phase transitions, lattice dynamics are accessed via time-resolved changes in diffraction peak intensity and broadening. What information about the ultrafast phonon dynamics is encoded in the time-dependent diffraction lineshape (FWHM)?',
       [
-        'FWHM ∝ inverse coherence length of the lattice; ultrafast dephasing (displacive excitation of specific phonon modes) reduces coherence, broadening the peak; decay of FWHM tracks phonon dephasing time (T₂) and coherence recovery',
+        'FWHM tracks coherence length; its decay reveals phonon dephasing time',
         'FWHM measures the density of phonon modes excited; larger FWHM indicates more modes are thermally populated',
         'FWHM is determined solely by instrumental resolution; ultrafast dynamics appear only in peak shift, not broadening',
         'FWHM encodes the phonon lifetime (linewidth); narrow FWHM indicates long-lived phonon modes',
@@ -660,7 +660,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In diffractive X-ray optics for synchrotrons, analyser crystals with asymmetric Bragg geometry (asymmetric cut angle) magnify the angular acceptance compared to symmetric geometry. How does asymmetry improve spectroscopic acceptance without loss of energy resolution?',
       [
-        'Asymmetric geometry magnifies the Darwin curve; angular magnification factor C = |sin(2θ_B)/sin(2θ_B - 2θ_C)| > 1 expands acceptance without broadening, because Darwin curve narrowness (∝ χ_h dynamical width) is preserved while geometric acceptance grows',
+        'Asymmetric cuts magnify angular acceptance while preserving Darwin-curve narrowness',
         'Asymmetric cuts reduce the Darwin width by suppressing multiple Bragg reflections',
         'Asymmetric geometry shifts the reflectivity peak away from the Darwin curve, reducing dynamical broadening',
         'Angular magnification arises from the refractive index anisotropy introduced by the cut angle',

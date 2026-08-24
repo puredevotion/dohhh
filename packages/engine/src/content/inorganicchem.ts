@@ -16,7 +16,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In crystal field theory, how does the energy of d-orbitals split in an octahedral metal complex?',
       [
-        'The five d-orbitals are no longer degenerate; some are raised and some lowered in energy',
+        'The d-orbitals split into two energy sets',
         'All five d-orbitals gain energy equally',
         'The d-orbitals split into s- and p-orbitals',
         'Only the dz2 orbital is affected by the ligand field',
@@ -27,7 +27,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What characterizes a Lewis acid-base interaction in coordination chemistry?',
       [
-        'A coordinate covalent bond forms between an electron pair donor and an acceptor',
+        'An electron pair donor bonds to an acceptor',
         'Transfer of protons between species',
         'Formation of ionic bonds between neutral ligands and metal ions',
         'Breaking of sigma bonds in the ligand',
@@ -38,7 +38,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the primary difference between octahedral and tetrahedral coordination geometries?',
       [
-        'Octahedral has 6 ligands in an approximately octahedral shape; tetrahedral has 4 ligands forming a tetrahedron',
+        'Octahedral has 6 ligands; tetrahedral has 4',
         'Both geometries always have the same coordination number',
         'Tetrahedral is always more stable than octahedral',
         'The difference is only in color, not geometry',
@@ -49,7 +49,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In transition metal chemistry, what does the spectrochemical series arrange?',
       [
-        'Ligands in order of their crystal field splitting ability',
+        'Ligands ranked by crystal field splitting',
         'Metals in order of oxidation state stability',
         'Wavelengths of light absorbed by complexes',
         'Thermal stability of coordination compounds',
@@ -60,7 +60,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What type of isomerism is exhibited by [Co(NH3)5Cl]2+ and [Co(NH3)4(OH)]Cl?',
       [
-        'Ionization isomerism',
+        'Ionization isomer',
         'Linkage isomerism',
         'Geometric isomerism',
         'Optical isomerism',
@@ -71,7 +71,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In solid-state chemistry, what is a lattice parameter?',
       [
-        'The distance between equivalent lattice points in a unit cell',
+        'The distance between equivalent lattice points',
         'The number of atoms per unit cell',
         'The angle at which atoms repel each other',
         'The vibration frequency of atoms at equilibrium',
@@ -93,7 +93,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the primary role of a catalyst in a metal-complex-catalyzed reaction?',
       [
-        'Lower activation energy without being stoichiometrically consumed',
+        'Lower activation energy without being consumed',
         'Shift the equilibrium constant to favor products',
         'Increase the enthalpy of the reaction',
         'Supply heat energy to the reaction system',
@@ -115,7 +115,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is hemoglobin\'s primary ligand in reversible oxygen binding?',
       [
-        'The iron(II) center in a protoporphyrin IX heme group',
+        'The iron(II) center in a heme group',
         'Histidine residues directly bind molecular oxygen',
         'Sulfide bridges coordinate oxygen molecules',
         'Carboxylate groups form reversible O2 adducts',
@@ -126,7 +126,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the complex [Fe(CN)6]4−, how many electron pairs does cyanide donate to iron?',
       [
-        '6 electron pairs (CN− is a 2-electron donor, 6 × 2 = 12 total)',
+        '6 electron pairs',
         '3 electron pairs',
         '6 unpaired electrons',
         '12 lone pairs from the ligands',
@@ -148,7 +148,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Which factor primarily determines whether a transition metal complex is colored?',
       [
-        'd-orbital splitting allows visible-range electronic transitions between d-orbitals',
+        'd-orbital splitting allows visible-light transitions',
         'The presence of paramagnetic electrons in the complex',
         'The charge of the complex ion',
         'The mass of the ligand atoms',
@@ -159,7 +159,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the chelate effect, and why do chelating ligands form more stable complexes?',
       [
-        'Multidentate ligands bind via multiple donor sites, increasing stability through entropic and enthalpic factors',
+        'Multidentate ligands bind via multiple donor sites',
         'Chelating ligands form weaker bonds than monodentate equivalents',
         'Chelation requires ionic bonding only',
         'Chelating agents always contain nitrogen',
@@ -172,7 +172,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Why does CN− cause larger crystal field splitting (Δ) than F− despite F− being smaller?',
       [
-        'CN− is a strong σ-donor with significant π-backbonding from filled d-orbitals, while F− is purely σ-donating',
+        'CN− has π-backbonding while F− is purely σ-donating',
         'F− is a stronger field ligand because it is more electronegative',
         'Both ligands cause identical d-orbital splitting',
         'CN− and F− are incapable of forming octahedral complexes',
@@ -183,7 +183,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In ligand field theory, what is the role of π-backbonding in metal-carbonyl complexes?',
       [
-        'Metal d-electrons donate into unoccupied π* orbitals on CO, strengthening M–L bonding',
+        'Metal d-electrons donate into CO\'s π* orbitals',
         'Ligand electrons are transferred irreversibly to the metal d-orbitals',
         'The metal oxidation state increases due to electron loss',
         'π-bonding is destructive and weakens complex stability',
@@ -194,7 +194,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does the Jahn–Teller effect manifest in octahedral Cu(II) d9 complexes?',
       [
-        'Axial elongation or compression removes degeneracy, lowering ground-state energy',
+        'Axial elongation or compression removes degeneracy',
         'The complex spontaneously expels one ligand to become square-pyramidal',
         'The metal oxidizes to Cu(III) to achieve a d8 configuration',
         'All octahedral Cu(II) complexes are perfectly symmetric',
@@ -205,7 +205,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the relationship between magnetic moment and unpaired d-electrons in transition metal complexes?',
       [
-        'Unpaired electrons contribute ~1 Bohr magneton each; μ = √[n(n+2)] μB where n = unpaired electrons',
+        'μ = √[n(n+2)] μB, where n is unpaired electrons',
         'Magnetic moment is determined solely by atomic number',
         'Paired electrons in d-orbitals completely cancel all magnetism',
         'Only s-electrons contribute to the overall magnetic moment',
@@ -227,7 +227,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the chelate effect, and how does it differ from simple ligand displacement?',
       [
-        'Chelation provides entropic and enthalpic stabilization vs. monodentate ligands (chelate effect); reduces lability',
+        'Chelation offers extra entropic and enthalpic stabilization',
         'Monodentate ligands form stronger bonds than chelating ligands',
         'Chelation requires ionic bonding exclusively',
         'Chelating agents must contain only nitrogen donors',
@@ -238,7 +238,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does electron density on the metal affect the reactivity of an organometallic complex?',
       [
-        'Electron-rich metals are nucleophilic and attack electrophilic substrates; electron-poor metals attack nucleophilic substrates',
+        'Electron-rich metals are nucleophilic, electron-poor electrophilic',
         'All metals exhibit identical reactivity regardless of electronic environment',
         'Only d10 metals are reactive in organometallic catalysis',
         'The ligand environment has no effect on metal reactivity',
@@ -249,7 +249,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the difference between "high-spin" and "low-spin" configurations in octahedral complexes?',
       [
-        'High-spin: weak field → electrons spread across all 5 d-orbitals; low-spin: strong field → electrons fill lower orbitals first',
+        'Weak field gives high-spin; strong field gives low-spin',
         'High-spin and low-spin refer to the nuclear spin state',
         'High-spin complexes are always tetrahedral; low-spin are octahedral',
         'The terms describe ligand steric bulk, not electronic effects',
@@ -260,7 +260,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In redox catalysis, how does the electron-transfer chain regenerate the catalyst?',
       [
-        'Stepwise electron transfer: substrate reduced, intermediate oxidized back, catalyst regenerated and ready for the next cycle',
+        'Electron transfer regenerates the catalyst each cycle',
         'The metal center is permanently oxidized or reduced',
         'All electrons transfer simultaneously in a single step',
         'Reversibility is prevented to drive the reaction forward',
@@ -271,7 +271,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What structural role do histidine residues play in hemoproteins?',
       [
-        'Histidine is the fifth axial ligand to heme iron, stabilizing the protein fold and tuning oxygen affinity',
+        'Histidine is the fifth axial heme ligand',
         'Histidine directly binds oxygen molecules',
         'Histidine is bonded to the peptide backbone only',
         'Iron(III) hemoproteins never bind oxygen',
@@ -282,7 +282,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does metal-to-ligand charge transfer (MLCT) differ from ligand-to-metal charge transfer (LMCT)?',
       [
-        'MLCT: electron from metal d-orbital to ligand π*; LMCT: electron from filled ligand orbital to metal d-orbital',
+        'MLCT: metal to ligand π*; LMCT: ligand to metal d-orbital',
         'Both processes are identical and the terms are interchangeable',
         'MLCT only occurs in neutral complexes; LMCT only in cationic species',
         'LMCT absorptions always occur at higher energy than MLCT',
@@ -293,7 +293,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the empirical relationship between crystal field splitting (Δ) and absorption wavelength in d–d transitions?',
       [
-        'The energy of the absorbed photon equals Δ; larger Δ shifts absorption to shorter wavelengths (blue shift)',
+        'Photon energy equals Δ; larger Δ gives shorter wavelengths',
         'Δ is independent of absorption wavelength',
         'Longer wavelengths always correspond to larger crystal field splittings',
         'Absorption wavelength is determined by ligand mass, not splitting energy',
@@ -304,7 +304,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In cytochrome P450 oxidation catalysis, what is the role of the iron center?',
       [
-        'Fe(II) or Fe(III) cycles through oxidation states to activate O2 and form high-valent oxo species for hydroxylation',
+        'Iron cycles oxidation states to form a high-valent oxo species',
         'Iron is a structural scaffold with no catalytic role',
         'Iron exclusively binds nitrogen and cannot interact with oxygen',
         'The protein backbone performs all oxygen activation',
@@ -315,7 +315,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the "18-electron rule" in organometallic chemistry?',
       [
-        'Stable organometallic complexes often have 18 valence electrons, filling d, s, p orbitals like noble gases',
+        'Stable complexes often have 18 valence electrons total',
         'All metals must have exactly 18 d-electrons regardless of ligand',
         'The rule applies exclusively to main-group elements',
         '18 electrons guarantee complex decomposition',
@@ -326,7 +326,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does the nephelauxetic effect relate to complex color in transition metals?',
       [
-        'Ligand electron density expands d-orbitals, reducing interelectronic repulsion and decreasing Δ (red shift)',
+        'Ligand electrons expand d-orbitals, lowering Δ',
         'Ligands increase effective nuclear charge on metal electrons',
         'Nephelauxetic effects always blue-shift complex colors',
         'Only p-block elements experience nephelauxetic effects',
@@ -339,7 +339,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the angular overlap model (AOM), how do σ and π interactions contribute separately to d-orbital energies?',
       [
-        'σ-donation and π-repulsion are treated as independent orbital overlaps; π from each ligand axis raises certain d-orbital energies (e.g., dxy, dxz)',
+        'σ-donation and π-repulsion act as independent overlaps',
         'σ and π interactions have identical effects on all d-orbitals',
         'π-interactions have no effect on d-orbital energy levels',
         'All d-orbitals are equally stabilized by both σ and π interactions',
@@ -350,7 +350,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the Bailar twist mechanism, and what does it explain?',
       [
-        'An octahedral ↔ trigonal-prismatic pseudorotation allowing rapid ligand positional exchange without dissociating the complex',
+        'An octahedral ↔ trigonal-prismatic pseudorotation',
         'A one-electron redox process yielding odd-electron intermediates',
         'Spontaneous decomposition of a complex at high temperature',
         'A symmetric rotation with no geometric changes',
@@ -361,7 +361,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How do σ-donation and π-backbonding in the M–CO bond reinforce one another (synergic effect)?',
       [
-        'σ-donation increases metal e− density → enhanced π-backdonation to CO π*; weakens C≡O and stabilizes M–L bond',
+        'σ-donation raises density, boosts backdonation',
         'π-backbonding cancels σ-donation effects',
         'σ-donation and π-backbonding are independent',
         'Only weak-field CO exhibits both σ and π interactions',
@@ -372,7 +372,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the Born–Haber cycle, what is the lattice enthalpy and how is it related to crystal structure?',
       [
-        'ΔH_latt is the energy to separate one mole of solid ionic compound into gaseous ions; correlates with ion size and charge',
+        'Energy to separate one mole of ionic solid into gaseous ions',
         'Lattice enthalpy is the enthalpy of fusion',
         'Lattice enthalpy is the enthalpy of vaporization of one element',
         'Lattice enthalpy predicts only the color of the compound',
@@ -383,7 +383,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What role does spin–orbit coupling (SOC) play in electronic structure and spectroscopy of heavy transition metals?',
       [
-        'SOC splits degenerate levels (fine structure), mixes spin and orbital angular momentum, and allows "forbidden" d–d transitions',
+        'SOC mixes spin and orbital momentum',
         'SOC is negligible for all first-row transition metals',
         'SOC makes singlet states unable to relax',
         'Only heavy metals exhibit SOC effects',
@@ -394,7 +394,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the role of the P-cluster in nitrogenase, and how does its redox state facilitate N2 reduction?',
       [
-        '[Fe8S7Cys]^(++/+) oscillates oxidation states, shuttling electrons from the Fe protein to the FeMo-cofactor during N2 reduction',
+        'The P-cluster shuttles electrons to the FeMo-cofactor',
         'The P-cluster has a fixed oxidation state and does not participate in electron transfer',
         'The P-cluster stores sulfide for N2 binding',
         'P-clusters are evolutionary relics with no function',
@@ -405,7 +405,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the quantitative difference in packing efficiency between FCC and BCC structures?',
       [
-        'FCC achieves ~74% packing (coordination number 12); BCC achieves ~68% (CN = 8); FCC is the close-packed arrangement',
+        'FCC packs ~74% (CN 12); BCC packs ~68% (CN 8)',
         'BCC and FCC have identical packing efficiency',
         'BCC is always denser than FCC',
         'Packing fraction is independent of crystal geometry',
@@ -416,7 +416,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In heterogeneous catalysis, what are ensemble effects and how do they control surface reactivity?',
       [
-        'Substrate reactivity depends on the geometric arrangement and electronic state of metal surface atoms (specific facets, defects)',
+        'Reactivity depends on surface atom geometry and state',
         'All metal surfaces are chemically equivalent',
         'Heterogeneous catalysis depends only on bulk metal properties',
         'Surface structure has no influence on reaction mechanism',
@@ -427,7 +427,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the D4h point group, and which metal complexes adopt this geometry?',
       [
-        'Square-planar (CN=4, coplanar): Pt(II), Au(III), Ni(II) with strong-field ligands; typically obeys 16-electron rule',
+        'Square-planar geometry: Pt(II), Au(III), Ni(II) complexes',
         'Tetrahedral complexes only; D4h cannot describe planar structures',
         'D4h is exclusive to octahedral geometries',
         'D4h is not a valid point group for transition metal complexes',
@@ -438,7 +438,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In bonding models of transition metal carbonyls, explain the difference between synergic bonding and non-bonding electron repulsion.',
       [
-        'Synergic: concerted σ-donation + π-backbonding mutually reinforce M–CO strength; non-bonding is incidental e−–e− repulsion',
+        'Synergic bonding reinforces M–CO; repulsion is incidental',
         'Synergic bonding and non-bonding overlap are the same concept',
         'Non-bonding overlap is required for M–CO bonds; synergic bonding is rare',
         'Only CO exhibits synergic bonding; other ligands do not',
@@ -449,7 +449,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is oxidation state ambiguity in transition metal complexes with redox-active ligands?',
       [
-        'Ligands like bipyridine, phenanthroline, semiquinones can accept/donate electrons; formal oxidation state assignment becomes ambiguous',
+        'Redox-active ligands make oxidation state assignment ambiguous',
         'Oxidation states are always unambiguously assigned for all complexes',
         'Redox-active ligands are imaginary and do not exist',
         'Only metals, never ligands, participate in redox chemistry',
@@ -460,7 +460,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In perovskite structures (ABX3), what does the Goldschmidt tolerance factor predict?',
       [
-        't = (r_A + r_X) / [√2(r_B + r_X)]; t ≈ 1 cubic, t < 1 distorted/orthorhombic, t > 1 unfavorable',
+        't = (r_A+r_X)/[√2(r_B+r_X)]; t ≈ 1 is cubic',
         'The tolerance factor is irrelevant to perovskite stability',
         't is always 1 for all perovskites',
         'The tolerance factor predicts only color',
@@ -471,7 +471,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the Tolman electronic parameter (TEP) and how is it used in ligand characterization?',
       [
-        'TEP is CO stretching frequency (ν_CO) of [Ni(L)(CO)3]; lower ν_CO → more donating ligand; quantifies electron-donation ability',
+        'TEP is the CO frequency of [Ni(L)(CO)3]',
         'TEP measures ligand steric bulk only',
         'TEP is defined only for nitrogen-donor ligands',
         'Higher ν_CO values always indicate stronger donors',
@@ -482,7 +482,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How do distortions from octahedral symmetry affect the d-orbital diagram?',
       [
-        'Lowered symmetry removes degenerate orbital levels and splits them according to the new point group',
+        'Lowered symmetry splits d-orbitals further',
         'Distortions have no effect on d-orbital energies',
         'All distortions raise all d-orbitals equally',
         'Distortions increase octahedral symmetry',
@@ -493,7 +493,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In heterometallic cluster complexes, what is the advantage of mixed-metal sites over homometallic clusters?',
       [
-        'Different metals can activate distinct substrates or intermediates at nearby sites, enabling cooperative catalysis and substrate selectivity',
+        'Different metals activate distinct substrates at nearby sites',
         'All metals in a cluster always behave identically',
         'Mixed-metal clusters are always less stable than single-metal clusters',
         'Different metals compete for the same site and reduce overall activity',
@@ -506,7 +506,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does ligand-field density-functional theory (LF-DFT) improve upon crystal field theory?',
       [
-        'LF-DFT includes quantum-mechanical exchange, correlation, and covalency; enables non-empirical Δ calculation and f-orbital treatment',
+        'LF-DFT adds quantum exchange and correlation',
         'LF-DFT is simply crystal field theory rebranded',
         'LF-DFT predicts only geometry',
         'LF-DFT has been superseded',
@@ -517,7 +517,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the spectroscopic origin of the yellow color in [Fe(H2O)6]3+, and why does LMCT dominate absorption?',
       [
-        'Weak d–d transitions (~900 nm) are dwarfed by intense LMCT (OH2→Fe(III), ~400 nm); Fe(III) oxidizing power exceeds weak H2O-field strength',
+        'Intense LMCT dwarfs weak d–d transitions',
         '[Fe(H2O)6]3+ is colorless',
         'Water is a strong-field ligand yielding low-spin Fe(III)',
         'All iron aquo complexes have identical spectra',
@@ -528,7 +528,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does spin–orbit coupling facilitate intersystem crossing and nonradiative decay in metal complex photodynamics?',
       [
-        'SOC mixes singlet and triplet states, lowering ISC barriers and accelerating radiationless relaxation to dark triplet states',
+        'SOC lowers the ISC barrier by state mixing',
         'Spin–orbit coupling prevents all excited-state decay',
         'SOC is irrelevant to metal complex photophysics',
         'Only organic dyes experience intersystem crossing',
@@ -539,7 +539,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What DFT-based framework explains substrate selectivity in nitrogenase (N2 vs. N2H+ reduction)?',
       [
-        'Hydride-bonding intermediates, redox-state-dependent activation, and metal–sulfur cluster cooperativity; DFT modeling reveals state-specific selectivity',
+        'Redox-dependent activation and cooperativity',
         'Nitrogenase selects randomly',
         'Steric exclusion alone explains selectivity',
         'Quantum tunneling is the sole mechanism',
@@ -550,7 +550,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the p–d exchange interaction in transition metal oxides, and how does it control electronic properties?',
       [
-        'Orbital mixing between metal d-bands and ligand p-bands modifies bandwidths, on-site energies, controlling charge-transfer character and insulator behavior',
+        'Mixing metal d-bands with ligand p-bands',
         'p–d exchange is negligible in all oxides',
         'Only the d-band contributes; p-bands are inert',
         'p–d exchange always increases conductivity',
@@ -561,7 +561,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does Marcus–Hush electron-transfer theory address reorganization energy in metal-complex redox catalysis?',
       [
-        'λ = λ_inner (bond-length, vibrational) + λ_outer (solvent polarization); high-λ systems require large overpotentials for rapid ET',
+        'λ_inner (vibrational) + λ_outer (solvent)',
         'Marcus theory is outdated',
         'Reorganization energy depends only on temperature',
         'All redox reactions have identical λ',
@@ -572,7 +572,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What distinguishes inner-sphere from outer-sphere electron-transfer mechanisms catalyzed by transition metal complexes?',
       [
-        'Inner-sphere: bridged ligand connects donor and acceptor, direct tunneling; outer-sphere: no bridge, electron hops through space',
+        'Inner-sphere uses a bridge; outer-sphere does not',
         'Inner-sphere and outer-sphere mechanisms are identical',
         'Only outer-sphere mechanisms occur in biological systems',
         'Inner-sphere mechanisms always require a fully filled d-shell',
@@ -583,7 +583,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In homogeneous catalysis, what is the catalytic turnover number (TON) and what factors limit it?',
       [
-        'TON = moles product / moles catalyst; limited by catalyst deactivation (side reactions, ligand loss, aggregation, product inhibition)',
+        'TON ratio, limited by deactivation',
         'TON is the speed of one catalytic cycle',
         'TON is independent of catalyst structure',
         'All homogeneous catalysts achieve infinite TON',
@@ -594,7 +594,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In Type I blue copper centers, what electronic states enable rapid electron-transfer cycling in enzymes?',
       [
-        'Cu(II) d9 distorted tetrahedral/trigonal; intense LMCT (600 nm, blue); reversible Cu(II)/(I) cycling with optimized geometry for fast ET',
+        'Distorted Cu(II) d9 allows fast cycling',
         'Blue copper centers are always Cu(I) d10',
         'Blue copper has no electron-transfer role',
         'Blue color indicates copper poisoning',
@@ -605,7 +605,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Why does [Fe(H2O)6]2+ have weak d–d transitions while FeS clusters show intense Fe–S charge-transfer absorption?',
       [
-        '[Fe(H2O)6]2+ is d6 LS (weak d–d forbidden); FeS clusters exhibit strong Fe(d) → S(p*) MLCT (~400 nm) due to Fe–S covalency',
+        'FeS clusters show strong Fe–S charge transfer',
         '[Fe(H2O)6]2+ is always blue',
         'All iron complexes exhibit identical CT transitions',
         'Charge-transfer is irrelevant to iron biochemistry',
@@ -616,7 +616,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does the electronic nature of excited states (MC, MLCT, LMCT) influence photocatalytic performance in dye-sensitized solar cells?',
       [
-        'MLCT states are long-lived (~1 μs), low-energy (~2 eV), enabling efficient electron injection into TiO2; MC states are reactive but short-lived',
+        'Long-lived MLCT aids electron injection into TiO2',
         'All excited states are equally useful for photocatalysis',
         'Excited-state nature is irrelevant to photocatalytic efficiency',
         'Only LMCT states are useful',
@@ -627,7 +627,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What does the Creutz–Taube complex [(NH3)5Ru–pyrazine–Ru(NH3)5]5+ reveal about valence delocalization?',
       [
-        'This bridged Ru(II)–Ru(III) complex exhibits Robin–Day Class III delocalization; pyrazine bridge facilitates rapid e−-hopping, obscuring oxidation state',
+        'Shows Class III delocalization via pyrazine',
         'Valence delocalization never occurs',
         'The Creutz–Taube complex is always trapped valence',
         'Bridging ligands prevent electron transfer',
@@ -638,7 +638,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How do continuum solvation models (PCM, COSMO) refine DFT predictions of metal-complex redox potentials?',
       [
-        'They solve Poisson–Boltzmann equation for bulk-solvent screening, correcting long-range Coulomb effects on ΔG(redox) vs. gas-phase DFT',
+        'Models bulk-solvent screening of Coulomb effects',
         'Solvation models have no effect on redox potential predictions',
         'Redox potentials depend exclusively on oxidation state',
         'Only explicit water molecules are relevant',
@@ -649,7 +649,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the role of hemilabile ligands in catalysis, and how do they differ from static chelating ligands?',
       [
-        'Hemilabile ligands have one readily dissociable donor arm; dynamic fluxional behavior exposes substrate-binding sites without full decomposition',
+        'One donor arm dissociates reversibly, opening a substrate site',
         'Hemilabile ligands are permanently attached',
         'Static and hemilabile ligands have identical catalytic properties',
         'Hemilabile ligands only appear in stoichiometric reactions',
@@ -660,7 +660,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the computational challenge in predicting spin-crossover (SCO) temperatures for iron(II) complexes?',
       [
-        'Entropy contributions of molecular rearrangement (ΔS_vib) and electronic degeneracy must be calculated; small ΔG = ΔH − TΔS requires high accuracy',
+        'Accurate ΔS_vib and electronic entropy are needed since ΔG is small',
         'SCO temperatures are experimentally fixed and never vary',
         'Only the enthalpy of the transition matters; entropy is irrelevant',
         'Computational methods always overestimate SCO temperatures by orders of magnitude',

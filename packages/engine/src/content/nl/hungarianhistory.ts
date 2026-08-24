@@ -230,7 +230,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Hoe creëerde de Transsylvaanse Vorstendommen\'s dubbele Ottomaans-Habsburg-vazaliteit unieke politieke uitkomsten niet beschikbaar in andere Hongaarse gebieden?',
-      ['Rivalen tegen elkaar uitspelen, eigen vorsten, tolerantie', 'Het was alleen een marionettensstaat van de Ottomanen', 'Het bezat geen autonomie whatsoever', 'Het bereikt volledige onafhankelijkheid van beide machten'],
+      ['Rivalen uitspelen, eigen vorsten, tolerantie', 'Het was alleen een marionettensstaat van de Ottomanen', 'Het bezat geen autonomie whatsoever', 'Het bereikt volledige onafhankelijkheid van beide machten'],
       0,
       'Transsylvanië\'s ambigue vazaliteit liet inheemse vorsten autonomie; het werd een toevluchtsoord voor gereformeerde protestanten vervolgd door Oostenrijk en Ottomannen.'
     ],
@@ -242,13 +242,13 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Miklós Horthy\'s politieke stelsel incorporeerde elementen van welke ideologische tradities zonder formele fascistische partijstructuur?',
-      ['Monarchisme, nationalisme en corporatisme gemengd', 'Puur communisme zonder partijapparaat', 'Klassiek liberalisme en democratie', 'Ottomaans-stijl despotisme'],
+      ['Monarchisme en corporatisme gemengd', 'Puur communisme zonder partijapparaat', 'Klassiek liberalisme en democratie', 'Ottomaans-stijl despotisme'],
       0,
       'Horthy\'s stelsel mengde monarchie, nationalisme, corporatistische structuren en nazi-banden zonder Italiaans-stijl of Duitse totalitarisme.'
     ],
     [
       'Welke historiografische leemte bestaat met betrekking tot Hongaarse deelname aan Tweede Wereldoorlog vergeleken met andere Assoas-staten?',
-      ['Hongarije\'s ambigue loyaliteit ontwijkt eenvoudige labels', 'Hongarije was geheel bereidwillig in samenwerking', 'Hongarije was geheel slachtoffer en onschuldig', 'Hongaarse rollen zijn in de wetenschap volledig opgelost'],
+      ['Hongarije\'s ambigue loyaliteit ontwijkt labels', 'Hongarije was geheel bereidwillig in samenwerking', 'Hongarije was geheel slachtoffer en onschuldig', 'Hongaarse rollen zijn in de wetenschap volledig opgelost'],
       0,
       'Hongaarse WOII-historiografie blijft omstreden: geschillen over medeplichtigheid versus slachtoffer-wezen blijven onopgelost.'
     ],
@@ -272,7 +272,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'De institutionele continuïteit van Hongarije\'s overgang van 1989 met de vooroorlogse orde weerspiegelde welke diepere historische factor?',
-      ['Hongarije\'s staatscontinuïteit en Kádár\'s geleidelijkheid', 'Hongarije ervoer gewelddadige revolutie anders dan buren', 'Alle drie overgangen waren identiek', 'Hongarije miste staatscontinuïteit anders dan Polen'],
+      ['Staatscontinuïteit en Kádár\'s geleidelijkheid', 'Hongarije ervoer gewelddadige revolutie anders dan buren', 'Alle drie overgangen waren identiek', 'Hongarije miste staatscontinuïteit anders dan Polen'],
       0,
       'Hongarije\'s eeuwen staatscontinuïteit (anders dan Polen\'s partities of Tsjecho-Slowakije\'s 1918-uitvinding) en Kádár\'s incrementalisme verminderde ruptuudruk in 1989.'
     ]
@@ -286,7 +286,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Welke belastings- en garnizoens-spanningen creëerde het Ottomaanse eyalet-stelsel in Hongarije dat dit onderscheidde van Ottomaanse Balkanse terrioria?',
-      ['Hoge garnizoenskosten dwongen Ottomaanse belastingsverlichting', 'Ottomaans Hongarije was meest winstgevende provincie', 'Belastingen waren uniform in alle Ottomaanse grondgebieden', 'Geen belastingslast bestond in Ottomaans Hongarije'],
+      ['Hoge garnizoenskosten dwongen belastingsverlichting', 'Ottomaans Hongarije was meest winstgevende provincie', 'Belastingen waren uniform in alle Ottomaanse grondgebieden', 'Geen belastingslast bestond in Ottomaans Hongarije'],
       0,
       'Ottomaans Hongarije vereiste hogere garnizoensuitgaven; verlaagde belasting en groter landheer-behoud maakten het economisch marginaal voor de Ottomaanse fiscus.'
     ],
@@ -304,7 +304,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Commentaar wetenschap debatteert of de etnische onderdrukking door de Opstand van 1848 een theoretische spanning in Europees liberalisme weerspiegelde?',
-      ['Burger- versus etnisch nationalisme, steeds herhaald', 'Een uniek Hongaars fenomeen', 'Volledig opgeloste spanningen', 'Puur militaire of politieke fout'],
+      ['Burger- versus etnisch nationalisme', 'Een uniek Hongaars fenomeen', 'Volledig opgeloste spanningen', 'Puur militaire of politieke fout'],
       0,
       'Historici (Kohn, Hroch, Brubaker) kaderen 1848\'s paradox als endemisch aan 19e-eeuws liberalisme: burgerrechten maskeerden etnische suprematie herhaald over crises.'
     ],
@@ -334,19 +334,19 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Hoe creëerde Horthy\'s corporatistische elementen en nazi-alliantie wat specialisten "fascisme zonder fascisten" noemen?',
-      ['Fascistische praktijken zonder totaliserend partij-apparaat', 'Hongarije was identiek aan Duits nazisme', 'Hongarije bezat geen fascistische kenmerken whatsoever', 'Het regime was zuiver democratisch'],
+      ['Fascistische praktijken zonder partijapparaat', 'Hongarije was identiek aan Duits nazisme', 'Hongarije bezat geen fascistische kenmerken whatsoever', 'Het regime was zuiver democratisch'],
       0,
       'Horthy\'s stelsel absorbeerde fascistische vormen zonder fascisme\'s totale penetratie; het bleef gegrondvest in traditionele monarchie en adellijke regel.'
     ],
     [
       'Hoe interpreteren concurrerende historiografieën Hongarije\'s Duitse bezetting van 1944 aangaande staats-agentschap?',
-      ['Intentionalistische versus structuralistische verklaringen', 'Hongaarse medeplichtigheid is eenparig vastgesteld', 'Hongarije draagt geen verantwoordelijkheid whatsoever', 'De vraag is geheel opgelost'],
+      ['Intentionalistische vs. structuralistische visies', 'Hongaarse medeplichtigheid is eenparig vastgesteld', 'Hongarije draagt geen verantwoordelijkheid whatsoever', 'De vraag is geheel opgelost'],
       0,
       'Hongaarse WOII-historiografie verdeelt tussen medewerking-nadruk en bezetting-beperking—geen zijde overtuigt volledig.'
     ],
     [
       'Het Verdrag van Trianon\'s irredentistische gevolgen voor Hongaars buitenlands beleid worden door hedendaagse wetenschap herzien als weerspiegelend welk dieper probleem?',
-      ['Etnografische grenzen afdwingen in gemengde regio\'s', 'Trianon los alle geschillen geheel op', 'Het verdrag was geheel gerechtvaardigd', 'Etnische grenzen in de regio zijn eenduidig'],
+      ['Etnische grenzen afdwingen in gemengde regio\'s', 'Trianon los alle geschillen geheel op', 'Het verdrag was geheel gerechtvaardigd', 'Etnische grenzen in de regio zijn eenduidig'],
       0,
       'Wetenschappelijk consensus erkent dat etnografische grenzen en historische beweringen in het Karpaten-Bekken werkelijk tegenstrijdig zijn; geen zuivere oplossing.'
     ],
@@ -358,7 +358,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Het Mechanisme voor Nieuwe Economie\'s (1968) succes in Hongaarse communisme\'s overleving tot 1989 weerspiegelt welk structureel voordeel?',
-      ['Zwakkere burgermaatschappij verminderde georganiseerd verzet', 'Hongarije bezat sterkere oppositiebewegingen dan Polen', 'Beide staten\'s communisme faced identieke crises', 'De mechanismen waren identiek in beide staten'],
+      ['Zwakkere burgermaatschappij, minder verzet', 'Hongarije bezat sterkere oppositiebewegingen dan Polen', 'Beide staten\'s communisme faced identieke crises', 'De mechanismen waren identiek in beide staten'],
       0,
       'Hongarije\'s gedepolitiseerde samenleving, zwakkere arbeidsbewegingen en Kerk-accommodatie stelden "goulashcommunisme" in staat Solidariteit\'s druk te overleven.'
     ],
