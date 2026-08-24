@@ -541,6 +541,7 @@ function ChooseTier({
   onTimeout: () => void;
 }): ReactNode {
   const { t } = useTranslation('play');
+  const { t: tc } = useTranslation('common');
   const turnIndex = state.active?.turnIndex ?? -1;
   const picked = useRef<number | null>(null);
   const [pending, setPending] = useState(false);
@@ -599,7 +600,7 @@ function ChooseTier({
                 }`}
               >
                 <div className="flex items-baseline justify-between gap-3">
-                  <span className="font-medium">{tier.label}</span>
+                  <span className="font-medium">{tc(`tiers.${difficulty}`)}</span>
                   <span className="font-mono text-sm tabular-nums">
                     <span className="text-success">+{tier.award}</span>
                     <span className="text-muted"> / </span>
@@ -609,6 +610,11 @@ function ChooseTier({
                 <p className="mt-1 text-xs text-muted">
                   {t('choose_tier.seconds_to_answer', { seconds: tier.timeoutMs / 1000 })}
                 </p>
+                {tier.maxStreak != null && (
+                  <p className="mt-0.5 text-xs text-muted">
+                    {tc('tiers.max_streak_note', { count: tier.maxStreak })}
+                  </p>
+                )}
               </button>
             );
           })}

@@ -24,6 +24,13 @@
     "en": "English",
     "nl": "Nederlands"
   },
+  "tiers": {
+    "bscba": "Too easy",
+    "msc": "Easy peasy",
+    "phd": "Common Knowledge",
+    "professor": "Dohhh",
+    "max_streak_note": "Max {{count}} in a row, then the turn passes on."
+  },
   "qr": {
     "drawing_error": "Could not draw the QR code. Read the four words out instead.",
     "drawing": "Drawing...",

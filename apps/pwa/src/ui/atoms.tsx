@@ -76,7 +76,9 @@ function describe(
 ): { colour: 'success' | 'warning' | 'danger' | 'default'; label: string } {
   switch (status) {
     case 'connected':
-      return { colour: 'success', label: t('connection.devices_count', { count: peerCount }) };
+      // peerCount is everyone ELSE on the mesh; the pill should read as "how
+      // many devices are in this game", which includes the one showing it.
+      return { colour: 'success', label: t('connection.devices_count', { count: peerCount + 1 }) };
     case 'connecting':
       return {
         colour: 'warning',
@@ -109,12 +111,13 @@ const TIER_CLASS: Record<Difficulty, string> = {
 
 /** The bet, stated as a bet: what you win, what it costs. */
 export function TierBadge({ difficulty }: { difficulty: Difficulty }): ReactNode {
+  const { t } = useTranslation('common');
   const tier = DIFFICULTY_TIERS[difficulty];
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium ${TIER_CLASS[difficulty]}`}
     >
-      {tier.label}
+      {t(`tiers.${difficulty}`)}
       <span className="tabular-nums opacity-80">
         +{tier.award} / {tier.penalty}
       </span>

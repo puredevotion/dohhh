@@ -194,8 +194,9 @@ function Row({
   tierInfo,
 }: {
   tier: Difficulty;
-  tierInfo: { label: string; award: number; penalty: number };
+  tierInfo: { label: string; award: number; penalty: number; maxStreak?: number | null };
 }): ReactNode {
+  const { t: tc } = useTranslation('common');
   const colour = {
     bscba: 'text-tier-bscba',
     msc: 'text-tier-msc',
@@ -203,13 +204,18 @@ function Row({
     professor: 'text-tier-professor',
   }[tier];
   return (
-    <div className="flex items-baseline justify-between gap-3">
-      <span className={colour}>{tierInfo.label}</span>
-      <span className="font-mono text-sm tabular-nums">
-        <span className="text-success">+{tierInfo.award}</span>
-        <span className="text-muted"> / </span>
-        <span className="text-danger-text">{tierInfo.penalty}</span>
-      </span>
+    <div>
+      <div className="flex items-baseline justify-between gap-3">
+        <span className={colour}>{tc(`tiers.${tier}`)}</span>
+        <span className="font-mono text-sm tabular-nums">
+          <span className="text-success">+{tierInfo.award}</span>
+          <span className="text-muted"> / </span>
+          <span className="text-danger-text">{tierInfo.penalty}</span>
+        </span>
+      </div>
+      {tierInfo.maxStreak != null && (
+        <p className="text-xs text-muted">{tc('tiers.max_streak_note', { count: tierInfo.maxStreak })}</p>
+      )}
     </div>
   );
 }

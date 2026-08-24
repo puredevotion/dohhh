@@ -24,6 +24,13 @@
     "en": "English",
     "nl": "Nederlands"
   },
+  "tiers": {
+    "bscba": "Te makkelijk",
+    "msc": "Inkoppertje",
+    "phd": "Algemene kennis",
+    "professor": "Dûhhh",
+    "max_streak_note": "Max {{count}} op een rij, dan gaat de beurt door."
+  },
   "qr": {
     "drawing_error": "Kon de QR-code niet tekenen. Lees de vier woorden voor in plaats daarvan.",
     "drawing": "Bezig met tekenen...",
