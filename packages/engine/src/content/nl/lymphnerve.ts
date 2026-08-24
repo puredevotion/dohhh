@@ -280,7 +280,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'De rechter lymfatische ductus voert rechterarm, rechtse thorax en rechts hoofd/nek af en voegt zich bij het veneuze systeem aan de rechter veneuze hoek.',
     ],
     [
-      'Beschrijf de microarchitectuur van een secundaire follikel in een lymfeknoop.',
+      'Wat is de microarchitectuur van een secundaire follikel in een lymfeknoop?',
       [
         'Een donker keimcentrum omgeven door een lichtere mantelzone van naïeve B-cellen',
         'Het is een willekeurige aggregatie van lymfocyten zonder georganiseerde zones',
@@ -337,7 +337,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
   ],
   phd: [
     [
-      'Verklaar de rol van Lymphatische Endotheelcel (LEC) productie van lymfangiogene factoren in context van immuun-verkeer en resolutie van ontsteking.',
+      'Welke rol speelt lymfatische endotheelcel (LEC) productie van lymfangiogene factoren in immuun-verkeer en resolutie van ontsteking?',
       [
         'LEC\'s scheiden VEGF-C/D uit om lymfangiogenese te bevorderen tijdens resolutie',
         'LEC\'s voorkomen actief lymfangiogenese door anti-VEGF moleculen uit te scheiden',
@@ -359,7 +359,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TLR-signalering op LEC\'s en antigen-presenterende cellen induceert chemokine en integrine-ligand upregulering, wat de inflammatoir knooprespons versterkt.',
     ],
     [
-      'Beschrijf de laminaire organisatie en functionele specialisatie van lagen in een dorsale worteleganglion (DRG) en hun relatie tot immuun-verkeer.',
+      'Hoe is een dorsale worteleganglion (DRG) structureel georganiseerd om immuun-celtoegang te reguleren?',
       [
         'DRG-soma\'s worden beschermd door satellietgliële cellen en een fibroblastische capsule',
         'DRG\'s zijn immuun-geprivilegieerd en ervaren nooit immuun-celinfilttratie',
@@ -403,7 +403,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'P2X7-gemedieerde IL-1beta versterkt ontsteking en versterkt leukocyt-rekrutering naar ontstoken weefsels en hun egress in lymfatieken naar afvoerknoppen.',
     ],
     [
-      'Verklaar de rol van calcitonine-gerelateerd peptide (CGRP) en neuropeptiden in het reguleren van immuun-celverkeer via sympathieke lymfeknoop-innervatie.',
+      'Welke rol spelen calcitonine-gerelateerd peptide (CGRP) en neuropeptiden bij het reguleren van immuun-celverkeer via sympathieke lymfeknoop-innervatie?',
       [
         'CGRP en stof P van zenuwuiteinden moduleren immuun-celverkeer',
         'Neuropeptiden hebben geen rol in immuun-celverkeer',
@@ -425,7 +425,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Tfh-FDC-interactie stimuleert somatische hypermutatie en selectie; lymfangiogenese past immuun-celexpansie en lymfocyt-egress uit groeiende knoppen aan.',
     ],
     [
-      'Beschrijf de cytoarchitectuur en functionele rol van het subforniculaire orgaan (SFO) en organum vasculosum laminae terminalis (OVLT) in immuun-detectie en neuro-immuunintegratie.',
+      'Wat is de functionele rol van circumventriculaire organen zoals het subforniculaire orgaan (SFO) en organum vasculosum laminae terminalis (OVLT) in immuun-detectie?',
       [
         'Deze organen missen een bloed-hersenbarrière, wat immuun-bewaking van het bloed toestaat',
         'Deze structuren zijn louter sensori-organen voor bloedosmolariteit; zij hebben geen immuunfunctie',
@@ -447,7 +447,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TRM (CD69+ CD103+) bieden snelle lokale controle; gerekruteerde aangeboren cellen verspreiden zich via afferente lymfatieken om systeemresponsen in afvoerknoppen te versterken.',
     ],
     [
-      'Verklaar de anatomische organisatie en functionele betekenis van de retrorubrale kern (RRN) en periaqueductale grijs (PAG) in nociceptieve signalering en immuun-pijninteracties.',
+      'Welke rollen spelen periaqueductale grijs (PAG) en retrorubrale kern (RRN) in nociceptieve signalering en immuun-pijninteracties?',
       [
         'PAG moduleert pijnpoorten; RRN medieert analgésie',
         'Deze structuren controleren alleen motorbewegingen, niet pijn of immuuniteit',
@@ -480,7 +480,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Sensoriële peptide-release stimuleert mastcel-ontladingen, endotheelpermeabiliteit en chemokine-productie, wat lokale aangeboren ontsteking en lymfatisch verkeer versterkt.',
     ],
     [
-      'Verklaar het verschijnsel van "immuun-geheugen" op niveau van lymfeknoop-stromalearchitectuur en hoe langdurig plasma-cel-nichen in beenmerg met lymfatische-recirculatie zich verhouden.',
+      'Hoe blijft immuun-geheugen behouden op niveau van lymfeknoop-stromalearchitectuur en langdurige plasma-cel (LLPC)-nichen in beenmerg?',
       [
         'Beenmerg-LLPC-nichen ondersteunen antilichamen onafhankelijk van recirculatie',
         'Immuun-geheugen wordt uitsluitend in bloed opgeslagen; lymfeknoppen zijn inactief na infectie',
@@ -504,7 +504,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
   ],
   professor: [
     [
-      'Evalueer kritisch de opkomende rol van lymfatisch-afgeleide VEGF-C-signalering in resolutie van tertiaire lymfoïde structuren (TLS) in chronische ontsteking, auto-immuniteit en tumor-microomgevingen.',
+      'Welke rol speelt lymfatisch-afgeleide VEGF-C-signalering in de resolutie van tertiaire lymfoïde structuren (TLS) bij chronische ontsteking, auto-immuniteit en tumor-microomgevingen?',
       [
         'VEGF-C-lymfangiogenese helpt egress maar kan tumoren verspreiden',
         'Lymfatische expansie onderdrukt universeel alle immuunresponsen',
@@ -526,7 +526,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'FRC-subsets vertonen zone-specifieke chemokine/TGF-beta signaturen (inflammatoir CXCL10+ vs. tolerogeen TGF-beta+ FRC\'s), wat functionele domeinen creëert die CD4+ T-lot leiden.',
     ],
     [
-      'Bespreek de implicaties van recente ontdekkingen van het "glyfatische systeem" in het CZS en zijn potentiële overlap met menigale lymfatische vaten in het schoonmaken van eiwitaggregaten en metabolische bijproducten tijdens slaap, en hoe disfunctie bij neuro-inflammatoire ziektes bijdraagt.',
+      'Hoe overlapt het "glyfatische systeem" met meningeale lymfatische vaten bij het opruimen van eiwitaggregaten en metabolische bijproducten tijdens slaap?',
       [
         'AQP4-afhankelijke glyfatische opruiming, aangevuld door meniale lymfatieken',
         'Het glyfatische systeem is niet functioneel verbonden met lymfatieken',
@@ -537,7 +537,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Glyfatisch-lymfatische disfunctie verslechtert amyloid-beta-opruiming tijdens slaap, wat bijdraagt aan accumulatie en neuro-ontsteking in Alzheimer en ander proteinaggregaten-ziektes.',
     ],
     [
-      'Verklaar de mechanistische basis voor vaginale afferent-signalering van microbiota-immuunaxis-integratie met nucleus tractus solitarius (NTS) om systeemtolerantie en barrière-integriteit via dorsale motorische kernuitgang te moduleren.',
+      'Hoe integreren vagale afferenten microbiota-immuunsignalen bij de nucleus tractus solitarius (NTS) om systeemtolerantie en barrière-integriteit te moduleren?',
       [
         'Vaginale afferenten sturen microbiële signalen naar de NTS via cholinergische output',
         'De vagus heeft geen relatie tot microbiota of immuun-barrière-functie',
@@ -559,7 +559,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'iLEC\'s werken als poortwachters: zij transcytoseren antígeen voor behouden FDC\'s en DC\'s, terwijl CCL21-afhankelijke T-cel-retentie voortijdige egress voorkomt voor volledige priming.',
     ],
     [
-      'Bespreek het opkomend concept van "getrainde immuuniteit" in weefsel-inwonerinnate lymfoïde cellen (ILC\'s) en hoe hun crosstalk met lymfatisch endotheel via IL-22 en IL-17 afscheiding barrière-beschermende immuuniteit en lymfangiogene remodeling beïnvloedt.',
+      'Hoe beïnvloedt "getrainde immuuniteit" in weefsel-inwonende innate lymfoïde cellen (ILC\'s), via IL-22- en IL-17-crosstalk met lymfatisch endotheel, barrière-beschermende immuuniteit en lymfangiogenese?',
       [
         'ILC3-afgeleide IL-22/IL-17 versterkt epitheel en breidt lymfatieken uit',
         'ILC\'s hebben geen rol in barrière-functie of lymfangiogenese',
@@ -581,7 +581,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'C-nociceptor-signalering triggert dorsale hoorn IL-6/TNF-alfa-vrijgave (immuun-koppeling), PAG-gemedieerde analgésie en sympathieke immuun-suppressie. A-delta-vezels activeren deze as niet.',
     ],
     [
-      'Evalueer de rol van weefsel-factor (TF) en trombine-signalering op lymfatische endotheelcellen en immuuncellen in exacerbing lymfatische fibrose en immuun-disfunctie in post-COVID-19-syndroom en long-COVID-pathofysiologie.',
+      'Welke rol spelen weefsel-factor (TF) en trombine-signalering op lymfatische endotheelcellen in lymfatische fibrose en immuun-disfunctie bij long-COVID?',
       [
         'Persistente virale antigenen stimuleren TF/PAR-signalering en fibrose',
         'TF-signalering is irrelevant voor lymfatische pathologie',
@@ -592,7 +592,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TF-trombine-PAR-signalering stimuleert lymfatische EZM-remodeling en aangehouden ontsteking in long-COVID, perpetueert T-cel-uitputting en auto-immuun-reacties.',
     ],
     [
-      'Bespreek de mechanistische integratie van circadiane-ritme-gecontroleerde veranderingen in lymfeflow, aquaporen-4 waterkanaal-activiteit in glyfatische astrocyten en slaap-wake-afhankelijke menigale immuun-cel-verkeer in context van CZS-infectie en opruiming van neuro-inflammatoire mediatoren.',
+      'Hoe ruimen circadiane veranderingen in lymfeflow, astrocytaire aquaporine-4 (AQP4) glyfatische activiteit en slaap-afhankelijk meningeaal immuun-celverkeer samen neuro-inflammatoire mediatoren op?',
       [
         'AQP4 en meniale drainage bereiken piek tijdens niet-REM-slaap',
         'Circadiale ritmes hebben geen effect op lymfatische functie',
@@ -614,7 +614,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'GAG-gebonden CXCL13/CCL21 creëren stabiele gradiënten in FRC-matrices die B/Tfh (CXCR5+) ruimtelijk van T-cellen (CCR7+) scheiden. Dysgereguleerde GAG-chemokine-binding in auto-immuniteit stimuleert ectopische TLS.',
     ],
     [
-      'Evalueer kritisch de hypothese dat dysgereguleerde acetylcholine-synthese en parasympatisch signalering door nucleus basalis van Meynert (NBM) en septum cholinergische anti-inflammatoire wegen verslechtert tijdens neuro-ontsteking in Alzheimer-ziekte, Parkinson-ziekte en ander neurodegeneratieve proteinaggregaten-ziektes.',
+      'Hoe verslechtert dysgereguleerde acetylcholine-synthese en parasympatische signalering via nucleus basalis van Meynert (NBM) en septum cholinergische anti-inflammatoire wegen bij neuro-ontsteking in neurodegeneratieve ziektes?',
       [
         'NBM-cholinergisch verlies ontketent microgliale neuro-ontsteking',
         'Cholinergische signalering heeft geen rol in neuro-ontsteking',
@@ -636,7 +636,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TRM-afgeleide IL-21 handhaaft FDC BAFF/APRIL-productie en TGF-beta; LEC\'s breiden mucosale lymfatieken uit via VEGF-C, handhaaft duurzaam geheugen-B en getrainde ILC-populaties.',
     ],
     [
-      'Bespreek de bidirectionele communicatie tussen het enterische zenuwstelsel (ENS) en darmgeassocieerde lymfoïde weefsel (IALT) via neurotrofische factoren en microbiële metaboliet-detectie.',
+      'Hoe communiceren het enterische zenuwstelsel (ENS) en darmgeassocieerde lymfoïde weefsel (IALT) bidirectioneel via neurotrofische factoren en microbiële metaboliet-detectie?',
       [
         'Enterische neurotrofinen ondersteunen ILC\'s; AhR-signalering remt macrofaag-TNF-alfa',
         'De ENS is volledig geïsoleerd van immuun-signalering door epitheelbarrière',
@@ -658,7 +658,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Meniale LV\'s + tolerogene BAM/stromal signalering handhaaft CZS immuun-privileges. Verlies verzwakt tolerantie en exacerbeert CZS auto-immuniteit en neuro-ontsteking.',
     ],
     [
-      'Verklaar hoe integratieve hele-organisme studies die circadiale immuun-oscillaties, meniale lymfatische pulsatiliteit en slaap-fase-afhankelijke glyfatische CSF-ISF-uitwisseling linken mechanismen van neurodegeneration in circadiale-verstoringsen slaap-stoornis-modellen onthullen.',
+      'Hoe beschermen circadiale immuun-oscillaties, meningeale lymfatische pulsatiliteit en slaap-fase-afhankelijke glyfatische CSF-ISF-uitwisseling samen tegen neurodegeneratie?',
       [
         'Circadiale egress, meniale pulsatiliteit en NREM-opruiming beschermen neuronen',
         'Circadiale ritmes zijn irrelevant voor lymfatische of glyfatische functie',

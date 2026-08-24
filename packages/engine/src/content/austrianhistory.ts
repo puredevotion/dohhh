@@ -447,7 +447,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
       'Though the Soviets occupied eastern Austria, Austrian Catholicism and Western ties limited communist gains; the 1955 treaty further reduced Soviet leverage.',
     ],
     [
-      'Explain the contradiction that Austria\'s postwar neutrality allowed it to join the EU in 1995 without joining NATO.',
+      'How is it possible that Austria\'s postwar military neutrality allowed it to join the EU in 1995 without joining NATO?',
       [
         'EU membership is compatible with military neutrality',
         'Austria secretly joined NATO in 1995',

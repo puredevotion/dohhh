@@ -258,7 +258,7 @@ export const ASTRONOMY: CategoryContent = {
       'The Hertzsprung gap is a poorly-populated region where evolved stars spend little time: they burn hydrogen in a shell and move quickly from the main sequence to the red giant branch.',
     ],
     [
-      'Describe the structure and evolution of asymptotic giant branch (AGB) stars.',
+      'What characterizes the structure and evolution of asymptotic giant branch (AGB) stars?',
       [
         'Low to intermediate mass stars with inert carbon-oxygen cores, burning shells',
         'The final stable state of all stars, lasting indefinitely without further change',
@@ -324,7 +324,7 @@ export const ASTRONOMY: CategoryContent = {
       'Cepheids obey log P = a log M + b (approximately), making them "standard candles." Hubble used this to prove Andromeda was a galaxy, not a nebula in our galaxy.',
     ],
     [
-      'Explain the Tully-Fisher relation and its role in cosmology.',
+      'What is the Tully-Fisher relation and what role does it play in cosmology?',
       [
         'Spiral galaxy luminosity correlates with rotational velocity',
         'It is a purely theoretical relation with no observational applications',
@@ -348,7 +348,7 @@ export const ASTRONOMY: CategoryContent = {
       'In the ergosphere (between the outer and inner horizons), spacetime itself rotates with the black hole. The Penrose process can extract rotational energy, reducing spin.',
     ],
     [
-      'Describe the mechanism of radiatively inefficient accretion flows and their role in AGN feedback.',
+      'What is the mechanism of radiatively inefficient accretion flows and what role do they play in AGN feedback?',
       [
         'Low-accretion-rate systems where jets dominate momentum feedback',
         'Extremely bright accretion states where radiation pressure dominates outflows',
@@ -381,7 +381,7 @@ export const ASTRONOMY: CategoryContent = {
       'Low-[Fe/H] stars burn H slower and evolve differently; isochrones shifted. Blue horizontal branches in metal-poor clusters require careful age–[Fe/H] disentanglement.',
     ],
     [
-      'Explain population synthesis models and how they constrain star formation histories.',
+      'What are population synthesis models and how do they constrain star formation histories?',
       [
         'PSMs combine stellar evolution tracks with IMF assumptions to predict galaxy spectra',
         'Population synthesis cannot be applied to galaxies more distant than 100 Mpc',
@@ -414,7 +414,7 @@ export const ASTRONOMY: CategoryContent = {
       'R_V = A_V / E(B−V) varies from ~2.5 (diffuse ISM) to ~5 (dense regions). Small grains cause steep UV extinction; large grains flatten it. Carbon/silicate ratios alter the UV bump.',
     ],
     [
-      'Explain color excess determination and reddening vector corrections in photometry.',
+      'How is color excess determined and how are reddening vector corrections applied in photometry?',
       [
         'E(B−V) is from intrinsic colors; correction follows the reddening vector',
         'Color excess is the difference between observed and catalog magnitudes',
@@ -447,7 +447,7 @@ export const ASTRONOMY: CategoryContent = {
       'Dispersion measure DM gives electron column density; DM/z probes IGM ionization. Magnetar models for FRB origins constrain magnetic field strengths and pair plasma physics.',
     ],
     [
-      'Explain the current understanding of the coronal heating problem in solar physics?',
+      'What is the current understanding of the coronal heating problem in solar physics?',
       [
         'Coronal temperature exceeds photosphere via waves and reconnection',
         'The corona is always cooler than the photosphere, contradicting older observations',
@@ -469,7 +469,7 @@ export const ASTRONOMY: CategoryContent = {
       'The GZK cutoff from pion production on CMB photons limits propagation. Pierre Auger Observatory data favor extragalactic (especially AGN) origins for E > 10¹⁹ eV.',
     ],
     [
-      'Describe gravitational wave polarization signatures and their ability to test modified gravity.',
+      'What do gravitational wave polarization signatures reveal about tests of modified gravity?',
       [
         'Tensor modes dominate in GR, others suppressed',
         'Gravitational waves have only one polarization state',
@@ -491,7 +491,7 @@ export const ASTRONOMY: CategoryContent = {
       'Time lag Δt ∝ r; velocity from Doppler width gives τ ~ GM_BH / c² equivalent. Hundreds of AGN measured this way; systematic uncertainties in inclination and f-factor remain.',
     ],
     [
-      'Explain the properties of quasar absorption systems and what they reveal about IGM/CGM physics.',
+      'What do the properties of quasar absorption systems reveal about IGM/CGM physics?',
       [
         'Metal/Lyman absorption in QSO spectra constrains HI',
         'Quasar absorption is entirely due to dust near the QSO host',
@@ -504,7 +504,7 @@ export const ASTRONOMY: CategoryContent = {
   ],
   professor: [
     [
-      'Discuss the information paradox in black hole thermodynamics and current theoretical resolutions.',
+      'What is the information paradox in black hole thermodynamics and what are the leading theoretical resolutions?',
       [
         'Hawking evaporation loses information; string microstates or firewalls may resolve it',
         'The information paradox has been definitively solved and no longer debated among experts',
@@ -537,7 +537,7 @@ export const ASTRONOMY: CategoryContent = {
       'BAO scale from sound-horizon imprints relic oscillations in matter. DESI, BOSS, 4MOST measure BAO at multiple redshifts; combined with CMB, they constrain w(a) and alleviate Hubble tension.',
     ],
     [
-      'Explain intergalactic magnetic field (IGMF) constraints from TeV gamma-ray observations and fermi surfaces.',
+      'What do intergalactic magnetic field (IGMF) constraints from TeV gamma-ray observations reveal?',
       [
         'TeV photon cascades create a faint halo constraining IGMF strength',
         'Intergalactic magnetic fields are unmeasurable and unconstrained by any observation',
@@ -559,7 +559,7 @@ export const ASTRONOMY: CategoryContent = {
       'Gravastars have stress-energy reversing in the interior; boson stars self-gravitate via scalar field. Echo signatures in GW strain post-merger are sought; tidal Love numbers constrain interior structure.',
     ],
     [
-      'Explain neutrino astronomy and what multimessenger observations from IceCube reveal about cosmic accelerators.',
+      'What do multimessenger observations from IceCube reveal about cosmic accelerators in neutrino astronomy?',
       [
         'IceCube-detected neutrinos trace hadron acceleration in jets',
         'Neutrinos are too weakly interacting to be detected from astrophysical sources',
@@ -570,7 +570,7 @@ export const ASTRONOMY: CategoryContent = {
       'IceCube detects ~100 TeV–PeV neutrinos yearly; TXS 0506+56 blazar linked to high-energy neutrino in 2017. Neutrinos escape dense regions, revealing inner jet structure.',
     ],
     [
-      'Discuss the physical mechanisms driving fast radio burst emission in leading magnetar models.',
+      'What physical mechanisms drive fast radio burst emission in leading magnetar models?',
       [
         'Magnetic reconnection in magnetar magnetospheres',
         'Fast radio bursts are confirmed to be pulsars in our galaxy',
@@ -592,7 +592,7 @@ export const ASTRONOMY: CategoryContent = {
       'COS/HST surveys map Lyα, CIV, OVI, MgII to 200+ kpc. Hot halos with T~10⁶ K coexist with cold streams; feedback outflows (Mg II) are ubiquitous in star-forming galaxies.',
     ],
     [
-      'Explain starburst galaxy feedback mechanisms and their role in quenching star formation.',
+      'What starburst galaxy feedback mechanisms drive the quenching of star formation?',
       [
         'Supernovae and AGN drive outflows that remove and suppress gas',
         'Starburst feedback is negligible compared to gravity in galaxy evolution',
@@ -614,7 +614,7 @@ export const ASTRONOMY: CategoryContent = {
       'Planck + SNe + BAO + weak lensing give w ∈ [−1.08, −0.90] at 68% CL. DESI early data hint at w(z) evolution; primordial GW and early-DE models may resolve H₀ tension.',
     ],
     [
-      'Discuss tidal disruption events as probes of supermassive black hole demographics and accretion physics.',
+      'What do tidal disruption events reveal about supermassive black hole demographics and accretion physics?',
       [
         'A star crossing the tidal radius is shredded and forms a disk',
         'Tidal disruption events are purely theoretical with no confirmed observations',
@@ -636,7 +636,7 @@ export const ASTRONOMY: CategoryContent = {
       'Planck r limit excludes simple models (Λφ⁴); tensor modes from inflation have f ∝ k. IPTA GW signal (if confirmed) matches cosmic string or first-order PT predictions, distinct from inflation.',
     ],
     [
-      'Explain the physical origin and observational signatures of micro-lensing by compact objects and planets.',
+      'What is the physical origin and observational signature of micro-lensing by compact objects and planets?',
       [
         'Microlensing magnifies distant sources via compact lenses',
         'Microlensing is indistinguishable from other lensing phenomena',

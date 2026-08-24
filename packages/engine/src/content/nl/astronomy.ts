@@ -258,7 +258,7 @@ export const ASTRONOMY: CategoryContent = {
       'Hertzsprung-kloof is een slecht bevolkte regio waar geëvolueerde sterren snel doorgang maken van hoofdreeks naar riezentak.',
     ],
     [
-      'Beschrijf structuur en evolutie van asymptotic giant branch (AGB) sterren.',
+      'Wat kenmerkt de structuur en evolutie van asymptotic giant branch (AGB)-sterren?',
       [
         'Lage tot intermediaire massa met inerte koolstof-zuurstofkernen',
         'De uiteindelijke stabiele staat van alle sterren, voor altijd onveranderd',
@@ -324,7 +324,7 @@ export const ASTRONOMY: CategoryContent = {
       'Cepheïden gehoorzamen log P = a log M + b, maken "standaardkaarsen." Hubble gebruikte dit om Andromeda als sterrenstelsel te bewijzen.',
     ],
     [
-      'Verklaar de Tully-Fisher-relatie en rol in kosmologie.',
+      'Wat is de Tully-Fisher-relatie en welke rol speelt deze in de kosmologie?',
       [
         'Sterrenstelselhelderheid correleert met rotatiesnelheid',
         'Dit is puur theoretisch zonder observatietoepassing',
@@ -348,7 +348,7 @@ export const ASTRONOMY: CategoryContent = {
       'In ergosfer (tussen horizonten) roteert ruimte zelf met zwart gat. Penroseproces kan rotatieenergie afnemen, spin reduceren.',
     ],
     [
-      'Beschrijf stralingsinefficiënte accretiestromen en rol in AGN-feedback.',
+      'Wat is het mechanisme van stralingsinefficiënte accretiestromen en welke rol spelen ze in AGN-feedback?',
       [
         'Lage-accretiesnelheid-systemen waar jets feedback domineren',
         'Zeer heldere accretiestaten waar stralingsdruck uitgangen domineert',
@@ -381,7 +381,7 @@ export const ASTRONOMY: CategoryContent = {
       'Lage-[Fe/H] sterren branden waterstof langzamer, evolueren anders; isochrofitverschuiving. Blauwe horizontale takken vereisen voorzichtige leeftijd–metalliciteitscheiding.',
     ],
     [
-      'Verklaar populatiesynthesemodellen en hoe ze stervormingsgeschiedenis beperken.',
+      'Wat zijn populatiesynthesemodellen en hoe beperken ze de stervormingsgeschiedenis?',
       [
         'PSM\'s combineren evolutiepaden met IMF-aannamen voor spectra',
         'Populatiesynthese kan niet op sterrenstelsels voorbij 100 Mpc worden toegepast',
@@ -414,7 +414,7 @@ export const ASTRONOMY: CategoryContent = {
       'R_V = A_V / E(B−V) varieert van ~2,5 (diffuse ISM) tot ~5 (dichte regio\'s). Kleine korrels veroorzaken steile UV-extinctie; grote korrels vlakker.',
     ],
     [
-      'Verklaar kleurexcessbepaling en roodingsjectieverbetering in fotometrie.',
+      'Hoe wordt kleurexces bepaald en hoe worden roodingsvectorcorrecties toegepast in fotometrie?',
       [
         'E(B−V) uit intrinsieke kleuren; correctie volgt de roodingsvector',
         'Kleurexces is verschil tussen waargenomen en catalogusgroottes',
@@ -447,7 +447,7 @@ export const ASTRONOMY: CategoryContent = {
       'Dispersiemaat DM geeft elektronenkolomdichtheid; DM/z onderzoekt IGM-ionisatie. Magnetarmodellen beperken magnetischeveldsterkten en plasmasfysica.',
     ],
     [
-      'Verklaar huidig begrip van coronaalverhittingsprobleem in zonnefysica.',
+      'Wat is het huidige begrip van het coronaalverhittingsprobleem in de zonnefysica?',
       [
         'Coronale temperatuur overschrijdt fotosfeer via golven en herverbinding',
         'Corona is altijd koeler dan fotosfeer, in tegenspraak met oudere waarnemingen',
@@ -469,7 +469,7 @@ export const ASTRONOMY: CategoryContent = {
       'GZK-afsnijding van pionproductie op CMB-fotonen beperkt propagatie. Pierre Auger-gegevens bevorderden extragalactische (vooral AGN) oorsprong voor E > 10¹⁹ eV.',
     ],
     [
-      'Beschrijf zwaartekrachtgolfpolarisatiehandtekeningen en vermogen om aangepaste zwaartekracht te testen.',
+      'Wat onthullen zwaartekrachtgolfpolarisatiehandtekeningen over tests van aangepaste zwaartekracht?',
       [
         'Tensormodes domineren in GR, andere modes onderdrukt',
         'Zwaartekrachtgolven hebben slechts één polarisatietoestand',
@@ -491,7 +491,7 @@ export const ASTRONOMY: CategoryContent = {
       'Tijdvertraging Δt ∝ r; snelheid uit Doppler-breedte geeft τ ~ GM_BH / c² equivalent. Honderden AGN gemeten; onzekerheid in hoeking en f-factor blijft.',
     ],
     [
-      'Verklaar eigenschappen van quasar-absorptiesystemen en wat zij onthullen over IGM/CGM-fysica.',
+      'Wat onthullen de eigenschappen van quasar-absorptiesystemen over IGM/CGM-fysica?',
       [
         'Metaal/Lyman-absorptie in QSO-spectra beperkt HI',
         'Quasar-absorptie is geheel door stof nabij QSO-gastheer',
@@ -504,7 +504,7 @@ export const ASTRONOMY: CategoryContent = {
   ],
   professor: [
     [
-      'Bespreek informatieprobleem in zwartgat-thermodynamica en huidige theoretische oplossingen.',
+      'Wat is het informatieprobleem in zwartgat-thermodynamica en wat zijn de belangrijkste theoretische oplossingen?',
       [
         'Hawking-verdamping verliest informatie; snaartheorie kan dit oplossen',
         'Informatieprobleem is definitief opgelost en niet meer betwist tussen experts',
@@ -537,7 +537,7 @@ export const ASTRONOMY: CategoryContent = {
       'BAO-schaal van geluidshorison legt rouwe oscillaties vast in materie. DESI, BOSS meten BAO op meerdere roodverschuivingen; gecombineerd met CMB beperken w(a).',
     ],
     [
-      'Verklaar intergalactische magnetischeveldperking (IGMF) van TeV-gammastralingsobservaties.',
+      'Wat onthullen intergalactische-magnetischeveldbeperkingen (IGMF) uit TeV-gammastralingsobservaties?',
       [
         'TeV-fotoncascades creëren een halo die IGMF beperkt',
         'Intergalactische magnetische velden zijn onmeetbaar en onbeperkt',
@@ -559,7 +559,7 @@ export const ASTRONOMY: CategoryContent = {
       'Gravastars hebben stress-energie-omkering in interieur; bosonsterre zelf-graviteren via scalairveld. Echo-handtekeningen in gravitatiegolf-data na samenvoeging gezocht.',
     ],
     [
-      'Verklaar neutrinoastronomie en wat multibericht-waarnemingen van IceCube onthullen over kosmische versnellers.',
+      'Wat onthullen multibericht-waarnemingen van IceCube over kosmische versnellers in de neutrinoastronomie?',
       [
         'IceCube-neutrino\'s traceren deeltjesversnelling in jets',
         'Neutrino\'s zijn te zwak-wisselwerkend om van astrofysische bronnen waargenomen te worden',
@@ -570,7 +570,7 @@ export const ASTRONOMY: CategoryContent = {
       'IceCube detecteert ~100 TeV–PeV neutrino\'s jaarlijks; TXS 0506+56 blazar gelinkt aan neutrino in 2017. Neutrino\'s ontvluchten dichte regio\'s, tonen jetinterieur.',
     ],
     [
-      'Bespreek fysische mechanismen snel radioburst-emissie in vooraanstaande magnetarmodellen.',
+      'Welke fysische mechanismen drijven snelle-radioburst-emissie in vooraanstaande magnetarmodellen?',
       [
         'Magnetische herverbinding in magnetar-magnetosferen',
         'Snel radiobursts zijn bevestigd pulsars in ons sterrenstelsel',
@@ -592,7 +592,7 @@ export const ASTRONOMY: CategoryContent = {
       'COS/HST-onderzoeken kaarten Lyα, CIV, OVI, MgII tot 200+ kpc. Hete mantels coëxisteren met koude stromen; feedback-uitgangen (Mg II) alomtegenwoordig.',
     ],
     [
-      'Verklaar stervorming-ontploffing-feedback-mechanismen en rol in stervorming-uitdoving.',
+      'Welke stervormingsuitbarsting-feedbackmechanismen drijven de uitdoving van stervorming?',
       [
         'Supernovae en AGN drijven uitgangen die gas verwijderen en onderdrukken',
         'Ontploffing-feedback is verwaarloosbaar vergeleken zwaartekracht in evolutie',
@@ -614,7 +614,7 @@ export const ASTRONOMY: CategoryContent = {
       'Planck + SNe + BAO + zwakke lensing geven w ∈ [−1,08, −0,90] op 68% CL. DESI hints w(z)-evolutie; vroege-DE modellen kunnen H₀-spanning helpen.',
     ],
     [
-      'Bespreek getijuitrukking-gebeurtenissen als sondes van superzware zwartgatdemografie en accretiefysica.',
+      'Wat onthullen getijuitrukking-gebeurtenissen over superzware-zwartgatdemografie en accretiefysica?',
       [
         'Een ster die de getijstraal kruist wordt verscheurd',
         'Getijuitrukking is puur theoretisch zonder bevestigde waarnemingen',
@@ -636,7 +636,7 @@ export const ASTRONOMY: CategoryContent = {
       'Planck r-limiet sluit eenvoudige modellen uit (Λφ⁴); tensor-modes van inflatie hebben f ∝ k. IPTA-signaal past kosmische-snaarof faseovergangs-voorspellingen.',
     ],
     [
-      'Verklaar fysische oorsprong en waarnemings-handtekeningen van microlensing door compacte objecten en planeten.',
+      'Wat is de fysische oorsprong en waarnemingshandtekening van microlensing door compacte objecten en planeten?',
       [
         'Microlensing vergroot verre bronnen via compacte lenzen',
         'Microlensing is niet te onderscheiden van ander lensing',

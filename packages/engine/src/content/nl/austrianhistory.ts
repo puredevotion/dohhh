@@ -447,7 +447,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
       'Hoewel Sovjet\'s oost-Oostenrijk bezetten, beperkte Oostenrijkse katholicisme en westverhoudingen communistische winsten; het verdrag van 1955 verder Sovjet-invloed.',
     ],
     [
-      'Verklaar het paradoxe dat Oostenrijks nabesluit-neutraliteit het in de EU in 1995 toetreden zonder NAVO-deelname toestond?',
+      'Hoe kon Oostenrijks militaire neutraliteit na de oorlog het toestaan om in 1995 tot de EU toe te treden zonder ook bij de NAVO aan te sluiten?',
       [
         'EU-lidmaatschap is verenigbaar met militaire neutraliteit',
         'Oostenrijk sloot zich heimelijk aan bij NAVO in 1995',

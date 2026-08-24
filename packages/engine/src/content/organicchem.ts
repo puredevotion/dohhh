@@ -348,7 +348,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
       'Eschenmoser-Claisen uses a ketene aminal intermediate (or equivalent imidate/sulfur ylide complex) that undergoes [3,3]-rearrangement. Carbocation, enolate, and direct concerted pathways misrepresent the mechanism.',
     ],
     [
-      'Explain the stereoelectronic requirement for efficient nucleophilic displacement in the Finkelstein reaction and its relationship to solubility and reactivity of metal halides.',
+      'What substrate class and solvent conditions favor efficient nucleophilic displacement in the Finkelstein reaction, given the reactivity of the metal halides involved?',
       [
         'Primary or secondary halides in aprotic solvents favor SN2',
         'Tertiary halides undergo E2 preferentially due to steric hindrance, and polar protic solvents suppress nucleophilicity',
@@ -414,7 +414,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
       'Asymmetric synthetic equivalents set stereochemistry early via one enantioselective reaction, reducing downstream stereoselective transformations needed.',
     ],
     [
-      'Explain the origin of the anomalous regioselectivity in the intramolecular Heck reaction when the carbopalladium intermediate can undergo both 5-exo-trig and 6-endo-trig cyclization.',
+      'What is the origin of the regioselectivity when the carbopalladium intermediate in an intramolecular Heck reaction can cyclize via either 5-exo-trig or 6-endo-trig pathways?',
       [
         '5-exo-trig is kinetically favored by Baldwin\'s rules',
         'The 6-endo-trig is always faster due to the geometry of the Pd-alkene π-complex',

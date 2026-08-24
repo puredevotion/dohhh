@@ -392,7 +392,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'PK/PD-indexoptimalisatie gebruikt doseeronderzoeken voor blootstelling-responsrelatie.',
     ],
     [
-      'Verklaar een mechanisme waardoor substraatremming van CYP450 paradoxaal metabolische activiteit kan verhogen.',
+      'Door welk mechanisme kan substraatremming van CYP450 paradoxaal de eigen metabolische activiteit verhogen?',
       [
         'Het activeert het enzym zelf allosterisch',
         'Substraatremming verlaagt altijd enzymactiviteit',
@@ -469,7 +469,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'CYP2D6-armmetabolizers kunnen codeïne-prodrug niet activeren tot morfine; ultra-snelle metabolizers hebben toxiciteitsrisico.',
     ],
     [
-      'Beschrijf de rol van OATP-transporters in hepatische klaring en DDI-potentieel van atorvastatine.',
+      'Welke rol spelen OATP-transporters in hepatische klaring en DDI-potentieel van atorvastatine?',
       [
         'OATP1B1/1B3-opname is snelheid-limiterend',
         'OATP-transporters voeren geneesmiddelen uit hepatocyten uit',
@@ -537,7 +537,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'PBPK gebruikt well-stirred-modellen om CLint te schalen; absolute beschikbaarheid hangt af van enterocytafzetting.',
     ],
     [
-      'Verklaar vertekende signalering via β-arrestine-pathway-activatie bij muscarinische receptoren en therapeutische toepassing.',
+      'Hoe wordt vertekende signalering via β-arrestine-pathway-activatie bij muscarinische receptoren therapeutisch benut?',
       [
         'β-arrestine activeert MAPK/ERK zonder G-proteïne',
         'β-arrestine bemiddelt altijd dezelfde effecten als G-proteïne-signalering',
@@ -570,7 +570,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'CYP2D6 armmetabolizers op concurrerende CYP3A4-modifikers ervaren verhouding blootstelling; fenotype voorspelling complex.',
     ],
     [
-      'Beschrijf substraat vs. remmings vs. inductie-hiërarchieën voor voorspelling van DDI-ernst op CYP3A4, OATP1B1 en P-gp.',
+      'Hoe voorspellen substraat- vs. remmings- vs. inductie-hiërarchieën de DDI-ernst op CYP3A4, OATP1B1 en P-gp?',
       [
         'Hangt af van affiniteit en Cmax-naar-Ki',
         'Alle substraten interageren identiek met remmers',
@@ -625,7 +625,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'CYP450-promoteermethylering dempet expressie in sommigen; correleert met verhouding metabolisme.',
     ],
     [
-      'Verklaar hoe mechanistisch niet-lineaire farmacokinetiek (verzadigde CLint, renale reabsorptie) label dosering en TDM beïnvloedt.',
+      'Hoe beïnvloedt mechanistisch niet-lineaire farmacokinetiek (verzadigde CLint, renale reabsorptie) labeldosering en TDM?',
       [
         'Verzadigbaar metabolisme geeft dosisafhankelijke half-lives',
         'Alle geneesmiddelen volgen lineaire kinetiek; TDM onnodig',
@@ -647,7 +647,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'Transporteractivity voorspelt hepatische geneesmiddelklaring; behoudenactiviteit in CKD stelt renaal uitgescheiden geneesmiddelen in.',
     ],
     [
-      'Bespreek regelgevingsroutes (505(b)(1) NDA, 505(b)(2), ANDA) en hoe zij generieke medicijn-ontwikkelingtijdlijn beïnvloeden.',
+      'Hoe beïnvloeden regelgevingsroutes (505(b)(1) NDA, 505(b)(2), ANDA) de tijdlijn voor generieke medicijnontwikkeling?',
       [
         'ANDA vereist alleen bioëquivalentie, geen nieuwe proeven',
         'Alle geneesmiddelgoedkeuringen volgen identieke regelgevingsroutes',

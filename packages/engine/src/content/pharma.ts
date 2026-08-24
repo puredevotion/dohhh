@@ -392,7 +392,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'PK/PD index optimization uses dose studies to define exposure-response relationship.',
     ],
     [
-      'Explain a mechanism by which substrate inhibition of a CYP450 enzyme can paradoxically increase metabolic activity.',
+      'By what mechanism can substrate inhibition of a CYP450 enzyme paradoxically increase its own metabolic activity?',
       [
         'It allosterically activates the enzyme itself',
         'Substrate inhibition always decreases enzyme activity',
@@ -469,7 +469,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'CYP2D6 PMs cannot activate codeine prodrug to morphine; ultra-rapid metabolizers risk toxicity.',
     ],
     [
-      'Describe the role of OATP transporters in determining hepatic clearance and DDI potential of atorvastatin.',
+      'What role do OATP transporters play in determining hepatic clearance and DDI potential for atorvastatin?',
       [
         'OATP1B1/1B3 uptake is rate-limiting',
         'OATP transporters export drugs from hepatocytes',
@@ -537,7 +537,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'PBPK uses well-stirred models to scale CLint; absolute bioavailability depends on enterocyte extraction.',
     ],
     [
-      'Explain biased signaling via β-arrestin pathway activation at muscarinic receptors and its therapeutic exploitation for Alzheimer\'s.',
+      'How is biased signaling via β-arrestin pathway activation at muscarinic receptors therapeutically exploited for Alzheimer\'s?',
       [
         'β-arrestin coupling activates MAPK/ERK without G-protein',
         'β-arrestin always mediates the same effects as G-protein signaling',
@@ -570,7 +570,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'CYP2D6 PMs on competing CYP3A4 modifiers experience altered exposure; phenotype prediction is complex.',
     ],
     [
-      'Describe the substrate vs. inhibitor vs. inducer hierarchies in predicting DDI severity at CYP3A4, OATP1B1, and P-gp.',
+      'How do substrate vs. inhibitor vs. inducer hierarchies predict DDI severity at CYP3A4, OATP1B1, and P-gp?',
       [
         'Rank depends on affinity and Cmax-to-Ki ratio',
         'All substrates interact identically with inhibitors',
@@ -625,7 +625,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'CYP450 promoter methylation silences expression in some individuals; correlates with altered metabolism.',
     ],
     [
-      'Explain how mechanistically non-linear pharmacokinetics (saturable metabolism, renal reabsorption) affect label dosing and TDM.',
+      'How do mechanistically non-linear pharmacokinetics (saturable metabolism, renal reabsorption) affect label dosing and TDM?',
       [
         'Saturable metabolism causes dose-dependent half-lives',
         'All drugs follow linear kinetics, making TDM unnecessary',
@@ -647,7 +647,7 @@ export const PHARMACEUTICALS: CategoryContent = {
       'Transporter activity predicts hepatic drug clearance; preserved function in CKD enables renally-excreted drugs.',
     ],
     [
-      'Discuss regulatory pathways (505(b)(1) NDA, 505(b)(2), ANDA) and how they influence generic drug development timelines.',
+      'How do regulatory pathways (505(b)(1) NDA, 505(b)(2), ANDA) influence generic drug development timelines?',
       [
         'ANDA needs only bioequivalence, no new trials',
         'All drug approvals follow identical regulatory pathways',

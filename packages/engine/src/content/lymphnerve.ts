@@ -280,7 +280,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'The right lymphatic duct drains the right upper limb, right thorax, and right head/neck, joining the venous system at the right venous angle.',
     ],
     [
-      'Describe the microarchitecture of a secondary follicle in a lymph node.',
+      'What is the microarchitecture of a secondary follicle in a lymph node?',
       [
         'A dark germinal center surrounded by a lighter mantle zone',
         'It is a random aggregation of lymphocytes with no organized zones',
@@ -337,7 +337,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
   ],
   phd: [
     [
-      'Explain the role of Lymphatic Endothelial Cell (LEC) production of lymphangiogenic factors in the context of immune trafficking and resolution of inflammation.',
+      'What role does Lymphatic Endothelial Cell (LEC) production of lymphangiogenic factors play in immune trafficking and the resolution of inflammation?',
       [
         'LECs secrete VEGF-C/D to drive lymphangiogenesis during resolution',
         'LECs actively prevent lymphangiogenesis by secreting anti-VEGF molecules',
@@ -359,7 +359,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TLR signaling on LECs and antigen-presenting cells induces chemokine and integrin ligand upregulation, amplifying the inflammatory response node.',
     ],
     [
-      'Describe the laminar organization and functional specialization of layers within a dorsal root ganglion (DRG) and their relationship to immune trafficking.',
+      'How is a dorsal root ganglion (DRG) structurally organized to regulate immune cell access?',
       [
         'DRG somata are protected by satellite glial cells and a fibroblastic capsule',
         'DRGs are immune-privileged and never experience any immune cell infiltration',
@@ -403,7 +403,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'P2X7-mediated IL-1beta amplifies inflammation and enhances leukocyte recruitment to inflamed tissues and their egress into lymphatics toward draining nodes.',
     ],
     [
-      'Explain the role of calcitonin gene-related peptide (CGRP) and neuropeptides in regulating immune cell trafficking through sympathetic lymph-node innervation.',
+      'What role do calcitonin gene-related peptide (CGRP) and neuropeptides play in regulating immune cell trafficking through sympathetic lymph-node innervation?',
       [
         'CGRP and substance P from nerve terminals modulate trafficking',
         'Neuropeptides have no role in immune cell trafficking',
@@ -425,7 +425,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Tfh-FDC interaction drives somatic hypermutation and selection; lymphangiogenesis accommodates immune cell expansion and lymphocyte egress from enlarging nodes.',
     ],
     [
-      'Describe the cytoarchitecture and functional role of the subfornical organ (SFO) and organum vasculosum laminae terminalis (OVLT) in immune sensing and neuroimmune integration.',
+      'What is the functional role of circumventricular organs such as the subfornical organ (SFO) and organum vasculosum laminae terminalis (OVLT) in immune sensing?',
       [
         'These organs lack a blood-brain barrier, allowing immune surveillance of the blood',
         'These structures are purely sensory organs for blood osmolarity; they have no immune function',
@@ -447,7 +447,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TRM (CD69+ CD103+) provide rapid local control; recruited innate cells disseminate via afferent lymphatics to amplify systemic responses in draining nodes.',
     ],
     [
-      'Explain the anatomical organization and functional significance of the retrorubral nucleus (RRN) and periaqueductal gray (PAG) in nociceptive signaling and immune-pain interactions.',
+      'What roles do the periaqueductal gray (PAG) and retrorubral nucleus (RRN) play in nociceptive signaling and immune-pain interactions?',
       [
         'PAG modulates pain gates; RRN mediates analgesia',
         'These structures only control motor movements, not pain or immunity',
@@ -480,7 +480,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Sensory peptide release drives mast cell degranulation, endothelial permeability, and chemokine production, amplifying local innate inflammation and lymphatic trafficking.',
     ],
     [
-      'Explain the phenomenon of "immune memory" at the level of lymph node stromal architecture and how long-lived plasma cell niches in bone marrow relate to lymphatic recirculation.',
+      'How does immune memory persist at the level of lymph node stromal architecture and bone-marrow long-lived plasma cell (LLPC) niches?',
       [
         'Bone marrow LLPC niches sustain steady-state antibodies independent of lymphatic recirculation',
         'Immune memory is stored exclusively in blood; lymph nodes are inactive after infection',
@@ -526,7 +526,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'FRC subsets exhibit zone-specific chemokine/TGF-beta signatures (inflammatory CXCL10+ vs. tolerogenic TGF-beta+ FRCs), creating functional domains that direct CD4+ T fate.',
     ],
     [
-      'Discuss the implications of recent discoveries of the "glymphatic system" in the CNS and its potential overlap with meningeal lymphatic vessels in clearing protein aggregates and metabolic byproducts during sleep, and how dysfunction contributes to neuroinflammatory disease.',
+      'How does the "glymphatic system" overlap with meningeal lymphatic vessels to clear protein aggregates and metabolic byproducts during sleep?',
       [
         'AQP4-dependent glymphatic clearance, aided by meningeal lymphatics',
         'The glymphatic system is not functionally connected to lymphatics',
@@ -537,7 +537,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Glymphatic-lymphatic dysfunction impairs amyloid-beta clearance during sleep, contributing to accumulation and neuroinflammation in Alzheimer\'s and other proteinopathies.',
     ],
     [
-      'Explain the mechanistic basis for vagal afferent signaling from the gut microbiota-immune axis integrating with the solitary tract nucleus (NTS) to modulate systemic tolerance and barrier integrity via the dorsal motor nucleus output.',
+      'How do vagal afferents integrate gut microbiota-immune signals at the nucleus of the solitary tract (NTS) to modulate systemic tolerance and barrier integrity?',
       [
         'Vagal afferents relay microbial signals to the NTS via cholinergic output',
         'The vagus has no connection to the microbiota or immune barrier function',
@@ -559,7 +559,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'iLECs act as gatekeepers: they transcytose antigen for retained FDCs and DCs, while CCL21-dependent T cell retention prevents premature egress before full priming.',
     ],
     [
-      'Discuss the emerging concept of "trained immunity" in tissue-resident innate lymphoid cells (ILCs) and how their cross-talk with lymphatic endothelium via IL-22 and IL-17 production affects barrier-protective immunity and lymphangiogenic remodeling.',
+      'How does "trained immunity" in tissue-resident innate lymphoid cells (ILCs), via IL-22 and IL-17 cross-talk with lymphatic endothelium, affect barrier-protective immunity and lymphangiogenesis?',
       [
         'ILC3-derived IL-22/IL-17 strengthens epithelium and expands lymphatics',
         'ILCs have no role in barrier function or lymphangiogenesis',
@@ -581,7 +581,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'C-nociceptor signaling triggers dorsal horn IL-6/TNF-alpha release (immune coupling), PAG-mediated analgesia, and sympathetic immune suppression. A-delta fibers do not activate this axis.',
     ],
     [
-      'Assess the role of tissue factor (TF) and thrombin signaling on lymphatic endothelial cells and immune cells in exacerbating lymphatic fibrosis and immune dysregulation in post-COVID-19 syndrome and long-COVID pathophysiology.',
+      'What role does tissue factor (TF) and thrombin signaling on lymphatic endothelial cells play in lymphatic fibrosis and immune dysregulation in long-COVID?',
       [
         'Persistent viral antigens drive TF/PAR signaling and fibrosis',
         'TF signaling is irrelevant to lymphatic pathology',
@@ -592,7 +592,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TF-thrombin-PAR signaling drives lymphatic ECM remodeling and sustained inflammation in long-COVID, perpetuating T cell exhaustion and autoimmune responses.',
     ],
     [
-      'Discuss the mechanistic integration of circadian rhythm-controlled changes in lymph flow, aquaporin-4 water channel activity in glymphatic astrocytes, and sleep-wake-dependent meningeal immune cell trafficking in the context of CNS infection and clearance of neuroinflammatory mediators.',
+      'How do circadian lymph flow changes, astrocytic aquaporin-4 (AQP4) glymphatic activity, and sleep-dependent meningeal immune trafficking together clear neuroinflammatory mediators?',
       [
         'AQP4 and meningeal drainage peak in non-REM sleep',
         'Circadian rhythms have no effect on lymphatic function',
@@ -636,7 +636,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'TRM-derived IL-21 sustains FDC BAFF/APRIL production and TGF-beta; LECs expand mucosal lymphatics via VEGF-C, maintaining durable memory B and trained ILC populations.',
     ],
     [
-      'Discuss the bidirectional communication between the enteric nervous system (ENS) and intestinal-associated lymphoid tissue (IALT) via neurotrophic factors and microbial metabolite sensing.',
+      'How do the enteric nervous system (ENS) and intestinal-associated lymphoid tissue (IALT) communicate bidirectionally via neurotrophic factors and microbial metabolite sensing?',
       [
         'Enteric neurotrophins support ILCs; AhR-vagal signaling curbs macrophage TNF-alpha',
         'The ENS is fully isolated from immune signaling by the epithelial barrier',
@@ -658,7 +658,7 @@ export const LYMPHATIC_NERVOUS: CategoryContent = {
       'Meningeal LVs + tolerogenic BAM/stromal signaling maintain CNS immune privilege. Loss impairs tolerance and exacerbates CNS autoimmunity and neuroinflammation.',
     ],
     [
-      'Explain how integrative whole-organism studies linking circadian immune oscillations, meningeal lymphatic pulsatility, and sleep-stage-dependent glymphatic CSF-ISF exchange reveal mechanisms of neurodegeneration in circadian-disruption and sleep-disorder models.',
+      'How do circadian immune oscillations, meningeal lymphatic pulsatility, and sleep-stage-dependent glymphatic CSF-ISF exchange together protect against neurodegeneration?',
       [
         'Circadian egress, meningeal pulsatility, and NREM clearance protect neurons',
         'Circadian rhythms are irrelevant to lymphatic or glymphatic function',

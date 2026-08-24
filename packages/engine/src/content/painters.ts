@@ -359,7 +359,7 @@ export const PAINTERS: CategoryContent = {
       'Titian\'s late works apply paint in loose, parallel strokes where colors intermix in the viewer\'s eye; this optical approach influenced colorists centuries later.',
     ],
     [
-      'Explain the chemistry of why lead white was universally preferred over other whites in Old Master oil painting despite known toxicity.',
+      'Why was lead white universally preferred over other white pigments in Old Master oil painting, despite its known toxicity?',
       [
         'It oxidizes rapidly, drying fast without yellowing',
         'It reflects more light than other pigments',
@@ -392,7 +392,7 @@ export const PAINTERS: CategoryContent = {
       'Sinopia on arriccio allows the artist to plan detailed composition; once intonaco is applied, changes are impossible, making sinopia the essential planning stage.',
     ],
     [
-      'Discuss how Northern Renaissance painters incorporated atmospheric perspective through color gradation differently than Italian linear perspective?',
+      'How did Northern Renaissance painters use color gradation to achieve atmospheric perspective, in contrast to Italian linear perspective?',
       [
         'Blue-gray tinting in distant areas',
         'They used the same techniques as Italian painters',
@@ -414,7 +414,7 @@ export const PAINTERS: CategoryContent = {
       'Fustian pigments (organic lakes like madder) are fugitive; dealers sometimes sold them as permanent pigments, causing color loss that appears as hue shifts or fading in old paintings.',
     ],
     [
-      'Explain the technical reason why Caravaggio\'s tenebrism required specific innovations in studio lighting setup and paint formula.',
+      'What specific innovations in studio lighting and paint formulation did Caravaggio\'s tenebrism technique require?',
       [
         'Fast-drying, opaque paint with high tinting strength',
         'He invented a new pigment specifically for tenebrism',
@@ -458,7 +458,7 @@ export const PAINTERS: CategoryContent = {
       'Age-specific craquelure, pigment availability timelines, and binding-media oxidation patterns provide chronological fingerprints; anachronisms expose copies or extensive later reworking.',
     ],
     [
-      'Explain how the theoretical rediscovery and application of Vitruvian proportions in Renaissance painting differed from Medieval geometric schemes.',
+      'How did the Renaissance application of Vitruvian proportions differ from Medieval symbolic geometric schemes?',
       [
         'Vitruvian ratios from human anatomy, not symbolic geometry',
         'Both are identical',
@@ -491,7 +491,7 @@ export const PAINTERS: CategoryContent = {
       'The dichotomy reflects Renaissance humanism\'s intellectual vs. sensory poles: Florence privileged rational design (disegno), Venice celebrated optical color and visual pleasure (colorito).',
     ],
     [
-      'Explain the technical purpose of "wash" layers in watercolor and gouache preparation that distinguished them from tempera and oil techniques.',
+      'What technical purpose did "wash" layers serve in watercolor and gouache preparation, distinguishing them from tempera and oil techniques?',
       [
         'Washes need absorbent paper, unlike gesso grounds',
         'Washes are the same as glazes',
@@ -515,7 +515,7 @@ export const PAINTERS: CategoryContent = {
       'Walnut oil\'s rapid polymerization and safflower\'s poor drying made them unsuitable for optical wet-blending; linseed\'s controllable kinetics enabled Venetian broken-color effects impossible in other media.',
     ],
     [
-      'Discuss how fresco\'s reliance on lime carbonation as the binding mechanism imposed irreversible compositional choices and shaped Northern Renaissance abandonment of the technique.',
+      'How did fresco\'s reliance on lime carbonation as its binding mechanism shape the Northern Renaissance abandonment of the technique?',
       [
         'Fresco\'s irreversible set pushed painters toward oil',
         'Fresco is inherently more durable than oil',
@@ -537,7 +537,7 @@ export const PAINTERS: CategoryContent = {
       'Pigment analysis offers evidence (anachronistic ultramarine suggests 20th-century rework) but cannot prove authenticity alone; fragmentary documentation of restoration histories compounds epistemological uncertainty.',
     ],
     [
-      'Analyze how Caravaggio\'s technical choices (specific lead white opacity, rapid-set formulation, single-session execution strategy) reflect and constrain his conceptual approach to form-modeling.',
+      'How did Caravaggio\'s technical choices—high-opacity lead white, rapid-set formulation, single-session execution—shape his approach to modeling form?',
       [
         'High lead-white enabled bold one-sitting modeling',
         'Caravaggio used standard Renaissance techniques',
@@ -570,7 +570,7 @@ export const PAINTERS: CategoryContent = {
       'Guild-specific heraldry and patron-family symbolic preferences created localized iconographic "dialects"; Panofsky\'s generalized reading misses these intentional, undocumented workshop-level meanings.',
     ],
     [
-      'Analyze the theoretical implications of the "art historical sublime" as formulated in late-18th-century landscape painting and its relationship to contemporaneous Kantian aesthetics.',
+      'How did late-18th-century landscape painters such as Turner and Friedrich visualize the Kantian concept of the sublime?',
       [
         'Turner and Friedrich visualized Kant\'s sublime',
         'Kant\'s aesthetics have no connection to painting',
@@ -603,7 +603,7 @@ export const PAINTERS: CategoryContent = {
       'XRD shows Italian gold exhibits coarser crystallography (thicker beating, less refinement), while Flemish gold is finer (more labor-intensive); these technical signatures reflect workshop resources and trade-network access.',
     ],
     [
-      'Discuss how the scholarly reattribution of works formerly attributed to Artemisia Gentileschi required epistemological shifts in how gender, archival absence, and stylistic analysis intersect.',
+      'What combination of factors enabled the scholarly reattribution of works to Artemisia Gentileschi?',
       [
         'Archives erased her; scholarship recovered her work',
         'Gentileschi\'s work was always correctly attributed',
@@ -614,7 +614,7 @@ export const PAINTERS: CategoryContent = {
       'Gentileschi\'s recovery depended on integrating archival research (overlooked commission documents), formal analysis (her distinctive chiaroscuro and figural energy), and feminist historiography to dismantle misattribution.',
     ],
     [
-      'Analyze the technical and conceptual significance of "tempera-oil emulsion" practice in 15th-century Flemish painting as a transitional technology bridging discrete medium categories.',
+      'What was the significance of "tempera-oil emulsion" practice as a transitional technology in 15th-century Flemish painting?',
       [
         'Hybrids mixed each medium\'s advantages',
         'Tempera and oil were never mixed',

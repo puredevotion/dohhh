@@ -337,7 +337,7 @@ export const PAINTERS: CategoryContent = {
   ],
   phd: [
     [
-      'Verklaar in Laat-Gotisch en Vroeg-Nederlands schilderwerk de overgang van tempera naar olie en implicaties voor sculpturaal illusionisme.',
+      'Hoe beïnvloedde de overgang van tempera naar olieverf in Laat-Gotisch en Vroeg-Nederlands schilderwerk het sculpturale illusionisme?',
       [
         'Trage droging en transparantie gaven gelaagde optische diepte',
         'Tempera droogde te snel, wat gedetailleerde onderchildering voor anatomie voorkwam',
@@ -359,7 +359,7 @@ export const PAINTERS: CategoryContent = {
       'Titiaan\'s laat-werken passen verf los aan in parallelle streken waar kleuren in het oog van beschouwer mengen; deze optische benadering beïnvloedde coloristen eeuwen later.',
     ],
     [
-      'Verklaar de scheikunde waarom loodwit universeel werd gekozen boven ander wit in oude meester olieverfschildering ondanks bekende toxiciteit.',
+      'Waarom werd loodwit universeel verkozen boven ander wit pigment in olieverfschilderijen van de oude meesters, ondanks de bekende toxiciteit?',
       [
         'Het oxideert snel en droogt zonder te vergelen',
         'Het reflecteert meer licht dan ander pigment',
@@ -392,7 +392,7 @@ export const PAINTERS: CategoryContent = {
       'Sinopia op arriccio stelt kunstenaar in staat compositie gedetailleerd te plannen; zodra intonaco aangebracht, veranderingen onmogelijk, sinopia essentiële planningsfase.',
     ],
     [
-      'Bespreek hoe Noord-Renaissance schilders atmosferisch perspectief door kleurgradiëring anders inbouwden dan Italiaans lineair perspectief.',
+      'Hoe gebruikten Noord-Renaissance schilders kleurgradiëring om atmosferisch perspectief te bereiken, in tegenstelling tot Italiaans lineair perspectief?',
       [
         'Blauwgrijze tinting in de verte',
         'Zij gebruikten dezelfde technieken als Italiaanse schilders',
@@ -414,7 +414,7 @@ export const PAINTERS: CategoryContent = {
       'Fustaanpigmenten (organische lacken als meekrap) zijn vergankelijk; handelaren verkochten soms als permanente pigmenten, wat kleurverlies als tintverschuivingen in oude schilderijen veroorzaakte.',
     ],
     [
-      'Verklaar de technische reden waarom Caravaggio\'s tenebrisme specifieke studiolichting en verfformule innovaties vereiste.',
+      'Welke specifieke innovaties in studiolichting en verfformulering vereiste Caravaggio\'s tenebrisme-techniek?',
       [
         'Snel-droogende, dekkende verf met hoge tintingskracht',
         'Hij vond specifiek tenebrisme pigment uit',
@@ -458,7 +458,7 @@ export const PAINTERS: CategoryContent = {
       'Leeftijd-specifieke craquelure, pigmentbeschikbaarheid tijdlijnen en bindmiddel-oxidatiepatronen bieden chronologische vingerafdrukken; anachronismen ontmaskeren kopieën of uitgebreide latere herzieningwerk.',
     ],
     [
-      'Verklaar hoe de theoretische herontdekking en toepassing van Vitruuviaanse verhoudingen in Renaissance schildering afweek van Middeleeuwse geometrische schema\'s.',
+      'Hoe verschilde de Renaissance-toepassing van Vitruviaanse verhoudingen van Middeleeuwse symbolische geometrische schema\'s?',
       [
         'Vitruviaanse verhoudingen uit anatomie, niet symbolische meetkunde',
         'Beiden zijn identiek',
@@ -491,7 +491,7 @@ export const PAINTERS: CategoryContent = {
       'De dichotomie weerspiegelt Renaissance humanisme\'s intellect- versus zintuigpolaire: Florence benadrukte rationale ontwerp (disegno), Venetië vierde optische kleur en visueel genoegen (colorito).',
     ],
     [
-      'Verklaar het technische doel van "waterverf"-lagen in aquarel- en gouachevoorbereiding wat hen onderscheidde van tempera en olie-technieken.',
+      'Welk technisch doel dienden "waterverf"-lagen in aquarel- en gouachevoorbereiding, en waarin onderscheidde dit hen van tempera- en olietechnieken?',
       [
         'Waterverflagen vereisen absorberend papier, geen gesso',
         'Waterverflagen zijn identiek aan glazuren',
@@ -504,7 +504,7 @@ export const PAINTERS: CategoryContent = {
   ],
   professor: [
     [
-      'Analyseer kritisch hoe de moleculaire polymerisatiekinetiek van verschillende bindmiddelen (walnut vs. lijnzaad vs. saffraan oliën) de haalbaarheid van specifieke Venetiaanse coloristtechnieken bepaalde.',
+      'Hoe bepaalde de moleculaire polymerisatiekinetiek van verschillende bindmiddelen (walnoot-, lijnzaad- en saffraanolie) de haalbaarheid van specifieke Venetiaanse coloristtechnieken?',
       [
         'Lijnzaads trage oxidatie maakte gelaagde natte menging mogelijk',
         'Alle oliën polymeriseren identiek',
@@ -515,7 +515,7 @@ export const PAINTERS: CategoryContent = {
       'Walnut\'s snelle polymerisatie en saffraan\'s slecht drogen maakten ze ongeschikt voor optische natte-blending; lijnzaad\'s controleerbare kineti ek ondersteunde Venetiaanse gebroken-kleur effecten onmogelijk in ander medium.',
     ],
     [
-      'Bespreek hoe fresco\'s afhankelijkheid van kalkkarbonatisering als bindmechanisme onomkeerbare compositiekeuzen oplegde en Noord-Renaissance verwerping van de techniek vormde.',
+      'Hoe vormde fresco\'s afhankelijkheid van kalkkarbonatisering als bindmechanisme de Noord-Renaissance verwerping van de techniek?',
       [
         'Fresco\'s onomkeerbare binding dreef schilders naar olie',
         'Fresco is onderworpen duurzamer dan olie',
@@ -537,7 +537,7 @@ export const PAINTERS: CategoryContent = {
       'Pigmentanalyse biedt getuigenissen (anachronistische lapis lazuli suggereert 20e-eeuwse hertekening) maar kan authenticiteit alleen niet bewijzen; fragmentarische restauratiedocumentatie verergert epistemologische onzekerheid.',
     ],
     [
-      'Analyseer hoe Caravaggio\'s technische keuzes (specifieke loodwit opaciteit, snel-instelling formulering, éénzitting uitvoeringsstrategie) zijn conceptuele vormmodelleringbenadering weerspiegelden en beperkten.',
+      'Hoe vormden Caravaggio\'s technische keuzes — hoge loodwitopaciteit, snel-instellende formulering, uitvoering in één zitting — zijn benadering van vormmodellering?',
       [
         'Hoog loodwit maakte gedurfde modellering mogelijk',
         'Caravaggio gebruikte standaard Renaissance-technieken',
@@ -570,7 +570,7 @@ export const PAINTERS: CategoryContent = {
       'Gildespeficitieke heraldrie en patroon-familiesymbolische voorkeuren creëerden gelokaliseerde ikonografische "dialecten"; Panofsky\'s gegeneraliseerde lezing mist deze doelbewuste, ondocumenteerde werkplaats-level betekenissen.',
     ],
     [
-      'Analyseer de theoretische implicaties van "kunsthistorisch subliem" zoals geformuleerd in laat-18e-eeuwse landschapschildering en verhouding tot gelijktijdige Kantiaanse esthetica.',
+      'Hoe visualiseerden laat-18e-eeuwse landschapschilders zoals Turner en Friedrich het Kantiaanse concept van het sublieme?',
       [
         'Turner en Friedrich visualiseerden Kant\'s sublieme',
         'Kant\'s esthetica hebben geen verbinding met schildering',
@@ -603,7 +603,7 @@ export const PAINTERS: CategoryContent = {
       'XRD toont Italiaans goud vertoont groverekristallografie (dikker slaan, minder verfijning), terwijl Vlaams goud fijner is (arbeidsintensief); deze technische handtekeningen spiegelen werkplaatsmiddelen en handelsnetwerktoegang.',
     ],
     [
-      'Bespreek hoe scholaratische hertoewijzing van werken voormalig aan Artemisia Gentileschi toegerekend epistemologische verschuivingen vereiste in hoe geslacht, archiefsafwezigheid en stilistieke analyse intersectaken.',
+      'Welke combinatie van factoren maakte de wetenschappelijke hertoewijzing van werken aan Artemisia Gentileschi mogelijk?',
       [
         'Archieven verhulden haar; studie herstelde haar werk',
         'Gentileschi\'s werk werd altijd correct toegerekend',
@@ -614,7 +614,7 @@ export const PAINTERS: CategoryContent = {
       'Gentileschi\'s herstel hing af van archiefondezoek (genegeerde commissiedocumenten), formale analyse (haar distinctieve chiaroscuro en figurale energie) en feminist historiografie te integreren om mistoeschrijving af te breken.',
     ],
     [
-      'Analyseer de technische en conceptuele betekenis van "tempera-olie emulsie"-praktijk in 15e-eeuws Vlaams schilderwerk als transitietechnologie discretemediaclassificaties overbruggend.',
+      'Wat was de betekenis van de "tempera-olie-emulsie"-praktijk als overgangstechnologie in het 15e-eeuwse Vlaamse schilderwerk?',
       [
         'Hybrides mengden de voordelen van elk medium',
         'Tempera en olie werden nooit gemengd',
