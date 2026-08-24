@@ -6,6 +6,7 @@
   "rename": "rename",
   "device_placeholder": "e.g. My phone",
   "device_aria_label": "Device label",
+  "pack_version": "question pack {{hash}}",
   "host_game": "Host a game",
   "join_game": "Join a game",
   "play_solo": "Play solo",

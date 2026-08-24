@@ -11,7 +11,7 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { navigate } from '../lib/router.js';
-import { useApp } from '../lib/store.js';
+import { shortPackVersion, useApp } from '../lib/store.js';
 import { Screen } from '../ui/atoms.jsx';
 
 export function Home(): ReactNode {
@@ -140,6 +140,9 @@ export function Home(): ReactNode {
               <span className="text-xs text-muted underline">{t('rename')}</span>
             </button>
           )}
+          <p className="mt-1 font-mono text-xs text-muted">
+            {t('pack_version', { hash: shortPackVersion(locale) })}
+          </p>
         </div>
 
         <div className="flex flex-col gap-3">

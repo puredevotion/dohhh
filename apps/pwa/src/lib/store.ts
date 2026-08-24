@@ -41,6 +41,7 @@ import {
   GameSession,
   loadEvents,
   loadIdentity,
+  PACK_HASH_PREFIX_LENGTH,
   saveEvents,
   saveIdentity,
   webStore,
@@ -63,6 +64,18 @@ export function packFor(locale: Locale): ContentPack {
 /** The hash peers compare at join time, matching whichever pack {@link packFor} would pick. */
 function packHashFor(locale: Locale): string {
   return locale === 'nl' ? SEED_PACK_NL_HASH : SEED_PACK_HASH;
+}
+
+/**
+ * A short, eyeballable stand-in for "do these two phones have the same
+ * build" - the actual thing that matters here, since the join protocol
+ * refuses a peer on a different question pack anyway. Same length as the
+ * ticket's own truncated hash (see PACK_HASH_PREFIX_LENGTH in @dohhh/net) so
+ * what a host reads off their own screen is exactly what a joiner's ticket
+ * carries, not some other truncation of the same hash.
+ */
+export function shortPackVersion(locale: Locale): string {
+  return packHashFor(locale).slice(0, PACK_HASH_PREFIX_LENGTH);
 }
 /** How long the solo dealer waits before dealing the next question - exported so Play.tsx's countdown matches it exactly. */
 export const SOLO_DEAL_DELAY_MS = 20_000;

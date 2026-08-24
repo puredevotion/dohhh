@@ -6,6 +6,7 @@
   "rename": "hernoem",
   "device_placeholder": "bv. Mijn telefoon",
   "device_aria_label": "Apparaatlabel",
+  "pack_version": "vragenpakket {{hash}}",
   "host_game": "Organiseer een spel",
   "join_game": "Doe mee met een spel",
   "play_solo": "Speel solo",

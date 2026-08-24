@@ -14,7 +14,12 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: 'autoUpdate',
+      // 'prompt', not 'autoUpdate': UpdatePrompt.tsx polls for a new worker and
+      // waits for the player to tap "Update now" rather than swapping and
+      // reloading out from under them - a mid-game auto-reload is exactly
+      // what R-15 says never to do. 'autoUpdate' would self-activate on its
+      // own schedule and make that banner's needRefresh state moot.
+      registerType: 'prompt',
       includeAssets: ['apple-touch-icon.png'],
       manifest: {
         name: 'Dohhh',
