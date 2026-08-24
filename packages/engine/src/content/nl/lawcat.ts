@@ -3,6 +3,173 @@ import type { CategoryContent } from '../row.js';
 /** Nederlands & internationaal IE-recht. */
 
 export const LAWIP: CategoryContent = {
+  bscba: [
+    [
+      'In de meeste auteursrechtstelsels ter wereld, is registratie vereist voor een werk om auteursrechtelijke bescherming te verkrijgen?',
+      [
+        'Nee, auteursrecht ontstaat automatisch bij creatie in vrijwel alle landen die partij zijn bij grote internationale auteursrechtverdragen',
+        'Ja, elk land vereist registratie bij een nationaal auteursrechtenbureau voordat bescherming begint',
+        'Alleen in de Verenigde Staten en Japan',
+        'Alleen als het werk in gedrukte vorm wordt gepubliceerd',
+      ],
+      0,
+      'De Berner Conventie bepaalde dat auteursrecht automatisch ontstaat—geen registratie, melding of andere formaliteit is vereist. De meeste landen volgen dit principe, hoewel sommigen optionele nationale registers voor bewijsdoeleinden bijhouden.',
+    ],
+    [
+      'Wat is het primaire juridische doel van een handelsmerk?',
+      [
+        'De bron of herkomst van goederen of diensten identificeren en deze onderscheiden van andere',
+        'Voorkomen dat enig ander bedrijf vergelijkbare woorden of symbolen gebruikt',
+        'De auteursrechtbescherming van een merknaam voor onbeperkte duur uitbreiden',
+        'Exclusief recht geven om een bepaald woord in elke context te gebruiken',
+      ],
+      0,
+      'Een merk\'s kernfunctie is te dienen als herkomstherkenning, helpt consumenten goederen of diensten van een bepaalde bron herkennen. Dit herkomstfunctie is wat de meeste merkenwetten beschermen.',
+    ],
+    [
+      'Welk van de volgende wordt NIET typisch beschouwd als patenteerbare werkingsfeer?',
+      [
+        'Een natuurlijk voorkomende genensequentie uit het menselijk lichaam zonder wijziging geëxtraheerd',
+        'Een nieuw chemisch samengesteld synthetisch in een laboratorium',
+        'Een nieuw fabricageproces voor halfgeleiders produceren',
+        'Een nuttig apparaat dat bestaande onderdelen op innovatieve wijze combineert',
+      ],
+      0,
+      'Natuurproducten, natuurwetten en abstracte ideeën zijn in de meeste rechtsgebieden over het algemeen niet patenteerbaar. Een genetisch gemodificeerd organisme of gezuiverde natuurstof met nieuwe eigenschappen kan echter patenteerbaar zijn.',
+    ],
+    [
+      'Wat betekent "first-to-file" in octrooirecht?',
+      [
+        'De persoon die eerst een octrooiaanvraag indient heeft prioriteit, ongeacht wie het daadwerkelijk heeft uitgevonden',
+        'Alleen de oorspronkelijke uitvinder mag een octrooiaanvraag indienen',
+        'Octrooirechten behoren toe aan wie over de uitvinding eerst in een vakblad publiceert',
+        'Uitvinders moeten hun ontdekking publiceren voordat zij aanvragen om prioriteit vast te stellen',
+      ],
+      0,
+      'De meeste landen wereldwijd, waaronder de EU en vele andere, gebruiken een first-to-file-systeem waarbij de vroegste aanvraagdatum prioriteit bepaalt. De VS gebruikte historisch first-to-invent tot 2013.',
+    ],
+    [
+      'Hoe lang beschermt een standaard octrooiverlening een uitvinding?',
+      [
+        '20 jaar vanaf de indiendatum van de aanvraag',
+        '17 jaar vanaf de datum waarop het octrooi wordt verleend',
+        'Het leven van de uitvinder plus 50 jaar',
+        'Onbeperkt, zolang de octrooihouder jaarlijkse vernieuwingskosten betaalt',
+      ],
+      0,
+      'De standaard octrooitermijn in de meeste landen is 20 jaar vanaf de indiendatum. De uitvinding zelf wordt echter openbaar bij indiening, en de werkelijke beschermingsperiode kan worden verkort als het octrooi jaren onderzoek vergt.',
+    ],
+    [
+      'Wat is een bedrijfsgeheim?',
+      [
+        'Informatie die waarde ontleent aan het niet algemeen bekend zijn en geheim wordt gehouden door redelijke maatregelen',
+        'Een octrooi dat nog niet door het octrooibureau is gepubliceerd',
+        'Een merk dat vertrouwelijk is en niet openbaar wordt gemaakt',
+        'Een kopie van de financiële administratie van een bedrijf in een kluis',
+      ],
+      0,
+      'Bedrijfsgeheimen beschermen informatie door geheimhouding en redelijke beschermingsmaatregelen, niet door registratie. Zij vereisen geen formele procedures maar bieden bescherming alleen zolang informatie vertrouwelijk blijft.',
+    ],
+    [
+      'Welk internationaal verdrag bepaalde dat auteursrechtbescherming geen registratie of melding vereist?',
+      [
+        'De Berner Conventie voor de Bescherming van Werken van Letterkunde en Kunst',
+        'Het Verdrag van Parijs voor de Bescherming van de Industriële Eigendom',
+        'Het TRIPS-akkoord',
+        'Het Oprichtingsverdrag van de Wereldorganisatie voor de Intellectuele Eigendom',
+      ],
+      0,
+      'De Berner Conventie (1886) stelde in artikel 5(2) vast dat auteursrechtbescherming automatisch is en niet afhangt van enige formaliteit zoals registratie, melding of indiening. TRIPS en WIPO-verdragen hebben dit principe later overgenomen.',
+    ],
+    [
+      'Waarvoor wordt het Madridprotocol vooral gebruikt?',
+      [
+        'Merkaanvragen indienen in meerdere landen via één WIPO-procedure',
+        'Merkenwetten harmoniseren in de EU-lidstaten',
+        'Octrooien wereldwijd afdwingen',
+        'Geografische aanduidingen voor landbouwproducten registreren',
+      ],
+      0,
+      'Het Madridprotocol, beheerd door WIPO, centraliseert merkaanvragen via één aanvraag voor meerdere aangewezen landen. Elk land\'s bureau onderzoekt het merk echter nog steeds naar zijn eigen materiële recht.',
+    ],
+    [
+      'Wat is de basisvereiste voor auteursrechtbescherming van een literair of kunstwerk?',
+      [
+        'Het werk moet oorspronkelijk zijn en in een grijpbaar medium worden uitgedrukt (geschreven, opgenomen, enz.)',
+        'Het werk moet commercieel worden gepubliceerd',
+        'Het werk moet bij een nationaal auteursrechtenbureau worden geregistreerd',
+        'Het werk moet minstens 100 pagina\'s lang zijn of één uur duren',
+      ],
+      0,
+      'Auteursrecht beschermt oorspronkelijke literaire en kunstwerken zodra zij in een grijpbaar medium worden vastgelegd—zoals schrijven, opnamen of digitale opslag. Oorspronkelijkheid en vastlegging zijn de belangrijkste vereisten.',
+    ],
+    [
+      'Wat verleent het Europees Octrooibureau (EOB)?',
+      [
+        'Een bundel nationale octrooien in aangewezen landen, die afzonderlijk in elk land moeten worden gevalideerd en afgedwongen',
+        'Een enkel Europees octrooi dat automatisch geldig en afdwingbaar is in alle EU-lidstaten',
+        'Alleen gebruiksoctrooien, terwijl modelrechten uitsluitend door WIPO worden afgehandeld',
+        'Een voorlopig octrooirecht dat volledige bescherming krijgt na EU-goedkeuring',
+      ],
+      0,
+      'Een Europees octrooi verleend door het EOB is eigenlijk een bundel die in elk aangewezen land moet worden gevalideerd en kan in elk land afzonderlijk worden afgedwongen of ingetrokken.',
+    ],
+    [
+      'Welk van de volgende beschrijft het best de bijdrage van het Verdrag van Parijs aan internationaal octrooi- en merkenrecht?',
+      [
+        'Het stelde het "prioriteitsrecht" in dat aanvragers toestaat in meerdere landen aan te vragen terwijl zij hun eerste indiendatum behouden',
+        'Het schafte octrooien in ontwikkelingslanden af',
+        'Het creëerde WIPO als handhavingsinstantie',
+        'Het verenigde octrooiexaminatieprocedures in alle aangesloten landen',
+      ],
+      0,
+      'Het Verdrag van Parijs (1883) voerde het prioriteitsrecht in: aanvragers kunnen in één lid aanvragen en dan in andere leden binnen 12 maanden voor octrooien of 6 maanden voor merken, terwijl zij de oorspronkelijke indiendatum als prioriteit behouden.',
+    ],
+    [
+      'Wat onderscheidt een moraal recht van een economisch recht in auteursrecht?',
+      [
+        'Morele rechten beschermen de persoonlijke band van de auteur met een werk (naamsvermelding, integriteit) en zijn over het algemeen onvervreemdbaar',
+        'Morele rechten duren slechts één jaar terwijl economische rechten duren voor de auteursrechttermijn',
+        'Economische rechten gelden alleen voor boeken; morele rechten gelden alleen voor visuele kunst',
+        'Morele rechten bestaan alleen in Engelssprekende landen',
+      ],
+      0,
+      'Morele rechten—het recht op naamsvermelding en het recht tegen vervormingen—beschermen de auteur\'s reputatie en persoonlijke band. Ze kunnen niet worden verkocht of overgedragen, zelfs in landen waar auteurs hun economische rechten afstaan.',
+    ],
+    [
+      'Wat betekent het als een merk "generiek" wordt?',
+      [
+        'De term is gewoon geworden voor het product, met risico op verlies van merkbescherming',
+        'Het merk is in meerdere landen geregistreerd',
+        'De merkhouder heeft derden het merk laten gebruiken in reclame',
+        'Het merk is niet langer populair bij consumenten',
+      ],
+      0,
+      'Dit gebeurt wanneer een merk de gewone naam voor het product zelf wordt (zoals "aspirine" of "roltrap" in de VS). Merkhouders voorkomen dit door het merk altijd met de soortnaam te gebruiken.',
+    ],
+    [
+      'Wat is de primaire rol van de Wereldorganisatie voor de Intellectuele Eigendom (WIPO)?',
+      [
+        'Internationale IE-verdragen beheren en diensten verlenen voor octrooi-, merk- en modelregistratie en geschillenbeslechting',
+        'Vervalsers direct vervolgen en wereldwijd handhavingsacties uitvoeren',
+        'Uniforme IE-wetten vaststellen die alle landen onmiddellijk moeten toepassen',
+        'Octrooien en merken rechtstreeks verlenen, ter vervanging van nationale bureaus',
+      ],
+      0,
+      'WIPO, een gespecialiseerd VN-agentschap sinds 1974, beheert verdragen als het Verdrag van Parijs, de Berner Conventie, het PCT en het Madridprotocol. Zij voert handhaving niet uit—dat blijft een nationale rechterfunctie.',
+    ],
+    [
+      'Hoe verschilt auteursrechtbescherming van octrooibescherming naar reikwijdte?',
+      [
+        'Auteursrecht beschermt literaire en artistieke uitdrukking, octrooien beschermen uitvindingen en technische oplossingen',
+        'Octrooien beschermen ideeën, auteursrecht beschermt alleen fysieke objecten',
+        'Auteursrecht kan onbeperkt worden vernieuwd, octrooien worden slechts eenmaal verleend',
+        'Octrooien beschermen morele rechten, auteursrecht beschermt alleen economische rechten',
+      ],
+      0,
+      'Auteursrecht beschermt de oorspronkelijke uitdrukking van ideeën in literaire en kunstwerken (boeken, muziek, films, software). Octrooien beschermen uitvindingen en technische oplossingen. Zij dekken verschillende materie en verschillende wettelijke systemen.',
+    ],
+  ],
   msc: [
     [
       'Uit hoeveel boeken is het Nederlandse Burgerlijk Wetboek opgebouwd?',

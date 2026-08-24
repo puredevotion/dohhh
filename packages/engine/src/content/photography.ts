@@ -71,7 +71,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What is the primary function of a darkroom safelight?',
       [
-        'Allow safe working light without exposing undeveloped photographic materials',
+        'Allows safe work without exposing film',
         'Provide heat for chemical reactions during film development',
         'Monitor the density of chemical solutions',
         'Eliminate dust particles from the darkroom air',
@@ -115,7 +115,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What chemical compound is applied to glass or paper to create an albumen print?',
       [
-        'Egg white (albumen) with silver nitrate',
+        'Egg white with silver nitrate',
         'Gelatin dissolved in potassium chloride',
         'Wax emulsion with cadmium sulfide',
         'Starch paste with copper acetate',
@@ -126,7 +126,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What is the "calotype" process also known as?',
       [
-        'Talbotype (after William Henry Fox Talbot)',
+        'Talbotype',
         'Daguerreotype variant',
         'Ferrotype process',
         'Gelatin dry plate',
@@ -137,7 +137,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In street photography, what does "the decisive moment" refer to?',
       [
-        'The instant when composition and subject converge at peak meaning',
+        'The instant composition and meaning align',
         'The exact second when film must be developed',
         'The moment the camera shutter reaches maximum speed',
         'The time when natural light is most flattering',
@@ -148,7 +148,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What is the primary purpose of film grain in black-and-white photography?',
       [
-        'It is an unavoidable artifact of how silver halide crystals form the image',
+        'A byproduct of how silver halide crystals form the image',
         'It is added during printing to prevent image fading',
         'It improves the sharpness of fine details',
         'It allows light to reflect more evenly across the print',
@@ -184,7 +184,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How did wet plate collodion photography differ fundamentally from earlier calotype processes?',
       [
-        'Collodion emulsion adhered to glass, enabling far greater detail and reusability than paper negatives',
+        'Collodion adhered to glass, giving finer detail than paper',
         'Calotypes used silver nitrate while collodion used only iodine compounds',
         'Collodion plates could be stored indefinitely before exposure',
         'Wet plate collodion produced visible grain while calotypes were grain-free',
@@ -195,7 +195,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In what way does the sensitometric curve (D-log E) characterize film behavior?',
       [
-        'It plots density (darkness) against log exposure, showing tonal range and film speed response',
+        'Plots density against log exposure',
         'It measures the time required for chemical development at various temperatures',
         'It predicts how grain size changes with different lighting conditions',
         'It indicates the color shift that occurs in aged emulsions',
@@ -206,7 +206,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'Why is hyperfocal distance important in large-format landscape photography?',
       [
-        'Focusing at hyperfocal distance maximizes depth of field from near to far without refocusing',
+        'Maximizes depth of field from near to far',
         'It prevents optical distortion in wide-angle lenses',
         'It determines the optimal shutter speed for hand-holding',
         'It compensates for the bellows extension on view cameras',
@@ -217,7 +217,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What philosophical difference separated Pictorialism from Straight Photography?',
       [
-        'Pictorialists pursued artistic control and painterly manipulation; Straight photographers emphasized unmanipulated subject revelation',
+        'Artistic manipulation versus unmanipulated subject revelation',
         'Straight photographers used color film while Pictorialists used only black-and-white',
         'Pictorialists required special lenses while Straight photographers used standard lenses',
         'Straight photography only worked outdoors; Pictorialism required studio lighting',
@@ -228,7 +228,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'Which photographic movement explicitly documented rural American poverty and displacement during the Great Depression?',
       [
-        'Farm Security Administration photography (1935–1944)',
+        'FSA photography (1935–1944)',
         'Pictorialism movement (1890–1910)',
         'Modernist abstraction (1920–1940)',
         'Photo-Secession group (1905–1917)',
@@ -239,7 +239,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What is the chemical basis for archival permanence in platinum prints versus gelatin silver prints?',
       [
-        'Platinum is chemically inert and resists fading; gelatin silver relies on unfixed residual salts that degrade over time',
+        'Platinum is inert; gelatin silver can degrade over time',
         'Gelatin contains natural preservatives that platinum lacks',
         'Platinum prints require special light sources to remain stable',
         'Gelatin prints fade only if exposed to moisture',
@@ -250,7 +250,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In darkroom enlargement, why does burning certain areas require precise exposure time calculation?',
       [
-        'Excessive burning causes the print paper to turn black; too little burns almost nothing visible',
+        'Too much burning blackens paper; too little does nothing',
         'Burning can cause chemical reactions that release toxic fumes',
         'Paper emulsion becomes temporarily insensitive after initial exposure',
         'Burn time directly affects the saturation of color in black-and-white prints',
@@ -261,7 +261,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What role did the Photo-Secession play in establishing photography as fine art?',
       [
-        'It organized exhibitions and publications that positioned photography alongside painting and sculpture in galleries',
+        'It exhibited photography alongside painting and sculpture',
         'It invented the first color photography process',
         'It developed the first automated camera mechanisms',
         'It established patent laws protecting photographic inventions',
@@ -272,7 +272,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How does sensor demosaicing affect image quality in digital cameras?',
       [
-        'Demosaicing algorithms reconstruct full-color images from Bayer-pattern data; poor algorithms introduce color fringing and noise',
+        'Algorithms reconstruct full-color images from Bayer data',
         'Demosaicing has no effect on image quality; it is purely a mechanical process',
         'Demosaicing increases the effective pixel count of the sensor',
         'Demosaicing is only necessary for black-and-white digital photography',
@@ -283,7 +283,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What is the principle behind Ansel Adams\'s Zone System beyond practical metering?',
       [
-        'It provides a conceptual framework linking exposure, development, and printing to achieve previsioned tonal outcomes',
+        'Links exposure, development, and printing to previsioned tones',
         'It eliminates the need for light meters entirely',
         'It works only with large-format cameras',
         'It guarantees that all film stocks produce identical tones',
@@ -294,7 +294,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'Why did wet plate collodion remain dominant despite the invention of dry plate gelatin emulsions?',
       [
-        'Collodion initially offered superior image quality and required no pre-preparation; gelatin plates took time to become reliable',
+        'Collodion offered better quality with no pre-preparation',
         'Wet plates were cheaper to manufacture',
         'Dry plates could not be used outdoors',
         'Collodion was easier to sensitize than gelatin',
@@ -305,7 +305,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In color film photography, what causes the color shift in tungsten-balanced film exposed under daylight?',
       [
-        'Daylight\'s higher color temperature (blue) overwhelms tungsten film\'s warm-shifted emulsion balance',
+        'Daylight\'s blue color temperature overwhelms tungsten balance',
         'Tungsten film automatically corrects for any light source',
         'Daylight contains ultraviolet that bleaches color dyes',
         'The film\'s filters react chemically to sunlight',
@@ -316,7 +316,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What did Edward Weston mean by "previsualization" in his photographic practice?',
       [
-        'Mentally composing the final print before releasing the shutter, then executing with precision',
+        'Mentally composing the final print before the shutter',
         'Using multiple exposures to layer different compositions',
         'Photographing the same subject repeatedly until achieving the desired angle',
         'Sketching compositions in pencil before setting up the camera',
@@ -327,7 +327,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How did street photographer Henri Cartier-Bresson\'s choice of rangefinder camera influence his work?',
       [
-        'Rangefinders\' compactness and quiet shutter enabled unobtrusive observation; bright viewfinders supported spontaneous framing',
+        'Compact and quiet, enabling unobtrusive observation',
         'Rangefinders produced sharper images than view cameras',
         'Rangefinders were the only cameras capable of color photography then',
         'Rangefinders had superior autofocus systems',
@@ -341,7 +341,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'Why did daguerreotype manufacturers specifically plate copper with silver rather than using solid silver sheets?',
       [
-        'Copper provides structural rigidity and cost efficiency; silver plating achieves the reflective surface while avoiding material waste',
+        'Copper is cheaper and rigid; silver plating gives reflectivity',
         'Silver was too brittle for the polishing required before sensitization',
         'Copper\'s oxidation created the photosensitive layer during iodine exposure',
         'Solid silver reacted chemically with the iodine compound and destroyed images',
@@ -352,7 +352,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In wet plate collodion, what chemical role does iodine play versus the later bromine additions?',
       [
-        'Iodine serves as the primary halide; bromine and chloride additions accelerate sensitization and expand dynamic range',
+        'Iodine is the primary halide; bromine speeds sensitization',
         'Iodine and bromine produce identical sensitization rates and sensitivity',
         'Bromine eliminated the need for silver nitrate immersion',
         'Iodine made plates unstable; bromine solved this entirely',
@@ -363,7 +363,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How do Bayer CFA arrays and demosaicing algorithms introduce color artifacts in digital sensors?',
       [
-        'Adjacent pixels of different colors create color fringing at edges when interpolation fails; aliasing patterns emerge at fine detail',
+        'Failed interpolation at edges creates color fringing',
         'Bayer arrays automatically reduce color saturation in all images',
         'Demosaicing uniformly blurs all color information',
         'Color artifacts only occur with defective sensors',
@@ -374,7 +374,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In gelatin emulsion aging, what causes the physical blistering and desquamation of dried glass plates?',
       [
-        'Differential expansion rates between gelatin and glass during humidity cycling; residual solvent evaporation creates internal stress',
+        'Differential expansion of gelatin and glass under humidity cycling',
         'Oxidation of the silver halide crystals',
         'Bacterial growth between the gelatin and glass',
         'Thermal expansion of the copper backing layer',
@@ -385,7 +385,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What distinguishes apochromatic lens correction from standard achromatic designs?',
       [
-        'Apochromatic elements correct for chromatic aberration at three wavelengths instead of two, reducing color fringing across spectrum',
+        'Corrects chromatic aberration at three wavelengths, not two',
         'Apochromatic lenses use reflective coatings while achromatic lenses use refraction only',
         'Apochromatic lenses are only usable in ultraviolet wavelengths',
         'Apochromatic and achromatic lenses are functionally identical',
@@ -396,7 +396,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How do development kinetics differ between phenidone and hydroquinone developers?',
       [
-        'Phenidone develops faster and preserves shadow detail better; hydroquinone offers higher contrast and longer working life per batch',
+        'Phenidone develops faster; hydroquinone gives higher contrast',
         'Hydroquinone is faster but produces more grain',
         'Phenidone requires higher temperatures than hydroquinone',
         'Both developers produce identical contrast curves',
@@ -407,7 +407,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What philosophical and artistic premises underlay the Pictorialist movement and its alignment with Symbolism?',
       [
-        'Pictorialists drew from Symbolist literature\'s emphasis on mood, subjective interpretation, and rejecting objective representation',
+        'Pictorialists drew on Symbolist mood and subjective interpretation',
         'Pictorialism was purely a technical photographic innovation unrelated to artistic movements',
         'Pictorialists specifically rejected all fine art influences',
         'Pictorialism aligned with Realism, not Symbolism',
@@ -418,7 +418,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What methodological approach did Walker Evans employ in his Farm Security Administration typological documentation?',
       [
-        'Systematic frontal framing and repeat subject typologies to create an objective visual archive transcending individual aesthetic preference',
+        'Systematic frontal framing to build an objective visual archive',
         'Highly subjective emotional portraits emphasizing individual pathos',
         'Painterly composition mimicking fine art aesthetics',
         'Sequential narrative storytelling following families over years',
@@ -429,7 +429,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How do platinum print metal-salt interactions ensure extraordinary longevity compared to other printing processes?',
       [
-        'Platinum metal deposits metallic elemental platinum in fibers during development; platinum is chemically inert and cannot oxidize or fade',
+        'Platinum deposits an inert metal in fibers that cannot oxidize',
         'Platinum prints use special lacquer coatings that prevent light exposure',
         'Platinum printing uses archival paper that gelatin processes cannot access',
         'Platinum and gelatin prints are equally permanent',
@@ -440,7 +440,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In the Bayer CFA architecture, what is the purpose of microlenses above individual photodiodes?',
       [
-        'Microlenses focus incident light onto the photodiode active area, improving collection efficiency and reducing angular sensitivity loss',
+        'Microlenses focus light onto the photodiode\'s active area',
         'Microlenses eliminate hot pixels',
         'Microlenses separate color channels mechanically',
         'Microlenses serve only aesthetic purposes and do not affect image quality',
@@ -451,7 +451,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What distinguishes digital raw file data processing (demosaicing, white balance) from in-camera JPEG rendering?',
       [
-        'Raw files preserve unmosaiced sensor data allowing post-processing flexibility; JPEG applies fixed demosaicing, color science, and compression',
+        'Raw preserves unmosaiced data; JPEG applies fixed processing',
         'Raw files cannot be printed and JPEG files can only be printed',
         'Raw files always have lower resolution than JPEGs',
         'Raw and JPEG files are identical after demosaicing',
@@ -462,7 +462,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How did early motion picture film stocks evolve regarding emulsion sensitivity and color reproduction?',
       [
-        'Orthochromatic stocks (blind to red) gave way to panchromatic stocks; color film (1950s) required entirely new emulsion chemistry',
+        'Orthochromatic gave way to panchromatic, then color film',
         'Film stocks have remained chemically unchanged since invention',
         'Color film existed since the 1920s but was suppressed for cost reasons',
         'Panchromatic film preceded orthochromatic film chronologically',
@@ -473,7 +473,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What technical constraints did large-format negative size impose on Ansel Adams\'s previsualization practice?',
       [
-        'Large formats (4x5, 8x10) offered exceptional shadow detail and tonal separation but required precise exposure; errors were costly',
+        'Large formats gave exceptional detail but demanded precise exposure',
         'Large formats allowed unlimited bracketing and test shots',
         'Large formats produced images identical in quality to 35mm film',
         'Large formats had no impact on visualization because prints could always be enlarged',
@@ -484,7 +484,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In the Constructivist and Bauhaus movements, how did photography\'s formal properties (sharp focus, high contrast, unusual angles) align with modernist visual ideology?',
       [
-        'Photography\'s mechanical objectivity and tonal purity reflected modernism\'s embrace of industrial forms and rejection of romantic subjectivity',
+        'Photography\'s mechanical objectivity matched modernist industrial ideals',
         'Photography had no connection to Constructivism or Bauhaus',
         'Photography was rejected by Constructivists as insufficiently artistic',
         'Constructivists used photography only for documentary purposes',
@@ -495,7 +495,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What optical and functional trade-offs does the rangefinder focusing system impose on wide-angle coverage?',
       [
-        'Wider lenses reduce parallax base, making accurate rangefinder focus increasingly difficult; below ~35mm rangefinder accuracy drops sharply',
+        'Wider lenses reduce parallax base, hurting focus accuracy',
         'Rangefinders work perfectly at all focal lengths',
         'Rangefinders are most accurate with wide lenses',
         'Wide-angle lenses eliminate the need for rangefinder focusing',
@@ -509,7 +509,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'Why did daguerreotype manufacturers employ bromine vapor sensitization after initial iodine coating on silver surfaces?',
       [
-        'Bromine increased light sensitivity and extended the spectral response beyond iodine alone, reducing exposure times from minutes to seconds',
+        'Bromine extended spectral response, cutting exposure times sharply',
         'Bromine removed iodine compounds that contaminated the image',
         'Bromine improved the reflectivity of the silver surface',
         'Bromine and iodine served identical sensitization roles',
@@ -520,7 +520,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In ferotype (tintype) emulsion formulation, how did iron oxide and collodion proportions determine image density and permanence?',
       [
-        'Iron oxide concentration controlled emulsion density and UV protection; collodion ratio determined adhesion and flexibility under thermal stress',
+        'Iron oxide set density; collodion ratio set adhesion and flexibility',
         'Iron oxide and collodion were unrelated components',
         'Ferotypes used silver halide, not iron oxide',
         'Ferotype composition was standardized and never varied',
@@ -531,7 +531,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How do Color Filter Array demosaicing algorithms (linear interpolation vs. gradient-based vs. machine learning) differ in handling aliasing and color fringing?',
       [
-        'Linear methods introduce visible fringing at edges; gradient-based methods preserve transitions better; ML approaches learn complex spatial patterns',
+        'Linear fringes at edges; gradient methods preserve transitions better',
         'All demosaicing methods produce identical results',
         'Linear interpolation is superior to all other methods',
         'CFA demosaicing has no effect on aliasing',
@@ -542,7 +542,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In photographic sensitometry, what does the shape of the D-log(E) curve\'s toe region reveal about film behavior in shadows?',
       [
-        'The toe slope and length indicate film latitude in shadows: shallow toe = harsh shadow separation, long toe = gentle shadow rolloff',
+        'Toe slope and length indicate shadow latitude',
         'The toe is unrelated to shadow rendering',
         'A steep toe always produces better shadow detail',
         'The toe affects only highlight behavior',
@@ -553,7 +553,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'Beyond simple focal-length correction, how do apochromatic lens designs reduce residual lateral color and spherochromatism?',
       [
-        'Apo elements employ fluorite or special glass with anomalous dispersion to reduce secondary spectrum across wider apertures and focus bands',
+        'Fluorite or special-glass elements reduce secondary spectrum',
         'Apochromatic lenses eliminate all optical aberrations',
         'Apochromatic lenses work only at stopped-down apertures',
         'Lateral color is only corrected by software, not optics',
@@ -564,7 +564,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In black-and-white film development, how do pH and buffer capacity of developer solutions influence the rate and selectivity of development reactions?',
       [
-        'pH ~10.5 activates phenidone/hydroquinone; higher pH accelerates development but risks caustic effects; buffers stabilize pH across the reaction',
+        'pH ~10.5 activates the developer; buffers stabilize pH',
         'pH has no effect on development chemistry',
         'Lower pH always speeds development',
         'Buffers are irrelevant in developer composition',
@@ -575,7 +575,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'What does the Pictorialist movement\'s theoretical alignment with Art Nouveau and literary Decadence reveal about early photography\'s cultural positioning?',
       [
-        'Pictorialists deliberately positioned photography as subjective artistic expression aligned with Symbolist and Decadent rejection of industrial positivism',
+        'Photography as subjective art, aligned with Symbolist and Decadent ideals',
         'Pictorialism was purely technical with no cultural context',
         'Pictorialists aligned with scientific positivism and rejected subjectivity',
         'Photography\'s cultural role was identical to painting throughout the 19th century',
@@ -586,7 +586,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In Walker Evans\'s FSA archive methodology, how did his conceptual framework of "American photographs" as ethnographic typology diverge from documentary tradition?',
       [
-        'Evans pursued systematic, frontal typology (building equivalent sets) rather than narrative or emotional framing; a sociological rather than journalistic approach',
+        'Systematic, frontal typology rather than narrative framing',
         'Evans employed standard photojournalistic narrative storytelling',
         'Evans rejected systematic methodology in favor of purely intuitive selection',
         'Evans\'s work was indistinguishable from other FSA photographers\' approaches',
@@ -597,7 +597,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In platinum printing, how do the oxidation states of platinum salts (II vs. IV) and ferric compounds control the sensitization range and print tone?',
       [
-        'Ferric salts (Fe³⁺) determine sensitization; platinum oxidation state (Pt²⁺ vs. Pt⁴⁺) governs metallic deposit and final tone from cold gray to warm sepia',
+        'Ferric salts set sensitization; platinum state sets final tone',
         'Platinum has only one oxidation state in printing',
         'Ferric salts have no role in platinum printing',
         'Oxidation states do not affect print tone or sensitivity',
@@ -608,7 +608,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How does read noise versus photon shot noise dominate in low-light digital capture, and how do high-ISO algorithms attempt to suppress each?',
       [
-        'At low light, read noise dominates; high-ISO amplifies signal uniformly while temporal noise filtering targets read-noise spikes; photon noise requires exposure',
+        'Read noise dominates at low light; high-ISO amplifies signal',
         'Read noise and photon noise are identical',
         'High-ISO amplification eliminates both noise types completely',
         'Photon shot noise only occurs at high ISO',
@@ -619,7 +619,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'Beyond Ansel Adams\'s original nine-zone framework, how do modern sensitometric approaches extend Zone System thinking to digital capture and raw file optimization?',
       [
-        'Digital practitioners use histogram-based zone mapping and exposure-latitude optimization; raw files offer extended shadow latitude vs. slide film',
+        'Histogram-based zone mapping and raw exposure-latitude optimization',
         'Zone System is obsolete in the digital era',
         'Digital files have no equivalent to Zones',
         'Modern digital practice abandoned Adams\'s framework entirely',
@@ -630,7 +630,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In the shift from orthochromatic to panchromatic motion picture emulsions (1925–1935), what chemical emulsion innovations enabled red-sensitivity extension?',
       [
-        'Introduction of merocyanine and other spectral sensitizers allowed dyes to shift peak sensitivity toward red; manufacturing required new coating processes',
+        'Merocyanine and other spectral sensitizers shifted peak sensitivity red',
         'Red sensitivity appeared spontaneously without chemical innovation',
         'Red sensitivity was always present but masked by dyes',
         'Panchromatic film required no chemical changes from orthochromatic stock',
@@ -641,7 +641,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How did the mechanical constraints and precision demands of large-format view camera operation shape Ansel Adams\'s and other masters\' visual conceptualization?',
       [
-        'Large format\'s slowness, expense, and inflexibility enforced previsualization discipline; camera movements (tilt, shift, swing) became conceptual tools for controlling perspective and focus plane',
+        'Slowness and expense enforced previsualization discipline',
         'Large format imposed no constraints on photographers\' thinking',
         'Large format made visualization impossible due to small ground glass',
         'Camera movements were purely for technical correction, not creative intention',
@@ -652,7 +652,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'In what ways did the Russian Constructivist embrace of photography (e.g., Rodchenko, Lisitsky) position the medium as ideologically aligned with revolutionary modernism?',
       [
-        'Constructivists valued photography\'s apparent objectivity and mechanical repeatability as aligned with Marxist materialism; unusual angles and cropping asserted human design over passive documentation',
+        'Photography\'s mechanical objectivity aligned with Marxist materialism',
         'Constructivists rejected photography as bourgeois',
         'Photography was incidental to Constructivism\'s core ideology',
         'Constructivists used photography identically to traditional fine art',
@@ -663,7 +663,7 @@ export const PHOTOGRAPHY: CategoryContent = {
     [
       'How do the optical characteristics of rangefinder conjugate-prism designs (separation distance, prism geometry) establish the limits of accurate focusing across focal lengths?',
       [
-        'Base distance is fixed; shorter working distances reduce magnification of parallax movement; below ~35mm, parallax angle becomes subresolution and focusing becomes impractical',
+        'Fixed base distance makes wide-angle focusing impractical',
         'Rangefinder geometry is unrelated to focal-length performance',
         'Rangefinders are equally accurate at all focal lengths',
         'Prism geometry changes automatically for each lens',

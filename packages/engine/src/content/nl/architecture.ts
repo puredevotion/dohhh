@@ -5,6 +5,98 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const ARCH_MODERN: CategoryContent = {
+  bscba: [
+    [
+      'Wat is een vliesgevel in moderne architectuur?',
+      ['Een niet-dragende buitenwand opgehangen aan een gebouwskelet, die alleen zijn eigen gewicht en winddruk draagt', 'Een dik metselwerkwand ontworpen om het volledige gewicht van alle vloeren en het dak erboven te dragen', 'Een decoratieve valse muur aangebracht aan de buitenkant van een bakstenen gebouw ter verbetering', 'Een oprolbaar canvas- of metalen scherm voor zonnelicht- en temperatuurcontrole'],
+      0,
+      'Een vliesgevel is een buitenbekleding opgehangen aan het structurele skelet van een gebouw, net als een gordijn aan een roede. Het omsluit het gebouw en beschermt het tegen weer, maar draagt geen belasting; het skelet doet al dat werk.',
+    ],
+    [
+      'Welke architectuurbeweging benadrukte "vorm volgt functie"?',
+      ['Modernisme', 'Postmodernisme', 'Barok', 'Gotische herleving'],
+      0,
+      'Het modernistische axioma, afgeleid van Louis Sullivan en verfijnd door architecten van het begin van de twintigste eeuw, stelt dat een gebouwontwerp direct moet reageren op het beoogde gebruik in plaats van onnodige siersmering.',
+    ],
+    [
+      'Wat is een piloti in de architectuur van Le Corbusier?',
+      ['Een kolom die een gebouw van de grond tilt, waardoor open ruimte ontstaat voor verkeer en luchtcirculatie', 'Een hellend daktuin ontworpen voor regenwater-afvoer', 'Een horizontale balk die vloerplaten over een overspanning draagt', 'Een metselwerkvoet die een gebouw aan de fundering verankert'],
+      0,
+      'Piloti (van het Frans/Italiaans woord voor paal) zijn dunne kolommen die een gebouw boven maaiveld dragen, wat grondruimte vrijmaakt. Le Corbusier noemde ze als de eerste van zijn Vijf Punten.',
+    ],
+    [
+      'Welke architectuurstijl domineerde het begin van de twintigste eeuw met schone lijnen, eenvoudige vormen en afblijf van ornament?',
+      ['Internationale Stijl / Modernisme', 'Art Deco', 'Constructivisme', 'Streamline Moderne'],
+      0,
+      'De Internationale Stijl ontstond in de jaren 1920-1930, rejecting ornament voor functionele vormen en industriële materialen. Het creëerde een universele taal die gebouwen wereldwijd gelijkvormig maakte.',
+    ],
+    [
+      'Waardoor wordt brutalisme gekarakteriseerd?',
+      ['Gedurfde, monolithische betonvormen met blootgestelde texturen en geometrische composities', 'Sierlijke houtsnijwerk en historische verwijzingen', 'Delicate glazen vliesgevel met minimale zichtbare structuur', 'Pastelkleuren en speelse geometrische patronen'],
+      0,
+      'Brutalisme (van béton brut, ruw beton) ontstond in naoorlogse architectuur met nadruk op massieve betonstructuren, gedurfde vormen en expressief materiaalgebruik. Gebouwen als het Barbican Centre tonen het beeldhouwkundige, onverschrokken brutalistische beton.',
+    ],
+    [
+      'Wat is een lintvenster?',
+      ['Een lange, doorlopende horizontale vensterband die rond een gevel loopt', 'Een klein vierkant venster geflankeerd door twee verticale panelen', 'Een rond venster boven een rechthoekige deur', 'Een drievoudig vensterframe verdeeld door stijlen in negen gelijke panelen'],
+      0,
+      'Lintvensters zijn uitgebreide horizontale openingen die continu over gevels lopen. Le Corbusier noemde ze als vijf punten voor beter daglicht en betere uitzichten.',
+    ],
+    [
+      'Wat is een Vierendeelvakwerk?',
+      ['Een vakwerk met verticale stijlen en horizontale banden, maar geen diagonale verstijving, met open rechthoekige cellen', 'Een driehoekig vakwerk van staalstaven op alle knopen bevestigd', 'Een houten vakwerk met gekromde bovenbuis voor tongewelfeffect', 'Een vakwerk dat aan boven wordt opgehangen in plaats van van onderen te worden ondersteund'],
+      0,
+      'Een Vierendeelvakwerk gebruikt rechthoekige openingen in plaats van driehoeken, wat meer architecturale flexibiliteit biedt over afstanden. Kahn gebruikte ze in het Salk Institute voor servicepleinen.',
+    ],
+    [
+      'Wat betekent "vrij plan" in de moderne architectuur?',
+      ['Binnenmuren en kolommen kunnen flexibel worden gepositioneerd omdat het skelet alle lasten draagt', 'Een ontwerp zonder binnenste scheidingswanden, wat één open loftruimte creëert', 'Een plattegrond die periodiek verandert op basis van seizoensgebruik', 'Een bouwlay-out die organisch aan het landschap aansluit in plaats van een raster te gebruiken'],
+      0,
+      'Vrij plan betekent binnenflexibiliteit als een skelet onafhankelijk van scheidingswanden alle lasten draagt. Dit stelde modernisten in staat ruimtes vrij samen te stellen zonder dragende wanden.',
+    ],
+    [
+      'Wat is postmodernisme in architectuur en wanneer ontstond het?',
+      ['Een reactie tegen modernistische strengheid in het laat-twintigste-eeuwse met ornament en speelsheid desde jaren 1970', 'Een beweging voor digitaal ontwerp en computationele architectuur vanaf jaren 1990', 'Een uitbreiding van modernisme dat vormen nog verder vereenvoudigde', 'Een terugkeer naar gotische en Victoriaanse stijlen in hedendaagse gebouwen'],
+      0,
+      'Postmodernisme ontstond in de jaren 1970 toen architecten als Robert Venturi twijfelden aan modernistische soberheid. Venturi\'s motto "less is a bore" daagde direct Mies\' "less is more" uit.',
+    ],
+    [
+      'Wat is high-tech architectuur?',
+      ['Een constructie met blootgestelde mechanische systemen, structuur en diensten als ontwerpelementen', 'Elk gebouw met de nieuwste computertechnologie voor ontwerp', 'Een gebouw volledig gewikkeld in glas voor maximaal daglicht', 'Een constructie met robotica en automatisering in het bouwproces'],
+      0,
+      'High-tech architectuur ontstond in de jaren 1970-80 met architecten als Richard Rogers en Norman Foster, die structuurframe, leidingen en systemen als esthetische elementen toonden.',
+    ],
+    [
+      'Wat is parametrisch ontwerp in hedendaagse architectuur?',
+      ['Algoritmen en parameters gebruiken om gebouwvormen te genereren die aan meerdere beperkingen voldoen', 'Een decoratief patroonensysteem op basis van mathematische verhoudingen', 'Een gebouwoppervlak decoreren met geometrische parameters en metingen', 'Een benadering die geometrie verlaat voor organische, vrije vormen'],
+      0,
+      'Parametrisch ontwerp gebruikt algoritmen waarbij parameterverdrangeringen automatisch nieuwe vormen genereren. Architecten als Zaha Hadid gebruikten dit voor complexe gebogen structuren.',
+    ],
+    [
+      'Wat was het Bauhaus en wat onderwees het?',
+      ['Een Duitse ontwerpschool (1919-1933) met kunst, ambacht en industriële productie, met focus op functie', 'Een beweging gericht op herstel van middeleeuwse en gotische tradities', 'Een decoratieve kunststijl met sierlijke handgemaakte meubelen en textiel', 'Een constructietechniek met modulaire geprefabriceerde onderdelen'],
+      0,
+      'Het Bauhaus (gesticht door Gropius in Weimar) combineerde kunst, ambacht en industrieel ontwerp. Docenten als Klee en Kandinsky vormden een curriculum dat twintigste-eeuws modernisme beïnvloedde.',
+    ],
+    [
+      'Wat is de Internationale Stijl?',
+      ['Een begin-twintigste-eeuwse modernistische benadering met geometrische vormen, functioneel ontwerp en minimaal ornament over culturen heen',  'Een decoratieve beweging met internationale symbolen op gevels', 'Een designtraditie met nadruk op lokaal karakter', 'Een benadering die bouwontwerp aanpast aan elk land\'s historische vernaculaire stijl'],
+      0,
+      'De Internationale Stijl (geformaliseerd in jaren 1930) benadrukte dat modernistische principes een universele taal creëerden. Schone lijnen, functionele eenvoud en industriële materialen typeerden het.',
+    ],
+    [
+      'Wat is een stalen skeletconstructie en waarom was het revolutionair?',
+      ['Een constructiesysteem met stalen kolommen en balken voor alle lasten, waardoor muren dun en flexibel worden', 'Een decoratief stalen rooster op een metselwerk gebouw', 'Een stelsel stalen kabels van boven om gebouwgewicht te ondersteunen', 'Een traditioneel metselwerk met verborgen stalen stangen'],
+      0,
+      'Stalen skeletteconstruie, ontwikkeld in laat-negentiende-eeuws Chicago, liet gebouwen veel hoger worden dan alleen metselwerk kon. Het skelet draagt alle lasten; gevels worden niet-dragende huiden.',
+    ],
+    [
+      'Wat is een plat dak en welk voordeel zagen modernisten erin?',
+      ['Een horizontaal dakoppervlak bruikbaar als terras of tuin, vervanging voor traditionele zadeldaken', 'Een dak van dunne platte metaalplaten in plaats van gekromde tegels', 'Een dak met minimale helling voor langzaam water afvoeren', 'Een dak dat plat lijkt van beneden, maar eigenlijk een verborgen zadeldak is'],
+      0,
+      'Modernisten gaven voorkeur aan platte daken omdat ze bruikbare buitenruimte creëerden, constructie vereenvoudigden en geometrische helderheid uitdrukten. Le Corbusier\'s Vijf Punten noemden het daktuinaprofiel.',
+    ],
+  ],
   msc: [
     [
       'De schets van Le Corbusier voor de Maison Dom-Ino uit 1914 wordt meestal aangehaald als de conceptuele oorsprong van welk bepalend kenmerk van gebouwen in de internationale stijl?',
@@ -284,6 +376,98 @@ export const ARCH_MODERN: CategoryContent = {
 };
 
 export const ARCH_HISTORIC: CategoryContent = {
+  bscba: [
+    [
+      'Wat is de primaire constructieve functie van een vliegende steunbeer in gotische architectuur?',
+      ['Het voert de laterale stuwkracht van hoge stenen gewelven naar buiten af aan externe pijlers, weg van schepmuren', 'Het versterkt binnenmuren door als een dragende boog in binnenruimte te functioneren', 'Het biedt een decoratief raamwerk voor gebrandschilderde ramen', 'Het voert regenwater van het dak naar beneden af'],
+      0,
+      'Stenen gewelven duwen zowel naar buiten als naar beneden. Vliegende steunberen zijn externe stenen armen die deze laterale stuwkracht opvangen en veilig naar externe pijlers afvoeren, zodat muren dunner kunnen zijn.',
+    ],
+    [
+      'Wat zijn de klassieke orden en hoeveel hoofdtypes zijn er?',
+      ['Dorisch, Ionisch en Korinthisch—de drie Griekse orden, later aangevuld met Toscaans en Composiet in de Renaissance', 'Orders van monniken in kloosters die kloosterkerkenarchitectuur beïnvloedden', 'Vijf verschillende soorten steenblokken voor antieke Griekse constructie', 'Kolomtypes op basis van hun hoogte-breedte-verhouding'],
+      0,
+      'De klassieke orden zijn systemen voor het proportioneren en verfraaien van kolommen. Dorisch is eenvoudigst, Ionisch heeft scrolls, Korinthisch heeft acanthusbladeren. Renaissance voegde Toscaans en Composiet toe.',
+    ],
+    [
+      'Welk probleem lost een pendentief op bij koepelbouw?',
+      ['Het vormt de overgang van een vierkante basis naar een cirkelvormige koepelbasis, wat het geometrisch mismatch opbridgt', 'Het voorkomt dat de koepel scheurt door thermische uitzetting en krimp', 'Het biedt een akoestische kamer die geluiden onder de koepel doet resoneren', 'Het versterkt de koepel tegen laterale windbelasting op het gekromde oppervlak'],
+      0,
+      'Koepels zijn van nature cirkelvormig, maar ruimtes eronder zijn meestal vierkant. Een pendentief is een gekromde driehoekige stuk metselwerk dat vloeiend van de hoeken opstijgt en een cirkelvormige ring vormt.',
+    ],
+    [
+      'Wat is het verschil tussen een tongewelf en een kruisgewelf?',
+      ['Een tongewelf is een doorlopende halflinder; een kruisgewelf ontstaat door twee tongewelven onder rechte hoeken te snijden', 'Een kruisgewelf gebruikt stenen ribben; een tongewelf gebruikt alleen doorlopende gekromde oppervlakken', 'Een tongewelf kan alleen rechthoekige ruimtes overspannen; kruisgewelf werkt op vierkante en ronde ruimtes', 'Tongewelf vereist uitgebreide houten bekisting; kruisgewelf kan zonder tijdelijke steun gebouwd worden'],
+      0,
+      'Een tongewelf is een doorlopende halfronde boog over de lengte van een ruimte. Een kruisgewelf ontstaat uit twee tongewelven die elkaar rechthoeks snijden, met diagonale graten waar ze elkaar raken.',
+    ],
+    [
+      'Wat zijn de Vijf Klassieke Orden?',
+      ['Toscaans, Dorisch, Ionisch, Korinthisch en Composiet—systemen voor het proportioneren van kolommen', 'Vijf boogsoorten gebruikt in antieke constructie: spits, rond, segmentaal, hoefijzer, parabolisch', 'Vijf geometrische verhoudingen die alle renaissance-gevels regeerden', 'Vijf antieke beschavingen\' benaderingen van tempel-ontwerp'],
+      0,
+      'De Vijf Orden zijn systematische regels voor kolomontwerp met hun kapitelen en gesteentes. Drie stammen uit Griekse oudheid (Dorisch, Ionisch, Korinthisch); Romeinen formaliseerden twee meer (Toscaans, Composiet).',
+    ],
+    [
+      'Wat is een ribgewelf en waarom gaven gotische bouwers de voorkeur eraan boven kruisgewelven?',
+      ['Een gewelf met stenen ribben langs diagonalen die lasten concentreren, dunnere vulling mogelijk makend', 'Een gewelf versterkt met ijzeren ribben in de steen ingebed', 'Een gewelf met ribben die puur decoratief zijn, geen last dragend', 'Een gewelfsysteem uitsluitend in islamitische architectuur, nooit in christelijke Europa'],
+      0,
+      'Ribgewelven voegen een stenen skelet langs de structurele lijnen toe. Dit concentreert lasten in ribben terwijl dunne vulling bijna als vliesgevel werkt, wat gewicht en materiaal reduceert.',
+    ],
+    [
+      'Wat is een Palliadisch venster?',
+      ['Een hoge boogopening in het midden geflankeerd door twee kortere, platkoppige openingen, één samenstelling', 'Drie identieke rondboogopeningen van gelijke hoogte', 'Één groot cirkelvormig venster boven een rechthoekige deur', 'Een paar lancetvensters bekroond door een gedeelde spitse boog'],
+      0,
+      'Een Palladiaans (of Serliaans) venster paren een centrale boogopening, vaak de breedste, met twee smallere platkoppige openingen aan weerszijden. Serlio illustreerde het in zestiende eeuw; Palladio maakte het zijn handtekening.',
+    ],
+    [
+      'Waardoor wordt een romaanse kerk meestal gekarakteriseerd?',
+      ['Dikke muren, halfronde bogen, tongewelven, kleine vensters en donkere binnenruimtes', 'Spitsbogen, externe vliegende steunberen, dunne muren en grote gebrandschilderde ramen', 'Sierdecoratie-arcades, heldere kleuren en meerdere koperen koepels aan buitenzijde', 'Platte daken, open binnenplanning en minimaal buitenornament'],
+      0,
+      'Romaanse kerken (elfde-twaalfde eeuwen) gebruikten massieve stenen muren om gewelfdruk te weerstaan, wat duistere, fortvormige ruimtes creëerde. Halfronde bogen vereisten doorlopende muursteun; spitse bogen en steunberen konden later.',
+    ],
+    [
+      'Wat zijn muqarnas in islamitische architectuur?',
+      ['Honingraatachtige lagen van kleine driedimensionale niche-corbelen met decoratieve, lichtmodulerende oppervlakken', 'Geometrische stervormige tegelwerk op binnenpleinenof muren', 'Kalligrafische inscripties in bogenstenen gekauwd', 'Houten consoles die overhangende balkons ondersteunen'],
+      0,
+      'Muqarnas zijn opgebouwd uit kleine niche-eenheden in lagen gestapeld, elk uitstekend en gedraaid. Ze verschijnen bij koepel-muur overgangen en mihrabs, als ongelooflijk rijke decoratie en lichtbreking.',
+    ],
+    [
+      'Wat is de Dorische orde en wat onderscheidt zijn fries?',
+      ['De fries wisselt tussen triglieven (blokken met drie verticale staven) en metopenpanelen, vaak gevuld met sculptuur', 'De fries is een doorlopende gebeeldhouwde band over de volle geste-lengte zonder onderbrekingen', 'De fries gebruikt gepaarde volute-consoles die kroonlijst op regelmatige intervallen ondersteunen', 'De fries toont rijen kleine rechthoekige tandjes (tandlijst) onder de kroonlijst'],
+      0,
+      'De Dorische orde is eenvoudigst van de klassieke orden, met vlak kapiteel en stevige verhoudingen. Zijn fries wisselt triglieven (houten balkuiteinden uit vroeger) en metopenpanelen af.',
+    ],
+    [
+      'Wat is het doel van dougong-consolesets in traditionele Chinese houtarchitectuur?',
+      ['Ze verdelen daklasten en overstekgewicht naar kolommen terwijl het frame seismische flexibiliteit toestaat', 'Ze zijn puur decoratieve snijwerk die keizerslijke status signaleren', 'Ze voeren regenwater van het dak in het houten skelet af', 'Ze ondersteunen het dak tijdens constructie voordat permanente stenen muren gebouwd worden'],
+      0,
+      'Dougong (ook consoelclusters) zijn in elkaar grijpende houten elementen op kolommen, precies gesneden om zonder spijkers of lijm in elkaar te grijpen. Ze buigen licht bij seismische of windbelasting.',
+    ],
+    [
+      'Wat is de drieeenheid van Vitruvius van architecturale kwaliteiten?',
+      ['Stevigheid (sterkte/duurzaamheid), bruikbaarheid (functie) en schoonheid (esthetiek)—alle drie moeten aanwezig zijn', 'Vorm, materiaal en verhouding—de drie elementen voor klassiek ontwerp', 'Symmetrie, harmonie en geschiktheid—de drie principes voor stadsoewijk-ontwerp', 'Structuur, versiering en schaal—de drie factoren voor klassieke compositie'],
+      0,
+      'Vitruvius (eerste eeuw v.Chr.) stelde dat elk gebouw constructief sterk (firmitas), functioneel nuttig (utilitas) en visueel aangenaam (venustas) moest zijn. Dit drieluik werd foundations voor westerse architectuurtheorie.',
+    ],
+    [
+      'Wat is romaans stenen gewelfwerk en waarom vertrouwden bouwers op dikke muren?',
+      ['Stenen tongewelven duwen naar buiten; dikke muren waren de enige manier dit zonder vliegende steunberen te weerstaan', 'Dikke muren boden betere isolatie tegen koude winters', 'Dikke muren droegen het gewicht van grote kathedraal-klokken', 'Stenen gewelven waren tijdelijke structuren met voortdurende muurversterking'],
+      0,
+      'Romaanse stenen gewelven (ton, kruis, rib) oefenen laterale druk uit. Zonder vliegende steunberen (later in Gotiek) was massieve, doorlopende muur de enige oplossing voor deze naar-buiten-gerichte druk.',
+    ],
+    [
+      'Wat is de Composiete orde?',
+      ['Een renaissance-geformaliseerde orde met Ionische voluten boven Korinthische acanthusbladeren, rijkste van vijf orden', 'Een orde geïnvend tijdens Renaissance zonder antiek voorganger, met geometrisch in plaats van organisch ornament', 'Een orde met Egyptische lotus-kapitelen en Griekse Dorische verhoudingen', 'Een laat-Romeinse orde met alleen marmer, nooit baksteen of steen'],
+      0,
+      'De Composiete kapiteel neemt de hoge klok van acanthusbladeren van Korinthisch en voegt Ionische voluten toe aan hoeken. Hoewel op echte Romeinse structuren, werd het als vijfde orde geformaliseerd.',
+    ],
+    [
+      'Wat heet islamitisch geometrisch patroonwerk en waar wordt het doorgaans gevonden?',
+      ['Zellij of girih—geometrische stervormige tegel- en steenpatronen op binnenpleinen, muren en architectuuropppervlakken', 'Arabesk—gebeeldhouwde houten schermen alleen voor roosteevensters en balkons', 'Muqarna—honingraatgewelfwerk alleen in koepels en mihrabs', 'Kalligrafie—primaire decoratieve kunst, geen geometrische patronen'],
+      0,
+      'Zellij (van Arabisch zelij) of girih verwijst naar geometrisch sterpatroon-tegelwerk veel gebruikt in islamitische architectuur. Deze precies gesneden en passende tegels creëren complexe, repetitieve geometrische ontwerpen.',
+    ],
+  ],
   msc: [
     [
       'Wat is bij de bouw van gotische kathedralen de primaire constructieve functie van de vliegende steunbeer?',
@@ -563,6 +747,98 @@ export const ARCH_HISTORIC: CategoryContent = {
 };
 
 export const CASTLES: CategoryContent = {
+  bscba: [
+    [
+      'Wat was een garderobe in een middeleeuwse burcht?',
+      ['Een toiletruimte, ook gebruikt voor kledingopslag, omdat ammoniakdampen motten en vlooien afweerden', 'Een grote inloopkast waar de familie alle kleding en textiel bewaarde', 'Een decoratieve hal voor het tonen van heraldische schilden en familiewapens', 'Een gedeelde slaapruimte voor huishoudelijke bedienden op lagere verdiepingen'],
+      0,
+      'Garderobe betekent letterlijk "guard the robe". Deze kleine muuraggregaten dienden als privaten met afvoerschacht naar de slotgracht, terwijl ze ook als kledingopslag dienden. Ammoniakdampen weerden daadwerkelijk motten en insecten af.',
+    ],
+    [
+      'Wat was de functie van een groote zaal in een middeleeuwse burcht?',
+      ['De gemeenschappelijke ruimte waar het huishouden at, recht sprak en bezoekers ontving', 'Een puur ceremoniële ruimte voor grote feestdagen en religieuze gelegenheden', 'De privé-slaapkamer van de heer op de top van de donjon', 'Een buitenplaats voor militaire training en toernooien'],
+      0,
+      'De groote zaal was het sociale en bestuurlijke hart van een burcht: huishouden at er samen, heer hield gerechtszitting, geschillen werden opgelost en belangnjke bezoekers ontvangen. Het drukte gezag en rijkdom uit.',
+    ],
+    [
+      'Wat was een motte-and-bailey burcht?',
+      ['Een versterking met aarden heuvel (motte) met toren, omringd door ommuurde binnenplaats (bailey) met gebouwen', 'Een meerstelig stenen donjon zonder aardwerk of verdedigingsomtrek', 'Een burcht omringd door water als enige verdediging', 'Een houten palisade nederzetting zonder permanente stenen structuren'],
+      0,
+      'Motte-and-bailey burchten domineerden vroeg-middeleeuwse Engeland (elfde-twaalfde eeuwen). Motte was verhoogde aarden platform met houten of stenen toren; bailey was ommuurde onderplaats met stallen, keukens.',
+    ],
+    [
+      'Wat was het primaire doel van een valluik in een burchtpoort?',
+      ['Een zwaar rooster dat kon worden neergelaten om de poortdoorgang te blokkeren tegen aanvallers', 'Een decoratief ijzeren rooster puur voor visueel effect aan de ingang', 'Een houten poortblad dat op grote scharnieren draaide', 'Een smalle gleuf waardoor boogschutters naar buiten konden schieten'],
+      0,
+      'Een valluik was een ijzeren of houten rooster boven de poort dat snel kon worden neergelaten. Meerdere valluiken achtereenvolgens voegden defensieve lagen toe en trapten aanvallers op.',
+    ],
+    [
+      'Wat was een seneschal (drost) in de hiërarchie van een middeleuws huishouden?',
+      ['De hoofdadministrateur die het landgoed, huishoudelijke financiën en personeel beheerde namens de heer', 'De militaire commandant belast met garnizoenscommando en muurverdediging', 'De officier uitsluitend verantwoordelijk voor het onderhoud van paarden en jachtstock van de heer', 'De hoofdkok en hoofd van de keukenoperaties'],
+      0,
+      'De seneschal (drost) was de generaal-manager van de heer: toezicht op financiën, personeelsbeheer, gerechtszitting voorzitter en landgoeduitvoering. Dit was een prestigieuze positie voor een ridder of edelman.',
+    ],
+    [
+      'Wat was een solarium in een middeleeuwse burcht?',
+      ['De privé-slaapkamer van de heer op hogere verdieping, apart van de openbare groote zaal', 'Een met zon overgoten ruimte alleen op zuidzijde van een gebouw', 'Een ceremoniële ruimte uitsluitend voor religieuze diensten', 'Een buitenterras of loggia voor buitenvermaak'],
+      0,
+      'Solarium is afgeleid van "solarium" (zonnige ruimte). Het was een private kamer, meestal via eigen trap bereikt, waar de familie zich kon terugtrekken van de drukke groote zaal.',
+    ],
+    [
+      'Wat was het schermpassage in een groote zaal?',
+      ['Een dwarsdoorgang aan het lage einde (tegenover de daïs) als scherm voor tocht en keukengeluid, met toegang voor bedienden', 'Een houten scheidingswand die het private gebied volledig van de groote zaal afsloot', 'Een smalle gang naar verborgen vluchtgangen tijdens belegering', 'Een galerij boven de zaal waar muzikanten tijdens feesten speelden'],
+      0,
+      'Het schermpassage, gescheiden van de zaal door een gebeeldhouwd houten of stenen scherm, verbond keuken, drankkamer en broodkamer. Het stelde bedienden toe tussen werkruimtes te gaan zonder diners te storen.',
+    ],
+    [
+      'Wat waren mordgaten in een burchtpoort?',
+      ['Openingen in het gewelfd plafond waardoor verdedigers stenen, kokend water of pijlen op aanvallers onder gooiden', 'Gevangeniscellen voor ter dood veroordeelde gevangenen voor executie', 'Tunnels waardoor aanvallers na poortbreuk konden ontsnappen', 'Drainageopeningen voor water-afvoering tijdens zware regen'],
+      0,
+      'Mordgaten waren openingen in poortdeurdak, laten verdedigers van bovenaf dood regenen op aanvallers beneden. Dit maakte de ingang zelf een doodzone, waar breuk niet automatisch toegang garandeerde.',
+    ],
+    [
+      'Waarvoor was een huishoudmarschalк (stalmeester) verantwoordelijk?',
+      ['Het beheer van paarden, stallen en logistiek wanneer het huishouden tussen landgoed-en reisde', 'Het leiding geven aan militaire operaties en garnizoenscommando', 'Het voorproeven van al het voedsel voordat het de heer bereikte tegen vergiftiging', 'Het toezicht op alle bedienden en huishoudactualiing'],
+      0,
+      'De marschalк beheerde paarden, stallen en logistiek, inclusief logies- en vervoersorganisatie bij reizen. Paarden vertegenwoordigden kapitaalsinvestering, militaire macht en essentieel vervoer.',
+    ],
+    [
+      'Wat was het doel van de drankkamer in een groot huishouden?',
+      ['Het bewaarde tonnen (grote vaten) met ale en wijn, niet boter als het moderne woord suggereert', 'Het bereidde en diende alle maaltijden uitsluitend de familie van de heer', 'Het bewaarde droge goederen als graan, meel en conservenvoedsel', 'Het diende als privékantoor van de heer voor financiële administratie'],
+      0,
+      '"Drankkamer" stamt af van Oudfraans "boterie" (tonnen-opslag), niet boter. Bij het schermpassage stelde de butler er drank snel in te schenken. Butler was senior officier over waardevol, gemakkelijk gestolen drank.',
+    ],
+    [
+      'Wat bewaarde de broodkamer in een middeleuws huishouden?',
+      ['Brood en ander panis (voedsel), ondanks het moderne woord-associatie met pannen', 'Kookpannen, lepels en metalen keukenuitrusting', 'Kleding en persoonlijke textiel van het huishouden', 'Tuingroente en seizoensgebonden ingemaakt voedsel'],
+      0,
+      '"Broodkamer" stamt af van Oudfraans "paneterie" (broodopslag) van het Latijnse "panis". Naast drankkamer bij schermpassage diende de pantler brood snel zonder zaal over te steken.',
+    ],
+    [
+      'Wat was livery in middeleeuwse bediendevergoeding?',
+      ['Een regelmatige toelage voor voedsel, drank, kaarsen en stof betaald naar rang, niet als contante betaling maar als "geleverde" goederen', 'Een formeel uniform of insigne voor heraldische kleuren weergave', 'Een vaste jaarlijkse kontantloon uitbetaald eenmaal per jaar op Michaëlis', 'Een aantal vrije dagen per jaar verdiend door langtermijn-bediende'],
+      0,
+      'Livery betekende een toelage "geleverd" als betaal onderdeel: brood, ale, kaarsen of stof, precies naar rang geschaald. Huishoudingverordeningen specificeerden exact hoeveelheden vanwege kosten.',
+    ],
+    [
+      'Wat waren de primaire verdedigingskarakteristieken van een burchmuur?',
+      ['Kantelen (afwisselende massieve merlons en openingen), muurloopbruggen voor patrouille en vuur en soms torens voor zijdelings vuur', 'Een enkele doorlopende gladde muur zonder onderbrekingen of uitsteeksels', 'Een lage muur voornamelijk ter afbakening, niet belegering-weerstand', 'Een extreem dikke massieve muur zonder binnengang of trappen'],
+      0,
+      'Burchmuren hadden kantelen (gekerf paradepet) die schutters bescherming gaven. Een muurloopbrug (allure) liep achter de paradepet voor patrouille en repositionering.',
+    ],
+    [
+      'Wat was de plicht van een almoezenier in een groot huishouden?',
+      ['Het verzamelen en verdelen van restvoedsel en aalmoezen van de heer\'s tafel aan armen volgens vaste regels', 'Het beheer van alle huishoudelijke boekhouden en financiële registers', 'Het toezicht op alle schoon- en waskamer-werk in de burcht', 'Het fungeren als huiskapelaan en het leiden van dagelijkse religieuze diensten'],
+      0,
+      'De almoezenier verzamelde over-voedsel, vooral brood en vlees van de hoge tafel en verdeelde dit aan armen bij de poort. Dit was echt liefdadigheid en toont het piëteitsstatues van de heer.',
+    ],
+    [
+      'Wat was het doel van afzonderlijke keukengebouwen in middeleeuwse burchten?',
+      ['Het isoleren van brandrisico van voortdurende haarden en ovens, beschermende houtdak zalen en woningranges', 'Het scheiden van keukengeuren en keukenpersoneel van de familie-kwartieren van de heer', 'Het vereenvoudigen van opruimwerk na maaltijden zonder zaal-storingen', 'Ruimte-efficiëntie door geen dikke brandmuren te vereisen'],
+      0,
+      'Afzonderlijke keukens waren vooral brandveiligheidsmaatregel: open haarden en ovens gooiden voortdurend vonken. Een keukenbrand kon hele houten/riet gebouwen vernietigen. Gedekte doorgang reduceerde risico.',
+    ],
+  ],
   msc: [
     [
       'Waarom werden latrines in een middeleeuws kasteel vaak "garderobes" genoemd in plaats van simpelweg privaten?',

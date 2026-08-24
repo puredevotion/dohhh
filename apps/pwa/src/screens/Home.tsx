@@ -1,4 +1,11 @@
-import { DEFAULT_RULES, DIFFICULTY_ORDER, DIFFICULTY_TIERS, shortenId, type Locale } from '@dohhh/engine';
+import {
+  DEFAULT_RULES,
+  DIFFICULTY_ORDER,
+  DIFFICULTY_TIERS,
+  shortenId,
+  type Difficulty,
+  type Locale,
+} from '@dohhh/engine';
 import { Button, Card, Input, Typography } from '@heroui/react';
 import { useEffect, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -183,11 +190,12 @@ function Row({
   tier,
   tierInfo,
 }: {
-  tier: 'graduate' | 'phd' | 'professor';
+  tier: Difficulty;
   tierInfo: { label: string; award: number; penalty: number };
 }): ReactNode {
   const colour = {
-    graduate: 'text-tier-graduate',
+    bscba: 'text-tier-bscba',
+    msc: 'text-tier-msc',
     phd: 'text-tier-phd',
     professor: 'text-tier-professor',
   }[tier];

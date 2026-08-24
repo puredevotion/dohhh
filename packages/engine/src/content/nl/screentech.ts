@@ -5,7 +5,98 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const SCREEN_TECH: CategoryContent = {
-  bscba: [],
+  bscba: [
+    [
+      'Wat staat de afkorting "fps" voor in video en cinematografie?',
+      ['Beelden per seconde', 'Veld per monster', 'Frequentie van het beeldsignaal', 'Filmverwerkingsstandaard'],
+      0,
+      'FPS (beelden per seconde) meet hoeveel individuele beelden per seconde weergegeven worden, rechtstreeks beïnvloedend de waargenomen bewegingsvloeibaarheid en zichtbare bewegingsonscherpte.',
+    ],
+    [
+      'Welke kleurruimte gebruikt rood, groen en blauw als zijn drie primaire kleurkanalen?',
+      ['RGB', 'CMYK', 'HSL', 'YUV'],
+      0,
+      'RGB (rood, groen, blauw) is de standaard kleurruimte voor digitale camera\'s en schermen, waar alle zichtbare kleuren ontstaan door variatie in intensiteit van deze drie primaire kanalen.',
+    ],
+    [
+      'Wat is de standaardframerate die traditioneel in bioscooptheaters wordt gebruikt?',
+      ['24 beelden per seconde', '30 beelden per seconde', '60 beelden per seconde', '120 beelden per seconde'],
+      0,
+      'Cinema gebruikt sinds de jaren 1920 bij de introductie van gesynchroniseerd geluid 24fps als standaard, en dit blijft vandaag de dag de wereldwijde bioscoopstandaard.',
+    ],
+    [
+      'Wat is de primaire functie van een codec in digitale video?',
+      ['Comprimeert en decomprimieert videogegevens voor efficiënte opslag en verzending', 'Meet kleurnauwkeurigheid tussen verschillende camera\'s', 'Converteert filmbeelden naar digitaal formaat', 'Synchroniseert audio met video tijdens afspelen'],
+      0,
+      'Een codec (coder-decoder) comprimeert video voor opslag of verzending en decomprimieert deze voor afspelen, waardoor efficiënte verwerking van grote videobestanden mogelijk wordt.',
+    ],
+    [
+      'Waarvoor wordt chroma-key-compositie primair gebruikt?',
+      ['Het vervangen van een gekleurde achtergrond met een ander beeld', 'Ongewenste kleurkleuring in beelden corrigeren', 'Gevoelige uitzendinhoud versleutelen', 'Het meten van omgevingslicht op set'],
+      0,
+      'Chroma key stelt filmmakers in staat om een effen gekleurde achtergrond uit beelden te verwijderen en er een nieuwe in te composeren, essentieel voor greenscreen en studiovisuele-effecten.',
+    ],
+    [
+      'Welke beeldverhouding komt het beste overeen met de originele bioscoopstandaard?',
+      ['1.37:1 (Academy)', '1.85:1', '2.39:1 (Anamorfisch)', '16:9 (Breedbeeld)'],
+      0,
+      'De Academy-beeldverhouding van 1.37:1 was gedurende decennia de standaard voor bioscoopfilms voordat breedbeeldformaten in de jaren 1950 gangbaar werden.',
+    ],
+    [
+      'Waarvoor wordt motion capture (mocap) primair in film en animatie gebruikt?',
+      ['Het opnemen van acteurbewegingen om digitale karakteranimatie aan te sturen', 'Fotograferen van levende acteurs voor traditionele matte paintings', 'Het stabiliseren van wankele handheld-cameraopnames', 'Het detecteren van artefacten in gecomprimeerde videostromen'],
+      0,
+      'Motion capture registreert fysieke bewegingen van een acteur met behulp van markers, vertaalt deze naar digitale personages en bewaart natuurlijke prestatie- en bewegingskwaliteit.',
+    ],
+    [
+      'Wat is het primaire doel van kleurcorrectie in postproductie?',
+      ['Kleur, helderheid en contrast aanpassen voor een gewenste visuele stijl', 'Beschadigde of gekraste film uit originele negatieven repareren', 'Ongewenste objecten uit achtergrondscenery verwijderen', 'Beelden van meerdere camera\'s met verschillende sensoren synchroniseren'],
+      0,
+      'Kleurcorrectie past kleur, helderheid en contrast aan om stemming en visuele continuïteit tot stand te brengen, waardoor ruw materiaal in een gepolijst eindresultaat wordt omgezet.',
+    ],
+    [
+      'Wat is een digital intermediate (DI) in film-postproductie?',
+      ['Het converteren van filmbeelden naar digitale vorm voor kleurcorrectie en effecten', 'De eerste ruwe montage die aan studiobonzen wordt getoond', 'Een veiligheidsback-up van het originele cameranegatief', 'Een gecomprimeerd formaat gebruikt voor distributie van dailies aan extern team'],
+      0,
+      'Een digital intermediate stelt filmmakers in staat om digitale kleurcorrectie en effectenwerk uit te voeren voordat naar film of digitale afleveringsformaten wordt gerendered.',
+    ],
+    [
+      'Wat beschrijft resolutie in digitale video het beste?',
+      ['Het aantal horizontale en verticale pixels in een afbeelding', 'De framerate waarmee de video is opgenomen', 'De kleurbitdiepte toegewezen per kanaal', 'Het dynamisch bereik of helderheid van een camera'],
+      0,
+      'Resolutie verwijst naar de pixelafmetingen van een videoafbeelding, zoals 1920x1080 of 3840x2160, wat de zichtbare scherpte en fijndetail beïnvloedt.',
+    ],
+    [
+      'Wat is het primaire voordeel van RAW-videoformaten in vergelijking met gecomprimeerde formaten?',
+      ['Het behouden van maximale sensorgegevens voor flexibiliteit in kleurcorrectiewerk', 'Het bereiken van snellere bestandsoverdrachtsnelheden via netwerken', 'Het verminderen van opslagvereisten door kleinere bestandsgrootte', 'Betere compatibiliteit met consumentenapparatuur'],
+      0,
+      'RAW-video legt ongeverwerkte sensorgegevens zonder compressie of kleurverwerking vast, waardoor maximale informatie voor creatieve en correctieve aanpassingen behouden blijft.',
+    ],
+    [
+      'Wat is een LED-wand (of "Volume") in virtuele productie?',
+      ['Een scherm met live-gerenderde achtergronden achter acteurs zonder greenscreen', 'Een wand met lampen voor verlichting en illuminatie van studiostellen', 'Een opslagapparaat voor opnamen van extra gelijktijdige camerakanten', 'Een projectiescherm dat vooraf opgenomen omgevingsachtergronden weergeeft'],
+      0,
+      'LED-wanden in virtuele productie geven fotorealistische omgevingen weer die in real-time worden gerenderd, waardoor acteurs en camera\'s op een natuurlijke manier met achtergronden kunnen interageren.',
+    ],
+    [
+      'Waar staat het acroniem HDR voor in videotechnologie?',
+      ['High Dynamic Range', 'High Definition Recording', 'Horizontal Display Resolution', 'High Density Rendering'],
+      0,
+      'HDR (High Dynamic Range)-video legt een breder bereik van helderheid vast dan standaardvideo, wat meer detail in zowel heldere hoogtepunten als donkere schaduwen weergeeft.',
+    ],
+    [
+      'In professionele audio, waar staat PCM voor?',
+      ['Pulse Code Modulation', 'Phase-Corrected Measurement', 'Progressive Codec Mapping', 'Perceptual Color Model'],
+      0,
+      'PCM (Pulse Code Modulation) is het standaard digitale audioformaat dat geluidsgolven met regelmatige intervallen bemonstert, gebruikt in uitzending en professionele opname.',
+    ],
+    [
+      'Wat onderscheidt een digitale bioscoopprojector primair van filmprojectie?',
+      ['Het gebruiken van elektronische beeldvormingstechnologie in plaats van mechanische filmprojectie', 'Het vereisen van speciaal vervaardigde zilveren projectieschermen', 'Het onvermogen om stereoscopische 3D-inhoud weer te geven', 'Het produceren van minder helderheid dan traditionele filmprojectoren'],
+      0,
+      'Digitale bioscoopprojectoren gebruiken elektronische beeldvormingstechnologie zoals DLP of lasers in plaats van mechanische filmprojectie, wat formaatflexibiliteit en gemakkelijkere distributie biedt.',
+    ],
+  ],
   msc: [
     [
       'Welke speelfilm uit 1985 bevat de scène die algemeen wordt gezien als het eerste volledig computer-gegenereerde personage in een live-action film?',

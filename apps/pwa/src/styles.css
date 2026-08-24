@@ -13,8 +13,9 @@
 @source '../index.html';
 
 @theme {
-  /* One accent per difficulty tier, matching the app icon's three rings. */
-  --color-tier-graduate: oklch(0.72 0.14 250);
+  /* One accent per difficulty tier, matching the app icon's rings. */
+  --color-tier-bscba: oklch(0.8 0.09 250);
+  --color-tier-msc: oklch(0.72 0.14 250);
   --color-tier-phd: oklch(0.68 0.19 296);
   --color-tier-professor: oklch(0.79 0.16 78);
 

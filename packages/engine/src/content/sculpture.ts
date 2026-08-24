@@ -16,7 +16,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What is the primary advantage of lost-wax casting over direct stone carving?',
       [
-        'The artist can refine details in wax before the final cast is made',
+        'Details refined in wax before casting',
         'It produces larger sculptures than carving',
         'It requires no kiln or furnace',
         'It cannot crack or weather over time',
@@ -60,7 +60,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Bronze is favored for casting sculpture because of which property?',
       [
-        'Its low melting point allows fine detail capture and it resists oxidation when patinated',
+        'It resists oxidation once patinated',
         'It remains warm to the touch indefinitely',
         'It becomes harder when exposed to sunlight',
         'It weighs less than equivalent marble sculptures',
@@ -82,7 +82,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Gian Lorenzo Bernini\'s David differs from Michelangelo\'s primarily in its',
       [
-        'dynamic, twisting pose and moment of action rather than composed stillness',
+        'a dynamic, twisting pose of action',
         'material—bronze rather than marble',
         'smaller scale—it is a miniature sculpture',
         'classical, symmetrical frontal orientation',
@@ -104,7 +104,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Rodin\'s The Burghers of Calais is notable for',
       [
-        'depicting ordinary citizens as heroic subjects without idealization',
+        'ordinary citizens depicted as heroic subjects',
         'being carved entirely from a single marble block',
         'representing a biblical narrative',
         'its use of gilded bronze to catch light',
@@ -126,7 +126,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What architectural element often features sculptural relief panels?',
       [
-        'Friezes and metopes on temples',
+        'Temple friezes',
         'Window hinges',
         'Interior door frames',
         'Roof shingles',
@@ -137,7 +137,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Constantine Brancusi\'s sculptures are characterized by',
       [
-        'reduction to essential, abstract geometric forms',
+        'essential, abstract geometric forms',
         'extreme realism and photographic detail',
         'heavy use of colorful glazed tiles',
         'complex interior mechanisms',
@@ -159,7 +159,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What is the Elgin Marbles\' original source?',
       [
-        'The Parthenon temples on the Acropolis of Athens',
+        'The Parthenon in Athens',
         'Egyptian temples at Thebes',
         'Roman Forum sculptures',
         'Minoan palace ruins on Crete',
@@ -172,7 +172,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What distinguishes the direct carving method pioneered by Modernists from Renaissance blocking-out techniques?',
       [
-        'Direct carving involves working without preliminary models, letting the stone\'s nature guide the final form',
+        'Direct carving works without preliminary models',
         'It requires three years minimum training in granite',
         'Stone is first painted with guidelines before any chisel work',
         'A plaster cast must be made before touching the final block',
@@ -183,7 +183,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'The term "contrapposto" in sculpture refers to',
       [
-        'a pose where the figure\'s weight shifts to one leg, creating dynamic asymmetry',
+        'Weight shifted to one leg, creating asymmetry',
         'the technique of painting bronze with metallic accents',
         'the practice of carving figures in pairs facing each other',
         'the orientation of a sculpture toward true north',
@@ -194,7 +194,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Which ancient culture is credited with developing the lost-wax casting technique to high refinement?',
       [
-        'Etruscan and early Roman',
+        'Etruscan and Roman',
         'Middle Kingdom Egyptian',
         'Mycenaean Greek',
         'Shang Dynasty Chinese',
@@ -205,7 +205,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Barbara Hepworth\'s pierced, abstract forms represent a departure from figural sculpture because they',
       [
-        'prioritize the void and negative space as compositional elements equal to mass',
+        'treat the void as equal to mass',
         'are purely decorative rather than monumental',
         'must be viewed from a single fixed angle',
         'use only salvaged industrial materials',
@@ -216,7 +216,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What is "modeling" in sculptural practice?',
       [
-        'Building form additively (adding material layer by layer) in clay or wax',
+        'Building up material in clay or wax',
         'Making a plaster mold of a finished work',
         'Photographing the sculpture from multiple angles',
         'Polishing the surface to a high sheen',
@@ -227,7 +227,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Donatello\'s bronze David (c. 1440) was revolutionary because',
       [
-        'it was the first large-scale free-standing nude male bronze since antiquity',
+        'the first large male nude bronze since antiquity',
         'it depicted a child rather than an adult hero',
         'the figure was positioned recumbent rather than upright',
         'it incorporated colored glass inlays',
@@ -249,7 +249,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Which material property is essential to achieve a true "white patina" finish on ancient marble sculptures?',
       [
-        'The stone\'s crystalline structure allows light to scatter, creating a luminous surface',
+        'Its crystalline structure scatters light',
         'Repeated applications of mineral oil',
         'Grinding the surface smooth at 5000-grit fineness',
         'Exposure to saltwater for decades',
@@ -260,7 +260,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Gian Lorenzo Bernini\'s approach to sculpture differed from Renaissance ideals in his emphasis on',
       [
-        'theatrical drama, dynamic movement, and swirling drapery over geometric balance',
+        'theatrical drama and dynamic movement',
         'purely symmetrical frontal orientation',
         'matte surface finishes avoiding polishing',
         'small chamber-scale works only',
@@ -271,7 +271,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What artistic principle guided Neoclassical sculptors like Antonio Canova?',
       [
-        'Emulation of Greek and Roman ideals: restrained beauty, moral virtue, and perfect proportions',
+        'Emulation of Greek and Roman ideals',
         'Rejection of all ancient precedent in favor of original invention',
         'Exclusive use of abstract, non-representational forms',
         'Incorporation of mechanical moving parts and gears',
@@ -282,7 +282,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'The technique of "chasing" in bronze sculpture refers to',
       [
-        'hand-finishing cast metal surfaces with hammer and chisel to refine detail',
+        'finishing cast metal with hammer and chisel',
         'coating the bronze with a chemical patina solution',
         'welding separate cast pieces together',
         'painting linear designs onto the finished surface',
@@ -293,7 +293,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Henry Moore\'s family of sculptures emphasizes the formal relationship between',
       [
-        'the abstract human form and the natural landscape',
+        'abstract form and landscape',
         'color theory and emotional symbolism',
         'mechanical precision and industrial repetition',
         'bright surfaces and dark interior cavities',
@@ -304,7 +304,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Which sculptural movement explicitly rejected fine-art marble and bronze in favor of industrial and everyday materials?',
       [
-        'Constructivism (and later, Arte Povera)',
+        'Constructivism',
         'Neoclassicism',
         'Classical Greek',
         'Victorian academic sculpture',
@@ -315,7 +315,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What does the term "edition" mean in the context of casting multiple copies?',
       [
-        'A numbered series of castings from the same mold, each numbered (e.g., 2/8) to indicate sequence and total authorized copies',
+        'A numbered series of castings from the same mold',
         'The original plaster model before any casting begins',
         'A sculpture painted in different color variations',
         'A temporary cast destroyed after exhibition',
@@ -326,7 +326,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Tilman Riemenschneider\'s late Gothic wooden sculptures are prized for their',
       [
-        'intricate undercutting and flowing drapery creating dramatic light-and-shadow interplay',
+        'intricate undercutting and flowing drapery',
         'use of bright enamel paints and gilt decoration',
         'abstract geometric simplification',
         'life-size scale and human anatomical accuracy',
@@ -339,7 +339,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'The rediscovery of Egyptian block statue conventions influenced Modernist abstraction through which key sculptural principle?',
       [
-        'The acceptance of compact, cubic forms that compress the human figure while maintaining formal presence',
+        'Compact, cubic forms that compress the figure',
         'The exclusive use of limestone as a material',
         'The requirement that all sculpture face eastward',
         'The prohibition against depicting individual identity',
@@ -350,7 +350,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'In the lost-wax process, what structural problem necessitates the "core" and "pins" (or "sprues")?',
       [
-        'They prevent the interior mold from floating or shifting during casting, ensuring consistent wall thickness and structural stability',
+        'They stop the mold from shifting',
         'They are purely decorative and optional',
         'They allow water drainage after casting',
         'They serve as attachment points for gilding',
@@ -361,7 +361,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'The Klassizismus movement of early 19th-century Scandinavia established which aesthetic principle in direct reaction to Napoleonic excess?',
       [
-        'Severe geometric clarity, Greek Revival austerity, and moral earnestness as expressions of political stability',
+        'Greek Revival austerity and geometric clarity',
         'Baroque emotional exuberance and dynamic movement',
         'Medieval revival and Gothic ornamentation',
         'Oriental and non-Western formal sources',
@@ -372,7 +372,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What conservation challenge do bronze sculptures face at the cellular level when exposed to the "bronze disease"?',
       [
-        'Cuprous chloride corrosion penetrates the metal matrix, causing structural weakening and irreversible deterioration',
+        'Cuprous chloride corrosion weakens the metal',
         'The patina fades and loses color',
         'The surface becomes too smooth for grip',
         'Internal mold cores expand and crack the bronze',
@@ -383,7 +383,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How did the Expressionist sculptors of early 20th-century Germany diverge from their Rodin-influenced predecessors?',
       [
-        'They emphasized distorted proportion, exaggerated emotion, and raw surface texture over Rodin\'s naturalistic modeling',
+        'Distorted proportion and raw surface texture',
         'They abandoned bronze entirely in favor of stone',
         'They rejected all representational imagery for pure abstraction',
         'They returned to Renaissance ideals of beauty',
@@ -394,7 +394,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'The technique of "troubadour," practiced by later medieval and Renaissance sculptors, involved',
       [
-        'carving portrait faces at high relief while leaving the rest of the figure in lower relief or sketch form',
+        'faces carved in high relief, body left sketch-like',
         'painting elaborate costumes onto finished marble figures',
         'creating hollow bronze shells for ceremonial processions',
         'embedding semi-precious stones into marble to suggest jewelry',
@@ -405,7 +405,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'In the early Renaissance, how did the artist\'s "cartoon" function in relation to sculptural execution?',
       [
-        'It was a full-scale preparatory drawing transferred to stone or clay to guide blocking and carving',
+        'A full-scale drawing transferred to guide carving',
         'It was a humorous sketch unrelated to the finished work',
         'It replaced the need for any preliminary models',
         'It was applied as decorative paint atop the finished sculpture',
@@ -416,7 +416,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How did the development of iron and steel sculpture in the 20th century challenge the material hierarchy of sculpture?',
       [
-        'Iron\'s tensile strength allowed open, linear forms and cantilevers impossible in marble or bronze, democratizing sculptural material',
+        'Iron\'s strength allowed open, cantilevered forms',
         'Steel became more expensive than bronze, elevating its status',
         'Iron\'s susceptibility to rust made it unsuitable for outdoor work',
         'Welding required sculptors to be trained as engineers first',
@@ -427,7 +427,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What did the "truth to materials" principle articulate in Modernist sculptural theory?',
       [
-        'Each material\'s inherent properties and limitations should guide form, rejecting mimicry and false surfaces',
+        'Each material\'s properties should guide its form',
         'All materials are functionally equivalent under proper finishing',
         'The most expensive material always produces the best sculpture',
         'Sculptures should conceal what material they are made from',
@@ -438,7 +438,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'Which Hellenistic sculptural work exemplified "pathos" formalism through compressed, dynamic musculature and psychological intensity?',
       [
-        'The Laocoön group\'s twisted bodies and anguished faces expressing struggle',
+        'Laocoön\'s twisted, anguished bodies',
         'The Nike of Samothrace\'s serene uplifted pose',
         'The Venus de Milo\'s classical contrapposto',
         'The Doryphoros\'s idealized athletic youth',
@@ -449,7 +449,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How did Renaissance anatomists\' influence on sculptors alter the representation of the human body compared to medieval conventions?',
       [
-        'Precise knowledge of underlying musculature, skeleton, and proportion replaced spiritual elongation and abstract idealization',
+        'Precise anatomical knowledge replaced spiritual idealization',
         'Medieval figures became more abstract and less naturalistic',
         'Anatomical study was forbidden by the Church',
         'Renaissance sculptors ignored the body entirely for abstract forms',
@@ -460,7 +460,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What role did the "substitution mold" technique play in accelerating Renaissance bronze production?',
       [
-        'Separate molds for head, torso, limbs could be cast independently then assembled, enabling faster editions and multiple versions',
+        'Separate molds per body part, cast and assembled',
         'It allowed sculptors to carve faster with mechanical tools',
         'It eliminated the need for a foundry furnace',
         'It was purely decorative with no practical function',
@@ -471,7 +471,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'In what way did the Barbizon sculptors\' engagement with landscape realism influence 19th-century outdoor public monuments?',
       [
-        'They integrated naturalistic terrain, vegetation, and geological forms into figural compositions, anchoring monuments in place and time',
+        'They anchored figures in naturalistic terrain',
         'They rejected all figurative sculpture for landscapes only',
         'They eliminated the human figure entirely from public art',
         'They required monuments to be carved from local stone exclusively',
@@ -482,7 +482,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How does the "ground plane" function as a compositional element in Henry Moore\'s abstract sculptures?',
       [
-        'It is not a passive base but an active relational field shaping how negative space and form dialogue across openings and voids',
+        'An active field shaping form and negative space',
         'It is purely functional to prevent tipping',
         'Moore always elevated sculptures on tall pedestals',
         'The ground plane is irrelevant to his work\'s meaning',
@@ -493,7 +493,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What conservation principle applies to the structural stabilization of ancient marble sculptures that have fractured along grain lines?',
       [
-        'Adhesives must be reversible and mechanically weaker than the stone to prevent new stress lines and allow future treatment',
+        'Reversible adhesives, weaker than the stone',
         'Any gap must be permanently filled with colored epoxy',
         'Fractured marbles cannot be repaired',
         'Modern concrete is the best bonding agent',
@@ -506,7 +506,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'The "paragone" argument of Renaissance sculptors asserted the superiority of three-dimensional form over painting based on which epistemological premise?',
       [
-        'The physical solidity and architectural integration of sculpture granted it direct access to material reality and space that illusionistic painting could only simulate',
+        'Its physical solidity and spatial presence',
         'Sculpture was more expensive to produce than painting',
         'Painting had no tradition in antiquity',
         'Marble was the only morally pure artistic medium',
@@ -517,7 +517,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How did Michelangelo\'s theological conception of the sculptor\'s role—"liberating" the figure from the stone—reflect Neoplatonic idealism?',
       [
-        'The form pre-existed in the stone as divine idea; the sculptor\'s task was revealing the God-given essence already present, not imposing external invention',
+        'The form already existed in the stone, waiting to be revealed',
         'Michelangelo believed sculpture was purely mechanical labor',
         'He rejected all philosophical frameworks in favor of empirical trial',
         'Stone was dead matter that required animation through painting',
@@ -528,7 +528,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What methodological innovation did Rodin introduce to public monument practice that shifted sculptural meaning from static commemoration to psychological temporality?',
       [
-        'Fragmentary bodies, open surfaces, and unfinished zones conveyed internal psychological states and temporal flux rather than heroic timelessness',
+        'Fragmentary, unfinished forms conveyed psychological flux',
         'Photographic documentation of the sculpting process',
         'The exclusive use of classical idealized forms',
         'Rejection of all public commissions in favor of private galleries',
@@ -539,7 +539,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How did Brancusi\'s engagement with non-Western sculptural traditions (particularly Romanian folk and African) inform his theory of "essential form"?',
       [
-        'Direct, unadorned carving in these traditions exemplified the principle that form emerges from material nature rather than imposed classical proportion',
+        'Form emerges from material nature, not imposed proportion',
         'African sculpture has no formal value and Brancusi ignored it',
         'Non-Western art was purely decorative with no conceptual depth',
         'Brancusi converted these traditions to Western academic standards',
@@ -550,7 +550,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'In what sense did Donald Judd\'s rejection of metaphor and symbolic reference in Minimalist sculpture represent an epistemological break from Modernism?',
       [
-        'The object was presented as literal, phenomenological presence without evoking transcendent interiority or humanist expression—privileging immediate sensory engagement',
+        'The object was a literal, phenomenological presence, not symbolic',
         'Judd\'s work contained elaborate symbolic meaning like all previous sculpture',
         'Minimalism was the final flowering of Romantic idealism',
         'Judd sought to resurrect classical allegory',
@@ -561,7 +561,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How did the rise of industrial bronze foundries in 19th-century France, particularly the Barbédienne and Susse Frères houses, restructure the artist-craftsman relationship in sculpture?',
       [
-        'Foundries enabled maquette-to-edition systems where artists licensed designs; industrial reproduction democratized sculpture while raising questions of authenticity',
+        'Licensed maquette-to-edition foundry production',
         'Foundries eliminated bronze casting entirely',
         'Industrial production had no impact on sculptural practice',
         'Bronze casting became less skilled and more mechanical',
@@ -572,7 +572,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What does the archaeological concept of "recarving" in ancient marble sculpture reveal about continuities of meaning-making and reuse across Roman and Christian periods?',
       [
-        'Pagan statues were deliberately recarved or repurposed with Christian iconography, showing how cultural/religious meaning is inscribed through surface intervention and continuous reappropriation',
+        'Pagan statues were recarved with Christian iconography',
         'Recarving is purely accidental damage',
         'Ancient sculptors made no changes after initial completion',
         'Christian artisans had no knowledge of classical technique',
@@ -583,7 +583,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How did the "dematerialization" thesis of Land Art and Conceptual sculptors reconfigure the material object\'s ontological status within sculpture?',
       [
-        'Ephemeral works, site-interventions, and documentation prioritized experience and concept over the enduring art object, questioning whether the sculpture is material or informational',
+        'Ephemeral works prioritized concept over the object',
         'Material became more important than ever',
         'Conceptual art eliminated all physical presence',
         'This movement returned sculpture to classical marble carving',
@@ -594,7 +594,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'In the context of feminist interventions in sculpture, how did artists like Magdalena Abakanowicz address the body and seriality to critique heroic monument traditions?',
       [
-        'Repetitive casts of fragmented, anonymous bodies replaced singular heroic figures, exposing monumentality as a tool of state power while asserting collective, vulnerable presence',
+        'Repetitive, anonymous bodies replaced heroic figures',
         'They returned to idealized classical nudes',
         'Feminist sculpture rejected all repetition and mass production',
         'Their work had no connection to political critique',
@@ -605,7 +605,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What theoretical implications does the conservation debate surrounding patina removal on ancient bronzes hold regarding the relationship between time, authenticity, and artistic intent?',
       [
-        'Cleaning to bare metal erases temporal depth and patina\'s role as documentation of the object\'s history; restoration theory now privileges "active stabilization" over return to original state',
+        'Cleaning to bare metal erases the object\'s history',
         'All ancient bronze should be polished to look new',
         'Patina has no historical or aesthetic significance',
         'Conservation should aim to reverse all time-based changes',
@@ -616,7 +616,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How do lattice and jali carving traditions in Indian temple sculpture function as both structural and spiritual systems that complicate Western distinctions between ornament and form?',
       [
-        'Pierced screens serve visual, acoustic, and devotional functions simultaneously—the void is not negative space but positive manifestation of divine presence and cosmological order',
+        'Pierced screens serve visual, acoustic, devotional roles',
         'These carvings are merely decorative with no deeper significance',
         'Indian sculpture has no connection to spiritual intent',
         'Lattice carving is structurally weak and impractical',
@@ -627,7 +627,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What does the critical reassessment of Art Deco sculpture reveal about the historiographic exclusion of "decorative" or "applied" sculpture from Modernist canons?',
       [
-        'Deco\'s fusion of fine art and industrial design challenged the purity doctrine; its relegation reflected institutional gatekeeping that enforced medium hierarchy over formal innovation',
+        'Deco\'s fusion of fine art and industrial design',
         'Art Deco was purely commercial with no artistic merit',
         'Modernism embraced all decorative traditions equally',
         'Deco sculpture is indistinguishable from mass production toys',
@@ -638,7 +638,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How do the restoration controversies surrounding the Parthenon sculptures and the Elgin Marbles implicate debates about cultural ownership, colonial extraction, and the ethics of universal museums?',
       [
-        'The debate exposes how acquisitive frameworks justify retention through appeals to "global access," masking imperial appropriation and the epistemological violence of decontextualization',
+        'Retention appeals to "global access" mask imperial appropriation',
         'There is no ethical issue with removing sculptures from their original sites',
         'Cultural origin has no bearing on where objects should be housed',
         'Universal museums have always been neutral repositories',
@@ -649,7 +649,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'What methodological challenges does the attribution of medieval sculpted figural details present when stylistic hands, workshop practices, and documentary records are sparse or contradictory?',
       [
-        'Attribution rests on stylometric analysis, archival inference, and forensic material examination, yet remains probabilistic—exposing the limits of authorial intentionality in collaborative, time-bound workshop production',
+        'Attribution rests on stylometric and archival analysis',
         'Medieval sculptures always come with clear artist signatures',
         'Attribution is never necessary for historical understanding',
         'All medieval work is anonymous and intentionally so',
@@ -660,7 +660,7 @@ export const SCULPTURE: CategoryContent = {
     [
       'How do contemporary artists employing 3D scanning, digital modeling, and algorithmic design challenge the phenomenological and embodied epistemologies central to Modernist sculpture theory?',
       [
-        'Digital-native processes abstract the sculptor\'s body and hand, replacing intuitive material encounter with computational mediation—raising questions about skill, intentionality, and the dissolution of artist agency',
+        'Digital processes replace material intuition',
         'Digital sculpture is identical to hand carving',
         'New technologies have not changed sculptural practice',
         'Algorithmic design restores Romantic individualism',

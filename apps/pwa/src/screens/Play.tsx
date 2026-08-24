@@ -153,7 +153,7 @@ export function Play(): ReactNode {
           options={question.options}
           repeat={active.repeat}
           categoryName={activeCategoryName ?? active.categoryId}
-          difficulty={active.difficulty ?? 'graduate'}
+          difficulty={active.difficulty ?? 'bscba'}
           onAnswer={answer}
           onTimeout={callTime}
           amOpponent={!iAmActing}
@@ -495,7 +495,7 @@ function ChooseCategory({
 
       <PhaseTimer
         turnPhaseKey={`${state.gameId}:${turnIndex}:category`}
-        durationMs={DIFFICULTY_TIERS.graduate.timeoutMs}
+        durationMs={DIFFICULTY_TIERS.bscba.timeoutMs}
         state={state}
         onTimeout={onTimeout}
       />
@@ -569,7 +569,7 @@ function ChooseTier({
 
       <PhaseTimer
         turnPhaseKey={`${state.gameId}:${turnIndex}:tier`}
-        durationMs={DIFFICULTY_TIERS.graduate.timeoutMs}
+        durationMs={DIFFICULTY_TIERS.bscba.timeoutMs}
         state={state}
         onTimeout={onTimeout}
       />
@@ -591,7 +591,8 @@ function ChooseTier({
                 }}
                 className={`no-select rounded-2xl border px-4 py-4 text-left transition hover:brightness-110 disabled:cursor-default disabled:opacity-60 ${
                   {
-                    graduate: 'border-tier-graduate/50 bg-tier-graduate/10',
+                    bscba: 'border-tier-bscba/50 bg-tier-bscba/10',
+                    msc: 'border-tier-msc/50 bg-tier-msc/10',
                     phd: 'border-tier-phd/50 bg-tier-phd/10',
                     professor: 'border-tier-professor/50 bg-tier-professor/10',
                   }[difficulty]
@@ -755,7 +756,7 @@ function CallTimeButton({ onPress }: { onPress: () => void }): ReactNode {
  * table stuck with no countdown and no way out. This gives them the same
  * "doing nothing still costs the cheapest tier" treatment the reducer
  * already applies to a timeout with no difficulty chosen yet (turn/timeout
- * defaults to graduate - see reducer.ts), rather than leaving these two
+ * defaults to bscba - see reducer.ts), rather than leaving these two
  * phases exempt from having a clock at all.
  */
 function PhaseTimer({

@@ -27,7 +27,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke as van een fasediagram stelt typisch samenstelling in een binair legersysteem voor?',
       [
-        'Horizontaal (x-as)',
+        'Horizontale as',
         'Verticaal (y-as)',
         'Diagonaal',
         'Radiaal',
@@ -49,7 +49,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is het primaire bindingsmechanisme in keramische materialen?',
       [
-        'Ionische en covalente binding',
+        'Ionisch en covalent',
         'Metallische binding',
         'Waterstofbinding',
         'Van der Waalskrachten',
@@ -60,7 +60,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In metallurgie, wat is een legering?',
       [
-        'Een mengsel van twee of meer elementen waarvan minstens één een metaal is',
+        'Een mengsel met minstens één metaal',
         'Een zuiver metaalelement',
         'Een chemische verbinding met vaste stoichiometrie',
         'Een gelaagde structuur van verschillende metalen',
@@ -93,7 +93,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke van deze is een primaire toepassing voor halfgeleiders in materiaalkunde?',
       [
-        'Het beheersen van elektrische geleidbaarheid in apparaten',
+        'Geleidbaarheid beheersen',
         'Dragende structuurcomponenten',
         'Het verbeteren van polymeersterkte',
         'Het verhogen van keramische taaiheid',
@@ -104,7 +104,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is een composietmateriaal?',
       [
-        'Twee of meer samenstellende materialen met verschillende eigenschappen, gecombineerd om gewenste prestaties te bereiken',
+        'Twee of meer materialen gecombineerd',
         'Een enkel zuiver element met meerdere kristallijne fasen',
         'Een legering met precies drie componenten',
         'Een polymeer versterkt met alleen inerte vullers',
@@ -115,7 +115,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In de materiaalkunde, waar verwijst de term \'korrel\' naar?',
       [
-        'Een enkele kristalregio binnen een polykristallijn materiaal',
+        'Een enkel kristaldomein',
         'Een standaard voor classificatie van deeltjesgrootte',
         'De textuur van een polymeeroppervlak',
         'Een defect in een keramische structuur',
@@ -126,7 +126,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke van deze stelt de hoogste pakketdichtheid voor bollen in een rooster voor?',
       [
-        'Kubisch vlakgecentreerd of hexagonaal dicht gepakt',
+        'FCC of HCP',
         'Eenvoudige kubisch',
         'Kubisch lichaamsgecentreerd',
         'Diamantkubisch',
@@ -137,7 +137,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat bereikt \'gloeien\' in metaalbewerking?',
       [
-        'Verhitten en langzaam afkoelen om interne spanning te verminderen en ductiliteit te verbeteren',
+        'Verhitten en langzaam afkoelen',
         'Snel afkoelen om hardheid te verhogen',
         'Legeren met koolstof om staal te versterken',
         'Het oppervlak polijsten om het uiterlijk te verbeteren',
@@ -159,7 +159,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke structuurkenmerk maakt polymeren flexibel in vergelijking met metalen?',
       [
-        'Zwakkere secundaire bindingen (van der Waalskrachten) tussen ketens, waardoor schuiven en rotatie mogelijk zijn',
+        'Zwakke secundaire bindingen',
         'Lagere atoommassa',
         'Lagere smelttemperaturen',
         'Willekeurige atoomarrangementen',
@@ -172,7 +172,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de betekenis van het eutectisch punt op een binair fasediagram?',
       [
-        'De samenstelling met de laagste smelttemperatuur waar alle fasen tegelijk solidificeren in evenwicht',
+        'De samenstelling met de laagste smelttemperatuur',
         'Het punt van maximale oplosbaarheid van het ene metaal in het ander',
         'De samenstelling waar mechanische eigenschappen optimaal zijn',
         'De kritieke temperatuur waarboven het systeem een enkele fase wordt',
@@ -205,7 +205,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welk mechanisme stelt martensitische transformatie in staal in staat om hardheid te produceren?',
       [
-        'Diffusieloze atoomherrangschikking die een overreverzadigde vaste oplossing van koolstof creëert',
+        'Diffusieloze atoomherrangschikking',
         'Nucleatie en groei van cementiedeltjes',
         'Korrelvereffening door snelle afkoeling',
         'Neerslag van intermetallische fasen',
@@ -216,7 +216,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In breukmechanica, wat kenmerkt de spanningsintensiteitsfactor (K)?',
       [
-        'De ernst van het spanningsveld van de scheurtip, voorspellend scheurgroeiwaarchijnlijkheid',
+        'De ernst van het scheurtipveld',
         'De totale sterkte van het materiaal',
         'De ductiliteit van het materiaal',
         'De temperatuur waarop breuk optreedt',
@@ -227,7 +227,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is het primaire voordeel van het toevoegen van versterkingevezels aan een polymeermatrix in composieten?',
       [
-        'Vezels bieden hoge stijfheid en sterkte terwijl matrix taaiheid en beschadigingstolerantie biedt',
+        'Vezels geven stijfheid, matrix geeft taaiheid',
         'Vezels verminderen de totale dichtheid van de composiet',
         'Vezels voorkomen dat de matrix kristalliseert',
         'Vezels vergroten de transparantie van het materiaal',
@@ -249,7 +249,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is het Hall-effect in halfgeleiders en waarom is het significant?',
       [
-        'Een transversale spanning verschijnt wanneer stroom door een geleider in een magnetisch veld gaat, wat het dragertype en concentratie onthult',
+        'Een transversale spanning door stroom in een magneetveld',
         'De verandering in bandgapenergie bij aangelegde spanning',
         'De opwekking van licht wanneer stroom door een junctie vloeit',
         'De weerstandsverandering bij zeer lage temperaturen',
@@ -260,7 +260,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In legeringsontwerp, wat is een vaste-oplossingsversterkingsmechanisme?',
       [
-        'Opgeloste soluteatomen vervormen het rooster, waardoor dislocatieverplaatsing wordt belemmerd',
+        'Soluteatomen die het rooster vervormen',
         'Neerslag van een tweede fase aan korrelgrenzen',
         'Vorming van nieuwe kristallijne fasen met verschillende structuren',
         'Vermindering van korrelgrootte door korrelgrenzen vast te zetten',
@@ -271,7 +271,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke eigenschap van een polymeer wordt gemeten door trektesting met veel lagere snelheid dan normaal om afhankelijk van tijd gedrag aan het licht te brengen?',
       [
-        'Kruipweerstand (weerstand tegen voortdurende vervorming onder constante spanning)',
+        'Kruipgedrag',
         'Slagsterkte',
         'Scheurweerstand',
         'Oppervlaktehardheid',
@@ -293,7 +293,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de rol van een dislocatie in plastische vervorming van kristallijne materialen?',
       [
-        'Een lijndefect dat door het rooster beweegt, wat atomaire afschuiving mogelijk maakt zonder alle bindingen tegelijk te breken',
+        'Een lijndefect dat door het rooster beweegt',
         'Een puntdefect veroorzaakt door ontbrekende atomen op roosterlokaties',
         'Een korrelgrens die twee kristaloriëntaties scheidt',
         'Een stapelfout in een gelaagde structuur',
@@ -304,7 +304,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In materiaalkunde-karakterisering, welk fenomeen meet differentiaalscanningcalorimetrie (DSC)?',
       [
-        'Warmtestroom in of uit een monster als temperatuur verandert, wat faseveranderingen en reactiekinetiek onthult',
+        'Warmtestroom als de temperatuur verandert',
         'De kristallijne structuur van het monster',
         'De oppervlakteruwheid en topografie',
         'De elektrische geleidbaarheid tegen temperatuur',
@@ -315,7 +315,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is het primaire mechanisme waarmee korrelgrenstechniek de breuksoepelheid in keramiek verbetert?',
       [
-        'Gecontroleerde interkristallijne kristallografie vertraagt scheurvoortplanting door gemengde-mode breuken af te dwingen',
+        'Gecontroleerde interkristallijne kristallografie',
         'Het totale aantal korrels in het materiaal vergroten',
         'Kleine hoeveelheden ductiele fasen aan grenzen toevoegen',
         'Alle korrelgrenzen elimineren via enkelvoudige kristalgroei',
@@ -326,7 +326,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de betekenis van de Schmid-factor in het bepalen van de gemakkelijkheid van dislocatieslip op een bepaald glidsysteem?',
       [
-        'Het kwantificeert de opgeloste afschuifspanning op een glidvlak als τ = σ·cos(φ)·cos(λ), wat voorspelt welke systemen eerst activeren onder belasting',
+        'De opgeloste afschuifspanning, τ = σ·cos(φ)·cos(λ)',
         'Het meet de totale dislocatiedichtheid in het materiaal',
         'Het beheert de thermische stabiliteit van dislocaties',
         'Het bepaalt de snelheid van dislocatienucleatie',
@@ -339,7 +339,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat onthult het Gibbs-vrije-energieoppervlak wanneer het wordt uitgezet als functie van samenstelling en temperatuur in een ternair fasediagram?',
       [
-        'De thermodynamische stabiliteit van fasen, met fasegrenzen gedefinieerd door dubbele raaklijnconstructies',
+        'De thermodynamische stabiliteit van fasen',
         'De mechanische eigenschappen van elke fase als functie van samenstelling',
         'Het kinetische traject waarlangs een fase in een ander transformeert',
         'Het elektrische-geleiding-oppervlak van het legeringssysteem',
@@ -350,7 +350,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In materiaaldegradatie, wat is de rol van elektrochemisch potentiaal in putcorrosie van geparenteerde metalen?',
       [
-        'Wanneer de aangelegde potentiaal het putpotentiaal overschrijdt, breekt de passieve film af, waardoor een autocatalytische zure put ontstaat',
+        'De passieve film breekt af boven een kritieke potentiaal',
         'Het potentiaal bepaalt de snelheid van uniforme corrosie over het oppervlak',
         'Het elektrochemische potentiaal beheert de dikte van de oxidlaag',
         'Het bepaalt direct de mechanische sterkte van het gecorrodeerde materiaal',
@@ -361,7 +361,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de oorsprong van de glastransitieftemperatuur (T_g) in amorfe polymeren, en hoe verschilt het van kristallijn smelten?',
       [
-        'T_g is een kinetische overgang waar kettingmobiliteit bevriezen (geen langafstandsorderverlies); T_m is thermodynamische fasewijziging in geordende kristallen',
+        'T_g is kinetisch, T_m is een echte fasewijziging',
         'T_g treedt bij hogere temperaturen op dan T_m in alle polymeren',
         'T_g vereist een kristalstructuur om te worden gedefinieerd',
         'Zowel T_g als T_m meten dezelfde thermodynamische gebeurtenis',
@@ -372,7 +372,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In halfgeleiderfysica, wat bepaalt de breedte van de depletieregion in een p-n junctie bij thermisch evenwicht?',
       [
-        'Het ingebouwde potentiaal en de doperingsconcentraties van beide zijden, via de Poisson-vergelijking-oplossing',
+        'Ingebouwde potentiaal en doperingsniveaus',
         'De aangelegde externe spanning',
         'De thermische energie van de ladingsdragers',
         'De bandgapenergie van het materiaal',
@@ -383,7 +383,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de betekenis van de Burgers-vector in het karakteriseren van dislocaties, en hoe verhoudt het zich tot het dislocatietype?',
       [
-        'Het specificeert de grootte en richting van roostervervormingen; randdislocaties hebben b loodrecht op de lijnrichting, schroef heeft b parallel',
+        'De grootte en richting van roostervervorming',
         'Het bepaalt de energie die nodig is om de dislocatie te vormen',
         'Het beheert of de dislocatie via klim of glijden kan bewegen',
         'Het meet de afstand die de dislocatie door het kristal heeft bewogen',
@@ -394,7 +394,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In composietmechanica, wat voorspelt de mengselverhoudingsregel, en onder welke belastingconditie is het het nauwkeurigst?',
       [
-        'Een lineaire composieteigenschap als gewogen gemiddelden van samenstellingseigenschappen; het nauwkeurigst voor longitudinale (vezel-parallelle) belasting',
+        'Een gewogen gemiddelde van samenstellingseigenschappen',
         'De breukspanning van de composiet ongeacht belastingsrichting',
         'De thermische expansiecoëfficiënt van alle vezelversterkte composieten',
         'De elektrische geleidbaarheid van keramische matrixcomposieten',
@@ -405,7 +405,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke mechanismen domineren verbetering van breuksoepelheid in transformatie-verharde zirkonia-keramiek?',
       [
-        'Spanningsgeïnduceerde tetragonaal-naar-monoklien-fasetransformatie absorbeert energie en creëert residuale drukspanning',
+        'Een spanningsgeïnduceerde fasetransformatie',
         'Plastische vervorming van korrelgrenzen',
         'Microscheuring voor de scheurtip',
         'Neerslag van een metallische fase',
@@ -416,7 +416,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In nanomaterialen, wat is de rol van de oppervlakte-naar-volume-verhouding in het veranderen van materiaaleigenschappen ten opzichte van de bulk?',
       [
-        'Bij kleine afmetingen domineert oppervlakte-energie, wat thermodynamisch evenwicht verschuift, smelt-/transitiepunten verlaagt en diffusietarief verhoogt',
+        'Bij kleine afmetingen domineert oppervlakte-energie',
         'Oppervlakte-effecten zijn verwaarloosbaar onder 100 nm',
         'Oppervlakteatomen zijn chemisch identiek aan bulkatomen',
         'Nanomaterialen hebben altijd hogere smeltpunten dan bulk',
@@ -427,7 +427,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de fysische basis van het Griffith-criterium voor breuk van brosse materialen, en wat voorspelt het?',
       [
-        'Breuk treedt op wanneer elastische vervormingsenergie vrijgegeven door scheurgroei gelijk is aan oppervlakte-energie nodig om nieuwe oppervlakken te creëren',
+        'Vrijgegeven vervormingsenergie is gelijk aan oppervlakte-energie',
         'Breuk wordt zuiver door spanning beheert en is onafhankelijk van foutgrootte',
         'Alle materialen bezwijken bij dezelfde aangelegde spanning als scheuren aanwezig zijn',
         'Plastische vervorming treedt altijd voor breuk op',
@@ -438,7 +438,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In legerings-thermodynamica, wat geeft een negatieve mengingswarmte aan, en hoe beïnvloedt het fasestabiliteit?',
       [
-        'Gunstige atoominteracties; het systeem bevordert menging, stabiliseert vaste oplossing en verhoogt consolute-temperatuur',
+        'Gunstige atoominteracties die menging stabiliseren',
         'Afstotende interacties die altijd fasescheiding veroorzaken',
         'Geen effect op fasestabiliteit of fasediagramvorm',
         'Een indicator dat de legering amorf zal zijn',
@@ -449,7 +449,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke informatie biedt transmissie-elektronenmicroscopie (TEM) die rastereelektronenmicroscopie (SEM) niet kan?',
       [
-        'Real-space kristalstructuur en roosterdefecten met atoomresolutie; SEM is oppervlakte-beperkt met nanometer-ruimtelijke resolutie',
+        'Kristalstructuur en defecten met atoomresolutie',
         'Hogere bedrijfsspanningen voor diepere penetratie',
         'Betere kleurafbeelding van monsteroppervlakken',
         'Snellere analyse van grote monstergebieden',
@@ -460,7 +460,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In biomaterialen, wat is osseo-integratie, en welke materiaal- en oppervlakteeigenschappen verbeteren het?',
       [
-        'Directe bot-implantaatcontact bereikt door bioactieve oppervlaktechemie en oppervlakteruwheid die celadhesie en mineralisatie bevorderen',
+        'Direct bot-implantaatcontact via bioactieve oppervlakken',
         'Implantaatmaterialen die volledig inert en niet-reactief zijn',
         'Elk metalen implantaat dat lange-termijn stabiliteit in het lichaam bereikt',
         'De inkapseling van een implantaat in littekenweefsel',
@@ -471,7 +471,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de theoretische vloeispanning van een perfect kristal, en hoe vergelijkt werkelijke vloeispanning zich vanwege dislocaties?',
       [
-        'Theorie voorspelt ~G/30 (waarbij G is afschuifmodulus); echte materialen buigen bij ~G/100–G/1000 omdat dislocaties bij veel lagere spanning bewegen',
+        'De echte vloeispanning is veel lager, door dislocaties',
         'Werkelijke vloeispanning overschrijdt altijd theoretische sterkte',
         'Dislocaties verhogen de spanning die nodig is om het materiaal te vervormen',
         'Perfecte kristallen zijn onmogelijk, dus theorie is irrelevant',
@@ -482,7 +482,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In verwerkings-structuur-eigenschap-relaties, hoe verandert snelle solidificatie de microstructuur en vergroot vaste-oplossingsgrenzen in legeringen?',
       [
-        'Snelle afkoeling onderdrukt diffusie, wat niet-evenwichtssolute-niveaus (omzeilt evenwichtsfasediagram) in de val zet en metastabiele fasen mogelijk maakt',
+        'Het onderdrukt diffusie, wat overtollige solute in de val zet',
         'Snelle afkoeling produceert altijd evenwichtsfasen',
         'Afkoelingssnelheid heeft geen effect op vaste oplosbaarheid',
         'Alleen korrelgrootte wordt beïnvloed; samenstelling blijft evenwicht',
@@ -493,7 +493,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de relatie tussen stapelfoutenergie (SFE) en dislocatietype in FCC-metalen?',
       [
-        'Lage SFE vermindert dislocatie-kruisglij-activiteit en vernauwd partiële scheiding, wat vervormingstwinning en lagere verfestigingssnelheden bevordert',
+        'Lage SFE bevordert twinning boven kruisglij',
         'SFE bepaalt de glijrichting in BCC-metalen',
         'Hoge SFE leidt altijd tot brosse breuk',
         'SFE is onafhankelijk van legeringssamenstelling',
@@ -506,7 +506,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In thermodynamische modellering van multicomponent-legeringen, wat is de fysische en wiskundige betekenis van de excess Gibbs-energie (G^ex) in het bepalen van fasestabiliteit en ordening?',
       [
-        'G^ex beschrijft afwijkingen van ideale menging door inter-atoominteracties; zijn samenstelling en temperatuursafhankelijkheid beheert mengbaarheidskloven, ordeningtransities en kritieke fenomenen',
+        'Afwijkingen van ideaal mengingsgedrag',
         'G^ex is altijd nul in alle echte materialen',
         'G^ex beïnvloedt alleen de entropieterm, niet enthalpie',
         'G^ex is zuiver empirisch zonder fysische basis',
@@ -517,7 +517,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat verklaart het Cottrell-atmosfeermodel in ijzerhoudende metallurgie, en hoe verhoudt het zich tot dynamische vervormingsveroudering en het Portevin–Le Chatelier-effect?',
       [
-        'Koolstof-/stikstofatmosferen rond dislocaties creëren dynamische vergrendeling; bij bepaalde vervormingssnelheden veroorzaken herhaalde vergrendeling/ontgrendeling gekartelde spanning-vervormingscurven en vervormingsinstabiliteit',
+        'Dynamisch vergrendelen en ontgrendelen van soluteatmosferen',
         'Het Cottrell-model is alleen van toepassing op statische sterkte, niet op dynamisch gedrag',
         'Het voorspelt dat dynamische vervormingsveroudering het materiaal altijd verzacht',
         'Cottrell-atmosferen zijn irrelevant voor moderne legeringen',
@@ -528,7 +528,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In breukmechanica, wat onderscheidt K-gedomineerd (lineaire elastische breukmechanica, LEFM) van J-integraal-gedomineerd (elastisch-plastische breukmechanica, EPFM) regimes, en wanneer is elk van toepassing?',
       [
-        'LEFM (K) is van toepassing wanneer de plastische zone klein is ten opzichte van foutgrootte; J-integraal (EPFM) legt niet-lineair gedrag vast wanneer de plastische zone groot is; overgang gedefinieerd door B > 25(K_IC/σ_Y)²',
+        'LEFM geldt bij kleine plastische zones, J-integraal bij grote',
         'K en J zijn wiskundig equivalent en geven altijd dezelfde resultaten',
         'J-integraal wordt alleen gebruikt voor keramiek, K voor metalen',
         'LEFM is het enige geldige breukcriterium voor alle materialen',
@@ -539,7 +539,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Welke rol spelen coherentievervormingen in precipitate-versterkingsmechanismen, en hoe verlaagt oververoudering sterkte?',
       [
-        'Coherente precipitaten veroorzaken roostervervormingen die dislocatieverplaatsing belemmeren; oververoudering maakt deeltjes grover, vermindert vervormingsvelden en dislocatie-interacties (Orowan-looping domineert)',
+        'Coherentievervormingen die met deeltjesgrootte verzwakken',
         'Coherentievervormingen bevorderen altijd plastische vervorming',
         'Oververoudering verhoogt hardheid indefinitief',
         'Precipitaatgrootte heeft geen effect op dislocatieverharding',
@@ -550,7 +550,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In oppervlakte-thermodynamica, wat is de relatie tussen oppervlakte-energie (γ), oppervlakte-overmaat en grensvlak-segregatie, en waarom segregeren bepaalde elementen bij voorkeur?',
       [
-        'Atomen met lagere bulkcohesieve energie segregeren om grensvlak-energie te verminderen; adsorptie wordt aangedreven door ΔG_ads = ΔH_ads - TΔS_ads < 0',
+        'Zwak gebonden atomen segregeren om grensvlak-energie te verlagen',
         'Oppervlakte-energie is altijd gelijk aan bulkenergie',
         'Segregatie heeft geen thermodynamische drijvende kracht',
         'Alle elementen segregeren met gelijke snelheden ongeacht eigenschappen',
@@ -561,7 +561,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de oorsprong van het piëzo-elektrische effect in kristallen, en waarom is het verboden in materialen met inversiesymmetrie?',
       [
-        'Niet-centrosymmetrische kristallen missen inversiesymmetrie, dus elastische vervormingen kunnen ionen verplaatsen, netto dipolmoment creëren (polarisatie ∝ vervormingen); inversiesymmetrie vereist dat tegengestelde verplaatsingen opheffen',
+        'Ionverplaatsing in niet-centrosymmetrische kristallen',
         'Piëzo-elektriciteit ontstaat alleen uit metallische binding',
         'Inversiesymmetrie vergroot het piëzo-elektrische respons',
         'Het piëzo-elektrische effect is zuiver elektronisch zonder ionverplaatsing',
@@ -572,7 +572,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In de theorie van martensitische fasetransformaties, wat is de roosterdeformatiegradiënt, en hoe verhoudt Bain-vervormingen zich tot roostercorrespondentie en oriëntatierelatie?',
       [
-        'De deformatiegradiënt F beschrijft roostervervormingen; Bain-vervormingen (tetragonale verstoring van austeniet) gecombineerd met rosterrotatie geeft het habitvlak en oriëntatierelatie (OR)',
+        'Bain-vervorming plus stijve rotatie van het rooster',
         'Martensitische transformatie is zuiver reconstructief, zonder roostervervormingen',
         'De roostercorrespondentie is willekeurig en niet gerelateerd aan OR',
         'Bain-vervormingen en habitvlak zijn onafhankelijke parameters',
@@ -583,7 +583,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is het mechanisme van scheurbemiddeling in vezelversterkte composieten, en hoe draagt werklengte van vezeltrekking bij aan breuksoepelheid?',
       [
-        'Ongebroken vezels over een scheur dragen spanning nadat de matrix bezwijkt; uittrekwerk (wrijving × ingebedde lengte) dissipeert energie en verhoogt G_IC',
+        'Ongebroken vezels over de scheur dissiperen energie',
         'Scheurbemiddeling door vezels vermindert composietstijfheid',
         'Uittrekwerk is altijd verwaarloosbaar in vergelijking met matrixtaaiheid',
         'Vezels moeten breken opdat de composiet bezwijkt',
@@ -594,7 +594,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In halfgeleiderbandstructuur-engineering, wat bereikt het concept van \'bandgap-engineering\' via heterojonctie, en welke rol speelt vervormingen?',
       [
-        'Rooster-niet-overeenkomende lagen creëren vervormde heterostructuren, verschuiven bandgaps en bandoffsets, stellen type-I/type-II-uitlijningen en kwantumbeperkingseffecten mogelijk',
+        'Vervormde heterostructuren verschuiven bandgaps en offsets',
         'Bandgap-engineering geldt alleen voor elementaire halfgeleiders',
         'Vervormingen verslechteren altijd halfgeleiderprestaties',
         'Bandoffsets worden uitsluitend bepaald door doperingsniveaus',
@@ -605,7 +605,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is het Mullins-effect in elastomeren, en welke moleculaire mechanismen beheersen spannsingsverzwakking en hysterese in gevulde polymeren?',
       [
-        'Spannsingsverzwakking door verstoring van vulling-polymeer-binding en vullingagglomeraatafbraak; hysterese door vullingherrangschikking en kettingslip (viskeuze demping)',
+        'Afbraak van vulling-polymeer-bindingen en agglomeraten',
         'Het Mullins-effect treedt alleen op in ongevulde elastomeren',
         'Gevulde polymeren vertonen altijd constant spanning-vervormingsgedrag bij herbelasting',
         'Hysterese is zuiver elastisch zonder viskeuze bijdrage',
@@ -616,7 +616,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In hoge-temperatuurkruip van keramiek en metalen, wat is de fysische basis van diffusionele kruip (Nabarro-Herring- en Coble-mechanismen), en hoe schalen ze met spanning en korrelgrootte?',
       [
-        'Leegteloca-diffusie uit spannningsgeconcentreerde regio\'s; N-H: korrelinterieur-diffusie (ε̇ ∝ σ/d²); Coble: korrelgrens-diffusie (ε̇ ∝ σ/d³); beide ∝ D·σ/kT',
+        'Spanningsgedreven leegte-diffusie',
         'Diffusionele kruip is altijd sneller dan dislocatiekruip',
         'Korrelgrootte heeft geen effect op kruipsnelheid',
         'Kruip is zuiver elastische vervorming bij hoge temperatuur',
@@ -627,7 +627,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is de fysische betekenis van de Debye-temperatuur (Θ_D) in het bepalen van rooster- en warmtetransporteigenschappen, en hoe verhoudt het zich tot mechanische eigenschappen van materialen?',
       [
-        'Θ_D ∝ √(stijfheid)/√(dichtheid) stelt de fononafsnijding en thermische capaciteit in; hoge Θ_D correleert met hoge geluidsnelheid, elastische modulus en slechte thermische geleiding in keramiek',
+        'Het schaalt met stijfheid en geluidsnelheid',
         'Debye-temperatuur beïnvloedt alleen optische eigenschappen',
         'Hoge Θ_D betekent altijd betere thermische geleiding',
         'Θ_D is onafhankelijk van elastische eigenschappen',
@@ -638,7 +638,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In heterogene nucleatie, welke rol spelen contacthoek en oppervlakte-energieverschil in het verminderen van kritieke kerngrootte in vergelijking met homogene nucleatie?',
       [
-        'Lagere contacthoek θ vermindert kritieke kerngrootte via geometriefactor f(θ) = (2-3cosθ+cos³θ)/4; kleine θ bevordert nucleatie door grensvlak-energiekosten te verminderen',
+        'Een lagere contacthoek vermindert de kritieke kerngrootte',
         'Contacthoek beïnvloedt alleen bevochtigung, niet nucleatie',
         'Homogene en heterogene nucleatie hebben identieke kritieke afmetingen',
         'Oppervlakte-energieverschillen zijn altijd verwaarloosbaar voor nucleatie',
@@ -649,7 +649,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Wat is het mechanisme en de betekenis van korrelgroei in nanokristallijne materialen, en waarom is de Zener-speldkracht onvoldoende om nanometerachtige korrels bij verhoogde temperatuur te stabiliseren?',
       [
-        'Oppervlakte-energieaangedreven korrelgroei (korrelgrenzen verlagen energie naarmate d toeneemt); Zener-speld (F ∝ Z·r/d) faalt bij d → nm omdat Z naar nul gaat en T-geactiveerde beweging speld overwint',
+        'Zener-speldkracht verzwakt naarmate korrels tot nm-schaal krimpen',
         'Nanokristallijne materialen groeien nooit, ongeacht temperatuur',
         'Korrelgroei wordt zuiver beheert door dislocatiedichtheid, niet door korrelgrenzen',
         'Zener-speld wordt sterker bij kleinere korrelgroottes',
@@ -660,7 +660,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In de context van computationele materiaalkunde, wat is dichtheidsfunctionaaltheorie (DFT), en welke benadering (bijv. LDA, GGA) beperkt fundamenteel zijn voorspellende nauwkeurigheid voor grondtoestandeigenschappen?',
       [
-        'DFT lost de Kohn-Sham-vergelijkingen zelf-consistent op; LDA/GGA-uitwisselings-correlatiebenaderingen laten hogere-orde-correlatieeffecten achterwege, veroorzakend systematische fouten in bandgaps, transitiebarrières en sterk-gecorreleerde systemen',
+        'De uitwisselings-correlatiefunctionaal wordt benaderd',
         'DFT lost direct de volledige Schrödinger-vergelijking zonder benadering op',
         'LDA en GGA zijn exacte functionalen zonder fouten',
         'DFT kan structuureigenschappen niet voorspellen, alleen elektronische',

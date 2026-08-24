@@ -5,6 +5,98 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const FASHION_MODERN: CategoryContent = {
+  bscba: [
+    [
+      'Welke ontwerper is het beroemdst voor het "New Look"-silhouet uit de jaren veertig, met een strak ingesnoerde taille en volle rok?',
+      ['Christian Dior', 'Cristóbal Balenciaga', 'Coco Chanel', 'Pierre Cardin'],
+      0,
+      'Diors debuutcollectie uit 1947 revolutioneerde naoorlogse mode met nadruk op een smalle taille en volumineuze rok, met ongekende hoevelheden stof na jaren randsoentoewijzing.',
+    ],
+    [
+      'Welke synthetische vezel, in 1958 gepatenteerd, liet kledingstukken uitrekken en zich herstellen, waardoor het ontwerp van zwemkleding en sportkleding werd getransformeerd?',
+      ['Lycra/Spandex', 'Nylon', 'Rayon', 'Polyester'],
+      0,
+      'DuPonts Lycra, of spandex, kon zich tot meerdere malen zijn lengte uitrekken en terugveren, waardoor nauw aansluitende kleding zonder complexe naaiwerkstechnieken was ontstaan.',
+    ],
+    [
+      'Welke Britse ontwerper uit de jaren zestig maakte de minirok populair via haar King\'s Road-boetiek Bazaar?',
+      ['Mary Quant', 'Yves Saint Laurent', 'André Courrèges', 'Pierre Cardin'],
+      0,
+      'Mary Quants minirokken bereikten een jong, werkend publiek in Londen en maakten haar ontwerpen een symbool van de jeugdcultuur van de jaren zestig en Britse modeoncafhankelijkheid.',
+    ],
+    [
+      'Welke innovatieve vezel werd door W.L. Gore in 1969 ontwikkeld en werd essentieel voor weerbestendig, ademend outdoor-mode?',
+      ['Gore-Tex', 'Neoprene', 'Tyvek', 'Polar fleece'],
+      0,
+      'Gore-Texs microporeus membraan blokkeerde water terwijl het dampen kon ontsnappen, wat cruciaal werd voor technisch en later high-fashion buitenkledingontwerp.',
+    ],
+    [
+      'Welke Perry Ellis-collectie uit 1993, met flanellen en slipjurken in luxestoffen, zorgde ervoor dat de ontwerper kort na de show werd ontslagen?',
+      ['Marc Jacobs', 'Todd Oldham', 'Isaac Mizrahi', 'Anna Sui'],
+      0,
+      'Marc Jacobs hermaakte grungecultuur in couture-materialen, een visie die de eigenaren van het merk afwezen ondanks latere erkenning als modelandmark.',
+    ],
+    [
+      'Welke groep Belgische ontwerpers, afgestudeerd van Antwerpen\'s Koninklijke Academie, kreeg in de jaren tachtig internationale aandacht?',
+      ['The Antwerp Six', 'The Amsterdam Collective', 'Brussels Design Union', 'Ghent Guild Members'],
+      0,
+      'Zes Belgische afgestudeerden, onder wie Dries Van Noten, toonden samen in Londen en vestigden Antwerpen als serieuze modetrainingsplek los van Parijs en Milaan.',
+    ],
+    [
+      'In 1987 fuseerde Louis Vuitton met welk bedrijf om het moderne LVMH-conglomeraat te vormen?',
+      ['Moët Hennessy', 'Christian Dior SE', 'Kering (then PPR)', 'Richemont'],
+      0,
+      'De fusie van Louis Vuitton met Moët Hennessy creëerde het model voor een multibrand-luxehoudingsbedrijf dat zich later uitbreidde naar talrijke erfgoedhuizen.',
+    ],
+    [
+      'Welke term beschrijft de trend van eind jaren tachtig tot midden jaren 2000 van luxueuze tassen en accessoires bedekt met grote, zichtbare monogramlogo\'s?',
+      ['Logomania', 'Brand saturation', 'Visual merchandising', 'Luxury maximalism'],
+      0,
+      'Logomania benadrukte merkherkenning zelf als het primaire verkooppunt, met name met monogramafdrukken van Louis Vuitton, Gucci en Dior.',
+    ],
+    [
+      'In 1994 nam welke ontwerper de creatieve leiding van Gucci over en herleefde het zwakke Italiaanse huis door strakke minimalisme?',
+      ['Tom Ford', 'Domenico Dolce', 'Marco Bizzarri', 'Frida Giannini'],
+      0,
+      'Fords lichaambewust maatwerk en seksueel geladen esthetiek veranderde Gucci in een van de snelst groeiende luxemerken van de late jaren negentig.',
+    ],
+    [
+      'Waar verwijst de term "fast fashion" naar in de moderne retailindustrie?',
+      ['Rapid design-to-store production cycles', 'Expensive limited editions', 'Handmade artisanal garments', 'Seasonal clearance sales'],
+      0,
+      'Fast fashion beschrijft het vermogen om ontwerpen in weken in plaats van maanden van concept naar winkelschappen te verplaatsen, door detailhandelaars als Zara.',
+    ],
+    [
+      'Welke minimalistische ontwerper uit de jaren zeventig werd beroemd voor elegante overhemdjurken gemaakt van een suède-achtige synthetische stof genaamd Ultrasuede?',
+      ['Halston', 'Calvin Klein', 'Donna Karan', 'Ralph Lauren'],
+      0,
+      'Halstons vloeibare, ongestructureerde ontwerpen in Ultrasuede werden een Studio 54-handtekening en definieerden minimalistische luxusmode uit de jaren zeventig.',
+    ],
+    [
+      'Welke Japanse ontwerper lanceerde de Pleats Please-lijn in 1993, met permanent heetgeperselde plooien?',
+      ['Issey Miyake', 'Rei Kawakubo', 'Yohji Yamamoto', 'Kenzo Takada'],
+      0,
+      'De innovatie van Miyake betrok het knippen van oversized kledingstukken en ze heetpersen om permanente plooien in te stellen die rekken en herstel zonder elastieken vezels mogelijk maakten.',
+    ],
+    [
+      'Alexander McQueen was hoofd-ontwerper bij welk historisch Parijs couturehuis van 1996 tot 2001?',
+      ['Givenchy', 'Dior', 'Balenciaga', 'Chloé'],
+      0,
+      'McQueens ambtstermijn bij Givenchy werd gekenmerkt door creatieve spanning met de conservatieve clientèle van het huis voordat hij vertrok om op zijn eigen Gucci-ondersteunde label te focussen.',
+    ],
+    [
+      'Hoe heette de King\'s Road-boetiek van Vivienne Westwood en Malcolm McLaren tijdens de punkfase van 1974 tot 1976?',
+      ['SEX', 'Let It Rock', 'Seditionaries', 'World\'s End'],
+      0,
+      'De SEX-winkel verkocht rubber, bondagestraps en met veiligheidsspelden vastgezette stoffen die rechtstreeks punkesthetica voedden en onderliggen aan straatmodegeschiedenis.',
+    ],
+    [
+      'Welke Italiaanse luxemerk gebruikte een zwarte nylon rugzak uit 1985 met industriële textiel en lanceerde de moderne "quiet luxury"-identiteit?',
+      ['Prada', 'Bottega Veneta', 'Bally', 'Ferragamo'],
+      0,
+      'Prada\'s bewust onglamoureus nylon keerde 1980s-luxuscodes om door binnenkennis aan te geven in plaats van duidelijke rijkdomsvertoning.',
+    ],
+  ],
   msc: [
     [
       'Christian Dior\'s haute-couturecollectie voor het voorjaar/zomer van 1947, die de pers meteen de "New Look" doopte, kreeg van Dior zelf officieel welke naam?',
@@ -284,6 +376,98 @@ export const FASHION_MODERN: CategoryContent = {
 };
 
 export const FASHION_HISTORIC: CategoryContent = {
+  bscba: [
+    [
+      'Welk middeleeuws kledingstuk, met een aangepaste torso gesloten met knopen in plaats van gedrapeerd en gegordelnd, markeerde het ware begin van Westers maatwerk?',
+      ['The cotehardie', 'The houppelande', 'The kirtle', 'The surcote'],
+      0,
+      'De nauwsluitende pasvorm van de cotehardie vereiste dat kleermakers vormpatroonpieken ontwikkelden, wat maatwerk van eenvoudig gedrapeerd naaien onderscheidt.',
+    ],
+    [
+      'Welk praktisch doel dienden pattens in middeleeuwse en vroegmoderne straten?',
+      ['Raised shoes above mud and filth', 'Marked social status and rank', 'Provided warmth in winter', 'Prevented theft of shoes'],
+      0,
+      'Pattens waren houten overschoenen gestrikt over gewone schoenen om ze boven modder in onverharde straten verheven te houden, gebruikt in alle sociale klassen.',
+    ],
+    [
+      'Welke Engelse luxewet van 1363 probeerde kleding te reguleren door te beperken wat mensen van verschillende rangen konden dragen?',
+      ['Laws based on income and social rank', 'Laws based on gender', 'Laws based on marital status', 'Laws based on religious affiliation'],
+      0,
+      'Edward III\'s statuut schreef voor welke kwaliteiten van stof, bont en garneersel elke sociale band wettelijk mocht dragen, wat kleding aan sociale orde koppelde.',
+    ],
+    [
+      'Welke 14de en 15de-eeuwse japon staat vooral bekend om zijn enorme volle vorm, hoge kraag en vaak gekartelde of geslitste mouwen?',
+      ['The houppelande', 'The cotehardie', 'The kirtle', 'The gown'],
+      0,
+      'Het volumineuze, hooggesloten ontwerp van de houppelande toonde rijkdom door stofverbruik en had ingewikkelde decoratieve mouwranden.',
+    ],
+    [
+      'Wat maakte fustian-stof uniek in middeleeuwse Europese textielproductie?',
+      ['A blend of linen warp and cotton weft', 'Pure silk taffeta', 'Knitted wool felt', 'Undyed cotton'],
+      0,
+      'Fustian combineerde Europees linnen met geïmporteerde katoen, waardoor een duurzame, matig geprijsde stof ontstond geschikt voor kleding en meubilering.',
+    ],
+    [
+      'Wat was de primaire functie van de linnen coif gedragen in middeleeuwse kleding?',
+      ['To cover and contain the hair', 'To indicate marital status', 'To protect in combat', 'To signal occupation'],
+      0,
+      'De coif was een eenvoudige linnen kap onder de kin gebonden, gedragen in alle sociale klassen als praktische haarbedekking als basislaag onder ander hoofddeksel.',
+    ],
+    [
+      'Welk karakteristiek kenmerk van de 12de-eeuwse bliaut is het meest zichtbaar in beeldhouwwerk en manuscriptillustraties uit die periode?',
+      ['Its tightly fitted, pleated bodice', 'Its enormous trailing train', 'Its low neckline', 'Its rigid front panel'],
+      0,
+      'Het karakteristieke gerimpelde lijfje van de bliaut, bereikt via strakke zijveters, markeerde een aanzienlijke verschuiving naar lichaamsbewuste vrouwenkleding.',
+    ],
+    [
+      'Hoe werd het bont genaamd vair geconstrueerd in middeleeuws heraldiek gebruik?',
+      ['Alternating pieces of blue-grey and white squirrel fur', 'Solid white ermine', 'Spotted lynx fur', 'Dyed red sable'],
+      0,
+      'Vair\'s kenmerkende schaakbordpatroon van afwisselende eekhoornbontkleur maakte het een herkenbare statussymbool en heraldisch symbool.',
+    ],
+    [
+      'Welk specifiek constructiedoel dienden de veters "points" genoemd in 15de-eeuwse herenkleding?',
+      ['They attached separate hose legs to the doublet', 'They decorated a belt', 'They fastened sleeves', 'They held a codpiece'],
+      0,
+      'Points waren puntige veters die door oogjes geregen werden, afzonderlijke kousenpijpen aan het wambuis verbonden om ze van afdrijven af te voorkomen.',
+    ],
+    [
+      'Hoe verschilde de Spaanse farthingale van de latere Franse wielförmige farthingale in silhouet?',
+      ['Spanish was cone-shaped, French was flat-topped', 'Spanish was wool, French was silk', 'Spanish required boning, French did not', 'Spanish was formal, French was casual'],
+      0,
+      'De Spaanse versie gebruikte gegradueerde hoepels voor een gladde kegelvorm, terwijl de Franse wielversie de rok naar buiten in een plat-topvorm drukte.',
+    ],
+    [
+      'Welke innovatie liet uitgebreide ruches hun strakke plooien in de late 16de eeuw behouden?',
+      ['Starch, applied and set with heated poking sticks', 'Wire cage supports', 'Chemical stiffeners', 'Heat-pressing machines'],
+      0,
+      'Stijfsel, geïntroduceerd vanuit de Lage Landen, werd op linnen ruches aangebracht en gevormd met verwarmde gereedschappen om regelmatige achtvormige plooien in te stellen.',
+    ],
+    [
+      'Welk praktisch probleem loste de schaamlap oorspronkelijk op in 15de-eeuwse herenkleding?',
+      ['The gap left by short doublets and separate hose', 'The need to conceal armor', 'Cold weather protection for sensitive areas', 'Fashion decoration only'],
+      0,
+      'Naarmate wambuizen korter werden en kousen als afzonderlijke pijpen bleven, werd een stofpaneel nodig om de opening voor schaamte aan de voorkant te bedekken.',
+    ],
+    [
+      'Waarom waren Venetiaanse chopine-platformschoenen vooral moeilijk te dragen op hun meest extreme hoogte?',
+      ['Their extreme height made balance difficult', 'Their rigid construction limited movement', 'The weight of the platforms', 'They limited downward vision'],
+      0,
+      'Sommige chopines bereikten meer dan een voet hoogte, waarvoor draagsters fysiek door bedienden of gezelschap ondersteund moesten worden om het evenwicht te behouden.',
+    ],
+    [
+      'Wat was de functie van de stomacher in vrouwenkleding uit de 16de eeuw?',
+      ['It filled and shaped the V-shaped front opening of a bodice', 'It supported the skirt at the waist', 'It created hip padding', 'It reinforced the shoulders'],
+      0,
+      'De verstevigde, vaak zwaar versierde driehoekige stomacher vulde de opening van open-voorgeknipte lijfjes en werd een prominent brandpunt van de torso.',
+    ],
+    [
+      'Hoe verschilde 18de-eeuwse panniers van eerdere farthingale-structuren?',
+      ['They extended width dramatically at the sides rather than all around', 'They were smaller and less visible', 'They used different materials', 'They were only worn by servants'],
+      0,
+      'Panniers gebruikten hoepels op heupniveau die de rok aan de zijkanten naar buiten duwden terwijl ze van voor naar achter plat bleven, wat een kenmerkende trommelachtige silhouette creëerde.',
+    ],
+  ],
   msc: [
     [
       'Historici wijzen op het midden van de 14e eeuw als een kantelpunt in de West-Europese kleding, omdat een nieuw gefigureerd herenkledingstuk een fundamenteel andere knipmethode vereiste dan eerdere gewaden. Welk kledingstuk illustreert deze verschuiving naar echt maatwerk?',

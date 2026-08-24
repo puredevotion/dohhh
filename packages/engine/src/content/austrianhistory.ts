@@ -71,7 +71,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Which treaty formally partitioned Austria-Hungary after World War I?',
       [
-        'Treaty of Saint-Germain',
+        'Saint-Germain',
         'Treaty of Versailles',
         'Treaty of Trianon',
         'Treaty of Brest-Litovsk',
@@ -104,7 +104,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Which region was the original power base of the Babenberg dynasty?',
       [
-        'The March of Austria along the Danube',
+        'The March of Austria',
         'The Alpine valleys of Tyrol',
         'The plains of Moravia',
         'The forests of Bohemia',
@@ -148,7 +148,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What event in 1246 ended Babenberg rule in Austria?',
       [
-        'The death of the last Babenberg duke without a direct heir',
+        'Death of the last Babenberg duke',
         'Invasion by Hungarian forces',
         'Conquest by the Holy Roman Emperor',
         'Peasant rebellion',
@@ -159,7 +159,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How did Austria emerge from Nazi occupation after World War II?',
       [
-        'Soviet and Western forces liberated it; it later became neutral and independent',
+        'Liberated by Allied forces, later became neutral',
         'It was immediately partitioned among neighboring states',
         'It remained divided like Germany until 1990',
         'Austria unified voluntarily with West Germany',
@@ -183,7 +183,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What constitutional arrangement characterized the relationship between Austria and Hungary within the empire established by the Austro-Hungarian Compromise?',
       [
-        'Dual monarchy with two separate crowns and administrations',
+        'Dual monarchy with two crowns',
         'Unitary state with Budapest as sole capital',
         'Confederation under a single parliament',
         'Personal union only, with no shared sovereignty',
@@ -205,7 +205,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What was the primary reason the First Austrian Republic adopted a federal system of government in 1919?',
       [
-        'To balance power between Vienna and regional states after losing imperial territories',
+        'To balance power between Vienna and the regions',
         'Because the treaty required it as a condition of peace',
         'To prepare for union with Germany',
         'To satisfy the League of Nations membership requirement',
@@ -216,7 +216,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Which musical and cultural movement was closely associated with late-19th-century Vienna under Habsburg rule?',
       [
-        'Viennese Waltz and the Strauss dynasty\'s compositions',
+        'The Viennese Waltz tradition',
         'Impressionism in painting',
         'Romantic nationalism in literature',
         'German Expressionist theater',
@@ -249,7 +249,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What was the Metternich System, and which era did it dominate?',
       [
-        'Conservative international order established 1815-1848 preventing nationalist revolutions',
+        'Conservative order established 1815-1848',
         'Austrian parliamentary democracy from 1867-1914',
         'Habsburg military strategy used against Prussia',
         'Economic union between Austria and Germany',
@@ -260,7 +260,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Why did Austria reluctantly declare war on Serbia in 1914, initiating World War I in the Balkans?',
       [
-        'Response to the assassination of Archduke Franz Ferdinand in Sarajevo',
+        'Assassination of Archduke Franz Ferdinand',
         'Expansion of territorial claims in the Balkans',
         'Alliance obligation to Germany\'s invasion of Belgium',
         'Naval blockade imposed by Britain',
@@ -271,7 +271,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What economic and trading bloc did Austria join in 1972, reflecting a shift toward Western European integration?',
       [
-        'European Free Trade Association (EFTA)',
+        'EFTA',
         'European Economic Community (EEC)',
         'COMECON',
         'Benelux Union',
@@ -282,7 +282,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Which medieval legal privilege elevated Austria from a margraviate to a ducal territory with special status?',
       [
-        'Privilegium Minus of 1156',
+        'Privilegium Minus',
         'Golden Bull of 1222',
         'Magna Carta of 1215',
         'Peace of Westphalia',
@@ -293,7 +293,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What role did the Austrian State Treaty of 1955 play in ending post-World War II occupation?',
       [
-        'Restored Austrian sovereignty and independence in exchange for permanent neutrality',
+        'Restored sovereignty in exchange for neutrality',
         'Divided Austria into separate zones under Soviet and Western control',
         'Required Austria to join NATO immediately',
         'Transferred Tyrol permanently to Italy',
@@ -304,7 +304,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Emperor Joseph II pursued which major internal reform that modernized but destabilized the empire?',
       [
-        'Enlightened absolutism, centralizing power and rationalizing administration at the expense of regional autonomy',
+        'Enlightened absolutism, centralizing power',
         'Feudal devolution of power to local aristocrats',
         'Democratization through universal suffrage',
         'Weakening of the Catholic Church\'s influence',
@@ -326,7 +326,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Why was the First Austrian Republic initially prevented from union with Germany, a goal favored by many Austrians in 1919?',
       [
-        'The Treaty of Saint-Germain explicitly prohibited it as a condition of Austrian independence',
+        'The Treaty of Saint-Germain prohibited it',
         'Austria voluntarily chose to remain independent',
         'Germany refused the union proposal',
         'The League of Nations mandated against it',
@@ -339,7 +339,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'The Privilegium Minus of 1156 raised Austria\'s status primarily to accomplish what strategic goal for the Holy Roman Emperor?',
       [
-        'Create a buffer state against Bavarian and Hungarian expansion while rewarding a loyal ally',
+        'A buffer state against Bavaria and Hungary',
         'Centralize German power against French aggression',
         'Establish a counterweight to the Papacy in Italy',
         'Provide a naval base for Mediterranean trade',
@@ -350,7 +350,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How did the ethnic composition and nationalist movements within Austria-Hungary contribute to its eventual dissolution?',
       [
-        'Multiple ethnic groups pursued competing claims to statehood, fragmenting the empire especially after military defeats in WWI',
+        'Competing ethnic claims to statehood fragmented the empire',
         'Ethnic homogeneity paradoxically caused stagnation and civil war',
         'The empire had no nationalist movements until 1914',
         'Nationalism was entirely an external invention of the treaty powers',
@@ -361,7 +361,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What historiographical debate surrounds Joseph II\'s reign regarding administrative centralization and ethnic tensions?',
       [
-        'Whether his reforms strengthened or destabilized the empire by eroding regional identities and noble privileges',
+        'Whether his reforms strengthened or destabilized the empire',
         'Whether he was influenced more by Enlightenment or by Counter-Reformation ideology',
         'Whether he deliberately planned the empire\'s dissolution',
         'Whether his military campaigns were strategically sound',
@@ -372,7 +372,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'The Austro-Hungarian Compromise of 1867 created a dual monarchy partly in response to which military defeat?',
       [
-        'Prussian victory over Austria in the Seven Weeks\' War (1866)',
+        'Prussian victory in the Seven Weeks\' War',
         'Ottoman conquest of Hungary in 1526',
         'Napoleonic victories under the French Empire',
         'British naval dominance in global trade',
@@ -383,7 +383,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Which aspect of Vienna\'s position as an imperial capital reinforced Austria\'s cultural and diplomatic influence despite its declining military-economic power after 1870?',
       [
-        'Vienna\'s role as a cosmopolitan intellectual and artistic center attracting talent from across Europe and the empire',
+        'Vienna\'s role as a cosmopolitan intellectual center',
         'Its location on major trade routes guaranteeing commercial dominance',
         'Direct military control of the Mediterranean',
         'Exclusive alliance with Britain and France',
@@ -394,7 +394,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How did the collapse of Austria-Hungary in 1918 reshape the political map of Central Europe, and what principle governed the territorial divisions?',
       [
-        'National self-determination created new nation-states, though many remained multiethnic and territorial disputes persisted',
+        'National self-determination created new nation-states',
         'The victors simply redistributed lands as conquests',
         'Austria and Hungary remained intact but as occupied colonies',
         'No significant border changes occurred',
@@ -405,7 +405,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Why did Austria adopt a quasi-presidential federal system in its 1920 constitution rather than a purely parliamentary one?',
       [
-        'To create executive stability and prevent fragmentation given the republic\'s weak parliamentary majorities and ideological polarization',
+        'To create executive stability',
         'Because the treaty powers mandated it',
         'Because Austria had always used presidential systems',
         'To prepare for unification with Germany',
@@ -416,7 +416,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What was the Ständestaat, and how did it represent Austria\'s attempt to resist both Nazi and Soviet influence in the 1930s?',
       [
-        'Austro-fascist corporate state attempting to preserve Austrian independence through authoritarian Catholic nationalism',
+        'Austro-fascist corporate state under Dollfuß',
         'Socialist worker\'s movement against Nazi expansion',
         'Restoration of the Habsburg monarchy in exile',
         'International pacifist organization',
@@ -427,7 +427,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How did the Austrian Resistance movements during World War II differ from resistance in other occupied territories?',
       [
-        'Limited by ambiguity over Austrian identity (as victim of Nazi occupation vs. complicit annexation) and internal divisions on postwar status',
+        'Limited by ambiguity over Austrian identity and status',
         'It was non-existent and Austria fully collaborated',
         'Austrians immediately liberated themselves without external help',
         'Austria had unified resistance across all political groups',
@@ -438,7 +438,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What role did the Austrian Communist Party play in the postwar Second Republic, and why did it remain marginal despite Soviet occupation?',
       [
-        'It remained weak due to popular Catholic identity, Cold War divisions, and Western integration; Soviet leverage was constrained by the neutrality treaty',
+        'Weak due to Catholic identity',
         'It seized power immediately after 1945',
         'Austria had no communist presence whatsoever',
         'The communist party dominated postwar politics',
@@ -449,7 +449,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Explain the contradiction that Austria\'s postwar neutrality allowed it to join the EU in 1995 without joining NATO.',
       [
-        'EU membership is compatible with neutrality; Austria maintains military non-alignment while participating in economic and political integration',
+        'EU membership is compatible with military neutrality',
         'Austria secretly joined NATO in 1995',
         'Neutrality and EU membership are contradictory; Austria violated its treaty',
         'Austria is not actually a member of the EU',
@@ -460,7 +460,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How did the Metternich System\'s collapse in 1848 relate to nationalist and liberal uprisings across the Habsburg domains?',
       [
-        'Revolutions in Vienna, Bohemia, Hungary, and Italy challenged the conservative order, forcing concessions Metternich could not contain',
+        'Revolutions overwhelmed Metternich\'s system',
         'Revolutions did not occur in Austria',
         'Metternich successfully prevented all reform',
         'Nationalism did not emerge until 1900',
@@ -471,7 +471,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'Which intellectuals and movements centered in Vienna during the late 19th and early 20th centuries are considered foundational to modern thought?',
       [
-        'Freud, Mahler, Schönberg, Wittgenstein, the Vienna Circle, and Austro-Hungarian artistic modernism',
+        'Freud, Mahler, Schönberg, and the Vienna Circle',
         'Only political theorists mattered to Vienna\'s influence',
         'Vienna produced no significant thinkers',
         'All important modernism originated in Germany',
@@ -482,7 +482,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How did Austria\'s geographic location between German and Ottoman-Balkan spheres shape its medieval development under the Babenbergs?',
       [
-        'Border position required military strength and strategic alliances; Danube trade and Holy Roman ties made Vienna a crossroads of commerce and power',
+        'Required military strength and alliances',
         'Geography was irrelevant to Austrian development',
         'Austria was always under Ottoman rule',
         'Austria had no strategic importance',
@@ -493,7 +493,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What historiographical reassessment has emerged regarding Austrian complicity in Nazi crimes and the postwar narrative of Austria as a "first victim"?',
       [
-        'Scholars increasingly stress Austrian collaboration with Nazism rather than purely victim status, complicating the postwar national narrative',
+        'Austrian collaboration outweighs victim status',
         'Austria was entirely complicit with no victim elements',
         'Austria was entirely innocent with no collaboration',
         'Historical debate on this topic does not exist',
@@ -506,7 +506,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'In the historiography of the Babenberg dynasty, what evidence challenges the traditional narrative of continuous territorial expansion, and how do modern scholars revise periodization?',
       [
-        'Charter analysis and diplomatic records reveal non-linear consolidation with reversals; scholars now stress competition with Bohemia and the complex 12th-century frontier politics',
+        'Non-linear consolidation with reversals',
         'No evidence challenges the expansion narrative',
         'Babenbergs had minimal territorial control',
         'Expansion was continuous and unopposed',
@@ -517,7 +517,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How do postcolonial and transnational approaches reframe the Austro-Hungarian Empire\'s internal diversity, moving beyond the "prison of nations" metaphor?',
       [
-        'Emphasizing agency, hybridity, and circulation across ethnic boundaries; noting elite mobility and shared imperial structures rather than monolithic oppression',
+        'Agency, hybridity, and shared imperial structures',
         'Postcolonial theory has no relevance to Austria-Hungary',
         'The "prison of nations" remains the only accurate frame',
         'Austria-Hungary was entirely homogeneous',
@@ -528,7 +528,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What role did the Austro-Hungarian Common Army play in maintaining imperial cohesion, and how did linguistic and national loyalty tensions destabilize it?',
       [
-        'The army functioned as integrative institution using German/Hungarian officers, but late-19th-century mass politics and Balkan nationalism strained loyalty and command structures',
+        'An integrative institution strained by mass politics',
         'The army had no internal tensions',
         'The army was composed of a single ethnic group',
         'Linguistic differences did not affect military function',
@@ -539,7 +539,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How do revisionist accounts of the 1918-1920 transition challenge the notion of inevitable empire collapse, and what contingencies might have altered outcomes?',
       [
-        'Recent scholarship stresses failed federalism projects and diplomatic choices (e.g., rejecting Trianon terms, alternative constitutions) that might have preserved altered form',
+        'Failed federalism and diplomatic missteps',
         'Collapse was entirely inevitable with no contingencies',
         'Historians have not studied the transition period',
         'Only one outcome was possible',
@@ -550,7 +550,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'In what ways did the First Austrian Republic\'s territorial diminution affect national identity construction, and how did competing visions of "Austrianness" emerge?',
       [
-        'Loss of empire created identity vacuum filled by competing vectors: pan-Germanism, Catholic conservatism, Austro-patriotism, and left-wing internationalism—all contested',
+        'An identity vacuum of competing visions',
         'Austrian identity was firmly established before 1918',
         'There was no identity debate in the republic',
         'All Austrians agreed on national identity',
@@ -561,7 +561,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How do recent transnational histories of antisemitism in Austria differ from earlier accounts that blamed external Nazification?',
       [
-        'New scholarship documents deep indigenous antisemitic traditions among Catholic, conservative, and socialist constituencies predating Hitler; external Nazi ideology amplified existing prejudices',
+        'Indigenous antisemitism predating Hitler',
         'Austria had no antisemitic tradition before Nazism',
         'Antisemitism began only with Hitler\'s arrival',
         'Austria was entirely free of religious prejudice',
@@ -572,7 +572,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What historiographical debate surrounds Austria\'s 1938 Anschluss: should it be read as annexation, national unification, or something more complex?',
       [
-        'Scholars contest whether "annexation" understates popular support among some Austrians while "unification" overstates self-determination; consensus now emphasizes coercion, plebiscite manipulation, and divided opinion',
+        'Coercion, manipulation, and divided opinion',
         'The Anschluss was unanimous popular support',
         'It was pure foreign conquest with no Austrian participation',
         'There is no scholarly debate on this topic',
@@ -583,7 +583,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How did Austrian Catholic intellectual traditions navigate the ideological crisis of the 1920s-1930s, particularly regarding church response to both communism and fascism?',
       [
-        'Catholic theorists (Ketteler revival, solidarism, corporatism) attempted third-way synthesis between Marxism and liberalism; institutional Church ultimately supported conservative authoritarianism',
+        'A Catholic third way toward authoritarianism',
         'The Catholic Church remained politically neutral throughout',
         'Catholicism had no influence on Austrian politics',
         'The Church exclusively supported democracy',
@@ -594,7 +594,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What role did Vienna\'s intellectual communities (Vienna Circle, Second Viennese School, Freudian circles) play in producing exiled intellectuals who shaped postwar allied reconstruction?',
       [
-        'Direct: forced emigration of Jewish and non-Nazi intellectuals created diaspora networks in US/UK that influenced occupation policy, denazification, and cultural reconstruction of Austria',
+        'Forced emigration shaped occupation policy',
         'Vienna had no intellectual influence on postwar planning',
         'Emigration had no effects on allied policy',
         'Vienna intellectuals remained in Austria throughout',
@@ -605,7 +605,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'In what ways does the Austrian State Treaty (1955) represent a unique Cold War settlement, and how did Soviet concessions differ from German and Korean divisions?',
       [
-        'Soviets accepted full Austrian neutrality and withdrawal in exchange for diplomatic gains; no partition, occupation ended consensually—unlike Germany or Korea, where division was enforced',
+        'Consensual withdrawal, not division',
         'Austria was divided like Germany',
         'The Soviets gained territorial concessions',
         'The treaty resolved nothing',
@@ -616,7 +616,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How do historians account for Austria\'s relatively peaceful postwar transition and rapid integration into democratic Western structures, compared to other successor states?',
       [
-        'Factors include Catholic consensus, Marshall Plan benefits, Cold War bipolar pressure against division, and managed negotiation between Austrian parties despite denazification complexities',
+        'Catholic consensus and Marshall aid',
         'Austria faced greater challenges than other states',
         'The transition was entirely peaceful with no difficulties',
         'Austria did not integrate into Western structures',
@@ -627,7 +627,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What interpretive frameworks have scholars applied to understand the Habsburg monarchy\'s long survival (roughly 1282-1918) relative to other European empires?',
       [
-        'Dynastic resilience, fragmented nationalism limiting unified opposition, imperial administrative flexibility, marriage alliances, and geographic frontier position all sustained the realm',
+        'Dynastic resilience and marriage alliances',
         'The Habsburgs had no special advantages',
         'Only military force sustained the monarchy',
         'The Habsburg realm was always on the verge of collapse',
@@ -638,7 +638,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How does the concept of "supranationalism" apply to late Austria-Hungary, and what attempts at constitutional reform in 1914-1918 sought to preserve the realm?',
       [
-        'Supranational federalism projects (Aurel Popovici\'s United States of Greater Austria) aimed to reconcile nationalism and empire; wartime proposals failed due to political rigidity and military collapse',
+        'Popovici\'s "Greater Austria" federalism plan',
         'Supranationalism had no relevance to Austria-Hungary',
         'No constitutional reform projects existed',
         'The war began with constitutional consensus',
@@ -649,7 +649,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'What does the "Austrian question" in Cold War diplomatic history refer to, and why was Austria\'s reunification and neutralization treated as a model or precedent?',
       [
-        'Soviet willingness to accept Austrian neutrality and withdrawal became potential template for German reunification; US/USSR disagreement on German terms made Austria model untested elsewhere',
+        'A template for German reunification, never applied',
         'There was no Austrian question in Cold War diplomacy',
         'Austria\'s status had no diplomatic significance',
         'Austria\'s situation directly resolved the German question',
@@ -660,7 +660,7 @@ export const AUSTRIAN_HISTORY: CategoryContent = {
     [
       'How have environmental and spatial historians reconceived Vienna\'s role in the Habsburg Empire, particularly regarding resource flows, infrastructure, and the city\'s expansion as imperial capital?',
       [
-        'Vienna\'s water systems, grain trade networks, and urban growth depended on empire-wide resource extraction; city\'s planning reflected imperial centralization and became contested symbol of dominance',
+        'Vienna\'s growth relied on imperial resources',
         'Vienna\'s development was purely internal',
         'The city had minimal imperial importance',
         'Infrastructure played no role in imperial power',

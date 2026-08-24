@@ -71,7 +71,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'The Peace of Kappel (1531) established which principle in Swiss cantonal relations?',
       [
-        'Each canton could choose its own religion without interference',
+        'Cantons could choose their own religion',
         'All cantons must adopt Reformation theology',
         'Religious authority rested with the federal government',
         'The Pope held veto power over cantonal laws',
@@ -82,7 +82,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'When did Switzerland formally establish a policy of permanent neutrality?',
       [
-        'After the Napoleonic Wars, recognized in the 1815 Treaty of Paris',
+        'In 1815, after the Napoleonic Wars',
         'In 1291 with the Rütli Oath',
         'During the Reformation in the 16th century',
         'In 1848 with the federal constitution',
@@ -104,7 +104,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the Battle of Marignano\'s significance for Swiss military history?',
       [
-        'It ended Swiss dominance in European warfare and Italian adventures',
+        'It ended Swiss military dominance in Europe',
         'It established Swiss independence from Austria',
         'It was the founding battle of the Confederacy',
         'It secured Swiss control of Alpine passes',
@@ -137,7 +137,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What unique feature of Swiss government was embedded in the 1848 Constitution and expanded in 1874?',
       [
-        'Direct democracy through popular referendums and citizen-initiated constitutional amendments',
+        'Direct democracy via referendums',
         'An elected executive president',
         'A bicameral legislature',
         'Mandatory military service',
@@ -148,7 +148,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'Which conflict in 1847 tested the new federal structure and centralist versus conservative forces?',
       [
-        'The Sonderbund War between Catholic and Federal cantons',
+        'The Sonderbund War',
         'The Zwingli Wars',
         'The Kappel Conflicts',
         'The Swiss Civil War of 1798',
@@ -159,7 +159,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What role did Swiss banks develop that became central to Switzerland\'s 20th-century identity?',
       [
-        'Safe-haven financial intermediaries with banking discretion and political neutrality',
+        'Discreet, neutral financial safe havens',
         'Monopoly holders of Alpine mineral wealth',
         'Headquarters of the European banking cartel',
         'Enforcers of the papal financial system',
@@ -172,7 +172,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What structural principle did the 1815 Congress of Vienna restoration establish for the Swiss Confederacy?',
       [
-        'Sovereign cantons remained autonomous but united externally while perpetual neutrality was guaranteed internationally',
+        'Autonomous cantons, united externally, neutrality guaranteed',
         'A centralized federal government with appointed cantonal governors',
         'Religious uniformity imposed across all territories',
         'Military subordination to the Concert of Europe',
@@ -183,7 +183,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the Act of Mediation (1803) under Napoleon differ from the Helvetic Republic\'s centralism?',
       [
-        'It restored semi-autonomy to cantons while maintaining a weak central authority, a compromise between centralism and confederalism',
+        'Semi-autonomy under a weak central authority',
         'It abolished all cantonal governments',
         'It increased centralization beyond the Helvetic Republic',
         'It established direct democracy',
@@ -194,7 +194,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the ideological conflict underlying the Sonderbund War beyond surface religious division?',
       [
-        'Centralist federalism versus cantonal sovereignty and resistance to secular reform',
+        'Federalism versus cantonal sovereignty',
         'Free trade versus protectionism',
         'Democratic representation versus aristocracy',
         'Mercenary service versus pacifism',
@@ -205,7 +205,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'Which specific provision of the 1848 Constitution reflected the federalist victory in the Sonderbund War?',
       [
-        'A strong federal government with power to legislate internal affairs despite cantonal resistance',
+        'Stronger federal legislative power',
         'Elimination of all cantonal governments',
         'Mandatory Protestantism',
         'Abolition of local courts',
@@ -216,7 +216,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Huldrych Zwingli\'s theology diverge from Martin Luther\'s on the question of communion?',
       [
-        'Zwingli taught symbolic communion; Luther maintained Christ\'s real, corporeal presence in the Eucharist',
+        'Symbolic vs real presence in communion',
         'Zwingli accepted papal authority; Luther rejected it',
         'Zwingli opposed purgatory; Luther accepted it',
         'Zwingli rejected predestination; Luther embraced it',
@@ -227,7 +227,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What consequence did the Marburg Colloquy (1529) have for Swiss and German Protestant unity?',
       [
-        'It exposed the Zwingli-Luther split on the Eucharist, preventing unified Protestant resistance in Switzerland and the Empire',
+        'It exposed the Zwingli-Luther split',
         'It unified all Protestants under one doctrine',
         'It led to Catholic restoration',
         'It established the papacy\'s authority',
@@ -238,7 +238,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the cantonal franchise differ between the 1848 Constitution and the 1874 revision regarding popular participation?',
       [
-        'The 1874 revision introduced the popular initiative for constitutional amendments, directly expanding citizen legislative power',
+        'The 1874 revision added the popular initiative',
         'The 1848 Constitution had stronger direct democracy',
         'The 1874 revision eliminated referendums',
         'Neither altered the franchise system',
@@ -249,7 +249,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What economic shift occurred in Swiss cantons following the decline of organized mercenary recruitment after 1815?',
       [
-        'Cantons developed domestic industries—textiles, watches, machinery—replacing mercenary service as primary revenue',
+        'Cantons shifted to textiles, watches, machinery',
         'Banking alone replaced all mercenary income',
         'Switzerland became dependent on agricultural exports',
         'No economic transition was necessary',
@@ -260,7 +260,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What role did Alfred Escher play in 19th-century Swiss federalism and infrastructure?',
       [
-        'He championed railway development and federal centralization despite conservative cantonal resistance, reshaping Switzerland\'s economic integration',
+        'He championed Swiss railways',
         'He opposed federal power',
         'He led the Sonderbund War',
         'He was the first federal president',
@@ -271,7 +271,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the principle of "cantonal religious autonomy" from 1531 inform the structure of Swiss federalism?',
       [
-        'It established a precedent that regional minorities retain autonomy in defining local governance, which became foundational to federalist constitutional protection',
+        'It set a precedent for regional autonomy in governance',
         'It applied only to religious matters, not political federalism',
         'It was abolished in 1848',
         'It created religious monarchy',
@@ -282,7 +282,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What did the Bundesbrief (1291) actually specify regarding military and political obligations?',
       [
-        'Mutual defense of territories against external threats and agreement to resolve disputes through arbitration rather than warfare',
+        'Mutual defense and dispute arbitration',
         'Complete political union under a single authority',
         'Religious uniformity',
         'Permanent neutrality',
@@ -293,7 +293,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Swiss banking secrecy become institutionalized in the 19th century?',
       [
-        'Cantonal banking regulations permitted private banks to operate with minimal transparency; federal oversight was weak until much later',
+        'Loose cantonal rules allowed low transparency',
         'A federal law in 1848 mandated secrecy',
         'The League of Nations established secrecy rules',
         'Banks were created by the government',
@@ -304,7 +304,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What institutional development strengthened Swiss neutrality after the Napoleonic Wars?',
       [
-        'Swiss guarantee of non-participation in European wars, combined with permanent armed neutrality and the right to conduct diplomacy independently',
+        'Non-participation and armed neutrality',
         'Disarmament and reliance on international law',
         'Joining international military alliances',
         'Abolishing the army',
@@ -315,7 +315,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the federal takeover of foreign policy in 1848 challenge traditional cantonal sovereignty?',
       [
-        'Cantons lost independent diplomatic rights and military command to the federal government, ending bilateral cantonal treaties',
+        'Cantons lost diplomatic power',
         'Cantons retained all foreign policy power',
         'The federal government was weakened',
         'No change occurred',
@@ -326,7 +326,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What historical factor made Geneva\'s religious radicalism under Calvin distinct from Zwingli\'s Zurich Reformation?',
       [
-        'Calvin\'s theocratic vision and ecclesiastical discipline created a prosecutorial moral regime more rigid than Zwingli\'s civic reformation',
+        'Calvin was stricter than Zwingli',
         'Zwingli was more theocratic than Calvin',
         'Geneva never reformed',
         'They were identical',
@@ -339,7 +339,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the legendary dating of 1291 versus the Treaty of Brunnen (1315) reflect medieval confederation-building practices?',
       [
-        '1291 marks mutual defense; 1315 formalizes territorial autonomy and hereditary right, mirroring feudal compact traditions but with republican elements',
+        'Defense, then autonomy',
         '1291 established monarchy',
         'They are the same event',
         '1315 predates 1291',
@@ -350,7 +350,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What evidence suggests the Rütli oath narrative was a 15th-century construct rather than a literal 1291 event?',
       [
-        'The oath appears first in Chronicles written by Aegidius Tschudi (1580s); no contemporary 1291 documents record it, though the confederation itself is documented',
+        'It first appears in 1580s chronicles',
         'It was written by Napoleon',
         'Swiss historians have proven it authentic',
         'It appears in medieval manuscripts',
@@ -361,7 +361,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the Wintethur Agreement (1424) and subsequent city-canton conflicts reshape confederate authority structures?',
       [
-        'Urban cantons increasingly dominated confederate decisions, shifting power from Forest Cantons toward commercial and manufacturing centers',
+        'Urban cantons gained more power',
         'Rural cantons retained absolute power',
         'No structural change occurred',
         'The confederation dissolved',
@@ -372,7 +372,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What historiographical debate surrounds the role of Habsburg pressure versus internal cantonal conflict in driving 1291 confederation?',
       [
-        'Revisionist scholarship stresses internal valley rivalries and economic competition over Habsburg threat narratives, complicating the "liberty versus tyranny" framing',
+        'Internal rivalries mattered more',
         'Historians universally agree on Habsburg threat',
         'No debate exists',
         'Habsburg pressure is disproven',
@@ -383,7 +383,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Zwingli\'s civic reformation theology differ from radical Anabaptist theology that also flourished in his Zurich sphere?',
       [
-        'Zwingli maintained state-church integration and infant baptism; Anabaptists rejected state authority and adult-only baptism, proposing sectarian separation',
+        'Zwingli vs Anabaptist split',
         'Zwingli was an Anabaptist',
         'There was no Anabaptist movement',
         'They were identical',
@@ -394,7 +394,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the historiographical significance of the Marburg Colloquy (1529) for understanding Protestant fragmentation in the Swiss context?',
       [
-        'It demonstrated that reformed theology itself fractured on Eucharistic ontology, preventing unified Swiss-German Protestant military coordination and explaining diverse cantonal fates',
+        'It split reform unity',
         'It unified all Protestants',
         'It had no significance',
         'It ended the Reformation',
@@ -405,7 +405,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the Helvetic Republic\'s code civil differ from the Napoleonic Code in its application to cantonal legal traditions?',
       [
-        'The code civil attempted wholesale replacement of cantonal law but faced immediate resistance; the 1803 retreat partially restored local legal pluralism',
+        'It restored cantonal pluralism',
         'They were identical',
         'The code civil was accepted everywhere',
         'No legal changes occurred',
@@ -416,7 +416,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What structural tension between direct democracy and representative federalism persisted from the 1848 Constitution through the 1874 revision?',
       [
-        'Cantonal popular sovereignty collided with federal legislative authority, requiring repeated constitutional compromises and the popular initiative as a "safety valve" for cantonal resistance',
+        'A safety valve for cantons',
         'No tension existed',
         'Direct democracy won completely',
         'Representation won completely',
@@ -427,7 +427,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the decline of organized Swiss mercenary services relate to the professionalization of European standing armies post-1815?',
       [
-        'The rise of mass conscription and state-run military academies rendered freelance mercenary companies economically obsolete and politically destabilizing, forcing Swiss employment reorientation',
+        'Conscription made mercenaries obsolete',
         'Mercenary service remained unchanged',
         'Standing armies did not professionalize',
         'Switzerland continued recruiting mercenaries',
@@ -438,7 +438,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the historiographical debate regarding whether Swiss "neutrality" was genuine strategic independence or enforced isolation by the Concert of Europe?',
       [
-        'Scholars argue neutrality was mutually beneficial: Switzerland gained security and diplomatic leverage while great powers avoided Swiss entanglement',
+        'Neutrality suited both sides',
         'Neutrality was entirely genuine',
         'It was complete isolation',
         'There is no debate',
@@ -449,7 +449,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Alfred Escher\'s railway strategy reshape cantonal autonomy through economic integration?',
       [
-        'Escher\'s federal rail network transcended cantonal boundaries, making cantonal economic self-sufficiency obsolete and driving political centralization through infrastructure interdependence',
+        'Railways ended autonomy',
         'Railways had no political effect',
         'Escher opposed federalism',
         'Cantons remained autonomous',
@@ -460,7 +460,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What unresolved historiographical question surrounds the popular initiative\'s introduction in the 1874 revision?',
       [
-        'Whether it was a genuinely democratic reform or a conservative safety-valve to appease cantons resisting federal authority, with both interpretations supported by historical evidence',
+        'Reform, or just a valve',
         'It was purely democratic',
         'It was purely conservative',
         'There is no question',
@@ -471,7 +471,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Swiss banking discretion become legally institutionalized under Article 47 of the Swiss Banking Law (1934)?',
       [
-        'The 1934 law formalized banking secrecy as a legal obligation, converting longstanding cantonal practice into federal criminalized duty, paradoxically making opacity a matter of law',
+        'It made secrecy a legal duty',
         'Banking secrecy was established in 1848',
         'It was never formalized',
         'It was abolished in 1934',
@@ -482,7 +482,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What theoretical framework did early Swiss federalism (post-1815) provide for later federal theory, particularly regarding minority protection?',
       [
-        'Swiss cantonal autonomy with federal oversight became a model for consociationalism and minority power-sharing, influencing later federal theory in divided societies',
+        'A model for consociationalism',
         'Switzerland had no theoretical influence',
         'Federalism originated elsewhere',
         'Swiss model was rejected',
@@ -493,7 +493,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Zwingli\'s death at Kappel (1531) complicate reformed theology\'s trajectory in Swiss cantons?',
       [
-        'His death ended reformers\' military expansion and left reformed theology fragmented; Geneva\'s Calvin later reimposed doctrinal coherence that Zurich\'s civic reformation lacked',
+        'His death fragmented reform',
         'Zwingli survived the war',
         'His death unified all reformers',
         'He converted to Catholicism',
@@ -506,7 +506,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How does the Brunner-Gilomen revisionist framework problematize the teleology of "Swiss unification" as a coherent nation-building project from 1291 onward?',
       [
-        'It emphasizes fragmented, overlapping jurisdictions and post-hoc mythmaking, arguing "Switzerland" was assembled retroactively through 19th-century nationalism rather than a linear confederation-to-nation progression',
+        'A retroactive 19th-century construct',
         'The traditional narrative is unproblematic',
         'Unification occurred immediately in 1291',
         'Switzerland was never unified',
@@ -517,7 +517,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the historical function of the Rütli Oath legend in relation to Joseph Melchior Simler\'s and Aegidius Tschudi\'s 16th-century chronicles and Swiss identity construction?',
       [
-        'The oath narrative served Reformation-era polemics: Tschudi (Catholic) and Simler (Protestant) deployed the Rütli myth to frame their present religious conflicts as continuations of ancient Swiss liberty struggle',
+        'Rival confessional propaganda',
         'The oath was historically accurate',
         'It had no identity function',
         'It was invented in the 19th century',
@@ -528,7 +528,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the "Alliances of Mutual Defence" (Schützbünde) structure pre-1291 regional competition versus later confederation-building narratives?',
       [
-        'Schützbünde were prevalent across the Holy Roman Empire; Swiss cantons\' adoption reflected common feudal security practices, but Swiss historiography uniquely mythologized this pattern into a teleological founding moment',
+        'A common pact, later mythologized',
         'Schützbünde were unique to Switzerland',
         'They did not exist',
         'They unified all cantons',
@@ -539,7 +539,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What does the delayed formalization of the confederate structure (the canon of 13 cantons not established until 1513) reveal about the confederation\'s actual institutional consolidation?',
       [
-        'The confederation lacked coherent structure for two centuries; the 1513 formalization (after the Swabian War) marks the first moment of self-conscious, documented confederate identity',
+        'Lacked coherent structure for centuries',
         'The confederation was formally unified in 1291',
         'It never formalized',
         'It dissolved and reformed continuously',
@@ -550,7 +550,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Zwingli\'s Eucharistic theology relate to his emerging political theory of civic magistracy and sovereignty?',
       [
-        'Zwingli\'s symbolic Eucharist embedded a civic theology: the magistrate\'s authority mirrors divine transcendence; both operate through representation, not material presence—a radical departure from Catholic political theology',
+        'Symbol mirrored civic rule',
         'Zwingli had no political theory',
         'He rejected magistrates',
         'He was a Catholic theologian',
@@ -561,7 +561,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the historiographical significance of the Marburg Colloquy\'s failure for reformed Protestantism\'s relationship to political state-formation in the Swiss context?',
       [
-        'The colloquy\'s failure left reformed theology doctrinally splintered, preventing unified reformed pressure on secular authority; fragmented reformed theology required cantons to adjudicate dogma, strengthening cantonal sovereignty',
+        'Cantons settled doctrine',
         'It unified all reformed churches',
         'It ended reformed theology',
         'It had no significance',
@@ -572,7 +572,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the Helvetic Republic\'s attempted homogenization of cantonal law illuminate the subsequent federalist reaction of the 1815-1848 period?',
       [
-        'The republic\'s failure to erase legal pluralism empirically demonstrated that cantonal legal traditions were too entrenched for centralization; federalists built 1848 explicitly as a pluralist compromise',
+        'Cantonal law was too entrenched to erase',
         'The republic succeeded in homogenization',
         'Federalists favored further centralization',
         'No reaction occurred',
@@ -583,7 +583,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the role of the 1847 Sonderbund War in relation to the emergence of Swiss nationalist ideology vis-à-vis European romanticism?',
       [
-        'The Federalist victory enabled nationalist intellectuals (Gottfried Keller, Johann Jakob Burckhardt) to frame Switzerland as a modern nation-state vindicated against reactionary particularism, absorbing Swiss history into 19th-century nationalist mythology',
+        'It vindicated Swiss nationalism',
         'No nationalism emerged',
         'Nationalism preceded the war',
         'Switzerland remained non-nationalist',
@@ -594,7 +594,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What was the historiographical debate regarding whether the decline of Swiss mercenary employment resulted from technological military change or from geopolitical restructuring of the Concert of Europe?',
       [
-        'Both factors operated: conscription replaced mercenaries technologically, but the Concert of Europe\'s stability also reduced demand; historians diverge on which dominates causally',
+        'Both factors mattered',
         'Only technology mattered',
         'Only geopolitics mattered',
         'Mercenaries never declined',
@@ -605,7 +605,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did Alfred Escher\'s 1859 founding of the Federal Railways (Bundesbahn) represent a theoretically innovative approach to federalist integration?',
       [
-        'Escher proposed federal ownership of critical infrastructure as an alternative to cantonal capitalism, attempting to build federalism through state economic coordination rather than purely constitutional mechanisms',
+        'He pushed federal infrastructure',
         'Railways had no theoretical importance',
         'Escher opposed state ownership',
         'Railways were cantonal',
@@ -616,7 +616,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What unresolved historiographical question concerns the relationship between the 1874 popular initiative and Swiss resistance to supranational European integration in the 20th century?',
       [
-        'Whether direct democracy\'s institutional embedding created path-dependent resistance to surrendering sovereignty to supranational bodies, or whether initiative and Eurocepticism are independent phenomena',
+        'Possibly a factor',
         'They are directly related',
         'They are unrelated',
         'There is no question',
@@ -627,7 +627,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the 1934 Banking Law\'s Article 47 (banking secrecy) relate to Swiss neutrality ideology and evasion of League of Nations sanctions enforcement?',
       [
-        'Formalized secrecy allowed Switzerland to claim neutrality while shielding sanctioned nations\' assets; by the 1930s-1940s, secrecy became central to neutral ideology and sanctions-evasion capability',
+        'It hides real coercion behind Swiss unity',
         'Banking secrecy prevented sanctions evasion',
         'It was unrelated to neutrality',
         'Secrecy was never formalized',
@@ -638,7 +638,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What does the historiographical concept of "Swiss federalism as consociationalism" (Arend Lijphart\'s framework applied retroactively) reveal and obscure about historical cantonal relations?',
       [
-        'Consociationalism highlights elite accommodation and minority protection but obscures coercive hierarchies: Swiss cantons faced real military defeat, not just consensual power-sharing',
+        'It hides real coercion behind consensus',
         'Consociation fully explains Swiss federalism',
         'It reveals nothing',
         'It is anachronistic',
@@ -649,7 +649,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'How did the historiographical debate over "Zwingli as proto-nationalist" versus "Zwingli as civic reformer" shape modern interpretations of Swiss religious exceptionalism?',
       [
-        'The nationalist reading (Staehelin, Kohler) positions Switzerland as early modern nation; civic reading (Brady, Wandel) stresses institutional pluralism—shaping how modern Switzerland is theorized as multinational versus nationalist',
+        'It fuels debate on Swiss nationalism',
         'There is no debate',
         'All historians agree he was nationalist',
         'He was not civic',
@@ -660,7 +660,7 @@ export const SWISS_HISTORY: CategoryContent = {
     [
       'What does the historiographical erasure of Genevese and Valais history from "Swiss" narratives until the 1815 annexations reveal about retroactive nation-building and the constructed nature of Swiss territorial identity?',
       [
-        'Pre-1815, Geneva and Valais were excluded because "Switzerland" was not yet a historical category; their 1815 inclusion shows nation-building occurred retroactively through annexation, with borders redrawn to match nationalist ideology',
+        'A 19th-century construct',
         'Geneva was always Swiss',
         'Valais was never Swiss',
         'Borders were fixed in 1291',

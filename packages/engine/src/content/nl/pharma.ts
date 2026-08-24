@@ -16,7 +16,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Welk type medicijnreceptor werkt doorgaans via G-proteïnekoppeling?',
       [
-        'G-proteïne-gekoppelde receptoren (GPCRs)',
+        'GPCRs',
         'Ionkanaalsreceptoren',
         'Kernreceptoren',
         'Enzym-gekoppelde receptoren',
@@ -27,7 +27,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is het primaire doel van klinische proeven in Fase II?',
       [
-        'Werkzaamheid en optimale doses in patiëntenpopulaties beoordelen',
+        'Werkzaamheid en optimale dosering beoordelen',
         'Lange-termijnveiligheid in grote populaties evalueren',
         'Basisveiligheid en verdraagzaamheid in gezonde vrijwilligers vaststellen',
         'Zeldzame bijwerkingen in reële praktijk bewaken',
@@ -60,7 +60,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Een agonist verschilt van een antagonist omdat het:',
       [
-        'Een receptor bindt en een biologische respons activeert',
+        'Bindt en activeert de receptor',
         'Een receptor blokkeert zonder respons op te wekken',
         'Enzymactiviteit irreversibel verhoogt',
         'Medicijnmetabolisme in de lever voorkomt',
@@ -71,7 +71,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is geneesmiddelhalf-life?',
       [
-        'De tijd benodigd voor plasmaconcentratie van een geneesmiddel met 50% af te nemen',
+        'Tijd tot plasmaconcentratie 50% afneemt',
         'De tijd totdat maximale concentratie bereikt is',
         'De totale tijd dat een geneesmiddel in het lichaam blijft',
         'De duur van het therapeutisch effect',
@@ -93,7 +93,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is biologische beschikbaarheid?',
       [
-        'Het deel van een toegediende dosis dat in de bloedbaan terechtkomt',
+        'Deel van de dosis dat de bloedbaan bereikt',
         'De geneesmiddelconcentratie op de werkingsplaats',
         'De snelheid waarmee een geneesmiddel wordt opgenomen',
         'Het vermogen van een geneesmiddel om de bloed-hersenbarrière te passeren',
@@ -104,7 +104,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat duidt de FDA-aanwijzing "Orphan Drug" aan?',
       [
-        'Een geneesmiddel ontwikkeld voor zeldzame ziekten die minder dan 200.000 mensen in de VS treffen',
+        'Geneesmiddel voor zeldzame ziekte (<200.000 in VS)',
         'Een geneesmiddel zonder patent of merkbescherming',
         'Een niet-goedgekeurd experimenteel middel in vroege proeven',
         'Een geneesmiddel zonder bekende fabrikant of leveringsketen',
@@ -115,7 +115,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is een geneesmiddel-geneesmiddel-interactie?',
       [
-        'Een effect op werkzaamheid of veiligheid door gelijktijdige toediening met ander geneesmiddel',
+        'Effect op werkzaamheid via een ander geneesmiddel',
         'Competitie tussen twee geneesmiddelen voor dezelfde receptorplaats',
         'De chemische reactie tussen twee geneesmiddelmoleculen in oplossing',
         'De opeenvolgende toediening van twee medicijnen op dezelfde dag',
@@ -137,7 +137,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat betekent "generiek" voor een geneesmiddel?',
       [
-        'Een geneesmiddel zonder patentbescherming, door elke fabrikant vervaardigd',
+        'Zonder patentbescherming, door elke fabrikant gemaakt',
         'Een ongemerkt geneesmiddel dat minder werkzaam is dan origineel',
         'Een geneesmiddel dat voor meerdere ziekten werkt',
         'Een geneesmiddel in vroegste ontwikkelingsfase',
@@ -148,7 +148,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat veroorzaakt een type A-bijwerking?',
       [
-        'Een overdreven maar voorspelbare respons gebaseerd op bekende farmacolgie',
+        'Een overdreven, voorspelbare respons',
         'Een eigenaardige reactie los van pharmacologie',
         'Een allergische of immuungemedieerde respons',
         'Een reactie die alleen na lange-termijngebruik optreedt',
@@ -172,7 +172,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is allosterische modulatie?',
       [
-        'Regulatie van receptoractivity door binding op plaats ver van orthoterische plaats',
+        'Regulatie via binding op een plaats ver van de orthosterische',
         'Onomkeerbare remming van enzym op actieve plaats',
         'Competitieve remming waarbij remmer en substraat dezelfde bindingsplaats innemen',
         'Verzadiging van enzymkinetiek bij hoge substraatconcentraties',
@@ -194,7 +194,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is het primaire verschil in statistisch ontwerp tussen Fase I en II?',
       [
-        'Fase I is open-label veiligheid-gericht; Fase II is gerandomiseerd en beoordeelt dosis-respons',
+        'Fase I is open-label veiligheid; Fase II is gerandomiseerd',
         'Fase I neemt patiënten op; Fase II gezonde vrijwilligers',
         'Fase I gebruikt crossover-ontwerpen; Fase II gebrut parallelle groepen',
         'Fase I beoordeelt metabolisme; Fase II beoordeelt klaring',
@@ -205,7 +205,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat beschrijven farmacodynamische modellen met Emax-vergelijkingen?',
       [
-        'De sigmoidale relatie tussen geneesmiddelconcentratie en effect',
+        'De sigmoidale relatie tussen concentratie en effect',
         'De lineaire eliminatie van geneesmiddel in stabiele toestand',
         'De absorptiesnelheid over het maagdarmkanaal',
         'Het distributivevolume in verschillende weefselcompartimenten',
@@ -216,7 +216,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe beïnvloedt geneesmiddelchiraliteit farmacokinetiek?',
       [
-        'Enantiomeren kunnen verschillende metabolisatiepercentages en transporters hebben',
+        'Enantiomeren metaboliseren mogelijk verschillend snel',
         'Chirale geneesmiddelen worden altijd sneller opgenomen dan achirale',
         'Chiraliteit heeft geen effect op farmacokinetiek, alleen op potentie',
         'Enantiomeren worden snel omgezet in bloedbaan',
@@ -227,7 +227,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is first-pass metabolisme?',
       [
-        'Hepatisch of intestinaal metabolisme van oraal geneesmiddel voor systemische circulatie',
+        'Pre-systemisch hepatisch of intestinaal metabolisme',
         'Initiële eliminatie van geneesmiddel tijdens absorptiefase',
         'Metabolisme van geneesmiddel door de nier',
         'Omzetting van inactief prodrug in werkzame vorm',
@@ -238,7 +238,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe beïnvloedt plasmaeiwit-binding farmacokinetiek?',
       [
-        'Sterk gebonden geneesmiddelen hebben lagere vrije concentratie en veranderde klaring',
+        'Lagere vrije concentratie en veranderde klaring',
         'Eiwitbinding verhoogt distributivevolume uniform',
         'Gebonden geneesmiddel draagt evengoed bij aan effect als vrij geneesmiddel',
         'Eiwitbinding heeft geen kinetische gevolgen',
@@ -249,7 +249,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is het werkingsmechanisme van bètablokkers?',
       [
-        'Competitieve antagonisme op adrenergische receptoren',
+        'Adrenerge antagonisme',
         'Agonisme op muscarinische acetylcholineceptoren',
         'Blokkering van calciumkanalen',
         'Directe vaatverwijding via stikstofmonoxide',
@@ -260,7 +260,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is een prodrug?',
       [
-        'Een inactieve verbinding die in het lichaam in actieve vorm wordt gemetaboliseerd',
+        'Een inactieve verbinding, gemetaboliseerd tot actieve vorm',
         'Een geneesmiddelintermedium tijdens productie',
         'Een gedeeltelijk werkzaam geneesmiddel dat combinatietherapie vereist',
         'Een geneesmiddel in vroegste preklinische fase',
@@ -271,7 +271,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat bepaalt concentratie op stabiel niveau voor gegeven doseringsinterval?',
       [
-        'Verhouding van klaring tot doseerinterval; accumulatie hangt af van half-life',
+        'Klaring t.o.v. doseerinterval',
         'Alleen distributivevolume',
         'Absorptiesnelheidsconstante',
         'Bindingsaffiniteit met plasmaewitten',
@@ -282,7 +282,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is pharmacogenomics?',
       [
-        'Studie van genetische variatie in medicijnmetaboliserende enzymen en respons',
+        'Genetische variatie in medicijnmetaboliserende enzymen',
         'Ontwikkeling van nieuwe chemische entiteiten uit genetisch materiaal',
         'Gebruik van geneesmiddelen om geneexpressie te veranderen',
         'Erfenis van medicijnmetabolisatiepatronen tussen generaties',
@@ -293,7 +293,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Welke rol spelen medicijntransporters in farmacokinetiek?',
       [
-        'Actief transport van geneesmiddelen over membranen; beïnvloedt beschikbaarheid en eliminatie',
+        'Actief transport van geneesmiddelen over membranen',
         'Passieve diffusie van alle geneesmiddelen over bloed-hersenbarrière',
         'Binding van geneesmiddelen aan dragereiwitten in plasma',
         'Inactivering van geneesmiddelen door enzymatische afbraak',
@@ -304,7 +304,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Waarom kan een Fase III-proef mislukken ondanks succes in Fase II?',
       [
-        'Grotere populatie onthult subgroepen met slechte respons of veiligheidsproblemen',
+        'Grotere groepen onthullen zwakke respons',
         'Fase III vereist andere parameters dan Fase II',
         'Geneesmiddelmetabolisme verandert met grotere steekproeven',
         'Regelgeving is strenger voor Fase III',
@@ -315,7 +315,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is een aannemelijke verklaring voor verlies van werkzaamheid na langdurig gebruik?',
       [
-        'Receptordesensibilisatie of downregulatie na chronische agonist-stimulatie',
+        'Receptordesensibilisatie of downregulatie',
         'Verhoogd geneesmiddelmetabolisme in loop der tijd',
         'Nierfalen dat zich tijdens therapie ontwikkelt',
         'Afbraak van geneesmiddelmolecuul in bloedbaan',
@@ -326,7 +326,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is de betekenis van CYP450-inductie in geneesmiddel-interacties?',
       [
-        'Inductor verhoogt expressie van metabolische enzymen; versnelt metabolisme van andere substraten',
+        'Het verhoogt expressie van metabolische enzymen',
         'Inductie voorkomt geneesmiddelmetabolisme',
         'Inductie treedt alleen op met chronische dosering van één geneesmiddel',
         'Inducers blokkeren transportergemedieerde klaring',
@@ -339,7 +339,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is positieve allosterische modulatie (PAM) en hoe verschilt het mechanistisch van orthosterisch agonisme?',
       [
-        'PAM verhoogt agonist-affiniteit zonder directe activering; agonisme activeert rechtstreeks onafhankelijk',
+        'PAM verhoogt affiniteit zonder directe activering',
         'PAMs hebben langzamere kinetiek dan agonisten',
         'PAMs beïnvloeden alleen G-proteïne-gekoppelde receptoren',
         'PAMs verhogen receptorexpressie terwijl agonisten signalering verhogen',
@@ -350,7 +350,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe bepalen CYP450-remmingskinetiek (competitief vs mechanisme-gebonden) DDI-ernst?',
       [
-        'Competitieve remmers worden overwonnen door substraatconcentratie; mechanisme-gebonden vormen irreversibele inactivering',
+        'Mechanisme-gebonden remmers werken irreversibel',
         'Niet-competitieve remming is altijd omkeerbaar',
         'Competitieve remming produceert altijd klinische DDIs; niet-competitief niet',
         'Beide zijn even tijdafhankelijk',
@@ -361,7 +361,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is het primaire doel van fysiologisch gebaseerde farmacokinetische (PBPK) modellering?',
       [
-        'Geneesmiddelconcentraties in weefsels voorspellen met anatomische, fysiologische en biochemische parameters',
+        'Weefselconcentraties fysiologisch voorspellen',
         'Klinische proeven vervangen door in silico-simulaties',
         'Bepalen of geneesmiddel bloed-hersenbarrière passeert',
         'Distributivevolume voor alle geneesmiddelen berekenen',
@@ -372,7 +372,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat onderscheidt vertekende signalering op GPCRs en waarom is het farmacologisch belangrijk?',
       [
-        'Liganden activeren selectief één signalweg (β-arrestine) boven ander (G-proteïne); verhoogt therapeutische index',
+        'Liganden activeren selectief één signaalweg boven ander',
         'Vertekende signalering betekent dat receptor wordt geremd',
         'Alle GPCR-agonisten activeren identieke intracellulaire routes',
         'Vertekende signalering treedt alleen op met antagonisten',
@@ -383,7 +383,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe wordt de PK/PD-index (bijv. AUC/MIC, Cmax/MIC) geoptimaliseerd voor werkzaamheidsvoorspelling?',
       [
-        'Preklinische of klinische data passen zich aan sigmoidale PK/PD-modellen om optimale blootstellingsdrempels te bepalen',
+        'Data worden aan sigmoidale PK/PD-modellen aangepast',
         'PK/PD-indices zijn vaste getallen onafhankelijk van geneesmiddel',
         'Alleen AUC is relevant; piekconcentratie (Cmax) is irrelevant',
         'PK/PD-indices worden achteraf na goedkeuring berekend',
@@ -394,7 +394,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Verklaar een mechanisme waardoor substraatremming van CYP450 paradoxaal metabolische activiteit kan verhogen.',
       [
-        'Hoge substraatconcentratie kan allosterische activering van enzym induceren; verhoogt Vmax tijdelijk',
+        'Het activeert het enzym zelf allosterisch',
         'Substraatremming verlaagt altijd enzymactiviteit',
         'CYP450-enzymen kunnen niet allosterisch worden gemodeleerd',
         'Substraatremming beïnvloedt alleen nierfunctie',
@@ -405,7 +405,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is het werkingsmechanisme van direct werkende antiviralia (DAAs) in hepatitis C en waarom transformeerden zij behandeling?',
       [
-        'DAAs remmen virale NS-protease, polymerase of helicase direct; bereikt >95% genezing zonder interferonen',
+        'DAAs remmen een viraal NS-enzym direct',
         'DAAs remmen immuunrespons van gastheer',
         'DAAs werken door interferon-alfa-productie te stimuleren',
         'DAAs gericht op hepatitis C-antistoffen',
@@ -416,7 +416,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe beïnvloeden P-glycoproteïne (MDR1/ABCB1) transporters orale beschikbaarheid en CNS-penetratie?',
       [
-        'P-gp-effluxpompen substraten uit enterocyten en over bloed-hersenbarrière; verlaagt beschikbaarheid en hersenpen',
+        'P-gp voert substraten uit enterocyten en de BBB',
         'P-gp verhoogt absorptie van alle geneesmiddelen in darm',
         'P-gp heeft geen effect op bloed-hersenbarrière',
         'P-gp transporteert alleen grote moleculen',
@@ -427,7 +427,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is stereoselectief metabolisme en hoe bemoeilijkt het enantiomale medicijnontwerp?',
       [
-        'Enzymen en transporters metaboliseren selectief één enantiomeer; inactief enantiomeer elimineert langzamer',
+        'Enzymen metaboliseren selectief één enantiomeer',
         'Stereoselectief metabolisme treedt alleen in lever op',
         'Beide enantiomeren worden altijd met identieke snelheid gemetaboliseerd',
         'Stereoselectief metabolisme beïnvloedt alleen peptidegeneesmiddelen',
@@ -438,7 +438,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat zijn de sleutelcomponenten van doelvalidatie in medicijnontdekking?',
       [
-        'Bewijs dat doelmodulatie ziekteverandering veroorzaakt via genetische, cellulaire en in vivo-modellen',
+        'Bewijs voor koppeling modulatie-fenotype',
         'Testen of verbinding aan voorgestelde doel bindt',
         'Bevestiging van expressiesniveaus op ziekteplaats',
         'Evaluatie van off-target bindingsprofielen',
@@ -449,7 +449,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe worden steekproefgrootten voor Fase II dosis-escalatieproeven berekend en welke statistieken gelden?',
       [
-        'Vermogenberekeningen gaan uit van minimaal belangrijk verschil; stoppingsregels en meervoudige vergelijkingen aangepast',
+        'Gebaseerd op minimaal belangrijk verschil',
         'Fase II-proeven vereisen geen statistische planning',
         'Steekproefgrootten in Fase II zijn altijd groter dan Fase III',
         'Fase II-proeven gebruiken geen controlegroepen',
@@ -460,7 +460,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is een CYP2D6-armmetabolizer-genotype en hoe beïnvloedt het codëïnewerkzaamheid?',
       [
-        'CYP2D6-verlies-van-functie-varianten voorkomen omzetting van codeïne naar morfine; heft werkzaamheid op',
+        'Het blokkeert omzetting van codeïne naar morfine',
         'Armmetabolizers hebben verbeterde codëïnewerkzaamheid',
         'CYP2D6-status beïnvloedt alleen paracetamolmetabolisme',
         'Armmetabolizers zijn zeldzaam en klinisch irrelevant',
@@ -471,7 +471,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Beschrijf de rol van OATP-transporters in hepatische klaring en DDI-potentieel van atorvastatine.',
       [
-        'OATP1B1/1B3-opname is snelheid-limiterend voor hepatische klaring; remmers verlagen klaring en verhogen blootstelling',
+        'OATP1B1/1B3-opname is snelheid-limiterend',
         'OATP-transporters voeren geneesmiddelen uit hepatocyten uit',
         'Atorvastatine wordt uitsluitend gemetaboliseerd door CYP3A4',
         'OATP-remming verlaagt altijd geneesmiddel-werkzaamheid',
@@ -482,7 +482,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is een "mechanistische biomarker" in klinische proeven, en hoe verschilt het van "klinisch eindpunt"?',
       [
-        'Mechanistische biomarkers weerspiegelen doelengagement; klinische eindpunten zijn patiëntrelevante uitkomsten',
+        'Ze weerspiegelen doelengagement, niet uitkomsten',
         'Mechanistische biomarkers en klinische eindpunten zijn hetzelfde',
         'Klinische eindpunten zijn altijd sneller te beoordelen dan biomarkers',
         'Mechanistische biomarkers voorspellen klinische eindpunten met 100% nauwkeurigheid',
@@ -493,7 +493,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Waarom kan niet-lineaire farmacokinetiek (capaciteitsgrenzen metabolisme) exponentiële blootstelling-stijging veroorzaken?',
       [
-        'Verzadiging van metabolische enzymen veroorzaakt klaring te dalen; Cmax/AUC stijgt exponentieel',
+        'Enzymverzadiging laat klaring dalen bij hogere dosis',
         'Niet-lineaire kinetiek treedt alleen op bij zeer hoge geneesmiddelconcentraties',
         'Niet-lineaire kinetiek vereenvoudigt doseerberekeningen',
         'Alle geneesmiddelen volgen lineaire kinetiek in alle dosierbereiken',
@@ -506,7 +506,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is coöperatief effect in allosterische modulatie, en hoe voorspelt Hill-coëfficiënt >1 bindingsgedrag?',
       [
-        'Coöperatief effect weerspiegelt onderlinge binding; Hill n>1 duidt op positief coöperatief effect; stijlt dosis-respons',
+        'Hill n>1 duidt op positief coöperatief effect',
         'Hill-coëfficiënten zijn altijd onafhankelijk van bindingsmechanisme',
         'Coöperatief effect is irrelevant voor GPCR-signalering',
         'Hill n>1 duidt altijd op agonisme in plaats van allosterisme',
@@ -517,7 +517,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe onthullen meta-analyses van CYP3A4-remming risicostratificatie voor medicijninteracties?',
       [
-        'Sterke vs. matige vs. zwakke remmers gecategoriseerd naar AUC-verandering; substraatgevoeligheid bepaalt klinische grootte',
+        'Gerangschikt naar AUC-verandering van substraten',
         'Alle CYP3A4-remmers produceren identieke DDIs',
         'Substraatconcentratie is irrelevant voor DDI-ernst',
         'CYP3A4-remming treedt altijd op in stabiele toestand',
@@ -528,7 +528,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat zijn de mechanistische principes van PBPK-modelextrapolatie van in vitro-klaring naar in vivo farmacokinetiek?',
       [
-        'In vitro CLint geschaald door hepatische bloedstroom en vrije fractie om in vivo hepatische klaring te voorspellen',
+        'In vitro CLint wordt geschaald met bloedstroom',
         'PBPK-modellen negeren in vitro-gegevens',
         'Schaalfactoren zijn niet nodig voor in vitro naar in vivo-omzetting',
         'PBPK-modellen voorspellen klinische PK altijd perfect',
@@ -539,7 +539,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Verklaar vertekende signalering via β-arrestine-pathway-activatie bij muscarinische receptoren en therapeutische toepassing.',
       [
-        'β-arrestine-koppeling activeert MAPK/ERK zonder G-proteïne; selectiviteit verkleint bijwerkingen versus G-proteïne',
+        'β-arrestine activeert MAPK/ERK zonder G-proteïne',
         'β-arrestine bemiddelt altijd dezelfde effecten als G-proteïne-signalering',
         'β-arrestine-koppeling treedt alleen op remmende receptoren op',
         'Therapeutische selectiviteit vereist gelijktijdige G-proteïne- en β-arrestine-activering',
@@ -550,7 +550,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe worden populatie PK/PD-modellen met Bayesiaanse voorspelling gebruikt voor pediatrische dosering optimalisatie?',
       [
-        'Volwassen PK-parameters geshrunk naar populatiepriors; allometrische schaling (gewicht, rijping) past pediatrische fysiologie aan',
+        'Allometrische schaling past pediatrische fysiologie aan',
         'Pediatrische dosering is altijd fractie van volwassenendose',
         'Bayesiaanse voorspelling wordt alleen in oudere populaties gebruikt',
         'Populatie PK-modellen negeren rijping van medicijnmetaboliserende enzymen',
@@ -561,7 +561,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is het mechanisme van een triple medicijn-medicijn-geen interactie, en hoe kan armmetabolizer stratificatie?',
       [
-        'CYP2D6 armmetabolizer op concurrerende CYP3A4-modulators resulteert in concurrerende farmacokinetische en pharmacogenomische effecten',
+        'Concurrerende PK- en pharmacogenomische effecten',
         'Drievoudige interacties kunnen niet klinisch worden voorspeld',
         'Gen-geneesmiddel-interacties zijn altijd verwaarloosbaar',
         'Drievoudige interacties treden alleen bij zeer hoge doses op',
@@ -572,7 +572,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Beschrijf substraat vs. remmings vs. inductie-hiërarchieën voor voorspelling van DDI-ernst op CYP3A4, OATP1B1 en P-gp.',
       [
-        'Rangorde hangt af van bindingsaffiniteit (Ki/Km), Cmax-naar-Ki-verhouding, weefselconcentratie; sterke substraten plus sterke remmers voorspellen grotere DDIs',
+        'Hangt af van affiniteit en Cmax-naar-Ki',
         'Alle substraten interageren identiek met remmers',
         'Hiërarchieën zijn onafhankelijk van geneesmiddelconcentratie',
         'Inducers veroorzaken nooit klinisch significante DDIs',
@@ -583,7 +583,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe interageren stereoselektieve transporters (bijv. L-DOPA-afzet via OATP3) en metabolisme voor enantiomale beschikbaarheid?',
       [
-        'Transporterstereoselektiviteit kan metabolische selectiviteit overschrijden; transporterremmingstrategie mogelijk',
+        'Transportselectiviteit kan metabolisme overschrijden',
         'Transporters onderscheiden niet tussen enantiomeren',
         'Metabolisme domineert altijd transportergemedieerde klaring',
         'Stereoselektiviteit geldt alleen voor metabolisme',
@@ -594,7 +594,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat zijn fasen van doelvalidatie in oncologie, en hoe verschillen zij van infectieuze ziekte-doelvalidatie?',
       [
-        'Oncologie gebruikt isogene cellen, PDX-modellen, genomische correlaten; ID vereist resistentiestudies en virulesicemechanismen',
+        'Oncologie gebruikt PDX-modellen; ID resistentiestudies',
         'Oncologie en ID-doelvalidatie zijn identieke processen',
         'Oncologie-doelen vereisen geen preklinische validatie',
         'ID-doelen worden uitsluitend in diermodellen gevalideerd',
@@ -605,7 +605,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe worden adaptieve Fase II-proefontwerpen (bijv. naadloos Fase II/III) statistisch beheerst voor veelvoudigheid?',
       [
-        'Vooraf geplande tussentijdse analyses met foutsnelheidsbeheer (alfa-besteding) laten adaptieve verrijking toe terwijl Type I-fout behouden',
+        'Alfa-besteding beheerst fout bij tussentijdse analyses',
         'Adaptieve proeven vereisen geen statistische aanpassingen',
         'Naadloze ontwerpen overschrijden altijd Type I-foutsnelheid',
         'Adaptieve ontwerpen zijn niet acceptabel voor FDA/EMA',
@@ -616,7 +616,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat is de rol van epigenetische wijzigingen (DNA-methylering, histone-acetylering) in farmacogeen-expressie modulatie?',
       [
-        'Differentiële methylering van CYP3A4/CYP2D6-promoters en histone-merken veranderen enzymexpressie onafhankelijk van DNA-volgorde',
+        'Differentiële promotermethylering verandert enzymexpressie',
         'Epigenetische wijzigingen zijn irrelevant voor medicijnmetabolisme',
         'Methyleringspatronen zijn vast en verschillen niet tussen weefsels',
         'Alleen genetische polymorfismen hebben belang voor medicijnmetabolisme',
@@ -627,7 +627,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Verklaar hoe mechanistisch niet-lineaire farmacokinetiek (verzadigde CLint, renale reabsorptie) label dosering en TDM beïnvloedt.',
       [
-        'Verzadigbare CLint en transportergemedieerde renale reabsorptie veroorzaken dosisafhankelijke half-lives; TDM essentieel',
+        'Verzadigbaar metabolisme geeft dosisafhankelijke half-lives',
         'Alle geneesmiddelen volgen lineaire kinetiek; TDM onnodig',
         'Niet-lineariteit beïnvloedt alleen renale uitscheiding',
         'Therapeutische medicijnmonitoring is altijd onnauwkeurig voor niet-lineaire geneesmiddelen',
@@ -638,7 +638,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Wat zijn transportergemedieerde PK/PD-biomarkers, en hoe kunnen zij patiëntstratificatie in nier-/leverziekte verfijnen?',
       [
-        'Transporteractivity (organisch anion-assays, beeldvorming) voorspelt individuele klaring-variantie en behouden functie in nierziekte',
+        'Transporteractiviteit voorspelt individuele klaring-variantie',
         'Transporters hebben geen invloed op ziekte-specifieke geneesmiddelklaring',
         'Transporterfunctie kan niet klinisch worden gemeten',
         'Nierziekte verlaagt altijd geneesmiddelklaring evenredig',
@@ -649,7 +649,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Bespreek regelgevingsroutes (505(b)(1) NDA, 505(b)(2), ANDA) en hoe zij generieke medicijn-ontwikkelingtijdlijn beïnvloeden.',
       [
-        '505(b)(2) staat steun op FDA-goedgekeurde referentie toe; ANDA vereist alleen bioëquivalentie; tijdlijn hangt af van patentexpiratie',
+        'ANDA vereist alleen bioëquivalentie, geen nieuwe proeven',
         'Alle geneesmiddelgoedkeuringen volgen identieke regelgevingsroutes',
         '505(b)(1) en 505(b)(2) hebben gelijkwaardige vereisten',
         'Generieke geneesmiddelen vereisen geen FDA-goedkeuring',
@@ -660,7 +660,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Hoe informeren mechanistische inzichten in klinische proefmislukkingen (bijv. ENHANCE-studie, lorcaserinewijdering) na-analyse PK/PD?',
       [
-        'Mechanismegerichte analyses (lipide versus cardiovasculair, off-target activering) leiden reddingsoperatie- of stopbeslissingen',
+        'Mechanismegerichte analyses leiden reddings- of stopbeslissingen',
         'Klinische mislukkingen zijn altijd eindpunten',
         'Na-hoc PK/PD-analyses kunnen veiligheid in nieuwe populaties niet voorspellen',
         'Mechanismemislukkingen zijn onomkeerbaar',

@@ -27,7 +27,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What phase diagram axis typically represents composition in a binary alloy system?',
       [
-        'Horizontal (x-axis)',
+        'Horizontal axis',
         'Vertical (y-axis)',
         'Diagonal',
         'Radial',
@@ -49,7 +49,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the primary binding mechanism in ceramic materials?',
       [
-        'Ionic and covalent bonding',
+        'Ionic and covalent',
         'Metallic bonding',
         'Hydrogen bonding',
         'Van der Waals forces',
@@ -60,7 +60,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In metallurgy, what is an alloy?',
       [
-        'A mixture of two or more elements where at least one is a metal',
+        'A mixture of elements including a metal',
         'A pure metal element',
         'A chemical compound with fixed stoichiometry',
         'A layered structure of different metals',
@@ -93,7 +93,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Which of these is a primary application for semiconductors in materials engineering?',
       [
-        'Controlling electrical conductivity in devices',
+        'Controlling conductivity',
         'Load-bearing structural components',
         'Improving polymer strength',
         'Increasing ceramic toughness',
@@ -104,7 +104,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is a composite material?',
       [
-        'Two or more constituent materials with different properties, combined to achieve desired performance',
+        'Two or more materials combined',
         'A single pure element with multiple crystal phases',
         'An alloy with exactly three components',
         'A polymer reinforced with inert fillers only',
@@ -115,7 +115,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In materials science, what does the term "grain" refer to?',
       [
-        'A single crystal region within a polycrystalline material',
+        'A single crystal domain',
         'A particle size classification standard',
         'The texture of a polymer surface',
         'A defect in a ceramic structure',
@@ -126,7 +126,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'Which of these represents the highest packing density for spheres in a lattice?',
       [
-        'Face-centered cubic or hexagonal close packing',
+        'FCC or HCP',
         'Simple cubic',
         'Body-centered cubic',
         'Diamond cubic',
@@ -137,7 +137,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What does "annealing" accomplish in metal processing?',
       [
-        'Heating and slow cooling to reduce internal stress and improve ductility',
+        'Heating and slow cooling',
         'Rapid cooling to increase hardness',
         'Alloying with carbon to strengthen steel',
         'Polishing the surface to improve appearance',
@@ -159,7 +159,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What structural feature makes polymers flexible compared to metals?',
       [
-        'Weaker secondary bonds (van der Waals forces) between chains, allowing sliding and rotation',
+        'Weak secondary bonds',
         'Lower atomic mass',
         'Lower melting points',
         'Random atom arrangements',
@@ -172,7 +172,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the significance of the eutectic point on a binary phase diagram?',
       [
-        'The lowest melting temperature composition where all phases solidify simultaneously at equilibrium',
+        'The lowest-melting composition point',
         'The point of maximum solubility of one metal in another',
         'The composition where mechanical properties are optimized',
         'The critical temperature above which the system becomes a single phase',
@@ -205,7 +205,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What mechanism allows martensitic transformation in steel to produce hardness?',
       [
-        'Diffusionless atomic rearrangement creating a supersaturated solid solution of carbon',
+        'Diffusionless atomic rearrangement',
         'Nucleation and growth of cementide particles',
         'Grain refinement due to rapid cooling',
         'Precipitation of intermetallic phases',
@@ -216,7 +216,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In fracture mechanics, what does the stress intensity factor (K) characterize?',
       [
-        'The severity of a crack tip stress field, predicting crack growth likelihood',
+        'The severity of the crack-tip field',
         'The total strength of the material',
         'The ductility of the material',
         'The temperature at which fracture occurs',
@@ -227,7 +227,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the primary advantage of adding reinforcing fibers to a polymer matrix in composites?',
       [
-        'Fibers provide high stiffness and strength while matrix provides toughness and damage tolerance',
+        'Fibers add stiffness, matrix adds toughness',
         'Fibers reduce the overall density of the composite',
         'Fibers prevent the matrix from crystallizing',
         'Fibers increase the transparency of the material',
@@ -249,7 +249,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the Hall effect in semiconductors, and why is it significant?',
       [
-        'A transverse voltage appears when current passes through a conductor in a magnetic field, revealing carrier type and concentration',
+        'A transverse voltage from current in a magnetic field',
         'The change in bandgap energy with applied voltage',
         'The generation of light when current flows through a junction',
         'The resistance change at very low temperatures',
@@ -260,7 +260,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In alloy design, what is a solid solution strengthening mechanism?',
       [
-        'Dissolved solute atoms distort the lattice, impeding dislocation motion',
+        'Solute atoms distorting the lattice',
         'Precipitation of a second phase at grain boundaries',
         'Formation of new crystal phases with different structures',
         'Reduction of grain size by pinning grain boundaries',
@@ -271,7 +271,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What property of a polymer is measured by tensile testing at a rate much slower than normal to reveal time-dependent behavior?',
       [
-        'Creep resistance (resistance to continued deformation under constant stress)',
+        'Creep behavior',
         'Impact strength',
         'Tear resistance',
         'Surface hardness',
@@ -293,7 +293,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the role of a dislocation in plastic deformation of crystalline materials?',
       [
-        'A line defect that moves through the lattice, allowing atomic-scale shear without breaking all bonds simultaneously',
+        'A line defect that moves through the lattice',
         'A point defect created by missing atoms at lattice sites',
         'A grain boundary separating two crystal orientations',
         'A stacking fault in a layered structure',
@@ -304,7 +304,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In materials characterization, what phenomenon does differential scanning calorimetry (DSC) measure?',
       [
-        'Heat flow into or out of a sample as temperature changes, revealing phase transitions and reaction kinetics',
+        'Heat flow as temperature changes',
         'The crystalline structure of the sample',
         'The surface roughness and topography',
         'The electrical conductivity vs. temperature',
@@ -315,7 +315,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the primary mechanism by which grain boundary engineering improves fracture toughness in ceramics?',
       [
-        'Controlled intergranular crystallography slows crack propagation by forcing mixed-mode fracture paths',
+        'Controlled intergranular crystallography',
         'Increasing the total number of grains in the material',
         'Adding small amounts of ductile phases at boundaries',
         'Eliminating all grain boundaries via single-crystal growth',
@@ -326,7 +326,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the significance of the Schmid factor in determining the ease of dislocation slip on a particular slip system?',
       [
-        'It quantifies the resolved shear stress on a slip plane as τ = σ·cos(φ)·cos(λ), predicting which systems activate first under load',
+        'The resolved shear stress, τ = σ·cos(φ)·cos(λ)',
         'It measures the total dislocation density in the material',
         'It controls the thermal stability of dislocations',
         'It determines the rate of dislocation nucleation',
@@ -339,7 +339,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What does the Gibbs free energy surface reveal when plotted as a function of composition and temperature in a ternary phase diagram?',
       [
-        'The thermodynamic stability of phases, with phase boundaries defined by double tangent constructions',
+        'Thermodynamic phase stability',
         'The mechanical properties of each phase as a function of composition',
         'The kinetic pathway by which one phase transforms into another',
         'The electrical conductivity surface of the alloy system',
@@ -350,7 +350,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In materials degradation, what is the role of electrochemical potential in pitting corrosion of passivated metals?',
       [
-        'When applied potential exceeds the pitting potential, the passive film breaks down, creating an autocatalytic acidic pit',
+        'The passive film breaks down beyond a critical potential',
         'The potential determines the rate of uniform corrosion across the surface',
         'The electrochemical potential controls the thickness of the oxide layer',
         'It directly sets the mechanical strength of the corroded material',
@@ -361,7 +361,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the origin of the glass transition temperature (T_g) in amorphous polymers, and how does it differ from crystalline melting?',
       [
-        'T_g is a kinetic transition where chain mobility freezes (no long-range order loss); T_m is thermodynamic phase change in ordered crystals',
+        'T_g is kinetic, T_m is a true phase change',
         'T_g occurs at higher temperatures than T_m in all polymers',
         'T_g requires a crystal structure to be defined',
         'Both T_g and T_m measure the same thermodynamic event',
@@ -372,7 +372,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In semiconductor physics, what determines the width of the depletion region in a p-n junction at thermal equilibrium?',
       [
-        'The built-in potential and the doping concentrations of both sides, via the Poisson equation solution',
+        'The built-in potential and doping levels',
         'The applied external voltage',
         'The thermal energy of the charge carriers',
         'The bandgap energy of the material',
@@ -383,7 +383,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the significance of the Burger\'s vector in characterizing dislocations, and how does it relate to the dislocation type?',
       [
-        'It specifies the magnitude and direction of lattice distortion; edge dislocations have b perpendicular to the line direction, screw has b parallel',
+        'The magnitude and direction of lattice distortion',
         'It determines the energy required to form the dislocation',
         'It controls whether the dislocation can move via climb or glide',
         'It measures the distance the dislocation has moved through the crystal',
@@ -394,7 +394,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In composite mechanics, what does the rule of mixtures predict, and under what loading condition is it most accurate?',
       [
-        'A linear composite property as weighted averages of constituent properties; most accurate for longitudinal (fiber-parallel) loading',
+        'A weighted average of constituent properties',
         'The failure stress of the composite regardless of loading direction',
         'The thermal expansion coefficient of all fiber-reinforced composites',
         'The electrical conductivity of ceramic matrix composites',
@@ -405,7 +405,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What mechanisms dominate fracture toughness enhancement in transformation-toughened zirconia ceramics?',
       [
-        'Stress-induced tetragonal-to-monoclinic phase transformation absorbs energy and creates residual compressive stress',
+        'A stress-induced phase transformation',
         'Plastic deformation of grain boundaries',
         'Microcracking ahead of the crack tip',
         'Precipitation of a metallic phase',
@@ -416,7 +416,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In nanomaterials, what is the role of the surface-to-volume ratio in altering the properties of a material relative to the bulk?',
       [
-        'At small sizes, surface energy dominates, shifting thermodynamic equilibrium, lowering melting/transition points, and raising diffusion rates',
+        'Surface energy dominates at small sizes',
         'Surface effects are negligible below 100 nm',
         'Surface atoms are chemically identical to bulk atoms',
         'Nanomaterials always have higher melting points than bulk',
@@ -427,7 +427,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the physical basis of the Griffith criterion for brittle fracture, and what does it predict?',
       [
-        'Fracture occurs when elastic strain energy released by crack growth equals surface energy needed to create new surfaces',
+        'Released strain energy equals surface energy',
         'Fracture is purely stress-controlled and independent of flaw size',
         'All materials fail at the same applied stress if cracks are present',
         'Ductile deformation always occurs before fracture',
@@ -438,7 +438,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In alloy thermodynamics, what does a negative heat of mixing indicate, and how does it affect phase stability?',
       [
-        'Favorable atomic interactions; the system favors mixing, stabilizing solid solution and raising the consolute temperature',
+        'Favorable atomic interactions that stabilize mixing',
         'Repulsive interactions that always cause phase separation',
         'No effect on phase stability or the phase diagram shape',
         'An indicator that the alloy will be amorphous',
@@ -449,7 +449,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What information does transmission electron microscopy (TEM) provide that scanning electron microscopy (SEM) cannot?',
       [
-        'Real-space crystal structure and lattice defects at atomic resolution; SEM is surface-limited with nanometer spatial resolution',
+        'Atomic-resolution crystal structure and defects',
         'Higher operating voltages for deeper penetration',
         'Better color imaging of sample surfaces',
         'More rapid analysis of large sample areas',
@@ -460,7 +460,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In biomaterials, what is osseointegration, and what material and surface properties enhance it?',
       [
-        'Direct bone-implant contact achieved through bioactive surface chemistry and surface roughness that promote cell attachment and mineralization',
+        'Direct bone-implant contact via bioactive surfaces',
         'Implant materials that are completely inert and non-reactive',
         'Any metal implant that achieves long-term stability in the body',
         'The encapsulation of an implant in scar tissue',
@@ -471,7 +471,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the theoretical yield strength of a perfect crystal, and how does real yield strength compare due to dislocations?',
       [
-        'Theory predicts ~G/30 (where G is shear modulus); real materials yield at ~G/100–G/1000 because dislocations move at far lower stress',
+        'Real yield strength is far lower, due to dislocations',
         'Actual yield strength always exceeds theoretical strength',
         'Dislocations increase the required stress to deform the material',
         'Perfect crystals are impossible, so theory is irrelevant',
@@ -482,7 +482,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In processing-structure-property relationships, how does rapid solidification alter the microstructure and extend solid solubility limits in alloys?',
       [
-        'Rapid cooling suppresses diffusion, trapping non-equilibrium solute levels (bypassing the equilibrium phase diagram) and enabling metastable phases',
+        'It suppresses diffusion, trapping excess solute',
         'Rapid cooling always produces equilibrium phases',
         'Cooling rate has no effect on solid solubility',
         'Only grain size is affected; composition remains equilibrium',
@@ -493,7 +493,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the relationship between stacking fault energy (SFE) and dislocation character in FCC metals?',
       [
-        'Low SFE reduces dislocation cross-slip activity and narrows partial separation, favoring deformation twinning and lower work-hardening rates',
+        'Low SFE favors twinning over cross-slip',
         'SFE determines the slip direction in BCC metals',
         'High SFE always leads to brittle fracture',
         'SFE is independent of alloy composition',
@@ -506,7 +506,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In thermodynamic modeling of multicomponent alloys, what is the physical and mathematical significance of the excess Gibbs energy (G^ex) in determining phase stability and ordering?',
       [
-        'G^ex describes deviations from ideal mixing due to inter-atomic interactions; its composition and temperature dependence controls miscibility gaps, ordering transitions, and critical phenomena',
+        'Deviations from ideal mixing behavior',
         'G^ex is always zero in all real materials',
         'G^ex only affects the entropy term, not enthalpy',
         'G^ex is purely empirical with no physical basis',
@@ -517,7 +517,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What does the Cottrell atmosphere model explain in ferrous metallurgy, and how does it relate to dynamic strain aging and the Portevin–Le Chatelier effect?',
       [
-        'Carbon/nitrogen atmospheres around dislocations create dynamic locking; at certain strain rates, repeated locking/unlocking causes serrated stress-strain curves and deformation instability',
+        'Dynamic locking and unlocking of solute atmospheres',
         'The Cottrell model only applies to static strength, not dynamic behavior',
         'It predicts that dynamic strain aging always softens the material',
         'Cottrell atmospheres are irrelevant to modern alloys',
@@ -528,7 +528,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In fracture mechanics, what distinguishes K-dominated (linear elastic fracture mechanics, LEFM) from J-integral-dominated (elastic-plastic fracture mechanics, EPFM) regimes, and when does each apply?',
       [
-        'LEFM (K) applies when plastic zone is small vs. flaw size; J-integral (EPFM) captures nonlinear behavior when plastic zone is large; transition defined by B > 25(K_IC/σ_Y)²',
+        'LEFM applies for small plastic zones, J-integral for large ones',
         'K and J are mathematically equivalent and always give the same results',
         'J-integral is only used for ceramics, K for metals',
         'LEFM is the only valid fracture criterion for all materials',
@@ -539,7 +539,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What role do coherency strains play in precipitate hardening mechanisms, and how does overaging reduce strength?',
       [
-        'Coherent precipitates cause lattice distortions that impede dislocation motion; overaging coarsens particles, reducing strain fields and dislocation interactions (Orowan looping dominates)',
+        'Coherency strains that weaken as particles coarsen',
         'Coherency strains always promote plastic deformation',
         'Overaging increases hardness indefinitely',
         'Precipitate size has no effect on dislocation hardening',
@@ -550,7 +550,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In surface thermodynamics, what is the relationship between surface energy (γ), surface excess, and interfacial segregation, and why do certain elements preferentially segregate?',
       [
-        'Atoms with lower bulk cohesive energy segregate to reduce interfacial energy; adsorption is driven by ΔG_ads = ΔH_ads - TΔS_ads < 0',
+        'Weakly-bonded atoms segregate to lower interfacial energy',
         'Surface energy is always equal to bulk energy',
         'Segregation has no thermodynamic driving force',
         'All elements segregate at equal rates regardless of properties',
@@ -561,7 +561,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the origin of the piezoelectric effect in crystals, and why is it forbidden in materials with inversion symmetry?',
       [
-        'Non-centrosymmetric crystals lack inversion symmetry, so elastic strain can displace ions, creating net dipole moment (polarization ∝ strain); inversion symmetry requires opposite displacements cancel',
+        'Strain-induced ion displacement in non-centrosymmetric crystals',
         'Piezoelectricity arises from metallic bonding alone',
         'Inversion symmetry enhances the piezoelectric response',
         'The piezoelectric effect is purely electronic with no ion movement',
@@ -572,7 +572,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In the theory of martensitic phase transformations, what is the lattice deformation gradient, and how does the Bain strain relate to the lattice correspondence and orientation relationship?',
       [
-        'The deformation gradient F describes lattice strain; Bain strain (tetragonal distortion of austenite) combined with lattice rotation gives the habit plane and orientation relationship (OR)',
+        'Bain strain plus rigid rotation of the lattice',
         'Martensitic transformation is purely reconstructive, with no lattice deformation',
         'The lattice correspondence is arbitrary and unrelated to OR',
         'Bain strain and habit plane are independent parameters',
@@ -583,7 +583,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the mechanism of crack bridging in fiber-reinforced composites, and how does fiber pullout work length contribute to fracture toughness?',
       [
-        'Unbroken fibers spanning a crack carry stress after matrix fails; pullout work (friction × embedded length) dissipates energy and increases G_IC',
+        'Unbroken fibers bridging the crack dissipate energy',
         'Fiber bridging reduces composite stiffness',
         'Pullout work is always negligible compared to matrix toughness',
         'Fibers must break for the composite to fail',
@@ -594,7 +594,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In semiconductor band structure engineering, what does the concept of "band gap engineering" through heterojunctions accomplish, and what role does strain play?',
       [
-        'Lattice mismatched layers create strained heterostructures, shifting bandgaps and band offsets, enabling type-I/type-II alignments and quantum confinement effects',
+        'Strained heterostructures shift bandgaps and offsets',
         'Bandgap engineering only applies to elemental semiconductors',
         'Strain always degrades semiconductor performance',
         'Band offsets are determined solely by doping levels',
@@ -605,7 +605,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the Mullins effect in elastomers, and what molecular mechanisms govern stress-softening and hysteresis in filled polymers?',
       [
-        'Stress-softening from disruption of filler-polymer bonding and filler agglomerate breakdown; hysteresis from filler rearrangement and chain slipping (viscous damping)',
+        'Breakdown of filler-polymer bonds and agglomerates',
         'The Mullins effect only occurs in unfilled elastomers',
         'Filled polymers always show constant stress-strain behavior upon reloading',
         'Hysteresis is purely elastic with no viscous contribution',
@@ -616,7 +616,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In high-temperature creep of ceramics and metals, what is the physical basis of diffusional creep (Nabarro-Herring and Coble mechanisms), and how do they scale with stress and grain size?',
       [
-        'Vacancy diffusion from stress-concentrated regions; N-H: grain-interior diffusion (ε̇ ∝ σ/d²); Coble: grain-boundary diffusion (ε̇ ∝ σ/d³); both ∝ D·σ/kT',
+        'Stress-driven vacancy diffusion',
         'Diffusional creep is always faster than dislocation creep',
         'Grain size has no effect on creep rate',
         'Creep is purely elastic deformation at high temperature',
@@ -627,7 +627,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the physical significance of the Debye temperature (Θ_D) in determining lattice and thermal transport properties, and how is it related to materials\' mechanical properties?',
       [
-        'Θ_D ∝ √(stiffness)/√(density) sets the phonon cutoff and thermal capacity; high Θ_D correlates with high sound velocity, elastic modulus, and poor thermal conductivity in ceramics',
+        'It scales with stiffness and sound velocity',
         'Debye temperature only affects optical properties',
         'High Θ_D always means better thermal conductivity',
         'Θ_D is independent of elastic properties',
@@ -638,7 +638,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In heterogeneous nucleation, what role does the contact angle and surface energy difference play in reducing the critical nucleus size compared to homogeneous nucleation?',
       [
-        'Lower contact angle θ reduces the critical nucleus size via geometry factor f(θ) = (2-3cosθ+cos³θ)/4; small θ favors nucleation by decreasing interfacial energy cost',
+        'A lower contact angle reduces the critical nucleus size',
         'Contact angle only affects wetting, not nucleation',
         'Homogeneous and heterogeneous nucleation have identical critical sizes',
         'Surface energy differences are always negligible for nucleation',
@@ -649,7 +649,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'What is the mechanism and significance of grain growth in nanocrystalline materials, and why is the Zener pinning force insufficient to stabilize nm-scale grains at elevated temperature?',
       [
-        'Surface energy-driven grain growth (grain boundaries lower energy as d increases); Zener pinning (F ∝ Z·r/d) fails at d → nm because Z approaches zero and T-activated motion overcomes pinning',
+        'Zener pinning weakens as grain size shrinks toward nm scale',
         'Nanocrystalline materials never grow, regardless of temperature',
         'Grain growth is controlled purely by dislocation density, not grain boundaries',
         'Zener pinning becomes stronger at smaller grain sizes',
@@ -660,7 +660,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
     [
       'In the context of computational materials science, what is density functional theory (DFT), and what approximation (e.g., LDA, GGA) fundamentally limits its predictive accuracy for ground-state properties?',
       [
-        'DFT solves the Kohn-Sham equations self-consistently; LDA/GGA exchange-correlation approximations omit higher-order correlation effects, causing systematic errors in bandgaps, transition barriers, and strongly-correlated systems',
+        'The exchange-correlation functional is approximated',
         'DFT directly solves the full Schrödinger equation without approximation',
         'LDA and GGA are exact functionals with no errors',
         'DFT cannot predict structural properties, only electronic ones',

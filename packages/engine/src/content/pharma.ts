@@ -16,7 +16,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Which type of drug receptor typically operates through G-protein coupling?',
       [
-        'G-protein coupled receptors (GPCRs)',
+        'GPCRs',
         'Ion channel receptors',
         'Nuclear receptors',
         'Enzyme-linked receptors',
@@ -27,7 +27,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is the primary goal of Phase II clinical trials?',
       [
-        'Assess efficacy and identify optimal doses in patient populations',
+        'Assess efficacy and optimal dosing',
         'Evaluate long-term safety in large populations',
         'Establish basic safety and tolerability in healthy volunteers',
         'Monitor rare adverse events in real-world use',
@@ -60,7 +60,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'An agonist differs from an antagonist because it:',
       [
-        'Binds a receptor and activates a biological response',
+        'Binds and activates the receptor',
         'Blocks a receptor without triggering a response',
         'Increases enzyme activity irreversibly',
         'Prevents drug metabolism in the liver',
@@ -71,7 +71,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is drug half-life?',
       [
-        'The time required for the plasma concentration of a drug to decrease by 50%',
+        'Time for plasma concentration to drop 50%',
         'The time it takes for a drug to reach maximum concentration',
         'The total time a drug remains in the body',
         'The duration of therapeutic effect',
@@ -93,7 +93,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is bioavailability?',
       [
-        'The fraction of an administered dose that reaches systemic circulation',
+        'Fraction of dose reaching circulation',
         'The concentration of drug at the site of action',
         'The rate at which a drug is absorbed',
         'The ability of a drug to cross the blood-brain barrier',
@@ -104,7 +104,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'In FDA approval, what does "Orphan Drug" designation indicate?',
       [
-        'A drug developed to treat a rare disease affecting fewer than 200,000 people in the US',
+        'A rare-disease drug (<200,000 US patients)',
         'A medication without a patent or brand name protection',
         'An unapproved experimental compound in early trials',
         'A drug with no known manufacturer or supply chain',
@@ -115,7 +115,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is a drug-drug interaction?',
       [
-        'An effect on drug efficacy or safety caused by co-administration with another drug',
+        'Effect on efficacy or safety from a co-administered drug',
         'The competition between two drugs for the same receptor site',
         'The chemical reaction between two drug molecules in solution',
         'The sequential administration of two medications on the same day',
@@ -148,7 +148,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What causes a type A adverse drug reaction?',
       [
-        'An exaggerated but predictable response based on the drug\'s known pharmacology',
+        'An exaggerated, predictable drug response',
         'An idiosyncratic reaction unrelated to pharmacology',
         'An allergic or immune-mediated response',
         'A reaction that only occurs after long-term exposure',
@@ -172,7 +172,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is allosteric modulation?',
       [
-        'Regulation of receptor activity by binding at a site distant from the orthosteric site',
+        'Regulation via binding at a site distant from the orthosteric site',
         'Irreversible inhibition of an enzyme at its active site',
         'Competitive inhibition where the inhibitor and substrate occupy the same binding site',
         'The saturation of enzyme kinetics at high substrate concentrations',
@@ -194,7 +194,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'In Phase I/II trials, what is a primary difference in their statistical design?',
       [
-        'Phase I is open-label safety-focused; Phase II is randomized and evaluates dose-response',
+        'Phase I is open-label safety-focused; Phase II is randomized',
         'Phase I enrolls patients; Phase II enrolls healthy volunteers',
         'Phase I uses crossover designs; Phase II uses parallel groups',
         'Phase I assesses metabolism; Phase II assesses clearance',
@@ -205,7 +205,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What does pharmacodynamic modeling using Emax equations describe?',
       [
-        'The sigmoidal relationship between drug concentration and effect',
+        'The sigmoidal concentration-effect relationship',
         'The linear elimination of a drug at steady state',
         'The rate of drug absorption across the gastrointestinal tract',
         'The volume of distribution in different tissue compartments',
@@ -216,7 +216,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How does drug chirality influence pharmacokinetics?',
       [
-        'Enantiomers may be metabolized at different rates or have different transporters',
+        'Enantiomers may metabolize at different rates',
         'Chiral drugs are always absorbed faster than achiral ones',
         'Chirality has no impact on pharmacokinetics, only on potency',
         'Enantiomers are rapidly interconverted in the bloodstream',
@@ -227,7 +227,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is first-pass metabolism?',
       [
-        'Hepatic or intestinal metabolism of an orally-administered drug before systemic circulation',
+        'Pre-systemic hepatic or intestinal metabolism',
         'The initial elimination of a drug during the absorption phase',
         'The metabolism of a drug by the kidney',
         'The inactivation of a prodrug into its active form',
@@ -238,7 +238,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How does plasma protein binding affect pharmacokinetics?',
       [
-        'Highly protein-bound drugs have lower free concentration and altered clearance',
+        'Lower free concentration and altered clearance',
         'Protein binding increases the volume of distribution uniformly',
         'Bound drug contributes equally to pharmacological effect as unbound drug',
         'Protein binding has no kinetic consequence',
@@ -249,7 +249,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is the mechanism of action of beta-blockers?',
       [
-        'Competitive antagonism at adrenergic receptors',
+        'Adrenergic antagonism',
         'Agonism at muscarinic acetylcholine receptors',
         'Inhibition of calcium channels',
         'Direct vasodilation via nitric oxide',
@@ -260,7 +260,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is a prodrug?',
       [
-        'An inactive compound metabolized to an active form in the body',
+        'An inactive compound metabolized to an active form',
         'A drug intermediate during manufacturing',
         'A partially effective drug requiring combination therapy',
         'A drug in its earliest preclinical stage',
@@ -271,7 +271,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What determines steady-state drug concentration at a given dose interval?',
       [
-        'The ratio of clearance to dose interval; accumulation depends on half-life relative to dosing',
+        'Clearance relative to dose interval',
         'The volume of distribution alone',
         'The absorption rate constant',
         'The binding affinity to plasma proteins',
@@ -282,7 +282,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is pharmacogenomics?',
       [
-        'The study of genetic variation in drug-metabolizing enzymes and drug response',
+        'Genetic variation in drug-metabolizing enzymes',
         'The development of new chemical entities from genetic material',
         'The use of drugs to modify gene expression',
         'The inheritance of drug metabolism patterns across generations',
@@ -293,7 +293,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What role do drug transporters play in pharmacokinetics?',
       [
-        'Active transport of drugs across membranes, affecting bioavailability and elimination',
+        'Active transport of drugs across membranes',
         'Passive diffusion of all drugs across the blood-brain barrier',
         'Binding of drugs to carrier proteins in plasma',
         'Inactivation of drugs through enzymatic degradation',
@@ -304,7 +304,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Why might a Phase III clinical trial fail even if Phase II was successful?',
       [
-        'The larger population reveals subgroups with poor response or safety issues not apparent in Phase II',
+        'Larger populations reveal poor-response subgroups',
         'Phase III requires different endpoints than Phase II',
         'Drug metabolism changes with larger sample sizes',
         'Regulatory requirements are stricter for Phase III',
@@ -315,7 +315,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is a plausible explanation for loss of efficacy after prolonged drug exposure?',
       [
-        'Receptor desensitization or downregulation following chronic agonist stimulation',
+        'Receptor desensitization or downregulation',
         'Increased drug metabolism over time',
         'Renal insufficiency developing during therapy',
         'Degradation of the drug molecule in the bloodstream',
@@ -326,7 +326,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is the significance of CYP450 induction in drug interactions?',
       [
-        'An inducer increases expression of metabolic enzymes, accelerating metabolism of other substrates',
+        'It increases metabolic enzyme expression',
         'Induction prevents a drug from being metabolized',
         'Induction occurs only with chronic dosing of a single drug',
         'Inducers block transporter-mediated clearance',
@@ -339,7 +339,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is positive allosteric modulation (PAM) and how does it differ mechanistically from orthosteric agonism?',
       [
-        'PAM increases agonist affinity without direct activation; agonism directly activates independently',
+        'PAM boosts agonist affinity without direct activation',
         'PAMs have slower kinetics than agonists',
         'PAMs only affect G-protein coupled receptors',
         'PAMs increase receptor expression while agonists increase signaling',
@@ -350,7 +350,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How do CYP450 inhibition kinetics (competitive vs. mechanism-based) determine DDI severity?',
       [
-        'Competitive inhibitors are overcome by substrate concentration; mechanism-based inhibitors form irreversible enzyme inactivation',
+        'Mechanism-based inhibitors irreversibly inactivate the enzyme',
         'Non-competitive inhibition is always reversible',
         'Competitive inhibition always produces clinical DDIs; non-competitive does not',
         'Both are equally time-dependent',
@@ -361,7 +361,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is the primary goal of physiologically-based pharmacokinetic (PBPK) modeling?',
       [
-        'Predict drug concentrations across tissues using anatomical, physiological, and biochemical parameters',
+        'Predict tissue drug concentrations physiologically',
         'Replace clinical trials with in silico simulations',
         'Determine whether a drug crosses the blood-brain barrier',
         'Calculate the volume of distribution for all drugs',
@@ -372,7 +372,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What distinguishes biased signaling at GPCRs and why is it pharmacologically important?',
       [
-        'Ligands preferentially activate one pathway (β-arrestin) over another (G-protein); selectivity improves therapeutic ratio',
+        'Ligands preferentially activate one pathway over another',
         'Biased signaling means the receptor is inhibited',
         'All GPCR agonists activate identical intracellular pathways',
         'Biased signaling only occurs with antagonists',
@@ -383,7 +383,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How is the PK/PD index (e.g., AUC/MIC, Cmax/MIC) optimized to predict clinical efficacy?',
       [
-        'Preclinical or clinical data are fit to sigmoidal PK/PD models to determine optimal exposure thresholds',
+        'Data are fit to sigmoidal PK/PD models',
         'PK/PD indices are fixed numbers independent of the drug',
         'Only AUC is relevant; peak concentration (Cmax) is irrelevant',
         'PK/PD indices are calculated post-hoc after approval',
@@ -394,7 +394,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Explain a mechanism by which substrate inhibition of a CYP450 enzyme can paradoxically increase metabolic activity.',
       [
-        'High substrate concentration can induce allosteric activation of the enzyme, transiently increasing Vmax',
+        'It allosterically activates the enzyme itself',
         'Substrate inhibition always decreases enzyme activity',
         'CYP450 enzymes cannot be allosterically modulated',
         'Substrate inhibition only affects kidney function',
@@ -405,7 +405,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is the mechanism of action of direct-acting antivirals (DAAs) in hepatitis C, and why did they revolutionize treatment?',
       [
-        'DAAs directly inhibit viral NS protease, polymerase, or helicase, achieving >95% cure rates without interferons',
+        'DAAs directly inhibit a viral NS enzyme',
         'DAAs inhibit host immune responses',
         'DAAs work by stimulating interferon-alpha production',
         'DAAs target hepatitis C antibodies',
@@ -416,7 +416,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How do P-glycoprotein (MDR1/ABCB1) transporters affect oral bioavailability and CNS penetration of drugs?',
       [
-        'P-gp efflux pumps substrates from enterocytes and across the BBB, reducing bioavailability and brain penetration',
+        'P-gp effluxes substrates from enterocytes and the BBB',
         'P-gp increases the absorption of all drugs in the intestine',
         'P-gp has no effect on the blood-brain barrier',
         'P-gp only transports large molecules',
@@ -427,7 +427,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is stereoselective metabolism and how does it complicate enantiomeric drug design?',
       [
-        'Enzymes and transporters preferentially metabolize one enantiomer; inactive enantiomer may be more slowly eliminated',
+        'Enzymes preferentially metabolize one enantiomer',
         'Stereoselective metabolism only occurs in the liver',
         'Both enantiomers are always metabolized at identical rates',
         'Stereoselective metabolism only affects peptide drugs',
@@ -438,7 +438,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What are the key components of target validation in drug discovery?',
       [
-        'Evidence that modulating the target causes disease phenotype change via genetic, cellular, and in vivo models',
+        'Evidence linking modulation to disease phenotype',
         'Testing whether a compound binds to the proposed target',
         'Confirmation of expression levels at the disease site',
         'Assessment of off-target binding profiles',
@@ -449,7 +449,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How are sample sizes calculated for Phase II dose-escalation trials, and what statistical considerations apply?',
       [
-        'Power calculations assume a minimally important difference; stopping rules and multiple comparisons are adjusted',
+        'Powered for a minimally important difference',
         'Phase II trials require no statistical planning',
         'Sample sizes in Phase II are always larger than Phase III',
         'Phase II trials use no control groups',
@@ -460,7 +460,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is a CYP2D6 poor metabolizer genotype and how does it affect codeine efficacy?',
       [
-        'CYP2D6 loss-of-function variants prevent conversion of codeine to morphine, abolishing efficacy',
+        'It blocks codeine-to-morphine conversion',
         'Poor metabolizers have enhanced codeine efficacy',
         'CYP2D6 status only affects acetaminophen metabolism',
         'Poor metabolizers are rare and clinically irrelevant',
@@ -471,7 +471,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Describe the role of OATP transporters in determining hepatic clearance and DDI potential of atorvastatin.',
       [
-        'OATP1B1/1B3 uptake is rate-limiting for hepatic clearance; inhibitors reduce clearance and increase exposure',
+        'OATP1B1/1B3 uptake is rate-limiting',
         'OATP transporters export drugs from hepatocytes',
         'Atorvastatin is exclusively metabolized by CYP3A4',
         'OATP inhibition always reduces drug efficacy',
@@ -482,7 +482,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is a "mechanistic biomarker" in clinical trials, and how is it distinct from a "clinical endpoint"?',
       [
-        'Mechanistic biomarkers reflect target engagement; clinical endpoints are patient-relevant outcomes',
+        'They reflect target engagement, not outcomes',
         'Mechanistic biomarkers and clinical endpoints are the same',
         'Clinical endpoints are always faster to assess than biomarkers',
         'Mechanistic biomarkers predict clinical endpoints with 100% accuracy',
@@ -493,7 +493,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Why may non-linear pharmacokinetics (capacity-limited metabolism) lead to disproportionate exposure increases at higher doses?',
       [
-        'Saturation of metabolic enzymes causes clearance to decrease and Cmax/AUC to increase exponentially',
+        'Enzyme saturation makes clearance decrease as dose rises',
         'Non-linear kinetics only occur at very high drug concentrations',
         'Non-linear kinetics simplify dosing calculations',
         'All drugs follow linear kinetics across all dose ranges',
@@ -506,7 +506,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is cooperativity in allosteric modulation, and how does a Hill coefficient >1 predict binding behavior?',
       [
-        'Cooperativity reflects interdependent binding; Hill n>1 indicates positive cooperativity, producing steep dose-response',
+        'Hill n>1 indicates positive cooperativity',
         'Hill coefficients are always independent of binding mechanism',
         'Cooperativity is irrelevant to GPCR signaling',
         'Hill n>1 always indicates agonism rather than allosterism',
@@ -517,7 +517,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How do meta-analyses of CYP3A4 inhibition across substrates reveal hierarchical DDI risk stratification?',
       [
-        'Strong vs. moderate vs. weak inhibitors are categorized by fold-change in AUC; substrate sensitivity determines clinical magnitude',
+        'Ranked by fold-change in substrate AUC',
         'All CYP3A4 inhibitors produce identical DDIs',
         'Substrate concentration is irrelevant to DDI severity',
         'CYP3A4 inhibition always occurs at steady state',
@@ -528,7 +528,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What are the mechanistic principles underlying PBPK model extrapolation from in vitro clearance to in vivo pharmacokinetics?',
       [
-        'In vitro CLint is scaled by hepatic blood flow and fraction unbound to predict in vivo hepatic clearance',
+        'In vitro CLint is scaled by hepatic blood flow',
         'PBPK models ignore in vitro data',
         'Scaling factors are not needed to translate in vitro to in vivo',
         'PBPK models always predict clinical PK perfectly',
@@ -539,7 +539,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Explain biased signaling via β-arrestin pathway activation at muscarinic receptors and its therapeutic exploitation for Alzheimer\'s.',
       [
-        'β-arrestin coupling activates MAPK/ERK without G-protein; selectivity reduces side effects versus G-protein',
+        'β-arrestin coupling activates MAPK/ERK without G-protein',
         'β-arrestin always mediates the same effects as G-protein signaling',
         'β-arrestin coupling only occurs at inhibitory receptors',
         'Therapeutic selectivity requires simultaneous G-protein and β-arrestin activation',
@@ -550,7 +550,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How are population PK/PD models with Bayesian forecasting used to optimize pediatric dosing when efficacy data are sparse?',
       [
-        'Adult PK parameters are shrunk to population priors; allometric scaling (body weight, maturation) adjusts for pediatric physiology',
+        'Allometric scaling for pediatric physiology',
         'Pediatric dosing is always a fraction of adult doses',
         'Bayesian forecasting is only used in elderly populations',
         'Population PK models ignore maturation of drug-metabolizing enzymes',
@@ -561,7 +561,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is the mechanism of a triple drug-drug-gene interaction, and how might a poor metabolizer on competing CYP3A4 modulators be stratified?',
       [
-        'A CYP2D6 PM taking strong CYP3A4 inducer plus inhibitor results in competing pharmacokinetic and pharmacogenomic effects',
+        'Competing PK and pharmacogenomic effects',
         'Triple interactions cannot be predicted clinically',
         'Gene-drug interactions are always negligible',
         'Triple interactions only occur at very high doses',
@@ -572,7 +572,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Describe the substrate vs. inhibitor vs. inducer hierarchies in predicting DDI severity at CYP3A4, OATP1B1, and P-gp.',
       [
-        'Rank depends on binding affinity (Ki/Km), Cmax-to-Ki ratio, and tissue concentration; strong substrates plus strong inhibitors predict larger DDIs',
+        'Rank depends on affinity and Cmax-to-Ki ratio',
         'All substrates interact identically with inhibitors',
         'Hierarchies are independent of drug concentration',
         'Inducers never cause clinically significant DDIs',
@@ -583,7 +583,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How do stereoselective transporters (e.g., L-DOPA efflux via OATP3) and metabolism interact to determine enantiomeric bioavailability?',
       [
-        'Transporter stereoselectivity can exceed metabolic stereoselectivity, enabling transporter inhibition DDI strategy',
+        'Transporter selectivity can exceed metabolism\'s',
         'Transporters do not distinguish between enantiomers',
         'Metabolism always dominates transporter-mediated clearance',
         'Stereoselectivity only applies to metabolism',
@@ -594,7 +594,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What are the phases of target validation in oncology, and how do they differ from infectious disease target validation?',
       [
-        'Oncology uses isogenic cells, PDX models, and genomic correlates; ID targets require resistance studies and virulence mechanisms',
+        'Oncology uses PDX models; ID uses resistance studies',
         'Oncology and ID target validation are identical processes',
         'Oncology targets require no preclinical validation',
         'ID targets are validated exclusively in animal models',
@@ -605,7 +605,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How are adaptive Phase II trial designs (e.g., seamless Phase II/III) statistically controlled for multiplicity, and what are regulatory implications?',
       [
-        'Pre-planned interim analyses with error-rate control (alpha-spending) allow adaptive enrichment while maintaining Type I error',
+        'Alpha-spending controls error at interim analyses',
         'Adaptive trials require no statistical adjustments',
         'Seamless designs always exceed the Type I error rate',
         'Adaptive designs are not acceptable to FDA/EMA',
@@ -616,7 +616,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What is the role of epigenetic modifications (DNA methylation, histone acetylation) in modulating pharmacogene expression across populations?',
       [
-        'Differential methylation of CYP3A4/CYP2D6 promoters and histone marks alter enzyme expression independent of DNA sequence',
+        'Differential promoter methylation alters enzyme expression',
         'Epigenetic modifications are irrelevant to drug metabolism',
         'Methylation patterns are fixed and do not vary between tissues',
         'Only genetic polymorphisms matter for drug metabolism',
@@ -627,7 +627,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Explain how mechanistically non-linear pharmacokinetics (saturable metabolism, renal reabsorption) affect label dosing and TDM.',
       [
-        'Saturable CLint and transporter-mediated renal reabsorption cause dose-dependent half-lives; TDM becomes critical',
+        'Saturable metabolism causes dose-dependent half-lives',
         'All drugs follow linear kinetics, making TDM unnecessary',
         'Non-linearity only affects renal excretion',
         'Therapeutic drug monitoring is always inaccurate for non-linear drugs',
@@ -638,7 +638,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'What are transporter-mediated PK/PD biomarkers, and how can they refine patient stratification in renal/hepatic disease?',
       [
-        'Transporter activity (organic anion assays, imaging) predicts individual clearance variance and preserved function in renal disease',
+        'Transporter activity predicts individual clearance variance',
         'Transporters have no influence on disease-specific drug clearance',
         'Transporter function cannot be measured clinically',
         'Renal disease always reduces drug clearance proportionally',
@@ -649,7 +649,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'Discuss regulatory pathways (505(b)(1) NDA, 505(b)(2), ANDA) and how they influence generic drug development timelines.',
       [
-        '505(b)(2) allows reliance on FDA-approved reference; ANDA requires bioequivalence only; timelines depend on patent expiration',
+        'ANDA needs only bioequivalence, no new trials',
         'All drug approvals follow identical regulatory pathways',
         '505(b)(1) and 505(b)(2) are equivalent in requirements',
         'Generic drugs do not require FDA approval',
@@ -660,7 +660,7 @@ export const PHARMACEUTICALS: CategoryContent = {
     [
       'How do mechanistic insights into clinical trial failures (e.g., ENHANCE trial, lorcaserin removal) inform post-hoc PK/PD analyses?',
       [
-        'Mechanism-based analyses (lipid vs. cardiovascular, off-target activation) guide salvage or discontinuation decisions',
+        'Mechanism-based analyses guide salvage or discontinuation',
         'Clinical failures are always terminal endpoints',
         'Post-hoc PK/PD analyses cannot predict safety in new populations',
         'Mechanistic failures are irreversible',

@@ -5,7 +5,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Which reaction type is characterized by the nucleophile attacking a carbon bearing a good leaving group in a single step, with inversion of stereochemistry?',
       [
-        'Bimolecular nucleophilic substitution (SN2)',
+        'SN2 substitution',
         'Unimolecular elimination (E1)',
         'Electrophilic aromatic substitution (EAS)',
         'Nucleophilic acyl substitution',
@@ -16,7 +16,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the primary functional group present in a carboxylic acid?',
       [
-        'Carbonyl bonded to hydroxyl (carboxyl group, -COOH)',
+        'Carboxyl group (-COOH)',
         'An aldehyde with an extra oxygen',
         'An ester on a primary alcohol',
         'A ketone with a nearby hydroxyl group',
@@ -27,7 +27,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In an E2 elimination reaction, the hydrogen and leaving group adopt what spatial relationship?',
       [
-        'Anti (or antiperiplanar) arrangement',
+        'Antiperiplanar arrangement',
         'Gauche arrangement',
         'Eclipsed arrangement',
         'No specific spatial requirement',
@@ -49,7 +49,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What does the term "regioselectivity" describe in organic reactions?',
       [
-        'Preferential formation of one positional isomer over another',
+        'Preference for one positional isomer',
         'Preference for one stereoisomer over another',
         'The speed at which a reaction reaches equilibrium',
         'The amount of side product formed',
@@ -60,7 +60,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Which statement correctly describes a Grignard reagent (RMgX)?',
       [
-        'An organometallic nucleophile highly reactive toward carbonyl compounds',
+        'An organometallic nucleophile',
         'An alkyl halide used in elimination reactions',
         'A catalytic species for hydrogenation',
         'An oxidizing agent for primary alcohols',
@@ -104,7 +104,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What type of molecule results from a Diels-Alder reaction?',
       [
-        'A cyclohexene (six-membered ring with one double bond)',
+        'A cyclohexene',
         'A cyclobutene (four-membered ring)',
         'A bicyclic compound',
         'An open-chain diene',
@@ -148,7 +148,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Which statement describes the Markovnikov\'s rule?',
       [
-        'In addition to unsymmetrical alkenes, the nucleophile adds to the carbon with more hydrogens (more substituted carbon gets the more negative group)',
+        'The nucleophile adds to the carbon with more hydrogens',
         'In elimination, the more substituted alkene is always the major product',
         'In substitution, primary carbons are always attacked before secondary',
         'Racemic mixtures always form in polar solvents',
@@ -172,7 +172,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the SN1 mechanism of a secondary alkyl halide, which factor most significantly stabilizes the carbocation intermediate?',
       [
-        'Hyperconjugation and inductive effects from α-alkyl groups',
+        'Hyperconjugation from α-alkyl groups',
         'Resonance stabilization from an adjacent aromatic ring',
         'Solvation by polar protic solvent molecules',
         'Steric relief upon leaving group departure',
@@ -194,7 +194,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In E1cb (conjugate base) elimination, what intermediate is key before C-H bond cleavage?',
       [
-        'An enolate or carbanion formed by deprotonation',
+        'An enolate or carbanion intermediate',
         'A carbocation intermediate',
         'A cyclic three-membered-ring intermediate',
         'A π-complex with the base catalyst',
@@ -205,7 +205,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Which combination of factors makes a compound a poor Diels-Alder dienophile?',
       [
-        'An electron-donating group on the double bond and low steric demand',
+        'An electron-donating group with low steric demand',
         'Electron-withdrawing groups (EWGs) on the double bond',
         'Steric hindrance from bulky neighboring groups',
         'High symmetry of the dienophile',
@@ -227,7 +227,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Why does the E2 elimination of a primary alkyl halide rarely occur despite favorable kinetics, while secondary and tertiary alkyl halides readily undergo E2?',
       [
-        'Primary carbocations are extremely unstable; SN2 is kinetically and thermodynamically favored',
+        'Primary carbocations are too unstable; SN2 dominates instead',
         'Primary C-H bonds are too strong to break',
         'Base-catalyzed isomerization blocks elimination',
         'Solvent viscosity preferentially inhibits E2 at primary sites',
@@ -238,7 +238,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In a retrosynthetic analysis, what does the "umpoled carbonyl" concept address?',
       [
-        'Reversing the polarity of a carbonyl carbon from electrophilic to nucleophilic',
+        'Reversing carbonyl polarity from electrophilic to nucleophilic',
         'Converting a ketone to an enol for selective substitution',
         'Introducing additional stereocenters via aldol condensation',
         'Activating a carbonyl group via protection as a ketal',
@@ -249,7 +249,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the stereochemical outcome of a [2,3]-sigmatropic rearrangement of an allylic sulfoxide in the Mislow rearrangement?',
       [
-        'Suprafacial rearrangement, with inversion at the sulfoxide sulfur and allylic carbon',
+        'Suprafacial, with inversion at sulfur and allylic carbon',
         'Antarafacial rearrangement, generating a new alkene geometry',
         'No net change in stereochemistry at either center',
         'Exclusive formation of the (R,R)-diastereomer regardless of starting material',
@@ -271,7 +271,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What is the fundamental difference between a diastereomer and an enantiomer in the context of prochirality?',
       [
-        'Enantiotopic groups are diastereomeric to each other in the presence of a chiral reagent; diastereotopic groups have intrinsically different chemical shifts',
+        'Enantiotopic groups become diastereomeric only with a chiral reagent',
         'Both are invisible to achiral reagents; both require chiral comparison to detect',
         'Enantiotopic groups require a mirror plane; diastereotopic groups do not',
         'Enantiomers are only distinguishable by chiral solvents; diastereomers always have different NMR signals',
@@ -293,7 +293,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Why is the Cope rearrangement a [3,3]-sigmatropic shift rather than a [1,5]-shift?',
       [
-        'A [3,3]-shift is suprafacial and thermally allowed by Woodward-Hoffmann rules (4n+2 electrons); [1,5] is antarafacial and forbidden',
+        '[3,3] is suprafacial-allowed; [1,5] is antarafacial-forbidden',
         '[1,5] shifts require a chiral center that directs selectivity',
         'The Cope rearrangement forms a six-membered transition state, which is geometrically incompatible with [1,5]',
         'Only [3,3] shifts are possible in 1,5-dienes due to molecular symmetry',
@@ -304,7 +304,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In protecting group strategy, what property makes benzyl ethers suitable for protecting alcohols in multi-step synthesis?',
       [
-        'Easily cleaved by hydrogenolysis (H2/Pd) and resistant to aqueous acid/base, allowing orthogonal deprotection',
+        'Cleaved by hydrogenolysis (H2/Pd), stable to acid/base',
         'Orthogonal to acetyl esters via selective saponification',
         'Stable under both acidic and basic aqueous conditions, but cleaved only by strong oxidants',
         'Easily installed by Williamson ether synthesis and cleaved by excess Grignard reagent',
@@ -315,7 +315,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'What does the term "diastereofacial selectivity" (or "diastereofacial discrimination") mean in asymmetric synthesis?',
       [
-        'Preferential attack on one face of a prochiral enantioface by a chiral reagent or catalyst',
+        'Preferential attack on one face of a prochiral group',
         'Selective formation of one geometric isomer of an alkene',
         'Preferential reaction at one stereocentered position in a meso compound',
         'The tendency of enantiomers to crystallize separately',
@@ -326,7 +326,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In natural product synthesis, why is the asymmetric Sharpless dihydroxylation (AD) widely used despite requiring stoichiometric chiral ligand?',
       [
-        'It provides high enantioselectivity, 1,2-diol functionality, and catalytic turnover on the osmium and chiral ligand',
+        'High enantioselectivity with catalytic osmium turnover',
         'It is more economical than chiral auxiliary methods and forms only one stereoisomer',
         'It operates as a true catalytic process with substoichiometric osmium',
         'It requires no protecting groups and is compatible with all functional groups',
@@ -339,7 +339,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the Eschenmoser-Claisen rearrangement, what is the intermediate that triggers the thermal [3,3]-sigmatropic shift?',
       [
-        'Formation of an allylic ketene aminal (imidate) from the allylic alcohol and sulfur ylide precursor',
+        'Formation of an allylic ketene aminal (imidate)',
         'A carbocation generated from acid-catalyzed activation of the hydroxyl group',
         'An enolate formed by deprotonation of a β-hydrogen',
         'A concerted intermediate in which the allylic C-O bond breaks synchronously with C-C formation',
@@ -350,7 +350,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Explain the stereoelectronic requirement for efficient nucleophilic displacement in the Finkelstein reaction and its relationship to solubility and reactivity of metal halides.',
       [
-        'Primary or secondary alkyl halides in aprotic solvents; SN2 inversion is enhanced because polar aprotic solvents solvate the cation, not the anion, increasing nucleophilicity without SN1 competition',
+        'Primary or secondary halides in aprotic solvents favor SN2',
         'Tertiary halides undergo E2 preferentially due to steric hindrance, and polar protic solvents suppress nucleophilicity',
         'The reaction is purely thermodynamic, determined by the stability of the products and metal halide crystallization',
         'Alkyl fluorides are most reactive because C-F bonds are polarized toward the nucleophile',
@@ -361,7 +361,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In a pericyclic [4+2] Diels-Alder reaction, what does the orbital symmetry analysis predict about the possibility of an allowed versus forbidden stereoelectronic pathway?',
       [
-        'Suprafacial [4+2] is allowed (4n electrons, n=1); antarafacial [4+2] is forbidden by Woodward-Hoffmann rules',
+        'Suprafacial [4+2] is allowed; antarafacial [4+2] is forbidden',
         'Both suprafacial and antarafacial [4+2] pathways are equally allowed due to the symmetry of conjugated dienes',
         'Antarafacial [4+2] is preferred when electron-withdrawing groups are present on the dienophile',
         'The Diels-Alder is inherently a [2+4] reaction (dienophile first-named), changing the allowed/forbidden assignment',
@@ -372,7 +372,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In transition metal catalysis, what is the mechanism by which oxidative addition of an organic halide to Pd(0) differs in regioselectivity and mechanism from an SN2 displacement?',
       [
-        'Oxidative addition occurs at the metal with a two-electron transfer and formation of a σ-complex (PdII-R and PdII-X); SN2 is nucleophilic attack on carbon with inversion',
+        'Oxidative addition forms Pd(II)-C and Pd(II)-X at the metal',
         'Both proceed through the same carbocation intermediate, but the metal stabilizes a different stereoisomer',
         'Oxidative addition prefers secondary halides; SN2 prefers primary halides for the same substrate',
         'The regioselectivity is determined by the ionic strength of the solvent and the size of the halide',
@@ -383,7 +383,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the Cope rearrangement of a substituted 1,5-hexadiene with electron-donating and electron-withdrawing groups, how do substituent electronic effects and steric hindrance influence the transition state?',
       [
-        'Electronic activation (EWGs on terminal carbons, EDGs on internal carbons) lowers ΔG‡; steric congestion at the transition state disfavors rearrangement',
+        'EWG/EDG placement lowers ΔG‡; steric congestion disfavors it',
         'EDGs uniformly accelerate the reaction regardless of position; steric effects are negligible',
         'The rearrangement is under orbital control, so electronic effects are irrelevant',
         'Substituent effects are additive and increase ΔG‡ linearly with the number of electron-donating groups',
@@ -394,7 +394,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In catalytic enantioselective C-H functionalization, what strategic advantage does asymmetric catalysis via a chiral directing group offer over stoichiometric chiral auxiliaries?',
       [
-        'Catalytic turnover reduces the amount of chiral ligand or substrate modification needed; site-selectivity is controlled by the directing group\'s coordination to the metal',
+        'Catalytic turnover needs less chiral ligand; it stays chelation-controlled',
         'Directing groups are always more selective than stoichiometric auxiliaries because they are permanently attached',
         'C-H functionalization requires stoichiometric chiral auxiliaries; catalytic methods cannot achieve enantioselectivity',
         'The stereoselectivity is purely determined by steric bulk of the catalyst, independent of the substrate',
@@ -405,7 +405,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the retrosynthetic planning of a target with multiple stereocenters, what is the strategic advantage of an "asymmetric synthetic equivalent" (or "asymmetric Umpolung")?',
       [
-        'It allows introduction of stereochemistry at an early stage via a single enantioselective transformation, reducing the need for multiple stereoselective steps later',
+        'It sets stereochemistry early via one enantioselective step',
         'It reduces the number of total steps by eliminating the need for any chiral reagents',
         'It guarantees all downstream transformations will occur with the same relative stereochemistry',
         'It is only applicable to natural products containing a single stereocentre',
@@ -416,7 +416,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Explain the origin of the anomalous regioselectivity in the intramolecular Heck reaction when the carbopalladium intermediate can undergo both 5-exo-trig and 6-endo-trig cyclization.',
       [
-        'The 5-exo-trig pathway is kinetically favored by Baldwin\'s rules (exo-trig is allowed; faster), although 6-endo-trig is thermodynamically more stable',
+        '5-exo-trig is kinetically favored by Baldwin\'s rules',
         'The 6-endo-trig is always faster due to the geometry of the Pd-alkene π-complex',
         'The selectivity is purely thermodynamic and depends on the relative stability of the two possible carbocations',
         'Endo-trig and exo-trig rules apply only to non-catalytic reactions',
@@ -427,7 +427,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In polymer chemistry, what is the key mechanistic distinction between chain-growth polymerization via free radicals versus living anionic polymerization in terms of chain termination and molecular weight distribution?',
       [
-        'Free-radical polymerization undergoes random termination (coupling or disproportionation), yielding broad polydispersity; living anionic polymerization lacks a termination step, allowing controlled chain length and narrow Mw distribution',
+        'Free-radical termination is random (broad Mw); anionic has none',
         'Living anionic polymerization is faster but suffers from broader molecular weight distribution',
         'Free radicals give perfectly uniform chain length; anionic polymerization gives random lengths',
         'Both mechanisms give identical polydispersity indices if the same monomer is used',
@@ -438,7 +438,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In natural product synthesis, what is the purpose of a "strategic bond disconnection" in retrosynthetic analysis, and how does it differ from a "tactical disconnection"?',
       [
-        'Strategic disconnections break the target into major, easily synthesized fragments that reduce overall complexity and step count; tactical disconnections are local, protecting-group or regiochemistry decisions',
+        'Strategic cuts simplify the target; tactical cuts handle local details',
         'Strategic disconnections are always in the middle of the molecule; tactical disconnections are always at the ends',
         'Both refer to the same concept, but "strategic" is used for complex targets and "tactical" for simple ones',
         'Strategic disconnections must be made first, in order, with no flexibility in planning order',
@@ -449,7 +449,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the Cram chelation model for asymmetric induction, why does chelation of the nucleophile (or Grignard) by a β-amino alcohol or hydroxyl group override Felkin-Anh steric control?',
       [
-        'The chelate directs the nucleophile to a fixed face of the carbonyl, orienting it antiperiplanar to the chelating group and overriding Felkin steric arguments',
+        'Chelation fixes the nucleophile\'s approach face, overriding sterics',
         'Chelation weakens the C=O bond, making the carbon more electrophilic and less dependent on steric orientation',
         'Felkin-Anh control is only valid for non-chelating Grignard reagents',
         'Chelation and Felkin-Anh are equally important and no single rule dominates the selectivity',
@@ -460,7 +460,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In enantioselective epoxidation (e.g., Jacobsen\'s catalyst or Katsuki\'s method), what is the stereochemical role of the chiral ligand in determining the enantioselectivity of attacking one face of a prochiral olefin?',
       [
-        'The chiral catalyst pocket creates diastereomeric transition states for approaching the two olefin faces, with one diastereomer significantly lower in energy',
+        'The chiral pocket creates diastereomeric TS; one is favored',
         'The catalyst does not distinguish between olefin faces; enantioselectivity arises solely from the inherent reactivity of the olefin',
         'The bulky ligand physically blocks one face of the olefin, preventing approach from that direction',
         'The ligand induces a temporary chiral center on the olefin itself, which directs the subsequent reaction',
@@ -471,7 +471,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the Ireland-Claisen rearrangement, what is the advantage of using the silyl ketene acetal over the free enolate in terms of reaction mechanism and selectivity?',
       [
-        'The silyl ketene acetal is pre-organized, thermally stable (not basic-sensitive), undergoes a cleaner [3,3]-rearrangement without side reactions, and the Si-O bond facilitates transition state organization',
+        'The silyl ketene acetal gives a cleaner [3,3]-rearrangement',
         'The silyl group acts as a leaving group, converting the rearrangement into an SN2 substitution',
         'Free enolates are more selective but require stoichiometric base; silyl acetals eliminate that need',
         'The silyl ketene acetal and free enolate give identical results, differing only in the base required',
@@ -482,7 +482,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In cascade reactions (or domino reactions), what defines the "auto-catalytic" or "auto-propagating" nature of certain multi-component cyclizations?',
       [
-        'Product(s) of an early step serve as reactant(s) or catalyst(s) for a subsequent step, creating a self-sustaining reaction sequence without additional reagent addition',
+        'Early-step products serve as reactant or catalyst for later steps',
         'All cascade reactions are inherently auto-catalytic if performed in one pot',
         'The reaction becomes faster if the product is continuously removed from the reaction mixture',
         'Auto-catalysis is only possible in multi-step syntheses involving at least three different reagents',
@@ -493,7 +493,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In click chemistry, particularly copper(I)-catalyzed azide-alkyne cycloaddition (CuAAC), why is the Cu(I) catalyst essential for controlling regioselectivity and reaction rate?',
       [
-        'Cu(I) activates the alkyne via complexation, lowering the HOMO-LUMO gap and enabling a concerted [3+2] cycloaddition to form 1,4-disubstituted triazole as the kinetic product',
+        'Cu(I) activates the alkyne for concerted [3+2] to the 1,4-triazole',
         'Cu(I) acts as a simple counter-ion with no electronic effect on the alkyne',
         'The reaction is equally fast without copper, but copper is added for safety reasons',
         'Cu(I) catalyzes the rearrangement of the initial 1,5-triazole isomer to the thermodynamic 1,4-product',
@@ -506,7 +506,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In transition-metal-catalyzed C-H functionalization, explain the selectivity governing ortho, meta, and para-substitution in arene C-H activation when the directing group is not a strongly coordinating atom.',
       [
-        'Electronic and steric properties of the arene and weak chelation or hydrogen-bonding interactions between the catalyst and substrate determine positional selectivity; ortho-selectivity often arises from favorable chelation, while meta/para arise from electronic effects or sterics overriding ortho-coordination',
+        'Electronic/steric properties and weak chelation determine positional selectivity',
         'Para-selectivity is universally preferred due to resonance stabilization of the arene π-system',
         'Meta-selectivity is impossible in aromatic C-H activation unless a deactivating group is present',
         'Ortho, meta, and para-substitution occur with equal probability unless a strongly chelating directing group is introduced',
@@ -517,7 +517,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the context of photochemical [2+2] cycloaddition versus thermal Diels-Alder cycloaddition, how do the Woodward-Hoffmann rules explain the apparent "reversal" of stereochemical allowed/forbidden pathways?',
       [
-        'Thermal [4+2] is suprafacial-allowed (6π, 4n+2); photochemical [2+2] (4π, 4n) is suprafacial-allowed. Thermal [2+2] (4π, 4n) is suprafacial-forbidden and antarafacial-allowed (difficult geometrically). The excited electronic state changes orbital symmetry relationships.',
+        'The excited state changes orbital symmetry, reversing [2+2] rules',
         'Photochemistry simply accelerates thermal pathways without changing the selection rules',
         'Diels-Alder reactions are photochemical while [2+2] cycloadditions are thermal, never the reverse',
         'The "reversal" is an artifact of solvent effects, not orbital symmetry',
@@ -528,7 +528,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In enantioselective phase-transfer catalysis, what catalyst design feature (or catalyst structural motif) enables the chiral quaternary ammonium ion to achieve high enantiocontrol in reactions like asymmetric epoxidation or alkylation of enolates?',
       [
-        'Bulky, rigidly linked chiral groups (often spiro or binaphthyl-based) on the ammonium cation create a chiral environment that organizes the ion pair and shields one face of the nucleophile/enolate from attack',
+        'Bulky, rigid chiral groups on the ammonium ion shield one enolate face',
         'Simple alkyl chains on the ammonium center are sufficient if the solvent is carefully chosen',
         'The counter-ion (e.g., OH⁻ vs. Cl⁻) is the exclusive source of stereochemical control, independent of the ammonium structure',
         'Phase-transfer catalysis cannot achieve high enantioselectivity because the interface is inherently non-chiral',
@@ -539,7 +539,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In natural product synthesis, the "Kishi rule" (or extended selectivity models) guides 1,3-asymmetric induction in acyclic polyol systems; explain the mechanistic basis for why an anti-Felkin trajectory is often observed in unexpected cases.',
       [
-        'Steric and electronic interactions (hidden steric/lone-pair effects) in the approach of a nucleophile or hydride to a chiral β-substituted aldehyde can favor conformations different from Felkin-Anh prediction; conformational equilibria and hydrogen bonding modulate selectivity',
+        'Hidden steric and electronic effects can favor a non-Felkin conformer',
         'Anti-Felkin outcomes are always due to chelation and never occur without a hydroxyl or amino group at the β-position',
         'The Kishi rule and Felkin-Anh model are contradictory, and one must always override the other',
         'Anti-Felkin selectivity arises purely from electronic activation of the aldehydic carbon by adjacent electron-withdrawing groups',
@@ -550,7 +550,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In catalytic asymmetric C-C coupling via Pd-catalyzed cross-coupling, explain the origin of enantiofidelity (or lack thereof) when a Pd-alkyl intermediate bears a stereogenic carbon.',
       [
-        'Enantiofidelity depends on the stability of the Pd-C bond and the rate of reductive elimination relative to β-hydride elimination and isomerization; a stereogenic Pd-alkyl that reductively eliminates faster than it racemizes retains enantiopurity',
+        'Fidelity depends on reductive elimination outpacing racemization',
         'Pd-alkyl intermediates always invert stereochemistry during coupling due to the nature of oxidative addition',
         'Enantiofidelity is impossible in cross-coupling; stereogenic alkyl groups are always lost or scrambled',
         'Only chiral ligands on the palladium can induce stereochemical fidelity; the substrate\'s stereochemistry is irrelevant',
@@ -561,7 +561,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In polymer synthesis, explain why controlled radical polymerization (ATRP or RAFT) enables access to narrow polydispersity and block copolymers, contrasting the mechanism with living anionic polymerization.',
       [
-        'CRP maintains equilibrium between dormant alkyl halide and active radical, keeping [radical] low and minimizing termination; RAFT uses a chain-transfer equilibrium. Anionic polymerization is irreversibly growing (no dormant species), faster, but less compatible with functional groups.',
+        'CRP keeps [radical] low via a dormant/active equilibrium',
         'ATRP and RAFT use anionic intermediates, making them essentially equivalent to living anionic polymerization',
         'Living anionic polymerization gives broader polydispersity than ATRP because it has no equilibrium control',
         'Controlled radical polymerization cannot make block copolymers because radicals do not live long enough for sequential addition',
@@ -572,7 +572,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the total synthesis of a complex natural product, how do "protecting group-free" or "minimalist protecting group" strategies differ in philosophy and execution from traditional routes, and what are the key synthetic challenges?',
       [
-        'Protecting-group-free synthesis exploits inherent chemoselectivity and reactivity differences, reducing or eliminating covalent protection; it requires precise functional-group ordering, orthogonal reactivity, and often demands high-temperature or unconventional conditions to overcome kinetic barriers',
+        'It exploits inherent chemoselectivity instead of covalent protection',
         'Protecting-group-free synthesis is only possible for natural products with a single functional group',
         'Traditional routes are universally shorter than protecting-group-free routes',
         'Protecting-group-free synthesis uses the same reagents and transformations as traditional syntheses, differing only in naming convention',
@@ -583,7 +583,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In asymmetric catalysis using chiral bisphosphine ligands (e.g., BINAP, DuPhos), explain the origin of the "bite angle" and how it influences reactivity and enantioselectivity in cross-coupling or hydrogenation reactions.',
       [
-        'Bite angle (P-M-P) determines the geometry of the metal coordination sphere, controlling steric access to the coordination site and the orientation of approaching substrates; a narrow bite angle (e.g., DuPhos) creates a restrictive pocket, while a wide bite angle (e.g., BINAP) allows larger substrate approaches',
+        'Bite angle (P-M-P) sets the coordination geometry and steric access',
         'Bite angle is determined solely by the length of the phosphorus-containing linker and does not affect reactivity',
         'All chiral bisphosphines have the same bite angle regardless of their structure',
         'Bite angle affects catalyst color and solubility but not reactivity or selectivity',
@@ -594,7 +594,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In synthetic organic chemistry, what is the purpose and mechanistic advantage of using a "bulky nucleophile" or "hindered reducing agent" in a selective transformation where a smaller nucleophile would suffer from side reactions?',
       [
-        'Bulky nucleophiles reduce approach to sterically congested or secondary/tertiary electrophilic centers through steric exclusion, suppressing undesired reactions at less hindered sites (e.g., LiAlH(OtBu)3 vs. LiAlH4 for selective ketone reduction in presence of aldehydes or esters)',
+        'Bulky nucleophiles avoid hindered sites via steric exclusion',
         'Bulky nucleophiles are faster than small ones due to electronic activation',
         'Bulky nucleophiles cannot access sterically hindered sites, so they are used only when selectivity for less hindered sites is desired',
         'Size of the nucleophile is independent of selectivity; only the solvent polarity matters',
@@ -605,7 +605,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In the context of organocatalysis (imidazolidinone or thiourea catalysis), explain how hydrogen bonding between the catalyst and substrate creates a chiral microenvironment that leads to high enantioselectivity without a metal center.',
       [
-        'Hydrogen bonding from the catalyst functional groups (e.g., N-H and C=O in imidazolidinones, N-H in thioureas) to the substrate carbonyl or other polar groups pre-organizes the substrate and diastereomerically distinguishes the two enantiofaces; the transition state is stabilized via a low-barrier hydrogen bond',
+        'H-bonding pre-organizes the substrate, distinguishing the two faces',
         'Hydrogen bonding in organocatalysis is incidental and does not contribute to selectivity',
         'Organocatalysts achieve selectivity purely through steric bulk, with no electrostatic or hydrogen-bonding component',
         'Hydrogen bonding and transition-state organization are only relevant in metal catalysis',
@@ -616,7 +616,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In macrocyclic synthesis and ring-closing metathesis (RCM), explain how substrate structure (ring size, alkene geometry, and substitution pattern) influences the equilibrium and kinetics of RCM and the tendency toward unwanted oligomerization.',
       [
-        'RCM selectivity is governed by Thorpe-Ingold effects (strain relief), the thermodynamic stability of the alkene product, and the kinetics of cyclization relative to bimolecular olefin metathesis (intermolecular coupling and oligomerization); larger, less strained rings favor RCM when kinetic factors (intramolecular concentration, chelation) overcome entropic barriers',
+        'Thorpe-Ingold effects and intramolecular kinetics favor RCM',
         'All ring sizes close with equal efficiency in RCM',
         'RCM oligomerization is unavoidable and cannot be suppressed by substrate design',
         'Alkene geometry (E/Z) is irrelevant to RCM selectivity and product distribution',
@@ -627,7 +627,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In total synthesis planning, what distinguishes a "key strategic transformation" from a routine step, and how does this guide retrosynthetic analysis?',
       [
-        'A key transformation creates multiple stereocenters or complex ring systems in one step; its discovery often dictates the entire synthetic strategy and enables shorter routes despite moderate yield',
+        'It builds complexity (stereocenters, rings) in one step, guiding strategy',
         'Key transformations are always the final steps in a synthesis',
         'All transformations are equally important in route optimization',
         'Key transformations must be reactions well-established in the literature with >95% yield',
@@ -638,7 +638,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In photochemical organic synthesis, explain the difference between a Type I and Type II photochemical mechanism in terms of the photoinitiated intermediates and selectivity outcomes.',
       [
-        'Type I (radical pathway): excited state abstracts H or undergoes fragmentation to give radicals; Type II (energy transfer): excited state transfers energy to ground-state substrate or triplet-oxygen, generating singlet-oxygen species or substrate triplet',
+        'Type I gives radicals; Type II transfers energy (singlet oxygen)',
         'Both types generate identical products and differ only in mechanism nomenclature',
         'Type I requires visible light; Type II requires UV light',
         'Type II is faster because singlet-oxygen is more reactive than radicals',
@@ -649,7 +649,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In enzymatic catalysis applied to organic synthesis, what is the advantage of directed evolution of enzymes versus engineering a single active site based on structural predictions?',
       [
-        'Directed evolution samples vast sequence space iteratively, identifying variants with improved turnover, substrate scope, or new selectivity without structural knowledge; mutagenesis screens beat rational design for non-intuitive solutions',
+        'Directed evolution samples sequence space for non-intuitive variants',
         'Directed evolution is slower and less efficient than rational design',
         'Rational design always finds the optimal enzyme variant first',
         'Directed evolution cannot achieve enantioselectivity beyond the starting enzyme',
@@ -660,7 +660,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In green chemistry and atom economy, how does the concept of "atom economy" differ from "yield" in evaluating the environmental benignity of a synthesis route?',
       [
-        'Atom economy measures the fraction of atoms from starting materials incorporated into the final product (theoretical max 100%); yield measures the percentage of theoretical product obtained. Both are essential—high atom economy with low yield wastes atoms and solvent; low atom economy wastes feedstocks regardless of yield',
+        'Atom economy is theoretical atom use; yield is actual output',
         'Atom economy and yield are identical terms',
         'Yield is more important than atom economy because high yield means minimal waste',
         'Atom economy is irrelevant if the reaction is carried out in a green solvent',

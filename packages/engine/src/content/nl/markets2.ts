@@ -8,6 +8,173 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const MACROECON: CategoryContent = {
+  bscba: [
+    [
+      'Wat meet BBP?',
+      [
+        'De totale geldwaarde van alle eindgoederen en diensten geproduceerd binnen een land in een periode',
+        'Het totale inkomen verdiend door alle burgers van een land, ongeacht waar het werd verdiend',
+        'De totale waarde van uitvoer minus invoer in internationale handel',
+        'De totale rijkdom gehouden door alle mensen en bedrijven in een land',
+      ],
+      0,
+      'BBP meet stroom van eindproductie binnen een grondgebied, niet rijkdom of inkomen van burgers in het buitenland.',
+    ],
+    [
+      'Wat is het verschil tussen reëel en nominaal BBP?',
+      [
+        'Reëel BBP corrigeert voor prijsveranderingen; nominaal BBP is gemeten tegen huidigerijzen',
+        'Reëel BBP sluit overheidsuitgaven uit en nominaal BBP omvat ze',
+        'Reëel BBP meet alleen verhandelde goederen en nominaal BBP omvat diensten',
+        'Reëel BBP is altijd kleiner dan nominaal BBP',
+      ],
+      0,
+      'Reëel BBP corrigeert voor inflatie zodat vergelijkingen echte productiewijzigingen tonen; nominaal weerspiegelt huidigerijzen.',
+    ],
+    [
+      'Wat is inflatie?',
+      [
+        'Een aanhoudende stijging van het algemene prijsniveau van goederen en diensten in de tijd',
+        'Een toename van de hoeveelheid geld in omloop in een economie',
+        'Een situatie waar sommige prijzen stijgen terwijl anderen dalen',
+        'De snelheid waarmee de centrale bank jaarlijks de geldhoeveelheid verhoogt',
+      ],
+      0,
+      'Inflatie is de snelheid waarop het gemiddelde prijsniveau stijgt; het ondermijnt koopkracht.',
+    ],
+    [
+      'Wat zijn de voornaamste soorten werkloosheid?',
+      [
+        'Wrijvings-, structurele en conjuncturele',
+        'Tijdelijke, permanente en onvrijwillige',
+        'Klassieke, Keynesiaanse en aanbodgebaseerde',
+        'Zichtbare, verborgen en overgangswerkloosheid',
+      ],
+      0,
+      'Wrijving ontstaat uit werkzoeken, structureel uit vaardigheidsmismatch, conjunctureel uit zwakke vraag in recessies.',
+    ],
+    [
+      'Wat beschrijft de Phillips-curve?',
+      [
+        'Een negatieve relatie tussen inflatie- en werkloosheidsvoeten',
+        'Een positieve relatie tussen lonen en arbeidsproductiviteit',
+        'Een negatieve relatie tussen rentevoeten en geldhoeveelheid',
+        'Een positieve relatie tussen overheidsuitgaven en particuliere investeringen',
+      ],
+      0,
+      'De Phillips-curve toont dat lagere werkloosheid samenhangt met hogere inflatie, hoewel de relatie in de tijd is verschoven.',
+    ],
+    [
+      'Wat is het verschil tussen geldhoeveelheid en monetaire basis?',
+      [
+        'De geldhoeveelheid omvat contanten en deposito\'s; de monetaire basis is enkel munt en reserves',
+        'De monetaire basis is groter dan de geldhoeveelheid',
+        'Banken controleren de geldhoeveelheid; centrale banken de monetaire basis',
+        'De geldhoeveelheid is een voorraad; de monetaire basis is een stroom',
+      ],
+      0,
+      'De monetaire basis (contanten en reserves) is het meest liquide; de geldhoeveelheid omvat contanten, betaalrekeningen en meer.',
+    ],
+    [
+      'Wat is expansionair begrotingsbeleid?',
+      [
+        'Overheid verhoogt uitgaven of verlaagt belastingen om economie in recessie aan te porren',
+        'Overheid draait begrotingstekort in plaats van overschot',
+        'Overheid investeert in infrastructuur en onderwijs',
+        'Centrale bank verhoogt geldhoeveelheid om rentevoeten te verlagen',
+      ],
+      0,
+      'Expansionair begrotingsbeleid verhoogt vraag wanneer economie zwak is door hogere uitgaven of lagere belastingen.',
+    ],
+    [
+      'Wat is het vermenigvuldigingseffect?',
+      [
+        'Een initiële uitgavenstijging leidt tot grotere totale outputstijging terwijl geld door economie circuleert',
+        'Het effect van verdubbeling van geldhoeveelheid op prijsniveau',
+        'De winst die een bedrijf op elke dollar omzet maakt',
+        'De efficiëntietoename wanneer een bedrijf verdubbeld in grootte',
+      ],
+      0,
+      'Het vermenigvuldiger toont hoe initiële uitgaven door economie uitbreiden terwijl ontvangers hun inkomen uitgeven.',
+    ],
+    [
+      'Wat is crowding out (verdringing)?',
+      [
+        'Overheidsschuld tilt rentevoeten, waardoor particuliere investeringen afnemen',
+        'Grote bedrijven voorkomen dat kleinere bedrijven markt betreden',
+        'Situatie waarbij openbare goederen particuliere productie verhinderen',
+        'Inflatie vermindert reële waarde van besparingen van mensen',
+      ],
+      0,
+      'Verdringking vindt plaats wanneer overheidsschuld rentevoeten opdrijft, wat particuliere leningen en investeringen duurder maakt.',
+    ],
+    [
+      'Wat is de productiemogelijkhedencurve?',
+      [
+        'Curve toont maximale combinaties van twee goederen die economie kan produceren met beschikbare middelen',
+        'Grafiek toont hoe productiekosten variëren met volume',
+        'Grens tussen landen die handelsstromen bepaalt',
+        'Lijn toont relatie tussen arbeidsproductiviteit en reële lonen',
+      ],
+      0,
+      'PPF toont afruiling tussen productie van verschillende goederen; punten eronder vertegenwoordigen inefficiëntie.',
+    ],
+    [
+      'Wat toont de aggregate-vraagcurve?',
+      [
+        'De totale hoeveelheid goederen en diensten gevraagd tegen elk prijsniveau',
+        'De hoeveelheid particuliere investeringen gevraagd tegen elk renteniveau',
+        'De hoeveelheid van één specifiek goed gevraagd tegen verschillende prijzen',
+        'De hoeveelheid overheidsuitgaven gepland tegen elk inkomstniveau',
+      ],
+      0,
+      'Aggregatevraag is totale uitgaven aan eindgoederen tegen elk overall prijsniveau; het helt naar beneden af.',
+    ],
+    [
+      'Wat is stagflatie?',
+      [
+        'Gelijktijdige combinatie van hoge inflatie en hoge werkloosheid of lage groei',
+        'Tijdelijk pauze in inflatie gevolgd door hervatting van prijsstijging',
+        'Situatie waarin werkloosheid daalt terwijl inflatie stijgt',
+        'Periode van aanhoudende begrotingstekorten zonder inflatie',
+      ],
+      0,
+      'Stagflatie combineert stagnatie met inflatie, wat beleidsmakers uitdaagt en de jaren zeventig plagde.',
+    ],
+    [
+      'Wat is comparatief voordeel in internationale handel?',
+      [
+        'Vermogen iets tegen lagere opportuniteitskosten dan ander land te produceren',
+        'Vermogen meer van iets te produceren dan ander land met dezelfde middelen',
+        'Voordeel dat rijke landen over arme landen hebben',
+        'Tariefsbesherming die land aan binnenlandse industrie verleent',
+      ],
+      0,
+      'Comparatief voordeel bepaalt specialisatie: landen moeten specialiseren in wat ze relatief goedkoper kunnen produceren.',
+    ],
+    [
+      'Wat is koopkrachtpariteit?',
+      [
+        'Dezelfde mandje goederen zou dezelfde prijs hebben in verschillende landen tegen huige wisselkoersen',
+        'Vermogen van munt om waarde stabiel te houden in de tijd',
+        'Overheidsbeleid om prijzen van essentiële goederen stabiel te houden',
+        'Overeenkomst tussen landen over vaste wisselkoers',
+      ],
+      0,
+      'KKP suggereert wisselkoersen aanpassen zodat identieke goederen internationaal dezelfde kosten; afwijkingen ontstaan door handelskosten.',
+    ],
+    [
+      'Wat is de functie van centrale bank?',
+      [
+        'Geldhoevelheidcontrole, monetair beleid bepalen en lender of last resort',
+        'Zorgen dat overheidsbegrotingen sluitend zijn en fiscale uitgaven goedkeuren',
+        'Prijzen vaststellen voor alle goederen ter voorkoming van inflatie',
+        'Commerciële bankservices verlenen aan het publiek',
+      ],
+      0,
+      'Centrale banken controleren monetair beleid via rentes en geldhoeveelheid; stabiliseren financiële systemen.',
+    ],
+  ],
   msc: [
     [
       'Wat stelt de Lucas-kritiek over beleidsevaluatie?',
@@ -512,6 +679,173 @@ export const MACROECON: CategoryContent = {
 };
 
 export const MICROECON: CategoryContent = {
+  bscba: [
+    [
+      'Wat beschrijft de wet van afnemende marginale opbrengsten?',
+      [
+        'Naarmate één input stijgt terwijl anderen vast blijven, daalt de marginale opbrengst ervan uiteindelijk',
+        'Totale output van bedrijf moet dalen bij productie-uitbreiding voorbij bepaald punt',
+        'Werknemers worden minder productief naarmate ze ervaring op werk opdoen',
+        'Toename van alle inputs met dezelfde percentage vermindert totale output',
+      ],
+      0,
+      'Afnemende marginale opbrengsten zijn fundamenteel: opeenvolgende eenheden variabele input leveren kleinere output-toenames op.',
+    ],
+    [
+      'In perfecte concurrentie, wat is waar voor lange-termijn evenwicht?',
+      [
+        'Bedrijven maken nul economische winst en prijs gelijk aan gemiddelde totaalkosten',
+        'Bedrijven stellen prijs gelijk aan marginale opbrengst en beperken output voor winstmaximalisatie',
+        'Bedrijven rekenen prijs boven gemiddelde kosten om vaste kosten terug te halen',
+        'Bedrijven kunnen blijvend positieve winst verdienen ondanks vrije toetreding',
+      ],
+      0,
+      'Nul economische winst kenmerkt lange-termijn concurrentie: prijs gelijk gemiddelde totaalkosten, bedrijven kunnen niet verbeteren.',
+    ],
+    [
+      'Wat is consumentensurplus?',
+      [
+        'Het verschil tussen wat een koper bereid is te betalen en wat hij werkelijk betaalt',
+        'De totale tevredenheid een consument ontvangt van consumptie',
+        'Het inkomen dat overblijft nadat een consument voor aankopen betaalt',
+        'De winst een consument maakt door te kopen als prijzen dalen',
+      ],
+      0,
+      'Consumentensurplus meet extra voordeel van aankoop aan prijs lager dan reservatieprijze koper.',
+    ],
+    [
+      'Wat is opportuniteitskosten?',
+      [
+        'De waarde van het volgende beste alternatief dat wordt opgegeven door iets anders te kiezen',
+        'De expliciete kasuitgaven van een aankoop',
+        'Het totale bedrag geld aan goed of dienst besteed',
+        'De werkelijke kosten plus de tijd besteed aan iets verwerven',
+      ],
+      0,
+      'Opportuniteitskosten liggen ten grondslag aan rationeel besluitvorming: iets kiezen betekent volgende beste optie opgeven.',
+    ],
+    [
+      'Waarom is er deadweight loss in monopolie?',
+      [
+        'Monopolist produceert minder dan sociaal optimale hoeveelheid, wat wederzijds voordelige ruiltransacties onverwezenlijkt laat',
+        'Monopolist moet werknemers meer betalen dan concurrerende bedrijven',
+        'Consumenten moeten meer eenheden kopen dan zij willen',
+        'Monopolist heeft hogere productiekosten dan concurrerende bedrijven',
+      ],
+      0,
+      'Deadweight loss ontstaat omdat monopolist output onder concurrentiëniveau beperkt om prijs boven kosten te handhaven.',
+    ],
+    [
+      'Wat is een onherroepelijke kost (sunk cost)?',
+      [
+        'Een kost die al is gemaakt en niet kan worden teruggekregen',
+        'Het totale bedrag aan vaste kapitaal in een bedrijf besteed',
+        'Een uitgave die zeker in de toekomst optreedt',
+        'De kosten van arbeid die met productieniveau variëert',
+      ],
+      0,
+      'Onherroepelijke kosten moeten in economische beslissingen worden genegeerd omdat ze ongeacht toekomstige keuzes niet kunnen worden teruggekregen.',
+    ],
+    [
+      'Wat beschrijft comparatief voordeel?',
+      [
+        'Het vermogen iets tegen lagere opportuniteitskosten dan ander partij te produceren',
+        'Het vermogen meer van iets te produceren dan ander partij met dezelfde hulpbronnen',
+        'Het voordeel dat groot bedrijf over kleinere concurrenten heeft',
+        'De vaardigheid een werknemer door baanspecialisatie ontwikkelt',
+      ],
+      0,
+      'Comparatief voordeel, niet absoluut voordeel, bepaalt specialisatie: partijen moeten specialiseren in wat voor hen relatief goedkoper is.',
+    ],
+    [
+      'Waarom creëren tarieven en quotas deadweight loss?',
+      [
+        'Ze verhinderen wederzijds voordelige ruiltransacties, waardoor totaal beschikbaar surplus afneemt',
+        'Ze verhogen prijs die binnenlandse consumenten voor goederen betalen',
+        'Ze beschermen binnenlandse bedrijven tegen concurrentie op kwaliteit',
+        'Ze verminderen overheidsbelastinginkomsten',
+      ],
+      0,
+      'Handelsbeperking verminderen hoeveelheid onder efficiënt niveau, waardoor vrijwillige transacties beide zijden voordelig verhinderd worden.',
+    ],
+    [
+      'Wat vertegenwoordigt een indifferentiecurve?',
+      [
+        'Alle combinaties van twee goederen die consument dezelfde tevredenheid geven',
+        'De budgetbeperking op hoeveel consument kan uitgeven',
+        'De afnemende marginaal nut van opeenvolgende eenheden',
+        'De afruiling tussen huidig en toekomstig verbruik',
+      ],
+      0,
+      'Indifferentiecurve toont bundels met gelijk nut, hellingen naar beneden omdat consumenten goederen tegen elkaar afwegen.',
+    ],
+    [
+      'Wat is prijs-elasticiteit van vraag?',
+      [
+        'De procentuele verandering van gevraagde hoeveelheid gedeeld door procentuele prijs-verandering',
+        'De verandering gevraagde hoeveelheid wanneer prijs met één dollar stijgt',
+        'Helling van vraagcurve gemeten in dollars per eenheid',
+        'Gevoeligheid van prijs voor veranderingen van consumenteninkomsten',
+      ],
+      0,
+      'Prijs-elasticiteit meet gevoeligheid koper voor prijs-veranderingen: elastisch betekent hoeveelheid veel verandert.',
+    ],
+    [
+      'Wat is verschil tussen normale en inferieure goederen?',
+      [
+        'Vraag naar normale goederen stijgt bij inkomenstoename; vraag naar inferieure goederen daalt',
+        'Normale goederen zijn noodzakelijkheden en inferieure goederen zijn luxe',
+        'Normale goederen worden concurrerend geproduceerd en inferieure door monopolies',
+        'Normale goederen hebben elastische vraag en inferieure goederen inelastische vraag',
+      ],
+      0,
+      'Inkomenseffecten onderscheiden deze: bij inkomenstoename kopen consumenten meer normale goederen maar minder inferieure goederen.',
+    ],
+    [
+      'Wat veroorzaakt negatieve externaliteiten?',
+      [
+        'Een partij buiten transactie draagt kosten die niet in transactieprijs worden weerspiegeld',
+        'Bedrijven met schaalvoordelen kunnen prijzen onder concurrentie-niveaus drukken',
+        'Werknemers verliezen inkomen wanneer technologie vraag naar hun vaardigheden vermindert',
+        'Consumenten moeten belastingen op aankopen van belaste goederen betalen',
+      ],
+      0,
+      'Negatieve externaliteiten treden op wanneer producenten of consumenten kosten aan derden opleggen zonder compensatie.',
+    ],
+    [
+      'Wat onderscheidt vaste van variabele kosten?',
+      [
+        'Vaste kosten veranderen niet met output; variabele kosten veranderen met geproduceerde hoeveelheid',
+        'Vaste kosten gaan naar werknemers en variabele kosten naar leveranciers',
+        'Vaste kosten worden eenmalig aan start betaald en variabele kosten continu',
+        'Vaste kosten zijn zeker en variabele kosten onzeker',
+      ],
+      0,
+      'Vaste kosten zoals huur veranderen niet met output; variabele kosten zoals materialen wel met productie-volume.',
+    ],
+    [
+      'Wat is producentensurplus?',
+      [
+        'Het verschil tussen prijs verkoper ontvangt en minimumprijs die hij accepteert',
+        'De totale opbrengsten een bedrijf van productverkoop ontvangt',
+        'De winst een bedrijf na betaling van alle kosten verdient',
+        'De waarde van onverkochte voorraad aan einde periode',
+      ],
+      0,
+      'Producentensurplus meet voordeel verkopers ontvangen door tegen prijs boven reservatieprijze te verkopen.',
+    ],
+    [
+      'Wat is marktfalen?',
+      [
+        'Situatie waar vrije markten middelen niet efficiënt toewijzen, vaak door externaliteiten of asymmetrische informatie',
+        'Markt die ineenstort wanneer groot bedrijf uit gaat',
+        'Situatie waar bedrijven door slecht management niet winstmaximalisatie bereiken',
+        'Periode wanneer marktprijzen aanzienlijk onder historische gemiddelden vallen',
+      ],
+      0,
+      'Marktfalen treedt op wanneer ongereguleerde markten geen efficiëntie bereiken—voorbeelden: vervuiling, monopolie, informatieasymmetrie.',
+    ],
+  ],
   msc: [
     [
       'Waaraan wordt een Pigouviaanse belasting gelijkgesteld?',

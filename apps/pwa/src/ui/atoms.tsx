@@ -101,7 +101,8 @@ function describe(
 }
 
 const TIER_CLASS: Record<Difficulty, string> = {
-  graduate: 'border-tier-graduate/60 text-tier-graduate',
+  bscba: 'border-tier-bscba/60 text-tier-bscba',
+  msc: 'border-tier-msc/60 text-tier-msc',
   phd: 'border-tier-phd/60 text-tier-phd',
   professor: 'border-tier-professor/60 text-tier-professor',
 };

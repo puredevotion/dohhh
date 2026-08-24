@@ -49,7 +49,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the title of the ruler of Al-Andalus, equivalent to a king?',
       [
-        'Caliph or Emir',
+        'Caliph',
         'Sultan',
         'Vizier',
         'Wazir',
@@ -60,7 +60,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'Which pair of monarchs unified Spain through marriage and completed the Reconquista?',
       [
-        'Ferdinand of Aragon and Isabella of Castile',
+        'Ferdinand and Isabella',
         'Charles V and Isabella of Portugal',
         'Philip II and Mary of England',
         'James I and Margaret of France',
@@ -93,7 +93,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the Spanish Inquisition primarily focused on in the late 15th century?',
       [
-        'Enforcing Catholic orthodoxy and investigating heresy',
+        'Enforcing Catholic orthodoxy',
         'Suppressing Islamic rebellions',
         'Preventing Jewish immigration',
         'Controlling the nobility',
@@ -115,7 +115,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the primary goal of Spain\'s colonial administration in the Americas?',
       [
-        'Extracting precious metals and establishing settlements under Crown control',
+        'Extracting precious metals for the Crown',
         'Converting natives peacefully without military force',
         'Creating independent trading republics',
         'Establishing agricultural communes',
@@ -137,7 +137,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'Which conflict determined Spain\'s succession after Charles II\'s death in 1700?',
       [
-        'The War of the Spanish Succession',
+        'The Spanish Succession War',
         'The Thirty Years\' War',
         'The War of Jenkins\' Ear',
         'The Peninsular War',
@@ -148,7 +148,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'Who was the Spanish general that led the uprising against Napoleon\'s occupation?',
       [
-        'Francisco Goya (as a propagandist for the resistance)',
+        'Francisco Goya',
         'King Ferdinand VII',
         'Juan Carlos I',
         'Miguel de Cervantes',
@@ -159,7 +159,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the outcome of the Spanish-American War in 1898?',
       [
-        'Spain lost Cuba, Puerto Rico, and the Philippines, ending its American empire',
+        'Spain lost Cuba, Puerto Rico, and the Philippines',
         'Spain retained all its colonies but lost naval dominance',
         'Spain gained new territories in Africa',
         'Spain and the US divided the Caribbean equally',
@@ -172,7 +172,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the primary administrative structure of Visigothic Spain that later influenced medieval kingdoms?',
       [
-        'The liber iudiciorum (law code) establishing centralized royal justice',
+        'The liber iudiciorum law code',
         'A purely feudal system inherited from Rome',
         'Independent city-states without central authority',
         'Democratic assemblies modeled on Greek city-states',
@@ -183,7 +183,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'Which Islamic dynasty ruled Al-Andalus during its greatest cultural and economic flourishing?',
       [
-        'The Umayyad Caliphate (8th–10th centuries)',
+        'The Umayyad Caliphate',
         'The Abbasid Caliphate',
         'The Fatimid Caliphate',
         'The Ottoman Empire',
@@ -194,7 +194,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What triggered the fragmentation of Al-Andalus into taifas (petty kingdoms) in the 11th century?',
       [
-        'The Umayyad Caliphate\'s collapse and political fragmentation',
+        'The Umayyad Caliphate\'s collapse',
         'A Christian military invasion from the north',
         'Internal religious schisms between Sunni and Shia Muslims',
         'A massive plague that killed the ruling elite',
@@ -205,7 +205,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'Which Castilian ruler established a unified legal code applicable across his realms during the 13th century?',
       [
-        'Alfonso X, who commissioned the Siete Partidas',
+        'Alfonso X the Wise',
         'Ferdinand III, who conquered Seville',
         'James I of Aragon',
         'Sancho III of Navarre',
@@ -216,7 +216,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What economic role did Al-Andalus play in Mediterranean and European trade networks?',
       [
-        'It served as a crucial intermediary for North African and Middle Eastern goods into Christian Europe',
+        'It was a key trade intermediary with Christian Europe',
         'It was economically isolated and produced only agricultural goods',
         'It imported most manufactured goods from Italy',
         'It controlled all Mediterranean piracy and naval trade',
@@ -227,7 +227,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'Which military innovation did the Spanish employ extensively during the Reconquista?',
       [
-        'Fortified frontier towns (presidios) controlling contested borderlands',
+        'Fortified frontier towns (presidios)',
         'Naval fleets to bypass enemy strongholds',
         'Early gunpowder cannons deployed systematically',
         'Mounted knights exclusively without infantry support',
@@ -238,7 +238,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the basis of the encomienda system in Spanish American colonies?',
       [
-        'Granting colonists control of native labor in exchange for Christian instruction',
+        'Granting colonists control of native labor',
         'Wages paid directly to indigenous workers by the Crown',
         'Slavery purchased from African slave traders',
         'Feudal contracts protecting indigenous rights equally with Spanish settlers',
@@ -282,7 +282,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What political conflict characterized the relationship between the Spanish Crown and the nobility during the 16th century?',
       [
-        'The Crown consolidated power by subordinating aristocratic fueros (privileges)',
+        'The Crown subordinated aristocratic fueros',
         'Nobles successfully maintained feudal independence from royal authority',
         'The Crown offered nobility governance of American colonies without constraint',
         'Aristocrats and Crown shared power equally through a written constitution',
@@ -293,7 +293,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did Philip II\'s religious policies differ from those of his predecessors?',
       [
-        'He intensified Counter-Reformation orthodoxy and suppressed heterodox thought more rigidly',
+        'He intensified Counter-Reformation orthodoxy',
         'He relaxed Inquisition enforcement and permitted religious tolerance',
         'He allied with Protestant powers against Rome',
         'He established Spain as a secular state separating Church and Crown',
@@ -304,7 +304,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the Treaty of Utrecht\'s primary impact on Spanish power in 1713?',
       [
-        'Spain retained Spain and Spanish America but lost European possessions (Netherlands, Italy)',
+        'Spain kept the Americas but lost European possessions',
         'Spain regained all its European territories',
         'Spain lost control of its American colonies to Britain',
         'Spain\'s monarchy was abolished in favor of a republic',
@@ -315,7 +315,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'Which Enlightenment-era Spanish ruler attempted major administrative and economic reforms?',
       [
-        'Charles III, who centralized bureaucracy and reduced Church influence',
+        'Charles III, the Bourbon reformer',
         'Charles II, the last Habsburg',
         'Ferdinand VI, who focused only on military expansion',
         'Philip V, who refused all reforms',
@@ -326,7 +326,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What was the Peninsular War\'s geopolitical significance beyond its military outcome?',
       [
-        'It demonstrated popular nationalism could resist a continental power and influenced liberation movements across Europe',
+        'It showed popular nationalism could resist a continental power',
         'It consolidated French hegemony permanently over Spain',
         'It resulted in a negotiated independence for Spanish America',
         'It established Spain as a purely agrarian economy unable to industrialize',
@@ -339,7 +339,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What historiographical debate surrounds the origins and extent of Visigothic "decline" preceding the Islamic conquest?',
       [
-        'Revisionist scholars argue recent archaeological evidence suggests institutional continuity rather than collapse before 711',
+        'Recent archaeology suggests institutional continuity, not collapse',
         'All scholars agree the Visigothic state was uniformly weak and internally divided',
         'Medieval sources accurately document internal civil wars without exaggeration',
         'The Visigoths had already abandoned Christianity by the 8th century',
@@ -350,7 +350,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the tax structure of Al-Andalus under the Umayyad Caliphate function across different religious communities?',
       [
-        'The jizya (poll tax) on non-Muslims funded administration while Muslims paid additional zakat, creating economic stratification',
+        'The jizya on non-Muslims funded administration alongside Muslim zakat',
         'All residents paid identical taxes regardless of religion or status',
         'Non-Muslims paid no taxes but were excluded from commerce',
         'Religious communities collected taxes independently without central oversight',
@@ -361,7 +361,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What role did the Almohad and Almoravid invasions play in reshaping Al-Andalus\' political economy?',
       [
-        'Both North African movements strengthened centralized Islamic authority but disrupted existing taifa commercial networks',
+        'They centralized authority but disrupted taifa trade networks',
         'They had minimal impact; taifas remained independent and powerful',
         'They completely eliminated Islamic culture from Iberia',
         'They brought permanent peace and unified Al-Andalus permanently',
@@ -372,7 +372,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the economic organization of frontier presidios differ from interior Castilian settlements?',
       [
-        'Frontier towns operated under military martial law with Crown-controlled labor allocation; interior towns retained more traditional fuero autonomy',
+        'Frontier towns fell under martial law; interior towns kept fuero autonomy',
         'Frontier and interior towns had identical governance structures',
         'Interior towns were purely pastoral; frontier towns were purely military',
         'Frontier towns were autonomous; the interior was directly Crown-controlled',
@@ -383,7 +383,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What mechanisms allowed the Reconquista to progress unevenly across the peninsula (e.g., Castile faster than Aragon)?',
       [
-        'Castile\'s larger population, more centralized fiscal extraction, and geographic concentration of Islamic territories enabled rapid sequential conquest',
+        'Castile\'s larger population and centralized resources enabled faster conquest',
         'Aragon intentionally avoided reconquest for commercial reasons',
         'All regions conquered at identical rates',
         'Christian kingdoms never coordinated, making conquest random',
@@ -394,7 +394,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the Crown of Aragon\'s Mediterranean commercial networks influence its approach to colonial administration?',
       [
-        'Aragon\'s merchant oligarchies demanded trading posts over territorial conquest, delaying full American colonization compared to Castile',
+        'Aragon\'s merchants favored trading posts over conquest',
         'Aragon controlled all Spanish colonies exclusively',
         'Aragon rejected commerce and avoided the Americas entirely',
         'Both crowns pursued identical colonial strategies immediately',
@@ -405,7 +405,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What structural relationship existed between the Spanish Inquisition and royal fiscal policy?',
       [
-        'Inquisition confiscations of heretics\' property provided Crown revenue while maintaining religious orthodoxy through terror',
+        'Inquisition confiscations provided Crown revenue',
         'The Inquisition operated independently without Crown financial involvement',
         'Inquisition revenues went exclusively to the Church with zero Crown benefit',
         'The Inquisition had no confiscation powers',
@@ -416,7 +416,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the Habsburg interpretation of sovereignty differ from earlier Reconquista-era concepts of royal authority?',
       [
-        'Habsburgs claimed absolute sovereignty derived from divine right over all realms; earlier kings negotiated with nobles through fueros',
+        'Habsburgs claimed divine-right sovereignty; earlier kings negotiated via fueros',
         'Earlier kings were absolute; Habsburgs were weak and subordinate to nobles',
         'Both employed identical forms of royal authority',
         'Sovereignty concepts did not change between periods',
@@ -427,7 +427,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What economic consequences followed from the 1609 Morisco expulsion for Spain\'s labor supply and fiscal base?',
       [
-        'Expulsion of perhaps 300,000 Muslims created agricultural labor shortages and reduced Crown tax revenue significantly',
+        'It created labor shortages and reduced Crown tax revenue',
         'The expulsion had no economic impact whatsoever',
         'Spain\'s economy improved immediately after expulsion',
         'The expelled Moriscos returned voluntarily',
@@ -438,7 +438,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the American treasure influx affect Spanish monetary policy and European inflation rates?',
       [
-        'Massive silver imports caused demand-pull inflation across Europe, eroding Spanish competitiveness as prices rose faster in Spain',
+        'Silver imports fueled inflation, eroding Spanish competitiveness',
         'American silver had no effect on European prices',
         'Silver caused deflation across Europe',
         'Spain was the only country affected by price changes',
@@ -449,7 +449,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What role did the Treaty of Westphalia (1648) play in reconfiguring Spanish geopolitical status?',
       [
-        'Westphalia confirmed Spanish decline by recognizing Dutch independence and French ascendancy, ending Spanish European hegemony',
+        'It confirmed Spanish decline, ending Spain\'s European hegemony',
         'Spain gained new territories through the treaty',
         'Westphalia had no geopolitical consequences',
         'Spain became Europe\'s dominant power after Westphalia',
@@ -460,7 +460,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did fiscal pressure from maintaining a global empire affect Spain\'s ability to invest in domestic manufacturing?',
       [
-        'Military and colonial expenditures starved Spanish industry of capital, creating dependence on imports and relative deindustrialization',
+        'Military spending starved Spanish industry of capital',
         'Spain invested equally in manufacturing and military spending',
         'Spain focused entirely on manufacturing and neglected military needs',
         'Spain had unlimited resources for both manufacturing and warfare',
@@ -471,7 +471,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What administrative reforms did the Bourbon Succession Wars\' outcome impose on Spanish governance structures?',
       [
-        'The Decree of Nueva Planta abolished crown-of-Aragon fueros and subordinated regional crowns to Castilian administrative models',
+        'The Decree of Nueva Planta abolished Aragon\'s fueros',
         'Regional privileges were strengthened after the war',
         'No administrative changes occurred',
         'Spain became more decentralized after the war',
@@ -482,7 +482,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the Peninsular War\'s guerrilla tactics challenge contemporary military theory and European strategic assumptions?',
       [
-        'Spanish guerrilla networks demonstrated that popular irregular forces could resist regular armies without conventional victories, upending Napoleonic doctrine',
+        'Guerrilla forces showed they could resist regular armies',
         'Guerrillas were militarily insignificant and Europe ignored them',
         'Spain used only conventional military tactics',
         'Guerrilla warfare had been standard since ancient times with no new implications',
@@ -493,7 +493,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What role did the Cortes of Cádiz (1812) play in establishing constitutional frameworks that influenced subsequent Spanish liberalism?',
       [
-        'The Cortes created Spain\'s first constitutional document during French occupation, establishing liberal principles that shaped post-1820 conflicts',
+        'The Cortes created Spain\'s first constitutional document',
         'The Cortes had no constitutional significance',
         'Spain never developed constitutional traditions before 1975',
         'The Cortes abolished all monarchy and established a republic',
@@ -506,7 +506,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How do recent genetic and archaeological analyses challenge earlier assumptions about the genetic and cultural discontinuity between Visigothic and Islamic populations?',
       [
-        'DNA evidence suggests significant Berber and Arab genetic input rather than replacement; settlement patterns and domestic practices show gradual cultural synthesis',
+        'DNA evidence shows Berber and Arab admixture, not replacement',
         'Genetics conclusively prove complete population replacement with no mixing',
         'Archaeological evidence is irrelevant to understanding this period',
         'Recent science has not examined Visigothic-Islamic transitions',
@@ -517,7 +517,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What historiographical significance does the Muwalladun concept hold in revising assumptions about Al-Andalus\' religious and ethnic categorization?',
       [
-        'Muwalladun (Arabized Christians) complicate binary Muslim/Christian categorization, revealing fluid religious boundaries and intermarriage across supposed boundaries',
+        'Muwalladun reveal fluid, not binary, religious boundaries',
         'Muwalladun were purely mythological with no historical basis',
         'Religious boundaries were absolute and hermetically sealed',
         'All populations converted instantly with no intermediate categories',
@@ -528,7 +528,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How do recent analyses of the Umayyad administrative apparatus challenge assumptions about institutional coherence versus tribalism?',
       [
-        'Detailed administrative records show sophisticated bureaucratic structures inherited from Byzantine models, contradicting narratives emphasizing Bedouin chaos',
+        'Records show sophisticated bureaucracy inherited from Byzantine models',
         'Umayyad administration was purely tribal with no formal structures',
         'Byzantines had no administrative influence on Umayyads',
         'Al-Andalus never developed any administrative systems',
@@ -539,7 +539,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What role did the repoblación concept play in organizing Castilian territorial expansion, and how did it reshape labor and property relations?',
       [
-        'Repoblación funneled populations (through fuero charters) into conquered territories, creating new property hierarchies and shifting labor relationships from feudal to wage-labor models',
+        'Repoblación shifted labor from feudal to wage-labor models',
         'Repoblación never occurred and populations remained sedentary',
         'Repoblación instantly created identical feudal structures everywhere',
         'Labor relationships never changed throughout the Reconquista',
@@ -550,7 +550,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How do recent studies of taifa economies challenge assumptions about Al-Andalus\' decline as purely a military or political phenomenon?',
       [
-        'Economic analyses reveal fragmentation destabilized long-distance trade networks and fiscal collection despite local markets\' continued productivity',
+        'Fragmentation destabilized trade networks and fiscal collection',
         'Economic decline was immediate and universal across all taifas',
         'Taifas had no economic impact on Mediterranean commerce',
         'Economies were identical before and after fragmentation',
@@ -561,7 +561,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What historical debate surrounds the extent of forced versus voluntary conversion among Islamic populations during the Reconquista?',
       [
-        'Revisionist scholarship emphasizes substantial voluntary conversions driven by social mobility and economic incentives, not solely force',
+        'Many conversions were voluntary, driven by social mobility',
         'All conversions were entirely voluntary with no coercion',
         'All conversions were entirely forced with zero voluntary participation',
         'No conversions occurred during the Reconquista',
@@ -572,7 +572,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How do analyses of the encomienda\'s labor surplus mechanisms clarify its distinction from slavery in Spanish legal theory?',
       [
-        'Encomienda granted usufruct only (not ownership) of labor, technically preserving subjects\' juridical status while enabling unlimited extraction in practice',
+        'Encomienda granted usufruct of labor, not ownership',
         'Encomienda was identical to slavery in every respect',
         'Encomienda provided complete legal slavery without ambiguity',
         'Labor extraction mechanisms never developed in colonies',
@@ -583,7 +583,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What historiographical revisions have recent studies produced regarding the extent of Converso networks\' economic influence in Habsburg Spain?',
       [
-        'DNA and archival research reveal extensive Converso merchant and intellectual networks despite Inquisition persecution, challenging assumptions about their marginalization',
+        'Converso merchant and intellectual networks remained extensive',
         'Conversos had zero economic or intellectual influence',
         'Inquisition persecution had no real effects on Converso activity',
         'All Spanish merchants and intellectuals were Old Christians exclusively',
@@ -594,7 +594,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the rhetorical construct of limpieza de sangre (blood purity) function as an economic exclusion mechanism distinct from religious orthodoxy?',
       [
-        'Limpieza ideology excluded merchants and professionals with any Jewish or Muslim ancestry from guild positions and Crown offices, consolidating Old Christian economic monopolies',
+        'It excluded those with Jewish or Muslim ancestry from guilds and offices',
         'Limpieza had no economic consequences and was purely religious',
         'Limpieza benefited all social classes equally',
         'Blood purity laws never existed in Spanish law',
@@ -605,7 +605,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What mechanisms of fiscal centralization did Charles V employ to subordinate regional crowns\' financial autonomy without formally abolishing fueros?',
       [
-        'Crown controlled strategic monopolies (salt, mercury, tobacco) and demanded fixed servicios while permitting local taxation autonomy, creating de facto fiscal dominance',
+        'The Crown controlled strategic monopolies and fixed servicios',
         'Regional crowns retained complete financial independence',
         'Charles V immediately abolished all regional financial authority',
         'Fiscal mechanisms never changed during Charles V\'s reign',
@@ -616,7 +616,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How do recent analyses of American treasure flows\' velocity and distribution explain Spain\'s paradoxical poverty despite silver abundance?',
       [
-        'Rapid treasure circulation fueled demand-pull inflation and currency debasement rather than productive investment; foreign merchants captured monetary surplus through import demand',
+        'Rapid treasure circulation fueled inflation, not investment',
         'Spanish abundance of treasure made Spain uniformly wealthy',
         'Treasure had no monetary effects whatsoever',
         'Foreign merchants never participated in Spanish commerce',
@@ -627,7 +627,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What historiographical debate centers on whether Philip II\'s military expenditures represented rational state strategy or ideological excess?',
       [
-        'Revisionists argue religious ideology and dynastic honor distorted rational cost-benefit analysis, producing unsustainable military spending relative to revenue bases',
+        'Ideology and dynastic honor distorted rational cost-benefit analysis',
         'Military spending was purely rational with no ideological component',
         'Philip II had unlimited resources for any military adventure',
         'Military expenditures never affected Spanish finances',
@@ -638,7 +638,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How did the Decree of Nueva Planta\'s abolition of crown-of-Aragon fueros reshape the relationship between local institutions and centralized bureaucracy?',
       [
-        'Decree subordinated regional councils to royal corregidores and removed fiscal autonomy, integrating Aragon into Castilian administrative hierarchy while formally preserving monarchy',
+        'It subordinated regional councils to royal corregidores',
         'Aragon retained complete institutional independence after the decree',
         'The decree immediately created a unified Spanish government',
         'No administrative reorganization occurred after the War of Succession',
@@ -649,7 +649,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'What role did the Napoleonic occupation\'s disruption of American trade monopolies play in Spain\'s postwar economic decline?',
       [
-        'French blockade broke Spain\'s control of American commerce; even after 1814, American independence movements prevented monopoly restoration, destroying traditional revenue bases',
+        'French blockade broke Spain\'s control of American commerce',
         'American trade continued unchanged throughout and after the Peninsular War',
         'Spain\'s American monopoly was irrelevant to overall prosperity',
         'The Peninsular War had no economic consequences',
@@ -660,7 +660,7 @@ export const SPANISH_HISTORY: CategoryContent = {
     [
       'How do recent constitutional histories revise understanding of the Cádiz Cortes\' institutional innovations beyond their liberal ideology?',
       [
-        'Cádiz pioneered electoral mechanisms (gender-exclusionary but property-blind), provincial representation, and separation-of-powers that influenced constitutional design beyond Spain',
+        'Cádiz pioneered property-blind electoral mechanisms and separation of powers',
         'Cádiz created nothing innovative institutionally',
         'Cádiz was purely ideological with no institutional effects',
         'Electoral mechanisms never developed before the 20th century',

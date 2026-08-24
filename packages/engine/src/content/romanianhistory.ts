@@ -5,7 +5,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Wallachia and Moldavia were medieval principalities whose territories lay primarily in what geographical region?',
       [
-        'Modern-day Romania, south of the Carpathian Mountains',
+        'South of the Carpathians, in modern Romania',
         'The Balkans east of Serbia, west of the Black Sea',
         'The eastern Danube delta and surrounding plains',
         'Modern-day Moldova, north of Romania',
@@ -159,7 +159,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'After the Ottoman Empire declined, which European power exerted the strongest political influence over Romania by the 19th century?',
       [
-        'The Russian Empire',
+        'Russia',
         'Austria-Hungary',
         'France',
         'Prussia',
@@ -183,7 +183,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Organic Regulations of 1831–1834 established constitutional frameworks in Wallachia and Moldavia. Under which external power were they introduced?',
       [
-        'The Russian Empire (as supervisor of Ottoman vassal states)',
+        'The Russian Empire',
         'The Ottoman sultans directly',
         'Austria-Hungary\'s diplomatic pressure',
         'Britain and France\'s colonial administration',
@@ -194,7 +194,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'In the 1877–1878 Russo-Turkish War, Romania gained independence but ceded which territory to Russia?',
       [
-        'Bessarabia (southern Bessarabia, the Budjak region)',
+        'Southern Bessarabia',
         'Transylvania entirely',
         'Wallachia\'s entire western border',
         'The Danube Delta',
@@ -216,7 +216,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The interwar period (1918–1940) saw Romania attempt land reform. Which social group was the primary target of expropriation?',
       [
-        'The large landholding estates of the old nobility',
+        'The old nobility\'s large estates',
         'Urban merchants and factory owners',
         'Orthodox Church properties',
         'Jewish-owned businesses in towns',
@@ -238,7 +238,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'General Ion Antonescu took power in Romania in 1940 and led it during World War II under which title?',
       [
-        'Conducător (equivalent to "Führer" or "Duce")',
+        'Conducător',
         'Regent for the absent King Michael',
         'Prime Minister under royal authority',
         'Temporary military administrator',
@@ -260,7 +260,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Romania switched sides from the Axis to the Allies in August 1944 primarily due to which military development?',
       [
-        'The rapid Soviet advance into Moldavia and Wallachia',
+        'The rapid Soviet advance',
         'German military collapse in the west',
         'British naval pressure in the Black Sea',
         'American air superiority',
@@ -271,7 +271,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Romania\'s territories east of the Prut River (southern Bessarabia) were annexed into the Soviet Union in which year?',
       [
-        '1940 (and again after 1944)',
+        '1940',
         '1918',
         '1945',
         '1950',
@@ -282,7 +282,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Nicolae Ceaușescu promoted a doctrine of independence from Soviet control while remaining nominally Communist. What was this policy called?',
       [
-        '"National Communism" or "Romanian road to socialism"',
+        '"National Communism"',
         '"Balkan Liberation Movement"',
         '"Danube Federation"',
         '"Socialist patriotism"',
@@ -293,7 +293,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Ceaușescu\'s "Systematization" program of the 1970s–1980s primarily aimed at which transformation?',
       [
-        'Rural depopulation and forced urban resettlement, destroying peasant villages',
+        'Rural depopulation and urban resettlement',
         'Industrial expansion and worker relocation',
         'Communist Party membership growth',
         'Reforestation and environmental restoration',
@@ -304,7 +304,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Ceaușescu\'s "December Thesis" of 1989 was his response to unrest in Timișoara. What did it explicitly call for?',
       [
-        'Suppression of "hooligans" and "foreign agitators"',
+        'Suppression of "hooligans"',
         'Democratic reform and pluralism',
         'Soviet military intervention',
         'Economic privatization',
@@ -315,7 +315,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Nicolae Ceaușescu and his wife Elena were executed on December 25, 1989. Who carried out the execution?',
       [
-        'A military firing squad following a hasty military court trial',
+        'A military firing squad',
         'The Soviet Red Army',
         'Popular lynching by Bucharest crowds',
         'The Securitate secret police',
@@ -339,7 +339,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The boyar class in medieval Wallachia and Moldavia occupied a social position between the princely court and peasantry. Which economic power base underpinned their influence?',
       [
-        'Control of vast agricultural estates worked by enserfed peasants and control of local trade monopolies',
+        'Vast agricultural estates and local trade monopolies',
         'Ownership of textile workshops and urban merchant guilds',
         'Military command of urban garrison fortresses',
         'Ecclesiastical authority over monasteries and Orthodox churches',
@@ -350,7 +350,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The 1831–1834 Organic Regulations established electoral assemblies in Wallachia and Moldavia. Which class was explicitly excluded from voting rights?',
       [
-        'Peasants, Jews, and the urban working poor',
+        'Peasants, Jews, and the urban poor',
         'Only women and children',
         'Foreigners and Orthodox priests',
         'Military officers and civil servants',
@@ -361,7 +361,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Cuza\'s 1864 land reform in the new unified state (Romania) affected what proportion of arable land?',
       [
-        'Approximately 25%, confiscated from Church and monasteries',
+        'About 25%, from Church lands',
         '50% of all private holdings',
         'Over 75% of the Danube floodplain',
         'Nearly 100% of forest reserves',
@@ -372,7 +372,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Treaty of Berlin (1878) required Romania to grant civic rights to all residents regardless of religious faith. Which minority\'s status became a contentious political issue?',
       [
-        'Jews, who faced intermittent discrimination and legal restrictions despite formal equality',
+        'Jews',
         'Muslims in the border regions',
         'Catholics in Transylvania',
         'Evangelical Germans in Banat',
@@ -383,7 +383,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Romania\'s industrialization under Carol I (1881–1914) was heavily concentrated in which sector?',
       [
-        'Oil extraction and petroleum refining, particularly in Prahova Valley',
+        'Oil extraction and refining',
         'Textile manufacturing in Wallachia',
         'Coal mining in Transylvania',
         'Grain milling and agricultural processing',
@@ -394,7 +394,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The National Peasant Party, founded 1926, represented a distinctive ideology combining which elements?',
       [
-        'Agrarian populism, Orthodox Christian nationalism, and anti-communism',
+        'Agrarian populism and Orthodox nationalism',
         'Marxist class theory with peasant cooperative structures',
         'Liberal capitalism with free-trade universalism',
         'Syndicalist labor organization and urban socialism',
@@ -405,7 +405,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Codreanu-led Legion of the Archangel Michael blended fascism with which religious and cultural element specific to Romania?',
       [
-        'Eastern Orthodox Christian mysticism and cult of sacrifice ("For God and Fatherland")',
+        'Orthodox mysticism of sacrifice',
         'Islamic Sufi traditions',
         'Protestant evangelical theology',
         'Pre-Christian pagan revival',
@@ -416,7 +416,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'During the Phanariote period (1711–1821), Moldavian and Wallachian principalities served what administrative function within the Ottoman system?',
       [
-        'Buffer states providing tribute, grain, and occasional military levies while the Ottomans avoided costly direct administration',
+        'Buffer states providing tribute and military levies',
         'Fully integrated provinces under direct Ottoman military rule',
         'Autonomous city-states with complete self-governance',
         'Fiefs granted to Ottoman military elite (Timars)',
@@ -427,7 +427,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The 1944 King Michael coup resulted in which immediate geopolitical consequence?',
       [
-        'Romania switched from Axis to Allied side within 24 hours, but Soviet forces immediately occupied the territory',
+        'Romania switched sides, but Soviet forces occupied it anyway',
         'Germany withdrew voluntarily; Romania maintained independence',
         'A Soviet satellite state was formally established with elections',
         'NATO forces reached Romania before Soviet occupation',
@@ -438,7 +438,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Romanian Communists, numbering fewer than 1,000 in 1944, consolidated power through which mechanism?',
       [
-        'Soviet military occupation and installation of a puppet government; local cadres co-opted existing state structures',
+        'Soviet occupation and a puppet government',
         'Popular election and mass recruitment',
         'Civil war and armed revolutionary struggle',
         'Negotiated coalition government with non-Communist parties',
@@ -449,7 +449,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Ceaușescu\'s 1968 response to the Czechoslovak invasion was unique among Warsaw Pact nations. What did he do?',
       [
-        'Publicly condemned Soviet intervention as illegal and mobilized civil defense; Romanian forces were not deployed',
+        'Publicly condemned the Soviet intervention as illegal',
         'Deployed troops alongside Soviet forces to suppress Czech resistance',
         'Remained entirely neutral and silent',
         'Secretly negotiated Romanian neutrality in exchange for Soviet tolerance',
@@ -460,7 +460,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Securitate, Romania\'s secret police, expanded most dramatically under which leader\'s tenure?',
       [
-        'Nicolae Ceaușescu, who made it the regime\'s primary enforcement tool',
+        'Nicolae Ceaușescu',
         'General Antonescu during WWII',
         'King Carol II in the 1930s',
         'Ion Dej in the 1950s',
@@ -471,7 +471,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Ceaușescu\'s doctrine of "socialist self-management" in factories was influenced by which country\'s Titoist model?',
       [
-        'Yugoslavia\'s worker councils and decentralized socialism',
+        'Yugoslav worker councils',
         'The Soviet kolkhoz system',
         'Chinese communes',
         'North Korea\'s juche system',
@@ -482,7 +482,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Timișoara uprising of December 1989 began as a protest against which immediate trigger?',
       [
-        'The regime\'s attempt to deport Hungarian priest László Tőkés, viewed as ethnic persecution',
+        'Deportation of pastor László Tőkés',
         'Food rationing and bread shortages',
         'Soviet military intervention',
         'A factory wage cut',
@@ -493,7 +493,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Post-1989 Romanian lustration and transitional justice processes differed from Central European neighbors in what key way?',
       [
-        'Romania pursued minimal decommunization; Ceaușescu-era officials often retained power without purges or truth commissions',
+        'Romania pursued minimal decommunization',
         'Romania conducted the most thorough Securitate trials in the region',
         'Romanian courts immediately prosecuted all Communist leaders',
         'Romania disbanded its military entirely and rebuilt from scratch',
@@ -506,7 +506,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The 14th-century founding of Wallachia and Moldavia as discrete political entities resulted from which broader geopolitical fragmentation?',
       [
-        'The collapse of Angevin and Arpad dynastic claims over the region as Hungary weakened and the Golden Horde retracted',
+        'The collapse of Hungarian and Mongol overlordship',
         'Ottoman conquest and deliberate subdivision of conquered territories',
         'Papal authority fragmenting the region into ecclesiastical jurisdictions',
         'Byzantine imperial provinces being subdivided by succession disputes',
@@ -517,7 +517,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Boyar rebellions and princely instability in Moldavia (15th–16th centuries) were fundamentally driven by which structural tension?',
       [
-        'Competition between boyars and princes over control of trade monopolies and tax extraction, exacerbated by Ottoman tribute demands',
+        'Boyar-prince competition over trade and tax revenue',
         'Religious schism between Catholicism and Orthodoxy',
         'Disputes over purely ceremonial prerogatives at court',
         'Labor shortage in salt mines and agricultural production',
@@ -528,7 +528,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Russian-Turkish Convention of 1774 (Treaty of Küçük Kaynarca) granted which privilege to Russia regarding Wallachia and Moldavia?',
       [
-        'A vague right of "protection" over Ottoman-Christian subjects, later invoked as justification for repeated intervention',
+        'A vague "protection" right over Ottoman Christians',
         'Outright territorial annexation of both principalities',
         'Control of Ottoman foreign policy toward Romania',
         'Exclusive trade monopoly in the Danube delta',
@@ -539,7 +539,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Cuza\'s 1864 land reform deliberately exempted large boyar estates while redistributing Church lands. What fiscal rationale justified this compromise?',
       [
-        'The state lacked military capacity to suppress aristocratic resistance; Church lands were politically safer to seize',
+        'Church land was politically safer to seize than boyar land',
         'Boyar-owned land was economically unproductive and not worth taxing',
         'International treaties forbade confiscation of private property',
         'The Church volunteered its lands as patriotic contribution',
@@ -550,7 +550,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Romania\'s petroleum industry, dominated by foreign capital into the 1930s, created which structural economic dependency?',
       [
-        'Heavy reliance on export revenue to foreign-owned companies; limited domestic capital accumulation and industrial integration',
+        'Heavy reliance on foreign-owned export revenue',
         'An oversupply of skilled workers forcing wage deflation',
         'Technological autarky and isolation from European markets',
         'Excessive state control stifling private entrepreneurship',
@@ -561,7 +561,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The 1923 Romanian Constitution established universal male suffrage but retained which mechanism limiting democratic accountability?',
       [
-        'A powerful monarchy with unilateral decree authority and the capacity to dissolve parliament and rule by royal ordinance',
+        'Royal decree power and parliament dissolution',
         'A bicameral legislature with equal veto power on all measures',
         'Military oversight of all legislative sessions',
         'Ecclesiastical veto power over secular law',
@@ -572,7 +572,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Legion of the Archangel Michael\'s ideology synthesized fascism with which theological concept endemic to Eastern Orthodoxy?',
       [
-        'Suffering and redemptive sacrifice as paths to spiritual transcendence; the cult of martyrdom as sacred act',
+        'Redemptive suffering and martyrdom',
         'Papal infallibility claims',
         'Calvinist predestination',
         'Sufi mystical ecstasy',
@@ -583,7 +583,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The Molotov-Ribbentrop Secret Protocols of August 1939 assigned Romania to which power\'s sphere of influence?',
       [
-        'Officially undefined, but implicitly Soviet; the Protocols granted Soviet claims over Bessarabia, realizable in 1940',
+        'Officially undefined, but implicitly Soviet',
         'Germany\'s exclusive sphere',
         'Italy\'s Mediterranean domain',
         'Remained under League of Nations neutrality provisions',
@@ -594,7 +594,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Romania\'s territorial losses (Bessarabia, northern Bukovina, southern Dobruja) between 1940–1945 stemmed from which geopolitical mechanisms?',
       [
-        'The Molotov-Ribbentrop Protocols; Soviet advance; German indifference to Romanian interests; peace settlement imposition',
+        'Soviet advance and German indifference to Romania',
         'Purely voluntary Romanian cessions in negotiated treaties',
         'Ottoman claims reasserted after German occupation',
         'League of Nations punitive redistribution',
@@ -605,7 +605,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The 1948–1952 period saw Romania\'s Stalinist leadership (Gheorghiu-Dej) pursue massive industrialization via which mechanism?',
       [
-        'Forced collectivization of agriculture combined with requisition of grain and livestock to fund heavy industry',
+        'Forced collectivization',
         'Voluntary cooperative reorganization of farming',
         'Massive Western loans and technology transfer',
         'Reintegration of pre-1940 private enterprise',
@@ -616,7 +616,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Ceaușescu\'s "independence within the bloc" required which precondition internally?',
       [
-        'Cultivation of charismatic party unity and nationalist ideology to offset Soviet military superiority',
+        'Party unity and nationalist ideology',
         'Military alliance with non-aligned nations',
         'Economic integration with Western Europe',
         'Multiparty democratic competition',
@@ -627,7 +627,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The August 1968 Prague Spring and Soviet invasion prompted Ceaușescu to mobilize civil defense forces. What was the geopolitical gamble?',
       [
-        'Betting that public nationalist fervor would deter Soviet attack on Romania while Ceaușescu\'s recent speech had boosted his image',
+        'Betting nationalist fervor deters a Soviet attack',
         'Hoping NATO would intervene militarily',
         'Requesting Yugoslav military assistance',
         'Threatening nuclear retaliation',
@@ -638,7 +638,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Ceaușescu\'s "Systematization" program was justified ideologically as achieving which socialist objective?',
       [
-        'Eliminating peasant "backwardness" through forced urbanization and agro-industrial collectivization under state control',
+        'Eliminating peasant "backwardness" through forced urbanization',
         'Restoring traditional village life',
         'Privatizing agricultural land to individual farmers',
         'Strengthening NATO defense infrastructure',
@@ -649,7 +649,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'Post-1970 Romania\'s foreign debt crisis and austerity measures (the "Golden Age") were consequences of which prior policy decisions?',
       [
-        'Heavy borrowing for prestige industrial projects (Danube–Black Sea Canal, steel works) that underutilized capacity and generated insufficient returns',
+        'Heavy borrowing for prestige industrial projects',
         'Trade embargoes imposed by NATO countries',
         'Soviet dumping of cheap goods on Romanian markets',
         'Intentional IMF austerity conditions',
@@ -660,7 +660,7 @@ export const ROMANIAN_HISTORY: CategoryContent = {
     [
       'The December 1989 revolution\'s "Timișoara" phase (Dec 15–21) and its escalation to the "Bucharest" phase (Dec 22–25) involved which key transition?',
       [
-        'From localized ethnic and religious protest to nationwide anti-regime uprising once the military sided with protesters and Ceaușescu\'s grip collapsed',
+        'Local protest turning into a nationwide uprising',
         'A shift from peaceful protest to violent armed insurrection',
         'The arrival of NATO peacekeeping forces',
         'Soviet military intervention',

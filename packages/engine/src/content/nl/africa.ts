@@ -5,6 +5,98 @@ import type { CategoryContent } from '../row.js';
  */
 
 export const AFRICA: CategoryContent = {
+  bscba: [
+    [
+      'Welk gebied was de primaire bron van goud dat het koninkrijk Kush welvarend maakte?',
+      ['De mijnen in de lager vallei van de Nijl, rechtstreeks onder Kushitisch staatstoezicht', 'Goudvelden in zuidelijk Nubië en daarbuiten, waarop de Kushitische heersers belasting heven via handel, in plaats van directe mijnbouw', 'De zoutmijnen aan de Rode Zeetkust van het Sinai-schiereiland, bereikt door Kushitische zeevaartexpedities', 'Voorkomen in het Kushitische kerngebied zelf, gecentreerd rond de stad Meroë'],
+      0,
+      'De Kushitische elite verdiende vermogen door belasting te heffen op goud dat door hun grondgebied stroomde van zuidelijke goudvelden. Anders dan Egypte, mijnde Kush niet zelf het meeste van deze hulpbronnen. Controle op handel tussen Saharaanse zoutbronnen en zuidelijke goudvelden was centraal voor Kushitische welvaart.',
+    ],
+    [
+      'Wat was volgens historische bronnen een primaire rol van de griots in West-Afrikaanse samenlevingen?',
+      ['Zij dienden als koninklijke boekhouders en registreerden alle staatsfinanciële transacties in geschreven registers', 'Zij waren bewaarders van mondelinge geschiedenis en genealogie, die de verhalen van heersers en geslachtslijen bewaarden en reciteerden', 'Zij functioneerden uitsluitend als militaire commandanten en tactische adviseurs van koningen', 'Zij beheerden de trans-Saharaanse handelsnetwerken en onderhandelden alle buitenlandse allianties'],
+      0,
+      'Griots waren speciaalgebonden mondelinge geschiedkundigen die genealogieën, geschiedenissen en epieken uit het hoofd kenden, waardoor zij gemeenschapsgeheugen en de gezag van heersers bewaarden. Zij onderhielden West-Afrikaanse geschiedenistraditie vóór wijdverspreide geschreven verslagen.',
+    ],
+    [
+      'Wat was een belangrijke motivatie voor West-Afrikaanse moslimheersers om de hadj (bedevaart naar Mekka) in de middeleeuwen te ondernemen?',
+      ['Vooral om huurlingensoldaten uit Arabië te ronselen en met hen terug te keren naar hun koninkrijken', 'Hun rijkdom en vroomheid aan de islamitische wereld tonen en religieus gezag en prestige thuis verwerven', 'Exclusieve handelsverdragen met kooplui in de Hijaz-regio onderhandelen', 'Perioden van droogte of hongersnood in hun koninkrijken ontvluchten door permanent in het buitenland te blijven'],
+      0,
+      'De hadj was zowel religieuze verplichting als politiek gereedschap: het adverteerde een heerser\'s rijkdom aan islamitische elites, wat hen religieus prestige opleverde voor binnenlandse legitimatie.',
+    ],
+    [
+      'De Slag bij Adwa in 1896 werd uitgevochten tussen welke twee machten?',
+      ['Franse koloniale troepen en een Ethiopisch leger onder Menelik II', 'Ethiopische troepen onder Menelik II en een Italiaans leger dat vanuit Eritrea wilde uitbreiden', 'Britse troepen in Soedan en Ethiopiërs geëerd met Egypte langs de Nijl', 'Een stadsmilitie van Adwa en een gezamenlijke Oostenrijks-Hongaarse handelsexpeditiemacht'],
+      0,
+      'De troepen van Menelik II versloegen Italiaanse soldaten die koloniale verovering vanuit Eritrea probeerden. Deze overwinning wordt gevierd als een van Afrika\'s belangrijkste anti-koloniale zeges, die Ethiopische onafhankelijkheid bewaarde.',
+    ],
+    [
+      'Koning Afonso I van Kongo, die in het vroege zestiende eeuw regeerde, stond bekend om het aannemen van welke vreemde religie?',
+      ['De islam, die hij leerde van Noord-Afrikaanse geleerden die de Sahara doorkruisten', 'Het christendom, dat met Portugese missionarissen en handelaren aankwam', 'Het boeddhisme, door handelaren uit de Indische Oceaan uit Azië gebracht', 'Het jodendom, overgedragen via diasporajoodse handelaren'],
+      0,
+      'Afonso I was een oprechte christelijke vorst die correspondeerde met de Portugese kroon en Kongolese edelen naar Europa stuurde om te studeren. Zijn christendom markeerde Kongo\'s inleiding met Europese machten, hoewel hij later de uitbreidende Atlantische slavenhandel weerstand bood.',
+    ],
+    [
+      'De primaire bron van rijkdom van het Ghana-rijk was afkomstig van controle over welk type commerciële activiteit?',
+      ['Rechtstreekse zoutmijnbouw en -verwerking uit de Sahara', 'Landbouwproductie van gierst en sorghum voor export naar Middellandse Zeeststaten', 'Tussenpositie in handel tussen de Sahara en West-Afrikaanse goudvelden', 'Zeehandel langs West-Afrikaanse kusttradingposten'],
+      0,
+      'Ghana werd welvarend door goederen die door zijn grondgebied stroomden belasting op te heffen, vooral goud noordwaarts en zout zuidwaarts. Het bezette een strategische positie tussen Saharaanse zoutbronnen en zuidelijke goudvelden, belastingen heffen zonder veel zelf te mijnbouwen.',
+    ],
+    [
+      'Kilwa Kisiwani was een belangrijke Swahili-stadstaat deels omdat het welk waardevol goed in de Indische Oceaanhandel beheerste?',
+      ['Specerijen uit de Indonesische eilanden', 'Goud van het Zimbabwaanse-plateau-binnenland, via Sofala zuidwaarts verhandeld', 'Parels uit Arabiësche Golfduikoperaties', 'Slaven uitsluitend uit sub-Sahara-Afrika, elders in de regio niet beschikbaar'],
+      0,
+      'Kilwa raakte tot prominence door controle over toegang tot goud van het Zimbabwaanse plateau, dat via de havenstad Sofala in het zuiden aankwam. Deze goudhandel maakte Kilwa welvarend en verbond het aan bredere Indische Oceaan-handelsnetwerken, vooral met Arabië en Azië.',
+    ],
+    [
+      'De bekering van koning Ezana van Aksum tot het christendom in de vierde eeuw is gedocumenteerd via bewijs gevonden op wat voor soort overgebleven objecten?',
+      ['Stenen monumenten met koninklijke inscripties waarvan de religieuze taal en symbolen veranderden', 'Papyrussen bewaard in Egyptische tempelarchieven', 'Aarden vaten met christelijke gebeden erop gegraveerd en gedateerd door kleianalyse', 'Kopermunten geslagen door vroegchristelijke missionarissen in Aksum'],
+      0,
+      'De koninklijke inscripties van Ezana op stèles tonen hem verschuiften van het aanroepen van traditionele goden naar christelijke monotheïstische taal. Aksumitische munten veranderden eveneens van traditionele symbolen naar het christelijke kruis, wat direct bewijs van religieuze transformatie oplevert.',
+    ],
+    [
+      'De opkomst van regelmatige grootschalige trans-Saharaanse karavaanhandel wordt vooral in verband gebracht met de verspreiding van welk dier?',
+      ['Het gedomesticeerde paard, dat zware lasten door de Sahara kon dragen', 'De gedomesticeerde kameel, die lange waterloze doortochten beter kon overleven dan andere dieren', 'De Arabische waterbuffel, via handelscontacten vanuit de Levant geïntroduceerd', 'Het gedomesticeerde olifant, gebruikt voor het vervoer van luxegoederen'],
+      0,
+      'Het vermogen van kamelen om lange waterloze doortochten te overleven maakte regelmatige grootschalige Saharaanse karavaanhandel praktisch. Hun verspreiding over Noord-Afrika in vroege eeuwen CE maakte handelsnetwerken mogelijk die middeleeuwse West-Afrikaanse rijken zoals Ghana en Mali ondersteunden.',
+    ],
+    [
+      'De Berlijnse Conferentie van 1884-85 werd bijgewoond door vertegenwoordigers van welke groep machten?',
+      ['Aziatische rijken, waaronder de Ottomaanse, Chinese en Japanse regeringen', 'Europese naties plus de Verenigde Staten, bijeengeroepen om regels vast te stellen voor Afrikaanse territoriaalclaims', 'Alle Afrikaanse koninkrijken en onafhankelijke staten, samengebracht om dekolonisatie te onderhandelen', 'Uitsluitend Duitse en Britse machten, om hun koloniale geschillen in Oost-Afrika op te lossen'],
+      0,
+      'Europese machten, de VS en het Ottomaanse Rijk stelden regels vast voor Afrikaanse territoriaalclaims, met name "effectieve bezetting". Geen Afrikaanse heersers waren aanwezig, wat weerspiegelde dat het een Europese indeeling was.',
+    ],
+    [
+      'De Mau Mau-opstand in Kenia (1952-60) was vooral geworteld in grieven over welke kwestie?',
+      ['Britse belastingbeleid dat Europese kolonisten vrijstelde maar Afrikaanse boeren belastte', 'Landalienatie, aangezien vruchtbare hooglanden voor Europese boeren waren gereserveerd terwijl Kikuyu-gemeenschappen tot reservaten waren beperkt', 'De gedwongen vervanging van lokale talen door Engels in alle scholen', 'Discriminatoire lonen tussen Europese en Afrikaanse arbeiders in koloniale overheidsbanen'],
+      0,
+      'De kerngrief was land: Brits beleid reserveerde prime landbouwgrond voor Europese kolonisten terwijl Kikuyu tot drukke reservaten werd beperkt. Deze onteigening zette de opstand aan die Kenyaanse onafhankelijkheid in 1963 versnelde.',
+    ],
+    [
+      'Na Italië Ethiopië in 1935 aanviel, reageerde keizer Haile Selassie met welke opmerkelijke actie?',
+      ['Hij wijzigde formeel zijn troon af en vluchtte naar Zwitserland, zijn koninkrijk verlaten', 'Hij reisde naar de Volkenbond in Genève om lidstaten over de invasie toe te spreken', 'Hij sloot zich aan met Nazi-Duitsland om wapens tegen Italiaanse troepen te verkrijgen', 'Hij verklaarde Heilige Oorlog (djihad) onder islamitische principes tegen de Italiaanse indringing'],
+      0,
+      'Haile Selassie sprak de Volkenbond toe waarschuwend dat onactie tegen Italiaanse agressie alle leden zou bedreigen. Zijn toespraak wordt herinnerd als een pivot moment in Afrikaanse anti-koloniale retoriek.',
+    ],
+    [
+      'De Mfecane (of Difaqane) periode in negentiende-eeuws zuidelijk Afrika werd gekenmerkt door...',
+      ['Een langdurige droogte die alle pastorale groepen noordwaarts permanent deed migreren', 'Wijdverspreide oorlogvoering, staatsvorming en bevolkingsverschuiving door de regio', 'De komst van de eerste Europese kolonisten, die het binnenland militair veroverden', 'Een plotselinge plaag die het hele subcontinent ontvolkte voordat grote conflicten plaatsvonden'],
+      0,
+      'De Mfecane was een periode van turbulentie waarbij oorlogvoering, staatsvorming en migratie in vroeg negentiende-eeuws zuidelijk Afrika voorkwamen, wat nieuwe koninkrijken en herschikt bevolking opleverde over de regio.',
+    ],
+    [
+      'De escalatie van de Atlantische slavenhandel vanuit Portugese landen naar het koninkrijk Kongo werd vooral aangedreven door vraag naar tot slaaf gemaakte arbeid voor welke regio?',
+      ['Mediterrane suikerplantages op Griekse eilanden', 'Portugese suikerplantages op São Tomé en later Brazilië', 'Turkse koffieplantages aan de Zwarte Zeekust', 'Aziatische specerijenplantages op Indonesische eilanden'],
+      0,
+      'Portugese suikerplantages op São Tomé en later Brazilië schiepen enorme vraag naar tot slaaf gemaakte arbeid. Portugese handelaren voorzagen dit door gevangenen uit Kongo en buurgebieden weg te nemen, wat het koninkrijk in Atlantische slavenhandelnetwerken integreerde.',
+    ],
+    [
+      'De manuscripten bewaard in Timboektoe zijn historisch vooral van belang omdat zij aantonen welk feit over West-Afrika?',
+      ['West-Afrika had een mondelinge traditie maar geen geschreven intellectuele cultuur voor Europees contact', 'West-Afrika had een substantiële inheemse geleerde traditie in het Arabisch, wat aannames over pre-contactgeletterdheid ter discussie stelt', 'Al belangrijke kennis in West-Afrika werd uitsluitend via mondelinge overdracht bewaard, zonder schrijfsysteem', 'De manuscripten waren geheel samengesteld door bezoekende Arabische geleerden in plaats van West-Afrikanen zelf'],
+      0,
+      'Timboektoe\'s manuscripten, geschreven door West-Afrikaanse geleerden, behandelen islamitische theologie, recht, wetenschap en medicijn. Zij weerleggen koloniale aannames dat sub-Sahara-Afrika geen geschreven geleerde tradities had.',
+    ],
+  ],
   msc: [
     [
       'De piramides die de heersers van het koninkrijk Kush bij Meroë lieten bouwen, verschillen van hun Egyptische voorgangers vooral op welk bouwkundig punt?',
@@ -16,19 +108,19 @@ export const AFRICA: CategoryContent = {
       'Volgens de mondelinge overlevering die door griots wordt bewaard, staat het Kurukan Fuga-charter, toegeschreven aan Sundiata Keita\'s stichting van het Mali-rijk (ca. 1235), onder middeleeuwse Afrikaanse politieke documenten vooral bekend omdat het...',
       ['een verdeling van de samenleving in clangebonden beroepsgroepen vastlegde en vroege bescherming bood tegen mishandeling van tot slaaf gemaakten en de allerarmsten, functionerend als een grondwetachtig mondeling charter', 'een geschreven wetboek instelde, gebeiteld in stenen stèles die door het hele rijk in de provincies werden verspreid', 'de trans-Saharaanse goudhandel formeel afschafte ten gunste van directe belasting op landbouw', 'bekering tot de islam verplicht stelde voor alle provinciale bestuurders binnen het rijk'],
       0,
-      '',
+      'Het charter legde een verdeling in clangebonden beroepsgroepen vast en beschermde de armsten en tot slaaf gemaakten tegen mishandeling, als mondelinge grondwet. UNESCO erkende het in 2009 als immaterieel cultureel erfgoed.',
     ],
     [
       'Askia Muhammad I\'s pelgrimstocht naar Mekka in 1496-97 is voor historici van het Songhai-rijk vooral van belang omdat...',
       ['het enorme gevolg en het goud dat hij meebracht de rijkdom van Songhai onder de aandacht brachten, en hij terugkeerde met een titel die zijn religieuze gezag thuis versterkte', 'hij een formeel, meerjarig handelsverdrag sloot met het Mamlukse sultanaat in Caïro dat Songhaise handelaren belastingvrije doortocht en opslagrechten verleende langs de Nijlroute naar de heilige steden', 'hij de eerste drukpers naar West-Afrika bracht, later gebruikt bij Sankore', 'hij de reis gebruikte om Ottomaanse janitsaren-huurlingen voor zijn leger te ronselen'],
       0,
-      'Askia Muhammads hadj was zowel religieus als politiek schouwspel: een karavaan met goud en honderden begeleiders toonde Songhais rijkdom. Hij ontving een titel als religieus gezaghebber die hij gebruikte om islamitische hervormingen thuis te rechtvaardigen, waaronder het benoemen van gelee.',
+      'Askia Muhammads hadj was zowel religieus als politiek schouwspel: een karavaan met goud en honderden begeleiders toonde Songhais rijkdom. Hij ontving een titel als religieus gezaghebber die hij gebruikte om islamitische hervormingen thuis te rechtvaardigen.',
     ],
     [
       'De Slag bij Adwa in 1896 is historisch vooral van belang omdat...',
       ['Ethiopische troepen onder keizer Menelik II een invallend Italiaans leger beslissend verslochten, waardoor Ethiopië het enige Afrikaanse land werd dat een grote Europese kolonisatiepoging tijdens de Scramble for Africa succesvol afsloeg', 'het de eerste keer was dat een Afrikaans leger moderne artillerie inzette tegen Europese koloniale troepen, hoewel Ethiopië binnen tien jaar daarna toch werd geannexeerd', 'het eindigde in een onderhandelde verdeling van Ethiopië tussen Italië en Groot-Brittannië na een langdurige impasse', 'het werd uitgevochten door Ethiopische troepen in bondgenootschap met Egyptische soldaten tegen een gezamenlijke Italiaans-Britse expeditiemacht'],
       0,
-      'Bij Adwa overweldigde Menelik II\'s leger van ongeveer 100.000 man, uitgerust met moderne geweren en artillerie, een Italiaanse troepenmacht uit Eritrea. De overwinning dwong Italië Ethiopische onafhankelijkheid te erkennen in het Verdrag van Addis Abeba, waardoor Ethiopië een van slechts .',
+      'Bij Adwa overweldigde Menelik II\'s leger van ongeveer 100.000 man, uitgerust met moderne geweren en artillerie, een Italiaanse troepenmacht uit Eritrea. De overwinning dwong Italië Ethiopische onafhankelijkheid te erkennen, waardoor Ethiopië naast Liberia een van slechts twee nooit permanent gekoloniseerde Afrikaanse staten werd.',
     ],
     [
       'De bekering van koning Nzinga a Nkuwu van Kongo tot het katholicisme in 1491, waarbij hij de doopnaam João I aannam, is voor historici vooral opmerkelijk omdat...',
@@ -76,7 +168,7 @@ export const AFRICA: CategoryContent = {
       'Keizer Haile Selassies toespraak tot de Volkenbond in 1936, na de Italiaanse invasie en het gebruik van chemische wapens, wordt vooral herinnerd voor...',
       ['zijn waarschuwing aan de lidstaten dat het niet afdwingen van collectieve veiligheid tegen agressie hen uiteindelijk zelf in gevaar zou brengen, een waarschuwing die de Volkenbond negeerde toen deze geen effectieve sancties tegen Italië oplegde', 'het onmiddellijk verkrijgen van een resolutie van de Volkenbond die de volledige Ethiopische soevereiniteit binnen zes maanden herstelde', 'zijn formele afstand van de keizerlijke troon uit protest tegen het uitblijven van optreden door de Volkenbond', 'de aankondiging van Ethiopiës terugtrekking uit de Volkenbond ten gunste van een bondgenootschap met de Sovjet-Unie'],
       0,
-      '',
+      'Haile Selassie waarschuwde de Volkenbond dat het niet aanpakken van agressie alle lidstaten uiteindelijk zou bedreigen, een waarschuwing die profetisch bleek toen de Tweede Wereldoorlog drie jaar later uitbrak. De Volkenbond legde slechts zwakke sancties op.',
     ],
     [
       'De Mfecane (of Difaqane), de periode van beroering en staatsvorming in zuidelijk Afrika begin negentiende eeuw, vaak geassocieerd met Shaka\'s Zulu-koninkrijk, wordt door de meeste historici nu opgevat als grotendeels aangedreven door...',
@@ -94,7 +186,7 @@ export const AFRICA: CategoryContent = {
       'De manuscripten die in Timboektoe bewaard zijn, verbonden aan instellingen zoals de Sankore-moskee-universiteit, zijn historisch vooral van belang omdat ze...',
       ['een substantiële eigen West-Afrikaanse wetenschappelijke traditie in het Arabisch aantonen, wat de veronderstelling weerlegt dat de regio vóór het Europese contact geen geschreven intellectuele tradities had', 'bijna uitsluitend werden geschreven door bezoekende geleerden opgeleid aan de al-Azhar-moskee-universiteit in Caïro, die zich tijdelijk in Timboektoe vestigden in plaats van door geleerden die zelf uit West-Afrika kwamen', 'vrijwel volledig uit handelsregisters bestaan zonder theologische of wetenschappelijke inhoud', 'in de jaren 1960, na de Malinese onafhankelijkheid, voor het eerst werden ontdekt door Franse koloniale bestuurders'],
       0,
-      '',
+      'De honderdduizenden manuscripten uit Timboektoe, grotendeels geschreven door West-Afrikaanse geleerden zelf, behandelen islamitisch recht, theologie, astronomie en wiskunde, en weerleggen koloniale aannames dat sub-Sahara-Afrika geen geschreven geleerde tradities had.',
     ],
   ],
   phd: [
@@ -132,13 +224,13 @@ export const AFRICA: CategoryContent = {
       'De Britse \'strafexpeditie\' van 1897 tegen Benin City resulteerde in...',
       ['de vernietiging en plundering van het paleis van de Oba, waaronder duizenden bronzen plaquettes en ivoorwerken, die verspreid raakten over Europese museum- en particuliere collecties en nu centraal staan in lopende restitutiedebatten', 'het onmiddellijk herstel van de volledige soevereine autoriteit van Oba Ovonramwen onder een nieuw Brits protectoraatsverdrag', 'de vernietiging van de archieven van Benins bronsgietersgilde, waarna gieten technieken verloren gingen totdat ze in de jaren 1930 werden herontdekt', 'een onderhandelde schikking waarbij Benin zijn kunstwerken behield in ruil voor het afstaan van kustinkomsten uit invoerrechten'],
       0,
-      '',
+      'Na de moord op een Britse delegatie brandde een Britse vloot Benin City plat en plunderde het koninklijk paleis. De buit, de nu beroemde Benin-bronzen, werd geveild en verspreid over Europese musea, vooral het British Museum, en staat centraal in restitutiedebatten.',
     ],
     [
       'De Oorlog van de Gouden Kruk in 1900, geleid door Yaa Asantewaa, werd gevoerd als directe reactie op...',
       ['een eis van gouverneur Hodgson dat de Asante de Gouden Kruk, het heilige symbool van de Asante-koningschap, zouden afstaan zodat hij erop kon zitten', 'het annexeren door de Britten van de belastinginkomsten uit de kolanoot-export van Kumasi in het voorgaande begrotingsjaar', 'de verbanning van de zittende Asantehene, Prempeh I, naar de Seychellen in 1896 na een op zichzelf staand geschil over goudmijnconcessies in de zuidelijke provincies van het rijk', 'een Britse poging om directe belasting te heffen op Asante-goudmijnconcessies'],
       0,
-      '',
+      'Gouverneur Frederick Hodgson eiste dat de Gouden Kruk, de letterlijke belichaming van de ziel van de Asante-natie, aan hem werd overgedragen: een diepe culturele belediging. Yaa Asantewaa leidde het verzet, ondanks de nederlaag en annexatie van het koninkrijk in 1901-02.',
     ],
     [
       'Na de neergang van Great Zimbabwe\'s dominantie in de vijftiende eeuw verschoof de politieke en handelsmacht op het Zimbabwaanse plateau vooral naar...',
@@ -168,7 +260,7 @@ export const AFRICA: CategoryContent = {
       'In het traditionele Ethiopische feodale landstelsel verwezen \'gult\'-rechten specifiek naar...',
       ['een schenking, vaak van de keizer of de kerk, die de houder het recht gaf cijns te innen en recht te spreken over land bewerkt door boeren (gebbar), zonder daarmee noodzakelijkerwijs volledig eigendom van het land zelf te verkrijgen', 'gemeenschappelijke graasgrond, collectief gehouden door een hele parochie en wettelijk niet vervreemdbaar door enige individuele aanspraakmaker', 'erfelijk vrij eigendom, uitsluitend toegekend aan afstammelingen van de Salomonische koninklijke lijn', 'belastingvrij land specifiek gereserveerd voor orthodoxe kloosters en nooit toegekend aan lekenadel'],
       0,
-      '',
+      'Gult was een schenking van de keizer, een regionale heerser of de orthodoxe kerk die het recht gaf cijns te innen en recht te spreken, vergelijkbaar met een Europees leen, maar los van rist, het erfelijke grondgebruiksrecht van boeren zelf. Gult-rechten waren herroepbaar.',
     ],
     [
       'De opkomst van het Merina-koninkrijk tot dominantie over het grootste deel van Madagaskar onder Andrianampoinimerina en zijn zoon Radama I, eind achttiende tot begin negentiende eeuw, werd aanzienlijk vergemakkelijkt door...',
@@ -242,7 +334,7 @@ export const AFRICA: CategoryContent = {
       'Historici die de Nigeriaanse Burgeroorlog (1967-70) analyseren, halen het blokkadebeleid van de federale regering vaak aan als vooral van belang omdat...',
       ['het een humanitaire hongersnoodcrisis in Biafra teweegbracht met ongekende mediadekking, wat bijdroeg aan de oprichting van Artsen zonder Grenzen, ook al werd het door de federale zijde verdedigd als legitieme oorlogsmaatregel', 'het openlijk werd afgekeurd door de Organisatie van Afrikaanse Eenheid, die Nigeria\'s lidmaatschap voor de duur van de oorlog formeel opschortte en continentale hulpverlening coördineerde onafhankelijk van westerse ngo\'s', 'het binnen de eerste drie maanden werd opgeheven onder Britse diplomatieke druk vanuit Whitehall, waardoor de humanitaire crisis volgens deze lezing werd beëindigd nog voordat wijdverspreide hongersnood kon intreden', 'het vooral gericht was op olie-export vanuit de havens rond Port Harcourt in plaats van voedsel, waardoor de civiele voedselvoorziening tijdens de hele oorlog grotendeels onaangetast zou zijn gebleven'],
       0,
-      '',
+      'De blokkade van het afgescheiden Biafra veroorzaakte massale hongersnood onder burgers, met wereldwijd verspreide beelden van hongerende kinderen die ongekende humanitaire aandacht opwekten. De schattingen van hongerdoden lopen breed uiteen, vaak genoemd tussen één en twee miljoen.',
     ],
     [
       'Koningin Njinga Mbandi van Ndongo/Matamba\'s decennialange verzet tegen de Portugese expansie in het zeventiende-eeuwse Angola staat bij historici vooral bekend voor haar...',
@@ -254,7 +346,7 @@ export const AFRICA: CategoryContent = {
       'De koolstofdatering van de Igbo-Ukwu-bronzen in zuidoostelijk Nigeria op ruwweg de negende of tiende eeuw n.Chr. is voor historici van Afrikaanse metallurgie vooral van belang omdat het...',
       ['een verfijnde traditie van gietwerk in loodhoudend brons aantoont, eeuwen vóór trans-Saharaanse handel het ruwe metaal had kunnen leveren, wat compliceert dat West-Afrikaanse metallurgie afhankelijk was van extern contact', 'bevestigde dat de bronzen werden vervaardigd door rondtrekkende Yoruba-ambachtslieden uit Ife die zuidwaarts langs de Niger waren gereisd specifiek om de werkplaats in Igbo-Ukwu te vestigen, de plaatselijke bevolking het was-verlorengieten te leren, en er meerdere generaties te blijven werken', 'bewees dat de bronzen in hun geheel werden geïmporteerd uit het Fatimidische Egypte via Saharaanse karavaanroutes en alleen lokaal werden begraven, in plaats van ergens binnen Nigeria zelf te zijn gegoten', 'Igbo-Ukwu vaststelde als een satellietwerkplaats van het latere bronsgietersgilde van Benin, dat volgens stilistische vergelijking van regalia en gietvorm slechts enkele decennia ouder zou zijn dan de eigen traditie van Igbo-Ukwu'],
       0,
-      '',
+      'Opgravingen bij Igbo-Ukwu onthulden uitzonderlijk verfijnde loodhoudende bronzen en koperlegeringen, veel eerder dan verwacht voor zulk gevorderd verlorenwasgieten. Dit toont dat de Igbo hun gietkunst zelfstandig ontwikkelden, zonder afhankelijk te zijn van trans-Saharaanse handel.',
     ],
     [
       'De Garamantische beschaving van de Fezzan (ruwweg 1000 v.Chr. tot 700 n.Chr.) hield substantiële stedelijke nederzettingen in de Sahara vooral in stand door...',

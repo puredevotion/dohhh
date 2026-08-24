@@ -172,7 +172,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In early Netherlandish painting, what revolutionary technique allowed painters to layer transparent oil glazes with unprecedented clarity and luminosity?',
       [
-        'The Flemish technique of oil painting with successive thin glazes',
+        'Layering thin, transparent oil glazes',
         'The Venetian method of applying tempera underneath oil',
         'The use of walnut oil instead of linseed oil',
         'The pre-mixing of pigments with powdered glass',
@@ -183,7 +183,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What does "sfumato" specifically require technically that "chiaroscuro" does not?',
       [
-        'Imperceptible tonal transitions without visible brushwork',
+        'Imperceptible tonal transitions',
         'Dramatic contrast between light and shadow zones',
         'A cool color in shadow and warm in light',
         'Multiple preparatory underdrawings',
@@ -205,7 +205,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What is the standard preparatory layer for oil painting on canvas that seals the weave and provides a stable ground?',
       [
-        'Gesso (gypsum and glue mixture)',
+        'Gesso',
         'Varnish',
         'Linseed oil alone',
         'White lead paint',
@@ -216,7 +216,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In Renaissance perspective theory, what is the vanishing point where orthogonal lines converge in linear perspective?',
       [
-        'The point on the horizon line where receding parallel lines meet the viewer\'s line of sight',
+        'Where parallel lines meet on the horizon',
         'The farthest visible object in the painting',
         'The brightest area of the composition',
         'The precise center of the canvas',
@@ -238,7 +238,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What does "pentimento" refer to in painting conservation and art history?',
       [
-        'A visible trace of an artist\'s correction or change of composition beneath the final layer',
+        'A trace of an earlier composition',
         'A crack in old paint caused by temperature change',
         'The signature or monogram hidden in a painting',
         'The removal of varnish during restoration',
@@ -260,7 +260,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What is the thin underpainting layer in oil painting, often executed in monochrome, that establishes tonal values and form?',
       [
-        'Underpainting or sinopia (for fresco)',
+        'Underpaint',
         'Imprimatura',
         'Glaze layer',
         'Wash',
@@ -282,7 +282,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What is "distemper" painting, a technique distinct from tempera, and where was it most commonly used historically?',
       [
-        'A water-based paint using hide glue; primarily for murals and scenery painting',
+        'A water-based paint using hide glue',
         'A technique using egg and oil combined',
         'A fresco variation using lime and sand',
         'An encaustic-tempera hybrid from 15th-century Italy',
@@ -293,7 +293,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In High Renaissance composition, what is the principle of "figura serpentinata" or the serpentine figure?',
       [
-        'An elongated, twisting pose that creates rhythmic, graceful movement in the figure',
+        'An elongated, twisting figural pose',
         'A geometric arrangement of multiple figures in diagonal lines',
         'The placement of figures in strict bilateral symmetry',
         'The use of green and blue tones to create visual serpentine patterns',
@@ -304,7 +304,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What is the primary reason Renaissance and Baroque painters preferred linseed oil over other binding agents for oil painting?',
       [
-        'It dries through oxidation, forming a hard, durable layer that maintains color intensity and allows fine detail',
+        'It dries through oxidation into a hard, durable layer',
         'It has a faster drying time than walnut oil',
         'It prevents cracking better than other oils',
         'It produces a glossy surface without additional varnishing',
@@ -315,7 +315,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Which iconographic symbol appears repeatedly in Northern Renaissance painting to represent divine presence or sanctity?',
       [
-        'The gold background or halo',
+        'Gold background',
         'The absence of shadows',
         'Red pigment exclusively',
         'Water reflections',
@@ -326,7 +326,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What does "intonaco" refer to in fresco technique, and why is its quality critical?',
       [
-        'The final wet plaster layer on which paint is applied; its thickness and hydration determine paint adhesion and working time',
+        'The final wet plaster layer',
         'The preparatory charcoal underdrawing',
         'The dry sand and lime mortar base layer',
         'The color pigment mixed into plaster',
@@ -339,7 +339,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In Late Gothic and Early Netherlandish painting, explain the transition from tempera to oil and its implications for sculptural illusionism.',
       [
-        'Oil\'s slower drying and transparency enabled glaze layering that created unprecedented optical depth, allowing painters to rival sculptural volumetric illusion through color modeling',
+        'Oil\'s slow drying enabled glaze layering for optical depth',
         'Tempera dried too quickly, preventing the detailed underpainting necessary for anatomy',
         'Oil pigments were simply more vibrant than tempera pigments chemically',
         'Oil allowed artists to paint larger canvases than tempera supports',
@@ -350,7 +350,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What technical distinction separates Titian\'s late "broken color" technique from earlier Venetian colorism in terms of brushwork and optical mixing?',
       [
-        'Late Titian used visible, directional brushstrokes where hues are optically mixed by the viewer rather than blended on the palette, anticipating Impressionism',
+        'Visible brushstrokes optically mixed by the viewer\'s eye',
         'Early Titian mixed all colors thoroughly on the palette',
         'Broken color requires a monochromatic underpainting visible throughout',
         'The technique is purely a matter of pigment choice, not application method',
@@ -361,7 +361,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Explain the chemistry of why lead white was universally preferred over other whites in Old Master oil painting despite known toxicity.',
       [
-        'Lead oxide (litharge) oxidizes rapidly during heating, forming basic lead carbonate that polymerizes faster than other whites, improving handling and drying without yellowing',
+        'It oxidizes rapidly, drying fast without yellowing',
         'It reflects more light than other pigments',
         'It was the only white pigment available in Renaissance Europe',
         'It prevents the painting from cracking over time',
@@ -372,7 +372,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In High Renaissance narrative composition, what structural principle did Raphael employ to unify multiple focal points without hierarchical domination?',
       [
-        'Triangular grouping of figures with staggered depths creating visual rhythm and continuous narrative flow',
+        'Triangular grouping of figures at staggered depths',
         'Central vanishing point with all elements radiating outward',
         'Complete symmetry around a vertical axis',
         'Diagonal horizon lines forcing attention to the upper left',
@@ -383,7 +383,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What is the specific role of the "arriccio" and "sinopia" layers in true fresco technique, and how do they affect artist workflow?',
       [
-        'Arriccio (rough coat) receives the sinopia underdrawing; sinopia guides the artist during intonaco application, allowing corrections before final painting',
+        'Arriccio receives the sinopia underdrawing',
         'They are the same layer with different names',
         'Only one is used in Classical Roman fresco',
         'They are applied after the painted layer dries',
@@ -394,7 +394,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Discuss how Northern Renaissance painters incorporated atmospheric perspective through color gradation differently than Italian linear perspective?',
       [
-        'Northern painters (Dürer, Altdorfer) used blue-gray tinting and reduced saturation in distant areas, creating optical recession without requiring vanishing-point construction',
+        'Blue-gray tinting in distant areas',
         'They used the same techniques as Italian painters',
         'Northern painters rejected perspective entirely',
         'Only Italian painters understood color perspective',
@@ -405,7 +405,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What is "fustian" in historical paint terminology, and what pigment instability did its use risk?',
       [
-        'A loose term for inferior quality pigments; specifically, organic dyes that fade and shift hue unpredictably under light and moisture',
+        'Dyes that fade and shift hue',
         'A technical term for impasto application',
         'A specific binding medium made from cotton',
         'An archaic term for glazing technique',
@@ -416,7 +416,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Explain the technical reason why Caravaggio\'s tenebrism required specific innovations in studio lighting setup and paint formula.',
       [
-        'Extreme contrast demanded fast-drying, opaque paint with high tinting strength; Caravaggio used lead white generously and worked under raking light to judge values precisely',
+        'Fast-drying, opaque paint with high tinting strength',
         'He invented a new pigment specifically for tenebrism',
         'The technique required only darker pigments, not special formulation',
         'It was purely a matter of subject matter, not technical adjustment',
@@ -427,7 +427,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What does the X-radiography evidence reveal about Rembrandt\'s correction patterns that suggests a deliberate revision approach distinct from other Baroque painters?',
       [
-        'Rembrandt\'s pentimenti are extensive and methodical, indicating he planned compositions loosely then refined proportions during execution, a working method favoring flexibility over predetermined design',
+        'Extensive, methodical pentimenti',
         'Rembrandt never made corrections',
         'His pentimenti are random and careless',
         'X-radiography cannot reveal Rembrandt\'s techniques',
@@ -438,7 +438,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In Baroque iconography, explain the symbolic function of specific color sequences (e.g., red-blue-gold) in Marian imagery.',
       [
-        'Red symbolizes Christ\'s passion and redemption, blue the Virgin\'s heaven-bound virtue, gold divine majesty; this triad reinforces doctrinal hierarchies',
+        'Passion (red), virtue (blue), majesty (gold)',
         'Colors were arbitrary and had no symbolic meaning',
         'Only blue had religious significance',
         'Color symbolism changed every century with no consistency',
@@ -449,7 +449,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What conservation evidence (craquelure patterns, paint layer composition) reveals about the difference between authentic Old Masters and 18th-century copies or alterations?',
       [
-        'Authentic paintings show age-specific craquelure patterns corresponding to their historical period; copies exhibit anachronistic pigments or binding media inconsistent with the alleged date',
+        'Age-specific craquelure matching the period',
         'All old paintings have identical craquelure',
         'Craquelure is purely decorative and meaningless',
         'Conservation techniques cannot detect forgeries',
@@ -460,7 +460,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Explain how the theoretical rediscovery and application of Vitruvian proportions in Renaissance painting differed from Medieval geometric schemes.',
       [
-        'Vitruvian systems derived proportions from human anatomy and Classical texts, creating dynamic ratios; Medieval schemes were static and based on symbolic geometry, not nature-based proportion',
+        'Vitruvian ratios from human anatomy, not symbolic geometry',
         'Both are identical',
         'Vitruvian proportions were invented in the Renaissance with no Classical source',
         'Medieval painters never used geometric schemes',
@@ -471,7 +471,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In the restoration of a Baroque canvas, what conservation evidence would distinguish between original paint, early varnish discoloration, and later inpainting?',
       [
-        'Infrared and ultraviolet imaging reveal varnish yellowing, inpainting pigments are fluorescent under UV and anachronistic in composition, original paint shows age-appropriate oxidation under IR',
+        'IR and UV reveal varnish age and inpainting',
         'There is no way to distinguish these',
         'All old paintings look identical under imaging',
         'Only chemical analysis works, imaging does not help',
@@ -482,7 +482,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What does the "Venetian colorism" vs. "Florentine drawing" dichotomy in Renaissance art criticism actually describe in terms of underlying artistic philosophy?',
       [
-        'Florentine emphasis on precise linear form and intellectual geometry vs. Venetian optical color harmony and sensory experience, reflecting distinct regional aesthetic priorities',
+        'Florentine linear form vs. Venetian color harmony',
         'Venetian painters were worse at drawing than Florentine painters',
         'It\'s purely a geographical convenience with no philosophical basis',
         'Both schools used identical methods',
@@ -493,7 +493,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Explain the technical purpose of "wash" layers in watercolor and gouache preparation that distinguished them from tempera and oil techniques.',
       [
-        'Washes (thinned pigment) establish transparent value blocks quickly on absorbent paper; the non-absorbent gesso grounds required by tempera and oil preclude this fluid working method',
+        'Washes need absorbent paper, unlike gesso grounds',
         'Washes are the same as glazes',
         'Watercolor and gouache are oils',
         'Wash technique requires lead white like oil painting',
@@ -506,7 +506,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Critically analyze how the molecular polymerization kinetics of different binding media (walnut vs. linseed vs. safflower oils) determined the feasibility of specific Venetian colorist techniques.',
       [
-        'Linseed oil\'s slower, more controllable oxidation supported Titian\'s layered optical mixing on wet paint; walnut\'s rapid set made gestural blending impossible, and safflower\'s weak polymer chain prevented dark color mixing',
+        'Linseed\'s slow, controllable oxidation enabled wet blending',
         'All oils polymerize identically',
         'Pigment color determines binding medium behavior',
         'Oil choice was purely aesthetic with no technical consequence',
@@ -517,7 +517,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Discuss how fresco\'s reliance on lime carbonation as the binding mechanism imposed irreversible compositional choices and shaped Northern Renaissance abandonment of the technique.',
       [
-        'Fresco\'s chemical set-in-stone (literal CaCO3 formation) meant no revision possible; Renaissance expansion of easel painting freed artists from final commitment, accelerating Northern fresco\'s extinction',
+        'Fresco\'s irreversible set pushed painters toward oil',
         'Fresco is inherently more durable than oil',
         'Northern painters simply preferred oil for aesthetic reasons',
         'Fresco carbonation is instantaneous and can be reversed',
@@ -528,7 +528,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In contemporary conservation science, explain the epistemological problem of attributing paintings via pigment analysis when post-production alteration histories are unknown.',
       [
-        'Pigment spectrometry cannot distinguish between original paint and later restoration or repainting; anachronistic pigments suggest alteration, but absence of modern pigments does not confirm authenticity if historical records are fragmentary',
+        'Pigment analysis can\'t prove authenticity alone',
         'Pigment analysis definitively proves authorship',
         'Modern pigments are never found in old paintings',
         'Altered paintings always show visible evidence',
@@ -539,7 +539,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Analyze how Caravaggio\'s technical choices (specific lead white opacity, rapid-set formulation, single-session execution strategy) reflect and constrain his conceptual approach to form-modeling.',
       [
-        'High lead white content and fast-drying formula enabled bold chiaroscuro modeling in one or two sittings, precluding extensive glazing; this technical constraint reinforced his dramatic psychological immediacy',
+        'High lead-white enabled bold one-sitting modeling',
         'Caravaggio used standard Renaissance techniques',
         'Technical choices had no relationship to his aesthetic',
         'Caravaggio always used slow-drying oils',
@@ -550,7 +550,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What does recent neutron activation analysis of Rembrandt\'s late works reveal about his sourcing of rare earth element-rich ochres and its relationship to stylistic evolution?',
       [
-        'Trace lanthanide signatures in late ochres suggest Rembrandt sourced finer Armenian or Persian ochres in later decades, correlating with visible shift toward warmer, more nuanced earth-tone harmonies',
+        'Trace lanthanides suggest finer imported ochres later on',
         'Neutron analysis cannot detect trace elements',
         'Rembrandt\'s pigment sources never changed',
         'Earth element composition is irrelevant to color appearance',
@@ -561,7 +561,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Critique the interpretive limits of applying Panofsky\'s three-tier iconographic methodology to 15th-century Netherlandish painting given emerging evidence of workshop-specific symbolic codes.',
       [
-        'Panofsky\'s scheme assumes consistent iconographic language across regions and workshops, but archival evidence reveals Bruges guilds and Antwerp ateliers developed proprietary symbolic vocabularies undocumented in period texts',
+        'Guilds had symbolic codes Panofsky missed',
         'Panofsky\'s method is universally applicable',
         'Workshops never developed unique symbolic codes',
         'Iconography is irrelevant to painting analysis',
@@ -572,7 +572,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Analyze the theoretical implications of the "art historical sublime" as formulated in late-18th-century landscape painting and its relationship to contemporaneous Kantian aesthetics.',
       [
-        'Romantic landscape painters (Turner, Caspar David Friedrich) visualized Kant\'s distinction between beauty (bounded, harmonic) and sublime (boundless, awe-overwhelming), creating pictorial analogs to his phenomenological categories',
+        'Turner and Friedrich visualized Kant\'s sublime',
         'Kant\'s aesthetics have no connection to painting',
         'The sublime in art predates Kant',
         'Landscape painters never engaged with philosophy',
@@ -583,7 +583,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In the historiography of art historical methodology, explain how formalist abstraction from iconography (Fry, Greenberg) paradoxically enabled and constrained interpretation of abstract and non-representational works.',
       [
-        'Formalism\'s rejection of external reference liberated abstract painters from narrative constraint but imprisoned interpretation in intrinsic visual properties alone, excluding historical-material and biographical contexts',
+        'Formalism excluded historical context',
         'Formalism and abstraction are unrelated',
         'Formalism enabled all historical interpretations equally',
         'Abstract painting required no critical methodology',
@@ -594,7 +594,7 @@ export const PAINTERS: CategoryContent = {
     [
       'What does X-ray diffraction crystallography of medieval gilded surfaces reveal about regional distinctions in gold-beating and leaf thickness that traditional art history cannot access?',
       [
-        'Crystallographic signatures distinguish Italian workshop gold (thicker, less refined crystal structure) from Flemish (thinner, highly refined), suggesting different mechanical techniques and economic resources across regions',
+        'Italian gold is coarser than Flemish',
         'All medieval gold leaf is identical',
         'X-ray diffraction cannot measure gold properties',
         'Gold-beating technique was never regionally distinct',
@@ -605,7 +605,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Discuss how the scholarly reattribution of works formerly attributed to Artemisia Gentileschi required epistemological shifts in how gender, archival absence, and stylistic analysis intersect.',
       [
-        'Gentileschi\'s work was misattributed because male-centric archives rendered her invisible; feminist scholarship foregrounded patronage records, documentary evidence, and formal innovations (vigorous light modeling) to recover paintings misattributed to male contemporaries',
+        'Archives erased her; scholarship recovered her work',
         'Gentileschi\'s work was always correctly attributed',
         'Gender never affects art-historical attribution',
         'Archival evidence is irrelevant to attribution',
@@ -616,7 +616,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Analyze the technical and conceptual significance of "tempera-oil emulsion" practice in 15th-century Flemish painting as a transitional technology bridging discrete medium categories.',
       [
-        'Tempera-oil hybrids (egg yolk and linseed mixed) exploited tempera\'s rapid set for underpaint and oil\'s glazing capability, creating technically complex stratigraphies that confound medium-specific interpretations and suggest workshop pragmatism over ideological medium commitment',
+        'Hybrids mixed each medium\'s advantages',
         'Tempera and oil were never mixed',
         'Emulsion technique was invented in the 19th century',
         'Medium hybridity has no technical significance',
@@ -627,7 +627,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In contemporary conservation ethics, discuss the interpretive and philosophical stakes of choosing between reversibility and aesthetic intervention in the "in-painting" of significant paint loss.',
       [
-        'Reversible conservation prioritizes future options and epistemological honesty (incomplete record remains visible) but may violate artistic intent; aesthetic completion risks irreversible obliteration of evidence and imposes present-day interpretation as definitive past truth',
+        'Reversibility keeps options open',
         'Reversibility is always ethically superior',
         'Aesthetic completion is always correct',
         'Conservation ethics are irrelevant to painting restoration',
@@ -638,7 +638,7 @@ export const PAINTERS: CategoryContent = {
     [
       'How does the optical phenomenon of "halation" (light passing through translucent paint layers and reflecting back) influence the phenomenological experience of old master glazed surfaces in gallery illumination contexts?',
       [
-        'Halation creates optical "breathing" as light enters transparent glazes, scatters internally, and exits, generating dynamic, luminous surface effects dependent on viewing angle and incident illumination that photographs cannot capture',
+        'Light scattering creates an angle-dependent glow',
         'Halation is a photographic artifact irrelevant to painting',
         'Glazed surfaces are optically static',
         'Gallery lighting has no effect on perception',
@@ -649,7 +649,7 @@ export const PAINTERS: CategoryContent = {
     [
       'Critically assess how postcolonial art history reframes the "Oriental influences" narrative in Renaissance painting, rejecting diffusionist frameworks that positioned Europe as passive recipient.',
       [
-        'Postcolonial critique reveals that Renaissance trade routes, pigment sourcing (lapis from Afghanistan), and technical practices (Islamic paper, glazing knowledge) were active negotiations, not one-way transmission; European painters selectively adopted and transformed non-European knowledge',
+        'Trade exchange was negotiated, not one-way',
         'Renaissance painters copied Oriental art passively',
         'Trade had no influence on European painting technique',
         'Postcolonial criticism is irrelevant to painting history',
@@ -660,7 +660,7 @@ export const PAINTERS: CategoryContent = {
     [
       'In recent scholarship on painter\'s optical tools (camera obscura, prisms, mirrors), explain the epistemological problem: optical verification (mechanical reproduction) versus intentional artistic interpretation.',
       [
-        'Evidence of optical aids (Hockney-style technical analysis) suggests mechanical assistance but cannot determine intentionality or the degree of conscious artistic transformation; optical fidelity proves technical capacity, not creative elimination of human agency',
+        'Optical aids show technical capacity, not creative intent',
         'Optical tools prove paintings are mechanical reproductions',
         'Artists never used optical devices',
         'Optical aids eliminate artistic interpretation entirely',

@@ -16,7 +16,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'Which Danish king conquered England and Norway, establishing a North Sea empire in the early 11th century?',
       [
-        'Canute the Great',
+        'Canute II',
         'Harold Bluetooth',
         'Sweyn Forkbeard',
         'Christian IV',
@@ -49,7 +49,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'Why did Denmark lose Norway to Sweden under the Treaty of Kiel in 1814?',
       [
-        'Denmark had sided with Napoleon during the Napoleonic Wars',
+        'Denmark had backed Napoleon in the wars',
         'Norway\'s population demanded immediate independence',
         'A naval battle gave Sweden control',
         'The Storting rejected the treaty entirely',
@@ -71,7 +71,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What major late-18th-century reform improved peasant conditions by consolidating fragmented land holdings?',
       [
-        'Estate Consolidation (landreform)',
+        'Estate Consolidation',
         'The Peasant Revolt',
         'The Enclosure Movement',
         'The Agricultural Revolution',
@@ -104,13 +104,13 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What was Denmark\'s primary status during World War II (1940–1945)?',
       [
-        'Occupied by Nazi Germany but maintaining civilian administration',
+        'Occupied by Nazi Germany',
         'An active Nazi ally throughout the war',
         'Neutral and never occupied',
         'A member of the Allied forces',
       ],
       0,
-      'Germany invaded Denmark in April 1940. Denmark remained occupied until May 1945.',
+      'Germany invaded Denmark in April 1940. Denmark remained occupied until May 1945, though civilian Danish administration continued under Nazi oversight.',
     ],
     [
       'What is the name of Denmark\'s primary legislative body, established in 1849?',
@@ -137,7 +137,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What was the primary economic foundation of medieval Denmark?',
       [
-        'Trade, fishing, and agricultural surplus',
+        'Trade, fishing, and farming',
         'Mining and precious metals',
         'Manufacturing and textiles',
         'Colonial ventures in the Americas',
@@ -172,7 +172,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What was the primary territorial consequence of the Treaty of Roskilde (1658) for Denmark?',
       [
-        'Denmark lost Scania, Blekinge, and Halland to Sweden, reshaping Baltic power',
+        'Lost Scania, Blekinge, and Halland to Sweden',
         'Denmark regained Norway from Swedish control',
         'Denmark acquired Schleswig-Holstein in exchange',
         'Denmark established North Sea naval dominance',
@@ -194,7 +194,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did Denmark\'s control of the Øresund Strait function as a mercantilist revenue source?',
       [
-        'Strategic toll collection on all passing shipping provided steady crown income',
+        'Toll collection on passing shipping',
         'Direct African colonial trade',
         'Heavy domestic manufacturing exports',
         'Enforcement of Navigation Acts',
@@ -205,7 +205,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'Which 1770s–1780s reform abolished peasant serfdom and encouraged freehold land ownership?',
       [
-        'The Estate Consolidation (Landreform) and abolition of stavnsbåndet',
+        'Stavnsbånd abolition',
         'The Reformatio Sigismundi',
         'The Marriage and Inheritance Law',
         'The Guild Ordinance',
@@ -216,7 +216,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the Grundtvig movement reshape Danish educational culture and popular nationalism?',
       [
-        'It emphasized folk schools, vernacular culture, and democratic participation independent of state bureaucracy',
+        'Folk schools and vernacular culture',
         'It imported German university models',
         'It restricted education to nobility and clergy',
         'It adopted Prussian military academies',
@@ -227,7 +227,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What political shift did the 1901 parliamentary reform enable in Danish electoral politics?',
       [
-        'Extension of suffrage to rural smallholders, allowing the agrarian Venstre party to dominate',
+        'Extension of suffrage to rural smallholders',
         'Complete abolition of local government',
         'Immediate adoption of proportional representation',
         'Transfer of parliament to the monarchy',
@@ -238,7 +238,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'Which Nordic diplomatic crisis in the early 20th century prompted Denmark\'s strategic shift toward neutrality?',
       [
-        'The 1905 Swedish–Norwegian union dissolution and rising Prussian threat',
+        'Sweden–Norway split (1905)',
         'The Russo-Japanese War',
         'The Boer War',
         'The Irish independence movement',
@@ -249,7 +249,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What characterized Denmark\'s "Cooperation Policy" (Samarbejdspolitikken) during Nazi occupation?',
       [
-        'Maintenance of civilian government and negotiated limited freedoms, though collaboration remains contested',
+        'Civilian government retained',
         'Complete resistance and government-in-exile',
         'Immediate declaration of war on Germany',
         'Never formally occupied',
@@ -260,7 +260,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the Great Depression era Kanslergade Agreement (1933) between Venstre and Social Democrats reshape governance?',
       [
-        'It created a cross-party coalition supporting public works and labor protections, pioneering Nordic welfare capitalism',
+        'Coalition for public works',
         'It abolished democratic institutions',
         'It privatized all state enterprises',
         'It introduced strict austerity',
@@ -271,7 +271,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did postwar negotiations shape Denmark\'s territorial and geopolitical settlement after 1945?',
       [
-        'They secured return of North Schleswig and NATO membership while preserving civilian authority',
+        'Schleswig back, NATO joined',
         'They dissolved the monarchy',
         'They accepted Soviet occupation',
         'They rejected all reparations',
@@ -282,7 +282,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical debate surrounds Danish economic "collaboration" versus "pragmatic neutrality" during WWII occupation?',
       [
-        'Scholars contest whether food and goods exports to Germany constituted war crimes or survival necessity',
+        'Food exports to Germany: war crime or necessity',
         'Complete consensus exists on Denmark\'s innocence',
         'No historical records exist of any trade',
         'Denmark openly declared itself part of Nazi state',
@@ -293,7 +293,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did Margrethe I (ruled 1353–1412) consolidate Scandinavian political unity?',
       [
-        'She unified Denmark, Norway, and Sweden through inheritance, diplomacy, and dynastic marriages',
+        'Through inheritance and diplomacy',
         'She abolished the monarchy',
         'She ceded Denmark to Germany',
         'She converted Denmark to Catholicism',
@@ -304,7 +304,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the 1849 Constitution differ from the 1863 constitutional amendment?',
       [
-        'The 1849 Grundloven was more liberal; the 1863 revision strengthened upper-house conservatism',
+        '1849 Grundloven was more liberal',
         'Both were identical',
         'The 1863 version abolished monarchy',
         'The 1849 version had no parliament',
@@ -315,7 +315,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What geopolitical transition did the British blockade (1807–1814) and loss of Norway represent?',
       [
-        'The end of Denmark as a major European power and the rise of Swedish dominance',
+        'The end of Denmark as a major power',
         'Denmark\'s consolidation of Mediterranean influence',
         'An increase in French support',
         'Denmark\'s acquisition of British colonies',
@@ -326,7 +326,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'Which 18th-century figure\'s reform initiatives (1770–1772) challenged feudal privilege before a conservative coup?',
       [
-        'Johann Friedrich Struensee',
+        'Struensee',
         'Frederick III',
         'Christian VI',
         'Ove Høgh-Guldberg',
@@ -339,7 +339,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did abolition of stavnsbåndet (1788) and land consolidation reforms (1770s–1780s) fundamentally alter Danish agrarian social structure?',
       [
-        'They enabled freehold ownership and wage labor separation, creating a mobile agrarian proletariat and capitalist tenancy',
+        'Freehold ownership and wage-labor split',
         'They maintained feudal obligations indefinitely',
         'They instantly created an industrial working class',
         'They exported the entire peasantry to Russia',
@@ -350,7 +350,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did declining Øresund toll revenues (1600s–1700s) precipitate the fiscal crisis that justified absolute monarchy?',
       [
-        'Reduced toll revenue forced crown wealth extraction through absolutism and land monopolization',
+        'Tolls fell, absolutism followed',
         'Toll revenue increased indefinitely',
         'Denmark never relied on toll income',
         'Toll decline strengthened democracy',
@@ -361,7 +361,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the Struensee era (1770–1772) embody Enlightenment reform conflicts, and why did agrarian interests provoke backlash?',
       [
-        'Struensee\'s reforms threatened aristocratic feudal prerogatives, provoking a coup by defending noble factions',
+        'Threatened noble privilege',
         'He was universally praised',
         'The reforms had no impact',
         'Struensee strengthened the nobility',
@@ -372,7 +372,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the Napoleonic Wars reshape Denmark\'s strategic interests and long-term alignment?',
       [
-        'Backing Napoleon destroyed power, prompting 19th-century pivot toward constitutional liberalism and Western integration',
+        'Ended great-power status, liberal pivot',
         'Denmark benefited immensely from Napoleonic alliances',
         'Denmark switched to the German side immediately',
         'The wars had no impact on strategy',
@@ -383,7 +383,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical significance does Grundtvig\'s movement hold regarding resistance to German cultural hegemony?',
       [
-        'Grundtvig\'s folk schools and Viking mythology explicitly countered Prussian rationalism during Schleswig-Holstein crises',
+        'Countered Prussian pressure',
         'Grundtvig promoted German culture',
         'The movement had no cultural impact',
         'Grundtvig was a Prussian agent',
@@ -394,7 +394,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the 1864 Schleswig-Holstein defeat catalyze constitutional revisions and generational political fractures?',
       [
-        '1864 defeat radicalized debates over federalism, suffrage, and national identity, splitting liberals into competing camps',
+        'Radicalized suffrage debates',
         'The war was inconsequential',
         'Denmark won the 1864 war',
         'There were no constitutional revisions',
@@ -405,7 +405,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What role did the cooperative movement (andelsbevaegelsen) play in Danish agrarian modernization?',
       [
-        'Cooperatives pooled peasant capital for collective export, storage, and processing, enabling competition against industrial competitors',
+        'Pooled capital for export',
         'Cooperatives were entirely absent',
         'They strengthened feudalism',
         'They caused agricultural collapse',
@@ -416,7 +416,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the 1945–1950 settlement of North Schleswig and exclusion of South Schleswig shape postwar Danish identity?',
       [
-        'Recovery of North Schleswig affirmed ethnic nationalism, while South Schleswig remained German, acknowledging Prussian power',
+        'N. Schleswig back; South stayed German',
         'Denmark regained all Schleswig territories',
         'Schleswig was ceded to Sweden',
         'There was no postwar settlement',
@@ -427,7 +427,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical debate surrounds Denmark\'s WWII occupation regarding Jewish persecution and rescue?',
       [
-        'Historians contest whether limited Nazi accommodation and Jewish rescue constitutes pragmatism or complicity',
+        'Pragmatism or complicity in the rescue record',
         'There is universal consensus Denmark was innocent',
         'Denmark actively persecuted Jews',
         'No collaboration occurred whatsoever',
@@ -438,7 +438,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did the 1933 Kanslergade coalition reshape Danish labor law, wages, and welfare transition?',
       [
-        'The alliance legislated minimum wages, collective bargaining, and unemployment insurance, laying welfare groundwork',
+        'Minimum wages and unemployment insurance',
         'The agreement abolished worker protections',
         'It strengthened landlord feudalism',
         'There was no 1933 agreement',
@@ -449,7 +449,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did "folkestyre" (popular rule) ideology compete with monarchical sovereignty in shaping constitutional settlements?',
       [
-        'Folkestyre emphasis pushed expanded suffrage and reduced veto, culminating in 1953 unicameral supremacy',
+        'Expanded suffrage, cut veto',
         'Folkestyre had no impact',
         'The monarchy became more absolute',
         'Folkestyre rejected democracy',
@@ -460,7 +460,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did Denmark\'s 1973 EC entry reshape agricultural policy, regional identity, and welfare consensus?',
       [
-        'EC membership exposed agriculture to CAP restructuring and prompted welfare adaptations balancing Europeanization with Nordic universalism',
+        'CAP exposure forced welfare adaptations',
         'Denmark rejected European integration',
         'The EEC dissolved after Danish entry',
         'Agriculture benefited with zero adaptation',
@@ -471,7 +471,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How did postwar institutionalized labor-capital-state negotiations create the basis of Danish corporatism?',
       [
-        'Structured negotiations between labor federations, employers, and government created consensus policy without widespread strike prevalence',
+        'Negotiated consensus, few strikes',
         'No compromise existed',
         'Denmark endured constant labor violence',
         'Corporatism was rejected',
@@ -482,7 +482,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do debates over Danish welfare "universalism" versus "selectivism" diverge from Beveridge and Bismarckian models?',
       [
-        'Danish universalism rejected means-testing while avoiding occupational insurance fragmentation—a distinct Nordic path',
+        'Rejected means-testing',
         'Denmark adopted Beveridge entirely',
         'Denmark copied Bismarck directly',
         'Denmark had no welfare architecture',
@@ -493,7 +493,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical revisions since the 1990s challenge postwar narratives of Danish resistance to occupation?',
       [
-        'Scholarship reveals limited armed resistance and heavy state accommodation, challenging heroic myths while acknowledging cultural survival',
+        'Limited armed resistance',
         'Postwar accounts were completely accurate',
         'Denmark waged constant armed war',
         'No resistance occurred whatsoever',
@@ -506,7 +506,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do recent historiographical reassessments of the Kalmar Union challenge teleological "Danish dominance" narratives through prosopographical analysis?',
       [
-        'Archival correspondence reveals consensual tri-lateral governance among shared nobility, complicating hierarchy models',
+        'Consensual tri-lateral governance',
         'The union was always purely Danish-controlled',
         'Recent historians reject all primary sources',
         'The Kalmar Union never actually existed',
@@ -517,7 +517,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical debate persists regarding the Øresund toll as "feudal rent" versus genuine sovereign maritime taxation?',
       [
-        'Scholars contest whether toll collection represented sovereign rights or monopoly rents, illuminating medieval state-capacity theories',
+        'Sovereign right or monopoly rent',
         'The toll was always free passage',
         'No toll ever existed',
         'Economists universally agree it was fair',
@@ -528,7 +528,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do prosopographical databases of Rigsråd membership (1380–1660) reveal factional competition constraining royal authority?',
       [
-        'Kinship-network analysis documents competing noble blocs curtailing absolutism until the 1660 Kongelov coup',
+        'Noble blocs curbed absolutism',
         'The nobility had no power',
         'All nobles were unified',
         'Noble genealogies are irrelevant',
@@ -539,7 +539,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What revisionist interpretations of the 1660 Kongelov emphasize contingency over intrinsic legitimacy?',
       [
-        'The coup exploited fiscal crisis and anti-noble coalition-building rather than reflecting inevitable ideology',
+        'Fiscal crisis, noble coalitions',
         'The Kongelov was inevitable and popular',
         'No contingency factors existed',
         'The king had always been absolute',
@@ -550,7 +550,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do quantitative studies of mantalslister (population registers) reveal uneven regional inequality within agrarian "improvement" narratives?',
       [
-        'Micro-level demographic analysis exposes persistent wealth clustering, landlessness in some districts, and peasant stratification',
+        'Wealth clustering, landlessness',
         'The registers show perfect equality',
         'All peasants became wealthy equally',
         'No regional variation existed',
@@ -561,7 +561,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical tensions exist between celebrating Grundtvig as a progressive pedagogue versus critiquing nationalist ethnicism?',
       [
-        'Scholars debate whether folk-school pedagogy constituted democratization or nationalist ethnicism with minority-erasure implications',
+        'Democratization vs ethnicism',
         'All historians unanimously praise Grundtvig',
         'Grundtvig had no nationalist ideology',
         'Folk schools had no impact',
@@ -572,7 +572,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do postcolonial reassessments of Danish West African, Caribbean, and Asian activity complicate "peaceful nation" narratives?',
       [
-        'Archival analysis reveals active slave trading, plantation exploitation, and colonial extraction comparable to other powers',
+        'Slave trading and colonial extraction',
         'Denmark never engaged in colonialism',
         'Danish colonies were entirely benevolent',
         'Colonial exploitation is irrelevant',
@@ -583,7 +583,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical debate frames the 1933 Kanslergade Agreement as tripartite corporatism versus crisis-driven coalition?',
       [
-        'Scholars contest whether the agreement reflects emergent corporatism or opportunistic bargaining to forestall fascism and communism',
+        'Corporatism or crisis bargaining',
         'The agreement was a democratic revolution',
         'No bargaining occurred',
         'The agreement had no political significance',
@@ -594,7 +594,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do recent accounts of Denmark\'s WWII occupation challenge postwar "resistance mythology" while engaging Holocaust debates?',
       [
-        'Scholarship nuances resistance claims while emphasizing state accommodation, food exports, and Jewish rescue as contingent pragmatism',
+        'Nuanced resistance, more accommodation',
         'Postwar accounts were entirely accurate',
         'Denmark actively participated in the Holocaust',
         'No historiographical revision occurred',
@@ -605,7 +605,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What do microeconomic analyses of the cooperative movement reveal about risk-pooling beyond simplistic "Danish Model" narratives?',
       [
-        'Detailed analysis shows cooperatives solved transaction costs through networked producers, with pronounced regional and sectoral variation',
+        'Solved transaction costs via networks',
         'Cooperatives had no economic function',
         'All cooperatives were equally successful',
         'Farmers had no agency in creation',
@@ -616,7 +616,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do the 1849 Grundloven and 1953 constitutional rewrite reflect divergent conceptions of monarchical sovereignty?',
       [
-        '1849 balanced monarchical reserve powers with representation; 1953 eliminated upper house, consolidating parliamentary supremacy',
+        '1849 balanced power; 1953 went unicameral',
         'Both constitutions were identical',
         'The 1953 revision strengthened monarchy',
         'Constitutional courts were invented in 1953',
@@ -627,7 +627,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What historiographical debates persist regarding Nordic welfare as "class compromise" versus "social democratic hegemony"?',
       [
-        'Scholars contest whether institutions represent negotiated labor-capital accommodation or ideological consolidation of social democracy',
+        'Compromise or hegemony, contested',
         'There is universal agreement on welfare origins',
         'No class conflict shaped welfare',
         'Welfare states emerged spontaneously',
@@ -638,7 +638,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do quantitative studies of the "great leveling" (1960s–1980s) using tax records interrogate both egalitarian claims and persistent divides?',
       [
-        'Archival tax data reveals significant income compression alongside persistent gender wage gaps and regional service-sector inequalities',
+        'Income compression, persistent gender gaps',
         'Income inequality increased steadily',
         'Gender and regional divides disappeared entirely',
         'Tax records are unreliable sources',
@@ -649,7 +649,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'What role does the "Danish exceptionalism" framing play in welfare-state theory, and does it advance or constrain analysis?',
       [
-        'Exceptionalism risks obscuring contingency and structural pressures shared across developed democracies, favoring relational analysis',
+        'Risks obscuring shared pressures',
         'Denmark is objectively unique',
         'Comparative analysis is impossible',
         'Welfare states are incomparable',
@@ -660,7 +660,7 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'How do archival studies of 1973 EC entry negotiations reveal tension between agricultural goals and fiscal sovereignty?',
       [
-        'Diplomatic archives show negotiators prioritized CAP participation and fiscal transfers over sovereignty, reflecting integration necessity',
+        'Prioritized CAP access over sovereignty',
         'Denmark wanted isolation',
         'EC entry was entirely voluntary and costless',
         'No archival evidence exists',

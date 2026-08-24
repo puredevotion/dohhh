@@ -5,7 +5,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What does parallax measure in astronomy?',
       [
-        'The apparent shift in a star\'s position as Earth orbits the sun',
+        'The apparent shift in a star\'s position',
         'The brightness increase of a star due to gravitational lensing',
         'The rotation period of a distant galaxy',
         'The spectral shift caused by stellar atmospheric movement',
@@ -16,7 +16,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'On the Hertzsprung-Russell diagram, where do main sequence stars lie?',
       [
-        'Along a diagonal band from upper-left to lower-right',
+        'Along a diagonal band',
         'Clustered in the upper-right corner',
         'Randomly distributed across the plot',
         'Along the horizontal axis only',
@@ -27,7 +27,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the spectral classification sequence for stars, from hottest to coolest?',
       [
-        'O, B, A, F, G, K, M',
+        'OBAFGKM',
         'M, K, G, F, A, B, O',
         'A, B, F, G, K, M, O',
         'O, M, K, G, F, B, A',
@@ -38,7 +38,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the primary source of energy in the Sun?',
       [
-        'Hydrogen fusion into helium in the core',
+        'Hydrogen fusion into helium',
         'Gravitational contraction of the interior',
         'Radioactive decay of heavy elements',
         'Solar wind interaction with the magnetosphere',
@@ -82,7 +82,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What defines the event horizon of a black hole?',
       [
-        'The boundary beyond which no object can escape the gravitational pull',
+        'The boundary beyond which no object can escape',
         'The region where matter collides before falling into the singularity',
         'The visible light surface created by infalling gas',
         'The outer edge of the accretion disk around the black hole',
@@ -93,7 +93,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What does cosmological redshift indicate about distant galaxies?',
       [
-        'The universe is expanding, increasing the wavelength of light from distant sources',
+        'The universe is expanding, stretching light\'s wavelength',
         'Distant galaxies are moving toward us at relativistic speeds',
         'The interstellar medium absorbs shorter wavelengths preferentially',
         'Gravitational lensing bends light toward the red end of the spectrum',
@@ -104,7 +104,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How do astronomers detect exoplanets using the transit method?',
       [
-        'Measuring the dip in brightness as a planet crosses in front of its host star',
+        'Measuring the transit brightness dip',
         'Detecting reflected light from the planet\'s surface',
         'Observing the gravitational wobble of the host star',
         'Measuring infrared radiation from the planet\'s heat',
@@ -115,7 +115,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the primary difference between refraction and reflection telescopes?',
       [
-        'Refraction uses lenses to bend light; reflection uses mirrors to focus light',
+        'Refraction uses lenses; reflection uses mirrors',
         'Refraction can see ultraviolet; reflection is limited to visible light',
         'Reflection telescopes cannot observe distant objects beyond our galaxy',
         'Refraction telescopes are always larger than reflection telescopes',
@@ -126,7 +126,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is angular resolution in telescopes primarily limited by?',
       [
-        'Atmospheric diffraction and the wavelength of light being observed',
+        'Atmospheric diffraction and light wavelength',
         'The distance between the telescope and the object being viewed',
         'The temperature of the telescope\'s optical components',
         'The rate at which the Earth rotates',
@@ -137,7 +137,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Which of these is an example of a binary star system?',
       [
-        'Sirius A and Sirius B orbiting a common center of mass',
+        'Sirius A and B orbiting each other',
         'The Sun and Jupiter orbiting each other',
         'Two stars separated by several light-years showing no orbital interaction',
         'A star and its surrounding planetary system',
@@ -159,7 +159,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What historical figure first correctly explained planetary motion using mathematics?',
       [
-        'Johannes Kepler with his three laws of planetary motion',
+        'Johannes Kepler\'s three laws of motion',
         'Galileo Galilei through direct telescopic observation',
         'Tycho Brahe by measuring star positions',
         'Isaac Newton through gravitational theory',
@@ -172,7 +172,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What does the Eddington luminosity limit define?',
       [
-        'The maximum luminosity a star can sustain without radiation pressure exceeding gravitational pull',
+        'The maximum luminosity a star can sustain',
         'The brightness threshold needed to be visible from Earth without instruments',
         'The relationship between a star\'s core temperature and surface luminosity',
         'The rate at which a star loses mass through stellar wind',
@@ -183,7 +183,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the CNO cycle and when does it dominate?',
       [
-        'A hydrogen fusion pathway catalyzed by carbon, nitrogen, and oxygen that dominates in stars above ~1.3 solar masses',
+        'A hydrogen fusion pathway catalyzed by carbon, nitrogen, and oxygen',
         'A process of core collapse that leads to supernova explosions in all massive stars',
         'The depletion sequence of helium to oxygen in very young stars',
         'A mechanism of energy transport through stellar convection zones',
@@ -194,7 +194,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How does the mass-luminosity relation constrain stellar models?',
       [
-        'Observational L–M relation tests hydrostatic equilibrium and nuclear burning rates in stellar interiors',
+        'It tests hydrostatic equilibrium and nuclear burning rates',
         'It only applies to binary star systems and cannot constrain single-star models',
         'The relation proves that all stars are chemically identical in composition',
         'It defines the maximum possible age of any main sequence star',
@@ -205,7 +205,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the Chandrasekhar limit and why is it significant?',
       [
-        'It is the maximum mass (~1.4 M⊙) a white dwarf can support against electron degeneracy pressure, above which it collapses',
+        'The maximum mass (~1.4 M⊙) a white dwarf can support',
         'It is the minimum mass for a star to undergo helium fusion',
         'It defines the core density needed to initiate the CNO cycle',
         'It is the luminosity threshold separating red dwarfs from red giants',
@@ -216,7 +216,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How does a Kerr black hole differ from a Schwarzschild black hole?',
       [
-        'A Kerr metric includes angular momentum (spin), producing frame-dragging and an ergosphere',
+        'A Kerr metric includes spin, producing frame-dragging',
         'A Kerr black hole emits Hawking radiation; Schwarzschild ones do not',
         'Kerr black holes have no event horizon, making them observable',
         'Only Kerr black holes can accrete matter and power jets',
@@ -227,7 +227,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the distinction between cosmological and Doppler redshift?',
       [
-        'Cosmological redshift is caused by space expansion; Doppler redshift results from relative motion through space',
+        'Cosmological redshift is from space expansion; Doppler from motion',
         'Cosmological redshift only affects light from the cosmic microwave background',
         'They are identical phenomena viewed at different scales',
         'Doppler redshift increases indefinitely with distance; cosmological does not',
@@ -238,7 +238,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What does the virial theorem state about gravitationally bound systems?',
       [
-        '2K + U = 0 (twice kinetic energy plus potential energy equals zero for equilibrium)',
+        '2K + U = 0, twice kinetic plus potential energy',
         'The total energy is always positive, ensuring stars cannot collapse',
         'Potential energy and kinetic energy are always equal but opposite in sign',
         'Gravitational systems necessarily reach infinite density over time',
@@ -249,7 +249,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the Hertzsprung gap and what does it represent?',
       [
-        'A sparsely populated region on the HR diagram between main sequence and giant branch, where stars evolve rapidly through helium shell burning',
+        'A sparsely populated region between the main sequence and giant branch',
         'A gap in spectral classification caused by overlapping temperature ranges',
         'The distance between the nearest and most distant observable stars',
         'A discontinuity in stellar color caused by atmospheric ionization transitions',
@@ -260,7 +260,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Describe the structure and evolution of asymptotic giant branch (AGB) stars.',
       [
-        'Low to intermediate mass stars (1–8 M⊙) with inert carbon-oxygen cores, burning hydrogen and helium in alternating shells, undergoing thermal pulses',
+        'Low to intermediate mass stars with inert carbon-oxygen cores, burning shells',
         'The final stable state of all stars, lasting indefinitely without further change',
         'Massive stars immediately before core collapse and supernova',
         'Stars that have exhausted all nuclear fuel and begun cooling as white dwarfs',
@@ -271,7 +271,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How does gravitational lensing allow cosmological applications?',
       [
-        'Massive structures bend light rays, magnifying distant objects and allowing study of early galaxies and dark matter distribution',
+        'Massive structures bend light, magnifying distant objects for study',
         'Lensing always magnifies objects, making faint galaxies appear brighter than they truly are',
         'Lensing only occurs around black holes and has no application to nearby structures',
         'Lensing measures the chemical composition of intervening gas clouds',
@@ -282,7 +282,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is proper motion and how does it differ from parallax?',
       [
-        'Proper motion is the angular motion of a star across the sky perpendicular to our line of sight, measured from ground-based observations over years; parallax is the apparent shift due to orbital baseline',
+        'Proper motion is angular motion; parallax is orbital-baseline shift',
         'Proper motion applies only to nearby stars; parallax to distant ones',
         'Proper motion requires space telescopes; parallax is ground-based only',
         'They are identical measurements expressed in different units',
@@ -293,7 +293,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What limits the accuracy of stellar parallax measurements and how was this overcome?',
       [
-        'Atmospheric turbulence and instrumental precision limit ground-based parallax; space telescopes like Hipparcos and Gaia achieve microarcsecond accuracy',
+        'Atmospheric turbulence limits ground parallax; space telescopes reach microarcsec',
         'Parallax works only for stars within 10 light-years due to a fundamental physical law',
         'Only reflected light, not direct starlight, shows measurable parallax',
         'Interstellar dust completely obscures parallax signals for distant stars',
@@ -304,7 +304,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How is spectroscopic information used to determine stellar properties?',
       [
-        'Spectral lines indicate composition and ionization state; line width and shift reveal temperature, density, and velocity; absorption vs emission shows gas distribution',
+        'Spectral lines reveal composition, temperature, density, and velocity',
         'Spectroscopy only measures the apparent brightness of stars',
         'Spectra directly reveal a star\'s interior density without model assumptions',
         'Spectroscopy cannot distinguish between absorption and emission features',
@@ -315,7 +315,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the period-luminosity relation for Cepheid variables and its astronomical significance?',
       [
-        'Longer-period Cepheids are more luminous, allowing distance measurement when apparent magnitude and period are observed, extending the cosmic distance ladder to nearby galaxies',
+        'Longer-period Cepheids are more luminous, allowing distance measurement',
         'The relation only applies to a small minority of stars and has limited observational utility',
         'It proves that all Cepheids have the same intrinsic brightness',
         'Period-luminosity occurs only in binary systems where orbital motion is observed',
@@ -326,7 +326,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain the Tully-Fisher relation and its role in cosmology.',
       [
-        'Spiral galaxy luminosity correlates with rotational velocity, providing a method to determine distances to galaxies beyond the range of Cepheids',
+        'Spiral galaxy luminosity correlates with rotational velocity',
         'It is a purely theoretical relation with no observational applications',
         'The relation applies equally to all galaxy types, including ellipticals',
         'It measures galaxy age by the color of its stars',
@@ -339,7 +339,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'In the Kerr metric, what is the ergosphere and what is its physical significance?',
       [
-        'A region outside the event horizon where the metric has a positive signature change, allowing energy extraction via the Penrose process',
+        'A region outside the event horizon enabling Penrose energy extraction',
         'A singularity at the center of black holes where density becomes infinite',
         'The region where frame-dragging reduces to negligible levels',
         'An observational artifact of Doppler shift around rotating objects',
@@ -350,7 +350,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Describe the mechanism of radiatively inefficient accretion flows and their role in AGN feedback.',
       [
-        'Low-accretion-rate systems where radiation is suppressed and jets dominate momentum feedback, preventing star formation in galaxy clusters via mechanical heating',
+        'Low-accretion-rate systems where jets dominate momentum feedback',
         'Extremely bright accretion states where radiation pressure dominates outflows',
         'Accretion flows where all energy is radiated in the visible spectrum',
         'Systems where accretion rates exceed the Eddington limit by orders of magnitude',
@@ -361,7 +361,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What constraints do pulsar timing arrays place on gravitational wave backgrounds?',
       [
-        'Timing irregularities from supermassive black hole binary binaries and other cosmological sources create low-frequency GW signals detectable through decade-long timing residuals',
+        'Timing irregularities from black hole binaries create low-frequency GW signals',
         'Pulsars emit gravitational waves directly, making them unsuitable for GW detection',
         'Only isolated supermassive black holes produce detectable GW signals',
         'Pulsar timing cannot constrain gravitational waves below frequencies of 100 Hz',
@@ -372,7 +372,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How do metallicity-dependent stellar evolution models affect the interpretation of globular cluster ages?',
       [
-        'Lower metallicity clusters have different evolutionary timescales; isochrone fitting depends critically on [Fe/H], affecting derived ages by Gyr-level uncertainties',
+        'Lower metallicity clusters have different evolutionary timescales',
         'Metallicity has negligible impact on stellar evolution',
         'All globular clusters have identical metallicity regardless of formation environment',
         'Metallicity only affects stellar color, not evolutionary rates',
@@ -383,7 +383,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain population synthesis models and how they constrain star formation histories.',
       [
-        'PSMs combine stellar evolution tracks with IMF assumptions to predict integrated galaxy spectra; spectral fitting constrains SFH, metallicity, dust, and mass',
+        'PSMs combine stellar evolution tracks with IMF assumptions to predict galaxy spectra',
         'Population synthesis cannot be applied to galaxies more distant than 100 Mpc',
         'These models only work for single-burst star formation and cannot handle continuous SFR',
         'PSMs measure galaxy ages directly from photometric redshift alone',
@@ -394,7 +394,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What are stellar oscillation modes (p, g, f) and why are they scientifically valuable?',
       [
-        'Acoustic modes (p) from pressure restoring force, gravity modes (g) from buoyancy; their frequencies probe internal density, temperature, and mixing in asteroseismology',
+        'Acoustic modes (p) from pressure; gravity modes (g) from buoyancy',
         'All stellar oscillations are identical and cannot distinguish internal structure',
         'Oscillation modes only occur in white dwarfs',
         'The frequency of oscillations is independent of stellar properties',
@@ -405,7 +405,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How does dust extinction law variation constrain dust grain properties?',
       [
-        'Different wavelength-dependent extinction curves (R_V) indicate varying grain size distributions; the UV bump probes graphite/silicate composition via detailed modeling',
+        'Different extinction curves (R_V) indicate varying grain size distributions',
         'Extinction is independent of dust properties and follows the same law everywhere',
         'Extinction curves only apply to nearby dust; distant dust cannot be characterized',
         'Grain size has no measurable effect on extinction wavelength dependence',
@@ -416,7 +416,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain color excess determination and reddening vector corrections in photometry.',
       [
-        'E(B−V) = (B−V)_observed − (B−V)_intrinsic from intrinsic colors; reddening is corrected along the Galactic reddening vector, not radially to the star\'s true position',
+        'E(B−V) is from intrinsic colors; correction follows the reddening vector',
         'Color excess is the difference between observed and catalog magnitudes',
         'Reddening vectors are radial lines from the star\'s intrinsic color in color-color space',
         'Color excess is independent of dust properties and can be ignored in analysis',
@@ -427,7 +427,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is the Hubble tension and what are leading resolutions currently under discussion?',
       [
-        '~4σ discrepancy between H₀ from early-time (CMB) and late-time (SNe Ia, Cepheids) measurements; early dark energy, modified gravity, and systematic reassessment are proposed solutions',
+        '~4σ discrepancy between early- and late-time H₀ measurements',
         'A minor 1σ disagreement between cosmological parameters that will be resolved by larger surveys',
         'Evidence that the universe is not expanding',
         'A disagreement only within Planck collaboration and resolved by other experiments',
@@ -438,7 +438,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How do fast radio bursts constrain cosmological parameters and test physics models?',
       [
-        'FRB dispersion and rotation measure probe electron density, magnetic fields along sightlines, and enable independent H₀ measurements via intergalactic medium; bursts test quantum gravity at high energies',
+        'FRB dispersion probes electron density and constrains H₀',
         'Fast radio bursts are solely of galactic origin with no cosmological relevance',
         'FRBs measure only the age of the universe',
         'All FRBs are explained by pulsars in our galaxy',
@@ -449,7 +449,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain the current understanding of the coronal heating problem in solar physics?',
       [
-        'Coronal temperature (MK) exceeds photosphere (K) due to mechanisms like Alfvén wave dissipation, magnetic reconnection, and nanoflare heating (impulsive vs. quasistatic models remain debated)',
+        'Coronal temperature exceeds photosphere via waves and reconnection',
         'The corona is always cooler than the photosphere, contradicting older observations',
         'Coronal heating is solved by gravitational potential energy alone',
         'All theoretical models agree on a single heating mechanism',
@@ -460,7 +460,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What are ultra-high-energy cosmic rays (UHECRs) and what origins are favored by current theory?',
       [
-        'Cosmic rays >5×10¹⁹ eV; GZK suppression limits propagation distance to ~160 Mpc; Centaurus A, gamma-ray bursts, and AGN jets are top candidates based on spectrum and composition',
+        'Cosmic rays >5×10¹⁹ eV; AGN jets are top candidates',
         'Cosmic rays below 10¹⁸ eV that originate from the Sun',
         'Only galactic supernovae can produce high-energy cosmic rays',
         'UHECRs are purely theoretical with no detections above 10¹⁰ eV',
@@ -471,7 +471,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Describe gravitational wave polarization signatures and their ability to test modified gravity.',
       [
-        'GW+ and GW× (tensor) polarizations in GR; scalar/vector modes in modified gravity theories are suppressed in observations, tightly constraining deviations from Einstein\'s theory',
+        'Tensor modes dominate in GR, others suppressed',
         'Gravitational waves have only one polarization state',
         'Modified gravity theories predict identical polarizations to GR',
         'Polarization measurements cannot test theories beyond GR',
@@ -482,7 +482,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What is reverberation mapping and how does it measure black hole masses in AGN?',
       [
-        'Monitoring lag between broad-line and continuum variability traces gas orbital timescale; Keplerian dynamics then gives M_BH from line-of-sight velocity and lag time',
+        'Monitoring broad-line vs continuum lag gives M_BH',
         'Reverberation mapping only works for radio galaxies',
         'It directly observes the black hole event horizon',
         'Line lags are independent of black hole mass',
@@ -493,7 +493,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain the properties of quasar absorption systems and what they reveal about IGM/CGM physics.',
       [
-        'Metal/Lyman series absorption in QSO spectra from cool gas clouds at various redshifts; damped Lyman alpha, Lyman limit, and Ly-alpha forest constrain HI, metals, and baryon distribution',
+        'Metal/Lyman absorption in QSO spectra constrains HI',
         'Quasar absorption is entirely due to dust near the QSO host',
         'Absorption systems only exist within the host galaxy',
         'These systems have no connection to cosmological baryon cycle',
@@ -506,7 +506,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Discuss the information paradox in black hole thermodynamics and current theoretical resolutions.',
       [
-        'Hawking evaporation produces thermal radiation without information; unitary resolution requires horizon-level physics: string theory microstates, soft hair, or firewall alternatives resolve the paradox',
+        'Hawking evaporation loses information; string microstates or firewalls may resolve it',
         'The information paradox has been definitively solved and no longer debated among experts',
         'Quantum mechanics must be abandoned to resolve the paradox',
         'Black holes do not evaporate and the paradox is purely hypothetical',
@@ -517,7 +517,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What are the observational and theoretical implications of modified gravity theories like MOND and f(R) gravity?',
       [
-        'MOND explains galactic rotation without dark matter by modifying Newton\'s law at low accelerations; f(R) gravity explains acceleration via fourth-order geometry; both struggle with cluster-scale observations and lensing',
+        'MOND modifies Newton\'s law at low accelerations; f(R) modifies geometry instead',
         'Modified gravity theories are experimentally ruled out and abandoned by most researchers',
         'MOND and dark matter are observationally indistinguishable at all scales',
         'Modified gravity predicts identical predictions to GR for all phenomena',
@@ -528,7 +528,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How do large-scale structure simulations with baryon acoustic oscillations constrain dark energy?',
       [
-        'BAO from galaxy clustering at ~150 Mpc provides a "standard ruler"; w_DE constraints from growth rate and geometric tests probe acceleration history independently of SNe and CMB',
+        'BAO from galaxy clustering provides a standard ruler',
         'Large-scale structure cannot constrain dark energy models',
         'BAO measurements only apply to the local universe',
         'All dark energy models produce identical BAO predictions',
@@ -539,7 +539,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain intergalactic magnetic field (IGMF) constraints from TeV gamma-ray observations and fermi surfaces.',
       [
-        'TeV photons from blazars cascade via pair production; GeV cascade photons scatter in IGMF, creating a faint TeV halo; IGMF strength inferred from cascade spectrum and timing delays (few nG limits)',
+        'TeV photon cascades create a faint halo constraining IGMF strength',
         'Intergalactic magnetic fields are unmeasurable and unconstrained by any observation',
         'Only ground-based radio astronomy can measure magnetic fields in intergalactic space',
         'IGMF strength is identical to galactic fields everywhere',
@@ -550,7 +550,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What are exotic compact objects (gravastars, boson stars, dark matter cores) and current observational tests?',
       [
-        'Alternatives to black holes with regular (singularity-free) interiors; proposed to resolve information paradox or fit Event Horizon Telescope data; gravitational wave signatures (mergers, echoes, tidal deformability) test viability',
+        'Alternatives to black holes with singularity-free interiors, tested via GW echoes',
         'All compact objects beyond neutron stars must be black holes as proven mathematically',
         'Exotic compact objects are purely speculative with no observational relevance',
         'These objects would be indistinguishable from black holes in all measurements',
@@ -561,7 +561,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain neutrino astronomy and what multimessenger observations from IceCube reveal about cosmic accelerators.',
       [
-        'High-energy neutrinos from distant AGN, GRBs, and supernova remnants detected by IceCube; neutrinos trace hadron acceleration in jets and shocks, complementing electromagnetic and gravitational wave channels',
+        'IceCube-detected neutrinos trace hadron acceleration in jets',
         'Neutrinos are too weakly interacting to be detected from astrophysical sources',
         'Neutrino astronomy only studies solar neutrinos',
         'All neutrino events in IceCube originate from Earth\'s atmosphere',
@@ -572,7 +572,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Discuss the physical mechanisms driving fast radio burst emission in leading magnetar models.',
       [
-        'Magnetic reconnection or curvature radiation in magnetar magnetospheres (B > 10¹⁵ G) produces coherent beams via maser-like processes; repeating FRBs fit one-off magnetars or binary systems with recurring triggers',
+        'Magnetic reconnection in magnetar magnetospheres',
         'Fast radio bursts are confirmed to be pulsars in our galaxy',
         'All FRB models require black holes at the source',
         'The emission mechanism is identical to supernova remnants',
@@ -583,7 +583,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What do current surveys reveal about the circumgalactic medium and gas accretion in galaxies?',
       [
-        'UV absorption line surveys show gas halos (>150 kpc) are hot (T~10⁶ K), metal-enriched, and kinematically complex; accretion, feedback, and recycling coexist, with cold flows feeding disks at z>2',
+        'UV absorption surveys show gas halos are hot and metal-enriched',
         'The circumgalactic medium is empty and plays no role in galaxy evolution',
         'All gas in galaxies originates from the intergalactic medium with no recycling',
         'Galaxy halos are too hot to contain any neutral gas',
@@ -594,7 +594,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain starburst galaxy feedback mechanisms and their role in quenching star formation.',
       [
-        'Supernovae and AGN inject energy, driving outflows that remove gas (mass loading factor η>1), suppress star formation, and enrich the IGM; momentum-driven vs. energy-driven phases depend on redshift and halo mass',
+        'Supernovae and AGN drive outflows that remove and suppress gas',
         'Starburst feedback is negligible compared to gravity in galaxy evolution',
         'All galaxies cease star formation simultaneously at a fixed cosmic time',
         'Feedback has no effect on the metallicity of galaxies',
@@ -605,7 +605,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What do current constraints on the dark energy equation of state tell us about cosmological models?',
       [
-        'w(a) data from SNe, BAO, CMB, and weak lensing are consistent with Λ (w = −1) but allow w ≠ −1 models; evolving-w, early dark energy, and modified gravity remain viable; Hubble tension may favor non-ΛCDM',
+        'w(a) data are consistent with Λ but allow alternative models',
         'Dark energy has been definitively proven to be a cosmological constant',
         'All dark energy models make identical observational predictions',
         'Current observations rule out all alternatives to the cosmological constant',
@@ -616,7 +616,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Discuss tidal disruption events as probes of supermassive black hole demographics and accretion physics.',
       [
-        'A star entering tidal radius (r_t) is shredded; gas streams circularize and form an accretion disk (peak L ~ 10⁴⁴ erg/s); spectroscopy and variability probe black hole spin, mass, and disk thermodynamics',
+        'A star crossing the tidal radius is shredded and forms a disk',
         'Tidal disruption events are purely theoretical with no confirmed observations',
         'All tidal disruption leads to complete black hole mergers',
         'Tidal events only occur around stellar-mass black holes',
@@ -627,7 +627,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What do recent observations constrain about primordial gravitational waves and inflation models?',
       [
-        'CMB B-mode polarization limits tensor-to-scalar ratio r < 0.04; NANOGrav/IPTA stochastic backgrounds may hint at early-universe phase transitions or cosmic strings, constraining slow-roll inflation parameters',
+        'CMB B-mode polarization limits r < 0.04, constraining inflation',
         'Primordial gravitational waves have been definitively detected and inflation is proven',
         'Inflation is completely ruled out by current data',
         'No cosmological model predicts gravitational waves from the early universe',
@@ -638,7 +638,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Explain the physical origin and observational signatures of micro-lensing by compact objects and planets.',
       [
-        'Microlensing magnifies distant sources via compact lenses; Einstein ring timescale t_E ∝ √(M/κ) allows mass inference without distance; OGLE exoplanet discoveries confirm cold Jupiter demographics and test planet formation models',
+        'Microlensing magnifies distant sources via compact lenses',
         'Microlensing is indistinguishable from other lensing phenomena',
         'Only supermassive black holes can act as microlenses',
         'Microlensing cannot detect planets',
@@ -649,7 +649,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'What do quasar absorption line systems and the Lyman-alpha forest reveal about feedback and reionization?',
       [
-        'Damped Lyman-alpha systems trace metal-enriched star-forming gas (HI > 2×10²⁰ cm⁻²); Ly-α forest probes diffuse medium at z>2; metal enrichment patterns and metallicity gradients constrain supernova-driven feedback and reionization redshift',
+        'Damped Lyman-alpha systems and the forest constrain reionization',
         'Absorption systems contain no information about galaxy feedback',
         'Reionization was instantaneous and uniform across the universe',
         'Metal abundances in absorption systems are independent of star formation',
@@ -660,7 +660,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How do extrasolar planetary system architectures (resonances, mutual inclinations, gaps) constrain formation and migration models?',
       [
-        'Orbital resonances (2:1, 3:1) indicate smooth migration; wide binaries and high eccentricities point to scattering; gaps in debris disks trace planet gaps; mutual inclinations from astrometry constrain dynamical heating timescales',
+        'Resonances indicate migration; eccentricities scattering',
         'Planetary system architectures are random with no connection to formation',
         'All exoplanet systems are identical in structure',
         'Migration is impossible and plays no role in system assembly',

@@ -5,7 +5,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat meet parallax in de astronomie?',
       [
-        'De schijnbare verschuiving van een ster\'s positie terwijl de aarde rond de zon beweegt',
+        'De schijnbare verschuiving van een ster\'s positie',
         'De helderheidstoename van een ster door zwaartekrachtlensing',
         'De rotatieperiode van een ver sterrenstelsel',
         'De spectrale verschuiving veroorzaakt door stellaire atmosfeerbeweging',
@@ -16,7 +16,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Waar bevinden sterren op de hoofdreeks zich op het Hertzsprung-Russell diagram?',
       [
-        'Langs een diagonale band van linksboven naar rechtsonder',
+        'Langs een diagonale band',
         'Gegroepeerd in de rechterbovenhoek',
         'Willekeurig verspreid over het diagram',
         'Alleen langs de horizontale as',
@@ -27,7 +27,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is de spectrale classificatievolgorde van sterren, van heet naar koud?',
       [
-        'O, B, A, F, G, K, M',
+        'OBAFGKM',
         'M, K, G, F, A, B, O',
         'A, B, F, G, K, M, O',
         'O, M, K, G, F, B, A',
@@ -38,7 +38,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is de voornaamste energiebron van de zon?',
       [
-        'Waterstoffusie tot helium in de kern',
+        'Waterstoffusie tot helium',
         'Zwaartekrachtcontractie van het binnenste',
         'Radioactief verval van zware elementen',
         'Zonnewinden-interactie met de magnetosfeer',
@@ -60,7 +60,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat categoriseert het Hubble-classificatiesysteem?',
       [
-        'Sterrenstelselmorfologie en -structuur',
+        'Sterrenstelselmorfologie',
         'Stellaire temperatuurbereiken',
         'Nevelsamenstellingstypes',
         'Exoplanetaire baan-eigenschappen',
@@ -82,7 +82,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat defineert de waarnemingshorizon van een zwart gat?',
       [
-        'De grens waar geen enkel object kan ontsnappen aan zwaartekracht',
+        'De grens waar geen enkel object kan ontsnappen',
         'De regio waar materie botst voor het in de singulariteit valt',
         'Het zichtbare lichtoppervlak gevormd door vallend gas',
         'De buitenrand van de accretieschijf rond het zwarte gat',
@@ -93,7 +93,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat geeft kosmologische roodverschuiving aan over verre sterrenstelsels?',
       [
-        'Het universum expandeert, waardoor golflengten van ver licht toenemen',
+        'Het universum expandeert, wat golflengtes uitrekt',
         'Verre sterrenstelsels bewegen naar ons toe met relativistische snelheden',
         'Het interstellaire medium absorbeert kortere golflengten bij voorkeur',
         'Zwaartekrachtlensing buigt licht naar het rode deel van het spectrum',
@@ -104,7 +104,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe detecteren astronomen exoplaneten met de transitmethod?',
       [
-        'Door helderheidsafname te meten als een planeet voor haar ster langsschuift',
+        'Door de helderheidsafname tijdens transit te meten',
         'Door weerkaatst licht van het planeetoppervlak op te sporen',
         'Door het zwaartekrachtwiebelen van de moederster waar te nemen',
         'Door infraroodstraling van planeetswarmte te meten',
@@ -115,7 +115,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is het voornaamste verschil tussen refractie- en reflectietelescopen?',
       [
-        'Refractie gebruikt lenzen om licht te buigen; reflectie spiegels om licht te focussen',
+        'Refractie gebruikt lenzen; reflectie gebruikt spiegels',
         'Refractie ziet ultraviolet; reflectie is beperkt tot zichtbaar licht',
         'Reflectietelescopen kunnen geen verre objecten voorbij onze sterrenstelsel zien',
         'Refractietelescopen zijn altijd groter dan reflectietelescopen',
@@ -126,7 +126,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat beperkt hoekresolutie in telescopen primair?',
       [
-        'Atmosferische diffractie en de golflengte van waargenomen licht',
+        'Atmosferische diffractie en lichtgolflengte',
         'De afstand tussen telescoop en waargenomen object',
         'De temperatuur van de optische componenten van de telescoop',
         'De snelheid waarmee de aarde roteert',
@@ -137,7 +137,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is een voorbeeld van een dubbelster-stelsel?',
       [
-        'Sirius A en Sirius B omlopen een gemeenschappelijk zwaartepunt',
+        'Sirius A en B omlopen elkaar',
         'De zon en Jupiter omloop elkaar',
         'Twee sterren gescheiden door lichtjaren zonder orbitale interactie',
         'Een ster en zijn omringende planeetstelstel',
@@ -159,7 +159,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Welk historisch figuur legde de wiskundige basis voor planetaire beweging?',
       [
-        'Johannes Kepler met zijn drie wetten van planetaire beweging',
+        'Johannes Keplers drie wetten van beweging',
         'Galileo Galilei via directe telescopische waarneming',
         'Tycho Brahe door sterposities te meten',
         'Isaac Newton via zwaartekrachttheorie',
@@ -172,7 +172,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat definieert de Eddington-helderheidsgrens?',
       [
-        'De maximale helderheid die een ster kan behouden zonder stralingsdrukreactie zwaartekracht overweegt',
+        'De maximale helderheid die een ster kan behouden',
         'De helderheidtsdrempel om zichtbaar te zijn van aarde zonder instrumenten',
         'De relatie tussen sterkertemperatuur en oppervlaktehelderheid',
         'De snelheid waarmee een ster massa verliest via stellaire wind',
@@ -183,7 +183,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is de CNO-cyclus en wanneer domineert deze?',
       [
-        'Waterstof-fusiepad gekatalyseerd door koolstof, stikstof, zuurstof dominant in sterren > ~1,3 zonnenmassa',
+        'Waterstof-fusiepad gekatalyseerd door koolstof, stikstof en zuurstof',
         'Een kernsamenstortingsproces in alle massieve sterren tot supernova\'s',
         'De heliumuitputting tot zuurstof in zeer jonge sterren',
         'Energietransportmechanisme door stellaire convectiezones',
@@ -194,7 +194,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe beperkt de massa-helderheidsrelatie stellaire modellen?',
       [
-        'Waargenomen L–M relatie toetst hydrostatisch evenwicht en kernbrandingssnelheden in sterinterieur',
+        'Toetst hydrostatisch evenwicht en kernbrandingssnelheden',
         'Dit geldt alleen voor dubbelsterstelsels, niet voor individuele sterren',
         'De relatie bewijst dat alle sterren chemisch identiek zijn',
         'Dit definieert de maximale leeftijd van elke hoofdreekster',
@@ -205,7 +205,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is de Chandrasekhar-limiet en waarom is deze significant?',
       [
-        'De maximale massa (~1,4 M⊙) die een witte dwerg kan steunen tegen elektronendegeneratiedruk',
+        'De maximale massa die een witte dwerg kan steunen',
         'De minimale massa voor heliumfusie in een ster',
         'De kerndichtheid nodig om CNO-cyclus in te stellen',
         'De helderheidsgrens tussen rode dwergen en rode reuzen',
@@ -216,7 +216,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe verschilt een Kerr-zwart gat van een Schwarzschild-zwart gat?',
       [
-        'Kerr-metriek bevat hoekmomentum (spin), produceert frame-dragging en ergosfer',
+        'Kerr-metriek bevat spin, produceert frame-dragging',
         'Kerr-zwart gat geeft Hawking-straling af; Schwarzschild niet',
         'Kerr-zwarte gaten hebben geen waarnemingshorizon, dus waarneembaar',
         'Alleen Kerr-zwarte gaten kunnen materie toevoegen en jets voortbrengen',
@@ -227,7 +227,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is het onderscheid tussen kosmologische en Doppler-roodverschuiving?',
       [
-        'Kosmologisch door ruimte-expansie; Doppler door relatieve beweging door ruimte',
+        'Kosmologisch door ruimte-expansie; Doppler door beweging',
         'Kosmologisch geldt alleen voor achtergrondmicrowave-straling',
         'Dit zijn identieke verschijnselen bekeken op verschillende schaal',
         'Doppler groeit oneindig met afstand; kosmologisch niet',
@@ -238,7 +238,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat stelt de viriaalselling voor zwaartekrachtgebonden stelsels?',
       [
-        '2K + U = 0 (twee keer kinetische plus potentiële energie gelijk nul voor evenwicht)',
+        '2K + U = 0, twee keer kinetische plus potentiële energie',
         'Totale energie is altijd positief, sterrencollapsar verhindert',
         'Potentiële en kinetische energie zijn gelijk maar tegengesteld',
         'Zwaartekrachtstelsels bereiken noodzakelijk oneindige dichtheid',
@@ -249,7 +249,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is de Hertzsprung-kloof en wat stelt deze voor?',
       [
-        'Een schaars bevolkte regio op HR-diagram tussen hoofdreeks en riezentak waar sterren snel evolueren',
+        'Een schaars bevolkte regio tussen hoofdreeks en riezentak',
         'Een kloof in spectrale classificatie door overlappende temperatuurbereiken',
         'De afstand tussen dichtste en verste waarneembare sterren',
         'Een discontinuïteit in sterkleur door atmosfeerionisatietransities',
@@ -260,7 +260,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Beschrijf structuur en evolutie van asymptotic giant branch (AGB) sterren.',
       [
-        'Lage tot intermediaire massa (1–8 M⊙) met inerte koolstof-zuurstofkernen, waterstof en helium branden in schillen met thermale pulsen',
+        'Lage tot intermediaire massa met inerte koolstof-zuurstofkernen',
         'De uiteindelijke stabiele staat van alle sterren, voor altijd onveranderd',
         'Massieve sterren direct voor kerncollapsar en supernova',
         'Sterren zonder nucleair brandstof, beginnend af te koelen als witte dwergen',
@@ -271,7 +271,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe stelt zwaartekrachtlensing kosmologische toepassingen in staat?',
       [
-        'Massieve structuren buigen licht, vergroten verre objecten, studeren vroege sterrenstelsels en donkere-materie-verdeling',
+        'Massieve structuren buigen licht, vergroten verre objecten',
         'Lensing vergroot altijd, dus zwakke sterrenstelsels lijken helderder dan werkelijk',
         'Lensing treedt alleen rond zwarte gaten op, geen praktische toepassing',
         'Lensing meet chemische samenstelling van tussenliggende gaswolken',
@@ -282,7 +282,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is eigenbeweging en hoe verschilt dit van parallax?',
       [
-        'Eigenbeweging is hoekbeweging van ster over hemel loodrecht op gezichtslijn; parallax is schijnbare verschuiving door orbitale basis',
+        'Eigenbeweging is hoekbeweging; parallax is orbitale verschuiving',
         'Eigenbeweging geldt alleen nabije sterren; parallax voor verre',
         'Eigenbeweging vereist ruimtetelescopen; parallax alleen grondgesteld',
         'Dit zijn identieke metingen uitgedrukt in verschillende eenheden',
@@ -293,7 +293,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat beperkt nauwkeurigheid van stellaire parallaxmetingen en hoe werd dit overwonnen?',
       [
-        'Atmosfeerische turbulentie en instrumentale precisie; ruimtetelescopen zoals Hipparcos en Gaia bereiken microbootsecondeacurate',
+        'Turbulentie beperkt parallax; ruimtetelescopen bereiken microboogsec',
         'Parallax werkt alleen voor sterren < 10 lichtjaar door fysische wet',
         'Alleen gereflecteerd licht, niet direct sterlicht, toont meetbare parallax',
         'Interstellair stof obscureert volledig parallaxsignalen voor verre sterren',
@@ -304,7 +304,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe wordt spectroscopische informatie gebruikt voor stellaire eigenschappen?',
       [
-        'Spectraallijnen geven samenstelling en ionisatiestand; lijnbreedte en verschuiving tonen temperatuur, dichtheid, snelheid',
+        'Spectraallijnen tonen samenstelling en temperatuur',
         'Spectroscopie meet alleen schijnbare helderheid',
         'Spectra tonen rechtstreeks sterinterieurdichtheid zonder modellen',
         'Spectroscopie kan niet tussen absorptie en emissie onderscheiden',
@@ -315,7 +315,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is de periode-helderheidsrelatie voor Cepheïden en de astronomische betekenis?',
       [
-        'Langere Cepheïden zijn helderder, afstandsmeting via waargenomen magnitude en periode',
+        'Langere Cepheïden zijn helderder',
         'De relatie geldt alleen voor minderheid sterren met beperkt nut',
         'Dit bewijst alle Cepheïden dezelfde intrinsieke helderheid hebben',
         'Periode-helderheid treedt alleen op in dubbelstelsels',
@@ -326,7 +326,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar de Tully-Fisher-relatie en rol in kosmologie.',
       [
-        'Spiraalsterrenstelsels helderheid correleert met rotatiesne, afstandsmeting voorbij Cepheïden',
+        'Sterrenstelselhelderheid correleert met rotatiesnelheid',
         'Dit is puur theoretisch zonder observatietoepassing',
         'Relatie geldt gelijk voor alle sterrenstelseltypes inclusief elliptisch',
         'Dit meet sterrenstelsleeftijd door stellaire kleur',
@@ -339,7 +339,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'In de Kerr-metriek, wat is de ergosfer en fysieke betekenis?',
       [
-        'Regio buiten waarnemingshorizon waar metriek teken verandert, energieextractie via Penroseproces',
+        'Regio met Penrose-energie-extractie buiten de horizon',
         'Singulariteit in zwartgatcentrum met oneindige dichtheid',
         'Regio waar frame-dragging verwaarloosbaar wordt',
         'Waarnemingsartefact van Doppler-effect rond roterend object',
@@ -350,7 +350,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Beschrijf stralingsinefficiënte accretiestromen en rol in AGN-feedback.',
       [
-        'Lage accretiesnelheid waar straling onderdrukt is, jets domineren feedback, stervorming in clusters onderdrukken',
+        'Lage-accretiesnelheid-systemen waar jets feedback domineren',
         'Zeer heldere accretiestaten waar stralingsdruck uitgangen domineert',
         'Accretiestromen waar energie geheel zichtbaar spectrum uitstraalt',
         'Systemen waar accretiefrequentie Eddington-limiet miljoen keren overschrijdt',
@@ -361,7 +361,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Welke beperkingen stellen pulsartimingmatrices op zwaartekrachtgolfachtergronden?',
       [
-        'Timinirregulariteiten van superzware zwartgatdubbels en kosmische bronnen detecteren laagfrequentie gravitatiegolven',
+        'Timingirregulariteiten van zwartgatdubbels geven laagfrequente golven',
         'Pulsars stralen zwaartekrachtgolven direct uit, ongeschikt voor detectie',
         'Alleen geïsoleerde superzware zwarte gaten geven detecteerbare golfstraling af',
         'Pulsartiming kan golffrequenties beneden 100 Hz niet beperken',
@@ -372,7 +372,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe beïnvloeden metalliciteitafhankelijke stellaire evolutiemodellen globularcluster-leeftijdinterpretatie?',
       [
-        'Lagere metalliciteit clusters hebben verschillende evolutiegewindigheden; isochroonfitting hangt kritisch af van [Fe/H]',
+        'Lagere metalliciteit clusters hebben verschillende evolutiesnelheden',
         'Metalliciteit heeft verwaarloosbaar effect op stellaire evolutie',
         'Alle globulaire clusters hebben identieke metalliciteit ongeacht formatie',
         'Metalliciteit beïnvloedt alleen stellaire kleur, niet evolutierates',
@@ -383,7 +383,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar populatiesynthesemodellen en hoe ze stervormingsgeschiedenis beperken.',
       [
-        'PSM\'s combineren stellaire evolutiepaden met IMF-aannamen voor voorspeld spectrumintensiteit; fitting beperkt vorminsgschiedenis, metalliciteit, stof',
+        'PSM\'s combineren evolutiepaden met IMF-aannamen voor spectra',
         'Populatiesynthese kan niet op sterrenstelsels voorbij 100 Mpc worden toegepast',
         'Deze modellen werken alleen voor eenmalige stervorming, niet continue SFR',
         'PSM\'s meten sterrenstelsleeftijd direct uit fotometrische roodverschuiving',
@@ -394,7 +394,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat zijn stellaire oscillatiemodes (p, g, f) en waarom wetenschappelijk waardevol?',
       [
-        'Akoestische modes (p) van drukherstellende kracht, gravitatiemodes (g) van drijfvermogen; frequenties onderzoeken interne dichtheid en mengeling',
+        'Akoestische modes (p) door druk; gravitatiemodes (g) door drijfvermogen',
         'Alle stellaire oscillaties zijn identiek en kunnen interne structuur niet onderscheiden',
         'Oscillatiemodes treden alleen in witte dwergen op',
         'Oscillatiefrequentie is onafhankelijk van stellaire eigenschappen',
@@ -405,7 +405,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe beperkt stofextinctiewetVariatie stofkorrelproprieties?',
       [
-        'Verschillende golflengteafhankelijke extinctiecurven (R_V) geven korrelgrootteverspreiding; UV-piek onderzeken grafiet/silicaatsamenstelling',
+        'Verschillende extinctiecurven (R_V) geven korrelgrootteverspreiding',
         'Extinctie is onafhankelijk van stofproprieties en volgt overal dezelfde wet',
         'Extinctiecurven gelten alleen voor nabij stof; ver stof kan niet worden gekarakteriseerd',
         'Korrelgrootte heeft geen meetbaar effect op extinctiegolflengte',
@@ -416,7 +416,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar kleurexcessbepaling en roodingsjectieverbetering in fotometrie.',
       [
-        'E(B−V) = (B−V)_waargenomen − (B−V)_intrinsiek uit intrinsieke kleuren; roodingsje wordt verbeterd langs Galactische roodingsvector',
+        'E(B−V) uit intrinsieke kleuren; correctie volgt de roodingsvector',
         'Kleurexces is verschil tussen waargenomen en catalogusgroottes',
         'Roodingsvectoren zijn radiale lijnen van intrinsieke kleur in kleur-kleurruimte',
         'Kleurexces is onafhankelijk van stofproprieties en kan genegeerd worden',
@@ -427,7 +427,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is de Hubble-spanning en welke voorgestelde oplossingen staan ter discussie?',
       [
-        '~4σ discrepantie tussen H₀ van vroeg (CMB) en laat (SNe Ia, Cepheïden) metingen; vroege donkere energie, aangepaste zwaartekracht gesteld',
+        '~4σ verschil tussen vroege en late H₀-metingen',
         'Een geringe 1σ onenigheid over kosmische parameters opgelost door grotere onderzoeken',
         'Bewijs dat universum niet expandeert',
         'Onenigheid alleen binnen Planck-samenwerking en opgelost door andere experimenten',
@@ -438,7 +438,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe beperken snel radiobursts kosmische parameters en fysicamodellen?',
       [
-        'FRB-dispersie en rotatiezang onderzoeken elektronendichtheid, magnetische velden en H₀-metingen; bursts testen quantum-zwaartekracht',
+        'FRB-dispersie meet elektronendichtheid en beperkt H₀',
         'Snel radiobursts zijn alleen galactische oorsprong zonder kosmische betekenis',
         'FRB\'s meten alleen universumleeftijd',
         'Alle FRB\'s worden verklaard door pulsars in ons sterrenstelsel',
@@ -449,7 +449,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar huidig begrip van coronaalverhittingsprobleem in zonnefysica.',
       [
-        'Coronale temperatuur (MK) overschrijdt fotosfeer (K) door Alfvén-golfverstrooiing, magnetische herverbinding, nanofakkelverwarming (models blijven omstreden)',
+        'Coronale temperatuur overschrijdt fotosfeer via golven en herverbinding',
         'Corona is altijd koeler dan fotosfeer, in tegenspraak met oudere waarnemingen',
         'Coronaalverwarming wordt verklaard door alleen zwaartekrachtpotentiaalenergie',
         'Alle theoretische modellen stemmen over enkele verwarmingsmechanisme',
@@ -460,7 +460,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat zijn ultrahogenergie kosmische stralen (UHECR) en voorkeursoosprongen volgens theorie?',
       [
-        '>5×10¹⁹ eV; GZK-onderdrukking beperkt propagatie tot ~160 Mpc; Centaurus A, gammauitbarstingen, AGN-jets zijn topkandidaten',
+        'Kosmische stralen >5×10¹⁹ eV; AGN-jets zijn topkandidaten',
         'Kosmische stralen onder 10¹⁸ eV afkomstig van zon',
         'Alleen galactische supernovae kunnen hoogenergie-straling voortbrengen',
         'UHECR\'s zijn puur theoretisch zonder detecties boven 10¹⁰ eV',
@@ -471,7 +471,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Beschrijf zwaartekrachtgolfpolarisatiehandtekeningen en vermogen om aangepaste zwaartekracht te testen.',
       [
-        'GW+ en GW× (tensor) in GR; scalaire/vectormodes in aangepaste zwaartekrachttheorieën zijn onderdrukt, beperken sterk afwijkingen',
+        'Tensormodes domineren in GR, andere modes onderdrukt',
         'Zwaartekrachtgolven hebben slechts één polarisatietoestand',
         'Aangepaste zwaartekrachttheorieën voorspellen identieke polarisaties aan GR',
         'Polarisatiemetingen kunnen theorieën voorbij GR niet testen',
@@ -482,7 +482,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat is reverberatiebepaling en hoe meet dit zwartgatmassa\'s in AGN?',
       [
-        'Vertraging tussen brede-lijn en continuümvariabiliteit meet gasbaanperiode; Keplerse dynamica geeft M_BH uit snelheid en vertraging',
+        'Vertraging tussen brede-lijn en continuüm geeft M_BH',
         'Reverberatiebepaling werkt alleen voor radiogalaxieën',
         'Dit observeert rechtstreeks de waarnemingshorizon',
         'Lijnvertragingen zijn onafhankelijk van zwartgatmassa',
@@ -493,7 +493,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar eigenschappen van quasar-absorptiesystemen en wat zij onthullen over IGM/CGM-fysica.',
       [
-        'Metaal/Lyman-serieabsorptie in QSO-spectra uit koele gaswolken; gedempte Lyman-alfa, Lyman-limiet beperken HI, metalen, baryonverdeling',
+        'Metaal/Lyman-absorptie in QSO-spectra beperkt HI',
         'Quasar-absorptie is geheel door stof nabij QSO-gastheer',
         'Absorptiesystemen bestaan alleen binnen gastheersterrenstelsel',
         'Deze systemen hebben geen verband met kosmische baryoncyclus',
@@ -506,7 +506,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Bespreek informatieprobleem in zwartgat-thermodynamica en huidige theoretische oplossingen.',
       [
-        'Hawking-verdamping produceert thermale straling zonder informatie; unitaire oplossing vereist horizonniveau-fysica: snaartheoriemicrotoestanden of vuurbalmogelijkheden',
+        'Hawking-verdamping verliest informatie; snaartheorie kan dit oplossen',
         'Informatieprobleem is definitief opgelost en niet meer betwist tussen experts',
         'Kwantummechanica moet verlaten worden om het probleem op te lossen',
         'Zwarte gaten verdampen niet en het probleem is puur hypothetisch',
@@ -517,7 +517,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat zijn waarnemings- en theoretische implicaties van aangepaste zwaartekrachttheorieën zoals MOND en f(R)?',
       [
-        'MOND verklaart rotatie zonder donkere materie via lage-versnellinggewijzigde zwaartekracht; f(R) verklaart versnelling via meetkunde; beiden worstelen met clusterobservaties en lensing',
+        'MOND wijzigt Newtons wet bij lage versnelling; f(R) wijzigt de meetkunde',
         'Aangepaste zwaartekrachttorieën zijn experimenteel uitgesloten en verlaten',
         'MOND en donkere materie zijn waarnemingsgelijk aan alle schalen',
         'Aangepaste zwaartekracht voorspelt identieke voorspellingen aan GR',
@@ -528,7 +528,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe beperken grootschaalgstructuur-simulaties met baryonische akoestische oscillaties donkere energie?',
       [
-        'BAO van sterrenstelselbundelingen op ~150 Mpc verstrekt "standaardliniaal"; w_DE beperkingen via groeitage onderzoeken versnellingsgeschiedenis onafhankelijk van SNe',
+        'BAO van sterrenstelselbundeling verstrekt een standaardliniaal',
         'Grootschaals-structuur kan donkere energie niet beperken',
         'BAO-metingen gelden alleen voor lokaal universum',
         'Alle donkere-energiemodellen produceren identieke BAO-voorspellingen',
@@ -539,7 +539,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar intergalactische magnetischeveldperking (IGMF) van TeV-gammastralingsobservaties.',
       [
-        'TeV-fotonen van blazars cascaderen via paarproductie; GeV-cascadefotonen verstrooien in IGMF, creëren zwakke TeV-halo; sterkte afgeleid van cascadespectrum (enkele nG)',
+        'TeV-fotoncascades creëren een halo die IGMF beperkt',
         'Intergalactische magnetische velden zijn onmeetbaar en onbeperkt',
         'Alleen grondgestelde radioastronomie kan IGMF meten',
         'IGMF-sterkte is identiek aan galactische velden overal',
@@ -550,7 +550,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat zijn exotische compacte objecten (gravastars, bosonsterre, donkermateria-kernen) en huidigtests?',
       [
-        'Alternatieven voor zwarte gaten met regelmatige (singulariteitvrije) interieur; voorgesteld voor informatieprobleem; zwaartekrachtgolf-handtekeningen (echosignalen, getijstijfheid) testen',
+        'Alternatieven voor zwarte gaten met singulariteitvrij interieur, getest via GW-echo\'s',
         'Alle compacte objecten voorbij neutronsterren moeten zwarte gaten zijn beproven wiskundig',
         'Exotische compacte objecten zijn puur speculatief zonder waarnemingsrelevantie',
         'Deze objecten zouden niet te onderscheiden zijn van zwarte gaten',
@@ -561,7 +561,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar neutrinoastronomie en wat multibericht-waarnemingen van IceCube onthullen over kosmische versnellers.',
       [
-        'Hoogenergie-neutrino\'s van verre AGN, gammauitbarstingen, SNR\'s door IceCube waargenomen; neutrino\'s traceren deeljesversnelling in jets, vullen elektromagnetisch en zwaartekracht aan',
+        'IceCube-neutrino\'s traceren deeltjesversnelling in jets',
         'Neutrino\'s zijn te zwak-wisselwerkend om van astrofysische bronnen waargenomen te worden',
         'Neutrino-astronomie bestudeert alleen zonneneutrino\'s',
         'Alle neutrino-gebeurtenissen in IceCube stammen uit aardse atmosfeer',
@@ -572,7 +572,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Bespreek fysische mechanismen snel radioburst-emissie in vooraanstaande magnetarmodellen.',
       [
-        'Magnetische herverbinding of krommestraling in magnetar-magnetosferen (B > 10¹⁵ G) produceert samenhangende stralen via maserprocesaal; herhalende FRB\'s passen magnetarmodellen',
+        'Magnetische herverbinding in magnetar-magnetosferen',
         'Snel radiobursts zijn bevestigd pulsars in ons sterrenstelsel',
         'Alle FRB-modellen vereisen zwarte gaten in de bron',
         'Uitstralingmechanisme is identiek aan supernova-resten',
@@ -583,7 +583,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat onthullen huidge onderzoeken over circumgalactisch medium en gastoevoer in sterrenstelsels?',
       [
-        'UV-absorptielijnen tonen gasmantels (>150 kpc) zijn heet (T~10⁶ K), metaalblanc, kinetisch complex; toevoer, feedback en hergebruik naast elkaar; koude toevoer voedende schijven',
+        'UV-absorptie toont gasmantels zijn heet en metaalrijk',
         'Circumgalactisch medium is leeg en speelt geen rol in evolutie',
         'Al het gas in sterrenstelsels is afkomstig van intergalactisch medium zonder hergebruik',
         'Sterrenstelsel-mantels zijn te heet voor neutraal gas',
@@ -594,7 +594,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar stervorming-ontploffing-feedback-mechanismen en rol in stervorming-uitdoving.',
       [
-        'Supernovae en AGN injecteren energie, drijven uitgangen die gas verwijderen (masaloading η>1), onderdrukken vorming, verrijken IGM; momentum-driven vs. energie-driven fasen',
+        'Supernovae en AGN drijven uitgangen die gas verwijderen en onderdrukken',
         'Ontploffing-feedback is verwaarloosbaar vergeleken zwaartekracht in evolutie',
         'Alle sterrenstelsels stellen stervorming tegelijk stil op vaste kosmische tijd',
         'Feedback heeft geen effect op sterrenstelselmetalliciteit',
@@ -605,7 +605,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat zeggen huidge beperkingen op donkere-energietoestandsvergelijking over kosmische modellen?',
       [
-        'w(a) gegevens van SNe, BAO, CMB, zwakke lensing consistent met Λ (w = −1) maar toestaan w ≠ −1; evolverend-w, vroege donkere energie blijven levensvatbaar; H₀-spanning',
+        'w(a)-gegevens zijn consistent met Λ maar niet uniek',
         'Donkere energie is definitief bewezen kosmologische constante',
         'Alle donkere-energiemodellen doen identieke voorspellingen',
         'Huigde waarnemingen sluiten alle constantealternatieven uit',
@@ -616,7 +616,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Bespreek getijuitrukking-gebeurtenissen als sondes van superzware zwartgatdemografie en accretiefysica.',
       [
-        'Ster in getijstraal (r_t) wordt verscheurd; gasstromen cirkulariseren, accretieschijf vormen (piekL ~ 10⁴⁴ erg/s); spectroscopie en variabiliteit onderzoeken spin, massa',
+        'Een ster die de getijstraal kruist wordt verscheurd',
         'Getijuitrukking is puur theoretisch zonder bevestigde waarnemingen',
         'Al getijuitrukking leidt tot volledige zwartgatsamenvoeging',
         'Getijgebeurtenissen treden alleen rond stellaire-masszwarte gaten op',
@@ -627,7 +627,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat beperken recente waarnemingen over primitieve zwaartekrachtgolven en inflatiemodelgeving?',
       [
-        'CMB B-mode-polarisatie beperkt tensor-scalar-verhouding r < 0,04; NANOGrav/IPTA stochastische achtergonden kunnen vroeg-universum faseovergangen suggereren',
+        'CMB B-mode-polarisatie beperkt r < 0,04, wat inflatie beperkt',
         'Primitieve zwaartekrachtgolven zijn definitief waargenomen en inflatie bewezen',
         'Inflatie is volledig uitgesloten door huigde gegevens',
         'Geen kosmologisch model voorspelt gravitatiegolven van vroeg universum',
@@ -638,7 +638,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Verklaar fysische oorsprong en waarnemings-handtekeningen van microlensing door compacte objecten en planeten.',
       [
-        'Microlensing vergrootte verre bronnen via compacte lenzen; Einstein-ring-tijdschaal t_E ∝ √(M/κ) laat massinferering toe zonder afstand; OGLE planeetontdekkingen',
+        'Microlensing vergroot verre bronnen via compacte lenzen',
         'Microlensing is niet te onderscheiden van ander lensing',
         'Alleen superzware zwarte gaten kunnen als microlensen fungeren',
         'Microlensing kan planeten niet detecteren',
@@ -649,7 +649,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Wat onthullen quasar-absorptielinnen en Lyman-alpha-bos over feedback en herontionisatie?',
       [
-        'Gedempte Lyman-alfa-systemen traceren metaalblanc stervorming-gas (HI > 2×10²⁰ cm⁻²); Ly-α-bos onderzoekt diffuse medium; metaalrijkingspatronen beperken supernova-feedback',
+        'Gedempte Lyman-alfa-systemen en het bos beperken herontionisatie',
         'Absorptiesystemen bevatten geen informatie over sterrenstelsel-feedback',
         'Herontionisatie was onmiddellijk en uniform over universum',
         'Metalabundanties zijn onafhankelijk van stervorming',
@@ -660,7 +660,7 @@ export const ASTRONOMY: CategoryContent = {
     [
       'Hoe beperken extrasolare planeetstelsels-architecturen (resonanties, onderlinge inclinaties, gaten) vorming en migratiemodellen?',
       [
-        'Baanresonanties (2:1, 3:1) wijzen op vloeiende migratie; brede binaires en hoge excentriciteiten op verstrooiing; gaten in puinschijven traceren planetengaten',
+        'Resonanties wijzen op migratie; excentriciteiten op verstrooiing',
         'Planeetstelsels-architecturen zijn willekeurig zonder verwantschap tot vorming',
         'Alle exoplanet-stelsels zijn identiek in structuur',
         'Migratie is onmogelijk en speelt geen rol in stelselsamenbouw',

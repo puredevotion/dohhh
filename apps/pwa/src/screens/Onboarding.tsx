@@ -41,9 +41,11 @@ export function Onboarding(): ReactNode {
         </div>
 
         <div className="text-center">
-          <div className="mx-auto mb-6 h-20 w-20 rounded-full border-4 border-tier-graduate/70 p-2">
-            <div className="h-full w-full rounded-full border-4 border-tier-phd/70 p-1.5">
-              <div className="h-full w-full rounded-full border-4 border-tier-professor/80" />
+          <div className="mx-auto mb-6 h-20 w-20 rounded-full border-4 border-tier-bscba/70 p-1.5">
+            <div className="h-full w-full rounded-full border-4 border-tier-msc/70 p-1.5">
+              <div className="h-full w-full rounded-full border-4 border-tier-phd/70 p-1.5">
+                <div className="h-full w-full rounded-full border-4 border-tier-professor/80" />
+              </div>
             </div>
           </div>
           <Typography.Heading level={1} className="text-3xl font-semibold tracking-tight">

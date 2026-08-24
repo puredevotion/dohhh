@@ -1,6 +1,98 @@
 import type { CategoryContent } from '../row.js';
 
 export const AUTOIMMUNE: CategoryContent = {
+  bscba: [
+    [
+      'Wat is het fundamentele verschil tussen een infectie en een auto-immuunziekte?',
+      ['Infectie is immuunaanval op vreemde pathogenen; auto-immuunziekte is immuunaanval op lichaamseigen weefsel', 'Infectie treft alleen het ademhalingsstelsel', 'Auto-immuunziekten zijn altijd besmettelijk', 'Infecties zijn altijd acuut terwijl auto-immuunziekten altijd chronisch zijn'],
+      0,
+      'Infecties worden uitgelokt door vreemde pathogenen; auto-immuuntoestanden ontstaan door ongepaste reacties tegen lichaamseigen antigenen.',
+    ],
+    [
+      'Type 1-diabetes veroorzaakt auto-immune afbraak van welk celtype in de pancreas?',
+      ['Bètacellen die insuline produceren', 'Alfacellen die glucagon produceren', 'Acinaire cellen die spijsverteringsenzymen produceren', 'Epitheelcellen van het kanaal'],
+      0,
+      'Bètacellen in de eilandjes van Langerhans maken en geven normaal insuline af; hun afbraak leidt tot insulinedeficiëntie en vereist insulinetherapie.',
+    ],
+    [
+      'Welke van de volgende wordt geclassificeerd als auto-immuunziekte?',
+      ['Reumatoïde artritis', 'Seizoensgriep', 'Streptokokkeninfectie', 'Schimmelinfectie van de huid'],
+      0,
+      'Reumatoïde artritis wordt gekenmerkt door chronische, destructieve gewrichtontsteking door immuunaanval, terwijl de andere opties infecties zijn veroorzaakt door specifieke pathogenen.',
+    ],
+    [
+      'Wat is een primair kenmerk van de ziekte van Hashimoto?',
+      ['Immuungerelateerde vernietiging van schildklierweefsel wat hypothyreoïdie veroorzaakt', 'Overmatige schildklierhormoonproductie door overstimulering', 'Weerstand tegen schildklierhormoon in perifere weefsels', 'Jodiumgebrek wat de schildklierfunctie treft'],
+      0,
+      'Lymfocyten infiltreren en beschadigen het vermogen van de schildklier om hormonen aan te maken, wat uiteindelijk tot de hypothyroïde toestand leidt die deze veel voorkomende auto-immuunziekte kenmerkt.',
+    ],
+    [
+      'De ziekte van Graves verschilt van de ziekte van Hashimoto in dat het welke schildkliertoestand veroorzaakt?',
+      ['Hyperthyreoïdie door stimulerende antilichamen', 'Hypothyreoïdie door weefselvernietiging', 'Normale schildklierfunctie met vermoeidheid', 'Volledig verlies van schildklierhormoonproductie'],
+      0,
+      'De ziekte van Graves betreft antilichamen die de TSH-receptor activeren, wat continue hormoonproductie aandrijft, tegengesteld aan het destructieve mechanisme in Hashimoto.',
+    ],
+    [
+      'Coeliakie wordt uitgelokt door een immuunrespons op welk voedingseiwit?',
+      ['Gluten in graan en andere graansoorten', 'Caseïne in zuivelproducten', 'Lactose in zuivelproducten', 'Keratine in huid'],
+      0,
+      'Glutenpeptiden worden bij gevoelige personen gewijzigd en aan immuuncellen gepresenteerd, wat aanval op het dunne darmvoering uitlokt die nutriëntabsorptie verstoort.',
+    ],
+    [
+      'Multiple sclerose wordt gekenmerkt door immuunaanval op welk onderdeel van zenuwvezels?',
+      ['De myelineschede die zenuwsignalen isoleert en versnelt', 'De zenuwcellichamen in de hersenen', 'Spier cellen', 'De spinale vloeistof'],
+      0,
+      'Myelinebeschadiging vertraagt of blokkeert zenuwimpulsen, wat de progressieve neurologische symptomen van MS produceert.',
+    ],
+    [
+      'Welke therapeutische klasse heeft de behandeling van auto-immuunziekten als reumatoïde artritis door gerichte immuunmoleculen omgewenteld?',
+      ['Biologische therapieën die sleutelontstekingenscytokinen blokkeren', 'Antibiotica die ziekteverwekkende pathogenen doden', 'Hormoonsuppletie', 'Alleen vitamineolie'],
+      0,
+      'Medicijnen zoals TNF-alfasluiters richten zich op specifieke signaalmoleculen die ontsteking aandrijven, wat doelgerichtere en vaak effectievere behandeling biedt.',
+    ],
+    [
+      'Systemische lupus erythematodes valt op vanwege aantasting van welk karakteristiek patroon van orgaansystemen?',
+      ['Meerdere orgaansystemen gelijktijdig, inclusief gewrichten, huid, nieren en hart', 'Alleen huid en haar', 'Uitsluitend het ademhalingsstelsel', 'Alleen endocriene organen'],
+      0,
+      'SLE is echt "systemisch" omdat zelfantilichamen door het lichaam circuleren, zich in meerdere weefsels afzetten en mogelijk wijdverspreide ontsteking veroorzaken.',
+    ],
+    [
+      'Psoriasis, een auto-immuunhuidaandoening, wordt vooral aangedreven door activatie van welk immuunceltype?',
+      ['T-cellen, bijzonder Th17-cellen die ontstekingscytokinen produceren', 'Rode bloedcellen', 'Beenmergstamcellen', 'Zenuwcellen in de huid'],
+      0,
+      'Th17-cellen produceren cytokine IL-17, wat overmatige huidcelproliferatie en ontsteking aandrijft die psoriasis kenmerkt.',
+    ],
+    [
+      'Myasthenia gravis wordt veroorzaakt door auto-antilichamen die op welke structuur in spieren gericht zijn?',
+      ['Acetylcholinereceptoren op de neuromusculaire overgang', 'Mitochondria in spieren', 'Het spiercelemembraan weg van de overgang', 'Beencellen naast spieren'],
+      0,
+      'Antilichamen blokkeren of vernietigen de acetylcholinereceptoren nodig voor zenuwtospiercommunicatie, wat karakteristieke spierzwakte veroorzaakt die verergert bij activiteit.',
+    ],
+    [
+      'Spondylitis ankylopoetica is sterk genetisch geassocieerd met welke moleculaire marker?',
+      ['HLA-B27', 'HLA-DR4', 'HLA-DQ2', 'Het BRCA1-gen'],
+      0,
+      'De overgrote meerderheid van mensen met spondylitis ankylopoetica draagt HLA-B27, hoewel de meeste dragers de ziekte nooit ontwikkelen, wat aantoont het een risicofactor is.',
+    ],
+    [
+      'Welke rol spelen regulatoire T-cellen (Tregs) normaal in het voorkomen van auto-immuunziekte?',
+      ['Ze onderdrukken ongepaste immuunreacties tegen lichaamseigen antigenen', 'Ze maken antilichamen tegen indringende pathogenen', 'Ze doden met virus geïnfecteerde cellen', 'Ze maken insuline aan om bloedglucose te reguleren'],
+      0,
+      'Tregs dempen actief zelf-reactieve immuunreacties, waardoor de tolerantie wordt behouden die auto-immuniteit voorkomt.',
+    ],
+    [
+      'Inflammatoire darmziekten zoals de ziekte van Crohn betreffen immuunaanval vooral op welk orgaansysteem?',
+      ['Het spijsverteringskanaal, wat darmontsteking en weefselschade veroorzaakt', 'Het zenuwstelsel uitsluitend', 'Alleen de lever', 'Het skeletstelsel'],
+      0,
+      'De ziekte van Crohn veroorzaakt volledige laagontsteking in het spijsverteringskanaal overal van mond tot anus, wat contrasteert met colitis ulcerosa.',
+    ],
+    [
+      'Het syndroom van Sjögren veroorzaakt klassiek welk symptomenpaar door auto-immune schade aan bepaalde klieren?',
+      ['Droge ogen en droge mond door lymfocytische infiltratie van traan- en speekselklieren', 'Overmatig zweten en koorts', 'Gewichtstoename en koudeintolerantie', 'Gewrichtszwelling en spierzwakte'],
+      0,
+      'Immuuncellen infiltreren traan- en speekselklieren, wat tranen- en speekselproductie vermindert en de "droge" symptomen veroorzaakt die deze toestand definiëren.',
+    ],
+  ],
   msc: [
     [
       'Type 1-diabetes ontstaat door auto-immune afbraak van welke cellen?',
@@ -280,6 +372,98 @@ export const AUTOIMMUNE: CategoryContent = {
 };
 
 export const OBGYN: CategoryContent = {
+  bscba: [
+    [
+      'Welk orgaan produceert de eicel die tijdens de eisprong wordt vrijgegeven?',
+      ['De ovarium', 'De baarmoeder', 'De eileider', 'De vagina'],
+      0,
+      'Ovaria bevatten follikels met zich ontwikkelende eicellen; in elke menstruatiecyclus geeft één rijpe follikel een eicel af die door de eileider naar de baarmoeder reist.',
+    ],
+    [
+      'Na de eisprong produceert het corpus luteum welk hormoon dat nodig is voor de voorbereiding van de baarmoeder voor zwangerschap?',
+      ['Progesteron', 'Alleen oestrogeen, zonder progesteron', 'Testosteron', 'Prolactine'],
+      0,
+      'Progesteron verdikte het baarmoederslijmvlies en onderhoudt het; dit is nodig voor innesteling als bevruchting plaatsvindt, of het wordt afgestoten als zwangerschap niet optreedt.',
+    ],
+    [
+      'Het polycysteus-ovariumsyndroom (PCOS) wordt vaak gekenmerkt door welke twee hoofdkenmerken?',
+      ['Onregelmatige menstruatiecyclus en verhoogde androgenen', 'Volledige afwezigheid van menstruatie vanaf de geboorte', 'Overmatige menstruatiebleeding zonder hormoonveranderingen', 'Alleen verhoogde bloedglucose'],
+      0,
+      'PCOS betreft verstoorde eisprong (wat onregelmatige of ontbrekende periodes veroorzaakt) en hormoononbalans met androgenoverschot, vaak met meerdere kleine cysten op de ovaria.',
+    ],
+    [
+      'Endometriose wordt gedefinieerd als de aanwezigheid van endometriumweefsel waar?',
+      ['Buiten de baarmoederholte, doorgaans op ovaria of buikvlies', 'Alleen in de baarmoederspier', 'Alleen in de cervix', 'Alleen in de vagina'],
+      0,
+      'Ectopisch endometriumweefsel reageert op cyclische hormonen net als normaal endometrium, wat pijn, zwaar bloeden en vaak onvruchtbaarheid veroorzaakt buiten de baarmoeder.',
+    ],
+    [
+      'Pre-eclampsie is een zwangerschapscomplicatie gekenmerkt door welke twee bevindingen na 20 weken?',
+      ['Hoge bloeddruk en eiwituitscheiding in urine', 'Alleen lage bloeddruk', 'Hoog glucoseniveau zonder hypertensie', 'Overmatig gewichtsverlies'],
+      0,
+      'Pre-eclampsie ontwikkelt zich wanneer de placenta geen normale circulatie tot stand brengt, wat maternale hypertensie en nierfunctiestoornissen veroorzaakt die bevalling nodig maken.',
+    ],
+    [
+      'Wat is het primaire mechanisme waarmee gecombineerde orale anticonceptiepillen zwangerschap voorkomen?',
+      ['Onderdrukking van de LH-piek die nodig is om eisprong uit te lokken', 'Doden van zaadcellen in de baarmoeder', 'Een fysieke barrière creëren in de eileider', 'De eicel onmiddellijk na eisprong oplossen'],
+      0,
+      'De hormooncombinatie voorkomt dat de hersenen het ovarium signaleren om een eicel uit te geven, waardoor zwangerschap zonder eisprong onmogelijk wordt.',
+    ],
+    [
+      'Wat is een buitenbaarmoederlijke zwangerschap?',
+      ['Innesteling van de embryo buiten de baarmoeder, meestal in de eileider', 'Een zwangerschap in het onderste deel van de baarmoeder', 'Een zwangerschap met meerlingen', 'Een zwangerschap met geen foetale hartslag'],
+      0,
+      'Buitenbaarmoederlijke zwangerschappen kunnen zich niet normaal ontwikkelen en vormen ernstig gevaar voor de moeder van breuk en bloeding.',
+    ],
+    [
+      'Zwangerschapsdiabetes treedt op wanneer wat zich in de zwangerschap ontwikkelt?',
+      ['Insulineresistentie door placentahormonen, wat verhoogde bloedglucose leidt', 'Vernietiging van de pancreas voorafgaand aan de zwangerschap', 'Afwezigheid van enige pancreasbètacel', 'Overmatige insulineproductie door de foetus'],
+      0,
+      'Placentahormonen, bijzonder humaan placentair lactogeen, verminderen de insulinegevoeligheid van de moeder, wat bij sommige vrouwen hun capaciteit overschrijdt om normale glucose vast te houden.',
+    ],
+    [
+      'Postpartumbloeding wordt het vaakst veroorzaakt door wat?',
+      ['Falen van de baarmoeder om na de bevalling goed samen te trekken', 'Alleen achtergebleven placenta', 'Alleen scheuren in het geboorteka naal', 'Alleen maternale bloedingsstoornissen'],
+      0,
+      'De baarmoeder trekt normaal na bevalling samen om bloedvaten samen te persen; inadequate contractie (atonie) kan bloeding niet controleren, wat de voornaamste oorzaak van levensbedreigende maternale bloedverlies is.',
+    ],
+    [
+      'Waarvoor screent het Pap-uitstrijkje?',
+      ['Abnormale cervixcellen die kunnen uitgroeien tot baarmoederhalskanker', 'Eierstokkanker uitsluitend', 'Fibromen van de baarmoeder', 'Bacteriële infecties van de cervix'],
+      0,
+      'Het Pap-uitstrijkje detecteert dysplastische cellen veroorzaakt door humaan papillomavirus voordat ze invasief kanker worden, wat vroege behandeling toestaat.',
+    ],
+    [
+      'Wanneer wordt menopauze klinisch gediagnosticeerd?',
+      ['Na 12 opeenvolgende maanden zonder menstruatie', 'Bij de eerste opvlieger', 'Op de 50ste verjaardag van een vrouw ongeacht symptomen', 'Na één gemiste menstruatie'],
+      0,
+      'De 12-maanden-drempel weerspiegelt volledige staking van ovariële functie en hormoonproductie, wat menopauze onderscheidt van perimenopauze.',
+    ],
+    [
+      'Wat beoordeelt de Apgar-score bij een pasgeboren?',
+      ['Vijf vitale tekenen en reflexen één en vijf minuten na de geboorte', 'Het geboortegewicht en de lengte van de baby alleen', 'De herstelstatus van de moeder', 'De toestand van de placenta'],
+      0,
+      'Uiterlijk, Pols, Grimas reflex, Activiteit tonus en Ademhaling worden elk gescoord van 0-2, wat een snelle beoordeling geeft van of de pasgeboren onmiddellijke hulp nodig heeft.',
+    ],
+    [
+      'Baarmoederfibromen zijn goedaardige tumoren die ontstaan uit welk weefsel?',
+      ['Glad spierweefsel van de baarmoederwand', 'Klierweefsel van het endometrium', 'Ovariaal weefsel', 'Cervixweefsel'],
+      0,
+      'Fibromen zijn hormoongevoelig en groeien in de vruchtbare jaren, wat dikwijls zwaar bloeden en bekkenduk veroorzaakt, hoewel veel symptoomloos zijn.',
+    ],
+    [
+      'HPV-vaccinatie voorkomt infectie met welk virus dat baarmoederhalskanker veroorzaakt?',
+      ['Humaan papillomavirus', 'Humaan immunodeficiëntievirus', 'Hepatitis B-virus', 'Herpes simplex-virus'],
+      0,
+      'HPV-types 16 en 18 veroorzaken het merendeel van baarmoederhalskankers; vaccins tegen deze hoogrisicotypes hebben kankerpercentages drastisch verminderd in gevaccineerde populaties.',
+    ],
+    [
+      'Wat is adenomyose en hoe verschilt het anatomisch van endometriose?',
+      ['Adenomyose betreft endometriumweefsel dat in de baarmoederspier dringt; endometriose treedt buiten de baarmoeder op', 'Ze zijn identieke aandoeningen met verschillende namen', 'Adenomyose treft alleen postmenopausale vrouwen', 'Endometriose veroorzaakt nooit pijn'],
+      0,
+      'Adenomyose veroorzaakt baarmoederverdikking en pijn van interne invasie, terwijl endometriose pijn veroorzaakt van ectopisch weefsel elders in het bekken.',
+    ],
+  ],
   msc: [
     [
       'Welke hormoonpiek veroorzaakt direct de eisprong?',
@@ -559,6 +743,98 @@ export const OBGYN: CategoryContent = {
 };
 
 export const DUTCH: CategoryContent = {
+  bscba: [
+    [
+      'De Tachtigjarige Oorlog werd uitgevochten tussen welke twee machten?',
+      ['De Nederlandse opstandelingen en Spanje', 'Frankrijk en Engeland', 'De Nederlanden en België', 'Pruisen en Oostenrijk'],
+      0,
+      'Van 1568 tot 1648 streden de noordelijke provincies van de Lage Landen voor onafhankelijkheid van de Spaanse Habsburgse heerschappij, waardoor uiteindelijk de Nederlandse Republiek ontstond.',
+    ],
+    [
+      'Waarom wordt Willem van Oranje (Willem de Zwijger) vooral herinnerd?',
+      ['Het leiden van de Nederlandse Opstand tegen het Spaanse gezag', 'Het stichten van de VOC', 'Het zijn van de eerste Koning der Nederlanden', 'Het ondertekenen van de Vrede van Munster'],
+      0,
+      'Als stadhouder en militair leider leidde Willem de vroege verzet tegen Spanje en wordt beschouwd als grondlegger van Nederlandse onafhankelijkheid.',
+    ],
+    [
+      'Wat was de betekenis van de Unie van Utrecht in 1579?',
+      ['Het bond de noordelijke provincies in alliantie tegen Spanje, waardoor de grondslag van de Nederlandse Republiek ontstond', 'Het beëindigde de Tachtigjarige Oorlog', 'Het verenigde alle Lage Landen onder één heerser', 'Het schafde de monarchie af'],
+      0,
+      'De Unie creëerde een confederale structuur tussen de noordelijke provincies, waardoor de basis voor de Nederlandse staat en meer dan twee eeuwen onafhankelijkheid ontstond.',
+    ],
+    [
+      'De Nederlandse Oost-Indische Compagnie (VOC), opgericht in 1602, was baanbrekend vooral omdat het wat deed?',
+      ['Publiek verhandelbare aandelen uitgaf om kapitaal voor wereldhandel in te zamelen', 'Alle handel met niet-Europese landen verbood', 'Zonder enig overheidstoezicht opereerde', 'Zich uitsluitend op Europese handel concentreerde'],
+      0,
+      'De VOC poolde kapitaal van veel beleggers door op de Amsterdamse beurs verhandelde aandelen, wat ongekende investeringen in Aziatische handel en koloniale aventuren mogelijk maakte.',
+    ],
+    [
+      'Het in 1672 "Rampjaar" genoemde gebeurtenis betrof wat?',
+      ['Gelijktijdige invasie door Frankrijk, Engeland en geallieerde Duitse bisdommen die de Republiek bedreigden', 'Een marinezege over Spanje', 'De dood van Willem de Zwijger', 'De stichting van de Nederlandse Republiek'],
+      0,
+      'Deze militaire crisis, toen meerdere vijanden van verschillende richtingen binnenvielen, dreigde bijna de Republiek te vernietigen en leidde tot val van de handelaarrepubliek.',
+    ],
+    [
+      'De "stadhouder" in de Nederlandse geschiedenis werd het best beschreven als welk soort ambt?',
+      ['Een provinciaal militair en bestuursambt, vaak bekleed door de Prins van Oranje', 'Een gekozen vorst met absolute macht', 'Een religieus leider van de Gereformeerde Kerk', 'Een leider van de koopmansgilde\'s'],
+      0,
+      'Stadhouders, doorgaans leden van het Huis van Oranje, hielden militair bevel en aanzienlijke provinciale macht, hoewel hun gezag per periode en provincie varieerde.',
+    ],
+    [
+      'Wat was de Vrede van Munster (1648)?',
+      ['Het verdrag dat Nederlandse onafhankelijkheid van Spanje formeel erkende', 'Een vredesakkoord tussen Frankrijk en Spanje', 'Een binnenlandse overeenkomst binnen de Nederlandse Republiek', 'Een akkoord tussen de Nederlanden en Engeland'],
+      0,
+      'Spanje erkende formeel de onafhankelijkheid van de Republiek der Zeven Verenigde Nederlanden, wat de Tachtigjarige Oorlog beëindigde en de Nederlandse staat als soevereine mogendheid vestigde.',
+    ],
+    [
+      'Het Twaalfjarig Bestand (1609-1621) was significant omdat het wat deed?',
+      ['De Tachtigjarige Oorlog onderbreek, beide zijden in staat stellende te consolideren voordat het gevecht hernam', 'De oorlog permanent beëindigde met Spanje', 'De Nederlanden met Spanje onder één kroon verenigde', 'Het stadhouderschap permanent afschafte'],
+      0,
+      'Beide Spanje en de Republiek spraken af met het gevecht, vanwege uitputting en financiële druk, hoewel vijandelijkheden hervatten toen het bestand afliep.',
+    ],
+    [
+      'Welke van de volgende was een groot aandachtspunt van Nederlandse wereldhandel in de 17e eeuw?',
+      ['Handel in specerijen en goederen uit de Oost-Indië', 'Landbouwexport naar Frankrijk', 'Uitsluitend glasfabricage', 'Mijnbouwoperaties in Duitsland'],
+      0,
+      'De VOC domineerde handelsroutes naar Azië, bijzonder in de kruidenhandel in de Indonesische archipel, wat enorme rijkdom naar de Nederlandse Republiek bracht.',
+    ],
+    [
+      'Het Verenigd Koninkrijk der Nederlanden, in 1815 na Napoleons val opgericht, verenigde welke twee gebieden?',
+      ['De vroegere Nederlandse Republiek en de Zuidelijke Nederlanden (ongeveer moderni Belgie)', 'De Nederlanden en Luxemburg alleen', 'De Nederlanden en Vlaanderen', 'De Nederlanden en alle Duitse landen'],
+      0,
+      'Het Congres van Wenen voegde noord en zuid samen om een bufferstaat tegen Frankrijk te creëren, hoewel de unie instabiel bleek en België in 1830 afscheide.',
+    ],
+    [
+      'De Belgische afscheiding van het Verenigd Koninkrijk der Nederlanden in 1830 werd vooral aangedreven door wat?',
+      ['Religieuze en taalkundige spanningen tussen katholiek zuiden en protestant-gedomineerd noorden', 'Een handelsgeschil alleen over de VOC', 'Onenigheid over marinebeleidt alleen', 'Een opvolgingscrisis na de dood van de koning'],
+      0,
+      'De grotendeels katholieke, Franssprekende zuidelijke provincies kermden onder protestants-gedomineerd gezag en ongelijke politieke vertegenwoordiging, wat tot revolutie en onafhankelijkheid leidde.',
+    ],
+    [
+      'Johan de Witt, een prominent Nederlands leider van de 17e eeuw, bekleedde welke politieke functie?',
+      ['Raadpensionaris van Holland, de belangrijkste civiele ambtenaar', 'Stadhouder van alle zeven provincies', 'Admiraal van de vloot', 'Directeur-Generaal van de VOC'],
+      0,
+      'De Witt leidde de republiek in de periode van "Ware Vrijheid" toen geen stadhouder in Holland was aangewezen, waardoor macht geconcentreerd bleef in de handelaaroligarchie.',
+    ],
+    [
+      'De Angloducse Oorlogen van de 17e eeuw werden vooral uitgevochten over wat?',
+      ['Competitie voor maritieme handel en koloniale dominantie', 'Religieuze verschillen tussen denominaties', 'Controle op tolheffingen van de Rijnrivier alleen', 'Opvolging op de Spaanse troon'],
+      0,
+      'Engeland en de Nederlandse Republiek concurreerden fel om scheepsroutes en overzeese handelsposten, waarbij marinegvechten de drie conflicten tussen 1652 en 1674 bepaalden.',
+    ],
+    [
+      'Wat was het Koninkrijk Holland (1806-1810) tijdens het Napoleontische tijdperk?',
+      ['Een Franse satellietstaat onder leiding van Napoleons broer Louis', 'Een herstelde onafhankelijke republiek', 'Een koninkrijk dat aan het Huis van Oranje werd teruggegeven', 'Een puur militaire bezetting zonder civiel bestuur'],
+      0,
+      'Napoleon installeerde zijn broer Louis als koning over de Nederlanden als nominaal onafhankelijke satellietstaat, al voegde Frankrijk het zich in 1810 rechtstreeks in.',
+    ],
+    [
+      'De grondwetshervorming van 1848 onder Johan Rudolph Thorbecke bereiktte vooral wat?',
+      ['Verschuiving van de Nederlanden naar constitutionele monarchie met sterker parlamentair gezag', 'Afschaffing van de monarchie volledig', 'Herstel van absoluut koningsgezag', 'Hereniging van de Nederlanden en België'],
+      0,
+      'De hervormingen van Thorbecke beperkte koninklijke autoriteit door ministers verantwoording verschuldig aan een gekozen parlement, wat Nederlands bestuur moderniseerde.',
+    ],
+  ],
   msc: [
     [
       'De middeleeuwse en vroegmoderne Lage Landen kwamen voornamelijk via welk proces onder Bourgondisch gezag?',
@@ -838,6 +1114,98 @@ export const DUTCH: CategoryContent = {
 };
 
 export const MAKER: CategoryContent = {
+  bscba: [
+    [
+      'Wat is 3D-printen?',
+      ['Een productieproces dat objecten laag voor laag bouwt uit digitale ontwerpen', 'Een techniek voor het maken van fotografie', 'Een methode voor het afvlakken van gedrukte vellen', 'Een proces uitsluitend voor metaalonderdelen'],
+      0,
+      'Bij additieve productie wordt materiaal (kunststof, hars, poeder of metaal) laag voor laag afgezet volgens een digitaal model, wat complexe vormen mogelijk maakt die met traditioneel draaien onmogelijk zijn.',
+    ],
+    [
+      'Wat zijn de drie primaire categorieën van 3D-printtechnologie?',
+      ['Extrusie-gebaseerd, harsen poedergebaseerde methoden', 'Alleen kunststof-, metaal- en keramiekmethoden', 'Handmatig, automatisch en mechanisch methoden', 'Kleur-, zwart-wit en grijsschaalmethoden'],
+      0,
+      'Extrusie-methoden zoals FDM smelten en zetten filament af; hars-methoden harden vloeibare polymeren uit met licht; poedermethoden smelten materiaal met hitte of bindmiddelen.',
+    ],
+    [
+      'FDM (Fused Deposition Modeling) maakt objecten van welk startmateriaal?',
+      ['Kunststoffilament dat wordt gesmolten en geëxtrudeerd', 'Vloeibare hars', 'Poederdeeltjes', 'Materiaalbladen'],
+      0,
+      'Een verwarmde nozzle smelt thermoplastisch filament en zet het laag voor laag af, waarbij elke laag aan de vorige hecht naarmate het afkoelt. Dit maakt FDM de meest gangbare consumentenmethode.',
+    ],
+    [
+      'Welk voordeel heeft harsgebaseerd 3D-printen boven FDM?',
+      ['Veel fijnere oppervlaktedetails en soepelere afwerking', 'Alleen lager apparatuurkosten', 'Snellere afdruksnelheid voor alle vormen', 'Geen noodzaak voor nabewerking'],
+      0,
+      'Harsprinters harden vloeibare fotopolymeer hars uit met licht, wat zeer gedetailleerde onderdelen produceert met uitstekende oppervlaktekwaliteit, hoewel nabewerking meer betrokken is dan bij FDM.',
+    ],
+    [
+      'Waarvoor wordt "steunmateriaal" bij 3D-printen gebruikt?',
+      ['Het ondersteunen van overhangende of niet-ondersteunde secties tijdens het printen', 'Het vergroten van de sterkte van het eindproduct', 'Het verbeteren van de afdruksnelheid', 'Het reduceren van materiaalkosten'],
+      0,
+      'Steunstructuren zijn tijdelijke steigers die onder overhangen worden afgedrukt om te voorkomen dat het onderdeel gaat doorhangen of bezwijkt; ze worden na afdrukken verwijderd.',
+    ],
+    [
+      'Welk filamentmateriaal is het meest beginnersvriendelijk voor FDM-printen?',
+      ['PLA, vanwege lage afdruktemperatuur en minimaal vervormen', 'ABS, wat het best afdruk op de laagste temperaturen', 'Koolstofvezelcomposiet, wat het makkelijkst afdruk', 'Nylon, het gemakkelijkste materiaal om af te drukken'],
+      0,
+      'Polylactiden zuur (PLA) is afgeleid van plantaardige bronnen, drukt af bij lage temperatuur, geeft minder rook en vervormt minder dan materialen als ABS.',
+    ],
+    [
+      'Wat is "infill" bij 3D-printen?',
+      ['De binnenstructuur in een hol-goed gedrukt', 'De buitenste laag van het gedrukt', 'Steunmateriaal onder overhangen', 'Het platform waarop het onderdeel drukt'],
+      0,
+      'In plaats van massieve kunststof overal gebruikt het interieur een lichtgewicht roosterpatroon met een gekozen dichtheidspercentage om sterkte in evenwicht te brengen met afdrukduur en materiaalgebruik.',
+    ],
+    [
+      'Waarvoor worden lasersnijders vooral gebruikt?',
+      ['Materialen snijden en graveren door er mee te verdampen met een gefocuste laserstraal', 'Metalen platen aan elkaar lassen', 'Oppervlakken naar glans polijsten', 'Objecten verwarmen zonder te snijden of te graveren'],
+      0,
+      'Een geconcentreerde laserstraal creëert intense hitte die materiaal verdampt of smelt langs een geprogrammeerd pad, wat nauwkeurig snijden van hout, acryl, leer en ander geschikt materiaal mogelijk maakt.',
+    ],
+    [
+      'CO2-lasers zijn het best geschikt voor het snijden van welke materialen?',
+      ['Organische materialen zoals hout, acryl, leer en papier', 'Bloot metalen bladen', 'Reflecterende materialen zoals spiegel', 'Alleen plastic flessen'],
+      0,
+      'CO2-lasers werken op een golflengte die goed wordt opgenomen door organische en polymeermaterialen, maar slecht door bloot metaal, wat ze ideaal maakt voor hout- en acrylwerk.',
+    ],
+    [
+      'Vezellas ers worden over het algemeen geprefereerd voor welke toepassing?',
+      ['Snijden en graveren van metaal', 'Acrylplaten snijden', 'Hout met detail graveren', 'Papier en karton snijden'],
+      0,
+      'Vezellas ers zenden een kortere golflengte uit die metalen efficiënt absorberen, wat ze standaard maakt voor industrieel metaalsnijden en merkingswerk.',
+    ],
+    [
+      'Waarom is "eerste laagadhesie" kritiek bij 3D-printen?',
+      ['Het garanderen dat de eerste laag goed aan het bouwplatform vastplakt zodat volgende lagen een stabiele basis hebben', 'Het bepalen van de kleur van de eindafdruk', 'Het alleen controleren van de afdruksnelheid', 'Het instellen van de nozzledoos'],
+      0,
+      'Als de eerste laag niet goed aanplakt, kan het verschuiven of losraken, wat de volledige afdruk doet mislukken; bedbosing krijgt veel aandacht om deze reden.',
+    ],
+    [
+      'Wat betekent "vervorming" bij 3D-printen?',
+      ['Ongelijk afkoelen wat delen van een afdruk laat krimpen en vervormen', 'De nozzle beweegt te snel', 'Kleurvervaging tijdens het printen', 'Het materiaal wordt transparant'],
+      0,
+      'Terwijl thermoplast van afdruktemperatuur afkoelt, veroorzaken ongelijke afkoelsnelheden differentiële krimp die hoeken kan optillen of het onderdeel kan verdraaien; verwarmde bedden en behuizingen helpen dit te voorkomen.',
+    ],
+    [
+      'Lasserveiligheid is belangrijk vanwege welk primair gevaar?',
+      ['De laserstraal kan permanente oog- en huidschade veroorzaken als niet goed beschermd', 'Lasers exploderen altijd zonder waarschuwing', 'Laserlicht is giftig als u het aanraakt', 'Lasers creëren radioactief materiaal'],
+      0,
+      'Zelfs korte blootstelling aan een directe laserstraal kan onherstelbare oogschade of huidbranden veroorzaken; juiste behuizing en veiligheidsbrillen zijn essentieel voor laseruitrusting.',
+    ],
+    [
+      'Waarom is ventilatie of rookafvoer belangrijk bij lasersn ijden?',
+      ['Snijden van veel materialen geeft giftige rook en dampen af die schadelijk zijn om in te ademen', 'Om alleen de laserbuis af te koelen', 'Om electrosttatische opbouw te voorkomen', 'Om de snijsnelheid van de machine te verbeteren'],
+      0,
+      'Het verdampen van materialen zoals pvc geeft giftige gassen vrij zoals chloor; juiste rookafvoer of ventilatie beschermt de operator tegen inhalatiehazards.',
+    ],
+    [
+      'Wat is SLS (Selective Laser Sintering) 3D-printen?',
+      ['Een poedergebaseerd proces waar een laser poederdeeltjes samensmelten laag voor laag', 'Een extrusiegebaseerd proces identiek aan FDM', 'Een harsuithardings proces hetzelfde als SLA', 'Een handmatige laagstapeltechniek'],
+      0,
+      'Een laser sintert selectief poederdeeltjes samen, bouwt het onderdeel op terwijl ongesinterd poeder steun biedt; veel gebruikt voor nylon en ander geëng inieerd materiaal.',
+    ],
+  ],
   msc: [
     [
       'Hoe werkt FDM (Fused Deposition Modelling) 3D-printen in essentie?',

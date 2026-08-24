@@ -5,7 +5,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Welk reactietype wordt gekenmerkt door een nucleofiel dat in één stap een koolstof met een goede vertrekgroep aanvalt met inversie van stereochemie?',
       [
-        'Bimoleculaire nucleofiele substitutie (SN2)',
+        'SN2-substitutie',
         'Unimoleculaire eliminatie (E1)',
         'Elektrofiele aromatische substitutie (EAS)',
         'Nucleofiele acylsubstitutie',
@@ -16,7 +16,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de primaire functionele groep aanwezig in een carboxylzuur?',
       [
-        'Carbonyl gebonden aan hydroxyl (carboxylgroep, -COOH)',
+        'Carboxylgroep (-COOH)',
         'Een aldehyde met extra zuurstof',
         'Een ester op een primair alcohol',
         'Een keton met een nabije hydroxylgroep',
@@ -27,7 +27,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In een E2-eliminatiereactie, welke ruimtelijke relatie hebben de waterstof en vertrekgroep?',
       [
-        'Anti (of antiperiplanair) arrangement',
+        'Antiperiplanair arrangement',
         'Gauche arrangement',
         'Eclipsed arrangement',
         'Geen specifieke ruimtelijke eis',
@@ -49,7 +49,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat beschrijft de term "regioselectiviteit" in organische reacties?',
       [
-        'Voorkeurvorming van één positie-isomeer boven een ander',
+        'Voorkeur voor één positie-isomeer',
         'Voorkeur voor één stereoisomeer boven een ander',
         'De snelheid waarmee een reactie evenwicht bereikt',
         'De hoeveelheid nevenproduct gevormd',
@@ -60,7 +60,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Welke stelling beschrijft correct een Grignard reagens (RMgX)?',
       [
-        'Een organometaallische nucleofiel zeer reactief tegenover carbonylverbindingen',
+        'Een organometaallische nucleofiel',
         'Een alkylhalogenide gebruikt in eliminatiereacties',
         'Een katalytische soort voor hydrogenering',
         'Een oxidatiemiddel voor primaire alcoholen',
@@ -104,7 +104,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat voor molecuul ontstaat uit een Diels-Alder reactie?',
       [
-        'Een cyclohexeen (zesbands ring met één dubbele binding)',
+        'Een cyclohexeen',
         'Een cyclobuteen (vierbands ring)',
         'Een bicyclisch verbinding',
         'Een open-keten diene',
@@ -115,7 +115,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In SN1 mechanisme, wat is de snelheidsbepalende stap?',
       [
-        'Carbokation vorming (heterolyse C-LG binding breking)',
+        'Carbokation vorming',
         'Nucleofiel aanval op de C-LG binding',
         'Herrangschikking van de alkylketen',
         'Vertrek van de vertrekgroep na nucleofiel binden',
@@ -148,7 +148,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Welke stelling beschrijft Markovnikov\'s regel?',
       [
-        'Bij toevoeging aan ongelijke alkenen voegt de nucleofiel toe aan de koolstof met meer waterstof (meer gesubstitueerde koolstof krijgt meer negatieve groep)',
+        'De nucleofiel voegt toe aan de koolstof met meer waterstof',
         'Bij eliminatie is het meer gesubstitueerde alkeen altijd het belangrijkste product',
         'Bij substitutie worden primaire koolstoffen altijd eerder aangevallen dan secundaire',
         'Racemische mengsels vormen altijd in polaire oplosmiddelen',
@@ -194,7 +194,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In E1cb (conjugaatbasis) eliminatie, welk intermediair is essentieel vóór C-H bindingsbreking?',
       [
-        'Een enolaat of carbanion gevormd door deprotonering',
+        'Een enolaat- of carbanion-intermediair',
         'Een carbokation intermediair',
         'Een cyclisch drieledige ring intermediair',
         'Een π-complex met de basiscatalysator',
@@ -205,7 +205,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Welke combinatie van factoren maakt een verbinding een slechte Diels-Alder dienophiel?',
       [
-        'Een elektron-donerende groep op de dubbele binding en lage sterische eis',
+        'Een elektron-donerende groep met lage sterische eis',
         'Elektron-onttrekkende groepen (EWGs) op de dubbele binding',
         'Sterische hindering van omringende bulkige groepen',
         'Hoge symmetrie van de dienophiel',
@@ -227,7 +227,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Waarom ondergaat E2 eliminatie van een primaire alkylhalogenide zelden plaats ondanks gunstige kinetiek, terwijl secundaire en tertiaire alkylhalogeniden gemakkelijk E2 ondergaan?',
       [
-        'Primaire carbokationen zijn uiterst onstabiel; SN2 is kinetisch en thermodynamisch bevorderd',
+        'Primaire carbokationen zijn te onstabiel; SN2 domineert',
         'Primaire C-H bindingen zijn te sterk om te breken',
         'Basiskatalytische isomerisatie blokkeert eliminatie',
         'Oplosmiddelviscositeit remt E2 voorkeur bij primaire sites',
@@ -238,7 +238,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In retrosyntetische analyse, wat betrekking heeft het "umpoled carbonyl" concept?',
       [
-        'Omgekeerde polariteit van een koolstof van elektrofiel naar nucleofiel',
+        'Omkering van carbonylpolariteit naar nucleofiel',
         'Omzetting van een keton naar enol voor selectieve substitutie',
         'Introductie van stereocentra via aldolcondensatie',
         'Activering van carbonyl via bescherming als ketal',
@@ -249,7 +249,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is de stereochemische uitkomst van een [2,3]-sigmatrope verschuiving van een allylsulfoxide in de Mislow herschikking?',
       [
-        'Suprafaciale herschikking met inversie op sulfoxide zwavel en allylkoolstof',
+        'Suprafaciaal, met inversie op zwavel en allylkoolstof',
         'Antarafaciale herschikking die nieuwe alkeen-geometrie genereert',
         'Geen netto verandering in stereochemie op beide centra',
         'Exclusieve vorming van (R,R)-diastereomeer ongeacht startmateriaal',
@@ -271,7 +271,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat is het fundamentele verschil tussen diastereomeer en enantiomeer in het context van prochiraaliteit?',
       [
-        'Enantiotope groepen zijn diastereomer naar elkaar in aanwezigheid van chirale reagens; diastereotope groepen hebben intrinsiek verschillende chemische verschuivingen',
+        'Enantiotope groepen worden pas diastereomer met een chiraal reagens',
         'Beide zijn onzichtbaar voor achirale reagens; beide vereisen chirale vergelijking om te detecteren',
         'Enantiotope groepen vereisen spiegelvlak; diastereotope groepen niet',
         'Enantiomeren zijn alleen onderscheidend door chirale oplosmiddelen; diastereomeren hebben altijd verschillende NMR signalen',
@@ -293,7 +293,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Waarom is de Cope herschikking een [3,3]-sigmatrope verschuiving in plaats van [1,5]-verschuiving?',
       [
-        '[3,3]-verschuiving is suprafaciaal en thermisch toegestaan volgens Woodward-Hoffmann regels (4n+2 elektronen); [1,5] is antarafaciaal en verboden',
+        '[3,3] is suprafaciaal toegestaan; [1,5] is antarafaciaal verboden',
         '[1,5]-verschuivingen vereisen chiralcentrum dat selectiviteit bepaalt',
         'De Cope herschikking vormt zesbands overgangstoestand geometrisch incompatibel met [1,5]',
         'Alleen [3,3]-verschuivingen zijn mogelijk in 1,5-dienen vanwege moleculaire symmetrie',
@@ -304,7 +304,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In beschermingsgroepenstrategia, welke eigenschap maakt benzylethers geschikt voor alcoholbescherming in meerstappen synthese?',
       [
-        'Gemakkelijk gekliefd door hydrogenolise (H2/Pd) en resistent tegen waterige zuur/basis, mogelijk orthogonale bescherming',
+        'Gekliefd door hydrogenolise (H2/Pd), stabiel voor zuur/basis',
         'Orthogonaal aan acetylesters via selectieve verseiffing',
         'Stabiel onder zowel zure als basische waterige voorwaarden, maar gekliefd door sterke oxidatiemiddelen',
         'Gemakkelijk geïnstalleerd door Williamson ether synthese en gekliefd door excess Grignard reagens',
@@ -315,7 +315,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Wat betekent de term "diastereofaciale selectiviteit" (of "diastereofaciale discriminatie") in asymmetrische synthese?',
       [
-        'Voorkeurs aanval op één zijde van prochiraalbasis door chirale reagens of katalysator',
+        'Voorkeursaanval op één zijde van een prochirale groep',
         'Selectieve vorming van één geometrische isomeer van alkeen',
         'Voorkeurs reactie op één stereogecenterd positie in meso verbinding',
         'De neiging van enantiomeren om apart te kristalliseren',
@@ -326,7 +326,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In natuurproductsynthese, waarom is asymmetrische Sharpless dihydroxylatie (AD) veel gebruikt ondanks stoichiometrische chirale ligand?',
       [
-        'Het biedt hoge enantioselectiviteit, 1,2-diol functionaliteit en katalytische omzet op osmium en chirale ligand',
+        'Hoge enantioselectiviteit met katalytische osmiumomzet',
         'Het is economischer dan chirale hulpstof methoden en vormt enkel één stereoisomeer',
         'Het werkt als echte katalytische proces met substechiometrisch osmium',
         'Het vereist geen beschermingsgroepen en is compatibel met alle functionele groepen',
@@ -339,7 +339,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In de Eschenmoser-Claisen herschikking, wat is het intermediair dat thermale [3,3]-sigmatrope verschuiving triggert?',
       [
-        'Vorming van allylisch ketenen aminal (imidaat) uit allylisch alcohol en zwaveljlide precursor',
+        'Vorming van een allylisch ketenen aminal (imidaat)',
         'Een carbokation gegenereerd uit zuurgekataliseerde activering van hydroxylgroep',
         'Een enolaat gevormd door deprotonering van β-waterstof',
         'Een concerted intermediair waarin allylisch C-O binding synchroon breekt met C-C vorming',
@@ -350,7 +350,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Leg stereoelectronische eis uit voor efficiënte nucleofiele verdringing in Finkelstein reactie en relatie tot oplosbaarheid en reactiviteit van metaalhalogeniden.',
       [
-        'Primaire of secundaire alkylhalogeniden in aprote oplosmiddelen; SN2 inversie verbeterd omdat aprote oplosmiddelen kation solvateren niet anion, nucleofilie stijgt zonder SN1 concurrentie',
+        'Primaire of secundaire halogeniden in aprote oplosmiddelen kiezen SN2',
         'Tertiaire halogeniden ondergaan E2 voorkeur vanwege sterische hindering, polaire protische oplosmiddelen onderdrukken nucleofilie',
         'Reactie is zuiver thermodynamisch bepaald door stabiliteit producten en metaalhalogenide kristallisatie',
         'Alkylflouriden zijn meest reactief omdat C-F bindingen naar nucleofiel gepolariseerd zijn',
@@ -361,7 +361,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In pericyclische [4+2] Diels-Alder reactie, wat voorspelt orbitalensymmetrieanalyse over toegestane versus verboden stereoelectronische paden?',
       [
-        'Suprafaciaal [4+2] is toegestaan (4n elektronen, n=1); antarafaciaal [4+2] is verboden door Woodward-Hoffmann regels',
+        'Suprafaciaal [4+2] is toegestaan; antarafaciaal [4+2] is verboden',
         'Beide suprafaciale en antarafaciale [4+2] paden zijn gelijk toegestaan vanwege symmetrie van geconjugeerde dienen',
         'Antarafaciaal [4+2] voorkeur wanneer elektron-onttrekkende groepen op dienophiel aanwezig',
         'Diels-Alder is inherent [2+4] reactie (dienophiel eerst genoemd), verandert toegestaan/verboden toewijzing',
@@ -372,7 +372,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In overgangsmetaalkatalyse, wat is het mechanisme waardoor oxidatieve toevoeging van organisch halogenide aan Pd(0) verschilt in regioselectiviteit en mechanisme van SN2 verdringing?',
       [
-        'Oxidatieve toevoeging treedt op aan metaal met twee-elektron transfer en vorming σ-complex (PdII-R en PdII-X); SN2 is nucleofiel aanval op koolstof met inversie',
+        'Oxidatieve toevoeging vormt Pd(II)-C en Pd(II)-X aan het metaal',
         'Beide gaan door dezelfde carbokation intermediair, maar metaal stabiliseert ander stereoisomeer',
         'Oxidatieve toevoeging voorkeur secundaire halogeniden; SN2 voorkeur primaire halogeniden voor dezelfde substraat',
         'Regioselectiviteit bepaald door ionische sterkte oplosmiddel en halogenide grootte',
@@ -383,7 +383,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In Cope herschikking van gesubstitueerde 1,5-hexadieen met elektron-donerende en elektron-onttrekkende groepen, hoe beïnvloeden substituent elektronische effecten en sterische hindering overgangstoestand?',
       [
-        'Elektronische activering (EWGs op terminal koolstoffen, EDGs op interne) verlaagt ΔG‡; sterische congestie verhindert herschikking',
+        'EWG/EDG-plaatsing verlaagt ΔG‡; sterische congestie remt af',
         'EDGs versnellen reactie uniform ongeacht positie; sterische effecten verwaarloosbaar',
         'Herschikking is onder orbitale controle, elektronische effecten irrelevant',
         'Substituent effecten additief en verhogen ΔG‡ lineair met elektron-donerende groepen aantal',
@@ -394,7 +394,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In katalytische enantioselectieve C-H functionalisatie, welk strategisch voordeel biedt asymmetrische katalyse via chirale richtingsgroep boven stoichiometrische chirale hulpstof?',
       [
-        'Katalytische omzet verlaagt chirale ligand of substraatmodificatie nodig; plaats-selectiviteit gecontroleerd door richtingsgroep coördinatie aan metaal',
+        'Katalytische omzet vereist minder chiraal ligand; blijft chelatiegecontroleerd',
         'Richtingsgroepen altijd selectiever dan stoichiometrische hulpstoffen omdat blijvend bevestigd',
         'C-H functionalisatie vereist stoichiometrische chirale hulpstoffen; katalytische methoden kunnen enantioselectiviteit niet bereiken',
         'Stereoselectiviteit zuiver bepaald door katalysatorsterische bulk, onafhankelijk substraat',
@@ -405,7 +405,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In retrosyntetische planning van doel met meerdere stereocentra, wat is strategisch voordeel van "asymmetrische synthetische equivalent" (of "asymmetrische Umpolung")?',
       [
-        'Staat stereochemie introductie toe in vroeg stadium via enkele enantioselectieve transformatie, verminderend meervoudige stereoselektieve stappen',
+        'Legt stereochemie vroeg vast via één enantioselectieve stap',
         'Vermindert totaalstappen door eliminatie chirale reagens nodig',
         'Garandeert alle volgende transformaties treden op met dezelfde relatieve stereochemie',
         'Alleen toepasbaar op natuurproducten met enkel stereocentrum',
@@ -416,7 +416,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'Leg de oorsprong van afwijkende regioselectiviteit uit in intramoleculaire Heck reactie wanneer carbopalladium intermediair zowel 5-exo-trig als 6-endo-trig cyclisatie kan ondergaan.',
       [
-        '5-exo-trig pad kinetisch bevorderd door Baldwin regels (exo-trig toegestaan; sneller), hoewel 6-endo-trig thermodynamisch stabiel',
+        '5-exo-trig is kinetisch bevorderd door Baldwin regels',
         '6-endo-trig altijd sneller vanwege geometrie Pd-alkeen π-complex',
         'Selectiviteit zuiver thermodynamisch afhankelijk van stabiliteit twee mogelijke carbokationen',
         'Endo-trig en exo-trig regels gelden alleen niet-katalytische reacties',
@@ -427,7 +427,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In polymeerchemie, wat is sleutel mechanistisch onderscheid tussen keten-groei polymerisatie via vrije radicalen versus levende anionische polymerisatie in termen keteindiging en molgewichtsverdeling?',
       [
-        'Vrije radicaal polymerisatie ondergaat willekeurige beëindiging (koppeling of disproportionering), brede polydispersiteit; levende anionische geen beëindigingsstap, mogend gecontroleerde ketenlengtes en smalle Mw verdeling',
+        'Vrije radicaal beëindiging is willekeurig (brede Mw); anionisch heeft geen beëindiging',
         'Levende anionische polymerisatie sneller maar lijdt aan bredere molgewichtsverdeling',
         'Vrije radicalen geven perfect uniforme ketenlengtes; anionische polymerisatie willekeurige lengtes',
         'Beide mechanismen geven identieke polydispersiteit indices met dezelfde monomeer',
@@ -438,7 +438,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In natuurproductsynthese, wat is doel van "strategische bindingsdisconnectie" in retrosyntetische analyse en hoe verschilt van "tactische disconnectie"?',
       [
-        'Strategische disconnectie breekt doel in grote, gemakkelijk gesynthetiseerde fragmenten die algehele complexiteit verminderen; tactische disconnectie lokaal, beschermingsgroep of regioscheikundige besluiten',
+        'Strategisch versimpelt het doel; tactisch regelt lokale details',
         'Strategische disconnectie altijd middenin molecuul; tactische disconnectie altijd aan uiteinden',
         'Beide verwijzen hetzelfde concept, maar "strategisch" gebruikt complexe doelen en "tactisch" eenvoudige',
         'Strategische disconnectie eerste, in orde, zonder flexibiliteit in planningsvolgorde',
@@ -449,7 +449,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In Cram chelatie model voor asymmetrische inductie, waarom chelatie van nucleofiel (of Grignard) door β-amino alcohol of hydroxylgroep overschrijft Felkin-Anh sterische controle?',
       [
-        'Chelaat richt nucleofiel op vaste zijde van carbonyl, oriënteer antiperiplanair aan chelatie groep en overschrijft Felkin sterische argumenten',
+        'Chelatie legt de benaderingszijde vast, overschrijft sterische regels',
         'Chelatie verzwakt C=O binding, koolstof elektrofieler en minder afhankelijk sterische oriëntatie',
         'Felkin-Anh controle geldt alleen niet-chelatie Grignard reagens',
         'Chelatie en Felkin-Anh gelijk belangrijk en geen enkele regel overschrijft selectiviteit',
@@ -460,7 +460,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In enantioselectieve epoxidatie (bijv. Jacobsen katalysator of Katsuki methode), wat is stereochemische rol chirale ligand in enantioselectiviteit bepalen van één zijde prochiraal olefine aanval?',
       [
-        'Chirale katalysator zak creëert diastereomere overgangtoestanden voor twee olefine zijden benadering, één diastereomeer significant lager energie',
+        'De chirale zak creëert diastereomere TS; één wordt bevoordeeld',
         'Katalysator onderscheidt geen olefine zijden; enantioselectiviteit ontstaat zuiver olefine intrinsieke reactiviteit',
         'Bulkige ligand blokkeert fysiek één olefine zijde, verhindert benadering die richting',
         'Ligand induceert tijdelijke chiralcentrum op olefine zelf, richting volgende reactie',
@@ -471,7 +471,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In Ireland-Claisen herschikking, wat is voordeel gebruik silylketenen acetal boven vrije enolaat in termen reactiemechanisme en selectiviteit?',
       [
-        'Silylketenen acetal is pre-georganiseerd, thermisch stabiel (niet basis-gevoelig), ondergaat schonere [3,3]-herschikking zonder bijreacties, Si-O binding faciliteert overgangstoestand organisatie',
+        'De silylketenen acetal geeft een schonere [3,3]-herschikking',
         'Silylgroep werkt als vertrekgroep, zettend herschikking om in SN2 substitutie',
         'Vrije enolaten selectiever maar vereisen stoichiometrische basis; silylacetalen elimineren behoefte',
         'Silylketenen acetal en vrije enolaat geven identieke resultaten, enkel basis differ vereist',
@@ -482,7 +482,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In cascade reacties (of domino reacties), wat bepaalt "auto-katalytische" of "auto-voortplantende" aard bepaalde multi-component cyclisaties?',
       [
-        'Product(en) vroege stap dienen als reactant(en) of katalysator(en) volgende stap, creërend zelf-sustaining reactiesequentie zonder reagens toevoeging',
+        'Vroege producten dienen als reactant of katalysator voor latere stappen',
         'Alle cascade reacties inherent auto-katalytisch wanneer uitgevoerd in één pot',
         'Reactie sneller als product voortdurend uit reactiemengsel wordt verwijderd',
         'Auto-katalyse alleen mogelijk in meerstaps synthesen met minstens drie verschillend reagens',
@@ -493,7 +493,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In klikchemie, bijzonder koper(I)-gekatalyseerde azide-alkyn cyclotoevoeging (CuAAC), waarom is Cu(I) katalysator essentieel voor regioselectiviteit en reactiesnelheid controle?',
       [
-        'Cu(I) activeert alkyn via complexatie, verlaagt HOMO-LUMO gat en mogelijk concerted [3+2] cyclotoevoeging tot 1,4-digesubstitueerde triazool als kinetisch product',
+        'Cu(I) activeert het alkyn voor concerted [3+2] tot 1,4-triazool',
         'Cu(I) werkt als simpel tegenion zonder elektronisch effect alkyn',
         'Reactie gelijk snel zonder koper, maar koper toegevoegd voor veiligheidredenen',
         'Cu(I) katalyseren herschikking initiaal 1,5-triazool isomeer naar thermodynamisch 1,4-product',
@@ -506,7 +506,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In overgangsmetaal-gekatalyseerde C-H functionalisatie, leg selectiviteit uit dat ortho, meta, para-substitutie in areen C-H activering beheerst wanneer richtingsgroep niet sterk coördinerende atoom.',
       [
-        'Elektronische en sterische eigenschappen areen en zwakke chelatie of waterstofbinding interacties tussen katalysator en substraat bepalen plaats selectiviteit; ortho-selectiviteit ontstaat vaak gunstige chelatie, terwijl meta/para ontstaat elektronische of sterische effecten',
+        'Elektronische/sterische eigenschappen en zwakke chelatie bepalen de plaats',
         'Para-selectiviteit universeel voorkeur vanwege resonantiestabilisatie areen π-systeem',
         'Meta-selectiviteit onmogelijk in aromatische C-H activering tenzij deactivering groep aanwezig',
         'Ortho, meta, para-substitutie treden op gelijke waarschijnlijkheid tenzij sterk chelatie richtingsgroep geïntroduceerd',
@@ -517,7 +517,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In context fotochemische [2+2] cyclotoevoeging versus thermale Diels-Alder cyclotoevoeging, hoe Woodward-Hoffmann regels verklaren schijnbare "omkering" stereochemische toegestaan/verboden paden?',
       [
-        'Thermaal [4+2] suprafaciaal-toegestaan (6π, 4n+2); fotochemische [2+2] (4π, 4n) suprafaciaal-toegestaan. Thermaal [2+2] (4π, 4n) suprafaciaal-verboden antarafaciaal-toegestaan (geometrisch moeilijk). Fotoon elektronische staat verandert orbitalensymmetrierelaties.',
+        'De aangeslagen staat verandert orbitalensymmetrie, keert [2+2] om',
         'Fotochemie eenvoudig versnelt thermale paden zonder selectieregels verandering',
         'Diels-Alder reacties zijn fotochemisch terwijl [2+2] cycloaddities thermaal, nooit tegengesteld',
         '"Omkering" kunstgreep oplosmiddeleffecten, niet orbitalensymmetrie',
@@ -528,7 +528,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In enantioselectieve fase-overdrachtskatalyse, welke katalysatorontwerpkenmerken (of katalysatorstructuurmotief) stelt chirale kwaternaire ammonium ion hoge enantiocontrole mogelijk in reacties als asymmetrische epoxidatie of enolaat alkylatie?',
       [
-        'Bulkige, stijf verbonden chirale groepen (vaak spiro of binaphthyl-gebaseerd) op ammonium kation creëren chirale omgeving organiserend ion-paar en schilderend één enolaat zijde aanval tegen',
+        'Bulkige, stijve chirale groepen op het ammoniumion schermen één enolaatzijde af',
         'Eenvoudige alkylketens ammonium centrum voldoende wanneer oplosmiddel zorgvuldig gekozen',
         'Tegenion (bijv. OH⁻ vs. Cl⁻) exclusieve bron stereochemische controle, onafhankelijk ammonium structuur',
         'Fase-overdrachtskatalyse niet bereikt hoge enantioselectiviteit omdat interface inherent achirale',
@@ -539,7 +539,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In natuurproductsynthese, "Kishi regel" (of uitgebreide selectiviteitsmodellen) geleidt 1,3-asymmetrische inductie in aciclische polyolsystemen; leg mechanistische basis uit waarom anti-Felkin trajectorie vaak onverwachte gevallen waarneemt.',
       [
-        'Sterische en elektronische interacties (verborgen sterische/eenzaam paar effecten) in nucleofiel benadering of hydride aan chirale β-gesubstitueerde aldehyde kunnen conformaties bevoordelen verschillend Felkin-Anh voorspelling; conformatie evenwichten en waterstofbinding moduleren selectiviteit',
+        'Verborgen sterische/elektronische effecten kunnen een niet-Felkin conformer bevoordelen',
         'Anti-Felkin uitkomsten altijd vanwege chelatie en nooit zonder hydroxyl of amino groep β-positie',
         'Kishi regel en Felkin-Anh model tegenstrijdig, één moet altijd andere overschrijven',
         'Anti-Felkin selectiviteit ontstaat zuiver elektronische activering aldehyde koolstof door aangrenzend elektron-onttrekkende groepen',
@@ -550,7 +550,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In katalytische asymmetrische C-C koppeling via Pd-gekatalyseerde kruis-koppeling, leg oorsprong enantiotrouwheid uit (of gebrek) wanneer Pd-alkyl intermediair stereogene koolstof draagt.',
       [
-        'Enantiotrouwheid hangt af Pd-C bindingsstabiliteit en reductieve eliminatiesnelheid relatief β-waterstof eliminatie en isomerisatie; stereogene Pd-alkyl dat reductief elimineert sneller dan racemisatie behoudt enantiozuiverheid',
+        'Trouwheid hangt af of reductieve eliminatie racemisatie voorblijft',
         'Pd-alkyl intermediaten altijd stereochemie inversie tijdens koppeling vanwege oxidatieve toevoegingnnatuur',
         'Enantiotrouwheid onmogelijk in kruis-koppeling; stereogene alkylgroepen altijd verloren of verward',
         'Alleen chirale liganden op palladium kunnen stereochemische trouwheid induceren; substraatstereoochemie irrelevant',
@@ -561,7 +561,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In polymeersyntheseeg, leg uit waarom gecontroleerde radicaalpolymerisatie (ATRP of RAFT) smalle polydispersiteit en blokko-polymeren toegang mogelijk maakt, contrasteerend mechanisme met levende anionische polymerisatie.',
       [
-        'CRP handhaaft evenwicht tussen dormant alkylhalogenide en actief radicaal, houdt [radicaal] laag en minimaliseert beëindiging; RAFT gebruikt keten-overdracht evenwicht. Anionische polymerisatie irreversibel groeiend (geen dormant), sneller, maar functionaalgroep incompatibel.',
+        'CRP houdt [radicaal] laag via een dormant/actief evenwicht',
         'ATRP en RAFT gebruiken anionische intermediaten, essentieel gelijk aan levende anionische polymerisatie',
         'Levende anionische polymerisatie breder polydispersiteit dan ATRP omdat geen evenwichtcontrole',
         'Gecontroleerde radicaalpolymerisatie kan blokko-polymeren niet maken omdat radicalen niet lang genoeg leven',
@@ -572,7 +572,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In totaalsynthese van complexe natuurproduct, hoe "beschermingsgroep-vrij" of "minimalist beschermingsgroep" strategieën verschillen in filosofie en uitvoering van traditionele routes, wat zijn sleutel synthetische uitdagingen?',
       [
-        'Beschermingsgroep-vrije synthese exploiteert inherente chemoselectiviteit en reactiviteitverschillen, verminderend of eliminerend covalente bescherming; vereist precieze functionaalgroepvolgorde, orthogonale reactiviteit en vaak hoge-temperatuur of onconventionele voorwaarden',
+        'Het benut inherente chemoselectiviteit in plaats van covalente bescherming',
         'Beschermingsgroep-vrije synthese alleen mogelijk voor natuurproducten met enkel functionaalgroep',
         'Traditionele routes universeel korter dan beschermingsgroep-vrije routes',
         'Beschermingsgroep-vrije synthese gebruikt dezelfde reagens en transformaties als traditionele synthesen, enkel benaming verschillend',
@@ -583,7 +583,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In asymmetrische katalyse gebruik chirale bisfosfine liganden (bijv. BINAP, DuPhos), leg oorsprong "beet hoek" uit en hoe het reactiviteit en enantioselectiviteit beïnvloedt in kruis-koppeling of hydrogeningereacties.',
       [
-        'Beethoek (P-M-P) bepaalt geometrie metaal coördinatiesfeer, stuurend sterische benadering coördinatieplek en benadering oriëntatie; smalle beethoek (bijv. DuPhos) creëert beperkend zak, terwijl brede beethoek (bijv. BINAP) groter substraat benadering toestaat',
+        'Beethoek (P-M-P) bepaalt de coördinatiegeometrie en sterische ruimte',
         'Beethoek bepaald zuiver lengte fosfor-bevattende linker en beïnvloedt niet reactiviteit',
         'Alle chirale bisfosfines hebben dezelfde beethoek ongeacht structuur',
         'Beethoek beïnvloedt katalysatorkleur en oplosbaarheid maar niet reactiviteit of selectiviteit',
@@ -594,7 +594,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In synthetische organische chemie, wat is doel en mechanistische voordeel gebruik "bulkige nucleofiel" of "geremd reductiemiddel" in selectieve transformatie waar kleinere nucleofiel zou lijden bijreacties?',
       [
-        'Bulkige nucleofielen verminderen sterisch belemmerde of secundaire/tertiaire elektrofiele centra benadering door sterische uitsluiting, onderdrukkend ongewenste reacties minder belemmerde sites (bijv. LiAlH(OtBu)3 vs. LiAlH4 selectieve ketoon reductie aanwezigheid aldehyden of esters)',
+        'Bulkige nucleofielen vermijden belemmerde sites door sterische uitsluiting',
         'Bulkige nucleofielen sneller dan kleine vanwege elektronische activering',
         'Bulkige nucleofielen kunnen sterisch belemmerde sites niet benaderen, dus gebruikt wanneer selectiviteit minder belemmerde sites gewenst',
         'Nucleofiel grootte onafhankelijk selectiviteit; alleen oplosmiddelpolariteit belang',
@@ -605,7 +605,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In context organokatalyse (imidazolidinon of thiourea katalyse), leg uit hoe waterstofbinding tussen katalysator en substraat chirale microomgeving creëert leidend hoge enantioselectiviteit zonder metaalcentrum.',
       [
-        'Waterstofbinding katalysator functionaalgroepen (bijv. N-H en C=O in imidazolidinon, N-H in thioureas) naar substraat carbonyl of andere polaire groepen pre-organiseert substraat en diastereomeer onderscheidt twee enantiogezydes; overgangstoestand gestabiliseerd via laag-barrière waterstofbinding',
+        'Waterstofbinding pre-organiseert het substraat en onderscheidt de twee zijden',
         'Waterstofbinding organokatalyse incidenteel en draagt niet selectiviteit bij',
         'Organokatalysatoren bereiken selectiviteit zuiver sterische bulk, geen elektrostatisch of waterstofbinding component',
         'Waterstofbinding en overgangstoestandorganisatie relevant alleen metaalkatalyse',
@@ -616,7 +616,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In macrocyclische synthese en ring-sluitende metathese (RCM), leg uit hoe substraatstructuur (ringgrootte, alkeen geometrie en substitutiepatroon) RCM evenwicht en kinetiek beïnvloedt en neiging naar ongewenste oligomerisatie.',
       [
-        'RCM selectiviteit beheerst Thorpe-Ingold effecten (spanning verlichting), thermodynamische alkeen productsstabiliteit en kinetiek cyclisatie relatief bimoleculeaire olefine metathese (intermoleculaire koppeling en oligomerisatie); groter, minder gespannen ringen bevoordelen RCM wanneer kinetieke factoren (intramoleculaire concentratie, chelatie) overwinnen entropie barrières',
+        'Thorpe-Ingold effecten en intramoleculaire kinetiek bevoordelen RCM',
         'Alle ringgrootten sluiten gelijk efficiënt in RCM',
         'RCM oligomerisatie onvermijdbaar en kan niet onderdrukt substraatontwerp',
         'Alkeen geometrie (E/Z) irrelevant RCM selectiviteit en productdistributie',
@@ -627,7 +627,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In totaalsyntheseplanning, wat onderscheidt "sleutel strategische transformatie" van routine stap, hoe leidt dit retrosyntetische analyse?',
       [
-        'Sleuteltransformatie creëert meerdere stereocentra of complexe ringsystemen één stap; ontdekking bepaalt vaak gehele synthetische strategie en maakt mogelijk kortere routes ondanks matige opbrengst',
+        'Bouwt complexiteit (stereocentra, ringen) in één stap en bepaalt de strategie',
         'Sleuteltransformaties altijd finale stappen synthese',
         'Alle transformaties gelijk belangrijk in routeoptimalisatie',
         'Sleuteltransformaties moeten reacties goed-gevestigd literatuur met >95% opbrengst',
@@ -638,7 +638,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In fotochemische organische synthese, leg verschil uit tussen Type I en Type II fotochemische mechanisme in termen fotogeiniteerde intermediaten en selectiviteit uitkomsten.',
       [
-        'Type I (radicaalspad): aangeslagen staat haalt H af of fragmentatie geeft radicalen; Type II (energieoverdracht): aangeslagen staat overdraagt energie grondtoestand substraat of triplet-zuurstof, genererend singlet-zuurstof soorten of substraat triplet',
+        'Type I geeft radicalen; Type II draagt energie over (singlet-zuurstof)',
         'Beide typen genereren identieke producten en verschillen enkel mechanisme nomenclatuur',
         'Type I vereist zichtbaarlicht; Type II vereist UV licht',
         'Type II sneller omdat singlet-zuurstof reactiever radicalen',
@@ -649,7 +649,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In enzymatische katalyse toegepast organische synthese, wat voordeel geleide evolutie enzymen boven engineeren enkele actieve plaats op structuur voorspellingen?',
       [
-        'Geleide evolutie bemonstert uit sequentiereeks iteratief, identificerend varianten verbeterde keersnelheid, substraat bereik of nieuwe selectiviteit zonder structuurkennis; mutagenese screening verslaat rationaal ontwerp niet-intuïtieve oplossingen',
+        'Geleide evolutie bemonstert sequentieruimte voor niet-intuïtieve varianten',
         'Geleide evolutie langzamer en minder efficiënt rationaal ontwerp',
         'Rationaal ontwerp vindt altijd optimaal enzymvarianten eerst',
         'Geleide evolutie kan niet enantioselectiviteit bereiken voorbij start enzym',
@@ -660,7 +660,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In groene chemie en atoomeconomie, hoe "atoomeconomie" concept verschilt van "opbrengst" in evalueren milieugunstigheid synthese route?',
       [
-        'Atoomeconomie meet fractie atomen uit startmaterialen geïncorporeerd eindig product (theoretisch max 100%); opbrengst meet percentage theoretisch product verkregen. Beide essentieel—hoge atoomeconomie met lage opbrengst verspilt atomen en oplosmiddel; lage atoomeconomie verspilt grondstof ondanks opbrengst',
+        'Atoomeconomie is theoretisch atoomgebruik; opbrengst is werkelijke output',
         'Atoomeconomie en opbrengst identieke termen',
         'Opbrengst belangrijker atoomeconomie omdat hoge opbrengst minimaal afval betekent',
         'Atoomeconomie irrelevant wanneer reactie uitgevoerd groene oplosmiddel',
