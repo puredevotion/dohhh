@@ -132,7 +132,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
         'C6H5-NH2 with a benzyl substituent on N',
       ],
       0,
-      'A primary amine has one alkyl/aryl group on nitrogen and two hydrogens. Secondary amines have two groups; tertiary amines have three; the last option is secondary.',
+      'A primary amine has one alkyl/aryl group on nitrogen and two hydrogens. Secondary amines have two groups; tertiary amines have three; N-substituted anilines are also secondary.',
     ],
     [
       'What is the stereochemical outcome of hydrogenation of an alkene using H2 and a catalyst?',

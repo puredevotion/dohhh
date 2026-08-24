@@ -132,7 +132,7 @@ export const ORGANIC_CHEMISTRY: CategoryContent = {
         'C6H5-NH2 met een benzylsubstituent op N',
       ],
       0,
-      'Een primair amine heeft één alkyl-/arylgroep op stikstof en twee waterstofatomen. Secundaire aminen hebben twee groepen; tertiaire aminen hebben drie; de laatste optie is secundair.',
+      'Een primair amine heeft één alkyl-/arylgroep op stikstof en twee waterstofatomen. Secundaire aminen hebben twee groepen; tertiaire aminen hebben drie; N-gesubstitueerde anilinen zijn ook secundair.',
     ],
     [
       'Wat is de stereochemische uitkomst van hydrogenering van een alkeen met H2 en katalysator?',
