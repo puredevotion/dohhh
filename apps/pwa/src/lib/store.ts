@@ -41,7 +41,6 @@ import {
   GameSession,
   loadEvents,
   loadIdentity,
-  PACK_HASH_PREFIX_LENGTH,
   saveEvents,
   saveIdentity,
   webStore,
@@ -67,15 +66,25 @@ function packHashFor(locale: Locale): string {
 }
 
 /**
- * A short, eyeballable stand-in for "do these two phones have the same
- * build" - the actual thing that matters here, since the join protocol
- * refuses a peer on a different question pack anyway. Same length as the
- * ticket's own truncated hash (see PACK_HASH_PREFIX_LENGTH in @dohhh/net) so
- * what a host reads off their own screen is exactly what a joiner's ticket
- * carries, not some other truncation of the same hash.
+ * A legible stand-in for "do these two phones have the same build" - the
+ * actual match is still enforced by the join protocol's full pack hash
+ * (packHashFor), which refuses a peer on a different question pack anyway.
+ * A hash prefix answered the same question but wasn't eyeballable; a build
+ * timestamp is both comparable at a glance and sorts the way you'd expect.
+ * YYMDHHii, e.g. 268242022 for 2026-08-24 20:22 - fixed to UTC (not the
+ * device's local zone) so two phones in different timezones still show the
+ * identical string for the identical build. Month is unpadded by design.
  */
-export function shortPackVersion(locale: Locale): string {
-  return packHashFor(locale).slice(0, PACK_HASH_PREFIX_LENGTH);
+export function buildVersionLabel(): string {
+  const d = new Date(__BUILD_TIME__);
+  const pad2 = (n: number) => String(n).padStart(2, '0');
+  return [
+    pad2(d.getUTCFullYear() % 100),
+    String(d.getUTCMonth() + 1),
+    pad2(d.getUTCDate()),
+    pad2(d.getUTCHours()),
+    pad2(d.getUTCMinutes()),
+  ].join('');
 }
 /** How long the solo dealer waits before dealing the next question - exported so Play.tsx's countdown matches it exactly. */
 export const SOLO_DEAL_DELAY_MS = 20_000;

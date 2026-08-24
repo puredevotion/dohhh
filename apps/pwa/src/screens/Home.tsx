@@ -11,7 +11,8 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { navigate } from '../lib/router.js';
-import { shortPackVersion, useApp } from '../lib/store.js';
+import { buildVersionLabel, useApp } from '../lib/store.js';
+import { useSWUpdate } from '../lib/swUpdate.js';
 import { Screen } from '../ui/atoms.jsx';
 
 export function Home(): ReactNode {
@@ -24,6 +25,8 @@ export function Home(): ReactNode {
   const resume = useApp((s) => s.resume);
   const locale = useApp((s) => s.locale);
   const setLocale = useApp((s) => s.setLocale);
+  const checkForUpdate = useSWUpdate((s) => s.checkNow);
+  const checkingForUpdate = useSWUpdate((s) => s.checking);
   const [resumable, setResumable] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [draftName, setDraftName] = useState('');
@@ -140,9 +143,19 @@ export function Home(): ReactNode {
               <span className="text-xs text-muted underline">{t('rename')}</span>
             </button>
           )}
-          <p className="mt-1 font-mono text-xs text-muted">
-            {t('pack_version', { hash: shortPackVersion(locale) })}
-          </p>
+          <div className="mt-1 flex items-center gap-2">
+            <p className="font-mono text-xs text-muted">
+              {t('pack_version', { time: buildVersionLabel() })}
+            </p>
+            <button
+              type="button"
+              className="text-xs text-muted underline disabled:opacity-50"
+              disabled={checkingForUpdate}
+              onClick={() => void checkForUpdate()}
+            >
+              {checkingForUpdate ? t('checking_for_update') : t('check_for_update')}
+            </button>
+          </div>
         </div>
 
         <div className="flex flex-col gap-3">

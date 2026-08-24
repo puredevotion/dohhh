@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import { useRegisterSW } from 'virtual:pwa-register/react';
 
+import { useSWUpdate } from './lib/swUpdate.js';
+
 /** How often to poll for a new deploy while a tab sits open. */
 const UPDATE_CHECK_INTERVAL_MS = 60_000;
 
@@ -10,6 +12,10 @@ const UPDATE_CHECK_INTERVAL_MS = 60_000;
  * interval and surface a banner instead of reloading out from under anyone -
  * a redeploy mid-game is exactly what the README says never to do (R-15), so
  * the player decides when, not the app.
+ *
+ * `useRegisterSW` must only be called from one place, so the registration it
+ * produces is handed to `useSWUpdate` - that's what lets Home's "check for
+ * updates" button trigger a check without a second registration.
  */
 export function UpdatePrompt(): ReactNode {
   const {
@@ -17,6 +23,7 @@ export function UpdatePrompt(): ReactNode {
     updateServiceWorker,
   } = useRegisterSW({
     onRegisteredSW(_url, registration) {
+      useSWUpdate.getState().setRegistration(registration ?? null);
       if (registration === undefined) return;
       setInterval(() => {
         void registration.update();

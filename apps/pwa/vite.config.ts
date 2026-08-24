@@ -4,6 +4,15 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  // A fixed UTC build timestamp, baked in at build time - not per-load - so
+  // every device running the same deploy shows the exact same string. This
+  // is what Home's "pack version" line displays: two phones comparing this
+  // number is a sortable, legible stand-in for "same build?" that a hash
+  // prefix never was. Falls back to the build's own start time in dev
+  // (`vite` re-evaluates config once per server start, not per request).
+  define: {
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   // Relative base so the built app runs from any static host or subpath, which
   // keeps deployment to a plain `cp -r dist/`. Note that the host still has to
   // be a secure context: Trystero hashes the room topic through crypto.subtle,
