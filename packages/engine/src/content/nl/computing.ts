@@ -22,7 +22,7 @@ export const SILICON: CategoryContent = {
       'Bij welke golflengte werkt EUV-lithografie?',
       ['13,5 nm', '193 nm', '248 nm', '1,06 um'],
       0,
-      "193 nm is ArF-immersie, het werkpaard dat het aanvult in plaats van vervangt; 248 nm is KrF.",
+      "193 nm is ArF-immersie, het werkpaard dat EUV aanvult in plaats van vervangt; 248 nm is KrF.",
     ],
     [
       'Wat verandert een FinFET ten opzichte van een planaire transistor?',
@@ -47,7 +47,7 @@ export const SILICON: CategoryContent = {
       '32 threads op NVIDIA-hardware, historisch 64 bij AMD. Daardoor kosten afwijkende branches binnen de groep je beide paden.',
     ],
     [
-      'Waarom werden high-k dielectrica met metalen gates geintroduceerd?',
+      'Waarom werden high-k dielectrica met metalen gates geïntroduceerd?',
       [
         'Om de gate-capaciteit hoog te houden terwijl de tunnellekstroom die dun siliciumdioxide veroorzaakte, wordt beperkt',
         'Om de doorslagspanning van de gate-stack onder overdrive te verhogen en zo de betrouwbaarheid op lange termijn te verbeteren',
@@ -61,7 +61,7 @@ export const SILICON: CategoryContent = {
       'Wat is een reticle?',
       [
         'Het gepatroneerde masker waarvan het beeld op de wafer wordt geprojecteerd',
-        'Het uitlijnraster dat voor de eerste laag in de wafer wordt geetst',
+        'Het uitlijnraster dat voor de eerste laag in de wafer wordt geëtst',
         'Het metrologiedoel dat wordt gebruikt om overlay-fouten te meten',
         'Het frame dat de wafer plat houdt tijdens de belichting',
       ],
@@ -108,7 +108,7 @@ export const SILICON: CategoryContent = {
       [
         'De effectieve kanaalbreedte wordt continu instelbaar via de sheetbreedte, in plaats van gekwantiseerd door het aantal fins',
         'De gate wordt onder het kanaal geplaatst om ruimte boven het kanaal vrij te maken voor bedrading',
-        'Het kanaal wordt verticaal georienteerd, waardoor de gate-lengte volledig loskomt van de footprint van het apparaat',
+        'Het kanaal wordt verticaal georiënteerd, waardoor de gate-lengte volledig loskomt van de footprint van het apparaat',
         'Bron- en draincontacten verhuizen naar de achterkant van de wafer',
       ],
       0,
@@ -123,14 +123,14 @@ export const SILICON: CategoryContent = {
         'De grootte van de L2-cache ten opzichte van de werkset',
       ],
       0,
-      'En hoge occupancy is niet het doel op zich: een kernel met genoeg instructieniveau-parallellisme kan de machine bij lage occupancy al verzadigen.',
+      'Een hoge occupancy is niet het doel op zich: een kernel met genoeg instructieniveau-parallellisme kan de machine bij lage occupancy al verzadigen.',
     ],
   ],
   professor: [
     [
       'Waarom moet EUV-optiek reflectief zijn en in vacuum werken?',
       [
-        'Elk materiaal absorbeert sterk bij 13,5 nm, waardoor het systeem Mo/Si-multilaag-Bragg-spiegels gebruikt en geen lenzen of lucht kan gebruiken',
+        'Elk materiaal absorbeert sterk bij 13,5 nm, waardoor het systeem Mo/Si-multilaag-Bragg-spiegels gebruikt in plaats van lenzen en niet door lucht kan werken',
         'Verschillen in brekingsindex bij 13,5 nm zijn te klein om de bundel nuttig te buigen, dus worden in plaats daarvan spiegels met scherende inval gebruikt',
         'De plasmabron zendt een te breed spectrum uit voor refractieve correctie',
         'Vacuum is alleen nodig om het masker te beschermen tegen koolwaterstofvervuiling',
@@ -161,7 +161,7 @@ export const SILICON: CategoryContent = {
       'Yield schaalt slecht met oppervlakte, dus het opsplitsen van een groot ontwerp is vaak simpelweg goedkoper - en UCIe bestaat om de interface een commodity te maken in plaats van een geheim per leverancier.',
     ],
     [
-      'Waarom verschuiven rekenunits met verlaagde precisie (tensor cores en equivalenten) waar de prestaties van een accelerator worden beperkt?',
+      'Waarom verschuift het gebruik van rekenunits met verlaagde precisie (tensor cores en equivalenten) de plek waar de prestaties van een accelerator worden beperkt?',
       [
         'Ze verhogen de rekendoorvoer veel sneller dan de geheugenbandbreedte, waardoor meer kernels bandbreedtegebonden worden op de roofline',
         'Ze maken on-chip caches overbodig voor dichte lineaire algebra',
@@ -210,19 +210,19 @@ export const SILICON: CategoryContent = {
     ],
     [
       'Wat is het verschil tussen silicium en germanium als halfgeleiders?',
-      ['Silicium heeft een grotere bandgap, is veel voorkomender en is thermisch stabieler; germanium heeft lagere ladingsdragerbeweeglijkheid', 'Silicium wordt nooit in moderne elektronica gebruikt omdat het te fragiel is', 'Germanium geleid beter bij alle temperaturen', 'Silicium kan niet met fosfor worden gedoteerd'],
+      ['Silicium heeft een grotere bandgap, komt veel vaker voor en is thermisch stabieler; germanium heeft een lagere ladingsdragerbeweeglijkheid', 'Silicium wordt nooit in moderne elektronica gebruikt omdat het te fragiel is', 'Germanium geleidt beter bij alle temperaturen', 'Silicium kan niet met fosfor worden gedoteerd'],
       0,
-      'Siliciums grotere bandgap (1,1 eV vs 0,67 eV) en overvloed maakten het de industriestandaard ondanks germaniums vroege gebruik.',
+      'Siliciums grotere bandgap (1,1 eV tegenover 0,67 eV) en overvloed maakten het tot industriestandaard, ondanks het vroege gebruik van germanium.',
     ],
     [
       'Wat is de relatie tussen transistorgrootte en verwerkingsknooppunt?',
       ['Een kleinere node (bijv. 5 nm) betekent over het algemeen kleinere transistors en hogere dichtheid', 'Knooppuntnamen verwijzen alleen naar vervaardigingskosten, niet naar fysieke grootte', 'Kleinere knoopnummers geven langzamere transistors aan', 'Knooppuntnamen hebben geen verband met werkelijke transistorafmetingen'],
       0,
-      'Verwerkingsknooppunten bepalen de minimale kenmerkomvang en interconnectdichtheid, wat hogere transistoraantallen per oppervlakte-eenheid mogelijk maakt.',
+      'Verwerkingsknooppunten bepalen de minimale kenmerkgrootte en interconnectdichtheid, wat hogere transistoraantallen per oppervlakte-eenheid mogelijk maakt.',
     ],
     [
       'Waar verwijst "lekstroom" naar in halfgeleiderinrichtingen?',
-      ['Ongewenste stroomstroom door een transistor in de uitgeschakelde toestand', 'Vermogen dat tijdens normale werking wordt verbruikt', 'Elektromagnetische straling die door het apparaat wordt uitgezonden', 'Verlies van materiaal door oxidatie'],
+      ['Ongewenste stroom door een transistor in de uitgeschakelde toestand', 'Vermogen dat tijdens normale werking wordt verbruikt', 'Elektromagnetische straling die door het apparaat wordt uitgezonden', 'Verlies van materiaal door oxidatie'],
       0,
       'Lekstroom is statische vermogensverspreiding; deze stijgt exponentieel met temperatuur en beperkt de batterijduur in mobiele apparaten.',
     ],
@@ -230,7 +230,7 @@ export const SILICON: CategoryContent = {
       'Wat is een fotomasker?',
       ['Een sjabloon met een patroon van transparante en ondoorzichtige gebieden om een circuitontwerp op een wafer over te dragen', 'Een beschermingsdekking voor de fotoresist tijdens bakken', 'Een hulpmiddel voor het meten van de golflengte van licht', 'Een chemische verbinding die wordt gebruikt om fotoresist te ontwikkelen'],
       0,
-      'Het fotomasker wordt aan licht blootgesteld; het doorgelaten patroon bereikt de fotoresist-gecoate wafer eronder.',
+      'Het fotomasker wordt aan licht blootgesteld; het doorgelaten patroon bereikt de met fotoresist gecoate wafer eronder.',
     ],
     [
       'Wat is het doel van fotoresist in halfgeleiderverwerking?',
@@ -252,27 +252,27 @@ export const SILICON: CategoryContent = {
     ],
     [
       'Wat is het doel van een diffusiestap in halfgeleiderverwerking?',
-      ['Dopantatomen in het siliciumsubstraat verplaatsen door verhitten, waardoor ze thermisch kunnen verspreiden', 'Overtollige fotoresist na blootstelling verwijderen', 'De dikte van gedeponeerde lagen meten', 'De wafer tussen verwerkingsstappen afkoelen'],
+      ['Dopantatomen in het siliciumsubstraat laten diffunderen door middel van verhitting', 'Overtollige fotoresist na blootstelling verwijderen', 'De dikte van gedeponeerde lagen meten', 'De wafer tussen verwerkingsstappen afkoelen'],
       0,
       'Diffusie verplaatst dopanten van het oppervlak naar de massa en creëert gedoteerde regio\'s die de transistorstructuur vormen.',
     ],
     [
       'Wat is etsen in halfgeleiderproductie?',
-      ['Het proces van selectief materiaal verwijderen (oxide, polysilicium of metaal) met chemische of fysieke middelen', 'Een methode om nieuw materiaal op de wafer aan te brengen', 'Een techniek om elektrische eigenschappen te meten', 'Een verhittingsproces om coatings uit te harden'],
+      ['Het proces waarbij materiaal (oxide, polysilicium of metaal) selectief wordt verwijderd met chemische of fysieke middelen', 'Een methode om nieuw materiaal op de wafer aan te brengen', 'Een techniek om elektrische eigenschappen te meten', 'Een verhittingsproces om coatings uit te harden'],
       0,
       'Nat etsen gebruikt vloeibare chemicaliën; droog etsen gebruikt ion- of plasmabombardement. Beide zijn selectief op basis van het fotomasker.',
     ],
     [
       'Wat is een p-n-junctie?',
-      ['De grens tussen p-type en n-type halfgeleidermateriaal, vormt de basis van dioden en transistors', 'Een verbindingspunt in een printplaat', 'Een meetinstrument dat bij tests wordt gebruikt', 'Een chemische bindingsmethode'],
+      ['De grens tussen p-type en n-type halfgeleidermateriaal vormt de basis van dioden en transistors', 'Een verbindingspunt in een printplaat', 'Een meetinstrument dat bij tests wordt gebruikt', 'Een chemische bindingsmethode'],
       0,
-      'Bij de junctie creëren diffusie van meerderheidsmeerstellers en elektrostatische krachten een depletiegebied dat stroomstroom controleert.',
+      'Bij de junctie creëren diffusie van meerderheidsladingsdragers en elektrostatische krachten een depletiegebied dat de stroom controleert.',
     ],
     [
       'Waar staat "CMOS" voor?',
-      ['Complementaire metaaloxydehalfgeleider, combineert n-type en p-type transistors op dezelfde chip', 'Common-Modular Operating System', 'Crystalline Metal-Oxide Surface', 'Coordinated Multi-Object Structure'],
+      ['Complementaire metaaloxidehalfgeleider, combineert n-type en p-type transistors op dezelfde chip', 'Common-Modular Operating System', 'Crystalline Metal-Oxide Surface', 'Coordinated Multi-Object Structure'],
       0,
-      'CMOS paren nMOS- en pMOS-transistors; omdat slechts één tegelijk geleidt, is statische vermogensverspreiding minimaal.',
+      'CMOS paart nMOS- en pMOS-transistors; omdat slechts één tegelijk geleidt, is statische vermogensverspreiding minimaal.',
     ],
   ],
 };
@@ -280,7 +280,7 @@ export const SILICON: CategoryContent = {
 export const SOFTWARE: CategoryContent = {
   msc: [
     [
-      'Wat betekent referentiele transparantie?',
+      'Wat betekent referentiële transparantie?',
       [
         'Een expressie mag worden vervangen door zijn waarde zonder de betekenis van het programma te veranderen',
         'Een functie mag vanuit elke module worden aangeroepen zonder dat een expliciete import-declaratie nodig is',
@@ -288,7 +288,7 @@ export const SOFTWARE: CategoryContent = {
         'Namen mogen in een binnenliggende scope worden geschaduwd zonder ambiguiteit',
       ],
       0,
-      'Het is de eigenschap die equationeel redeneren, common-subexpression-eliminatie en luie evaluatie toestaat - en precies de eigenschap die bijwerkingen vernietigen.',
+      'Het is de eigenschap die equationeel redeneren, common-subexpression-eliminatie en luie evaluatie toestaat - en precies de eigenschap die bijwerkingen vernietigt.',
     ],
     [
       "Wat begrenst de wet van Amdahl?",
@@ -299,7 +299,7 @@ export const SOFTWARE: CategoryContent = {
         'Het maximale nuttige aantal threads bij een vaste geheugenbandbreedte',
       ],
       0,
-      "De wet van Gustafson is het complementaire kader: houd de tijd vast en laat het probleem groeien, dan telt het seriele deel minder.",
+      "De wet van Gustafson is het complementaire kader: houd de tijd vast en laat het probleem groeien, dan telt het seriële deel minder.",
     ],
     [
       'Wat is een monad, minimaal gezegd?',
@@ -307,7 +307,7 @@ export const SOFTWARE: CategoryContent = {
         'Een typeconstructor met unit- en bind-operaties die aan links-identiteit, rechts-identiteit en associativiteit voldoen',
         'Elk type dat het mappen van een functie over zijn inhoud ondersteunt',
         'Een container die tot een enkele waarde kan worden gevouwen',
-        'Een typeklasse die sequentiele compositie van pure functies biedt, samen met een identiteitselement en een associativiteitswet',
+        'Een typeklasse die sequentiële compositie van pure functies biedt, samen met een identiteitselement en een associativiteitswet',
       ],
       0,
       'Een functie over een container mappen is een functor. De wetten zijn de essentie - een bind zonder die wetten geeft je niets van het redeneervermogen waarvoor je de abstractie wilde.',
@@ -321,7 +321,7 @@ export const SOFTWARE: CategoryContent = {
     [
       'Wat legt een happens-before-relatie vast in een geheugenmodel?',
       [
-        'Een partiele ordening die garandeert dat de schrijfacties van een thread zichtbaar zijn voor een andere thread',
+        'Een partiële ordening die garandeert dat de schrijfacties van een thread zichtbaar zijn voor een andere thread',
         'Een totale ordening op alle geheugenoperaties over alle threads',
         'Dat twee operaties niet door de compiler mogen worden geherordend',
         'Dat een operatie voltooid is voordat een volgende instructie wordt uitgegeven',
@@ -340,18 +340,18 @@ export const SOFTWARE: CategoryContent = {
         'Applicatief ondersteunt het mappen over meerdere argumenten tegelijk, wat een monadische bind niet kan uitdrukken',
       ],
       0,
-      'Het praktische gevolg is analyseerbaarheid: omdat applicatieve structuur statisch is, kan die worden geinspecteerd, gebundeld en geparallelliseerd - iets wat monadische bind verhindert.',
+      'Het praktische gevolg is analyseerbaarheid: omdat applicatieve structuur statisch is, kan die worden geïnspecteerd, gebundeld en geparallelliseerd - iets wat monadische bind verhindert.',
     ],
     [
-      'Wat vereist linearizeerbaarheid dat sequentiele consistentie niet vereist?',
+      'Wat vereist linearizeerbaarheid dat sequentiële consistentie niet vereist?',
       [
-        'Dat elke operatie op een bepaald moment in reele tijd, tussen zijn aanroep en zijn antwoord, in werking lijkt te treden',
+        'Dat elke operatie op een bepaald moment in reële tijd, tussen zijn aanroep en zijn antwoord, in werking lijkt te treden',
         'Dat alle threads schrijfacties in dezelfde totale volgorde waarnemen',
         'Dat operaties op verschillende objecten ook onderling geordend zijn in een enkele globale gebeurtenisreeks',
         'Dat geen operatie oneindig mag blokkeren',
       ],
       0,
-      'Een realtimebeperking, en ze is composeerbaar: een systeem van linearizeerbare objecten is linearizeerbaar, wat voor sequentiele consistentie nadrukkelijk niet geldt.',
+      'Een realtimebeperking, en ze is composeerbaar: een systeem van linearizeerbare objecten is linearizeerbaar, wat voor sequentiële consistentie nadrukkelijk niet geldt.',
     ],
     [
       'Hoe verschillen state-based en operation-based CRDT\'s in hun vereisten?',
@@ -359,7 +359,7 @@ export const SOFTWARE: CategoryContent = {
         'State-based voegt volledige toestanden samen over een join-semilattice; operation-based heeft causale aflevering nodig',
         'State-based vereist exact-eenmalige aflevering; operation-based verdraagt duplicaten',
         'State-based heeft vectorklokken nodig; operation-based heeft die niet nodig',
-        'Operation-based vereist een totale ordening op alle operaties, terwijl state-based slechts een partiele ordening vereist',
+        'Operation-based vereist een totale ordening op alle operaties, terwijl state-based slechts een partiële ordening vereist',
       ],
       0,
       'De afweging is bandbreedte tegenover afleveringsgaranties, en daarom volgt de keuze meestal het transport in plaats van het datatype.',
@@ -370,7 +370,7 @@ export const SOFTWARE: CategoryContent = {
         'Het totale aantal uitgevoerde operaties, en de lengte van het kritieke pad',
         'Het totale geheugenverkeer, en de diepte van de aangeraakte cachehierarchie',
         'Het benodigde aantal processoren, en de daarmee behaalde tijd',
-        'Het seriele deel, en het resterende parallelle deel',
+        'Het seriële deel, en het resterende parallelle deel',
       ],
       0,
       "Brent's theorema begrenst de tijd door work/p + span, en daarom telt het verkleinen van span zelfs wanneer het work al optimaal is.",
@@ -384,7 +384,7 @@ export const SOFTWARE: CategoryContent = {
         'Expressiebomen compileren naar code zonder ooit de tussenliggende datastructuur te materialiseren',
       ],
       0,
-      'Wadlers naam ervoor. Functionele decompositie maakt nieuwe operaties makkelijk en nieuwe gevallen invasief; objectgeorienteerde decompositie doet het omgekeerde.',
+      'Wadlers naam ervoor. Functionele decompositie maakt nieuwe operaties makkelijk en nieuwe gevallen invasief; objectgeoriënteerde decompositie doet het omgekeerde.',
     ],
   ],
   professor: [
@@ -392,15 +392,15 @@ export const SOFTWARE: CategoryContent = {
       'Wat levert parametriciteit op?',
       [
         '"Gratis stellingen": beperkingen op het gedrag van een polymorfe functie, afleidbaar uit alleen haar type',
-        'Een garantie dat typeinferentie voor alle correct getypeerde programma\'s termineert',
+        'Een garantie dat type-inferentie voor alle correct getypeerde programma\'s termineert',
         'Het vermogen om types tijdens het compileren te wissen zonder de semantiek te veranderen',
-        'De zekerheid dat het instantieren van een typevariabele nooit non-terminatie in een programma kan introduceren',
+        'De zekerheid dat het instantiëren van een typevariabele nooit non-terminatie in een programma kan introduceren',
       ],
       0,
       'Reynolds\' abstractiestelling, gepopulariseerd door Wadler. Het is waarom een totale functie van het type `forall a. [a] -> [a]` alleen elementen kan permuteren en weglaten.',
     ],
     [
-      'Wat bieden algebraische effecten en handlers boven monad-transformer-stacks?',
+      'Wat bieden algebraïsche effecten en handlers boven monad-transformer-stacks?',
       [
         'Composeerbare effecten zonder vaste volgorde of de lift-boilerplate die een stack oplegt',
         'Een garantie dat alle effecten precies eenmaal worden uitgevoerd',
@@ -435,8 +435,8 @@ export const SOFTWARE: CategoryContent = {
     [
       'Wat voegt de Curry-Howard-Lambek-correspondentie toe aan Curry-Howard?',
       [
-        'Het categorische been: cartesisch gesloten categorieen, naast bewijzen en programma\'s',
-        'Een behandeling van klassieke logica in plaats van alleen het intuitionistische fragment ervan',
+        'Het categorische been: cartesisch gesloten categorieën, naast bewijzen en programma\'s',
+        'Een behandeling van klassieke logica in plaats van alleen het intuïtionistische fragment ervan',
         'Een verklaring van recursieve types als vaste punten van functors',
         'De uitbreiding van het isomorfisme naar lineaire logica',
       ],
@@ -449,7 +449,7 @@ export const SOFTWARE: CategoryContent = {
       'Wat is een functie in programmering?',
       ['Een benoemd codeblok dat een specifieke taak uitvoert en kan worden hergebruikt', 'Een verklaring die een variabele declareert', 'Een type lus dat code herhaalt', 'Een gegevensstructuur voor het opslaan van lijsten'],
       0,
-      'Functies kapselen logica in, verminderen codeduplica en nemen parameters aan en geven waarden terug.',
+      'Functies kapselen logica in, verminderen codeduplicatie en nemen parameters aan en geven waarden terug.',
     ],
     [
       'Wat is een variabele?',
@@ -461,7 +461,7 @@ export const SOFTWARE: CategoryContent = {
       'Wat is het doel van een lus?',
       ['Een codeblok een opgegeven aantal keren of terwijl een voorwaarde waar is, herhalen', 'Een nieuwe functie definiëren', 'Een opmerking in code creëren', 'De uitvoering van een programma beëindigen'],
       0,
-      'Veelgebruikte lussen zijn for, while en foreach; ze verminderen codeduplica door verklaringen voorwaardelijk uit te voeren.',
+      'Veelgebruikte lussen zijn for, while en foreach; ze verminderen codeduplicatie door verklaringen voorwaardelijk uit te voeren.',
     ],
     [
       'Wat is de tijdscomplexiteit O(n)?',
@@ -497,7 +497,7 @@ export const SOFTWARE: CategoryContent = {
       'Wat is een string in programmering?',
       ['Een reeks tekens die tekst vertegenwoordigt', 'Een type integervariabele', 'Een lus die code herhaalt', 'Een functie die rekenkundige bewerkingen uitvoert'],
       0,
-      'Strings zijn onveranderbaar in veel talen (Java, Python); bewerkingen ervan creëren nieuwe strings in plaats van de origineel te wijzigen.',
+      'Strings zijn onveranderbaar in veel talen (Java, Python); bewerkingen ervan creëren nieuwe strings in plaats van het origineel te wijzigen.',
     ],
     [
       'Wat is het verschil tussen een lijst en een tuple?',
@@ -515,7 +515,7 @@ export const SOFTWARE: CategoryContent = {
       'Wat is een gelinkte lijst?',
       ['Een gegevensstructuur waarbij elk element naar het volgende verwijst, wat dynamische grootte mogelijk maakt zonder voorafgaande toewijzing', 'Een manier om gegevens in oplopende volgorde te sorteren', 'Een techniek voor gegevenscompressie', 'Een methode voor het opslaan van multidimensionale arrays'],
       0,
-      'Gelinkte lijsten hebben O(n)-toegangstijd maar laten efficiënte invoeging en verwijdering toe als u de knoopwijzer hebt.',
+      'Gelinkte lijsten hebben O(n)-toegangstijd maar laten efficiënte invoeging en verwijdering toe als de knoopwijzer al bekend is.',
     ],
     [
       'Wat is een hashtabel?',
@@ -527,11 +527,11 @@ export const SOFTWARE: CategoryContent = {
       'Wat is een object in objectgeoriënteerd programmeren?',
       ['Een instantie van een klasse die gegevens (attributen) en gedrag (methoden) bevat', 'Een variabele die een getal opslaat', 'Een functie die een berekening uitvoert', 'Een type lus'],
       0,
-      'Objecten bundelen staat en gedrag; overerving en polymorfisme laten codeherbbruik en flexibele ontwerpen toe.',
+      'Objecten bundelen staat en gedrag; overerving en polymorfisme laten codehergebruik en flexibele ontwerpen toe.',
     ],
     [
       'Wat is overerving in objectgeoriënteerd programmeren?',
-      ['Een mechanisme waarbij een klasse (subklasse) attributen en methoden erft van een andere klasse (superklasse), codeduplica verminderend', 'Een manier om gegevens in geheugen op te slaan', 'Een techniek voor het versnellen van programma\'s', 'Een methode voor het organiseren van variabelen'],
+      ['Een mechanisme waarbij een klasse (subklasse) attributen en methoden erft van een andere klasse (superklasse), codeduplicatie verminderend', 'Een manier om gegevens in geheugen op te slaan', 'Een techniek voor het versnellen van programma\'s', 'Een methode voor het organiseren van variabelen'],
       0,
       'Overerving maakt is-a-relaties mogelijk; een subklasse kan geërfde methoden negeren voor gespecialiseerd gedrag.',
     ],

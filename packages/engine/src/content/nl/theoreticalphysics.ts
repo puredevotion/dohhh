@@ -55,7 +55,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Het deeltje splitst in kleinere stukken die elk genoeg energie hebben',
       ],
       0,
-      'Tunnelen treedt op omdat de golffunctie niet abrupt bij een barrière stopt. Deze decayert exponentieel maar blijft aan de andere kant niet nul.',
+      'Tunnelen treedt op omdat de golffunctie niet abrupt bij een barrière stopt. Deze vervalt exponentieel maar blijft aan de andere kant niet nul.',
     ],
     [
       'Wat is het primaire verschil tussen bosonen en fermionen?',
@@ -110,7 +110,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Fotonen nemen in frequentie toe wanneer ze door elektronen worden geabsorbeerd',
       ],
       0,
-      'Compton-verstrooiing toont dat fotonen impuls overbrengen zoals deeltjes: verstrooide fotonen hebben langere golflengten. Dit bevestigde het fotonenconcepte.',
+      'Compton-verstrooiing toont dat fotonen impuls overbrengen zoals deeltjes: verstrooide fotonen hebben langere golflengten. Dit bevestigde het fotonconcept.',
     ],
     [
       'Hoe ontstaat kwantisering in het atoommodel van Bohr?',
@@ -165,7 +165,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Gebieden van ruimte waar het onzekerheidsbeginsel niet van toepassing is',
       ],
       0,
-      'Velden zijn de basisontologie van KVT. Deeltjes ontstaan als kwanta—aangestoken toestandsveranderingen boven grondtoestand. Elk deeltjestype stelt uniek veld voor.',
+      'Velden zijn de basisontologie van KVT. Deeltjes ontstaan als kwanta—aangeslagen toestanden boven de grondtoestand. Elk deeltjestype stelt een uniek veld voor.',
     ],
   ],
   msc: [
@@ -186,7 +186,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Hieruit volgen bewegingsvergelijkingen en behoudsgrootheden',
         'Het codeert de waarschijnlijkheidsverdeling van deeltjesposities',
         'Het meet rechtstreeks de totale energie-inhoud van een systeem',
-        'Het specificeert grensvuldigingscondities die deeltjes moeten vervullen',
+        'Het specificeert grensvoorwaarden die deeltjes moeten vervullen',
       ],
       0,
       'De Lagrangiaan dichtheid genereert de theorie: Hamiltons principe en Noethers stelling leveren veldvergelijkingen en behoudswetten rechtstreeks uit de structuur.',
@@ -218,7 +218,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
       [
         'Het voorspelt het bestaan van ijkbosonen (krachtdragers)',
         'Het zorgt ervoor dat alle deeltjes in de theorie met lichtsnelheid bewegen',
-        'Het elimineert de noodzaak om grensvuldigingscondities in berekeningen in te stellen',
+        'Het elimineert de noodzaak om grensvoorwaarden in berekeningen in te stellen',
         'Het bewijst dat alle krachten zich tot zwaartekracht reduceren bij voldoende energie',
       ],
       0,
@@ -233,7 +233,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Het voorspelt de elektronmassa met hoge nauwkeurigheid',
       ],
       0,
-      'Spontane electrozwakke symmetriebreking via Higgs-veld geeft massa aan W/Z-bosonen en fermionen. De Higgs vev (246 GeV) stelt electrozwakke schaal in.',
+      'Spontane elektrozwakke symmetriebreking via het Higgs-veld geeft massa aan W/Z-bosonen en fermionen. De Higgs-vev (246 GeV) bepaalt de elektrozwakke schaal.',
     ],
     [
       'Wat bestuurt de koppelingsconstante in de kwantumveldtheorie?',
@@ -244,7 +244,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Het aantal ruimtelijke dimensies dat toegankelijk voor de theorie is',
       ],
       0,
-      'Koppelingssterkte (α voor QED, αs voor QCD) beheerst interactiewaarschijnlijkheden. Zwakke koppelingen laten storingsberekeningen toe; sterke koppelingen vereisen niet-stooringsmethoden.',
+      'Koppelingssterkte (α voor QED, αs voor QCD) beheerst interactiewaarschijnlijkheden. Zwakke koppelingen laten storingsberekeningen toe; sterke koppelingen vereisen niet-storingsmethoden.',
     ],
     [
       'In de statistische mechanica, wat is de Boltzmann-verdeling?',
@@ -326,13 +326,13 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'In het Standaardmodel, welke rol spelen de W- en Z-bosonen?',
       [
-        'Ze vermittelen de zwakke kernkracht',
+        'Ze dragen de zwakke kernkracht over',
         'Ze dragen sterke kracht tussen quarks in hadronen',
         'Ze binden elektronen aan atoomkernen',
         'Ze verzenden zwaartekrachtaantrekking tussen massieve objecten',
       ],
       0,
-      'W±- en Z-bosonen vermittelen smaakveranderende zwakke interacties. Hun grote massa (~80-91 GeV) maakt zwakke interacties korteafstandig, kernstabiliteit gegeven.',
+      'W±- en Z-bosonen dragen smaakveranderende zwakke interacties over. Hun grote massa (~80-91 GeV) maakt zwakke interacties kortedrachtig, wat kernstabiliteit mogelijk maakt.',
     ],
   ],
   phd: [
@@ -345,18 +345,18 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'De relatie tussen massa en koppelingsterkte in een theorie',
       ],
       0,
-      'β(g)=dg/dln(μ) beheerst werking. Voor QCD, β<0 bij hoge q², drijft asymptotische vrijheid. Fixpunten structureren conforme venster en kritisch gedrag.',
+      'β(g)=dg/dln(μ) beheerst het lopen van de koppeling. Voor QCD drijft β<0 bij hoge q² de asymptotische vrijheid. Fixpunten structureren het conforme venster en het kritische gedrag.',
     ],
     [
       'Welk fysiek mechanisme onderheeft quarkopsluiting in QCD?',
       [
-        'Kleurfluxbuizen hebben spanning; scheiden van quarks maakt nieuwe paren',
+        'Kleurfluxbuizen hebben spanning; het scheiden van quarks maakt nieuwe paren',
         'De sterke kracht heeft oneindige bereik, bindende quarks permanent via potentiaal',
         'Quarks zijn eigenlijk samengestelde objecten van nog kleinere, nog ingeperkte constituenten',
         'Opsluiting is een benadering die breekt bij zeer hoge temperaturen',
       ],
       0,
-      'De niet-abelse structuur van QCD staat conforme fluxbuizen toe. Werk quarks scheiden asymptotisch energie voor paarproductie; singlets vormen zich in plaats daarvan.',
+      'De niet-abelse structuur van QCD staat opsluitende fluxbuizen toe. Het scheiden van quarks kost asymptotisch genoeg energie voor paarproductie; er vormen zich in plaats daarvan nieuwe singlets.',
     ],
     [
       'Wat is de fysieke betekenis van een topologische term in een Lagrangiaan?',
@@ -378,7 +378,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Ze bewijzen dat een theorie inconsistent is en verlaten moet worden',
       ],
       0,
-      'Anomalieën ontstaan wanneer fermionlusses klassieke symmetrieën breken. Het driehoekdiagram (ABB-anomalie) is centraal. Anomalieveregeling beperkt unified theorieën.',
+      'Anomalieën ontstaan wanneer fermionlusses klassieke symmetrieën breken. Het driehoekdiagram (ABB-anomalie) is centraal. Anomalie-annulering beperkt geünificeerde theorieën.',
     ],
     [
       'In effectieve veldtheorie, wat bepaalt powertellingen en organisatie van operatoren?',
@@ -389,7 +389,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'De massahiërarchie van deeltjes in onderliggende theorie',
       ],
       0,
-      'EFT-organisatiebeginsel: hogedimensionale operatoren onderdrukken (∼Λ^(-n)). Dit levert systematische voorspellingen onder afsnijding op, convergente expansies.',
+      'EFT-organisatiebeginsel: hogedimensionale operatoren worden onderdrukt (∼Λ^(-n)). Dit levert systematische voorspellingen onder de afsnijding op, via convergente expansies.',
     ],
     [
       'Wat is het belang van de Calabi-Yau-variëteit in stringtheorie?',
@@ -422,7 +422,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Het elimineert renormalisatie noodzaak in kwantumveldtheorie',
       ],
       0,
-      'AdS/CFT (Maldacena): grote-N ijktheorie ↔ stringzwaartekracht. Sterke koppeling in CFT ↔ zwakke koppeling in zwaartekracht. Inschakelen niet-perturbatieve berekeningen.',
+      'AdS/CFT (Maldacena): grote-N ijktheorie ↔ stringzwaartekracht. Sterke koppeling in CFT ↔ zwakke koppeling in zwaartekracht. Dit maakt niet-perturbatieve berekeningen mogelijk.',
     ],
     [
       'Wat wordt bedoeld met asymptotische veiligheid in kwantumzwaartekracht?',
@@ -444,7 +444,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Dat entropieproductie altijd anomaliecoëfficiënt moet gelijk zijn',
       ],
       0,
-      'c-theorema: centrale lading neemt monotoon af onder RG-evolutie: c_UV > c_IR. Pijlt tijd op RG-niveau; geen terugkeer naar hoger c.',
+      'c-theorema: centrale lading neemt monotoon af onder RG-evolutie: cᵤᵥ > cᵢᵣ. Pijlt tijd op RG-niveau; geen terugkeer naar hoger c.',
     ],
     [
       'Wat is de fysieke oorsprong van zwartgatentropie in stringtheorie?',
@@ -466,18 +466,18 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Ze bewijzen dat koppelingsconstanten rationale getallen moeten zijn',
       ],
       0,
-      'Instantonen: eindige-werking configuraties interpoleert tussen vacuüm verschillend door windingsgetal. Ze geven niet-perturbatieve bijdragen; cruciaal voor theta-afhankelijkheid.',
+      'Instantonen: eindige-werkingconfiguraties interpoleren tussen vacua die verschillen in windingsgetal. Ze geven niet-perturbatieve bijdragen; cruciaal voor theta-afhankelijkheid.',
     ],
     [
       'Wat is het belang van modi in stringtheoriecompactificaties?',
       [
         'Scalaarvelden uit geometrische vervormingen van de verdichting',
-        'Deeltjes die zwakke kernkracht in verdichte theorie vermittelen',
+        'Deeltjes die de zwakke kernkracht in de verdichte theorie overbrengen',
         'Extra dimensies ontoegankelijk voor fysische experimenten',
         'Wiskundige parameters beïnvloedende voorspellingen maar onwaarneembaar in beginsel',
       ],
       0,
-      'Modi (grootte, vorm) parameteriseren verdichtingsruimte. Hun vevs bepalen laagenergetieijkgroep, materiecontent en koppelingen. Modistabilisatie is cruciaal.',
+      'Modi (grootte, vorm) parameteriseren de verdichtingsruimte. Hun vevs bepalen de ijkgroep op lage energie, de materie-inhoud en de koppelingen. Modistabilisatie is cruciaal.',
     ],
     [
       'Welke rol spelen superconforme algebra\'s in supersymmetrische theorieën?',
@@ -499,7 +499,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Evenredig met grenormaliseerde massa, niet koppeling zelf',
       ],
       0,
-      'Één-lus: β=(3λ²)/(16π²)>0. Koppeling loopt naar grotere waarden bij hoge energieën (triviaal fixpunt is UV repulsief). λ ontwikkelt Landau-pool (theorie breekt).',
+      'Op één lus: β=(3λ²)/(16π²)>0. De koppeling loopt naar grotere waarden bij hoge energieën (het triviale fixpunt is UV-repulsief). λ ontwikkelt een Landau-pool (de theorie breekt).',
     ],
   ],
   professor: [
@@ -512,7 +512,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Het elimineert donkere materienoodzaak in kosmologische modellen',
       ],
       0,
-      'Moerasconjecturen (bijvoorbeeld afstandsvermoeden, dS-vermoeden) beperken laagenergetie EFT. Beperken inflatie, quintessence en moduliruimten in realistische stringmodellen.',
+      'Moerasconjecturen (bijvoorbeeld het afstandsvermoeden, het dS-vermoeden) beperken laagenergetische EFT\'s. Ze beperken inflatie, quintessence en moduliruimtes in realistische stringmodellen.',
     ],
     [
       'Hoe zorgen het anomalypolynoom en Green-Schwarz-mechanisme voor 10D-superstringconsistentie?',
@@ -523,7 +523,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Ze vereisen dat alle fermionen identieke massa\'s hebben',
       ],
       0,
-      'Anomalypolynoom moet verdwijnen voor consistentie. GS-mechanisme: X₈ Tr(R²)Tr(F²) annuleert via B∧X termen. Bepaalt ijkgroep (SO(32) of E₈×E₈); essentieel voor 10D geldigheid.',
+      'Het anomalypolynoom moet verdwijnen voor consistentie. GS-mechanisme: X₈ Tr(R²)Tr(F²) annuleert via B∧X-termen. Dit bepaalt de ijkgroep (SO(32) of E₈×E₈); essentieel voor 10D-geldigheid.',
     ],
     [
       'Wat is de resurgentiestructuur in asymptotische reeksen en verband met transseries in veldtheorie?',
@@ -534,7 +534,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Een mechanisme dat renormalisatie in bepaalde theorieën elimineert noodzaak',
       ],
       0,
-      'Resurgentie: transseries-structuur transmueert asymptotische reeks in exacte resultaten via Borel-resommatie. Instantonen, renormalone verschijnen als discontinuïteiten; verbind zwak-sterk dualiteit.',
+      'Resurgentie: de transseries-structuur zet de asymptotische reeks om in exacte resultaten via Borel-resommatie. Instantonen en renormalonen verschijnen als discontinuïteiten, wat een verband legt met zwak-sterk dualiteit.',
     ],
     [
       'Hoe verlicht het Sachdev-Ye-Kitaev-model kwantumzwaartekracht in grote-N-limiet?',
@@ -545,7 +545,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Het toont aan dat holografie alleen op theorieën met grote ijkgroepen van toepassing is',
       ],
       0,
-      'SYK (grote q willekeurige koppelingen): exact, oplosbaar in grote-N. CFT-duaal bestaat; chaosversterkingsfactor λ_L=π/β aanpassingzwarte gaten. AdS₂/CFT₁-paradigma.',
+      'SYK (grote q, willekeurige koppelingen): exact oplosbaar in de grote-N-limiet. Er bestaat een CFT-duaal; de chaosversterkingsfactor λₗ=π/β sluit aan bij zwarte gaten. AdS₂/CFT₁-paradigma.',
     ],
     [
       'Wat is M-theorie en welk bewijs ondersteunt bestaan ervan als verengd raamwerk voor stringdualiëren?',
@@ -567,18 +567,18 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Het toont aan dat gravitonen fundamenteel verschillen van andere deeltjes',
       ],
       0,
-      'Zachtstelling: A_soft(k→0)→Sₖ·A, waarbij Sₖ universeel is. Onthult asymptotische BMS-symmetrieën. Lusextensies: zacht/collineaire limieten beperken IR-structuur zwaartekracht.',
+      'Zachtstelling: A_soft(k→0)→Sₖ·A, waarbij Sₖ universeel is. Dit onthult asymptotische BMS-symmetrieën. Lusextensies: zachte/collineaire limieten beperken de IR-structuur van zwaartekracht.',
     ],
     [
       'Wat betekent trickberekening in verstrengeling-entropie en wat zijn beperkingen?',
       [
-        'Het zet Zₙ=Tr(ρ^n) analytisch voort van n→1 om S_E te bepalen',
+        'Het zet Zₙ=Tr(ρ^n) analytisch voort van n→1 om Sₑ te bepalen',
         'Een methode toepasbaar alleen op vrije veldtheorieën zonder interacties',
         'Een manier entropie berekenen werkend voor alle kwantumsystemen zonder uitzondering',
         'Een techniek bewijzend verstrengeling-entropie altijd volume evenredig is',
       ],
       0,
-      'Replica: Zₙ als padintegraal op n-bladig variëteit; ga naar n→1. Werkend voor vrij/zwak gekoppeld; sterke koppeling kan nieuwe zadelputten hebben (genus hoger).',
+      'Replica: Zₙ als padintegraal op een n-bladige variëteit, waarna men de limiet n→1 neemt. Dit werkt voor vrije/zwak gekoppelde theorieën; bij sterke koppeling kunnen nieuwe zadelpunten optreden (hogere genus).',
     ],
     [
       'Hoe vangen braandynamica en DBI-werking niet-perturbatieve stringeffecten in D-braansystemen?',
@@ -589,7 +589,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Ze tonen aan dat supersymmetrie exact in alle braanconfiguraties is',
       ],
       0,
-      'DBI: √det(g+F); bevat terugwerking, stringcorrecties. Tachyonen signaalinstabiliteit; braantegenbrain-vernietiging bevrijdt straling. Niet-perturbatieve dynamica.',
+      'DBI: √det(g+F); bevat terugwerking en stringcorrecties. Tachyonen signaleren instabiliteit; braan-antibraan-vernietiging bevrijdt straling. Niet-perturbatieve dynamica.',
     ],
     [
       'Wat is de Hirzebruch-handtekeningstelling en hoe beperkt zij anomalieën in spinorelektrodynamica?',
@@ -600,7 +600,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Een verklaring alle variëteiten topologische eigenschappen identiek hebben',
       ],
       0,
-      'Handtekening Thm: τ(M)=∫L-genus. In spinoren op M⁴: chirale anomalie (8π²)⁻¹∫ Tr(F²)=η(grensterm). Verbind ijkzwaartekracht-koppeling aan topologie.',
+      'Handtekening Thm: τ(M)=∫L-genus. Voor spinoren op M⁴: chirale anomalie (8π²)⁻¹∫ Tr(F²)=η(grensterm). Dit verbindt de ijk-zwaartekrachtkoppeling aan topologie.',
     ],
     [
       'Hoe beheersten Regge-limiet en BFKL-vergelijking hogeenergie-verstrooiing in QCD?',
@@ -611,7 +611,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Ze elimineren storingstheorie noodzaak in QCD-berekeningen',
       ],
       0,
-      'Regge: elastische verstrooiing~sᵅ(t) uitwisselingen. BFKL: resum ln(s) ketens, geeft α_P~1.2>1 pommeron. Domineert kleine-x DIS en pp→dijets bij LHC.',
+      'Regge: elastische verstrooiing~sᵅ(t) via uitwisselingen. BFKL: resommeert ln(s)-ketens, wat αₚ~1.2>1 pommeron geeft. Dit domineert kleine-x DIS en pp→dijets bij LHC.',
     ],
     [
       'Wat is holomorfe anomalie in topologische stringtheorie en structuur openbaart zij?',
@@ -622,21 +622,21 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Een symmetrie beschermend stringtheorie kwantumcorrecties',
       ],
       0,
-      'Holomorfe anomalie: ∂F_g/∂t̄≠0 op genus g. Bepaalt recursie; FG instantonen correctie F(t). Cruciaal voor spiegelsmmetrische Gromov-Witten-invarianten berekenen.',
+      'Holomorfe anomalie: ∂F_g/∂t̄≠0 op genus g. Dit bepaalt een recursie waarmee instantonen F(t) corrigeren. Cruciaal voor het berekenen van spiegelsymmetrische Gromov-Witten-invarianten.',
     ],
     [
-      'Hoe ondervinden roosterqcd-simulaties bij eindige baryondichtheid het tekenprobleem en inzicht QCD-faseover gangen?',
+      'Hoe ondervinden roosterQCD-simulaties bij eindige baryondichtheid het tekenprobleem, en welk inzicht geven ze in QCD-faseovergangen?',
       [
         'De fermionische determinant wordt complex bij μ≠0',
-        'Rooster-afstand moet oneindig gereduceerd naar eindige dichtheid toegang',
-        'Tekenvraagstuk is zuiver computationaalcartefact zonder fysieke betekenis',
-        'Het demonstreert QCD-fasediagram identiek op alle dichtheden is',
+        'De roosterafstand moet oneindig worden verkleind om toegang te krijgen tot eindige dichtheid',
+        'Het tekenprobleem is een zuiver computationeel artefact zonder fysieke betekenis',
+        'Het demonstreert dat het QCD-fasediagram identiek is op alle dichtheden',
       ],
       0,
-      'Tekenvraagstuk: det(D+μ)→complex, beëindig belangrijkstemodellering. Oplossing: Taylor-expansie μ, analytische voortzetting uit denkbeeldig μ, functioneel RG. Kaarten QCD-fasediagram.',
+      'Tekenvraagstuk: det(D+μ) wordt complex, wat belangrijkheidsmodellering (importance sampling) onmogelijk maakt. Oplossingen: Taylor-expansie in μ, analytische voortzetting vanuit denkbeeldige μ, functionele RG. Dit brengt het QCD-fasediagram in kaart.',
     ],
     [
-      'Wat betekent F-theorie als geometrisch stringcompactificatieraamwerk en relatie heterotische dualiteit?',
+      'Wat betekent F-theorie als geometrisch stringcompactificatieraamwerk, en wat is de relatie met heterotische dualiteit?',
       [
         'F-theorie is een 12D-formalisme met elliptische vezelbundelgeometrie',
         'Een theorie vereist meer dan 11 fundamentele dimensies',
@@ -644,7 +644,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'Een bewijs zwaartekracht ijkinteracties lage energieën ontkoppelt',
       ],
       0,
-      'F-theorie: type IIB op K3-vezels (τ varieert). Elliptische-curve structuur→ijkgroepen, stof via monodromy. Heterotisch dual: E₈-bundel op K3. Geometrische unificatie.',
+      'F-theorie: type IIB op K3-vezels (τ varieert). Elliptische-curvestructuur → ijkgroepen, materie via monodromie. Heterotisch duaal: E₈-bundel op K3. Geometrische unificatie.',
     ],
     [
       'Hoe verschillen infrarood-divergenties in zwaartekracht van Yang-Mills-theorie en zachte stellingen\' rol in annulering?',

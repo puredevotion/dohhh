@@ -22,7 +22,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Napels',
       ],
       0,
-      'De Medici regeerden Florence als handelaren en bankiers, waardoor zij kunstaars steunden en pausen en koninginnen voortbrachten.',
+      'De Medici regeerden Florence als handelaren en bankiers, waardoor zij kunstenaars steunden en pausen en koninginnen voortbrachten.',
     ],
     [
       'Wat is de term voor de 19e-eeuwse Italiaanse nationalistische beweging die het schiereiland verenigde?',
@@ -88,7 +88,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het Vaticaan sloot een vredesverdrag',
       ],
       0,
-      'In 1870 doorbraken Italiaanse troepen de muren van Rome, eindigde de pauselijke wereldlijke macht en voltooide de eenheid.',
+      'In 1870 doorbraken Italiaanse troepen de muren van Rome. Dit beëindigde de pauselijke wereldlijke macht en voltooide de eenheid.',
     ],
     [
       'In welk jaar werd de Italiaanse Republiek opgericht, ter vervanging van de monarchie?',
@@ -110,7 +110,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het Ottomaanse Rijk',
       ],
       0,
-      'Spanje regeerde Zuid-Italië en hield Milaan na de Italiaanse Oorlogen, domineerde twee eeuwen lang het schiereiland.',
+      'Spanje regeerde Zuid-Italië en hield Milaan na de Italiaanse Oorlogen, en domineerde zo twee eeuwen lang het schiereiland.',
     ],
     [
       'Na de Napoleontische Oorlogen, welke vreemde mogendheid hield Lombardije en Venetië?',
@@ -132,7 +132,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Niccolò Machiavelli',
       ],
       0,
-      'Mazzini richtte Jong Italië (1831) op om nationalistische actie aan te sporen, hoewel zijn republicanisme aan Cavours monarchie verloor.',
+      'Mazzini richtte in 1831 Jong Italië op om nationalistische actie aan te sporen, hoewel zijn republicanisme het uiteindelijk verloor van Cavours monarchie.',
     ],
     [
       'Welk Noord-Italiaans koninkrijk werd het politieke en militaire centrum van eenheid?',
@@ -143,7 +143,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Savoye',
       ],
       0,
-      'Piëmont, onder het Huis Savoye, had Italië\'s sterkste leger en duidelijkste eenheidsvisioen.',
+      'Piëmont, onder het Huis Savoye, had Italië\'s sterkste leger en duidelijkste eenheidsvisie.',
     ],
     [
       'Welke Middellandse Zee-stadstaat was behalve Venetië een beroemde middeleeuwse en Renaissance maritieme macht?',
@@ -154,7 +154,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Salerno',
       ],
       0,
-      'Genua rivaliseerde met Venetië als maritieme republiek, controleerde handel in Middellandse Zee en Zwarte Zee.',
+      'Genua rivaliseerde met Venetië als maritieme republiek en controleerde de handel in de Middellandse Zee en de Zwarte Zee.',
     ],
     [
       'Welk verdrag in 1929 loste de "Romeinse Vraag" op door de onafhankelijkheid van Vaticaanstad vast te stellen?',
@@ -178,7 +178,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Mazzini controleerde het leger',
       ],
       0,
-      'Cavour\'s pragmatische diplomatie en Piëmont\'s macht versloegen Mazzini\'s federalistisch republicanisme.',
+      'Cavour\'s pragmatische diplomatie en Piëmont\'s macht versloegen Mazzini\'s federalistische republicanisme.',
     ],
     [
       'Onder het Verdrag van Turijn (1860) wat cedeerde Piëmont aan Frankrijk?',
@@ -222,10 +222,10 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het Huis Oranje',
       ],
       0,
-      'Bourbonkoning regeerden Napels en Sicilië als welvarend koninkrijk apart van Noord-Italië.',
+      'Bourbonkoningen regeerden Napels en Sicilië als welvarend koninkrijk, apart van Noord-Italië.',
     ],
     [
-      'Welke jurisconsult uit de Verlichting\'s verhandeling over misdaad en straf hervormdde Europese wetgeving?',
+      'Welke Verlichtingsjurist schreef een verhandeling over misdaad en straf die de Europese wetgeving hervormde?',
       [
         'Cesare Beccaria',
         'Giovanni Vico',
@@ -255,7 +255,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Camillo Cavour',
       ],
       0,
-      'Generaal Cadorna\'s troepen doorbraken Rome\'s muren, eindigde de pauselijke wereldlijke macht.',
+      'Generaal Cadorna\'s troepen doorbraken de muren van Rome, wat een einde maakte aan de pauselijke wereldlijke macht.',
     ],
     [
       'Italië\'s alliantie met Pruisen in 1866 in de Austro-Pruisische Oorlog stelde het in staat welk grondgebied te verwerven?',
@@ -285,10 +285,10 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Onvoorwaardelijke steun aan Duitsland',
         'Fusie van Italiaanse en Duitse regeringen',
         'Overdracht van Italiaanse koloniën aan Duitsland',
-        'Onmiddellijke aanvaarding van nazi-rassenwatten',
+        'Onmiddellijke aanvaarding van nazi-rassenwetten',
       ],
       0,
-      'Het Pact of Steel bond Italië militair aan Duitsland, leidend tot WWII-betrokkenheid.',
+      'Het Pact of Steel bond Italië militair aan Duitsland, wat leidde tot betrokkenheid bij de Tweede Wereldoorlog.',
     ],
     [
       'Na Italië\'s wapenstilstand met de Geallieerden in 1943 welke marionettenstad stichtte Duitsland in het noorden?',
@@ -299,7 +299,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'De Fascistische Democratische Republiek',
       ],
       0,
-      'Duitsland creëerde de Italiaanse Sociale Republiek als nazimarionettensat in bezet Noord-Italië.',
+      'Duitsland creëerde de Italiaanse Sociale Republiek als nazimarionettenstaat in bezet Noord-Italië.',
     ],
     [
       'Welk corruptieschandaal in de late jaren 1980 en vroege jaren 1990 destabiliseerde de Eerste Republiek?',
@@ -310,7 +310,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Scandalo Europeo',
       ],
       0,
-      'Tangentopoli ("Omkoopstad") onthulde systemische corruptie, triggerde onderzoeken die de Eerste Republiek destabiliseerden.',
+      'Tangentopoli ("Omkoopstad") onthulde systemische corruptie en leidde tot onderzoeken die de Eerste Republiek destabiliseerden.',
     ],
     [
       'Waarom was Piëmont\'s alpine geografische positie voordelig voor eenheid?',
@@ -321,7 +321,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het werd beschermd voor alle invasies',
       ],
       0,
-      'Savoye\'s duaal-monarchie-positie stelde Cavour in staat te onderhandelen met Frankrijk terwijl hij Italiaanse hegemonie bouwde.',
+      'De positie van het Huis Savoye aan weerszijden van de Alpen stelde Cavour in staat om met Frankrijk te onderhandelen terwijl hij aan Italiaanse hegemonie bouwde.',
     ],
     [
       'Hoe beïnvloedde de dominantie van Piemontese en Toscaanse dialecten tijdens eenheid de Italiaanse taal?',
@@ -345,7 +345,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het stichtte het eerste verenigde Italiaanse koninkrijk',
       ],
       0,
-      'Westfalen sloot Italië in Habsburgse controle, fragmenteerde het schiereiland tot Napoleontische verstoring.',
+      'De Vrede van Westfalen sloot Italië op in Habsburgse controle en fragmenteerde het schiereiland tot de Napoleontische periode.',
     ],
     [
       'Wat was de strategische doctrine achter Metternich\'s opzettelijke Italiaanse fragmentatie na 1815?',
@@ -356,18 +356,18 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Hij ondersteunde Italiaanse onafhankelijkheid en nationalisme',
       ],
       0,
-      'Metternich\'s concert rationaliseerde fragmentatie als noodzakelijk om zowel Franse als Italiaanse nationalisme in te dammen.',
+      'Metternich\'s concert rationaliseerde fragmentatie als noodzakelijk om zowel Frans als Italiaans nationalisme in te dammen.',
     ],
     [
-      'Waarom hervormdden de mislukte liberaal-nationalistische opstandingen 1848-49 de Italiaanse politieke strategie?',
+      'Waarom hervormden de mislukte liberaal-nationalistische opstanden van 1848-1849 de Italiaanse politieke strategie?',
       [
         'Nederlaag discrediteerde de volksrevolutie',
-        'De opstandingen waren onmiddellijk succesvol',
+        'De opstanden waren onmiddellijk succesvol',
         'Er was geen militaire nederlaag',
-        'Italianen verwerpen nationalisme volledig',
+        'Italianen verwierpen nationalisme volledig',
       ],
       0,
-      'De ineenstorting in 1848-49 discrediteerde volksbewegingen, opende pad naar Cavours elitegeleid realisme.',
+      'De ineenstorting van 1848-49 discrediteerde volksbewegingen en opende het pad naar Cavours elitegeleide realisme.',
     ],
     [
       'Hoe divergeerde Garibaldi\'s pragmatische aanvaarding van Victor Emmanuel II van Mazzini\'s republicanisme?',
@@ -378,7 +378,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Ze hadden identieke politieke visies',
       ],
       0,
-      'Garibaldi\'s bereidheid Savoye aan te accepteren maakte Cavour\'s monarchistische schikking mogelijk, isoleerde Mazzini\'s republicanisme.',
+      'Garibaldi\'s bereidheid om het Huis Savoye te accepteren maakte Cavour\'s monarchistische schikking mogelijk en isoleerde Mazzini\'s republicanisme.',
     ],
     [
       'Wat was het "Non expedit"-decreet, en hoe belemmerden het de Italiaanse natiebouw?',
@@ -389,29 +389,29 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het schrapte Italiaanse taal en cultuur',
       ],
       0,
-      'Non expedit isoleerde het pausdom 60 jaar uit Italiaans burgerleven, fragmenteerde institutionele eenheid.',
+      'Non expedit isoleerde het pausdom zestig jaar lang van het Italiaanse burgerleven en fragmenteerde de institutionele eenheid.',
     ],
     [
       'Welke structurele factoren maakten Zuid-Italië chronisch onderontwikkeld na eenheid?',
       [
-        'Feodale latifundia en noordwaartse trekking',
+        'Feodale latifundia en noordwaartse migratie',
         'Zuid-Italianen waren van nature minder capabel',
         'De Mafia veroorzaakte alleen armoedte',
         'Het Noorden had geen feodale geschiedenis',
       ],
       0,
-      'Mezzogiorno\'s feodale landbouw, zwakke industrie, en brigandage bleken weerbarstig tegen Piemontese modernisering.',
+      'Mezzogiorno\'s feodale landbouw, zwakke industrie en brigandage bleken weerbarstig tegenover Piemontese modernisering.',
     ],
     [
       'De zuidelijke "brigandage-oorlog" (1861-1876) weerspiegelde welk onderliggend sociaal conflict?',
       [
         'Onrust tegen dienstplicht en onderdrukking',
-        'Spaanse indringers startten de opstandingen',
+        'Spaanse indringers startten de opstanden',
         'Buitenlandse huurlingen veroorzaakten brigandage alleen',
         'Het was puur een Mafia-criminaliteit',
       ],
       0,
-      'Brigandage in Mezzogiorno weerspiegelde echte campagnegrieven, onderdrukt door harde bezetting zonder hervorming.',
+      'Brigandage in de Mezzogiorno weerspiegelde reële grieven op het platteland, die werden onderdrukt door harde bezetting zonder hervormingen.',
     ],
     [
       'Wat karakteriseerde Giovanni Giolitti\'s regering (1903-1914) als overgangsperiode tussen liberaal Italië en fascisme?',
@@ -422,10 +422,10 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Herstel van absolute monarchie',
       ],
       0,
-      'Giolitti\'s flexibel liberalisme verbreedde stemrecht terwijl conservatieve élites behield, stagneerde transformatieve hervorming.',
+      'Giolitti\'s flexibele liberalisme verbreedde het stemrecht terwijl hij de conservatieve elites in stand hield, waardoor transformatieve hervormingen stagneerden.',
     ],
     [
-      'Hoe voedde de notie van "vittoria mutilata" (verminkste overwinning) wrok na Wereldoorlog I?',
+      'Hoe voedde de notie van "vittoria mutilata" (verminkte overwinning) wrok na de Eerste Wereldoorlog?',
       [
         'Minder gebiedswinst dan beloofd',
         'Italië verloor de hele oorlog',
@@ -433,51 +433,51 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Italië was nooit betrokken bij WWI',
       ],
       0,
-      'Naoorlogs territoriaal teleurstelling en nationalistische wrok creëerden condities voor Mussolini\'s fascistische opkomst.',
+      'Naoorlogse territoriale teleurstelling en nationalistische wrok creëerden condities voor Mussolini\'s fascistische opkomst.',
     ],
     [
-      'Wat was de filosofische basis van Mussolini\'s corporatistisch economisch model?',
+      'Wat was de filosofische basis van Mussolini\'s corporatistische economische model?',
       [
         'Staatssyndicaten verdrongen de markt',
         'Vestiging van vrij-marktkapitalisme',
-        'Welverdeling aan arbeiders alleen',
+        'Herverdeling van welvaart uitsluitend aan arbeiders',
         'Herstel van feodale landbouwstelsels',
       ],
       0,
-      'Italiaans corporatisme integreerde alle producenten in fascistische syndicaten, schrapte onafhankelijke markten en vakbonden.',
+      'Italiaans corporatisme integreerde alle producenten in fascistische syndicaten en schrapte onafhankelijke markten en vakbonden.',
     ],
     [
-      'Hoe verschilden Italië\'s rassenwatten van 1938 aanvankelijk van nazi-Duitsland\'s implementatie?',
+      'Hoe verschilden Italië\'s rassenwetten van 1938 aanvankelijk van de uitvoering ervan in nazi-Duitsland?',
       [
         'Aanvankelijk minder streng dan in Duitsland',
-        'Italiaanse rassenwatten waren onmiddellijk even streng',
-        'Italië stelde nooit rassenwatten in',
+        'Italiaanse rassenwetten waren onmiddellijk even streng',
+        'Italië stelde nooit rassenwetten in',
         'Italië overtrof onmiddellijk nazi-rassenmaatregelen',
       ],
       0,
-      'Italiaans fascisme nam rassenwatten aan voor nazi-afstemming, maar sociale weerstand verzwakte handhaving tot Duitse bezetting.',
+      'Italiaans fascisme nam rassenwetten aan om zich af te stemmen op nazi-Duitsland, maar sociale weerstand verzwakte de handhaving tot aan de Duitse bezetting.',
     ],
     [
       'Welke paradoxale politieke status ontstond uit Italië\'s september 1943 wapenstilstand en latere oorlogsverklaring?',
       [
         'Gesplitst: geallieerd zuiden, Duits noorden',
-        'Italië trok zich vreedzaam geheel terug van WWII',
+        'Italië trok zich vreedzaam volledig terug uit WWII',
         'Italië bleef onder Mussolini verenigd',
         'Duitsland evacueerde Italië onmiddellijk',
       ],
       0,
-      'Badoglio\'s wapenstilstand splitste Italië tussen geallieerde zuiden en Duitse-marionettennoorden, creëerde medevechtersparadox.',
+      'Badoglio\'s wapenstilstand splitste Italië in een geallieerd zuiden en een door Duitsland gecontroleerd noorden, wat een paradoxale medestrijderspositie creëerde.',
     ],
     [
-      'Hoe hervormdde de Italiaanse Communistische Partij (PCI) institutionele status het naoorlogse democratie?',
+      'Hoe hervormde de institutionele status van de Italiaanse Communistische Partij (PCI) de naoorlogse democratie?',
       [
         'De PCI bleef een legitieme oppositie',
-        'De PCI grepen onmiddellijk totale macht',
+        'De PCI greep onmiddellijk totale macht',
         'Het had geen electorale steun',
-        'Het verwerpen alle democratische deelname',
+        'Het verwierp alle democratische deelname',
       ],
       0,
-      'PCI\'s democratische legitimiteit voorkwam éénpartijenhegemonie, institutionaliseerde linkse inbreng in de Eerste Republiek.',
+      'PCI\'s democratische legitimiteit voorkwam een eenpartijhegemonie en institutionaliseerde linkse inbreng in de Eerste Republiek.',
     ],
     [
       'Welk institutioneel kenmerk van de Eerste Republiek ondermijnden Tangentopoli\'s onthullingen fundamenteel?',
@@ -488,10 +488,10 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het verminderde stemrechten',
       ],
       0,
-      'Tangentopoli ontmantelde naoorlogse partijen (DC, PSI) en triggerde electorale hervorming, beëindigde Eerste Republiek\'s consensusmodel.',
+      'Tangentopoli ontmantelde de naoorlogse partijen (DC, PSI) en leidde tot electorale hervormingen, wat een einde maakte aan het consensusmodel van de Eerste Republiek.',
     ],
     [
-      'Hoe vooruitgelopen Petrarca\'s artikulatie van humanistische deugd in de 14e eeuw op Florentijnse burgerrepublicanisme?',
+      'Hoe liep Petrarca\'s articulatie van humanistische deugd in de 14e eeuw vooruit op het Florentijnse burgerrepublicanisme?',
       [
         'Klassieke deugd onderbouwde de burgerideologie',
         'Petrarca vond fascisme uit',
@@ -499,12 +499,12 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Klassiek leren speelde geen rol in Renaissance-politiek',
       ],
       0,
-      'Petrarcaanse humanisme\'s link tussen tekstuele deugd en burgerbetrokkenheid ondersteunde Florentijnse republicanse zelfbewustzijn.',
+      'Het Petrarcaanse humanisme legde een verband tussen tekstuele deugd en burgerbetrokkenheid, wat het Florentijnse republikeinse zelfbewustzijn ondersteunde.',
     ],
   ],
   professor: [
     [
-      'Hoe vertegenwoordigde Florence\'s catasto-hervorming van 1427 technologische en bestuurlijke innovatie die staatsvoeding hervormdde?',
+      'Hoe vertegenwoordigde Florence\'s catasto-hervorming van 1427 technologische en bestuurlijke innovatie die de staatsopbouw hervormde?',
       [
         'Een eigendomstelling',
         'Het schrapte alle belasting',
@@ -512,18 +512,18 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het vond aandelenmarkten uit',
       ],
       0,
-      'Catasto\'s gererationaliseerde documentgestuurde beoordeling werd fundamenteel voor vroegmoderne staatsvoeding en fiscale controle.',
+      'Catasto\'s gerationaliseerde, documentgestuurde beoordeling werd fundamenteel voor vroegmoderne staatsopbouw en fiscale controle.',
     ],
     [
-      'Hoe zowel mogelijk gemaakt als beperkt het condottieri-systeem gecentraliseerde Italiaanse staatsontwikkeling?',
+      'Hoe maakte het condottieri-systeem gecentraliseerde Italiaanse staatsontwikkeling mogelijk, en hoe beperkte het die tegelijk?',
       [
-        'Bevrijdden steden, blokkeerden bevel',
+        'Maakte steden militair vrij, maar verzwakte het centrale bevel',
         'Condottieri hadden geen politieke invloed',
-        'Ze vereinigden onmiddellijk Italië',
+        'Ze verenigden onmiddellijk Italië',
         'Ze schrapten alle militaire activiteit',
       ],
       0,
-      'Condottieri professionaliseerden oorlogvoering maar fragmenteerden militaire loyaliteit, belemmerde nationale verdediging tot natiestaat-era.',
+      'Condottieri professionaliseerden de oorlogvoering, maar fragmenteerden de militaire loyaliteit en belemmerden zo een nationale verdediging tot het tijdperk van de natiestaat.',
     ],
     [
       'Hoe veranderden het Verdrag van Utrecht (1713) en latere Bourbonregalisme de ecclesiastische-politieke balans in Napels?',
@@ -534,10 +534,10 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het verdrag had geen politieke gevolgen',
       ],
       0,
-      'Bourbonregalisme onderwierp kerkbenoemingen aan staatsautoriteit, verminderde pauselijke invloed en maakte Verlichtingshervorming mogelijk.',
+      'Bourbonregalisme onderwierp kerkbenoemingen aan de staatsautoriteit, verminderde de pauselijke invloed en maakte Verlichtingshervormingen mogelijk.',
     ],
     [
-      'Welke ideologische erfenis lieten de mislukte Jacobijnse republieken (1799-1815) ondanks militaire ineenstorting onder Wenen na?',
+      'Welke ideologische erfenis lieten de mislukte Jacobijnse republieken (1799-1815) na, ondanks hun militaire ineenstorting onder het Congres van Wenen?',
       [
         'Constitutionele idealen herleefden later',
         'Jacobijnisme had geen blijvende intellectuele erfenis',
@@ -545,18 +545,18 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Nationalisme werd na 1815 uitgevonden',
       ],
       0,
-      'Hoewel militair verslagen, injeceerden Jacobijnse republieken grondwettelijke en nationalistische idealen die voortdurend herleefden.',
+      'Hoewel militair verslagen, injecteerden Jacobijnse republieken grondwettelijke en nationalistische idealen die voortdurend herleefden.',
     ],
     [
-      'Hoe wijken Cavour\'s realisme af van de mislukte opstandingen 1848-49, en wat was zijn kernstrategische inzicht?',
+      'Hoe week Cavour\'s realisme af van de mislukte opstanden van 1848-49, en wat was zijn kernstrategische inzicht?',
       [
         'Cavour koos diplomatie boven opstand',
         'Cavour ondersteunde uitsluitend volksrevolutie',
-        'Hij verwierpen alle banden met vreemde machten',
+        'Hij verwierp alle banden met vreemde machten',
         'Hij vertrouwde alleen op diplomatieke brieven',
       ],
       0,
-      'Cavour\'s pragmatische verschuiving van grassroots naar diplomatieke diplomatie maakte eenheid mogelijk waar ideologie alleen mislukte.',
+      'Cavour\'s pragmatische verschuiving van volksactivisme naar diplomatieke onderhandeling maakte eenheid mogelijk waar ideologie alleen faalde.',
     ],
     [
       'Wat was het strategische belang van het geheime Plombières-akkoord (1858) tussen Cavour en Napoleon III?',
@@ -567,21 +567,21 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het stelde onmiddellijk pauselijk gezag vast',
       ],
       0,
-      'Plombières-pakket verhandelde Savoye-gebieden voor doorslaggevend ingrijpen, institutionaliseerde eenheid\'s monarchist-seculier trajectory.',
+      'Het Plombières-akkoord ruilde de gebieden Nice en Savoye voor beslissende Franse steun, en zette daarmee het monarchistisch-seculiere traject van de eenwording vast.',
     ],
     [
-      'Hoe bemoeilijkten de structurele onderontwikkeling van zuidelijke Mezzogiorno—geworteld in latifundia-feodalisme—naoorlogse nationale integratie?',
+      'Hoe bemoeilijkte de structurele onderontwikkeling van het zuidelijke Mezzogiorno—geworteld in latifundia-feodalisme—de naoorlogse nationale integratie?',
       [
-        'Feodale latifundia en hulpbronnentrekking',
+        'Feodale latifundia en hulpbronnenonttrekking',
         'Het Zuiden was onmiddellijk welvarend',
         'Structurele ongelijkheid kwam alleen van de Mafia',
         'Noord en Zuid waren gelijk ontwikkeld',
       ],
       0,
-      'Questione meridionale\'s feodale erfenis en trekking in stand held regionale dualisme in modern Italië.',
+      'De feodale erfenis van de questione meridionale en de aanhoudende onttrekking van hulpbronnen hielden het regionale dualisme in modern Italië in stand.',
     ],
     [
-      'Waarom diende Giovanni Gentile\'s filosofisch actualisme, vastgelegd in Riforma Gentile (1923), fascistische totalitaire pedagogie?',
+      'Waarom diende Giovanni Gentile\'s filosofische actualisme, vastgelegd in de Riforma Gentile (1923), de fascistische totalitaire pedagogiek?',
       [
         'Het verhief de staat boven het individu',
         'Gentile verzette zich tegen fascisme',
@@ -592,7 +592,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
       'Gentile\'s actualisme verschafte filosofische legitimiteit voor fascistische totalitaire pedagogie en jeugdindoctrinatie.',
     ],
     [
-      'Hoe onthulden Italiaanse interneringskampen in Libië, Griekenland, en Balkan (1940-43) fascistische imperiale methodologie verschillend van nazi-genocide?',
+      'Hoe onthulden Italiaanse interneringskampen in Libië, Griekenland en de Balkan (1940-1943) een fascistische imperiale methodologie die verschilde van nazigenocide?',
       [
         'Dwangarbeid en honger, geen uitroeiing',
         'Italië stelde nooit kampen in',
@@ -600,21 +600,21 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Kampen waren zuiver voor criminele rehabilitatie',
       ],
       0,
-      'Italiaanse interneringskampen doodden duizenden door opzettelijke ontbering, onthulden fascisme\'s dodelijke rassenideologie buiten nazi-typologie.',
+      'Italiaanse interneringskampen doodden duizenden mensen door opzettelijke ontbering, en onthulden zo fascisme\'s dodelijke rassenideologie los van de nazityperingen.',
     ],
     [
-      'Welke institutionele mechanismen maakten PCI\'s integratie in Eerste Republiek consensus ondanks Koude Oorlog anticommunisme mogelijk?',
+      'Welke institutionele mechanismen maakten de integratie van de PCI in de consensus van de Eerste Republiek mogelijk, ondanks het anticommunisme van de Koude Oorlog?',
       [
         'Vertegenwoordiging institutionaliseerde de PCI',
         'De PCI werd onmiddellijk uitgesloten van politiek',
-        'De PCI en fascisten vereinigden',
+        'De PCI en fascisten verenigden zich',
         'Italië had geen naoorlogse democratische instellingen',
       ],
       0,
-      'Proportionele vertegenwoordiging institutionaliseerde communistische deelname, maakte PCI permanente oppositie die uitvoerend gezag intdemde.',
+      'Proportionele vertegenwoordiging institutionaliseerde communistische deelname en maakte van de PCI een permanente oppositie die het uitvoerend gezag intoomde.',
     ],
     [
-      'Hoe hervormdden Mussolini\'s interventie in Wereldoorlog I (1915) en latere nederlaag fascisme\'s ontstane ideologie?',
+      'Hoe vormden Mussolini\'s interventie in de Eerste Wereldoorlog (1915) en de latere nederlaag de opkomende ideologie van het fascisme?',
       [
         'Wrok over de "verminkte overwinning"',
         'Italië won volledige overwinning',
@@ -622,21 +622,21 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Naoorlogse welvaart schrapte fascisme',
       ],
       0,
-      'Naoorlogs wrok en 1919-22 biennio rosso-crisis creëerden institutionele vacuüm fascisme vulde.',
+      'Naoorlogse wrok en de crisis van de biennio rosso (1919-1922) creëerden een institutioneel vacuüm dat het fascisme opvulde.',
     ],
     [
-      'Wat vertegenwoordigden het Verdrag van Maastricht (1992) en euroverandering (1999-2002) symbolisch voor Italiaanse naoorlogse soevereiniteit?',
+      'Wat vertegenwoordigden het Verdrag van Maastricht (1992) en de invoering van de euro (1999-2002) symbolisch voor de Italiaanse naoorlogse soevereiniteit?',
       [
         'Overdracht van monetaire soevereiniteit',
-        'Italië verwerpen de euro permanent',
+        'Italië verwierp de euro permanent',
         'Maastricht had geen economisch gevolg',
         'Italië gaf vrijwillig alle soevereiniteit op',
       ],
       0,
-      'Euro-overdracht markeerde diepe heronderhandeling nationalistische monetaire autonomie tijdens eenheid vastgesteld.',
+      'De overdracht naar de euro markeerde een diepgaande heronderhandeling van de monetaire autonomie die tijdens de eenwording was vastgesteld.',
     ],
     [
-      'Hoe verschilde Mazzini\'s "guerra popolare" (volksorlog)-ideologie van massamassale campagneinsurrectie van Cavour\'s elitaire diplomatieke realisme?',
+      'Hoe verschilde Mazzini\'s ideologie van "guerra popolare" (volksoorlog) — een grootschalige volksopstand — van Cavour\'s elitaire diplomatieke realisme?',
       [
         'Cavour\'s diplomatie versloeg Mazzini\'s opstand',
         'Mazzini ondersteunde monarchie en Cavour republicanisme',
@@ -644,10 +644,10 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Volksbewegingen slaagden onmiddellijk',
       ],
       0,
-      'Mazzini\'s ideologie werd door Cavour\'s diplomatie buitengesloten, institutionaliseerde monarchie boven massamarionettica.',
+      'Mazzini\'s ideologie werd door Cavour\'s diplomatie buitengesloten, wat de monarchie institutionaliseerde boven massamobilisatie.',
     ],
     [
-      'Wat onthulden Silvio Berlusconi\'s meerdere premierschap (1994-2011) over grondwettelijke spanningen in Tweede Republiek?',
+      'Wat onthulden Silvio Berlusconi\'s meerdere premierschappen (1994-2011) over grondwettelijke spanningen in de Tweede Republiek?',
       [
         'Belangenconflicten en corruptieprocessen',
         'Berlusconi had geen politieke invloed',
@@ -658,7 +658,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
       'Berlusconi\'s media-politieke hybride en anti-institutionele retoriek testten Italië\'s grondwettelijke beperkingen.',
     ],
     [
-      'Hoe hervormdde de pauselijke "wereldlijke macht"-verlies in 1870 en oplossing in Lateraansverdrag (1929) kerk-staatsrelaties in verenigd Italië?',
+      'Hoe hervormden het verlies van de pauselijke "wereldlijke macht" in 1870 en de oplossing daarvan in het Lateraansverdrag (1929) de kerk-staatrelaties in het verenigde Italië?',
       [
         'De breuk van 1870, opgelost in 1929',
         'Het Pausdom heroverde alle wereldlijke macht',
@@ -666,7 +666,7 @@ export const ITALIAN_HISTORY: CategoryContent = {
         'Het Lateraansverdrag had geen gevolgen',
       ],
       0,
-      'Lateraansverdrag\'s Vaticaanstad-oplossing loste 59 jaar pauselijke-staatconflict op, institutionaliseerde ecclesiastische onafhankelijkheid.',
+      'De Vaticaanstad-oplossing van het Lateraansverdrag maakte een einde aan 59 jaar kerk-staatconflict en institutionaliseerde de ecclesiastische onafhankelijkheid.',
     ],
   ],
 };

@@ -233,7 +233,7 @@ export const ASTRONOMY: CategoryContent = {
         'Doppler redshift increases indefinitely with distance; cosmological does not',
       ],
       0,
-      'Cosmological redshift stretches all wavelengths equally as space expands (z = a(t₀)/a(t_emit) − 1). Doppler redshift depends on velocity component along our line of sight.',
+      'Cosmological redshift stretches all wavelengths equally as space expands (z = a(t₀)/a(tₑₘᵢₜ) − 1). Doppler redshift depends on velocity component along our line of sight.',
     ],
     [
       'What does the virial theorem state about gravitationally bound systems?',
@@ -405,13 +405,13 @@ export const ASTRONOMY: CategoryContent = {
     [
       'How does dust extinction law variation constrain dust grain properties?',
       [
-        'Different extinction curves (R_V) indicate varying grain size distributions',
+        'Different extinction curves (Rᵥ) indicate varying grain size distributions',
         'Extinction is independent of dust properties and follows the same law everywhere',
         'Extinction curves only apply to nearby dust; distant dust cannot be characterized',
         'Grain size has no measurable effect on extinction wavelength dependence',
       ],
       0,
-      'R_V = A_V / E(B−V) varies from ~2.5 (diffuse ISM) to ~5 (dense regions). Small grains cause steep UV extinction; large grains flatten it. Carbon/silicate ratios alter the UV bump.',
+      'Rᵥ = Aᵥ / E(B−V) varies from ~2.5 (diffuse ISM) to ~5 (dense regions). Small grains cause steep UV extinction; large grains flatten it. Carbon/silicate ratios alter the UV bump.',
     ],
     [
       'How is color excess determined and how are reddening vector corrections applied in photometry?',
@@ -644,7 +644,7 @@ export const ASTRONOMY: CategoryContent = {
         'Microlensing cannot detect planets',
       ],
       0,
-      'Microlensing surveys (OGLE, MOA) detect planets via caustic crossings or disk effects; cold Jupiters at >2.5 AU are common. Einstein ring timescale t_E ~ 30 d gives mass and distance simultaneously.',
+      'Microlensing surveys (OGLE, MOA) detect planets via caustic crossings or disk effects; cold Jupiters at >2.5 AU are common. Einstein ring timescale tₑ ~ 30 d gives mass and distance simultaneously.',
     ],
     [
       'What do quasar absorption line systems and the Lyman-alpha forest reveal about feedback and reionization?',
@@ -655,7 +655,7 @@ export const ASTRONOMY: CategoryContent = {
         'Metal abundances in absorption systems are independent of star formation',
       ],
       0,
-      '[X/H] in DLAs track star formation history and metal loss timescales (τ ~ Gyr). Forest transmitted flux near z > 6 constrains τ_reion ~ 50–100 Myr; He II absorption shows patchy, late reionization.',
+      '[X/H] in DLAs track star formation history and metal loss timescales (τ ~ Gyr). Forest transmitted flux near z > 6 constrains τᵣₑᵢₒₙ ~ 50–100 Myr; He II absorption shows patchy, late reionization.',
     ],
     [
       'How do extrasolar planetary system architectures (resonances, mutual inclinations, gaps) constrain formation and migration models?',

@@ -18,14 +18,14 @@ export const APPLIED_PHYSICS: CategoryContent = {
       [
         'Een depletiegebied met een elektrisch veld door ladingscheiding',
         'Een geleidende laag die kortsluiting veroorzaakt over de overgang',
-        'Een thermische barrière die stroomstroom voorkomt',
+        'Een thermische barrière die stroomdoorgang voorkomt',
         'Een metalen interface met nulweerstand',
       ],
       0,
-      'Diffusie van dragersmeerderheid veroorzaakt ladingscheiding en een ingebouwd elektrisch veld dat verder diffusie stopt.',
+      'Diffusie van meerderheidsdragers veroorzaakt ladingscheiding en een ingebouwd elektrisch veld dat verdere diffusie stopt.',
     ],
     [
-      'In stromingsleer stelt de vergelijking van Bernoulli behoud voor van welke grootheid langs een stroomijn?',
+      'In stromingsleer stelt de vergelijking van Bernoulli behoud voor van welke grootheid langs een stroomlijn?',
       [
         'Mechanische energie per volume-eenheid',
         'Impulsmoment van de vloeistof',
@@ -39,7 +39,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Welke eigenschap van een materiaal is het product van zijn dichtheid en de geluidssnelheid erin?',
       [
         'Akoestische impedantie',
-        'Akoestische demping coëfficiënt',
+        'Akoestische dempingscoëfficiënt',
         'Akoestische resonantiefrequentie',
         'Akoestische dispersieparameter',
       ],
@@ -58,7 +58,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Elektronen versneld over een potentiaal treffen de anode; vertraging geeft energie af als röntgenstralen (Bremsstrahlung) of karakteristieke fotonen.',
     ],
     [
-      'Wat is het primaire mechanisme van warmteoverdracht door een solide metaalstaaf tussen twee warmtebronnen?',
+      'Wat is het primaire mechanisme van warmteoverdracht door een vaste metaalstaaf tussen twee warmtebronnen?',
       [
         'Geleiding via fononen en vrije elektronen',
         'Convectie wanneer metaalatomen fysiek door de staaf bewegen',
@@ -80,7 +80,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Coherentie betekent dat golven een stabiele faseverhouding hebben—coherent licht van een laser interfereert constructief, anders dan incoherente bronnen.',
     ],
     [
-      'De continuiteitsvergelijking in stromingsdynamica stelt dat wanneer vloeistof door een vernauwde pijp stroomt, wat moet toenemen?',
+      'De continuïteitsvergelijking in stromingsdynamica stelt dat wanneer vloeistof door een vernauwde pijp stroomt, wat moet toenemen?',
       [
         'De snelheid van de vloeistof',
         'De druk in de pijp',
@@ -88,21 +88,21 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'De dichtheid bij constante temperatuur',
       ],
       0,
-      'Continuiteitsvergelijking: ρAv = constant (massastroom behouden). Kleinere oppervlakte A vereist grotere snelheid v bij constante dichtheid.',
+      'Continuïteitsvergelijking: ρAv = constant (massastroom behouden). Kleinere oppervlakte A vereist grotere snelheid v bij constante dichtheid.',
     ],
     [
       'Waarom reist geluid sneller door water dan door lucht bij dezelfde temperatuur?',
       [
-        'Waters samendrukbaarheid geeft snellere spanningsgolven',
+        'De samendrukbaarheid van water geeft snellere spanningsgolven',
         'Water heeft meer zuurstofmoleculen die sneller trillen',
         'Geluidsgolven in water zijn elektromagnetisch in plaats van mechanisch',
         'Zoutgehalte in water verhoogt de snelheid van akoestische golven',
       ],
       0,
-      'Geluidssnelheid is c = √(K/ρ), waarbij K samendrukbaarheid is. Waters hogere samendrukbaarheid weegt zwaarder dan de hogere dichtheid.',
+      'Geluidssnelheid is c = √(K/ρ), waarbij K samendrukbaarheid is. De hogere samendrukbaarheid van water weegt zwaarder dan de hogere dichtheid.',
     ],
     [
-      'In een voorwaarts gepolariseerde p-n-junctie diode, wat veroorzaakt stroomstroom over de junctie?',
+      'In een voorwaarts gepolariseerde p-n-junctie diode, wat veroorzaakt stroomdoorgang over de junctie?',
       [
         'Externe spanning verkleint het depletiegebied',
         'Elektronen en gaten ontstaan door thermische energie in de junctie',
@@ -110,7 +110,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Tunneling door het depletiegebied gebeurt op kamertemperatuur',
       ],
       0,
-      'Voorwaartse bias verkleint het depletiegebied, verlaagt de barrière zodat dragersmeerderheid diffundeert en driftstroom overstijgt.',
+      'Voorwaartse bias verkleint het depletiegebied, verlaagt de barrière zodat meerderheidsdragers diffunderen en driftstroom overstijgen.',
     ],
     [
       'Glasvezeloptiek vertrouwt op licht dat door de kern reist vanwege herhaalde totale interne reflectie. Waarom geen spiegelgevoerde holle buis gebruiken?',
@@ -121,13 +121,13 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Vezel is goedkoper in massaproductie',
       ],
       0,
-      'Optische vezels bereiken laag verlies via totale interne reflectie; spiegelbuis verstrooien, absorberen en kunnen kwaliteit niet behouden.',
+      'Optische vezels bereiken laag verlies via totale interne reflectie; spiegelbuizen verstrooien, absorberen en kunnen kwaliteit niet behouden.',
     ],
     [
       'In warmtewisselaarconfiguratie, wat is de primaire warmteoverdrachtswijze over de dunne metalen wand tussen twee vloeistoffen?',
       [
         'Geleiding door de metalen wand',
-        'Convectie van één vloeistof naar de wand, dan naar de ander',
+        'Convectie van één vloeistof naar de wand, dan naar de andere',
         'Straling van één vloeistofoppervlak naar het ander',
         'Faseverandering aan één zijde die latente warmte vrijgeeft',
       ],
@@ -135,10 +135,10 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Primaire wijze is geleiding door de wand; convectie gebeurt in elke vloeistof, maar de wand zelf geeft warmte af door geleiding.',
     ],
     [
-      'Een autoclaxon beweegt met hoge snelheid naar je toe. Waarom klinkt de toon hoger dan wanneer stilstand?',
+      'Een autoclaxon beweegt met hoge snelheid naar je toe. Waarom klinkt de toon hoger dan wanneer hij stilstaat?',
       [
         'Beweging comprimeert de golflengte, verhoogt de toonhoogte',
-        'De claxon straalt meer vermogen uit wanneer het beweegt, dus amplitude neemt toe',
+        'De claxon straalt meer vermogen uit wanneer hij beweegt, dus de amplitude neemt toe',
         'Dopplereffect verandert de geluidssnelheid in lucht',
         'De acceleratie van de auto creëert een resonantiecaviteiteffect',
       ],
@@ -154,14 +154,14 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Laserlicht induceert gestimuleerde emissie die in stroom cascadeert',
       ],
       0,
-      'Fotonen exciteren dragers in de bandgap; het junctiefield scheidt ze voor recombinatie, creëert meetbare fotostroom.',
+      'Fotonen exciteren dragers in de bandgap; het junctieveld scheidt ze voor recombinatie, creëert meetbare fotostroom.',
     ],
     [
-      'In nucleaire techniek, de macroscopische doorsnede Σ = N·σ correspondeert met microscopische doorsnede σ. Wat stelt N voor?',
+      'In nucleaire techniek correspondeert de macroscopische doorsnede Σ = N·σ met de microscopische doorsnede σ. Wat stelt N voor?',
       [
         'Atoomgetalsdichtheid per volume-eenheid',
         'Aantal neutronen per splijting uitgestraald',
-        'Totaal massagetal van de kernkern',
+        'Totaal massagetal van de kern',
         'Aantal reacties per seconde uitgevoerd',
       ],
       0,
@@ -181,7 +181,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Gestimuleerde Ramanverstrooiing is niet-lineair: pompuitputting wordt significant boven drempel, beperkt energieoverdracht naar Stokes-golf.',
     ],
     [
-      'In III-V halfgeleiderheterojuncties voor LED\'s, waarom is de bandgapenergie van de mantellaag groter dan de actieve laag?',
+      'In III-V halfgeleiderheterojuncties voor LED\'s, waarom is de bandgapenergie van de mantellaag groter dan die van de actieve laag?',
       [
         'Een potentiaalput sluit dragers op in de actieve laag',
         'Optische transparantie in mantel voorkomt verlies van uitgestraalde fotonen',
@@ -194,30 +194,30 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In computationele stromingsdynamica (CFD) is turbulente stroming gesloten door termen toe te voegen aan de Navier-Stokes-vergelijking. Hoe heet deze sluiting typisch?',
       [
-        'Turbulentiemodellering via werveltviscositeit',
+        'Turbulentiemodellering via wervelviscositeit',
         'Spectrale decompositie van vorticiteitsveldenstructuur',
-        'Tijdsgemiddeling om fluctuerende drukkermenmerging te elimineren',
+        'Tijdsgemiddeling om fluctuerende druktermen te elimineren',
         'Kunstmatige diffusie om numerieke schema\'s te stabiliseren',
       ],
       0,
-      'Turbulentiesluiting (k-ε, k-ω, Spalart-Allmaras) benadert onopgeloste schaaleffecten via werveltviscositeit.',
+      'Turbulentiesluiting (k-ε, k-ω, Spalart-Allmaras) benadert onopgeloste schaaleffecten via wervelviscositeit.',
     ],
     [
-      'In echografische fasenreeks-beeldvorming, hoe stelt tijdvertraging focussering ruimtelijke resolutie in de axiale richting in?',
+      'In echografische fasenreeks-beeldvorming, hoe stelt tijdvertragingsfocussering de ruimtelijke resolutie in de axiale richting in?',
       [
         'Vertragingen bundelen constructieve interferentie op één diepte',
-        'Vertraagde signalen verstrooien minder van off-as structuren',
-        'Frequentieveranderingen van Dopplereffect geven dieptediscriminatie toe',
+        'Vertraagde signalen verstrooien minder van off-axis structuren',
+        'Frequentieveranderingen door het Dopplereffect maken dieptediscriminatie mogelijk',
         'Akoestische impedantiemismatch varieert met diepte, verbetert grenzen',
       ],
       0,
-      'Fasegroep: transmissievertragingen lijnen golffronton op aan gekozen diepte z; reflecties van die diepte interfereren constructief, andere annuleren.',
+      'Fasegroep: transmissievertragingen lijnen golffronten op aan gekozen diepte z; reflecties van die diepte interfereren constructief, andere annuleren.',
     ],
     [
-      'Een synchrotron röntgenstraalenlijn gebruikt silicium(111)-analyseerkristal voor energieresolutie. Wat is het onderliggende beginsel?',
+      'Een synchrotron röntgenstralenlijn gebruikt silicium(111)-analyseerkristal voor energieresolutie. Wat is het onderliggende beginsel?',
       [
         'Het kristal heeft een smalle Darwin-curve in energie',
-        'De thermische trillingen van het kristal zijn geminimaliseerd, verminderen terugstootverschuiving',
+        'De thermische trillingen van het kristal zijn geminimaliseerd, wat de terugstootverschuiving vermindert',
         'Silicium(111)-vlakken zijn volkomen evenwijdig, elimineren geometrische verbreding',
         'De analyzer selecteert fotonen op golflengte via het fotoëlektrisch effect',
       ],
@@ -236,7 +236,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Boven de Debyetemperatuur domineert Umklapp-verstrooiing: fonon-fonon botsingen verkorten vrije weglengte sneller dan T-verbeteringen.',
     ],
     [
-      'In extern gemoduleerde lithiumniobaatMach-Zehnder-modulatoren, hoe moduleert een aangelegde spanning de intensiteit van licht?',
+      'In extern gemoduleerde lithiumniobaat-Mach-Zehnder-modulatoren, hoe moduleert een aangelegde spanning de intensiteit van licht?',
       [
         'Spanning verschuift de brekingsindex via het Pockels-effect',
         'Spanning ioniseert rechtstreeks opgesloten elektronen, verandert absorptie',
@@ -247,7 +247,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Pockels-effect (lineair elektro-optisch): spanning Δφ = (π/2)(V/Vπ) verschuift fase; destructieve/constructieve interferentie moduleert uitvoer.',
     ],
     [
-      'In polymeermartrixcomposietmaterialen beïnvloeden vezelrichting en vezel-matrixhechting beide de stijfheid. Welke heeft meer effect op longitudinale modulus bij hoge vezelfractie?',
+      'In polymeermatrixcomposietmaterialen beïnvloeden vezelrichting en vezel-matrixhechting beide de stijfheid. Welke heeft meer effect op longitudinale modulus bij hoge vezelfractie?',
       [
         'Vezelrichting domineert de longitudinale modulus',
         'Hechting is kritischer; slechte binding ontkent de bijdrage van vezels ongeacht richting',
@@ -258,7 +258,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Mengselregel met richtingsfactor: longitudinale modulus E = ηη_o ηL (Ef Vf + Em Vm). Misrichtingsfactor (η) domineert bij hoge Vf.',
     ],
     [
-      'Akustopische afleiders in laserscansystemen vertrouwen op een reizende akoestische golf om licht af te buigen. Wat bepaalt de afbuigingshoek?',
+      'Akoesto-optische afleiders in laserscansystemen vertrouwen op een reizende akoestische golf om licht af te buigen. Wat bepaalt de afbuigingshoek?',
       [
         'Hogere akoestische frequentie vergroot de afbuigingshoek',
         'De lasergolflengte ten opzichte van de akoestische golflengte',
@@ -266,7 +266,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'De piezo-elektrische coëfficiënt van de gebruikte kristallen',
       ],
       0,
-      'Akustopische afbuigingshoek θ ≈ λ_licht × ν_akoestisch / v_geluid; hogere akoestische frequentie verhoogt effectieve roosterperiode.',
+      'Akoesto-optische afbuigingshoek θ ≈ λ_licht × ν_akoestisch / v_geluid; hogere akoestische frequentie verhoogt effectieve roosterperiode.',
     ],
     [
       'In kernreactorneutroninologie geeft vermenigvuldigingsfactor k_eff > 1 een divergerende kettingreactie aan. Wat is de fysische oorsprong van vermenigvuldiging?',
@@ -288,7 +288,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Thermische weglopen wordt voorkomen door voedingsspanning proportioneel te verminderen',
       ],
       0,
-      'Lekkage P_lek ∝ exp(qE_a/kT) en elektromigratiegemiddelde tijd ∝ exp(-ΔE_a/kT) zijn exponentieel in T; vertraging voorkomt falen.',
+      'Lekkage Pₗₑₖ ∝ exp(qEₐ/kT) en elektromigratiegemiddelde tijd ∝ exp(-ΔEₐ/kT) zijn exponentieel in T; vertraging voorkomt falen.',
     ],
     [
       'In medische echografie veroorzaakt het akoestische stromingseffect vloeistofbeweging zonder bulkstroom. Wat is het mechanisme?',
@@ -302,15 +302,15 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Akoestische stroming: niet-lineaire stralingkracht ∝ I²/c op absorberende deeltjes creëert steady-state circulatie van transiënte effecten.',
     ],
     [
-      'In een thermoacoustische motor drijft een temperatuurgradient langs een stapel akoestische oscillaties aan. Welke thermodynamische cyclus lijkt dit op?',
+      'In een thermoacoustische motor drijft een temperatuurgradiënt langs een stapel akoestische oscillaties aan. Welke thermodynamische cyclus lijkt dit op?',
       [
         'Gaspaketten cyclen tussen warm en koud, als een Stirling-motor',
-        'Carnot-cyclus met stapel vervanging voor zuigermotor',
+        'Carnot-cyclus waarbij de stapel de zuigermotor vervangt',
         'Brayton-cyclus waarin werkstof met constant druk stroomt',
         'Otto-cyclus gecomprimeerd in akoestische golf in plaats van discrete slagen',
       ],
       0,
-      'Thermoacoustisch: gaspaketten oscilleren tussen hete en koude zones, ondergaan druk-temperatuurveranderingen analoog aan Stirling-motor.',
+      'Thermoacoustisch: gaspaketten oscilleren tussen hete en koude zones, ondergaan druk-temperatuurveranderingen analoog aan een Stirling-motor.',
     ],
     [
       'In avalanche-fotodiodes (APD\'s) verlengt interne versterking van ionisatieimpact het bruikbare signaalgebied, maar introduceert ruis. Wat is de primaire ruisbron?',
@@ -348,7 +348,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'SPM: φ_NL(t) = γ P(t) L verschuift pulfase; hogere intensiteit op piek ziet grotere verschuiving, creëert chirp Δν ∝ dP/dt.',
     ],
     [
-      'In molecuulbundelepixtaxie (MBE), waarom is groeisnelheid meestal beperkt tot ∼1 μm/uur ondanks moleculaire bundeldichtheden van 10¹⁶ cm⁻² s⁻¹?',
+      'In molecuulbundelepitaxie (MBE), waarom is groeisnelheid meestal beperkt tot ∼1 μm/uur ondanks moleculaire bundeldichtheden van 10¹⁶ cm⁻² s⁻¹?',
       [
         'Verblijftijd en diffusiekinetiek beperken hoeveel atomen hechten',
         'Vacuümkamer kan hoger afzettingspercentage niet ondersteunen zonder overmatige ontgassing',
@@ -356,7 +356,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Elektronenkanon voor reflectie-hogeënergie-elektronendiffractie (RHEED) beschadigt oppervlak bij hogere snelheid',
       ],
       0,
-      'MBE-tempo beperkt door verblijftijd τ_r en stap-diffusie; lage T verbetert kleving, hoge T verhoogt diffusielengte maar vermindert τ_r.',
+      'MBE-tempo beperkt door verblijftijd τᵣ en stap-diffusie; lage T verbetert kleving, hoge T verhoogt diffusielengte maar vermindert τᵣ.',
     ],
     [
       'In directe numerieke simulatie (DNS) van turbulentie, waarom is rekenkosten prohibitief voor hoge Reynolds-getallen?',
@@ -372,20 +372,20 @@ export const APPLIED_PHYSICS: CategoryContent = {
     [
       'In oktupoolversterkende kernresonantiefluorescentie (NRF), waarom kunnen kernen met nulkwadrupoolmoment (Q = 0) smalere resonanties tonen dan enkel-dipoolovergangen?',
       [
-        'Oktupooltransities hebben langere levensduren en geen quadrupoolmengsel',
+        'Oktupooltransities hebben langere levensduren en geen kwadrupoolmengsel',
         'Nulkwadrupoolmoment voorkomt hyperfijnverbreding',
         'Oktupooltransities zijn zuiver magnetisch, vermijdt elektrische-veldfluctuaties',
         'NRF-resonanties verscherpen omdat fotonen-terugslag in kern wordt geëlimineerd',
       ],
       0,
-      'Oktupoolvervallen A_8 < A_2; resonantiebreedte Γ ∝ A stijgt, maar geen quadrupoolmengsel voorkomt extra verbreediningsmechanismen.',
+      'Oktupoolvervallen A₈ < A₂; resonantiebreedte Γ ∝ A stijgt, maar geen kwadrupoolmengsel voorkomt extra verbredingsmechanismen.',
     ],
     [
-      'In silicium-fotoveelvoudi­gers (SiPM\'s) werken Geiger-modus avalanche-fotodiodes parallel met geïntegreerde uitdovers. Welk voordeel geeft parallelarchitectuur over afzonderlijke APD\'s?',
+      'In silicium-fotoveelvoudigers (SiPM\'s) werken Geiger-modus avalanche-fotodiodes parallel met geïntegreerde uitdovers. Welk voordeel geeft parallelarchitectuur over afzonderlijke APD\'s?',
       [
         'Onafhankelijke pixelontladingen geven proportionele fotontelling',
         'Parallelle pixels verminderen vereiste bedrijfsspanning voor ionisatie-impact',
-        'De uitdovers voorkomen volledig nagloeiingen of donkere teltelling',
+        'De uitdovers voorkomen volledig nagloeiingen of donkertellingen',
         'Pixelkruis-communicatie maakt signaalversterking voorbij enkelvoudige-fotonengevoeligheid mogelijk',
       ],
       0,
@@ -396,22 +396,22 @@ export const APPLIED_PHYSICS: CategoryContent = {
       [
         'Veldketens vormen lastdragende structuren die schuifspanning weerstaan',
         'Thermische energie smelt ketens, verhoogt moleculaire beweging',
-        'Magnetische dipoolwechselwerking wordt afstotend bij hoge veld',
+        'Magnetische dipoolwisselwerking wordt afstotend bij hoog veld',
         'IJzeroxydedeeltjes ondergaan fasescheiding, vangen vloeistof tussen aggregaten',
       ],
       0,
-      'Veldgeïnduceerde structuren (ketens, kolommen) roteren met schuifstroom; hun structuur-dissosiatieki­netiek domineert visceuze spanning boven drempel.',
+      'Veldgeïnduceerde structuren (ketens, kolommen) roteren met schuifstroom; hun structuur-dissociatiekinetiek domineert visceuze spanning boven drempel.',
     ],
     [
       'In röntgenkristallografie op synchrotrons onderdrukt harmonischen-afwijzing met Si(999)-reflectie hogere-orde vervuiling. Waarom niet simpelweg een monochromator-filter gebruiken?',
       [
-        'Alleen de 9e-orde reflectie voldoet aan Bragg op die glanshoek',
+        'Alleen de 9e-orde reflectie voldoet aan de Bragg-voorwaarde op die glanshoek',
         'Si(999) is immuun voor thermische vervorming omdat het diep in het rooster is gebonden',
         'Harmonischefiltering vermindert coherentie, terwijl Si(999) transversale coherentie bewaart',
         'Alleen Si(999) kan vereist fotonenflux bereiken bij harde röntgen-energieën',
       ],
       0,
-      'Bragg-vergelijking: 2d sinθ = nλ; Si(999) heeft roosterafstand d/9; hoge-orde (n=9) reflecteert bij glanshoek, grondtoon kan Bragg niet voldoen.',
+      'Bragg-vergelijking: 2d sinθ = nλ; Si(999) heeft roosterafstand d/9; hoge-orde (n=9) reflecteert bij glanshoek, de grondtoon kan niet aan de Bragg-voorwaarde voldoen.',
     ],
     [
       'In superkritische vloeistofextractie (SFE), waarom piekt extractieeffectiviteit bij specifieke dichtheid nabij kritisch punt in plaats van monotoon toe te nemen met druk?',
@@ -425,7 +425,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Nabij kritisch punt: ∂ρ/∂P divergeert; oplosvermogen (∝ dichtheid) piekt; verdere P-stijging verhoogt ρ maar vermindert resterende interacties.',
     ],
     [
-      'In hoog-harmonisch-generatie (HHG) van atoomgassen aangedreven door intense infrarode lasers, wat voorkomt efficiënte generatie voorbij ionisatieplateauharmoni­eken?',
+      'In hoog-harmonisch-generatie (HHG) van atoomgassen aangedreven door intense infrarode lasers, wat voorkomt efficiënte generatie voorbij ionisatieplateauharmonieken?',
       [
         'Uitputting van neutrale atomen beperkt harmonische straling uit het plasma',
         'Harmonischen voorbij plateau hebben golflengte korter dan laserspot, diffracteren weg van generatiegebied',
@@ -436,11 +436,11 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'HHG-plateau: recombinatie van geïoniseerde atomen produceert harmonischen; uitputting van neutrale populatie en vrij-vrij absorptie in plasma beperken efficiëntie voorbij plateau.',
     ],
     [
-      'In seismische golfgeleider-voortplanting, waarom vertonen geleide P-golven langs dicht-oppervlaktelaag een keerpuntstructuur in diepte die frequentie-afhankelijk is?',
+      'In seismische golfgeleider-voortplanting, waarom vertonen geleide P-golven langs een dichte oppervlaktelaag een keerpuntstructuur in diepte die frequentie-afhankelijk is?',
       [
         'Stijgende snelheid met diepte keert lage frequenties diep en hoge ondiep',
         'Poisson-verhouding varieert met diepte, creëert dispersief medium',
-        'Verzwakking is frequentie-afhankelijk, voorkomt laagfrequenties om diep door te dringen',
+        'Verzwakking is frequentie-afhankelijk, verhindert dat laagfrequente golven diep doordringen',
         'Laagdikte is golflengte-afhankelijk, beperkt alleen bepaalde modi',
       ],
       0,
@@ -455,7 +455,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'De laser kan golflengten bereiken die onmogelijk zijn met conventionele halfgeleiders',
       ],
       0,
-      'QCL: engineered subbanden via kwantumopsluiting; subbandovergangen ontkoppelen golflengte van bandgap; directe stroominjec­tie pompt populatieinversie.',
+      'QCL: engineered subbanden via kwantumopsluiting; subbandovergangen ontkoppelen golflengte van bandgap; directe stroominjectie pompt populatieinversie.',
     ],
     [
       'In fractioneel kwantum-Hall-effect (FQHE) verschijnen samengestelde fermionen als gebonden toestanden van elektronen en magnetische fluxquanta. Waarom vereenvoudigt dit het veel-lichaamsprobleem?',
@@ -483,15 +483,15 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'In elektromagnetisch veroorzaakte transparantie (EIT) wordt een zwakke testlaser transparant wanneer een sterke besturingslaser twee atomaire transities koppelt. Wat is het onderliggende mechanisme?',
       [
         'Een donkere-toestand superpositie annuleert testabsorptie destructief',
-        'Bestuuringslaser ioniseert bovenste toestand, voorkomt testabsorptie',
+        'Besturingslaser ioniseert bovenste toestand, voorkomt testabsorptie',
         'Rabi-oscillaties van besturingslaser veroorzaken snelle aangeslagen-toestand verval',
         'Besturingslaser verschuift atoomresonantiefrequentie weg van testgolflengte',
       ],
       0,
-      'EIT: duistere-toestand superposit­ie (adiabatische eigentoest­and) koppelt niet aan test; destructieve kwantuminterferentie annuleert absorptie via 3-niveaus Λ systeem.',
+      'EIT: duistere-toestand superpositie (adiabatische eigentoestand) koppelt niet aan test; destructieve kwantuminterferentie annuleert absorptie via 3-niveaus Λ systeem.',
     ],
     [
-      'In microfluidische elektrokinetische instabiliteit, vertone dunne permselectieve membraan (ionenwisselaag) onder hoog elektrisch veld wervelrol­cellen. Wat triggert de instabiliteit?',
+      'In microfluidische elektrokinetische instabiliteit vertoont een dun permselectief membraan (ionenwisselaag) onder een hoog elektrisch veld wervelrolcellen. Wat triggert de instabiliteit?',
       [
         'Ionpolarisatie destabiliseert de stroming aan het interface',
         'Het membraan ondergaat ladingomkering bij hoge spanning',
@@ -507,7 +507,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'In context van laser-plasma-instabiliteiten tijdens traagheidsopsluiting fusie (ICF) hohlraum-verwarming kunnen gestimuleerde Ramanverstrooiing (SRS) en gestimuleerde Brillouinverstrooiing (SBS) via gemeenschappelijke ion-akoestische golf koppelen. Wat is de fysische gevolg van deze koppeling?',
       [
         'Koppeling verlaagt de drempel voor parametrische pompuitputting',
-        'Koppeling verhoogt Stokes-golflengtefre­quentieverschuiving voorbij Raman- of Brillouinfrequentie alleen',
+        'Koppeling verhoogt Stokes-golflengtefrequentieverschuiving voorbij Raman- of Brillouinfrequentie alleen',
         'Ion-akoestische golven worden zelf-sustenend en genereren elektromagnetische ruis',
         'Pompbundel splitst in twee duidelijke gebroken bundels met verschillende golfvectoren',
       ],
@@ -515,7 +515,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'SRS-SBS koppeling: ion-akoestische golf katalyseert energieoverdracht van pomp naar Stokes met lagere drempel; beide verstrooiingskanalen voeden dezelfde akoestische modus.',
     ],
     [
-      'In topologische fotonica breken vallei-Hall fotonische kristallen tijd-omkering symmetrie om eenrichtingsflanken te creëren. Hoe behoudt fotonica vallei-Hall effect directionat­eit zonder magnetische velden?',
+      'In topologische fotonica breken vallei-Hall fotonische kristallen tijd-omkering symmetrie om eenrichtingsflanken te creëren. Hoe behoudt fotonica vallei-Hall effect directionaliteit zonder magnetische velden?',
       [
         'Gebroken symmetrie geeft valleien tegengestelde Berry-kromming en chiraliteit',
         'Optische activiteit (natuurlijke cirkelvormige dichroïsme) van materiaal breekt tijd-omkering symmetrie',
@@ -523,32 +523,32 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Fotonenbandspleet opent en sluit periodiek, beperkt licht op grenzen',
       ],
       0,
-      'Vallei-Hall effect: C₃ breking → tegengestelde Berry-kromming op K, K\'; vallei-vergrendelde rantstaten terugspreiding verboden door vallei-chir­aliteitsbe­houd.',
+      'Vallei-Hall effect: C₃ breking → tegengestelde Berry-kromming op K, K\'; terugverstrooiing van vallei-vergrendelde randtoestanden is verboden door vallei-chiraliteitsbehoud.',
     ],
     [
-      'In geavanceerde kernreactorbrands­tof (TRISO-deeltjes) kan de SiC-coating­slaag splijting­sproductdruk en temperatuurgradient ondergaan zonder falen. Welk atomair-schaal mechanisme stelt SiC in staat sterkte tot ∼1600 °C te behouden?',
+      'In geavanceerde kernreactorbrandstof (TRISO-deeltjes) kan de SiC-coatingslaag splijtingsproductdruk en temperatuurgradiënt ondergaan zonder falen. Welk atomair-schaal mechanisme stelt SiC in staat sterkte tot ∼1600 °C te behouden?',
       [
         'Sterke covalente Si-C-bindingen houden puntdefectmobiliteit laag tot ∼1600 °C',
-        'SiC vormt niet-kristallijne beschermlaag die splijting­sgasverspreiding voorkomt',
+        'SiC vormt niet-kristallijne beschermlaag die splijtingsgasverspreiding voorkomt',
         'De SiC-kristalstructuur ondergaat faseverandering die mechanische stabiliteit vergrendelt',
-        'Splijt­ingsfragmen­ten chemisch binden aan SiC-rooster, versterken het lokaal',
+        'Splijtingsfragmenten chemisch binden aan SiC-rooster, versterken het lokaal',
       ],
       0,
-      'SiC: hoge kT_D, grote E_m voor dislocatie-kruip; onder ∼1600 °C is Nabarro-Herring-kruip verwaarloosbaar; puntdefectdichtheid blijft laag.',
+      'SiC: hoge kT_D, grote Eₘ voor dislocatie-kruip; onder ∼1600 °C is Nabarro-Herring-kruip verwaarloosbaar; puntdefectdichtheid blijft laag.',
     ],
     [
-      'In scanning-tunnel­microsco­pie (STM) van een metaal is tunnelstroom I exponentieel gevoelig voor spalafstand z. Op monsters met elektronische wanorde (b.v. oppervlakteru­whei­d van toestandsdichtheid) vertoont constant-stroom STM schijnbare topografie die fysieke topografie niet overeenkomt. Waarom treedt dit artefact op?',
+      'In scanning-tunnelmicroscopie (STM) van een metaal is tunnelstroom I exponentieel gevoelig voor spalafstand z. Op monsters met elektronische wanorde (b.v. oppervlakteruwheid van toestandsdichtheid) vertoont constant-stroom STM een schijnbare topografie die niet overeenkomt met de fysieke topografie. Waarom treedt dit artefact op?',
       [
         'Terugkoppeling past tiphoogte aan om I vast te houden, en kaart zo DOS, niet echte topografie',
         'Thermische trillingen van tip verbreden tunnelresonantie, verminderen ruimtelijke resolutie',
-        'De tunnelbarrière­hoogte verandert met monstersa­menstelling, beïnvloedt exponentiële gevoeligheid',
+        'De tunnelbarrièrehoogte verandert met monstersamenstelling, beïnvloedt exponentiële gevoeligheid',
         'Tip-monster interacties creëren aantrekkende kracht die elektronische effecten domineert',
       ],
       0,
       'STM constant-stroom: I ∝ exp(z) ρ(E_F); terugkoppeling handhaaft I, dus z volgt ρ(E_F)-variaties—elektronische correctie, niet topografisch.',
     ],
     [
-      'In femtoseconde-laserablatie van vaste stoffen, vermijden ultrakorte pulsen thermische verspreiding in bulk. Echter, de ablatiedrempel (vloeistof F_th) vertoont niet-monotoon afhanke­lijkheid van pulduur τ onder ∼100 fs. Wat veroorzaakt deze non-monotoni­ci­teit?',
+      'In femtoseconde-laserablatie van vaste stoffen, vermijden ultrakorte pulsen thermische verspreiding in bulk. Echter, de ablatiedrempel (vloeistof Fₜₕ) vertoont niet-monotoon afhankelijkheid van pulduur τ onder ∼100 fs. Wat veroorzaakt deze non-monotoniciteit?',
       [
         'Onder de elektron-fonon-koppelingstijd vragen kortere pulsen hogere fluence',
         'Onder 100 fs wordt meervoudige-foton ionisatie dominant, verhoogt ionisatiedrempel',
@@ -556,87 +556,87 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Plasmascherm voorkomt kortere pulsen het oppervlak bereiken',
       ],
       0,
-      'Femtoseconde-ablatie: τ < τ_ep (elektron-fonon­koppelingstijd ∼ 100 fs) → elektronen verwarmen voor equilibratie; langere τ laat fonon­saccumulatie toe, verlaagt F_th.',
+      'Femtoseconde-ablatie: τ < τₑₚ (elektron-fononkoppelingstijd ∼ 100 fs) → elektronen verwarmen voor equilibratie; langere τ laat fononsaccumulatie toe, verlaagt Fₜₕ.',
     ],
     [
-      'In magnetohydrodynamische (MHD) turbulentie onderhevig aan sterk achtergrond magnetisch veld B₀ is energiecas­cade anisotropisch: turbulente wervel­s rekken zich voorkeur langs B₀, creëren "potlood­vormig" spectrum in k-ruimte. Welk fundamentaal verschil in moduskoppeling veroorzaakt deze anisotropie vergeleken met normale vloeibare turbulentie?',
+      'In magnetohydrodynamische (MHD) turbulentie onderhevig aan sterk achtergrond magnetisch veld B₀ is energiecascade anisotropisch: turbulente wervels rekken zich voorkeur langs B₀, creëren "potloodvormig" spectrum in k-ruimte. Welk fundamentaal verschil in moduskoppeling veroorzaakt deze anisotropie vergeleken met normale vloeibare turbulentie?',
       [
         'Magnetische spanning onderdrukt loodrechte beweging, bevoordeelt cascade langs B₀',
-        'Alfvén-golfdisp­ersie­relatie ω = v_A k‖ beperkt cascade naar parallelle golfnumers',
+        'Alfvén-golfdispersierelatie ω = vₐ k‖ beperkt cascade naar parallelle golfnumers',
         'Visceuze dissipatie is anisotropisch vanwege anisotropische viscositeit in gemagnetiseerd plasma',
-        'Magnetische reconnectie creëert smalle stroomvel­len die loodrechte turbulentie fragmenteren',
+        'Magnetische reconnectie creëert smalle stroomvellen die loodrechte turbulentie fragmenteren',
       ],
       0,
-      'MHD-anisotropie: B₀ onderdrukt Alfvén-golfinteractie ⊥ tot B; parallelle cascade domineert; loodrechte modi koppelen zwak → potlood­spectrum.',
+      'MHD-anisotropie: B₀ onderdrukt Alfvén-golfinteractie ⊥ tot B; parallelle cascade domineert; loodrechte modi koppelen zwak → potloodspectrum.',
     ],
     [
-      'In superkritische wateroxidatie (SCWO) voor gevaarlijke-afval behandeling kan ionenproduct K_w van water nabij kritisch punt (374 °C, 22 MPa) tot 10⁻¹¹ zijn, veel hoger dan 10⁻¹⁴ bij 25 °C. Hoe beïnvloedt deze dramatische K_w-verandering reactiekine­tiek van organische oxidatie?',
+      'In superkritische wateroxidatie (SCWO) voor gevaarlijke-afval behandeling kan ionenproduct K_w van water nabij kritisch punt (374 °C, 22 MPa) tot 10⁻¹¹ zijn, veel hoger dan 10⁻¹⁴ bij 25 °C. Hoe beïnvloedt deze dramatische K_w-verandering reactiekinetiek van organische oxidatie?',
       [
         'Hoger K_w verhoogt [H⁺]/[OH⁻] en versterkt •OH-radicalen en oxidatie',
-        'Hoger K_w verlaagt oplosba­arheid van organische stoffen, vertraagt oxidatie',
-        'De diëlektrische constante van water daalt nabij T_c, verlaagt ionendissocia­tie ondanks hoger K_w',
+        'Hoger K_w verlaagt oplosbaarheid van organische stoffen, vertraagt oxidatie',
+        'De diëlektrische constante van water daalt nabij T_c, verlaagt ionendissociatie ondanks hoger K_w',
         'Superkritisch water remt water-gemedieerde radicaal reacties, vereist alternatieve paden',
       ],
       0,
       'SCWO: superkritisch H₂O heeft K_w ∼ 10⁻¹¹; [H⁺][OH⁻] → 10⁻¹¹ M²; •OH-generatie via ketenreacties versnelt vrij-radicaal oxidatie van organica.',
     ],
     [
-      'In optische-frequentie-kammen van modus-vergrendelde femtoseconde lasers staan frequentie-kamtanden afstand door Δf_rep (repetitiefrequentie) en offset door f_CEO (drager-envelop-offset frequentie). Waarom is stabilisering f_CEO kritiek voor breedbandspectromen beurzen, terwijl Δf_rep vergelijkend los kan zijn?',
+      'In optische-frequentie-kammen van modus-vergrendelde femtoseconde lasers staan frequentie-kamtanden afstand door Δfᵣₑₚ (repetitiefrequentie) en offset door f_CEO (drager-envelop-offset frequentie). Waarom is stabilisering f_CEO kritiek voor breedbandspectromen beurzen, terwijl Δfᵣₑₚ vergelijkend los kan zijn?',
       [
-        'f_CEO bepaalt de absolute kamtandfrequentie; Δf_rep bepaalt alleen de afstand',
-        'f_CEO bepaalt laservezogen; Δf_rep beïnvloedt output­intensiteit niet',
-        'f_CEO vergrendelt spectrum naar optische resonanties; Δf_rep is automatisch bepaald door caviteitslengte',
-        'Stabilisering Δf_rep is onmogelijk; alleen f_CEO kan elektronisch worden bestuurd',
+        'f_CEO bepaalt de absolute kamtandfrequentie; Δfᵣₑₚ bepaalt alleen de afstand',
+        'f_CEO bepaalt de golfvorm van de laserpuls; Δfᵣₑₚ beïnvloedt outputintensiteit niet',
+        'f_CEO vergrendelt spectrum naar optische resonanties; Δfᵣₑₚ is automatisch bepaald door caviteitslengte',
+        'Stabilisering Δfᵣₑₚ is onmogelijk; alleen f_CEO kan elektronisch worden bestuurd',
       ],
       0,
-      'f_CEO: tand m heeft frequentie f_m = m·Δf_rep + f_CEO; f_CEO drift → alle tanden verschuiven in abs. freq., breekt coherentie. Δf_rep drift → afstandsfout, gering voor breedband.',
+      'f_CEO: tand m heeft frequentie fₘ = m·Δfᵣₑₚ + f_CEO; f_CEO drift → alle tanden verschuiven in abs. freq., breekt coherentie. Δfᵣₑₚ drift → afstandsfout, gering voor breedband.',
     ],
     [
-      'In plasmonische metamateria­len ontworpen met sub-golflengte kenmerken, kan effectieve magnetische permeabiliteit μ_eff negatief zijn (μ_eff < 0) hoewel individuele metaalconst­ituen­ten niet-magnetisch zijn. Wat is de oorsprong van deze effectieve magnetisme?',
+      'In plasmonische metamaterialen ontworpen met sub-golflengte kenmerken, kan effectieve magnetische permeabiliteit μ_eff negatief zijn (μ_eff < 0) hoewel individuele metaalconstituenten niet-magnetisch zijn. Wat is de oorsprong van deze effectieve magnetisme?',
       [
         'Circulerende stromen in split-ring resonatoren geven een resonante magnetische respons',
         'Vrije elektronen in metaal verwerven orbitaal impulsmoment, nabootsen intrinsieke spinmagnetisme',
-        'De plasmafre­quentie van metaal verschuift onder operationele frequentie, keert permeabiliteits­teken om',
-        'Niet-lineaire effecten bij hoog veld­sterkte induceren permanente magnetisatie',
+        'De plasmafrequentie van metaal verschuift onder operationele frequentie, keert permeabiliteitsteken om',
+        'Niet-lineaire effecten bij hoge veldsterkte induceren permanente magnetisatie',
       ],
       0,
       'Plasmonische metamateriaal: split-ring resonatoren koppelen magnetisch veld → circulerende stroom → μ_eff < 0 nabij resonantie; effectieve LC-resonantie domineert.',
     ],
     [
-      'In cryogene neutronen­detec­tie met behulp van supervloeibaar ⁴He (supervloeibaar-He-doel) ioniseren prompt kernterugslag de supervloeistof, genereren quasideeltjes­excitat­ies waarneembaar via bolometer. Waarom bereikt deze aanpak gevoeligheid tot donkere-materiakandidaten met lage massa terwijl conventionele halfgeleiders niet kunnen?',
+      'In cryogene neutronendetectie met behulp van supervloeibaar ⁴He (supervloeibaar-He-doel) ioniseert kernterugslag de supervloeistof onmiddellijk en genereert quasideeltjesexcitaties waarneembaar via bolometer. Waarom bereikt deze aanpak gevoeligheid tot donkere-materiakandidaten met lage massa terwijl conventionele halfgeleiders niet kunnen?',
       [
         'Supervloeibaar He vangt terugslag die eV-bandspleten missen',
         'Supervloeibaar He heeft hogere dichtheid dan halfgeleiders, verhoogt doorsnede',
-        'Helium is ongevoelig voor fotonachitr­ondsignalen die halfgelei­derdetec­toren kwellen',
-        'Cryogene bolometer­respons is inherent sneller dan halfgelei­derelektro­nica',
+        'Helium is ongevoelig voor fotonachtergrondsignalen die halfgeleiderdetectoren kwellen',
+        'Cryogene bolometerrespons is inherent sneller dan halfgeleiderelektronica',
       ],
       0,
-      'Supervloeibaar ⁴He: ionisatie E_i ∼ meV; lage-massa WIMP-terugslag (E_r ∼ keV) produceert detecteerbare quasideeltjes; Ge/Si bandgap (eV) mist lage-massa-terugslagen.',
+      'Supervloeibaar ⁴He: ionisatie Eᵢ ∼ meV; lage-massa WIMP-terugslag (Eᵣ ∼ keV) produceert detecteerbare quasideeltjes; Ge/Si bandgap (eV) mist lage-massa-terugslagen.',
     ],
     [
-      'In resonante inelastische röntgen­verstrooiing (RIXS) op 3d-overgangs­metaal K-kanten, is intermediaire toestand een 1s kernhipat gekoppeld aan 3d valentie-elektronen. Waarom bereikt RIXS excitaties (b.v. d-d-transities, magnonen) die dipool­verboden zijn in conventionele spectroscop­ie?',
+      'In resonante inelastische röntgenverstrooiing (RIXS) op 3d-overgangsmetaal K-kanten, is intermediaire toestand een 1s kernhip gekoppeld aan 3d valentie-elektronen. Waarom bereikt RIXS excitaties (b.v. d-d-transities, magnonen) die dipoolverboden zijn in conventionele spectroscopie?',
       [
         'Resonantie staat multipooltransities toe die verboden zijn door dipoolregels van de grondtoestand',
-        'RIXS geeft impulsresolutie, staat verstrooiingsvec­toren toe die dipoolregels omzeilen',
+        'RIXS geeft impulsresolutie, staat verstrooiingsvectoren toe die dipoolregels omzeilen',
         'De 1s kernhip screening verandert effectieve kernlading zien door 3d-elektronen, maakt nieuwe transities mogelijk',
-        'RIXS-excitatie­golflengte kan worden afgestemd om dipo­lverboden lijnen te versterken',
+        'RIXS-excitatiegolflengte kan worden afgestemd om dipolverboden lijnen te versterken',
       ],
       0,
-      'RIXS: intermediaire 1s-kernhip­toestand staat quadrupol-/hoger-multipool­koppelingen toe; eindexcitat­ies van deze toestand hoeven grondtoestand­dipoolregels niet te gehoorzamen.',
+      'RIXS: intermediaire 1s-kernhiptoestand staat kwadrupool-/hoger-multipoolkoppelingen toe; eindexcitaties van deze toestand hoeven grondtoestanddipoolregels niet te gehoorzamen.',
     ],
     [
-      'In hogetempe­ratuur­super­geleiders (kupraten) opent de pseudogap (PG) onder T* en onderdrukt spectrale gewicht op Fermilevel, toch opent de supergeleiding­sgap onder T_c < T*. Wat is de relatie tussen PG en supergeleiding­spairing, en waarom zijn ze duidelijke verschijnselen?',
+      'In hogetemperatuursupergeleiders (kupraten) opent de pseudogap (PG) onder T* en onderdrukt spectrale gewicht op Fermilevel, toch opent de supergeleidingsgap onder T_c < T*. Wat is de relatie tussen PG en supergeleidingspairing, en waarom zijn ze duidelijke verschijnselen?',
       [
         'PG is een bosonische fluctuatieschaal boven T_c; SC-gap is fermionisch onder T_c',
-        'PG en SC-gap zijn dezelfde verschijning; T_c meet wanneer pairing­coherentie begint, terwijl T* meet wanneer pairing begint',
-        'PG is een toestandsdichthei­dskenmerk; SC-gappenist transportver­schijning',
-        'PG ontstaat uit fonoscherm­ing; SC-gappenontstaat uit elektron-elektron interacties',
+        'PG en SC-gap zijn dezelfde verschijning; T_c meet wanneer pairingcoherentie begint, terwijl T* meet wanneer pairing begint',
+        'PG is een toestandsdichtheidskenmerk; SC-gap is een transportverschijnsel',
+        'PG ontstaat uit fonoscherming; SC-gap ontstaat uit elektron-elektron interacties',
       ],
       0,
-      'Kupraat-pseudogap: bosonisch (PG ∝ spin-fluct­uaties) boven T_c, overleeft tot T*; SC-gap (fermionisch, supergeleiding­coherentie) verschijnt onder T_c < T*.',
+      'Kupraat-pseudogap: bosonisch (PG ∝ spin-fluctuaties) boven T_c, overleeft tot T*; SC-gap (fermionisch, supergeleidingcoherentie) verschijnt onder T_c < T*.',
     ],
     [
-      'In accretie­schijf­straaling­stransfer voldoet verticale structuur aan hydrostatisch evenwicht en stralings­energibalans. Bij hoge accretietarif­fen (super-Eddington), wordt de schijf geometrisch dik. Wat veroorzaakt dat de schijf "opzwelt" en waarom beperkt dit de lokale stralings­efficiëntie?',
+      'In accretieschijfstraalingstransfer voldoet verticale structuur aan hydrostatisch evenwicht en stralingsenergibalans. Bij hoge accretietariffen (super-Eddington), wordt de schijf geometrisch dik. Wat veroorzaakt dat de schijf "opzwelt" en waarom beperkt dit de lokale stralingsefficiëntie?',
       [
         'Stralingsdruk domineert en doet de schijf opzwellen',
         'Magnetische instabiliteit (MRI) creëert turbulente verwarming die schijf opzwelt',
@@ -647,23 +647,23 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'Super-Eddington accretie: P_rad ∼ P_grav → dikke schijf; ingevangen straling verhoogt effectieve opaciteit; lokale stralingsefficiëntie η_rad < dun-schijf-limiet.',
     ],
     [
-      'In tijdsopgeloste röntgendiffractie (TR-XRD) tijdens femtoseconde lasergeïnduceerde faseveranderin­gen, roosterdynamica worden bereikt via tijdsopgeloste veranderingen in diffractiepiekintensiteit en verbreding. Welke informatie over ultrasnelle fonondynamica is gecodeerd in de tijdsafhanke­lijke diffractielijlijnvorm (FWHM)?',
+      'In tijdsopgeloste röntgendiffractie (TR-XRD) tijdens femtoseconde lasergeïnduceerde faseveranderingen, roosterdynamica worden bereikt via tijdsopgeloste veranderingen in diffractiepiekintensiteit en verbreding. Welke informatie over ultrasnelle fonondynamica is gecodeerd in de tijdsafhankelijke diffractielijnvorm (FWHM)?',
       [
         'FWHM volgt coherentielengte; het verval onthult de fonon-defaseringstijd',
         'FWHM meet densiteit van aangeslagen fonoenmodi; grotere FWHM geeft meer thermisch gevulde modi aan',
-        'FWHM is alleen bepaald door instrumentele resolutie; ultrasnelle dynamica verschijnen alleen in piekver­schuiving, niet verbreding',
+        'FWHM is alleen bepaald door instrumentele resolutie; ultrasnelle dynamica verschijnen alleen in piekverschuiving, niet verbreding',
         'FWHM codificeert fononenlevensduur (lijnbreedte); smalle FWHM geeft langlevende fonoenmodi aan',
       ],
       0,
-      'TR-XRD piekverbreding: FWHM ∝ 1/ξ (coherentielengte); coherentiedefas­ering uit fononexcitatie verbreed piek; FWHM­verval onthuld T₂.',
+      'TR-XRD piekverbreding: FWHM ∝ 1/ξ (coherentielengte); coherentiedefasering uit fononexcitatie verbreedt de piek; FWHM-verval onthult T₂.',
     ],
     [
-      'In diffractieve röntgenoptiek voor synchrotrons, analyzeerkri­stallen met asymmetrische Bragg-geometrie (asymmetrische snijhoek) vergroten de hoekacceptantie vergeleken met symmetrische geometrie. Hoe verbetert asymmetrie spectros­copische acceptantie zonder verlies van energieresolutie?',
+      'In diffractieve röntgenoptiek voor synchrotrons, analyseerkristallen met asymmetrische Bragg-geometrie (asymmetrische snijhoek) vergroten de hoekacceptantie vergeleken met symmetrische geometrie. Hoe verbetert asymmetrie spectroscopische acceptantie zonder verlies van energieresolutie?',
       [
         'Asymmetrische sneden vergroten hoekacceptantie met behoud van Darwin-smallheid',
         'Asymmetrische sneden verminderen Darwin-breedte door meervoudige Bragg-reflecties te onderdrukken',
         'Asymmetrische geometrie verschuift reflectiviteitspiek weg van Darwin-curve, verlaagt dynamische verbreding',
-        'Hoekvergroting ontstaat uit brekings­index anisotropie geïntroduceerd door snijhoek',
+        'Hoekvergroting ontstaat uit brekingsindex anisotropie geïntroduceerd door snijhoek',
       ],
       0,
       'Asymmetrische Bragg: Darwin-curve hoekbreedte = C × symmetrische breedte; vergroting C vergroot acceptantie terwijl dynamische smallheid behouden blijft.',

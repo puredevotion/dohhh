@@ -1,10 +1,12 @@
-import type { ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useRegisterSW } from 'virtual:pwa-register/react';
 
 import { useSWUpdate } from './lib/swUpdate.js';
 
 /** How often to poll for a new deploy while a tab sits open. */
 const UPDATE_CHECK_INTERVAL_MS = 60_000;
+/** How long "Later" hides the banner before it comes back to nag again. */
+const SNOOZE_MS = 10 * 60_000;
 
 /**
  * The default registration only checks for a new service worker on a fresh
@@ -31,20 +33,46 @@ export function UpdatePrompt(): ReactNode {
     },
   });
 
-  if (!needRefresh) return null;
+  const [snoozed, setSnoozed] = useState(false);
+  const snoozeTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  // A fresh needRefresh (e.g. the next redeploy) should nag again immediately,
+  // not stay hidden under a snooze set for a now-superseded update.
+  useEffect(() => {
+    setSnoozed(false);
+  }, [needRefresh]);
+
+  useEffect(() => {
+    return () => clearTimeout(snoozeTimer.current);
+  }, []);
+
+  if (!needRefresh || snoozed) return null;
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 flex items-center justify-between gap-3 border-t border-border/40 bg-surface px-4 py-3 text-sm shadow-lg">
       <span className="text-default-foreground">
         A newer version is ready. Everyone should update before you start.
       </span>
-      <button
-        type="button"
-        className="shrink-0 rounded-lg bg-accent px-3 py-1.5 font-medium text-white"
-        onClick={() => void updateServiceWorker(true)}
-      >
-        Update now
-      </button>
+      <div className="flex shrink-0 items-center gap-2">
+        <button
+          type="button"
+          className="rounded-lg px-2 py-1.5 font-medium text-muted"
+          onClick={() => {
+            setSnoozed(true);
+            clearTimeout(snoozeTimer.current);
+            snoozeTimer.current = setTimeout(() => setSnoozed(false), SNOOZE_MS);
+          }}
+        >
+          Later
+        </button>
+        <button
+          type="button"
+          className="rounded-lg bg-accent px-3 py-1.5 font-medium text-white"
+          onClick={() => void updateServiceWorker(true)}
+        >
+          Update now
+        </button>
+      </div>
     </div>
   );
 }

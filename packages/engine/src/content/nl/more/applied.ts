@@ -798,7 +798,7 @@ export const MORE_SPORT: CategoryContent = {
         'Een schop die eerst binnen de 22 van de tegenstander stuit nadat hij over de doellijn van de tegenstander is gegaan en terug in het speelveld is gespeeld',
       ],
       0,
-      'De regel beloont een specifieke schop: vanuit de eigen helft, die in het speelveld stuit en daarna binnen de tegenstander\'s 22 uit gaat. Het dwingt verdedigers om aanvallende breedte niet dicht te zetten.',
+      'De regel beloont een specifieke schop: vanuit de eigen helft, die in het speelveld stuit en daarna binnen de 22 van de tegenstander uit gaat. Het dwingt verdedigers om aanvallende breedte niet dicht te zetten.',
     ],
     [
       'Welke langlopende beslissingsregel voor knock-outduels over twee wedstrijden in zijn Europese clubcompetities schafte de UEFA in 2021 af?',
@@ -932,7 +932,7 @@ export const MORE_SPORT: CategoryContent = {
         'Er werd een minimale poogduur van vijfenveertig minuten ingevoerd, samen met een vereiste dat pogingen door twee continentale bonden onafhankelijk worden bekrachtigd, om korte, hoog-intensieve pogingen te diskwalificeren',
       ],
       0,
-      'In 1997 bevroor de UCI het record op 1972-materiaal, maar in 2014 opende het modern aerodynamisch materiaal weer toe.',
+      'In 1997 bevroor de UCI het record op 1972-materiaal, maar in 2014 stond het modern aerodynamisch materiaal weer toe.',
     ],
     [
       'Waarop berust de biologische-paspoort-benadering van antidoping?',

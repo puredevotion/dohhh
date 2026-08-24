@@ -239,7 +239,7 @@ export const MATHS: CategoryContent = {
       'What is the fundamental group of the circle?',
       ['Trivial', 'The integers under addition', 'The integers modulo 2', 'The rationals'],
       1,
-      'Pi_1(S^1) is isomorphic to Z, indexed by winding number.',
+      'Pi₁(S^1) is isomorphic to Z, indexed by winding number.',
     ],
     [
       'The central limit theorem concerns the limiting distribution of what?',

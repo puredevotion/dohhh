@@ -65,7 +65,7 @@ export const MORE_LITERATURE: CategoryContent = {
       'Apostrofe is de toespraak, metonymie de vervanging, anafoor de herhaling - alle drie worden er vaak mee verward.',
     ],
     [
-      'Bij welke stroming wordt Cesar Vallejo gerekend?',
+      'Bij welke stroming wordt César Vallejo gerekend?',
       [
         'De Latijns-Amerikaanse avant-gardepoëzie, verwant aan maar te onderscheiden van het surrealisme',
         'De Spaanse Generatie van 1927, samen met Lorca, Alberti en Cernuda in Madrid',
@@ -89,7 +89,7 @@ export const MORE_LITERATURE: CategoryContent = {
     [
       'Door wie werd de beweging van de "Négritude" voornamelijk gesticht?',
       [
-        'Aime Cesaire, Leopold Sedar Senghor en Leon Damas',
+        'Aimé Césaire, Léopold Sédar Senghor en Léon Damas',
         'Chinua Achebe en Wole Soyinka',
         'Frantz Fanon en Albert Memmi',
         'Claude McKay en Langston Hughes',
@@ -308,7 +308,7 @@ export const MORE_LITERATURE: CategoryContent = {
         'Een tekst die alle varianten opsomt zonder een voorkeurslezing af te drukken',
       ],
       0,
-      'De Nestle-Aland-editie. Zowel meerderheidstekst- als eén-manuscript-benaderingen bestaan en hebben allebei aanhangers, wat is waarom de keuze een methodologisch engagement is.',
+      'De Nestle-Aland-editie. Zowel meerderheidstekst- als één-manuscript-benaderingen bestaan en hebben allebei aanhangers, wat is waarom de keuze een methodologisch engagement is.',
     ],
     [
       'Wat houdt de Sanskrit-theorie van "dhvani" van Anandavardhana in?',

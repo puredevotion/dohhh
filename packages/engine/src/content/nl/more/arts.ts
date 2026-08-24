@@ -79,7 +79,7 @@ export const MORE_ART: CategoryContent = {
         'De weigering van de staat om openbare opdrachten voor levende kunstenaars te financieren',
       ],
       0,
-      'Opgericht in 1897 met Klimt als lid, gaat de Secession het Bauhaus twee decennia vooraf, dus de twee bewegingen hebben elkaar in werkelijkheid nooit overlapt, ondanks dat beide vaak worden aangehaald als mijlpalen van dezelfde bredere afkeer van de academische kunst.',
+      'Opgericht in 1897 met Klimt als lid, gaat de Secession het Bauhaus twee decennia vooraf. De twee bewegingen hebben elkaar in werkelijkheid dus nooit overlapt, hoewel beide vaak worden aangehaald als mijlpalen van dezelfde bredere afkeer van de academische kunst.',
     ],
     [
       'Wat is een "carton" in de context van fresco- of tapijtproductie?',
@@ -281,7 +281,7 @@ export const MORE_ART: CategoryContent = {
         'De perceptuele mechanismen die door de Gestaltpsychologie worden bestudeerd',
       ],
       0,
-      'Het is evenveel een discussie met het modernisme van Greenberg als een geschiedenis ervan, wat een treffende omschrijving is van het meeste werk van haar.',
+      'Het is evenveel een discussie met het modernisme van Greenberg als een geschiedenis ervan, wat een treffende omschrijving is van veel van haar werk.',
     ],
     [
       'Waarover gaat het debat over de Getty kouros?',
@@ -552,7 +552,7 @@ export const MORE_MUSIC: CategoryContent = {
         'Een akkoord van de toegevoegde sext op de subdominant',
       ],
       0,
-      'De cadentiële 6/4 is een dominant met verplaatste bovenstemmen, wat waarom Schenkeriaanse analyse weigert het ooit een tonica te noemen.',
+      'De cadentiële 6/4 is een dominant met verplaatste bovenstemmen, vandaar dat Schenkeriaanse analyse weigert het ooit een tonica te noemen.',
     ],
     [
       'Wat is het belang van de Notre-Dameschool voor de notatie?',

@@ -48,7 +48,7 @@ export const PHYSICS: CategoryContent = {
         'The photon number density of a blackbody to its temperature cubed',
       ],
       0,
-      'lambda_max * T is about 2.898e-3 m*K. The fourth-power relation is Stefan-Boltzmann; the long-wavelength limit is Rayleigh-Jeans.',
+      'lambdaₘₐₓ * T is about 2.898e-3 m*K. The fourth-power relation is Stefan-Boltzmann; the long-wavelength limit is Rayleigh-Jeans.',
     ],
   ],
   phd: [

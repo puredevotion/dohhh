@@ -23,13 +23,13 @@ export const MACROECON: CategoryContent = {
     [
       'Wat is het verschil tussen reëel en nominaal BBP?',
       [
-        'Reëel BBP corrigeert voor prijsveranderingen; nominaal BBP is gemeten tegen huidigerijzen',
+        'Reëel BBP corrigeert voor prijsveranderingen; nominaal BBP is gemeten tegen huidige prijzen',
         'Reëel BBP sluit overheidsuitgaven uit en nominaal BBP omvat ze',
         'Reëel BBP meet alleen verhandelde goederen en nominaal BBP omvat diensten',
         'Reëel BBP is altijd kleiner dan nominaal BBP',
       ],
       0,
-      'Reëel BBP corrigeert voor inflatie zodat vergelijkingen echte productiewijzigingen tonen; nominaal weerspiegelt huidigerijzen.',
+      'Reëel BBP corrigeert voor inflatie zodat vergelijkingen echte productiewijzigingen tonen; nominaal weerspiegelt huidige prijzen.',
     ],
     [
       'Wat is inflatie?',
@@ -106,7 +106,7 @@ export const MACROECON: CategoryContent = {
         'Inflatie vermindert reële waarde van besparingen van mensen',
       ],
       0,
-      'Verdringking vindt plaats wanneer overheidsschuld rentevoeten opdrijft, wat particuliere leningen en investeringen duurder maakt.',
+      'Verdringing vindt plaats wanneer overheidsschuld rentevoeten opdrijft, wat particuliere leningen en investeringen duurder maakt.',
     ],
     [
       'Wat is de productiemogelijkhedencurve?',
@@ -155,7 +155,7 @@ export const MACROECON: CategoryContent = {
     [
       'Wat is koopkrachtpariteit?',
       [
-        'Dezelfde mandje goederen zou dezelfde prijs hebben in verschillende landen tegen huige wisselkoersen',
+        'Hetzelfde mandje goederen zou dezelfde prijs hebben in verschillende landen tegen huidige wisselkoersen',
         'Vermogen van munt om waarde stabiel te houden in de tijd',
         'Overheidsbeleid om prijzen van essentiële goederen stabiel te houden',
         'Overeenkomst tussen landen over vaste wisselkoers',
@@ -166,7 +166,7 @@ export const MACROECON: CategoryContent = {
     [
       'Wat is de functie van centrale bank?',
       [
-        'Geldhoevelheidcontrole, monetair beleid bepalen en lender of last resort',
+        'Geldhoeveelheidcontrole, monetair beleid bepalen en lender of last resort',
         'Zorgen dat overheidsbegrotingen sluitend zijn en fiscale uitgaven goedkeuren',
         'Prijzen vaststellen voor alle goederen ter voorkoming van inflatie',
         'Commerciële bankservices verlenen aan het publiek',
@@ -251,7 +251,7 @@ export const MACROECON: CategoryContent = {
         'Bbp is nominaal en bni is altijd reëel, zodat de twee niet vergelijkbaar zijn zonder een deflatorreeks',
       ],
       0,
-      'Het verschil doet er enorm toe voor economieën met een grote buitenlands-eigendom kapitaalvoorraad of grote overmakingsstromen - Ierland is het standaardvoorbeeld.',
+      'Het verschil doet er enorm toe voor economieën met een grote in buitenlandse handen zijnde kapitaalvoorraad of grote overmakingsstromen - Ierland is het standaardvoorbeeld.',
     ],
     [
       'In het overlappende-generaties-model van Diamond (1965), welke voorwaarde signaleert dynamische inefficiëntie in het competitieve evenwicht?',
@@ -262,7 +262,7 @@ export const MACROECON: CategoryContent = {
         'Jonge actoren sparen meer dan oude actoren ontsparen in elke periode, wat marktclearing doorbreekt',
       ],
       0,
-      'Een OLG-economie kan kapitaal oveaccumuleren: als de evenwichtsrente onder bevolkingsgroei ligt, heeft de economie meer kapitaal dan nodig. Diamond (1965) gaf het klassieke argument waarom pensioenstelsel welvaartsverhogend kan zijn.',
+      'Een OLG-economie kan kapitaal oveaccumuleren: als de evenwichtsrente onder bevolkingsgroei ligt, heeft de economie meer kapitaal dan nodig. Diamond (1965) gaf het klassieke argument waarom een pensioenstelsel welvaartsverhogend kan zijn.',
     ],
     [
       'De oorspronkelijke Taylor-regel (1993) stelt de beleidsrente vast als een functie van wat, met welk kenmerk?',
@@ -629,7 +629,7 @@ export const MACROECON: CategoryContent = {
         'Het demonstreerde dat tweede-generatie-crisismodellen volledig samenvallen met eerste-generatiemodellen zodra verwachtingen rationeel worden',
       ],
       0,
-      'Tweede-generatiemodellen: meerdere evenwichten onder algemene kennis - geen duidelijkheid wanneer crisis optreedt. Morris-Shin voegden "global games"-techniek toe: privaat ruizige signalen breken algemene kennis en selecteren uniek evenwicht. Toepasbaar op bankruns en hersfinancieringscrises.',
+      'Tweede-generatiemodellen: meerdere evenwichten onder algemene kennis - geen duidelijkheid wanneer crisis optreedt. Morris-Shin voegden "global games"-techniek toe: privaat ruizige signalen breken algemene kennis en selecteren uniek evenwicht. Toepasbaar op bankruns en herfinancieringscrises.',
     ],
     [
       'In het Gertler-Kiyotaki-raamwerk van financiële intermediatie, wat beperkt banken\'s vermogen om krediet te verstrekken tijdens een crisis?',
@@ -662,7 +662,7 @@ export const MACROECON: CategoryContent = {
         'Het vereiste dat elke grote munt in 1931 gelijktijdig en met een identieke marge devalueerde, in één gecoördineerde aanpassing',
       ],
       0,
-      'Interbellum-goudstandaard: miste flexibiliteit, dwong anticyclische renteverhogingen/deflatie wanneer expansie nodig was. Landen die eerst van goud afstapten (GB 1931) herstelden snelst; "goudblok"-landen (France) hadden langste depressies. "Eerder af, eerder herstel"-patroon.',
+      'Interbellum-goudstandaard: miste flexibiliteit, dwong anticyclische renteverhogingen/deflatie wanneer expansie nodig was. Landen die eerst van goud afstapten (GB 1931) herstelden snelst; "goudblok"-landen (Frankrijk) hadden langste depressies. "Eerder af, eerder herstel"-patroon.',
     ],
     [
       'In het Eaton-Gersovitz-raamwerk (1981) van staatsschuld, wat disciplineert een overheid tegen wanbetaling, gegeven dat staten niet failliet kunnen worden verklaard door een rechtbank?',
@@ -686,7 +686,7 @@ export const MICROECON: CategoryContent = {
         'Naarmate één input stijgt terwijl anderen vast blijven, daalt de marginale opbrengst ervan uiteindelijk',
         'Totale output van bedrijf moet dalen bij productie-uitbreiding voorbij bepaald punt',
         'Werknemers worden minder productief naarmate ze ervaring op werk opdoen',
-        'Toename van alle inputs met dezelfde percentage vermindert totale output',
+        'Toename van alle inputs met hetzelfde percentage vermindert de totale output',
       ],
       0,
       'Afnemende marginale opbrengsten zijn fundamenteel: opeenvolgende eenheden variabele input leveren kleinere output-toenames op.',
@@ -711,7 +711,7 @@ export const MICROECON: CategoryContent = {
         'De winst een consument maakt door te kopen als prijzen dalen',
       ],
       0,
-      'Consumentensurplus meet extra voordeel van aankoop aan prijs lager dan reservatieprijze koper.',
+      'Consumentensurplus meet het extra voordeel van een aankoop tegen een prijs lager dan de reservatieprijs van de koper.',
     ],
     [
       'Wat is opportuniteitskosten?',
@@ -722,7 +722,7 @@ export const MICROECON: CategoryContent = {
         'De werkelijke kosten plus de tijd besteed aan iets verwerven',
       ],
       0,
-      'Opportuniteitskosten liggen ten grondslag aan rationeel besluitvorming: iets kiezen betekent volgende beste optie opgeven.',
+      'Opportuniteitskosten liggen ten grondslag aan rationele besluitvorming: iets kiezen betekent de volgende beste optie opgeven.',
     ],
     [
       'Waarom is er deadweight loss in monopolie?',
@@ -733,7 +733,7 @@ export const MICROECON: CategoryContent = {
         'Monopolist heeft hogere productiekosten dan concurrerende bedrijven',
       ],
       0,
-      'Deadweight loss ontstaat omdat monopolist output onder concurrentiëniveau beperkt om prijs boven kosten te handhaven.',
+      'Deadweight loss ontstaat omdat de monopolist de output onder het concurrentieniveau beperkt om de prijs boven de kosten te handhaven.',
     ],
     [
       'Wat is een onherroepelijke kost (sunk cost)?',
@@ -741,7 +741,7 @@ export const MICROECON: CategoryContent = {
         'Een kost die al is gemaakt en niet kan worden teruggekregen',
         'Het totale bedrag aan vaste kapitaal in een bedrijf besteed',
         'Een uitgave die zeker in de toekomst optreedt',
-        'De kosten van arbeid die met productieniveau variëert',
+        'De kosten van arbeid die met het productieniveau varieert',
       ],
       0,
       'Onherroepelijke kosten moeten in economische beslissingen worden genegeerd omdat ze ongeacht toekomstige keuzes niet kunnen worden teruggekregen.',
@@ -766,7 +766,7 @@ export const MICROECON: CategoryContent = {
         'Ze verminderen overheidsbelastinginkomsten',
       ],
       0,
-      'Handelsbeperking verminderen hoeveelheid onder efficiënt niveau, waardoor vrijwillige transacties beide zijden voordelig verhinderd worden.',
+      'Handelsbeperkingen verminderen de hoeveelheid tot onder het efficiënte niveau. Daardoor worden transacties verhinderd die voor beide zijden voordelig zouden zijn geweest.',
     ],
     [
       'Wat vertegenwoordigt een indifferentiecurve?',
@@ -777,10 +777,10 @@ export const MICROECON: CategoryContent = {
         'De afruiling tussen huidig en toekomstig verbruik',
       ],
       0,
-      'Indifferentiecurve toont bundels met gelijk nut, hellingen naar beneden omdat consumenten goederen tegen elkaar afwegen.',
+      'De indifferentiecurve toont bundels met gelijk nut en helt naar beneden omdat consumenten goederen tegen elkaar afwegen.',
     ],
     [
-      'Wat is prijs-elasticiteit van vraag?',
+      'Wat is prijselasticiteit van vraag?',
       [
         'De procentuele verandering van gevraagde hoeveelheid gedeeld door procentuele prijs-verandering',
         'De verandering gevraagde hoeveelheid wanneer prijs met één dollar stijgt',
@@ -788,7 +788,7 @@ export const MICROECON: CategoryContent = {
         'Gevoeligheid van prijs voor veranderingen van consumenteninkomsten',
       ],
       0,
-      'Prijs-elasticiteit meet gevoeligheid koper voor prijs-veranderingen: elastisch betekent hoeveelheid veel verandert.',
+      'Prijselasticiteit meet de gevoeligheid van de koper voor prijsveranderingen: elastisch betekent dat de hoeveelheid sterk verandert.',
     ],
     [
       'Wat is verschil tussen normale en inferieure goederen?',
@@ -821,7 +821,7 @@ export const MICROECON: CategoryContent = {
         'Vaste kosten zijn zeker en variabele kosten onzeker',
       ],
       0,
-      'Vaste kosten zoals huur veranderen niet met output; variabele kosten zoals materialen wel met productie-volume.',
+      'Vaste kosten zoals huur veranderen niet met de output; variabele kosten zoals materialen wel met het productievolume.',
     ],
     [
       'Wat is producentensurplus?',
@@ -832,7 +832,7 @@ export const MICROECON: CategoryContent = {
         'De waarde van onverkochte voorraad aan einde periode',
       ],
       0,
-      'Producentensurplus meet voordeel verkopers ontvangen door tegen prijs boven reservatieprijze te verkopen.',
+      'Producentensurplus meet het voordeel dat verkopers ontvangen door tegen een prijs boven hun reservatieprijs te verkopen.',
     ],
     [
       'Wat is marktfalen?',
@@ -940,7 +940,7 @@ export const MICROECON: CategoryContent = {
       [
         'Beide bedrijven prijzen tegen marginale kosten en maken nul economische winst, ook al zijn er maar twee bedrijven op de markt',
         'Bedrijven convergeren naar de monopolieprijs via stilzwijgende collusie, omdat een rivaal onderbieden nooit individueel winstgevend is',
-        'De prijs komt te liggen op het gemiddelde van marginale kosten en de monopolieprijs, verdeeld naar elk bedrijfs marktaandeel',
+        'De prijs komt te liggen op het gemiddelde van marginale kosten en de monopolieprijs, verdeeld naar het marktaandeel van elk bedrijf',
         'De markt bereikt nooit een evenwicht, omdat elk bedrijf een blijvende prikkel houdt om welke prijs de ander ook rekent te onderbieden',
       ],
       0,
@@ -963,7 +963,7 @@ export const MICROECON: CategoryContent = {
         'Het segment met minder elastische vraag krijgt een hogere marge boven marginale kosten, omgekeerd proportioneel met zijn elasticiteit',
         'De prijs wordt gelijkgetrokken over segmenten wanneer de monopolist gezamenlijke winst maximaliseert, omdat maar één marginale kost geldt voor beide',
         'De prijs wordt vastgesteld in proportie tot het gemiddelde inkomen van elk segment, volgens een betaalcapaciteitsregel',
-        'De prijs is het hoogst in welk segment dan ook met het grootste aantal koeprs, ongeacht hoe elastisch hun vraag is',
+        'De prijs is het hoogst in welk segment dan ook met het grootste aantal kopers, ongeacht hoe elastisch hun vraag is',
       ],
       0,
       'Derdegraads discriminatie: marge = 1/elasticiteit per segment. Minder elastische vraag → hogere marge. Robinson (1933). Vb: business vs toeristen klasse. Kan welvaart verlagen ondanks hogere winst.',
@@ -971,13 +971,13 @@ export const MICROECON: CategoryContent = {
     [
       'In Akerlofs "market for lemons", welk mechanisme kan ervoor zorgen dat de markt voor tweedehands auto\'s instort totdat alleen nog auto\'s van lage kwaliteit worden verhandeld?',
       [
-        'Verkopers kennen privé de kwaliteit van een auto maar koopers niet, zodat koopers een prijs bieden die alleen de gemiddelde kwaliteit weerspiegelt, wat verkopers van bovengemiddelde auto\'s uit de markt drijft',
+        'Verkopers kennen privé de kwaliteit van een auto maar kopers niet, zodat kopers een prijs bieden die alleen de gemiddelde kwaliteit weerspiegelt, wat verkopers van bovengemiddelde auto\'s uit de markt drijft',
         'Koopers hebben marktmacht en zetten een prijs onder de marginale productiekost van zelfs de laagste-kwaliteitsauto\'s',
-        'Zoekfricties en kostbare informatievergaring maken het onbetaalbaar duur voor koopers om ooit de eigenaren van hoge-kwaliteitsauto\'s te vinden in een grote, anonieme tweedehandsmarkt',
+        'Zoekfricties en kostbare informatievergaring maken het onbetaalbaar duur voor kopers om ooit de eigenaren van hoge-kwaliteitsauto\'s te vinden in een grote, anonieme tweedehandsmarkt',
         'Een bindend prijsplafond opgelegd door toezichthouders ligt onder de reserveringswaarde die eigenaren van goede auto\'s vereisen om te verkopen',
       ],
       0,
-      'Asymmetrische informatie: koopers betalen voor gemiddelde kwaliteit. Hoge-kwaliteit eigenaren trekken zich terug; gemiddelde daalt - markt verhandelt alleen "citroenen". Akerlof (1970) toonde asymmetrie kan handel vernietigen.',
+      'Asymmetrische informatie: kopers betalen voor gemiddelde kwaliteit. Hoge-kwaliteit eigenaren trekken zich terug; gemiddelde daalt - markt verhandelt alleen "citroenen". Akerlof (1970) toonde asymmetrie kan handel vernietigen.',
     ],
     [
       'In Spence\'s job-market-signaleringsmodel, wat maakt onderwijs een geloofwaardig signaal van de onwaargenomen bekwaamheid van een werknemer, ook als onderwijs zelf niets toevoegt aan productiviteit?',
@@ -993,9 +993,9 @@ export const MICROECON: CategoryContent = {
     [
       'De Nash-onderhandelingsoplossing selecteert de individueel rationele, Pareto-efficiënte overeenkomst die welke grootheid maximaliseert?',
       [
-        'Het product van elke partijs winst in nut boven hun onenigheidspunt (dreigpunt)-uitbetaling, bekend als het Nash-product',
-        'De ongewogen som van beide partijs uitbetalingen, onderworpen aan een gelijke verdeling van elk surplus boven onenigheid',
-        'Het minimum van de twee partijs uitbetalingen relatief aan hun onenigheidspunt, wat een strikt egalitaire verdeling van het gehele onderhandelingssurplus garandeert',
+        'Het product van de winst van elke partij in nut boven hun onenigheidspunt (dreigpunt)-uitbetaling, bekend als het Nash-product',
+        'De ongewogen som van de uitbetalingen van beide partijen, onderworpen aan een gelijke verdeling van elk surplus boven onenigheid',
+        'Het minimum van de uitbetalingen van de twee partijen relatief aan hun onenigheidspunt, wat een strikt egalitaire verdeling van het gehele onderhandelingssurplus garandeert',
         'De uitbetaling van welke partij dan ook met de sterkere alternatieve optie, alleen gewogen naar relatieve risicoaversie',
       ],
       0,
@@ -1005,7 +1005,7 @@ export const MICROECON: CategoryContent = {
       'De eerste hoofdstelling van de welvaartseconomie stelt dat, onder standaardvoorwaarden (geen externaliteiten, complete markten, prijsnemende actoren), elke competitieve-evenwichtsallocatie wat is?',
       [
         'Pareto-efficiënt',
-        'Utilitair-optimaal, in de zin dat het de ongewogen som van elk individus nut maximaliseert',
+        'Utilitair-optimaal, in de zin dat het de ongewogen som van het nut van elk individu maximaliseert',
         'Rechtvaardig, in de zin dat geen consument het bundel benijdt dat aan een andere consument is toegewezen',
         'Uniek bepaald door de initiële toewijzing, zodat het resulterende evenwicht altijd uniek is',
       ],
@@ -1095,7 +1095,7 @@ export const MICROECON: CategoryContent = {
       'Wat vestigt het Myerson-Satterthwaite-theorema (1983) als onmogelijkheidsresultaat voor bilaterale handel onder private informatie?',
       [
         'Geen mechanisme kan gelijktijdig efficiënt, individueel rationeel en budgetneutraal zijn wanneer koper- en verkoperwaarderingen privé zijn en hun mogelijke bereiken overlappen',
-        'Geen mechanisme kan gelijktijdig prikkelcompatibel en individueel rationeel zijn zodra één verkoper twee of meer koopers heeft wier private waarderingen onderling gecorreleerd zijn in plaats van onafhankelijk getrokken',
+        'Geen mechanisme kan gelijktijdig prikkelcompatibel en individueel rationeel zijn zodra één verkoper twee of meer kopers heeft wier private waarderingen onderling gecorreleerd zijn in plaats van onafhankelijk getrokken',
         'Efficiënte handel vereist een externe subsidie zodra meer dan twee handelaren gelijktijdig deelnemen aan de markt',
         'Ex-post efficiëntie wordt alleen onhaalbaar wanneer waarderingen getrokken worden uit verdelingen die asymmetrisch zijn tussen de twee marktzijden',
       ],
@@ -1103,7 +1103,7 @@ export const MICROECON: CategoryContent = {
       'Tweezijdig: geen mechanisme kan efficiëntie, prikkelcompatibiliteit en budgetneutraliteit tegelijk bereiken bij overlappende waarderingsbereiken. Anders dan eenzijdig geval. Nobelprijs 2007 (Myerson).',
     ],
     [
-      'In een common-value-veiling beschrijft de "winnaarsvloek" welk systematisch patroon voor koopers die er geen rekening mee houden?',
+      'In een common-value-veiling beschrijft de "winnaarsvloek" welk systematisch patroon voor kopers die er geen rekening mee houden?',
       [
         'Het winnende bod overschat de werkelijke gemeenschappelijke waarde, omdat winnen zelf informatief is dat de winnaar de meest optimistische schatting had',
         'De winnende bieder in een verzegelde eersteprijsveiling betaalt altijd strikt meer dan het tweede-hoogste ingediende bod',
@@ -1160,13 +1160,13 @@ export const MICROECON: CategoryContent = {
     [
       'De Coase-conjectuur betreft een monopolist van duurzame goederen die zijn prijs frequent kan herzien in de tijd. Wat voorspelt deze naarmate het interval tussen prijsherzieningen naar nul krimpt?',
       [
-        'De prijs convergeert naar marginale kosten en de monopoliewinst stort in richting de competitieve uitkomst, omdat koopers rationeel wachten op toekomstige prijsverlagingen',
-        'De prijs stijgt onbegrensd terwijl de monopolist steeds meer surplus onttrekt aan ongeduldige koopers',
+        'De prijs convergeert naar marginale kosten en de monopoliewinst stort in richting de competitieve uitkomst, omdat kopers rationeel wachten op toekomstige prijsverlagingen',
+        'De prijs stijgt onbegrensd terwijl de monopolist steeds meer surplus onttrekt aan ongeduldige kopers',
         'De winst convergeert altijd naar exact het standaard statische monopolieniveau ongeacht het herzieningsinterval, omdat bindingsproblemen van dit soort alleen bindend zijn in modellen met een strikt eindige tijdshorizon',
         'De optimale strategie van de monopolist convergeert naar verhuren in plaats van uitverkopen, wat de statische monopoliewinst volledig herstelt',
       ],
       0,
-      'Monopolist concurreert met eigen toekomstig zelf: koopers wachten op prijsdalingen. Prijs→marginale kosten als herzieningstermijn→0. Formalisering: Stokey, Bulow, Gul-Sonnenschein-Wilson.',
+      'Monopolist concurreert met eigen toekomstig zelf: kopers wachten op prijsdalingen. Prijs→marginale kosten als herzieningstermijn→0. Formalisering: Stokey, Bulow, Gul-Sonnenschein-Wilson.',
     ],
     [
       'Holmstroms informativiteitsprincipe (1979), in principaal-agentmodellen van moral hazard, stelt dat een optimaal prikkelcontract positief gewicht moet leggen op welke signalen?',

@@ -11,18 +11,18 @@ export const SCULPTURE: CategoryContent = {
         'Zandsteen',
       ],
       0,
-      'Michelangelo hakte David uit een blok wit Carrara-marmer tussen 1501-1504, stellende marmer vast als de standaard voor Renaissancebeeldhouwing.',
+      'Michelangelo hakte David uit een blok wit Carrara-marmer tussen 1501 en 1504, waarmee hij marmer vestigde als de standaard voor de renaissancebeeldhouwkunst.',
     ],
     [
       'Wat is het primaire voordeel van lost-wax casting ten opzichte van direct steenhouwwerk?',
       [
         'Details worden in was verfijnd vóór het gieten',
         'Het produceert grotere beeldhouwwerken dan houwen',
-        'Het vereist geen oven of oven',
+        'Het vereist geen oven of smeltoven',
         'Het kan niet scheuren of verouderen in de loop der tijd',
       ],
       0,
-      'Lost-wax (cire perdue) stelt beeldhouwers in staat om in kneedbare was te werken, elk detail te verfijnen, dan uiteindelijk in brons te gieten.',
+      'Lost-wax (cire perdue) stelt beeldhouwers in staat om in kneedbare was te werken, elk detail te verfijnen en het vervolgens in brons te gieten.',
     ],
     [
       'Welke van deze is een voorbeeld van subtractieve beeldhouwkunst?',
@@ -66,7 +66,7 @@ export const SCULPTURE: CategoryContent = {
         'Het weegt minder dan gelijkwaardige marmerbeeldhouwwerken',
       ],
       0,
-      'Brons smelt op ~1085°C (laag genoeg voor hanteerbare gietwerk), vangt fijne details en vormt een beschermende patina.',
+      'Brons smelt op ~1085°C (laag genoeg voor hanteerbaar gietwerk), vangt fijne details en vormt een beschermende patina.',
     ],
     [
       'Welke beeldhouwkunsttechniek gebruikt een mal om een replica uit een originele vorm te produceren?',
@@ -77,10 +77,10 @@ export const SCULPTURE: CategoryContent = {
         'Assemblage',
       ],
       0,
-      'Gieten giet vloeibaar materiaal (meestal gesmolten metaal of gips) in een mal van het origineel, dat stolt tot een replica.',
+      'Bij gieten wordt vloeibaar materiaal (meestal gesmolten metaal of gips) in een mal van het origineel gegoten, dat vervolgens stolt tot een replica.',
     ],
     [
-      'Gian Lorenzo Berninis David verschilt van Michelangelo\'s vooral door zijn',
+      'Gian Lorenzo Bernini\'s David verschilt van Michelangelo\'s vooral door zijn',
       [
         'een dynamische, draaiende houding in actie',
         'materiaal—brons in plaats van marmer',
@@ -99,7 +99,7 @@ export const SCULPTURE: CategoryContent = {
         'Alleen zandsteen',
       ],
       0,
-      'Klassieke Grieken gieten grote bronzen (nu zeldzaam door hergebruik) en houwden marmer voor openbare monumenten en tempels.',
+      'Klassieke Grieken goten grote bronzen (nu zeldzaam door hergebruik) en houwden marmer voor openbare monumenten en tempels.',
     ],
     [
       'Rodins "The Burghers of Calais" valt op door',
@@ -110,7 +110,7 @@ export const SCULPTURE: CategoryContent = {
         'het gebruik van vergulde brons om licht te vangen',
       ],
       0,
-      '"The Burghers" doorbreekt conventie door zes middeleeuwse stadsbewoners als protagonisten—volledige schaal, realistisch, waardig maar niet verfraaid.',
+      '"The Burghers" doorbreekt de conventie door zes middeleeuwse stadsbewoners als protagonisten—volledige schaal, realistisch, waardig maar niet verfraaid.',
     ],
     [
       'Welk proces verwijdert luchtbellen uit klei vóór het handmodelleren?',
@@ -135,7 +135,7 @@ export const SCULPTURE: CategoryContent = {
       'Friezen zijn doorlopende horizontale banden; metopen zijn afzonderlijke panelen. Beide versierden Griekse tempels met mythologische reliëfs.',
     ],
     [
-      'Constantine Brancusis beeldhouwwerken worden gekenmerkt door',
+      'Constantine Brancusi\'s beeldhouwwerken worden gekenmerkt door',
       [
         'essentiële, abstracte geometrische vormen',
         'extreem realisme en fotografisch detail',
@@ -143,7 +143,7 @@ export const SCULPTURE: CategoryContent = {
         'complexe interne mechanismen',
       ],
       0,
-      'Brancusi verwijderde details naar zuivere vorm, pionierde in modernistische abstractie en beïnvloedde minimalisme.',
+      'Brancusi sneed details weg tot pure vorm overbleef, pionierde in modernistische abstractie en beïnvloedde het minimalisme.',
     ],
     [
       'Welk materiaal vereist branden in een oven voor permanentie?',
@@ -154,7 +154,7 @@ export const SCULPTURE: CategoryContent = {
         'Modelleerwas',
       ],
       0,
-      'Ongebakken terracotta wordt bros; kielbakken op hoge temperatuur hardes het onherroepelijk tot duurzaam keramiek.',
+      'Ongebakken terracotta blijft bros; bakken op hoge temperatuur hardt het onherroepelijk tot duurzaam keramiek.',
     ],
     [
       'Wat is de originele bron van de "Elgin Marbles"?',
@@ -165,7 +165,7 @@ export const SCULPTURE: CategoryContent = {
         'Minoeïsche paleisinruïnes op Kreta',
       ],
       0,
-      '"Elgin Marbles" (5e eeuw v.C.) zijn marmersculpturen en friezen van de Parthenon, verwijderd door Thomas Bruce in de vroege 1800s.',
+      '"Elgin Marbles" (5e eeuw v.Chr.) zijn marmersculpturen en friezen van de Parthenon, verwijderd door Thomas Bruce in het begin van de negentiende eeuw.',
     ],
   ],
   msc: [
@@ -178,7 +178,7 @@ export const SCULPTURE: CategoryContent = {
         'Een gipsafgietsel moet worden gemaakt voordat het uiteindelijke blok wordt aangeraakt',
       ],
       0,
-      'Directe beiteling vermijdt voorbereidende tekeningen, stellende steeneigenschappen toe het kunstresultaat in te bepalen.',
+      'Directe beiteling vermijdt voorbereidende tekeningen, waardoor de eigenschappen van de steen mede het eindresultaat bepalen.',
     ],
     [
       'De term "contrapposto" in beeldhouwkunst verwijst naar',
@@ -189,7 +189,7 @@ export const SCULPTURE: CategoryContent = {
         'de oriëntatie van een beeldhouwwerk naar het ware noorden',
       ],
       0,
-      'Contrapposto (Italiaans "tegen-pose") plaatst gewicht op één been, heupening—een humaniserende techniek die Renaissance van Hellenistische kunst overnam.',
+      'Contrapposto (Italiaans voor "tegen-pose") verschuift het gewicht naar één been, met een kantelende heup—een humaniserende techniek die de Renaissance overnam van de Hellenistische kunst.',
     ],
     [
       'Welke oude cultuur wordt erkend voor verfijning van de lost-wax-gietstechniek?',
@@ -211,7 +211,7 @@ export const SCULPTURE: CategoryContent = {
         'alleen gebruikte materialen uit hergebruik',
       ],
       0,
-      "Hepworths gaten en leegte zijn integrale vormen—kijkers lopen doorheen, ruimte zelf wordt beeldhouwkunstmateriaal.",
+      "Hepworths gaten en leegtes zijn integrale vormen—kijkers kijken erdoorheen, de ruimte zelf wordt beeldhouwkunstmateriaal.",
     ],
     [
       'Wat is "modeleren" in beeldhouwpraktijk?',
@@ -233,10 +233,10 @@ export const SCULPTURE: CategoryContent = {
         'het gekleurde glazen inlegwerk verwerkte',
       ],
       0,
-      "Donatello's David herleefde de klassieke contrapposto naakte—eerst monumentaal mannelijk brons brons sinds Rome.",
+      "Donatello's David herleefde het klassieke naakte contrapposto—het eerste monumentale mannelijke bronzen naakt sinds Rome.",
     ],
     [
-      'De "Elgin Marbles"-controverse concentreert zich op de juridische status van sculpturaalachmenten van welke structuur?',
+      'De "Elgin Marbles"-controverse concentreert zich op de juridische status van sculpturale onderdelen van welke structuur?',
       [
         'De Parthenon op de Akropolis van Athene',
         'De Tempel van Jupiter Capitolinus in Rome',
@@ -244,7 +244,7 @@ export const SCULPTURE: CategoryContent = {
         'De kolonnen van de bibliotheek van Alexandrië',
       ],
       0,
-      'Parthenon-sculpturen werden verwijderd door Brits Museum vroeg 1800s; Griekenland vordert terugkeer, Bretagne vindt universele toegang beter.',
+      'Parthenon-sculpturen werden begin negentiende eeuw verwijderd door het British Museum; Griekenland eist teruggave, terwijl het Verenigd Koninkrijk stelt dat universele toegang beter is.',
     ],
     [
       'Welke materiaaleigenschap is essentieel voor een ware "witte patina" afwerking op antieke marmersculpturen?',
@@ -255,10 +255,10 @@ export const SCULPTURE: CategoryContent = {
         'Blootstelling aan zeewater voor decennia',
       ],
       0,
-      'Wit marmers transparantie en fijne kristallijne korrel verstrooien licht gelijkmatig. De "gloed" komt van onderoppervlakteverstrooiing.',
+      'De transparantie en fijne kristallijne korrel van wit marmer verstrooien het licht gelijkmatig. De "gloed" komt van onderoppervlakteverstrooiing.',
     ],
     [
-      'Gian Lorenzo Berninis benadering van beeldhouwkunst verschilde van Renaissance-idealen in zijn nadruk op',
+      'Gian Lorenzo Bernini\'s benadering van beeldhouwkunst verschilde van Renaissance-idealen in zijn nadruk op',
       [
         'theatraal drama en dynamische beweging',
         'louter symmetrische frontale oriëntatie',
@@ -266,7 +266,7 @@ export const SCULPTURE: CategoryContent = {
         'alleen werken op kamer-schaal',
       ],
       0,
-      'Bernini zocht barokse overdaad—spiralende vormen, overdadig draperie, dynamiek—afwijzend Renaissance-terughoudendheid.',
+      'Bernini zocht barokke overdaad—spiralende vormen, overdadig draperie, dynamiek—en wees de renaissance-terughoudendheid af.',
     ],
     [
       'Welk artistiek principe stuurde neoklassieke beeldhouwers zoals Antonio Canova?',
@@ -299,10 +299,10 @@ export const SCULPTURE: CategoryContent = {
         'heldere oppervlakken en donkere binnenholten',
       ],
       0,
-      "Moores liggende figuren en moeder-kind-groepen verkennen organische abstractie, relatie het lichaam tot geologie.",
+      "Moores liggende figuren en moeder-kind-groepen verkennen organische abstractie, het lichaam in relatie tot geologie.",
     ],
     [
-      'Welke beeldhouwkunstbeweging expliciet marmer en brons verworpen voor industrie- en dagelijks gebruikmaterialen?',
+      'Welke beeldhouwkunstbeweging verwierp expliciet marmer en brons voor industriële en alledaagse gebruiksmaterialen?',
       [
         'Constructivisme',
         'Neoklassicisme',
@@ -310,7 +310,7 @@ export const SCULPTURE: CategoryContent = {
         'Victoriaanse academische beeldhouwkunst',
       ],
       0,
-      'Constructivisten en Arte Povera gebruikten staal, beton, plastic—het dure-materiaal-ideaal bestrijdend.',
+      'Constructivisten en Arte Povera gebruikten staal, beton en plastic, en bestreden zo het ideaal van het dure materiaal.',
     ],
     [
       'Wat betekent "editie" in de context van meerdere kopieën gieten?',
@@ -318,7 +318,7 @@ export const SCULPTURE: CategoryContent = {
         'Een genummerde serie gietsels uit dezelfde mal',
         'Het originele gipsmodel vóór enig gieten',
         'Een beeldhouwwerk in verschillende kleurvariaties geschilderd',
-        'Een tijdelijke afgietsel vernietigde na tentoonstellung',
+        'Een tijdelijk afgietsel vernietigd na tentoonstelling',
       ],
       0,
       'Edities (bijv. "2 van 8") stellen schaarste en authenticiteit vast—gieterijen beperken hoeveel gegoten stukken.',
@@ -332,7 +332,7 @@ export const SCULPTURE: CategoryContent = {
         'levensgrote schaal en menselijke anatomische nauwkeurigheid',
       ],
       0,
-      "Riemenschneiders houtsnijdingen vertonen dicht uitgesneden draperie met diepe ondersneijding scherpe schaduwen.",
+      "Riemenschneiders houtsnijdingen vertonen dicht uitgesneden draperie met diepe ondersnijding en scherpe schaduwen.",
     ],
   ],
   phd: [
@@ -356,7 +356,7 @@ export const SCULPTURE: CategoryContent = {
         'Zij dienen als aanhechtingspunten voor verguldwerk',
       ],
       0,
-      'De keramische kern houdt de inwendige malholte op plaats; pinnen verankeren het, gelijke metaalstroom garandererend.',
+      'De keramische kern houdt de inwendige malholte op zijn plaats; pinnen verankeren hem, wat een gelijkmatige metaalstroom garandeert.',
     ],
     [
       'De klassicistische beweging van vroeg 19e-eeuws Scandinavië stelde welk esthetisch principe in met reactie op Napoleontische overdaad?',
@@ -367,29 +367,29 @@ export const SCULPTURE: CategoryContent = {
         'Oosterse en niet-westerse formele bronnen',
       ],
       0,
-      'Scandinavische klassissisme kanaliseerde politieke bezorgdheid door strenge Griekse vormen, gelijking terughoudendheid aan verlichtingswaarden.',
+      'Het Scandinavische classicisme kanaliseerde politieke bezorgdheid via strenge Griekse vormen, en stelde terughoudendheid gelijk aan verlichtingswaarden.',
     ],
     [
-      'Welke conserveringuitdaging ondergaan bronzebeeldhouwwerken op cellulairniveau wanneer blootgesteld aan "bronzeziekte"?',
+      'Welke conserveringsuitdaging ondergaan bronzen beeldhouwwerken op cellulair niveau wanneer ze worden blootgesteld aan "bronsziekte"?',
       [
-        'Cupreuschloridecorrosie verzwakt het metaal',
+        'Corrosie door koperchloride verzwakt het metaal',
         'De patina vervaagt en verliest kleur',
         'Het oppervlak wordt te glad om vast te houden',
-        'Interne molkernen expanderen en scheuren brons',
+        'Interne malkernen zetten uit en doen het brons scheuren',
       ],
       0,
-      'Bronzeziekte (cuprous chloride) is actieve corrosie; vochtige heactivering kan intern verspreiden en het object vernietigen.',
+      'Bronsziekte (koperchloride) is actieve corrosie; hernieuwde vochtblootstelling kan de corrosie zich intern laten verspreiden en het object vernietigen.',
     ],
     [
       'Hoe weken expressionistische beeldhouwers van vroeg 20e-eeuws Duitsland af van hun Rodin-beïnvloede voorgangers?',
       [
         'Vervormde verhoudingen en ruwe oppervlaktextuur',
         'Zij verlaten brons volledig voor steen',
-        'Zij verworpen alle figuratieve imagerie voor zuivere abstractie',
+        'Zij verwierpen alle figuratieve beeldtaal voor zuivere abstractie',
         'Zij keerden terug naar Renaissance-idealen van schoonheid',
       ],
       0,
-      'Duitse expressionisten verdraaide anatomie, ruwde oppervlakken, versterkte psychologische intensiteit—Rodins vormvrijheid tegen humanisme.',
+      'Duitse expressionisten verdraaiden anatomie, ruwden oppervlakken op en versterkten psychologische intensiteit—Rodins vormvrijheid tegenover humanisme.',
     ],
     [
       'De techniek van "troubadour", beoefend door latere middeleeuwse en Renaissancebeeldhouwers, betrof',
@@ -400,7 +400,7 @@ export const SCULPTURE: CategoryContent = {
         'het inbedden van halfedelstenen in marmer ter suggestie van sieraad',
       ],
       0,
-      'Troubadour verhoogde portretgezichten terwijl draperie en lichaam samenvattend—gelijkheid prioriterend boven volledige formele ontwikkeling.',
+      'Troubadour behandelde portretgezichten in hoog detail, terwijl draperie en lichaam werden samengevat—gelijkenis kreeg voorrang boven volledige formele uitwerking.',
     ],
     [
       'In de vroege Renaissance, hoe functioneerde de kunstenaarscartoon in relatie tot beeldhouwuitvoering?',
@@ -411,10 +411,10 @@ export const SCULPTURE: CategoryContent = {
         'Het werd als decoratieve verf op het voltooide beeldhouwwerk aangebracht',
       ],
       0,
-      'Renaissance-cartoons (geschaalde tekeningen) werden op steen overgebracht om de uithouwasen te sturen voordat gedetailleerd snijden.',
+      'Renaissance-cartoons (geschaalde tekeningen) werden op de steen overgebracht om het houwproces te sturen, voordat het gedetailleerde snijwerk begon.',
     ],
     [
-      'Hoe stelde de ontwikkeling van ijzer- en staalbeweldhouwkunst in de 20e eeuw het materiaalierarchie van beeldhouwkunst ter discussie?',
+      'Hoe stelde de ontwikkeling van ijzer- en staalbeeldhouwkunst in de 20e eeuw de materiaalhiërarchie van beeldhouwkunst ter discussie?',
       [
         'IJzers treksterkte maakte open, lineaire vormen mogelijk',
         'Staal werd duurder dan brons, status verhogend',
@@ -422,7 +422,7 @@ export const SCULPTURE: CategoryContent = {
         'Lassen vereiste dat beeldhouwers eerst engineers waren',
       ],
       0,
-      'Staal sterkte en lasbaarheid stelden constructie van open-luchtruimte mogelijk in plaats carving—conceptuele revolutie.',
+      'De sterkte en lasbaarheid van staal maakten constructies met open, luchtige ruimtes mogelijk in plaats van houwen—een conceptuele revolutie.',
     ],
     [
       'Wat articuleerde het "waarheid-naar-materiaal"-principe in modernistische beeldhouwtheorie?',
@@ -433,7 +433,7 @@ export const SCULPTURE: CategoryContent = {
         'Beeldhouwwerken zouden verbergen welk materiaal zij zijn gemaakt',
       ],
       0,
-      'Waarheid-naar-materiaal (Hepworth, Moore, Brancusi) weigerde kunstigheid: marmer ader, brons gietproces—materiaalintegriteit blootstellend.',
+      'Waarheid-naar-materiaal (Hepworth, Moore, Brancusi) weigerde kunstgrepen te verhullen: de adering van marmer, het gietproces van brons—de eigenheid van het materiaal werd blootgelegd.',
     ],
     [
       'Welk Hellenistisch beeldhouwwerk exemplifieerde "pathos"-formalisme door gecomprimeerde, dynamische spierwerk en psychologische intensiteit?',
@@ -444,7 +444,7 @@ export const SCULPTURE: CategoryContent = {
         'Doryphoros geïdealiseerde atletieke jeugd',
       ],
       0,
-      'Laokoon en zijn zonen—slangengewikkeld, kronkelend—Hellenistische drama: anatomische vervorming en pijnlijke uitdrukking intensiveren emotionele impact.',
+      'Laokoon en zijn zonen—slangengewikkeld, kronkelend—belichamen het Hellenistische drama: anatomische vervorming en pijnlijke uitdrukking intensiveren de emotionele impact.',
     ],
     [
       'Hoe veranderde Renaissance-anatomisten invloed op beeldhouwers de afbeelding van het menselijk lichaam in vergelijking met middeleeuwse conventies?',
@@ -461,23 +461,23 @@ export const SCULPTURE: CategoryContent = {
       'Welke rol speelde de "vervangingsmal"-techniek in versnelling van Renaissancebronzeproductie?',
       [
         'Aparte mallen per lichaamsdeel, gegoten en samengevoegd',
-        'Het stelde beeldhouwers sneller beitelen met mechanische tools in staat',
-        'Het elimineerde de noodzaak voor gieterij-oven',
+        'Het stelde beeldhouwers in staat om sneller te beitelen met mechanische gereedschappen',
+        'Het elimineerde de noodzaak voor een gietoven',
         'Het was louter decoratief zonder praktische functie',
       ],
       0,
-      'Stuksmaal stelde stukken (hoofd, armen, romp, benen) in staat onafhankelijk te gieten dan aan elkaar te lassen—productie versnellend.',
+      'Stukmal stelde onderdelen (hoofd, armen, romp, benen) in staat om onafhankelijk gegoten en daarna aan elkaar gelast te worden, wat de productie versnelde.',
     ],
     [
       'Op welke manier beïnvloedde Barbizon-beeldhouwers\' betrokkenheid bij landschapsrealisme 19e-eeuwse openbare monumenten?',
       [
         'Zij verankerden figuren in natuurlijk terrein',
-        'Zij verworpen alle figuratieve beeldhouwkunst voor alleen landschappen',
+        'Zij verwierpen alle figuratieve beeldhouwkunst voor alleen landschappen',
         'Zij elimineerden het menselijke figuur geheel uit openbare kunst',
         'Zij vereisten monumenten uit lokale steen gehouwen',
       ],
       0,
-      'Barbizon-beeldhouwers (Mène, Fremiet) stelden dieren en figuren in geloofwaardige landschapsomstellingen af, monumenten in natuurlijke plaats grondend.',
+      'Barbizon-beeldhouwers (Mène, Fremiet) plaatsten dieren en figuren in geloofwaardige landschapsomgevingen, en grondden monumenten zo in een natuurlijke setting.',
     ],
     [
       'Hoe functioneert het "grondvlak" als compositorisch element in Henry Moores abstracte beeldhouwwerken?',
@@ -488,7 +488,7 @@ export const SCULPTURE: CategoryContent = {
         'Het grondvlak is irrelevant voor het werk\'s betekenis',
       ],
       0,
-      'Moore betrok het grondvlak opzettelijk: figuren nestelen erin of reiken erboven uit, aarde zelf delen van formele compositie stellend.',
+      'Moore betrok het grondvlak opzettelijk: figuren nestelen zich erin of reiken eruit omhoog, waardoor de aarde zelf deel wordt van de formele compositie.',
     ],
     [
       'Welk conserveringsprincipe geldt voor structurele stabilisering van antieke marmersculpturen gebroken langs korrellijnen?',
@@ -499,7 +499,7 @@ export const SCULPTURE: CategoryContent = {
         'Moderne beton is het beste bindmiddel',
       ],
       0,
-      'Omkeerbaarheid is kardinaal: lijmen moet losgerukt zonder beschadiging ingeval toekomstige conservering nodig is.',
+      'Omkeerbaarheid is kardinaal: lijmen moeten zonder beschadiging losgemaakt kunnen worden, ingeval toekomstige conservering nodig is.',
     ],
   ],
   professor: [
@@ -512,18 +512,18 @@ export const SCULPTURE: CategoryContent = {
         'Marmer was het enig moreel zuivere kunstmedium',
       ],
       0,
-      'Renaissance paragone kampioende beeldhouwkunst\'s tastbare aanwezigheid tegen schildering\'s illusionisme—hierarchie uit Plato\'s vormen.',
+      'De Renaissance-paragone verdedigde de tastbare aanwezigheid van beeldhouwkunst tegenover het illusionisme van schildering—een hiërarchie ontleend aan Plato\'s ideeënleer.',
     ],
     [
       'Hoe weerspiegelde Michelangelo\'s theologische opvatting van de beeldhouwers rol—"bevrijding" van de figuur uit de steen—Neoplatonisch idealisme?',
       [
         'De vorm bestond al in de steen, wachtend op onthulling',
         'Michelangelo geloofde beeldhouwwerk was louter handwerk',
-        'Hij verworpen alle filosofische kaders voor empirische proefneming',
+        'Hij verwierp alle filosofische kaders voor empirische proefneming',
         'Steen was dode materie die animatie door schildering vereiste',
       ],
       0,
-      'Michelangelo framede beitelen als onthulling—de ideale vorm dwelt al in materie; kunstenaar bevrijdt door visie.',
+      'Michelangelo beschouwde beitelen als onthulling—de ideale vorm woont al in de materie; de kunstenaar bevrijdt haar door zijn visie.',
     ],
     [
       'Welke methodologische innovatie voerde Rodin in openbare monumentpraktijk in die beeldhouwkunstbetekenis van statische herdenking naar psychologische temporaliteit verschuifde?',
@@ -534,10 +534,10 @@ export const SCULPTURE: CategoryContent = {
         'Verwerping van alle openbare commissies ten gunste van particuliere galerijen',
       ],
       0,
-      'Rodins gefragmenteerde ledematen, geturale onvolledigheid en ruwe oppervlakken introduceerden psychologische expressiviteit.',
+      'Rodins gefragmenteerde ledematen, gestuele onvolledigheid en ruwe oppervlakken introduceerden psychologische expressiviteit.',
     ],
     [
-      'Hoe beïnvloedde Brancusis betrokkenheid met niet-westerse beeldhouwkunsttradities (vooral Roemeense folk en Afrikaanse) zijn theorie van "essentiële vorm"?',
+      'Hoe beïnvloedde Brancusi\'s betrokkenheid met niet-westerse beeldhouwkunsttradities (vooral Roemeense folk en Afrikaanse) zijn theorie van "essentiële vorm"?',
       [
         'vorm komt voort uit materiaalaard, niet klassieke proportie',
         'Afrikaanse beeldhouwkunst heeft geen formele waarde en Brancusi negeerde het',
@@ -545,18 +545,18 @@ export const SCULPTURE: CategoryContent = {
         'Brancusi converteerde deze tradities naar westerse academische normen',
       ],
       0,
-      'Brancusi citeerde folk-beiteling en Afrikaans werk als bewijs dat formale kracht voortkom uit materie-respect en spiritueel inzicht.',
+      'Brancusi citeerde folk-beiteling en Afrikaans werk als bewijs dat formele kracht voortkomt uit materie-respect en spiritueel inzicht.',
     ],
     [
-      'In welke zin vertegenwoordigde Donald Judd\'s verwerping van metafoor en symbolische referentie in minimalistische beeldhouwkunst een epistemologische breuk van modernisme?',
+      'In welke zin vertegenwoordigde Donald Judds verwerping van metafoor en symbolische referentie in minimalistische beeldhouwkunst een epistemologische breuk van modernisme?',
       [
         'Het object was letterlijke, fenomenologische aanwezigheid, niet symbolisch',
-        'Judd\'s werk bevatte uitgebreide symbolische betekenis zoals alle vorige beeldhouwkunst',
+        'Judds werk bevatte uitgebreide symbolische betekenis zoals alle vorige beeldhouwkunst',
         'Minimalisme was de uiteindelijke bloei van romantisch idealisme',
-        'Judd zocht klassieke allegorie te herleefde',
+        'Judd probeerde klassieke allegorie te doen herleven',
       ],
       0,
-      'Judds letterlijkheid verworpen modernistische aanname dat vorm inwendige essentie uitdrukte; kubus is kubus.',
+      'Judds letterlijkheid verwierp de modernistische aanname dat vorm inwendige essentie uitdrukte; een kubus is een kubus.',
     ],
     [
       'Hoe herstructureerde de opkomst van industriële bronzegieterijen in 19e-eeuws Frankrijk, vooral Barbédienne en Susse Frères, de kunstenaar-ambachtsliedenverhouding?',
@@ -567,7 +567,7 @@ export const SCULPTURE: CategoryContent = {
         'Bronzegietwerk werd minder bekwaam en meer mechanisch',
       ],
       0,
-      'Barbédienne en Susse stelden editiesystemen, licenties, kwaliteitscontrole en reproduceerbaarheid vast—beeldhouwkunst commodifieerend.',
+      'Barbédienne en Susse stelden editiesystemen, licenties, kwaliteitscontrole en reproduceerbaarheid vast, en maakten beeldhouwkunst zo tot koopwaar.',
     ],
     [
       'Wat onthult het archeologisch concept van "heruitsnijding" in antieke marmerbeeldhouwkunst over continuiteitenzin-maakheid en hergebruik over Romeinse en christelijke periodes?',
@@ -578,7 +578,7 @@ export const SCULPTURE: CategoryContent = {
         'Christelijke ambachtslieden hadden geen kennis van klassieke techniek',
       ],
       0,
-      'Heruitsnijding toont actieve culturele toe-eigening: portretten werden heiligen, oppervlakken werden heresculpteerd voor nieuwe theologie.',
+      'Heruitsnijding toont actieve culturele toe-eigening: portretten werden heiligen, oppervlakken werden opnieuw uitgesneden voor een nieuwe theologie.',
     ],
     [
       'Hoe herconfigureerde de "ontmaterialiserings"-thesis van Land Art en conceptuele beeldhouwers de ontologische status van het materialobject?',
@@ -589,18 +589,18 @@ export const SCULPTURE: CategoryContent = {
         'Deze beweging keerde terug naar klassieke marmerhouwen',
       ],
       0,
-      'Spiral Jetty en landreclamaties vroegen: is kunst de fysieke interventie, documentatie, concept of beschouwingsontmoeting?',
+      'Spiral Jetty en andere landkunstwerken wierpen de vraag op: is kunst de fysieke ingreep, de documentatie, het concept, of de ontmoeting met de toeschouwer?',
     ],
     [
       'In het kader van feministische interventies in beeldhouwkunst, hoe adresseerden kunstenaars zoals Magdalena Abakanowicz lichaam en serialiteit om heldhaftige monumenttradities te kritiseren?',
       [
         'Repetitieve, anonieme lichamen vervingen heldhaftige figuren',
         'Zij keerden terug naar geïdealiseerde klassieke naakten',
-        'Feministische beeldhouwkunst verworpen alle herhaling en massaproductie',
+        'Feministische beeldhouwkunst verwierp alle herhaling en massaproductie',
         'Hun werk had geen verbinding met politieke kritiek',
       ],
       0,
-      'Abakanowicz\'s identieke koppeloze torsi in rijen roepen individu-in-massa en staatuniformiteit op—monumenttraditie subverterend.',
+      'Abakanowicz\' identieke koppeloze torsi in rijen roepen individu-in-massa en staatsuniformiteit op, en ondermijnen daarmee de monumenttraditie.',
     ],
     [
       'Welke theoretische implicaties stelt de conserveringsdebat rond patina-verwijdering op antieke bronzen voor de relatie tussen tijd, authenticiteit en artistieke bedoeling?',
@@ -611,10 +611,10 @@ export const SCULPTURE: CategoryContent = {
         'Conservering dient alle tijd-gebaseerde wijzigingen om te keren',
       ],
       0,
-      'Moderne conserveringsethiek verwerpen "maagdelijke restauratie"—patina registreert ouderdom; verwijdering legt valse originaliteit op.',
+      'Moderne conserveringsethiek verwerpt "maagdelijke restauratie"—patina registreert ouderdom; verwijdering legt valse originaliteit op.',
     ],
     [
-      'Hoe functioneren rooster- en jali-snijdingstradities in Indiase tempel-beeldhouwkunst als zowel structuur- als geestelijke systemen die westerse scheidingen tussen ornament en vorm gecompliceerde?',
+      'Hoe functioneren rooster- en jali-snijdingstradities in Indiase tempel-beeldhouwkunst als zowel structurele als geestelijke systemen die westerse scheidingen tussen ornament en vorm compliceerden?',
       [
         'Doorboorde schermen dienen visuele en devote functies',
         'Deze snijdingen zijn louter decoratief zonder diepere betekenis',
@@ -622,7 +622,7 @@ export const SCULPTURE: CategoryContent = {
         'Rooster-snijding is structureel zwak en onpraktisch',
       ],
       0,
-      'Jali transformeert leegte in doorlaatbare membraan: licht filtert, zicht vermenigvuldigt, heiligheid permeert—ornament-vorm hiërarchie ineenstortend.',
+      'Jali transformeert leegte in een doorlaatbaar membraan: licht filtert erdoorheen, zicht vermenigvuldigt zich, heiligheid dringt erdoorheen—waarbij de hiërarchie tussen ornament en vorm ineenstort.',
     ],
     [
       'Wat onthult de kritische herbeoordeling van Art Deco-beeldhouwkunst over de historiografische uitsluiting van "decoratief" of "toegepaste" beeldhouwkunst van modernistische kanons?',
@@ -633,7 +633,7 @@ export const SCULPTURE: CategoryContent = {
         'Deco-beeldhouwkunst is van speelgoedmassa-productie niet te onderscheiden',
       ],
       0,
-      'Art Deco\'s hybridestate—fijne en toegepaste kunst bridgerend—onthulde modernisme\'s angsten over commodificatie.',
+      'Art Deco\'s hybride karakter—het overbruggen van fijne en toegepaste kunst—onthulde de angsten van het modernisme over commodificatie.',
     ],
     [
       'Hoe impliceren de restauratiecontroversies rond Parthenon-sculpturen en Elgin Marbles debatten over cultureel eigendom, koloniale extractie en ethiek van universele musea?',
@@ -644,7 +644,7 @@ export const SCULPTURE: CategoryContent = {
         'Universele musea zijn altijd neutrale opslagplaatsen geweest',
       ],
       0,
-      'Parthenon-sculpturen case: koloniale verwijderingen worden retroactief door "behoud" en "toegang"-retoriek gelegitimeerd.',
+      'De Parthenon-sculpturen zijn hier het klassieke voorbeeld: koloniale verwijderingen worden retroactief gelegitimeerd door retoriek over "behoud" en "toegang".',
     ],
     [
       'Welke methodologische uitdagingen presenteert middeleeuwse beeldhouwde figuurdetails attributie wanneer stilistische handen, werkplaatspraktijken en documentatie ijl of tegenstrijdig zijn?',
@@ -655,7 +655,7 @@ export const SCULPTURE: CategoryContent = {
         'Al middeleuws werk is anoniem en opzettelijk',
       ],
       0,
-      'Middeleeuwse beeldhouwkunst betwist enkelvoudige auteurschap: werkplaatstraining, gezamenlijk carving, patronaatcontrole betekenen attributie speculatief.',
+      'Middeleeuwse beeldhouwkunst betwist enkelvoudig auteurschap: werkplaatstraining, gezamenlijk snijwerk en patronaatcontrole maken attributie speculatief.',
     ],
     [
       'Hoe bestrijden eigentijdse kunstenaars die 3D-scanning, digitale modellering en algoritmisch ontwerp hanteren de fenomenologische en belichaamde epistemologieën van modernistische beeldhouwkunsttheorie?',
@@ -666,7 +666,7 @@ export const SCULPTURE: CategoryContent = {
         'Algoritmisch ontwerp herstelt romantisch individualisme',
       ],
       0,
-      'CAD-naar-fabricatie-systemen verdrijven belichaamde kennis door algoritmische besluitvorming; de vraag wordt of beeldhouwer code of materie scripts.',
+      'CAD-naar-fabricatie-systemen verdringen belichaamde kennis door algoritmische besluitvorming; de vraag wordt of de beeldhouwer nu code of materie bewerkt.',
     ],
   ],
 };

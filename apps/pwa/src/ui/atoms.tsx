@@ -201,3 +201,40 @@ export function useElapsed(ms: number): boolean {
   }, [ms]);
   return passed;
 }
+
+/**
+ * Matches the content bank's `Base_sub` / `Base_{sub}` formula notation
+ * (e.g. `k_eff`, `Δf_{rep}`) - most subscripts in the bank are already
+ * pre-converted to real Unicode subscript characters at authoring time
+ * (see the content build's subscript pass), which covers every letter that
+ * has one. The letters that don't (b, c, d, f, g, q, w, y, z) are left in
+ * this literal underscore form on purpose, because there is no character to
+ * convert them to - {@link FormulaText} renders those the rest of the way
+ * with a real `<sub>` element instead, which CSS can shrink and drop for
+ * any letter.
+ */
+const FORMULA_SUBSCRIPT_RE = /([A-Za-zΔΩθτλνμΦΨΣαβγ]+)_\{?([A-Za-z0-9]+)\}?/g;
+
+/** Renders question/option/explanation text, turning any leftover `Base_sub` notation into a real subscript. */
+export function FormulaText({ text }: { text: string }): ReactNode {
+  FORMULA_SUBSCRIPT_RE.lastIndex = 0;
+  if (!FORMULA_SUBSCRIPT_RE.test(text)) return text;
+  FORMULA_SUBSCRIPT_RE.lastIndex = 0;
+
+  const parts: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = FORMULA_SUBSCRIPT_RE.exec(text)) !== null) {
+    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
+    parts.push(
+      <span key={key++}>
+        {match[1]}
+        <sub>{match[2]}</sub>
+      </span>,
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts;
+}

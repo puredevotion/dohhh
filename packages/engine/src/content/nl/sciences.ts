@@ -40,7 +40,7 @@ export const PHYSICS: CategoryContent = {
       'Onder deze lengte doorkruisen geluidsgolven het gebied sneller dan het kan instorten, en wint de druk. Het is het uitgangspunt voor elk fragmentatie-argument in stervorming.',
     ],
     [
-      'Wien\'s verplaatsingswet relateert wat aan elkaar?',
+      'Wiens verplaatsingswet relateert wat aan elkaar?',
       [
         'De piekgolflengte van een zwarte-lichaamsspectrum, omgekeerd, aan zijn temperatuur',
         'Het totale uitgestraalde vermogen van een zwart lichaam aan de vierde macht van zijn temperatuur',
@@ -48,7 +48,7 @@ export const PHYSICS: CategoryContent = {
         'De fotonendichtheid van een zwart lichaam aan zijn temperatuur tot de derde macht',
       ],
       0,
-      'lambda_max * T is ongeveer 2,898e-3 m*K. De vierdemachtsrelatie is Stefan-Boltzmann; de limiet bij lange golflengte is Rayleigh-Jeans.',
+      'lambdaₘₐₓ * T is ongeveer 2,898e-3 m*K. De vierdemachtsrelatie is Stefan-Boltzmann; de limiet bij lange golflengte is Rayleigh-Jeans.',
     ],
   ],
   phd: [
@@ -118,7 +118,7 @@ export const PHYSICS: CategoryContent = {
         'De piektemperatuur van een supernovaschok',
       ],
       0,
-      'Een cosmologische horizon straalt, net als een zwart gat, bij een temperatuur die door zijn oppervlaktegravitatie wordt bepaald.',
+      'Een kosmologische horizon straalt, net als een zwart gat, bij een temperatuur die door zijn oppervlaktegravitatie wordt bepaald.',
     ],
     [
       'Wat parametriseert de Cabibbo-Kobayashi-Maskawa-matrix in het standaardmodel?',
@@ -140,7 +140,7 @@ export const PHYSICS: CategoryContent = {
         'Een supraleider stoot magnetische flux uit zijn binnenste onder een kritische aangelegde veldsterkte',
       ],
       0,
-      'Het toont dat de potentialen, niet alleen de velden, fysische inhoud dragen - de fluxquantum verschijnt in het interferentiepatroon.',
+      'Het toont dat de potentialen, niet alleen de velden, fysische inhoud dragen - het fluxquantum verschijnt in het interferentiepatroon.',
     ],
     [
       'De Kelvin-Helmholtz-tijdschaal van de zon is van welke orde?',
@@ -157,7 +157,7 @@ export const PHYSICS: CategoryContent = {
         'Het begin van turbulentie in een superfluïdum',
       ],
       0,
-      'De defectdichtheid schaalt met de quenchsnelheid, en dit is getest in vloeibare kristallen en koude atomen, en ook cosmologisch aangeroepen.',
+      'De defectdichtheid schaalt met de quenchsnelheid, en dit is getest in vloeibare kristallen en koude atomen, en ook kosmologisch aangeroepen.',
     ],
   ],
 };
@@ -182,7 +182,7 @@ export const CHEMISTRY: CategoryContent = {
         'Elektrodepotentiaal aan de verhouding van activiteiten van de geoxideerde en gereduceerde soort',
         'Celpotentiaal aan de totale lading die door het circuit is gegaan',
         'Reactiesnelheid aan de aangelegde overpotentiaal bij een elektrode',
-        'Ionische geleidbaarheid aan de concentratie van een sterke elektrolyt bij infinite verdunning',
+        'Ionische geleidbaarheid aan de concentratie van een sterke elektrolyt bij oneindige verdunning',
       ],
       0,
       'De relatie tussen snelheid en overpotentiaal is Butler-Volmer; de geleidbaarheidsrelatie is Kohlrausch.',
@@ -215,7 +215,7 @@ export const CHEMISTRY: CategoryContent = {
         'De pH van een buffer, uit de pKa en de verhouding van conjugaatbase tot zuur',
         'De pH bij het equivalentiepunt van een titratie van een sterk zuur met een sterke base',
         'De oplosbaarheid van een matig oplosbaar zout uit zijn oplosbaarheidsproduct',
-        'De fractie van een zwak zuur die is gedissocieerd bij infinite verdunning',
+        'De fractie van een zwak zuur die is gedissocieerd bij oneindige verdunning',
       ],
       0,
       'Het is een benadering, en die faalt precies waar hij het vaakst achteloos wordt toegepast - zeer verdunde oplossingen en pH ver van de pKa.',
@@ -327,7 +327,7 @@ export const BIOLOGY: CategoryContent = {
     [
       'Wat is de primaire functie van een enzym in een biochemische reactie?',
       [
-        'Het activeringsenergie verlagen en de reactiesnelheid vergroten',
+        'De activeringsenergie verlagen en de reactiesnelheid vergroten',
         'Het evenwichtspunt van de reactie verschuiven',
         'Energie in de vorm van ATP leveren',
         'Als reactant fungeren die door de reactie wordt verbruikt',
@@ -366,7 +366,7 @@ export const BIOLOGY: CategoryContent = {
         'Mutatie',
       ],
       0,
-      'Translatie aan de ribosome decodeert mRNA in polypeptide met behulp van tRNA-adapters. Transcriptie is DNA naar mRNA; replicatie is DNA naar DNA.',
+      'Translatie aan het ribosoom decodeert mRNA tot polypeptide met behulp van tRNA-adapters. Transcriptie is DNA naar mRNA; replicatie is DNA naar DNA.',
     ],
     [
       'Wat is de primaire uitkomst van mitose in een lichaamscel?',
@@ -380,15 +380,15 @@ export const BIOLOGY: CategoryContent = {
       'Mitose produceert twee identieke kopieën van de oudercel en bewaart het diploïde getal. Meiose produceert vier verschillende haploïde cellen.',
     ],
     [
-      'Welk organellum is verantwoordelijk voor het grootste deel van de ATP-productie in een eukaryote cel onder aëroïe omstandigheden?',
+      'Welk organellum is verantwoordelijk voor het grootste deel van de ATP-productie in een eukaryote cel onder aerobe omstandigheden?',
       [
         'Mitochondrion',
         'Chloroplast',
-        'Ribosom',
+        'Ribosoom',
         'Golgi-apparaat',
       ],
       0,
-      'Het mitochondriale binnenste membraan herbergt de elektronentransportketen en ATP-synthase, producerend veel meer ATP dan glycolyse.',
+      'Het mitochondriale binnenste membraan herbergt de elektronentransportketen en ATP-synthase, en produceert daarmee veel meer ATP dan glycolyse.',
     ],
     [
       'Wat is in fotosynthese de primaire bron van het zuurstofgas dat aan de atmosfeer wordt vrijgegeven?',
@@ -402,7 +402,7 @@ export const BIOLOGY: CategoryContent = {
       'Fotolyse van water bij fotosysteem II geeft O₂ vrij, doneert elektronen en levert protonen. De Calvincyclus produceert geen O₂.',
     ],
     [
-      'De driedimensionale vorm van een eiwit wordt vooral bepaald door?',
+      'Waardoor wordt de driedimensionale vorm van een eiwit vooral bepaald?',
       [
         'De volgorde en eigenschappen van zijn aminozuren',
         'Het aantal waterstofbruggen gevormd met water',
@@ -446,7 +446,7 @@ export const BIOLOGY: CategoryContent = {
       'Ligandenbinding veroorzaakt conformatieverandering in de receptor, waardoor het kan interageren met signaaleiwitten of ionen verder stroomafwaarts.',
     ],
     [
-      'Structuren in verschillende soorten die een gemeenschappelijke voorouder delen en vergelijkbare botstructuur maar verschillende functies hebben, heten hoe?',
+      'Structuren in verschillende soorten delen een gemeenschappelijke voorouder en hebben een vergelijkbare botstructuur, maar verschillende functies. Hoe heten zulke structuren?',
       [
         'Homologe structuren',
         'Analoge structuren',
@@ -465,7 +465,7 @@ export const BIOLOGY: CategoryContent = {
         'De eigenschap wordt alleen aan vrouwelijk nageslacht doorgegeven',
       ],
       0,
-      'Verschillend reproducerend succes van individuen met gunstige eigenschappen veroorzaakt verandering in allelfrequentie, de essentie van natuurlijke selectie.',
+      'Ongelijk reproductief succes van individuen met gunstige eigenschappen veroorzaakt een verandering in de allelfrequentie - de essentie van natuurlijke selectie.',
     ],
     [
       'Wat doet DNA-polymerase tijdens DNA-replicatie?',
@@ -512,7 +512,7 @@ export const BIOLOGY: CategoryContent = {
         'Controleert nieuw gesynthetiseerd mRNA tegen de matrijsstreng',
       ],
       0,
-      'Een ribonucleoproteïnecomplex van vijf snRNP\'s. Groep-II-zelfsplitsende introns doen dezelfde chemie zonder het, wat de basis vormt voor het argument van gemeenschappelijke afstamming.',
+      'Een ribonucleoproteïnecomplex van vijf snRNP\'s. Groep-II-zelfsplitsende introns doen dezelfde chemie zonder spliceosoom nodig te hebben, wat de basis vormt voor het argument van gemeenschappelijke afstamming.',
     ],
     [
       'Wat detecteert een western blot?',
@@ -580,7 +580,7 @@ export const BIOLOGY: CategoryContent = {
         'Membraanpotentiaal drijft natriumexport aan - Jens Skou',
       ],
       0,
-      'Voorgesteld in 1961 en jarenlang breed ongeloofd; Mitchell ontving de Nobelprijs in 1978.',
+      'Voorgesteld in 1961 en jarenlang niet algemeen aanvaard; Mitchell ontving de Nobelprijs in 1978.',
     ],
     [
       'Welk celtype presenteert antigeen op MHC klasse II om helper-T-cellen te activeren?',

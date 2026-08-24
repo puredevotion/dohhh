@@ -193,13 +193,13 @@ export const FINANCE: CategoryContent = {
     [
       'Een gewone renteswap tussen twee partijen dient wat primair doel?',
       [
-        'Stelt elke partij in staat vaste en variabele rentebetalingen op een nominale bedrag uit te wisselen',
+        'Stelt elke partij in staat vaste en variabele rentebetalingen op een nominaal bedrag uit te wisselen',
         'Elimineert het renterisico volledig door het rentetarief voor alle toekomstige periodes vast te leggen',
         'Draagt kredietrisico van de ene tegenpartij naar de andere over zonder kasstromen te beïnvloeden',
         'Stelt de verkoop van een obligatiepositie mogelijk zonder een verlies in de balans op te nemen',
       ],
       0,
-      'Elke partij wisselt de ene kasstroomstroom in voor een ander bedrag op dezelfde nominale waarde; geen van beide partijen verandert de onderliggende schuldverplichting.',
+      'Elke partij wisselt de ene kasstroom in voor de andere, berekend over dezelfde nominale waarde; geen van beide partijen verandert de onderliggende schuldverplichting.',
     ],
     [
       'Hoe reageren obligatieprijzen typisch op een stijging van de rentetarieven op de markt?',
@@ -229,7 +229,7 @@ export const FINANCE: CategoryContent = {
         'Een call geeft het recht om op een vastgestelde prijs te kopen; een put geeft het recht om op een vastgestelde prijs te verkopen',
         'Een call kan slechts eenmaal worden uitgeoefend, terwijl een put meerdere keren gedurende de looptijd ervan kan worden uitgeoefend',
         'Calls hebben intrinsieke waarde terwijl puts alleen uit tijdswaarde bestaan',
-        'Calls worden alleen gebruikt door aankoopers van aandelen, puts alleen door beleggers die short gaan',
+        'Calls worden alleen gebruikt door kopers van aandelen, puts alleen door beleggers die short gaan',
       ],
       0,
       'Het onderscheid is zuiver richtinggevend: calls profiteren van prijsstijgingen, puts van prijsdalingen.',
@@ -327,11 +327,11 @@ export const FINANCE: CategoryContent = {
       [
         'Een obligatie waarvan de couponrente periodiek wordt aangepast op basis van een referentievoet zoals LIBOR of SOFR',
         'Een obligatie uitgegeven door een bedrijf waarvan de inkomsten fluctueren met de marktomstandigheden',
-        'Een staatsobligatie waarvan de waarde wordt aangepast voor inflatie door het gezicht bedrag te wijzigen',
+        'Een staatsobligatie waarvan de waarde wordt aangepast voor inflatie door het nominale bedrag te wijzigen',
         'Een kortetermijnzekerheid die onvoorspelbaar vervalt op basis van marktomstandigheden',
       ],
       0,
-      'Naarmate referentietarifieven veranderen, passen couponbetalingen op FRN\'s zich aan; dit beschermt beleggers tegen stijgende rentetarieven maar vermindert opwaartse potentieel als rentes dalen.',
+      'Naarmate referentietarieven veranderen, passen couponbetalingen op FRN\'s zich aan; dit beschermt beleggers tegen stijgende rentetarieven maar vermindert het opwaartse potentieel als rentes dalen.',
     ],
     [
       'Wat doet onderpand in derivatenhandel?',
@@ -349,7 +349,7 @@ export const FINANCE: CategoryContent = {
       [
         'Gelijktijdig dezelfde of gelijkwaardige activa in verschillende markten kopen en verkopen om van prijsverschillen winst te maken',
         'Toekomstige prijsbewegingen voorspellen met behulp van historische prijspatronen en technische analyse',
-        'Onderwaardeeerde aandelen kopen en ze vasthouden tot ze terugkeren naar eerlijke waarde',
+        'Ondergewaardeerde aandelen kopen en ze vasthouden tot ze terugkeren naar eerlijke waarde',
         'Hefboomwerking gebruiken om rendementen op een portefeuille met risicovolle activa te vergroten',
       ],
       0,

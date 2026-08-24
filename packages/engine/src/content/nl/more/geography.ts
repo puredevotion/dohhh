@@ -8,7 +8,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
       [
         'De verhouding tussen voelbare en latente warmteflux van een oppervlak',
         'De verhouding tussen netto straling en bodemwarmteflux',
-        'De verhouding tussen werkelijke en potentiele verdamping',
+        'De verhouding tussen werkelijke en potentiële verdamping',
         'De verhouding tussen albedo en oppervlakte-emissiviteit',
       ],
       0,
@@ -30,7 +30,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
       [
         'Maandelijkse drempelwaarden voor temperatuur en neerslag',
         'Netto stralingsbalans en dominante bronregio\'s van luchtmassa\'s',
-        'Potentiele verdamping ten opzichte van bodemvochtopslag',
+        'Potentiële verdamping ten opzichte van bodemvochtopslag',
         'Breedtegraadzones gecorrigeerd voor continentaliteit en hoogte',
       ],
       0,
@@ -53,7 +53,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
         'Oplossing van goed oplosbaar gesteente, voornamelijk kalksteen',
         'Vorstverwering van gescheurd gesteente onder periglaciale omstandigheden',
         'Deflatie en afslijting van gesteente door windgedragen zand',
-        'Differentiele compactie van los sediment boven hoger gelegen gesteente',
+        'Differentiële compactie van los sediment boven hoger gelegen gesteente',
       ],
       0,
       'Zinkgaten, grotten en verdwijnende beken. Ook waarom karstwatervoerende lagen zo kwetsbaar zijn voor vervuiling - er is nauwelijks filtering.',
@@ -106,7 +106,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
         'Verweerde vulkanische as die ter plekke tot klei is omgezet',
       ],
       0,
-      'De loessgordels van Noord-China, de Mississippi en Oekraine horen bij de productiefste bodems die er zijn, en bij de meest erosiegevoelige.',
+      'De loessgordels van Noord-China, de Mississippi en Oekraïne horen bij de productiefste bodems die er zijn, en bij de meest erosiegevoelige.',
     ],
   ],
   phd: [
@@ -137,7 +137,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
       [
         'De verdeling van neerslag tussen verdamping en afvoer, als functie van ariditeit',
         'Planetair albedo en de gemiddelde mondiale oppervlaktetemperatuur',
-        'Bodemkoolstofomzetting en de gemiddelde jaartemperatuur, via een exponentiele temperatuurgevoeligheid',
+        'Bodemkoolstofomzetting en de gemiddelde jaartemperatuur, via een exponentiële temperatuurgevoeligheid',
         'Sedimentopbrengst en bekkenreliëf en neerslag',
       ],
       0,
@@ -179,10 +179,10 @@ export const MORE_GEOGRAPHY: CategoryContent = {
     [
       'Wat betekent de term "teleconnectie" in de klimatologie?',
       [
-        'Een statistisch robuuste samenhang tussen klimaatanomalieen in ver van elkaar gelegen regio\'s',
+        'Een statistisch robuuste samenhang tussen klimaatanomalieën in ver van elkaar gelegen regio\'s',
         'De warmteoverdracht tussen halfronden door de atmosferische circulatie',
         'De verspreiding van een tsunami over een heel oceaanbekken',
-        'De koppeling van stratosferische en tropo­sferische circulatie boven een pool',
+        'De koppeling van stratosferische en troposferische circulatie boven een pool',
       ],
       0,
       'ENSO en de Noord-Amerikaanse winter is het klassieke voorbeeld; de Noord-Atlantische Oscillatie is een ander.',
@@ -190,13 +190,13 @@ export const MORE_GEOGRAPHY: CategoryContent = {
     [
       'Wat meet kosmogene nuclidendatering van een landvorm?',
       [
-        'Opgebouwde blootstelling aan cosmische straling aan of nabij het oppervlak',
+        'Opgebouwde blootstelling aan kosmische straling aan of nabij het oppervlak',
         'De tijd sinds het laatste thermische resetten van het luminescentiesignaal van een mineraal',
         'Het verval van kalium naar argon binnen een vulkanisch mineraal',
         'De verblijftijd van water in een grondwaterlichaam',
       ],
       0,
-      'Beryllium-10 in kwarts is het werkpaard. Het maakte het mogelijk glaciale chronologieen op te bouwen op basis van zwerfkeien in plaats van organisch materiaal.',
+      'Beryllium-10 in kwarts is het werkpaard. Het maakte het mogelijk glaciale chronologieën op te bouwen op basis van zwerfkeien in plaats van organisch materiaal.',
     ],
     [
       'Wat is de voornaamste moeilijkheid bij het toeschrijven van een enkele extreme weersgebeurtenis aan klimaatverandering?',
@@ -272,7 +272,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
         'Door ijs meegevoerd puin in Holocene mariene kernen uit de Noord-Atlantische Oceaan',
         'Stofflux in Antarctisch ijskernen, betrouwbaar gedateerd door jaarlaagtelling',
         'Zuurstofisotopen uit speleothemen in monsoengebieden, wereldwijd goed gerepliceerd',
-        'Boomringbreedtechronologieen van de bristlecone pine, precies jaarlijks',
+        'Boomringbreedtechronologieën van de bristlecone pine, precies jaarlijks',
       ],
       0,
       'De ongeveer 1500-jarige spacing van Bond is betwist, zowel qua statistiek als qua datering, en blijft ondanks dat de standaardverwijzing.',
@@ -292,7 +292,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
       'Hoe wordt de rol van de Antarctische Circumpolaire Stroom in het Cenozoicum betwist?',
       [
         'Of het ontstaan ervan Antarctische verijzing veroorzaakte door thermische isolatie, of volgde op CO2-gedreven afkoeling',
-        'Of het al voor het Mioceen bestond, gezien de ambiguiteit van het vroege record van de Zuidelijke Oceaan',
+        'Of het al voor het Mioceen bestond, gezien de ambiguïteit van het vroege record van de Zuidelijke Oceaan',
         'Of het meer warmte transporteert dan de Golfstroom',
         'Of het door wind of door thermohaliene processen wordt aangedreven',
       ],
@@ -327,7 +327,7 @@ export const MORE_GEOGRAPHY: CategoryContent = {
         'De stratigrafische marker en startdatum zijn omstreden',
         'Er is geen meetbaar menselijk signaal in het sedimentaire record',
         'Het valt volledig samen met het reeds gedefinieerde Holoceen',
-        'Het kan niet worden geidentificeerd buiten terrestrische sequenties',
+        'Het kan niet worden geïdentificeerd buiten terrestrische sequenties',
       ],
       0,
       'De stemming tegen het voorgestelde tijdvak in 2024 heeft niet de bruikbaarheid van het begrip beslecht - alleen de formele status, een onderscheid dat in de berichtgeving grotendeels verloren ging.',

@@ -356,18 +356,18 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'It directly sets the mechanical strength of the corroded material',
       ],
       0,
-      'Pitting initiates when applied or localized potential exceeds E_pit, breaking down the passivating oxide film and triggering self-propagating corrosion.',
+      'Pitting initiates when applied or localized potential exceeds Eₚᵢₜ, breaking down the passivating oxide film and triggering self-propagating corrosion.',
     ],
     [
       'What is the origin of the glass transition temperature (T_g) in amorphous polymers, and how does it differ from crystalline melting?',
       [
-        'T_g is kinetic, T_m is a true phase change',
-        'T_g occurs at higher temperatures than T_m in all polymers',
+        'T_g is kinetic, Tₘ is a true phase change',
+        'T_g occurs at higher temperatures than Tₘ in all polymers',
         'T_g requires a crystal structure to be defined',
-        'Both T_g and T_m measure the same thermodynamic event',
+        'Both T_g and Tₘ measure the same thermodynamic event',
       ],
       0,
-      'T_g is a kinetic transition (chain freezing/unfreezing); T_m is a true phase transition melting ordered crystals. They reflect different physical phenomena.',
+      'T_g is a kinetic transition (chain freezing/unfreezing); Tₘ is a true phase transition melting ordered crystals. They reflect different physical phenomena.',
     ],
     [
       'In semiconductor physics, what determines the width of the depletion region in a p-n junction at thermal equilibrium?',
@@ -378,7 +378,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'The bandgap energy of the material',
       ],
       0,
-      'Depletion width W ∝ √(V_bi/[eN_A+eN_D]) from Poisson\'s equation; built-in potential (ln(N_A N_D / n_i²)) and doping levels control it.',
+      'Depletion width W ∝ √(V_bi/[eNₐ+eN_D]) from Poisson\'s equation; built-in potential (ln(Nₐ N_D / nᵢ²)) and doping levels control it.',
     ],
     [
       'What is the significance of the Burger\'s vector in characterizing dislocations, and how does it relate to the dislocation type?',
@@ -400,7 +400,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'The electrical conductivity of ceramic matrix composites',
       ],
       0,
-      'Rule of mixtures: E_c = V_f E_f + V_m E_m is accurate for longitudinal loading where loads directly transfer through fibers.',
+      'Rule of mixtures: E_c = V_f E_f + Vₘ Eₘ is accurate for longitudinal loading where loads directly transfer through fibers.',
     ],
     [
       'What mechanisms dominate fracture toughness enhancement in transformation-toughened zirconia ceramics?',
@@ -422,7 +422,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'Nanomaterials always have higher melting points than bulk',
       ],
       0,
-      'As size decreases, S/V increases; surface energy becomes dominant, lowering T_m (Gibbs-Thomson), increasing sintering/diffusion rates, altering thermodynamic stability.',
+      'As size decreases, S/V increases; surface energy becomes dominant, lowering Tₘ (Gibbs-Thomson), increasing sintering/diffusion rates, altering thermodynamic stability.',
     ],
     [
       'What is the physical basis of the Griffith criterion for brittle fracture, and what does it predict?',
@@ -444,7 +444,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'An indicator that the alloy will be amorphous',
       ],
       0,
-      'Negative ΔH_mix favors inter-atomic bonding and homogeneous mixing; phase separation occurs at larger |ΔS|. Positive ΔH_mix drives phase splitting.',
+      'Negative ΔHₘᵢₓ favors inter-atomic bonding and homogeneous mixing; phase separation occurs at larger |ΔS|. Positive ΔHₘᵢₓ drives phase splitting.',
     ],
     [
       'What information does transmission electron microscopy (TEM) provide that scanning electron microscopy (SEM) cannot?',
@@ -589,7 +589,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'Fibers must break for the composite to fail',
       ],
       0,
-      'Bridged fibers carry σ_f = τ√(2ρ_f λ) (shear lag); L_eff pullout length and interfacial friction τ control W_pullout, directly raising K_IC or G_IC.',
+      'Bridged fibers carry σ_f = τ√(2ρ_f λ) (shear lag); L_eff pullout length and interfacial friction τ control Wₚᵤₗₗₒᵤₜ, directly raising K_IC or G_IC.',
     ],
     [
       'In semiconductor band structure engineering, what does the concept of "band gap engineering" through heterojunctions accomplish, and what role does strain play?',
@@ -600,7 +600,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'Band offsets are determined solely by doping levels',
       ],
       0,
-      'Epitaxial strain in mismatched heterostructures shifts E_g and ΔE_c/ΔE_v offsets, enabling tailored band alignment for devices (LEDs, lasers, thermoelectrics).',
+      'Epitaxial strain in mismatched heterostructures shifts E_g and ΔE_c/ΔEᵥ offsets, enabling tailored band alignment for devices (LEDs, lasers, thermoelectrics).',
     ],
     [
       'What is the Mullins effect in elastomers, and what molecular mechanisms govern stress-softening and hysteresis in filled polymers?',
@@ -633,7 +633,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'Θ_D is independent of elastic properties',
       ],
       0,
-      'Θ_D ≈ ℏω_D/k_B ∝ v_s; high Θ_D indicates stiff lattice (high E, v_s). Phonon scattering and mfp control κ independently.',
+      'Θ_D ≈ ℏω_D/k_B ∝ vₛ; high Θ_D indicates stiff lattice (high E, vₛ). Phonon scattering and mfp control κ independently.',
     ],
     [
       'In heterogeneous nucleation, what role does the contact angle and surface energy difference play in reducing the critical nucleus size compared to homogeneous nucleation?',
@@ -644,7 +644,7 @@ export const MATERIALS_SCIENCE: CategoryContent = {
         'Surface energy differences are always negligible for nucleation',
       ],
       0,
-      'Critical radius: r* = 2γ_SL cosθ/(ρΔg); as θ → 0, r* → min; activation energy ΔG* ∝ f(θ)·γ³/ΔG², favoring heterogeneous paths.',
+      'Critical radius: r* = 2γₛₗ cosθ/(ρΔg); as θ → 0, r* → min; activation energy ΔG* ∝ f(θ)·γ³/ΔG², favoring heterogeneous paths.',
     ],
     [
       'What is the mechanism and significance of grain growth in nanocrystalline materials, and why is the Zener pinning force insufficient to stabilize nm-scale grains at elevated temperature?',

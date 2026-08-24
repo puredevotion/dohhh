@@ -19,10 +19,10 @@ export const VIDEOGAMES: CategoryContent = {
       'De Genesis kon grafische gegevens snel tussen videobeelden overbrengen via DMA, waardoor snelle schermupdate mogelijk was. Sega hermerkte deze bestaande functie met "Blast Processing" om snelheid tegen Nintendo te suggereren.'
     ],
     [
-      'De Atari 2600 thuisconsole gebruikte een processor genaamd de 6507. Deze chip was een goedkoper variant van welke bekende processorfamilie?',
+      'De Atari 2600 thuisconsole gebruikte een processor genaamd de 6507. Deze chip was een goedkopere variant van welke bekende processorfamilie?',
       ['De MOS 6502', 'De Zilog Z80', 'De Motorola 68000', 'De Intel 8086'],
       0,
-      'De 6507 was een kleinere, goedkoper variant van de 6502 met minder adreslijnen en pinnen, wat Atari hielp productiekosten te reduceren terwijl basisprocessorfunctionaliteit voor 1977-hardware werd behouden.'
+      'De 6507 was een kleinere, goedkopere variant van de 6502 met minder adreslijnen en pinnen, wat Atari hielp productiekosten te reduceren terwijl basisprocessorfunctionaliteit voor 1977-hardware werd behouden.'
     ],
     [
       'Waarom koos Nintendo ervoor cartridges te gebruiken in plaats van CD-ROM voor de Nintendo 64, ondanks dat Sony PlayStation en Sega Saturn schijven gebruikten?',
@@ -55,7 +55,7 @@ export const VIDEOGAMES: CategoryContent = {
       'Ralph Baer\'s ontwerp werd door Magnavox in 1972 als Odyssey gelanceerd, jaren voor Atari\'s thuis-Pong en concurrenten, gebruikmakend van analoge schakelingen en plastic schermoverlays in plaats van microprocessor.'
     ],
     [
-      'SNK\'s Neo Geo AES thuisconsole was buitengewoon duur vergeleken met concurrenten bij lancering in 1990. Welke hardwareontwerppkeuze dreef deze hoge kosten primair?',
+      'SNK\'s Neo Geo AES thuisconsole was buitengewoon duur vergeleken met concurrenten bij lancering in 1990. Welke hardwareontwerpkeuze dreef deze hoge kosten primair?',
       ['Het gebruikte arcade-identieke hardware van SNK\'s bestaande arcadebordjes', 'Het bevatte een ingebouwde arcadespelbibliotheek in ROM', 'Het vereiste dure maatwerk-productie in Japan', 'Het bevatte een high-end-monitor en arcade-stijljoystick'],
       0,
       'De Neo Geo AES hergebruikte in wezen SNK\'s MVS-arcadebordjes direct in huisconsolevorm. Dit leverde authentieke arcadegrafiek op, maar kostte veel meer dan concurrenten, wat het positioneerde als boutique-product.'
@@ -94,7 +94,7 @@ export const VIDEOGAMES: CategoryContent = {
       'De Famicom Disk System, gelanceerd in Japan, bood een alternatief voor cartridges met herschrijfbare opslag. Welk voordeel hadden schijf-gebaseerde spelen boven alleen-cartridgespelen?',
       ['Lagere kosten per spel en ingebouwde opslaggegevens zonder batterijen', 'Snellere laadtijden en toegang tot grotere spelwerelden', 'Betere geluidskwaliteit en mogelijkheden voor muzieksamenstelling', 'Mogelijkheid om spelen van eerdere Nintendo-consoles te spelen'],
       0,
-      'De Famicom Disk System gebruikte Mitsumi Quick Disk-media, die goedkoper waren dan cartridges en game-opslaan zonder batterij-gesteuerde RAM-chips in de cartridges zelf mogelijk maakten.'
+      'De Famicom Disk System gebruikte Mitsumi Quick Disk-media, die goedkoper waren dan cartridges en game-opslag zonder batterijgebufferde RAM-chips in de cartridges zelf mogelijk maakten.'
     ]
   ],
   msc: [

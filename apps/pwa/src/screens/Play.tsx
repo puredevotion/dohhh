@@ -24,7 +24,15 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { packFor, SOLO_DEAL_DELAY_MS, useApp } from '../lib/store.js';
-import { ConnectionPill, Notice, Screen, StalledWarning, TierBadge, useElapsed } from '../ui/atoms.jsx';
+import {
+  ConnectionPill,
+  FormulaText,
+  Notice,
+  Screen,
+  StalledWarning,
+  TierBadge,
+  useElapsed,
+} from '../ui/atoms.jsx';
 
 export function Play(): ReactNode {
   const { t } = useTranslation('play');
@@ -423,7 +431,9 @@ function Outcome({
       </Card.Header>
       {question !== undefined && (
         <Card.Content className="flex flex-col gap-2 text-sm">
-          <p className="text-default-foreground">{question.prompt}</p>
+          <p className="text-default-foreground">
+            <FormulaText text={question.prompt} />
+          </p>
           {record.chosenText !== null && (
             <p>
               <span className="text-muted">
@@ -432,17 +442,21 @@ function Outcome({
               <span
                 className={`font-medium ${record.correct ? 'text-success' : 'text-danger-text'}`}
               >
-                {record.chosenText}
+                <FormulaText text={record.chosenText} />
               </span>
             </p>
           )}
           {!record.correct && correctText !== undefined && (
             <p>
               <span className="text-muted">{t('outcome.answer')}</span>
-              <span className="font-medium text-success">{correctText}</span>
+              <span className="font-medium text-success">
+                <FormulaText text={correctText} />
+              </span>
             </p>
           )}
-          <p className="text-muted">{question.explanation}</p>
+          <p className="text-muted">
+            <FormulaText text={question.explanation} />
+          </p>
         </Card.Content>
       )}
     </Card>
@@ -624,6 +638,36 @@ function ChooseTier({
   );
 }
 
+/** Color stops the answer timeout bar sweeps through as time runs out, evenly spaced across the full duration. */
+const TIMEOUT_BAR_STOPS: readonly [number, number, number][] = [
+  [34, 197, 94], // green (success) - plenty of time left
+  [234, 179, 8], // yellow - time to commit
+  [249, 115, 22], // orange - answer now
+  [239, 68, 68], // red (danger) - out of time
+];
+
+/**
+ * Interpolates across {@link TIMEOUT_BAR_STOPS} by fraction of time remaining
+ * (1 = full time, 0 = expired), so the bar's color is a continuous sweep
+ * rather than three abrupt jumps - it reads as one bar draining, not a
+ * traffic light switching between states.
+ */
+function timeoutBarColor(fraction: number): string {
+  const clamped = Math.max(0, Math.min(1, fraction));
+  const segments = TIMEOUT_BAR_STOPS.length - 1;
+  // Stops are ordered green-to-red for a *counting-down* fraction, so walk
+  // them from the high (green) end as fraction falls from 1 to 0.
+  const scaled = (1 - clamped) * segments;
+  const index = Math.min(segments - 1, Math.floor(scaled));
+  const t = scaled - index;
+  // index is clamped to [0, segments - 1] above, so both lookups are always
+  // in bounds; noUncheckedIndexedAccess can't see that statically.
+  const [r1, g1, b1] = TIMEOUT_BAR_STOPS[index]!;
+  const [r2, g2, b2] = TIMEOUT_BAR_STOPS[index + 1]!;
+  const lerp = (a: number, b: number) => Math.round(a + (b - a) * t);
+  return `rgb(${lerp(r1, r2)}, ${lerp(g1, g2)}, ${lerp(b1, b2)})`;
+}
+
 function LiveQuestion({
   state,
   canAnswerNow,
@@ -697,13 +741,31 @@ function LiveQuestion({
         </span>
       </div>
 
+      <ProgressBar
+        value={Math.round((remaining / DIFFICULTY_TIERS[difficulty].timeoutMs) * 100)}
+        aria-hidden
+        size="sm"
+      >
+        <ProgressBar.Track>
+          <ProgressBar.Fill
+            style={{
+              width: `${Math.max(0, Math.min(100, (remaining / DIFFICULTY_TIERS[difficulty].timeoutMs) * 100))}%`,
+              backgroundColor: timeoutBarColor(remaining / DIFFICULTY_TIERS[difficulty].timeoutMs),
+              transition: 'width 200ms linear, background-color 200ms linear',
+            }}
+          />
+        </ProgressBar.Track>
+      </ProgressBar>
+
       <Card>
         <Card.Header>
           <Card.Description>
             {categoryName}
             {repeat && t('live_question.repeat_suffix')}
           </Card.Description>
-          <Card.Title className="text-xl leading-snug">{prompt}</Card.Title>
+          <Card.Title className="text-xl leading-snug">
+            <FormulaText text={prompt} />
+          </Card.Title>
         </Card.Header>
         <Card.Content className="flex flex-col gap-2.5">
           {options.map((option, index) => (
@@ -726,7 +788,7 @@ function LiveQuestion({
               <span className="mr-2 font-mono text-xs text-muted">
                 {String.fromCharCode(65 + index)}
               </span>
-              {option}
+              <FormulaText text={option} />
             </button>
           ))}
         </Card.Content>

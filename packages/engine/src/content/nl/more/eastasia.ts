@@ -62,7 +62,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
       'In welk jaar voerde Hongkong zijn koppeling van de munt aan de Amerikaanse dollar in (het Linked Exchange Rate System)?',
       ['1983', '1997', '1990', '1978'],
       0,
-      'Ingevoerd oktober 1983 op 7,80 per dollar om vertrouwen te herstellen na onzekerheid over 1997-overdracht. De koppeling standhield de Aziatische crisis van 1997-98, in tegenstelling tot andere munten, al met deflatie als gevolg.',
+      'Ingevoerd oktober 1983 op 7,80 per dollar om vertrouwen te herstellen na onzekerheid over 1997-overdracht. De koppeling doorstond de Aziatische crisis van 1997-98, in tegenstelling tot andere munten, al met deflatie als gevolg.',
     ],
     [
       'Waarop richtte Singapore zich vooral in reactie op zijn recessie van 1985-86, de eerste sinds de onafhankelijkheid?',
@@ -163,7 +163,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
     [
       'Waarom was het financiële debacle van Kia Motors in juli 1997 vooral belangrijk voor de Koreaanse crisis?',
       [
-        'Het legde blootgesteld hoe kwetsbaar door schulden gefinancierde bedrijfshefboom was geworden, nog voordat de besmetting toesloeg',
+        'Het legde bloot hoe kwetsbaar door schulden gefinancierde bedrijfshefboom was geworden, nog voordat de besmetting toesloeg',
         'Het markeerde het eerste Koreaanse bedrijf dat formeel werd genationaliseerd onder het IMF-programma van december',
         "Het veroorzaakte de eerste beheerde zweving van de won in maart 1997, maanden voor de crisis in Thailand",
         'Het leidde tot de onmiddellijke ineenstorting van de merchantbanksector, nog voor enig overheidsoptreden',
@@ -303,7 +303,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Het volgde op IMF-voorwaarden verbonden aan een standbylening voor Hongkong',
       ],
       0,
-      'Augustus 1998: HKMA kocht ~118 miljard HK$ aandelen/futures tegen "dubbele slag" (hedgefondsen shorten dollar+aandelen). Buitengewoon voor currency board; koppeling standhield, aandelen later met winst verkocht. Kritiek op verlies van marktprincipes.',
+      'Augustus 1998: HKMA kocht ~118 miljard HK$ aandelen/futures tegen "dubbele slag" (hedgefondsen shorten dollar+aandelen). Buitengewoon voor currency board; koppeling hield stand, aandelen later met winst verkocht. Kritiek op verlies van marktprincipes.',
     ],
     [
       'Op welk empirisch punt draaide het debat vooral of de Aziatische crisis van 1997-98 werd gedreven door "fundamentals" of door "paniek"?',
@@ -369,7 +369,7 @@ export const MORE_EAST_ASIA: CategoryContent = {
         'Ze werden nadrukkelijk opgericht om het Drieklovendamproject te financieren',
       ],
       0,
-      '1990-91: Shanghai/Shenzhen openden jaren voor vennootschaps- en effectenwetten, zonder eigendomsrechten duidelijk. Keerde gebruikelijke volgorde om: markt eerst, recht later. Verklaart: gesplitste structuren, zwakke minderheidsscherming, staatcontrole.',
+      '1990-91: Shanghai/Shenzhen openden jaren voor vennootschaps- en effectenwetten, zonder eigendomsrechten duidelijk. Keerde gebruikelijke volgorde om: markt eerst, recht later. Verklaart: gesplitste structuren, zwakke minderheidsbescherming, staatcontrole.',
     ],
     [
       'Waarom is de verhoging van de Japanse consumptiebelasting van 3% naar 5% in april 1997, onder premier Hashimoto Ryutaro, vooral belangrijk in het macro-economische debat?',

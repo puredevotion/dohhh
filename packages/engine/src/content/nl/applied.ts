@@ -38,7 +38,7 @@ export const MATHS: CategoryContent = {
       'Dit is de fundamentele definitie van e, het grondtal van de natuurlijke logaritme.',
     ],
     [
-      'Wat stelt de cosinusregel u in staat te berekenen in een driehoek?',
+      'Wat stelt de cosinusregel u in staat om in een driehoek te berekenen?',
       [
         'De lengte van elke zijde gegeven de andere twee zijden en de ingesloten hoek',
         'Of de driehoek scherp, recht of stomp is uit de drie zijdenlengten',
@@ -57,7 +57,7 @@ export const MATHS: CategoryContent = {
         'Een punt dat op de grens van het domein van de functie ligt',
       ],
       0,
-      'Een lokaal maximum of minimum, niet noodzakelijk globaal. De afgeleide nul is nodig voor binnenlandse lokale extrema (Fermats stelling) maar niet voldoende.',
+      'Een lokaal maximum of minimum, niet noodzakelijk globaal. De afgeleide nul is nodig voor inwendige lokale extrema (Fermats stelling), maar niet voldoende.',
     ],
     [
       'Wat veronderstelt de stelling van Rolle over een functie f op [a, b]?',
@@ -68,7 +68,7 @@ export const MATHS: CategoryContent = {
         'f is overal positief en heeft geen nulpunten',
       ],
       0,
-      'Onder deze voorwaarden geldt voor een c in (a, b) dat f\'(c) = 0.',
+      'Onder deze voorwaarden bestaat er een c in (a, b) zodat f\'(c) = 0.',
     ],
     [
       'Hoe is elke term van een meetkundige rij met de vorige term gerelateerd?',
@@ -140,7 +140,7 @@ export const MATHS: CategoryContent = {
       'Wanneer is een functie surjectief (onto)?',
       [
         'Wanneer elk element in het codomein het beeld is van minstens één element in het domein',
-        'Wanneer elk element in het domein afbeeldt op een ander element in het codomein',
+        'Wanneer elk element in het domein wordt afgebeeld op een ander element in het codomein',
         'Wanneer de functie een inverse heeft',
         'Wanneer het bereik van de functie een echte deelverzameling van het codomein is',
       ],
@@ -178,7 +178,7 @@ export const MATHS: CategoryContent = {
         'Een orthonormale basis van eigenvectoren, met uitsluitend reële eigenwaarden',
         'Dat de matrix inverteerbaar is, met een positieve determinant',
         'Dat alle eigenwaarden verschillend en strikt positief zijn',
-        'Dat de matrix uitsluitend over de complexe getallen similar is met een diagonaalmatrix',
+        'Dat de matrix uitsluitend over de complexe getallen gelijkvormig is met een diagonaalmatrix',
       ],
       0,
       'Reële symmetrische matrices zijn orthogonaal diagonaliseerbaar. Diagonaliseerbaarheid over de complexe getallen alleen is veel zwakker en geldt voor elke matrix met verschillende eigenwaarden.',
@@ -244,7 +244,7 @@ export const MATHS: CategoryContent = {
         'De rationale getallen, dicht in de reële rechte waarop de exponentiële afbeelding werkt',
       ],
       1,
-      'Pi_1(S^1) is isomorf met Z, geïndexeerd door het omwentelingsgetal.',
+      'Pi₁(S^1) is isomorf met Z, geïndexeerd door het omwentelingsgetal.',
     ],
     [
       'Waarop betreft de centrale limietstelling de limietverdeling?',
@@ -263,7 +263,7 @@ export const MATHS: CategoryContent = {
         'x transpose A x > 0 voor elke niet-nul reële vector x',
         'Alle elementen van A zijn positief',
         'A heeft een positieve determinant',
-        'A is inverteerbaar en heeft zowel een strikt positieve spoor als een positieve determinant',
+        'A is inverteerbaar en heeft zowel een strikt positief spoor als een positieve determinant',
       ],
       0,
       'Equivalent: alle eigenwaarden van een symmetrische A zijn strikt positief. Een positieve determinant alleen is niet voldoende.',
@@ -288,7 +288,7 @@ export const MATHS: CategoryContent = {
       'Het hangt essentieel af van het keuzeaxioma, en de stukken zijn noodzakelijkerwijs niet-meetbaar.',
     ],
     [
-      'Waar gaat de Riemann-hypothese over de ligging van welke objecten?',
+      'Op de ligging van welke objecten heeft de Riemann-hypothese betrekking?',
       [
         'De niet-triviale nulpunten van de zetafunctie, waarvan wordt vermoed dat ze op de lijn Re(s) = 1/2 liggen',
         'De polen van de analytisch voortgezette zetafunctie binnen de kritieke strook 0 < Re(s) < 1, waar de functievergelijking symmetrie oplegt',
@@ -394,7 +394,7 @@ export const TECHNOLOGY: CategoryContent = {
     [
       'Wat is een hashfunctie in cryptografie?',
       [
-        'Een functie die invoergegevens afbeeldt op een byte-string van vaste grootte, ideaal eenrichtings- en botsingsbestendig',
+        'Een functie die invoergegevens afbeeldt op een byte-string van vaste grootte, idealiter eenrichtings- en botsingsbestendig',
         'Een methode om gegevens met een geheime sleutel te versleutelen',
         'Een algoritme om gegevens efficiënt te sorteren',
         'Een techniek om grote bestanden te comprimeren',
@@ -433,7 +433,7 @@ export const TECHNOLOGY: CategoryContent = {
         'Gegevens verdelen over meerdere servers',
       ],
       0,
-      'CPU-caches, Redis, browsercaches en CDN\'s volgen dit principe: verwissel opslag voor latentie.',
+      'CPU-caches, Redis, browsercaches en CDN\'s volgen dit principe: je ruilt opslag in voor latentie.',
     ],
     [
       'Waarvoor staat ACID in databasetransacties?',
@@ -460,7 +460,7 @@ export const TECHNOLOGY: CategoryContent = {
     [
       'Wat is inkapseling in objectgeoriënteerd programmeren?',
       [
-        'Gegevens en methoden bundelen terwijl interne details voor buiten verborgen worden',
+        'Gegevens en methoden bundelen terwijl interne details voor de buitenwereld verborgen blijven',
         'Code van één klasse naar een ander kopiëren',
         'Meerdere programma\'s op één machine uitvoeren',
         'Objecten naar JSON-indeling converteren',
@@ -471,7 +471,7 @@ export const TECHNOLOGY: CategoryContent = {
     [
       'Wat is het doel van versiebeheersystemen zoals Git?',
       [
-        'Wijzigingen in code bijhouden, samenwerking ermögelijken en een versiegeschiedenis onderhouden',
+        'Wijzigingen in code bijhouden, samenwerking mogelijk maken en een versiegeschiedenis onderhouden',
         'Code in executables compileren',
         'Broncode voor beveiliging versleutelen',
         'Code automatisch testen voor implementatie',
@@ -576,7 +576,7 @@ export const TECHNOLOGY: CategoryContent = {
         'Concurrency, atomiciteit en persistentie kunnen niet allemaal worden afgedwongen binnen één gedistribueerde transactiegrens',
       ],
       0,
-      'Omdat partities gebeuren of je ze kiest of niet, is de keuze in de praktijk tijdens een partitie tussen consistentie en beschikbaarheid.',
+      'Omdat partities nu eenmaal gebeuren, of je ze kiest of niet, is de keuze in de praktijk tijdens een partitie tussen consistentie en beschikbaarheid.',
     ],
     [
       'Wat is het doel van het slow-start-algoritme in TCP?',
@@ -633,7 +633,7 @@ export const TECHNOLOGY: CategoryContent = {
         'Het vereist exponentiële ruimte',
       ],
       0,
-      'Hardheid gaat over reductie, niet over bewezen ontrekbaarheid - en dat is precies wat P versus NP open laat.',
+      'Hardheid gaat over reductie, niet over bewezen onoplosbaarheid - en dat is precies wat P versus NP open laat.',
     ],
     [
       'Wat garandeert in het Raft-consensusalgoritme dat het logboek van een nieuw gekozen leider geen gecommitteerde items mist?',
@@ -698,9 +698,9 @@ export const SPORT: CategoryContent = {
     [
       'Wat is de buitenspelregel in voetbal?',
       [
-        'Een speler staat buitenspel als hij dichter bij de doellijn van de tegenstander is dan bal en twee verdedigers',
+        'Een speler staat buitenspel als hij dichter bij de doellijn van de tegenstander is dan de bal en twee verdedigers',
         'Een speler mag niet achterwaarts naar een teamgenoot passen',
-        'Een speler mag niet de bal ontvangen terwijl hij sneller loopt dan de gemiddelde snelheid van het team',
+        'Een speler mag de bal niet ontvangen terwijl hij sneller loopt dan de gemiddelde snelheid van het team',
         'Een speler pleegt automatisch een overtreding na drie passes op rij',
       ],
       0,
@@ -720,10 +720,10 @@ export const SPORT: CategoryContent = {
     [
       'Wat is het primaire doel in rugby union?',
       [
-        'Meer punten scoren dan het tegenstander door de ovale bal over de doellijn te dragen of ertussen te trappen',
+        'Meer punten scoren dan de tegenstander door de ovale bal over de doellijn te dragen of ertussen te trappen',
         'De bal zo lang mogelijk in de lucht houden',
-        'Zoveel passes voltooien als het tegenstander',
-        'Voorkomen dat het tegenstander de bal aanraakt',
+        'Zoveel passes voltooien als de tegenstander',
+        'Voorkomen dat de tegenstander de bal aanraakt',
       ],
       0,
       'Een try (5 punten) wordt gescoord door de bal in het in-goal-gebied tegen de grond te drukken; conversies en strafschoppen geven ook punten.',
@@ -737,12 +737,12 @@ export const SPORT: CategoryContent = {
         '1 punt',
       ],
       0,
-      'De drielijnenboog is verder weg van de basket dan een normale schot; baskets binnenin zijn 2 punten waard.',
+      'De drielijnenboog is verder weg van de basket dan een normaal schot; baskets binnenin zijn 2 punten waard.',
     ],
     [
       'Wat is een opslag in tennis?',
       [
-        'De slag die elk punt begint, gespeeld vanaf achter de basislijm in het servicevak van de tegenstander',
+        'De slag die elk punt begint, gespeeld vanaf achter de basislijn in het servicevak van de tegenstander',
         'De bal direct naar de tegenstander terugkaatsen',
         'Elke slag gespeeld vanaf de zijlijn',
         'De lijn die de grens van het veld aangeeft',
@@ -754,12 +754,12 @@ export const SPORT: CategoryContent = {
       'Wat is een homerun in honkbal?',
       [
         'Wanneer een slagman de bal over het buitenveldhek in fair territory slaat, of de bal ver genoeg slaat om alle bases te ronden',
-        'Wanneer een honkenloper naar hun startpositie terugkeert',
+        'Wanneer een honkloper naar zijn startpositie terugkeert',
         'Een run gescoord op het thuisstadion van de slagman',
         'Elke klap die een loper twee bases vooruit stelt',
       ],
       0,
-      'Een homerun laat de slagman en alle loper op bases scoren; het is de krachtigste individuele zet in honkbal.',
+      'Een homerun laat de slagman en alle lopers op de bases scoren; het is de krachtigste individuele zet in honkbal.',
     ],
     [
       'Wat is icing in ijshockey?',
@@ -770,18 +770,18 @@ export const SPORT: CategoryContent = {
         'Een overtreding waarbij een speler de puck te lang vasthoudt',
       ],
       0,
-      'Icing resulteert in een face-off in de zone van de overtredende team; het voorkomt lange-afstandsstalling.',
+      'Icing resulteert in een face-off in de zone van het overtredende team; het voorkomt lange-afstandsstalling.',
     ],
     [
-      'Wat is vrij zwemmen in het zwemmen?',
+      'Wat is vrije slag in het zwemmen?',
       [
-        'Een slag waarbij de zwemmer elke techniek gebruikt (typisch voorkruipcrawl) om de finish het snelst te bereiken',
+        'Een slag waarbij de zwemmer een willekeurige techniek mag gebruiken (meestal voorkruipcrawl) om zo snel mogelijk de finish te bereiken',
         'Een zwemstijl waarbij geen beweging vereist is',
         'Een race waarbij zwemmers afwisselen tussen verschillende slagen',
         'Een competitie die plaatsvindt in een rivier in plaats van een zwembad',
       ],
       0,
-      'Voorkruipcrawl is bijna altijd de snelste slag, dus zwemmers kiezen dit voor vrij-zwemmevenementen.',
+      'Voorkruipcrawl is bijna altijd de snelste slag, dus zwemmers kiezen die techniek voor vrijeslagwedstrijden.',
     ],
     [
       'Wat is een break in snooker?',
@@ -814,7 +814,7 @@ export const SPORT: CategoryContent = {
         'De bal moet van minstens 30 cm boven de tafel worden geworpen',
       ],
       0,
-      'Een opslag die het net niet passeert of buiten de zijde van de tegenstander landen, resulteert in een punt voor de tegenstander.',
+      'Een opslag die het net niet passeert of buiten de zijde van de tegenstander landt, resulteert in een punt voor de tegenstander.',
     ],
     [
       'Wat is de rol van een wicketkeeper in cricket?',
@@ -825,15 +825,15 @@ export const SPORT: CategoryContent = {
         'Ervoor zorgen dat het veld vlak en goed onderhouden is',
       ],
       0,
-      'De wicketkeeper is de enige veldspeler die beschermende handschoenen en schenen mag dragen voorbij de uitrusting van de batsman.',
+      'De wicketkeeper is de enige veldspeler die, naast de batsman, beschermende handschoenen en schenen mag dragen.',
     ],
     [
       'Wat is een volant in badminton?',
       [
-        'Het kleine projectiel met kurken basis en veerenkroon dat spelers over het net slaan',
+        'Het kleine projectiel met kurken basis en verenkroon dat spelers over het net slaan',
         'Een strafkaart gegeven aan een speler die de regels breekt',
         'De manier van serveren in dubbelspartijen',
-        'De lijn die de out-of-bounds aangeven op het veld',
+        'De lijn die de out-of-bounds aangeeft op het veld',
       ],
       0,
       'Een volant beweegt anders dan een bal: het vertraagt snel in vlucht, waardoor badminton tactisch verschillend is.',

@@ -24,7 +24,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Welk verdrag uit 1920 reduceerde Hongarije\'s grondgebied met ongeveer twee derde?',
       ['Verdrag van Trianon', 'Verdrag van Versailles', 'Verdrag van Parijs', 'Verdrag van Sint-Germaan'],
       0,
-      'Het Verdrag van Trianon transfereerde Slowakije, Transsylvanië en zuidelijke gebieden naar buurstaten, een bepaald nationaal trauma.'
+      'Het Verdrag van Trianon droeg Slowakije, Transsylvanië en zuidelijke gebieden over aan buurstaten en veroorzaakte daarmee een blijvend nationaal trauma.'
     ],
     [
       'Welke buitenlandse druk zorgde onmiddellijk voor de Hongaarse Opstand van 1956?',
@@ -36,11 +36,11 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Wie was regent van Hongarije van 1920 tot 1944 tijdens het interbellum?',
       ['Miklós Horthy', 'Béla Kun', 'Pál Teleki', 'István Bethlen'],
       0,
-      'Admiraal Miklós Horthy regeerde als regent en handhaafde een monarchistische staat zonder eigenlijk een koning op de troon.'
+      'Admiraal Miklós Horthy regeerde als regent en handhaafde een monarchistische staat zonder dat er daadwerkelijk een koning op de troon zat.'
     ],
     [
       'Wat was de Gouden Bul van 1222?',
-      ['Een handvest dat de koning beperkte', 'Een goudstandaard voor valuta', 'Een pauselijke religieuze proklamatie', 'Een koninklijk huwelijksverdrag'],
+      ['Een handvest dat de koning beperkte', 'Een goudstandaard voor valuta', 'Een pauselijke religieuze proclamatie', 'Een koninklijk huwelijksverdrag'],
       0,
       'De Gouden Bul was een handvest van koning Andrew II dat koninklijke autoriteit beperkte en feodale privileges voor de adel verzekerde.'
     ],
@@ -60,7 +60,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Hongarije\'s overgang van communistisch bewind in 1989 werd vooral gekenmerkt door:',
       ['Open grenzen, geen Sovjetinterventie', 'Populaire opstand en gewapend conflict', 'Economische collapsestemming', 'Onderhandelde overgave aan het Westen'],
       0,
-      'Anders dan andere Sovietbloklanden verliep Hongarije\'s overgang van 1989 grotendeels vreedzaam, met grensopening en geen Sovjet-tegenstand.'
+      'Anders dan andere Sovjetbloklanden verliep Hongarije\'s overgang van 1989 grotendeels vreedzaam, met grensopening en zonder Sovjet-tegenstand.'
     ],
     [
       'Wat is de betekenis van de Heilige Kroon van Sint-Stefaan in de Hongaarse geschiedenis?',
@@ -82,15 +82,15 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Hongarije\'s rol in de Tweede Wereldoorlog betrof:',
-      ['Bondgenoot van Duitsland, daarna Duitse bezetting', 'Volledige vrijwillige Assoas-partnerschap van begin tot eind', 'Neutrale status gedurende de hele oorlog', 'Volledige weerstand en vroege nazi-bezetting'],
+      ['Bondgenoot van Duitsland, daarna Duitse bezetting', 'Volledig vrijwillig As-partnerschap van begin tot eind', 'Neutrale status gedurende de hele oorlog', 'Volledige weerstand en vroege nazi-bezetting'],
       0,
-      'Hongarije was bondgenoot van Duitsland maar werd in 1944 bezet nadat het een geheime vredesakkoord met Sovjet-Unie probeerde; zware verwoesting.'
+      'Hongarije was bondgenoot van Duitsland, maar werd in 1944 bezet nadat het een geheim vredesakkoord met de Sovjet-Unie probeerde te sluiten; dit leidde tot zware verwoesting.'
     ],
     [
       'Welke religieuze beweging was prominent in middeleeuws Hongarije buiten de hoofdstroom-katholiciteit?',
       ['Hussitische hervormingen uit Bohemen', 'Vroeg luthers protestantisme uit Duitsland', 'Golven van Oosters-orthodoxe conversie', 'Islamitische expansie uit Ottomaanse gebieden'],
       0,
-      'Hussitisch hervormingen verspreidden zich van Bohemen naar Hongarije en creëerden ketterse activiteit die de Kerk in de 15e eeuw onderdrukte.'
+      'Hussitische hervormingen verspreidden zich van Bohemen naar Hongarije en zorgden voor ketterse activiteit die de Kerk in de 15e eeuw onderdrukte.'
     ]
   ],
   msc: [
@@ -102,7 +102,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Wat was het fundamentele verschil tussen de Oostenrijkse en Hongaarse helften van het Austro-Hongaarse Rijk na 1867?',
-      ['Hongarije had eigen kabinet en parlement', 'Oostenrijk had volledige autonomie; Hongarije was slechts een provincie', 'Beide waren volledig gelijk in alle gouvernementale structuren', 'Hongarije beheerste buitenlands beleid terwijl Oostenrijk militaire aangelegenheden leidde'],
+      ['Hongarije had eigen kabinet en parlement', 'Oostenrijk had volledige autonomie; Hongarije was slechts een provincie', 'Beide waren volledig gelijk in alle bestuurlijke structuren', 'Hongarije beheerste buitenlands beleid terwijl Oostenrijk militaire aangelegenheden leidde'],
       0,
       'Dualisme gaf Hongarije autonome interne bestuur via een aparte Dieta en kabinet; Oostenrijk behandelde buitenlandse zaken met enkel de Kroon als gedeelde instelling.'
     ],
@@ -110,7 +110,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Welke bepaling uit het Verdrag van Trianon was het meest schadelijk voor Hongaarse nationale gevoelens?',
       ['Transsylvanië werd aan Roemenië gegeven', 'De afstand van Boedapest naar internationaal bestuur', 'Verplichte reparaties gelijk aan Oostenrijkse schuld', 'Verlies van mineraalrechten in de Karpaten'],
       0,
-      'Transsylvanië\'s transfer naar Roemenië was meest omstreden: bevatte aanzienlijke etnische Hongaarse en Saksische bevolking en historisch symbool van Hongaarse identiteit.'
+      'De overdracht van Transsylvanië aan Roemenië was het meest omstreden: het gebied had een aanzienlijke etnische Hongaarse en Saksische bevolking en was een historisch symbool van Hongaarse identiteit.'
     ],
     [
       'Onder welk administratief stelsel regeerde het Ottomaanse Rijk bezet Hongaars grondgebied?',
@@ -134,7 +134,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Miklós Horthy\'s politieke stelsel wordt best gekarakteriseerd als:',
       ['Autoritair rechts regeerstelsel', 'Democratische parlementaire regering', 'Strikte communistische dictatuur', 'Ottomaans-stijl absolute monarchie'],
       0,
-      'Horthy\'s stelsel was autoritair regeerstelsel met monarchisme, integraal nationalisme en later nazi-alliantie zonder formeel fascistisch corporatisme.'
+      'Horthy\'s stelsel was een autoritair regeerstelsel met monarchisme, integraal nationalisme en later een nazi-alliantie, zonder formeel fascistisch corporatisme.'
     ],
     [
       'Welk etnisch en religieus vraagstuk maakte de Hongaarse Opstand van 1848 intern tegenstrijdig?',
@@ -143,10 +143,10 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Hongaarse revolutionairen eisten onafhankelijkheid van Oostenrijk terwijl zij Roemenen, Serven en Slovaken gelijktijdig autonomie ontzegden.'
     ],
     [
-      'Hoe hervormd Hongarije\'s geografische verdeling tijdens Ottomaanse bezetting de toekomstige politiek?',
+      'Hoe hervormde Hongarije\'s geografische verdeling tijdens de Ottomaanse bezetting de toekomstige politiek?',
       ['Drie rivaliserende machtcentra', 'Dit had geen blijvend effect op Hongaarse politiek', 'Het versterkte Verenigde Hongaarse verzet tegen Ottomaanse heerschappij', 'Het maakte vredige Ottomaans-christelijke coëxistentie mogelijk'],
       0,
-      'Verdeling in Ottomaans Hongarije, Koninklijk Hongarije en autonome Transsylvaanse Vorstendommen versnipperde politieke ontwikkeling en machtcentra.'
+      'De verdeling in Ottomaans Hongarije, Koninklijk Hongarije en de autonome Transsylvaanse Vorstendommen versnipperde de politieke ontwikkeling en de machtcentra.'
     ],
     [
       'Welke Hongaarse adellijke familie domineerde het koninkrijk tijdens de Arpádische periode tot 1301?',
@@ -156,7 +156,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
     ],
     [
       'Wat werd de Gouden Eeuw van Miklós Corvinus (1458–1490) gekarakteriseerd door?',
-      ['Renaissance-bloei en militaire expansie', 'Economische ineenstorting en militaire nederlagen', 'Religieuze hervorming en boerenbemagtiging', 'Ottomaanse territoriale expansie in Hongarije'],
+      ['Renaissance-bloei en militaire expansie', 'Economische ineenstorting en militaire nederlagen', 'Religieuze hervorming en boerenemancipatie', 'Ottomaanse territoriale expansie in Hongarije'],
       0,
       'Corvinus bouwde een Renaissance-hof, creëerde een staand leger en maakte Hongarije tijdelijk een centrale Europese mogendheid voordat zijn dood dit eindigde.'
     ],
@@ -164,19 +164,19 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Welke unieke politieke status handhaafde de Transsylvaanse Vorstendommen onder Ottomaanse oppermacht?',
       ['Semi-autonoom, schatplichtig aan beide machten', 'Directe Ottomaanse provincie zonder autonomie', 'Onafhankelijk koninkrijk niet aan Ottomanen of Habsburgers gebonden', 'Oostenrijkse provincie onder Ottomaanse bescherming'],
       0,
-      'Transsylvanië was een quasi-onafhankelijk vorstendommen onder Ottomaanse oppermacht met gekozen vorsten; het speelde rivalen tegen elkaar af.'
+      'Transsylvanië was een quasi-onafhankelijk vorstendom onder Ottomaanse oppermacht met gekozen vorsten; het speelde rivalen tegen elkaar uit.'
     ],
     [
       'Welke leider van de Opstand van 1956 werd later geëxecuteerd, symbool van Hongaars verzet?',
-      ['Imre Nagy, geëxecuteerd in 1958', 'János Kádár, de door Sowjet ingestelde leider', 'János Czerman, de militaire commandant', 'Ferenc Hidas, de voornaamste onderhandelaar'],
+      ['Imre Nagy, geëxecuteerd in 1958', 'János Kádár, de door de Sovjets ingestelde leider', 'János Czerman, de militaire commandant', 'Ferenc Hidas, de voornaamste onderhandelaar'],
       0,
       'Imre Nagy, die kort terugkeerde tot macht tijdens de opstand, werd gearresteerd, heimelijk berecht en in 1958 geëxecuteerd, symbool van anti-Sovjet nationalisme.'
     ],
     [
-      'De militaire structuur van het Austro-Hongaarse Rijk na 1867 bevatten welke unieke feature?',
+      'Welk uniek kenmerk had de militaire structuur van het Austro-Hongaarse Rijk na 1867?',
       ['Een apart Honvéd-leger onder de kroon', 'Een enig eengemaakte leger onder Oostenrijks commando', 'Volledige militaire autonomie voor Hongaarse troepen', 'Gedeeld commando met roulerende leiderschap'],
       0,
-      'De Honvéd was Hongarije\'s apart territoriaal leger onder Krooncontrole; gedeeld buitenlands en militair beleid creëerde structurele spanningen.'
+      'De Honvéd was Hongarije\'s aparte territoriale leger onder controle van de Kroon; gedeeld buitenlands en militair beleid creëerde structurele spanningen.'
     ],
     [
       'Hoe verschilde Hongarije\'s overgang na 1989 institutioneel van Polen en Tsjecho-Slowakije?',
@@ -188,7 +188,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
   phd: [
     [
       'De Magyaarse verovering van het Karpaten-Bekken in de 9de eeuw werd vergemakkelijkt door welke militaire voordelen over inheemse Slavische en Turkse bevolking?',
-      ['Cavalerie-superioriteit en politieke versnippering', 'Superieure belegerings-wapenarsenaal en versterkte kampementen', 'Numerieke demografische meerderheid en georganiseerde feodale hiërarchieën', 'Byzantijnse bondgenootschap en marinedominie'],
+      ['Cavalerie-superioriteit en politieke versnippering', 'Superieure belegeringswapens en versterkte kampementen', 'Numerieke demografische meerderheid en georganiseerde feodale hiërarchieën', 'Byzantijnse bondgenootschap en marinedominie'],
       0,
       'Magyaarse lichte cavalerie en samengestelde bogen verwoestten versplinterde Slavische en Turkse politieke eenheden; organisatie en mobiliteit compenseerden kleinere getallen.'
     ],
@@ -202,41 +202,41 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Het Verdrag van Trianon\'s territoriale toekenningen aan Roemenië creëerden een acuut historiografisch probleem met betrekking tot welke bevolking?',
       ['Etnische Hongaren in oostelijk Transsylvanië', 'Turkse minderheden in grensgebieden', 'Duitssprekende bevolking in west-Hongarije', 'Joodse gemeenschappen verplaatst door territoriale herverdeling'],
       0,
-      'Trianon\'s Transsylvaanse transfer creëerde blijvend historiografische geschillen over etnografische grenzen en Hongaarse minoriteit-status tussen naties.'
+      'Trianon\'s overdracht van Transsylvanië veroorzaakte blijvende historiografische geschillen over etnografische grenzen en de status van Hongaarse minderheden tussen landen.'
     ],
     [
       'Hoe hing de institutionele mislukking van Béla Kun\'s Hongaarse Sovjetrepubliek samen met vooroorlogse Hongaarse sociale structuren?',
-      ['Feodale landtenuur en zwakke arbeiderszaak weerstonden revolutie', 'Hongarije had volledige socialistische bewustzijn bereikt', 'De revolutie werd alleen door buitenlandse machten gesaboteerd', 'Binnenlandse steun was overweldigend maar werd door buitenlandse invasie verpletterd'],
+      ['Feodale landtenuur en een zwakke arbeidersklasse weerstonden revolutie', 'Hongarije had volledige socialistische bewustzijn bereikt', 'De revolutie werd alleen door buitenlandse machten gesaboteerd', 'Binnenlandse steun was overweldigend maar werd door buitenlandse invasie verpletterd'],
       0,
-      'Hongarije\'s agrarische feodale structuur, dunne industriële arbeiderszaak en machtige landhuizende elite maakten Bolsjevisme structureel onhoudbaar.'
+      'Hongarije\'s agrarische feodale structuur, kleine industriële arbeidersklasse en machtige landbezittende elite maakten het bolsjewisme structureel onhoudbaar.'
     ],
     [
       'Welk wetenschappelijk debat omringt de oorzaken van de gelijktijdige onderdrukking van minderheden in de Hongaarse Opstand van 1848?',
-      ['Spanning tussen burger- en etnisch nationalisme', 'Minderheidsgroepen zetten doelbewust tegenopstanden in brand', 'Minderheden werden geheel door buitenlandse machten gefabriceerd', 'Hongaarse revolutionairen hielden werkelijk inclusieve politieke filosofieën maar werden tegenhouden'],
+      ['Spanning tussen burger- en etnisch nationalisme', 'Minderheidsgroepen zetten doelbewust tegenopstanden in brand', 'Minderheden werden geheel door buitenlandse machten gefabriceerd', 'Hongaarse revolutionairen hielden werkelijk inclusieve politieke filosofieën aan maar werden tegengehouden'],
       0,
-      'De paradox van 1848 weerspiegelt onopgelost liberaal nationalisme: burgerwetten tegen etnische zelfbepaling—een tegenspraak herhaald tot 1989.'
+      'De paradox van 1848 weerspiegelt een onopgelost liberaal nationalisme: burgerrechten tegenover etnische zelfbeschikking, een tegenspraak die tot 1989 bleef doorwerken.'
     ],
     [
       'Wat was het demografische en administratieve gevolg van Habsburg-herovering van Ottomaans Hongarije (1686–1718)?',
       ['Ontvolking, dan Duitse, Servische en Roemeense migratie', 'Hongaarse bevolking bleef stabiel en demografisch dominant', 'Ottomaanse bevolking bleef in groot aantal aanwezig', 'Volledige uitwijzing van niet-Hongaarse bevolking'],
       0,
-      'Habsburg-herovering liet Boeda en regio\'s zwaar ontvolkt; herinwoning met Duitsers, Serven en Roemenen veranderde Hongarije\'s etnische samenstelling fundamenteel.'
+      'Habsburg-herovering liet Boeda en de omliggende regio\'s zwaar ontvolkt achter; herbevolking door Duitsers, Serven en Roemenen veranderde Hongarije\'s etnische samenstelling fundamenteel.'
     ],
     [
       'De regering van Miklós Corvinus (1458–1490) was een keerpunt in Hongaarse statale capaciteit via welke institutionele innovatie?',
       ['Het Zwarte Leger en gecentraliseerde belasting', 'Invoering van feodale verplichtingen', 'Religieuze hervorming van de katholieke Kerk', 'Uitbreiding van Ottomaanse administratieve structuren'],
       0,
-      'Corvinus\'s Zwarte Leger, artilleriekorps en gecentraliseerde belasting creëerden eerste moderne militair-fiscale apparaat in Centraal-Europa; ineengestort na zijn dood.'
+      'Corvinus\'s Zwarte Leger, artilleriekorps en gecentraliseerde belastingheffing creëerden het eerste moderne militair-fiscale apparaat in Centraal-Europa; dit stortte na zijn dood weer ineen.'
     ],
     [
-      'Hoe creëerde de Transsylvaanse Vorstendommen\'s dubbele Ottomaans-Habsburg-vazaliteit unieke politieke uitkomsten niet beschikbaar in andere Hongaarse gebieden?',
-      ['Rivalen uitspelen, eigen vorsten, tolerantie', 'Het was alleen een marionettensstaat van de Ottomanen', 'Het bezat geen autonomie whatsoever', 'Het bereikt volledige onafhankelijkheid van beide machten'],
+      'Hoe zorgde de dubbele Ottomaans-Habsburgse vazaliteit van de Transsylvaanse Vorstendommen voor unieke politieke uitkomsten die in andere Hongaarse gebieden niet voorkwamen?',
+      ['Rivalen uitspelen, eigen vorsten, tolerantie', 'Het was alleen een marionettenstaat van de Ottomanen', 'Het bezat helemaal geen autonomie', 'Het bereikt volledige onafhankelijkheid van beide machten'],
       0,
-      'Transsylvanië\'s ambigue vazaliteit liet inheemse vorsten autonomie; het werd een toevluchtsoord voor gereformeerde protestanten vervolgd door Oostenrijk en Ottomannen.'
+      'Transsylvanië\'s ambigue vazaliteit liet inheemse vorsten autonomie toe; het werd een toevluchtsoord voor gereformeerde protestanten die door Oostenrijk en de Ottomanen werden vervolgd.'
     ],
     [
       'Wat was het verband tussen Hongarije\'s Austro-Hongaars Compromis van 1867 en opkomend Hongaars etnisch nationalisme in de 1890s?',
-      ['Autonomie wekte Magyaars nationalisme tegen minderheden', 'Het Compromis elimineerde alle nationalistische voeling', 'Hongaars nationalisme bestond gelijk voor en na 1867', 'Minderheden voordeel gelijk van het Compromis\'s autonomie'],
+      ['Autonomie wekte Magyaars nationalisme tegen minderheden', 'Het Compromis elimineerde alle nationalistische voeling', 'Hongaars nationalisme bestond evenzeer voor als na 1867', 'Minderheden profiteerden evenveel van de autonomie van het Compromis'],
       0,
       'Het Compromis van 1867 gaf Hongaarse elites macht om Magyarisering van minderheden door te voeren, wat nationalistische reacties uitlokte die Austro-Hongarije desintegreerden.'
     ],
@@ -244,37 +244,37 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Miklós Horthy\'s politieke stelsel incorporeerde elementen van welke ideologische tradities zonder formele fascistische partijstructuur?',
       ['Monarchisme en corporatisme gemengd', 'Puur communisme zonder partijapparaat', 'Klassiek liberalisme en democratie', 'Ottomaans-stijl despotisme'],
       0,
-      'Horthy\'s stelsel mengde monarchie, nationalisme, corporatistische structuren en nazi-banden zonder Italiaans-stijl of Duitse totalitarisme.'
+      'Horthy\'s stelsel combineerde monarchisme, nationalisme, corporatistische structuren en banden met de nazi\'s, zonder het totalitarisme van Italiaanse of Duitse snit.'
     ],
     [
-      'Welke historiografische leemte bestaat met betrekking tot Hongaarse deelname aan Tweede Wereldoorlog vergeleken met andere Assoas-staten?',
-      ['Hongarije\'s ambigue loyaliteit ontwijkt labels', 'Hongarije was geheel bereidwillig in samenwerking', 'Hongarije was geheel slachtoffer en onschuldig', 'Hongaarse rollen zijn in de wetenschap volledig opgelost'],
+      'Welke historiografische leemte bestaat er met betrekking tot Hongaarse deelname aan de Tweede Wereldoorlog, vergeleken met andere As-mogendheden?',
+      ['Hongarije\'s ambigue loyaliteit ontwijkt labels', 'Hongarije werkte volledig uit vrije wil mee', 'Hongarije was geheel slachtoffer en onschuldig', 'Hongaarse rollen zijn in de wetenschap volledig opgelost'],
       0,
-      'Hongaarse WOII-historiografie blijft omstreden: geschillen over medeplichtigheid versus slachtoffer-wezen blijven onopgelost.'
+      'Hongaarse WOII-historiografie blijft omstreden: geschillen over medeplichtigheid versus slachtofferschap blijven onopgelost.'
     ],
     [
       'Het Verdrag van Trianon\'s handhaving van etnisch-nationale zelfbepaling creëerde welke fundamentele paradox voor Hongarije?',
       ['Zelfbepaling werd Hongarije ontzegd, niet de buren', 'Hongaren werden in alle buurlandse grondgebieden opgenomen', 'Het verdrag lost alle etnische grensgeschillen op', 'Hongaarse minderheden bestonden nooit in buurlanden'],
       0,
-      'Trianon ontzegde Hongarije zelf zelfbepaling terwijl het dit anderen toepaste; herschikking creëerde 3,3 miljoen Hongaren als minderheden in buurlanden.'
+      'Trianon ontzegde Hongarije zelf het recht op zelfbeschikking, terwijl het dit wel op anderen toepaste; de herindeling maakte van 3,3 miljoen Hongaren minderheden in buurlanden.'
     ],
     [
       'Hoe weerspiegelde Imre Nagy\'s positie in 1956 de fundamentele tegenspraak tussen Sovjet-ideologie en Hongaars nationalisme?',
       ['Zijn hervormingscommunisme werd voertuig voor nationalisme', 'Nagy was geheel loyaal Sovjet-communist', 'Hij leidde van het begin af een anti-communistische tegenrevolutie', 'Zijn executie was louter procedurele zaak'],
       0,
-      'Nagy trachtte communisme te hervormen in plaats van omver te werpen; Sovjet-leiding executeerde hem om "revisioniste" communisme door de Oostbloc te voorkomen.'
+      'Nagy probeerde het communisme te hervormen in plaats van omver te werpen; de Sovjetleiding executeerde hem om te voorkomen dat "revisionistisch" communisme zich door het Oostblok zou verspreiden.'
     ],
     [
       'Welk institutioneel kenmerk van János Kádár\'s na-1956 Hongarije onderscheidde het van andere Sovjet-satellietstaten?',
       ['Marktliberalisering onder Kádár\'s Nieuwe Economie', 'Hongarije had zwaardere repressie dan andere bloklanden', 'Hongarije had geen onderscheidende economische beleidslijnen', 'Hongarije\'s stelsel was identiek aan de Sovjet-Unie\'s'],
       0,
-      'Kádár\'s Mechanisme voor Nieuwe Economie stond privé-onderneming en coöperatieve organisatie toe; het creëerde "goulashcommunisme"—leefbaarder dan Sovjet-stijl.'
+      'Kádár\'s Mechanisme voor Nieuwe Economie stond privé-onderneming en coöperatieve organisatievormen toe; het creëerde het "goulashcommunisme", dat leefbaarder was dan communisme in Sovjetstijl.'
     ],
     [
       'De institutionele continuïteit van Hongarije\'s overgang van 1989 met de vooroorlogse orde weerspiegelde welke diepere historische factor?',
       ['Staatscontinuïteit en Kádár\'s geleidelijkheid', 'Hongarije ervoer gewelddadige revolutie anders dan buren', 'Alle drie overgangen waren identiek', 'Hongarije miste staatscontinuïteit anders dan Polen'],
       0,
-      'Hongarije\'s eeuwen staatscontinuïteit (anders dan Polen\'s partities of Tsjecho-Slowakije\'s 1918-uitvinding) en Kádár\'s incrementalisme verminderde ruptuudruk in 1989.'
+      'Hongarije\'s eeuwenlange staatscontinuïteit (anders dan Polen\'s opdelingen of Tsjecho-Slowakije\'s ontstaan in 1918) en Kádár\'s incrementalisme verminderden de druk tot een breuk in 1989.'
     ]
   ],
   professor: [
@@ -282,83 +282,83 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Recent demografisch en archeologisch onderzoek suggereert dat de Magyaarse verovering\'s integratie van bestaande bevolkingen via welke mechanismen verliep buiten puur militair?',
       ['Elite-vervangingsmodellen met geleidelijke Magyarisering', 'Volledige bevolkingsvervangingen door genocide', 'Geheel vredige vrijwillige culturele adoptie', 'Gelijktijdige conversie van alle bevolkingen naar Hongaarse identiteit'],
       0,
-      'Huidig onderzoek (Zientara, Callmer) benadrukt elite-vervanging en geleidelijke linguïstische dominantie boven demografische vernietiging; genetisch bewijs beperkte Y-chromosoomvervanging.'
+      'Huidig onderzoek (Zientara, Callmer) benadrukt elitevervanging en geleidelijke linguïstische dominantie boven demografische vernietiging; genetisch bewijs toont slechts beperkte Y-chromosoomvervanging aan.'
     ],
     [
-      'Welke belastings- en garnizoens-spanningen creëerde het Ottomaanse eyalet-stelsel in Hongarije dat dit onderscheidde van Ottomaanse Balkanse terrioria?',
+      'Welke belastings- en garnizoensspanningen creëerde het Ottomaanse eyalet-stelsel in Hongarije, waardoor het verschilde van Ottomaanse gebieden op de Balkan?',
       ['Hoge garnizoenskosten dwongen belastingsverlichting', 'Ottomaans Hongarije was meest winstgevende provincie', 'Belastingen waren uniform in alle Ottomaanse grondgebieden', 'Geen belastingslast bestond in Ottomaans Hongarije'],
       0,
-      'Ottomaans Hongarije vereiste hogere garnizoensuitgaven; verlaagde belasting en groter landheer-behoud maakten het economisch marginaal voor de Ottomaanse fiscus.'
+      'Ottomaans Hongarije vereiste hogere garnizoensuitgaven; lagere belastingopbrengsten en een groter aandeel dat landheren zelf behielden, maakten het economisch marginaal voor de Ottomaanse schatkist.'
     ],
     [
       'Hoe verschoof de historiografische interpretatie van Trianon na 1989 aangaande zijn legaliteit en legitimiteit?',
       ['Na-1989-wetenschap decentreerde Westerse claims', 'Trianon\'s gerechtigheid werd universeel aanvaard', 'Geen historiografische verschuivingen gebeurden', 'Hongaarse claims werden geheel gerechtvaardigd'],
       0,
-      'Post-Koude Oorlog-wetenschap denaturaliseerde Westerse liberale triomfalisme; Trianon verschijnt nu als omstreden legitimiteit tussen concurrerende etnische beweringen.'
+      'Post-Koude Oorlog-wetenschap zette het westerse liberale triomfalisme op losse schroeven; Trianon verschijnt nu als omstreden legitimiteit tussen concurrerende etnische claims.'
     ],
     [
       'Welke structurele kenmerken van vooroorlogse Hongaarse samenleving onderschatte Sovjet-ideologie in Béla Kun\'s mislukking?',
-      ['Versplinterde agrarische arbeid en adellijke dominie', 'Hongarije bezat volledig geïndustrialiseerde arbeiderszaak', 'Hongaren waren uniform communistisch-gezind', 'Sociale structuren waren identiek aan Rusland\'s'],
+      ['Versplinterde agrarische arbeid en adellijke dominie', 'Hongarije bezat een volledig geïndustrialiseerde arbeidersklasse', 'Hongaren waren uniform communistisch-gezind', 'Sociale structuren waren identiek aan Rusland\'s'],
       0,
-      'Revisionaire wetenschap (Galántai, Hanák) benadrukt Hongarije\'s agrarische, katholieke, adellijke-gedomineerde structuren: anders dan Rusland\'s industriële concentratie.'
+      'Revisionaire wetenschap (Galántai, Hanák) benadrukt Hongarije\'s agrarische, katholieke, door de adel gedomineerde structuren, in tegenstelling tot Ruslands industriële concentratie.'
     ],
     [
       'Commentaar wetenschap debatteert of de etnische onderdrukking door de Opstand van 1848 een theoretische spanning in Europees liberalisme weerspiegelde?',
       ['Burger- versus etnisch nationalisme', 'Een uniek Hongaars fenomeen', 'Volledig opgeloste spanningen', 'Puur militaire of politieke fout'],
       0,
-      'Historici (Kohn, Hroch, Brubaker) kaderen 1848\'s paradox als endemisch aan 19e-eeuws liberalisme: burgerrechten maskeerden etnische suprematie herhaald over crises.'
+      'Historici (Kohn, Hroch, Brubaker) plaatsen de paradox van 1848 in de context van een probleem dat inherent was aan 19e-eeuws liberalisme: burgerrechten maskeerden een etnische suprematie die zich in verschillende crises herhaalde.'
     ],
     [
       'De Habsburg-herovering van Ottomaans Hongarije (1686–1718) genereerde welke historiografisch debat opzettelijk versus onopzettelijk?',
-      ['Of de verschuiving beleid was of toevallige migratie', 'Demografische verandering was geheel opzettelijk en centraal gepland', 'Geen demografische verandering gebeurde', 'Veranderingen waren zuiver ongelukkg zonder Habsburg-betrokkenheid'],
+      ['Of de verschuiving beleid was of toevallige migratie', 'Demografische verandering was geheel opzettelijk en centraal gepland', 'Geen demografische verandering gebeurde', 'Veranderingen waren zuiver toevallig zonder Habsburg-betrokkenheid'],
       0,
-      'Historici onenigheid over agentschap: Waren migraties (Duitse, Servische, Roemeense) opzettelijk Habsburg of marktgestuurde? Beide lijken werkzaam.'
+      'Historici zijn het oneens over het agentschap: waren de migraties (Duitse, Servische, Roemeense) opzettelijk Habsburgs beleid of marktgestuurd? Beide factoren lijken een rol te hebben gespeeld.'
     ],
     [
       'Het Zwarte Leger van Miklós Corvinus wordt nu in hedendaagse militaire geschiedenis gecontextualiseerd als representatief voor welke Europese overgang?',
       ['Verschuiving naar gecentraliseerde permanente legers', 'Een geïsoleerd Hongaars fenomeen', 'Achterwaarts leger vergeleken met Europa', 'Puur huurlingenmacht onderscheiden van staatmilitarisering'],
       0,
-      'Het Zwarte Leger exemplifieerde vroegmoderne militaire revolutie: gecentraliseerd commando, permanente troepen, artillerie-dominantie—parallel aan Ottomaanse en Westerse machtmilitarisering.'
+      'Het Zwarte Leger illustreerde de vroegmoderne militaire revolutie: gecentraliseerd commando, permanente troepen en artilleriedominantie, parallel aan de staatsmilitarisering in het Ottomaanse Rijk en het Westen.'
     ],
     [
       'De religieuze tolerantie van de Transsylvaanse Vorstendommen weerspiegelde welke geopolitieke en theologische factoren afwezig in Oostenrijkse of Ottomaanse zones?',
-      ['Interne cohesie en Ottomaanse tolerantie', 'Religieuze tolerantie was universeel in Hongarije', 'Transsylvanië was geheel katholiek', 'Tolerantie was staatsschwakte'],
+      ['Interne cohesie en Ottomaanse tolerantie', 'Religieuze tolerantie was universeel in Hongarije', 'Transsylvanië was geheel katholiek', 'Tolerantie was staatszwakte'],
       0,
-      'Transsylvanië\'s dual-vassalage positie en gemengde bevolking maakten religieuze uniformiteit onhandhafbaar; Ottomaanse tolerantie en Habsburg-afstand maakten ongeëvenaarde confessionele pluraliteit mogelijk.'
+      'Transsylvanië\'s dubbele vazalliteit en gemengde bevolking maakten religieuze uniformiteit onhandhaafbaar; Ottomaanse tolerantie en de afstand tot de Habsburgers maakten een ongeëvenaarde confessionele pluraliteit mogelijk.'
     ],
     [
       'Recente wetenschap herinterpreteert het Austro-Hongaars Compromis\'s etnische gevolgen via welk kader?',
       ['Brubaker\'s "nationaliserend-staatmodel"', 'Het Compromis elimineerde geheel nationalisme', 'Minderheden voordeel uniform van het Compromis', 'Etnische conflicten waren externe imposities'],
       0,
-      'Brubaker\'s "nationaliserend-staatmodel" toont hoe 1867 Hongaarse elites voor Magyarisering inschakelde; minderheid-tegenationalismen destabiliseerden Austro-Hongarije intern.'
+      'Brubaker\'s "nationaliserend-staatmodel" toont hoe het Compromis van 1867 Hongaarse elites in staat stelde tot Magyarisering; tegennationalismen van minderheden destabiliseerden Oostenrijk-Hongarije van binnenuit.'
     ],
     [
       'Hoe creëerde Horthy\'s corporatistische elementen en nazi-alliantie wat specialisten "fascisme zonder fascisten" noemen?',
-      ['Fascistische praktijken zonder partijapparaat', 'Hongarije was identiek aan Duits nazisme', 'Hongarije bezat geen fascistische kenmerken whatsoever', 'Het regime was zuiver democratisch'],
+      ['Fascistische praktijken zonder partijapparaat', 'Hongarije was identiek aan Duits nazisme', 'Hongarije bezat helemaal geen fascistische kenmerken', 'Het regime was zuiver democratisch'],
       0,
       'Horthy\'s stelsel absorbeerde fascistische vormen zonder fascisme\'s totale penetratie; het bleef gegrondvest in traditionele monarchie en adellijke regel.'
     ],
     [
-      'Hoe interpreteren concurrerende historiografieën Hongarije\'s Duitse bezetting van 1944 aangaande staats-agentschap?',
-      ['Intentionalistische vs. structuralistische visies', 'Hongaarse medeplichtigheid is eenparig vastgesteld', 'Hongarije draagt geen verantwoordelijkheid whatsoever', 'De vraag is geheel opgelost'],
+      'Hoe interpreteren concurrerende historiografieën de rol van de Hongaarse staat bij de Duitse bezetting van Hongarije in 1944?',
+      ['Intentionalistische vs. structuralistische visies', 'Hongaarse medeplichtigheid is eenparig vastgesteld', 'Hongarije draagt helemaal geen verantwoordelijkheid', 'De vraag is geheel opgelost'],
       0,
-      'Hongaarse WOII-historiografie verdeelt tussen medewerking-nadruk en bezetting-beperking—geen zijde overtuigt volledig.'
+      'Hongaarse WOII-historiografie is verdeeld tussen een nadruk op medewerking en een nadruk op de beperkte keuzevrijheid onder bezetting; geen van beide kanten overtuigt volledig.'
     ],
     [
       'Het Verdrag van Trianon\'s irredentistische gevolgen voor Hongaars buitenlands beleid worden door hedendaagse wetenschap herzien als weerspiegelend welk dieper probleem?',
       ['Etnische grenzen afdwingen in gemengde regio\'s', 'Trianon los alle geschillen geheel op', 'Het verdrag was geheel gerechtvaardigd', 'Etnische grenzen in de regio zijn eenduidig'],
       0,
-      'Wetenschappelijk consensus erkent dat etnografische grenzen en historische beweringen in het Karpaten-Bekken werkelijk tegenstrijdig zijn; geen zuivere oplossing.'
+      'Wetenschappelijk consensus erkent dat etnografische grenzen en historische claims in het Karpaten-Bekken werkelijk met elkaar in tegenspraak zijn; er bestaat geen zuivere oplossing.'
     ],
     [
       'Hoe hebben recent openbaargemaakte archieven Nagy\'s 1956-positie herzien via welke interpretatieve verschuiving?',
       ['Geopenbaarde archieven tonen zijn hervormingscommunisme', 'Nagy\'s democratisch liberalisme is bevestigd door nieuw bewijs', 'Geen nieuw bewijs verscheen na 1989', 'Nagy werd altijd als communist geportretteerd'],
       0,
-      'Geopenbaarde Sovjet-Hongaarse archieven tonen Nagy\'s werkelijk communisme; hij zocht gereformeerd socialisme, geen kapitalistische herstel—herzienend 1956 als intra-communistische schisma.'
+      'Geopenbaarde Sovjet-Hongaarse archieven tonen Nagy\'s oprechte communistische overtuiging: hij zocht hervormd socialisme, geen kapitalistisch herstel. Dit herziet het beeld van 1956 als een intracommunistisch schisma.'
     ],
     [
-      'Het Mechanisme voor Nieuwe Economie\'s (1968) succes in Hongaarse communisme\'s overleving tot 1989 weerspiegelt welk structureel voordeel?',
-      ['Zwakkere burgermaatschappij, minder verzet', 'Hongarije bezat sterkere oppositiebewegingen dan Polen', 'Beide staten\'s communisme faced identieke crises', 'De mechanismen waren identiek in beide staten'],
+      'Welk structureel voordeel weerspiegelt het succes van het Mechanisme voor Nieuwe Economie (1968) in het voortbestaan van het Hongaarse communisme tot 1989?',
+      ['Zwakkere burgermaatschappij, minder verzet', 'Hongarije bezat sterkere oppositiebewegingen dan Polen', 'Het communisme in beide staten kende identieke crises', 'De mechanismen waren identiek in beide staten'],
       0,
       'Hongarije\'s gedepolitiseerde samenleving, zwakkere arbeidsbewegingen en Kerk-accommodatie stelden "goulashcommunisme" in staat Solidariteit\'s druk te overleven.'
     ],
@@ -366,7 +366,7 @@ export const HUNGARIAN_HISTORY: CategoryContent = {
       'Hoe interpreteert recente wetenschap de afwezigheid van gewelddadige 1989-overgang in Hongarije via wat historici "onderhandelde revolutie" noemen?',
       ['Economische liberalisatie en elite-onderhandeling', 'Hongarije ervoer gewelddadige revolutie als Polen', 'De overgang vereiste volledige institutionele vernietiging', 'Geen elite-onderhandeling gebeurde'],
       0,
-      'Specialisten (Bozóki, Reusch) benadrukken elite-dissident-onderhandeling, Kádár\'s depolitisering, Sovjet-niet-interventie—managed in plaats van revolutionaire overgang mogelijk makend.'
+      'Specialisten (Bozóki, Reusch) benadrukken de onderhandelingen tussen elites en dissidenten, Kádár\'s depolitisering en de Sovjet-onthouding van interventie; dit maakte een beheerste overgang mogelijk in plaats van een revolutionaire.'
     ]
   ]
 };

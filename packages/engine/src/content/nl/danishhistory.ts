@@ -66,7 +66,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Frederik V',
       ],
       0,
-      'Frederik III voerde in 1660 de Kongelov (Koninklijke Wet) in en vervving kiesrechtige monarchie door absolutisme.',
+      'Frederik III voerde in 1660 de Kongelov (Koninklijke Wet) in en verving de elektieve monarchie door absolutisme.',
     ],
     [
       'Welke belangrijke hervorming van de late 18de eeuw verbeterde de toestand van boeren door versnipperde landerijen samen te voegen?',
@@ -77,10 +77,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'De Landbouwrevolutie',
       ],
       0,
-      'Hervormingen in de jaren 1770–1780 voegden boerenlanderijen samen en verminderde lijfeigenschap, wat het platteland moderniseerde.',
+      'Hervormingen in de jaren 1770–1780 voegden boerenlanderijen samen en verminderden de lijfeigenschap, wat het platteland moderniseerde.',
     ],
     [
-      'In welk jaar werd Denemarken\'s eerste constitutionele monarchie ingesteld?',
+      'In welk jaar werd Denemarkens eerste constitutionele monarchie ingesteld?',
       [
         '1849',
         '1848',
@@ -102,7 +102,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'Niels Bohr won de Nobelprijs voor zijn atoommodel en kwantumbijdragen.',
     ],
     [
-      'Wat was Denemarken\'s primaire status tijdens de Tweede Wereldoorlog (1940–1945)?',
+      'Wat was Denemarkens primaire status tijdens de Tweede Wereldoorlog (1940–1945)?',
       [
         'Bezet door nazi-Duitsland',
         'Een actieve nazi-bondgenoot gedurende de hele oorlog',
@@ -113,7 +113,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'Duitsland invaseerde Denemarken in april 1940. Denemarken bleef bezet tot mei 1945, al bleef er Deens burgerbeheer onder nazi-toezicht.',
     ],
     [
-      'Wat is de naam van Denemarken\'s voornaamste wetgevingslichaam, ingesteld in 1849?',
+      'Wat is de naam van Denemarkens voornaamste wetgevingslichaam, ingesteld in 1849?',
       [
         'De Folketing',
         'De Rigsråd',
@@ -121,10 +121,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'De Landsting',
       ],
       0,
-      'De Folketing (volksversammeling) is sinds 1849 Denemarken\'s belangrijkste wetgevingsorgaan.',
+      'De Folketing (volksvergadering) is sinds 1849 Denemarkens belangrijkste wetgevingsorgaan.',
     ],
     [
-      'Welke Deense filosoof is vooral bekend om zijn existentialistische geschriften en kritiek op institutionele Christendom?',
+      'Welke Deense filosoof is vooral bekend om zijn existentialistische geschriften en zijn kritiek op het institutionele christendom?',
       [
         'Søren Kierkegaard',
         'Georg Wilhelm Hegel',
@@ -132,7 +132,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Ludwig Wittgenstein',
       ],
       0,
-      'Søren Kierkegaard pionierde het existentialistische filosofie en kritiseerde institutionele Christendom.',
+      'Søren Kierkegaard was een pionier van de existentialistische filosofie en bekritiseerde het institutionele christendom.',
     ],
     [
       'Wat was de primaire economische basis van middeleeuws Denemarken?',
@@ -154,7 +154,7 @@ export const DANISH_HISTORY: CategoryContent = {
         '1939',
       ],
       0,
-      'De Grondwet van 1953 creëerde een eenkamers Folketing en schaf de Senatorkamer af.',
+      'De Grondwet van 1953 creëerde een eenkamerig Folketing en schafte de Senatorkamer af.',
     ],
     [
       'Welke Noordse dynastie regeerde Denemarken van 1448 tot het moderne tijdperk?',
@@ -181,7 +181,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'Het Verdrag van Roskilde (1658) droeg Scania, Blekinge en Halland aan Zweden over en veranderde de Baltische geopolitiek.',
     ],
     [
-      'Welke juridische doctrine die in 1660 werd geformaliseerd, onderwerping de Deense adel aan de kroon?',
+      'Welke juridische doctrine, geformaliseerd in 1660, onderwierp de Deense adel aan de kroon?',
       [
         'De Kongelov',
         'De Danske Lov (Deense Wet)',
@@ -192,7 +192,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'De Kongelov (1660) vestigde absolutistische monarchie door macht te concentreren en het adelveto af te schaffen.',
     ],
     [
-      'Hoe fungeerde Denemarken\'s controle over de Øresundstraat als mercantilistische inkomstenbron?',
+      'Hoe fungeerde Denemarkens controle over de Øresundstraat als mercantilistische inkomstenbron?',
       [
         'Toltarief op scheepvaart',
         'Directe koloniale handel met Afrika',
@@ -200,21 +200,21 @@ export const DANISH_HISTORY: CategoryContent = {
         'Handhaving van Navigatiewetten',
       ],
       0,
-      'Denemarken winstgevend de Øresundstraat door tollen. Deze inkomsten maakten Denemarken een grootmacht.',
+      'Denemarken exploiteerde de Øresundstraat winstgevend door tollen te heffen. Deze inkomsten maakten Denemarken een grootmacht.',
     ],
     [
-      'Welke hervorming in de jaren 1770–1780 schaf de lijfeigenschap der boeren af en stimuleerde eigendomsrecht?',
+      'Welke hervorming in de jaren 1770–1780 schafte de lijfeigenschap van de boeren af en stimuleerde eigendomsrecht?',
       [
-        'Stavnsbånd afschaffen',
+        'Afschaffing van het stavnsbånd',
         'De Reformatio Sigismundi',
         'De Wet op Huwelijk en Erfenis',
         'De Gilde-Ordonnantie',
       ],
       0,
-      'Hervormingen in de jaren 1770–1780 schaften lijfeigenschap af en voegden boerenlanderijen samen en transformeerden het platteland.',
+      'Hervormingen in de jaren 1770–1780 schaften de lijfeigenschap af en voegden boerenlanderijen samen. Dit transformeerde het platteland.',
     ],
     [
-      'Hoe hervormd de Grundtvig-beweging Deense onderwijscultuur en populair nationalisme?',
+      'Hoe hervormde de Grundtvig-beweging de Deense onderwijscultuur en het populaire nationalisme?',
       [
         'Volksscholen en volkstaal',
         'Het importeerde Duitse universiteitsmodellen',
@@ -222,10 +222,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Het aanvaardde Pruisische militaire academies',
       ],
       0,
-      'Grundtvig bevorderde volksscholen met nadruk op Deense taal en geschiedenis—grondvest van Deense identiteit.',
+      'Grundtvig bevorderde volksscholen met nadruk op de Deense taal en geschiedenis, wat de basis legde voor de Deense identiteit.',
     ],
     [
-      'Wat politieke verschuiving maakten de parlementaire hervorming van 1901 mogelijk in Deense kiezerspolitiek?',
+      'Welke politieke verschuiving maakte de parlementaire hervorming van 1901 mogelijk in de Deense kiezerspolitiek?',
       [
         'Stemrecht voor boeren',
         'Volledige afschaffing van lokaal bestuur',
@@ -236,7 +236,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'De hervorming van 1901 breidde stemrecht uit naar landelijke kleine landeigenaren, wat Venstre-dominantie mogelijk maakte.',
     ],
     [
-      'Welke Noordse diplomatieke crisis in het begin van de 20ste eeuw drong Denemarken naar strategische neutraliteit?',
+      'Welke Noordse diplomatieke crisis in het begin van de 20ste eeuw dreef Denemarken naar strategische neutraliteit?',
       [
         'De splitsing van 1905',
         'De Russisch-Japanse Oorlog',
@@ -247,7 +247,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'De Zweeds-Noorweegse splitsing van 1905 en Pruisisch militarisme duwden Denemarken naar neutraliteit.',
     ],
     [
-      'Wat kenmerkte Denemarken\'s "Samenwerkingspolitiek" (Samarbejdspolitikken) tijdens nazi-bezetting?',
+      'Wat kenmerkte Denemarkens "Samenwerkingspolitiek" (Samarbejdspolitikken) tijdens nazi-bezetting?',
       [
         'Beperkt burgerbestuur behouden',
         'Volledige weerstand en regering in ballingschap',
@@ -255,10 +255,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Nooit formeel bezet',
       ],
       0,
-      'Denemarken\'s samenwerkingsbeleid stelde burgerbestuur onder bezetting mogelijk. Historiografie debatteert collaboratie.',
+      'Denemarkens samenwerkingsbeleid stelde burgerbestuur onder bezetting mogelijk. Historiografie debatteert over de vraag of dit collaboratie was.',
     ],
     [
-      'Hoe herdefineerde het Kanslergade-Akkoord (1933) tussen Venstre en Sociaaldemocaten het bestuur tijdens de Grote Depressie?',
+      'Hoe herdefinieerde het Kanslergade-Akkoord (1933) tussen Venstre en Sociaaldemocraten het bestuur tijdens de Grote Depressie?',
       [
         'Coalitie voor publieke werken',
         'Het schaft democratische instellingen af',
@@ -269,7 +269,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'Het Kanslergade-Akkoord van 1933 verenigde agrarische en arbeiderspartijen en financierde publieke werken. Dit voorafschaduwde het Noordse model.',
     ],
     [
-      'Hoe vorm hadden onderhandelingen na de oorlog Denemarken\'s territoriale en geopolitieke schikking na 1945?',
+      'Hoe vormden onderhandelingen na de oorlog Denemarkens territoriale en geopolitieke schikking na 1945?',
       [
         'Noord-Sleeswijk terug',
         'Ze losten de monarchie op',
@@ -277,7 +277,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Ze wezen alle herstelbetalingen af',
       ],
       0,
-      'Onderhandelingen na 1945 herstelden Noord-Sleeswijk aan Denemarken. Denemarken trad tot NAVO toe (1949).',
+      'Onderhandelingen na 1945 gaven Noord-Sleeswijk terug aan Denemarken. Denemarken trad in 1949 toe tot de NAVO.',
     ],
     [
       'Welk historiografisch debat omgeeft Deense economische "collaboratie" tegenover "pragmatische neutraliteit" tijdens WWII-bezetting?',
@@ -285,7 +285,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Voedseluitvoer: misdaad of noodzaak',
         'Volledige consensus bestaat over Deense onschuld',
         'Geen historische gegevens bestaan van enige handel',
-        'Denemarken verklaarde zich openlijk onderdeel van Naziland',
+        'Denemarken verklaarde zich openlijk onderdeel van nazi-Duitsland',
       ],
       0,
       'Historici debatteren of Deense voedseluitvoer naar nazi-Duitsland collaboratie of geforceerde pragmatisme uitmaakte.',
@@ -294,7 +294,7 @@ export const DANISH_HISTORY: CategoryContent = {
       'Hoe consolideerde Margaretha I (regeerde 1353–1412) Scandinavische politieke eenheid?',
       [
         'Via erfrecht en diplomatie',
-        'Ze schaft de monarchie af',
+        'Ze schafte de monarchie af',
         'Ze overdroeg Denemarken aan Duitsland',
         'Ze bekeerde Denemarken tot het katholicisme',
       ],
@@ -306,25 +306,25 @@ export const DANISH_HISTORY: CategoryContent = {
       [
         'Grondwet van 1849 was liberaler',
         'Beide waren identiek',
-        'De versie van 1863 schaft monarchie af',
+        'De versie van 1863 schafte de monarchie af',
         'De versie van 1849 had geen parlement',
       ],
       0,
-      'De Grondwet van 1849 was democratischer. De herziening van 1863 beperkte stemrecht en sterkte conservatieven.',
+      'De Grondwet van 1849 was democratischer. De herziening van 1863 beperkte het stemrecht en versterkte de conservatieven.',
     ],
     [
-      'Wat geopolitieke transitie vertegenwoordigde de Britse blokkade (1807–1814) en verlies van Noorwegen?',
+      'Welke geopolitieke transitie vertegenwoordigde de Britse blokkade (1807–1814) en het verlies van Noorwegen?',
       [
         'Einde van Denemarken als grote macht',
-        'Denemarken\'s consolidatie van Mediterrane invloed',
+        'Denemarkens consolidatie van Mediterrane invloed',
         'Een toename van Franse steun',
-        'Denemarken\'s verwerving van Britse koloniën',
+        'Denemarkens verwerving van Britse koloniën',
       ],
       0,
-      'Steun aan Napoleon leidde tot blokkade en Noors verlies. Denemarken daalde van regionale naar kleinere Noordse staat.',
+      'Steun aan Napoleon leidde tot blokkade en Noors verlies. Denemarken daalde van een regionale grootmacht naar een kleinere Noordse staat.',
     ],
     [
-      'Welke persoon uit de 18de eeuw waarvan hervormingsinititieven (1770–1772) vroeg-feudale privileges betwistten vóór een conservatieve staatsgreep?',
+      'Welke persoon uit de 18de eeuw wiens hervormingsinitiatieven (1770–1772) vroeg-feodale privileges betwistten vóór een conservatieve staatsgreep?',
       [
         'Struensee',
         'Frederik III',
@@ -332,7 +332,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Ove Høgh-Guldberg',
       ],
       0,
-      'Struensee\'s agrarische en juridische hervormingen bedriegden adel. Een coup voerde hem uit en keerde hervormingen om.',
+      'Struensee\'s agrarische en juridische hervormingen bedreigden de adel. Een staatsgreep zette hem af en keerde de hervormingen terug.',
     ],
   ],
   phd: [
@@ -340,15 +340,15 @@ export const DANISH_HISTORY: CategoryContent = {
       'Hoe veranderden de afschaffing van stavnsbåndet (1788) en landherverkavelingshervormingen (jaren 1770–1780) fundamenteel de Deense agrarische sociale structuur?',
       [
         'Eigendomsrecht en arbeidscheiding',
-        'Ze handhaafden eeuwig feudale verplichtingen',
+        'Ze handhaafden eeuwig feodale verplichtingen',
         'Ze schepen onmiddellijk een industrieel arbeidersklasse',
         'Ze exporteerden de gehele boerenstand naar Rusland',
       ],
       0,
-      'Afschaffing van stavnsbåndet en landherverkaveling creëerde vrije boeren en landlozen. Dit maakte agrarisch kapitalisme mogelijk.',
+      'Afschaffing van stavnsbåndet en landherverkaveling creëerden vrije boeren en landlozen. Dit maakte agrarisch kapitalisme mogelijk.',
     ],
     [
-      'Hoe veroorzaakte afnemende Øresundtolbaten (jaren 1600–1700) de fiscale crisis die absolutisme rechtvaardige?',
+      'Hoe veroorzaakten afnemende Øresundtolbaten (jaren 1600–1700) de fiscale crisis die absolutisme rechtvaardigde?',
       [
         'Tolbaten daalden, absolutisme volgde',
         'Tolbaten stegen oneindig',
@@ -356,10 +356,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Tolafname versterkte democratie',
       ],
       0,
-      'Afnemende tollen creëerde fiscale druk. Frederik III\'s absolutisme (1660) centraliseerde rijkdomextractie.',
+      'Afnemende tollen creëerden fiscale druk. Frederik III\'s absolutisme (1660) centraliseerde de rijkdomsextractie.',
     ],
     [
-      'Hoe belichaamde de Struensee-era (1770–1772) Verlichtingshervorming-conflicten, en waarom provoceerden agrarische belangen tegenstand?',
+      'Hoe belichaamde de Struensee-periode (1770–1772) de conflicten rond Verlichtingshervormingen, en waarom riepen agrarische belangen tegenstand op?',
       [
         'Bedreigde adelprivileges',
         'Hij werd universeel geprezen',
@@ -367,10 +367,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Struensee versterkte adel',
       ],
       0,
-      'Struensee\'s agrarische hervormingen betwistten feodalisme. Adel orkestreerde zijn executie en coup in 1772.',
+      'Struensee\'s agrarische hervormingen betwistten het feodalisme. De adel orkestreerde zijn executie en de staatsgreep van 1772.',
     ],
     [
-      'Hoe hervormd de Napoleontische Oorlogen Denemarken\'s strategische belangen en lange-termijn-alijning?',
+      'Hoe hervormden de Napoleontische Oorlogen Denemarkens strategische belangen en langetermijnkoers?',
       [
         'Einde grootmacht, liberale wending',
         'Denemarken profiteerde massaal van Napoleontische allianties',
@@ -378,10 +378,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'De oorlogen hadden geen impact op strategie',
       ],
       0,
-      'Napoleontische steun leidde tot blokkade en Noors verlies. Denemarken pivoteerde naar constitutionalisme en verwestering.',
+      'Napoleontische steun leidde tot blokkade en Noors verlies. Denemarken verschoof naar constitutionalisme en verwestersing.',
     ],
     [
-      'Welke historiografische betekenis houdt Grundtvigs beweging voor weerstand tegen Duitse culturele hegemonie?',
+      'Welke historiografische betekenis heeft Grundtvigs beweging voor weerstand tegen Duitse culturele hegemonie?',
       [
         'Weerstond Pruisische druk',
         'Grundtvig bevorderde Duitse cultuur',
@@ -389,10 +389,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Grundtvig was Pruisische agent',
       ],
       0,
-      'Grundtvig benadrukte Deense taal en folklore als maatstaven tegen Duitse cultureel-politieke druk.',
+      'Grundtvig benadrukte de Deense taal en folklore als bolwerk tegen Duitse cultureel-politieke druk.',
     ],
     [
-      'Hoe katalyseerde de Sleeswijk-Holstein-nederlaag van 1864 constitutionele herzieningen en generationele politieke spleten?',
+      'Hoe katalyseerde de Sleeswijk-Holstein-nederlaag van 1864 constitutionele herzieningen en generatiekloven in de politiek?',
       [
         'Radicaliseerde stemrechtdebatten',
         'De oorlog was betekenisloos',
@@ -400,10 +400,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Er waren geen constitutionele herzieningen',
       ],
       0,
-      'Nederlaag in 1864 versplinterde Deense machtsverstelling. Constitutionele herzieningen reflecteerden nieuwe identiteitsangsten.',
+      'De nederlaag van 1864 versplinterde de Deense machtsverhoudingen. Constitutionele herzieningen reflecteerden nieuwe identiteitsangsten.',
     ],
     [
-      'Welke rol speelde de coöperatievebeweging (andelsbevaegelsen) in Deense agrarische modernisering?',
+      'Welke rol speelde de coöperatievebeweging (andelsbevaegelsen) in de Deense agrarische modernisering?',
       [
         'Bundelde boerenkapitaal',
         'Coöperaties waren geheel afwezig',
@@ -411,21 +411,21 @@ export const DANISH_HISTORY: CategoryContent = {
         'Ze veroorzaakten landbouwinstorting',
       ],
       0,
-      'De coöperatievebeweging stelde kleine boeren in staat collectief zuivel en granen uit te voeren. Coöperaties ankerden agrarisch succes.',
+      'De coöperatievebeweging stelde kleine boeren in staat collectief zuivel en granen uit te voeren. Coöperaties vormden de basis van het agrarische succes.',
     ],
     [
-      'Hoe vormde de schikking van Noord-Sleeswijk (1945–1950) en uitsluiting van Zuid-Sleeswijk Deense identiteit na de oorlog?',
+      'Hoe vormden de schikking van Noord-Sleeswijk (1945–1950) en de uitsluiting van Zuid-Sleeswijk de Deense identiteit na de oorlog?',
       [
-        'N.-Sleeswijk terug, Zuid Duits',
+        'Noord-Sleeswijk keerde terug, Zuid-Sleeswijk bleef Duits',
         'Denemarken herkreeg alle Sleeswijk-territoria',
         'Sleeswijk werd aan Zweden afgestaan',
         'Er was geen na-oorlogse schikking',
       ],
       0,
-      'De schikking van 1945 keerde Noord-Sleeswijk terug. Zuid-Sleeswijk bleef Duits, belichaamend gefaalde revanchisme van 1864.',
+      'De schikking van 1945 keerde Noord-Sleeswijk terug. Zuid-Sleeswijk bleef Duits, wat het gefaalde revanchisme van 1864 belichaamde.',
     ],
     [
-      'Welk historiografisch debat omgeeft Denemarken\'s WWII-bezetting aangaande Jodenvervolging en redding?',
+      'Welk historiografisch debat omgeeft Denemarkens WWII-bezetting met betrekking tot de vervolging en redding van Joden?',
       [
         'Pragmatisme of medeplichtigheid',
         'Er bestaat universele consensus dat Denemarken onschuldig was',
@@ -433,32 +433,32 @@ export const DANISH_HISTORY: CategoryContent = {
         'Geen collaboratie vond plaats',
       ],
       0,
-      'Wetenschap debatteert bezettingsstrategie. Meeste Joden werden gered, wat pragmatische tegenstand of medeplichtigheid suggereert.',
+      'Wetenschap debatteert over de bezettingsstrategie. De meeste Joden werden gered, wat pragmatische tegenstand of medeplichtigheid suggereert.',
     ],
     [
-      'Hoe hervormd de Kanslergade-coalitie van 1933 Deens arbeidsrecht, lonen en welvaartsverschuiving?',
+      'Hoe hervormde de Kanslergade-coalitie van 1933 het Deense arbeidsrecht, de lonen en de welvaartsverschuiving?',
       [
         'Minimumloon en uitkering',
-        'De overeenkomst schaft arbeidersrechten af',
+        'De overeenkomst schafte arbeidersrechten af',
         'Het versterkte landeigenaar-feodalisme',
         'Er was geen overeenkomst van 1933',
       ],
       0,
-      'Het Kanslergade-Akkoord van 1933 wetgevde arbeidsstandaarden. Deze grensoverschrijdende coalitie voorgaf het Noordse model.',
+      'Het Kanslergade-Akkoord van 1933 legde arbeidsstandaarden wettelijk vast. Deze grensoverschrijdende coalitie liep vooruit op het Noordse model.',
     ],
     [
-      'Hoe concurreerde "folkestyre" (populair bewind) ideologie met monarchale soevereiniteit in constitutionele schikkingen?',
+      'Hoe concurreerde de ideologie van "folkestyre" (populair bewind) met monarchale soevereiniteit in constitutionele schikkingen?',
       [
         'Meer stemrecht, minder veto',
         'Folkestyre had geen impact',
-        'De monarchie werd absolutere',
+        'De monarchie werd absoluter',
         'Folkestyre verwierp democratie',
       ],
       0,
-      'Grundtvigaanse en sociaaldemocratische "folkestyre" dreef parlamentaire democratie tegen monarchie. De Grondwet van 1953 vestigde suprematie.',
+      'Grundtvigaanse en sociaaldemocratische "folkestyre" bevorderde parlementaire democratie ten koste van de monarchie. De Grondwet van 1953 vestigde de suprematie van het parlement.',
     ],
     [
-      'Hoe hervormd Denemarken\'s toetreding tot de EG in 1973 landbouwbeleid, regionale identiteit en welvaartsconsenus?',
+      'Hoe hervormde Denemarkens toetreding tot de EG in 1973 het landbouwbeleid, de regionale identiteit en de welvaartsconsensus?',
       [
         'GLB dwong welvaartsaanpassingen af',
         'Denemarken verwierp Europese integratie',
@@ -466,12 +466,12 @@ export const DANISH_HISTORY: CategoryContent = {
         'Landbouw profiteerde zonder aanpassing',
       ],
       0,
-      'EG-toetreding blootstelde Deense landbouw aan CAP maar subsidieerde uitvoer. Welvaartsaanpassingen balanceerden Europese integratie met universalisme.',
+      'EG-toetreding blootstelde de Deense landbouw aan CAP maar subsidieerde uitvoer. Welvaartsaanpassingen balanceerden Europese integratie met universalisme.',
     ],
     [
-      'Hoe creëerde geinstitutionaliseerde arbeid-kapitaal-staat-onderhandeling de basis van Deens corporatisme?',
+      'Hoe creëerde geïnstitutionaliseerde arbeid-kapitaal-staat-onderhandeling de basis van het Deense corporatisme?',
       [
-        'Onderhandeld consensus, weinig stakingen',
+        'Onderhandelde consensus, weinig stakingen',
         'Geen compromis bestond',
         'Denemarken leed onder constant arbeidsgeweld',
         'Corporatisme werd verworpen',
@@ -482,16 +482,16 @@ export const DANISH_HISTORY: CategoryContent = {
     [
       'Hoe divergeren Deense debatten over welvaartsuniversalisme tegenover selectiviteit van Beveridge en Bismarckiaanse modellen?',
       [
-        'Verwierp middeltoets',
+        'Verwierp de middelentoets',
         'Denemarken nam Beveridge geheel aan',
         'Denemarken kopieerde Bismarck direct',
         'Denemarken had geen welvaartsarchitectuur',
       ],
       0,
-      'Deense welvaartsemphase benadrukt universele dekking zonder middeltesting, verschillend van Britse en Continentale modellen.',
+      'Het Deense welvaartsbeleid benadrukt universele dekking zonder middelentoets, in tegenstelling tot Britse en continentale modellen.',
     ],
     [
-      'Welke historiografische herzieningen sinds de jaren 1990 bestrijden na-oorlogse verhalen van Deense tegenstand tegen bezetting?',
+      'Welke historiografische herzieningen sinds de jaren 1990 bestrijden na-oorlogse verhalen over Deense tegenstand tegen de bezetting?',
       [
         'Beperkt gewapend verzet',
         'Na-oorlogse verslagen waren geheel juist',
@@ -499,12 +499,12 @@ export const DANISH_HISTORY: CategoryContent = {
         'Geen tegenstand vond plaats',
       ],
       0,
-      'Recente wetenschap bestrijdt heldenachtige tegenstandsmythen, benadrukkend staatsaccommodatie en beperkte gewapende tegenstand.',
+      'Recente wetenschap bestrijdt heldhaftige tegenstandsmythen en benadrukt staatsaccommodatie en beperkte gewapende tegenstand.',
     ],
   ],
   professor: [
     [
-      'Hoe betwisten recente historiografische herbeoordeling van de Unie van Kalmar teleologische "Deense dominantie"-verhalen via prosopografische analyse?',
+      'Hoe betwisten recente historiografische herbeoordelingen van de Unie van Kalmar teleologische "Deense dominantie"-verhalen via prosopografische analyse?',
       [
         'Consensueel trilateraal bestuur',
         'De unie was altijd zuiver Deens-beheerst',
@@ -512,10 +512,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'De Unie van Kalmar bestond nooit werkelijk',
       ],
       0,
-      'Revisionist-wetenschap toont de Unie van Kalmar impliceert onderhandelde trilaterale gouvernance en gedeelde adel—niet unilateraal bewind.',
+      'Revisionistische wetenschap toont aan dat de Unie van Kalmar onderhandelde trilaterale gouvernance en gedeelde adel impliceerde—niet unilateraal bewind.',
     ],
     [
-      'Welk historiografisch debat blijft over de Øresundtol als "feudale rente" tegenover echt soevereine maritieme belasting?',
+      'Welk historiografisch debat blijft over de Øresundtol als "feodale rente" tegenover echt soevereine maritieme belasting?',
       [
         'Soeverein recht of monopolierente',
         'De tol was altijd vrije doorgang',
@@ -523,10 +523,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Economen beamen universeel het was billijk',
       ],
       0,
-      'Wetenschappers debatteren of sundetold legitieme belasting of monopolierente-extractie was. De vraag illumineert middeleeuwse soevereiniteit.',
+      'Wetenschappers debatteren of de Øresundtol legitieme belasting of monopolierente-extractie was. De vraag werpt licht op middeleeuwse soevereiniteit.',
     ],
     [
-      'Hoe onthullen prosopografische databases van Rigsråd-lidmaatschap (1380–1660) factieconflict dat koninklijke gezag beperkte?',
+      'Hoe onthullen prosopografische databases van het Rigsråd-lidmaatschap (1380–1660) factieconflicten die het koninklijke gezag beperkten?',
       [
         'Adelsfacties beperkten absolutisme',
         'De adel had geen macht',
@@ -534,7 +534,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Adellijke geslachtsboeken zijn irrelevant',
       ],
       0,
-      'Prosopografisch onderzoek onthult competerende adelsfactie en verwantschapsbloc die monarchie voor 1660 beperkte.',
+      'Prosopografisch onderzoek onthult competerende adelsfacties en verwantschapsblokken die de monarchie vóór 1660 beperkten.',
     ],
     [
       'Welke revisionistische interpretaties van de Kongelov van 1660 benadrukken contingentie tegenover inherente legitimiteit?',
@@ -545,10 +545,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'De koning was altijd absolutistisch',
       ],
       0,
-      'Revisionist-werk stelt de coup van 1660 wapende fiscale crisis en anti-aristocratisch sentiment eerder dan onvermijdelijke absolutisme.',
+      'Revisionistisch werk stelt dat de staatsgreep van 1660 werd aangewakkerd door fiscale crisis en anti-aristocratisch sentiment, eerder dan door onvermijdelijk absolutisme.',
     ],
     [
-      'Hoe onthullen kwantitatieve studies van mantalslister (bevolkingsregisters) ongelijke regionale ongelijkheid in agrarische "verbeteringsnarratieve"?',
+      'Hoe onthullen kwantitatieve studies van mantalslister (bevolkingsregisters) regionale ongelijkheid binnen het agrarische "verbeteringsnarratief"?',
       [
         'Rijkdom-ongelijkheid',
         'De registers tonen perfecte gelijkheid',
@@ -556,10 +556,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Geen regionale variatie bestond',
       ],
       0,
-      'Kwantitatieve studies onthullen blijvende regionale ongelijkheid en landloos-zijn ondanks "verbeteringsnarratieve".',
+      'Kwantitatieve studies onthullen blijvende regionale ongelijkheid en landloosheid ondanks het "verbeteringsnarratief".',
     ],
     [
-      'Welke historiografische spanningen bestaan tussen het vieren van Grundtvig als progressieve pedagoog tegenover kritiek op nationalistische etnische strijd?',
+      'Welke historiografische spanningen bestaan tussen het vieren van Grundtvig als progressieve pedagoog tegenover kritiek op etnisch-nationalistische strijd?',
       [
         'Democratisering vs etnicisme',
         'Alle historici prijzen Grundtvig unaniem',
@@ -567,10 +567,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Volksscholen hadden geen impact',
       ],
       0,
-      'Wetenschap stelt in vraag of Grundtvig\'s didactiek democratisering of etnisch nationalisme vertegenwoordigde.',
+      'Wetenschap stelt in vraag of Grundtvigs didactiek democratisering of etnisch nationalisme vertegenwoordigde.',
     ],
     [
-      'Hoe compliceren postkoloniale herbeoordeling van Deense West-Afrikaanse, Caribische en Aziatische activiteit "vredige natie"-verhalen?',
+      'Hoe compliceren postkoloniale herbeoordelingen van Deense activiteiten in West-Afrika, het Caribisch gebied en Azië "vredige natie"-verhalen?',
       [
         'Slavenhandel en extractie',
         'Denemarken engageerde zich nooit in kolonialisme',
@@ -578,7 +578,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Koloniale exploitatie is irrelevant',
       ],
       0,
-      'Postkoloniaal werk onthult Deense slavenhandel en koloniale extractie, complicerend het "vredige Denemarken"-verhaal.',
+      'Postkoloniaal werk onthult Deense slavenhandel en koloniale extractie, wat het "vredige Denemarken"-verhaal compliceert.',
     ],
     [
       'Welk historiografisch debat stelt het Kanslergade-Akkoord van 1933 als trilateraal corporatisme tegenover crisisgedreven coalitie?',
@@ -589,10 +589,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'De overeenkomst had geen politieke betekenis',
       ],
       0,
-      'Historici debatteren of 1933 institutionalisering van corporatisme of crisisgedreven coalitievorming weerspiegelt.',
+      'Historici debatteren of het akkoord van 1933 institutionalisering van corporatisme of crisisgedreven coalitievorming weerspiegelt.',
     ],
     [
-      'Hoe bestrijden recente verslagen van Denemarken\'s WWII-bezetting na-oorlogse "tegenstandsmythologie" terwijl Holocaust-debatten aangaat?',
+      'Hoe bestrijden recente verslagen van Denemarkens WWII-bezetting de na-oorlogse "tegenstandsmythologie", terwijl ze ook Holocaust-debatten aangaan?',
       [
         'Genuanceerd verzet, meer accommodatie',
         'Na-oorlogse verslagen waren geheel juist',
@@ -600,10 +600,10 @@ export const DANISH_HISTORY: CategoryContent = {
         'Geen historiografische herziening vond plaats',
       ],
       0,
-      'Revisionist-werk bestrijdt na-oorlogse mythen, benadrukkend staatsaccommodatie terwijl Jodenredding als contingent wordt gecontextualiseerd.',
+      'Revisionistisch werk bestrijdt na-oorlogse mythen en benadrukt staatsaccommodatie, terwijl Jodenredding als contingent wordt gecontextualiseerd.',
     ],
     [
-      'Wat onthullen microeconomische analyses van de coöperatievebeweging over risico-pooling voorbij simplistische "Deens Model"-verhalen?',
+      'Wat onthullen micro-economische analyses van de coöperatievebeweging over risicospreiding voorbij simplistische "Deens Model"-verhalen?',
       [
         'Transactiekosten via netwerken',
         'Coöperaties hadden geen economische functie',
@@ -611,29 +611,29 @@ export const DANISH_HISTORY: CategoryContent = {
         'Boeren hadden geen agentschap in creatie',
       ],
       0,
-      'Microeconomische analyses onthullen hoe coöperaties transactiekosten adressen. Regionale en sectorale variatie is uitgesproken.',
+      'Micro-economische analyses onthullen hoe coöperaties transactiekosten beperken. Regionale en sectorale variatie is uitgesproken.',
     ],
     [
-      'Hoe weerspiegelen de Grundloven van 1849 en constitutionele herschrijving van 1953 divergente opvattingen van monarchale soevereiniteit?',
+      'Hoe weerspiegelen de Grundloven van 1849 en de constitutionele herschrijving van 1953 divergente opvattingen van monarchale soevereiniteit?',
       [
         '1849 machtsbalans; 1953 eenkamerig',
         'Beide grondwetten waren identiek',
-        'De herziening van 1953 versterkte monarchie',
+        'De herziening van 1953 versterkte de monarchie',
         'Grondwettelijke hoven waren uitgevonden in 1953',
       ],
       0,
-      '1849 balanceerde monarchie en parlement; 1953 vestigde parlementsuprematie via eenkamers Folketing.',
+      '1849 balanceerde monarchie en parlement; 1953 vestigde de suprematie van het parlement via een eenkamerig Folketing.',
     ],
     [
       'Welke historiografische debatten blijven over Noordse welvaart als "klassencompromis" tegenover "sociaaldemocratische hegemonie"?',
       [
         'Compromis of hegemonie, omstreden',
-        'Er bestaat universele consensus over welvaartsoordsprong',
+        'Er bestaat universele consensus over welvaartsoorsprong',
         'Geen klassenconflict vormde welvaart',
-        'Welvaartstaten ontstonden spontaan',
+        'Welvaartsstaten ontstonden spontaan',
       ],
       0,
-      'Historici debatteren of Noordse welvaart onderhandeld compromis of sociaaldemocratische hegemonie weerspiegelt.',
+      'Historici debatteren of Noordse welvaart een onderhandeld compromis of sociaaldemocratische hegemonie weerspiegelt.',
     ],
     [
       'Hoe ondervragen kwantitatieve studies van de "grote egalisering" (jaren 1960–1980) via belastinggegevens zowel gelijkheidsvorderingen als blijvende tegenstellingen?',
@@ -647,18 +647,18 @@ export const DANISH_HISTORY: CategoryContent = {
       'Kwantitatieve studies onthullen aanzienlijke inkomstencompressie naast blijvende geslacht- en regionale tegenstellingen.',
     ],
     [
-      'Welke rol speelt het "Deense exceptionalisme"-raamwerk in welvaartsstaat-theorie, en gaat het voort of belemmert het analyse?',
+      'Welke rol speelt het "Deense exceptionalisme"-raamwerk in de welvaartsstaattheorie, en bevordert het de analyse of belemmert het die?',
       [
         'Verdoezelt gedeelde druk',
         'Denemarken is objectief uniek',
         'Vergelijkende analyse is onmogelijk',
-        'Welvaartstaten zijn onvergelijkbaar',
+        'Welvaartsstaten zijn onvergelijkbaar',
       ],
       0,
-      'Critici betogen "exceptionalisme"-raamwerken obscureren contingentie. Relationele analyse kan Noordse uitkomsten beter verklaren.',
+      'Critici betogen dat "exceptionalisme"-raamwerken contingentie obscureren. Relationele analyse kan Noordse uitkomsten beter verklaren.',
     ],
     [
-      'Hoe onthullen archiefstudie van onderhandelingen van 1973 EG-toetreding spanning tussen agrarische doelen en fiscale soevereiniteit?',
+      'Hoe onthult archiefstudie van de onderhandelingen over de EG-toetreding van 1973 spanning tussen agrarische doelen en fiscale soevereiniteit?',
       [
         'Voorrang GLB boven soevereiniteit',
         'Denemarken wilde isolatie',
@@ -666,7 +666,7 @@ export const DANISH_HISTORY: CategoryContent = {
         'Geen archiefevidentia bestaat',
       ],
       0,
-      'Archief-werk toont Deense toetreding tot EG van 1973 CAP-toegang en fiscale transfers over soevereiniteit prioriteerde.',
+      'Archiefwerk toont dat de Deense toetreding tot de EG van 1973 CAP-toegang en fiscale transfers boven soevereiniteit prioriteerde.',
     ],
   ],
 };

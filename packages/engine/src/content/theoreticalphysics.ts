@@ -444,7 +444,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'That entropy production must always equal the anomaly coefficient',
       ],
       0,
-      'c-theorem: central charge decreases monotonically under RG evolution: c_UV > c_IR. Arrows time\'s direction at RG level; no return to higher c.',
+      'c-theorem: central charge decreases monotonically under RG evolution: cᵤᵥ > cᵢᵣ. Arrows time\'s direction at RG level; no return to higher c.',
     ],
     [
       'What is the physical origin of black hole entropy in string theory?',
@@ -545,7 +545,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'It shows that holography applies only to theories with large gauge groups',
       ],
       0,
-      'SYK (large q random couplings): exact, soluble in large-N. CFT dual exists; chaos exponent λ_L=π/β matches black holes. Paradigm for AdS₂/CFT₁.',
+      'SYK (large q random couplings): exact, soluble in large-N. CFT dual exists; chaos exponent λₗ=π/β matches black holes. Paradigm for AdS₂/CFT₁.',
     ],
     [
       'What is M-theory, and what evidence supports its existence as a unified framework for string dualities?',
@@ -572,7 +572,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
     [
       'What is the meaning of a replica trick calculation in entanglement entropy, and what are its limitations?',
       [
-        'It analytically continues Zₙ=Tr(ρ^n) from n→1 to extract S_E',
+        'It analytically continues Zₙ=Tr(ρ^n) from n→1 to extract Sₑ',
         'A method that only applies to free field theories without interactions',
         'A way to compute entropy that works for all quantum systems without exception',
         'A technique that proves entanglement entropy is always proportional to volume',
@@ -611,7 +611,7 @@ export const THEORETICAL_PHYSICS: CategoryContent = {
         'They eliminate the need for perturbation theory in QCD calculations',
       ],
       0,
-      'Regge: elastic scattering~sᵅ(t) exchanges. BFKL: resum ln(s) chains, gives α_P~1.2>1 pomeron. Dominates small-x DIS and pp→dijets at LHC.',
+      'Regge: elastic scattering~sᵅ(t) exchanges. BFKL: resum ln(s) chains, gives αₚ~1.2>1 pomeron. Dominates small-x DIS and pp→dijets at LHC.',
     ],
     [
       'What is the holomorphic anomaly in topological string theory, and what structure does it reveal?',

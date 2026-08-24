@@ -19,7 +19,7 @@ export const MORE_PHYSICS: CategoryContent = {
       'De Schwarzschild-straal van een massa M is evenredig met wat?',
       ['M', 'M in het kwadraat', 'De wortel van M', 'De logaritme van M'],
       0,
-      '2GM/c-kwadraat, dus lineaire schaling - waarom een superzwaar zwart gat zo\'n lage getijdenkrachten heeft bij zijn horizon.',
+      '2GM/c-kwadraat, dus lineaire schaling - waarom een superzwaar zwart gat zulke lage getijdenkrachten heeft bij zijn horizon.',
     ],
     [
       'Wat relateert de fluctuatie-dissipatiestelling aan elkaar?',
@@ -214,7 +214,7 @@ export const MORE_PHYSICS: CategoryContent = {
         'Ze lost de singulariteit bij de oerknal volledig op, en vervangt deze door een eeuwig inflaterende voorafgaande expansiefase',
       ],
       0,
-      'Het maatprobleem en de vraag naar begincondities zijn waarom de lezing "inflatie verklaart alles" weerstand krijgt binnen de cosmologie.',
+      'Het maatprobleem en de vraag naar begincondities zijn waarom de lezing "inflatie verklaart alles" weerstand krijgt binnen de kosmologie.',
     ],
   ],
   professor: [
@@ -249,7 +249,7 @@ export const MORE_PHYSICS: CategoryContent = {
         'De defectdichtheid schaalt exponentieel met de correlatielengte',
       ],
       0,
-      'Het is nu getest in koude atomen, ionenkettingen en supervloeistoffen, meer dan de cosmologische toepassing waarvoor het bedacht werd kan bieden.',
+      'Het is nu getest in koude atomen, ionenkettingen en supervloeistoffen, meer dan de kosmologische toepassing waarvoor het bedacht werd kan bieden.',
     ],
     [
       'Wat is het sterke-CP-probleem?',
@@ -285,7 +285,7 @@ export const MORE_PHYSICS: CategoryContent = {
       'TKNN, 1982. De precisie ervan is waarom het nu de weerstandsstandaard onderbouwt - een topologisch argument in een metrologielaboratorium.',
     ],
     [
-      'Wat is het probleem van de cosmologische constante?',
+      'Wat is het probleem van de kosmologische constante?',
       [
         'Veldtheoretische schattingen van vacuümenergie overschrijden de waargenomen waarde met vele tientallen ordes van grootte',
         'De waargenomen expansiesnelheid is inconsistent met een constante vacuümenergie',
@@ -905,7 +905,7 @@ export const MORE_BIOLOGY: CategoryContent = {
         'Het werd opgelost door de ontdekking dat de meeste complexe eigenschappen niet erfelijk zijn zodra gedeelde omgeving en assortatieve paring gecontroleerd worden',
       ],
       0,
-      'Het GREML-werk van Yang et al. verschoof de rekening aanzienlijk. Zeldzame varianten en gen-omgevinginteractie draagen bij, maar bleken niet het antwoord.',
+      'Het GREML-werk van Yang et al. verschoof de rekening aanzienlijk. Zeldzame varianten en gen-omgevinginteractie dragen bij, maar bleken niet het antwoord.',
     ],
     [
       'Wat stelt het "omnigene" model voor?',

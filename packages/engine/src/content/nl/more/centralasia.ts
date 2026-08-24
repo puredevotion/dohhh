@@ -62,7 +62,7 @@ export const MORE_CENTRAL_ASIA: CategoryContent = {
         'De seizoensgebonden bijeenkomst waarop veldtochtplannen werden vastgesteld',
       ],
       0,
-      'Estafetteruiters konden enkele honderden kilometers per dag afleggen. Marco Polo beschrijft het, en het verklaart voor een groot deel waarom het rijk overhaupt bestuurbaar was.',
+      'Estafetteruiters konden enkele honderden kilometers per dag afleggen. Marco Polo beschrijft het, en het verklaart voor een groot deel waarom het rijk überhaupt bestuurbaar was.',
     ],
     [
       'In welk decennium was de Russische verovering van de Centraal-Aziatische khanaten grotendeels voltooid?',
@@ -185,7 +185,7 @@ export const MORE_CENTRAL_ASIA: CategoryContent = {
     [
       'Wat deed de Sovjet-nationale afbakening van Centraal-Azië in 1924-36?',
       [
-        'Zij vervangen de eenheden Turkestan en Boechara door republieken die op etnisch-linguïstische lijnen waren gedefinieerd',
+        'Zij verving de eenheden Turkestan en Boechara door republieken die op etnisch-linguïstische lijnen waren gedefinieerd',
         'Zij behield de vooroorlogse bestuurlijke grenzen onder nieuwe namen',
         'Zij creëerde één enkele Centraal-Aziatische federale republiek binnen de USSR',
         'Zij herstelde de grenzen van de khanaten van vóór de Russische verovering',

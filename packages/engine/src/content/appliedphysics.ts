@@ -288,7 +288,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Thermal runaway is prevented by reducing the supply voltage proportionally',
       ],
       0,
-      'Leakage P_leak ∝ exp(qE_a/kT) and electromigration MTF ∝ exp(-ΔE_a/kT) are exponential in T; throttling prevents failure.',
+      'Leakage Pₗₑₐₖ ∝ exp(qEₐ/kT) and electromigration MTF ∝ exp(-ΔEₐ/kT) are exponential in T; throttling prevents failure.',
     ],
     [
       'In medical ultrasound, the acoustic streaming effect causes fluid motion even in the absence of bulk flow. What is the mechanism?',
@@ -356,7 +356,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'The electron gun for reflection high-energy electron diffraction (RHEED) damages the surface at higher rates',
       ],
       0,
-      'MBE rate is limited by residence time τ_r and diffusion over steps; low T improves sticking, high T increases diffusion length but reduces τ_r.',
+      'MBE rate is limited by residence time τᵣ and diffusion over steps; low T improves sticking, high T increases diffusion length but reduces τᵣ.',
     ],
     [
       'In direct numerical simulation (DNS) of turbulence, why is the computational cost prohibitive for high Reynolds numbers?',
@@ -378,7 +378,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'NRF resonances sharpen because photon recoil is eliminated in the nucleus',
       ],
       0,
-      'Octupole decay A_8 < A_2; resonance width Γ ∝ A increases, but absence of quadrupole mixing prevents additional broadening mechanisms.',
+      'Octupole decay A₈ < A₂; resonance width Γ ∝ A increases, but absence of quadrupole mixing prevents additional broadening mechanisms.',
     ],
     [
       'In silicon photomultipliers (SiPMs), Geiger-mode avalanche photodiodes operate in parallel with integrated quench resistors. What advantage does parallel architecture provide over single-element APDs?',
@@ -534,7 +534,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Fission fragments chemically bond to the SiC lattice, strengthening it locally',
       ],
       0,
-      'SiC: high kT_D, large E_m for dislocation creep; below ∼1600 °C, Nabarro-Herring creep is negligible; point-defect density remains low.',
+      'SiC: high kT_D, large Eₘ for dislocation creep; below ∼1600 °C, Nabarro-Herring creep is negligible; point-defect density remains low.',
     ],
     [
       'In scanning tunneling microscopy (STM) of a metal, the tunnel current I is exponentially sensitive to gap spacing z. However, on samples with electronic disorder (e.g., surface roughness of the density of states), constant-current STM exhibits apparent topography that does not match physical topography. Why does this artifact occur?',
@@ -548,7 +548,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'STM constant-current: I ∝ exp(z) ρ(E_F); feedback maintains I, so z tracks ρ(E_F) variations—electronic corrugation, not topographic.',
     ],
     [
-      'In femtosecond laser ablation of solids, ultrashort pulses avoid thermal diffusion into the bulk. However, the ablation threshold (fluence F_th) exhibits a nonmonotonic dependence on pulse duration τ below ∼100 fs. What causes this non-monotonicity?',
+      'In femtosecond laser ablation of solids, ultrashort pulses avoid thermal diffusion into the bulk. However, the ablation threshold (fluence Fₜₕ) exhibits a nonmonotonic dependence on pulse duration τ below ∼100 fs. What causes this non-monotonicity?',
       [
         'Below the electron-phonon coupling time, shorter pulses need higher fluence',
         'Below 100 fs, multi-photon ionization becomes dominant, raising the ionization threshold',
@@ -556,13 +556,13 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Plasma shielding prevents shorter pulses from reaching the surface',
       ],
       0,
-      'Femtosecond ablation: τ < τ_ep (electron-phonon coupling time ∼ 100 fs) → electrons heat before equilibrating; longer τ allows phonon accumulation, lowering F_th.',
+      'Femtosecond ablation: τ < τₑₚ (electron-phonon coupling time ∼ 100 fs) → electrons heat before equilibrating; longer τ allows phonon accumulation, lowering Fₜₕ.',
     ],
     [
       'In magnetohydrodynamic (MHD) turbulence subject to a strong background magnetic field B₀, energy cascade is anisotropic: turbulent eddies preferentially elongate along B₀, creating a "pencil-shaped" spectrum in k-space. What fundamental difference in mode coupling causes this anisotropy compared to ordinary fluid turbulence?',
       [
         'Magnetic tension suppresses perpendicular motion, favoring cascade along B₀',
-        'The Alfvén wave dispersion relation ω = v_A k‖ limits cascade to parallel wavenumbers',
+        'The Alfvén wave dispersion relation ω = vₐ k‖ limits cascade to parallel wavenumbers',
         'Viscous dissipation is anisotropic due to anisotropic viscosity in a magnetized plasma',
         'Magnetic reconnection creates narrow current sheets that fragment perpendicular turbulence',
       ],
@@ -581,15 +581,15 @@ export const APPLIED_PHYSICS: CategoryContent = {
       'SCWO: supercritical H₂O has K_w ∼ 10⁻¹¹; [H⁺][OH⁻] → 10⁻¹¹ M²; •OH generation via chain reactions accelerates free-radical oxidation of organics.',
     ],
     [
-      'In optical frequency combs from mode-locked femtosecond lasers, the frequency-comb teeth are spaced by Δf_rep (repetition rate) and offset by f_CEO (carrier-envelope-offset frequency). Why is stabilizing f_CEO critical for broadband spectroscopy applications, while Δf_rep can be comparatively loose?',
+      'In optical frequency combs from mode-locked femtosecond lasers, the frequency-comb teeth are spaced by Δfᵣₑₚ (repetition rate) and offset by f_CEO (carrier-envelope-offset frequency). Why is stabilizing f_CEO critical for broadband spectroscopy applications, while Δfᵣₑₚ can be comparatively loose?',
       [
-        'f_CEO sets absolute comb-tooth frequency; Δf_rep only sets spacing',
-        'f_CEO determines the laser power; Δf_rep does not affect output intensity',
-        'f_CEO locks the spectrum to optical resonances; Δf_rep is determined by cavity length automatically',
-        'Stabilizing Δf_rep is impossible; only f_CEO can be controlled electronically',
+        'f_CEO sets absolute comb-tooth frequency; Δfᵣₑₚ only sets spacing',
+        'f_CEO determines the laser power; Δfᵣₑₚ does not affect output intensity',
+        'f_CEO locks the spectrum to optical resonances; Δfᵣₑₚ is determined by cavity length automatically',
+        'Stabilizing Δfᵣₑₚ is impossible; only f_CEO can be controlled electronically',
       ],
       0,
-      'f_CEO: tooth m has frequency f_m = m·Δf_rep + f_CEO; f_CEO drift → all teeth shift in abs. freq., breaking coherence. Δf_rep drift → spacing error, minor for broadband.',
+      'f_CEO: tooth m has frequency fₘ = m·Δfᵣₑₚ + f_CEO; f_CEO drift → all teeth shift in abs. freq., breaking coherence. Δfᵣₑₚ drift → spacing error, minor for broadband.',
     ],
     [
       'In plasmonic metamaterials designed with sub-wavelength features, the effective magnetic permeability μ_eff can be negative (μ_eff < 0) even though individual metal constituents are non-magnetic. What is the origin of this effective magnetism?',
@@ -611,7 +611,7 @@ export const APPLIED_PHYSICS: CategoryContent = {
         'Cryogenic bolometer response is inherently faster than semiconductor electronics',
       ],
       0,
-      'Superfluid ⁴He: ionization E_i ∼ meV; low-mass WIMP recoils (E_r ∼ keV) produce detectable quasiparticles; Ge/Si band gap (eV) misses low-mass recoils.',
+      'Superfluid ⁴He: ionization Eᵢ ∼ meV; low-mass WIMP recoils (Eᵣ ∼ keV) produce detectable quasiparticles; Ge/Si band gap (eV) misses low-mass recoils.',
     ],
     [
       'In resonant inelastic X-ray scattering (RIXS) at 3d transition-metal K-edges, the intermediate state is a 1s core hole coupled to the 3d valence electrons. Why does RIXS access excitations (e.g., d-d transitions, magnons) that are dipole-forbidden in conventional spectroscopy?',

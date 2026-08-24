@@ -299,7 +299,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
         'Absorption wavelength is determined by ligand mass, not splitting energy',
       ],
       0,
-      'E_photon = hc/λ = Δ; strong-field complexes (large Δ) absorb at λ ~400 nm (blue); weak-field (small Δ) at λ ~900 nm (infrared).',
+      'Eₚₕₒₜₒₙ = hc/λ = Δ; strong-field complexes (large Δ) absorb at λ ~400 nm (blue); weak-field (small Δ) at λ ~900 nm (infrared).',
     ],
     [
       'In cytochrome P450 oxidation catalysis, what is the role of the iron center?',
@@ -378,7 +378,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
         'Lattice enthalpy predicts only the color of the compound',
       ],
       0,
-      'ΔH_latt ∝ (charges)/(inter-ionic distance); follows Born-Landé equation; larger charges and smaller ions increase ΔH_latt.',
+      'ΔHₗₐₜₜ ∝ (charges)/(inter-ionic distance); follows Born-Landé equation; larger charges and smaller ions increase ΔHₗₐₜₜ.',
     ],
     [
       'What role does spin–orbit coupling (SOC) play in electronic structure and spectroscopy of heavy transition metals?',
@@ -460,7 +460,7 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'In perovskite structures (ABX3), what does the Goldschmidt tolerance factor predict?',
       [
-        't = (r_A+r_X)/[√2(r_B+r_X)]; t ≈ 1 is cubic',
+        't = (rₐ+rₓ)/[√2(r_B+rₓ)]; t ≈ 1 is cubic',
         'The tolerance factor is irrelevant to perovskite stability',
         't is always 1 for all perovskites',
         'The tolerance factor predicts only color',
@@ -561,13 +561,13 @@ export const INORGANIC_CHEMISTRY: CategoryContent = {
     [
       'How does Marcus–Hush electron-transfer theory address reorganization energy in metal-complex redox catalysis?',
       [
-        'λ_inner (vibrational) + λ_outer (solvent)',
+        'λᵢₙₙₑᵣ (vibrational) + λₒᵤₜₑᵣ (solvent)',
         'Marcus theory is outdated',
         'Reorganization energy depends only on temperature',
         'All redox reactions have identical λ',
       ],
       0,
-      'Marcus theory: λ_inner (geometry change) + λ_outer (solvent reorientation); high λ shifts reaction-coordinate minimum, raising Ea and overpotential.',
+      'Marcus theory: λᵢₙₙₑᵣ (geometry change) + λₒᵤₜₑᵣ (solvent reorientation); high λ shifts reaction-coordinate minimum, raising Ea and overpotential.',
     ],
     [
       'What distinguishes inner-sphere from outer-sphere electron-transfer mechanisms catalyzed by transition metal complexes?',

@@ -64,7 +64,7 @@ export const MORE_HISTORY: CategoryContent = {
       [
         'De grens tussen kerkelijke en koninklijke rechtsmacht in Engeland',
         'De verplichtingen van hoofdleenmannen tot krijgsdienst aan de kroon',
-        'De procedures voor het vaststellen en innen van de geld',
+        'De procedures voor het vaststellen en innen van de gelden',
         'De rechten van het woud en de straffen voor overtreding daarvan',
       ],
       0,
@@ -294,7 +294,7 @@ export const MORE_HISTORY: CategoryContent = {
       [
         'Het standaardiseerde een leesbaar, met spaties gescheiden schrift waarin de meeste bewaard gebleven afschriften zijn gemaakt',
         'Het was het eerste schrift dat met een rietpen werd geschreven in plaats van een stilus',
-        'Het maakte het gebruik van parkament mogelijk in plaats van papyrus voor lange werken',
+        'Het maakte het gebruik van perkament mogelijk in plaats van papyrus voor lange werken',
         'Het introduceerde de codexvorm in plaats van de boekrol',
       ],
       0,

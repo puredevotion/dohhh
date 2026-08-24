@@ -5,7 +5,7 @@ import type { CategoryContent } from '../row.js';
 export const LAWIP: CategoryContent = {
   bscba: [
     [
-      'In de meeste auteursrechtstelsels ter wereld, is registratie vereist voor een werk om auteursrechtelijke bescherming te verkrijgen?',
+      'Is registratie in de meeste auteursrechtstelsels ter wereld vereist om voor een werk auteursrechtelijke bescherming te verkrijgen?',
       [
         'Nee, auteursrecht ontstaat automatisch bij creatie in vrijwel alle landen die partij zijn bij grote internationale auteursrechtverdragen',
         'Ja, elk land vereist registratie bij een nationaal auteursrechtenbureau voordat bescherming begint',
@@ -13,7 +13,7 @@ export const LAWIP: CategoryContent = {
         'Alleen als het werk in gedrukte vorm wordt gepubliceerd',
       ],
       0,
-      'De Berner Conventie bepaalde dat auteursrecht automatisch ontstaat—geen registratie, melding of andere formaliteit is vereist. De meeste landen volgen dit principe, hoewel sommigen optionele nationale registers voor bewijsdoeleinden bijhouden.',
+      'De Berner Conventie bepaalde dat auteursrecht automatisch ontstaat—geen registratie, melding of andere formaliteit is vereist. De meeste landen volgen dit principe, hoewel sommige landen optionele nationale registers voor bewijsdoeleinden bijhouden.',
     ],
     [
       'Wat is het primaire juridische doel van een handelsmerk?',
@@ -24,14 +24,14 @@ export const LAWIP: CategoryContent = {
         'Exclusief recht geven om een bepaald woord in elke context te gebruiken',
       ],
       0,
-      'Een merk\'s kernfunctie is te dienen als herkomstherkenning, helpt consumenten goederen of diensten van een bepaalde bron herkennen. Dit herkomstfunctie is wat de meeste merkenwetten beschermen.',
+      'De kernfunctie van een merk is dienen als herkomstherkenning: het helpt consumenten goederen of diensten van een bepaalde bron te herkennen. Deze herkomstfunctie is wat de meeste merkenwetten beschermen.',
     ],
     [
       'Welk van de volgende wordt NIET typisch beschouwd als patenteerbare werkingsfeer?',
       [
-        'Een natuurlijk voorkomende genensequentie uit het menselijk lichaam zonder wijziging geëxtraheerd',
-        'Een nieuw chemisch samengesteld synthetisch in een laboratorium',
-        'Een nieuw fabricageproces voor halfgeleiders produceren',
+        'Een natuurlijk voorkomende genensequentie die zonder wijziging uit het menselijk lichaam is geëxtraheerd',
+        'Een nieuwe chemische verbinding die synthetisch in een laboratorium is samengesteld',
+        'Een nieuw fabricageproces voor het produceren van halfgeleiders',
         'Een nuttig apparaat dat bestaande onderdelen op innovatieve wijze combineert',
       ],
       0,
@@ -42,8 +42,8 @@ export const LAWIP: CategoryContent = {
       [
         'De persoon die eerst een octrooiaanvraag indient heeft prioriteit, ongeacht wie het daadwerkelijk heeft uitgevonden',
         'Alleen de oorspronkelijke uitvinder mag een octrooiaanvraag indienen',
-        'Octrooirechten behoren toe aan wie over de uitvinding eerst in een vakblad publiceert',
-        'Uitvinders moeten hun ontdekking publiceren voordat zij aanvragen om prioriteit vast te stellen',
+        'Octrooirechten behoren toe aan wie het eerst over de uitvinding publiceert in een vakblad',
+        'Uitvinders moeten hun ontdekking publiceren voordat zij een aanvraag indienen, om zo prioriteit vast te stellen',
       ],
       0,
       'De meeste landen wereldwijd, waaronder de EU en vele andere, gebruiken een first-to-file-systeem waarbij de vroegste aanvraagdatum prioriteit bepaalt. De VS gebruikte historisch first-to-invent tot 2013.',
@@ -62,7 +62,7 @@ export const LAWIP: CategoryContent = {
     [
       'Wat is een bedrijfsgeheim?',
       [
-        'Informatie die waarde ontleent aan het niet algemeen bekend zijn en geheim wordt gehouden door redelijke maatregelen',
+        'Informatie die waarde ontleent aan het feit dat ze niet algemeen bekend is, en die door redelijke maatregelen geheim wordt gehouden',
         'Een octrooi dat nog niet door het octrooibureau is gepubliceerd',
         'Een merk dat vertrouwelijk is en niet openbaar wordt gemaakt',
         'Een kopie van de financiële administratie van een bedrijf in een kluis',
@@ -90,18 +90,18 @@ export const LAWIP: CategoryContent = {
         'Geografische aanduidingen voor landbouwproducten registreren',
       ],
       0,
-      'Het Madridprotocol, beheerd door WIPO, centraliseert merkaanvragen via één aanvraag voor meerdere aangewezen landen. Elk land\'s bureau onderzoekt het merk echter nog steeds naar zijn eigen materiële recht.',
+      'Het Madridprotocol, beheerd door WIPO, centraliseert merkaanvragen via één aanvraag voor meerdere aangewezen landen. Het bureau van elk land onderzoekt het merk echter nog steeds naar zijn eigen materiële recht.',
     ],
     [
       'Wat is de basisvereiste voor auteursrechtbescherming van een literair of kunstwerk?',
       [
-        'Het werk moet oorspronkelijk zijn en in een grijpbaar medium worden uitgedrukt (geschreven, opgenomen, enz.)',
+        'Het werk moet oorspronkelijk zijn en in een tastbaar medium worden uitgedrukt (geschreven, opgenomen, enz.)',
         'Het werk moet commercieel worden gepubliceerd',
         'Het werk moet bij een nationaal auteursrechtenbureau worden geregistreerd',
         'Het werk moet minstens 100 pagina\'s lang zijn of één uur duren',
       ],
       0,
-      'Auteursrecht beschermt oorspronkelijke literaire en kunstwerken zodra zij in een grijpbaar medium worden vastgelegd—zoals schrijven, opnamen of digitale opslag. Oorspronkelijkheid en vastlegging zijn de belangrijkste vereisten.',
+      'Auteursrecht beschermt oorspronkelijke literaire en kunstwerken zodra zij in een tastbaar medium worden vastgelegd—zoals schrijven, opnamen of digitale opslag. Oorspronkelijkheid en vastlegging zijn de belangrijkste vereisten.',
     ],
     [
       'Wat verleent het Europees Octrooibureau (EOB)?',
@@ -134,7 +134,7 @@ export const LAWIP: CategoryContent = {
         'Morele rechten bestaan alleen in Engelssprekende landen',
       ],
       0,
-      'Morele rechten—het recht op naamsvermelding en het recht tegen vervormingen—beschermen de auteur\'s reputatie en persoonlijke band. Ze kunnen niet worden verkocht of overgedragen, zelfs in landen waar auteurs hun economische rechten afstaan.',
+      'Morele rechten—het recht op naamsvermelding en het recht tegen vervormingen—beschermen de reputatie en persoonlijke band van de auteur. Ze kunnen niet worden verkocht of overgedragen, zelfs in landen waar auteurs hun economische rechten afstaan.',
     ],
     [
       'Wat betekent het als een merk "generiek" wordt?',
@@ -156,7 +156,7 @@ export const LAWIP: CategoryContent = {
         'Octrooien en merken rechtstreeks verlenen, ter vervanging van nationale bureaus',
       ],
       0,
-      'WIPO, een gespecialiseerd VN-agentschap sinds 1974, beheert verdragen als het Verdrag van Parijs, de Berner Conventie, het PCT en het Madridprotocol. Zij voert handhaving niet uit—dat blijft een nationale rechterfunctie.',
+      'WIPO, een gespecialiseerd VN-agentschap sinds 1974, beheert verdragen als het Verdrag van Parijs, de Berner Conventie, het PCT en het Madridprotocol. Zij voert handhaving niet uit—dat blijft een taak van de nationale rechtspraak.',
     ],
     [
       'Hoe verschilt auteursrechtbescherming van octrooibescherming naar reikwijdte?',
@@ -297,7 +297,7 @@ export const LAWIP: CategoryContent = {
         'Het verdubbelt automatisch het licentietarief dat een generieke fabrikant voor de rest van de octrooitermijn moet betalen',
       ],
       0,
-      'ABC\'s verlengen octrooitermijn tot vijf jaar na twintig jaar voor pharma en landbouwchemicaliën, ter compensatie voor regelgeving. EU-Verordeningen 469/2009 en 1610/96 bepalen berekening; gericht op pariteit met Amerikaanse termijnherstel.',
+      'ABC\'s verlengen de octrooitermijn met maximaal vijf jaar na de twintig jaar voor pharma en landbouwchemicaliën, ter compensatie voor regelgeving. EU-Verordeningen 469/2009 en 1610/96 bepalen de berekening en zijn gericht op pariteit met Amerikaans termijnherstel.',
     ],
     [
       'Wat bereikt een aanvraag onder het Patent Cooperation Treaty (PCT) precies?',
@@ -308,7 +308,7 @@ export const LAWIP: CategoryContent = {
         'Het levert een octrooitermijnverlenging op die identiek is in effect aan een aanvullend beschermingscertificaat',
       ],
       0,
-      'Het PCT laat aanvragers één internationale aanvraag indienen met prioriteitsdatum en onderzoeksrapport, dan naar nationale fase (~30 maanden) waar elk bureau zelf over verlening beslist. Dit centraliseert vroege kosten terwijl keuze van landen wordt uitgesteld.',
+      'Het PCT laat aanvragers één internationale aanvraag indienen met prioriteitsdatum en onderzoeksrapport, gevolgd door een nationale fase (~30 maanden) waarin elk bureau zelf over verlening beslist. Dit centraliseert de vroege kosten, terwijl de keuze van landen wordt uitgesteld.',
     ],
     [
       'Onder de EU-richtlijn bedrijfsgeheimen (2016/943) komt informatie alleen in aanmerking voor bescherming als bedrijfsgeheim wanneer aan welke combinatie van voorwaarden is voldaan?',
@@ -319,7 +319,7 @@ export const LAWIP: CategoryContent = {
         'De informatie heeft ononderbroken minstens vijf volledige jaren geheim bestaan voordat een vordering wordt ingesteld',
       ],
       0,
-      'Bedrijfsgeheimenbesch. bepaald door drie voorwaarden uit Richtlijn 2016/943: geheim zijn, commerciële waarde door geheimhouding, redelijke maatregelen genomen. Dit harmoniseerde nationale leerstukken en gaf houders uniform civielrechtelijk rechtsmiddel.',
+      'Bescherming van bedrijfsgeheimen wordt bepaald door drie voorwaarden uit Richtlijn 2016/943: geheimhouding, commerciële waarde door die geheimhouding, en genomen redelijke maatregelen. Dit harmoniseerde nationale leerstukken en gaf houders een uniform civielrechtelijk rechtsmiddel.',
     ],
   ],
   phd: [
@@ -609,7 +609,7 @@ export const LAWIP: CategoryContent = {
         'Hangt uitsluitend af van de vraag of de gebruiker al een geheimhoudingsovereenkomst met de octrooihouder heeft ondertekend',
       ],
       0,
-      'Huawei bezat octrooien essentieel voor telecomunicatiestandaard met FRAND-licentieverplichting; het Hof oordeelde dat verbodsvorderingen artikel 102 kunnen schenden, tenzij SEO-houder eerst waarschuwt en specifiek FRAND-aanbod doet. Dit weegt eigendomsrechten tegen "hold-up"-risico.',
+      'Huawei bezat octrooien essentieel voor een telecommunicatiestandaard met FRAND-licentieverplichting; het Hof oordeelde dat verbodsvorderingen artikel 102 kunnen schenden, tenzij SEO-houder eerst waarschuwt en specifiek FRAND-aanbod doet. Dit weegt eigendomsrechten tegen "hold-up"-risico.',
     ],
     [
       'Aan welke twee voorwaarden moet een "parodie" volgens het arrest van het HvJEU in Deckmyn/Vandersteen (2014) over de parodie-uitzondering onder de InfoSoc-richtlijn voldoen, zonder andere vaak veronderstelde voorwaarden te moeten vervullen?',

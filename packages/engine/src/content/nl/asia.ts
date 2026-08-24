@@ -22,10 +22,10 @@ export const CENTRAL_ASIA: CategoryContent = {
       'De Tang-dynastie (618-907) was de belangrijkste Chinese macht in Centraal-Azië vóór de Mongoolse expansie.',
     ],
     [
-      'Welk groot geloof verspreide zich van Zuid-Azië oostwaarts door Centraal-Azië langs handelsroutes?',
+      'Welk groot geloof verspreidde zich van Zuid-Azië oostwaarts door Centraal-Azië langs handelsroutes?',
       ['Boeddhisme', 'Islam', 'Christendom', 'Zoroastrianisme'],
       0,
-      'Het boeddhisme reisde van India via Centraal-Azië naar Oost-Azië langs Zijderotenetwerken.',
+      'Het boeddhisme reisde van India via Centraal-Azië naar Oost-Azië langs Zijderoutenetwerken.',
     ],
     [
       'Welk koopmansvolk wordt historisch het meest erkend voor het ontwikkelen van overland handelsnetwerken in Centraal-Azië?',
@@ -35,7 +35,7 @@ export const CENTRAL_ASIA: CategoryContent = {
     ],
     [
       'Wat was het voornaamste economische systeem van middeleeuwse nomadische volkeren in Centraal-Azië?',
-      ['Veehouderij van vee', 'Landbouw', 'Zeehandel en visserij', 'Mijnbouw en metallurgie'],
+      ['Veeteelt', 'Landbouw', 'Zeehandel en visserij', 'Mijnbouw en metallurgie'],
       0,
       'Nomadische veehouderij van paarden, schapen en jakken vormde de economische basis van steppemaatschappijen.',
     ],
@@ -46,7 +46,7 @@ export const CENTRAL_ASIA: CategoryContent = {
       'Temüjin verenigde de Mongoolse stammen in het begin van de 13e eeuw en werd Dzjengis Khan.',
     ],
     [
-      'Het Timoeridenrijk, dat Samarkand en Herat regeerde, stond bekend om het patroneren van wat?',
+      'Het Timoeridenrijk, dat Samarkand en Herat regeerde, was een belangrijke beschermheer van wat?',
       ['Kunst, architectuur en geleerdheid', 'Zeevaartonderzoek', 'Infanteriegerichte oorlogvoering', 'Landbouwinnovatie'],
       0,
       'Timoeridenheersers maakten hun hoofdsteden tot centra van astronomie, wiskunde en literatuur.',
@@ -83,13 +83,13 @@ export const CENTRAL_ASIA: CategoryContent = {
     ],
     [
       'Hoe werd islam de dominante religie van Centraal-Azië?',
-      ['Door militaire verovering en daaropvolgende handelsnetwerken die moslimdinvloed uitbreiden', 'Uitsluitend via vredige zendingswerk', 'Het was het inheems geloof van de regio vóór invasies', 'Door Europese koloniale expansie'],
+      ['Door militaire verovering en daaropvolgende handelsnetwerken die de invloed van moslims vergrootten', 'Uitsluitend via vredige zendingswerk', 'Het was het inheems geloof van de regio vóór invasies', 'Door Europese koloniale expansie'],
       0,
-      'Arabische veroveringen vanaf de 7e eeuw brachten islam; kooplieden breidden daarna moslimdinvloed uit.',
+      'Arabische veroveringen vanaf de 7e eeuw brachten islam; kooplieden breidden daarna de invloed van moslims uit.',
     ],
     [
       'Wat was het voornaamste doel van karavansera\'s langs de Zijderoute?',
-      ['Kooplieden schuilplaats, veiligheid en handelsmogelijkheden bieden', 'Als militaire versterkingen dienen', 'Luxegoederen verwerken en verfijnen voor doorverkoop', 'Boeddhistische pelgrims huisvesten'],
+      ['Kooplieden onderdak, veiligheid en handelsmogelijkheden bieden', 'Als militaire versterkingen dienen', 'Luxegoederen verwerken en verfijnen voor doorverkoop', 'Boeddhistische pelgrims huisvesten'],
       0,
       'Karavansera\'s waren versterkte wegkanten-herbergen die gastvrijheid en veiligheid voor kooplieden boden.',
     ],
@@ -100,7 +100,7 @@ export const CENTRAL_ASIA: CategoryContent = {
       'Turkse en Oezbeekse groepen regeerden Centraal-Azië nadat de Mongoolse macht in regionale khanaten uiteenviel.',
     ],
     [
-      'Welke grote geopolitieke competitie vorm gaf aan de geschiedenis van Centraal-Azië in de negentiende eeuw?',
+      'Welke grote geopolitieke competitie gaf vorm aan de geschiedenis van Centraal-Azië in de negentiende eeuw?',
       ['Britse en Russische keizerlijke belangen die om regionale dominantie wedijveren', 'Ottomaanse en Perzische dynastieke rivaliteit', 'Chinese en Mongoolse territoriale conflicten', 'Arabische en Joodse politieke geschillen'],
       0,
       'Groot-Brittannië en Rusland wedijverden om invloed in Centraal-Azië, het zogenoemde "Great Game".',
@@ -287,9 +287,9 @@ export const EAST_ASIA: CategoryContent = {
     ],
     [
       'Waarom benadrukten Zuid-Korea en Taiwan exportgestuurde groeistrategieën in de jaren 1960-1980?',
-      ['Kleine binnenlandse markten maakten buitenlandse verkoop essentieel voor valuta voor ontwikkeling', 'Overvloedige natuurlijke hulpbronnen voor internationale verkoop', 'Regeringsmandaat om alle import uit te roeien', 'Koloniaal erfgoed vereist specifieke handelspartners'],
+      ['Kleine binnenlandse markten maakten buitenlandse verkoop essentieel om valuta voor ontwikkeling te verkrijgen', 'Overvloedige natuurlijke hulpbronnen voor internationale verkoop', 'Regeringsmandaat om alle import uit te roeien', 'Koloniaal erfgoed vereist specifieke handelspartners'],
       0,
-      'Exportverkoop genereerde vreemde valuta nodig voor industriële investeringen in deze kleine markten.',
+      'Exportverkoop genereerde de vreemde valuta die nodig was voor industriële investeringen in deze kleine markten.',
     ],
     [
       'Welke vier Oost- en Zuidoost-Aziatische economieën werden in de jaren 1980 bekend als "Tijger"- of "Draak"-economieën?',
@@ -301,7 +301,7 @@ export const EAST_ASIA: CategoryContent = {
       'Wat droeg directe buitenlandse investeringen (DBI) bij aan Oost-Aziatische landen tijdens snelle industrialisering?',
       ['Kapitaal, fabricagetechnologie en managementdeskundigheid', 'Alleen lageloonarbeidskansen', 'Koloniale politieke controle en schuld', 'Milieuschade zonder economisch voordeel'],
       0,
-      'DBI verschafte kapitaal en technologie die de verschuiving naar exportfabricage mogelijk maakte.',
+      'DBI verschafte kapitaal en technologie die de verschuiving naar exportfabricage mogelijk maakten.',
     ],
     [
       'Wat beoogde Chinas "hervormings- en openingsbeleid" dat in 1978 begon te bereiken?',
@@ -322,7 +322,7 @@ export const EAST_ASIA: CategoryContent = {
       'Doi Moi introduceerde markthervorming vergelijkbaar met Chinas economische opening.',
     ],
     [
-      'Welk land werd in de jaren 1980 de werelds grootste exporteur van elektronica en halfgeleiders?',
+      'Welk land werd in de jaren 1980 \'s werelds grootste exporteur van elektronica en halfgeleiders?',
       ['Japan', 'Zuid-Korea', 'Duitsland', 'Taiwan'],
       0,
       'Japan domineerde wereldwijd elektronicafabricage in de jaren 1980.',
@@ -346,7 +346,7 @@ export const EAST_ASIA: CategoryContent = {
       'Japanse bedrijven investeerden regionaal via joint ventures en technologielicenties.',
     ],
     [
-      'Waarom was infrastructuurinvestering kritiek voor Oost-Aziatische ontwikkeling in deze periode?',
+      'Waarom was infrastructuurinvestering cruciaal voor Oost-Aziatische ontwikkeling in deze periode?',
       ['Havens, wegen en energiesystemen maakten vervaardigings- en handelsnetwerken essentieel voor groei mogelijk', 'Infrastructuur was verspillend en vertragde ontwikkeling', 'Het diende vooral militaire doeleinden en strategie', 'Het werd door Westerse koloniale mogendheden tegen plaatselijk belang opgelegd'],
       0,
       'Havens, wegen en elektriciteitsnetten maakten vervaardigings- en exporthandel mogelijk.',
@@ -358,7 +358,7 @@ export const EAST_ASIA: CategoryContent = {
       'Het aandeel van landbouw in het BBP daalde naarmate vervaardiging en diensten groeiden.',
     ],
     [
-      'Welke internationale instelling hielp infrastructuur en ontwikkeingsprojecten in Oost-Azië financieren?',
+      'Welke internationale instelling hielp infrastructuur en ontwikkelingsprojecten in Oost-Azië financieren?',
       ['De Aziatische Ontwikkelingsbank en Wereldbank', 'OPEC', 'De Sovjet-Comecon-bloc', 'De Europese Unie'],
       0,
       'De Aziatische Ontwikkelingsbank financierde infrastructuur in Oost-Azië.',
@@ -369,7 +369,7 @@ export const EAST_ASIA: CategoryContent = {
       'Wat beschrijft het Japanse "hoofdbanksysteem"?',
       [
         'Een leidende bank die zowel schuld als aandelen in een klantonderneming aanhoudt, deze monitort en reddingsacties organiseert',
-        'Het postspaarsysteem dat huishoudelijke deposito\'s naar publieke investeringen kanaliseert',
+        'Het postspaarsysteem dat deposito\'s van huishoudens naar publieke investeringen kanaliseert',
         'De window guidance van de centrale bank over de omvang van commerciële kredietverlening',
         'Kruisparticipaties tussen bedrijven binnen een keiretsu-groep',
       ],
@@ -390,7 +390,7 @@ export const EAST_ASIA: CategoryContent = {
     [
       'Wat beschrijft het "vliegende ganzen"-model?',
       [
-        'Sequentiële industriële opwaardering, waarbij volwassen industrieën verhuizen naar later ontwikkelende economieën',
+        'Sequentiële industriële opwaardering, waarbij volwassen industrieën verhuizen naar economieën die zich later ontwikkelen',
         'Gecoördineerd valutabeheer binnen de Oost-Aziatische regio',
         'Exportgeleide groei gefinancierd door onderdrukte huishoudconsumptie',
         'De verspreiding van Japanse managementpraktijken via joint ventures en gelicentieerde technologieoverdracht',
@@ -412,13 +412,13 @@ export const EAST_ASIA: CategoryContent = {
     [
       'Wat waren township and village enterprises tijdens de Chinese hervormingsperiode?',
       [
-        'Collectief eigendom zijnde plattelandsbedrijven, die een groot deel van de industriële groei van de jaren 1980 aandreven',
+        'Plattelandsbedrijven in collectief eigendom, die een groot deel van de industriële groei in de jaren tachtig aandreven',
         'Joint ventures tussen provinciale overheden en buitenlandse investeerders onder het beleid van open kustgebieden',
         'Huishoudelijke bedrijfjes gelicentieerd onder de regels voor individuele onderneming',
         'Staatsfabrieken overgedragen aan de controle van lokale overheden',
       ],
       0,
-      'Hun ambigue eigendomsrechten werden lange tijd gezien als een raadsel voor de standaardtheorie - en als bewijs dat zeker particulier eigendomsrecht geen voorwaarde is voor investering.',
+      'Hun ambigue eigendomsrechten werden lange tijd gezien als een raadsel voor de standaardtheorie - en als bewijs dat particulier eigendomsrecht zeker geen voorwaarde is voor investering.',
     ],
   ],
   phd: [
@@ -428,7 +428,7 @@ export const EAST_ASIA: CategoryContent = {
         'Bedrijven gaven voorrang aan schuldaflossing boven investering ondanks bijna-nul rentetarieven, wat monetaire verruiming buiten werking zette',
         'Banken waren insolvent maar verhulden dit, waardoor krediet werd weggehouden van gezonde kredietnemers en toegewezen aan hun bestaande debiteuren',
         'Deflatoire verwachtingen werden zelfvervullend doordat nominale loonrigiditeit de reële lonen liet stijgen tijdens de neerwaartse prijsspiraal',
-        'Demografische krimp verlaagde de natuurlijke rentevoet tot onder elk haalbaar beleidsniveau, aansluitend bij Summers secular-stagnation-these',
+        'Demografische krimp verlaagde de natuurlijke rentevoet tot onder elk haalbaar beleidsniveau, aansluitend bij Summers\' secular-stagnation-these',
       ],
       0,
       'Koo\'s formulering: met een afwezige bedrijfsvraag naar krediet komt het argument uit bij begrotingsbeleid. De concurrerende "zombiekrediet"-verklaring - Caballero, Hoshi en Kashyap - plaatst het probleem in plaats daarvan bij bankterughoudendheid.',
