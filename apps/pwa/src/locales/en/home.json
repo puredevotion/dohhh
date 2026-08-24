@@ -11,7 +11,7 @@
   "join_game": "Join a game",
   "play_solo": "Play solo",
   "rejoin_last_game": "Rejoin my last game",
-  "betting_title": "How the betting works",
-  "betting_description": "The tiers are named after who should get them right, and the questions are written to that. None of them is general knowledge.",
-  "betting_rules": "An opposing team deals you a choice of three categories; you choose how hard a question to take on it. Right, and you keep the turn. Wrong, and it costs you and moves on. First to {{target}} wins outright."
+  "betting_title": "How a round goes",
+  "betting_description": "An opposing player deals you three categories, drawn at random - they never choose them and can't steer you. You pick one, then bet on how hard a question you can take on it. Get it right and you keep the turn and bank the points below; get it wrong and it costs you, and the turn passes on.",
+  "betting_rules": "The lowest tier can only be played three times in a row before the turn passes on regardless. First team to {{target}} wins outright."
 }
